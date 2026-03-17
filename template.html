@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily AI News Digest - {{DATE}}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e4;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #0f3460;
+            margin-bottom: 40px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560 0%, #ff6b6b 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: #888;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        
+        /* Section Styling */
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #0f3460;
+        }
+        
+        .section-icon {
+            font-size: 1.8rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        
+        /* GitHub Section */
+        .github-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .repo-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .repo-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .repo-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .repo-icon {
+            font-size: 1.3rem;
+        }
+        
+        .repo-name {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .repo-name:hover {
+            text-decoration: underline;
+        }
+        
+        .repo-desc {
+            color: #888;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        
+        .repo-stats {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .repo-stat {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* News Section */
+        .news-grid {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .news-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .news-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #e94560 0%, #533483 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .news-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .news-card:hover::before {
+            opacity: 1;
+        }
+        
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 12px;
+        }
+        
+        .news-title {
+            color: #e94560;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        .news-title:hover {
+            color: #ff6b6b;
+        }
+        
+        .news-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .news-source {
+            color: #58a6ff;
+        }
+        
+        .news-desc {
+            color: #aaa;
+            line-height: 1.6;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date-badge">{{DATE}}</div>
+            <h1>Daily AI News Digest</h1>
+            <p class="subtitle">GitHub Trending & AI News Roundup</p>
+        </header>
+        
+        <!-- SECTION 1: POPULAR GITHUB REPOS -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🐙</span>
+                <h2 class="section-title">Trending GitHub Repositories</h2>
+            </div>
+            
+            <div class="github-grid">
+                <!-- REPO_ITEM -->
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <span class="repo-icon">📦</span>
+                        <a href="{{REPO_URL}}" class="repo-name" target="_blank">{{REPO_NAME}}</a>
+                    </div>
+                    <p class="repo-desc">{{REPO_DESCRIPTION}}</p>
+                    
+                    <div class="repo-stats">
+                        <span class="repo-stat">⭐ {{STARS}}</span>
+                        <span class="repo-stat">🍴 {{FORKS}}</span>
+                    </div>
+                </div>
+                <!-- END_REPO_ITEM -->
+            </div>
+        </section>
+        
+        <!-- SECTION 2: AI NEWS -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🤖</span>
+                <h2 class="section-title">AI News & Updates</h2>
+            </div>
+            
+            <div class="news-grid">
+                <!-- NEWS_ITEM -->
+                <div class="news-card">
+                    <div class="news-header">
+                        <a href="{{NEWS_URL}}" class="news-title" target="_blank">{{NEWS_TITLE}}</a>
+                    </div>
+                    
+                    <div class="news-meta">
+                        <span class="news-source">{{NEWS_SOURCE}}</span>
+                        <span>{{NEWS_TIME}}</span>
+                    </div>
+                    
+                    <p class="news-desc">{{NEWS_DESCRIPTION}}</p>
+                </div>
+                <!-- END_NEWS_ITEM -->
+            </div>
+        </section>
+        
+        <footer>
+            <p>Generated automatically • Daily AI News Digest</p>
+        </footer>
+    </div>
+</body>
+</html>
