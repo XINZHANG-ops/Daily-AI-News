@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily AI News Digest - March 17, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            font-size: 1.2rem;
+            color: #888;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+        }
+
+        .section-title span {
+            font-size: 2rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+
+        .repo-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .repo-card h3 a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        .repo-card h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .repo-description {
+            color: #b0b0b0;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .repo-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #ffd700;
+        }
+
+        .news-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .news-card h3 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .news-card h3 a:hover {
+            color: #00d4ff;
+        }
+
+        .news-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 12px;
+        }
+
+        .news-source {
+            color: #00d4ff;
+            font-weight: 500;
+        }
+
+        .news-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Daily AI News Digest</h1>
+            <p class="date">Tuesday, March 17, 2026</p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title"><span>🐙</span> Trending GitHub Repositories</h2>
+            <div class="cards-grid">
+                <div class="card repo-card">
+                    <h3><a href="https://github.com/microsoft/BitNet" target="_blank">microsoft/BitNet</a></h3>
+                    <p class="repo-description">Official inference framework for 1-bit LLMs. bitnet.cpp offers optimized kernels for fast and lossless inference of 1.58-bit models on CPU and GPU. Achieves 1.37x to 5.07x speedups on ARM CPUs and 2.37x to 6.17x on x86 CPUs with significant energy reductions.</p>
+                    <div class="repo-stats">
+                        <span class="stat">⭐ 16.2k</span>
+                        <span class="stat">🍴 1.1k</span>
+                    </div>
+                </div>
+
+                <div class="card repo-card">
+                    <h3><a href="https://github.com/vectorize-io/hindsight" target="_blank">vectorize-io/hindsight</a></h3>
+                    <p class="repo-description">Agent memory system built to create smarter agents that learn over time. Uses biomimetic data structures to organize agent memories like human memory. Achieved state-of-the-art performance on LongMemEval benchmark. Features retain, recall, and reflect operations for memory management.</p>
+                    <div class="repo-stats">
+                        <span class="stat">⭐ 2.8k</span>
+                        <span class="stat">🍴 156</span>
+                    </div>
+                </div>
+
+                <div class="card repo-card">
+                    <h3><a href="https://github.com/dimensionalOS/dimos" target="_blank">dimensionalOS/dimos</a></h3>
+                    <p class="repo-description">Dimensional is the agentic operating system for physical space. Vibecode humanoids, quadrupeds, drones, and other hardware platforms in natural language. Build multi-agent systems that work seamlessly with physical input (cameras, lidar, actuators). No ROS required.</p>
+                    <div class="repo-stats">
+                        <span class="stat">⭐ 1.5k</span>
+                        <span class="stat">🍴 89</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><span>🤖</span> AI News & Updates</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <h3><a href="https://www.cnbc.com/2026/03/16/nvidia-gtc-2026-ceo-jensen-huang-keynote-blackwell-vera-rubin.html" target="_blank">NVIDIA GTC 2026: Jensen Huang Announces Vera Rubin Platform and $1 Trillion Revenue Opportunity</a></h3>
+                    <div class="news-meta">
+                        <span class="news-source">CNBC</span>
+                        <span>14 hours ago</span>
+                    </div>
+                    <p class="news-description">NVIDIA CEO Jensen Huang announced the Vera Rubin platform with 10x performance per watt over Blackwell. The company expects $1 trillion in orders for Blackwell and Vera Rubin through 2027. Also unveiled Groq 3 LPU and NemoClaw stack for OpenClaw agents.</p>
+                </div>
+
+                <div class="card news-card">
+                    <h3><a href="https://blogs.nvidia.com/blog/gtc-2026-news/" target="_blank">NVIDIA GTC 2026 Live Updates: DLSS 5, OpenClaw Partnership, and Disney's Olaf Robot</a></h3>
+                    <div class="news-meta">
+                        <span class="news-source">NVIDIA Blog</span>
+                        <span>6 hours ago</span>
+                    </div>
+                    <p class="news-description">NVIDIA announced DLSS 5 with 3D-guided neural rendering, OpenShell runtime for secure agent deployment, and partnership with Disney featuring an Olaf robot powered by physical AI. Also revealed plans for space-based AI data centers with Space-1 Vera Rubin.</p>
+                </div>
+
+                <div class="card news-card">
+                    <h3><a href="https://www.theguardian.com/technology/2026/mar/16/google-scraps-ai-search-feature-that-crowdsourced-amateur-medical-advice" target="_blank">Google Scraps AI Search Feature That Crowdsourced Amateur Medical Advice</a></h3>
+                    <div class="news-meta">
+                        <span class="news-source">The Guardian</span>
+                        <span>16 hours ago</span>
+                    </div>
+                    <p class="news-description">Google has quietly removed its 'What People Suggest' feature that provided crowdsourced health advice from strangers. The move comes amid mounting scrutiny over AI-generated health information in Google Search, following a Guardian investigation in January.</p>
+                </div>
+
+                <div class="card news-card">
+                    <h3><a href="https://blogs.nvidia.com/blog/gtc-2026-news/" target="_blank">NVIDIA and AWS Expand Partnership for Agentic AI Era</a></h3>
+                    <div class="news-meta">
+                        <span class="news-source">NVIDIA Blog</span>
+                        <span>6 hours ago</span>
+                    </div>
+                    <p class="news-description">AWS will deploy more than 1 million NVIDIA GPUs including Blackwell, Rubin architectures, and Groq 3 LPUs. The expanded infrastructure will support growing compute demand for agentic AI across every industry.</p>
+                </div>
+
+                <div class="card news-card">
+                    <h3><a href="https://blogs.nvidia.com/blog/gtc-2026-news/" target="_blank">NVIDIA Announces Open Physical AI Models for Healthcare Robotics</a></h3>
+                    <div class="news-meta">
+                        <span class="news-source">NVIDIA Blog</span>
+                        <span>6 hours ago</span>
+                    </div>
+                    <p class="news-description">NVIDIA launched Open-H (largest healthcare robotics dataset), Cosmos-H (surgical video generation models), and GR00T-H (vision language action model). CMR Surgical, J&J MedTech, and others are adopting these tools for surgical robotics.</p>
+                </div>
+
+                <div class="card news-card">
+                    <h3><a href="https://blogs.nvidia.com/blog/gtc-2026-news/" target="_blank">NVIDIA DGX Station and Spark Paired With NemoClaw for Autonomous Agents</a></h3>
+                    <div class="news-meta">
+                        <span class="news-source">NVIDIA Blog</span>
+                        <span>6 hours ago</span>
+                    </div>
+                    <p class="news-description">NVIDIA introduced NemoClaw open source stack for running always-on OpenClaw assistants safely. DGX Station features GB300 Grace Blackwell Ultra with 748GB memory and 20 petaflops AI compute. DGX Spark now supports clustering up to 4 systems.</p>
+                </div>
+
+                <div class="card news-card">
+                    <h3><a href="https://blogs.nvidia.com/blog/gtc-2026-news/" target="_blank">Microsoft and NVIDIA Collaborate on Agentic AI and Sovereign AI Systems</a></h3>
+                    <div class="news-meta">
+                        <span class="news-source">NVIDIA Blog</span>
+                        <span>6 hours ago</span>
+                    </div>
+                    <p class="news-description">Microsoft integrated NVIDIA Nemotron models into Microsoft Foundry. Azure Local now supports RTX PRO 6000 Blackwell for sovereign AI. Azure was first hyperscale cloud to power up Vera Rubin NVL72 systems.</p>
+                </div>
+
+                <div class="card news-card">
+                    <h3><a href="https://blogs.nvidia.com/blog/gtc-2026-news/" target="_blank">NVIDIA RTX PRO 4500 Blackwell Server Edition Brings Universal Acceleration</a></h3>
+                    <div class="news-meta">
+                        <span class="news-source">NVIDIA Blog</span>
+                        <span>6 hours ago</span>
+                    </div>
+                    <p class="news-description">New RTX PRO 4500 delivers 100x performance for vision AI and 50x for vector databases vs CPU-only servers. Features 5th-gen Tensor Cores in a compact 165W single-slot form factor. Coming to AWS as first cloud provider support.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Generated on March 17, 2026 | <a href="../data/2026-03-17.json">View JSON Data</a></p>
+        </footer>
+    </div>
+</body>
+</html>
