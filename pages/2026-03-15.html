@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily AI News Digest - March 15, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e4;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #0f3460;
+            margin-bottom: 40px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560 0%, #ff6b6b 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: #888;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .news-grid {
+            display: grid;
+            gap: 25px;
+        }
+        
+        .news-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .news-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #e94560 0%, #533483 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .news-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .news-card:hover::before {
+            opacity: 1;
+        }
+        
+        .category-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+        
+        .tag-business { background: rgba(233, 69, 96, 0.2); color: #e94560; }
+        .tag-tech { background: rgba(78, 205, 196, 0.2); color: #4ecdc4; }
+        .tag-research { background: rgba(155, 89, 182, 0.2); color: #9b59b6; }
+        .tag-policy { background: rgba(241, 196, 15, 0.2); color: #f1c40f; }
+        .tag-hardware { background: rgba(46, 204, 113, 0.2); color: #2ecc71; }
+        
+        .news-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .news-title a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .news-title a:hover {
+            color: #e94560;
+        }
+        
+        .news-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #777;
+        }
+        
+        .source {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .source-icon {
+            width: 16px;
+            height: 16px;
+            background: #0f3460;
+            border-radius: 3px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.6rem;
+            color: #fff;
+        }
+        
+        .timestamp {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .pulse {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #2ecc71;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.1); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .news-title { font-size: 1.1rem; }
+            .container { padding: 20px 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date-badge">March 15, 2026</div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <p class="subtitle">Your curated briefing on artificial intelligence developments</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- Business & Investment -->
+            <article class="news-card">
+                <span class="category-tag tag-business">Business</span>
+                <h2 class="news-title">
+                    <a href="https://www.el-balad.com/16882652" target="_blank" rel="noopener">Morgan Stanley Predicts Unprepared World for Major AI Breakthrough in 2026</a>
+                </h2>
+                <p class="news-description">Morgan Stanley has issued a warning about an impending major breakthrough in artificial intelligence, asserting that many companies are unprepared for this transformative event that could reshape industries worldwide.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">E</span> El-Balad</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-business">Business</span>
+                <h2 class="news-title">
+                    <a href="https://www.fool.com/investing/2026/03/16/prediction-this-artificial-intelligence-ai-stock-w/" target="_blank" rel="noopener">Microsoft's AI Stock to Benefit Most From Software Monetization Shift</a>
+                </h2>
+                <p class="news-description">Microsoft's AI assistant, Copilot, is seeing strong traction with paid Microsoft 365 Copilot seats increasing by more than 160% year over year to reach roughly 15 million in Q2 fiscal 2026.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">MF</span> Motley Fool</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-business">Business</span>
+                <h2 class="news-title">
+                    <a href="https://www.fool.com/investing/2026/03/15/the-most-overlooked-artificial-intelligence-ai-sto/" target="_blank" rel="noopener">The Most Overlooked AI Stocks in the "Magnificent Seven" for 2026</a>
+                </h2>
+                <p class="news-description">Analysis suggests the Iran War will reshape where AI gets built for the rest of 2026, with implications for major tech companies and their AI infrastructure investments.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">MF</span> Motley Fool</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <!-- Hardware & Chips -->
+            <article class="news-card">
+                <span class="category-tag tag-hardware">Hardware</span>
+                <h2 class="news-title">
+                    <a href="https://www.basenor.com/blogs/news/tesla-terafab-inside-the-20b-chip-factory-that-changes-everything" target="_blank" rel="noopener">Tesla Terafab: Inside the $20B Chip Factory That Changes Everything</a>
+                </h2>
+                <p class="news-description">Elon Musk announced Tesla's groundbreaking Terafab AI chip manufacturing project. The new AI5 chip will be produced by both TSMC and Samsung, engineered for identical software performance across both manufacturers while operating at just 150W.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">B</span> BaseNor</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-hardware">Hardware</span>
+                <h2 class="news-title">
+                    <a href="https://www.reuters.com/world/asia-pacific/nvidia-ceo-set-reveal-new-chips-software-ai-megaconference-gtc-2026-03-16/" target="_blank" rel="noopener">Nvidia CEO Set to Reveal New Chips at AI Megaconference GTC</a>
+                </h2>
+                <p class="news-description">Nvidia's CEO is expected to unveil new AI chips and software at the GTC conference. A key focus will be Groq, the chip startup from which Nvidia licensed technology for $17 billion in December, specializing in fast and cheap inference computing.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">R</span> Reuters</span>
+                    <span class="timestamp">📅 March 16, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-hardware">Hardware</span>
+                <h2 class="news-title">
+                    <a href="https://www.techspot.com/news/111691-nvidia-next-ai-chip-may-move-beyond-all.html" target="_blank" rel="noopener">Nvidia's Next AI Chip May Move Beyond the All-Purpose GPU</a>
+                </h2>
+                <p class="news-description">According to sources briefed on Nvidia's plans, the Groq-based processor will be designed to operate alongside the company's next-generation Vera Rubin GPU, anchoring a new platform for handling AI workloads.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">TS</span> TechSpot</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <!-- Policy & Ethics -->
+            <article class="news-card">
+                <span class="category-tag tag-policy">Policy</span>
+                <h2 class="news-title">
+                    <a href="https://www.theguardian.com/us-news/ng-interactive/2026/mar/15/ai-defense-warfare-companies" target="_blank" rel="noopener">AI Firms as Defense Contractors: The Cost of Failing to Regulate AI Warfare</a>
+                </h2>
+                <p class="news-description">From Gaza to Iran, the pattern is the same: precision weapons, chosen blindness, and devastating consequences. The featured essay explores how AI companies are becoming defense contractors and the urgent need for regulation.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">G</span> The Guardian</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-policy">Policy</span>
+                <h2 class="news-title">
+                    <a href="https://time.com/article/2026/03/11/anthropic-claude-disruptive-company-pentagon/" target="_blank" rel="noopener">Anthropic Designated as Supply-Chain Risk to National Security by DoD</a>
+                </h2>
+                <p class="news-description">On March 4, Anthropic received a letter from the Department of Defense confirming its designation as a supply-chain risk to national security. Tech leaders from Google, Amazon, Apple and Microsoft have supported Anthropic's lawsuit against this designation.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">T</span> Time</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-policy">Policy</span>
+                <h2 class="news-title">
+                    <a href="https://www.kunm.org/npr-news/2026-03-15/how-the-u-s-is-using-ai-in-the-war-in-iran" target="_blank" rel="noopener">How the U.S. is Using AI in the War in Iran</a>
+                </h2>
+                <p class="news-description">NPR's Ayesha Rascoe talks to Lauren Kahn of Georgetown University's Center for Security and Emerging Technology about the role of artificial intelligence in modern warfare and the Iran conflict.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">N</span> NPR/KUNM</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <!-- Technology & Products -->
+            <article class="news-card">
+                <span class="category-tag tag-tech">Technology</span>
+                <h2 class="news-title">
+                    <a href="https://techfundingnews.com/musk-macrohard-ai-tesla-xai-software-disruption/" target="_blank" rel="noopener">Musk Unveils 'Macrohard': AI That Runs Entire Software Companies</a>
+                </h2>
+                <p class="news-description">Elon Musk revealed Macrohard, a new AI system that will run on Tesla's in-house AI4 chip while relying on NVIDIA-powered servers used by xAI, designed to automate entire software company operations.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">TF</span> Tech Funding News</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-tech">Technology</span>
+                <h2 class="news-title">
+                    <a href="https://www.bez-kabli.pl/technology-news-14-03-2026/" target="_blank" rel="noopener">Tesla and xAI Unveil Digital Optimus for Office Workflow Automation</a>
+                </h2>
+                <p class="news-description">Tesla and xAI unveiled Digital Optimus, a joint project to automate complex office workflows by watching and replaying human computer interactions. The system uses a dual-process architecture with Tesla's AI4 chip and Grok providing high-level reasoning.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">BK</span> Bez Kabli</span>
+                    <span class="timestamp">📅 March 14, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-tech">Technology</span>
+                <h2 class="news-title">
+                    <a href="https://indianexpress.com/article/technology/artificial-intelligence/elon-musk-xai-rebuilding-leadership-exits-grok-10584373/" target="_blank" rel="noopener">xAI Rebuilding Amid Leadership Exits and Grok Controversy</a>
+                </h2>
+                <p class="news-description">Following xAI's acquisition by SpaceX, the company is undergoing restructuring with leadership exits. The AI chatbot Grok has drawn regulatory scrutiny after being used to generate non-consensual imagery, prompting calls for rebuilding the organization.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">IE</span> Indian Express</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-tech">Technology</span>
+                <h2 class="news-title">
+                    <a href="https://www.ndtv.com/world-news/benjamin-netanyahu-death-rumours-israeli-pm-netanyahus-new-video-under-scrutiny-grok-calls-it-deepfake-11221132" target="_blank" rel="noopener">Grok AI Flags Netanyahu Video as Potential Deepfake</a>
+                </h2>
+                <p class="news-description">X's AI chatbot Grok labeled a coffee shop video of Israeli PM Benjamin Netanyahu as 'AI-generated' content, highlighting the growing challenge of deepfake detection and AI's role in verifying media authenticity.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">N</span> NDTV</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <!-- Research & Development -->
+            <article class="news-card">
+                <span class="category-tag tag-research">Research</span>
+                <h2 class="news-title">
+                    <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" target="_blank" rel="noopener">Scientists Uncover the Brain's Hidden Learning Blocks</a>
+                </h2>
+                <p class="news-description">New research reveals insights into how the brain processes learning, with implications for more efficient AI systems. Additional breakthroughs include a single beam of light running AI with supercomputer power and artificial neurons that behave like real brain cells.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">SD</span> ScienceDaily</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-research">Research</span>
+                <h2 class="news-title">
+                    <a href="https://en.wikipedia.org/wiki/Claude_(language_model)" target="_blank" rel="noopener">Claude Opus 4.6 Agents Write C Compiler in Rust</a>
+                </h2>
+                <p class="news-description">Anthropic researcher Nicholas Carlini reported that 16 Claude Opus 4.6 agents were able to write a C compiler in Rust from scratch, capable of compiling the Linux kernel, demonstrating significant advances in AI-assisted software development.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">W</span> Wikipedia</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-research">Research</span>
+                <h2 class="news-title">
+                    <a href="https://www.devflokers.com/blog/latest-ai-news-technology-developments-march-14-2026" target="_blank" rel="noopener">Latest AI Developments: GPT-5.4 Agency, NVIDIA Rubin Chip, and More</a>
+                </h2>
+                <p class="news-description">Key developments include GPT-5.4's agency capabilities, the NVIDIA Rubin chip launch, the #QuitGPT movement, and results from 'Humanity's Last Exam' - a comprehensive AI benchmark test.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">DF</span> devFlokers</span>
+                    <span class="timestamp">📅 March 14, 2026</span>
+                </div>
+            </article>
+            
+            <!-- Industry Updates -->
+            <article class="news-card">
+                <span class="category-tag tag-business">Industry</span>
+                <h2 class="news-title">
+                    <a href="https://www.business-standard.com/topic/artificial-intelligence" target="_blank" rel="noopener">Meta Considers Job Cuts Affecting 16,000 Employees</a>
+                </h2>
+                <p class="news-description">Meta is considering job cuts that could affect about 16,000 employees as the company ramps up spending on artificial intelligence infrastructure, data centres, and AI-driven tools.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">BS</span> Business Standard</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-business">Industry</span>
+                <h2 class="news-title">
+                    <a href="https://indianexpress.com/article/technology/tech-news-technology/accel-google-unveil-first-cohort-ai-startups-accelerator-10584755/" target="_blank" rel="noopener">Accel and Google Unveil First Cohort of AI Startups for India Accelerator</a>
+                </h2>
+                <p class="news-description">The new 2026 cohort of the India-focused accelerator programme includes teams spanning Singapore and Silicon Valley, supporting founders building AI solutions for diverse markets.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">IE</span> Indian Express</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <span class="category-tag tag-tech">Industry</span>
+                <h2 class="news-title">
+                    <a href="https://www.pcmag.com/news/categories/ai" target="_blank" rel="noopener">AMD Targets New Class of PC Users Running AI Models Locally</a>
+                </h2>
+                <p class="news-description">AMD sees an emerging class of PC users running AI models locally on powerful, AI-optimized machines—a new category poised to compete with Nvidia's DGX Spark.</p>
+                <div class="news-meta">
+                    <span class="source"><span class="source-icon">PC</span> PCMag</span>
+                    <span class="timestamp">📅 March 15, 2026</span>
+                </div>
+            </article>
+        </div>
+        
+        <footer>
+            <p><span class="pulse"></span>Daily AI News Digest</p>
+            <p style="margin-top: 10px; font-size: 0.85rem; color: #555;">Generated on March 16, 2026 • Curated from multiple sources</p>
+        </footer>
+    </div>
+</body>
+</html>
