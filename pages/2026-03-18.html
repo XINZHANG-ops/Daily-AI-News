@@ -3,204 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily AI News Digest - March 18, 2026</title>
+    <title>AI News Digest - March 18, 2026</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
             min-height: 100vh;
             color: #e0e0e0;
             line-height: 1.6;
         }
-
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-
+        
         header {
             text-align: center;
             margin-bottom: 50px;
-            padding: 30px 0;
+            padding: 40px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        header h1 {
-            font-size: 2.5rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
         }
-
-        header .date {
-            color: #a0a0a0;
-            font-size: 1.1rem;
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
         }
-
+        
         .section {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
-
+        
         .section-title {
             font-size: 1.8rem;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             display: flex;
             align-items: center;
             gap: 12px;
             color: #fff;
         }
-
-        .section-title .emoji {
+        
+        .section-title span {
             font-size: 2rem;
         }
-
-        /* GitHub Repo Cards */
-        .repo-grid {
+        
+        .cards-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 20px;
+            gap: 25px;
         }
-
-        .repo-card {
+        
+        .card {
             background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
             border-radius: 16px;
             padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
         }
-
-        .repo-card:hover {
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(102, 126, 234, 0.5);
-            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
         }
-
-        .repo-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 12px;
+        
+        .card:hover::before {
+            opacity: 1;
         }
-
-        .repo-card h3 a {
-            color: #667eea;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .repo-card h3 a:hover {
-            color: #764ba2;
-        }
-
-        .repo-card p {
-            color: #b0b0b0;
-            font-size: 0.95rem;
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             margin-bottom: 15px;
-            line-height: 1.5;
         }
-
-        .repo-stats {
-            display: flex;
-            gap: 20px;
-            font-size: 0.9rem;
-        }
-
-        .repo-stat {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: #ffd700;
-        }
-
-        .repo-stat.forks {
-            color: #a0a0a0;
-        }
-
-        /* News Cards */
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 20px;
-        }
-
-        .news-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
-            padding: 25px;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .news-card:hover {
-            transform: translateY(-3px);
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(118, 75, 162, 0.5);
-            box-shadow: 0 8px 30px rgba(118, 75, 162, 0.15);
-        }
-
-        .news-card h3 {
-            font-size: 1.15rem;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-
-        .news-card h3 a {
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
             color: #fff;
             text-decoration: none;
-            transition: color 0.2s;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
         }
-
-        .news-card h3 a:hover {
-            color: #667eea;
+        
+        .card-title:hover {
+            color: #00d4ff;
         }
-
-        .news-meta {
+        
+        .card-meta {
             display: flex;
             gap: 15px;
-            margin-bottom: 12px;
             font-size: 0.85rem;
             color: #888;
         }
-
-        .news-source {
-            color: #667eea;
-            font-weight: 500;
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
-
-        .news-card p {
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
             color: #b0b0b0;
             font-size: 0.95rem;
-            line-height: 1.5;
+            line-height: 1.6;
         }
-
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
         footer {
             text-align: center;
             padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #666;
             font-size: 0.9rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            margin-top: 30px;
         }
-
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8rem;
+            h1 {
+                font-size: 2rem;
             }
-
-            .repo-grid,
-            .news-grid {
+            
+            .cards-grid {
                 grid-template-columns: 1fr;
             }
-
+            
             .section-title {
                 font-size: 1.4rem;
             }
@@ -211,117 +251,98 @@
     <div class="container">
         <header>
             <h1>🤖 Daily AI News Digest</h1>
-            <div class="date">March 18, 2026</div>
+            <div class="date-badge">📅 March 18, 2026</div>
         </header>
 
         <section class="section">
-            <h2 class="section-title">
-                <span class="emoji">🐙</span>
-                Trending GitHub Repositories
-            </h2>
-            <div class="repo-grid">
-                <div class="repo-card">
-                    <h3><a href="https://github.com/microsoft/BitNet.cpp" target="_blank">microsoft/BitNet.cpp</a></h3>
-                    <p>Official inference framework for 1-bit LLMs. Can theoretically run a 100-billion parameter language model on a single CPU at human reading speed. MIT licensed.</p>
-                    <div class="repo-stats">
-                        <span class="repo-stat">⭐ 27k</span>
-                        <span class="repo-stat forks">🍴 2.1k</span>
+            <h2 class="section-title"><span>🐙</span> Trending GitHub Repositories</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/louisfb01/start-machine-learning" class="card-title" target="_blank">louisfb01/start-machine-learning</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 8.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.1k forks</div>
+                            </div>
+                        </div>
                     </div>
+                    <p class="card-description">A complete guide to start and improve in machine learning (ML), artificial intelligence (AI) in 2026 without ANY background in the field and stay up-to-date with the latest news and state-of-the-art techniques!</p>
                 </div>
-                <div class="repo-card">
-                    <h3><a href="https://github.com/lightpanda-io/browser" target="_blank">lightpanda-io/browser</a></h3>
-                    <p>Headless browser built from scratch in Zig, designed exclusively for AI agents and web automation. 9-11x faster and uses 16x less memory than Chrome over the network.</p>
-                    <div class="repo-stats">
-                        <span class="repo-stat">⭐ 8.5k</span>
-                        <span class="repo-stat forks">🍴 420</span>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/georgeguimaraes/awesome-ml-gen-ai-elixir" class="card-title" target="_blank">georgeguimaraes/awesome-ml-gen-ai-elixir</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 89 forks</div>
+                            </div>
+                        </div>
                     </div>
+                    <p class="card-description">A curated list of Machine Learning libraries and resources for the Elixir programming language. Features the insight that Python agent frameworks are independently rediscovering BEAM primitives.</p>
                 </div>
-                <div class="repo-card">
-                    <h3><a href="https://github.com/666ghj/MiroFish" target="_blank">666ghj/MiroFish</a></h3>
-                    <p>A concise and universal swarm intelligence engine for predicting a wide array of phenomena. Emerging as a trending repository for AI prediction models.</p>
-                    <div class="repo-stats">
-                        <span class="repo-stat">⭐ 3.2k</span>
-                        <span class="repo-stat forks">🍴 280</span>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/harvard-edge/cs249r_book" class="card-title" target="_blank">harvard-edge/cs249r_book</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 12.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.8k forks</div>
+                            </div>
+                        </div>
                     </div>
+                    <p class="card-description">Machine Learning Systems - Harvard's open-source textbook. Stars signal to universities and foundations that this work matters, directly funding workshops and hardware kits for underserved classrooms.</p>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <h2 class="section-title">
-                <span class="emoji">🤖</span>
-                AI News & Updates
-            </h2>
-            <div class="news-grid">
-                <div class="news-card">
-                    <h3><a href="https://www.cnbc.com/2026/03/16/nvidia-gtc-2026-ceo-jensen-huang-keynote-blackwell-vera-rubin.html" target="_blank">Nvidia CEO Forecasts $1 Trillion in AI Chip Revenue by 2027</a></h3>
-                    <div class="news-meta">
-                        <span class="news-source">CNBC</span>
-                        <span>11 hours ago</span>
-                    </div>
-                    <p>Jensen Huang projects that sales of Nvidia's Vera Rubin and Blackwell systems will exceed $1 trillion over the next two years, doubling previous forecasts of $500 billion.</p>
+            <h2 class="section-title"><span>🤖</span> AI News & Updates</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">9 hours ago</div>
+                    <a href="https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/" class="card-title" target="_blank">A Mystery AI Model Has Developers Buzzing: Is This DeepSeek's Latest Blockbuster?</a>
+                    <p class="card-description">A powerful trillion-parameter AI model called 'Hunter Alpha' surfaced anonymously on OpenRouter, sparking speculation that Chinese startup DeepSeek may be quietly testing its next-generation V4 system ahead of an official launch.</p>
                 </div>
-                <div class="news-card">
-                    <h3><a href="https://www.reuters.com/business/amazon-ceo-sees-ai-doubling-his-prior-aws-sales-projections-600-billion-by-2036-2026-03-17/" target="_blank">Amazon CEO Sees AI Doubling AWS Sales to $600 Billion by 2036</a></h3>
-                    <div class="news-meta">
-                        <span class="news-source">Reuters</span>
-                        <span>2 hours ago</span>
-                    </div>
-                    <p>Andy Jassy said during an internal all-hands meeting he expects AI could help Amazon Web Services achieve $600 billion in annual sales, double his prior estimate.</p>
+                <div class="card news-card">
+                    <span class="news-source">Bloomberg</span>
+                    <div class="news-time">18 hours ago</div>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-18/is-an-ai-bubble-set-to-burst-navigating-the-artificial-intelligence-boom" class="card-title" target="_blank">Is an AI Bubble Set to Burst? Navigating the Artificial Intelligence Boom</a>
+                    <p class="card-description">Three years into the AI boom, Wall Street can't decide whether artificial intelligence will be too disruptive or not disruptive enough. Market analysts debate the sustainability of current valuations.</p>
                 </div>
-                <div class="news-card">
-                    <h3><a href="https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/" target="_blank">Mystery AI Model Sparks DeepSeek V4 Speculation</a></h3>
-                    <div class="news-meta">
-                        <span class="news-source">Reuters</span>
-                        <span>7 hours ago</span>
-                    </div>
-                    <p>A free model named 'Hunter Alpha' surfaced on OpenRouter with 1 trillion parameters and 1M token context window. Tests suggest it's a Chinese AI with knowledge cutoff of May 2025.</p>
+                <div class="card news-card">
+                    <span class="news-source">Fortune</span>
+                    <div class="news-time">6 days ago</div>
+                    <a href="https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/" class="card-title" target="_blank">Morgan Stanley Warns an AI Breakthrough Is Coming in 2026</a>
+                    <p class="card-description">A massive AI breakthrough is coming in the first half of 2026—and Morgan Stanley says most of the world isn't ready for it. The investment bank warns that a transformative leap in artificial intelligence is imminent.</p>
                 </div>
-                <div class="news-card">
-                    <h3><a href="https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-launches-gpt-5-4-mini-and-nano-models-following-gpt-5-4-debut/articleshow/129649030.cms" target="_blank">OpenAI Launches GPT-5.4 Mini and Nano Models</a></h3>
-                    <div class="news-meta">
-                        <span class="news-source">Economic Times</span>
-                        <span>4 hours ago</span>
-                    </div>
-                    <p>OpenAI has positioned GPT-5.4 as its leading model for professional workflows across ChatGPT and Codex, following increased competition from Google's Gemini and Anthropic's Claude.</p>
+                <div class="card news-card">
+                    <span class="news-source">IBM</span>
+                    <div class="news-time">12 hours ago</div>
+                    <a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026" class="card-title" target="_blank">The Trends That Will Shape AI and Tech in 2026</a>
+                    <p class="card-description">IBM predicts the democratization of AI agent creation will be the most exciting shift: 'The ability to design and deploy intelligent agents is moving beyond developers into the hands of everyday business users.'</p>
                 </div>
-                <div class="news-card">
-                    <h3><a href="https://www.cnbc.com/2026/03/17/microsoft-copilot-ai-suleyman.html" target="_blank">Microsoft Shakes Up Copilot AI Leadership Team</a></h3>
-                    <div class="news-meta">
-                        <span class="news-source">CNBC</span>
-                        <span>17 hours ago</span>
-                    </div>
-                    <p>Microsoft is bringing together engineering groups for commercial and consumer Copilot assistants. Jacob Andreou from Snap becomes EVP in charge of Copilot experience.</p>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">13 hours ago</div>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank">Tencent Reports 13% Revenue Increase Driven by AI Services</a>
+                    <p class="card-description">Tencent Holdings reported a 13% increase in fourth-quarter revenue, driven by strong demand for gaming and growth in its artificial intelligence services, cementing its position as China's largest social media and gaming company.</p>
                 </div>
-                <div class="news-card">
-                    <h3><a href="https://www.bbc.com/news/articles/c74721xyd1wo" target="_blank">Anthropic Seeks Weapons Expert to Stop 'Catastrophic Misuse'</a></h3>
-                    <div class="news-meta">
-                        <span class="news-source">BBC</span>
-                        <span>1 day ago</span>
-                    </div>
-                    <p>The AI firm is looking to hire a chemical weapons and high-yield explosives expert to try to prevent catastrophic misuse of its software.</p>
-                </div>
-                <div class="news-card">
-                    <h3><a href="https://www.reuters.com/technology/artificial-intelligence/" target="_blank">Tencent Reports 13% Revenue Increase Driven by AI Services</a></h3>
-                    <div class="news-meta">
-                        <span class="news-source">Reuters</span>
-                        <span>1 hour ago</span>
-                    </div>
-                    <p>Tencent Holdings reported strong demand for gaming and growth in its artificial intelligence services, cementing its position as China's largest social media and gaming company.</p>
-                </div>
-                <div class="news-card">
-                    <h3><a href="https://www.reuters.com/business/world-at-work/meta-planning-sweeping-layoffs-ai-costs-mount-2026-03-14/" target="_blank">Meta Planning Sweeping Layoffs as AI Costs Mount</a></h3>
-                    <div class="news-meta">
-                        <span class="news-source">Reuters</span>
-                        <span>1 day ago</span>
-                    </div>
-                    <p>Meta is reportedly planning significant workforce reductions as the company grapples with mounting costs from its AI infrastructure investments.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><span>💡</span> Daily Insight</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content">DeepSeek的'Hunter Alpha'神秘现身，标志着中国AI势力正在以'隐身模式'挑战西方主导权。与此同时，IBM预测的'AI Agent民主化'与Morgan Stanley警告的'2026年突破'形成共振——我们正站在一个拐点上：AI从'工具'进化为'自主代理'的速度远超预期。值得警惕的是，Bloomberg的'泡沫论'并非空穴来风，当技术迭代速度超过商业落地能力时，洗牌不可避免。短期看Agent框架，长期看自主AI基础设施。</div>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p>Generated on March 18, 2026 • Daily AI News Digest</p>
+            <p>Generated automatically • Daily AI News Digest</p>
         </footer>
     </div>
 </body>

@@ -222,13 +222,45 @@
             line-height: 1.6;
         }
         
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        /* Insight Section */
+        .insight-section {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.1) 0%, rgba(83, 52, 131, 0.1) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .insight-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #533483 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e4e4e4;
+            font-style: italic;
+            position: relative;
+            padding-left: 20px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -5px;
+            top: -10px;
+            font-size: 3rem;
+            color: #e94560;
+            opacity: 0.3;
+            font-family: Georgia, serif;
         }
     </style>
 </head>
@@ -287,6 +319,18 @@
                     <p class="news-desc">{{NEWS_DESCRIPTION}}</p>
                 </div>
                 <!-- END_NEWS_ITEM -->
+            </div>
+        </section>
+        
+        <!-- SECTION 3: DAILY INSIGHT -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💡</span>
+                <h2 class="section-title">Daily Insight</h2>
+            </div>
+            
+            <div class="insight-section">
+                <p class="insight-content">{{INSIGHT_ANALYSIS}}</p>
             </div>
         </section>
         

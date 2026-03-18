@@ -42,6 +42,12 @@ def build_news_card(news):
                     <p class="card-description">{news['description']}</p>
                 </div>'''
 
+def build_insight_section(insight_text):
+    """Build HTML for the insight section."""
+    return f'''                <div class="insight-card">
+                    <div class="insight-content">{insight_text}</div>
+                </div>'''
+
 def build_html(data):
     """Build full HTML page from JSON data."""
     date = data['date']
@@ -49,6 +55,11 @@ def build_html(data):
     
     repos_html = '\n'.join([build_repo_card(r) for r in data['github_repos']])
     news_html = '\n'.join([build_news_card(n) for n in data['ai_news']])
+    
+    # Get insight analysis if available
+    insight_html = ''
+    if 'insight_analysis' in data and data['insight_analysis']:
+        insight_html = build_insight_section(data['insight_analysis'])
     
     html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -228,6 +239,49 @@ def build_html(data):
             margin-bottom: 5px;
         }}
         
+        /* Insight Section */
+        .insight-card {{
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }}
+        
+        .insight-card::before {{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }}
+        
+        .insight-content {{
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }}
+        
+        .insight-content::before {{
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }}
+        
         footer {{
             text-align: center;
             padding: 40px 0;
@@ -274,6 +328,13 @@ def build_html(data):
             <h2 class="section-title"><span>🤖</span> AI News & Updates</h2>
             <div class="cards-grid">
 {news_html}
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><span>💡</span> Daily Insight</h2>
+            <div class="cards-grid">
+{insight_html}
             </div>
         </section>
 
