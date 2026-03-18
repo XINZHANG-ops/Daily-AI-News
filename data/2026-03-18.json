@@ -1,0 +1,84 @@
+{
+  "date": "2026-03-18",
+  "github_repos": [
+    {
+      "name": "microsoft/BitNet.cpp",
+      "url": "https://github.com/microsoft/BitNet.cpp",
+      "description": "Official inference framework for 1-bit LLMs. Can theoretically run a 100-billion parameter language model on a single CPU at human reading speed. MIT licensed.",
+      "stars": "27k",
+      "forks": "2.1k"
+    },
+    {
+      "name": "lightpanda-io/browser",
+      "url": "https://github.com/lightpanda-io/browser",
+      "description": "Headless browser built from scratch in Zig, designed exclusively for AI agents and web automation. 9-11x faster and uses 16x less memory than Chrome over the network.",
+      "stars": "8.5k",
+      "forks": "420"
+    },
+    {
+      "name": "666ghj/MiroFish",
+      "url": "https://github.com/666ghj/MiroFish",
+      "description": "A concise and universal swarm intelligence engine for predicting a wide array of phenomena. Emerging as a trending repository for AI prediction models.",
+      "stars": "3.2k",
+      "forks": "280"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": "Nvidia CEO Forecasts $1 Trillion in AI Chip Revenue by 2027",
+      "url": "https://www.cnbc.com/2026/03/16/nvidia-gtc-2026-ceo-jensen-huang-keynote-blackwell-vera-rubin.html",
+      "source": "CNBC",
+      "time": "11 hours ago",
+      "description": "Jensen Huang projects that sales of Nvidia's Vera Rubin and Blackwell systems will exceed $1 trillion over the next two years, doubling previous forecasts of $500 billion."
+    },
+    {
+      "title": "Amazon CEO Sees AI Doubling AWS Sales to $600 Billion by 2036",
+      "url": "https://www.reuters.com/business/amazon-ceo-sees-ai-doubling-his-prior-aws-sales-projections-600-billion-by-2036-2026-03-17/",
+      "source": "Reuters",
+      "time": "2 hours ago",
+      "description": "Andy Jassy said during an internal all-hands meeting he expects AI could help Amazon Web Services achieve $600 billion in annual sales, double his prior estimate."
+    },
+    {
+      "title": "Mystery AI Model Sparks DeepSeek V4 Speculation",
+      "url": "https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/",
+      "source": "Reuters",
+      "time": "7 hours ago",
+      "description": "A free model named 'Hunter Alpha' surfaced on OpenRouter with 1 trillion parameters and 1M token context window. Tests suggest it's a Chinese AI with knowledge cutoff of May 2025."
+    },
+    {
+      "title": "OpenAI Launches GPT-5.4 Mini and Nano Models",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-launches-gpt-5-4-mini-and-nano-models-following-gpt-5-4-debut/articleshow/129649030.cms",
+      "source": "Economic Times",
+      "time": "4 hours ago",
+      "description": "OpenAI has positioned GPT-5.4 as its leading model for professional workflows across ChatGPT and Codex, following increased competition from Google's Gemini and Anthropic's Claude."
+    },
+    {
+      "title": "Microsoft Shakes Up Copilot AI Leadership Team",
+      "url": "https://www.cnbc.com/2026/03/17/microsoft-copilot-ai-suleyman.html",
+      "source": "CNBC",
+      "time": "17 hours ago",
+      "description": "Microsoft is bringing together engineering groups for commercial and consumer Copilot assistants. Jacob Andreou from Snap becomes EVP in charge of Copilot experience."
+    },
+    {
+      "title": "Anthropic Seeks Weapons Expert to Stop 'Catastrophic Misuse'",
+      "url": "https://www.bbc.com/news/articles/c74721xyd1wo",
+      "source": "BBC",
+      "time": "1 day ago",
+      "description": "The AI firm is looking to hire a chemical weapons and high-yield explosives expert to try to prevent catastrophic misuse of its software."
+    },
+    {
+      "title": "Tencent Reports 13% Revenue Increase Driven by AI Services",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "source": "Reuters",
+      "time": "1 hour ago",
+      "description": "Tencent Holdings reported strong demand for gaming and growth in its artificial intelligence services, cementing its position as China's largest social media and gaming company."
+    },
+    {
+      "title": "Meta Planning Sweeping Layoffs as AI Costs Mount",
+      "url": "https://www.reuters.com/business/world-at-work/meta-planning-sweeping-layoffs-ai-costs-mount-2026-03-14/",
+      "source": "Reuters",
+      "time": "1 day ago",
+      "description": "Meta is reportedly planning significant workforce reductions as the company grapples with mounting costs from its AI infrastructure investments."
+    }
+  ]
+}
