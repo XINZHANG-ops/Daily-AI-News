@@ -9,15 +9,15 @@
       "forks": "3.8k"
     },
     {
-      "name": "gitnexus/gitnexus",
-      "url": "https://github.com/gitnexus/gitnexus",
+      "name": "abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
       "description": "Zero-server code intelligence engine that transforms GitHub repos and ZIP files into interactive knowledge graphs entirely in the browser. Features built-in Graph RAG agent, Tree-sitter AST parsing for 12+ languages, and MCP tool integration for AI coding assistants. Captures dependencies, call chains, and execution flows.",
       "stars": "4.8k",
       "forks": "312"
     },
     {
-      "name": "lightpanda-io/lightpanda",
-      "url": "https://github.com/lightpanda-io/lightpanda",
+      "name": "lightpanda-io/browser",
+      "url": "https://github.com/lightpanda-io/browser",
       "description": "Headless browser built from scratch in Zig, designed exclusively for AI agents and web automation. Achieves 11x faster performance and 16x less memory than Chrome headless. Clean-room implementation with 97k lines of Zig across 312 source files. Purpose-built for automated, server-side, AI-driven web interaction.",
       "stars": "18.5k",
       "forks": "892"
