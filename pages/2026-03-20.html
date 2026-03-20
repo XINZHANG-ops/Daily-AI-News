@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily AI Digest - March 20, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%);
+            color: #c9d1d9;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 50px;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #58a6ff, #a371f7, #58a6ff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            animation: shine 3s linear infinite;
+        }
+        
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+        
+        header .date {
+            color: #8b949e;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #f0f6fc;
+        }
+        
+        .section-title .icon {
+            font-size: 2rem;
+        }
+        
+        /* GitHub Repos Section */
+        .repo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .repo-card {
+            background: linear-gradient(145deg, #21262d 0%, #161b22 100%);
+            border: 1px solid #30363d;
+            border-radius: 16px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .repo-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #58a6ff, #a371f7);
+        }
+        
+        .repo-card:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        
+        .repo-name {
+            font-size: 1.3rem;
+            color: #58a6ff;
+            margin-bottom: 12px;
+            word-break: break-all;
+        }
+        
+        .repo-name a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .repo-name a:hover {
+            text-decoration: underline;
+        }
+        
+        .repo-description {
+            color: #8b949e;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .repo-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #c9d1d9;
+        }
+        
+        .stat-icon {
+            color: #f0883e;
+        }
+        
+        /* News Section */
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .news-card {
+            background: linear-gradient(145deg, #21262d 0%, #161b22 100%);
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .news-card:hover {
+            border-color: #a371f7;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .news-title {
+            font-size: 1.15rem;
+            color: #f0f6fc;
+            flex: 1;
+            line-height: 1.5;
+        }
+        
+        .news-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .news-title a:hover {
+            color: #58a6ff;
+            text-decoration: underline;
+        }
+        
+        .news-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #8b949e;
+            flex-shrink: 0;
+        }
+        
+        .news-source {
+            background: #30363d;
+            padding: 3px 10px;
+            border-radius: 20px;
+            color: #c9d1d9;
+        }
+        
+        .news-description {
+            color: #8b949e;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        /* Insight Section */
+        .insight-section {
+            background: linear-gradient(145deg, #1f2937 0%, #111827 100%);
+            border: 2px solid #374151;
+            border-radius: 20px;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .insight-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top right, rgba(88, 166, 255, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .insight-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .insight-quote {
+            font-size: 1.15rem;
+            line-height: 2;
+            color: #e5e7eb;
+            padding-left: 30px;
+            border-left: 4px solid #58a6ff;
+            font-style: italic;
+        }
+        
+        .insight-quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: #58a6ff;
+            opacity: 0.3;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-family: Georgia, serif;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #30363d;
+            margin-top: 60px;
+            color: #6e7681;
+        }
+        
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .repo-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .news-header {
+                flex-direction: column;
+            }
+            
+            .insight-quote {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily AI Digest</h1>
+            <div class="date">March 20, 2026</div>
+        </header>
+
+        <!-- GitHub Repos Section -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="icon">🐙</span>
+                Trending GitHub Repositories
+            </h2>
+            <div class="repo-grid">
+                <div class="repo-card">
+                    <div class="repo-name">
+                        <a href="https://github.com/AstrBotDevs/AstrBot" target="_blank">AstrBotDevs/AstrBot</a>
+                    </div>
+                    <div class="repo-description">An instant messaging chatbot infrastructure designed for AI agents. Integrates various IM platforms (QQ, WeChat, Telegram, Feishu), Large Language Models, and AI functionalities. Supports plugins and multi-platform deployment with a single codebase. 40k+ stars with active Android app development.</div>
+                    <div class="repo-stats">
+                        <div class="stat">
+                            <span class="stat-icon">⭐</span>
+                            <span>40.2k</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-icon">🍴</span>
+                            <span>3.8k</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="repo-card">
+                    <div class="repo-name">
+                        <a href="https://github.com/gitnexus/gitnexus" target="_blank">gitnexus/gitnexus</a>
+                    </div>
+                    <div class="repo-description">Zero-server code intelligence engine that transforms GitHub repos and ZIP files into interactive knowledge graphs entirely in the browser. Features built-in Graph RAG agent, Tree-sitter AST parsing for 12+ languages, and MCP tool integration for AI coding assistants. Captures dependencies, call chains, and execution flows.</div>
+                    <div class="repo-stats">
+                        <div class="stat">
+                            <span class="stat-icon">⭐</span>
+                            <span>4.8k</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-icon">🍴</span>
+                            <span>312</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="repo-card">
+                    <div class="repo-name">
+                        <a href="https://github.com/lightpanda-io/lightpanda" target="_blank">lightpanda-io/lightpanda</a>
+                    </div>
+                    <div class="repo-description">Headless browser built from scratch in Zig, designed exclusively for AI agents and web automation. Achieves 11x faster performance and 16x less memory than Chrome headless. Clean-room implementation with 97k lines of Zig across 312 source files. Purpose-built for automated, server-side, AI-driven web interaction.</div>
+                    <div class="repo-stats">
+                        <div class="stat">
+                            <span class="stat-icon">⭐</span>
+                            <span>18.5k</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-icon">🍴</span>
+                            <span>892</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI News Section -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="icon">🤖</span>
+                AI News & Updates
+            </h2>
+            <div class="news-list">
+                <div class="news-card">
+                    <div class="news-header">
+                        <div class="news-title">
+                            <a href="https://www.indiatoday.in/technology/news/story/google-takes-on-anthropic-new-ai-studio-update-lets-you-make-full-web-apps-from-simple-prompts-2884614-2026-03-20" target="_blank">Google Launches Antigravity to Challenge Anthropic's Claude Code</a>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-source">India Today</span>
+                            <span>3 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="news-description">Google is taking on Anthropic's Claude Code with Antigravity, a new AI Studio update that lets developers create full web applications from simple prompts. The move signals Google's aggressive push into the AI coding assistant market.</div>
+                </div>
+                <div class="news-card">
+                    <div class="news-header">
+                        <div class="news-title">
+                            <a href="https://releasebot.io/updates/anthropic" target="_blank">Anthropic Makes 1M Token Context Window Generally Available</a>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-source">Releasebot</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="news-description">Anthropic announced 1M token context window GA for Claude Opus 4.6 and Sonnet 4.6 at standard pricing, with no beta header, removed limits, and media cap up to 600. This massive context window enables processing of entire codebases and large documents.</div>
+                </div>
+                <div class="news-card">
+                    <div class="news-header">
+                        <div class="news-title">
+                            <a href="https://www.usnews.com/news/top-news/articles/2026-03-19/hegseth-wants-pentagon-to-dump-anthropics-claude-but-military-users-say-its-not-so-easy" target="_blank">Pentagon Orders Contractors to Wind Down Anthropic Reliance</a>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-source">US News</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="news-description">The Defense Department has ordered contractors, including major defense firms, to assess and report their reliance on Anthropic products and begin winding them down. Military users say the transition won't be easy given Claude's integration into workflows.</div>
+                </div>
+                <div class="news-card">
+                    <div class="news-header">
+                        <div class="news-title">
+                            <a href="https://www.thenews.com.pk/latest/1396262-openai-to-buy-new-python-tools-in-major-ai-push-to-take-on-anthropic-as-competition-intensifies" target="_blank">OpenAI Acquires Python Toolmaker to Compete with Anthropic</a>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-source">The News</span>
+                            <span>12 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="news-description">OpenAI announced it will acquire a Python toolmaker in a major push to compete with Anthropic as the AI coding assistant market intensifies. The move follows Anthropic's success with Claude Code and growing enterprise adoption.</div>
+                </div>
+                <div class="news-card">
+                    <div class="news-header">
+                        <div class="news-title">
+                            <a href="https://www.nbcnews.com/tech/tech-news/doordash-now-letting-drivers-train-ai-rcna264387" target="_blank">DoorDash Lets Drivers Train AI on the Side</a>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-source">NBC News</span>
+                            <span>7 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="news-description">DoorDash is now letting its drivers train AI through special gloves that remember movements, used to train AI-powered home robots. Additional tasks include checking restaurant hours, photographing drop-off locations, and helping autonomous vehicles.</div>
+                </div>
+                <div class="news-card">
+                    <div class="news-header">
+                        <div class="news-title">
+                            <a href="https://www.guardonline.com/news/national/oasis-security-raises-120m-series-b-to-secure-the-rise-of-enterprise-ai-agents/article_7703e8d9-61db-559e-8de0-b6bb9a9053e2.html" target="_blank">Oasis Security Raises $120M for Enterprise AI Agent Security</a>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-source">Guard Online</span>
+                            <span>18 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="news-description">Oasis Security raised $120M Series B to secure the rise of enterprise AI agents. The company introduced the first enterprise-grade, intent-based, just-in-time access for AI agents and machines, giving enterprises control over critical system access.</div>
+                </div>
+                <div class="news-card">
+                    <div class="news-header">
+                        <div class="news-title">
+                            <a href="https://www.nytimes.com/2026/03/19/technology/ai-agents-uses.html" target="_blank">NYT: AI Bots as Personal Digital Assistants Come with Serious Risks</a>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-source">The New York Times</span>
+                            <span>16 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="news-description">A new kind of AI agent technology is gaining popularity among tech enthusiasts. These bots do more than chat—they act as personal digital assistants that use software apps and websites on behalf of users, but come with serious security and privacy risks.</div>
+                </div>
+                <div class="news-card">
+                    <div class="news-header">
+                        <div class="news-title">
+                            <a href="https://www.cnet.com/news-live/nvidia-gtc-2026-live-blog-updates/" target="_blank">NVIDIA GTC 2026 Wraps: NemoClaw, Physical AI, and Disney's Olaf</a>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-source">CNET</span>
+                            <span>13 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="news-description">NVIDIA GTC 2026 concluded with major announcements including the NemoClaw AI agent platform, physical AI systems for robotics, and a partnership with Disney featuring a self-walking Olaf robot powered by AI.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insight Section -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="icon">💡</span>
+                Daily Insight
+            </h2>
+            <div class="insight-section">
+                <div class="insight-content">
+                    <div class="insight-quote">
+                        AI Agent基础设施正在经历'工具化'到'专业化'的跃迁：AstrBot代表多平台Agent部署的标准化，GitNexus用知识图谱解决代码理解的上下文断裂，Lightpanda则为AI原生场景重构浏览器底层。与此同时，Google Antigravity与Anthropic Claude Code的正面交锋、OpenAI收购Python工具链、以及五角大楼对Anthropic的'去依赖化'，标志着AI编程助手市场进入白热化阶段。短期看Agent基础设施的垂直整合，长期关注AI安全与地缘政治的交织演变。
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Generated on March 20, 2026 | <a href="../index.html">View Archive</a></p>
+        </footer>
+    </div>
+</body>
+</html>

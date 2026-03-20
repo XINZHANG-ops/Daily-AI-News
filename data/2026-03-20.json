@@ -1,0 +1,85 @@
+{
+  "date": "2026-03-20",
+  "github_repos": [
+    {
+      "name": "AstrBotDevs/AstrBot",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "description": "An instant messaging chatbot infrastructure designed for AI agents. Integrates various IM platforms (QQ, WeChat, Telegram, Feishu), Large Language Models, and AI functionalities. Supports plugins and multi-platform deployment with a single codebase. 40k+ stars with active Android app development.",
+      "stars": "40.2k",
+      "forks": "3.8k"
+    },
+    {
+      "name": "gitnexus/gitnexus",
+      "url": "https://github.com/gitnexus/gitnexus",
+      "description": "Zero-server code intelligence engine that transforms GitHub repos and ZIP files into interactive knowledge graphs entirely in the browser. Features built-in Graph RAG agent, Tree-sitter AST parsing for 12+ languages, and MCP tool integration for AI coding assistants. Captures dependencies, call chains, and execution flows.",
+      "stars": "4.8k",
+      "forks": "312"
+    },
+    {
+      "name": "lightpanda-io/lightpanda",
+      "url": "https://github.com/lightpanda-io/lightpanda",
+      "description": "Headless browser built from scratch in Zig, designed exclusively for AI agents and web automation. Achieves 11x faster performance and 16x less memory than Chrome headless. Clean-room implementation with 97k lines of Zig across 312 source files. Purpose-built for automated, server-side, AI-driven web interaction.",
+      "stars": "18.5k",
+      "forks": "892"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": "Google Launches Antigravity to Challenge Anthropic's Claude Code",
+      "url": "https://www.indiatoday.in/technology/news/story/google-takes-on-anthropic-new-ai-studio-update-lets-you-make-full-web-apps-from-simple-prompts-2884614-2026-03-20",
+      "source": "India Today",
+      "time": "3 hours ago",
+      "description": "Google is taking on Anthropic's Claude Code with Antigravity, a new AI Studio update that lets developers create full web applications from simple prompts. The move signals Google's aggressive push into the AI coding assistant market."
+    },
+    {
+      "title": "Anthropic Makes 1M Token Context Window Generally Available",
+      "url": "https://releasebot.io/updates/anthropic",
+      "source": "Releasebot",
+      "time": "1 day ago",
+      "description": "Anthropic announced 1M token context window GA for Claude Opus 4.6 and Sonnet 4.6 at standard pricing, with no beta header, removed limits, and media cap up to 600. This massive context window enables processing of entire codebases and large documents."
+    },
+    {
+      "title": "Pentagon Orders Contractors to Wind Down Anthropic Reliance",
+      "url": "https://www.usnews.com/news/top-news/articles/2026-03-19/hegseth-wants-pentagon-to-dump-anthropics-claude-but-military-users-say-its-not-so-easy",
+      "source": "US News",
+      "time": "1 day ago",
+      "description": "The Defense Department has ordered contractors, including major defense firms, to assess and report their reliance on Anthropic products and begin winding them down. Military users say the transition won't be easy given Claude's integration into workflows."
+    },
+    {
+      "title": "OpenAI Acquires Python Toolmaker to Compete with Anthropic",
+      "url": "https://www.thenews.com.pk/latest/1396262-openai-to-buy-new-python-tools-in-major-ai-push-to-take-on-anthropic-as-competition-intensifies",
+      "source": "The News",
+      "time": "12 hours ago",
+      "description": "OpenAI announced it will acquire a Python toolmaker in a major push to compete with Anthropic as the AI coding assistant market intensifies. The move follows Anthropic's success with Claude Code and growing enterprise adoption."
+    },
+    {
+      "title": "DoorDash Lets Drivers Train AI on the Side",
+      "url": "https://www.nbcnews.com/tech/tech-news/doordash-now-letting-drivers-train-ai-rcna264387",
+      "source": "NBC News",
+      "time": "7 hours ago",
+      "description": "DoorDash is now letting its drivers train AI through special gloves that remember movements, used to train AI-powered home robots. Additional tasks include checking restaurant hours, photographing drop-off locations, and helping autonomous vehicles."
+    },
+    {
+      "title": "Oasis Security Raises $120M for Enterprise AI Agent Security",
+      "url": "https://www.guardonline.com/news/national/oasis-security-raises-120m-series-b-to-secure-the-rise-of-enterprise-ai-agents/article_7703e8d9-61db-559e-8de0-b6bb9a9053e2.html",
+      "source": "Guard Online",
+      "time": "18 hours ago",
+      "description": "Oasis Security raised $120M Series B to secure the rise of enterprise AI agents. The company introduced the first enterprise-grade, intent-based, just-in-time access for AI agents and machines, giving enterprises control over critical system access."
+    },
+    {
+      "title": "NYT: AI Bots as Personal Digital Assistants Come with Serious Risks",
+      "url": "https://www.nytimes.com/2026/03/19/technology/ai-agents-uses.html",
+      "source": "The New York Times",
+      "time": "16 hours ago",
+      "description": "A new kind of AI agent technology is gaining popularity among tech enthusiasts. These bots do more than chat—they act as personal digital assistants that use software apps and websites on behalf of users, but come with serious security and privacy risks."
+    },
+    {
+      "title": "NVIDIA GTC 2026 Wraps: NemoClaw, Physical AI, and Disney's Olaf",
+      "url": "https://www.cnet.com/news-live/nvidia-gtc-2026-live-blog-updates/",
+      "source": "CNET",
+      "time": "13 hours ago",
+      "description": "NVIDIA GTC 2026 concluded with major announcements including the NemoClaw AI agent platform, physical AI systems for robotics, and a partnership with Disney featuring a self-walking Olaf robot powered by AI."
+    }
+  ],
+  "insight_analysis": "AI Agent基础设施正在经历'工具化'到'专业化'的跃迁：AstrBot代表多平台Agent部署的标准化，GitNexus用知识图谱解决代码理解的上下文断裂，Lightpanda则为AI原生场景重构浏览器底层。与此同时，Google Antigravity与Anthropic Claude Code的正面交锋、OpenAI收购Python工具链、以及五角大楼对Anthropic的'去依赖化'，标志着AI编程助手市场进入白热化阶段。短期看Agent基础设施的垂直整合，长期关注AI安全与地缘政治的交织演变。"
+}
