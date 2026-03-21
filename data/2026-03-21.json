@@ -1,0 +1,71 @@
+{
+  "date": "2026-03-21",
+  "github_repos": [
+    {
+      "name": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "description": "Make websites accessible for AI agents. Automate tasks online with ease. A Python framework that enables AI agents to control browsers and perform web automation tasks.",
+      "stars": "51.2k",
+      "forks": "5.8k"
+    },
+    {
+      "name": "microsoft/ai-agents-for-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "description": "12 Lessons to Get Started Building AI Agents. A comprehensive tutorial series by Microsoft covering agent fundamentals, tool use, planning, multi-agent systems, and deployment.",
+      "stars": "12.8k",
+      "forks": "3.2k"
+    },
+    {
+      "name": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "description": "GenAI Agent Framework, the Pydantic way. Type-safe agent development with model-agnostic support for OpenAI, Anthropic, Gemini, and 20+ providers. Built by the Pydantic team.",
+      "stars": "38.5k",
+      "forks": "3.1k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": "White House Releases AI Policy Blueprint for Congress",
+      "url": "https://www.politico.com/news/2026/03/20/white-house-releases-ai-policy-blueprint-for-congress-00837354",
+      "source": "Politico",
+      "time": "March 20, 2026",
+      "description": "The White House published a comprehensive policy framework urging Congress to enact federal AI legislation that would pre-empt state rules, protect children, and shield communities from high energy costs related to AI infrastructure."
+    },
+    {
+      "title": "OpenAI Acquires Astral, Maker of uv and Ruff Python Tools",
+      "url": "https://thenewstack.io/openai-astral-acquisition/",
+      "source": "The New Stack",
+      "time": "March 19, 2026",
+      "description": "OpenAI announced plans to acquire Astral, the company behind popular Python developer tools uv (126M+ monthly downloads), Ruff, and ty. The acquisition aims to integrate these tools into OpenAI's Codex ecosystem while maintaining open-source continuity."
+    },
+    {
+      "title": "Meta AI Agent Causes Large Sensitive Data Leak to Employees",
+      "url": "https://www.theguardian.com/technology/2026/mar/20/meta-ai-agents-instruction-causes-large-sensitive-data-leak-to-employees",
+      "source": "The Guardian",
+      "time": "March 20, 2026",
+      "description": "An internal AI agent at Meta provided incorrect guidance to an engineer, exposing sensitive user and company data to unauthorized employees for approximately two hours. The incident raises concerns about AI agent safety in production environments."
+    },
+    {
+      "title": "Super Micro Co-Founder Charged in $2.5B AI Chip Smuggling Plot",
+      "url": "https://www.reuters.com/world/us-charges-three-people-with-conspiring-divert-ai-tech-china-2026-03-19/",
+      "source": "Reuters",
+      "time": "March 19, 2026",
+      "description": "U.S. prosecutors charged three people linked to Super Micro Computer, including its co-founder, with conspiring to smuggle $2.5 billion worth of Nvidia AI servers to China. The scheme allegedly involved using hair dryers to remove labels and conceal the shipments."
+    },
+    {
+      "title": "Google Testing Gemini Mac Desktop App to Rival ChatGPT",
+      "url": "https://www.theneurondaily.com/p/google-vs-openai-battle-of-the-super-apps",
+      "source": "The Neuron",
+      "time": "March 20, 2026",
+      "description": "Google is testing a dedicated Gemini application for Mac computers, positioning it to compete directly with OpenAI's ChatGPT and Anthropic's Claude desktop apps. The move signals intensifying competition in the AI assistant space."
+    },
+    {
+      "title": "OpenAI Releases GPT-5.4 'Thinking' Model",
+      "url": "https://tech-insider.org/chatgpt-vs-claude-vs-deepseek-vs-gemini-2026/",
+      "source": "Tech Insider",
+      "time": "March 5, 2026",
+      "description": "OpenAI launched GPT-5.4 'Thinking', a model that achieves GPT-6-level reasoning capabilities within a smaller, faster architecture. The release demonstrates OpenAI's strategy of delivering advanced reasoning in more efficient package sizes."
+    }
+  ],
+  "insight_analysis": "本周AI领域呈现三大关键趋势：首先，AI Agent安全成为焦点——Meta的Agent误操作导致数据泄露事件警示我们，自动化代理在缺乏足够安全护栏时可能带来严重风险。其次，OpenAI收购Astral标志着AI巨头开始整合开发者工具链，uv和Ruff等基础设施将被深度集成到AI编码工作流中。最后，白宫AI政策框架的发布预示着联邦层面监管即将落地，这将重塑各州分散的AI治理格局，为行业带来更统一的合规标准。"
+}
