@@ -1,0 +1,85 @@
+{
+  "date": "2026-03-22",
+  "github_repos": [
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works with Claude Code, Cursor, Codex and OpenCode. Provides structured workflows including brainstorming, TDD, systematic debugging, and subagent-driven development.",
+      "stars": "40.9k",
+      "forks": "2.8k"
+    },
+    {
+      "name": "666ghj/MiroFish",
+      "url": "https://github.com/666ghj/MiroFish",
+      "description": "A Simple and Universal Swarm Intelligence Engine for predicting anything. Built on multi-agent technology, it constructs high-fidelity parallel digital worlds from seed information to simulate social evolution and forecast future outcomes.",
+      "stars": "28k",
+      "forks": "1.9k"
+    },
+    {
+      "name": "langchain-ai/open-swe",
+      "url": "https://github.com/langchain-ai/open-swe",
+      "description": "An open-source asynchronous coding agent framework built on LangGraph and Deep Agents. Enables internal coding agents that integrate with Slack, Linear, and GitHub to autonomously analyze codebases, plan implementations, and open PRs.",
+      "stars": "5.2k",
+      "forks": "612"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": "Anthropic Launches Claude Code Channels for Telegram and Discord",
+      "url": "https://indianexpress.com/article/technology/artificial-intelligence/what-is-claude-code-channels-anthropic-openclaw-ai-agents-10595037/",
+      "source": "Indian Express",
+      "time": "Mar 22, 2026",
+      "description": "Anthropic unveiled Claude Code Channels, allowing developers to message their local Claude Code sessions from Telegram and Discord. The feature uses MCP-based plugins for two-way chat, positioning it as a more secure alternative to OpenClaw with tighter security controls and narrower scope."
+    },
+    {
+      "title": "Xiaomi Unveils MiMo-V2-Pro Trillion-Parameter AI Model",
+      "url": "https://efficienist.com/xiaomi-officially-launches-mimo-v2-pro-confirming-hunter-alpha-rumors/",
+      "source": "Efficienist",
+      "time": "Mar 21, 2026",
+      "description": "Xiaomi officially launched MiMo-V2-Pro, a trillion-parameter AI model with 42 billion active parameters, confirming rumors that the mysterious 'Hunter Alpha' on OpenRouter was a stealth test. Built by former DeepSeek researcher Luo Fuli, the model approaches GPT-5.2 performance at a fraction of the cost."
+    },
+    {
+      "title": "OpenAI to Nearly Double Workforce to 8,000 by End of 2026",
+      "url": "https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/",
+      "source": "Reuters",
+      "time": "Mar 21, 2026",
+      "description": "OpenAI plans to expand its workforce from 4,200 to 8,000 employees by the end of 2026, according to the Financial Times. The rapid hiring reflects the company's aggressive scaling strategy amid intensifying competition in the AI space."
+    },
+    {
+      "title": "US Labels Anthropic as 'Unacceptable Risk' to Military Supply Chains",
+      "url": "https://www.wired.com/story/anthropic-denies-sabotage-ai-tools-war-claude/",
+      "source": "WIRED",
+      "time": "Mar 20, 2026",
+      "description": "Defense Secretary Pete Hegseth labeled Anthropic a supply-chain risk, preventing Department of Defense use of Claude. Anthropic denies it could sabotage AI tools during war, stating they lack the technical ability to disable models or alter behavior during military operations."
+    },
+    {
+      "title": "Cursor Composer 2 with Kimi K2.5 Beats Claude Opus 4.6 at $0.50/1M",
+      "url": "https://www.abhs.in/blog/cursor-composer-2-kimi-k2-5-beats-claude-coding-model-2026",
+      "source": "Abhishek Gautam",
+      "time": "Mar 22, 2026",
+      "description": "Cursor's Composer 2 powered by Moonshot AI's Kimi K2.5 achieved 73.7% on SWE-bench Multilingual, surpassing Claude Opus 4.6 at just $0.50 per million tokens. Moonshot AI is accusing Cursor of license violation in an ongoing dispute."
+    },
+    {
+      "title": "Atlassian Cuts 5% of Workforce, CEO Cites AI-Driven Efficiency",
+      "url": "https://www.theguardian.com/technology/2026/mar/21/atlassian-cuts-layoffs-staff-now-looking-for-work-ai",
+      "source": "The Guardian",
+      "time": "Mar 21, 2026",
+      "description": "Atlassian announced layoffs affecting 5% of its workforce (approximately 1,000 employees). CEO Mike Cannon-Brookes stated the cuts are due to AI-driven efficiency gains, with the company needing fewer people to accomplish the same work."
+    },
+    {
+      "title": "OpenClaw AI Agents Hailed as 'Next Computing OS' by Nvidia CEO",
+      "url": "https://news.quantosei.com/2026/03/21/nvidia-ceo-hails-openclaw-as-the-new-computer-in-ai-agent-surge/",
+      "source": "QuantoSei News",
+      "time": "Mar 21, 2026",
+      "description": "Nvidia CEO Jensen Huang praised OpenClaw AI agents as 'the new computer' at GTC 2026. The company introduced NemoClaw, a toolkit for running specialized agents safely in enterprise environments through contained virtual environments."
+    },
+    {
+      "title": "Tech Layoffs Top 45,000 in Early 2026, US Leads Global Job Cuts",
+      "url": "https://www.storyboard18.com/trending/tech-layoffs-top-45000-in-early-2026-us-leads-global-job-cuts-92815.htm",
+      "source": "Storyboard18",
+      "time": "Mar 21, 2026",
+      "description": "Technology sector layoffs have exceeded 45,000 in the first quarter of 2026. Dell reduced its workforce by 11,000 over the past year while Salesforce cut approximately 1,000 roles while aligning teams with AI-driven products."
+    }
+  ],
+  "insight_analysis": "本周AI领域释放三个关键信号：第一，**Agent框架标准化竞赛白热化**——从Superpowers的技能工作流到Open SWE的异步代理架构，开发者正从'提示工程'转向'工作流工程'，AI编码助手进入方法论竞争阶段。第二，**中美模型军备竞赛升温**——小米MiMo-V2-Pro以万亿参数、前DeepSeek研究员领衔强势入局，结合Cursor的Kimi K2.5在成本效率上击败Claude，中国AI正从'追赶者'变为'成本性能比颠覆者'。第三，**AI替代焦虑从舆论走进财报**——Atlassian明确将裁员归因于AI效率提升，标志着生成式AI从'辅助工具'向'生产力替代'的认知转变正在C-Level确立。值得关注的方向：MCP协议正成为Agent互操作的事实标准，而'数字孪生+群体智能'（如MiroFish）可能开启预测性AI应用的新范式。"
+}

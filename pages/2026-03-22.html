@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily AI News Digest - March 22, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        
+        header .date {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+        }
+        
+        section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(102, 126, 234, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        /* GitHub Repo Cards */
+        .repo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .repo-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .repo-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+        
+        .repo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .repo-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .repo-card h3 a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .repo-card h3 a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+        
+        .repo-card .description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .repo-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .repo-stats span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .repo-stats .stars {
+            color: #ffd700;
+        }
+        
+        .repo-stats .forks {
+            color: #a0a0a0;
+        }
+        
+        /* News Cards */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+        
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .news-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+        
+        .news-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .news-card h3 a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .news-card h3 a:hover {
+            color: #667eea;
+        }
+        
+        .news-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 12px;
+        }
+        
+        .news-meta .source {
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        .news-card .description {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        /* Insight Section */
+        .insight-block {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+            border-radius: 20px;
+            padding: 35px;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            position: relative;
+        }
+        
+        .insight-block::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            font-size: 4rem;
+            color: rgba(102, 126, 234, 0.3);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .insight-content {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #d0d0d0;
+            text-indent: 2em;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .insight-content strong {
+            color: #667eea;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 50px;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .repo-grid,
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .repo-card,
+            .news-card {
+                padding: 20px;
+            }
+            
+            .insight-block {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Daily AI News Digest</h1>
+            <p class="date">March 22, 2026</p>
+        </header>
+        
+        <section>
+            <h2 class="section-title"><span>🐙</span> Trending GitHub Repositories</h2>
+            <div class="repo-grid">
+                <div class="repo-card">
+                    <h3><a href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a></h3>
+                    <p class="description">An agentic skills framework & software development methodology that works with Claude Code, Cursor, Codex and OpenCode. Provides structured workflows including brainstorming, TDD, systematic debugging, and subagent-driven development.</p>
+                    <div class="repo-stats">
+                        <span class="stars">⭐ 40.9k</span>
+                        <span class="forks">🍴 2.8k</span>
+                    </div>
+                </div>
+                
+                <div class="repo-card">
+                    <h3><a href="https://github.com/666ghj/MiroFish" target="_blank">666ghj/MiroFish</a></h3>
+                    <p class="description">A Simple and Universal Swarm Intelligence Engine for predicting anything. Built on multi-agent technology, it constructs high-fidelity parallel digital worlds from seed information to simulate social evolution and forecast future outcomes.</p>
+                    <div class="repo-stats">
+                        <span class="stars">⭐ 28k</span>
+                        <span class="forks">🍴 1.9k</span>
+                    </div>
+                </div>
+                
+                <div class="repo-card">
+                    <h3><a href="https://github.com/langchain-ai/open-swe" target="_blank">langchain-ai/open-swe</a></h3>
+                    <p class="description">An open-source asynchronous coding agent framework built on LangGraph and Deep Agents. Enables internal coding agents that integrate with Slack, Linear, and GitHub to autonomously analyze codebases, plan implementations, and open PRs.</p>
+                    <div class="repo-stats">
+                        <span class="stars">⭐ 5.2k</span>
+                        <span class="forks">🍴 612</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="section-title"><span>🤖</span> AI News & Updates</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <h3><a href="https://indianexpress.com/article/technology/artificial-intelligence/what-is-claude-code-channels-anthropic-openclaw-ai-agents-10595037/" target="_blank">Anthropic Launches Claude Code Channels for Telegram and Discord</a></h3>
+                    <div class="news-meta">
+                        <span class="source">Indian Express</span>
+                        <span class="time">Mar 22, 2026</span>
+                    </div>
+                    <p class="description">Anthropic unveiled Claude Code Channels, allowing developers to message their local Claude Code sessions from Telegram and Discord. The feature uses MCP-based plugins for two-way chat, positioning it as a more secure alternative to OpenClaw with tighter security controls and narrower scope.</p>
+                </div>
+                
+                <div class="news-card">
+                    <h3><a href="https://efficienist.com/xiaomi-officially-launches-mimo-v2-pro-confirming-hunter-alpha-rumors/" target="_blank">Xiaomi Unveils MiMo-V2-Pro Trillion-Parameter AI Model</a></h3>
+                    <div class="news-meta">
+                        <span class="source">Efficienist</span>
+                        <span class="time">Mar 21, 2026</span>
+                    </div>
+                    <p class="description">Xiaomi officially launched MiMo-V2-Pro, a trillion-parameter AI model with 42 billion active parameters, confirming rumors that the mysterious 'Hunter Alpha' on OpenRouter was a stealth test. Built by former DeepSeek researcher Luo Fuli, the model approaches GPT-5.2 performance at a fraction of the cost.</p>
+                </div>
+                
+                <div class="news-card">
+                    <h3><a href="https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/" target="_blank">OpenAI to Nearly Double Workforce to 8,000 by End of 2026</a></h3>
+                    <div class="news-meta">
+                        <span class="source">Reuters</span>
+                        <span class="time">Mar 21, 2026</span>
+                    </div>
+                    <p class="description">OpenAI plans to expand its workforce from 4,200 to 8,000 employees by the end of 2026, according to the Financial Times. The rapid hiring reflects the company's aggressive scaling strategy amid intensifying competition in the AI space.</p>
+                </div>
+                
+                <div class="news-card">
+                    <h3><a href="https://www.wired.com/story/anthropic-denies-sabotage-ai-tools-war-claude/" target="_blank">US Labels Anthropic as 'Unacceptable Risk' to Military Supply Chains</a></h3>
+                    <div class="news-meta">
+                        <span class="source">WIRED</span>
+                        <span class="time">Mar 20, 2026</span>
+                    </div>
+                    <p class="description">Defense Secretary Pete Hegseth labeled Anthropic a supply-chain risk, preventing Department of Defense use of Claude. Anthropic denies it could sabotage AI tools during war, stating they lack the technical ability to disable models or alter behavior during military operations.</p>
+                </div>
+                
+                <div class="news-card">
+                    <h3><a href="https://www.abhs.in/blog/cursor-composer-2-kimi-k2-5-beats-claude-coding-model-2026" target="_blank">Cursor Composer 2 with Kimi K2.5 Beats Claude Opus 4.6 at $0.50/1M</a></h3>
+                    <div class="news-meta">
+                        <span class="source">Abhishek Gautam</span>
+                        <span class="time">Mar 22, 2026</span>
+                    </div>
+                    <p class="description">Cursor's Composer 2 powered by Moonshot AI's Kimi K2.5 achieved 73.7% on SWE-bench Multilingual, surpassing Claude Opus 4.6 at just $0.50 per million tokens. Moonshot AI is accusing Cursor of license violation in an ongoing dispute.</p>
+                </div>
+                
+                <div class="news-card">
+                    <h3><a href="https://www.theguardian.com/technology/2026/mar/21/atlassian-cuts-layoffs-staff-now-looking-for-work-ai" target="_blank">Atlassian Cuts 5% of Workforce, CEO Cites AI-Driven Efficiency</a></h3>
+                    <div class="news-meta">
+                        <span class="source">The Guardian</span>
+                        <span class="time">Mar 21, 2026</span>
+                    </div>
+                    <p class="description">Atlassian announced layoffs affecting 5% of its workforce (approximately 1,000 employees). CEO Mike Cannon-Brookes stated the cuts are due to AI-driven efficiency gains, with the company needing fewer people to accomplish the same work.</p>
+                </div>
+                
+                <div class="news-card">
+                    <h3><a href="https://news.quantosei.com/2026/03/21/nvidia-ceo-hails-openclaw-as-the-new-computer-in-ai-agent-surge/" target="_blank">OpenClaw AI Agents Hailed as 'Next Computing OS' by Nvidia CEO</a></h3>
+                    <div class="news-meta">
+                        <span class="source">QuantoSei News</span>
+                        <span class="time">Mar 21, 2026</span>
+                    </div>
+                    <p class="description">Nvidia CEO Jensen Huang praised OpenClaw AI agents as 'the new computer' at GTC 2026. The company introduced NemoClaw, a toolkit for running specialized agents safely in enterprise environments through contained virtual environments.</p>
+                </div>
+                
+                <div class="news-card">
+                    <h3><a href="https://www.storyboard18.com/trending/tech-layoffs-top-45000-in-early-2026-us-leads-global-job-cuts-92815.htm" target="_blank">Tech Layoffs Top 45,000 in Early 2026, US Leads Global Job Cuts</a></h3>
+                    <div class="news-meta">
+                        <span class="source">Storyboard18</span>
+                        <span class="time">Mar 21, 2026</span>
+                    </div>
+                    <p class="description">Technology sector layoffs have exceeded 45,000 in the first quarter of 2026. Dell reduced its workforce by 11,000 over the past year while Salesforce cut approximately 1,000 roles while aligning teams with AI-driven products.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="section-title"><span>💡</span> Daily Insight</h2>
+            <div class="insight-block">
+                <p class="insight-content">本周AI领域释放三个关键信号：第一，<strong>Agent框架标准化竞赛白热化</strong>——从Superpowers的技能工作流到Open SWE的异步代理架构，开发者正从'提示工程'转向'工作流工程'，AI编码助手进入方法论竞争阶段。第二，<strong>中美模型军备竞赛升温</strong>——小米MiMo-V2-Pro以万亿参数、前DeepSeek研究员领衔强势入局，结合Cursor的Kimi K2.5在成本效率上击败Claude，中国AI正从'追赶者'变为'成本性能比颠覆者'。第三，<strong>AI替代焦虑从舆论走进财报</strong>——Atlassian明确将裁员归因于AI效率提升，标志着生成式AI从'辅助工具'向'生产力替代'的认知转变正在C-Level确立。值得关注的方向：MCP协议正成为Agent互操作的事实标准，而'数字孪生+群体智能'（如MiroFish）可能开启预测性AI应用的新范式。</p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Generated on March 22, 2026 • <a href="../index.html">← Back to Archive</a></p>
+        </footer>
+    </div>
+</body>
+</html>
