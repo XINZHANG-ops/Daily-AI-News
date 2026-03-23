@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily Digest - 2026-03-23</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 3rem;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+        
+        header .date {
+            color: #888;
+            font-size: 1.1rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .github-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .repo-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .repo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            border-color: rgba(102, 126, 234, 0.5);
+        }
+        
+        .repo-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .repo-card h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .repo-card h3 a:hover {
+            text-decoration: underline;
+        }
+        
+        .repo-card .description {
+            color: #b0b0b0;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .repo-stats {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        
+        .repo-stats span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .news-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid #764ba2;
+            border-radius: 0 12px 12px 0;
+            padding: 1.5rem;
+            transition: background 0.3s ease;
+        }
+        
+        .news-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+        }
+        
+        .news-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .news-card h3 a {
+            color: #e0e0e0;
+            text-decoration: none;
+        }
+        
+        .news-card h3 a:hover {
+            color: #667eea;
+        }
+        
+        .news-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+        
+        .news-card .description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+        }
+        
+        .insight-block {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            border-radius: 16px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .insight-block::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 8rem;
+            color: rgba(102, 126, 234, 0.1);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .insight-block p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .insight-block strong {
+            color: #667eea;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 3rem;
+            color: #666;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .github-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Daily AI Digest</h1>
+            <p class="date">Monday, March 23, 2026</p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title"><span>🐙</span> Trending GitHub Repositories</h2>
+            <div class="github-grid">
+                <div class="repo-card">
+                    <h3><a href="https://github.com/lastmile-ai/mcp-agent" target="_blank">lastmile-ai/mcp-agent</a></h3>
+                    <p class="description">Build effective agents using Model Context Protocol and simple workflow patterns. Pairs Anthropic's Building Effective Agents patterns with a batteries-included MCP runtime so developers can focus on behaviour, not boilerplate.</p>
+                    <div class="repo-stats">
+                        <span>⭐ 7.9k</span>
+                        <span>🍴 791</span>
+                    </div>
+                </div>
+                <div class="repo-card">
+                    <h3><a href="https://github.com/kyegomez/swarms" target="_blank">kyegomez/swarms</a></h3>
+                    <p class="description">The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework. Features HeavySwarm with a sophisticated 5-phase workflow inspired by X.AI's Grok heavy implementation. Uses specialized agents for research, analysis, alternatives, and verification.</p>
+                    <div class="repo-stats">
+                        <span>⭐ 22.1k</span>
+                        <span>🍴 2.1k</span>
+                    </div>
+                </div>
+                <div class="repo-card">
+                    <h3><a href="https://github.com/github/github-mcp-server" target="_blank">github/github-mcp-server</a></h3>
+                    <p class="description">GitHub's official MCP Server for AI-powered data access and tool integration. Now includes secret scanning to detect exposed credentials before commits. Compatible with VS Code 1.101+, Claude Desktop, Cursor, Windsurf, and other MCP hosts.</p>
+                    <div class="repo-stats">
+                        <span>⭐ 15.3k</span>
+                        <span>🍴 1.2k</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><span>📰</span> AI News & Updates</h2>
+            <div class="news-list">
+                <div class="news-card">
+                    <div class="news-meta">
+                        <span>The White House</span>
+                        <span>March 20, 2026</span>
+                    </div>
+                    <h3><a href="https://www.whitehouse.gov/articles/2026/03/president-donald-j-trump-unveils-national-ai-legislative-framework/" target="_blank">White House Unveils National AI Legislative Framework</a></h3>
+                    <p class="description">The Trump Administration issued a comprehensive national legislative framework addressing six key objectives: protecting children, safeguarding American communities, respecting IP rights, preventing censorship, enabling innovation, and educating the workforce. The framework calls for federal pre-emption of conflicting state laws.</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-meta">
+                        <span>CNBC</span>
+                        <span>March 19, 2026</span>
+                    </div>
+                    <h3><a href="https://www.cnbc.com/2026/03/19/openai-desktop-super-app-chatgpt-browser-codex.html" target="_blank">OpenAI Plans Desktop Super App Combining ChatGPT, Codex, and Browser</a></h3>
+                    <p class="description">OpenAI will merge its web browser (Atlas), ChatGPT app, and Codex coding assistant into a single desktop super app. Users will get one unified interface for chatting, coding, browsing, and task automation instead of separate tools.</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-meta">
+                        <span>The Guardian</span>
+                        <span>March 20, 2026</span>
+                    </div>
+                    <h3><a href="https://www.theguardian.com/technology/2026/mar/20/meta-ai-agents-instruction-causes-large-sensitive-data-leak-to-employees" target="_blank">Meta AI Agent Causes Large Sensitive Data Leak to Employees</a></h3>
+                    <p class="description">An internal AI agent at Meta provided incorrect guidance to an engineer, causing sensitive user and company data to be exposed to unauthorized employees for approximately two hours. The incident raises serious concerns about AI agent safety in production environments.</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-meta">
+                        <span>NIST</span>
+                        <span>March 9, 2026</span>
+                    </div>
+                    <h3><a href="https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure" target="_blank">NIST AI Agent Standards Initiative RFI Deadline Approaches</a></h3>
+                    <p class="description">NIST's AI Agent Standards Initiative (CAISI) Request for Information on AI Agent Security closes March 9. The initiative aims to develop interoperable and secure standards for autonomous AI systems. ITL's AI Agent Identity and Authorization Concept Paper follows on April 2.</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-meta">
+                        <span>CSA</span>
+                        <span>March 13, 2026</span>
+                    </div>
+                    <h3><a href="https://cloudsecurityalliance.org/blog/2026/03/13/the-state-of-cloud-and-ai-security-in-2026" target="_blank">Cloud Security Alliance: Shift to Continuous Exposure Management for AI Agents</a></h3>
+                    <p class="description">As decentralized AI agents and complex identity fabrics redefine the digital perimeter in 2026, security teams must shift from static patching to continuous exposure management. The report highlights that execution layer is where AI agent attacks actually happen.</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-meta">
+                        <span>Microsoft Security Blog</span>
+                        <span>March 20, 2026</span>
+                    </div>
+                    <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/03/20/secure-agentic-ai-end-to-end/" target="_blank">Microsoft Announces End-to-End Secure Agentic AI at RSAC 2026</a></h3>
+                    <p class="description">At RSAC 2026, Microsoft introduced new capabilities for securing agentic AI including visibility into enterprise risks, continuous adaptive access for identities, safeguarding sensitive data across AI workflows, and threat defense at machine speed.</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-meta">
+                        <span>Reuters</span>
+                        <span>March 21, 2026</span>
+                    </div>
+                    <h3><a href="https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/" target="_blank">OpenAI to Nearly Double Workforce to 8,000 by End of 2026</a></h3>
+                    <p class="description">OpenAI plans to expand its workforce from 4,200 to 8,000 employees by the end of 2026, according to the Financial Times. The rapid hiring reflects the company's aggressive scaling strategy amid intensifying competition in the AI space.</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-meta">
+                        <span>The Guardian</span>
+                        <span>March 21, 2026</span>
+                    </div>
+                    <h3><a href="https://www.theguardian.com/technology/2026/mar/21/atlassian-cuts-layoffs-staff-now-looking-for-work-ai" target="_blank">Atlassian Cuts 5% of Workforce, CEO Cites AI-Driven Efficiency</a></h3>
+                    <p class="description">Atlassian announced layoffs affecting 5% of its workforce (approximately 1,000 employees). CEO Mike Cannon-Brookes stated the cuts are due to AI-driven efficiency gains, with the company needing fewer people to accomplish the same work.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><span>💡</span> Daily Insight</h2>
+            <div class="insight-block">
+                <p>本周AI领域呈现三大关键信号：第一，<strong>MCP协议正在成为Agent互操作的事实标准</strong>——lastmile-ai/mcp-agent、GitHub官方MCP Server等工具的涌现，标志着开发者正从'自建Agent'转向'协议标准化'。第二，<strong>AI安全从边缘走向中心</strong>——Meta的Agent数据泄露、NIST的标准倡议、CSA的连续暴露管理警告，共同指向一个现实：Agent自主性与安全性的矛盾正在激化。第三，<strong>AI劳动力替代从言论走进财报</strong>——Atlassian明确将5%裁员归因于AI效率提升，OpenAI却反向扩招至8000人，揭示AI产业正在分裂为'效率替代'与'能力扩张'两条路径。白宫AI框架的出台预示着联邦监管即将统一各州分散格局，值得关注的方向：MCP生态的标准化竞赛与Agent安全执行层的防护技术。</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Generated with 🤖 by OpenClaw | <a href="../index.html">View All Digests</a></p>
+        </footer>
+    </div>
+</body>
+</html>

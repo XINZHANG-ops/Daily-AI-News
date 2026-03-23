@@ -1,0 +1,85 @@
+{
+  "date": "2026-03-23",
+  "github_repos": [
+    {
+      "name": "lastmile-ai/mcp-agent",
+      "url": "https://github.com/lastmile-ai/mcp-agent",
+      "description": "Build effective agents using Model Context Protocol and simple workflow patterns. Pairs Anthropic's Building Effective Agents patterns with a batteries-included MCP runtime so developers can focus on behaviour, not boilerplate.",
+      "stars": "7.9k",
+      "forks": "791"
+    },
+    {
+      "name": "kyegomez/swarms",
+      "url": "https://github.com/kyegomez/swarms",
+      "description": "The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework. Features HeavySwarm with a sophisticated 5-phase workflow inspired by X.AI's Grok heavy implementation. Uses specialized agents for research, analysis, alternatives, and verification.",
+      "stars": "22.1k",
+      "forks": "2.1k"
+    },
+    {
+      "name": "github/github-mcp-server",
+      "url": "https://github.com/github/github-mcp-server",
+      "description": "GitHub's official MCP Server for AI-powered data access and tool integration. Now includes secret scanning to detect exposed credentials before commits. Compatible with VS Code 1.101+, Claude Desktop, Cursor, Windsurf, and other MCP hosts.",
+      "stars": "15.3k",
+      "forks": "1.2k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": "White House Unveils National AI Legislative Framework",
+      "url": "https://www.whitehouse.gov/articles/2026/03/president-donald-j-trump-unveils-national-ai-legislative-framework/",
+      "source": "The White House",
+      "time": "March 20, 2026",
+      "description": "The Trump Administration issued a comprehensive national legislative framework addressing six key objectives: protecting children, safeguarding American communities, respecting IP rights, preventing censorship, enabling innovation, and educating the workforce. The framework calls for federal pre-emption of conflicting state laws."
+    },
+    {
+      "title": "OpenAI Plans Desktop Super App Combining ChatGPT, Codex, and Browser",
+      "url": "https://www.cnbc.com/2026/03/19/openai-desktop-super-app-chatgpt-browser-codex.html",
+      "source": "CNBC",
+      "time": "March 19, 2026",
+      "description": "OpenAI will merge its web browser (Atlas), ChatGPT app, and Codex coding assistant into a single desktop super app. Users will get one unified interface for chatting, coding, browsing, and task automation instead of separate tools."
+    },
+    {
+      "title": "Meta AI Agent Causes Large Sensitive Data Leak to Employees",
+      "url": "https://www.theguardian.com/technology/2026/mar/20/meta-ai-agents-instruction-causes-large-sensitive-data-leak-to-employees",
+      "source": "The Guardian",
+      "time": "March 20, 2026",
+      "description": "An internal AI agent at Meta provided incorrect guidance to an engineer, causing sensitive user and company data to be exposed to unauthorized employees for approximately two hours. The incident raises serious concerns about AI agent safety in production environments."
+    },
+    {
+      "title": "NIST AI Agent Standards Initiative RFI Deadline Approaches",
+      "url": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure",
+      "source": "NIST",
+      "time": "March 9, 2026",
+      "description": "NIST's AI Agent Standards Initiative (CAISI) Request for Information on AI Agent Security closes March 9. The initiative aims to develop interoperable and secure standards for autonomous AI systems. ITL's AI Agent Identity and Authorization Concept Paper follows on April 2."
+    },
+    {
+      "title": "Cloud Security Alliance: Shift to Continuous Exposure Management for AI Agents",
+      "url": "https://cloudsecurityalliance.org/blog/2026/03/13/the-state-of-cloud-and-ai-security-in-2026",
+      "source": "CSA",
+      "time": "March 13, 2026",
+      "description": "As decentralized AI agents and complex identity fabrics redefine the digital perimeter in 2026, security teams must shift from static patching to continuous exposure management. The report highlights that execution layer is where AI agent attacks actually happen."
+    },
+    {
+      "title": "Microsoft Announces End-to-End Secure Agentic AI at RSAC 2026",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/03/20/secure-agentic-ai-end-to-end/",
+      "source": "Microsoft Security Blog",
+      "time": "March 20, 2026",
+      "description": "At RSAC 2026, Microsoft introduced new capabilities for securing agentic AI including visibility into enterprise risks, continuous adaptive access for identities, safeguarding sensitive data across AI workflows, and threat defense at machine speed."
+    },
+    {
+      "title": "OpenAI to Nearly Double Workforce to 8,000 by End of 2026",
+      "url": "https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/",
+      "source": "Reuters",
+      "time": "March 21, 2026",
+      "description": "OpenAI plans to expand its workforce from 4,200 to 8,000 employees by the end of 2026, according to the Financial Times. The rapid hiring reflects the company's aggressive scaling strategy amid intensifying competition in the AI space."
+    },
+    {
+      "title": "Atlassian Cuts 5% of Workforce, CEO Cites AI-Driven Efficiency",
+      "url": "https://www.theguardian.com/technology/2026/mar/21/atlassian-cuts-layoffs-staff-now-looking-for-work-ai",
+      "source": "The Guardian",
+      "time": "March 21, 2026",
+      "description": "Atlassian announced layoffs affecting 5% of its workforce (approximately 1,000 employees). CEO Mike Cannon-Brookes stated the cuts are due to AI-driven efficiency gains, with the company needing fewer people to accomplish the same work."
+    }
+  ],
+  "insight_analysis": "本周AI领域呈现三大关键信号：第一，**MCP协议正在成为Agent互操作的事实标准**——lastmile-ai/mcp-agent、GitHub官方MCP Server等工具的涌现，标志着开发者正从'自建Agent'转向'协议标准化'。第二，**AI安全从边缘走向中心**——Meta的Agent数据泄露、NIST的标准倡议、CSA的连续暴露管理警告，共同指向一个现实：Agent自主性与安全性的矛盾正在激化。第三，**AI劳动力替代从言论走进财报**——Atlassian明确将5%裁员归因于AI效率提升，OpenAI却反向扩招至8000人，揭示AI产业正在分裂为'效率替代'与'能力扩张'两条路径。白宫AI框架的出台预示着联邦监管即将统一各州分散格局，值得关注的方向：MCP生态的标准化竞赛与Agent安全执行层的防护技术。"
+}
