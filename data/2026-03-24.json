@@ -1,0 +1,85 @@
+{
+  "date": "2026-03-24",
+  "github_repos": [
+    {
+      "name": "miemieyong/OpenCat",
+      "url": "https://github.com/miemieyong/OpenCat",
+      "description": "An open-source AI-native browser agent framework that autonomously executes complex web tasks by visually understanding page structures and orchestrating multi-step workflows without predefined scripts.",
+      "stars": "3.2k",
+      "forks": "412"
+    },
+    {
+      "name": "WooooDyy/AgentGym",
+      "url": "https://github.com/WooooDyy/AgentGym",
+      "description": "A flexible platform for training and evaluating LLM-based agents across diverse environments, offering standardized benchmarks and an extensible architecture to accelerate agent research.",
+      "stars": "2.8k",
+      "forks": "289"
+    },
+    {
+      "name": "thunlp/Multi-Agent-RL",
+      "url": "https://github.com/thunlp/Multi-Agent-RL",
+      "description": "A research framework implementing multi-agent reinforcement learning algorithms with focus on emergent behaviors and collaborative/competitive agent dynamics in complex environments.",
+      "stars": "1.9k",
+      "forks": "198"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": "Xiaomi Enters AI Race with MiMo-V2-Pro Trillion-Parameter Model",
+      "url": "https://mmnews.tv/xiaomi-enters-ai-race-with-powerful-mimo-v2-pro-model/",
+      "source": "MMNews / Reuters",
+      "time": "March 23, 2026",
+      "description": "Xiaomi officially unveiled its flagship AI model MiMo-V2-Pro, a trillion-parameter model that ranks #3 globally on agent benchmarks, right behind Claude Opus 4.6. The model was previously tested anonymously as 'Hunter Alpha' on OpenRouter and is now free for limited time."
+    },
+    {
+      "title": "Linux Foundation Secures $12.5M from AI Giants for Open Source Security",
+      "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-12-5-million-in-grant-funding-from-leading-organizations-to-advance-open-source-security",
+      "source": "Linux Foundation",
+      "time": "March 17, 2026",
+      "description": "Seven major AI companies including Anthropic, AWS, GitHub, Google, Google DeepMind, Microsoft, and OpenAI collectively contributed $12.5 million in grants to strengthen open source security through Alpha-Omega and OpenSSF initiatives."
+    },
+    {
+      "title": "University of Michigan Creates AI System for Instant Brain MRI Analysis",
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+      "source": "ScienceDaily",
+      "time": "March 23, 2026",
+      "description": "Researchers developed an AI system that can interpret brain MRI scans in seconds, accurately identifying neurological conditions and determining which cases need urgent care, significantly accelerating diagnostic workflows."
+    },
+    {
+      "title": "OpenAI to Nearly Double Workforce to 8,000 by End of 2026",
+      "url": "https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/",
+      "source": "Reuters",
+      "time": "March 21, 2026",
+      "description": "OpenAI plans to expand its workforce from approximately 4,000 to 8,000 employees by year-end 2026, following a funding round that valued the company at $840 billion."
+    },
+    {
+      "title": "Perplexity Launches Comet Enterprise AI Browser & Agent API",
+      "url": "https://www.resultsense.com/news/2026-03-18-perplexity-launches-comet-enterprise-ai-browser",
+      "source": "ResultSense",
+      "time": "March 18, 2026",
+      "description": "Perplexity released Comet Enterprise, an AI browser for organizations with CrowdStrike security integration, and expanded its Agent API availability for developers building autonomous task execution systems."
+    },
+    {
+      "title": "Trump Administration Releases National AI Policy Framework",
+      "url": "https://www.sullcrom.com/insights/memo/2026/March/White-House-Releases-National-Policy-Framework-AI",
+      "source": "Sullivan & Cromwell",
+      "time": "March 20, 2026",
+      "description": "The White House released a national AI policy framework urging Congress to adopt a federally unified, innovation-oriented regime centered on preemption principles."
+    },
+    {
+      "title": "UK Government Publishes Copyright and AI Report",
+      "url": "https://www.prokopievlaw.com/post/uk-government-publishes-report-on-copyright-and-artificial-intelligence-united-kingdom-march-2026",
+      "source": "Prokopiev Law",
+      "time": "March 18, 2026",
+      "description": "The UK published its 'Report on Copyright and Artificial Intelligence' under the Data (Use and Access) Act 2025, examining AI training data practices and setting policy options for the relationship between copyright and AI."
+    },
+    {
+      "title": "OpenAI and Anthropic Court Private Equity for Enterprise AI Joint Ventures",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "source": "Reuters",
+      "time": "March 23, 2026",
+      "description": "OpenAI is offering private-equity firms a sweeter deal than rival Anthropic as both companies court buyout firms to form joint ventures aimed at raising fresh capital and accelerating enterprise AI adoption."
+    }
+  ],
+  "insight_analysis": "本周AI行业呈现出'巨头入场、生态整合'的显著趋势。小米以MiMo-V2-Pro强势切入大模型赛道，万亿参数规模直接对标Claude Opus，标志着中国科技公司正在从应用层向基础模型层跃迁。与此同时，Linux Foundation获得七大AI巨头联合注资，反映出行业对开源安全基础设施的共识——竞争归竞争，底层安全必须共建。值得关注的是，Agent框架持续火热，从浏览器自动化到多智能体强化学习，开发者工具生态正在快速成熟，2026年有望成为AI Agent从演示走向生产的转折点。"
+}
