@@ -1,0 +1,145 @@
+{
+  "date": "2026-03-25",
+  "github_repos": [
+    {
+      "name": "pydantic/monty",
+      "url": "https://github.com/pydantic/monty",
+      "description": {
+        "en": "A Rust-built Python interpreter for AI agents. Monty cleared 5,000 GitHub stars and landed on GitHub Trending shortly after release, filling a genuine gap for AI-native Python execution. Designed for secure, sandboxed code execution in agent environments.",
+        "zh": "为AI代理打造的Rust构建Python解释器。Monty发布后迅速突破5000 GitHub星标并登上趋势榜，填补了AI原生Python执行领域的空白。专为代理环境中的安全、沙盒化代码执行而设计。"
+      },
+      "stars": "5.2k",
+      "forks": "287"
+    },
+    {
+      "name": "shareAI-lab/learn-claude-code",
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "description": {
+        "en": "A trending repository for learning Claude Code workflows and best practices. Features interactive tutorials, prompt engineering patterns, and real-world examples for building effective AI coding assistants using Claude's capabilities.",
+        "zh": "学习Claude Code工作流程和最佳实践的热门仓库。提供交互式教程、提示工程模式和实际案例，帮助开发者利用Claude的能力构建高效的AI编程助手。"
+      },
+      "stars": "8.7k",
+      "forks": "612"
+    },
+    {
+      "name": "crewAIInc/crewAI",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "description": {
+        "en": "Framework for orchestrating role-playing, autonomous AI agents. Now at 45,900+ GitHub stars with version 1.10.1, featuring native MCP and A2A (Agent-to-Agent) communication support. Powers over 12 million daily agent executions in production.",
+        "zh": "编排角色扮演自主AI代理的框架。现已达到45,900+ GitHub星标，版本1.10.1，原生支持MCP和A2A（代理间通信）。每天在生产环境中执行超过1200万次代理任务。"
+      },
+      "stars": "45.9k",
+      "forks": "5.2k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Meta Offers Stock Options to Executives for First Time Since IPO to Compete in AI Race",
+        "zh": "Meta首次自IPO以来向高管提供股票期权以竞争AI赛道"
+      },
+      "url": "https://www.reuters.com/business/meta-grants-senior-executives-stock-awards-retain-talent-2026-03-25/",
+      "source": "Reuters",
+      "time": "March 25, 2026",
+      "description": {
+        "en": "Meta Platforms is increasing compensation for top executives with its first-ever offer of stock options since the 2012 IPO. The packages feature conversion prices from $1,116 to $3,727, as the company tries to fend off competition in AI and retain leadership talent.",
+        "zh": "Meta Platforms正通过自2012年IPO以来首次提供的股票期权来增加高管薪酬。这些方案的行权价从1,116美元到3,727美元不等，旨在抵御AI竞争并留住领导人才。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Deploys Gemini AI Agents to Monitor the Dark Web for Security Threats",
+        "zh": "谷歌部署Gemini AI代理监控暗网安全威胁"
+      },
+      "url": "https://www.theregister.com/2026/03/23/google_dark_web_ai/",
+      "source": "The Register",
+      "time": "March 23, 2026",
+      "description": {
+        "en": "Google's Gemini AI agents are crawling the dark web, sifting through over 10 million posts daily to identify threats relevant to specific organizations. The system autonomously analyzes underground forums for leaked credentials and emerging cyber threats.",
+        "zh": "谷歌的Gemini AI代理正在爬取暗网，每天筛选超过1000万条帖子以识别与特定组织相关的威胁。该系统自主分析地下论坛，寻找泄露的凭证和新兴网络威胁。"
+      }
+    },
+    {
+      "title": {
+        "en": "Apple WWDC 2026 Set for June 8: Major Siri Overhaul and iOS 27 Expected",
+        "zh": "苹果WWDC 2026定于6月8日：预计推出重大Siri升级和iOS 27"
+      },
+      "url": "https://www.theverge.com/tech/899801/apple-wwdc-2026-new-siri-apple-intelligence-standalone-app",
+      "source": "The Verge",
+      "time": "March 25, 2026",
+      "description": {
+        "en": "Apple announced WWDC 2026 will run June 8-12, with expectations for a major Siri upgrade codenamed 'Campo'. The overhaul will give Siri an interface closer to ChatGPT/Claude, with better app control and personal context from emails, messages, and notes.",
+        "zh": "苹果宣布WWDC 2026将于6月8日至12日举行，预计推出代号为'Campo'的重大Siri升级。此次改革将使Siri界面更接近ChatGPT/Claude，并增强应用控制能力和对邮件、消息、备忘录等个人数据的理解。"
+      }
+    },
+    {
+      "title": {
+        "en": "xAI Grok Suffers Outages as Grok 5 Release Misses Q1 2026 Target",
+        "zh": "xAI Grok遭遇宕机事故，Grok 5未能如期在2026年Q1发布"
+      },
+      "url": "https://www.ibtimes.com.au/grok-down-users-report-major-outage-elon-musks-ai-x-1864324",
+      "source": "International Business Times",
+      "time": "March 24, 2026",
+      "description": {
+        "en": "Grok experienced multiple outages affecting thousands of users on March 24, following a significant two-hour outage on March 10. Meanwhile, Grok 5 has not launched yet despite Elon Musk's confirmed Q1 2026 release window officially passing.",
+        "zh": "Grok在3月24日经历了多次影响数千用户的宕机事故，此前在3月10日曾发生长达两小时的重大宕机。与此同时，尽管Elon Musk确认的2026年Q1发布窗口已正式过去，Grok 5尚未发布。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek Posts 17 New Agentic AI Jobs as China's Autonomous Tech Race Heats Up",
+        "zh": "DeepSeek发布17个新的代理式AI职位，中国自主技术竞赛升温"
+      },
+      "url": "https://www.bloomberg.com/news/articles/2026-03-24/deepseek-s-latest-job-postings-highlight-pivot-to-agentic-ai",
+      "source": "Bloomberg",
+      "time": "March 24, 2026",
+      "description": {
+        "en": "DeepSeek posted 17 new job openings including Agent Deep Learning Algorithm Researcher, Agent Data Evaluation Expert, and Agent Infrastructure Engineer. The hiring surge signals the company's pivot toward agentic AI as competition intensifies.",
+        "zh": "DeepSeek发布了17个新职位，包括代理深度学习算法研究员、代理数据评估专家和代理基础设施工程师。这轮招聘热潮标志着随着竞争加剧，该公司正转向代理式AI战略。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft and NVIDIA Collaborate on AI for Nuclear Energy Solutions",
+        "zh": "微软与NVIDIA合作开发核能AI解决方案"
+      },
+      "url": "https://www.microsoft.com/en-us/industry/blog/energy-and-resources/2026/03/24/ai-for-nuclear-energy-powering-an-intelligent-resilient-future/",
+      "source": "Microsoft",
+      "time": "March 24, 2026",
+      "description": {
+        "en": "Microsoft and NVIDIA are using AI and digital twins to accelerate nuclear plant permitting, design, and operations. The collaboration aims to address the massive energy demands of AI data centers, with OpenAI planning 10 GW of AI infrastructure.",
+        "zh": "微软和NVIDIA正利用AI和数字孪生技术加速核电站的许可、设计和运营。此次合作旨在应对AI数据中心巨大的能源需求，OpenAI计划建设10吉瓦的AI基础设施。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenClaw Crosses 95K GitHub Stars as Desktop Agent Adoption Surges",
+        "zh": "OpenClaw GitHub星标突破95,000，桌面代理采用率激增"
+      },
+      "url": "https://www.openaitoolshub.org/en/blog/opencode-review-terminal-ai-coding",
+      "source": "OpenAI Tools Hub",
+      "time": "March 25, 2026",
+      "description": {
+        "en": "OpenClaw has reached 95,000+ GitHub stars with support for 75+ models including Anthropic, OpenAI, Google, xAI, DeepSeek, Mistral, and local Ollama models. The $0 subscription model where users pay only API costs continues to drive adoption.",
+        "zh": "OpenClaw已达到95,000+ GitHub星标，支持75+模型，包括Anthropic、OpenAI、谷歌、xAI、DeepSeek、Mistral和本地Ollama模型。零订阅费模式（用户仅支付API费用）持续推动采用。"
+      }
+    },
+    {
+      "title": {
+        "en": "New Research Method Makes AI Training 100x More Energy Efficient",
+        "zh": "新研究方法使AI训练能效提升100倍"
+      },
+      "url": "https://www.sciencedaily.com/releases/2025/03/250306123307.htm",
+      "source": "ScienceDaily",
+      "time": "March 24, 2026",
+      "description": {
+        "en": "Researchers developed a method that is 100 times faster and significantly more energy efficient than traditional iterative approaches. Parameters are computed directly based on probabilities rather than through time-consuming iterations.",
+        "zh": "研究人员开发了一种比传统迭代方法快100倍且能效显著提升的新方法。参数直接基于概率计算，而非耗时的迭代过程。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "March 25, 2026 marks a pivotal moment in the AI landscape with three converging trends: First, the 'Agentic Pivot' is accelerating—DeepSeek's hiring surge for agentic AI roles, CrewAI's 12 million daily executions, and Google's dark web monitoring agents signal that autonomous AI is moving from experimental to production at scale. Second, the talent war has entered a new phase with Meta's unprecedented stock option grants, revealing how fiercely Big Tech is competing for AI leadership as the technology matures. Third, infrastructure constraints are driving innovation—Microsoft and NVIDIA's nuclear energy collaboration and the 100x more efficient training method underscore that energy, not just compute, is becoming the critical bottleneck. Apple's upcoming Siri overhaul and the persistent Grok outages highlight the divergence between established players refining user experiences versus challengers struggling with reliability. Short-term watch: Agent-to-Agent (A2A) protocols becoming standardized; Long-term: Energy-efficient AI training methods reshaping cost structures and competitive dynamics.",
+    "zh": "2026年3月25日标志着AI格局的关键时刻，三大趋势正在汇聚：第一，'代理转向'正在加速——DeepSeek大量招聘代理式AI岗位、CrewAI每天1200万次代理执行、谷歌的暗网监控代理都表明自主AI正从实验阶段走向大规模生产。第二，人才竞争进入新阶段，Meta史无前例地授予高管股票期权，揭示随着技术成熟，科技巨头争夺AI领导地位的竞争有多么激烈。第三，基础设施限制正在推动创新——微软与NVIDIA的核能合作、能效提升100倍的训练新方法都表明能源（而不仅是算力）正成为关键瓶颈。苹果即将推出的Siri改革与Grok持续的宕机事故，凸显了成熟玩家优化用户体验与挑战者 struggling with reliability之间的分化。短期关注点：代理间通信（A2A）协议标准化；长期：能效AI训练方法重塑成本结构和竞争格局。"
+  }
+}

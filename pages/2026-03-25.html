@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - March 25, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 March 25, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/pydantic/monty" class="card-title" target="_blank">pydantic/monty</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 5.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 287 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A Rust-built Python interpreter for AI agents. Monty cleared 5,000 GitHub stars and landed on GitHub Trending shortly after release, filling a genuine gap for AI-native Python execution. Designed for secure, sandboxed code execution in agent environments.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">为AI代理打造的Rust构建Python解释器。Monty发布后迅速突破5000 GitHub星标并登上趋势榜，填补了AI原生Python执行领域的空白。专为代理环境中的安全、沙盒化代码执行而设计。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/shareAI-lab/learn-claude-code" class="card-title" target="_blank">shareAI-lab/learn-claude-code</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 8.7k stars</div>
+                                <div class="meta-item"><span>🍴</span> 612 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A trending repository for learning Claude Code workflows and best practices. Features interactive tutorials, prompt engineering patterns, and real-world examples for building effective AI coding assistants using Claude's capabilities.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">学习Claude Code工作流程和最佳实践的热门仓库。提供交互式教程、提示工程模式和实际案例，帮助开发者利用Claude的能力构建高效的AI编程助手。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/crewAIInc/crewAI" class="card-title" target="_blank">crewAIInc/crewAI</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 45.9k stars</div>
+                                <div class="meta-item"><span>🍴</span> 5.2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Framework for orchestrating role-playing, autonomous AI agents. Now at 45,900+ GitHub stars with version 1.10.1, featuring native MCP and A2A (Agent-to-Agent) communication support. Powers over 12 million daily agent executions in production.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">编排角色扮演自主AI代理的框架。现已达到45,900+ GitHub星标，版本1.10.1，原生支持MCP和A2A（代理间通信）。每天在生产环境中执行超过1200万次代理任务。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">March 25, 2026</div>
+                    <a href="https://www.reuters.com/business/meta-grants-senior-executives-stock-awards-retain-talent-2026-03-25/" class="card-title" target="_blank" data-lang="en">Meta Offers Stock Options to Executives for First Time Since IPO to Compete in AI Race</a>
+                    <a href="https://www.reuters.com/business/meta-grants-senior-executives-stock-awards-retain-talent-2026-03-25/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta首次自IPO以来向高管提供股票期权以竞争AI赛道</a>
+                    <p class="card-description" data-lang="en">Meta Platforms is increasing compensation for top executives with its first-ever offer of stock options since the 2012 IPO. The packages feature conversion prices from $1,116 to $3,727, as the company tries to fend off competition in AI and retain leadership talent.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta Platforms正通过自2012年IPO以来首次提供的股票期权来增加高管薪酬。这些方案的行权价从1,116美元到3,727美元不等，旨在抵御AI竞争并留住领导人才。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Register</span>
+                    <div class="news-time">March 23, 2026</div>
+                    <a href="https://www.theregister.com/2026/03/23/google_dark_web_ai/" class="card-title" target="_blank" data-lang="en">Google Deploys Gemini AI Agents to Monitor the Dark Web for Security Threats</a>
+                    <a href="https://www.theregister.com/2026/03/23/google_dark_web_ai/" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌部署Gemini AI代理监控暗网安全威胁</a>
+                    <p class="card-description" data-lang="en">Google's Gemini AI agents are crawling the dark web, sifting through over 10 million posts daily to identify threats relevant to specific organizations. The system autonomously analyzes underground forums for leaked credentials and emerging cyber threats.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌的Gemini AI代理正在爬取暗网，每天筛选超过1000万条帖子以识别与特定组织相关的威胁。该系统自主分析地下论坛，寻找泄露的凭证和新兴网络威胁。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">March 25, 2026</div>
+                    <a href="https://www.theverge.com/tech/899801/apple-wwdc-2026-new-siri-apple-intelligence-standalone-app" class="card-title" target="_blank" data-lang="en">Apple WWDC 2026 Set for June 8: Major Siri Overhaul and iOS 27 Expected</a>
+                    <a href="https://www.theverge.com/tech/899801/apple-wwdc-2026-new-siri-apple-intelligence-standalone-app" class="card-title" target="_blank" data-lang="zh" style="display: none;">苹果WWDC 2026定于6月8日：预计推出重大Siri升级和iOS 27</a>
+                    <p class="card-description" data-lang="en">Apple announced WWDC 2026 will run June 8-12, with expectations for a major Siri upgrade codenamed 'Campo'. The overhaul will give Siri an interface closer to ChatGPT/Claude, with better app control and personal context from emails, messages, and notes.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">苹果宣布WWDC 2026将于6月8日至12日举行，预计推出代号为'Campo'的重大Siri升级。此次改革将使Siri界面更接近ChatGPT/Claude，并增强应用控制能力和对邮件、消息、备忘录等个人数据的理解。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">International Business Times</span>
+                    <div class="news-time">March 24, 2026</div>
+                    <a href="https://www.ibtimes.com.au/grok-down-users-report-major-outage-elon-musks-ai-x-1864324" class="card-title" target="_blank" data-lang="en">xAI Grok Suffers Outages as Grok 5 Release Misses Q1 2026 Target</a>
+                    <a href="https://www.ibtimes.com.au/grok-down-users-report-major-outage-elon-musks-ai-x-1864324" class="card-title" target="_blank" data-lang="zh" style="display: none;">xAI Grok遭遇宕机事故，Grok 5未能如期在2026年Q1发布</a>
+                    <p class="card-description" data-lang="en">Grok experienced multiple outages affecting thousands of users on March 24, following a significant two-hour outage on March 10. Meanwhile, Grok 5 has not launched yet despite Elon Musk's confirmed Q1 2026 release window officially passing.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Grok在3月24日经历了多次影响数千用户的宕机事故，此前在3月10日曾发生长达两小时的重大宕机。与此同时，尽管Elon Musk确认的2026年Q1发布窗口已正式过去，Grok 5尚未发布。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Bloomberg</span>
+                    <div class="news-time">March 24, 2026</div>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-24/deepseek-s-latest-job-postings-highlight-pivot-to-agentic-ai" class="card-title" target="_blank" data-lang="en">DeepSeek Posts 17 New Agentic AI Jobs as China's Autonomous Tech Race Heats Up</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-24/deepseek-s-latest-job-postings-highlight-pivot-to-agentic-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepSeek发布17个新的代理式AI职位，中国自主技术竞赛升温</a>
+                    <p class="card-description" data-lang="en">DeepSeek posted 17 new job openings including Agent Deep Learning Algorithm Researcher, Agent Data Evaluation Expert, and Agent Infrastructure Engineer. The hiring surge signals the company's pivot toward agentic AI as competition intensifies.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepSeek发布了17个新职位，包括代理深度学习算法研究员、代理数据评估专家和代理基础设施工程师。这轮招聘热潮标志着随着竞争加剧，该公司正转向代理式AI战略。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Microsoft</span>
+                    <div class="news-time">March 24, 2026</div>
+                    <a href="https://www.microsoft.com/en-us/industry/blog/energy-and-resources/2026/03/24/ai-for-nuclear-energy-powering-an-intelligent-resilient-future/" class="card-title" target="_blank" data-lang="en">Microsoft and NVIDIA Collaborate on AI for Nuclear Energy Solutions</a>
+                    <a href="https://www.microsoft.com/en-us/industry/blog/energy-and-resources/2026/03/24/ai-for-nuclear-energy-powering-an-intelligent-resilient-future/" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软与NVIDIA合作开发核能AI解决方案</a>
+                    <p class="card-description" data-lang="en">Microsoft and NVIDIA are using AI and digital twins to accelerate nuclear plant permitting, design, and operations. The collaboration aims to address the massive energy demands of AI data centers, with OpenAI planning 10 GW of AI infrastructure.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软和NVIDIA正利用AI和数字孪生技术加速核电站的许可、设计和运营。此次合作旨在应对AI数据中心巨大的能源需求，OpenAI计划建设10吉瓦的AI基础设施。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">OpenAI Tools Hub</span>
+                    <div class="news-time">March 25, 2026</div>
+                    <a href="https://www.openaitoolshub.org/en/blog/opencode-review-terminal-ai-coding" class="card-title" target="_blank" data-lang="en">OpenClaw Crosses 95K GitHub Stars as Desktop Agent Adoption Surges</a>
+                    <a href="https://www.openaitoolshub.org/en/blog/opencode-review-terminal-ai-coding" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenClaw GitHub星标突破95,000，桌面代理采用率激增</a>
+                    <p class="card-description" data-lang="en">OpenClaw has reached 95,000+ GitHub stars with support for 75+ models including Anthropic, OpenAI, Google, xAI, DeepSeek, Mistral, and local Ollama models. The $0 subscription model where users pay only API costs continues to drive adoption.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenClaw已达到95,000+ GitHub星标，支持75+模型，包括Anthropic、OpenAI、谷歌、xAI、DeepSeek、Mistral和本地Ollama模型。零订阅费模式（用户仅支付API费用）持续推动采用。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">ScienceDaily</span>
+                    <div class="news-time">March 24, 2026</div>
+                    <a href="https://www.sciencedaily.com/releases/2025/03/250306123307.htm" class="card-title" target="_blank" data-lang="en">New Research Method Makes AI Training 100x More Energy Efficient</a>
+                    <a href="https://www.sciencedaily.com/releases/2025/03/250306123307.htm" class="card-title" target="_blank" data-lang="zh" style="display: none;">新研究方法使AI训练能效提升100倍</a>
+                    <p class="card-description" data-lang="en">Researchers developed a method that is 100 times faster and significantly more energy efficient than traditional iterative approaches. Parameters are computed directly based on probabilities rather than through time-consuming iterations.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">研究人员开发了一种比传统迭代方法快100倍且能效显著提升的新方法。参数直接基于概率计算，而非耗时的迭代过程。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">March 25, 2026 marks a pivotal moment in the AI landscape with three converging trends: First, the 'Agentic Pivot' is accelerating—DeepSeek's hiring surge for agentic AI roles, CrewAI's 12 million daily executions, and Google's dark web monitoring agents signal that autonomous AI is moving from experimental to production at scale. Second, the talent war has entered a new phase with Meta's unprecedented stock option grants, revealing how fiercely Big Tech is competing for AI leadership as the technology matures. Third, infrastructure constraints are driving innovation—Microsoft and NVIDIA's nuclear energy collaboration and the 100x more efficient training method underscore that energy, not just compute, is becoming the critical bottleneck. Apple's upcoming Siri overhaul and the persistent Grok outages highlight the divergence between established players refining user experiences versus challengers struggling with reliability. Short-term watch: Agent-to-Agent (A2A) protocols becoming standardized; Long-term: Energy-efficient AI training methods reshaping cost structures and competitive dynamics.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年3月25日标志着AI格局的关键时刻，三大趋势正在汇聚：第一，'代理转向'正在加速——DeepSeek大量招聘代理式AI岗位、CrewAI每天1200万次代理执行、谷歌的暗网监控代理都表明自主AI正从实验阶段走向大规模生产。第二，人才竞争进入新阶段，Meta史无前例地授予高管股票期权，揭示随着技术成熟，科技巨头争夺AI领导地位的竞争有多么激烈。第三，基础设施限制正在推动创新——微软与NVIDIA的核能合作、能效提升100倍的训练新方法都表明能源（而不仅是算力）正成为关键瓶颈。苹果即将推出的Siri改革与Grok持续的宕机事故，凸显了成熟玩家优化用户体验与挑战者 struggling with reliability之间的分化。短期关注点：代理间通信（A2A）协议标准化；长期：能效AI训练方法重塑成本结构和竞争格局。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
