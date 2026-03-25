@@ -4,82 +4,142 @@
     {
       "name": "miemieyong/OpenCat",
       "url": "https://github.com/miemieyong/OpenCat",
-      "description": "An open-source AI-native browser agent framework that autonomously executes complex web tasks by visually understanding page structures and orchestrating multi-step workflows without predefined scripts.",
+      "description": {
+        "en": "An open-source AI-native browser agent framework that autonomously executes complex web tasks by visually understanding page structures and orchestrating multi-step workflows without predefined scripts.",
+        "zh": "一个开源的AI原生浏览器代理框架，通过视觉理解页面结构并编排多步骤工作流，自主执行复杂的网页任务，无需预定义脚本。"
+      },
       "stars": "3.2k",
       "forks": "412"
     },
     {
       "name": "WooooDyy/AgentGym",
       "url": "https://github.com/WooooDyy/AgentGym",
-      "description": "A flexible platform for training and evaluating LLM-based agents across diverse environments, offering standardized benchmarks and an extensible architecture to accelerate agent research.",
+      "description": {
+        "en": "A flexible platform for training and evaluating LLM-based agents across diverse environments, offering standardized benchmarks and an extensible architecture to accelerate agent research.",
+        "zh": "一个用于在各种环境中训练和评估基于LLM代理的灵活平台，提供标准化基准和可扩展架构，加速代理研究。"
+      },
       "stars": "2.8k",
       "forks": "289"
     },
     {
       "name": "thunlp/Multi-Agent-RL",
       "url": "https://github.com/thunlp/Multi-Agent-RL",
-      "description": "A research framework implementing multi-agent reinforcement learning algorithms with focus on emergent behaviors and collaborative/competitive agent dynamics in complex environments.",
+      "description": {
+        "en": "A research framework implementing multi-agent reinforcement learning algorithms with focus on emergent behaviors and collaborative/competitive agent dynamics in complex environments.",
+        "zh": "一个实现多智能体强化学习算法的研究框架，专注于复杂环境中的涌现行为以及协作/竞争智能体动态。"
+      },
       "stars": "1.9k",
       "forks": "198"
     }
   ],
   "ai_news": [
     {
-      "title": "Xiaomi Enters AI Race with MiMo-V2-Pro Trillion-Parameter Model",
+      "title": {
+        "en": "Xiaomi Enters AI Race with MiMo-V2-Pro Trillion-Parameter Model",
+        "zh": "小米携MiMo-V2-Pro万亿参数模型进入AI竞赛"
+      },
       "url": "https://mmnews.tv/xiaomi-enters-ai-race-with-powerful-mimo-v2-pro-model/",
       "source": "MMNews / Reuters",
       "time": "March 23, 2026",
-      "description": "Xiaomi officially unveiled its flagship AI model MiMo-V2-Pro, a trillion-parameter model that ranks #3 globally on agent benchmarks, right behind Claude Opus 4.6. The model was previously tested anonymously as 'Hunter Alpha' on OpenRouter and is now free for limited time."
+      "description": {
+        "en": "Xiaomi officially unveiled its flagship AI model MiMo-V2-Pro, a trillion-parameter model that ranks #3 globally on agent benchmarks, right behind Claude Opus 4.6. The model was previously tested anonymously as 'Hunter Alpha' on OpenRouter and is now free for limited time.",
+        "zh": "小米正式发布了其旗舰AI模型MiMo-V2-Pro，这是一个万亿参数模型，在代理基准测试中全球排名第三，仅次于Claude Opus 4.6。该模型此前曾以'Hunter Alpha'的化名在OpenRouter上进行匿名测试，现在限时免费。"
+      }
     },
     {
-      "title": "Linux Foundation Secures $12.5M from AI Giants for Open Source Security",
+      "title": {
+        "en": "Linux Foundation Secures $12.5M from AI Giants for Open Source Security",
+        "zh": "Linux基金会从AI巨头获得1250万美元用于开源安全"
+      },
       "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-12-5-million-in-grant-funding-from-leading-organizations-to-advance-open-source-security",
       "source": "Linux Foundation",
       "time": "March 17, 2026",
-      "description": "Seven major AI companies including Anthropic, AWS, GitHub, Google, Google DeepMind, Microsoft, and OpenAI collectively contributed $12.5 million in grants to strengthen open source security through Alpha-Omega and OpenSSF initiatives."
+      "description": {
+        "en": "Seven major AI companies including Anthropic, AWS, GitHub, Google, Google DeepMind, Microsoft, and OpenAI collectively contributed $12.5 million in grants to strengthen open source security through Alpha-Omega and OpenSSF initiatives.",
+        "zh": "包括Anthropic、AWS、GitHub、Google、Google DeepMind、Microsoft和OpenAI在内的七家主要AI公司共同出资1250万美元，通过Alpha-Omega和OpenSSF计划加强开源安全。"
+      }
     },
     {
-      "title": "University of Michigan Creates AI System for Instant Brain MRI Analysis",
+      "title": {
+        "en": "University of Michigan Creates AI System for Instant Brain MRI Analysis",
+        "zh": "密歇根大学创建即时脑MRI分析AI系统"
+      },
       "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
       "source": "ScienceDaily",
       "time": "March 23, 2026",
-      "description": "Researchers developed an AI system that can interpret brain MRI scans in seconds, accurately identifying neurological conditions and determining which cases need urgent care, significantly accelerating diagnostic workflows."
+      "description": {
+        "en": "Researchers developed an AI system that can interpret brain MRI scans in seconds, accurately identifying neurological conditions and determining which cases need urgent care, significantly accelerating diagnostic workflows.",
+        "zh": "研究人员开发了一种AI系统，可以在几秒钟内解读脑部MRI扫描，准确识别神经系统疾病并确定哪些病例需要紧急护理，显著加快诊断工作流程。"
+      }
     },
     {
-      "title": "OpenAI to Nearly Double Workforce to 8,000 by End of 2026",
+      "title": {
+        "en": "OpenAI to Nearly Double Workforce to 8,000 by End of 2026",
+        "zh": "OpenAI计划到2026年底将员工数量翻倍至8000人"
+      },
       "url": "https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/",
       "source": "Reuters",
       "time": "March 21, 2026",
-      "description": "OpenAI plans to expand its workforce from approximately 4,000 to 8,000 employees by year-end 2026, following a funding round that valued the company at $840 billion."
+      "description": {
+        "en": "OpenAI plans to expand its workforce from approximately 4,000 to 8,000 employees by year-end 2026, following a funding round that valued the company at $840 billion.",
+        "zh": "在最新一轮估值达8400亿美元的融资后，OpenAI计划到2026年底将其员工从约4000人扩展到8000人。"
+      }
     },
     {
-      "title": "Perplexity Launches Comet Enterprise AI Browser & Agent API",
+      "title": {
+        "en": "Perplexity Launches Comet Enterprise AI Browser & Agent API",
+        "zh": "Perplexity推出Comet企业AI浏览器和代理API"
+      },
       "url": "https://www.resultsense.com/news/2026-03-18-perplexity-launches-comet-enterprise-ai-browser",
       "source": "ResultSense",
       "time": "March 18, 2026",
-      "description": "Perplexity released Comet Enterprise, an AI browser for organizations with CrowdStrike security integration, and expanded its Agent API availability for developers building autonomous task execution systems."
+      "description": {
+        "en": "Perplexity released Comet Enterprise, an AI browser for organizations with CrowdStrike security integration, and expanded its Agent API availability for developers building autonomous task execution systems.",
+        "zh": "Perplexity发布了Comet Enterprise，这是一款面向组织的AI浏览器，集成了CrowdStrike安全功能，并扩展了Agent API的可用性，供开发者构建自主任务执行系统。"
+      }
     },
     {
-      "title": "Trump Administration Releases National AI Policy Framework",
+      "title": {
+        "en": "Trump Administration Releases National AI Policy Framework",
+        "zh": "特朗普政府发布国家AI政策框架"
+      },
       "url": "https://www.sullcrom.com/insights/memo/2026/March/White-House-Releases-National-Policy-Framework-AI",
       "source": "Sullivan & Cromwell",
       "time": "March 20, 2026",
-      "description": "The White House released a national AI policy framework urging Congress to adopt a federally unified, innovation-oriented regime centered on preemption principles."
+      "description": {
+        "en": "The White House released a national AI policy framework urging Congress to adopt a federally unified, innovation-oriented regime centered on preemption principles.",
+        "zh": "白宫发布了国家AI政策框架，敦促国会采用以优先权原则为核心的联邦统一、以创新为导向的治理体制。"
+      }
     },
     {
-      "title": "UK Government Publishes Copyright and AI Report",
+      "title": {
+        "en": "UK Government Publishes Copyright and AI Report",
+        "zh": "英国政府发布版权与AI报告"
+      },
       "url": "https://www.prokopievlaw.com/post/uk-government-publishes-report-on-copyright-and-artificial-intelligence-united-kingdom-march-2026",
       "source": "Prokopiev Law",
       "time": "March 18, 2026",
-      "description": "The UK published its 'Report on Copyright and Artificial Intelligence' under the Data (Use and Access) Act 2025, examining AI training data practices and setting policy options for the relationship between copyright and AI."
+      "description": {
+        "en": "The UK published its 'Report on Copyright and Artificial Intelligence' under the Data (Use and Access) Act 2025, examining AI training data practices and setting policy options for the relationship between copyright and AI.",
+        "zh": "英国根据《2025年数据（使用和访问）法》发布了《版权与人工智能报告》，审查AI训练数据实践并设定版权与AI关系的政策选项。"
+      }
     },
     {
-      "title": "OpenAI and Anthropic Court Private Equity for Enterprise AI Joint Ventures",
+      "title": {
+        "en": "OpenAI and Anthropic Court Private Equity for Enterprise AI Joint Ventures",
+        "zh": "OpenAI和Anthropic寻求私募股权支持企业AI合资项目"
+      },
       "url": "https://www.reuters.com/technology/artificial-intelligence/",
       "source": "Reuters",
       "time": "March 23, 2026",
-      "description": "OpenAI is offering private-equity firms a sweeter deal than rival Anthropic as both companies court buyout firms to form joint ventures aimed at raising fresh capital and accelerating enterprise AI adoption."
+      "description": {
+        "en": "OpenAI is offering private-equity firms a sweeter deal than rival Anthropic as both companies court buyout firms to form joint ventures aimed at raising fresh capital and accelerating enterprise AI adoption.",
+        "zh": "OpenAI向私募股权公司提供比竞争对手Anthropic更优惠的条件，因为两家公司都在寻求与收购公司组建合资企业，以筹集新资金并加速企业AI采用。"
+      }
     }
   ],
-  "insight_analysis": "本周AI行业呈现出'巨头入场、生态整合'的显著趋势。小米以MiMo-V2-Pro强势切入大模型赛道，万亿参数规模直接对标Claude Opus，标志着中国科技公司正在从应用层向基础模型层跃迁。与此同时，Linux Foundation获得七大AI巨头联合注资，反映出行业对开源安全基础设施的共识——竞争归竞争，底层安全必须共建。值得关注的是，Agent框架持续火热，从浏览器自动化到多智能体强化学习，开发者工具生态正在快速成熟，2026年有望成为AI Agent从演示走向生产的转折点。"
+  "insight_analysis": {
+    "en": "This week, the AI industry shows a clear trend of 'giants entering and ecosystem integration'. Xiaomi's MiMo-V2-Pro marks a strong entry into the large model race with trillion-parameter scale directly competing with Claude Opus, signaling Chinese tech companies' leap from application layer to foundation model layer. Meanwhile, the Linux Foundation receiving joint funding from seven major AI giants reflects industry consensus on open-source security infrastructure—competition aside, underlying security must be built together. Notably, Agent frameworks continue to boom, from browser automation to multi-agent reinforcement learning, with developer tool ecosystems rapidly maturing. 2026 is poised to be the turning point where AI Agents move from demos to production.",
+    "zh": "本周AI行业呈现出'巨头入场、生态整合'的显著趋势。小米以MiMo-V2-Pro强势切入大模型赛道，万亿参数规模直接对标Claude Opus，标志着中国科技公司正在从应用层向基础模型层跃迁。与此同时，Linux Foundation获得七大AI巨头联合注资，反映出行业对开源安全基础设施的共识——竞争归竞争，底层安全必须共建。值得关注的是，Agent框架持续火热，从浏览器自动化到多智能体强化学习，开发者工具生态正在快速成熟，2026年有望成为AI Agent从演示走向生产的转折点。"
+  }
 }

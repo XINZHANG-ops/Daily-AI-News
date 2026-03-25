@@ -19,7 +19,15 @@ def format_date(date_str):
     return dt.strftime("%B %d, %Y")
 
 def build_repo_card(repo):
-    """Build HTML for a GitHub repo card."""
+    """Build HTML for a GitHub repo card with bilingual support."""
+    # Handle both old format (string) and new format (object with en/zh)
+    if isinstance(repo.get('description'), dict):
+        desc_en = repo['description'].get('en', '')
+        desc_zh = repo['description'].get('zh', '')
+    else:
+        desc_en = repo.get('description', '')
+        desc_zh = desc_en
+    
     return f'''                <div class="card">
                     <div class="card-header">
                         <div>
@@ -30,22 +38,49 @@ def build_repo_card(repo):
                             </div>
                         </div>
                     </div>
-                    <p class="card-description">{repo['description']}</p>
+                    <p class="card-description" data-lang="en">{desc_en}</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">{desc_zh}</p>
                 </div>'''
 
 def build_news_card(news):
-    """Build HTML for a news card."""
+    """Build HTML for a news card with bilingual support."""
+    # Handle both old format (string) and new format (object with en/zh)
+    if isinstance(news.get('title'), dict):
+        title_en = news['title'].get('en', '')
+        title_zh = news['title'].get('zh', '')
+    else:
+        title_en = news.get('title', '')
+        title_zh = title_en
+    
+    if isinstance(news.get('description'), dict):
+        desc_en = news['description'].get('en', '')
+        desc_zh = news['description'].get('zh', '')
+    else:
+        desc_en = news.get('description', '')
+        desc_zh = desc_en
+    
     return f'''                <div class="card news-card">
                     <span class="news-source">{news['source']}</span>
                     <div class="news-time">{news['time']}</div>
-                    <a href="{news['url']}" class="card-title" target="_blank">{news['title']}</a>
-                    <p class="card-description">{news['description']}</p>
+                    <a href="{news['url']}" class="card-title" target="_blank" data-lang="en">{title_en}</a>
+                    <a href="{news['url']}" class="card-title" target="_blank" data-lang="zh" style="display: none;">{title_zh}</a>
+                    <p class="card-description" data-lang="en">{desc_en}</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">{desc_zh}</p>
                 </div>'''
 
-def build_insight_section(insight_text):
-    """Build HTML for the insight section."""
+def build_insight_section(insight_data):
+    """Build HTML for the insight section with bilingual support."""
+    # Handle both old format (string) and new format (object with en/zh)
+    if isinstance(insight_data, dict):
+        text_en = insight_data.get('en', '')
+        text_zh = insight_data.get('zh', '')
+    else:
+        text_en = insight_data
+        text_zh = insight_data
+    
     return f'''                <div class="insight-card">
-                    <div class="insight-content">{insight_text}</div>
+                    <div class="insight-content" data-lang="en">{text_en}</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">{text_zh}</div>
                 </div>'''
 
 def build_html(data):
@@ -60,6 +95,13 @@ def build_html(data):
     insight_html = ''
     if 'insight_analysis' in data and data['insight_analysis']:
         insight_html = build_insight_section(data['insight_analysis'])
+    
+    # Bilingual section titles
+    section_titles = {
+        'github': {'en': '🐙 Trending GitHub Repositories', 'zh': '🐙 热门 GitHub 仓库'},
+        'news': {'en': '🤖 AI News & Updates', 'zh': '🤖 AI 新闻与更新'},
+        'insight': {'en': '💡 Daily Insight', 'zh': '💡 每日洞察'}
+    }
     
     html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -90,9 +132,10 @@ def build_html(data):
         
         header {{
             text-align: center;
-            margin-bottom: 50px;
-            padding: 40px 0;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
         }}
         
         h1 {{
@@ -115,6 +158,42 @@ def build_html(data):
             font-size: 1rem;
             color: #00d4ff;
             border: 1px solid rgba(0, 212, 255, 0.3);
+        }}
+        
+        /* Language Switcher */
+        .lang-switcher {{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }}
+        
+        .lang-btn {{
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }}
+        
+        .lang-btn:hover {{
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }}
+        
+        .lang-btn.active {{
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
         }}
         
         .section {{
@@ -300,6 +379,14 @@ def build_html(data):
                 font-size: 2rem;
             }}
             
+            .lang-switcher {{
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }}
+            
             .cards-grid {{
                 grid-template-columns: 1fr;
             }}
@@ -313,35 +400,80 @@ def build_html(data):
 <body>
     <div class="container">
         <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
             <h1>🤖 Daily AI News Digest</h1>
             <div class="date-badge">📅 {display_date}</div>
         </header>
 
         <section class="section">
-            <h2 class="section-title"><span>🐙</span> Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="en">{section_titles['github']['en']}</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">{section_titles['github']['zh']}</h2>
             <div class="cards-grid">
 {repos_html}
             </div>
         </section>
 
         <section class="section">
-            <h2 class="section-title"><span>🤖</span> AI News & Updates</h2>
+            <h2 class="section-title" data-lang="en">{section_titles['news']['en']}</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">{section_titles['news']['zh']}</h2>
             <div class="cards-grid">
 {news_html}
             </div>
         </section>
 
         <section class="section">
-            <h2 class="section-title"><span>💡</span> Daily Insight</h2>
+            <h2 class="section-title" data-lang="en">{section_titles['insight']['en']}</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">{section_titles['insight']['zh']}</h2>
             <div class="cards-grid">
 {insight_html}
             </div>
         </section>
 
         <footer>
-            <p>Generated automatically • Daily AI News Digest</p>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
         </footer>
     </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {{
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {{
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {{
+                    btn.classList.add('active');
+                }}
+            }});
+            
+            // Show/hide content based on language
+            document.querySelectorAll('[data-lang]').forEach(el => {{
+                if (el.getAttribute('data-lang') === lang) {{
+                    el.style.display = el.tagName === 'H2' || el.tagName === 'P' ? 'flex' : 'block';
+                    // For section titles, maintain flex
+                    if (el.classList.contains('section-title')) {{
+                        el.style.display = 'flex';
+                    }}
+                }} else {{
+                    el.style.display = 'none';
+                }}
+            }});
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }}
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {{
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {{
+                switchLang(savedLang);
+            }}
+        }});
+    </script>
 </body>
 </html>'''
     

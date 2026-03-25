@@ -3,280 +3,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily AI Digest - March 24, 2026</title>
+    <title>AI News Digest - March 24, 2026</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 50%, #16213e 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
             min-height: 100vh;
-            color: #e4e4e7;
+            color: #e0e0e0;
             line-height: 1.6;
         }
-
+        
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-
+        
         header {
             text-align: center;
-            padding: 60px 0;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 40px;
+            position: relative;
         }
-
+        
         h1 {
             font-size: 3rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 50%, #ff006e 100%);
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
         }
-
-        .date {
-            font-size: 1.2rem;
-            color: #a1a1aa;
-            font-weight: 300;
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
         }
-
-        h2 {
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
             font-size: 1.8rem;
-            margin: 50px 0 25px;
+            margin-bottom: 30px;
             display: flex;
             align-items: center;
             gap: 12px;
+            color: #fff;
         }
-
-        .section-icon {
+        
+        .section-title span {
             font-size: 2rem;
         }
-
-        /* GitHub Repo Cards */
-        .repo-grid {
+        
+        .cards-grid {
             display: grid;
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
         }
-
-        .repo-card {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
             border-radius: 16px;
-            padding: 28px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-
-        .repo-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            border-color: rgba(0, 212, 255, 0.3);
-        }
-
-        .repo-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-        }
-
-        .repo-icon {
-            width: 32px;
-            height: 32px;
-            background: linear-gradient(135deg, #6e5494 0%, #24292e 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-        }
-
-        .repo-name {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #00d4ff;
-        }
-
-        .repo-name a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .repo-name a:hover {
-            text-decoration: underline;
-        }
-
-        .repo-description {
-            color: #a1a1aa;
-            margin-bottom: 16px;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .repo-stats {
-            display: flex;
-            gap: 24px;
-            font-size: 0.9rem;
-        }
-
-        .stat {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: #fbbf24;
-        }
-
-        .stat-icon {
-            font-size: 1.1rem;
-        }
-
-        /* News Cards */
-        .news-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .news-card {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 12px;
-            padding: 24px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
-        }
-
-        .news-card:hover {
-            border-color: rgba(255, 0, 110, 0.3);
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
-        }
-
-        .news-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 10px;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .news-title {
-            font-size: 1.15rem;
-            font-weight: 600;
-            color: #fafafa;
-            flex: 1;
-        }
-
-        .news-title a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .news-title a:hover {
-            color: #00d4ff;
-            text-decoration: underline;
-        }
-
-        .news-meta {
-            display: flex;
-            gap: 16px;
-            font-size: 0.85rem;
-            color: #71717a;
-            margin-bottom: 12px;
-        }
-
-        .news-source {
-            color: #fbbf24;
-        }
-
-        .news-description {
-            color: #a1a1aa;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        /* Insight Section */
-        .insight-section {
-            margin-top: 50px;
-            background: linear-gradient(145deg, rgba(123, 44, 191, 0.15) 0%, rgba(255, 0, 110, 0.08) 100%);
-            border: 1px solid rgba(123, 44, 191, 0.3);
-            border-radius: 20px;
-            padding: 40px;
             position: relative;
             overflow: hidden;
         }
-
-        .insight-section::before {
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #00d4ff, #7b2cbf, #ff006e);
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
         }
-
-        .insight-section h2 {
-            margin-top: 0;
-            color: #fafafa;
-        }
-
+        
         .insight-content {
             font-size: 1.15rem;
             line-height: 1.9;
-            color: #e4e4e7;
-            text-align: justify;
+            color: #f0f0f0;
+            font-style: italic;
             position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
         }
-
+        
         .insight-content::before {
             content: '"';
             position: absolute;
-            top: -20px;
-            left: -10px;
+            left: -8px;
+            top: -15px;
             font-size: 4rem;
-            color: rgba(123, 44, 191, 0.3);
+            color: #e94560;
+            opacity: 0.4;
             font-family: Georgia, serif;
+            line-height: 1;
         }
-
-        /* Footer */
+        
         footer {
-            margin-top: 60px;
-            padding: 30px 0;
             text-align: center;
+            padding: 40px 0;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #71717a;
+            color: #666;
             font-size: 0.9rem;
         }
-
+        
         footer a {
             color: #00d4ff;
             text-decoration: none;
         }
-
-        /* Responsive */
-        @media (max-width: 600px) {
+        
+        @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
             }
             
-            h2 {
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
                 font-size: 1.4rem;
-            }
-            
-            .container {
-                padding: 20px 16px;
-            }
-            
-            .repo-card, .news-card, .insight-section {
-                padding: 20px;
             }
         }
     </style>
@@ -284,154 +295,183 @@
 <body>
     <div class="container">
         <header>
-            <h1>🚀 Daily AI Digest</h1>
-            <p class="date">March 24, 2026</p>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 March 24, 2026</div>
         </header>
 
-        <!-- GitHub Repos Section -->
-        <h2><span class="section-icon">🐙</span> Trending GitHub Repositories</h2>
-        <div class="repo-grid">
-            <div class="repo-card">
-                <div class="repo-header">
-                    <div class="repo-icon">⚡</div>
-                    <div class="repo-name"><a href="https://github.com/miemieyong/OpenCat" target="_blank">miemieyong/OpenCat</a></div>
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/miemieyong/OpenCat" class="card-title" target="_blank">miemieyong/OpenCat</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 412 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An open-source AI-native browser agent framework that autonomously executes complex web tasks by visually understanding page structures and orchestrating multi-step workflows without predefined scripts.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个开源的AI原生浏览器代理框架，通过视觉理解页面结构并编排多步骤工作流，自主执行复杂的网页任务，无需预定义脚本。</p>
                 </div>
-                <div class="repo-description">An open-source AI-native browser agent framework that autonomously executes complex web tasks by visually understanding page structures and orchestrating multi-step workflows without predefined scripts.</div>
-                <div class="repo-stats">
-                    <div class="stat"><span class="stat-icon">⭐</span> 3.2k</div>
-                    <div class="stat"><span class="stat-icon">🍴</span> 412</div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/WooooDyy/AgentGym" class="card-title" target="_blank">WooooDyy/AgentGym</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 289 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A flexible platform for training and evaluating LLM-based agents across diverse environments, offering standardized benchmarks and an extensible architecture to accelerate agent research.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个用于在各种环境中训练和评估基于LLM代理的灵活平台，提供标准化基准和可扩展架构，加速代理研究。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/thunlp/Multi-Agent-RL" class="card-title" target="_blank">thunlp/Multi-Agent-RL</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.9k stars</div>
+                                <div class="meta-item"><span>🍴</span> 198 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A research framework implementing multi-agent reinforcement learning algorithms with focus on emergent behaviors and collaborative/competitive agent dynamics in complex environments.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个实现多智能体强化学习算法的研究框架，专注于复杂环境中的涌现行为以及协作/竞争智能体动态。</p>
                 </div>
             </div>
+        </section>
 
-            <div class="repo-card">
-                <div class="repo-header">
-                    <div class="repo-icon">🎮</div>
-                    <div class="repo-name"><a href="https://github.com/WooooDyy/AgentGym" target="_blank">WooooDyy/AgentGym</a></div>
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">MMNews / Reuters</span>
+                    <div class="news-time">March 23, 2026</div>
+                    <a href="https://mmnews.tv/xiaomi-enters-ai-race-with-powerful-mimo-v2-pro-model/" class="card-title" target="_blank" data-lang="en">Xiaomi Enters AI Race with MiMo-V2-Pro Trillion-Parameter Model</a>
+                    <a href="https://mmnews.tv/xiaomi-enters-ai-race-with-powerful-mimo-v2-pro-model/" class="card-title" target="_blank" data-lang="zh" style="display: none;">小米携MiMo-V2-Pro万亿参数模型进入AI竞赛</a>
+                    <p class="card-description" data-lang="en">Xiaomi officially unveiled its flagship AI model MiMo-V2-Pro, a trillion-parameter model that ranks #3 globally on agent benchmarks, right behind Claude Opus 4.6. The model was previously tested anonymously as 'Hunter Alpha' on OpenRouter and is now free for limited time.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">小米正式发布了其旗舰AI模型MiMo-V2-Pro，这是一个万亿参数模型，在代理基准测试中全球排名第三，仅次于Claude Opus 4.6。该模型此前曾以'Hunter Alpha'的化名在OpenRouter上进行匿名测试，现在限时免费。</p>
                 </div>
-                <div class="repo-description">A flexible platform for training and evaluating LLM-based agents across diverse environments, offering standardized benchmarks and an extensible architecture to accelerate agent research.</div>
-                <div class="repo-stats">
-                    <div class="stat"><span class="stat-icon">⭐</span> 2.8k</div>
-                    <div class="stat"><span class="stat-icon">🍴</span> 289</div>
+                <div class="card news-card">
+                    <span class="news-source">Linux Foundation</span>
+                    <div class="news-time">March 17, 2026</div>
+                    <a href="https://www.linuxfoundation.org/press/linux-foundation-announces-12-5-million-in-grant-funding-from-leading-organizations-to-advance-open-source-security" class="card-title" target="_blank" data-lang="en">Linux Foundation Secures $12.5M from AI Giants for Open Source Security</a>
+                    <a href="https://www.linuxfoundation.org/press/linux-foundation-announces-12-5-million-in-grant-funding-from-leading-organizations-to-advance-open-source-security" class="card-title" target="_blank" data-lang="zh" style="display: none;">Linux基金会从AI巨头获得1250万美元用于开源安全</a>
+                    <p class="card-description" data-lang="en">Seven major AI companies including Anthropic, AWS, GitHub, Google, Google DeepMind, Microsoft, and OpenAI collectively contributed $12.5 million in grants to strengthen open source security through Alpha-Omega and OpenSSF initiatives.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">包括Anthropic、AWS、GitHub、Google、Google DeepMind、Microsoft和OpenAI在内的七家主要AI公司共同出资1250万美元，通过Alpha-Omega和OpenSSF计划加强开源安全。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">ScienceDaily</span>
+                    <div class="news-time">March 23, 2026</div>
+                    <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" class="card-title" target="_blank" data-lang="en">University of Michigan Creates AI System for Instant Brain MRI Analysis</a>
+                    <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" class="card-title" target="_blank" data-lang="zh" style="display: none;">密歇根大学创建即时脑MRI分析AI系统</a>
+                    <p class="card-description" data-lang="en">Researchers developed an AI system that can interpret brain MRI scans in seconds, accurately identifying neurological conditions and determining which cases need urgent care, significantly accelerating diagnostic workflows.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">研究人员开发了一种AI系统，可以在几秒钟内解读脑部MRI扫描，准确识别神经系统疾病并确定哪些病例需要紧急护理，显著加快诊断工作流程。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">March 21, 2026</div>
+                    <a href="https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/" class="card-title" target="_blank" data-lang="en">OpenAI to Nearly Double Workforce to 8,000 by End of 2026</a>
+                    <a href="https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI计划到2026年底将员工数量翻倍至8000人</a>
+                    <p class="card-description" data-lang="en">OpenAI plans to expand its workforce from approximately 4,000 to 8,000 employees by year-end 2026, following a funding round that valued the company at $840 billion.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在最新一轮估值达8400亿美元的融资后，OpenAI计划到2026年底将其员工从约4000人扩展到8000人。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">ResultSense</span>
+                    <div class="news-time">March 18, 2026</div>
+                    <a href="https://www.resultsense.com/news/2026-03-18-perplexity-launches-comet-enterprise-ai-browser" class="card-title" target="_blank" data-lang="en">Perplexity Launches Comet Enterprise AI Browser & Agent API</a>
+                    <a href="https://www.resultsense.com/news/2026-03-18-perplexity-launches-comet-enterprise-ai-browser" class="card-title" target="_blank" data-lang="zh" style="display: none;">Perplexity推出Comet企业AI浏览器和代理API</a>
+                    <p class="card-description" data-lang="en">Perplexity released Comet Enterprise, an AI browser for organizations with CrowdStrike security integration, and expanded its Agent API availability for developers building autonomous task execution systems.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Perplexity发布了Comet Enterprise，这是一款面向组织的AI浏览器，集成了CrowdStrike安全功能，并扩展了Agent API的可用性，供开发者构建自主任务执行系统。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Sullivan & Cromwell</span>
+                    <div class="news-time">March 20, 2026</div>
+                    <a href="https://www.sullcrom.com/insights/memo/2026/March/White-House-Releases-National-Policy-Framework-AI" class="card-title" target="_blank" data-lang="en">Trump Administration Releases National AI Policy Framework</a>
+                    <a href="https://www.sullcrom.com/insights/memo/2026/March/White-House-Releases-National-Policy-Framework-AI" class="card-title" target="_blank" data-lang="zh" style="display: none;">特朗普政府发布国家AI政策框架</a>
+                    <p class="card-description" data-lang="en">The White House released a national AI policy framework urging Congress to adopt a federally unified, innovation-oriented regime centered on preemption principles.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">白宫发布了国家AI政策框架，敦促国会采用以优先权原则为核心的联邦统一、以创新为导向的治理体制。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Prokopiev Law</span>
+                    <div class="news-time">March 18, 2026</div>
+                    <a href="https://www.prokopievlaw.com/post/uk-government-publishes-report-on-copyright-and-artificial-intelligence-united-kingdom-march-2026" class="card-title" target="_blank" data-lang="en">UK Government Publishes Copyright and AI Report</a>
+                    <a href="https://www.prokopievlaw.com/post/uk-government-publishes-report-on-copyright-and-artificial-intelligence-united-kingdom-march-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">英国政府发布版权与AI报告</a>
+                    <p class="card-description" data-lang="en">The UK published its 'Report on Copyright and Artificial Intelligence' under the Data (Use and Access) Act 2025, examining AI training data practices and setting policy options for the relationship between copyright and AI.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">英国根据《2025年数据（使用和访问）法》发布了《版权与人工智能报告》，审查AI训练数据实践并设定版权与AI关系的政策选项。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">March 23, 2026</div>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank" data-lang="en">OpenAI and Anthropic Court Private Equity for Enterprise AI Joint Ventures</a>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI和Anthropic寻求私募股权支持企业AI合资项目</a>
+                    <p class="card-description" data-lang="en">OpenAI is offering private-equity firms a sweeter deal than rival Anthropic as both companies court buyout firms to form joint ventures aimed at raising fresh capital and accelerating enterprise AI adoption.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI向私募股权公司提供比竞争对手Anthropic更优惠的条件，因为两家公司都在寻求与收购公司组建合资企业，以筹集新资金并加速企业AI采用。</p>
                 </div>
             </div>
+        </section>
 
-            <div class="repo-card">
-                <div class="repo-header">
-                    <div class="repo-icon">🤖</div>
-                    <div class="repo-name"><a href="https://github.com/thunlp/Multi-Agent-RL" target="_blank">thunlp/Multi-Agent-RL</a></div>
-                </div>
-                <div class="repo-description">A research framework implementing multi-agent reinforcement learning algorithms with focus on emergent behaviors and collaborative/competitive agent dynamics in complex environments.</div>
-                <div class="repo-stats">
-                    <div class="stat"><span class="stat-icon">⭐</span> 1.9k</div>
-                    <div class="stat"><span class="stat-icon">🍴</span> 198</div>
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week, the AI industry shows a clear trend of 'giants entering and ecosystem integration'. Xiaomi's MiMo-V2-Pro marks a strong entry into the large model race with trillion-parameter scale directly competing with Claude Opus, signaling Chinese tech companies' leap from application layer to foundation model layer. Meanwhile, the Linux Foundation receiving joint funding from seven major AI giants reflects industry consensus on open-source security infrastructure—competition aside, underlying security must be built together. Notably, Agent frameworks continue to boom, from browser automation to multi-agent reinforcement learning, with developer tool ecosystems rapidly maturing. 2026 is poised to be the turning point where AI Agents move from demos to production.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周AI行业呈现出'巨头入场、生态整合'的显著趋势。小米以MiMo-V2-Pro强势切入大模型赛道，万亿参数规模直接对标Claude Opus，标志着中国科技公司正在从应用层向基础模型层跃迁。与此同时，Linux Foundation获得七大AI巨头联合注资，反映出行业对开源安全基础设施的共识——竞争归竞争，底层安全必须共建。值得关注的是，Agent框架持续火热，从浏览器自动化到多智能体强化学习，开发者工具生态正在快速成熟，2026年有望成为AI Agent从演示走向生产的转折点。</div>
                 </div>
             </div>
-        </div>
-
-        <!-- AI News Section -->
-        <h2><span class="section-icon">🤖</span> AI News & Updates</h2>
-        <div class="news-list">
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-title"><a href="https://mmnews.tv/xiaomi-enters-ai-race-with-powerful-mimo-v2-pro-model/" target="_blank">Xiaomi Enters AI Race with MiMo-V2-Pro Trillion-Parameter Model</a></div>
-                </div>
-                <div class="news-meta">
-                    <span class="news-source">📰 MMNews / Reuters</span>
-                    <span>📅 March 23, 2026</span>
-                </div>
-                <div class="news-description">Xiaomi officially unveiled its flagship AI model MiMo-V2-Pro, a trillion-parameter model that ranks #3 globally on agent benchmarks, right behind Claude Opus 4.6. The model was previously tested anonymously as 'Hunter Alpha' on OpenRouter and is now free for limited time.</div>
-            </div>
-
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-title"><a href="https://www.linuxfoundation.org/press/linux-foundation-announces-12-5-million-in-grant-funding-from-leading-organizations-to-advance-open-source-security" target="_blank">Linux Foundation Secures $12.5M from AI Giants for Open Source Security</a></div>
-                </div>
-                <div class="news-meta">
-                    <span class="news-source">📰 Linux Foundation</span>
-                    <span>📅 March 17, 2026</span>
-                </div>
-                <div class="news-description">Seven major AI companies including Anthropic, AWS, GitHub, Google, Google DeepMind, Microsoft, and OpenAI collectively contributed $12.5 million in grants to strengthen open source security through Alpha-Omega and OpenSSF initiatives.</div>
-            </div>
-
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-title"><a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" target="_blank">University of Michigan Creates AI System for Instant Brain MRI Analysis</a></div>
-                </div>
-                <div class="news-meta">
-                    <span class="news-source">📰 ScienceDaily</span>
-                    <span>📅 March 23, 2026</span>
-                </div>
-                <div class="news-description">Researchers developed an AI system that can interpret brain MRI scans in seconds, accurately identifying neurological conditions and determining which cases need urgent care, significantly accelerating diagnostic workflows.</div>
-            </div>
-
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-title"><a href="https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/" target="_blank">OpenAI to Nearly Double Workforce to 8,000 by End of 2026</a></div>
-                </div>
-                <div class="news-meta">
-                    <span class="news-source">📰 Reuters</span>
-                    <span>📅 March 21, 2026</span>
-                </div>
-                <div class="news-description">OpenAI plans to expand its workforce from approximately 4,000 to 8,000 employees by year-end 2026, following a funding round that valued the company at $840 billion.</div>
-            </div>
-
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-title"><a href="https://www.resultsense.com/news/2026-03-18-perplexity-launches-comet-enterprise-ai-browser" target="_blank">Perplexity Launches Comet Enterprise AI Browser & Agent API</a></div>
-                </div>
-                <div class="news-meta">
-                    <span class="news-source">📰 ResultSense</span>
-                    <span>📅 March 18, 2026</span>
-                </div>
-                <div class="news-description">Perplexity released Comet Enterprise, an AI browser for organizations with CrowdStrike security integration, and expanded its Agent API availability for developers building autonomous task execution systems.</div>
-            </div>
-
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-title"><a href="https://www.sullcrom.com/insights/memo/2026/March/White-House-Releases-National-Policy-Framework-AI" target="_blank">Trump Administration Releases National AI Policy Framework</a></div>
-                </div>
-                <div class="news-meta">
-                    <span class="news-source">📰 Sullivan & Cromwell</span>
-                    <span>📅 March 20, 2026</span>
-                </div>
-                <div class="news-description">The White House released a national AI policy framework urging Congress to adopt a federally unified, innovation-oriented regime centered on preemption principles.</div>
-            </div>
-
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-title"><a href="https://www.prokopievlaw.com/post/uk-government-publishes-report-on-copyright-and-artificial-intelligence-united-kingdom-march-2026" target="_blank">UK Government Publishes Copyright and AI Report</a></div>
-                </div>
-                <div class="news-meta">
-                    <span class="news-source">📰 Prokopiev Law</span>
-                    <span>📅 March 18, 2026</span>
-                </div>
-                <div class="news-description">The UK published its 'Report on Copyright and Artificial Intelligence' under the Data (Use and Access) Act 2025, examining AI training data practices and setting policy options for the relationship between copyright and AI.</div>
-            </div>
-
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-title"><a href="https://www.reuters.com/technology/artificial-intelligence/" target="_blank">OpenAI and Anthropic Court Private Equity for Enterprise AI Joint Ventures</a></div>
-                </div>
-                <div class="news-meta">
-                    <span class="news-source">📰 Reuters</span>
-                    <span>📅 March 23, 2026</span>
-                </div>
-                <div class="news-description">OpenAI is offering private-equity firms a sweeter deal than rival Anthropic as both companies court buyout firms to form joint ventures aimed at raising fresh capital and accelerating enterprise AI adoption.</div>
-            </div>
-        </div>
-
-        <!-- Insight Section -->
-        <div class="insight-section">
-            <h2><span class="section-icon">💡</span> Daily Insight</h2>
-            <div class="insight-content">
-                本周AI行业呈现出"巨头入场、生态整合"的显著趋势。小米以MiMo-V2-Pro强势切入大模型赛道，万亿参数规模直接对标Claude Opus，标志着中国科技公司正在从应用层向基础模型层跃迁。与此同时，Linux Foundation获得七大AI巨头联合注资，反映出行业对开源安全基础设施的共识——竞争归竞争，底层安全必须共建。值得关注的是，Agent框架持续火热，从浏览器自动化到多智能体强化学习，开发者工具生态正在快速成熟，2026年有望成为AI Agent从演示走向生产的转折点。
-            </div>
-        </div>
+        </section>
 
         <footer>
-            <p>Generated with 🤖 by Daily AI News Bot</p>
-            <p><a href="index.html">← Back to Archive</a></p>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
         </footer>
     </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.getAttribute('data-lang') === lang) {
+                    el.style.display = el.tagName === 'H2' || el.tagName === 'P' ? 'flex' : 'block';
+                    // For section titles, maintain flex
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
 </body>
 </html>

@@ -4,75 +4,129 @@
     {
       "name": "karpathy/autoresearch",
       "url": "https://github.com/karpathy/autoresearch",
-      "description": "AI agents running research on single-GPU nanochat training automatically. Give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies code, trains for 5 minutes, checks if results improved, keeps or discards, and repeats.",
+      "description": {
+        "en": "AI agents running research on single-GPU nanochat training automatically. Give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies code, trains for 5 minutes, checks if results improved, keeps or discards, and repeats.",
+        "zh": "AI agents running research on single-GPU nanochat training automatically. Give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies code, trains for 5 minutes, checks if results improved, keeps or discards, and repeats."
+      },
       "stars": "4.2k",
       "forks": "312"
     },
     {
       "name": "InclusionAI/AReaL",
       "url": "https://github.com/InclusionAI/AReaL",
-      "description": "Lightning-Fast RL for LLM Reasoning and Agents. An open-source fully asynchronous reinforcement learning training system for large reasoning and agentic models, developed by Tsinghua IIIS and Ant Group. Built for seamless customization for agentic RL workflows.",
+      "description": {
+        "en": "Lightning-Fast RL for LLM Reasoning and Agents. An open-source fully asynchronous reinforcement learning training system for large reasoning and agentic models, developed by Tsinghua IIIS and Ant Group. Built for seamless customization for agentic RL workflows.",
+        "zh": "Lightning-Fast RL for LLM Reasoning and Agents. An open-source fully asynchronous reinforcement learning training system for large reasoning and agentic models, developed by Tsinghua IIIS and Ant Group. Built for seamless customization for agentic RL workflows."
+      },
       "stars": "2.1k",
       "forks": "178"
     },
     {
       "name": "666ghj/MiroFish",
       "url": "https://github.com/666ghj/MiroFish",
-      "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. Based on multi-agent technology, it builds high-fidelity parallel digital worlds from seed information. Thousands of agents with independent personalities interact and evolve socially for predictive simulation.",
+      "description": {
+        "en": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. Based on multi-agent technology, it builds high-fidelity parallel digital worlds from seed information. Thousands of agents with independent personalities interact and evolve socially for predictive simulation.",
+        "zh": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. Based on multi-agent technology, it builds high-fidelity parallel digital worlds from seed information. Thousands of agents with independent personalities interact and evolve socially for predictive simulation."
+      },
       "stars": "3.8k",
       "forks": "245"
     }
   ],
   "ai_news": [
     {
-      "title": "Xiaomi's MiMo-V2-Pro AI Model Revealed After Anonymous 'Hunter Alpha' Debut",
+      "title": {
+        "en": "Xiaomi's MiMo-V2-Pro AI Model Revealed After Anonymous 'Hunter Alpha' Debut",
+        "zh": "Xiaomi's MiMo-V2-Pro AI Model Revealed After Anonymous 'Hunter Alpha' Debut"
+      },
       "url": "https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/",
       "source": "Reuters",
       "time": "3 hours ago",
-      "description": "A powerful AI model that appeared anonymously on OpenRouter as 'Hunter Alpha' was revealed to be Xiaomi's MiMo-V2-Pro. It processed over 1 trillion tokens and topped leaderboard charts before the reveal, achieving an Elo of 1426 on GDPval-AA benchmark, ahead of GLM-5 and Kimi K2.5."
+      "description": {
+        "en": "A powerful AI model that appeared anonymously on OpenRouter as 'Hunter Alpha' was revealed to be Xiaomi's MiMo-V2-Pro. It processed over 1 trillion tokens and topped leaderboard charts before the reveal, achieving an Elo of 1426 on GDPval-AA benchmark, ahead of GLM-5 and Kimi K2.5.",
+        "zh": "A powerful AI model that appeared anonymously on OpenRouter as 'Hunter Alpha' was revealed to be Xiaomi's MiMo-V2-Pro. It processed over 1 trillion tokens and topped leaderboard charts before the reveal, achieving an Elo of 1426 on GDPval-AA benchmark, ahead of GLM-5 and Kimi K2.5."
+      }
     },
     {
-      "title": "U.S. Defense Department Declares Anthropic an 'Unacceptable Risk' to National Security",
+      "title": {
+        "en": "U.S. Defense Department Declares Anthropic an 'Unacceptable Risk' to National Security",
+        "zh": "U.S. Defense Department Declares Anthropic an 'Unacceptable Risk' to National Security"
+      },
       "url": "https://www.nytimes.com/2026/03/17/technology/anthropic-pentagon-national-security-risk.html",
       "source": "The New York Times",
       "time": "1 day ago",
-      "description": "The Pentagon designated Anthropic a 'supply chain risk' after negotiations over using the company's AI models in classified systems broke down. Anthropic's lawsuits challenging Defense Secretary Pete Hegseth's decision were met with the agency's first formal rebuttal."
+      "description": {
+        "en": "The Pentagon designated Anthropic a 'supply chain risk' after negotiations over using the company's AI models in classified systems broke down. Anthropic's lawsuits challenging Defense Secretary Pete Hegseth's decision were met with the agency's first formal rebuttal.",
+        "zh": "The Pentagon designated Anthropic a 'supply chain risk' after negotiations over using the company's AI models in classified systems broke down. Anthropic's lawsuits challenging Defense Secretary Pete Hegseth's decision were met with the agency's first formal rebuttal."
+      }
     },
     {
-      "title": "NVIDIA GTC 2026 Wraps with Disney's Olaf Robot and AI Agent Showcase",
+      "title": {
+        "en": "NVIDIA GTC 2026 Wraps with Disney's Olaf Robot and AI Agent Showcase",
+        "zh": "NVIDIA GTC 2026 Wraps with Disney's Olaf Robot and AI Agent Showcase"
+      },
       "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
       "source": "NVIDIA Blog",
       "time": "4 hours ago",
-      "description": "NVIDIA GTC 2026 concluded with Jensen Huang showcasing Disney's self-walking Olaf robot powered by physical AI. The event highlighted inference, AI factories, OpenClaw agents, and physical AI robotics. Olaf will debut at Disneyland Paris at the end of March."
+      "description": {
+        "en": "NVIDIA GTC 2026 concluded with Jensen Huang showcasing Disney's self-walking Olaf robot powered by physical AI. The event highlighted inference, AI factories, OpenClaw agents, and physical AI robotics. Olaf will debut at Disneyland Paris at the end of March.",
+        "zh": "NVIDIA GTC 2026 concluded with Jensen Huang showcasing Disney's self-walking Olaf robot powered by physical AI. The event highlighted inference, AI factories, OpenClaw agents, and physical AI robotics. Olaf will debut at Disneyland Paris at the end of March."
+      }
     },
     {
-      "title": "Alibaba Raises AI and Computing Storage Prices by Up to 34%",
+      "title": {
+        "en": "Alibaba Raises AI and Computing Storage Prices by Up to 34%",
+        "zh": "Alibaba Raises AI and Computing Storage Prices by Up to 34%"
+      },
       "url": "https://www.pymnts.com/artificial-intelligence-2/2026/alibaba-joins-other-tech-giants-in-raising-ai-prices/",
       "source": "PYMNTS",
       "time": "15 hours ago",
-      "description": "Alibaba is reportedly increasing its AI and computing storage prices by up to 34%, joining other tech giants in raising costs amid surging demand for AI infrastructure and services."
+      "description": {
+        "en": "Alibaba is reportedly increasing its AI and computing storage prices by up to 34%, joining other tech giants in raising costs amid surging demand for AI infrastructure and services.",
+        "zh": "Alibaba is reportedly increasing its AI and computing storage prices by up to 34%, joining other tech giants in raising costs amid surging demand for AI infrastructure and services."
+      }
     },
     {
-      "title": "OpenAI Releases GPT-5.4 Mini and Nano: Affordable High-Performance Models",
+      "title": {
+        "en": "OpenAI Releases GPT-5.4 Mini and Nano: Affordable High-Performance Models",
+        "zh": "OpenAI Releases GPT-5.4 Mini and Nano: Affordable High-Performance Models"
+      },
       "url": "https://www.adwaitx.com/gpt-54-mini-nano-openai/",
       "source": "AdwaitX",
       "time": "1 day ago",
-      "description": "OpenAI released GPT-5.4 mini and nano models on March 17, delivering near-top-tier performance at costs most developers can afford. These are not compromised versions but optimized models for broad accessibility."
+      "description": {
+        "en": "OpenAI released GPT-5.4 mini and nano models on March 17, delivering near-top-tier performance at costs most developers can afford. These are not compromised versions but optimized models for broad accessibility.",
+        "zh": "OpenAI released GPT-5.4 mini and nano models on March 17, delivering near-top-tier performance at costs most developers can afford. These are not compromised versions but optimized models for broad accessibility."
+      }
     },
     {
-      "title": "Samsung and AMD Expand Strategic Partnership for AI Memory Chips",
+      "title": {
+        "en": "Samsung and AMD Expand Strategic Partnership for AI Memory Chips",
+        "zh": "Samsung and AMD Expand Strategic Partnership for AI Memory Chips"
+      },
       "url": "https://www.reuters.com/technology/",
       "source": "Reuters",
       "time": "20 hours ago",
-      "description": "Samsung Electronics and AMD signed a memorandum of understanding to expand their strategic partnership on memory chip supplies for artificial intelligence infrastructure, strengthening the AI hardware supply chain."
+      "description": {
+        "en": "Samsung Electronics and AMD signed a memorandum of understanding to expand their strategic partnership on memory chip supplies for artificial intelligence infrastructure, strengthening the AI hardware supply chain.",
+        "zh": "Samsung Electronics and AMD signed a memorandum of understanding to expand their strategic partnership on memory chip supplies for artificial intelligence infrastructure, strengthening the AI hardware supply chain."
+      }
     },
     {
-      "title": "NVIDIA Unveils NemoClaw Stack for Autonomous OpenClaw Agents",
+      "title": {
+        "en": "NVIDIA Unveils NemoClaw Stack for Autonomous OpenClaw Agents",
+        "zh": "NVIDIA Unveils NemoClaw Stack for Autonomous OpenClaw Agents"
+      },
       "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
       "source": "NVIDIA Blog",
       "time": "6 hours ago",
-      "description": "NVIDIA introduced NemoClaw, an open-source stack for running always-on OpenClaw assistants safely. Combined with DGX Station featuring GB300 Grace Blackwell Ultra with 748GB memory and 20 petaflops AI compute."
+      "description": {
+        "en": "NVIDIA introduced NemoClaw, an open-source stack for running always-on OpenClaw assistants safely. Combined with DGX Station featuring GB300 Grace Blackwell Ultra with 748GB memory and 20 petaflops AI compute.",
+        "zh": "NVIDIA introduced NemoClaw, an open-source stack for running always-on OpenClaw assistants safely. Combined with DGX Station featuring GB300 Grace Blackwell Ultra with 748GB memory and 20 petaflops AI compute."
+      }
     }
   ],
-  "insight_analysis": "小米MiMo-V2-Pro以'Hunter Alpha'身份匿名登顶OpenRouter，标志着中国AI势力正在用'隐身模式'挑战西方主导权。与此同时，Anthropic被五角大楼列为'供应链风险'，折射出AI地缘政治的紧张态势。Karpathy的autoresearch和AReaL的发布则预示着AI研究本身的自动化——当AI开始自主训练AI，人类研究者的角色将被重新定义。短期关注Agent自主研究框架，长期警惕AI基础设施的地缘政治分化。"
+  "insight_analysis": {
+    "en": "小米MiMo-V2-Pro以'Hunter Alpha'身份匿名登顶OpenRouter，标志着中国AI势力正在用'隐身模式'挑战西方主导权。与此同时，Anthropic被五角大楼列为'供应链风险'，折射出AI地缘政治的紧张态势。Karpathy的autoresearch和AReaL的发布则预示着AI研究本身的自动化——当AI开始自主训练AI，人类研究者的角色将被重新定义。短期关注Agent自主研究框架，长期警惕AI基础设施的地缘政治分化。",
+    "zh": "小米MiMo-V2-Pro以'Hunter Alpha'身份匿名登顶OpenRouter，标志着中国AI势力正在用'隐身模式'挑战西方主导权。与此同时，Anthropic被五角大楼列为'供应链风险'，折射出AI地缘政治的紧张态势。Karpathy的autoresearch和AReaL的发布则预示着AI研究本身的自动化——当AI开始自主训练AI，人类研究者的角色将被重新定义。短期关注Agent自主研究框架，长期警惕AI基础设施的地缘政治分化。"
+  }
 }

@@ -4,61 +4,103 @@
     {
       "name": "louisfb01/start-machine-learning",
       "url": "https://github.com/louisfb01/start-machine-learning",
-      "description": "A complete guide to start and improve in machine learning (ML), artificial intelligence (AI) in 2026 without ANY background in the field and stay up-to-date with the latest news and state-of-the-art techniques!",
+      "description": {
+        "en": "A complete guide to start and improve in machine learning (ML), artificial intelligence (AI) in 2026 without ANY background in the field and stay up-to-date with the latest news and state-of-the-art techniques!",
+        "zh": "A complete guide to start and improve in machine learning (ML), artificial intelligence (AI) in 2026 without ANY background in the field and stay up-to-date with the latest news and state-of-the-art techniques!"
+      },
       "stars": "8.2k",
       "forks": "1.1k"
     },
     {
       "name": "georgeguimaraes/awesome-ml-gen-ai-elixir",
       "url": "https://github.com/georgeguimaraes/awesome-ml-gen-ai-elixir",
-      "description": "A curated list of Machine Learning libraries and resources for the Elixir programming language. Features the insight that Python agent frameworks are independently rediscovering BEAM primitives.",
+      "description": {
+        "en": "A curated list of Machine Learning libraries and resources for the Elixir programming language. Features the insight that Python agent frameworks are independently rediscovering BEAM primitives.",
+        "zh": "A curated list of Machine Learning libraries and resources for the Elixir programming language. Features the insight that Python agent frameworks are independently rediscovering BEAM primitives."
+      },
       "stars": "1.5k",
       "forks": "89"
     },
     {
       "name": "harvard-edge/cs249r_book",
       "url": "https://github.com/harvard-edge/cs249r_book",
-      "description": "Machine Learning Systems - Harvard's open-source textbook. Stars signal to universities and foundations that this work matters, directly funding workshops and hardware kits for underserved classrooms.",
+      "description": {
+        "en": "Machine Learning Systems - Harvard's open-source textbook. Stars signal to universities and foundations that this work matters, directly funding workshops and hardware kits for underserved classrooms.",
+        "zh": "Machine Learning Systems - Harvard's open-source textbook. Stars signal to universities and foundations that this work matters, directly funding workshops and hardware kits for underserved classrooms."
+      },
       "stars": "12.5k",
       "forks": "1.8k"
     }
   ],
   "ai_news": [
     {
-      "title": "A Mystery AI Model Has Developers Buzzing: Is This DeepSeek's Latest Blockbuster?",
+      "title": {
+        "en": "A Mystery AI Model Has Developers Buzzing: Is This DeepSeek's Latest Blockbuster?",
+        "zh": "A Mystery AI Model Has Developers Buzzing: Is This DeepSeek's Latest Blockbuster?"
+      },
       "url": "https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/",
       "source": "Reuters",
       "time": "9 hours ago",
-      "description": "A powerful trillion-parameter AI model called 'Hunter Alpha' surfaced anonymously on OpenRouter, sparking speculation that Chinese startup DeepSeek may be quietly testing its next-generation V4 system ahead of an official launch."
+      "description": {
+        "en": "A powerful trillion-parameter AI model called 'Hunter Alpha' surfaced anonymously on OpenRouter, sparking speculation that Chinese startup DeepSeek may be quietly testing its next-generation V4 system ahead of an official launch.",
+        "zh": "A powerful trillion-parameter AI model called 'Hunter Alpha' surfaced anonymously on OpenRouter, sparking speculation that Chinese startup DeepSeek may be quietly testing its next-generation V4 system ahead of an official launch."
+      }
     },
     {
-      "title": "Is an AI Bubble Set to Burst? Navigating the Artificial Intelligence Boom",
+      "title": {
+        "en": "Is an AI Bubble Set to Burst? Navigating the Artificial Intelligence Boom",
+        "zh": "Is an AI Bubble Set to Burst? Navigating the Artificial Intelligence Boom"
+      },
       "url": "https://www.bloomberg.com/news/articles/2026-03-18/is-an-ai-bubble-set-to-burst-navigating-the-artificial-intelligence-boom",
       "source": "Bloomberg",
       "time": "18 hours ago",
-      "description": "Three years into the AI boom, Wall Street can't decide whether artificial intelligence will be too disruptive or not disruptive enough. Market analysts debate the sustainability of current valuations."
+      "description": {
+        "en": "Three years into the AI boom, Wall Street can't decide whether artificial intelligence will be too disruptive or not disruptive enough. Market analysts debate the sustainability of current valuations.",
+        "zh": "Three years into the AI boom, Wall Street can't decide whether artificial intelligence will be too disruptive or not disruptive enough. Market analysts debate the sustainability of current valuations."
+      }
     },
     {
-      "title": "Morgan Stanley Warns an AI Breakthrough Is Coming in 2026",
+      "title": {
+        "en": "Morgan Stanley Warns an AI Breakthrough Is Coming in 2026",
+        "zh": "Morgan Stanley Warns an AI Breakthrough Is Coming in 2026"
+      },
       "url": "https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/",
       "source": "Fortune",
       "time": "6 days ago",
-      "description": "A massive AI breakthrough is coming in the first half of 2026—and Morgan Stanley says most of the world isn't ready for it. The investment bank warns that a transformative leap in artificial intelligence is imminent."
+      "description": {
+        "en": "A massive AI breakthrough is coming in the first half of 2026—and Morgan Stanley says most of the world isn't ready for it. The investment bank warns that a transformative leap in artificial intelligence is imminent.",
+        "zh": "A massive AI breakthrough is coming in the first half of 2026—and Morgan Stanley says most of the world isn't ready for it. The investment bank warns that a transformative leap in artificial intelligence is imminent."
+      }
     },
     {
-      "title": "The Trends That Will Shape AI and Tech in 2026",
+      "title": {
+        "en": "The Trends That Will Shape AI and Tech in 2026",
+        "zh": "The Trends That Will Shape AI and Tech in 2026"
+      },
       "url": "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
       "source": "IBM",
       "time": "12 hours ago",
-      "description": "IBM predicts the democratization of AI agent creation will be the most exciting shift: 'The ability to design and deploy intelligent agents is moving beyond developers into the hands of everyday business users.'"
+      "description": {
+        "en": "IBM predicts the democratization of AI agent creation will be the most exciting shift: 'The ability to design and deploy intelligent agents is moving beyond developers into the hands of everyday business users.'",
+        "zh": "IBM predicts the democratization of AI agent creation will be the most exciting shift: 'The ability to design and deploy intelligent agents is moving beyond developers into the hands of everyday business users.'"
+      }
     },
     {
-      "title": "Tencent Reports 13% Revenue Increase Driven by AI Services",
+      "title": {
+        "en": "Tencent Reports 13% Revenue Increase Driven by AI Services",
+        "zh": "Tencent Reports 13% Revenue Increase Driven by AI Services"
+      },
       "url": "https://www.reuters.com/technology/artificial-intelligence/",
       "source": "Reuters",
       "time": "13 hours ago",
-      "description": "Tencent Holdings reported a 13% increase in fourth-quarter revenue, driven by strong demand for gaming and growth in its artificial intelligence services, cementing its position as China's largest social media and gaming company."
+      "description": {
+        "en": "Tencent Holdings reported a 13% increase in fourth-quarter revenue, driven by strong demand for gaming and growth in its artificial intelligence services, cementing its position as China's largest social media and gaming company.",
+        "zh": "Tencent Holdings reported a 13% increase in fourth-quarter revenue, driven by strong demand for gaming and growth in its artificial intelligence services, cementing its position as China's largest social media and gaming company."
+      }
     }
   ],
-  "insight_analysis": "DeepSeek的'Hunter Alpha'神秘现身，标志着中国AI势力正在以'隐身模式'挑战西方主导权。与此同时，IBM预测的'AI Agent民主化'与Morgan Stanley警告的'2026年突破'形成共振——我们正站在一个拐点上：AI从'工具'进化为'自主代理'的速度远超预期。值得警惕的是，Bloomberg的'泡沫论'并非空穴来风，当技术迭代速度超过商业落地能力时，洗牌不可避免。短期看Agent框架，长期看自主AI基础设施。"
+  "insight_analysis": {
+    "en": "DeepSeek的'Hunter Alpha'神秘现身，标志着中国AI势力正在以'隐身模式'挑战西方主导权。与此同时，IBM预测的'AI Agent民主化'与Morgan Stanley警告的'2026年突破'形成共振——我们正站在一个拐点上：AI从'工具'进化为'自主代理'的速度远超预期。值得警惕的是，Bloomberg的'泡沫论'并非空穴来风，当技术迭代速度超过商业落地能力时，洗牌不可避免。短期看Agent框架，长期看自主AI基础设施。",
+    "zh": "DeepSeek的'Hunter Alpha'神秘现身，标志着中国AI势力正在以'隐身模式'挑战西方主导权。与此同时，IBM预测的'AI Agent民主化'与Morgan Stanley警告的'2026年突破'形成共振——我们正站在一个拐点上：AI从'工具'进化为'自主代理'的速度远超预期。值得警惕的是，Bloomberg的'泡沫论'并非空穴来风，当技术迭代速度超过商业落地能力时，洗牌不可避免。短期看Agent框架，长期看自主AI基础设施。"
+  }
 }

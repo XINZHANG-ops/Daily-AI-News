@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily AI News Digest - March 19, 2026</title>
+    <title>AI News Digest - March 19, 2026</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
             min-height: 100vh;
             color: #e0e0e0;
@@ -27,36 +27,77 @@
         
         header {
             text-align: center;
-            margin-bottom: 50px;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
         }
         
         h1 {
-            font-size: 2.5rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
         }
         
-        .date {
-            font-size: 1.2rem;
-            color: #a0a0a0;
-            font-weight: 300;
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
         }
         
         .section {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
         
         .section-title {
             font-size: 1.8rem;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             display: flex;
             align-items: center;
             gap: 12px;
@@ -75,17 +116,35 @@
         
         .card {
             background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
             border-radius: 16px;
             padding: 25px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
         
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            border-color: rgba(102, 126, 234, 0.5);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
         }
         
         .card-header {
@@ -96,35 +155,34 @@
         }
         
         .card-title {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            font-weight: 600;
             color: #fff;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        
-        .card-title a {
-            color: #667eea;
             text-decoration: none;
-            transition: color 0.3s ease;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
         }
         
-        .card-title a:hover {
-            color: #764ba2;
-            text-decoration: underline;
+        .card-title:hover {
+            color: #00d4ff;
         }
         
         .card-meta {
             display: flex;
             gap: 15px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #888;
-            margin-bottom: 12px;
         }
         
-        .card-meta span {
+        .meta-item {
             display: flex;
             align-items: center;
             gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
         }
         
         .card-description {
@@ -133,94 +191,103 @@
             line-height: 1.6;
         }
         
-        .repo-stats {
-            display: flex;
-            gap: 20px;
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
         }
         
-        .stat {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.9rem;
-            color: #ffd700;
-        }
-        
-        .news-card .card-meta {
-            color: #667eea;
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
             font-weight: 500;
         }
         
-        .insight-section {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
-            border-radius: 20px;
-            padding: 40px;
-            border: 2px solid rgba(102, 126, 234, 0.3);
-            position: relative;
-            overflow: hidden;
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
         }
         
-        .insight-section::before {
-            content: '"';
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
             position: absolute;
-            top: 20px;
-            left: 30px;
-            font-size: 6rem;
-            color: rgba(102, 126, 234, 0.2);
-            font-family: Georgia, serif;
-            line-height: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
         }
         
         .insight-content {
             font-size: 1.15rem;
             line-height: 1.9;
-            color: #e0e0e0;
+            color: #f0f0f0;
+            font-style: italic;
             position: relative;
-            z-index: 1;
-            padding-left: 20px;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
         }
         
-        .insight-content p {
-            margin-bottom: 15px;
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
         }
         
         footer {
             text-align: center;
-            padding: 30px;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #666;
             font-size: 0.9rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            margin-top: 50px;
         }
         
-        .tag {
-            display: inline-block;
-            padding: 4px 12px;
-            background: rgba(102, 126, 234, 0.2);
-            border-radius: 20px;
-            font-size: 0.8rem;
-            color: #667eea;
-            margin-top: 10px;
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
         }
         
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.8rem;
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
             }
             
             .cards-grid {
                 grid-template-columns: 1fr;
             }
             
-            .insight-section {
-                padding: 25px;
-            }
-            
-            .insight-section::before {
-                font-size: 4rem;
+            .section-title {
+                font-size: 1.4rem;
             }
         }
     </style>
@@ -228,137 +295,175 @@
 <body>
     <div class="container">
         <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
             <h1>🤖 Daily AI News Digest</h1>
-            <p class="date">March 19, 2026</p>
+            <div class="date-badge">📅 March 19, 2026</div>
         </header>
 
         <section class="section">
-            <h2 class="section-title"><span>🐙</span> Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-header">
                         <div>
-                            <h3 class="card-title"><a href="https://github.com/karpathy/autoresearch" target="_blank">karpathy/autoresearch</a></h3>
+                            <a href="https://github.com/karpathy/autoresearch" class="card-title" target="_blank">karpathy/autoresearch</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 312 forks</div>
+                            </div>
                         </div>
                     </div>
-                    <p class="card-description">AI agents running research on single-GPU nanochat training automatically. Give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies code, trains for 5 minutes, checks if results improved, keeps or discards, and repeats.</p>
-                    <div class="repo-stats">
-                        <span class="stat">⭐ 4.2k</span>
-                        <span class="stat">🍴 312</span>
-                    </div>
-                    <span class="tag">AutoML</span>
+                    <p class="card-description" data-lang="en">AI agents running research on single-GPU nanochat training automatically. Give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies code, trains for 5 minutes, checks if results improved, keeps or discards, and repeats.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI agents running research on single-GPU nanochat training automatically. Give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies code, trains for 5 minutes, checks if results improved, keeps or discards, and repeats.</p>
                 </div>
-
                 <div class="card">
                     <div class="card-header">
                         <div>
-                            <h3 class="card-title"><a href="https://github.com/InclusionAI/AReaL" target="_blank">InclusionAI/AReaL</a></h3>
+                            <a href="https://github.com/InclusionAI/AReaL" class="card-title" target="_blank">InclusionAI/AReaL</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 178 forks</div>
+                            </div>
                         </div>
                     </div>
-                    <p class="card-description">Lightning-Fast RL for LLM Reasoning and Agents. An open-source fully asynchronous reinforcement learning training system for large reasoning and agentic models, developed by Tsinghua IIIS and Ant Group. Built for seamless customization for agentic RL workflows.</p>
-                    <div class="repo-stats">
-                        <span class="stat">⭐ 2.1k</span>
-                        <span class="stat">🍴 178</span>
-                    </div>
-                    <span class="tag">Reinforcement Learning</span>
+                    <p class="card-description" data-lang="en">Lightning-Fast RL for LLM Reasoning and Agents. An open-source fully asynchronous reinforcement learning training system for large reasoning and agentic models, developed by Tsinghua IIIS and Ant Group. Built for seamless customization for agentic RL workflows.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Lightning-Fast RL for LLM Reasoning and Agents. An open-source fully asynchronous reinforcement learning training system for large reasoning and agentic models, developed by Tsinghua IIIS and Ant Group. Built for seamless customization for agentic RL workflows.</p>
                 </div>
-
                 <div class="card">
                     <div class="card-header">
                         <div>
-                            <h3 class="card-title"><a href="https://github.com/666ghj/MiroFish" target="_blank">666ghj/MiroFish</a></h3>
+                            <a href="https://github.com/666ghj/MiroFish" class="card-title" target="_blank">666ghj/MiroFish</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 245 forks</div>
+                            </div>
                         </div>
                     </div>
-                    <p class="card-description">A Simple and Universal Swarm Intelligence Engine, Predicting Anything. Based on multi-agent technology, it builds high-fidelity parallel digital worlds from seed information. Thousands of agents with independent personalities interact and evolve socially for predictive simulation.</p>
-                    <div class="repo-stats">
-                        <span class="stat">⭐ 3.8k</span>
-                        <span class="stat">🍴 245</span>
-                    </div>
-                    <span class="tag">Multi-Agent</span>
+                    <p class="card-description" data-lang="en">A Simple and Universal Swarm Intelligence Engine, Predicting Anything. Based on multi-agent technology, it builds high-fidelity parallel digital worlds from seed information. Thousands of agents with independent personalities interact and evolve socially for predictive simulation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">A Simple and Universal Swarm Intelligence Engine, Predicting Anything. Based on multi-agent technology, it builds high-fidelity parallel digital worlds from seed information. Thousands of agents with independent personalities interact and evolve socially for predictive simulation.</p>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <h2 class="section-title"><span>📰</span> AI News & Updates</h2>
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
             <div class="cards-grid">
                 <div class="card news-card">
-                    <div class="card-meta">
-                        <span>📡 Reuters</span>
-                        <span>🕐 3 hours ago</span>
-                    </div>
-                    <h3 class="card-title"><a href="https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/" target="_blank">Xiaomi's MiMo-V2-Pro AI Model Revealed After Anonymous 'Hunter Alpha' Debut</a></h3>
-                    <p class="card-description">A powerful AI model that appeared anonymously on OpenRouter as 'Hunter Alpha' was revealed to be Xiaomi's MiMo-V2-Pro. It processed over 1 trillion tokens and topped leaderboard charts before the reveal, achieving an Elo of 1426 on GDPval-AA benchmark, ahead of GLM-5 and Kimi K2.5.</p>
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">3 hours ago</div>
+                    <a href="https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/" class="card-title" target="_blank" data-lang="en">Xiaomi's MiMo-V2-Pro AI Model Revealed After Anonymous 'Hunter Alpha' Debut</a>
+                    <a href="https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Xiaomi's MiMo-V2-Pro AI Model Revealed After Anonymous 'Hunter Alpha' Debut</a>
+                    <p class="card-description" data-lang="en">A powerful AI model that appeared anonymously on OpenRouter as 'Hunter Alpha' was revealed to be Xiaomi's MiMo-V2-Pro. It processed over 1 trillion tokens and topped leaderboard charts before the reveal, achieving an Elo of 1426 on GDPval-AA benchmark, ahead of GLM-5 and Kimi K2.5.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">A powerful AI model that appeared anonymously on OpenRouter as 'Hunter Alpha' was revealed to be Xiaomi's MiMo-V2-Pro. It processed over 1 trillion tokens and topped leaderboard charts before the reveal, achieving an Elo of 1426 on GDPval-AA benchmark, ahead of GLM-5 and Kimi K2.5.</p>
                 </div>
-
                 <div class="card news-card">
-                    <div class="card-meta">
-                        <span>📡 The New York Times</span>
-                        <span>🕐 1 day ago</span>
-                    </div>
-                    <h3 class="card-title"><a href="https://www.nytimes.com/2026/03/17/technology/anthropic-pentagon-national-security-risk.html" target="_blank">U.S. Defense Department Declares Anthropic an 'Unacceptable Risk' to National Security</a></h3>
-                    <p class="card-description">The Pentagon designated Anthropic a 'supply chain risk' after negotiations over using the company's AI models in classified systems broke down. Anthropic's lawsuits challenging Defense Secretary Pete Hegseth's decision were met with the agency's first formal rebuttal.</p>
+                    <span class="news-source">The New York Times</span>
+                    <div class="news-time">1 day ago</div>
+                    <a href="https://www.nytimes.com/2026/03/17/technology/anthropic-pentagon-national-security-risk.html" class="card-title" target="_blank" data-lang="en">U.S. Defense Department Declares Anthropic an 'Unacceptable Risk' to National Security</a>
+                    <a href="https://www.nytimes.com/2026/03/17/technology/anthropic-pentagon-national-security-risk.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">U.S. Defense Department Declares Anthropic an 'Unacceptable Risk' to National Security</a>
+                    <p class="card-description" data-lang="en">The Pentagon designated Anthropic a 'supply chain risk' after negotiations over using the company's AI models in classified systems broke down. Anthropic's lawsuits challenging Defense Secretary Pete Hegseth's decision were met with the agency's first formal rebuttal.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">The Pentagon designated Anthropic a 'supply chain risk' after negotiations over using the company's AI models in classified systems broke down. Anthropic's lawsuits challenging Defense Secretary Pete Hegseth's decision were met with the agency's first formal rebuttal.</p>
                 </div>
-
                 <div class="card news-card">
-                    <div class="card-meta">
-                        <span>📡 NVIDIA Blog</span>
-                        <span>🕐 4 hours ago</span>
-                    </div>
-                    <h3 class="card-title"><a href="https://blogs.nvidia.com/blog/gtc-2026-news/" target="_blank">NVIDIA GTC 2026 Wraps with Disney's Olaf Robot and AI Agent Showcase</a></h3>
-                    <p class="card-description">NVIDIA GTC 2026 concluded with Jensen Huang showcasing Disney's self-walking Olaf robot powered by physical AI. The event highlighted inference, AI factories, OpenClaw agents, and physical AI robotics. Olaf will debut at Disneyland Paris at the end of March.</p>
+                    <span class="news-source">NVIDIA Blog</span>
+                    <div class="news-time">4 hours ago</div>
+                    <a href="https://blogs.nvidia.com/blog/gtc-2026-news/" class="card-title" target="_blank" data-lang="en">NVIDIA GTC 2026 Wraps with Disney's Olaf Robot and AI Agent Showcase</a>
+                    <a href="https://blogs.nvidia.com/blog/gtc-2026-news/" class="card-title" target="_blank" data-lang="zh" style="display: none;">NVIDIA GTC 2026 Wraps with Disney's Olaf Robot and AI Agent Showcase</a>
+                    <p class="card-description" data-lang="en">NVIDIA GTC 2026 concluded with Jensen Huang showcasing Disney's self-walking Olaf robot powered by physical AI. The event highlighted inference, AI factories, OpenClaw agents, and physical AI robotics. Olaf will debut at Disneyland Paris at the end of March.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">NVIDIA GTC 2026 concluded with Jensen Huang showcasing Disney's self-walking Olaf robot powered by physical AI. The event highlighted inference, AI factories, OpenClaw agents, and physical AI robotics. Olaf will debut at Disneyland Paris at the end of March.</p>
                 </div>
-
                 <div class="card news-card">
-                    <div class="card-meta">
-                        <span>📡 PYMNTS</span>
-                        <span>🕐 15 hours ago</span>
-                    </div>
-                    <h3 class="card-title"><a href="https://www.pymnts.com/artificial-intelligence-2/2026/alibaba-joins-other-tech-giants-in-raising-ai-prices/" target="_blank">Alibaba Raises AI and Computing Storage Prices by Up to 34%</a></h3>
-                    <p class="card-description">Alibaba is reportedly increasing its AI and computing storage prices by up to 34%, joining other tech giants in raising costs amid surging demand for AI infrastructure and services.</p>
+                    <span class="news-source">PYMNTS</span>
+                    <div class="news-time">15 hours ago</div>
+                    <a href="https://www.pymnts.com/artificial-intelligence-2/2026/alibaba-joins-other-tech-giants-in-raising-ai-prices/" class="card-title" target="_blank" data-lang="en">Alibaba Raises AI and Computing Storage Prices by Up to 34%</a>
+                    <a href="https://www.pymnts.com/artificial-intelligence-2/2026/alibaba-joins-other-tech-giants-in-raising-ai-prices/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Alibaba Raises AI and Computing Storage Prices by Up to 34%</a>
+                    <p class="card-description" data-lang="en">Alibaba is reportedly increasing its AI and computing storage prices by up to 34%, joining other tech giants in raising costs amid surging demand for AI infrastructure and services.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Alibaba is reportedly increasing its AI and computing storage prices by up to 34%, joining other tech giants in raising costs amid surging demand for AI infrastructure and services.</p>
                 </div>
-
                 <div class="card news-card">
-                    <div class="card-meta">
-                        <span>📡 AdwaitX</span>
-                        <span>🕐 1 day ago</span>
-                    </div>
-                    <h3 class="card-title"><a href="https://www.adwaitx.com/gpt-54-mini-nano-openai/" target="_blank">OpenAI Releases GPT-5.4 Mini and Nano: Affordable High-Performance Models</a></h3>
-                    <p class="card-description">OpenAI released GPT-5.4 mini and nano models on March 17, delivering near-top-tier performance at costs most developers can afford. These are not compromised versions but optimized models for broad accessibility.</p>
+                    <span class="news-source">AdwaitX</span>
+                    <div class="news-time">1 day ago</div>
+                    <a href="https://www.adwaitx.com/gpt-54-mini-nano-openai/" class="card-title" target="_blank" data-lang="en">OpenAI Releases GPT-5.4 Mini and Nano: Affordable High-Performance Models</a>
+                    <a href="https://www.adwaitx.com/gpt-54-mini-nano-openai/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI Releases GPT-5.4 Mini and Nano: Affordable High-Performance Models</a>
+                    <p class="card-description" data-lang="en">OpenAI released GPT-5.4 mini and nano models on March 17, delivering near-top-tier performance at costs most developers can afford. These are not compromised versions but optimized models for broad accessibility.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI released GPT-5.4 mini and nano models on March 17, delivering near-top-tier performance at costs most developers can afford. These are not compromised versions but optimized models for broad accessibility.</p>
                 </div>
-
                 <div class="card news-card">
-                    <div class="card-meta">
-                        <span>📡 Reuters</span>
-                        <span>🕐 20 hours ago</span>
-                    </div>
-                    <h3 class="card-title"><a href="https://www.reuters.com/technology/" target="_blank">Samsung and AMD Expand Strategic Partnership for AI Memory Chips</a></h3>
-                    <p class="card-description">Samsung Electronics and AMD signed a memorandum of understanding to expand their strategic partnership on memory chip supplies for artificial intelligence infrastructure, strengthening the AI hardware supply chain.</p>
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">20 hours ago</div>
+                    <a href="https://www.reuters.com/technology/" class="card-title" target="_blank" data-lang="en">Samsung and AMD Expand Strategic Partnership for AI Memory Chips</a>
+                    <a href="https://www.reuters.com/technology/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Samsung and AMD Expand Strategic Partnership for AI Memory Chips</a>
+                    <p class="card-description" data-lang="en">Samsung Electronics and AMD signed a memorandum of understanding to expand their strategic partnership on memory chip supplies for artificial intelligence infrastructure, strengthening the AI hardware supply chain.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Samsung Electronics and AMD signed a memorandum of understanding to expand their strategic partnership on memory chip supplies for artificial intelligence infrastructure, strengthening the AI hardware supply chain.</p>
                 </div>
-
                 <div class="card news-card">
-                    <div class="card-meta">
-                        <span>📡 NVIDIA Blog</span>
-                        <span>🕐 6 hours ago</span>
-                    </div>
-                    <h3 class="card-title"><a href="https://blogs.nvidia.com/blog/gtc-2026-news/" target="_blank">NVIDIA Unveils NemoClaw Stack for Autonomous OpenClaw Agents</a></h3>
-                    <p class="card-description">NVIDIA introduced NemoClaw, an open-source stack for running always-on OpenClaw assistants safely. Combined with DGX Station featuring GB300 Grace Blackwell Ultra with 748GB memory and 20 petaflops AI compute.</p>
+                    <span class="news-source">NVIDIA Blog</span>
+                    <div class="news-time">6 hours ago</div>
+                    <a href="https://blogs.nvidia.com/blog/gtc-2026-news/" class="card-title" target="_blank" data-lang="en">NVIDIA Unveils NemoClaw Stack for Autonomous OpenClaw Agents</a>
+                    <a href="https://blogs.nvidia.com/blog/gtc-2026-news/" class="card-title" target="_blank" data-lang="zh" style="display: none;">NVIDIA Unveils NemoClaw Stack for Autonomous OpenClaw Agents</a>
+                    <p class="card-description" data-lang="en">NVIDIA introduced NemoClaw, an open-source stack for running always-on OpenClaw assistants safely. Combined with DGX Station featuring GB300 Grace Blackwell Ultra with 748GB memory and 20 petaflops AI compute.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">NVIDIA introduced NemoClaw, an open-source stack for running always-on OpenClaw assistants safely. Combined with DGX Station featuring GB300 Grace Blackwell Ultra with 748GB memory and 20 petaflops AI compute.</p>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <h2 class="section-title"><span>💡</span> Daily Insight</h2>
-            <div class="insight-section">
-                <div class="insight-content">
-                    <p>小米MiMo-V2-Pro以'Hunter Alpha'身份匿名登顶OpenRouter，标志着中国AI势力正在用'隐身模式'挑战西方主导权。与此同时，Anthropic被五角大楼列为'供应链风险'，折射出AI地缘政治的紧张态势。Karpathy的autoresearch和AReaL的发布则预示着AI研究本身的自动化——当AI开始自主训练AI，人类研究者的角色将被重新定义。短期关注Agent自主研究框架，长期警惕AI基础设施的地缘政治分化。</p>
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">小米MiMo-V2-Pro以'Hunter Alpha'身份匿名登顶OpenRouter，标志着中国AI势力正在用'隐身模式'挑战西方主导权。与此同时，Anthropic被五角大楼列为'供应链风险'，折射出AI地缘政治的紧张态势。Karpathy的autoresearch和AReaL的发布则预示着AI研究本身的自动化——当AI开始自主训练AI，人类研究者的角色将被重新定义。短期关注Agent自主研究框架，长期警惕AI基础设施的地缘政治分化。</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">小米MiMo-V2-Pro以'Hunter Alpha'身份匿名登顶OpenRouter，标志着中国AI势力正在用'隐身模式'挑战西方主导权。与此同时，Anthropic被五角大楼列为'供应链风险'，折射出AI地缘政治的紧张态势。Karpathy的autoresearch和AReaL的发布则预示着AI研究本身的自动化——当AI开始自主训练AI，人类研究者的角色将被重新定义。短期关注Agent自主研究框架，长期警惕AI基础设施的地缘政治分化。</div>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p>Generated on March 19, 2026 | Daily AI News Digest</p>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
         </footer>
     </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.getAttribute('data-lang') === lang) {
+                    el.style.display = el.tagName === 'H2' || el.tagName === 'P' ? 'flex' : 'block';
+                    // For section titles, maintain flex
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
 </body>
 </html>

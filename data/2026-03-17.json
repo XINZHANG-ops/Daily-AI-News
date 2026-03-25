@@ -4,81 +4,138 @@
     {
       "name": "microsoft/BitNet",
       "url": "https://github.com/microsoft/BitNet",
-      "description": "Official inference framework for 1-bit LLMs. bitnet.cpp offers optimized kernels for fast and lossless inference of 1.58-bit models on CPU and GPU. Achieves 1.37x to 5.07x speedups on ARM CPUs and 2.37x to 6.17x on x86 CPUs with significant energy reductions.",
+      "description": {
+        "en": "Official inference framework for 1-bit LLMs. bitnet.cpp offers optimized kernels for fast and lossless inference of 1.58-bit models on CPU and GPU. Achieves 1.37x to 5.07x speedups on ARM CPUs and 2.37x to 6.17x on x86 CPUs with significant energy reductions.",
+        "zh": "Official inference framework for 1-bit LLMs. bitnet.cpp offers optimized kernels for fast and lossless inference of 1.58-bit models on CPU and GPU. Achieves 1.37x to 5.07x speedups on ARM CPUs and 2.37x to 6.17x on x86 CPUs with significant energy reductions."
+      },
       "stars": "16.2k",
       "forks": "1.1k"
     },
     {
       "name": "vectorize-io/hindsight",
       "url": "https://github.com/vectorize-io/hindsight",
-      "description": "Agent memory system built to create smarter agents that learn over time. Uses biomimetic data structures to organize agent memories like human memory. Achieved state-of-the-art performance on LongMemEval benchmark. Features retain, recall, and reflect operations for memory management.",
+      "description": {
+        "en": "Agent memory system built to create smarter agents that learn over time. Uses biomimetic data structures to organize agent memories like human memory. Achieved state-of-the-art performance on LongMemEval benchmark. Features retain, recall, and reflect operations for memory management.",
+        "zh": "Agent memory system built to create smarter agents that learn over time. Uses biomimetic data structures to organize agent memories like human memory. Achieved state-of-the-art performance on LongMemEval benchmark. Features retain, recall, and reflect operations for memory management."
+      },
       "stars": "2.8k",
       "forks": "156"
     },
     {
       "name": "dimensionalOS/dimos",
       "url": "https://github.com/dimensionalOS/dimos",
-      "description": "Dimensional is the agentic operating system for physical space. Vibecode humanoids, quadrupeds, drones, and other hardware platforms in natural language. Build multi-agent systems that work seamlessly with physical input (cameras, lidar, actuators). No ROS required.",
+      "description": {
+        "en": "Dimensional is the agentic operating system for physical space. Vibecode humanoids, quadrupeds, drones, and other hardware platforms in natural language. Build multi-agent systems that work seamlessly with physical input (cameras, lidar, actuators). No ROS required.",
+        "zh": "Dimensional is the agentic operating system for physical space. Vibecode humanoids, quadrupeds, drones, and other hardware platforms in natural language. Build multi-agent systems that work seamlessly with physical input (cameras, lidar, actuators). No ROS required."
+      },
       "stars": "1.5k",
       "forks": "89"
     }
   ],
   "ai_news": [
     {
-      "title": "NVIDIA GTC 2026: Jensen Huang Announces Vera Rubin Platform and $1 Trillion Revenue Opportunity",
+      "title": {
+        "en": "NVIDIA GTC 2026: Jensen Huang Announces Vera Rubin Platform and $1 Trillion Revenue Opportunity",
+        "zh": "NVIDIA GTC 2026: Jensen Huang Announces Vera Rubin Platform and $1 Trillion Revenue Opportunity"
+      },
       "url": "https://www.cnbc.com/2026/03/16/nvidia-gtc-2026-ceo-jensen-huang-keynote-blackwell-vera-rubin.html",
       "source": "CNBC",
       "time": "14 hours ago",
-      "description": "NVIDIA CEO Jensen Huang announced the Vera Rubin platform with 10x performance per watt over Blackwell. The company expects $1 trillion in orders for Blackwell and Vera Rubin through 2027. Also unveiled Groq 3 LPU and NemoClaw stack for OpenClaw agents."
+      "description": {
+        "en": "NVIDIA CEO Jensen Huang announced the Vera Rubin platform with 10x performance per watt over Blackwell. The company expects $1 trillion in orders for Blackwell and Vera Rubin through 2027. Also unveiled Groq 3 LPU and NemoClaw stack for OpenClaw agents.",
+        "zh": "NVIDIA CEO Jensen Huang announced the Vera Rubin platform with 10x performance per watt over Blackwell. The company expects $1 trillion in orders for Blackwell and Vera Rubin through 2027. Also unveiled Groq 3 LPU and NemoClaw stack for OpenClaw agents."
+      }
     },
     {
-      "title": "NVIDIA GTC 2026 Live Updates: DLSS 5, OpenClaw Partnership, and Disney's Olaf Robot",
+      "title": {
+        "en": "NVIDIA GTC 2026 Live Updates: DLSS 5, OpenClaw Partnership, and Disney's Olaf Robot",
+        "zh": "NVIDIA GTC 2026 Live Updates: DLSS 5, OpenClaw Partnership, and Disney's Olaf Robot"
+      },
       "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
       "source": "NVIDIA Blog",
       "time": "6 hours ago",
-      "description": "NVIDIA announced DLSS 5 with 3D-guided neural rendering, OpenShell runtime for secure agent deployment, and partnership with Disney featuring an Olaf robot powered by physical AI. Also revealed plans for space-based AI data centers with Space-1 Vera Rubin."
+      "description": {
+        "en": "NVIDIA announced DLSS 5 with 3D-guided neural rendering, OpenShell runtime for secure agent deployment, and partnership with Disney featuring an Olaf robot powered by physical AI. Also revealed plans for space-based AI data centers with Space-1 Vera Rubin.",
+        "zh": "NVIDIA announced DLSS 5 with 3D-guided neural rendering, OpenShell runtime for secure agent deployment, and partnership with Disney featuring an Olaf robot powered by physical AI. Also revealed plans for space-based AI data centers with Space-1 Vera Rubin."
+      }
     },
     {
-      "title": "Google Scraps AI Search Feature That Crowdsourced Amateur Medical Advice",
+      "title": {
+        "en": "Google Scraps AI Search Feature That Crowdsourced Amateur Medical Advice",
+        "zh": "Google Scraps AI Search Feature That Crowdsourced Amateur Medical Advice"
+      },
       "url": "https://www.theguardian.com/technology/2026/mar/16/google-scraps-ai-search-feature-that-crowdsourced-amateur-medical-advice",
       "source": "The Guardian",
       "time": "16 hours ago",
-      "description": "Google has quietly removed its 'What People Suggest' feature that provided crowdsourced health advice from strangers. The move comes amid mounting scrutiny over AI-generated health information in Google Search, following a Guardian investigation in January."
+      "description": {
+        "en": "Google has quietly removed its 'What People Suggest' feature that provided crowdsourced health advice from strangers. The move comes amid mounting scrutiny over AI-generated health information in Google Search, following a Guardian investigation in January.",
+        "zh": "Google has quietly removed its 'What People Suggest' feature that provided crowdsourced health advice from strangers. The move comes amid mounting scrutiny over AI-generated health information in Google Search, following a Guardian investigation in January."
+      }
     },
     {
-      "title": "NVIDIA and AWS Expand Partnership for Agentic AI Era",
+      "title": {
+        "en": "NVIDIA and AWS Expand Partnership for Agentic AI Era",
+        "zh": "NVIDIA and AWS Expand Partnership for Agentic AI Era"
+      },
       "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
       "source": "NVIDIA Blog",
       "time": "6 hours ago",
-      "description": "AWS will deploy more than 1 million NVIDIA GPUs including Blackwell, Rubin architectures, and Groq 3 LPUs. The expanded infrastructure will support growing compute demand for agentic AI across every industry."
+      "description": {
+        "en": "AWS will deploy more than 1 million NVIDIA GPUs including Blackwell, Rubin architectures, and Groq 3 LPUs. The expanded infrastructure will support growing compute demand for agentic AI across every industry.",
+        "zh": "AWS will deploy more than 1 million NVIDIA GPUs including Blackwell, Rubin architectures, and Groq 3 LPUs. The expanded infrastructure will support growing compute demand for agentic AI across every industry."
+      }
     },
     {
-      "title": "NVIDIA Announces Open Physical AI Models for Healthcare Robotics",
+      "title": {
+        "en": "NVIDIA Announces Open Physical AI Models for Healthcare Robotics",
+        "zh": "NVIDIA Announces Open Physical AI Models for Healthcare Robotics"
+      },
       "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
       "source": "NVIDIA Blog",
       "time": "6 hours ago",
-      "description": "NVIDIA launched Open-H (largest healthcare robotics dataset), Cosmos-H (surgical video generation models), and GR00T-H (vision language action model). CMR Surgical, J&J MedTech, and others are adopting these tools for surgical robotics."
+      "description": {
+        "en": "NVIDIA launched Open-H (largest healthcare robotics dataset), Cosmos-H (surgical video generation models), and GR00T-H (vision language action model). CMR Surgical, J&J MedTech, and others are adopting these tools for surgical robotics.",
+        "zh": "NVIDIA launched Open-H (largest healthcare robotics dataset), Cosmos-H (surgical video generation models), and GR00T-H (vision language action model). CMR Surgical, J&J MedTech, and others are adopting these tools for surgical robotics."
+      }
     },
     {
-      "title": "NVIDIA DGX Station and Spark Paired With NemoClaw for Autonomous Agents",
+      "title": {
+        "en": "NVIDIA DGX Station and Spark Paired With NemoClaw for Autonomous Agents",
+        "zh": "NVIDIA DGX Station and Spark Paired With NemoClaw for Autonomous Agents"
+      },
       "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
       "source": "NVIDIA Blog",
       "time": "6 hours ago",
-      "description": "NVIDIA introduced NemoClaw open source stack for running always-on OpenClaw assistants safely. DGX Station features GB300 Grace Blackwell Ultra with 748GB memory and 20 petaflops AI compute. DGX Spark now supports clustering up to 4 systems."
+      "description": {
+        "en": "NVIDIA introduced NemoClaw open source stack for running always-on OpenClaw assistants safely. DGX Station features GB300 Grace Blackwell Ultra with 748GB memory and 20 petaflops AI compute. DGX Spark now supports clustering up to 4 systems.",
+        "zh": "NVIDIA introduced NemoClaw open source stack for running always-on OpenClaw assistants safely. DGX Station features GB300 Grace Blackwell Ultra with 748GB memory and 20 petaflops AI compute. DGX Spark now supports clustering up to 4 systems."
+      }
     },
     {
-      "title": "Microsoft and NVIDIA Collaborate on Agentic AI and Sovereign AI Systems",
+      "title": {
+        "en": "Microsoft and NVIDIA Collaborate on Agentic AI and Sovereign AI Systems",
+        "zh": "Microsoft and NVIDIA Collaborate on Agentic AI and Sovereign AI Systems"
+      },
       "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
       "source": "NVIDIA Blog",
       "time": "6 hours ago",
-      "description": "Microsoft integrated NVIDIA Nemotron models into Microsoft Foundry. Azure Local now supports RTX PRO 6000 Blackwell for sovereign AI. Azure was first hyperscale cloud to power up Vera Rubin NVL72 systems."
+      "description": {
+        "en": "Microsoft integrated NVIDIA Nemotron models into Microsoft Foundry. Azure Local now supports RTX PRO 6000 Blackwell for sovereign AI. Azure was first hyperscale cloud to power up Vera Rubin NVL72 systems.",
+        "zh": "Microsoft integrated NVIDIA Nemotron models into Microsoft Foundry. Azure Local now supports RTX PRO 6000 Blackwell for sovereign AI. Azure was first hyperscale cloud to power up Vera Rubin NVL72 systems."
+      }
     },
     {
-      "title": "NVIDIA RTX PRO 4500 Blackwell Server Edition Brings Universal Acceleration",
+      "title": {
+        "en": "NVIDIA RTX PRO 4500 Blackwell Server Edition Brings Universal Acceleration",
+        "zh": "NVIDIA RTX PRO 4500 Blackwell Server Edition Brings Universal Acceleration"
+      },
       "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
       "source": "NVIDIA Blog",
       "time": "6 hours ago",
-      "description": "New RTX PRO 4500 delivers 100x performance for vision AI and 50x for vector databases vs CPU-only servers. Features 5th-gen Tensor Cores in a compact 165W single-slot form factor. Coming to AWS as first cloud provider support."
+      "description": {
+        "en": "New RTX PRO 4500 delivers 100x performance for vision AI and 50x for vector databases vs CPU-only servers. Features 5th-gen Tensor Cores in a compact 165W single-slot form factor. Coming to AWS as first cloud provider support.",
+        "zh": "New RTX PRO 4500 delivers 100x performance for vision AI and 50x for vector databases vs CPU-only servers. Features 5th-gen Tensor Cores in a compact 165W single-slot form factor. Coming to AWS as first cloud provider support."
+      }
     }
   ]
 }

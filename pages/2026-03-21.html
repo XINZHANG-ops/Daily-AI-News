@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily AI News Digest - March 21, 2026</title>
+    <title>AI News Digest - March 21, 2026</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
             min-height: 100vh;
             color: #e0e0e0;
@@ -27,35 +27,77 @@
         
         header {
             text-align: center;
-            margin-bottom: 50px;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
         }
         
         h1 {
-            font-size: 2.5rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
         }
         
-        .date {
-            color: #a0a0a0;
-            font-size: 1.1rem;
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
         }
         
         .section {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
         
         .section-title {
             font-size: 1.8rem;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             display: flex;
             align-items: center;
             gap: 12px;
@@ -63,7 +105,7 @@
         }
         
         .section-title span {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
         
         .cards-grid {
@@ -74,17 +116,35 @@
         
         .card {
             background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
             border-radius: 16px;
             padding: 25px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
         
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            border-color: rgba(102, 126, 234, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
         }
         
         .card-header {
@@ -95,30 +155,34 @@
         }
         
         .card-title {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            font-weight: 600;
             color: #fff;
             text-decoration: none;
-            font-weight: 600;
-            line-height: 1.4;
-            flex: 1;
-            margin-right: 10px;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
         }
         
         .card-title:hover {
-            color: #667eea;
+            color: #00d4ff;
         }
         
-        .card-stats {
+        .card-meta {
             display: flex;
             gap: 15px;
             font-size: 0.85rem;
             color: #888;
         }
         
-        .stat {
+        .meta-item {
             display: flex;
             align-items: center;
             gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
         }
         
         .card-description {
@@ -127,110 +191,103 @@
             line-height: 1.6;
         }
         
-        .news-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-        
-        .news-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-            border-color: rgba(118, 75, 162, 0.3);
-        }
-        
-        .news-header {
-            margin-bottom: 12px;
-        }
-        
-        .news-title {
+        .news-card .card-title {
             font-size: 1.15rem;
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            line-height: 1.4;
-            display: block;
-            margin-bottom: 8px;
-        }
-        
-        .news-title:hover {
-            color: #764ba2;
-        }
-        
-        .news-meta {
-            display: flex;
-            gap: 15px;
-            font-size: 0.85rem;
-            color: #888;
+            margin-top: 10px;
         }
         
         .news-source {
-            color: #667eea;
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
             font-weight: 500;
         }
         
-        .news-description {
-            color: #b0b0b0;
-            font-size: 0.95rem;
-            line-height: 1.6;
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
         }
         
-        .insight-section {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
-            border-radius: 20px;
-            padding: 35px;
-            border: 1px solid rgba(102, 126, 234, 0.3);
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
             position: relative;
             overflow: hidden;
+            grid-column: 1 / -1;
         }
         
-        .insight-section::before {
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
             content: '"';
             position: absolute;
-            top: 20px;
-            left: 25px;
+            left: -8px;
+            top: -15px;
             font-size: 4rem;
-            color: rgba(102, 126, 234, 0.2);
+            color: #e94560;
+            opacity: 0.4;
             font-family: Georgia, serif;
             line-height: 1;
         }
         
-        .insight-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #e0e0e0;
-            position: relative;
-            z-index: 1;
-            padding-left: 20px;
-        }
-        
         footer {
             text-align: center;
-            padding: 30px;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #666;
             font-size: 0.9rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            margin-top: 50px;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
         }
         
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.8rem;
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
             }
             
             .cards-grid {
                 grid-template-columns: 1fr;
             }
             
-            .card-header {
-                flex-direction: column;
-            }
-            
-            .card-stats {
-                margin-top: 10px;
+            .section-title {
+                font-size: 1.4rem;
             }
         }
     </style>
@@ -238,129 +295,167 @@
 <body>
     <div class="container">
         <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
             <h1>🤖 Daily AI News Digest</h1>
-            <p class="date">March 21, 2026</p>
+            <div class="date-badge">📅 March 21, 2026</div>
         </header>
-        
+
         <section class="section">
-            <h2 class="section-title"><span>🐙</span> Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-header">
-                        <a href="https://github.com/browser-use/browser-use" class="card-title" target="_blank">browser-use/browser-use</a>
-                        <div class="card-stats">
-                            <span class="stat">⭐ 51.2k</span>
-                            <span class="stat">🍴 5.8k</span>
+                        <div>
+                            <a href="https://github.com/browser-use/browser-use" class="card-title" target="_blank">browser-use/browser-use</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 51.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 5.8k forks</div>
+                            </div>
                         </div>
                     </div>
-                    <p class="card-description">Make websites accessible for AI agents. Automate tasks online with ease. A Python framework that enables AI agents to control browsers and perform web automation tasks.</p>
+                    <p class="card-description" data-lang="en">Make websites accessible for AI agents. Automate tasks online with ease. A Python framework that enables AI agents to control browsers and perform web automation tasks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Make websites accessible for AI agents. Automate tasks online with ease. A Python framework that enables AI agents to control browsers and perform web automation tasks.</p>
                 </div>
-                
                 <div class="card">
                     <div class="card-header">
-                        <a href="https://github.com/microsoft/ai-agents-for-beginners" class="card-title" target="_blank">microsoft/ai-agents-for-beginners</a>
-                        <div class="card-stats">
-                            <span class="stat">⭐ 12.8k</span>
-                            <span class="stat">🍴 3.2k</span>
+                        <div>
+                            <a href="https://github.com/microsoft/ai-agents-for-beginners" class="card-title" target="_blank">microsoft/ai-agents-for-beginners</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 12.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 3.2k forks</div>
+                            </div>
                         </div>
                     </div>
-                    <p class="card-description">12 Lessons to Get Started Building AI Agents. A comprehensive tutorial series by Microsoft covering agent fundamentals, tool use, planning, multi-agent systems, and deployment.</p>
+                    <p class="card-description" data-lang="en">12 Lessons to Get Started Building AI Agents. A comprehensive tutorial series by Microsoft covering agent fundamentals, tool use, planning, multi-agent systems, and deployment.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">12 Lessons to Get Started Building AI Agents. A comprehensive tutorial series by Microsoft covering agent fundamentals, tool use, planning, multi-agent systems, and deployment.</p>
                 </div>
-                
                 <div class="card">
                     <div class="card-header">
-                        <a href="https://github.com/pydantic/pydantic-ai" class="card-title" target="_blank">pydantic/pydantic-ai</a>
-                        <div class="card-stats">
-                            <span class="stat">⭐ 38.5k</span>
-                            <span class="stat">🍴 3.1k</span>
+                        <div>
+                            <a href="https://github.com/pydantic/pydantic-ai" class="card-title" target="_blank">pydantic/pydantic-ai</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 38.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 3.1k forks</div>
+                            </div>
                         </div>
                     </div>
-                    <p class="card-description">GenAI Agent Framework, the Pydantic way. Type-safe agent development with model-agnostic support for OpenAI, Anthropic, Gemini, and 20+ providers. Built by the Pydantic team.</p>
+                    <p class="card-description" data-lang="en">GenAI Agent Framework, the Pydantic way. Type-safe agent development with model-agnostic support for OpenAI, Anthropic, Gemini, and 20+ providers. Built by the Pydantic team.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GenAI Agent Framework, the Pydantic way. Type-safe agent development with model-agnostic support for OpenAI, Anthropic, Gemini, and 20+ providers. Built by the Pydantic team.</p>
                 </div>
             </div>
         </section>
-        
+
         <section class="section">
-            <h2 class="section-title"><span>📰</span> AI News & Updates</h2>
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
             <div class="cards-grid">
-                <div class="news-card">
-                    <div class="news-header">
-                        <a href="https://www.politico.com/news/2026/03/20/white-house-releases-ai-policy-blueprint-for-congress-00837354" class="news-title" target="_blank">White House Releases AI Policy Blueprint for Congress</a>
-                        <div class="news-meta">
-                            <span class="news-source">Politico</span>
-                            <span>March 20, 2026</span>
-                        </div>
-                    </div>
-                    <p class="news-description">The White House published a comprehensive policy framework urging Congress to enact federal AI legislation that would pre-empt state rules, protect children, and shield communities from high energy costs related to AI infrastructure.</p>
+                <div class="card news-card">
+                    <span class="news-source">Politico</span>
+                    <div class="news-time">March 20, 2026</div>
+                    <a href="https://www.politico.com/news/2026/03/20/white-house-releases-ai-policy-blueprint-for-congress-00837354" class="card-title" target="_blank" data-lang="en">White House Releases AI Policy Blueprint for Congress</a>
+                    <a href="https://www.politico.com/news/2026/03/20/white-house-releases-ai-policy-blueprint-for-congress-00837354" class="card-title" target="_blank" data-lang="zh" style="display: none;">White House Releases AI Policy Blueprint for Congress</a>
+                    <p class="card-description" data-lang="en">The White House published a comprehensive policy framework urging Congress to enact federal AI legislation that would pre-empt state rules, protect children, and shield communities from high energy costs related to AI infrastructure.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">The White House published a comprehensive policy framework urging Congress to enact federal AI legislation that would pre-empt state rules, protect children, and shield communities from high energy costs related to AI infrastructure.</p>
                 </div>
-                
-                <div class="news-card">
-                    <div class="news-header">
-                        <a href="https://thenewstack.io/openai-astral-acquisition/" class="news-title" target="_blank">OpenAI Acquires Astral, Maker of uv and Ruff Python Tools</a>
-                        <div class="news-meta">
-                            <span class="news-source">The New Stack</span>
-                            <span>March 19, 2026</span>
-                        </div>
-                    </div>
-                    <p class="news-description">OpenAI announced plans to acquire Astral, the company behind popular Python developer tools uv (126M+ monthly downloads), Ruff, and ty. The acquisition aims to integrate these tools into OpenAI's Codex ecosystem while maintaining open-source continuity.</p>
+                <div class="card news-card">
+                    <span class="news-source">The New Stack</span>
+                    <div class="news-time">March 19, 2026</div>
+                    <a href="https://thenewstack.io/openai-astral-acquisition/" class="card-title" target="_blank" data-lang="en">OpenAI Acquires Astral, Maker of uv and Ruff Python Tools</a>
+                    <a href="https://thenewstack.io/openai-astral-acquisition/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI Acquires Astral, Maker of uv and Ruff Python Tools</a>
+                    <p class="card-description" data-lang="en">OpenAI announced plans to acquire Astral, the company behind popular Python developer tools uv (126M+ monthly downloads), Ruff, and ty. The acquisition aims to integrate these tools into OpenAI's Codex ecosystem while maintaining open-source continuity.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI announced plans to acquire Astral, the company behind popular Python developer tools uv (126M+ monthly downloads), Ruff, and ty. The acquisition aims to integrate these tools into OpenAI's Codex ecosystem while maintaining open-source continuity.</p>
                 </div>
-                
-                <div class="news-card">
-                    <div class="news-header">
-                        <a href="https://www.theguardian.com/technology/2026/mar/20/meta-ai-agents-instruction-causes-large-sensitive-data-leak-to-employees" class="news-title" target="_blank">Meta AI Agent Causes Large Sensitive Data Leak to Employees</a>
-                        <div class="news-meta">
-                            <span class="news-source">The Guardian</span>
-                            <span>March 20, 2026</span>
-                        </div>
-                    </div>
-                    <p class="news-description">An internal AI agent at Meta provided incorrect guidance to an engineer, exposing sensitive user and company data to unauthorized employees for approximately two hours. The incident raises concerns about AI agent safety in production environments.</p>
+                <div class="card news-card">
+                    <span class="news-source">The Guardian</span>
+                    <div class="news-time">March 20, 2026</div>
+                    <a href="https://www.theguardian.com/technology/2026/mar/20/meta-ai-agents-instruction-causes-large-sensitive-data-leak-to-employees" class="card-title" target="_blank" data-lang="en">Meta AI Agent Causes Large Sensitive Data Leak to Employees</a>
+                    <a href="https://www.theguardian.com/technology/2026/mar/20/meta-ai-agents-instruction-causes-large-sensitive-data-leak-to-employees" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta AI Agent Causes Large Sensitive Data Leak to Employees</a>
+                    <p class="card-description" data-lang="en">An internal AI agent at Meta provided incorrect guidance to an engineer, exposing sensitive user and company data to unauthorized employees for approximately two hours. The incident raises concerns about AI agent safety in production environments.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">An internal AI agent at Meta provided incorrect guidance to an engineer, exposing sensitive user and company data to unauthorized employees for approximately two hours. The incident raises concerns about AI agent safety in production environments.</p>
                 </div>
-                
-                <div class="news-card">
-                    <div class="news-header">
-                        <a href="https://www.reuters.com/world/us-charges-three-people-with-conspiring-divert-ai-tech-china-2026-03-19/" class="news-title" target="_blank">Super Micro Co-Founder Charged in $2.5B AI Chip Smuggling Plot</a>
-                        <div class="news-meta">
-                            <span class="news-source">Reuters</span>
-                            <span>March 19, 2026</span>
-                        </div>
-                    </div>
-                    <p class="news-description">U.S. prosecutors charged three people linked to Super Micro Computer, including its co-founder, with conspiring to smuggle $2.5 billion worth of Nvidia AI servers to China. The scheme allegedly involved using hair dryers to remove labels and conceal the shipments.</p>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">March 19, 2026</div>
+                    <a href="https://www.reuters.com/world/us-charges-three-people-with-conspiring-divert-ai-tech-china-2026-03-19/" class="card-title" target="_blank" data-lang="en">Super Micro Co-Founder Charged in $2.5B AI Chip Smuggling Plot</a>
+                    <a href="https://www.reuters.com/world/us-charges-three-people-with-conspiring-divert-ai-tech-china-2026-03-19/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Super Micro Co-Founder Charged in $2.5B AI Chip Smuggling Plot</a>
+                    <p class="card-description" data-lang="en">U.S. prosecutors charged three people linked to Super Micro Computer, including its co-founder, with conspiring to smuggle $2.5 billion worth of Nvidia AI servers to China. The scheme allegedly involved using hair dryers to remove labels and conceal the shipments.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">U.S. prosecutors charged three people linked to Super Micro Computer, including its co-founder, with conspiring to smuggle $2.5 billion worth of Nvidia AI servers to China. The scheme allegedly involved using hair dryers to remove labels and conceal the shipments.</p>
                 </div>
-                
-                <div class="news-card">
-                    <div class="news-header">
-                        <a href="https://www.theneurondaily.com/p/google-vs-openai-battle-of-the-super-apps" class="news-title" target="_blank">Google Testing Gemini Mac Desktop App to Rival ChatGPT</a>
-                        <div class="news-meta">
-                            <span class="news-source">The Neuron</span>
-                            <span>March 20, 2026</span>
-                        </div>
-                    </div>
-                    <p class="news-description">Google is testing a dedicated Gemini application for Mac computers, positioning it to compete directly with OpenAI's ChatGPT and Anthropic's Claude desktop apps. The move signals intensifying competition in the AI assistant space.</p>
+                <div class="card news-card">
+                    <span class="news-source">The Neuron</span>
+                    <div class="news-time">March 20, 2026</div>
+                    <a href="https://www.theneurondaily.com/p/google-vs-openai-battle-of-the-super-apps" class="card-title" target="_blank" data-lang="en">Google Testing Gemini Mac Desktop App to Rival ChatGPT</a>
+                    <a href="https://www.theneurondaily.com/p/google-vs-openai-battle-of-the-super-apps" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google Testing Gemini Mac Desktop App to Rival ChatGPT</a>
+                    <p class="card-description" data-lang="en">Google is testing a dedicated Gemini application for Mac computers, positioning it to compete directly with OpenAI's ChatGPT and Anthropic's Claude desktop apps. The move signals intensifying competition in the AI assistant space.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google is testing a dedicated Gemini application for Mac computers, positioning it to compete directly with OpenAI's ChatGPT and Anthropic's Claude desktop apps. The move signals intensifying competition in the AI assistant space.</p>
                 </div>
-                
-                <div class="news-card">
-                    <div class="news-header">
-                        <a href="https://tech-insider.org/chatgpt-vs-claude-vs-deepseek-vs-gemini-2026/" class="news-title" target="_blank">OpenAI Releases GPT-5.4 'Thinking' Model</a>
-                        <div class="news-meta">
-                            <span class="news-source">Tech Insider</span>
-                            <span>March 5, 2026</span>
-                        </div>
-                    </div>
-                    <p class="news-description">OpenAI launched GPT-5.4 'Thinking', a model that achieves GPT-6-level reasoning capabilities within a smaller, faster architecture. The release demonstrates OpenAI's strategy of delivering advanced reasoning in more efficient package sizes.</p>
+                <div class="card news-card">
+                    <span class="news-source">Tech Insider</span>
+                    <div class="news-time">March 5, 2026</div>
+                    <a href="https://tech-insider.org/chatgpt-vs-claude-vs-deepseek-vs-gemini-2026/" class="card-title" target="_blank" data-lang="en">OpenAI Releases GPT-5.4 'Thinking' Model</a>
+                    <a href="https://tech-insider.org/chatgpt-vs-claude-vs-deepseek-vs-gemini-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI Releases GPT-5.4 'Thinking' Model</a>
+                    <p class="card-description" data-lang="en">OpenAI launched GPT-5.4 'Thinking', a model that achieves GPT-6-level reasoning capabilities within a smaller, faster architecture. The release demonstrates OpenAI's strategy of delivering advanced reasoning in more efficient package sizes.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI launched GPT-5.4 'Thinking', a model that achieves GPT-6-level reasoning capabilities within a smaller, faster architecture. The release demonstrates OpenAI's strategy of delivering advanced reasoning in more efficient package sizes.</p>
                 </div>
             </div>
         </section>
-        
+
         <section class="section">
-            <h2 class="section-title"><span>💡</span> Daily Insight</h2>
-            <div class="insight-section">
-                <p class="insight-content">本周AI领域呈现三大关键趋势：首先，AI Agent安全成为焦点——Meta的Agent误操作导致数据泄露事件警示我们，自动化代理在缺乏足够安全护栏时可能带来严重风险。其次，OpenAI收购Astral标志着AI巨头开始整合开发者工具链，uv和Ruff等基础设施将被深度集成到AI编码工作流中。最后，白宫AI政策框架的发布预示着联邦层面监管即将落地，这将重塑各州分散的AI治理格局，为行业带来更统一的合规标准。</p>
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">本周AI领域呈现三大关键趋势：首先，AI Agent安全成为焦点——Meta的Agent误操作导致数据泄露事件警示我们，自动化代理在缺乏足够安全护栏时可能带来严重风险。其次，OpenAI收购Astral标志着AI巨头开始整合开发者工具链，uv和Ruff等基础设施将被深度集成到AI编码工作流中。最后，白宫AI政策框架的发布预示着联邦层面监管即将落地，这将重塑各州分散的AI治理格局，为行业带来更统一的合规标准。</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周AI领域呈现三大关键趋势：首先，AI Agent安全成为焦点——Meta的Agent误操作导致数据泄露事件警示我们，自动化代理在缺乏足够安全护栏时可能带来严重风险。其次，OpenAI收购Astral标志着AI巨头开始整合开发者工具链，uv和Ruff等基础设施将被深度集成到AI编码工作流中。最后，白宫AI政策框架的发布预示着联邦层面监管即将落地，这将重塑各州分散的AI治理格局，为行业带来更统一的合规标准。</div>
+                </div>
             </div>
         </section>
-        
+
         <footer>
-            <p>Generated by OpenClaw Daily AI News Digest</p>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
         </footer>
     </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.getAttribute('data-lang') === lang) {
+                    el.style.display = el.tagName === 'H2' || el.tagName === 'P' ? 'flex' : 'block';
+                    // For section titles, maintain flex
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
 </body>
 </html>

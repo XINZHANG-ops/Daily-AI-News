@@ -27,9 +27,10 @@
         
         header {
             text-align: center;
-            margin-bottom: 50px;
-            padding: 40px 0;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
         }
         
         h1 {
@@ -52,6 +53,42 @@
             font-size: 1rem;
             color: #00d4ff;
             border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
         }
         
         .section {
@@ -237,6 +274,14 @@
                 font-size: 2rem;
             }
             
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
             .cards-grid {
                 grid-template-columns: 1fr;
             }
@@ -250,12 +295,17 @@
 <body>
     <div class="container">
         <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
             <h1>🤖 Daily AI News Digest</h1>
             <div class="date-badge">📅 March 18, 2026</div>
         </header>
 
         <section class="section">
-            <h2 class="section-title"><span>🐙</span> Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-header">
@@ -267,7 +317,8 @@
                             </div>
                         </div>
                     </div>
-                    <p class="card-description">A complete guide to start and improve in machine learning (ML), artificial intelligence (AI) in 2026 without ANY background in the field and stay up-to-date with the latest news and state-of-the-art techniques!</p>
+                    <p class="card-description" data-lang="en">A complete guide to start and improve in machine learning (ML), artificial intelligence (AI) in 2026 without ANY background in the field and stay up-to-date with the latest news and state-of-the-art techniques!</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">A complete guide to start and improve in machine learning (ML), artificial intelligence (AI) in 2026 without ANY background in the field and stay up-to-date with the latest news and state-of-the-art techniques!</p>
                 </div>
                 <div class="card">
                     <div class="card-header">
@@ -279,7 +330,8 @@
                             </div>
                         </div>
                     </div>
-                    <p class="card-description">A curated list of Machine Learning libraries and resources for the Elixir programming language. Features the insight that Python agent frameworks are independently rediscovering BEAM primitives.</p>
+                    <p class="card-description" data-lang="en">A curated list of Machine Learning libraries and resources for the Elixir programming language. Features the insight that Python agent frameworks are independently rediscovering BEAM primitives.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">A curated list of Machine Learning libraries and resources for the Elixir programming language. Features the insight that Python agent frameworks are independently rediscovering BEAM primitives.</p>
                 </div>
                 <div class="card">
                     <div class="card-header">
@@ -291,59 +343,111 @@
                             </div>
                         </div>
                     </div>
-                    <p class="card-description">Machine Learning Systems - Harvard's open-source textbook. Stars signal to universities and foundations that this work matters, directly funding workshops and hardware kits for underserved classrooms.</p>
+                    <p class="card-description" data-lang="en">Machine Learning Systems - Harvard's open-source textbook. Stars signal to universities and foundations that this work matters, directly funding workshops and hardware kits for underserved classrooms.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Machine Learning Systems - Harvard's open-source textbook. Stars signal to universities and foundations that this work matters, directly funding workshops and hardware kits for underserved classrooms.</p>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <h2 class="section-title"><span>🤖</span> AI News & Updates</h2>
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
             <div class="cards-grid">
                 <div class="card news-card">
                     <span class="news-source">Reuters</span>
                     <div class="news-time">9 hours ago</div>
-                    <a href="https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/" class="card-title" target="_blank">A Mystery AI Model Has Developers Buzzing: Is This DeepSeek's Latest Blockbuster?</a>
-                    <p class="card-description">A powerful trillion-parameter AI model called 'Hunter Alpha' surfaced anonymously on OpenRouter, sparking speculation that Chinese startup DeepSeek may be quietly testing its next-generation V4 system ahead of an official launch.</p>
+                    <a href="https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/" class="card-title" target="_blank" data-lang="en">A Mystery AI Model Has Developers Buzzing: Is This DeepSeek's Latest Blockbuster?</a>
+                    <a href="https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/" class="card-title" target="_blank" data-lang="zh" style="display: none;">A Mystery AI Model Has Developers Buzzing: Is This DeepSeek's Latest Blockbuster?</a>
+                    <p class="card-description" data-lang="en">A powerful trillion-parameter AI model called 'Hunter Alpha' surfaced anonymously on OpenRouter, sparking speculation that Chinese startup DeepSeek may be quietly testing its next-generation V4 system ahead of an official launch.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">A powerful trillion-parameter AI model called 'Hunter Alpha' surfaced anonymously on OpenRouter, sparking speculation that Chinese startup DeepSeek may be quietly testing its next-generation V4 system ahead of an official launch.</p>
                 </div>
                 <div class="card news-card">
                     <span class="news-source">Bloomberg</span>
                     <div class="news-time">18 hours ago</div>
-                    <a href="https://www.bloomberg.com/news/articles/2026-03-18/is-an-ai-bubble-set-to-burst-navigating-the-artificial-intelligence-boom" class="card-title" target="_blank">Is an AI Bubble Set to Burst? Navigating the Artificial Intelligence Boom</a>
-                    <p class="card-description">Three years into the AI boom, Wall Street can't decide whether artificial intelligence will be too disruptive or not disruptive enough. Market analysts debate the sustainability of current valuations.</p>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-18/is-an-ai-bubble-set-to-burst-navigating-the-artificial-intelligence-boom" class="card-title" target="_blank" data-lang="en">Is an AI Bubble Set to Burst? Navigating the Artificial Intelligence Boom</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-18/is-an-ai-bubble-set-to-burst-navigating-the-artificial-intelligence-boom" class="card-title" target="_blank" data-lang="zh" style="display: none;">Is an AI Bubble Set to Burst? Navigating the Artificial Intelligence Boom</a>
+                    <p class="card-description" data-lang="en">Three years into the AI boom, Wall Street can't decide whether artificial intelligence will be too disruptive or not disruptive enough. Market analysts debate the sustainability of current valuations.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Three years into the AI boom, Wall Street can't decide whether artificial intelligence will be too disruptive or not disruptive enough. Market analysts debate the sustainability of current valuations.</p>
                 </div>
                 <div class="card news-card">
                     <span class="news-source">Fortune</span>
                     <div class="news-time">6 days ago</div>
-                    <a href="https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/" class="card-title" target="_blank">Morgan Stanley Warns an AI Breakthrough Is Coming in 2026</a>
-                    <p class="card-description">A massive AI breakthrough is coming in the first half of 2026—and Morgan Stanley says most of the world isn't ready for it. The investment bank warns that a transformative leap in artificial intelligence is imminent.</p>
+                    <a href="https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/" class="card-title" target="_blank" data-lang="en">Morgan Stanley Warns an AI Breakthrough Is Coming in 2026</a>
+                    <a href="https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Morgan Stanley Warns an AI Breakthrough Is Coming in 2026</a>
+                    <p class="card-description" data-lang="en">A massive AI breakthrough is coming in the first half of 2026—and Morgan Stanley says most of the world isn't ready for it. The investment bank warns that a transformative leap in artificial intelligence is imminent.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">A massive AI breakthrough is coming in the first half of 2026—and Morgan Stanley says most of the world isn't ready for it. The investment bank warns that a transformative leap in artificial intelligence is imminent.</p>
                 </div>
                 <div class="card news-card">
                     <span class="news-source">IBM</span>
                     <div class="news-time">12 hours ago</div>
-                    <a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026" class="card-title" target="_blank">The Trends That Will Shape AI and Tech in 2026</a>
-                    <p class="card-description">IBM predicts the democratization of AI agent creation will be the most exciting shift: 'The ability to design and deploy intelligent agents is moving beyond developers into the hands of everyday business users.'</p>
+                    <a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026" class="card-title" target="_blank" data-lang="en">The Trends That Will Shape AI and Tech in 2026</a>
+                    <a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">The Trends That Will Shape AI and Tech in 2026</a>
+                    <p class="card-description" data-lang="en">IBM predicts the democratization of AI agent creation will be the most exciting shift: 'The ability to design and deploy intelligent agents is moving beyond developers into the hands of everyday business users.'</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">IBM predicts the democratization of AI agent creation will be the most exciting shift: 'The ability to design and deploy intelligent agents is moving beyond developers into the hands of everyday business users.'</p>
                 </div>
                 <div class="card news-card">
                     <span class="news-source">Reuters</span>
                     <div class="news-time">13 hours ago</div>
-                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank">Tencent Reports 13% Revenue Increase Driven by AI Services</a>
-                    <p class="card-description">Tencent Holdings reported a 13% increase in fourth-quarter revenue, driven by strong demand for gaming and growth in its artificial intelligence services, cementing its position as China's largest social media and gaming company.</p>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank" data-lang="en">Tencent Reports 13% Revenue Increase Driven by AI Services</a>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Tencent Reports 13% Revenue Increase Driven by AI Services</a>
+                    <p class="card-description" data-lang="en">Tencent Holdings reported a 13% increase in fourth-quarter revenue, driven by strong demand for gaming and growth in its artificial intelligence services, cementing its position as China's largest social media and gaming company.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Tencent Holdings reported a 13% increase in fourth-quarter revenue, driven by strong demand for gaming and growth in its artificial intelligence services, cementing its position as China's largest social media and gaming company.</p>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <h2 class="section-title"><span>💡</span> Daily Insight</h2>
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
             <div class="cards-grid">
                 <div class="insight-card">
-                    <div class="insight-content">DeepSeek的'Hunter Alpha'神秘现身，标志着中国AI势力正在以'隐身模式'挑战西方主导权。与此同时，IBM预测的'AI Agent民主化'与Morgan Stanley警告的'2026年突破'形成共振——我们正站在一个拐点上：AI从'工具'进化为'自主代理'的速度远超预期。值得警惕的是，Bloomberg的'泡沫论'并非空穴来风，当技术迭代速度超过商业落地能力时，洗牌不可避免。短期看Agent框架，长期看自主AI基础设施。</div>
+                    <div class="insight-content" data-lang="en">DeepSeek的'Hunter Alpha'神秘现身，标志着中国AI势力正在以'隐身模式'挑战西方主导权。与此同时，IBM预测的'AI Agent民主化'与Morgan Stanley警告的'2026年突破'形成共振——我们正站在一个拐点上：AI从'工具'进化为'自主代理'的速度远超预期。值得警惕的是，Bloomberg的'泡沫论'并非空穴来风，当技术迭代速度超过商业落地能力时，洗牌不可避免。短期看Agent框架，长期看自主AI基础设施。</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">DeepSeek的'Hunter Alpha'神秘现身，标志着中国AI势力正在以'隐身模式'挑战西方主导权。与此同时，IBM预测的'AI Agent民主化'与Morgan Stanley警告的'2026年突破'形成共振——我们正站在一个拐点上：AI从'工具'进化为'自主代理'的速度远超预期。值得警惕的是，Bloomberg的'泡沫论'并非空穴来风，当技术迭代速度超过商业落地能力时，洗牌不可避免。短期看Agent框架，长期看自主AI基础设施。</div>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p>Generated automatically • Daily AI News Digest</p>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
         </footer>
     </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.getAttribute('data-lang') === lang) {
+                    el.style.display = el.tagName === 'H2' || el.tagName === 'P' ? 'flex' : 'block';
+                    // For section titles, maintain flex
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
 </body>
 </html>
