@@ -449,13 +449,16 @@ def build_html(data):
                 }}
             }});
             
-            // Show/hide content based on language
+            // Show/hide content based on language (skip buttons)
             document.querySelectorAll('[data-lang]').forEach(el => {{
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
                 if (el.getAttribute('data-lang') === lang) {{
-                    el.style.display = el.tagName === 'H2' || el.tagName === 'P' ? 'flex' : 'block';
-                    // For section titles, maintain flex
+                    // For section titles (H2), use flex display
                     if (el.classList.contains('section-title')) {{
                         el.style.display = 'flex';
+                    }} else {{
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
                     }}
                 }} else {{
                     el.style.display = 'none';
