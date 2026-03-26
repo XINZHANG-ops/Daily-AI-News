@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - March 26, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 March 26, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/obra/superpowers" class="card-title" target="_blank">obra/superpowers</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 92.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 7.3k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An agentic skills framework and software development methodology that works. Shell-based framework for composing AI agent behavior without heavy Python boilerplate.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个行之有效的智能体技能框架和软件开发方法论。基于Shell的框架，无需繁琐的Python样板代码即可组合AI智能体行为。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/aiming-lab/AutoResearchClaw" class="card-title" target="_blank">aiming-lab/AutoResearchClaw</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 312 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Fully autonomous and self-evolving research from idea to paper. Chat in an idea and the agent produces a complete research paper.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">从想法到论文的全自主、自我进化研究工具。输入一个想法，智能体即可生成完整的研究论文。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/THU-MAIC/OpenMAIC" class="card-title" target="_blank">THU-MAIC/OpenMAIC</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 489 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open Multi-Agent Interactive Classroom - Immersive multi-agent learning experience from Tsinghua University in a single click.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开放式多智能体交互课堂——来自清华大学的一键式沉浸式多智能体学习体验。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Guardian</span>
+                    <div class="news-time">March 24, 2026</div>
+                    <a href="https://www.theguardian.com/technology/2026/mar/24/openai-ai-video-sora" class="card-title" target="_blank" data-lang="en">OpenAI Shuts Down Sora Video Generator</a>
+                    <a href="https://www.theguardian.com/technology/2026/mar/24/openai-ai-video-sora" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI关闭Sora视频生成器</a>
+                    <p class="card-description" data-lang="en">OpenAI announced it is shutting down Sora, its AI video generation app, just 15 months after launch. The move comes despite a $1 billion Disney deal signed three months ago. Sora's research team will pivot toward world simulation research for robotics.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI宣布关闭其AI视频生成应用Sora，距离推出仅15个月。此举发生在与迪士尼签署10亿美元协议三个月后。Sora研究团队将转向机器人世界模拟研究。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MacRumors</span>
+                    <div class="news-time">March 25, 2026</div>
+                    <a href="https://www.macrumors.com/2026/03/25/apple-google-gemini-distill-models/" class="card-title" target="_blank" data-lang="en">Apple Gains Complete Access to Google's Gemini for On-Device AI</a>
+                    <a href="https://www.macrumors.com/2026/03/25/apple-google-gemini-distill-models/" class="card-title" target="_blank" data-lang="zh" style="display: none;">苹果获得谷歌Gemini完整访问权限用于设备端AI</a>
+                    <p class="card-description" data-lang="en">Apple has reportedly received complete access to Google's Gemini model in its own data centers, allowing Apple to distill smaller, more efficient on-device AI models for Siri and other features. This represents a deeper partnership than previously known.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">据报道，苹果已获得谷歌Gemini模型在其自有数据中心的完整访问权限，允许苹果为Siri和其他功能蒸馏出更小、更高效的设备端AI模型。这代表了比之前所知的更深层次的合作伙伴关系。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">devFlokers</span>
+                    <div class="news-time">March 18, 2026</div>
+                    <a href="https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026" class="card-title" target="_blank" data-lang="en">Xiaomi's MiMo-V2-Pro Revealed After Stealth Launch as 'Hunter Alpha'</a>
+                    <a href="https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">小米MiMo-V2-Pro以'Hunter Alpha'之名秘密发布后正式揭晓</a>
+                    <p class="card-description" data-lang="en">After appearing anonymously on OpenRouter as 'Hunter Alpha' with 1T parameters, Xiaomi revealed MiMo-V2-Pro. It ranks 8th globally and 2nd among Chinese models, with 67% lower cost than Claude Sonnet 4.6 for agentic tasks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">小米在以'Hunter Alpha'之名匿名出现在OpenRouter（拥有1万亿参数）后，正式揭晓MiMo-V2-Pro。该模型全球排名第8，中国模型中排名第2，在智能体任务上的成本比Claude Sonnet 4.6低67%。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechRadar</span>
+                    <div class="news-time">March 24, 2026</div>
+                    <a href="https://www.techradar.com/pro/anthropic-gives-claude-code-new-auto-mode-which-lets-it-choose-its-own-permissions" class="card-title" target="_blank" data-lang="en">Anthropic Releases Claude Code 'Auto Mode' for Autonomous Coding</a>
+                    <a href="https://www.techradar.com/pro/anthropic-gives-claude-code-new-auto-mode-which-lets-it-choose-its-own-permissions" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic发布Claude Code'自动模式'实现自主编码</a>
+                    <p class="card-description" data-lang="en">Anthropic shipped auto mode for Claude Code, enabling more autonomous AI-driven coding while maintaining safety controls. An AI safety classifier monitors every tool call before execution.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic为Claude Code推出了自动模式，在保持安全控制的同时实现更自主的AI驱动编码。AI安全分类器会在执行前监控每个工具调用。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Lexology</span>
+                    <div class="news-time">March 20, 2026</div>
+                    <a href="https://www.lexology.com/library/detail.aspx?g=17c9d576-ae61-4372-a3f4-4943162ff75e" class="card-title" target="_blank" data-lang="en">White House Releases National AI Regulatory Framework</a>
+                    <a href="https://www.lexology.com/library/detail.aspx?g=17c9d576-ae61-4372-a3f4-4943162ff75e" class="card-title" target="_blank" data-lang="zh" style="display: none;">白宫发布国家AI监管框架</a>
+                    <p class="card-description" data-lang="en">The White House released its National Policy Framework for Artificial Intelligence, outlining the federal approach to AI regulation. The administration is pushing for the first big federal AI law this year.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">白宫发布了《国家人工智能政策框架》，概述了联邦政府对AI监管的方法。政府正在推动今年通过首部重要的联邦AI法律。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Pharmafile</span>
+                    <div class="news-time">March 25, 2026</div>
+                    <a href="https://pharmafile.com/news/roche-adds-2176-nvidia-blackwell-gpus-to-its-hybrid-cloud-ai-factory/" class="card-title" target="_blank" data-lang="en">NVIDIA Blackwell Generates $11B in Q4 Revenue, Roche Adds 2,176 GPUs</a>
+                    <a href="https://pharmafile.com/news/roche-adds-2176-nvidia-blackwell-gpus-to-its-hybrid-cloud-ai-factory/" class="card-title" target="_blank" data-lang="zh" style="display: none;">英伟达Blackwell第四季度营收达110亿美元，罗氏新增2176块GPU</a>
+                    <p class="card-description" data-lang="en">NVIDIA's Blackwell GPU platform is already in mass production, generating over $11 billion in Q4 FY2026 revenue. Roche expanded its AI factory with 2,176 Blackwell GPUs across US and Europe, making it the largest announced hybrid-cloud AI factory.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">英伟达Blackwell GPU平台已进入大规模生产，2026财年第四季度营收超过110亿美元。罗氏在美国和欧洲新增了2176块Blackwell GPU来扩展其AI工厂，成为已公布的最大混合云AI工厂。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Business Today</span>
+                    <div class="news-time">March 25, 2026</div>
+                    <a href="https://www.businesstoday.in/technology/story/openai-names-leaders-for-its-nonprofit-arm-pledges-1-billion-to-tackle-bio-risks-ai-disruption-522318-2026-03-25" class="card-title" target="_blank" data-lang="en">OpenAI Restructures Organization, Names Leaders for Nonprofit Arm</a>
+                    <a href="https://www.businesstoday.in/technology/story/openai-names-leaders-for-its-nonprofit-arm-pledges-1-billion-to-tackle-bio-risks-ai-disruption-522318-2026-03-25" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI重组组织架构，任命非营利部门负责人</a>
+                    <p class="card-description" data-lang="en">OpenAI CEO Sam Altman announced restructuring, pledging $1 billion over the next year for the OpenAI Foundation to address biological threats and economic disruption. Wojciech Zaremba joins to lead AI safety work.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI首席执行官Sam Altman宣布重组，承诺明年向OpenAI基金会投入10亿美元以应对生物威胁和经济颠覆。Wojciech Zaremba加入领导AI安全工作。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The AI landscape is experiencing a dramatic shift toward agentic systems and autonomous workflows. OpenAI's Sora shutdown signals a strategic pivot from consumer video generation to enterprise productivity tools and world simulation for robotics. Meanwhile, the agentic AI wave is accelerating with Anthropic's Claude Code Auto Mode, Xiaomi's MiMo-V2-Pro for agentic workflows, and Microsoft's transition from 'copilots' to fully autonomous agents.
+
+The hardware race continues with NVIDIA's Blackwell generating $11B in Q4 alone, while partnerships deepen—Apple's complete access to Gemini reveals a closer Google-Apple AI alliance than previously understood. Regulatory pressure is mounting with the White House's new framework, suggesting 2026 will be the year of federal AI legislation.
+
+Most significantly, the 'stealth launch' strategy is becoming a pattern (Hunter Alpha/MiMo, Pony Alpha), allowing companies to gather unbiased benchmark data before brand expectations distort assessments. The cost curve is collapsing faster than expected—MiMo-V2-Pro undercuts Claude by 67%, and Gemini 3.1 Pro delivers frontier performance at $2/M tokens. For developers, the message is clear: agentic capability is now table stakes, not a differentiator.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">AI领域正经历向智能体系统和自主工作流的戏剧性转变。OpenAI关闭Sora标志着战略重心从消费级视频生成转向企业生产力工具和机器人世界模拟。与此同时，智能体AI浪潮正在加速——Anthropic的Claude Code自动模式、小米面向智能体工作流的MiMo-V2-Pro，以及微软从'副驾驶'到完全自主智能体的转型都证明了这一点。
+
+硬件竞赛持续升温，英伟达Blackwell仅Q4就创造110亿美元收入，而合作关系也在深化——苹果对Gemini的完整访问权揭示了比此前所知更紧密的谷歌-苹果AI联盟。监管压力正在加大，白宫的新框架表明2026年将成为联邦AI立法之年。
+
+最重要的是，'秘密发布'策略正在成为一种模式（Hunter Alpha/MiMo、Pony Alpha），使公司能够在品牌预期扭曲评估之前收集无偏见的基准数据。成本曲线正在以快于预期的速度崩溃——MiMo-V2-Pro比Claude便宜67%，Gemini 3.1 Pro以每百万token 2美元的价格提供前沿性能。对于开发者来说，信息很明确：智能体能力现在已是基本要求，而非差异化因素。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>

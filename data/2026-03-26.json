@@ -1,0 +1,132 @@
+{
+  "date": "2026-03-26",
+  "github_repos": [
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": {
+        "en": "An agentic skills framework and software development methodology that works. Shell-based framework for composing AI agent behavior without heavy Python boilerplate.",
+        "zh": "一个行之有效的智能体技能框架和软件开发方法论。基于Shell的框架，无需繁琐的Python样板代码即可组合AI智能体行为。"
+      },
+      "stars": "92.1k",
+      "forks": "7.3k"
+    },
+    {
+      "name": "aiming-lab/AutoResearchClaw",
+      "url": "https://github.com/aiming-lab/AutoResearchClaw",
+      "description": {
+        "en": "Fully autonomous and self-evolving research from idea to paper. Chat in an idea and the agent produces a complete research paper.",
+        "zh": "从想法到论文的全自主、自我进化研究工具。输入一个想法，智能体即可生成完整的研究论文。"
+      },
+      "stars": "4.1k",
+      "forks": "312"
+    },
+    {
+      "name": "THU-MAIC/OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "description": {
+        "en": "Open Multi-Agent Interactive Classroom - Immersive multi-agent learning experience from Tsinghua University in a single click.",
+        "zh": "开放式多智能体交互课堂——来自清华大学的一键式沉浸式多智能体学习体验。"
+      },
+      "stars": "4.5k",
+      "forks": "489"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Shuts Down Sora Video Generator",
+        "zh": "OpenAI关闭Sora视频生成器"
+      },
+      "url": "https://www.theguardian.com/technology/2026/mar/24/openai-ai-video-sora",
+      "source": "The Guardian",
+      "time": "March 24, 2026",
+      "description": {
+        "en": "OpenAI announced it is shutting down Sora, its AI video generation app, just 15 months after launch. The move comes despite a $1 billion Disney deal signed three months ago. Sora's research team will pivot toward world simulation research for robotics.",
+        "zh": "OpenAI宣布关闭其AI视频生成应用Sora，距离推出仅15个月。此举发生在与迪士尼签署10亿美元协议三个月后。Sora研究团队将转向机器人世界模拟研究。"
+      }
+    },
+    {
+      "title": {
+        "en": "Apple Gains Complete Access to Google's Gemini for On-Device AI",
+        "zh": "苹果获得谷歌Gemini完整访问权限用于设备端AI"
+      },
+      "url": "https://www.macrumors.com/2026/03/25/apple-google-gemini-distill-models/",
+      "source": "MacRumors",
+      "time": "March 25, 2026",
+      "description": {
+        "en": "Apple has reportedly received complete access to Google's Gemini model in its own data centers, allowing Apple to distill smaller, more efficient on-device AI models for Siri and other features. This represents a deeper partnership than previously known.",
+        "zh": "据报道，苹果已获得谷歌Gemini模型在其自有数据中心的完整访问权限，允许苹果为Siri和其他功能蒸馏出更小、更高效的设备端AI模型。这代表了比之前所知的更深层次的合作伙伴关系。"
+      }
+    },
+    {
+      "title": {
+        "en": "Xiaomi's MiMo-V2-Pro Revealed After Stealth Launch as 'Hunter Alpha'",
+        "zh": "小米MiMo-V2-Pro以'Hunter Alpha'之名秘密发布后正式揭晓"
+      },
+      "url": "https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026",
+      "source": "devFlokers",
+      "time": "March 18, 2026",
+      "description": {
+        "en": "After appearing anonymously on OpenRouter as 'Hunter Alpha' with 1T parameters, Xiaomi revealed MiMo-V2-Pro. It ranks 8th globally and 2nd among Chinese models, with 67% lower cost than Claude Sonnet 4.6 for agentic tasks.",
+        "zh": "小米在以'Hunter Alpha'之名匿名出现在OpenRouter（拥有1万亿参数）后，正式揭晓MiMo-V2-Pro。该模型全球排名第8，中国模型中排名第2，在智能体任务上的成本比Claude Sonnet 4.6低67%。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Releases Claude Code 'Auto Mode' for Autonomous Coding",
+        "zh": "Anthropic发布Claude Code'自动模式'实现自主编码"
+      },
+      "url": "https://www.techradar.com/pro/anthropic-gives-claude-code-new-auto-mode-which-lets-it-choose-its-own-permissions",
+      "source": "TechRadar",
+      "time": "March 24, 2026",
+      "description": {
+        "en": "Anthropic shipped auto mode for Claude Code, enabling more autonomous AI-driven coding while maintaining safety controls. An AI safety classifier monitors every tool call before execution.",
+        "zh": "Anthropic为Claude Code推出了自动模式，在保持安全控制的同时实现更自主的AI驱动编码。AI安全分类器会在执行前监控每个工具调用。"
+      }
+    },
+    {
+      "title": {
+        "en": "White House Releases National AI Regulatory Framework",
+        "zh": "白宫发布国家AI监管框架"
+      },
+      "url": "https://www.lexology.com/library/detail.aspx?g=17c9d576-ae61-4372-a3f4-4943162ff75e",
+      "source": "Lexology",
+      "time": "March 20, 2026",
+      "description": {
+        "en": "The White House released its National Policy Framework for Artificial Intelligence, outlining the federal approach to AI regulation. The administration is pushing for the first big federal AI law this year.",
+        "zh": "白宫发布了《国家人工智能政策框架》，概述了联邦政府对AI监管的方法。政府正在推动今年通过首部重要的联邦AI法律。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA Blackwell Generates $11B in Q4 Revenue, Roche Adds 2,176 GPUs",
+        "zh": "英伟达Blackwell第四季度营收达110亿美元，罗氏新增2176块GPU"
+      },
+      "url": "https://pharmafile.com/news/roche-adds-2176-nvidia-blackwell-gpus-to-its-hybrid-cloud-ai-factory/",
+      "source": "Pharmafile",
+      "time": "March 25, 2026",
+      "description": {
+        "en": "NVIDIA's Blackwell GPU platform is already in mass production, generating over $11 billion in Q4 FY2026 revenue. Roche expanded its AI factory with 2,176 Blackwell GPUs across US and Europe, making it the largest announced hybrid-cloud AI factory.",
+        "zh": "英伟达Blackwell GPU平台已进入大规模生产，2026财年第四季度营收超过110亿美元。罗氏在美国和欧洲新增了2176块Blackwell GPU来扩展其AI工厂，成为已公布的最大混合云AI工厂。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Restructures Organization, Names Leaders for Nonprofit Arm",
+        "zh": "OpenAI重组组织架构，任命非营利部门负责人"
+      },
+      "url": "https://www.businesstoday.in/technology/story/openai-names-leaders-for-its-nonprofit-arm-pledges-1-billion-to-tackle-bio-risks-ai-disruption-522318-2026-03-25",
+      "source": "Business Today",
+      "time": "March 25, 2026",
+      "description": {
+        "en": "OpenAI CEO Sam Altman announced restructuring, pledging $1 billion over the next year for the OpenAI Foundation to address biological threats and economic disruption. Wojciech Zaremba joins to lead AI safety work.",
+        "zh": "OpenAI首席执行官Sam Altman宣布重组，承诺明年向OpenAI基金会投入10亿美元以应对生物威胁和经济颠覆。Wojciech Zaremba加入领导AI安全工作。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The AI landscape is experiencing a dramatic shift toward agentic systems and autonomous workflows. OpenAI's Sora shutdown signals a strategic pivot from consumer video generation to enterprise productivity tools and world simulation for robotics. Meanwhile, the agentic AI wave is accelerating with Anthropic's Claude Code Auto Mode, Xiaomi's MiMo-V2-Pro for agentic workflows, and Microsoft's transition from 'copilots' to fully autonomous agents.\n\nThe hardware race continues with NVIDIA's Blackwell generating $11B in Q4 alone, while partnerships deepen—Apple's complete access to Gemini reveals a closer Google-Apple AI alliance than previously understood. Regulatory pressure is mounting with the White House's new framework, suggesting 2026 will be the year of federal AI legislation.\n\nMost significantly, the 'stealth launch' strategy is becoming a pattern (Hunter Alpha/MiMo, Pony Alpha), allowing companies to gather unbiased benchmark data before brand expectations distort assessments. The cost curve is collapsing faster than expected—MiMo-V2-Pro undercuts Claude by 67%, and Gemini 3.1 Pro delivers frontier performance at $2/M tokens. For developers, the message is clear: agentic capability is now table stakes, not a differentiator.",
+    "zh": "AI领域正经历向智能体系统和自主工作流的戏剧性转变。OpenAI关闭Sora标志着战略重心从消费级视频生成转向企业生产力工具和机器人世界模拟。与此同时，智能体AI浪潮正在加速——Anthropic的Claude Code自动模式、小米面向智能体工作流的MiMo-V2-Pro，以及微软从'副驾驶'到完全自主智能体的转型都证明了这一点。\n\n硬件竞赛持续升温，英伟达Blackwell仅Q4就创造110亿美元收入，而合作关系也在深化——苹果对Gemini的完整访问权揭示了比此前所知更紧密的谷歌-苹果AI联盟。监管压力正在加大，白宫的新框架表明2026年将成为联邦AI立法之年。\n\n最重要的是，'秘密发布'策略正在成为一种模式（Hunter Alpha/MiMo、Pony Alpha），使公司能够在品牌预期扭曲评估之前收集无偏见的基准数据。成本曲线正在以快于预期的速度崩溃——MiMo-V2-Pro比Claude便宜67%，Gemini 3.1 Pro以每百万token 2美元的价格提供前沿性能。对于开发者来说，信息很明确：智能体能力现在已是基本要求，而非差异化因素。"
+  }
+}
