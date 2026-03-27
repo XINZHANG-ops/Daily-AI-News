@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - March 27, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 March 27, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/mvanhorn/last30days-skill" class="card-title" target="_blank">mvanhorn/last30days-skill</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 11.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 940 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary with real citations. Features comparative mode for head-to-head analysis.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI代理技能，可跨Reddit、X、YouTube、Hacker News、Polymarket和网络研究任何主题，然后生成基于事实的摘要和真实引用。具有用于对比分析的对比模式。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/datalab-to/chandra" class="card-title" target="_blank">datalab-to/chandra</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 6.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 691 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">OCR model that handles complex tables, forms, handwriting with full layout preservation. Built for document understanding in AI agent workflows.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">可处理复杂表格、表单、手写内容的OCR模型，完整保留版面布局。专为AI代理工作流中的文档理解而构建。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/usestrix/strix" class="card-title" target="_blank">usestrix/strix</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 312 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open-source AI hackers to find and fix your app's vulnerabilities. Automated security scanning and penetration testing powered by LLM agents.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源AI黑客工具，用于发现和修复应用程序漏洞。由LLM代理提供支持的自动化安全扫描和渗透测试。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">March 26, 2026</div>
+                    <a href="https://www.reuters.com/business/apple-plans-open-siri-rival-ai-services-bloomberg-news-reports-2026-03-26/" class="card-title" target="_blank" data-lang="en">Apple Plans to Open Siri to Rival AI Services Beyond ChatGPT</a>
+                    <a href="https://www.reuters.com/business/apple-plans-open-siri-rival-ai-services-bloomberg-news-reports-2026-03-26/" class="card-title" target="_blank" data-lang="zh" style="display: none;">苹果计划向ChatGPT之外的竞争对手AI服务开放Siri</a>
+                    <p class="card-description" data-lang="en">Apple plans to open its Siri voice assistant to rival artificial intelligence services beyond its current partnership with ChatGPT. The move signals Apple's strategy to become AI platform-agnostic as WWDC 2026 approaches.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">苹果计划向当前ChatGPT合作伙伴之外的竞争对手AI服务开放其Siri语音助手。此举标志着苹果的战略转变，随着WWDC 2026临近，苹果正努力成为AI平台无关型公司。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">March 27, 2026</div>
+                    <a href="https://www.reuters.com/world/us/white-house-ai-czar-sacks-step-down-moves-advisory-role-2026-03-27/" class="card-title" target="_blank" data-lang="en">White House AI Czar David Sacks Steps Down</a>
+                    <a href="https://www.reuters.com/world/us/white-house-ai-czar-sacks-step-down-moves-advisory-role-2026-03-27/" class="card-title" target="_blank" data-lang="zh" style="display: none;">白宫AI沙皇David Sacks离职</a>
+                    <p class="card-description" data-lang="en">White House artificial intelligence and crypto czar David Sacks is stepping down from his role, saying he had reached the end of his time as a special government employee. He will remain as a senior advisor.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">白宫人工智能和加密货币沙皇David Sacks卸任，称其特别政府雇员任期已满。他将继续担任高级顾问。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Bloomberg / TechCrunch</span>
+                    <div class="news-time">March 26, 2026</div>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-26/google-gemini-adds-tool-to-make-it-easier-to-switch-from-chatgpt" class="card-title" target="_blank" data-lang="en">Google Releases 'Switching Tools' to Let Users Import Chat Histories to Gemini</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-03-26/google-gemini-adds-tool-to-make-it-easier-to-switch-from-chatgpt" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌发布'切换工具'让用户导入聊天记录至Gemini</a>
+                    <p class="card-description" data-lang="en">Google released new tools allowing users to transfer chat history and personal information from other AI apps directly into Gemini. The move aims to reduce switching friction and compete more aggressively with ChatGPT.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌发布新工具，允许用户将聊天记录和个人信息从其他AI应用直接导入Gemini。此举旨在减少切换摩擦，更积极地与ChatGPT竞争。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">March 25, 2026</div>
+                    <a href="https://www.reuters.com/business/arm-jumps-new-ai-chip-drive-billions-annual-revenue-2026-03-25/" class="card-title" target="_blank" data-lang="en">Arm Shares Rally on New AI Chip Predicted to Generate Billions in Revenue</a>
+                    <a href="https://www.reuters.com/business/arm-jumps-new-ai-chip-drive-billions-annual-revenue-2026-03-25/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Arm股价因预计创造数十亿收入的新AI芯片而大涨</a>
+                    <p class="card-description" data-lang="en">Arm sparked a rally with predictions that its new data-center chip would bring in billions of dollars in annual revenue, signaling growing competition in the AI infrastructure market beyond Nvidia.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Arm预测其新数据中心芯片将带来数十亿美元年收入，引发股价上涨，标志着AI基础设施市场除英伟达外竞争加剧。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MarkTechPost / GitHub</span>
+                    <div class="news-time">March 26, 2026</div>
+                    <a href="https://www.marktechpost.com/" class="card-title" target="_blank" data-lang="en">SAPient Intelligence Unveils 27M-Parameter Model That Outperforms GPT-4o</a>
+                    <a href="https://www.marktechpost.com/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Sapient Intelligence发布2700万参数模型，性能超越GPT-4o</a>
+                    <p class="card-description" data-lang="en">Sapient Intelligence unveiled a Hierarchical Reasoning Model with only 27M parameters that outperforms much larger models like OpenAI's o3-mini, DeepSeek R1, and Claude on complex reasoning benchmarks—all without pre-training.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Sapient Intelligence发布了一款仅2700万参数的分层推理模型，在复杂推理基准测试中超越OpenAI o3-mini、DeepSeek R1和Claude等更大的模型——且无需预训练。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub / ByteDance</span>
+                    <div class="news-time">March 2026</div>
+                    <a href="https://github.com/bytedance/deer-flow" class="card-title" target="_blank" data-lang="en">ByteDance DeerFlow Claims #1 Spot on GitHub Trending with v2.0 Release</a>
+                    <a href="https://github.com/bytedance/deer-flow" class="card-title" target="_blank" data-lang="zh" style="display: none;">字节跳动DeerFlow v2.0发布，登上GitHub趋势榜第一</a>
+                    <p class="card-description" data-lang="en">DeerFlow (Deep Exploration and Efficient Research Flow) claimed #1 on GitHub Trending with its v2.0 rewrite. The open-source SuperAgent harness orchestrates sub-agents, memory, and sandboxes for tasks taking minutes to hours.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeerFlow（深度探索与高效研究流）凭借v2.0重写版登上GitHub趋势榜第一。这个开源超级代理工具通过编排子代理、内存和沙盒，处理从几分钟到几小时不等的任务。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub / AgentScope</span>
+                    <div class="news-time">March 2026</div>
+                    <a href="https://github.com/agentscope-ai/agentscope" class="card-title" target="_blank" data-lang="en">AgentScope Framework Hits Production-Ready Status with Real-Time Voice Support</a>
+                    <a href="https://github.com/agentscope-ai/agentscope" class="card-title" target="_blank" data-lang="zh" style="display: none;">AgentScope框架达到生产就绪状态，支持实时语音</a>
+                    <p class="card-description" data-lang="en">AgentScope announced production-ready status with built-in ReAct agents, MCP/A2A protocol support, real-time voice capabilities, and evaluation tools. The framework focuses on observable, trustworthy agent development.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AgentScope宣布达到生产就绪状态，内置ReAct代理、MCP/A2A协议支持、实时语音功能和评估工具。该框架专注于可观察、可信的代理开发。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Crescendo AI</span>
+                    <div class="news-time">March 2026</div>
+                    <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" class="card-title" target="_blank" data-lang="en">OpenAI Annualized Revenue Surpasses $25 Billion with IPO Rumors</a>
+                    <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI年收入突破250亿美元，IPO传闻四起</a>
+                    <p class="card-description" data-lang="en">OpenAI has surpassed $25 billion in annualized revenue and is reportedly taking early steps toward a public listing, potentially as soon as late 2026. Rival Anthropic is approaching $19 billion in annualized revenue.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI年收入突破250亿美元，据报道正采取早期步骤推进上市，可能最早在2026年底。竞争对手Anthropic年收入接近190亿美元。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">March 27, 2026 reveals the AI industry entering a new phase of 'ecosystem warfare.' Apple's decision to open Siri to rival AI services marks a strategic pivot—Cupertino recognizes that platform lock-in matters more than model exclusivity in the agentic era. This mirrors Google's counter-move with 'switching tools' that reduce ChatGPT migration friction. The battleground is shifting from model performance to user portability and ecosystem stickiness.
+
+On the infrastructure front, Arm's data-center chip announcement signals the diversification of AI compute beyond Nvidia's dominance, while Sapient Intelligence's 27M-parameter model outperforming GPT-4o suggests efficiency gains are accelerating faster than brute-force scaling. This efficiency trend is reinforced by ByteDance's DeerFlow achieving GitHub's top spot with a skill-based agent architecture rather than monolithic models.
+
+Regulatory developments continue with David Sacks' departure as White House AI czar, potentially indicating shifts in U.S. AI policy direction. Meanwhile, OpenAI's $25B+ revenue and IPO rumors suggest the industry is maturing from venture-funded experimentation to public-market accountability.
+
+For developers, the message is clear: multi-agent orchestration (AgentScope, DeerFlow), model-agnostic platforms, and efficient small models are becoming the new normal. The era of 'one model to rule them all' is giving way to 'best tool for each task.'</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年3月27日，AI行业进入了'生态系统战争'的新阶段。苹果决定向竞争对手AI服务开放Siri标志着战略转向——在智能体时代，平台锁定比模型排他性更重要。这与谷歌的'切换工具'反制措施相呼应，后者降低了从ChatGPT迁移的摩擦。战场正从模型性能转向用户可迁移性和生态系统粘性。
+
+在基础设施方面，Arm的数据中心芯片发布标志着AI计算开始多元化，打破英伟达的垄断；而Sapient Intelligence的2700万参数模型超越GPT-4o表明，效率提升的速度正在超过暴力扩展。字节跳动DeerFlow凭借基于技能的代理架构而非单一模型登上GitHub榜首，强化了这一效率趋势。
+
+监管方面，David Sacks作为白宫AI沙皇的离职可能预示着美国AI政策方向的转变。同时，OpenAI超过250亿美元的收入和IPO传闻表明，该行业正从风险投资支持的实验走向公开市场问责。
+
+对开发者而言，信息很明确：多代理编排（AgentScope、DeerFlow）、模型无关平台和高效小模型正在成为新常态。'一个模型统治一切'的时代正在让位于'每项任务的最佳工具'。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>

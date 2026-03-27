@@ -1,0 +1,145 @@
+{
+  "date": "2026-03-27",
+  "github_repos": [
+    {
+      "name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": {
+        "en": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary with real citations. Features comparative mode for head-to-head analysis.",
+        "zh": "AI代理技能，可跨Reddit、X、YouTube、Hacker News、Polymarket和网络研究任何主题，然后生成基于事实的摘要和真实引用。具有用于对比分析的对比模式。"
+      },
+      "stars": "11.5k",
+      "forks": "940"
+    },
+    {
+      "name": "datalab-to/chandra",
+      "url": "https://github.com/datalab-to/chandra",
+      "description": {
+        "en": "OCR model that handles complex tables, forms, handwriting with full layout preservation. Built for document understanding in AI agent workflows.",
+        "zh": "可处理复杂表格、表单、手写内容的OCR模型，完整保留版面布局。专为AI代理工作流中的文档理解而构建。"
+      },
+      "stars": "6.5k",
+      "forks": "691"
+    },
+    {
+      "name": "usestrix/strix",
+      "url": "https://github.com/usestrix/strix",
+      "description": {
+        "en": "Open-source AI hackers to find and fix your app's vulnerabilities. Automated security scanning and penetration testing powered by LLM agents.",
+        "zh": "开源AI黑客工具，用于发现和修复应用程序漏洞。由LLM代理提供支持的自动化安全扫描和渗透测试。"
+      },
+      "stars": "3.8k",
+      "forks": "312"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Apple Plans to Open Siri to Rival AI Services Beyond ChatGPT",
+        "zh": "苹果计划向ChatGPT之外的竞争对手AI服务开放Siri"
+      },
+      "url": "https://www.reuters.com/business/apple-plans-open-siri-rival-ai-services-bloomberg-news-reports-2026-03-26/",
+      "source": "Reuters",
+      "time": "March 26, 2026",
+      "description": {
+        "en": "Apple plans to open its Siri voice assistant to rival artificial intelligence services beyond its current partnership with ChatGPT. The move signals Apple's strategy to become AI platform-agnostic as WWDC 2026 approaches.",
+        "zh": "苹果计划向当前ChatGPT合作伙伴之外的竞争对手AI服务开放其Siri语音助手。此举标志着苹果的战略转变，随着WWDC 2026临近，苹果正努力成为AI平台无关型公司。"
+      }
+    },
+    {
+      "title": {
+        "en": "White House AI Czar David Sacks Steps Down",
+        "zh": "白宫AI沙皇David Sacks离职"
+      },
+      "url": "https://www.reuters.com/world/us/white-house-ai-czar-sacks-step-down-moves-advisory-role-2026-03-27/",
+      "source": "Reuters",
+      "time": "March 27, 2026",
+      "description": {
+        "en": "White House artificial intelligence and crypto czar David Sacks is stepping down from his role, saying he had reached the end of his time as a special government employee. He will remain as a senior advisor.",
+        "zh": "白宫人工智能和加密货币沙皇David Sacks卸任，称其特别政府雇员任期已满。他将继续担任高级顾问。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Releases 'Switching Tools' to Let Users Import Chat Histories to Gemini",
+        "zh": "谷歌发布'切换工具'让用户导入聊天记录至Gemini"
+      },
+      "url": "https://www.bloomberg.com/news/articles/2026-03-26/google-gemini-adds-tool-to-make-it-easier-to-switch-from-chatgpt",
+      "source": "Bloomberg / TechCrunch",
+      "time": "March 26, 2026",
+      "description": {
+        "en": "Google released new tools allowing users to transfer chat history and personal information from other AI apps directly into Gemini. The move aims to reduce switching friction and compete more aggressively with ChatGPT.",
+        "zh": "谷歌发布新工具，允许用户将聊天记录和个人信息从其他AI应用直接导入Gemini。此举旨在减少切换摩擦，更积极地与ChatGPT竞争。"
+      }
+    },
+    {
+      "title": {
+        "en": "Arm Shares Rally on New AI Chip Predicted to Generate Billions in Revenue",
+        "zh": "Arm股价因预计创造数十亿收入的新AI芯片而大涨"
+      },
+      "url": "https://www.reuters.com/business/arm-jumps-new-ai-chip-drive-billions-annual-revenue-2026-03-25/",
+      "source": "Reuters",
+      "time": "March 25, 2026",
+      "description": {
+        "en": "Arm sparked a rally with predictions that its new data-center chip would bring in billions of dollars in annual revenue, signaling growing competition in the AI infrastructure market beyond Nvidia.",
+        "zh": "Arm预测其新数据中心芯片将带来数十亿美元年收入，引发股价上涨，标志着AI基础设施市场除英伟达外竞争加剧。"
+      }
+    },
+    {
+      "title": {
+        "en": "SAPient Intelligence Unveils 27M-Parameter Model That Outperforms GPT-4o",
+        "zh": "Sapient Intelligence发布2700万参数模型，性能超越GPT-4o"
+      },
+      "url": "https://www.marktechpost.com/",
+      "source": "MarkTechPost / GitHub",
+      "time": "March 26, 2026",
+      "description": {
+        "en": "Sapient Intelligence unveiled a Hierarchical Reasoning Model with only 27M parameters that outperforms much larger models like OpenAI's o3-mini, DeepSeek R1, and Claude on complex reasoning benchmarks—all without pre-training.",
+        "zh": "Sapient Intelligence发布了一款仅2700万参数的分层推理模型，在复杂推理基准测试中超越OpenAI o3-mini、DeepSeek R1和Claude等更大的模型——且无需预训练。"
+      }
+    },
+    {
+      "title": {
+        "en": "ByteDance DeerFlow Claims #1 Spot on GitHub Trending with v2.0 Release",
+        "zh": "字节跳动DeerFlow v2.0发布，登上GitHub趋势榜第一"
+      },
+      "url": "https://github.com/bytedance/deer-flow",
+      "source": "GitHub / ByteDance",
+      "time": "March 2026",
+      "description": {
+        "en": "DeerFlow (Deep Exploration and Efficient Research Flow) claimed #1 on GitHub Trending with its v2.0 rewrite. The open-source SuperAgent harness orchestrates sub-agents, memory, and sandboxes for tasks taking minutes to hours.",
+        "zh": "DeerFlow（深度探索与高效研究流）凭借v2.0重写版登上GitHub趋势榜第一。这个开源超级代理工具通过编排子代理、内存和沙盒，处理从几分钟到几小时不等的任务。"
+      }
+    },
+    {
+      "title": {
+        "en": "AgentScope Framework Hits Production-Ready Status with Real-Time Voice Support",
+        "zh": "AgentScope框架达到生产就绪状态，支持实时语音"
+      },
+      "url": "https://github.com/agentscope-ai/agentscope",
+      "source": "GitHub / AgentScope",
+      "time": "March 2026",
+      "description": {
+        "en": "AgentScope announced production-ready status with built-in ReAct agents, MCP/A2A protocol support, real-time voice capabilities, and evaluation tools. The framework focuses on observable, trustworthy agent development.",
+        "zh": "AgentScope宣布达到生产就绪状态，内置ReAct代理、MCP/A2A协议支持、实时语音功能和评估工具。该框架专注于可观察、可信的代理开发。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Annualized Revenue Surpasses $25 Billion with IPO Rumors",
+        "zh": "OpenAI年收入突破250亿美元，IPO传闻四起"
+      },
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+      "source": "Crescendo AI",
+      "time": "March 2026",
+      "description": {
+        "en": "OpenAI has surpassed $25 billion in annualized revenue and is reportedly taking early steps toward a public listing, potentially as soon as late 2026. Rival Anthropic is approaching $19 billion in annualized revenue.",
+        "zh": "OpenAI年收入突破250亿美元，据报道正采取早期步骤推进上市，可能最早在2026年底。竞争对手Anthropic年收入接近190亿美元。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "March 27, 2026 reveals the AI industry entering a new phase of 'ecosystem warfare.' Apple's decision to open Siri to rival AI services marks a strategic pivot—Cupertino recognizes that platform lock-in matters more than model exclusivity in the agentic era. This mirrors Google's counter-move with 'switching tools' that reduce ChatGPT migration friction. The battleground is shifting from model performance to user portability and ecosystem stickiness.\n\nOn the infrastructure front, Arm's data-center chip announcement signals the diversification of AI compute beyond Nvidia's dominance, while Sapient Intelligence's 27M-parameter model outperforming GPT-4o suggests efficiency gains are accelerating faster than brute-force scaling. This efficiency trend is reinforced by ByteDance's DeerFlow achieving GitHub's top spot with a skill-based agent architecture rather than monolithic models.\n\nRegulatory developments continue with David Sacks' departure as White House AI czar, potentially indicating shifts in U.S. AI policy direction. Meanwhile, OpenAI's $25B+ revenue and IPO rumors suggest the industry is maturing from venture-funded experimentation to public-market accountability.\n\nFor developers, the message is clear: multi-agent orchestration (AgentScope, DeerFlow), model-agnostic platforms, and efficient small models are becoming the new normal. The era of 'one model to rule them all' is giving way to 'best tool for each task.'",
+    "zh": "2026年3月27日，AI行业进入了'生态系统战争'的新阶段。苹果决定向竞争对手AI服务开放Siri标志着战略转向——在智能体时代，平台锁定比模型排他性更重要。这与谷歌的'切换工具'反制措施相呼应，后者降低了从ChatGPT迁移的摩擦。战场正从模型性能转向用户可迁移性和生态系统粘性。\n\n在基础设施方面，Arm的数据中心芯片发布标志着AI计算开始多元化，打破英伟达的垄断；而Sapient Intelligence的2700万参数模型超越GPT-4o表明，效率提升的速度正在超过暴力扩展。字节跳动DeerFlow凭借基于技能的代理架构而非单一模型登上GitHub榜首，强化了这一效率趋势。\n\n监管方面，David Sacks作为白宫AI沙皇的离职可能预示着美国AI政策方向的转变。同时，OpenAI超过250亿美元的收入和IPO传闻表明，该行业正从风险投资支持的实验走向公开市场问责。\n\n对开发者而言，信息很明确：多代理编排（AgentScope、DeerFlow）、模型无关平台和高效小模型正在成为新常态。'一个模型统治一切'的时代正在让位于'每项任务的最佳工具'。"
+  }
+}
