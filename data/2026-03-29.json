@@ -1,0 +1,145 @@
+{
+  "date": "2026-03-29",
+  "github_repos": [
+    {
+      "name": "virattt/dexter",
+      "url": "https://github.com/virattt/dexter",
+      "description": {
+        "en": "An autonomous agent for deep financial research. Think Claude Code, but built specifically for financial research. It performs analysis using task planning, self-reflection, and real-time market data with intelligent task decomposition and safety features.",
+        "zh": "一个专为深度金融研究设计的自主代理。类似Claude Code，但专门为金融研究构建。它使用任务规划、自我反思和实时市场数据进行智能任务分解分析，并内置安全功能。"
+      },
+      "stars": "20.3k",
+      "forks": "2,435"
+    },
+    {
+      "name": "Yeachan-Heo/oh-my-claudecode",
+      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+      "description": {
+        "en": "Teams-first Multi-agent orchestration for Claude Code. Natural language interface with zero learning curve, automatic parallelization across 32+ specialized agents, and cost optimization saving 30-50% on tokens.",
+        "zh": "以团队优先的Claude Code多代理编排工具。零学习曲线的自然语言界面，支持32个以上专业代理的自动并行化，并节省30-50%的token成本。"
+      },
+      "stars": "15.1k",
+      "forks": "1,011"
+    },
+    {
+      "name": "benjitaylor/agentation",
+      "url": "https://github.com/benjitaylor/agentation",
+      "description": {
+        "en": "The visual feedback tool for agents. Click elements on your page, add notes, and copy structured output that helps AI coding agents find the exact code you're referring to. Agent-agnostic annotation system.",
+        "zh": "面向智能体的可视化反馈工具。点击页面元素、添加注释，并复制结构化输出，帮助AI编码智能体精确定位你引用的代码。与智能体无关的注释系统。"
+      },
+      "stars": "3.2k",
+      "forks": "246"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Gemini 3 Deep Think Goes Live in Gemini App for Ultra Subscribers",
+        "zh": "Gemini 3 Deep Think在Gemini应用中向Ultra订阅者推出"
+      },
+      "url": "https://www.labla.org/latest-ai-model-releases-past-24-hours/ai-model-releases-industry-updates-march-27-28-2026/",
+      "source": "LaBla AI",
+      "time": "March 28, 2026",
+      "description": {
+        "en": "Google launched Gemini 3 Deep Think in the Gemini app for Ultra subscribers, with early API access opening for researchers, engineers, and enterprises. Google is positioning it for harder technical use cases, not casual chat.",
+        "zh": "谷歌在Gemini应用中向Ultra订阅者推出了Gemini 3 Deep Think，并为研究人员、工程师和企业开放了早期API访问权限。谷歌将其定位为面向更复杂的技术用例，而非日常闲聊。"
+      }
+    },
+    {
+      "title": {
+        "en": "Apple Opens Siri to Every AI Rival in iOS 27",
+        "zh": "苹果在iOS 27中向所有AI竞争对手开放Siri"
+      },
+      "url": "https://www.humai.blog/apple-opens-siri-to-every-ai-rival-its-not-charity-its-a-30-tax/",
+      "source": "HumAI",
+      "time": "March 28, 2026",
+      "description": {
+        "en": "Apple is opening Siri to Claude, Gemini, Grok, and every other AI rival in iOS 27. OpenAI's exclusivity deal is dead. Apple's approach includes a 30% cut on AI transactions through the platform.",
+        "zh": "苹果将在iOS 27中向Claude、Gemini、Grok和其他所有AI竞争对手开放Siri。OpenAI的独家协议已终止。苹果的平台策略包括对AI交易收取30%的分成。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Paid Subscriptions More Than Doubled This Year",
+        "zh": "Claude付费订阅今年增长超过一倍"
+      },
+      "url": "https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing/",
+      "source": "TechCrunch",
+      "time": "March 28, 2026",
+      "description": {
+        "en": "A report analyzing payments of 28 million US consumers shows Claude adding paid subscribers at a steadily increasing pace. Anthropic confirmed paid subscriptions have more than doubled this year.",
+        "zh": "一份分析2800万美国消费者支付情况的报告显示，Claude正以稳定增长的 pace 增加付费用户。Anthropic确认今年的付费订阅增长超过一倍。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Can Now Take Over Your Computer to Perform Tasks",
+        "zh": "Claude现在可以接管你的电脑执行任务"
+      },
+      "url": "https://www.cnet.com/tech/services-and-software/claude-control-your-computer-to-perform-tasks/",
+      "source": "CNET",
+      "time": "March 28, 2026",
+      "description": {
+        "en": "Claude can now perform tasks on your behalf, such as sending a file from your computer to your phone or batch-resizing a stack of photos. It requires no setup and works on the appropriate subscription plan.",
+        "zh": "Claude现在可以代表你执行任务，例如从电脑发送文件到手机或批量调整照片大小。无需设置，在适当的订阅计划上即可使用。"
+      }
+    },
+    {
+      "title": {
+        "en": "Apple Hires Ex-Google Executive to Head AI Push",
+        "zh": "苹果聘请前谷歌高管领导AI推进"
+      },
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/two-months-after-announcing-gemini-deal-for-siri-apple-hires-ex-google-executive-to-head-ai-push/articleshow/129861423.cms",
+      "source": "Times of India",
+      "time": "March 28, 2026",
+      "description": {
+        "en": "Two months after announcing the Gemini deal for Siri, Apple hired a former Google executive to head its AI push. Apple is expected to open Siri to multiple AI chatbots at once at WWDC in June.",
+        "zh": "在宣布Siri与Gemini合作两个月后，苹果聘请了一位前谷歌高管领导其AI推进工作。预计苹果将在六月的WWDC上同时向多个AI聊天机器人开放Siri。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Operon: Anthropic's New Science Lab Mode Leaked",
+        "zh": "Claude Operon：Anthropic新科学实验室模式泄露"
+      },
+      "url": "https://renovateqr.com/blog/claude-operon-anthropic-biology-research-2026",
+      "source": "RenovateQR",
+      "time": "March 27-28, 2026",
+      "description": {
+        "en": "A brand-new dedicated mode inside the Claude desktop app, discovered on March 27-28, 2026. Claude Operon is designed for scientific research, particularly biology research.",
+        "zh": "2026年3月27-28日在Claude桌面应用中发现的一个全新专用模式。Claude Operon专为科学研究设计，特别是生物学研究。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI's 'Spud' Model Finishes Pre-Training, Expected in Late March or April",
+        "zh": "OpenAI的'Spud'模型完成预训练，预计3月底或4月发布"
+      },
+      "url": "https://www.gauraw.com/claude-mythos-the-paperclip-problem-and-why-2026-is-reshaping-ai-forever/",
+      "source": "Kumar Gauraw",
+      "time": "March 2026",
+      "description": {
+        "en": "OpenAI has a model codenamed 'Spud' that has finished pre-training and is reportedly weeks away from release. CEO Sam Altman claims it will 'really accelerate the economy.'",
+        "zh": "OpenAI有一个代号'Spud'的模型已完成预训练，据报道几周后就会发布。CEO Sam Altman声称它将'真正加速经济发展'。"
+      }
+    },
+    {
+      "title": {
+        "en": "Gemini Launches Memory Import Tool to Help Users Switch from ChatGPT",
+        "zh": "Gemini推出记忆导入工具帮助用户从ChatGPT迁移"
+      },
+      "url": "https://www.techradar.com/ai-platforms-assistants/gemini/i-used-geminis-new-ai-memory-importing-feature-and-now-it-knows-as-much-about-me-as-chatgpt",
+      "source": "TechRadar",
+      "time": "March 28, 2026",
+      "description": {
+        "en": "Gemini will now help you bring over all the information another AI chatbot has accumulated about you. It imports everything ChatGPT, Claude, or other platforms know about you and your preferences.",
+        "zh": "Gemini现在将帮助用户导入其他AI聊天机器人积累的关于你的所有信息。它会导入ChatGPT、Claude或其他平台知道的关于你和你的偏好的一切。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The AI landscape this week reveals a dramatic shift in platform strategy. Apple's decision to open Siri to all AI competitors—including Claude, Gemini, and Grok—marks the end of exclusive AI partnerships and positions Apple as a toll-collecting platform rather than an AI innovator. Meanwhile, Anthropic is quietly winning the consumer AI race with Claude subscriptions more than doubling this year, driven by thoughtful product design and strong model releases. The emergence of Claude Operon for scientific research and the new computer control capabilities signal a deeper push into agentic AI. Google's Gemini 3 Deep Think and OpenAI's impending 'Spud' release promise to intensify the frontier model competition. At the tool layer, we're seeing explosive growth in agent orchestration frameworks—Dexter for financial research, Oh-My-ClaudeCode for multi-agent team coordination, and Agentation for visual AI feedback—suggesting the industry is rapidly building the infrastructure layer needed for truly autonomous AI workflows.",
+    "zh": "本周AI领域展现了平台策略的戏剧性转变。苹果决定向所有AI竞争对手开放Siri（包括Claude、Gemini和Grok），标志着独家AI合作关系的终结，并将苹果定位为收费平台而非AI创新者。与此同时，Anthropic凭借Claude订阅今年增长超过一倍的势头，正在悄然赢得消费者AI竞赛，这得益于精心设计的产品和强大的模型发布。Claude Operon科学研究模式和新的计算机控制能力的出现，标志着对代理式AI的更深层推进。谷歌的Gemini 3 Deep Think和OpenAI即将发布的'Spud'模型预计将加剧前沿模型竞争。在工具层面，我们看到代理编排框架的爆发式增长——用于金融研究的Dexter、用于多代理团队协调的Oh-My-ClaudeCode、以及用于视觉AI反馈的Agentation——这表明行业正在快速构建真正自主AI工作流程所需的基础设施层。"
+  }
+}

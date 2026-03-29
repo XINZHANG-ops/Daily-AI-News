@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - March 29, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 March 29, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/virattt/dexter" class="card-title" target="_blank">virattt/dexter</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 20.3k stars</div>
+                                <div class="meta-item"><span>🍴</span> 2,435 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An autonomous agent for deep financial research. Think Claude Code, but built specifically for financial research. It performs analysis using task planning, self-reflection, and real-time market data with intelligent task decomposition and safety features.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个专为深度金融研究设计的自主代理。类似Claude Code，但专门为金融研究构建。它使用任务规划、自我反思和实时市场数据进行智能任务分解分析，并内置安全功能。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Yeachan-Heo/oh-my-claudecode" class="card-title" target="_blank">Yeachan-Heo/oh-my-claudecode</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 15.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1,011 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Teams-first Multi-agent orchestration for Claude Code. Natural language interface with zero learning curve, automatic parallelization across 32+ specialized agents, and cost optimization saving 30-50% on tokens.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">以团队优先的Claude Code多代理编排工具。零学习曲线的自然语言界面，支持32个以上专业代理的自动并行化，并节省30-50%的token成本。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/benjitaylor/agentation" class="card-title" target="_blank">benjitaylor/agentation</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 246 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">The visual feedback tool for agents. Click elements on your page, add notes, and copy structured output that helps AI coding agents find the exact code you're referring to. Agent-agnostic annotation system.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">面向智能体的可视化反馈工具。点击页面元素、添加注释，并复制结构化输出，帮助AI编码智能体精确定位你引用的代码。与智能体无关的注释系统。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">LaBla AI</span>
+                    <div class="news-time">March 28, 2026</div>
+                    <a href="https://www.labla.org/latest-ai-model-releases-past-24-hours/ai-model-releases-industry-updates-march-27-28-2026/" class="card-title" target="_blank" data-lang="en">Gemini 3 Deep Think Goes Live in Gemini App for Ultra Subscribers</a>
+                    <a href="https://www.labla.org/latest-ai-model-releases-past-24-hours/ai-model-releases-industry-updates-march-27-28-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Gemini 3 Deep Think在Gemini应用中向Ultra订阅者推出</a>
+                    <p class="card-description" data-lang="en">Google launched Gemini 3 Deep Think in the Gemini app for Ultra subscribers, with early API access opening for researchers, engineers, and enterprises. Google is positioning it for harder technical use cases, not casual chat.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌在Gemini应用中向Ultra订阅者推出了Gemini 3 Deep Think，并为研究人员、工程师和企业开放了早期API访问权限。谷歌将其定位为面向更复杂的技术用例，而非日常闲聊。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">HumAI</span>
+                    <div class="news-time">March 28, 2026</div>
+                    <a href="https://www.humai.blog/apple-opens-siri-to-every-ai-rival-its-not-charity-its-a-30-tax/" class="card-title" target="_blank" data-lang="en">Apple Opens Siri to Every AI Rival in iOS 27</a>
+                    <a href="https://www.humai.blog/apple-opens-siri-to-every-ai-rival-its-not-charity-its-a-30-tax/" class="card-title" target="_blank" data-lang="zh" style="display: none;">苹果在iOS 27中向所有AI竞争对手开放Siri</a>
+                    <p class="card-description" data-lang="en">Apple is opening Siri to Claude, Gemini, Grok, and every other AI rival in iOS 27. OpenAI's exclusivity deal is dead. Apple's approach includes a 30% cut on AI transactions through the platform.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">苹果将在iOS 27中向Claude、Gemini、Grok和其他所有AI竞争对手开放Siri。OpenAI的独家协议已终止。苹果的平台策略包括对AI交易收取30%的分成。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">March 28, 2026</div>
+                    <a href="https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing/" class="card-title" target="_blank" data-lang="en">Claude Paid Subscriptions More Than Doubled This Year</a>
+                    <a href="https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude付费订阅今年增长超过一倍</a>
+                    <p class="card-description" data-lang="en">A report analyzing payments of 28 million US consumers shows Claude adding paid subscribers at a steadily increasing pace. Anthropic confirmed paid subscriptions have more than doubled this year.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一份分析2800万美国消费者支付情况的报告显示，Claude正以稳定增长的 pace 增加付费用户。Anthropic确认今年的付费订阅增长超过一倍。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CNET</span>
+                    <div class="news-time">March 28, 2026</div>
+                    <a href="https://www.cnet.com/tech/services-and-software/claude-control-your-computer-to-perform-tasks/" class="card-title" target="_blank" data-lang="en">Claude Can Now Take Over Your Computer to Perform Tasks</a>
+                    <a href="https://www.cnet.com/tech/services-and-software/claude-control-your-computer-to-perform-tasks/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude现在可以接管你的电脑执行任务</a>
+                    <p class="card-description" data-lang="en">Claude can now perform tasks on your behalf, such as sending a file from your computer to your phone or batch-resizing a stack of photos. It requires no setup and works on the appropriate subscription plan.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude现在可以代表你执行任务，例如从电脑发送文件到手机或批量调整照片大小。无需设置，在适当的订阅计划上即可使用。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Times of India</span>
+                    <div class="news-time">March 28, 2026</div>
+                    <a href="https://timesofindia.indiatimes.com/technology/tech-news/two-months-after-announcing-gemini-deal-for-siri-apple-hires-ex-google-executive-to-head-ai-push/articleshow/129861423.cms" class="card-title" target="_blank" data-lang="en">Apple Hires Ex-Google Executive to Head AI Push</a>
+                    <a href="https://timesofindia.indiatimes.com/technology/tech-news/two-months-after-announcing-gemini-deal-for-siri-apple-hires-ex-google-executive-to-head-ai-push/articleshow/129861423.cms" class="card-title" target="_blank" data-lang="zh" style="display: none;">苹果聘请前谷歌高管领导AI推进</a>
+                    <p class="card-description" data-lang="en">Two months after announcing the Gemini deal for Siri, Apple hired a former Google executive to head its AI push. Apple is expected to open Siri to multiple AI chatbots at once at WWDC in June.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在宣布Siri与Gemini合作两个月后，苹果聘请了一位前谷歌高管领导其AI推进工作。预计苹果将在六月的WWDC上同时向多个AI聊天机器人开放Siri。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">RenovateQR</span>
+                    <div class="news-time">March 27-28, 2026</div>
+                    <a href="https://renovateqr.com/blog/claude-operon-anthropic-biology-research-2026" class="card-title" target="_blank" data-lang="en">Claude Operon: Anthropic's New Science Lab Mode Leaked</a>
+                    <a href="https://renovateqr.com/blog/claude-operon-anthropic-biology-research-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude Operon：Anthropic新科学实验室模式泄露</a>
+                    <p class="card-description" data-lang="en">A brand-new dedicated mode inside the Claude desktop app, discovered on March 27-28, 2026. Claude Operon is designed for scientific research, particularly biology research.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">2026年3月27-28日在Claude桌面应用中发现的一个全新专用模式。Claude Operon专为科学研究设计，特别是生物学研究。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Kumar Gauraw</span>
+                    <div class="news-time">March 2026</div>
+                    <a href="https://www.gauraw.com/claude-mythos-the-paperclip-problem-and-why-2026-is-reshaping-ai-forever/" class="card-title" target="_blank" data-lang="en">OpenAI's 'Spud' Model Finishes Pre-Training, Expected in Late March or April</a>
+                    <a href="https://www.gauraw.com/claude-mythos-the-paperclip-problem-and-why-2026-is-reshaping-ai-forever/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI的'Spud'模型完成预训练，预计3月底或4月发布</a>
+                    <p class="card-description" data-lang="en">OpenAI has a model codenamed 'Spud' that has finished pre-training and is reportedly weeks away from release. CEO Sam Altman claims it will 'really accelerate the economy.'</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI有一个代号'Spud'的模型已完成预训练，据报道几周后就会发布。CEO Sam Altman声称它将'真正加速经济发展'。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechRadar</span>
+                    <div class="news-time">March 28, 2026</div>
+                    <a href="https://www.techradar.com/ai-platforms-assistants/gemini/i-used-geminis-new-ai-memory-importing-feature-and-now-it-knows-as-much-about-me-as-chatgpt" class="card-title" target="_blank" data-lang="en">Gemini Launches Memory Import Tool to Help Users Switch from ChatGPT</a>
+                    <a href="https://www.techradar.com/ai-platforms-assistants/gemini/i-used-geminis-new-ai-memory-importing-feature-and-now-it-knows-as-much-about-me-as-chatgpt" class="card-title" target="_blank" data-lang="zh" style="display: none;">Gemini推出记忆导入工具帮助用户从ChatGPT迁移</a>
+                    <p class="card-description" data-lang="en">Gemini will now help you bring over all the information another AI chatbot has accumulated about you. It imports everything ChatGPT, Claude, or other platforms know about you and your preferences.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Gemini现在将帮助用户导入其他AI聊天机器人积累的关于你的所有信息。它会导入ChatGPT、Claude或其他平台知道的关于你和你的偏好的一切。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The AI landscape this week reveals a dramatic shift in platform strategy. Apple's decision to open Siri to all AI competitors—including Claude, Gemini, and Grok—marks the end of exclusive AI partnerships and positions Apple as a toll-collecting platform rather than an AI innovator. Meanwhile, Anthropic is quietly winning the consumer AI race with Claude subscriptions more than doubling this year, driven by thoughtful product design and strong model releases. The emergence of Claude Operon for scientific research and the new computer control capabilities signal a deeper push into agentic AI. Google's Gemini 3 Deep Think and OpenAI's impending 'Spud' release promise to intensify the frontier model competition. At the tool layer, we're seeing explosive growth in agent orchestration frameworks—Dexter for financial research, Oh-My-ClaudeCode for multi-agent team coordination, and Agentation for visual AI feedback—suggesting the industry is rapidly building the infrastructure layer needed for truly autonomous AI workflows.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周AI领域展现了平台策略的戏剧性转变。苹果决定向所有AI竞争对手开放Siri（包括Claude、Gemini和Grok），标志着独家AI合作关系的终结，并将苹果定位为收费平台而非AI创新者。与此同时，Anthropic凭借Claude订阅今年增长超过一倍的势头，正在悄然赢得消费者AI竞赛，这得益于精心设计的产品和强大的模型发布。Claude Operon科学研究模式和新的计算机控制能力的出现，标志着对代理式AI的更深层推进。谷歌的Gemini 3 Deep Think和OpenAI即将发布的'Spud'模型预计将加剧前沿模型竞争。在工具层面，我们看到代理编排框架的爆发式增长——用于金融研究的Dexter、用于多代理团队协调的Oh-My-ClaudeCode、以及用于视觉AI反馈的Agentation——这表明行业正在快速构建真正自主AI工作流程所需的基础设施层。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
