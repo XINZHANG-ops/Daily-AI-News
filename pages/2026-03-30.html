@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - March 30, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 March 30, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/yazinsai/OpenOats" class="card-title" target="_blank">yazinsai/OpenOats</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.0k stars</div>
+                                <div class="meta-item"><span>🍴</span> 192 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A meeting note-taker that talks back. An AI-powered meeting assistant that records, transcribes, and engages in real-time conversations during meetings. Built with voice-first design for seamless human-AI collaboration.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个会'说话'的会议笔记助手。AI驱动的会议助手，可在会议期间录制、转录并进行实时对话。采用语音优先设计，实现无缝的人机协作。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/lt350/lt350" class="card-title" target="_blank">lt350/lt350</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 89 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Framework for decentralized AI infrastructure addressing inference economy demands. Proposes distributed, power-sovereign AI infrastructure with a whitepaper published March 30, 2026. Enables decentralized model serving with geographic distribution.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">去中心化AI基础设施框架，解决推理经济需求。2026年3月30日发布白皮书，提出分布式、电力主权的AI基础设施方案，实现地理分布的模型服务。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/open-omega/open-omega" class="card-title" target="_blank">open-omega/open-omega</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 241 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open standard for AI agent portability across runtimes. Extracts agent config, logic, tools, and memory into portable, version-controlled Git repos that run on any runtime (Claude, OpenAI, CrewAI, OpenClaw). Inspired by GitAgent/Lyzr standards.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI代理跨运行时可移植性的开放标准。将代理配置、逻辑、工具和记忆提取为可移植的版本控制Git仓库，支持在任何运行时运行（Claude、OpenAI、CrewAI、OpenClaw）。灵感来自GitAgent/Lyzr标准。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">NewsBytes</span>
+                    <div class="news-time">Mar 30, 2026</div>
+                    <a href="https://www.newsbytesapp.com/news/science/deepseek-outage-leaves-china-s-ai-chatbot-down-for-hours/story" class="card-title" target="_blank" data-lang="en">DeepSeek Suffers Biggest Outage Since R1 Launch, Services Down for 7+ Hours</a>
+                    <a href="https://www.newsbytesapp.com/news/science/deepseek-outage-leaves-china-s-ai-chatbot-down-for-hours/story" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepSeek遭遇自R1发布以来最大规模宕机，服务中断超7小时</a>
+                    <p class="card-description" data-lang="en">DeepSeek experienced its biggest service outage since the R1 model launch in January 2025, with chatbot services down for over seven hours on Sunday night. The company initially reported a fix within two hours but performance issues persisted until the next morning. The extended downtime has fueled speculation that DeepSeek may be preparing to roll out a next-generation AI model.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepSeek遭遇自2025年1月R1模型发布以来最严重的服务中断，周日晚间聊天机器人服务中断超过7小时。公司最初报告在两小时内修复，但性能问题持续到次日早晨。持续宕机引发猜测：DeepSeek可能正在准备发布新一代AI模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">BitcoinWorld</span>
+                    <div class="news-time">Mar 30, 2026</div>
+                    <a href="https://bitcoinworld.co.in/openai-sora-shutdown-reality/" class="card-title" target="_blank" data-lang="en">OpenAI Sora Shutdown: $1M Daily Burn Rate Behind AI Video Retreat</a>
+                    <a href="https://bitcoinworld.co.in/openai-sora-shutdown-reality/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI关闭Sora：每日百万美元燃烧率导致AI视频战略撤退</a>
+                    <p class="card-description" data-lang="en">OpenAI shut down Sora six months after launch as the platform burned approximately $1 million daily in computational resources while serving fewer than 500,000 active users. The Disney $1 billion partnership was also terminated. Sora's research team will pivot toward world simulation research for robotics. The shutdown signals a broader industry shift toward pragmatic revenue-focused AI development over technological showcases.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI在推出六个月后关闭Sora，因该平台每日消耗约100万美元计算资源，而活跃用户不足50万。迪士尼10亿美元的合作协议也随之终止。Sora研究团队将转向机器人世界模拟研究。此次关闭标志着更广泛的行业转向——从技术展示转向务实、以收入为中心的AI开发。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Morningstar / PRNewswire</span>
+                    <div class="news-time">Mar 30, 2026</div>
+                    <a href="https://www.morningstar.com/news/pr-newswire/20260330hk22040/mediatek-vice-chairman-and-ceo-dr-rick-tsai-to-headline-computex-2026-with-a-keynote-on-the-future-of-ai" class="card-title" target="_blank" data-lang="en">MediaTek CEO Dr. Rick Tsai to Keynote COMPUTEX 2026 on Future of AI</a>
+                    <a href="https://www.morningstar.com/news/pr-newswire/20260330hk22040/mediatek-vice-chairman-and-ceo-dr-rick-tsai-to-headline-computex-2026-with-a-keynote-on-the-future-of-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">联发科CEO蔡力行博士将在COMPUTEX 2026发表主题演讲，阐述AI未来</a>
+                    <p class="card-description" data-lang="en">MediaTek Vice Chairman and CEO Dr. Rick Tsai will deliver a keynote address at COMPUTEX 2026 in Taipei, focusing on the future of AI. COMPUTEX is one of the world's largest computer and technology trade shows, and MediaTek's AI chip ambitions position it as a key player in edge AI and mobile AI inference.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">联发科副董事长兼CEO蔡力行博士将在台北COMPUTEX 2026发表主题演讲，聚焦AI未来。COMPUTEX是全球最大的电脑及技术贸易展之一，联发科的AI芯片雄心使其成为边缘AI和移动AI推理领域的关键参与者。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">StockTitan</span>
+                    <div class="news-time">Mar 30, 2026</div>
+                    <a href="https://www.stocktitan.net/news/BTDR/bitdeer-engages-dci-to-finalise-development-of-norway-s-largest-ai-n92yt3wbljrf.html" class="card-title" target="_blank" data-lang="en">Bitdeer Taps DCI for 180 MW Norway AI Data Center, Deploying Nvidia Vera Rubin</a>
+                    <a href="https://www.stocktitan.net/news/BTDR/bitdeer-engages-dci-to-finalise-development-of-norway-s-largest-ai-n92yt3wbljrf.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">比特大陆携手DCI打造180兆瓦挪威AI数据中心，部署英伟达Vera Rubin</a>
+                    <p class="card-description" data-lang="en">Bitdeer Technologies Group announced its Tydal Data Center in Norway, targeting 180 MW of AI compute capacity using Nvidia's latest Vera Rubin AI technology. Expected to be completed by December 2026, it will serve as a major co-location facility for next-generation AI training and inference workloads.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">比特大陆科技集团宣布在挪威建设Tydal数据中心，目标容量180兆瓦，采用英伟达最新Vera Rubin AI技术。预计2026年12月完工，将成为下一代AI训练和推理 workloads 的重要托管设施。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GBHackers</span>
+                    <div class="news-time">Mar 30, 2026</div>
+                    <a href="https://gbhackers.com/anthropics-latest-ai-test-pressures-cybersecurity-stocks-lower/" class="card-title" target="_blank" data-lang="en">Anthropic's Claude Mythos Model Pressures Cybersecurity Stocks to 6-Month Low</a>
+                    <a href="https://gbhackers.com/anthropics-latest-ai-test-pressures-cybersecurity-stocks-lower/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic Claude Mythos模型测试引发网络安全股跌至六个月低点</a>
+                    <p class="card-description" data-lang="en">Major cybersecurity stocks fell sharply after reports that Anthropic is testing a highly capable new model called Claude Mythos, described in internal documents as demonstrating 'unprecedented cybersecurity risks' due to its ability to discover unknown vulnerabilities in production codebases. The model's imminent release pressured cybersecurity stocks to their lowest levels in six months.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">主要网络安全股票大幅下跌，此前有报道称Anthropic正在测试一款名为Claude Mythos的高能力模型，内部文件称其因能够发现生产代码库中的未知漏洞而具有'前所未有的网络安全风险'。该模型即将发布导致网络安全股跌至六个月最低点。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Cointribune</span>
+                    <div class="news-time">Mar 29, 2026</div>
+                    <a href="https://www.cointribune.com/en/ai-anthropic-secures-googles-support-for-major-infrastructure-project/" class="card-title" target="_blank" data-lang="en">Google Bets $5 Billion on Anthropic Mega Data Center in Texas</a>
+                    <a href="https://www.cointribune.com/en/ai-anthropic-secures-googles-support-for-major-infrastructure-project/" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌向Anthropic德克萨斯超级数据中心投资50亿美元</a>
+                    <p class="card-description" data-lang="en">Google is funding a mega AI data center in Texas for Anthropic, confirming the acceleration of the AI infrastructure race. The investment signals deepening ties between the two companies despite their competitive AI product offerings, with Google betting on Anthropic's continued leadership in frontier models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌正在为Anthropic在德克萨斯州建设一个超级AI数据中心提供资金，证实了AI基础设施竞赛的加速。此举标志着两家公司之间的合作关系加深，尽管他们在AI产品上存在竞争——谷歌押注Anthropic在前沿模型领域的持续领导地位。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Tom's Hardware</span>
+                    <div class="news-time">Mar 25, 2026</div>
+                    <a href="https://www.tomshardware.com/pc-components/gpus/huawei-unveils-new-atlas-350-ai-accelerator-with-1-56-pflops-of-fp4-compute-and-up-to-112gb-of-hbm-claims-2-8x-more-performance-than-nvidias-h20" class="card-title" target="_blank" data-lang="en">Huawei's Atlas 350 AI Accelerator Claims 2.8x Performance Over Nvidia H20</a>
+                    <a href="https://www.tomshardware.com/pc-components/gpus/huawei-unveils-new-atlas-350-ai-accelerator-with-1-56-pflops-of-fp4-compute-and-up-to-112gb-of-hbm-claims-2-8x-more-performance-than-nvidias-h20" class="card-title" target="_blank" data-lang="zh" style="display: none;">华为Atlas 350 AI加速器声称性能是英伟达H20的2.8倍</a>
+                    <p class="card-description" data-lang="en">Huawei unveiled the Atlas 350 AI accelerator with 1.56 petaflops of FP4 compute and up to 112GB of HBM memory, claiming 2.8x better performance than Nvidia's H20 chip. The release highlights China's push for domestic AI hardware alternatives as U.S. export controls restrict access to cutting-edge Nvidia chips.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">华为发布Atlas 350 AI加速器，具备1.56 petaflops FP4算力和高达112GB HBM内存，声称性能比英伟达H20芯片高2.8倍。此发布凸显中国在 美国出口管制限制获取尖端英伟达芯片的背景下，推动本土AI硬件替代的决心。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">FutureSearch AI</span>
+                    <div class="news-time">Mar 25, 2026</div>
+                    <a href="https://futuresearch.ai/blog/litellm-pypi-supply-chain-attack/" class="card-title" target="_blank" data-lang="en">Supply Chain Attack Compromises LiteLLM v1.82.8 on PyPI, Stealing SSH Keys</a>
+                    <a href="https://futuresearch.ai/blog/litellm-pypi-supply-chain-attack/" class="card-title" target="_blank" data-lang="zh" style="display: none;">PyPI上LiteLLM v1.82.8遭遇供应链攻击，SSH密钥被盗</a>
+                    <p class="card-description" data-lang="en">A malicious version of LiteLLM v1.82.8 was discovered on PyPI, harvesting SSH keys, cloud credentials, and secrets on every Python startup before attempting lateral movement across Kubernetes clusters. With 97 million monthly downloads, the incident highlights growing supply chain security risks in the AI infrastructure ecosystem.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">PyPI上发现LiteLLM v1.82.8的恶意版本，在每次Python启动时窃取SSH密钥、云凭证和密钥，然后试图在Kubernetes集群间进行横向移动。该库每月有9700万次下载，此事件凸显AI基础设施生态中日益严重的供应链安全风险。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">March 30, 2026 reveals the AI industry at an inflection point where infrastructure economics are forcing strategic pivots. OpenAI's Sora shutdown ($1M daily burn, declining users) underscores a critical lesson: compute-intensive consumer apps must demonstrate sustainable unit economics or face pruning. Meanwhile, DeepSeek's extended outage fueling model upgrade speculation signals China AI is accelerating its next wave of releases. The Claude Mythos leak—capable of discovering unknown production vulnerabilities—has immediately pressured cybersecurity stocks, raising fundamental questions about who controls access to AI systems with offensive security capabilities. Google deepening Anthropic infrastructure investment despite being competitors shows the AI chip shortage is creating unusual alliances. On the open-source side, OpenOats (meeting AI), LT350 (decentralized AI infra), and Open-Omega (agent portability standard) represent three fresh directions: voice-first meeting intelligence, geographically distributed inference, and runtime-agnostic agent design. The LiteLLM supply chain attack is a reminder that the AI software stack remains a high-value attack surface with 97M+ monthly downloads on compromised libraries. Short-term watch: Claude Mythos release impact on enterprise security posture; Long-term: Decentralized AI infrastructure may fundamentally reshape how compute is allocated across geographies.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年3月30日，AI行业正处于一个转折点——基础设施经济正在迫使战略调整。OpenAI关闭Sora（每日百万美元燃烧率、用户持续下滑）揭示了一个关键教训：算力密集型消费者应用必须证明可持续的单位经济模型，否则面临裁撤。与此同时，DeepSeek持续宕机引发的模型升级猜测表明中国AI正在加速下一代发布。Claude Mythos泄露——能够发现生产环境中的未知漏洞——立即对网络安全股造成压力，引发了对谁应控制具有进攻性安全能力AI系统的根本性追问。谷歌尽管与Anthropic存在竞争却加深基础设施投资，表明AI芯片短缺正在创造非同寻常的联盟。在开源方面，OpenOats（会议AI）、LT350（去中心化AI基础设施）和Open-Omega（代理可移植性标准）代表三个新方向：语音优先的会议智能、地理分布式推理和运行时无关的代理设计。LiteLLM供应链攻击提醒我们，AI软件栈仍是高价值攻击面——受感染库的每月下载量超过9700万次。短期关注点：Claude Mythos发布对企业安全态势的影响；长期：去中心化AI基础设施可能从根本上重塑算力在各地理区域间的分配方式。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
