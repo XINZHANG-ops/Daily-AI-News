@@ -1,0 +1,119 @@
+{
+  "date": "2026-03-31",
+  "github_repos": [
+    {
+      "name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": {
+        "en": "One command transforms any desktop software into an AI-controllable agent tool. Bridges AI agents (OpenClaw, nanobot, Cursor, Claude Code) with existing CLI applications like GIMP, Blender, and LibreOffice. CLI-Hub enables agents to autonomously discover and install new CLIs via simple PRs.",
+        "zh": "一条命令即可将任何桌面软件转变为AI可控制的代理工具。连接AI代理（OpenClaw、nanobot、Cursor、Claude Code）与GIMP、Blender、LibreOffice等现有CLI应用。CLI-Hub支持代理通过简单PR自动发现和安装新的CLI工具。"
+      },
+      "stars": "25.4k",
+      "forks": "2,277"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/nousresearch/hermes-agent",
+      "description": {
+        "en": "A self-improving AI agent built by Nous Research with a built-in learning loop. Creates skills from experience, improves them during use, searches its own past conversations, and builds a deepening model of the user. Supports Telegram, Discord, Slack, WhatsApp, and CLI with voice memo transcription across platforms.",
+        "zh": "由Nous Research打造的自改进AI代理，内置学习循环。能从经验中创建技能、在使用中自我改进、搜索过往对话，并建立对用户越来越深入的了解。支持Telegram、Discord、Slack、WhatsApp和CLI，跨平台语音备忘录转录。"
+      },
+      "stars": "19.4k",
+      "forks": "2,352"
+    },
+    {
+      "name": "danveloper/flash-moe",
+      "url": "https://github.com/danveloper/flash-moe",
+      "description": {
+        "en": "Pure C/Metal inference engine running Qwen3.5-397B-A17B (397B parameter MoE model) on a MacBook Pro with 48GB RAM at 4.4+ tokens/second. No Python or frameworks — just C, Objective-C, and hand-tuned Metal shaders. Expert weights stream from NVMe SSD on demand via parallel pread().",
+        "zh": "纯C/Metal推理引擎，在配备48GB RAM的MacBook Pro上以4.4+ tokens/秒运行Qwen3.5-397B-A17B（3970亿参数MoE模型）。无Python或框架依赖——仅用C、Objective-C和手调Metal着色器。专家权重通过并行pread()从NVMe SSD按需流式加载。"
+      },
+      "stars": "2.7k",
+      "forks": "276"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Patches Critical ChatGPT Data Exfiltration Flaw — DNS Side Channel Bypassed All Guardrails",
+        "zh": "OpenAI修复关键ChatGPT数据泄露漏洞——DNS侧信道绕过所有防护机制"
+      },
+      "url": "https://thehackernews.com/2026/03/openai-patches-chatgpt-data.html",
+      "source": "The Hacker News / Check Point Research",
+      "time": "March 30, 2026",
+      "description": {
+        "en": "Check Point Research discovered a previously unknown vulnerability in ChatGPT's code execution runtime that allowed sensitive conversation data, uploaded files, and AI-generated summaries to be exfiltrated via a hidden DNS-based covert channel — entirely bypassing ChatGPT's built-in guardrails. A single malicious prompt could turn an ordinary conversation into a covert data leak. OpenAI patched the flaw on February 20, 2026. The same channel could establish remote shell access inside the Linux runtime, raising critical enterprise security concerns.",
+        "zh": "Check Point Research在ChatGPT代码执行运行时中发现一个此前未知的漏洞，允许通过隐藏的基于DNS的隐蔽通道窃取敏感对话内容、上传文件和AI生成的摘要——完全绕过ChatGPT内置防护机制。单个恶意提示即可将普通对话转变为隐蔽数据泄露。OpenAI于2026年2月20日修复了该漏洞。同一通道还可在Linux运行时内建立远程shell访问，引发企业安全高度关注。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI's GPT-4.5 Was the Last Non-Reasoning Model — 'Spud' Completes Pretraining, Aiming for Economy-Reshaping Impact",
+        "zh": "GPT-4.5是最后一个非推理模型——'Spud'完成预训练，瞄准重塑经济的影响力"
+      },
+      "url": "https://www.youreverydayai.com/ep-744-leaks-show-insights-on-openai-and-anthropics-next-models-claude-computer-use-goes-viral-and-more/",
+      "source": "Your Everyday AI",
+      "time": "March 30, 2026",
+      "description": {
+        "en": "OpenAI has completed pretraining of its next flagship model codenamed 'Spud', which CEO Sam Altman says will 'accelerate the economy.' The model is expected to support OpenAI's productivity super-app strategy combining ChatGPT, Codex, and the Atlas browser — integrating multi-tool workflows more tightly. The timing follows OpenAI's decision to jettison Sora, Instant Checkout, and adult chatbots to focus on enterprise and robotics. Anthropic's competing Mythos model was also leaked this week.",
+        "zh": "OpenAI已完成下一代旗舰模型'Spud'的预训练，CEO Sam Altman称其将'加速经济发展'。该模型预计将支持OpenAI结合ChatGPT、Codex和Atlas浏览器的生产力超级应用战略——更紧密地整合多工具工作流。此举紧随OpenAI决定放弃Sora、即时结账和成人聊天机器人，聚焦企业客户和机器人领域。本周Anthropic的竞品Mythos模型也遭到泄露。"
+      }
+    },
+    {
+      "title": {
+        "en": "Apple's Siri Reboot at WWDC 2026: Gemini-Powered, Third-Party AI Extensions, Standalone App, and Agentic Capabilities",
+        "zh": "苹果WWDC 2026重启Siri：Gemini驱动、第三方AI扩展、独立应用及智能体能力"
+      },
+      "url": "https://www.livemint.com/technology/tech-news/apple-readies-massive-siri-overhaul-for-ios-27-5-major-ai-upgrades-to-expect-at-wwdc-2026-11774835467941.html",
+      "source": "Mint / Bloomberg",
+      "time": "March 30, 2026",
+      "description": {
+        "en": "Apple is preparing the most significant Siri overhaul in its history for WWDC 2026, including: a standalone Siri app with conversation history; Gemini integration (Google's custom model reportedly comparable to Gemini 3); a third-party AI Extensions system allowing Claude, Gemini, and Grok inside Siri; system-wide agentic capabilities with deep app integration; and Spotlight replacement with Siri. OpenAI's exclusive Siri partnership since iOS 18 is set to end.",
+        "zh": "苹果正在为WWDC 2026筹备Siri史上最大改版，包括：带对话历史的独立Siri应用；Gemini集成（谷歌为苹果定制的模型，据报道可与Gemini 3媲美）；第三方AI扩展系统，支持Claude、Gemini和Grok内置于Siri；深度应用集成的系统级智能体能力；以及用Siri替代Spotlight。iOS 18以来OpenAI的Siri独占合作即将终结。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Confirms 'Claude Mythos' Testing After Unprecedented Data Leak — 3,000 Internal Documents Exposed",
+        "zh": "Anthropic确认Claude Mythos测试此前大规模数据泄露——近3000份内部文件曝光"
+      },
+      "url": "https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/",
+      "source": "Fortune",
+      "time": "March 26–27, 2026",
+      "description": {
+        "en": "Anthropic confirmed it is testing Claude Mythos, a new model it calls 'a step change' and 'the most capable we've built to date,' following a data leak that exposed nearly 3,000 internal documents including a draft blog post describing the model as posing 'unprecedented cybersecurity risks' due to its ability to discover unknown vulnerabilities in production codebases. Anthropic attributed the leak to human error in its content management system configuration. The leak also pressured cybersecurity stocks to six-month lows.",
+        "zh": "Anthropic确认正在测试Claude Mythos，称其为'能力飞跃'和'迄今最强大的模型'。此前一次数据泄露暴露了近3000份内部文件，包括一份草稿博客文章，称该模型因能发现生产代码库中的未知漏洞而具有'前所未有的网络安全风险'。Anthropic将此次泄露归因于其内容管理系统配置的人为错误。泄露同时导致网络安全股跌至六个月低点。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Faces Profitability Reckoning as IPO Deadline Approaches — Sora, Instant Checkout, and Adult Chatbots All Scrapped",
+        "zh": "IPO截止日期临近，OpenAI面临盈利拷问——Sora、即时结账和成人聊天机器人全部叫停"
+      },
+      "url": "https://www.theguardian.com/technology/2026/mar/31/openai-stock-market-flotation-profit",
+      "source": "The Guardian",
+      "time": "March 31, 2026",
+      "description": {
+        "en": "As OpenAI prepares for a potential IPO by end of 2026, The Guardian reports the company is under 'serious pressure to show strategic discipline' after burning through hundreds of billions with no path to profitability. In the past month, OpenAI has cancelled Sora video generation ($1B Disney deal terminated), Instant Checkout e-commerce, and delayed adult chatbot plans. With an $850B valuation and $600B infrastructure spend planned through 2030, analysts question whether OpenAI can narrow the gap between its astronomical costs and its revenue.",
+        "zh": "随着OpenAI准备可能在2026年底前IPO，《卫报》报道称，该公司在烧掉数千亿美元且无盈利路径后，正面临'展示战略纪律的严肃压力'。过去一个月，OpenAI取消了Sora视频生成（终止了10亿美元迪士尼交易）、即时结账电商功能，并推迟了成人聊天机器人计划。以8500亿美元估值和2030年前6000亿美元基础设施支出计划，分析师质疑OpenAI能否缩小其天文数字成本与收入之间的差距。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Computer Use Goes Viral as Anthropic Closes the Consumer Gap — Super Bowl Ad Strategy Paying Off",
+        "zh": "Claude Computer Use风靡全网，Anthropic补齐消费者差距——超级碗广告策略奏效"
+      },
+      "url": "https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing/",
+      "source": "TechCrunch",
+      "time": "March 28, 2026",
+      "description": {
+        "en": "Anthropic's Claude has seen a sharp surge in paying consumer adoption since January 2026, driven by Super Bowl commercials mocking ChatGPT's decision to show ads and promising Claude would remain ad-free. TechCrunch reports Anthropic is 'skyrocketing' in popularity with consumers, closing the gap with OpenAI's ChatGPT in the consumer market while maintaining its strong enterprise position.",
+        "zh": "自2026年1月以来，Anthropic的Claude在付费消费者中的采用率急剧上升，得益于超级碗广告讽刺ChatGPT投放广告的决定，并承诺Claude永不投放广告。TechCrunch报道称Anthropic在消费者中人气'飙升'，在消费者市场缩小与OpenAI ChatGPT的差距，同时保持强大的企业市场地位。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "March 31, 2026 exposes the AI industry at a critical juncture: the gap between hype and sustainable business models is finally closing in on the major players. OpenAI's decision to kill Sora, Instant Checkout, and adult chatbots isn't just strategic pruning — it's a survival move as IPO pressure mounts and $600B infrastructure commitments loom. The lesson is brutal but clear: compute-intensive consumer experiments require sustainable unit economics or they get axed. Meanwhile, Spud's completion signals OpenAI's bet on enterprise productivity integration (ChatGPT + Codex + Atlas) as its path to profitability.\n\nSecurity has become a first-order concern this week. Check Point's DNS exfiltration vulnerability that bypassed all of ChatGPT's guardrails is a wake-up call for enterprise AI deployments — if a single prompt could silently exfiltrate conversation data and files through a covert channel, every company uploading sensitive information to AI assistants needs a security layer. Meanwhile, Claude Mythos being described as an 'unprecedented cybersecurity risk' because it can discover unknown production vulnerabilities raises fundamental questions about who should have access to frontier models with offensive capabilities.\n\nOn the open-source side, three repos stand out this week as representing divergent but equally important frontiers: CLI-Anything (25k+ stars, week-over-week growth) is democratizing agent access to the world's existing software; Hermes Agent is pioneering persistent, self-improving agents that learn across sessions; and flash-moe is proving that you don't need a data center to run frontier-class models — a 397B MoE running locally at 4.4 tok/s on a MacBook is a preview of where inference infrastructure is heading. Apple's Siri reboot plan is the other big story — the end of OpenAI's exclusive Siri partnership marks a shift toward platform neutrality that could reshape the AI distribution landscape.",
+    "zh": "2026年3月31日，AI行业暴露出一个关键转折点：炒作与可持续商业模式之间的差距终于开始制约主要玩家。OpenAI决定关闭Sora、即时结账和成人聊天机器人不仅仅是战略裁剪——而是在IPO压力逼近、6000亿美元基础设施承诺迫在眉睫之下的生存举措。教训残酷但清晰：算力密集型消费者实验需要可持续的单位经济模型，否则将被裁撤。与此同时，Spud的完成标志着OpenAI押注企业生产力集成（ChatGPT + Codex + Atlas）作为其盈利路径。\n\n本周安全已成为首要关切。Check Point发现的DNS泄露漏洞——绕过ChatGPT所有防护机制——是企业AI部署的警钟：如果单个提示就能通过隐蔽通道静默窃取对话数据和文件，那么每个向AI助手上传敏感信息的公司都需要一层安全防护。与此同时，Claude Mythos被称为'前所未有的网络安全风险'，因其能发现生产环境中的未知漏洞，引发了关于谁应访问具有进攻性能力的前沿模型的根本性追问。\n\n在开源方面，本周三个仓库代表了不同但同等重要的前沿：CLI-Anything（25k+ stars，周环比增长）正在将代理访问民主化到世界现有软件；Hermes Agent正在开创跨会话持续自我改进的代理；flash-moe正在证明你不需要数据中心来运行前沿级模型——在MacBook上本地运行397B MoE达到4.4 tok/s，是推理基础设施发展方向的一个预览。苹果的Siri重启计划是另一大新闻——OpenAI独占Siri合作的终结标志着向平台中立化的转变，可能重塑AI分发格局。"
+  }
+}
