@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-01",
+  "github_repos": [
+    {
+      "name": "tvytlx/ai-agent-deep-dive",
+      "url": "https://github.com/tvytlx/ai-agent-deep-dive",
+      "description": {
+        "en": "Claude Code Source Code Deep Dive Report - A research report analyzing the architecture, prompt system, agent orchestration, Skills/Plugins/Hooks/MCP mechanisms of modern coding agents, and what makes Claude Code so powerful.",
+        "zh": "Claude Code 源码深度研究报告——分析现代 Coding Agent 的整体架构、提示词系统、Agent 编排、Skills/Plugins/Hooks/MCP 机制，以及 Claude Code 强大背后的真正护城河。"
+      },
+      "stars": "2.1k",
+      "forks": "208"
+    },
+    {
+      "name": "codeany-ai/open-agent-sdk-typescript",
+      "url": "https://github.com/codeany-ai/open-agent-sdk-typescript",
+      "description": {
+        "en": "Open-source Agent SDK with no CLI dependencies, as a fully open alternative to claude-agent-sdk. Runs the full agent loop in-process and deploys anywhere: cloud, serverless, Docker, or CI/CD.",
+        "zh": "开源 Agent SDK，无需 CLI 依赖，是 claude-agent-sdk 的完全开源替代方案。在进程内运行完整 agent 循环，可部署到云端、Serverless、Docker 或 CI/CD。"
+      },
+      "stars": "1.6k",
+      "forks": "162"
+    },
+    {
+      "name": "revfactory/harness",
+      "url": "https://github.com/revfactory/harness",
+      "description": {
+        "en": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Dynamically composes agent teams for targeted workflows.",
+        "zh": "一个元技能（meta-skill），用于设计特定领域的 Agent 团队、定义专业 Agent 并生成其所需的技能。可动态编排 Agent 团队以完成针对性工作流。"
+      },
+      "stars": "1.3k",
+      "forks": "133"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Claude Code Source Code Leaked via npm Source Map - Industry Reacts",
+        "zh": "Anthropic Claude Code 源码通过 npm source map 文件泄露，业界哗然"
+      },
+      "url": "https://www.ndtv.com/feature/2026-just-got-crazy-internet-erupts-after-anthropics-claude-source-code-leak-shakes-ai-industry-11294628",
+      "source": "NDTV",
+      "time": "2026-04-01",
+      "description": {
+        "en": "On March 31, Anthropic accidentally published Claude Code's full source code through a misconfigured source map file in its npm registry. The leak exposed thousands of lines of unobfuscated code including plugins, skills, tools, hooks, and internal architecture. Security experts called it the mothership of all code leaks and a blow to Anthropic's reputation as a security-first AI lab, especially as the company prepares for a reported $380B IPO.",
+        "zh": "3月31日，Anthropic 在其 npm 注册表的构建配置中错误发布了 Claude Code 的完整源码。泄露文件暴露了数千行未混淆代码，涵盖插件、技能、工具、钩子及内部架构。安全专家称之为所有代码泄露之母，对这家以安全著称的 AI 实验室的声誉造成重大打击。目前 Anthropic 正筹备据报道规模达 3800 亿美元的 IPO。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Closes $122B Funding Round at $852B Valuation, Eyes IPO",
+        "zh": "OpenAI 完成 1220 亿美元融资，估值 8520 亿美元，筹备 IPO"
+      },
+      "url": "https://www.theguardian.com/technology/2026/mar/31/openai-raises-122-billion-ai-boom",
+      "source": "The Guardian",
+      "time": "2026-03-31",
+      "description": {
+        "en": "OpenAI announced the close of a $122 billion funding round with backing from Amazon, Nvidia, and SoftBank ($110B committed), achieving an $852B valuation. The company generates $2B/month in revenue but still loses billions annually, forecasting profitability by 2030. OpenAI also quietly shut down its Sora video platform and a 5-month-old shopping pilot, while facing an upcoming trial with Elon Musk over its shift to a for-profit model.",
+        "zh": "OpenAI 宣布完成 1200 亿美元融资轮，估值达 8520 亿美元，投资方包括亚马逊、英伟达及软银（承诺投资 1100 亿美元）。公司月收入达 20 亿美元，但每年仍亏损数十亿，预计 2030 年实现盈利。同期 OpenAI 还悄然关闭了 Sora 视频平台和运行仅 5 个月的购物试点，并面临与 Elon Musk 关于向营利模式转型的法律诉讼。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google DeepMind Gemini Forcing OpenAI Into Code Red - Book Reveals AI Race Intensity",
+        "zh": "著作披露：Google DeepMind Gemini 迫使 OpenAI 陷入代码红色警戒"
+      },
+      "url": "https://www.axios.com/2026/03/31/deepmind-google-ai-race-money-hassabis-mallaby-book",
+      "source": "Axios",
+      "time": "2026-03-31",
+      "description": {
+        "en": "A new book by journalist Arya Mallaby reveals that Google's DeepMind forced OpenAI into a code red frenzy in late 2025 after advancements in Gemini AI. The book describes how Google CEO Sundar Pichai and DeepMind founder Demis Hassabis effectively counterpunched with Gemini, catching OpenAI off-guard and triggering a company-wide scramble to improve ChatGPT. The account underscores how the AI race has shifted from research curiosity to a high-stakes commercial sprint.",
+        "zh": "记者 Arya Mallaby 的新书披露，Google DeepMind 在 2025 年底因 Gemini AI 的进步迫使 OpenAI 进入代码红色警戒状态。书中描述了 Google CEO 皮查伊和 DeepMind 创始人哈萨比斯如何用 Gemini 有效反击，打了 OpenAI 一个措手不及，迫使全公司紧急改进 ChatGPT。这一叙述凸显了 AI 竞争已从科研探索演变为高风险的商业冲刺。"
+      }
+    },
+    {
+      "title": {
+        "en": "Apple Removes Vibe-Coding App from App Store, Escalating Platform Crackdown",
+        "zh": "苹果下架 vibe-coding 应用，平台管控升级"
+      },
+      "url": "https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/",
+      "source": "Tech Startups",
+      "time": "2026-03-31",
+      "description": {
+        "en": "Apple removed the Anything app from the App Store for violating platform rules, in what observers describe as an escalation in Apple's crackdown on vibe-coding software. The removal highlights growing tensions between AI app builders and the gatekeepers who control mobile distribution. If Apple tightens policy on AI-generated apps, it could reshape the entire mobile AI startup landscape.",
+        "zh": "苹果以违反平台规则为由将 Anything 应用从 App Store 下架，评论认为这是苹果加强对 vibe-coding 软件管控的升级举动。此举凸显了 AI 应用开发者与控制移动分发渠道的平台守门人之间日益紧张的矛盾。若苹果收紧对 AI 生成应用的审核政策，可能重塑整个移动 AI 创业生态。"
+      }
+    },
+    {
+      "title": {
+        "en": "Nebius Bets $10B on Finland Data Center - Europe AI Infrastructure Race Heats Up",
+        "zh": "Nebius 斥资 100 亿美元建设芬兰数据中心，欧洲 AI 基础设施竞赛升温"
+      },
+      "url": "https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/",
+      "source": "Tech Startups",
+      "time": "2026-03-31",
+      "description": {
+        "en": "AI infrastructure firm Nebius announced a $10B+ project to build a 310-megawatt data center in Finland, set to rank among Europe's largest AI computing facilities. The move underscores Europe's push for sovereign AI capacity independent of US cloud giants, and highlights how AI competition is increasingly defined by land, power grids, and physical infrastructure rather than software alone.",
+        "zh": "AI 基础设施公司 Nebius 宣布投资超过 100 亿美元在芬兰建设 310 兆瓦数据中心，建成后将成为欧洲最大的 AI 计算设施之一。此举表明欧洲正努力建立独立于美国云巨头的自主 AI 能力，也凸显 AI 竞争日益由土地、电力资源和实体基础设施而非单纯软件定义。"
+      }
+    },
+    {
+      "title": {
+        "en": "Big Tech $635B AI CapEx Faces Energy Cost Headwinds in 2026",
+        "zh": "2026 年 Big Tech 6350 亿美元 AI 资本支出面临能源成本压力"
+      },
+      "url": "https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/",
+      "source": "Tech Startups",
+      "time": "2026-03-31",
+      "description": {
+        "en": "Microsoft, Amazon, Google, and Meta plan to spend over $635 billion on AI infrastructure in 2026, but S&P Global analysts warn that rising electricity and fuel prices driven by geopolitical tensions could force project delays. Data-center operators are accelerating deals with renewable energy providers and efficient chip suppliers. The energy constraint is redirecting investment toward sustainable infrastructure and creating opportunities for climate-tech startups.",
+        "zh": "微软、亚马逊、Google 和 Meta 计划在 2026 年投入超过 6350 亿美元建设 AI 基础设施，但标普全球分析师警告，地缘政治紧张导致的电价和燃料价格上涨可能迫使项目延期。数据中心运营商正加速与可再生能源供应商和高效芯片厂商的合作。能源约束正推动投资流向可持续基础设施领域，并为气候科技创业公司创造机会。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft Copilot Cowork Expands with Multi-Model Workflows and Council Feature",
+        "zh": "微软 Copilot Cowork 扩展多模型工作流与 Council 功能"
+      },
+      "url": "https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/",
+      "source": "Tech Startups",
+      "time": "2026-03-31",
+      "description": {
+        "en": "Microsoft unveiled new AI upgrades for Copilot Cowork, including multi-model workflows where one AI generates and another critiques, plus a Council feature for side-by-side response comparison. The update signals the enterprise AI market is moving beyond raw generation toward verification, orchestration, and workflow reliability - a maturation of the AI agent promise.",
+        "zh": "微软为 Copilot Cowork 推出新的 AI 升级，包括多模型工作流（一个 AI 生成、另一个 AI 批判）和 Council 功能（并排比较响应）。此更新表明企业 AI 市场正从单纯的内容生成走向验证、编排与工作流可靠性——AI Agent 的承诺正在走向成熟。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "April 1st opens with the most ironic headline of 2026: the company that told Congress AI is an existential threat could not protect its own code from an npm source map mistake. The Claude Code leak dominated the past 48 hours, but it is a symptom of a deeper story - the agent ecosystem is exploding and operational security has not kept pace with deployment velocity. On the funding front, OpenAI's $122B round cements AI as the defining capital allocation theme of the decade, while Nebius's $10B Finland bet signals that infrastructure, not algorithms, is the real bottleneck in 2026. The Google/DeepMind Gemini code red narrative also reinforces that the frontier model race remains intensely competitive. Meanwhile, Apple removing a vibe-coding app from the App Store is a reminder that platform gatekeepers still hold enormous leverage over how AI reaches users. The week's repos trend strongly toward the agent tooling layer - agent SDKs, meta-skill frameworks, and code analysis reports - reflecting a field that is rapidly maturing from build a model to deploy and orchestrate agents reliably. Key themes to watch: operational security in agent frameworks, sovereign AI infrastructure in Europe, energy-constrained compute expansion, and the ongoing convergence of coding agents with production deployment pipelines.",
+    "zh": "4月1日以2026年最讽刺的头条新闻开启：一家告诉国会 AI 是生存威胁的公司，却因为一个 npm source map 配置错误而泄露了自家代码。Claude Code 源码泄露在过去48小时内占据主导，但这只是更深层故事的一个缩影——Agent 生态系统正在爆发式增长，而运营安全却未能跟上部署速度。融资方面，OpenAI 的 1200 亿美元融资轮奠定了 AI 作为本十年最核心资本配置主题的地位；Nebius 100 亿美元的芬兰数据中心投资则表明，基础设施而非算法才是2026年真正的瓶颈。Google/DeepMind Gemini 引发代码红色危机的叙事也印证了前沿模型竞争依然激烈。与此同时，苹果从 App Store 下架 vibe-coding 应用提醒我们，平台守门人仍然握着 AI 触达用户的巨大控制权。本周 GitHub 热门项目强烈偏向 Agent 工具层——Agent SDK、元技能框架和代码分析报告——反映出一个正从构建模型快速成熟为可靠部署与编排 Agent 的领域。需要关注的关键趋势：Agent 框架的运营安全、欧洲主权 AI 基础设施、能源约束下的算力扩张，以及编码 Agent 与生产部署管道的持续融合。"
+  }
+}

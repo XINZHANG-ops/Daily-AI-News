@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 01, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 01, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/tvytlx/ai-agent-deep-dive" class="card-title" target="_blank">tvytlx/ai-agent-deep-dive</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 208 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Claude Code Source Code Deep Dive Report - A research report analyzing the architecture, prompt system, agent orchestration, Skills/Plugins/Hooks/MCP mechanisms of modern coding agents, and what makes Claude Code so powerful.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Code 源码深度研究报告——分析现代 Coding Agent 的整体架构、提示词系统、Agent 编排、Skills/Plugins/Hooks/MCP 机制，以及 Claude Code 强大背后的真正护城河。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/codeany-ai/open-agent-sdk-typescript" class="card-title" target="_blank">codeany-ai/open-agent-sdk-typescript</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.6k stars</div>
+                                <div class="meta-item"><span>🍴</span> 162 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open-source Agent SDK with no CLI dependencies, as a fully open alternative to claude-agent-sdk. Runs the full agent loop in-process and deploys anywhere: cloud, serverless, Docker, or CI/CD.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源 Agent SDK，无需 CLI 依赖，是 claude-agent-sdk 的完全开源替代方案。在进程内运行完整 agent 循环，可部署到云端、Serverless、Docker 或 CI/CD。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/revfactory/harness" class="card-title" target="_blank">revfactory/harness</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.3k stars</div>
+                                <div class="meta-item"><span>🍴</span> 133 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Dynamically composes agent teams for targeted workflows.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个元技能（meta-skill），用于设计特定领域的 Agent 团队、定义专业 Agent 并生成其所需的技能。可动态编排 Agent 团队以完成针对性工作流。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">NDTV</span>
+                    <div class="news-time">2026-04-01</div>
+                    <a href="https://www.ndtv.com/feature/2026-just-got-crazy-internet-erupts-after-anthropics-claude-source-code-leak-shakes-ai-industry-11294628" class="card-title" target="_blank" data-lang="en">Anthropic Claude Code Source Code Leaked via npm Source Map - Industry Reacts</a>
+                    <a href="https://www.ndtv.com/feature/2026-just-got-crazy-internet-erupts-after-anthropics-claude-source-code-leak-shakes-ai-industry-11294628" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic Claude Code 源码通过 npm source map 文件泄露，业界哗然</a>
+                    <p class="card-description" data-lang="en">On March 31, Anthropic accidentally published Claude Code's full source code through a misconfigured source map file in its npm registry. The leak exposed thousands of lines of unobfuscated code including plugins, skills, tools, hooks, and internal architecture. Security experts called it the mothership of all code leaks and a blow to Anthropic's reputation as a security-first AI lab, especially as the company prepares for a reported $380B IPO.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">3月31日，Anthropic 在其 npm 注册表的构建配置中错误发布了 Claude Code 的完整源码。泄露文件暴露了数千行未混淆代码，涵盖插件、技能、工具、钩子及内部架构。安全专家称之为所有代码泄露之母，对这家以安全著称的 AI 实验室的声誉造成重大打击。目前 Anthropic 正筹备据报道规模达 3800 亿美元的 IPO。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Guardian</span>
+                    <div class="news-time">2026-03-31</div>
+                    <a href="https://www.theguardian.com/technology/2026/mar/31/openai-raises-122-billion-ai-boom" class="card-title" target="_blank" data-lang="en">OpenAI Closes $122B Funding Round at $852B Valuation, Eyes IPO</a>
+                    <a href="https://www.theguardian.com/technology/2026/mar/31/openai-raises-122-billion-ai-boom" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 完成 1220 亿美元融资，估值 8520 亿美元，筹备 IPO</a>
+                    <p class="card-description" data-lang="en">OpenAI announced the close of a $122 billion funding round with backing from Amazon, Nvidia, and SoftBank ($110B committed), achieving an $852B valuation. The company generates $2B/month in revenue but still loses billions annually, forecasting profitability by 2030. OpenAI also quietly shut down its Sora video platform and a 5-month-old shopping pilot, while facing an upcoming trial with Elon Musk over its shift to a for-profit model.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 宣布完成 1200 亿美元融资轮，估值达 8520 亿美元，投资方包括亚马逊、英伟达及软银（承诺投资 1100 亿美元）。公司月收入达 20 亿美元，但每年仍亏损数十亿，预计 2030 年实现盈利。同期 OpenAI 还悄然关闭了 Sora 视频平台和运行仅 5 个月的购物试点，并面临与 Elon Musk 关于向营利模式转型的法律诉讼。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Axios</span>
+                    <div class="news-time">2026-03-31</div>
+                    <a href="https://www.axios.com/2026/03/31/deepmind-google-ai-race-money-hassabis-mallaby-book" class="card-title" target="_blank" data-lang="en">Google DeepMind Gemini Forcing OpenAI Into Code Red - Book Reveals AI Race Intensity</a>
+                    <a href="https://www.axios.com/2026/03/31/deepmind-google-ai-race-money-hassabis-mallaby-book" class="card-title" target="_blank" data-lang="zh" style="display: none;">著作披露：Google DeepMind Gemini 迫使 OpenAI 陷入代码红色警戒</a>
+                    <p class="card-description" data-lang="en">A new book by journalist Arya Mallaby reveals that Google's DeepMind forced OpenAI into a code red frenzy in late 2025 after advancements in Gemini AI. The book describes how Google CEO Sundar Pichai and DeepMind founder Demis Hassabis effectively counterpunched with Gemini, catching OpenAI off-guard and triggering a company-wide scramble to improve ChatGPT. The account underscores how the AI race has shifted from research curiosity to a high-stakes commercial sprint.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">记者 Arya Mallaby 的新书披露，Google DeepMind 在 2025 年底因 Gemini AI 的进步迫使 OpenAI 进入代码红色警戒状态。书中描述了 Google CEO 皮查伊和 DeepMind 创始人哈萨比斯如何用 Gemini 有效反击，打了 OpenAI 一个措手不及，迫使全公司紧急改进 ChatGPT。这一叙述凸显了 AI 竞争已从科研探索演变为高风险的商业冲刺。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Tech Startups</span>
+                    <div class="news-time">2026-03-31</div>
+                    <a href="https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/" class="card-title" target="_blank" data-lang="en">Apple Removes Vibe-Coding App from App Store, Escalating Platform Crackdown</a>
+                    <a href="https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">苹果下架 vibe-coding 应用，平台管控升级</a>
+                    <p class="card-description" data-lang="en">Apple removed the Anything app from the App Store for violating platform rules, in what observers describe as an escalation in Apple's crackdown on vibe-coding software. The removal highlights growing tensions between AI app builders and the gatekeepers who control mobile distribution. If Apple tightens policy on AI-generated apps, it could reshape the entire mobile AI startup landscape.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">苹果以违反平台规则为由将 Anything 应用从 App Store 下架，评论认为这是苹果加强对 vibe-coding 软件管控的升级举动。此举凸显了 AI 应用开发者与控制移动分发渠道的平台守门人之间日益紧张的矛盾。若苹果收紧对 AI 生成应用的审核政策，可能重塑整个移动 AI 创业生态。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Tech Startups</span>
+                    <div class="news-time">2026-03-31</div>
+                    <a href="https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/" class="card-title" target="_blank" data-lang="en">Nebius Bets $10B on Finland Data Center - Europe AI Infrastructure Race Heats Up</a>
+                    <a href="https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Nebius 斥资 100 亿美元建设芬兰数据中心，欧洲 AI 基础设施竞赛升温</a>
+                    <p class="card-description" data-lang="en">AI infrastructure firm Nebius announced a $10B+ project to build a 310-megawatt data center in Finland, set to rank among Europe's largest AI computing facilities. The move underscores Europe's push for sovereign AI capacity independent of US cloud giants, and highlights how AI competition is increasingly defined by land, power grids, and physical infrastructure rather than software alone.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI 基础设施公司 Nebius 宣布投资超过 100 亿美元在芬兰建设 310 兆瓦数据中心，建成后将成为欧洲最大的 AI 计算设施之一。此举表明欧洲正努力建立独立于美国云巨头的自主 AI 能力，也凸显 AI 竞争日益由土地、电力资源和实体基础设施而非单纯软件定义。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Tech Startups</span>
+                    <div class="news-time">2026-03-31</div>
+                    <a href="https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/" class="card-title" target="_blank" data-lang="en">Big Tech $635B AI CapEx Faces Energy Cost Headwinds in 2026</a>
+                    <a href="https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">2026 年 Big Tech 6350 亿美元 AI 资本支出面临能源成本压力</a>
+                    <p class="card-description" data-lang="en">Microsoft, Amazon, Google, and Meta plan to spend over $635 billion on AI infrastructure in 2026, but S&P Global analysts warn that rising electricity and fuel prices driven by geopolitical tensions could force project delays. Data-center operators are accelerating deals with renewable energy providers and efficient chip suppliers. The energy constraint is redirecting investment toward sustainable infrastructure and creating opportunities for climate-tech startups.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软、亚马逊、Google 和 Meta 计划在 2026 年投入超过 6350 亿美元建设 AI 基础设施，但标普全球分析师警告，地缘政治紧张导致的电价和燃料价格上涨可能迫使项目延期。数据中心运营商正加速与可再生能源供应商和高效芯片厂商的合作。能源约束正推动投资流向可持续基础设施领域，并为气候科技创业公司创造机会。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Tech Startups</span>
+                    <div class="news-time">2026-03-31</div>
+                    <a href="https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/" class="card-title" target="_blank" data-lang="en">Microsoft Copilot Cowork Expands with Multi-Model Workflows and Council Feature</a>
+                    <a href="https://techstartups.com/2026/03/31/top-tech-news-today-march-31-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软 Copilot Cowork 扩展多模型工作流与 Council 功能</a>
+                    <p class="card-description" data-lang="en">Microsoft unveiled new AI upgrades for Copilot Cowork, including multi-model workflows where one AI generates and another critiques, plus a Council feature for side-by-side response comparison. The update signals the enterprise AI market is moving beyond raw generation toward verification, orchestration, and workflow reliability - a maturation of the AI agent promise.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软为 Copilot Cowork 推出新的 AI 升级，包括多模型工作流（一个 AI 生成、另一个 AI 批判）和 Council 功能（并排比较响应）。此更新表明企业 AI 市场正从单纯的内容生成走向验证、编排与工作流可靠性——AI Agent 的承诺正在走向成熟。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">April 1st opens with the most ironic headline of 2026: the company that told Congress AI is an existential threat could not protect its own code from an npm source map mistake. The Claude Code leak dominated the past 48 hours, but it is a symptom of a deeper story - the agent ecosystem is exploding and operational security has not kept pace with deployment velocity. On the funding front, OpenAI's $122B round cements AI as the defining capital allocation theme of the decade, while Nebius's $10B Finland bet signals that infrastructure, not algorithms, is the real bottleneck in 2026. The Google/DeepMind Gemini code red narrative also reinforces that the frontier model race remains intensely competitive. Meanwhile, Apple removing a vibe-coding app from the App Store is a reminder that platform gatekeepers still hold enormous leverage over how AI reaches users. The week's repos trend strongly toward the agent tooling layer - agent SDKs, meta-skill frameworks, and code analysis reports - reflecting a field that is rapidly maturing from build a model to deploy and orchestrate agents reliably. Key themes to watch: operational security in agent frameworks, sovereign AI infrastructure in Europe, energy-constrained compute expansion, and the ongoing convergence of coding agents with production deployment pipelines.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">4月1日以2026年最讽刺的头条新闻开启：一家告诉国会 AI 是生存威胁的公司，却因为一个 npm source map 配置错误而泄露了自家代码。Claude Code 源码泄露在过去48小时内占据主导，但这只是更深层故事的一个缩影——Agent 生态系统正在爆发式增长，而运营安全却未能跟上部署速度。融资方面，OpenAI 的 1200 亿美元融资轮奠定了 AI 作为本十年最核心资本配置主题的地位；Nebius 100 亿美元的芬兰数据中心投资则表明，基础设施而非算法才是2026年真正的瓶颈。Google/DeepMind Gemini 引发代码红色危机的叙事也印证了前沿模型竞争依然激烈。与此同时，苹果从 App Store 下架 vibe-coding 应用提醒我们，平台守门人仍然握着 AI 触达用户的巨大控制权。本周 GitHub 热门项目强烈偏向 Agent 工具层——Agent SDK、元技能框架和代码分析报告——反映出一个正从构建模型快速成熟为可靠部署与编排 Agent 的领域。需要关注的关键趋势：Agent 框架的运营安全、欧洲主权 AI 基础设施、能源约束下的算力扩张，以及编码 Agent 与生产部署管道的持续融合。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
