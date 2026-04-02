@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 02, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 02, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/ultraworkers/claw-code" class="card-title" target="_blank">ultraworkers/claw-code</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 100k+ stars</div>
+                                <div class="meta-item"><span>🍴</span> 41.5k+ forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">The fastest repo in GitHub history to surpass 100K stars. A clean-room Python rewrite of Claude Code's agent harness built using OpenAI's oh-my-codex (OmX), later ported to Rust. Demonstrates that any closed-source codebase is one agent session away from a functional open clone.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GitHub历史上增长最快的项目,仅用2小时就突破5万星。使用OpenAI的oh-my-codex(OmX)从零重写了Claude Code的agent框架,后移植为Rust版本。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/RightNow-AI/openfang" class="card-title" target="_blank">RightNow-AI/openfang</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 16.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open-source Agent Operating System built in Rust with 137K LOC across 14 crates. Unlike chatbot frameworks, OpenFang runs fully autonomous agents on schedules — monitoring targets, building knowledge graphs, generating leads — all compiled into a single ~32MB binary.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">纯Rust编写的开源Agent操作系统,137K代码行,14个crate。不同于对话式框架,OpenFang运行完全自主的Agent,可按计划执行监控、构建知识图谱、生成销售线索等任务,编译为单一约32MB二进制文件。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/GAIR-NLP/daVinci-LLM" class="card-title" target="_blank">GAIR-NLP/daVinci-LLM</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 380 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Fully open 3B-parameter LLM trained from scratch on 8T tokens via the Data Darwinism framework with 200+ ablations. Matches OLMo-3-7B overall and beats it on math by 23.2%. Releases the complete pipeline, data, and all failed experiments for reproducibility.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">从零训练的30亿参数开源LLM,使用Data Darwinism框架在8T tokens上训练,经历200+组消融实验。在数学基准上比OLMo-3-7B高出23.2%,同时公开完整训练流程、数据及所有失败实验。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">CyberNews</span>
+                    <div class="news-time">April 1, 2026</div>
+                    <a href="https://cybernews.com/tech/claude-code-leak-spawns-fastest-github-repo/" class="card-title" target="_blank" data-lang="en">Claude Code Source Leaked — Spawns Fastest-Growing GitHub Repo in History</a>
+                    <a href="https://cybernews.com/tech/claude-code-leak-spawns-fastest-github-repo/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude Code源码遭泄露——催生GitHub史上增长最快的仓库</a>
+                    <p class="card-description" data-lang="en">Anthropic accidentally exposed Claude Code's full TypeScript source (512K lines, ~1,900 files) via a misconfigured .map file in the npm package. Within hours a Python clean-room rewrite using OpenAI's Codex hit 50K stars in 2 hours and 100K stars total, creating a DMCA-proof derived work. The incident raised fundamental questions about the fragility of closed-source agent architectures.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic因npm包的.map文件配置错误,意外泄露了Claude Code的全部TypeScript源码(51.2万行,约1900个文件)。数小时内,一个使用OpenAI Codex从零重写的Python清洁室版本在2小时内突破5万星,并最终达到10万+,创造了无法被DMCA删除的衍生作品。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">OpenAI / Reuters</span>
+                    <div class="news-time">March 31, 2026</div>
+                    <a href="https://openai.com/index/accelerating-the-next-phase-ai/" class="card-title" target="_blank" data-lang="en">OpenAI Closes Record $122B Funding Round at $852B Valuation</a>
+                    <a href="https://openai.com/index/accelerating-the-next-phase-ai/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI完成破纪录的1220亿美元融资,估值达8520亿美元</a>
+                    <p class="card-description" data-lang="en">OpenAI completed the largest private funding round in history: $122B from Amazon ($50B), NVIDIA and SoftBank ($30B each), and others, at an $852B valuation. The company generates $2B/month in revenue with 900M weekly active users. Its ads pilot hit $100M ARR in six weeks. The company is building a unified AI superapp combining ChatGPT, Codex, browsing, and agentic capabilities.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI完成史上最大规模私募融资:1220亿美元,估值8520亿美元。亚马逊投资500亿美元,NVIDIA和软银各投300亿美元。公司月收入20亿美元,周活用户9亿。广告试点6周内ARR突破1亿美元。正在打造融合ChatGPT、Codex、浏览和agent能力的统一AI超级应用。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Hugging Face / PrismML</span>
+                    <div class="news-time">March 31, 2026</div>
+                    <a href="https://huggingface.co/prism-ml/Bonsai-8B-mlx-1bit" class="card-title" target="_blank" data-lang="en">PrismML's 1-bit Bonsai Runs 8B Model on iPhone at 40 Tokens/sec</a>
+                    <a href="https://huggingface.co/prism-ml/Bonsai-8B-mlx-1bit" class="card-title" target="_blank" data-lang="zh" style="display: none;">PrismML的1-bit Bonsai:80亿参数模型iPhone上跑出40 tokens/秒</a>
+                    <p class="card-description" data-lang="en">Caltech startup PrismML squeezed an 8B-parameter model into 1.15GB using end-to-end 1-bit quantization — 14x smaller than peers. It runs at 40 tokens/sec on iPhone 17 Pro Max and 440 tokens/sec on RTX 4090, competitive with full-precision 8B models on benchmarks. The technique requires a custom fork of llama.cpp and a PRISM_HF_TOKEN for private repos.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">加州理工初创公司PrismML使用端到端1-bit量化将80亿参数模型压缩至1.15GB,体积缩小14倍。iPhone 17 Pro Max上跑40 tokens/秒,RTX 4090上440 tokens/秒,基准测试与全精度8B模型持平。该技术需使用定制版llama.cpp和PRISM_HF_TOKEN访问私有模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Fortune</span>
+                    <div class="news-time">March 28, 2026</div>
+                    <a href="https://fortune.com/2026/03/26/anthropic-leaked-unreleased-model-exclusive-event-security-issues-cybersecurity-unsecured-data-store/" class="card-title" target="_blank" data-lang="en">Anthropic's Unreleased Claude Mythos Leaked via Unsecured Database</a>
+                    <a href="https://fortune.com/2026/03/26/anthropic-leaked-unreleased-model-exclusive-event-security-issues-cybersecurity-unsecured-data-store/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic未发布的Claude Mythos因数据库配置不当遭泄露</a>
+                    <p class="card-description" data-lang="en">Security researchers found ~3,000 unpublished Anthropic documents in an unsecured, publicly searchable database, including draft blog posts for Claude Mythos — described internally as 'the most capable we've built' with 'dramatically higher' scores than Opus 4.6 on coding and cybersecurity benchmarks. The model warns it can 'exploit vulnerabilities in ways that far outpace defenders.'</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">安全研究人员在一个配置不当的公开可搜索数据库中发现了Anthropic约3000份未发布文档,包括名为Claude Mythos的模型草稿博客——内部描述为"我们构建的最强模型",在编程和网络安全基准上"显著高于"Opus 4.6。该模型甚至警告称其"能以远超防御者的方式利用漏洞"。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">ARC Prize</span>
+                    <div class="news-time">March 29, 2026</div>
+                    <a href="https://arcprize.org/arc-agi/3" class="card-title" target="_blank" data-lang="en">ARC-AGI-3 Benchmark Humiliates Every Frontier Model — Best Score Under 1%</a>
+                    <a href="https://arcprize.org/arc-agi/3" class="card-title" target="_blank" data-lang="zh" style="display: none;">ARC-AGI-3基准测试让所有前沿模型蒙羞——最高分不足1%</a>
+                    <p class="card-description" data-lang="en">The ARC-AGI-3 benchmark scored every frontier model under 1% on tasks 100% of humans solved on their first try. Gemini 3.1 Pro led at 0.37%. Grok 4.2 scored a clean 0%. The benchmark exposes a persistent gap between human and AI generalization on novel visual reasoning tasks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">ARC-AGI-3基准测试中,所有前沿模型在100%人类首试解决的任务上得分均不足1%。Gemini 3.1 Pro以0.37%领先,Grok 4.2得分为完美的0%。该基准暴露了AI在novel视觉推理任务上与人类泛化能力的持续差距。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">StepSecurity</span>
+                    <div class="news-time">March 31, 2026</div>
+                    <a href="https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan" class="card-title" target="_blank" data-lang="en">axios npm Package Compromised with Remote Access Trojan</a>
+                    <a href="https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan" class="card-title" target="_blank" data-lang="zh" style="display: none;">axios npm包遭篡改,植入远控木马</a>
+                    <p class="card-description" data-lang="en">The axios npm package (300M+ weekly downloads) was compromised via a hijacked maintainer account publishing malicious versions dropping a remote access trojan. Karpathy called it a wake-up call for package managers to change their defaults. Cognition's Devin caught the attack for customers within an hour before public disclosure.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">axios npm包(每周下载量超3亿)因维护者账号被劫持而遭到篡改,发布版本植入远控木马。Karpathy称其为包管理器的警钟。Cognition的Devin在公开披露前一小时为客户捕获了攻击。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week's defining narrative was the 'agentic supply chain' coming of age — in the worst possible way. The Claude Code leak demonstrated that the architecture of a popular agentic tool can be reconstructed by an AI in hours, raising uncomfortable questions about the durability of closed-source agent businesses. Meanwhile, PrismML's Bonsai proves that aggressive quantization has crossed into genuinely practical territory for mobile deployment. On the funding front, OpenAI's $122B round cements AI infrastructure as the defining capital-intensive industry of this decade, with Big Tech treating AI compute as a strategic asset akin to energy security. The axios compromise is a reminder that the software supply chain remains the system's most exploitable attack surface as agents proliferate. Looking ahead, MCP's 97M installs and growing security standards suggest the protocol wars are settling — what matters now is who builds the most compelling agent products on top of this infrastructure.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周的核心叙事是"agent供应链"以最糟糕的方式走向成熟。Claude Code泄露事件表明,一个热门agent工具的架构可以在数小时内被AI重建,这让闭源agent业务的持久性蒙上阴影。与此同时,PrismML的Bonsai证明激进量化已达到移动端实用化的临界点。融资方面,OpenAI的1220亿美元融资将AI基础设施确立为本十年最具资本密集性的行业,科技巨头将AI算力视为类似能源安全的战略资产。axios被黑则提醒我们,随着agent的激增,软件供应链仍是系统最脆弱的攻击面。展望未来,MCP已达9700万安装量且安全标准日益完善,协议之战正在尘埃落定——真正的竞争在于谁能在这一基础设施之上打造最具吸引力的agent产品。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+{
+  "date": "2026-04-02",
+  "github_repos": [
+    {
+      "name": "ultraworkers/claw-code",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "description": {
+        "en": "The fastest repo in GitHub history to surpass 100K stars. A clean-room Python rewrite of Claude Code's agent harness built using OpenAI's oh-my-codex (OmX), later ported to Rust. Demonstrates that any closed-source codebase is one agent session away from a functional open clone.",
+        "zh": "GitHub历史上增长最快的项目,仅用2小时就突破5万星。使用OpenAI的oh-my-codex(OmX)从零重写了Claude Code的agent框架,后移植为Rust版本。"
+      },
+      "stars": "100k+",
+      "forks": "41.5k+"
+    },
+    {
+      "name": "RightNow-AI/openfang",
+      "url": "https://github.com/RightNow-AI/openfang",
+      "description": {
+        "en": "Open-source Agent Operating System built in Rust with 137K LOC across 14 crates. Unlike chatbot frameworks, OpenFang runs fully autonomous agents on schedules — monitoring targets, building knowledge graphs, generating leads — all compiled into a single ~32MB binary.",
+        "zh": "纯Rust编写的开源Agent操作系统,137K代码行,14个crate。不同于对话式框架,OpenFang运行完全自主的Agent,可按计划执行监控、构建知识图谱、生成销售线索等任务,编译为单一约32MB二进制文件。"
+      },
+      "stars": "16.1k",
+      "forks": "2k"
+    },
+    {
+      "name": "GAIR-NLP/daVinci-LLM",
+      "url": "https://github.com/GAIR-NLP/daVinci-LLM",
+      "description": {
+        "en": "Fully open 3B-parameter LLM trained from scratch on 8T tokens via the Data Darwinism framework with 200+ ablations. Matches OLMo-3-7B overall and beats it on math by 23.2%. Releases the complete pipeline, data, and all failed experiments for reproducibility.",
+        "zh": "从零训练的30亿参数开源LLM,使用Data Darwinism框架在8T tokens上训练,经历200+组消融实验。在数学基准上比OLMo-3-7B高出23.2%,同时公开完整训练流程、数据及所有失败实验。"
+      },
+      "stars": "4.2k",
+      "forks": "380"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Claude Code Source Leaked — Spawns Fastest-Growing GitHub Repo in History",
+        "zh": "Claude Code源码遭泄露——催生GitHub史上增长最快的仓库"
+      },
+      "url": "https://cybernews.com/tech/claude-code-leak-spawns-fastest-github-repo/",
+      "source": "CyberNews",
+      "time": "April 1, 2026",
+      "description": {
+        "en": "Anthropic accidentally exposed Claude Code's full TypeScript source (512K lines, ~1,900 files) via a misconfigured .map file in the npm package. Within hours a Python clean-room rewrite using OpenAI's Codex hit 50K stars in 2 hours and 100K stars total, creating a DMCA-proof derived work. The incident raised fundamental questions about the fragility of closed-source agent architectures.",
+        "zh": "Anthropic因npm包的.map文件配置错误,意外泄露了Claude Code的全部TypeScript源码(51.2万行,约1900个文件)。数小时内,一个使用OpenAI Codex从零重写的Python清洁室版本在2小时内突破5万星,并最终达到10万+,创造了无法被DMCA删除的衍生作品。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Closes Record $122B Funding Round at $852B Valuation",
+        "zh": "OpenAI完成破纪录的1220亿美元融资,估值达8520亿美元"
+      },
+      "url": "https://openai.com/index/accelerating-the-next-phase-ai/",
+      "source": "OpenAI / Reuters",
+      "time": "March 31, 2026",
+      "description": {
+        "en": "OpenAI completed the largest private funding round in history: $122B from Amazon ($50B), NVIDIA and SoftBank ($30B each), and others, at an $852B valuation. The company generates $2B/month in revenue with 900M weekly active users. Its ads pilot hit $100M ARR in six weeks. The company is building a unified AI superapp combining ChatGPT, Codex, browsing, and agentic capabilities.",
+        "zh": "OpenAI完成史上最大规模私募融资:1220亿美元,估值8520亿美元。亚马逊投资500亿美元,NVIDIA和软银各投300亿美元。公司月收入20亿美元,周活用户9亿。广告试点6周内ARR突破1亿美元。正在打造融合ChatGPT、Codex、浏览和agent能力的统一AI超级应用。"
+      }
+    },
+    {
+      "title": {
+        "en": "PrismML's 1-bit Bonsai Runs 8B Model on iPhone at 40 Tokens/sec",
+        "zh": "PrismML的1-bit Bonsai:80亿参数模型iPhone上跑出40 tokens/秒"
+      },
+      "url": "https://huggingface.co/prism-ml/Bonsai-8B-mlx-1bit",
+      "source": "Hugging Face / PrismML",
+      "time": "March 31, 2026",
+      "description": {
+        "en": "Caltech startup PrismML squeezed an 8B-parameter model into 1.15GB using end-to-end 1-bit quantization — 14x smaller than peers. It runs at 40 tokens/sec on iPhone 17 Pro Max and 440 tokens/sec on RTX 4090, competitive with full-precision 8B models on benchmarks. The technique requires a custom fork of llama.cpp and a PRISM_HF_TOKEN for private repos.",
+        "zh": "加州理工初创公司PrismML使用端到端1-bit量化将80亿参数模型压缩至1.15GB,体积缩小14倍。iPhone 17 Pro Max上跑40 tokens/秒,RTX 4090上440 tokens/秒,基准测试与全精度8B模型持平。该技术需使用定制版llama.cpp和PRISM_HF_TOKEN访问私有模型。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic's Unreleased Claude Mythos Leaked via Unsecured Database",
+        "zh": "Anthropic未发布的Claude Mythos因数据库配置不当遭泄露"
+      },
+      "url": "https://fortune.com/2026/03/26/anthropic-leaked-unreleased-model-exclusive-event-security-issues-cybersecurity-unsecured-data-store/",
+      "source": "Fortune",
+      "time": "March 28, 2026",
+      "description": {
+        "en": "Security researchers found ~3,000 unpublished Anthropic documents in an unsecured, publicly searchable database, including draft blog posts for Claude Mythos — described internally as 'the most capable we've built' with 'dramatically higher' scores than Opus 4.6 on coding and cybersecurity benchmarks. The model warns it can 'exploit vulnerabilities in ways that far outpace defenders.'",
+        "zh": "安全研究人员在一个配置不当的公开可搜索数据库中发现了Anthropic约3000份未发布文档,包括名为Claude Mythos的模型草稿博客——内部描述为\"我们构建的最强模型\",在编程和网络安全基准上\"显著高于\"Opus 4.6。该模型甚至警告称其\"能以远超防御者的方式利用漏洞\"。"
+      }
+    },
+    {
+      "title": {
+        "en": "ARC-AGI-3 Benchmark Humiliates Every Frontier Model — Best Score Under 1%",
+        "zh": "ARC-AGI-3基准测试让所有前沿模型蒙羞——最高分不足1%"
+      },
+      "url": "https://arcprize.org/arc-agi/3",
+      "source": "ARC Prize",
+      "time": "March 29, 2026",
+      "description": {
+        "en": "The ARC-AGI-3 benchmark scored every frontier model under 1% on tasks 100% of humans solved on their first try. Gemini 3.1 Pro led at 0.37%. Grok 4.2 scored a clean 0%. The benchmark exposes a persistent gap between human and AI generalization on novel visual reasoning tasks.",
+        "zh": "ARC-AGI-3基准测试中,所有前沿模型在100%人类首试解决的任务上得分均不足1%。Gemini 3.1 Pro以0.37%领先,Grok 4.2得分为完美的0%。该基准暴露了AI在novel视觉推理任务上与人类泛化能力的持续差距。"
+      }
+    },
+    {
+      "title": {
+        "en": "axios npm Package Compromised with Remote Access Trojan",
+        "zh": "axios npm包遭篡改,植入远控木马"
+      },
+      "url": "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan",
+      "source": "StepSecurity",
+      "time": "March 31, 2026",
+      "description": {
+        "en": "The axios npm package (300M+ weekly downloads) was compromised via a hijacked maintainer account publishing malicious versions dropping a remote access trojan. Karpathy called it a wake-up call for package managers to change their defaults. Cognition's Devin caught the attack for customers within an hour before public disclosure.",
+        "zh": "axios npm包(每周下载量超3亿)因维护者账号被劫持而遭到篡改,发布版本植入远控木马。Karpathy称其为包管理器的警钟。Cognition的Devin在公开披露前一小时为客户捕获了攻击。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week's defining narrative was the 'agentic supply chain' coming of age — in the worst possible way. The Claude Code leak demonstrated that the architecture of a popular agentic tool can be reconstructed by an AI in hours, raising uncomfortable questions about the durability of closed-source agent businesses. Meanwhile, PrismML's Bonsai proves that aggressive quantization has crossed into genuinely practical territory for mobile deployment. On the funding front, OpenAI's $122B round cements AI infrastructure as the defining capital-intensive industry of this decade, with Big Tech treating AI compute as a strategic asset akin to energy security. The axios compromise is a reminder that the software supply chain remains the system's most exploitable attack surface as agents proliferate. Looking ahead, MCP's 97M installs and growing security standards suggest the protocol wars are settling — what matters now is who builds the most compelling agent products on top of this infrastructure.",
+    "zh": "本周的核心叙事是\"agent供应链\"以最糟糕的方式走向成熟。Claude Code泄露事件表明,一个热门agent工具的架构可以在数小时内被AI重建,这让闭源agent业务的持久性蒙上阴影。与此同时,PrismML的Bonsai证明激进量化已达到移动端实用化的临界点。融资方面,OpenAI的1220亿美元融资将AI基础设施确立为本十年最具资本密集性的行业,科技巨头将AI算力视为类似能源安全的战略资产。axios被黑则提醒我们,随着agent的激增,软件供应链仍是系统最脆弱的攻击面。展望未来,MCP已达9700万安装量且安全标准日益完善,协议之战正在尘埃落定——真正的竞争在于谁能在这一基础设施之上打造最具吸引力的agent产品。"
+  }
+}
