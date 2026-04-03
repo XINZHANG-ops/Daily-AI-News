@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-03",
+  "github_repos": [
+    {
+      "name": "Yeachan-Heo/oh-my-codex",
+      "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+      "description": {
+        "en": "OmX (Oh My codeX) extends OpenAI's Codex with hooks, agent teams, HUDs, and multi-agent collaboration features for enhanced coding workflows.",
+        "zh": "OmX (Oh My codeX) 通过钩子、代理团队、HUDs 和多代理协作功能扩展 OpenAI 的 Codex，增强编码工作流程。"
+      },
+      "stars": "12.9k",
+      "forks": "1.2k"
+    },
+    {
+      "name": "siddharthvaddem/openscreen",
+      "url": "https://github.com/siddharthvaddem/openscreen",
+      "description": {
+        "en": "Create stunning screen recordings and demos for free. Open-source alternative to Screen Studio with no subscriptions, watermarks, or commercial use restrictions.",
+        "zh": "免费创建精彩的屏幕录制和演示。开源的 Screen Studio 替代品，无订阅、无水印、无商业使用限制。"
+      },
+      "stars": "17.1k",
+      "forks": "1.2k"
+    },
+    {
+      "name": "JasonHonKL/PardusBrowser",
+      "url": "https://github.com/JasonHonKL/PardusBrowser",
+      "description": {
+        "en": "AI agent-optimized browser that outputs semantic trees in under 200ms with no Chromium, screenshots, or GPU required. Built specifically for AI agent navigation.",
+        "zh": "专为 AI 代理优化的浏览器，无需 Chromium、截图或 GPU 即可在 200 毫秒内输出语义树。专为 AI 代理导航而构建。"
+      },
+      "stars": "418",
+      "forks": "32"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Closes $122B Funding Round at $852B Valuation, Largest Private Raise in History",
+        "zh": "OpenAI 完成 1220 亿美元融资，估值 8520 亿美元，创历史最大私募融资记录"
+      },
+      "url": "https://openai.com/index/accelerating-the-next-phase-ai/",
+      "source": "OpenAI",
+      "time": "2026-04-01",
+      "description": {
+        "en": "OpenAI raised $122 billion in a historic funding round with Amazon ($50B), NVIDIA and SoftBank ($30B each). The company reports $2B/month revenue, 900M weekly active users, and is building a unified AI superapp combining ChatGPT, Codex, and agentic capabilities.",
+        "zh": "OpenAI 在一轮历史性融资中筹集了 1220 亿美元，亚马逊投资 500 亿美元，英伟达和软银各投资 300 亿美元。公司报告月收入 20 亿美元，周活跃用户 9 亿，正在打造整合 ChatGPT、Codex 和代理功能的统一 AI 超级应用。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Code Source Code Leaked via npm Packaging Error; Axios Supply Chain Attack Coincides",
+        "zh": "Claude Code 源代码因 npm 打包错误泄露；Axios 供应链攻击同期发生"
+      },
+      "url": "https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked-heres-what-we-know",
+      "source": "VentureBeat",
+      "time": "2026-04-01",
+      "description": {
+        "en": "Anthropic's Claude Code CLI tool had its 512,000-line TypeScript source exposed via misconfigured .map files. The leak coincided with a malicious axios npm package (RAT versions 1.14.1/0.30.4) targeting developers during a 3-hour window. A clean-room Python reimplementation (claw-code) quickly gained 44,500 stars.",
+        "zh": "Anthropic 的 Claude Code CLI 工具因 .map 文件配置错误暴露了 512,000 行 TypeScript 源代码。泄露恰逢恶意 axios npm 包（RAT 版本 1.14.1/0.30.4）在 3 小时窗口期内攻击开发者。一个干净room Python 重实现（claw-code）迅速获得 44,500 星。"
+      }
+    },
+    {
+      "title": {
+        "en": "Cursor 3 Launches with Agent-First Interface, Parallel AI Fleets Across Repos",
+        "zh": "Cursor 3 以代理优先界面发布，支持跨代码库的并行 AI 代理"
+      },
+      "url": "https://www.wired.com/story/cusor-launches-coding-agent-openai-anthropic/",
+      "source": "Wired",
+      "time": "2026-04-02",
+      "description": {
+        "en": "Cursor 3 debuts with an agent-first interface allowing users to run multiple AI agents in parallel across repos, worktrees, cloud, and SSH environments. The new Agents Window and Design Mode represent Cursor's direct competition with Claude Code and OpenAI Codex.",
+        "zh": "Cursor 3 以代理优先界面首次亮相，允许用户跨代码库、工作树、云和 SSH 环境并行运行多个 AI 代理。新的 Agents Window 和 Design Mode 代表 Cursor 与 Claude Code 和 OpenAI Codex 的直接竞争。"
+      }
+    },
+    {
+      "title": {
+        "en": "PrismML Releases Bonsai 8B: 1-Bit Model Running 40 Tokens/Sec on iPhone",
+        "zh": "PrismML 发布 Bonsai 8B：1-bit 模型在 iPhone 上达到每秒 40 个 token"
+      },
+      "url": "https://prismml.com/news/bonsai-8b",
+      "source": "PrismML",
+      "time": "2026-03-31",
+      "description": {
+        "en": "Bonsai 8B squeezes an 8-billion-parameter model into 1.15GB (14x smaller than peers), running at 40 tokens/sec on iPhone and 440 tokens/sec on RTX 4090. The 1-bit quantization approach achieves competitive accuracy with full-precision models while enabling on-device AI.",
+        "zh": "Bonsai 8B 将 80 亿参数模型压缩到 1.15GB（比同类小 14 倍），在 iPhone 上达到每秒 40 个 token，在 RTX 4090 上达到 440 tokens/sec。1-bit 量化方法以与全精度模型相当的准确性实现设备端 AI。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA Launches DLSS 4.5 with Dynamic Multi Frame Generation and 6X Mode",
+        "zh": "英伟达发布 DLSS 4.5，支持动态多帧生成和 6X 模式"
+      },
+      "url": "https://www.nvidia.com/en-us/geforce/news/dlss-4-5-dynamic-multi-frame-generation-6x-mode-released/",
+      "source": "NVIDIA",
+      "time": "2026-03-31",
+      "description": {
+        "en": "DLSS 4.5 introduces Dynamic Multi Frame Generation that automatically adjusts AI-generated frames to match display refresh rates, plus a new 6X mode for RTX 50 Series GPUs delivering up to 35% higher frame rates in path-traced games at 4K.",
+        "zh": "DLSS 4.5 引入动态多帧生成功能，自动调整 AI 生成帧数以匹配显示器刷新率，同时为 RTX 50 系列 GPU 提供新的 6X 模式，在 4K 路径追踪游戏中实现高达 35% 的帧率提升。"
+      }
+    },
+    {
+      "title": {
+        "en": "Ollama 0.19 Runs 2x Faster on Apple Silicon via MLX Framework Integration",
+        "zh": "Ollama 0.19 通过 MLX 框架集成在 Apple Silicon 上实现 2 倍性能提升"
+      },
+      "url": "https://www.macrumors.com/2026/03/31/ollama-now-runs-faster-apple-silicon-macs/",
+      "source": "MacRumors",
+      "time": "2026-03-31",
+      "description": {
+        "en": "Ollama 0.19 switches to Apple's MLX framework for machine learning, achieving up to 2x faster performance on M-series chips. The update includes NVFP4 support and smarter cache reuse, making local AI coding agents like Claude Code and OpenCode significantly more efficient.",
+        "zh": "Ollama 0.19 切换到 Apple 的 MLX 机器学习框架，在 M 系列芯片上实现高达 2 倍的性能提升。更新包括 NVFP4 支持和更智能的缓存重用，使 Claude Code 和 OpenCode 等本地 AI 编码代理显著更高效。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI Data Centers Warming Surrounding Areas by Average 2°C, Up to 9.1°C",
+        "zh": "AI 数据中心使周边地区平均升温 2°C，最高可达 9.1°C"
+      },
+      "url": "https://www.newscientist.com/article/2521256-ai-data-centres-can-warm-surrounding-areas-by-up-to-9-1c/",
+      "source": "New Scientist",
+      "time": "2026-04-01",
+      "description": {
+        "en": "A comprehensive study using 20 years of satellite data across 8,400+ sites reveals AI data centers warm surrounding areas by an average of 2°C, with extreme cases reaching 9.1°C within 10km. This already affects up to 340 million people, raising concerns about AI's environmental footprint.",
+        "zh": "一项使用 20 年卫星数据和 8,400 多个站点的综合研究表明，AI 数据中心使周边地区平均升温 2°C，极端情况在 10 公里内达到 9.1°C。这已经影响多达 3.4 亿人，引发对 AI 环境足迹的担忧。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week's AI landscape is defined by three converging themes: the Claude Code leak that accidentally open-sourced 512K lines of TypeScript (spawning rapid reimplementations), the agent IDE wars heating up with Cursor 3's parallel fleet approach competing directly with Claude Code and Codex, and the continued push toward efficient on-device AI demonstrated by Bonsai 8B's 1-bit breakthrough. The $122B OpenAI raise signals that the race to build the 'AI superapp' is accelerating, while infrastructure concerns (axios supply chain attack, data center warming) highlight the growing pains of rapid scaling. For developers, the immediate opportunity is in leveraging leaked/imitation code patterns and building atop the new wave of AI-native developer tools.",
+    "zh": "本周 AI 领域由三个趋同主题定义：Claude Code 泄露意外开源了 512K 行 TypeScript（催生快速重实现），代理 IDE 大战因 Cursor 3 的并行代理方案与 Claude Code 和 Codex 直接竞争而升温，以及 Bonsai 8B 的 1-bit 突破展示的设备端高效 AI 持续推进。OpenAI 1220 亿美元融资表明「AI 超级应用」竞赛正在加速，而基础设施问题（axios 供应链攻击、数据中心升温）凸显快速扩张的成长痛点。对开发者而言，当前的机会在于利用泄露/模仿代码模式，以及在新一代 AI 原生开发者工具之上构建应用。"
+  }
+}

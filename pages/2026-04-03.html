@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 03, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 03, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Yeachan-Heo/oh-my-codex" class="card-title" target="_blank">Yeachan-Heo/oh-my-codex</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 12.9k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">OmX (Oh My codeX) extends OpenAI's Codex with hooks, agent teams, HUDs, and multi-agent collaboration features for enhanced coding workflows.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OmX (Oh My codeX) 通过钩子、代理团队、HUDs 和多代理协作功能扩展 OpenAI 的 Codex，增强编码工作流程。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/siddharthvaddem/openscreen" class="card-title" target="_blank">siddharthvaddem/openscreen</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 17.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Create stunning screen recordings and demos for free. Open-source alternative to Screen Studio with no subscriptions, watermarks, or commercial use restrictions.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">免费创建精彩的屏幕录制和演示。开源的 Screen Studio 替代品，无订阅、无水印、无商业使用限制。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/JasonHonKL/PardusBrowser" class="card-title" target="_blank">JasonHonKL/PardusBrowser</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 418 stars</div>
+                                <div class="meta-item"><span>🍴</span> 32 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">AI agent-optimized browser that outputs semantic trees in under 200ms with no Chromium, screenshots, or GPU required. Built specifically for AI agent navigation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">专为 AI 代理优化的浏览器，无需 Chromium、截图或 GPU 即可在 200 毫秒内输出语义树。专为 AI 代理导航而构建。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-04-01</div>
+                    <a href="https://openai.com/index/accelerating-the-next-phase-ai/" class="card-title" target="_blank" data-lang="en">OpenAI Closes $122B Funding Round at $852B Valuation, Largest Private Raise in History</a>
+                    <a href="https://openai.com/index/accelerating-the-next-phase-ai/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 完成 1220 亿美元融资，估值 8520 亿美元，创历史最大私募融资记录</a>
+                    <p class="card-description" data-lang="en">OpenAI raised $122 billion in a historic funding round with Amazon ($50B), NVIDIA and SoftBank ($30B each). The company reports $2B/month revenue, 900M weekly active users, and is building a unified AI superapp combining ChatGPT, Codex, and agentic capabilities.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 在一轮历史性融资中筹集了 1220 亿美元，亚马逊投资 500 亿美元，英伟达和软银各投资 300 亿美元。公司报告月收入 20 亿美元，周活跃用户 9 亿，正在打造整合 ChatGPT、Codex 和代理功能的统一 AI 超级应用。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">VentureBeat</span>
+                    <div class="news-time">2026-04-01</div>
+                    <a href="https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked-heres-what-we-know" class="card-title" target="_blank" data-lang="en">Claude Code Source Code Leaked via npm Packaging Error; Axios Supply Chain Attack Coincides</a>
+                    <a href="https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked-heres-what-we-know" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude Code 源代码因 npm 打包错误泄露；Axios 供应链攻击同期发生</a>
+                    <p class="card-description" data-lang="en">Anthropic's Claude Code CLI tool had its 512,000-line TypeScript source exposed via misconfigured .map files. The leak coincided with a malicious axios npm package (RAT versions 1.14.1/0.30.4) targeting developers during a 3-hour window. A clean-room Python reimplementation (claw-code) quickly gained 44,500 stars.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic 的 Claude Code CLI 工具因 .map 文件配置错误暴露了 512,000 行 TypeScript 源代码。泄露恰逢恶意 axios npm 包（RAT 版本 1.14.1/0.30.4）在 3 小时窗口期内攻击开发者。一个干净room Python 重实现（claw-code）迅速获得 44,500 星。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Wired</span>
+                    <div class="news-time">2026-04-02</div>
+                    <a href="https://www.wired.com/story/cusor-launches-coding-agent-openai-anthropic/" class="card-title" target="_blank" data-lang="en">Cursor 3 Launches with Agent-First Interface, Parallel AI Fleets Across Repos</a>
+                    <a href="https://www.wired.com/story/cusor-launches-coding-agent-openai-anthropic/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Cursor 3 以代理优先界面发布，支持跨代码库的并行 AI 代理</a>
+                    <p class="card-description" data-lang="en">Cursor 3 debuts with an agent-first interface allowing users to run multiple AI agents in parallel across repos, worktrees, cloud, and SSH environments. The new Agents Window and Design Mode represent Cursor's direct competition with Claude Code and OpenAI Codex.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Cursor 3 以代理优先界面首次亮相，允许用户跨代码库、工作树、云和 SSH 环境并行运行多个 AI 代理。新的 Agents Window 和 Design Mode 代表 Cursor 与 Claude Code 和 OpenAI Codex 的直接竞争。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">PrismML</span>
+                    <div class="news-time">2026-03-31</div>
+                    <a href="https://prismml.com/news/bonsai-8b" class="card-title" target="_blank" data-lang="en">PrismML Releases Bonsai 8B: 1-Bit Model Running 40 Tokens/Sec on iPhone</a>
+                    <a href="https://prismml.com/news/bonsai-8b" class="card-title" target="_blank" data-lang="zh" style="display: none;">PrismML 发布 Bonsai 8B：1-bit 模型在 iPhone 上达到每秒 40 个 token</a>
+                    <p class="card-description" data-lang="en">Bonsai 8B squeezes an 8-billion-parameter model into 1.15GB (14x smaller than peers), running at 40 tokens/sec on iPhone and 440 tokens/sec on RTX 4090. The 1-bit quantization approach achieves competitive accuracy with full-precision models while enabling on-device AI.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Bonsai 8B 将 80 亿参数模型压缩到 1.15GB（比同类小 14 倍），在 iPhone 上达到每秒 40 个 token，在 RTX 4090 上达到 440 tokens/sec。1-bit 量化方法以与全精度模型相当的准确性实现设备端 AI。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">NVIDIA</span>
+                    <div class="news-time">2026-03-31</div>
+                    <a href="https://www.nvidia.com/en-us/geforce/news/dlss-4-5-dynamic-multi-frame-generation-6x-mode-released/" class="card-title" target="_blank" data-lang="en">NVIDIA Launches DLSS 4.5 with Dynamic Multi Frame Generation and 6X Mode</a>
+                    <a href="https://www.nvidia.com/en-us/geforce/news/dlss-4-5-dynamic-multi-frame-generation-6x-mode-released/" class="card-title" target="_blank" data-lang="zh" style="display: none;">英伟达发布 DLSS 4.5，支持动态多帧生成和 6X 模式</a>
+                    <p class="card-description" data-lang="en">DLSS 4.5 introduces Dynamic Multi Frame Generation that automatically adjusts AI-generated frames to match display refresh rates, plus a new 6X mode for RTX 50 Series GPUs delivering up to 35% higher frame rates in path-traced games at 4K.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DLSS 4.5 引入动态多帧生成功能，自动调整 AI 生成帧数以匹配显示器刷新率，同时为 RTX 50 系列 GPU 提供新的 6X 模式，在 4K 路径追踪游戏中实现高达 35% 的帧率提升。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MacRumors</span>
+                    <div class="news-time">2026-03-31</div>
+                    <a href="https://www.macrumors.com/2026/03/31/ollama-now-runs-faster-apple-silicon-macs/" class="card-title" target="_blank" data-lang="en">Ollama 0.19 Runs 2x Faster on Apple Silicon via MLX Framework Integration</a>
+                    <a href="https://www.macrumors.com/2026/03/31/ollama-now-runs-faster-apple-silicon-macs/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Ollama 0.19 通过 MLX 框架集成在 Apple Silicon 上实现 2 倍性能提升</a>
+                    <p class="card-description" data-lang="en">Ollama 0.19 switches to Apple's MLX framework for machine learning, achieving up to 2x faster performance on M-series chips. The update includes NVFP4 support and smarter cache reuse, making local AI coding agents like Claude Code and OpenCode significantly more efficient.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Ollama 0.19 切换到 Apple 的 MLX 机器学习框架，在 M 系列芯片上实现高达 2 倍的性能提升。更新包括 NVFP4 支持和更智能的缓存重用，使 Claude Code 和 OpenCode 等本地 AI 编码代理显著更高效。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">New Scientist</span>
+                    <div class="news-time">2026-04-01</div>
+                    <a href="https://www.newscientist.com/article/2521256-ai-data-centres-can-warm-surrounding-areas-by-up-to-9-1c/" class="card-title" target="_blank" data-lang="en">AI Data Centers Warming Surrounding Areas by Average 2°C, Up to 9.1°C</a>
+                    <a href="https://www.newscientist.com/article/2521256-ai-data-centres-can-warm-surrounding-areas-by-up-to-9-1c/" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI 数据中心使周边地区平均升温 2°C，最高可达 9.1°C</a>
+                    <p class="card-description" data-lang="en">A comprehensive study using 20 years of satellite data across 8,400+ sites reveals AI data centers warm surrounding areas by an average of 2°C, with extreme cases reaching 9.1°C within 10km. This already affects up to 340 million people, raising concerns about AI's environmental footprint.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一项使用 20 年卫星数据和 8,400 多个站点的综合研究表明，AI 数据中心使周边地区平均升温 2°C，极端情况在 10 公里内达到 9.1°C。这已经影响多达 3.4 亿人，引发对 AI 环境足迹的担忧。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week's AI landscape is defined by three converging themes: the Claude Code leak that accidentally open-sourced 512K lines of TypeScript (spawning rapid reimplementations), the agent IDE wars heating up with Cursor 3's parallel fleet approach competing directly with Claude Code and Codex, and the continued push toward efficient on-device AI demonstrated by Bonsai 8B's 1-bit breakthrough. The $122B OpenAI raise signals that the race to build the 'AI superapp' is accelerating, while infrastructure concerns (axios supply chain attack, data center warming) highlight the growing pains of rapid scaling. For developers, the immediate opportunity is in leveraging leaked/imitation code patterns and building atop the new wave of AI-native developer tools.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周 AI 领域由三个趋同主题定义：Claude Code 泄露意外开源了 512K 行 TypeScript（催生快速重实现），代理 IDE 大战因 Cursor 3 的并行代理方案与 Claude Code 和 Codex 直接竞争而升温，以及 Bonsai 8B 的 1-bit 突破展示的设备端高效 AI 持续推进。OpenAI 1220 亿美元融资表明「AI 超级应用」竞赛正在加速，而基础设施问题（axios 供应链攻击、数据中心升温）凸显快速扩张的成长痛点。对开发者而言，当前的机会在于利用泄露/模仿代码模式，以及在新一代 AI 原生开发者工具之上构建应用。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
