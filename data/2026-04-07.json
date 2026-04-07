@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-07",
+  "github_repos": [
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/nousresearch/hermes-agent",
+      "description": {
+        "en": "The agent that grows with you — a flexible AI agent framework supporting any model via OpenRouter (200+ models), OpenAI, Anthropic, or custom endpoints. Features a full TUI with multiline editing, slash-command autocomplete, streaming tool output, and cross-platform messaging (Telegram, Discord, Slack, WhatsApp, Signal, CLI). Agent-curated memory with periodic nudges.",
+        "zh": "与你一同成长的AI Agent框架——支持通过OpenRouter（200+模型）、OpenAI、Anthropic或自定义端点使用任何模型。具备完整TUI界面（多行编辑、斜杠命令自动补全、流式工具输出）、跨平台消息（电报、Discord、Slack、WhatsApp、Signal、CLI）以及带定期提醒的Agent管理记忆功能。"
+      },
+      "stars": "29.2k",
+      "forks": "3.8k"
+    },
+    {
+      "name": "microsoft/VibeVoice",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "description": {
+        "en": "Open-Source Frontier Voice AI by Microsoft — an open-source initiative bringing frontier-class voice capabilities including low-latency speech-to-text, natural text-to-speech, and real-time voice conversation. Designed for developers building voice-first AI applications.",
+        "zh": "微软开源前沿语音AI——带来前沿级语音能力的开源项目，包括低延迟语音识别、自然语音合成和实时语音对话。为构建语音优先AI应用的开发者设计。"
+      },
+      "stars": "37.1k",
+      "forks": "4.2k"
+    },
+    {
+      "name": "google-research/timesfm",
+      "url": "https://github.com/google-research/timesfm",
+      "description": {
+        "en": "TimesFM (Time Series Foundation Model) — a pretrained time-series foundation model developed by Google Research for time-series forecasting. Enables zero-shot forecasting across domains including retail, healthcare, web traffic, and more, without domain-specific fine-tuning.",
+        "zh": "TimesFM（时间序列基础模型）——由Google Research开发的预训练时间序列基础模型，用于时间序列预测。在零售、医疗、网络流量等领域实现零样本预测，无需领域特定的微调。"
+      },
+      "stars": "15.3k",
+      "forks": "1.3k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI, Anthropic, and Google Unite to Combat Chinese AI Model Distillation via Frontier Model Forum",
+        "zh": "OpenAI、Anthropic、Google罕见联手，通过Frontier Model Forum反击中国AI模型蒸馏"
+      },
+      "url": "https://www.bloomberg.com/news/articles/2026-04-06/openai-anthropic-google-unite-to-combat-model-copying-in-china",
+      "source": "Bloomberg / ETTelecom",
+      "time": "2026-04-06",
+      "description": {
+        "en": "In a rare display of cross-company cooperation, rivals OpenAI, Anthropic, and Alphabet's Google announced they are sharing threat intelligence through the Frontier Model Forum (founded with Microsoft in 2023) to detect and block adversarial distillation attempts by Chinese competitors. OpenAI sent a memo to Congress accusing DeepSeek of trying to \"free-ride on the capabilities developed by OpenAI and other US frontier labs.\" The coalition identified 16 million fraudulent exchanges from US models used to train competitive Chinese models.",
+        "zh": "竞争对手OpenAI、Anthropic和Alphabet旗下Google罕见联手，宣布通过2023年与微软共同创立的Frontier Model Forum共享威胁情报，以检测并阻止中国竞争对手的对抗性蒸馏攻击。OpenAI向国会提交备忘录，指控DeepSeek试图\"免费搭乘OpenAI及其他美国前沿实验室能力发展的便车\"。该联盟已识别出1600万次用于训练中国竞争模型的虚假美国模型交换。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Signs Multi-Gigawatt TPU Deal with Google and Broadcom — ARR Hits $30B",
+        "zh": "Anthropic与Google、Broadcom签署多千兆瓦TPU协议——年化收入突破300亿美元"
+      },
+      "url": "https://www.businesstoday.in/technology/story/anthropic-signs-multi-gigawatt-ai-compute-deal-with-google-broadcom-524381-2026-04-07",
+      "source": "BusinessToday",
+      "time": "2026-04-07",
+      "description": {
+        "en": "Anthropic announced a landmark deal with Google and Broadcom to secure multiple gigawatts of next-generation TPU capacity, operational from 2027. The 3.5-gigawatt compute infrastructure will allow Anthropic to rely on custom TPUs and reduce dependency on traditional GPUs, while expanding Claude's capabilities. The company's annualized revenue surged from $9B (end of 2025) to over $30B, with valuation reaching $380B. Enterprise customers paying $1M+ annually doubled from 500 to 1,000 in under two months, driven primarily by Claude Code.",
+        "zh": "Anthropic宣布与Google和Broadcom达成里程碑式协议，获得下一代TPU多千兆瓦算力，将于2027年投入运营。3.5千兆瓦的计算基础设施将使Anthropic能够依赖定制TPU并减少对传统GPU的依赖，同时扩展Claude的能力。公司年化收入从2025年底的90亿美元飙升至超过300亿美元，估值达3800亿美元。年消费100万美元以上的企业客户在不到两个月内从500家翻倍至1000家，主要由Claude Code驱动。"
+      }
+    },
+    {
+      "title": {
+        "en": "Neuro-Symbolic AI Cuts Energy Use by 100x While Boosting Robot Task Accuracy to 95%",
+        "zh": "神经符号AI将机器人任务准确率提升至95%的同时，能耗降低100倍"
+      },
+      "url": "https://www.sciencedaily.com/releases/2026/04/260405003952.htm",
+      "source": "ScienceDaily / Tufts University",
+      "time": "2026-04-05",
+      "description": {
+        "en": "Tufts University researchers unveiled a neuro-symbolic AI approach for robotics (visual-language-action/VLA models) that uses symbolic reasoning alongside neural networks. On the Tower of Hanoi puzzle, the hybrid system achieved 95% success vs. 34% for standard VLAs, and 78% on novel complex variants where conventional models failed 100% of the time. Training took just 34 minutes vs. 36+ hours. Energy consumption was just 1% of a standard VLA during training and 5% during operation. The research will be presented at ICRA 2026 in Vienna.",
+        "zh": "塔夫茨大学研究人员公布了用于机器人技术的神经符号AI方法（视觉-语言-动作/VLA模型），将符号推理与神经网络相结合。在汉诺塔谜题上，混合系统达到95%成功率，而标准VLA仅为34%；在从未见过的新型复杂变体上达78%，传统模型则100%失败。训练仅需34分钟对比36小时以上。训练期间能耗仅为标准VLA的1%，运行期间为5%。该研究将在维也纳ICRA 2026上发表。"
+      }
+    },
+    {
+      "title": {
+        "en": "South Korea Deploys Thousands of ChatGPT-Enabled Social Care Robots for Elderly",
+        "zh": "韩国部署数千台ChatGPT赋能的老年护理机器人"
+      },
+      "url": "https://llm-stats.com/ai-news",
+      "source": "Financial Times / LLM Stats",
+      "time": "2026-04-07",
+      "description": {
+        "en": "South Korea has begun deploying thousands of ChatGPT-enabled social care robots to assist its elderly population, as the country grapples with an aging society where those over 65 now account for approximately 20% of its 51 million residents. The robots provide companionship, health monitoring, and emergency response capabilities, representing one of the largest real-world AI robotics deployments at national scale.",
+        "zh": "韩国开始部署数千台ChatGPT赋能的社会护理机器人，以协助老年人口应对老龄化社会——65岁以上老人已约占5100万总人口的20%。这些机器人提供陪伴、健康监测和紧急响应功能，代表了全国范围内规模最大的AI机器人实际部署之一。"
+      }
+    },
+    {
+      "title": {
+        "en": "HumanX 2026 Kicks Off in San Francisco — 'Davos of AI' Gathers 6,500 Leaders",
+        "zh": "AI'达沃斯' HumanX 2026在旧金山开幕——6500名领袖齐聚"
+      },
+      "url": "https://www.humanx.co/",
+      "source": "HumanX / KTVU",
+      "time": "2026-04-06",
+      "description": {
+        "en": "HumanX 2026, the self-described 'Davos for AI,' opened at Moscone Center South in San Francisco on April 6, running through April 9. The conference brings together 6,500+ AI leaders, builders, and investors (75% VP+ level) including executives from OpenAI, Anthropic, Google, and Microsoft. NYSE has partnered with the event. The conference focuses on the transition from AI research to real-world deployment, with sessions on agentic AI, infrastructure, and AI governance.",
+        "zh": "被称为AI\"达沃斯\"的HumanX 2026于4月6日在旧金山莫斯康中心南馆开幕，持续至4月9日。大会汇聚了6500多名AI领袖、构建者和投资者（75%为VP级别以上），包括OpenAI、Anthropic、Google和微软的高管。纽交所已与该活动达成合作。大会聚焦AI从研究到实际部署的转型，议题涵盖Agentic AI、基础设施和AI治理。"
+      }
+    },
+    {
+      "title": {
+        "en": "The Atlantic: Silicon Valley in a Frenzy Over Self-Improving AI Bots That Build Themselves",
+        "zh": "《大西洋月刊》：硅谷陷入自我改进AI狂热——模型自主研发时代到来"
+      },
+      "url": "https://www.theatlantic.com/technology/2026/04/ai-industry-self-improving-bots/686686/",
+      "source": "The Atlantic",
+      "time": "2026-04-06",
+      "description": {
+        "en": "The Atlantic reports that top AI labs are in a frenzy over self-improving AI systems. OpenAI recently released a model it described as 'instrumental in creating itself' and aims to debut an 'intern-level AI research assistant' within six months. Anthropic says ~90% of its code is already written by Claude. Nick Bostrom told the magazine we are 'teetering on the precipice' of AI that can rapidly improve its own capabilities, with breakthrough intervals potentially shrinking from months to weeks. Google DeepMind's AlphaEvolve already improved Gemini's training time by 1%. Meanwhile, thousands protested in San Francisco demanding the industry halt superintelligence development.",
+        "zh": "《大西洋月刊》报道称，主要AI实验室正陷入自我改进AI系统的狂热。OpenAI最近发布了一款自称\"有助于自我创造\"的模型，并计划在六个月内推出\"实习生级AI研究助手\"。Anthropic表示其约90%的代码已由Claude编写。尼克·博斯特罗姆告诉该杂志，我们正\"站在悬崖边缘\"——AI可能迅速提升自身能力，突破间隔可能从数月缩短至数周。Google DeepMind的AlphaEvolve已将Gemini训练时间缩短1%。与此同时，数千人在旧金山抗议，要求行业停止超级智能开发。"
+      }
+    },
+    {
+      "title": {
+        "en": "GTC 2026: NVIDIA Unveils Next-Gen AI Infrastructure as AI Security Takes Center Stage",
+        "zh": "GTC 2026：NVIDIA发布下一代AI基础设施，AI安全成为焦点"
+      },
+      "url": "https://www.nvidia.com/gtc/",
+      "source": "NVIDIA / Forbes",
+      "time": "2026-04-06",
+      "description": {
+        "en": "NVIDIA's GTC 2026 conference in San Jose highlighted the accelerating buildout of AI infrastructure, with the company showcasing next-generation GPU architectures and networking solutions. At GTC, CrowdStrike made the case that securing AI systems must begin at the architecture stage, reflecting growing industry concern about AI-specific security vulnerabilities as agentic AI moves into production environments across enterprises.",
+        "zh": "NVIDIA在圣何塞举行的GTC 2026大会聚焦AI基础设施加速建设，公司展示了下一代GPU架构和网络解决方案。会上CrowdStrike提出，AI系统安全必须从架构阶段开始，反映出随着Agentic AI进入企业生产环境，行业对AI特定安全漏洞的担忧日益加剧。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "April 7th, 2026 is defined by two seemingly contradictory headlines: rare cross-company cooperation and accelerating autonomy. On cooperation, OpenAI, Anthropic, and Google's anti-distillation coalition through the Frontier Model Forum represents a new chapter in US-China AI competition — rivals setting aside competitive differences to jointly address what they frame as systematic IP theft via adversarial distillation. OpenAI's memo to Congress naming DeepSeek by name escalates this into a policy battle.\n\nSimultaneously, Anthropic's $30B ARR (up from $9B in under a year) powered by Claude Code and its multi-gigawatt Google/Broadcom TPU deal signals that the agentic coding wave is translating into real enterprise revenue at extraordinary scale. The compute commitment — 3.5 gigawatts of custom TPUs — is a statement of intent: Anthropic is building infrastructure for agents that operate at planetary scale.\n\nOn the research frontier, Tufts' neuro-symbolic VLA breakthrough is notable not just for its 100x energy reduction but for what it represents philosophically — a rejection of pure brute-force scaling in favor of structured reasoning. If this replicates across domains, it could fundamentally reshape the energy-debate around AI. Meanwhile, The Atlantic's reporting on self-improving AI and the simultaneous San Francisco protests underscore that the public narrative around AI is hardening: insiders see accelerating capability gains, while public concern reaches new highs.\n\nFor developers, the week's GitHub trending reflects this inflection: hermes-agent's multi-model flexibility, VibeVoice's open-source voice frontier, and timesfm's zero-shot forecasting all point to AI tools becoming infrastructure-grade utilities. The question is no longer whether AI can do a task — it's whether it can do it reliably, securely, and at scale.",
+    "zh": "2026年4月7日的头条新闻呈现两个看似矛盾的主题：罕见的跨公司合作与加速的自主化。在合作方面，OpenAI、Anthropic和Google通过Frontier Model Forum建立的反蒸馏联盟标志着美国与中国AI竞争进入新篇章——竞争对手搁置分歧，共同应对被其定性为系统性知识产权盗窃的对抗性蒸馏攻击。OpenAI向国会提交备忘录直接点名DeepSeek，将这场争端升级为政策层面的较量。\n\n与此同时，Anthropic年化收入从不足一年前的90亿美元飙升至300亿美元（由Claude Code驱动），加之多千兆瓦Google/Broadcom TPU协议，表明Agentic编程浪潮正在转化为真正的企业级大规模收入。3.5千兆瓦定制TPU的算力承诺是一种意图声明：Anthropic正在为行星级运行的Agent建设基础设施。\n\n在研究前沿，塔夫茨大学的神经符号VLA突破不仅在于100倍的能效提升，更在于其哲学意义——拒绝纯粹暴力规模化，转而支持结构化推理。如果这在各个领域得到复制，可能从根本上重塑关于AI能耗的辩论。与此同时，《大西洋月刊》关于自我改进AI的报道与旧金山同期抗议活动形成呼应，凸显AI的公众叙事正在固化：内部人士看到能力加速进步，而公众担忧也达到新高。\n\n对开发者而言，本周GitHub趋势反映了这一转折点：hermes-agent的多模型灵活性、VibeVoice的开源语音前沿、timesfm的零样本预测，都表明AI工具正在成为基础设施级公共服务。问题不再是AI能否完成某项任务——而是它能否可靠、安全、大规模地完成。"
+  }
+}
