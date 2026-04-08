@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-08",
+  "github_repos": [
+    {
+      "name": "microsoft/agent-framework",
+      "url": "https://github.com/microsoft/agent-framework",
+      "description": {
+        "en": "A framework for building, orchestrating, and deploying AI agents and multi-agent workflows with support for Python and .NET. Provides enterprise-grade tooling for creating autonomous agents that can plan, reason, and execute complex tasks across various domains.",
+        "zh": "用于构建、编排和部署AI Agent及多Agent工作流的框架，支持Python和.NET。提供企业级工具，用于创建可跨各领域进行规划、推理和执行复杂任务的自主Agent。"
+      },
+      "stars": "9.1k",
+      "forks": "1.5k"
+    },
+    {
+      "name": "google-ai-edge/LiteRT-LM",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "description": {
+        "en": "Google's on-device ML/GenAI runtime for mobile and edge devices. LiteRT (formerly TensorFlow Lite) enables running large language models and generative AI locally on smartphones and embedded hardware with optimized performance and minimal memory footprint.",
+        "zh": "Google面向移动和边缘设备的设备端ML/GenAI运行时。LiteRT（前称TensorFlow Lite）可在智能手机和嵌入式硬件上本地运行大语言模型及生成式AI，具备优化性能和最小内存占用。"
+      },
+      "stars": "2.8k",
+      "forks": "263"
+    },
+    {
+      "name": "NVIDIA/personaplex",
+      "url": "https://github.com/NVIDIA/personaplex",
+      "description": {
+        "en": "Real-time speech-to-speech conversational AI powered by NVIDIA's PersonaPlex-7B model. Enables building AI voice agents with fully customizable voices and personas for natural, full-duplex conversational experiences. Released under NVIDIA Open Model license.",
+        "zh": "由NVIDIA PersonaPlex-7B模型驱动的实时语音对话AI。支持构建具有完全可定制语音和人格的AI语音代理，实现自然的全双工对话体验。以NVIDIA开放模型许可证发布。"
+      },
+      "stars": "8.2k",
+      "forks": "1.2k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Claude AI Suffers Second Major Outage in Two Days — Anthropic Confirms Service Disruption",
+        "zh": "Claude AI两天内第二次重大宕机——Anthropic确认服务中断"
+      },
+      "url": "https://www.ibtimes.com.au/claude-ai-down-again-april-8-2026-anthropic-outage-hits-users-after-yesterdays-major-incident-1865761",
+      "source": "IBTimes Australia",
+      "time": "2026-04-08",
+      "description": {
+        "en": "Anthropic's Claude AI experienced a second major outage within 48 hours on April 8, 2026, disrupting access for thousands of users globally. This follows a major incident on April 7th. The company confirmed the disruption and said investigations were underway. This comes amid Anthropic's rapid scaling, with ARR hitting $30B, as industry observers question whether infrastructure is keeping pace with explosive growth in Claude Code usage.",
+        "zh": "Anthropic的Claude AI在2026年4月8日遭遇48小时内第二次重大宕机，数千名全球用户无法访问。此前的4月7日已发生一次重大事故。公司确认了中断并表示正在调查。在Anthropic年化收入突破300亿美元、Claude Code使用量爆发式增长之际，行业观察人士质疑其基础设施是否跟上了扩张步伐。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenClaw 2026.4.5 Released: Native Video Generation, Dreaming Memory & Security Hardening",
+        "zh": "OpenClaw 2026.4.5发布：原生视频生成、梦境记忆与安全加固"
+      },
+      "url": "https://www.xugj520.cn/en/archives/openclaw-release-ai-video-generation-dreaming-memory.html",
+      "source": "Efficient Coder / XUGJ520",
+      "time": "2026-04-07",
+      "description": {
+        "en": "OpenClaw 2026.4.5 introduces native video generation tools, an experimental Dreaming memory system for enhanced contextual recall, and significant security hardening for production agent deployments. The release also adds multi-provider media generation with auto-fallback across auth-backed image, music, and video providers. OpenClaw now supports Gemma 4 from Google and continues to expand its position as the fastest-growing open-source autonomous agent framework.",
+        "zh": "OpenClaw 2026.4.5引入原生视频生成工具、用于增强上下文记忆的实验性梦境记忆系统，以及面向生产环境Agent部署的重大安全加固。该版本还增加了多提供商媒体生成功能，支持在认证的图像、音乐和视频提供商间自动切换。OpenClaw现在支持Google的Gemma 4，并继续扩大其作为增长最快的开源自主Agent框架的地位。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft Agent Framework Goes Live — Build Multi-Agent Workflows with Python and .NET",
+        "zh": "微软Agent Framework正式发布——用Python和.NET构建多Agent工作流"
+      },
+      "url": "https://github.com/microsoft/agent-framework",
+      "source": "GitHub / Microsoft",
+      "time": "2026-04-07",
+      "description": {
+        "en": "Microsoft's official agent framework reached a significant update milestone on April 7-8, 2026, climbing GitHub trending lists. The framework enables developers to build, orchestrate, and deploy AI agents and multi-agent workflows with first-class Python and .NET support. It integrates with Azure AI Foundry and supports the full agent development lifecycle from prototyping to production deployment.",
+        "zh": "微软官方Agent Framework在2026年4月7-8日达到重要更新里程碑，登上GitHub趋势榜。该框架使开发者能够使用一流的Python和.NET支持构建、编排和部署AI Agent及多Agent工作流。它与Azure AI Foundry集成，支持从原型到生产部署的完整Agent开发生命周期。"
+      }
+    },
+    {
+      "title": {
+        "en": "HumanX 2026 Day 2: Samsanga Showcases Physical AI with Autonomous Trucks at HumanX Conference",
+        "zh": "HumanX 2026第二天：Samsanga在HumanX大会上展示自动驾驶卡车物理AI"
+      },
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "source": "AI Agent Store / HumanX",
+      "time": "2026-04-08",
+      "description": {
+        "en": "On day two of HumanX 2026 (April 8), Samsanga is demonstrating physical AI capabilities with autonomous trucks and robots working safely alongside human operators at the HumanX 2026 conference in San Francisco. The demonstration highlights the real-world deployment of AI agents beyond software tasks into physical environments, a key theme at this year's 'Davos of AI' which has gathered 6,500+ AI leaders through April 9.",
+        "zh": "在HumanX 2026第二天（4月8日），Samsanga在旧金山HumanX 2026大会上展示自动驾驶卡车和机器人与人类操作员安全协作的物理AI能力。此次演示突显了AI Agent从软件任务向物理环境的真实部署，这一主题是今年\"AI达沃斯\"的关键议题——大会已汇聚6500多名AI领袖，持续至4月9日。"
+      }
+    },
+    {
+      "title": {
+        "en": "AgentScope-AI Launches Production-Ready Agent Framework with Built-in Fine-Tuning Support",
+        "zh": "AgentScope-AI推出生产就绪的Agent框架，内置微调支持"
+      },
+      "url": "https://github.com/agentscope-ai",
+      "source": "AgentScope-AI / GitHub",
+      "time": "2026-04-07",
+      "description": {
+        "en": "AgentScope-AI launched a production-ready, easy-to-use agent framework with essential abstractions that works with rising model capabilities and built-in support for fine-tuning. The platform enables developers to create enterprise-grade AI agents with features including workflow orchestration, memory management, and multi-model support. It's gaining rapid adoption among developers building real-world AI applications.",
+        "zh": "AgentScope-AI推出生产就绪、易于使用的Agent框架，具备与新兴模型能力配合使用的基本抽象，并内置微调支持。该平台使开发者能够创建具备工作流编排、记忆管理和多模型支持等功能的企业级AI Agent。它在构建实际AI应用的开发者中快速获得采用。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI Scientist-v2: Fully Automated Scientific Discovery System via Agentic Tree Search Published",
+        "zh": "AI Scientist-v2：通过Agent树搜索实现全自动科学发现的系统发表"
+      },
+      "url": "https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs",
+      "source": "ArXiv / DevFlokers",
+      "time": "2026-04-07",
+      "description": {
+        "en": "A groundbreaking paper introduced AI Scientist-v2, a workshop-level automated scientific discovery system using agentic tree search. The system can autonomously propose hypotheses, run experiments, analyze data, and write peer-reviewed papers. In a historic first, a paper fully generated by this system was accepted by a major academic conference, signaling a paradigm shift in how scientific research may be conducted in the future.",
+        "zh": "一篇突破性论文介绍了AI Scientist-v2，这是一个使用Agent树搜索的工作室级自动科学发现系统。该系统能够自主提出假设、进行实验、分析数据并撰写同行评审论文。历史上首次，完全由该系统生成的论文被主要学术会议接受，标志着未来科学研究方式的范式转变。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA GTC 2026: Next-Gen AI Infrastructure Unveiled as AI Security Takes Center Stage",
+        "zh": "NVIDIA GTC 2026：发布下一代AI基础设施，AI安全成为焦点"
+      },
+      "url": "https://www.nvidia.com/gtc/",
+      "source": "NVIDIA / Forbes",
+      "time": "2026-04-07",
+      "description": {
+        "en": "NVIDIA's GTC 2026 conference in San Jose showcased next-generation GPU architectures and networking solutions for AI infrastructure. CrowdStrike emphasized that securing AI systems must begin at the architecture stage, reflecting growing industry concern about AI-specific vulnerabilities as agentic AI moves into production across enterprises. The conference also highlighted advances in physical AI and autonomous systems.",
+        "zh": "NVIDIA在圣何塞举行的GTC 2026大会展示了用于AI基础设施的下一代GPU架构和网络解决方案。CrowdStrike强调，AI系统安全必须从架构阶段开始，反映出随着Agentic AI进入企业生产环境，行业对AI特定安全漏洞的担忧日益加剧。大会还重点展示了物理AI和自主系统的进展。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "April 8, 2026 marks a turning point where AI infrastructure reliability becomes as critical as capability. The double Claude outage in 48 hours — happening right as Anthropic's $30B ARR and multi-gigawatt infrastructure deal make headlines — reveals a tension between explosive growth and operational stability. This isn't just an Anthropic problem: ChatGPT, Gemini, and other major chatbots have all experienced notable outages in 2026 as demand strains data centers globally.\n\nOn the framework front, Microsoft's official agent-framework going trending and AgentScope's production-ready launch signal that the agent development ecosystem is maturing beyond experimental prototypes into enterprise-grade tooling. The Microsoft .NET/Python dual support is particularly notable — it broadens the developer base significantly beyond the Python-dominated AI tooling landscape.\n\nThe physical AI narrative is also accelerating. Samsanga's autonomous trucks demo at HumanX and NVIDIA's GTC focus on physical AI and robotics infrastructure paint a picture of AI agents moving from software assistants to real-world operators. The convergence of agentic frameworks, on-device inference (LiteRT-LM), and voice AI (PersonaPlex) suggests a future where AI operates across cloud, edge, and physical environments.\n\nFor developers, OpenClaw's 2026.4.5 release with Dreaming memory and native video generation shows open-source agents evolving rapidly — and its deep WeChat integration (via Tencent's plugin) underscores that the Asian market is a first-class consideration for AI messaging platforms. The AI Scientist-v2 paper acceptance at a major conference marks another milestone: AI generating publishable scientific research is no longer hypothetical.\n\nThe big question for the week ahead: can AI infrastructure scale as fast as AI capabilities? The outage pattern suggests the answer is no — and that creates both a massive opportunity and a critical risk for the industry.",
+    "zh": "2026年4月8日标志着AI基础设施可靠性与能力同等重要的转折点。Claude在48小时内两次宕机——正值Anthropic 300亿美元年化收入和多千兆瓦基础设施协议的新闻占据头条——揭示了爆发式增长与运营稳定性之间的张力。这不仅仅是Anthropic的问题：ChatGPT、Gemini和其他主要聊天机器人在2026年都经历了显著宕机，需求正在对全球数据中心造成压力。\n\n在框架领域，微软官方agent-framework登上趋势榜、AgentScope推出生产就绪版本，释放出AI Agent开发生态系统正从实验原型成熟为企业级工具的信号。微软.NET/Python双支持尤其值得关注——它将开发者基础显著扩展到Python主导的AI工具格局之外。\n\n物理AI叙事也在加速。Samsanga在HumanX展示自动驾驶卡车、NVIDIA在GTC聚焦物理AI和机器人基础设施，描绘了AI Agent从软件助手向现实世界操作员演进的图景。Agentic框架、设备端推理（LiteRT-LM）和语音AI（PersonaPlex）的融合，预示着AI在云、边和物理环境中运行的未来。\n\n对开发者而言，OpenClaw 2026.4.5引入的梦境记忆和原生视频生成表明开源Agent正在快速演进——其深度微信集成（通过腾讯插件）强调亚洲市场是AI消息平台的优先考量。AI Scientist-v2论文被主要会议接受是又一个里程碑：AI生成可发表的科学研究不再是假设。\n\n本周的重大问题：AI基础设施能否跟上AI能力的增长速度？宕机模式给出的答案是不能——这既为行业创造了巨大机遇，也带来了关键风险。"
+  }
+}

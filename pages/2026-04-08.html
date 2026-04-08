@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 08, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 08, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/microsoft/agent-framework" class="card-title" target="_blank">microsoft/agent-framework</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 9.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.5k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A framework for building, orchestrating, and deploying AI agents and multi-agent workflows with support for Python and .NET. Provides enterprise-grade tooling for creating autonomous agents that can plan, reason, and execute complex tasks across various domains.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">用于构建、编排和部署AI Agent及多Agent工作流的框架，支持Python和.NET。提供企业级工具，用于创建可跨各领域进行规划、推理和执行复杂任务的自主Agent。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/google-ai-edge/LiteRT-LM" class="card-title" target="_blank">google-ai-edge/LiteRT-LM</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 263 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Google's on-device ML/GenAI runtime for mobile and edge devices. LiteRT (formerly TensorFlow Lite) enables running large language models and generative AI locally on smartphones and embedded hardware with optimized performance and minimal memory footprint.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google面向移动和边缘设备的设备端ML/GenAI运行时。LiteRT（前称TensorFlow Lite）可在智能手机和嵌入式硬件上本地运行大语言模型及生成式AI，具备优化性能和最小内存占用。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/NVIDIA/personaplex" class="card-title" target="_blank">NVIDIA/personaplex</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 8.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Real-time speech-to-speech conversational AI powered by NVIDIA's PersonaPlex-7B model. Enables building AI voice agents with fully customizable voices and personas for natural, full-duplex conversational experiences. Released under NVIDIA Open Model license.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">由NVIDIA PersonaPlex-7B模型驱动的实时语音对话AI。支持构建具有完全可定制语音和人格的AI语音代理，实现自然的全双工对话体验。以NVIDIA开放模型许可证发布。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">IBTimes Australia</span>
+                    <div class="news-time">2026-04-08</div>
+                    <a href="https://www.ibtimes.com.au/claude-ai-down-again-april-8-2026-anthropic-outage-hits-users-after-yesterdays-major-incident-1865761" class="card-title" target="_blank" data-lang="en">Claude AI Suffers Second Major Outage in Two Days — Anthropic Confirms Service Disruption</a>
+                    <a href="https://www.ibtimes.com.au/claude-ai-down-again-april-8-2026-anthropic-outage-hits-users-after-yesterdays-major-incident-1865761" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude AI两天内第二次重大宕机——Anthropic确认服务中断</a>
+                    <p class="card-description" data-lang="en">Anthropic's Claude AI experienced a second major outage within 48 hours on April 8, 2026, disrupting access for thousands of users globally. This follows a major incident on April 7th. The company confirmed the disruption and said investigations were underway. This comes amid Anthropic's rapid scaling, with ARR hitting $30B, as industry observers question whether infrastructure is keeping pace with explosive growth in Claude Code usage.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic的Claude AI在2026年4月8日遭遇48小时内第二次重大宕机，数千名全球用户无法访问。此前的4月7日已发生一次重大事故。公司确认了中断并表示正在调查。在Anthropic年化收入突破300亿美元、Claude Code使用量爆发式增长之际，行业观察人士质疑其基础设施是否跟上了扩张步伐。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Efficient Coder / XUGJ520</span>
+                    <div class="news-time">2026-04-07</div>
+                    <a href="https://www.xugj520.cn/en/archives/openclaw-release-ai-video-generation-dreaming-memory.html" class="card-title" target="_blank" data-lang="en">OpenClaw 2026.4.5 Released: Native Video Generation, Dreaming Memory & Security Hardening</a>
+                    <a href="https://www.xugj520.cn/en/archives/openclaw-release-ai-video-generation-dreaming-memory.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenClaw 2026.4.5发布：原生视频生成、梦境记忆与安全加固</a>
+                    <p class="card-description" data-lang="en">OpenClaw 2026.4.5 introduces native video generation tools, an experimental Dreaming memory system for enhanced contextual recall, and significant security hardening for production agent deployments. The release also adds multi-provider media generation with auto-fallback across auth-backed image, music, and video providers. OpenClaw now supports Gemma 4 from Google and continues to expand its position as the fastest-growing open-source autonomous agent framework.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenClaw 2026.4.5引入原生视频生成工具、用于增强上下文记忆的实验性梦境记忆系统，以及面向生产环境Agent部署的重大安全加固。该版本还增加了多提供商媒体生成功能，支持在认证的图像、音乐和视频提供商间自动切换。OpenClaw现在支持Google的Gemma 4，并继续扩大其作为增长最快的开源自主Agent框架的地位。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub / Microsoft</span>
+                    <div class="news-time">2026-04-07</div>
+                    <a href="https://github.com/microsoft/agent-framework" class="card-title" target="_blank" data-lang="en">Microsoft Agent Framework Goes Live — Build Multi-Agent Workflows with Python and .NET</a>
+                    <a href="https://github.com/microsoft/agent-framework" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软Agent Framework正式发布——用Python和.NET构建多Agent工作流</a>
+                    <p class="card-description" data-lang="en">Microsoft's official agent framework reached a significant update milestone on April 7-8, 2026, climbing GitHub trending lists. The framework enables developers to build, orchestrate, and deploy AI agents and multi-agent workflows with first-class Python and .NET support. It integrates with Azure AI Foundry and supports the full agent development lifecycle from prototyping to production deployment.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软官方Agent Framework在2026年4月7-8日达到重要更新里程碑，登上GitHub趋势榜。该框架使开发者能够使用一流的Python和.NET支持构建、编排和部署AI Agent及多Agent工作流。它与Azure AI Foundry集成，支持从原型到生产部署的完整Agent开发生命周期。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI Agent Store / HumanX</span>
+                    <div class="news-time">2026-04-08</div>
+                    <a href="https://aiagentstore.ai/ai-agent-news/this-week" class="card-title" target="_blank" data-lang="en">HumanX 2026 Day 2: Samsanga Showcases Physical AI with Autonomous Trucks at HumanX Conference</a>
+                    <a href="https://aiagentstore.ai/ai-agent-news/this-week" class="card-title" target="_blank" data-lang="zh" style="display: none;">HumanX 2026第二天：Samsanga在HumanX大会上展示自动驾驶卡车物理AI</a>
+                    <p class="card-description" data-lang="en">On day two of HumanX 2026 (April 8), Samsanga is demonstrating physical AI capabilities with autonomous trucks and robots working safely alongside human operators at the HumanX 2026 conference in San Francisco. The demonstration highlights the real-world deployment of AI agents beyond software tasks into physical environments, a key theme at this year's 'Davos of AI' which has gathered 6,500+ AI leaders through April 9.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在HumanX 2026第二天（4月8日），Samsanga在旧金山HumanX 2026大会上展示自动驾驶卡车和机器人与人类操作员安全协作的物理AI能力。此次演示突显了AI Agent从软件任务向物理环境的真实部署，这一主题是今年"AI达沃斯"的关键议题——大会已汇聚6500多名AI领袖，持续至4月9日。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AgentScope-AI / GitHub</span>
+                    <div class="news-time">2026-04-07</div>
+                    <a href="https://github.com/agentscope-ai" class="card-title" target="_blank" data-lang="en">AgentScope-AI Launches Production-Ready Agent Framework with Built-in Fine-Tuning Support</a>
+                    <a href="https://github.com/agentscope-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">AgentScope-AI推出生产就绪的Agent框架，内置微调支持</a>
+                    <p class="card-description" data-lang="en">AgentScope-AI launched a production-ready, easy-to-use agent framework with essential abstractions that works with rising model capabilities and built-in support for fine-tuning. The platform enables developers to create enterprise-grade AI agents with features including workflow orchestration, memory management, and multi-model support. It's gaining rapid adoption among developers building real-world AI applications.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AgentScope-AI推出生产就绪、易于使用的Agent框架，具备与新兴模型能力配合使用的基本抽象，并内置微调支持。该平台使开发者能够创建具备工作流编排、记忆管理和多模型支持等功能的企业级AI Agent。它在构建实际AI应用的开发者中快速获得采用。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">ArXiv / DevFlokers</span>
+                    <div class="news-time">2026-04-07</div>
+                    <a href="https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs" class="card-title" target="_blank" data-lang="en">AI Scientist-v2: Fully Automated Scientific Discovery System via Agentic Tree Search Published</a>
+                    <a href="https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI Scientist-v2：通过Agent树搜索实现全自动科学发现的系统发表</a>
+                    <p class="card-description" data-lang="en">A groundbreaking paper introduced AI Scientist-v2, a workshop-level automated scientific discovery system using agentic tree search. The system can autonomously propose hypotheses, run experiments, analyze data, and write peer-reviewed papers. In a historic first, a paper fully generated by this system was accepted by a major academic conference, signaling a paradigm shift in how scientific research may be conducted in the future.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一篇突破性论文介绍了AI Scientist-v2，这是一个使用Agent树搜索的工作室级自动科学发现系统。该系统能够自主提出假设、进行实验、分析数据并撰写同行评审论文。历史上首次，完全由该系统生成的论文被主要学术会议接受，标志着未来科学研究方式的范式转变。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">NVIDIA / Forbes</span>
+                    <div class="news-time">2026-04-07</div>
+                    <a href="https://www.nvidia.com/gtc/" class="card-title" target="_blank" data-lang="en">NVIDIA GTC 2026: Next-Gen AI Infrastructure Unveiled as AI Security Takes Center Stage</a>
+                    <a href="https://www.nvidia.com/gtc/" class="card-title" target="_blank" data-lang="zh" style="display: none;">NVIDIA GTC 2026：发布下一代AI基础设施，AI安全成为焦点</a>
+                    <p class="card-description" data-lang="en">NVIDIA's GTC 2026 conference in San Jose showcased next-generation GPU architectures and networking solutions for AI infrastructure. CrowdStrike emphasized that securing AI systems must begin at the architecture stage, reflecting growing industry concern about AI-specific vulnerabilities as agentic AI moves into production across enterprises. The conference also highlighted advances in physical AI and autonomous systems.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">NVIDIA在圣何塞举行的GTC 2026大会展示了用于AI基础设施的下一代GPU架构和网络解决方案。CrowdStrike强调，AI系统安全必须从架构阶段开始，反映出随着Agentic AI进入企业生产环境，行业对AI特定安全漏洞的担忧日益加剧。大会还重点展示了物理AI和自主系统的进展。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">April 8, 2026 marks a turning point where AI infrastructure reliability becomes as critical as capability. The double Claude outage in 48 hours — happening right as Anthropic's $30B ARR and multi-gigawatt infrastructure deal make headlines — reveals a tension between explosive growth and operational stability. This isn't just an Anthropic problem: ChatGPT, Gemini, and other major chatbots have all experienced notable outages in 2026 as demand strains data centers globally.
+
+On the framework front, Microsoft's official agent-framework going trending and AgentScope's production-ready launch signal that the agent development ecosystem is maturing beyond experimental prototypes into enterprise-grade tooling. The Microsoft .NET/Python dual support is particularly notable — it broadens the developer base significantly beyond the Python-dominated AI tooling landscape.
+
+The physical AI narrative is also accelerating. Samsanga's autonomous trucks demo at HumanX and NVIDIA's GTC focus on physical AI and robotics infrastructure paint a picture of AI agents moving from software assistants to real-world operators. The convergence of agentic frameworks, on-device inference (LiteRT-LM), and voice AI (PersonaPlex) suggests a future where AI operates across cloud, edge, and physical environments.
+
+For developers, OpenClaw's 2026.4.5 release with Dreaming memory and native video generation shows open-source agents evolving rapidly — and its deep WeChat integration (via Tencent's plugin) underscores that the Asian market is a first-class consideration for AI messaging platforms. The AI Scientist-v2 paper acceptance at a major conference marks another milestone: AI generating publishable scientific research is no longer hypothetical.
+
+The big question for the week ahead: can AI infrastructure scale as fast as AI capabilities? The outage pattern suggests the answer is no — and that creates both a massive opportunity and a critical risk for the industry.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年4月8日标志着AI基础设施可靠性与能力同等重要的转折点。Claude在48小时内两次宕机——正值Anthropic 300亿美元年化收入和多千兆瓦基础设施协议的新闻占据头条——揭示了爆发式增长与运营稳定性之间的张力。这不仅仅是Anthropic的问题：ChatGPT、Gemini和其他主要聊天机器人在2026年都经历了显著宕机，需求正在对全球数据中心造成压力。
+
+在框架领域，微软官方agent-framework登上趋势榜、AgentScope推出生产就绪版本，释放出AI Agent开发生态系统正从实验原型成熟为企业级工具的信号。微软.NET/Python双支持尤其值得关注——它将开发者基础显著扩展到Python主导的AI工具格局之外。
+
+物理AI叙事也在加速。Samsanga在HumanX展示自动驾驶卡车、NVIDIA在GTC聚焦物理AI和机器人基础设施，描绘了AI Agent从软件助手向现实世界操作员演进的图景。Agentic框架、设备端推理（LiteRT-LM）和语音AI（PersonaPlex）的融合，预示着AI在云、边和物理环境中运行的未来。
+
+对开发者而言，OpenClaw 2026.4.5引入的梦境记忆和原生视频生成表明开源Agent正在快速演进——其深度微信集成（通过腾讯插件）强调亚洲市场是AI消息平台的优先考量。AI Scientist-v2论文被主要会议接受是又一个里程碑：AI生成可发表的科学研究不再是假设。
+
+本周的重大问题：AI基础设施能否跟上AI能力的增长速度？宕机模式给出的答案是不能——这既为行业创造了巨大机遇，也带来了关键风险。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
