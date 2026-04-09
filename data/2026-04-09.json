@@ -1,0 +1,145 @@
+{
+  "date": "2026-04-09",
+  "github_repos": [
+    {
+      "name": "agentscope-ai/CoPaw",
+      "url": "https://github.com/agentscope-ai/CoPaw",
+      "description": {
+        "en": "Your personal AI assistant - easy to install, deploy locally or in the cloud, supports multiple chat apps with easily extensible capabilities. Features multi-agent collaboration, skills extension, multi-layer security, and channels including DingTalk, Feishu, WeChat, Discord, and Telegram.",
+        "zh": "您的个人AI助手——易于安装，可本地或云端部署，支持多种聊天应用并具有易于扩展的功能。特性包括多智能体协作、技能扩展、多层安全防护，以及钉钉、飞书、微信、Discord和Telegram等频道支持。"
+      },
+      "stars": "14.9k",
+      "forks": "1,989"
+    },
+    {
+      "name": "different-ai/openwork",
+      "url": "https://github.com/different-ai/openwork",
+      "description": {
+        "en": "An open-source alternative to Claude Cowork built for teams, powered by opencode. Local-first, cloud-ready, composable with desktop app and WhatsApp/Slack/Telegram connectors, fully extensible and auditable with skill plugins.",
+        "zh": "一款面向团队的开源Claude Cowork替代品，由opencode驱动。本地优先、云端就绪，可组合的桌面应用及WhatsApp/Slack/Telegram连接器，支持技能插件扩展和完整的操作审计。"
+      },
+      "stars": "13.4k",
+      "forks": "1,239"
+    },
+    {
+      "name": "forrestchang/andrej-karpathy-skills",
+      "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "description": {
+        "en": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. Four principles: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution.",
+        "zh": "一个用于提升Claude Code行为的CLAUDE.md文件，源于Andrej Karpathy对LLM编程陷阱的观察。四大原则：编码前先思考、简约优先、精准修改、目标驱动执行。"
+      },
+      "stars": "9.7k",
+      "forks": "660"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Meta Unveils Muse Spark - Its First AI Model From the $14B Superintelligence Lab",
+        "zh": "Meta发布Muse Spark——其140亿美元超级智能实验室的首款AI模型"
+      },
+      "url": "https://www.nytimes.com/2026/04/08/technology/meta-muse-spark-ai-model.html",
+      "source": "The New York Times",
+      "time": "2026-04-08",
+      "description": {
+        "en": "Meta unveiled Muse Spark, ranking 4th on AI benchmarks with strong performance in writing, reasoning, figure understanding (86.4% on CharXiv), and medical reasoning (42.8% on HealthBench Hard), but lagging on coding and abstract reasoning. The model uses a parallel sub-agent architecture and represents Meta's first major release since hiring Alexandr Wang as Chief AI Officer.",
+        "zh": "Meta发布Muse Spark，在写作、推理、图表理解（CharXiv 86.4%）和医学推理（HealthBench Hard 42.8%）方面表现强劲，但在编程和抽象推理方面落后，在AI基准测试中排名第四。该模型采用并行子智能体架构，是Meta自聘请Alexandr Wang担任首席AI官以来的首款重磅产品。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic's Claude Mythos Preview Discovers Thousands of Zero-Day Vulnerabilities - Too Dangerous to Release",
+        "zh": "Anthropic的Claude Mythos预览版发现数千个零日漏洞——危险到无法发布"
+      },
+      "url": "https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html",
+      "source": "The Hacker News",
+      "time": "2026-04-08",
+      "description": {
+        "en": "Anthropic unveiled Claude Mythos Preview, an advanced AI model for cybersecurity that has already discovered thousands of previously unknown zero-day vulnerabilities across major systems. Due to its unprecedented capability to identify software vulnerabilities, access is restricted to a limited Project Glasswing partnership with 40+ companies including Microsoft, Amazon, Apple, Google, and NVIDIA. Anthropic is in ongoing discussions with CISA about the model's cyber capabilities.",
+        "zh": "Anthropic发布了Claude Mythos预览版，这是一款专精网络安全的AI模型，已在主流系统中发现数千个此前未知的零日漏洞。由于其发现软件漏洞的能力前所未有，访问权限被限制在包含微软、亚马逊、苹果、谷歌、NVIDIA等40多家公司的Project Glasswing合作计划内。Anthropic正与美国国土安全部CISA就模型的网络安全能力进行持续讨论。"
+      }
+    },
+    {
+      "title": {
+        "en": "Utah Becomes First State to Grant AI Systems Authority to Renew Drug Prescriptions",
+        "zh": "犹他州成为首个授权AI系统更新处方药的州"
+      },
+      "url": "https://www.humai.blog/ai-news-trends-april-2026-complete-monthly-digest/",
+      "source": "HuMAI",
+      "time": "2026-04-07",
+      "description": {
+        "en": "Utah has become the first state to grant AI systems the authority to renew drug prescriptions, marking a significant milestone in AI-powered healthcare automation. The initiative represents a major expansion of artificial intelligence into direct patient care, raising both promising applications and regulatory questions about accountability.",
+        "zh": "犹他州成为全美首个授权AI系统更新处方药的州，标志着AI驱动医疗自动化领域的重要里程碑。这一举措代表了人工智能向直接患者护理领域的重大拓展，同时也引发了关于责任认定的监管问题。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Quietly Launches Offline-First AI Dictation App 'Eloquent' on iOS",
+        "zh": "谷歌悄然发布离线优先AI听写应用Eloquent登陆iOS"
+      },
+      "url": "https://techcrunch.com/2026/04/07/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
+      "source": "TechCrunch",
+      "time": "2026-04-07",
+      "description": {
+        "en": "Google released Google AI Edge Eloquent, an offline-first dictation app on iOS powered by Gemma-based ASR models. The app automatically filters filler words, offers text transformation options, supports local-only processing, and can import custom vocabulary. An Android version with system-wide keyboard integration is also referenced in the App Store listing.",
+        "zh": "谷歌发布了一款名为Google AI Edge Eloquent的离线优先听写应用，登陆iOS平台，基于Gemma驱动的ASR模型。应用自动过滤语气词，提供文本转换选项，支持纯本地处理，并能导入自定义词汇。App Store列表中还提及了具备系统级键盘集成功能的安卓版本。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Launches LiteRT-LM: Production-Ready Edge LLM Inference Framework on GitHub",
+        "zh": "谷歌发布LiteRT-LM：GitHub上可用于生产的边缘LLM推理框架"
+      },
+      "url": "https://aitoolly.com/ai-news/article/2026-04-08-google-launches-litert-lm-a-high-performance-open-source-framework-for-edge-device-llm-inference",
+      "source": "AIToolly",
+      "time": "2026-04-08",
+      "description": {
+        "en": "Google AI Edge launched LiteRT-LM, a production-ready, high-performance open-source inference framework for deploying LLMs on edge devices. The framework optimizes models for local hardware, enabling faster response times and reduced bandwidth costs while keeping sensitive data on-device - significant for privacy-sensitive industries like healthcare and finance.",
+        "zh": "谷歌AI Edge发布LiteRT-LM，一款可用于生产的高性能开源推理框架，专为在边缘设备上部署LLM而设计。该框架优化本地硬件上的模型，在加快响应速度、降低带宽成本的同时确保敏感数据留在设备上——对医疗和金融等隐私敏感行业意义重大。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Hits $30B Revenue Run Rate as It Expands Compute Deal with Google and Broadcom",
+        "zh": "Anthropic营收速率达300亿美元，扩展与谷歌和博通的计算合作"
+      },
+      "url": "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/",
+      "source": "TechCrunch",
+      "time": "2026-04-07",
+      "description": {
+        "en": "Anthropic's revenue run rate has surged to $30 billion, up from $9 billion at the end of 2025, as the company expands its TPU compute agreement with Google and Broadcom. The company now serves over 1,000 business customers spending over $1M annually and recently closed a $30B Series G funding round valuing it at $380 billion.",
+        "zh": "Anthropic营收速率从2025年底的90亿美元飙升至300亿美元，同时扩大与谷歌和博通的TPU计算合作。公司目前服务超过1000家年消费超百万美元的企业客户，并于近期完成300亿美元G轮融资，估值达3800亿美元。"
+      }
+    },
+    {
+      "title": {
+        "en": "US AI Companies Accuse Chinese Labs of Distilling American Models to Extract Capabilities",
+        "zh": "美国AI公司指控中国实验室通过蒸馏技术提取美国模型能力"
+      },
+      "url": "https://www.latimes.com/business/story/2026/04-07/china-is-copying-u-s-ai-models-american-companies-say-it-is-costing-them-billions-of-dollars",
+      "source": "Los Angeles Times",
+      "time": "2026-04-07",
+      "description": {
+        "en": "OpenAI, Google, and Anthropic are sharing intelligence about Chinese firms allegedly using distillation techniques to extract and reverse-engineer capabilities from American AI models. Anthropic has blocked Chinese-controlled companies from using Claude and identified DeepSeek, Moonshot, and MiniMax as illicitly extracting model capabilities. U.S. companies report measuring attack prevalence based on suspicious large-scale data requests.",
+        "zh": "OpenAI、谷歌和Anthropic正在共享情报，指称中国公司使用蒸馏技术从美国AI模型中提取并逆向工程能力。Anthropic已封锁中国控制的公司使用Claude，并点名DeepSeek、月之暗面和MiniMax非法提取模型能力。美国公司报告称正根据可疑的大规模数据请求量来衡量攻击程度。"
+      }
+    },
+    {
+      "title": {
+        "en": "Venture Capital Pour $242B into AI in Q1 2026 - 80% of All Global VC Funding",
+        "zh": "2026年第一季度风险投资向AI投入2420亿美元——占全球VC总额的80%"
+      },
+      "url": "https://www.buildez.ai/blog/ai-trending-april-2026-biggest-shifts",
+      "source": "BuildEZ",
+      "time": "2026-04-09",
+      "description": {
+        "en": "In Q1 2026, venture capitalists invested a staggering $242 billion into AI companies, representing about 80% of all global venture funding for the quarter - up from $59.6 billion in Q1 2025. The AI agent paradigm is accelerating: experts predict the first $1 million business fully run by AI agents could emerge by end of 2026. OpenAI is valued at $852 billion and Anthropic at $380 billion.",
+        "zh": "2026年第一季度，风险投资向AI公司投入惊人的2420亿美元，约占本季度全球风险投资总额的80%，远高于2025年同期的596亿美元。AI智能体范式正在加速：专家预测，到2026年底，首家完全由AI智能体运营的百万美元企业可能出现。OpenAI估值8520亿美元，Anthropic估值3800亿美元。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week's AI landscape is defined by three converging themes: frontier model capability freezes, edge inference maturation, and agentic systems going mainstream. Meta's Muse Spark debut confirms that even $14B+ investments struggle to close the gap with OpenAI/Anthropic/Google on general reasoning - Muse ranks 4th despite massive compute. The real story may be Anthropic's Claude Mythos: an AI so capable at finding zero-days that it's classified as a cybersecurity risk to release. This marks the first time a model has been deliberately restricted not for misuse by humans, but for what the model itself could discover. On the infrastructure side, Google's LiteRT-LM and Apple's entry into on-device inference signal that the battle for local AI is heating up - privacy-preserving, zero-latency inference is becoming a consumer expectation. Meanwhile, $242B in Q1 VC funding (80% of all VC) confirms AI remains the only game in town for investors, with autonomous agents as the dominant thesis. The emerging China IP dispute over model distillation adds a new geopolitical dimension to what was purely a technical competition.",
+    "zh": "本周AI领域呈现三大趋势交汇：前沿模型能力瓶颈、边缘推理成熟化、以及智能体系统走向主流。Meta的Muse Spark首秀表明，即使投资超140亿美元，在通用推理上追赶OpenAI/Anthropic/谷歌仍然艰难——Muse仍仅排名第四。真正的故事或许是Anthropic的Claude Mythos：一款因发现零日漏洞能力太强而被列为网络安全风险、无法公开发布的AI。这是史上首次因模型本身可能发现的东西而非人类滥用风险被限制发布的案例。在基础设施层面，谷歌的LiteRT-LM和苹果进入设备端推理，标志着本地AI争夺战正在升温——隐私保护、零延迟推理正成为消费者预期。同时，Q1 2420亿美元VC资金（占全部VC的80%）确认AI仍是投资者眼中唯一的游戏，自主人工智能是主导叙事。中国围绕模型蒸馏的知识产权争端为这场曾经纯粹的技术竞争增添了新的地缘政治维度。"
+  }
+}
