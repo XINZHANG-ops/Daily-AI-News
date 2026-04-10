@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 10, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 10, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Alex8791-cyber/cognithor" class="card-title" target="_blank">Alex8791-cyber/cognithor</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 387 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Cognithor - Agent OS: Local-first autonomous agent operating system with 18 LLM providers, 18 channels, 6-tier memory, 112+ MCP tools, A2A protocol, knowledge vault, voice, browser automation, computer-use, self-healing, self-improving. Apache 2.0 licensed.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Cognithor - 代理操作系统：本地优先的自主代理操作系统，支持18个LLM提供商、18个渠道、6层记忆、112+个MCP工具、A2A协议、知识库、语音、浏览器自动化、计算机使用、自我修复、自我改进。Apache 2.0许可。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/google-gemini/gemini-cli" class="card-title" target="_blank">google-gemini/gemini-cli</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 8.7k stars</div>
+                                <div class="meta-item"><span>🍴</span> 892 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An open-source AI agent that brings the power of Gemini directly into your terminal. Features 1M token context window, Google Search grounding, file operations, shell commands, web fetching, and MCP extensibility. Apache 2.0 licensed.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">将Gemini的强大功能直接带入终端的开源AI代理。具有100万token上下文窗口、Google搜索锚定、文件操作、shell命令、网页获取和MCP可扩展性。Apache 2.0许可。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/agentscope-ai/CoPaw" class="card-title" target="_blank">agentscope-ai/CoPaw</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 156 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Your Personal AI Assistant - easy to install, deploy locally or in the cloud; supports multiple chat apps (DingTalk, Feishu, WeChat, Discord, Telegram); built-in scheduling, PDF/Office processing, news digest; multi-agent collaboration with extensible skills. v1.0.2 released April 9, 2026.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">您的个人AI助手——易于安装，部署在本地或云端；支持多种聊天应用（钉钉、飞书、微信、Discord、电报）；内置日程管理、PDF/Office处理、新闻摘要；具有可扩展技能的多代理协作。v1.0.2于2026年4月9日发布。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Hacker News</span>
+                    <div class="news-time">April 8, 2026</div>
+                    <a href="https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html" class="card-title" target="_blank" data-lang="en">Anthropic's Claude Mythos Preview Discovers Thousands of Zero-Day Vulnerabilities in Project Glasswing</a>
+                    <a href="https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic Claude Mythos Preview在Project Glasswing中发现数千个零日漏洞</a>
+                    <p class="card-description" data-lang="en">Anthropic unveiled Claude Mythos Preview, an advanced AI model for cybersecurity that has discovered thousands of previously unknown zero-day vulnerabilities across major systems. Deployed through 'Project Glasswing' with 40+ partners including Microsoft, Amazon, Apple, Google, NVIDIA, CrowdStrike. Access is restricted due to unprecedented capability — discussions ongoing with CISA about cyber capabilities.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic发布了Claude Mythos Preview，这是一款高级网络安全AI模型，已在主要系统中发现数千个此前未知的零日漏洞。通过'Project Glasswing'与40多个合作伙伴（包括微软、亚马逊、苹果、谷歌、英伟达、CrowdStrike）联合部署。由于能力空前强大，访问受限——正与CISA讨论网络能力问题。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">April 7, 2026</div>
+                    <a href="https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/" class="card-title" target="_blank" data-lang="en">Anthropic Signs Massive Compute Deal with Google and Broadcom as Revenue Hits $30B Run Rate</a>
+                    <a href="https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic与Google和Broadcom签署大规模计算协议，营收运行率达300亿美元</a>
+                    <p class="card-description" data-lang="en">Anthropic has significantly expanded its compute agreement with Google and Broadcom as revenue run rate hits $30 billion, up from $9 billion at end of 2025. The company now serves 1,000+ business customers spending over $1M annually, recently closed a $30 billion Series G at $380B valuation. This massive compute deal is Anthropic's biggest infrastructure investment yet.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic大幅扩展了与Google和Broadcom的计算协议，营收运行率达到300亿美元（2025年底为90亿美元）。公司现拥有1000多个年消费超100万美元的商业客户，最近以3800亿美元估值完成了300亿美元G轮融资。这是Anthropic迄今为止最大的基础设施投资。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Bloomberg</span>
+                    <div class="news-time">April 9, 2026</div>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-09/openai-tells-investors-it-has-computing-advantage-over-anthropic" class="card-title" target="_blank" data-lang="en">OpenAI Tells Investors It Has Computing Advantage Over Anthropic as Rivalry Intensifies</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-09/openai-tells-investors-it-has-computing-advantage-over-anthropic" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI告知投资者其在计算能力上优于Anthropic，竞争加剧</a>
+                    <p class="card-description" data-lang="en">OpenAI sent a note to investors claiming computing advantage over Anthropic after Anthropic announced its massive compute deal. OpenAI emphasizes it has 'rapidly and consistently' added computing capacity to support wider adoption. The rivalry intensifies as both companies battle for positioning in the rapidly evolving LLM market.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI在Anthropic宣布大规模计算协议后，向投资者发送了一份备忘录，声称在计算能力方面优于Anthropic。OpenAI强调已'快速且一致地'增加计算能力以支持更广泛采用。随着两家公司争夺快速发展的LLM市场定位，竞争加剧。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Engadget</span>
+                    <div class="news-time">April 9, 2026</div>
+                    <a href="https://www.engadget.com/ai/google-bakes-notebooklm-its-research-tool-into-gemini-101850634.html" class="card-title" target="_blank" data-lang="en">Google Integrates NotebookLM Research Tool Directly Into Gemini Interface</a>
+                    <a href="https://www.engadget.com/ai/google-bakes-notebooklm-its-research-tool-into-gemini-101850634.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌将NotebookLM研究工具直接集成到Gemini界面</a>
+                    <p class="card-description" data-lang="en">Google has fully integrated NotebookLM, its AI-powered research assistant, directly into the Gemini chatbot interface. Users can upload PDFs, documents, website URLs, YouTube videos and create searchable information repositories. The enhanced NotebookLM can generate study guides, infographics, and audio/video overviews from uploaded sources. Rolling out to Google AI Ultra, Pro, and Plus subscribers this week.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌已将其AI驱动的研究助手NotebookLM直接集成到Gemini聊天机器人界面中。用户可以上传PDF、文档、网站URL、YouTube视频并创建可搜索信息库。增强版NotebookLM可从上传的资料中生成学习指南、信息图和音频/视频概览。本周向Google AI Ultra、Pro和Plus订阅者推出。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Next Web</span>
+                    <div class="news-time">April 8, 2026</div>
+                    <a href="https://thenextweb.com/news/meta-muse-spark-msl-first-model" class="card-title" target="_blank" data-lang="en">Meta's Muse Spark Scores Fourth on AI Benchmarks Despite Being Closed Source</a>
+                    <a href="https://thenextweb.com/news/meta-muse-spark-msl-first-model" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta的Muse Spark虽然闭源但在AI基准测试中排名第四</a>
+                    <p class="card-description" data-lang="en">Meta released Muse Spark, a closed-source AI model ranking fourth on the Artificial Analysis Intelligence Index v4.0 with a score of 52, behind Gemini 3.1 Pro Preview and GPT-5.4 (57), Claude Opus 4.6 (53). The model excels at figure understanding (86.4% on CharXiv Reasoning) and medical reasoning (42.8% on HealthBench Hard) but struggles with abstract reasoning at 42.5 on ARC AGI 2.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta发布了Muse Spark，这是一款闭源AI模型，在人工智能分析智能指数v4.0上以52分排名第四，落后于Gemini 3.1 Pro Preview和GPT-5.4（57）、Claude Opus 4.6（53）。该模型在图表理解（CharXiv Reasoning 86.4%）和医学推理（HealthBench Hard 42.8%）方面表现出色，但在ARC AGI 2的抽象推理方面仅为42.5。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Relvai</span>
+                    <div class="news-time">April 2026</div>
+                    <a href="https://www.relvai.com/blog/best-ai-news-april-2026-developments-ranked.html" class="card-title" target="_blank" data-lang="en">Microsoft's $10 Billion Japan AI Investment: Largest Single AI Infrastructure Commitment in Asia</a>
+                    <a href="https://www.relvai.com/blog/best-ai-news-april-2026-developments-ranked.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软100亿美元日本AI投资：亚洲最大单笔AI基础设施承诺</a>
+                    <p class="card-description" data-lang="en">Microsoft announced a $10 billion investment in Japan — the largest single AI infrastructure commitment by a Western tech company in Asia. Approximately $6 billion will fund data center construction across Tokyo, Osaka, and Yokohama. The remaining $4 billion targets cybersecurity infrastructure and workforce development. Microsoft plans to establish five AI research centers with leading Japanese universities.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软宣布在日本投资100亿美元——这是西方科技公司在亚洲最大单笔AI基础设施承诺。约60亿美元将用于在东京、大阪和横滨建设数据中心。剩余40亿美元用于网络安全基础设施和劳动力开发。微软计划与日本顶尖大学合作建立五个AI研究中心。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI and News</span>
+                    <div class="news-time">April 2026</div>
+                    <a href="https://www.aiandnews.com/blog/latest-ai-news-april-2026/" class="card-title" target="_blank" data-lang="en">AI Breakthrough in Drug Discovery: ML Algorithms Predict Drug Compound Effectiveness for Alzheimer's and Cancer</a>
+                    <a href="https://www.aiandnews.com/blog/latest-ai-news-april-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI药物发现突破：ML算法预测阿尔茨海默症和癌症药物化合物有效性</a>
+                    <p class="card-description" data-lang="en">Researchers revealed that machine learning algorithms have successfully predicted the effectiveness of certain drug compounds in treating diseases like Alzheimer's and cancer. This boosts hopes for rapid therapeutic development and illustrates how AI can streamline the traditionally tedious drug discovery process. These methods could drastically reduce timelines from years to mere months.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">研究人员透露，机器学习算法已成功预测某些药物化合物在治疗阿尔茨海默症和癌症等疾病方面的有效性。这提高了快速治疗开发的希望，并展示了AI如何简化传统繁琐的药物发现过程。这些方法可以将时间线从数年大幅缩短至仅数月。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">April 10, 2026 reveals the AI industry at a decisive inflection point. Anthropic's dual narrative — $30B revenue run rate AND a 'too dangerous to release' cybersecurity model — encapsulates the paradox of frontier AI: commercial success has never been higher, while the capability-safety tension has never been more acute. Claude Mythos finding 'thousands of zero-day vulnerabilities' is simultaneously a product differentiator and a national security conversation starter.
+
+The Anthropic-OpenAI rivalry has entered a new phase of compute dickering. OpenAI's investor memo claiming computing advantage over Anthropic (after Anthropic announced its massive Google/Broadcom deal) is essentially a proxy war over who gets to claim infrastructure superiority. Both companies are now in the position of having to prove their respective paths (enterprise focus vs. consumer/superapp) are more sustainable long-term.
+
+On the open-source side, three repos stand out this week as representing the democratization of AI agent capabilities: Cognithor (local-first Agent OS with 18 LLM providers and 112+ MCP tools) challenges the cloud dependency of mainstream assistants; google-gemini/gemini-cli brings Google's frontier models directly to the terminal with 1M token context; and CoPaw (from AgentScope team) enables cross-platform personal AI assistants with multi-channel support and multi-agent collaboration.
+
+The regulatory and geopolitical dimension continues to deepen — China's alleged 'distillation' of U.S. models (DeepSeek, Moonshot, MiniMax specifically named by Anthropic) adds a new layer to the AI trade war narrative. Meanwhile, Microsoft's $10B Japan bet signals that AI infrastructure competition is now explicitly a geopolitical play, not just a technology race.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年4月10日，AI行业正处于决定性转折点。Anthropic的双重叙事——300亿美元营收运行率AND'危险到无法发布'的网络安全模型——概括了前沿AI的矛盾：商业成功从未如此之高，而能力-安全张力也从未如此尖锐。Claude Mythos发现'数千个零日漏洞'既是产品差异化因素，也是国家安全对话的开端。
+
+Anthropic与OpenAI的竞争已进入计算能力较量的新阶段。OpenAI在Anthropic宣布与Google/Broadcom大规模合作协议后向投资者发送备忘录声称计算优势，实际上是围绕谁能在基础设施上声称优势的代理战争。两家公司现在都处于必须证明各自路径（企业关注vs消费者/超级应用）长期更可持续的位置。
+
+在开源方面，本周三个仓库代表了AI代理能力民主化的不同方向：Cognithor（具有18个LLM提供商和112+个MCP工具的本地优先代理操作系统）挑战了主流助手对云的依赖；google-gemini/gemini-cli通过100万token上下文将谷歌的前沿模型直接带入终端；CoPaw（来自AgentScope团队）通过多渠道支持和多代理协作实现跨平台个人AI助手。
+
+监管和地缘政治维度持续深化——中国据称对美国模型的'distillation'（Anthropic特别点名了DeepSeek、Moonshot、Minimax）为AI贸易战叙事增添了新层次。与此同时，微软100亿美元的日本赌注表明，AI基础设施竞争现在明确是一场地缘政治博弈，而不仅仅是技术竞赛。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>

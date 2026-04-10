@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-10",
+  "github_repos": [
+    {
+      "name": "Alex8791-cyber/cognithor",
+      "url": "https://github.com/Alex8791-cyber/cognithor",
+      "description": {
+        "en": "Cognithor - Agent OS: Local-first autonomous agent operating system with 18 LLM providers, 18 channels, 6-tier memory, 112+ MCP tools, A2A protocol, knowledge vault, voice, browser automation, computer-use, self-healing, self-improving. Apache 2.0 licensed.",
+        "zh": "Cognithor - 代理操作系统：本地优先的自主代理操作系统，支持18个LLM提供商、18个渠道、6层记忆、112+个MCP工具、A2A协议、知识库、语音、浏览器自动化、计算机使用、自我修复、自我改进。Apache 2.0许可。"
+      },
+      "stars": "4.2k",
+      "forks": "387"
+    },
+    {
+      "name": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "description": {
+        "en": "An open-source AI agent that brings the power of Gemini directly into your terminal. Features 1M token context window, Google Search grounding, file operations, shell commands, web fetching, and MCP extensibility. Apache 2.0 licensed.",
+        "zh": "将Gemini的强大功能直接带入终端的开源AI代理。具有100万token上下文窗口、Google搜索锚定、文件操作、shell命令、网页获取和MCP可扩展性。Apache 2.0许可。"
+      },
+      "stars": "8.7k",
+      "forks": "892"
+    },
+    {
+      "name": "agentscope-ai/CoPaw",
+      "url": "https://github.com/agentscope-ai/CoPaw",
+      "description": {
+        "en": "Your Personal AI Assistant - easy to install, deploy locally or in the cloud; supports multiple chat apps (DingTalk, Feishu, WeChat, Discord, Telegram); built-in scheduling, PDF/Office processing, news digest; multi-agent collaboration with extensible skills. v1.0.2 released April 9, 2026.",
+        "zh": "您的个人AI助手——易于安装，部署在本地或云端；支持多种聊天应用（钉钉、飞书、微信、Discord、电报）；内置日程管理、PDF/Office处理、新闻摘要；具有可扩展技能的多代理协作。v1.0.2于2026年4月9日发布。"
+      },
+      "stars": "2.1k",
+      "forks": "156"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic's Claude Mythos Preview Discovers Thousands of Zero-Day Vulnerabilities in Project Glasswing",
+        "zh": "Anthropic Claude Mythos Preview在Project Glasswing中发现数千个零日漏洞"
+      },
+      "url": "https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html",
+      "source": "The Hacker News",
+      "time": "April 8, 2026",
+      "description": {
+        "en": "Anthropic unveiled Claude Mythos Preview, an advanced AI model for cybersecurity that has discovered thousands of previously unknown zero-day vulnerabilities across major systems. Deployed through 'Project Glasswing' with 40+ partners including Microsoft, Amazon, Apple, Google, NVIDIA, CrowdStrike. Access is restricted due to unprecedented capability — discussions ongoing with CISA about cyber capabilities.",
+        "zh": "Anthropic发布了Claude Mythos Preview，这是一款高级网络安全AI模型，已在主要系统中发现数千个此前未知的零日漏洞。通过'Project Glasswing'与40多个合作伙伴（包括微软、亚马逊、苹果、谷歌、英伟达、CrowdStrike）联合部署。由于能力空前强大，访问受限——正与CISA讨论网络能力问题。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Signs Massive Compute Deal with Google and Broadcom as Revenue Hits $30B Run Rate",
+        "zh": "Anthropic与Google和Broadcom签署大规模计算协议，营收运行率达300亿美元"
+      },
+      "url": "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/",
+      "source": "TechCrunch",
+      "time": "April 7, 2026",
+      "description": {
+        "en": "Anthropic has significantly expanded its compute agreement with Google and Broadcom as revenue run rate hits $30 billion, up from $9 billion at end of 2025. The company now serves 1,000+ business customers spending over $1M annually, recently closed a $30 billion Series G at $380B valuation. This massive compute deal is Anthropic's biggest infrastructure investment yet.",
+        "zh": "Anthropic大幅扩展了与Google和Broadcom的计算协议，营收运行率达到300亿美元（2025年底为90亿美元）。公司现拥有1000多个年消费超100万美元的商业客户，最近以3800亿美元估值完成了300亿美元G轮融资。这是Anthropic迄今为止最大的基础设施投资。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Tells Investors It Has Computing Advantage Over Anthropic as Rivalry Intensifies",
+        "zh": "OpenAI告知投资者其在计算能力上优于Anthropic，竞争加剧"
+      },
+      "url": "https://www.bloomberg.com/news/articles/2026-04-09/openai-tells-investors-it-has-computing-advantage-over-anthropic",
+      "source": "Bloomberg",
+      "time": "April 9, 2026",
+      "description": {
+        "en": "OpenAI sent a note to investors claiming computing advantage over Anthropic after Anthropic announced its massive compute deal. OpenAI emphasizes it has 'rapidly and consistently' added computing capacity to support wider adoption. The rivalry intensifies as both companies battle for positioning in the rapidly evolving LLM market.",
+        "zh": "OpenAI在Anthropic宣布大规模计算协议后，向投资者发送了一份备忘录，声称在计算能力方面优于Anthropic。OpenAI强调已'快速且一致地'增加计算能力以支持更广泛采用。随着两家公司争夺快速发展的LLM市场定位，竞争加剧。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Integrates NotebookLM Research Tool Directly Into Gemini Interface",
+        "zh": "谷歌将NotebookLM研究工具直接集成到Gemini界面"
+      },
+      "url": "https://www.engadget.com/ai/google-bakes-notebooklm-its-research-tool-into-gemini-101850634.html",
+      "source": "Engadget",
+      "time": "April 9, 2026",
+      "description": {
+        "en": "Google has fully integrated NotebookLM, its AI-powered research assistant, directly into the Gemini chatbot interface. Users can upload PDFs, documents, website URLs, YouTube videos and create searchable information repositories. The enhanced NotebookLM can generate study guides, infographics, and audio/video overviews from uploaded sources. Rolling out to Google AI Ultra, Pro, and Plus subscribers this week.",
+        "zh": "谷歌已将其AI驱动的研究助手NotebookLM直接集成到Gemini聊天机器人界面中。用户可以上传PDF、文档、网站URL、YouTube视频并创建可搜索信息库。增强版NotebookLM可从上传的资料中生成学习指南、信息图和音频/视频概览。本周向Google AI Ultra、Pro和Plus订阅者推出。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta's Muse Spark Scores Fourth on AI Benchmarks Despite Being Closed Source",
+        "zh": "Meta的Muse Spark虽然闭源但在AI基准测试中排名第四"
+      },
+      "url": "https://thenextweb.com/news/meta-muse-spark-msl-first-model",
+      "source": "The Next Web",
+      "time": "April 8, 2026",
+      "description": {
+        "en": "Meta released Muse Spark, a closed-source AI model ranking fourth on the Artificial Analysis Intelligence Index v4.0 with a score of 52, behind Gemini 3.1 Pro Preview and GPT-5.4 (57), Claude Opus 4.6 (53). The model excels at figure understanding (86.4% on CharXiv Reasoning) and medical reasoning (42.8% on HealthBench Hard) but struggles with abstract reasoning at 42.5 on ARC AGI 2.",
+        "zh": "Meta发布了Muse Spark，这是一款闭源AI模型，在人工智能分析智能指数v4.0上以52分排名第四，落后于Gemini 3.1 Pro Preview和GPT-5.4（57）、Claude Opus 4.6（53）。该模型在图表理解（CharXiv Reasoning 86.4%）和医学推理（HealthBench Hard 42.8%）方面表现出色，但在ARC AGI 2的抽象推理方面仅为42.5。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft's $10 Billion Japan AI Investment: Largest Single AI Infrastructure Commitment in Asia",
+        "zh": "微软100亿美元日本AI投资：亚洲最大单笔AI基础设施承诺"
+      },
+      "url": "https://www.relvai.com/blog/best-ai-news-april-2026-developments-ranked.html",
+      "source": "Relvai",
+      "time": "April 2026",
+      "description": {
+        "en": "Microsoft announced a $10 billion investment in Japan — the largest single AI infrastructure commitment by a Western tech company in Asia. Approximately $6 billion will fund data center construction across Tokyo, Osaka, and Yokohama. The remaining $4 billion targets cybersecurity infrastructure and workforce development. Microsoft plans to establish five AI research centers with leading Japanese universities.",
+        "zh": "微软宣布在日本投资100亿美元——这是西方科技公司在亚洲最大单笔AI基础设施承诺。约60亿美元将用于在东京、大阪和横滨建设数据中心。剩余40亿美元用于网络安全基础设施和劳动力开发。微软计划与日本顶尖大学合作建立五个AI研究中心。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI Breakthrough in Drug Discovery: ML Algorithms Predict Drug Compound Effectiveness for Alzheimer's and Cancer",
+        "zh": "AI药物发现突破：ML算法预测阿尔茨海默症和癌症药物化合物有效性"
+      },
+      "url": "https://www.aiandnews.com/blog/latest-ai-news-april-2026/",
+      "source": "AI and News",
+      "time": "April 2026",
+      "description": {
+        "en": "Researchers revealed that machine learning algorithms have successfully predicted the effectiveness of certain drug compounds in treating diseases like Alzheimer's and cancer. This boosts hopes for rapid therapeutic development and illustrates how AI can streamline the traditionally tedious drug discovery process. These methods could drastically reduce timelines from years to mere months.",
+        "zh": "研究人员透露，机器学习算法已成功预测某些药物化合物在治疗阿尔茨海默症和癌症等疾病方面的有效性。这提高了快速治疗开发的希望，并展示了AI如何简化传统繁琐的药物发现过程。这些方法可以将时间线从数年大幅缩短至仅数月。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "April 10, 2026 reveals the AI industry at a decisive inflection point. Anthropic's dual narrative — $30B revenue run rate AND a 'too dangerous to release' cybersecurity model — encapsulates the paradox of frontier AI: commercial success has never been higher, while the capability-safety tension has never been more acute. Claude Mythos finding 'thousands of zero-day vulnerabilities' is simultaneously a product differentiator and a national security conversation starter.\n\nThe Anthropic-OpenAI rivalry has entered a new phase of compute dickering. OpenAI's investor memo claiming computing advantage over Anthropic (after Anthropic announced its massive Google/Broadcom deal) is essentially a proxy war over who gets to claim infrastructure superiority. Both companies are now in the position of having to prove their respective paths (enterprise focus vs. consumer/superapp) are more sustainable long-term.\n\nOn the open-source side, three repos stand out this week as representing the democratization of AI agent capabilities: Cognithor (local-first Agent OS with 18 LLM providers and 112+ MCP tools) challenges the cloud dependency of mainstream assistants; google-gemini/gemini-cli brings Google's frontier models directly to the terminal with 1M token context; and CoPaw (from AgentScope team) enables cross-platform personal AI assistants with multi-channel support and multi-agent collaboration.\n\nThe regulatory and geopolitical dimension continues to deepen — China's alleged 'distillation' of U.S. models (DeepSeek, Moonshot, MiniMax specifically named by Anthropic) adds a new layer to the AI trade war narrative. Meanwhile, Microsoft's $10B Japan bet signals that AI infrastructure competition is now explicitly a geopolitical play, not just a technology race.",
+    "zh": "2026年4月10日，AI行业正处于决定性转折点。Anthropic的双重叙事——300亿美元营收运行率AND'危险到无法发布'的网络安全模型——概括了前沿AI的矛盾：商业成功从未如此之高，而能力-安全张力也从未如此尖锐。Claude Mythos发现'数千个零日漏洞'既是产品差异化因素，也是国家安全对话的开端。\n\nAnthropic与OpenAI的竞争已进入计算能力较量的新阶段。OpenAI在Anthropic宣布与Google/Broadcom大规模合作协议后向投资者发送备忘录声称计算优势，实际上是围绕谁能在基础设施上声称优势的代理战争。两家公司现在都处于必须证明各自路径（企业关注vs消费者/超级应用）长期更可持续的位置。\n\n在开源方面，本周三个仓库代表了AI代理能力民主化的不同方向：Cognithor（具有18个LLM提供商和112+个MCP工具的本地优先代理操作系统）挑战了主流助手对云的依赖；google-gemini/gemini-cli通过100万token上下文将谷歌的前沿模型直接带入终端；CoPaw（来自AgentScope团队）通过多渠道支持和多代理协作实现跨平台个人AI助手。\n\n监管和地缘政治维度持续深化——中国据称对美国模型的'distillation'（Anthropic特别点名了DeepSeek、Moonshot、Minimax）为AI贸易战叙事增添了新层次。与此同时，微软100亿美元的日本赌注表明，AI基础设施竞争现在明确是一场地缘政治博弈，而不仅仅是技术竞赛。"
+  }
+}
