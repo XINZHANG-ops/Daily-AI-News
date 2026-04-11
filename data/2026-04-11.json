@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-11",
+  "github_repos": [
+    {
+      "name": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "description": {
+        "en": "The Ultra-Lightweight Personal AI Agent. A universal agent harness for any LLM with multi-provider support, featuring a lightweight and extensible architecture for building AI agents.",
+        "zh": "超轻量级个人AI智能体。一个通用的AI智能体框架，支持任何LLM，具有多提供商支持和轻量级可扩展架构。"
+      },
+      "stars": "39.0k",
+      "forks": "6.8k"
+    },
+    {
+      "name": "microsoft/agent-framework",
+      "url": "https://github.com/microsoft/agent-framework",
+      "description": {
+        "en": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET. Microsoft's official agent development framework.",
+        "zh": "用于构建、编排和部署AI智能体及多智能体工作流的框架，支持Python和.NET。微软官方智能体开发框架。"
+      },
+      "stars": "9.3k",
+      "forks": "1.5k"
+    },
+    {
+      "name": "sentient-agi/EvoSkill",
+      "url": "https://github.com/sentient-agi/EvoSkill",
+      "description": {
+        "en": "EvoSkill — An open-source framework that automatically discovers and synthesizes reusable agent skills from failed trajectories to improve coding agent performance using GEPA/DSPy-style self-improvement algorithms.",
+        "zh": "EvoSkill——一个开源框架，通过从失败轨迹中自动发现和合成可复用的智能体技能来提升编码智能体性能，使用GEPA/DSPy风格的自改进算法。"
+      },
+      "stars": "430",
+      "forks": "39"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic's Claude Mythos Preview Discovers Thousands of Zero-Day Vulnerabilities in Project Glasswing",
+        "zh": "Anthropic Claude Mythos预览版在Project Glasswing中发现数千个零日漏洞"
+      },
+      "url": "https://www.anthropic.com/glasswing",
+      "source": "Anthropic / The Hacker News",
+      "time": "2026-04-08",
+      "description": {
+        "en": "Anthropic unveiled Claude Mythos Preview, a cybersecurity AI model that discovered thousands of zero-day vulnerabilities including a 27-year-old bug in OpenBSD. The company assembled a coalition of 40+ partners including Apple, Google, Microsoft, and NVIDIA to share defensive insights. Scored 93.9% on SWE-bench Verified and committed $100 million in credits to fix vulnerabilities.",
+        "zh": "Anthropic发布了Claude Mythos预览版网络安全AI模型，发现了包括OpenBSD中一个存在27年的漏洞在内的数千个零日漏洞。该公司召集了包括苹果、谷歌、微软和英伟达在内的40多个合作伙伴组成的联盟来分享防御见解。在SWE-bench Verified上获得93.9%的分数，并承诺投入1亿美元信用额度来修复漏洞。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI, Anthropic, and Google Form Joint Coalition to Counter Chinese Model Distillation",
+        "zh": "OpenAI、Anthropic和Google成立联合联盟对抗中国模型蒸馏"
+      },
+      "url": "https://www.latimes.com/business/story/2026-04-07/china-is-copying-u-s-ai-models",
+      "source": "LA Times / TechCrunch",
+      "time": "2026-04-07",
+      "description": {
+        "en": "Major U.S. AI companies accused Chinese labs including DeepSeek, Moonshot, and MiniMax of using 'distillation' techniques to extract capabilities from American AI models. The coalition announced joint efforts to detect and counter unauthorized distillation attempts, with Anthropic blocking Chinese-controlled companies from using Claude.",
+        "zh": "主要美国AI公司指控中国实验室包括DeepSeek、月之暗面和MiniMax使用\"蒸馏\"技术从美国AI模型中提取能力。该联盟宣布共同努力检测和反击未授权的蒸馏尝试，Anthropic已屏蔽中国控制的公司使用Claude。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Hits $30B Revenue Run Rate, Signs Massive Compute Deal with Google and Broadcom",
+        "zh": "Anthropic达到300亿美元年收入运行率，与Google和Broadcom签署大规模计算协议"
+      },
+      "url": "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/",
+      "source": "TechCrunch",
+      "time": "2026-04-07",
+      "description": {
+        "en": "Anthropic's revenue run rate has skyrocketed to $30 billion, up from $9 billion at end of 2025, serving 1,000+ business customers spending over $1M annually. The company closed a $30 billion Series G funding round at $380 billion valuation and signed its biggest infrastructure investment deal with Google and Broadcom for increased TPU compute capacity.",
+        "zh": "Anthropic的年收入运行率急剧攀升至300亿美元，而2025年底为90亿美元，服务于1000多家年消费超过100万美元的商业客户。该公司完成了估值380亿美元的300亿美元G轮融资，并与Google和Broadcom签署了其最大的基础设施投资协议，以增加TPU计算能力。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Integrates NotebookLM Research Tool Directly Into Gemini Interface",
+        "zh": "Google将NotebookLM研究工具直接集成到Gemini界面"
+      },
+      "url": "https://www.engadget.com/ai/google-bakes-notebooklm-its-research-tool-into-gemini-101850634.html",
+      "source": "Engadget",
+      "time": "2026-04-09",
+      "description": {
+        "en": "Google fully integrated NotebookLM, its AI-powered research assistant, directly into the Gemini chatbot interface. Users can now upload PDFs, documents, website URLs, YouTube videos and generate study guides, infographics, and audio/video overviews from uploaded sources. Feature rolling out to AI Ultra, Pro, and Plus subscribers.",
+        "zh": "Google将其AI驱动的研究助手NotebookLM直接集成到Gemini聊天机器人界面中。用户现在可以上传PDF、文档、网站URL、YouTube视频，并从上传的来源生成学习指南、信息图和音频/视频概述。该功能正在向AI Ultra、Pro和Plus订阅用户推出。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Releases Muse Spark Closed-Source AI Model, Ranks 4th on AI Benchmarks",
+        "zh": "Meta发布闭源AI模型Muse Spark，在AI基准测试中排名第四"
+      },
+      "url": "https://thenextweb.com/news/meta-muse-spark-msl-first-model",
+      "source": "The Next Web",
+      "time": "2026-04-08",
+      "description": {
+        "en": "Meta released Muse Spark, a closed-source AI model ranking 4th on the Artificial Analysis Intelligence Index v4.0 with a score of 52. The model excels at figure understanding (86.4% on CharXiv Reasoning) and medical reasoning (42.8% on HealthBench Hard) but struggles with abstract reasoning at 42.5 on ARC AGI 2. Features parallel sub-agent architecture with 'Contemplating mode' for complex tasks.",
+        "zh": "Meta发布了Muse Spark，这是一款闭源AI模型，在人工智能分析智能指数v4.0上以52分排名第四。该模型在图表理解（CharXiv推理86.4%）和医学推理（HealthBench Hard 42.8%）方面表现出色，但在ARC AGI 2的抽象推理方面仅为42.5。具有并行子智能体架构和\"思考模式\"来处理复杂任务。"
+      }
+    },
+    {
+      "title": {
+        "en": "Neuromorphic Computers Now Solve Complex Physics Simulations Once Limited to Supercomputers",
+        "zh": "神经形态计算机现在可以解决曾仅限于超级计算机的复杂物理模拟"
+      },
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+      "source": "ScienceDaily",
+      "time": "2026-04-10",
+      "description": {
+        "en": "Researchers demonstrated that neuromorphic computers modeled after the human brain can now solve the complex equations behind physics simulations—something once thought possible only with energy-hungry supercomputers. This breakthrough enables energy-efficient computation for previously intractable scientific problems.",
+        "zh": "研究人员证明，受人脑启发的神经形态计算机现在可以解决物理模拟背后的复杂方程——这曾经被认为只有耗能巨大的超级计算机才能实现。这一突破使得处理以前无法解决的科学问题的能效计算成为可能。"
+      }
+    },
+    {
+      "title": {
+        "en": "MiniMax M2.7 Introduces Self-Evolving Training Approach for Continuous Improvement",
+        "zh": "MiniMax M2.7引入自进化训练方法实现持续改进"
+      },
+      "url": "https://renovateqr.com/blog/ai-models-april-2026",
+      "source": "RenovateQR",
+      "time": "2026-04-09",
+      "description": {
+        "en": "MiniMax released M2.7 in early April 2026, introducing a 'self-evolving' training approach where the model continuously improves through interaction rather than static training. This marks a shift toward models that can adapt and improve themselves over time without human retraining intervention.",
+        "zh": "MiniMax于2026年4月初发布了M2.7，引入了\"自进化\"训练方法，模型通过交互而非静态训练持续改进。这标志着模型向能够自我适应和自我改进的方向转变，无需人工再训练干预。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week's AI landscape reveals a pivotal shift from capability expansion to governance and infrastructure maturation. Anthropic's Project Glasswing represents a watershed moment—frontier AI has crossed a threshold where autonomous vulnerability discovery outpaces human defenders, forcing unprecedented industry coalitions. The $30B revenue run rate underscores how quickly enterprise AI adoption has accelerated, while the OpenAI-Anthropic-Google distillation coalition signals that IP protection is becoming as critical as model performance. Meanwhile, neuromorphic computing advances suggest the next computational frontier may not be bigger GPUs but brain-inspired architectures. Self-evolving models like MiniMax M2.7 point to a future where models improve themselves—raising profound questions about oversight and control. The week's most understated story may be Google's NotebookLM integration: making research assistants native to everyday tools accelerates the commoditization of AI research capabilities.",
+    "zh": "本周的AI领域呈现从能力扩展到治理和基础设施成熟的关键转变。Anthropic的Project Glasswing代表了一个分水岭——前沿AI已经跨越了一个阈值，自主漏洞发现的速度超过了人类防御者，迫使形成前所未有的行业联盟。300亿美元的年收入运行率凸显了企业AI采用速度加快得有多快，而OpenAI-Anthropic-Google蒸馏联盟表明，知识产权保护正变得与模型性能同等重要。与此同时，神经形态计算的进步表明，下一个计算前沿可能不是更大的GPU，而是受大脑启发的架构。像MiniMax M2.7这样的自进化模型指向了模型自我改进的未来——引发了关于监督和控制的深刻问题。本周最被低估的故事可能是Google的NotebookLM集成：使研究助手成为日常工具的原生功能，加速了AI研究能力的商品化。"
+  }
+}

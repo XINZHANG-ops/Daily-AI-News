@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 11, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 11, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/HKUDS/nanobot" class="card-title" target="_blank">HKUDS/nanobot</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 39.0k stars</div>
+                                <div class="meta-item"><span>🍴</span> 6.8k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">The Ultra-Lightweight Personal AI Agent. A universal agent harness for any LLM with multi-provider support, featuring a lightweight and extensible architecture for building AI agents.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">超轻量级个人AI智能体。一个通用的AI智能体框架，支持任何LLM，具有多提供商支持和轻量级可扩展架构。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/microsoft/agent-framework" class="card-title" target="_blank">microsoft/agent-framework</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 9.3k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.5k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET. Microsoft's official agent development framework.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">用于构建、编排和部署AI智能体及多智能体工作流的框架，支持Python和.NET。微软官方智能体开发框架。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/sentient-agi/EvoSkill" class="card-title" target="_blank">sentient-agi/EvoSkill</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 430 stars</div>
+                                <div class="meta-item"><span>🍴</span> 39 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">EvoSkill — An open-source framework that automatically discovers and synthesizes reusable agent skills from failed trajectories to improve coding agent performance using GEPA/DSPy-style self-improvement algorithms.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">EvoSkill——一个开源框架，通过从失败轨迹中自动发现和合成可复用的智能体技能来提升编码智能体性能，使用GEPA/DSPy风格的自改进算法。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Anthropic / The Hacker News</span>
+                    <div class="news-time">2026-04-08</div>
+                    <a href="https://www.anthropic.com/glasswing" class="card-title" target="_blank" data-lang="en">Anthropic's Claude Mythos Preview Discovers Thousands of Zero-Day Vulnerabilities in Project Glasswing</a>
+                    <a href="https://www.anthropic.com/glasswing" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic Claude Mythos预览版在Project Glasswing中发现数千个零日漏洞</a>
+                    <p class="card-description" data-lang="en">Anthropic unveiled Claude Mythos Preview, a cybersecurity AI model that discovered thousands of zero-day vulnerabilities including a 27-year-old bug in OpenBSD. The company assembled a coalition of 40+ partners including Apple, Google, Microsoft, and NVIDIA to share defensive insights. Scored 93.9% on SWE-bench Verified and committed $100 million in credits to fix vulnerabilities.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic发布了Claude Mythos预览版网络安全AI模型，发现了包括OpenBSD中一个存在27年的漏洞在内的数千个零日漏洞。该公司召集了包括苹果、谷歌、微软和英伟达在内的40多个合作伙伴组成的联盟来分享防御见解。在SWE-bench Verified上获得93.9%的分数，并承诺投入1亿美元信用额度来修复漏洞。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">LA Times / TechCrunch</span>
+                    <div class="news-time">2026-04-07</div>
+                    <a href="https://www.latimes.com/business/story/2026-04-07/china-is-copying-u-s-ai-models" class="card-title" target="_blank" data-lang="en">OpenAI, Anthropic, and Google Form Joint Coalition to Counter Chinese Model Distillation</a>
+                    <a href="https://www.latimes.com/business/story/2026-04-07/china-is-copying-u-s-ai-models" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI、Anthropic和Google成立联合联盟对抗中国模型蒸馏</a>
+                    <p class="card-description" data-lang="en">Major U.S. AI companies accused Chinese labs including DeepSeek, Moonshot, and MiniMax of using 'distillation' techniques to extract capabilities from American AI models. The coalition announced joint efforts to detect and counter unauthorized distillation attempts, with Anthropic blocking Chinese-controlled companies from using Claude.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">主要美国AI公司指控中国实验室包括DeepSeek、月之暗面和MiniMax使用"蒸馏"技术从美国AI模型中提取能力。该联盟宣布共同努力检测和反击未授权的蒸馏尝试，Anthropic已屏蔽中国控制的公司使用Claude。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-04-07</div>
+                    <a href="https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/" class="card-title" target="_blank" data-lang="en">Anthropic Hits $30B Revenue Run Rate, Signs Massive Compute Deal with Google and Broadcom</a>
+                    <a href="https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic达到300亿美元年收入运行率，与Google和Broadcom签署大规模计算协议</a>
+                    <p class="card-description" data-lang="en">Anthropic's revenue run rate has skyrocketed to $30 billion, up from $9 billion at end of 2025, serving 1,000+ business customers spending over $1M annually. The company closed a $30 billion Series G funding round at $380 billion valuation and signed its biggest infrastructure investment deal with Google and Broadcom for increased TPU compute capacity.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic的年收入运行率急剧攀升至300亿美元，而2025年底为90亿美元，服务于1000多家年消费超过100万美元的商业客户。该公司完成了估值380亿美元的300亿美元G轮融资，并与Google和Broadcom签署了其最大的基础设施投资协议，以增加TPU计算能力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Engadget</span>
+                    <div class="news-time">2026-04-09</div>
+                    <a href="https://www.engadget.com/ai/google-bakes-notebooklm-its-research-tool-into-gemini-101850634.html" class="card-title" target="_blank" data-lang="en">Google Integrates NotebookLM Research Tool Directly Into Gemini Interface</a>
+                    <a href="https://www.engadget.com/ai/google-bakes-notebooklm-its-research-tool-into-gemini-101850634.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google将NotebookLM研究工具直接集成到Gemini界面</a>
+                    <p class="card-description" data-lang="en">Google fully integrated NotebookLM, its AI-powered research assistant, directly into the Gemini chatbot interface. Users can now upload PDFs, documents, website URLs, YouTube videos and generate study guides, infographics, and audio/video overviews from uploaded sources. Feature rolling out to AI Ultra, Pro, and Plus subscribers.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google将其AI驱动的研究助手NotebookLM直接集成到Gemini聊天机器人界面中。用户现在可以上传PDF、文档、网站URL、YouTube视频，并从上传的来源生成学习指南、信息图和音频/视频概述。该功能正在向AI Ultra、Pro和Plus订阅用户推出。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Next Web</span>
+                    <div class="news-time">2026-04-08</div>
+                    <a href="https://thenextweb.com/news/meta-muse-spark-msl-first-model" class="card-title" target="_blank" data-lang="en">Meta Releases Muse Spark Closed-Source AI Model, Ranks 4th on AI Benchmarks</a>
+                    <a href="https://thenextweb.com/news/meta-muse-spark-msl-first-model" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta发布闭源AI模型Muse Spark，在AI基准测试中排名第四</a>
+                    <p class="card-description" data-lang="en">Meta released Muse Spark, a closed-source AI model ranking 4th on the Artificial Analysis Intelligence Index v4.0 with a score of 52. The model excels at figure understanding (86.4% on CharXiv Reasoning) and medical reasoning (42.8% on HealthBench Hard) but struggles with abstract reasoning at 42.5 on ARC AGI 2. Features parallel sub-agent architecture with 'Contemplating mode' for complex tasks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta发布了Muse Spark，这是一款闭源AI模型，在人工智能分析智能指数v4.0上以52分排名第四。该模型在图表理解（CharXiv推理86.4%）和医学推理（HealthBench Hard 42.8%）方面表现出色，但在ARC AGI 2的抽象推理方面仅为42.5。具有并行子智能体架构和"思考模式"来处理复杂任务。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">ScienceDaily</span>
+                    <div class="news-time">2026-04-10</div>
+                    <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" class="card-title" target="_blank" data-lang="en">Neuromorphic Computers Now Solve Complex Physics Simulations Once Limited to Supercomputers</a>
+                    <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" class="card-title" target="_blank" data-lang="zh" style="display: none;">神经形态计算机现在可以解决曾仅限于超级计算机的复杂物理模拟</a>
+                    <p class="card-description" data-lang="en">Researchers demonstrated that neuromorphic computers modeled after the human brain can now solve the complex equations behind physics simulations—something once thought possible only with energy-hungry supercomputers. This breakthrough enables energy-efficient computation for previously intractable scientific problems.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">研究人员证明，受人脑启发的神经形态计算机现在可以解决物理模拟背后的复杂方程——这曾经被认为只有耗能巨大的超级计算机才能实现。这一突破使得处理以前无法解决的科学问题的能效计算成为可能。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">RenovateQR</span>
+                    <div class="news-time">2026-04-09</div>
+                    <a href="https://renovateqr.com/blog/ai-models-april-2026" class="card-title" target="_blank" data-lang="en">MiniMax M2.7 Introduces Self-Evolving Training Approach for Continuous Improvement</a>
+                    <a href="https://renovateqr.com/blog/ai-models-april-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">MiniMax M2.7引入自进化训练方法实现持续改进</a>
+                    <p class="card-description" data-lang="en">MiniMax released M2.7 in early April 2026, introducing a 'self-evolving' training approach where the model continuously improves through interaction rather than static training. This marks a shift toward models that can adapt and improve themselves over time without human retraining intervention.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">MiniMax于2026年4月初发布了M2.7，引入了"自进化"训练方法，模型通过交互而非静态训练持续改进。这标志着模型向能够自我适应和自我改进的方向转变，无需人工再训练干预。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week's AI landscape reveals a pivotal shift from capability expansion to governance and infrastructure maturation. Anthropic's Project Glasswing represents a watershed moment—frontier AI has crossed a threshold where autonomous vulnerability discovery outpaces human defenders, forcing unprecedented industry coalitions. The $30B revenue run rate underscores how quickly enterprise AI adoption has accelerated, while the OpenAI-Anthropic-Google distillation coalition signals that IP protection is becoming as critical as model performance. Meanwhile, neuromorphic computing advances suggest the next computational frontier may not be bigger GPUs but brain-inspired architectures. Self-evolving models like MiniMax M2.7 point to a future where models improve themselves—raising profound questions about oversight and control. The week's most understated story may be Google's NotebookLM integration: making research assistants native to everyday tools accelerates the commoditization of AI research capabilities.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周的AI领域呈现从能力扩展到治理和基础设施成熟的关键转变。Anthropic的Project Glasswing代表了一个分水岭——前沿AI已经跨越了一个阈值，自主漏洞发现的速度超过了人类防御者，迫使形成前所未有的行业联盟。300亿美元的年收入运行率凸显了企业AI采用速度加快得有多快，而OpenAI-Anthropic-Google蒸馏联盟表明，知识产权保护正变得与模型性能同等重要。与此同时，神经形态计算的进步表明，下一个计算前沿可能不是更大的GPU，而是受大脑启发的架构。像MiniMax M2.7这样的自进化模型指向了模型自我改进的未来——引发了关于监督和控制的深刻问题。本周最被低估的故事可能是Google的NotebookLM集成：使研究助手成为日常工具的原生功能，加速了AI研究能力的商品化。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
