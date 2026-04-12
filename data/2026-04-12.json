@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-12",
+  "github_repos": [
+    {
+      "name": "safishamsi/graphify",
+      "url": "https://github.com/safishamsi/graphify",
+      "description": {
+        "en": "AI coding assistant skill that turns any folder of code, docs, papers, images, videos, or YouTube links into a queryable knowledge graph. Uses AST parsing + Whisper transcription + Claude subagents to build interactive graphs with community detection.",
+        "zh": "AI编码助手技能，可将任意文件夹中的代码、文档、论文、图片、视频或YouTube链接转换为可查询的知识图谱。使用AST解析+Whisper转录+Claude子代理构建带社区检测的交互式图谱。"
+      },
+      "stars": "22.7k",
+      "forks": "2.3k"
+    },
+    {
+      "name": "ultraworkers/claw-code",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "description": {
+        "en": "Open-source Rust implementation of the Claude Code agent harness — a clean-room rewrite built in Python and Rust. The fastest repo in GitHub history to surpass 100K stars. Multi-agent orchestration, tool-calling, and terminal-native AI development.",
+        "zh": "Claude Code代理框架的开源Rust实现——使用Python和Rust进行的干净室重写。是GitHub历史上增长最快的仓库，超越10万星。多代理编排、工具调用和终端原生AI开发。"
+      },
+      "stars": "181.9k",
+      "forks": "107.4k"
+    },
+    {
+      "name": "caramaschiHG/awesome-ai-agents-2026",
+      "url": "https://github.com/caramaschiHG/awesome-ai-agents-2026",
+      "description": {
+        "en": "The most comprehensive curated list of AI agents, frameworks & tools in 2026. 340+ resources across 20+ categories including coding agents, agent frameworks, browser agents, voice agents, creative AI, and protocols. Updated monthly.",
+        "zh": "2026年最全面的AI代理、框架和工具精选列表。340+资源覆盖20+类别，包括编码代理、代理框架、浏览器代理、语音代理、创意AI和协议。每月更新。"
+      },
+      "stars": "284",
+      "forks": "127"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic's Mythos Model Sparks Emergency Government Calls with Tech & Finance CEOs",
+        "zh": "Anthropic的Mythos模型引发政府紧急召开科技和金融CEO会议"
+      },
+      "url": "https://www.cnbc.com/2026/04/10/trump-white-house-ai-cyber-threat-anthropic-mythos.html",
+      "source": "CNBC",
+      "time": "April 10, 2026",
+      "description": {
+        "en": "VP JD Vance and Treasury Secretary Scott Bessent held calls with CEOs of Google, Microsoft, OpenAI, xAI, CrowdStrike and others to discuss the security implications of Anthropic's Mythos model. The model was so capable that Anthropic restricted access to ~40 major tech companies. Powell and Bessent also convened Wall Street bank CEOs over cyber risk concerns.",
+        "zh": "美国副总统万斯和财政部长贝森特与谷歌、微软、OpenAI、xAI、CrowdStrike等公司的CEO通话，讨论Anthropic的Mythos模型的安全问题。该模型能力过于强大，Anthropic限制其仅向约40家主要科技公司开放。鲍威尔和贝森特还召集华尔街银行CEO讨论网络安全风险。"
+      }
+    },
+    {
+      "title": {
+        "en": "Yann LeCun's AMI Labs Raises Record $1.03 Billion to Build World Models",
+        "zh": "Yann LeCun创立的AMI Labs融资10.3亿美元建设世界模型"
+      },
+      "url": "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/",
+      "source": "TechCrunch",
+      "time": "March 9, 2026",
+      "description": {
+        "en": "Turing Award winner Yann LeCun's AMI Labs raised €890 million ($1.03B) at a $3.5B pre-money valuation — Europe's largest seed round ever. Backed by Nvidia, Mark Cuban, Eric Schmidt, Jeff Bezos and others. Working on JEPA-based world models that learn from reality, not just language. First partner is health startup Nabla.",
+        "zh": "图灵奖得主Yann LeCun创立的AMI Labs以35亿美元投前估值融资8.9亿欧元（10.3亿美元）——这是欧洲有史以来最大的种子轮。由Nvidia、马克·库班、埃里克·施密特、杰夫·贝索斯等人支持。正在开发基于JEPA的世界模型，从现实中学习而非仅从语言学习。首个合作伙伴是健康创业公司Nabla。"
+      }
+    },
+    {
+      "title": {
+        "en": "Alibaba's Qwen 3.6-Plus Tops Global Usage Charts on Debut",
+        "zh": "阿里巴巴Qwen 3.6-Plus发布首日登顶全球使用量榜首"
+      },
+      "url": "https://www.globaltimes.cn/page/202604/1358204.shtml",
+      "source": "Global Times",
+      "time": "April 4, 2026",
+      "description": {
+        "en": "Alibaba released Qwen3.6-Plus featuring 1M context window, agentic coding performance competitive with Claude 4.5 Opus, and enhanced multimodal capabilities. Quietly dropped as free preview on OpenRouter March 30-31, formally announced April 2. Tops global usage charts on debut, with new Chinese AI models ranking among world's leading benchmarks.",
+        "zh": "阿里巴巴发布Qwen3.6-Plus，具备100万上下文窗口、与Claude 4.5 Opus竞争的代理编码性能及增强的多模态能力。3月30-31日在OpenRouter上以免费预览版低调上线，4月2日正式发布。首日登顶全球使用量榜首，中国AI模型新系列跻身全球领先基准测试。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Releases Gemini CLI as Official Open-Source Terminal Agent",
+        "zh": "Google发布Gemini CLI作为官方开源终端代理"
+      },
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "source": "GitHub / Google",
+      "time": "April 2026",
+      "description": {
+        "en": "Google's official open-source terminal agent released this month with ReAct loop, MCP support, 1M context window, and Apache 2.0 license. Added to the awesome-ai-agents-2026 list as a major new entrant in the terminal coding agent space alongside Claude Code, Codex, and Aider.",
+        "zh": "Google官方开源终端代理本月发布，具备ReAct循环、MCP支持、100万上下文窗口和Apache 2.0许可。作为重要新成员被列入awesome-ai-agents-2026列表，与Claude Code、Codex和Aider并列于终端编码代理领域。"
+      }
+    },
+    {
+      "title": {
+        "en": "MCP Crosses 97 Million Installs, Becomes Foundational AI Agent Infrastructure",
+        "zh": "MCP突破9700万安装量，成为AI代理基础架构"
+      },
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+      "source": "Crescendo AI",
+      "time": "March 2026",
+      "description": {
+        "en": "Anthropic's Model Context Protocol crossed 97 million installs in March 2026, a milestone signaling its transition from experimental standard to foundational infrastructure. Donated to Linux Foundation, adopted by Anthropic, OpenAI, Microsoft, and Google. Now the dominant protocol for building AI agents.",
+        "zh": "Anthropic的模型上下文协议在2026年3月突破9700万安装量，标志其从实验性标准向基础架构的转变。已捐赠给Linux基金会，被Anthropic、OpenAI、微软和谷歌采用。现已成为构建AI代理的主导协议。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI Drug Discovery Breakthrough: ML Predicts Drug Compound Effectiveness in Months",
+        "zh": "AI药物发现突破：机器学习在数月内预测化合物有效性"
+      },
+      "url": "https://www.aiandnews.com/blog/latest-ai-news-april-2026/",
+      "source": "AI and News",
+      "time": "April 2026",
+      "description": {
+        "en": "Researchers revealed that machine learning algorithms have successfully predicted the effectiveness of drug compounds in treating Alzheimer's and cancer. These methods could drastically reduce drug discovery timelines from years to mere months, revolutionizing therapeutic development and offering hope for rapid treatment advances.",
+        "zh": "研究人员揭示，机器学习算法已成功预测药物化合物在治疗阿尔茨海默症和癌症方面的有效性。这些方法可将药物发现时间从数年大幅缩短至数月，彻底改变治疗开发流程，为快速治疗进展带来希望。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Surpasses $25B Annualized Revenue, Reportedly Explores 2026 IPO",
+        "zh": "OpenAI年化收入超250亿美元，据报道正探索2026年上市"
+      },
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+      "source": "Crescendo AI",
+      "time": "April 2026",
+      "description": {
+        "en": "OpenAI has surpassed $25 billion in annualized revenue and is reportedly taking early steps toward a public listing, potentially as soon as late 2026. Rival Anthropic is approaching $19 billion in annualized revenue. The AI industry continues its rapid commercial trajectory.",
+        "zh": "OpenAI年化收入已超250亿美元，据报道正采取初步措施准备公开上市，最早可能在2026年底。竞争对手Anthropic的年化收入接近190亿美元。AI行业持续快速商业化发展。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week the AI industry grappled with its most profound tension yet: capability vs. safety. Anthropic's Mythos model was so capable that it triggered emergency government calls at the highest levels — VP Vance and Treasury Secretary Bessent convening tech CEOs, followed by Powell and bank CEOs. The \"SaaSpocalypse\" narrative intensified as the model also caused a ~$2T enterprise software selloff. Meanwhile, the open-source ecosystem continues its explosive growth: Claw Code hit 100K stars in record time as a clean-room Claude Code rewrite, graphify turned codebases into queryable knowledge graphs and crossed 22K stars in just 9 days, and Google's Gemini CLI entered the terminal agent race. The big funding news — Yann LeCun's AMI Labs at $1.03B — signals that 'world models' (AI learning from reality, not language) may be the next frontier, with backers including Nvidia, Bezos, and Schmidt. On the model front, Alibaba's Qwen3.6-Plus debuting at the top of global usage charts reinforces the trend of Chinese AI labs matching or exceeding Western frontier models. MCP's 97M installs and Linux Foundation donation confirm it as the dominant agent protocol. Key theme: 2026 is seeing rapid consolidation around agentic architectures, while fundamental research into world models represents the next battleground.",
+    "zh": "本周AI行业面临最深刻的对峙：能力与安全。Anthropic的Mythos模型能力过于强大，引发最高级别的政府紧急会议——副总统万斯和财政部长贝森特召集科技CEO，随后鲍威尔和银行CEO参与讨论。\"SaaSpocalypse\"论调加剧，该模型还导致企业软件股约2万亿美元的抛售。与此同时，开源生态系统持续爆发式增长：Claw Code作为Claude Code的干净室重写以创纪录速度突破10万星，graphify将代码库转换为可查询知识图谱并在短短9天内超越2.2万星，谷歌的Gemini CLI则进入终端代理战场。重大融资消息——LeCun的AMI Labs获得10.3亿美元——表明\"世界模型\"（从现实中学习而非仅从语言学习的AI）可能成为下一个前沿，投资方包括Nvidia、贝索斯和施密特。在模型方面，阿里巴巴Qwen3.6-Plus首日登顶全球使用量榜首，印证了中国AI实验室正在匹配或超越西方前沿模型的趋势。MCP的9700万安装量和Linux基金会捐赠确认其作为主导代理协议的地位。核心主题：2026年代理架构快速整合，同时围绕世界模型的基础研究代表下一个战场。"
+  }
+}
