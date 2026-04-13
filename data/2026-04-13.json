@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-13",
+  "github_repos": [
+    {
+      "name": "Xiangyue-Zhang/auto-deep-researcher-24x7",
+      "url": "https://github.com/Xiangyue-Zhang/auto-deep-researcher-24x7",
+      "description": {
+        "en": "An autonomous AI agent that runs your deep learning experiments 24/7 while you sleep. Zero-cost monitoring, Leader-Worker architecture, constant-size memory.",
+        "zh": "一个自主AI智能体，能在你睡觉时全天候运行深度学习实验。零成本监控、领袖-工作者架构、恒定大小的内存。"
+      },
+      "stars": "344",
+      "forks": "24"
+    },
+    {
+      "name": "ReflexioAI/reflexio",
+      "url": "https://github.com/ReflexioAI/reflexio",
+      "description": {
+        "en": "Make your agents improve themselves. Reflexio is an agent self-improvement platform that turns every conversation your AI agent has into a learning opportunity.",
+        "zh": "让你的智能体自我提升。Reflexio是一个智能体自我改进平台，将AI智能体的每次对话都转化为学习机会。"
+      },
+      "stars": "37",
+      "forks": "1"
+    },
+    {
+      "name": "studyield/studyield",
+      "url": "https://github.com/studyield/studyield",
+      "description": {
+        "en": "Open-source AI learning platform with exam cloning, multi-agent problem solving, knowledge graphs, and teach-back evaluation. Self-hosted, 12 languages, web + mobile.",
+        "zh": "开源AI学习平台，支持考试克隆、多智能体问题解决、知识图谱和教学评估。自托管，支持12种语言，网页+移动端。"
+      },
+      "stars": "11",
+      "forks": "7"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Withholds Claude Mythos Preview, Launches Project Glasswing with Tech Giants",
+        "zh": "Anthropic保留Claude Mythos预览版不发，推出Project Glasswing联合科技巨头"
+      },
+      "url": "https://www.anthropic.com/glasswing",
+      "source": "Anthropic",
+      "time": "April 7, 2026",
+      "description": {
+        "en": "Anthropic released Claude Mythos Preview with dramatic cybersecurity capabilities but chose not to make it publicly available. Instead, the company launched Project Glasswing—a consortium including Microsoft, Apple, Amazon, Google, and others—committed $100M in usage credits to identify and patch vulnerabilities in critical software.",
+        "zh": "Anthropic发布了具有强大网络安全能力的Claude Mythos预览版，但决定不公开发布。相反，公司推出了Project Glasswing——一个包含微软、苹果、亚马逊、谷歌等公司的联盟，承诺投入1亿美元使用额度用于识别和修补关键软件中的漏洞。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI's Codex Reaches 3 Million Weekly Users, Launches $100 ChatGPT Pro Tier",
+        "zh": "OpenAI的Codex达到300万周活跃用户，推出100美元ChatGPT Pro套餐"
+      },
+      "url": "https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic",
+      "source": "The Verge",
+      "time": "April 8, 2026",
+      "description": {
+        "en": "OpenAI announced its coding agent Codex has reached 3 million weekly active users, up from 2 million weeks earlier—representing 70% month-over-month growth. The company launched a new $100 ChatGPT Pro tier with 5x Codex access to compete with Claude Max.",
+        "zh": "OpenAI宣布其编码智能体Codex已达到300万周活跃用户，较几周前的200万增长70%。公司推出了新的100美元ChatGPT Pro套餐，提供5倍的Codex访问权限以与Claude Max竞争。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Breaks Open Source Tradition with Proprietary Muse Spark Model",
+        "zh": "Meta打破开源传统，推出专有的Muse Spark模型"
+      },
+      "url": "https://www.trendingtopics.eu/metas-comeback-muse-spark-puts-zuckerberg-back-in-the-ai-race-breaks-with-open-source/",
+      "source": "Trending Topics",
+      "time": "April 8, 2026",
+      "description": {
+        "en": "Meta released Muse Spark as its first proprietary model, breaking with the open-source strategy that earned developer loyalty since 2023. The model scored 52 on the Artificial Analysis Intelligence Index, competitive with OpenAI, Google, and Anthropic offerings.",
+        "zh": "Meta发布了Muse Spark作为其首个专有模型，打破了自2023年以来赢得开发者忠诚度的开源策略。该模型在人工智能分析智能指数上得分为52，与OpenAI、谷歌和Anthropic的产品具有竞争力。"
+      }
+    },
+    {
+      "title": {
+        "en": "UK Regulators Rush to Assess Risks of Anthropic's Latest AI Model",
+        "zh": "英国监管机构紧急评估Anthropic最新AI模型的风险"
+      },
+      "url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "source": "Reuters",
+      "time": "April 11, 2026",
+      "description": {
+        "en": "UK regulators are accelerating assessments of the risks posed by Anthropic's newest frontier model, following reports about its powerful cybersecurity capabilities. The FT reported that government officials are closely monitoring the situation as the model demonstrates unprecedented vulnerability discovery abilities.",
+        "zh": "英国监管机构正在加速评估Anthropic最新前沿模型的风险，此前有报道称其具有强大的网络安全能力。金融时报报道，政府官员正在密切监视局势，因为该模型展现出前所未有的漏洞发现能力。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Releases Gemma 4 with Four Variants Up to 31B Parameters",
+        "zh": "谷歌发布Gemma 4，四个变体参数最高达310亿"
+      },
+      "url": "https://www.buildfastwithai.com/blogs/latest-ai-models-april-2026",
+      "source": "Build Fast With AI",
+      "time": "April 2, 2026",
+      "description": {
+        "en": "Google released Gemma 4 on April 2 with four variants ranging up to 31 billion parameters. The models are available under Apache 2.0 license, continuing Google's commitment to open-weight AI development.",
+        "zh": "谷歌于4月2日发布了Gemma 4，有四个变体，参数最高达310亿。这些模型采用Apache 2.0许可证发布，延续了谷歌对开源权重AI开发的承诺。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI Code Wars: OpenAI, Anthropic, Google Battle for Developer Mindshare",
+        "zh": "AI代码战：OpenAI、Anthropic、谷歌争夺开发者心智"
+      },
+      "url": "https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic",
+      "source": "The Verge",
+      "time": "April 12, 2026",
+      "description": {
+        "en": "The competition for AI coding dominance is intensifying. Anthropic's Claude Code went viral in late 2025, OpenAI's Codex reached 3M users, and Google is pushing more coding features into AI Studio. Both OpenAI and Anthropic are planning IPOs this year, making developer adoption critical.",
+        "zh": "AI编码主导权的竞争正在加剧。Anthropic的Claude Code在2025年末走红，OpenAI的Codex达到300万用户，谷歌正在向AI Studio推送更多编码功能。OpenAI和Anthropic都计划今年上市，使开发者采用变得至关重要。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Llama 4 Scout and Maverick Released with 10M Token Context Windows",
+        "zh": "Meta Llama 4 Scout和Maverick发布，支持1000万token上下文窗口"
+      },
+      "url": "https://github.com/alvinreal/awesome-opensource-ai",
+      "source": "GitHub",
+      "time": "April 5, 2026",
+      "description": {
+        "en": "Meta released Llama 4 Scout and Maverick on April 5 as open-weight MoE models with groundbreaking context windows—Scout supports 10M tokens, Maverick 400B+ parameters. This continues Meta's tradition of open-source AI leadership.",
+        "zh": "Meta于4月5日发布了Llama 4 Scout和Maverick，作为开源权重MoE模型，具有突破性的上下文窗口——Scout支持1000万token，Maverick有4000亿+参数。这延续了Meta开源AI的领导传统。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week witnessed a pivotal moment in AI safety vs. capability competition. Anthropic's unprecedented decision to withhold Claude Mythos from public release—citing cybersecurity risks—marks the first time a leading AI lab has restricted access to a frontier model since OpenAI withheld GPT-2 in 2019. The formation of Project Glasswing with Microsoft, Apple, Amazon, and Google signals a new collaborative approach to AI security. Meanwhile, the AI coding wars are heating up: OpenAI's Codex reached 3M weekly users with 70% month-over-month growth, and Meta surprised the community by releasing Muse Spark as a proprietary model, breaking its open-source tradition. Google Gemma 4 and Meta Llama 4 Scout/Maverick continue the open-weight model race with massive context windows up to 10M tokens. The trend is clear: safety concerns are pushing some frontier models toward restricted release, while coding agents become the primary battleground for user acquisition ahead of anticipated IPOs from both OpenAI and Anthropic.",
+    "zh": "本周见证了AI安全与能力竞争的关键时刻。Anthropic史无前例地决定保留Claude Mythos不公开发布——称出于网络安全风险——这是自2019年OpenAI保留GPT-2以来，主要AI实验室首次限制访问前沿模型。与微软、苹果、亚马逊和谷歌共同组建Project Glasswing标志着AI安全的新协作方式。与此同时，AI代码战正在升温：OpenAI的Codex达到300万周活跃用户，月环比增长70%，Meta出人意料地将Muse Spark作为专有模型发布，打破了其开源传统。谷歌Gemma 4和Meta Llama 4 Scout/Maverick以高达1000万token的上下文窗口继续开源权重模型的竞争。趋势清晰：安全顾虑正推动一些前沿模型采用限制性发布，而编码智能体成为用户获取的主要战场，因为OpenAI和Anthropic都预计在今年上市。"
+  }
+}

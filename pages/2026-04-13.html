@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 13, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 13, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Xiangyue-Zhang/auto-deep-researcher-24x7" class="card-title" target="_blank">Xiangyue-Zhang/auto-deep-researcher-24x7</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 344 stars</div>
+                                <div class="meta-item"><span>🍴</span> 24 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An autonomous AI agent that runs your deep learning experiments 24/7 while you sleep. Zero-cost monitoring, Leader-Worker architecture, constant-size memory.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个自主AI智能体，能在你睡觉时全天候运行深度学习实验。零成本监控、领袖-工作者架构、恒定大小的内存。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/ReflexioAI/reflexio" class="card-title" target="_blank">ReflexioAI/reflexio</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 37 stars</div>
+                                <div class="meta-item"><span>🍴</span> 1 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Make your agents improve themselves. Reflexio is an agent self-improvement platform that turns every conversation your AI agent has into a learning opportunity.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">让你的智能体自我提升。Reflexio是一个智能体自我改进平台，将AI智能体的每次对话都转化为学习机会。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/studyield/studyield" class="card-title" target="_blank">studyield/studyield</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 11 stars</div>
+                                <div class="meta-item"><span>🍴</span> 7 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open-source AI learning platform with exam cloning, multi-agent problem solving, knowledge graphs, and teach-back evaluation. Self-hosted, 12 languages, web + mobile.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源AI学习平台，支持考试克隆、多智能体问题解决、知识图谱和教学评估。自托管，支持12种语言，网页+移动端。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Anthropic</span>
+                    <div class="news-time">April 7, 2026</div>
+                    <a href="https://www.anthropic.com/glasswing" class="card-title" target="_blank" data-lang="en">Anthropic Withholds Claude Mythos Preview, Launches Project Glasswing with Tech Giants</a>
+                    <a href="https://www.anthropic.com/glasswing" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic保留Claude Mythos预览版不发，推出Project Glasswing联合科技巨头</a>
+                    <p class="card-description" data-lang="en">Anthropic released Claude Mythos Preview with dramatic cybersecurity capabilities but chose not to make it publicly available. Instead, the company launched Project Glasswing—a consortium including Microsoft, Apple, Amazon, Google, and others—committed $100M in usage credits to identify and patch vulnerabilities in critical software.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic发布了具有强大网络安全能力的Claude Mythos预览版，但决定不公开发布。相反，公司推出了Project Glasswing——一个包含微软、苹果、亚马逊、谷歌等公司的联盟，承诺投入1亿美元使用额度用于识别和修补关键软件中的漏洞。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">April 8, 2026</div>
+                    <a href="https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic" class="card-title" target="_blank" data-lang="en">OpenAI's Codex Reaches 3 Million Weekly Users, Launches $100 ChatGPT Pro Tier</a>
+                    <a href="https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI的Codex达到300万周活跃用户，推出100美元ChatGPT Pro套餐</a>
+                    <p class="card-description" data-lang="en">OpenAI announced its coding agent Codex has reached 3 million weekly active users, up from 2 million weeks earlier—representing 70% month-over-month growth. The company launched a new $100 ChatGPT Pro tier with 5x Codex access to compete with Claude Max.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI宣布其编码智能体Codex已达到300万周活跃用户，较几周前的200万增长70%。公司推出了新的100美元ChatGPT Pro套餐，提供5倍的Codex访问权限以与Claude Max竞争。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Trending Topics</span>
+                    <div class="news-time">April 8, 2026</div>
+                    <a href="https://www.trendingtopics.eu/metas-comeback-muse-spark-puts-zuckerberg-back-in-the-ai-race-breaks-with-open-source/" class="card-title" target="_blank" data-lang="en">Meta Breaks Open Source Tradition with Proprietary Muse Spark Model</a>
+                    <a href="https://www.trendingtopics.eu/metas-comeback-muse-spark-puts-zuckerberg-back-in-the-ai-race-breaks-with-open-source/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta打破开源传统，推出专有的Muse Spark模型</a>
+                    <p class="card-description" data-lang="en">Meta released Muse Spark as its first proprietary model, breaking with the open-source strategy that earned developer loyalty since 2023. The model scored 52 on the Artificial Analysis Intelligence Index, competitive with OpenAI, Google, and Anthropic offerings.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta发布了Muse Spark作为其首个专有模型，打破了自2023年以来赢得开发者忠诚度的开源策略。该模型在人工智能分析智能指数上得分为52，与OpenAI、谷歌和Anthropic的产品具有竞争力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">April 11, 2026</div>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank" data-lang="en">UK Regulators Rush to Assess Risks of Anthropic's Latest AI Model</a>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank" data-lang="zh" style="display: none;">英国监管机构紧急评估Anthropic最新AI模型的风险</a>
+                    <p class="card-description" data-lang="en">UK regulators are accelerating assessments of the risks posed by Anthropic's newest frontier model, following reports about its powerful cybersecurity capabilities. The FT reported that government officials are closely monitoring the situation as the model demonstrates unprecedented vulnerability discovery abilities.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">英国监管机构正在加速评估Anthropic最新前沿模型的风险，此前有报道称其具有强大的网络安全能力。金融时报报道，政府官员正在密切监视局势，因为该模型展现出前所未有的漏洞发现能力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Build Fast With AI</span>
+                    <div class="news-time">April 2, 2026</div>
+                    <a href="https://www.buildfastwithai.com/blogs/latest-ai-models-april-2026" class="card-title" target="_blank" data-lang="en">Google Releases Gemma 4 with Four Variants Up to 31B Parameters</a>
+                    <a href="https://www.buildfastwithai.com/blogs/latest-ai-models-april-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌发布Gemma 4，四个变体参数最高达310亿</a>
+                    <p class="card-description" data-lang="en">Google released Gemma 4 on April 2 with four variants ranging up to 31 billion parameters. The models are available under Apache 2.0 license, continuing Google's commitment to open-weight AI development.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌于4月2日发布了Gemma 4，有四个变体，参数最高达310亿。这些模型采用Apache 2.0许可证发布，延续了谷歌对开源权重AI开发的承诺。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">April 12, 2026</div>
+                    <a href="https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic" class="card-title" target="_blank" data-lang="en">AI Code Wars: OpenAI, Anthropic, Google Battle for Developer Mindshare</a>
+                    <a href="https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI代码战：OpenAI、Anthropic、谷歌争夺开发者心智</a>
+                    <p class="card-description" data-lang="en">The competition for AI coding dominance is intensifying. Anthropic's Claude Code went viral in late 2025, OpenAI's Codex reached 3M users, and Google is pushing more coding features into AI Studio. Both OpenAI and Anthropic are planning IPOs this year, making developer adoption critical.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI编码主导权的竞争正在加剧。Anthropic的Claude Code在2025年末走红，OpenAI的Codex达到300万用户，谷歌正在向AI Studio推送更多编码功能。OpenAI和Anthropic都计划今年上市，使开发者采用变得至关重要。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub</span>
+                    <div class="news-time">April 5, 2026</div>
+                    <a href="https://github.com/alvinreal/awesome-opensource-ai" class="card-title" target="_blank" data-lang="en">Meta Llama 4 Scout and Maverick Released with 10M Token Context Windows</a>
+                    <a href="https://github.com/alvinreal/awesome-opensource-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta Llama 4 Scout和Maverick发布，支持1000万token上下文窗口</a>
+                    <p class="card-description" data-lang="en">Meta released Llama 4 Scout and Maverick on April 5 as open-weight MoE models with groundbreaking context windows—Scout supports 10M tokens, Maverick 400B+ parameters. This continues Meta's tradition of open-source AI leadership.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta于4月5日发布了Llama 4 Scout和Maverick，作为开源权重MoE模型，具有突破性的上下文窗口——Scout支持1000万token，Maverick有4000亿+参数。这延续了Meta开源AI的领导传统。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week witnessed a pivotal moment in AI safety vs. capability competition. Anthropic's unprecedented decision to withhold Claude Mythos from public release—citing cybersecurity risks—marks the first time a leading AI lab has restricted access to a frontier model since OpenAI withheld GPT-2 in 2019. The formation of Project Glasswing with Microsoft, Apple, Amazon, and Google signals a new collaborative approach to AI security. Meanwhile, the AI coding wars are heating up: OpenAI's Codex reached 3M weekly users with 70% month-over-month growth, and Meta surprised the community by releasing Muse Spark as a proprietary model, breaking its open-source tradition. Google Gemma 4 and Meta Llama 4 Scout/Maverick continue the open-weight model race with massive context windows up to 10M tokens. The trend is clear: safety concerns are pushing some frontier models toward restricted release, while coding agents become the primary battleground for user acquisition ahead of anticipated IPOs from both OpenAI and Anthropic.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周见证了AI安全与能力竞争的关键时刻。Anthropic史无前例地决定保留Claude Mythos不公开发布——称出于网络安全风险——这是自2019年OpenAI保留GPT-2以来，主要AI实验室首次限制访问前沿模型。与微软、苹果、亚马逊和谷歌共同组建Project Glasswing标志着AI安全的新协作方式。与此同时，AI代码战正在升温：OpenAI的Codex达到300万周活跃用户，月环比增长70%，Meta出人意料地将Muse Spark作为专有模型发布，打破了其开源传统。谷歌Gemma 4和Meta Llama 4 Scout/Maverick以高达1000万token的上下文窗口继续开源权重模型的竞争。趋势清晰：安全顾虑正推动一些前沿模型采用限制性发布，而编码智能体成为用户获取的主要战场，因为OpenAI和Anthropic都预计在今年上市。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
