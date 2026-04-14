@@ -1,0 +1,34 @@
+
+
+Wiki ingestion complete. Here's what was created:
+
+## Wiki Structure (13 pages)
+
+**Topics** (`wiki/topics/`)
+- `llm_models.md` - LLM releases, benchmark comparisons, capability trends
+- `ai_companies.md` - Company strategies, valuations, competitive dynamics  
+- `ai_funding.md` - Q1 2026 record funding ($267B total, $242B into AI)
+- `github_trends.md` - 84+ repositories analyzed, agent frameworks
+
+**Sources** (`wiki/sources/`)
+- `openai.md` - GPT-5.4, $122B funding, Codex, IPO prep
+- `anthropic.md` - Claude Mythos, Project Glasswing, $30B ARR
+- `google.md` - Gemma 4, Gemini Flash Live, Texas data center
+- `meta.md` - Muse Spark (closed-source), Llama 4
+
+**Timelines** (`wiki/timelines/`)
+- `2026-03.md` - March events (GTC, Claude Mythos leak, Sora shutdown)
+- `2026-04.md` - April events (Project Glasswing, funding records)
+
+**Updated**
+- `wiki/index.md` - Navigation and overview
+- `wiki/log.md` - Ingest entry with summary
+- `wiki/processed.json` - All 28 dates
+
+## Key Syntheses
+
+1. **Claude Mythos**: First frontier model withheld from public release; 10T parameters, finds thousands of zero-days
+2. **Agentic AI mainstream**: Claude Code drove Anthropic ARR from $9B → $30B
+3. **Coding wars**: OpenAI Codex 3M users, Google Gemini CLI released
+4. **Infrastructure**: Anthropic-Google-Broadcom multi-gigawatt TPU deal
+5. **China-US tensions**: Frontier Model Forum coalition against model distillation

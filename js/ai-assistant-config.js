@@ -7,38 +7,22 @@
  * NOTE: This configuration is shared with personal_page - both use the same backend.
  */
 
-// Configuration options:
-const AI_CONFIG = {
-  // For local development (when opening file:// or http://localhost)
-  LOCAL: 'http://localhost:8080/chat',
-
-  // For GitHub Pages with ngrok tunnel (update with your ngrok URL)
-  NGROK: 'https://jule-uncranked-overlavishly.ngrok-free.dev/chat',  // Your actual ngrok URL
-
-  // For production with a proper backend
-  PRODUCTION: 'https://your-api-server.com/chat'  // UPDATE THIS!
-};
-
 // Auto-detect environment and set appropriate URL
 function getAIServerURL() {
   const hostname = window.location.hostname;
 
-  // Local development
+  // Local access (file:// or localhost or Mac mini itself)
   if (hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '') {
-    console.log('AI Assistant: Using local server');
-    return AI_CONFIG.LOCAL;
+    return 'http://localhost:5002/chat';
   }
 
-  // GitHub Pages (github.io domain)
+  // GitHub Pages (remote access via LAN IP)
   if (hostname.includes('github.io')) {
-    console.log('AI Assistant: Using ngrok tunnel for GitHub Pages');
-    // IMPORTANT: Update NGROK URL above with your actual ngrok URL!
-    return AI_CONFIG.NGROK;
+    return 'http://10.0.0.209:5002/chat';
   }
 
-  // Custom domain or production
-  console.log('AI Assistant: Using production server');
-  return AI_CONFIG.PRODUCTION;
+  // LAN access from other machines
+  return 'http://10.0.0.209:5002/chat';
 }
 
 // Export configuration

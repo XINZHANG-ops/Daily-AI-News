@@ -49,10 +49,10 @@
   };
 
   const STORAGE_KEYS = {
-    CHAT_HISTORY: 'ai-chat-history-ainews',  // Use different key for Daily-AI-News
-    CHAT_OPEN: 'ai-chat-open-ainews',
-    SESSION_ID: 'ai-session-id-ainews',
-    CHAT_SIZE: 'ai-chat-size-ainews'
+    CHAT_HISTORY: 'ai-chat-history-ai-news',
+    CHAT_OPEN: 'ai-chat-open-ai-news',
+    SESSION_ID: 'ai-session-id-ai-news',
+    CHAT_SIZE: 'ai-chat-size-ai-news'
   };
 
   const CSS_CLASSES = {
@@ -71,13 +71,13 @@
   };
 
   const API_CONFIG = {
-    DEFAULT_SERVER_URL: 'http://localhost:8080/chat',
+    DEFAULT_SERVER_URL: 'http://10.0.0.209:5002/chat',
     HEALTH_ENDPOINT: '/health',
     CHAT_ENDPOINT: '/chat'
   };
 
   const MESSAGES = {
-    ERROR_CONNECTION: "I'm offline right now. Please make sure the AI server is running locally on port 8080.",
+    ERROR_CONNECTION: "I'm offline right now. Please make sure the AI News server is running on port 5002.",
     ERROR_GENERIC: "Sorry, I encountered an error. Please try again later.",
     ERROR_PROCESSING: "I couldn't process that request."
   };
@@ -95,11 +95,11 @@
     location: "Waterloo, ON"
   };
 
-  // Context type options for @ mentions - ONLY AI_NEWS for Daily-AI-News repo
+  // Context type options for @ mentions - AI News
   const CONTEXT_TYPES = [
     {
       id: 'ai_news',
-      labelKey: 'AI News',  // Simplified without i18n
+      labelKey: 'AI News',
       icon: '📰',
       color: '#e94560'
     }

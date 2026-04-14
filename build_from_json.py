@@ -487,13 +487,6 @@ def build_html(data):
     <script src="../js/ai-assistant-templates.js"></script>
     <script src="../js/ai-assistant-config.js"></script>
     <script src="../js/ai-assistant.js"></script>
-    <script>
-      // Initialize AI Assistant
-      document.addEventListener('DOMContentLoaded', function() {{
-        const assistant = new AIAssistant();
-        window.aiAssistant = assistant;
-      }});
-    </script>
 </body>
 </html>'''
     

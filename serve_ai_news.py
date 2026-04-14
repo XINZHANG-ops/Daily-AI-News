@@ -16,7 +16,7 @@ import json
 import logging
 import subprocess
 from pathlib import Path
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 
 # Set up logging
@@ -26,8 +26,35 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+REPO_ROOT = Path(__file__).parent
+
 app = Flask(__name__)
 CORS(app)
+
+
+# =============================================================
+# Static file routes
+# =============================================================
+
+@app.route('/', methods=['GET'])
+def index():
+    return send_from_directory(str(REPO_ROOT), 'index.html')
+
+
+@app.route('/pages/<path:filename>', methods=['GET'])
+def pages(filename):
+    return send_from_directory(str(REPO_ROOT / 'pages'), filename)
+
+
+@app.route('/css/<path:filename>', methods=['GET'])
+def css(filename):
+    return send_from_directory(str(REPO_ROOT / 'css'), filename)
+
+
+@app.route('/js/<path:filename>', methods=['GET'])
+def js(filename):
+    return send_from_directory(str(REPO_ROOT / 'js'), filename)
+
 
 # Global variables
 DB_PATH = None
@@ -214,34 +241,13 @@ def log_response(response):
     return response
 
 
-@app.route('/ask_wiki', methods=['POST'])
-def ask_wiki():
+def _ask_wiki_internal(question, model='minimax-m2.7:cloud', session_id=None):
     """
-    Ask a question based on the wiki knowledge base.
+    Internal wiki Q&A logic shared by /chat and /ask_wiki endpoints.
 
-    Request body:
-    {
-        "question": "What are recent AI news about OpenAI?",
-        "model": "minimax-m2.7:cloud",  // optional
-        "session_id": "abc123"  // optional, for conversation history
-    }
-
-    Response:
-    {
-        "question": "...",
-        "answer": "...",
-        "model": "minimax-m2.7:cloud",
-        "session_id": "abc123"
-    }
+    Returns:
+        dict with 'answer' and 'session_id', or 'error' key on failure
     """
-    data = request.get_json()
-    if not data or 'question' not in data:
-        return jsonify({'error': 'Missing question parameter'}), 400
-
-    question = data['question']
-    model = data.get('model', 'minimax-m2.7:cloud')
-    session_id = data.get('session_id', None)
-
     # Get or create session history
     if session_id:
         if session_id not in wiki_sessions:
@@ -250,33 +256,29 @@ def ask_wiki():
     else:
         conversation_history = []
 
-    # Find repo root (where wiki/ directory is)
     repo_root = Path(__file__).parent
     wiki_dir = repo_root / 'wiki'
     llm_wiki_path = repo_root / 'llm-wiki.md'
     project_schema_path = wiki_dir / 'WIKI.md'
 
     if not wiki_dir.exists():
-        return jsonify({'error': 'wiki/ directory not found'}), 500
+        return {'error': 'wiki/ directory not found'}
 
-    # Read schema files
     try:
         llm_wiki_content = llm_wiki_path.read_text(encoding='utf-8') if llm_wiki_path.exists() else ""
         project_schema_content = project_schema_path.read_text(encoding='utf-8') if project_schema_path.exists() else ""
     except Exception as e:
         logger.error(f"Failed to read schema files: {e}")
-        return jsonify({'error': f'Failed to read schema: {str(e)}'}), 500
+        return {'error': f'Failed to read schema: {str(e)}'}
 
-    # Build conversation history context
     history_context = ""
     if conversation_history:
         history_context = "\n=== CONVERSATION HISTORY ===\n"
-        for msg in conversation_history[-6:]:  # Last 3 turns (6 messages)
+        for msg in conversation_history[-6:]:
             role_label = "User" if msg['role'] == 'user' else "Assistant"
             history_context += f"{role_label}: {msg['content']}\n\n"
         history_context += "=== END HISTORY ===\n\n"
 
-    # Build the prompt for the agent
     prompt = f"""You are a research assistant helping answer questions about AI news, GitHub repositories, and daily insights.
 
 === WIKI PATTERN (llm-wiki.md) ===
@@ -301,13 +303,6 @@ You have access to the following SQL query tool running on localhost:5002:
    - ai_news: title_en, title_zh, url, source, time, description_en, description_zh, date_added
    - insights: date, content_en, content_zh
 
-Use SQL queries to find relevant AI news, GitHub repos, or insights when the wiki alone doesn't have enough information.
-
-For example:
-- Use SQL for keyword searches: "SELECT * FROM ai_news WHERE title_en LIKE '%OpenAI%'"
-- Use SQL for date filtering: "SELECT * FROM github_repos WHERE date_added >= '2026-04-01'"
-- Use SQL for aggregation: "SELECT source, COUNT(*) FROM ai_news GROUP BY source"
-
 {history_context}=== CURRENT QUESTION ===
 
 Working directory: {repo_root}
@@ -321,12 +316,9 @@ Strategy:
 4. If wiki coverage is incomplete, use SQL queries to find additional information
 5. Synthesize a comprehensive answer combining wiki knowledge and SQL results
 
-Provide a comprehensive answer with references to specific news sources or repositories.
-
 Answer:
 """
 
-    # Call ollama launch claude
     try:
         logger.info(f"Calling ollama claude for question: {question[:60]}...")
         result = subprocess.run(
@@ -341,37 +333,84 @@ Answer:
             capture_output=True,
             text=True,
             cwd=str(repo_root),
-            timeout=300  # 5 minutes timeout (agent may use SQL tools)
+            timeout=300
         )
 
         if result.returncode != 0:
             logger.error(f"ollama claude failed: {result.stderr}")
-            return jsonify({'error': f'Agent failed: {result.stderr}'}), 500
+            return {'error': f'Agent failed: {result.stderr}'}
 
         answer = result.stdout.strip()
         logger.info(f"Answer generated ({len(answer)} chars)")
 
-        # Save to session history
         if session_id:
             wiki_sessions[session_id].append({'role': 'user', 'content': question})
             wiki_sessions[session_id].append({'role': 'assistant', 'content': answer})
-            # Keep only last 20 messages (10 turns)
             if len(wiki_sessions[session_id]) > 20:
                 wiki_sessions[session_id] = wiki_sessions[session_id][-20:]
 
-        return jsonify({
-            'question': question,
-            'answer': answer,
-            'model': model,
-            'session_id': session_id
-        })
+        return {'answer': answer, 'model': model, 'session_id': session_id}
 
     except subprocess.TimeoutExpired:
         logger.error("ollama claude timed out")
-        return jsonify({'error': 'Request timed out (5 min limit)'}), 504
+        return {'error': 'Request timed out (5 min limit)'}
     except Exception as e:
         logger.error(f"ask_wiki error: {e}")
-        return jsonify({'error': str(e)}), 500
+        return {'error': str(e)}
+
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    """
+    AI Assistant chat endpoint (compatible with ai-assistant.js format).
+
+    Request: { "message": "...", "session_id": "abc123" }
+    Response: { "text": "...", "session_id": "abc123" }
+    """
+    data = request.get_json()
+    if not data or 'message' not in data:
+        return jsonify({'error': 'Missing message parameter'}), 400
+
+    question = data['message']
+    session_id = data.get('session_id')
+    model = data.get('model', 'minimax-m2.7:cloud')
+
+    result = _ask_wiki_internal(question, model=model, session_id=session_id)
+    if 'error' in result:
+        return jsonify({'error': result['error']}), 500
+
+    return jsonify({
+        'response': result['answer'],
+        'session_id': result.get('session_id')
+    })
+
+
+@app.route('/ask_wiki', methods=['POST'])
+def ask_wiki():
+    """
+    Ask a question based on the wiki knowledge base.
+
+    Request: { "question": "...", "model": "...", "session_id": "..." }
+    Response: { "question": "...", "answer": "...", "model": "...", "session_id": "..." }
+    """
+    data = request.get_json()
+    if not data or 'question' not in data:
+        return jsonify({'error': 'Missing question parameter'}), 400
+
+    question = data['question']
+    model = data.get('model', 'minimax-m2.7:cloud')
+    session_id = data.get('session_id')
+
+    result = _ask_wiki_internal(question, model=model, session_id=session_id)
+    if 'error' in result:
+        return jsonify({'error': result['error']}), 500
+
+    return jsonify({
+        'question': question,
+        'answer': result['answer'],
+        'model': result['model'],
+        'session_id': result['session_id']
+    })
 
 
 def main():

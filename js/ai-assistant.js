@@ -1387,7 +1387,7 @@ class AIAssistant {
   }
 
   setDefaultContextTag() {
-    // For Daily-AI-News, always set context to 'ai_news'
+    // For AI News, always set context to 'ai_news'
     const contextType = CONTEXT_TYPES.find(ct => ct.id === 'ai_news');
     if (contextType) {
       this.selectedContextType = contextType;
