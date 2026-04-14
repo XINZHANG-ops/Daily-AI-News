@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 14, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 14, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/yizhiyanhua-ai/fireworks-tech-graph" class="card-title" target="_blank">yizhiyanhua-ai/fireworks-tech-graph</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 176 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Claude Code skill for generating production-quality SVG+PNG technical diagrams. Supports 8 diagram types, 5 visual styles, and deep AI/Agent domain knowledge (RAG, Agentic Search, Mem0, Multi-Agent, Tool Call flows).</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Code技能，用于生成专业品质的SVG+PNG技术图表。支持8种图表类型、5种视觉风格，以及AI/Agent领域深度知识（RAG、Agentic Search、Mem0、多Agent、工具调用流程）。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/AgriciDaniel/claude-obsidian" class="card-title" target="_blank">AgriciDaniel/claude-obsidian</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 98 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Claude + Obsidian knowledge companion. Persistent, compounding wiki vault based on Karpathy's LLM Wiki pattern with /wiki /save /autoresearch commands.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude + Obsidian知识助手。基于Karpathy的LLM Wiki模式，构建持久递增的个人知识库，支持/wiki、/save、/autoresearch命令。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/hexiecs/talk-normal" class="card-title" target="_blank">hexiecs/talk-normal</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 775 stars</div>
+                                <div class="meta-item"><span>🍴</span> 18 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A system prompt that removes AI slop, making any LLM talk like a normal person with natural, conversational responses.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个系统提示词，移除AI味，让任何大模型说话像正常人一样自然对话。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Guardian</span>
+                    <div class="news-time">April 12, 2026</div>
+                    <a href="https://www.theguardian.com/technology/2026/apr/12/too-powerful-for-the-public-inside-anthropics-bid-to-win-the-ai-publicity-war" class="card-title" target="_blank" data-lang="en">Anthropic's Claude Mythos Withheld from Public, Raising Safety and Hype Questions</a>
+                    <a href="https://www.theguardian.com/technology/2026/apr/12/too-powerful-for-the-public-inside-anthropics-bid-to-win-the-ai-publicity-war" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic拒绝公开Claude Mythos模型，引发安全与炒作争议</a>
+                    <p class="card-description" data-lang="en">Anthropic unveiled Claude Mythos, claiming the model is too dangerous to release publicly, prompting US Treasury Secretary Scott Bessent to summon bank heads for discussion. Critics including Gary Marcus accused Anthropic of exaggeration, while the UK's AI Security Institute confirmed Mythos outperformed other systems in cybersecurity scenarios. Anthropic later accidentally leaked part of Claude's internal source code.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic发布Claude Mythos，声称该模型太过危险不予公开，引发美国财政部长Bessent召集银行高管讨论。批评者包括Gary Marcus指责Anthropic夸大其词，而英国AI安全研究所确认Mythos在网络安全场景中优于其他系统。Anthropic随后意外泄露了Claude的部分内部源代码。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Forbes</span>
+                    <div class="news-time">April 13, 2026</div>
+                    <a href="https://www.forbes.com/sites/johndrake/2026/04/13/an-ai-system-passed-peer-review-the-scientific-community-isnt-ready/" class="card-title" target="_blank" data-lang="en">AI System Passes Peer Review, Forcing Reckoning in Scientific Publishing</a>
+                    <a href="https://www.forbes.com/sites/johndrake/2026/04/13/an-ai-system-passed-peer-review-the-scientific-community-isnt-ready/" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI系统通过同行评审，迫使科学出版界面临反思</a>
+                    <p class="card-description" data-lang="en">An AI system successfully passed peer review at a scientific publication, raising fundamental questions about the future of academic research validation. UC Berkeley's Carl Boettiger criticized the AI Scientist project for focusing too much on replicating existing infrastructure rather than advancing meaningful research.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个AI系统在某学术出版物成功通过同行评审，迫使学界反思未来科研验证方式。UC Berkeley的Carl Boettiger批评AI Scientist项目过度关注复制现有学术基础设施，而非推动有意义的研究进展。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI & News</span>
+                    <div class="news-time">April 13, 2026</div>
+                    <a href="https://www.aiandnews.com/blog/latest-ai-news-april-2026-2/" class="card-title" target="_blank" data-lang="en">DeepSeek V4 Anticipation Builds as Release Nears</a>
+                    <a href="https://www.aiandnews.com/blog/latest-ai-news-april-2026-2/" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepSeek V4即将发布，业界期待高涨</a>
+                    <p class="card-description" data-lang="en">Anticipation is growing for DeepSeek V4, the upcoming release from the Chinese AI lab known for competitive open-weight models. The release is expected to further intensify competition in the AI landscape with its anticipated performance benchmarks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">中国AI实验室DeepSeek即将发布V4版本，外界期待高涨。该实验室以具有竞争力的大模型开源权重著称，新版本预计将进一步加剧AI领域竞争。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MIT Technology Review</span>
+                    <div class="news-time">April 13, 2026</div>
+                    <a href="https://www.technologyreview.com/2026/04/13/1135675/want-to-understand-the-current-state-of-ai-check-out-these-charts/" class="card-title" target="_blank" data-lang="en">AI Benchmarks 'Struggling to Keep Up' as Models Bypass Ceilings — Stanford Report</a>
+                    <a href="https://www.technologyreview.com/2026/04/13/1135675/want-to-understand-the-current-state-of-ai-check-out-these-charts/" class="card-title" target="_blank" data-lang="zh" style="display: none;">斯坦福报告：AI基准测试'跟不上'模型进步速度</a>
+                    <p class="card-description" data-lang="en">Stanford's AI report finds that benchmarks designed to track AI progress are failing to keep pace as models quickly exceed their measurement ceilings. A popular math benchmark has a 42% error rate, raising questions about how we accurately measure AI capability advancement.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">斯坦福AI报告指出，设计用于追踪AI进展的基准测试正在失效——模型迅速突破测试上限。一项流行的数学基准测试存在42%的错误率，引发如何准确衡量AI能力进步的质疑。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MarkTechPost</span>
+                    <div class="news-time">April 12, 2026</div>
+                    <a href="https://www.marktechpost.com/2026/04/12/minimax-releases-mmx-cli-a-command-line-interface-that-gives-ai-agents-native-access-to-image-video-speech-music-vision-and-search/" class="card-title" target="_blank" data-lang="en">MiniMax Releases MMX-CLI: Multi-Modal Agent Tool with Text, Image, Video, Speech, Music, Vision & Search</a>
+                    <a href="https://www.marktechpost.com/2026/04/12/minimax-releases-mmx-cli-a-command-line-interface-that-gives-ai-agents-native-access-to-image-video-speech-music-vision-and-search/" class="card-title" target="_blank" data-lang="zh" style="display: none;">MiniMax发布MMX-CLI：集成文本、图像、视频、语音、音乐、视觉与搜索的多模态Agent工具</a>
+                    <p class="card-description" data-lang="en">MiniMax released MMX-CLI, a Node.js-based command-line interface giving AI agents native access to seven generative modalities — text, image, video, speech, music, vision, and search — without requiring MCP integration. Compatible with Cursor, Claude Code, and OpenCode.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">MiniMax发布MMX-CLI，一款基于Node.js的命令行工具，让AI Agent无需MCP集成即可直接访问七种生成模态——文本、图像、视频、语音、音乐、视觉和搜索。兼容Cursor、Claude Code和OpenCode。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Nature</span>
+                    <div class="news-time">April 13, 2026</div>
+                    <a href="https://www.nature.com/articles/d41586-026-01199-z" class="card-title" target="_blank" data-lang="en">Human Scientists Outperform Best AI Agents on Complex Research Tasks</a>
+                    <a href="https://www.nature.com/articles/d41586-026-01199-z" class="card-title" target="_blank" data-lang="zh" style="display: none;">人类科学家在复杂研究任务中胜过顶级AI Agent</a>
+                    <p class="card-description" data-lang="en">A state-of-the-industry report finds that human scientists still outperform the best AI agents on complex research tasks, despite rapid AI advancements. The findings underscore persistent limitations in AI's ability to conduct novel scientific reasoning.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一份行业现状报告显示，尽管AI发展迅速，人类科学家在复杂研究任务上仍优于最优秀的AI Agent。这一发现凸显了AI在开展原创性科学研究推理方面的持续局限。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Futurum Group</span>
+                    <div class="news-time">April 13, 2026</div>
+                    <a href="https://futurumgroup.com/insights/anthropics-google-broadcom-deal-model-company-or-infrastructure-play/" class="card-title" target="_blank" data-lang="en">Anthropic Expands Compute Partnership with Google and Broadcom Amid Infrastructure Strain</a>
+                    <a href="https://futurumgroup.com/insights/anthropics-google-broadcom-deal-model-company-or-infrastructure-play/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic与Google、Broadcom扩大计算合作，应对基础设施压力</a>
+                    <p class="card-description" data-lang="en">Anthropic expanded its compute partnership with Google and Broadcom to secure dedicated AI infrastructure, signaling a strategic push beyond pure model development. The move comes as Anthropic struggles with capacity constraints, having recently introduced usage caps on Claude subscriptions.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic扩大了与Google和Broadcom的计算合作以确保专用AI基础设施，标志其战略布局超越单纯模型开发。此举正值Anthropic面临算力紧张之际——此前已对Claude订阅引入用量限制。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week reveals an AI industry at an inflection point: Anthropic's dramatic reveal of Claude Mythos — claiming it's too dangerous to release while simultaneously fighting for Pentagon contracts — shows the growing tension between 'safety' as genuine principle versus marketing strategy. Meanwhile, the open-source ecosystem continues to democratize AI capabilities: fireworks-tech-graph brings professional diagram generation to Claude Code, while tools like claude-obsidian and talk-normal show the community's focus on making AI interactions more natural and personal. The benchmark crisis at Stanford highlights that traditional metrics are losing relevance as model capabilities accelerate beyond measurement — a problem for evaluators but a signal that the gap between 'good enough' and 'exceptional' is narrowing fast. As DeepSeek V4 looms, the competitive pressure on frontier labs continues to intensify, especially from Chinese labs shipping competitive open-weight models. For practitioners: the skills ecosystem (agents, tools, memory) is maturing rapidly, making AI agents increasingly autonomous — the question is no longer capability but trustworthiness and cost efficiency.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周揭示了AI行业正处于一个转折点：Anthropic戏剧性地发布Claude Mythos——声称太过危险不予公开，同时却为五角大楼合同奋力争取——这显示了'安全'作为真实原则与营销策略之间日益加剧的张力。与此同时，开源生态系统继续使AI能力民主化：fireworks-tech-graph将专业图表生成带入Claude Code，而claude-obsidian和talk-normal等工具则展示了社区专注于让AI交互更自然、更个人化。斯坦福的基准危机凸显传统指标正失去意义——模型能力加速超越测量极限，这对评估者是难题，但对缩小'足够好'与'卓越'之间的差距是明确信号。随着DeepSeek V4即将发布，对前沿实验室的竞争压力持续加剧，尤其是来自中国的竞争者正在推出具有竞争力的大模型开源权重。对于从业者而言：技能生态系统（Agent、工具、记忆）正在快速成熟，使AI Agent愈发自主——问题已不再是能力，而是可信度与成本效益。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+    <script>
+      // Initialize AI Assistant
+      document.addEventListener('DOMContentLoaded', function() {
+        const assistant = new AIAssistant();
+        window.aiAssistant = assistant;
+      });
+    </script>
+</body>
+</html>

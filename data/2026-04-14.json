@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-14",
+  "github_repos": [
+    {
+      "name": "yizhiyanhua-ai/fireworks-tech-graph",
+      "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
+      "description": {
+        "en": "Claude Code skill for generating production-quality SVG+PNG technical diagrams. Supports 8 diagram types, 5 visual styles, and deep AI/Agent domain knowledge (RAG, Agentic Search, Mem0, Multi-Agent, Tool Call flows).",
+        "zh": "Claude Code技能，用于生成专业品质的SVG+PNG技术图表。支持8种图表类型、5种视觉风格，以及AI/Agent领域深度知识（RAG、Agentic Search、Mem0、多Agent、工具调用流程）。"
+      },
+      "stars": "2.2k",
+      "forks": "176"
+    },
+    {
+      "name": "AgriciDaniel/claude-obsidian",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "description": {
+        "en": "Claude + Obsidian knowledge companion. Persistent, compounding wiki vault based on Karpathy's LLM Wiki pattern with /wiki /save /autoresearch commands.",
+        "zh": "Claude + Obsidian知识助手。基于Karpathy的LLM Wiki模式，构建持久递增的个人知识库，支持/wiki、/save、/autoresearch命令。"
+      },
+      "stars": "1.1k",
+      "forks": "98"
+    },
+    {
+      "name": "hexiecs/talk-normal",
+      "url": "https://github.com/hexiecs/talk-normal",
+      "description": {
+        "en": "A system prompt that removes AI slop, making any LLM talk like a normal person with natural, conversational responses.",
+        "zh": "一个系统提示词，移除AI味，让任何大模型说话像正常人一样自然对话。"
+      },
+      "stars": "775",
+      "forks": "18"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic's Claude Mythos Withheld from Public, Raising Safety and Hype Questions",
+        "zh": "Anthropic拒绝公开Claude Mythos模型，引发安全与炒作争议"
+      },
+      "url": "https://www.theguardian.com/technology/2026/apr/12/too-powerful-for-the-public-inside-anthropics-bid-to-win-the-ai-publicity-war",
+      "source": "The Guardian",
+      "time": "April 12, 2026",
+      "description": {
+        "en": "Anthropic unveiled Claude Mythos, claiming the model is too dangerous to release publicly, prompting US Treasury Secretary Scott Bessent to summon bank heads for discussion. Critics including Gary Marcus accused Anthropic of exaggeration, while the UK's AI Security Institute confirmed Mythos outperformed other systems in cybersecurity scenarios. Anthropic later accidentally leaked part of Claude's internal source code.",
+        "zh": "Anthropic发布Claude Mythos，声称该模型太过危险不予公开，引发美国财政部长Bessent召集银行高管讨论。批评者包括Gary Marcus指责Anthropic夸大其词，而英国AI安全研究所确认Mythos在网络安全场景中优于其他系统。Anthropic随后意外泄露了Claude的部分内部源代码。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI System Passes Peer Review, Forcing Reckoning in Scientific Publishing",
+        "zh": "AI系统通过同行评审，迫使科学出版界面临反思"
+      },
+      "url": "https://www.forbes.com/sites/johndrake/2026/04/13/an-ai-system-passed-peer-review-the-scientific-community-isnt-ready/",
+      "source": "Forbes",
+      "time": "April 13, 2026",
+      "description": {
+        "en": "An AI system successfully passed peer review at a scientific publication, raising fundamental questions about the future of academic research validation. UC Berkeley's Carl Boettiger criticized the AI Scientist project for focusing too much on replicating existing infrastructure rather than advancing meaningful research.",
+        "zh": "一个AI系统在某学术出版物成功通过同行评审，迫使学界反思未来科研验证方式。UC Berkeley的Carl Boettiger批评AI Scientist项目过度关注复制现有学术基础设施，而非推动有意义的研究进展。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek V4 Anticipation Builds as Release Nears",
+        "zh": "DeepSeek V4即将发布，业界期待高涨"
+      },
+      "url": "https://www.aiandnews.com/blog/latest-ai-news-april-2026-2/",
+      "source": "AI & News",
+      "time": "April 13, 2026",
+      "description": {
+        "en": "Anticipation is growing for DeepSeek V4, the upcoming release from the Chinese AI lab known for competitive open-weight models. The release is expected to further intensify competition in the AI landscape with its anticipated performance benchmarks.",
+        "zh": "中国AI实验室DeepSeek即将发布V4版本，外界期待高涨。该实验室以具有竞争力的大模型开源权重著称，新版本预计将进一步加剧AI领域竞争。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI Benchmarks 'Struggling to Keep Up' as Models Bypass Ceilings — Stanford Report",
+        "zh": "斯坦福报告：AI基准测试'跟不上'模型进步速度"
+      },
+      "url": "https://www.technologyreview.com/2026/04/13/1135675/want-to-understand-the-current-state-of-ai-check-out-these-charts/",
+      "source": "MIT Technology Review",
+      "time": "April 13, 2026",
+      "description": {
+        "en": "Stanford's AI report finds that benchmarks designed to track AI progress are failing to keep pace as models quickly exceed their measurement ceilings. A popular math benchmark has a 42% error rate, raising questions about how we accurately measure AI capability advancement.",
+        "zh": "斯坦福AI报告指出，设计用于追踪AI进展的基准测试正在失效——模型迅速突破测试上限。一项流行的数学基准测试存在42%的错误率，引发如何准确衡量AI能力进步的质疑。"
+      }
+    },
+    {
+      "title": {
+        "en": "MiniMax Releases MMX-CLI: Multi-Modal Agent Tool with Text, Image, Video, Speech, Music, Vision & Search",
+        "zh": "MiniMax发布MMX-CLI：集成文本、图像、视频、语音、音乐、视觉与搜索的多模态Agent工具"
+      },
+      "url": "https://www.marktechpost.com/2026/04/12/minimax-releases-mmx-cli-a-command-line-interface-that-gives-ai-agents-native-access-to-image-video-speech-music-vision-and-search/",
+      "source": "MarkTechPost",
+      "time": "April 12, 2026",
+      "description": {
+        "en": "MiniMax released MMX-CLI, a Node.js-based command-line interface giving AI agents native access to seven generative modalities — text, image, video, speech, music, vision, and search — without requiring MCP integration. Compatible with Cursor, Claude Code, and OpenCode.",
+        "zh": "MiniMax发布MMX-CLI，一款基于Node.js的命令行工具，让AI Agent无需MCP集成即可直接访问七种生成模态——文本、图像、视频、语音、音乐、视觉和搜索。兼容Cursor、Claude Code和OpenCode。"
+      }
+    },
+    {
+      "title": {
+        "en": "Human Scientists Outperform Best AI Agents on Complex Research Tasks",
+        "zh": "人类科学家在复杂研究任务中胜过顶级AI Agent"
+      },
+      "url": "https://www.nature.com/articles/d41586-026-01199-z",
+      "source": "Nature",
+      "time": "April 13, 2026",
+      "description": {
+        "en": "A state-of-the-industry report finds that human scientists still outperform the best AI agents on complex research tasks, despite rapid AI advancements. The findings underscore persistent limitations in AI's ability to conduct novel scientific reasoning.",
+        "zh": "一份行业现状报告显示，尽管AI发展迅速，人类科学家在复杂研究任务上仍优于最优秀的AI Agent。这一发现凸显了AI在开展原创性科学研究推理方面的持续局限。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Expands Compute Partnership with Google and Broadcom Amid Infrastructure Strain",
+        "zh": "Anthropic与Google、Broadcom扩大计算合作，应对基础设施压力"
+      },
+      "url": "https://futurumgroup.com/insights/anthropics-google-broadcom-deal-model-company-or-infrastructure-play/",
+      "source": "Futurum Group",
+      "time": "April 13, 2026",
+      "description": {
+        "en": "Anthropic expanded its compute partnership with Google and Broadcom to secure dedicated AI infrastructure, signaling a strategic push beyond pure model development. The move comes as Anthropic struggles with capacity constraints, having recently introduced usage caps on Claude subscriptions.",
+        "zh": "Anthropic扩大了与Google和Broadcom的计算合作以确保专用AI基础设施，标志其战略布局超越单纯模型开发。此举正值Anthropic面临算力紧张之际——此前已对Claude订阅引入用量限制。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week reveals an AI industry at an inflection point: Anthropic's dramatic reveal of Claude Mythos — claiming it's too dangerous to release while simultaneously fighting for Pentagon contracts — shows the growing tension between 'safety' as genuine principle versus marketing strategy. Meanwhile, the open-source ecosystem continues to democratize AI capabilities: fireworks-tech-graph brings professional diagram generation to Claude Code, while tools like claude-obsidian and talk-normal show the community's focus on making AI interactions more natural and personal. The benchmark crisis at Stanford highlights that traditional metrics are losing relevance as model capabilities accelerate beyond measurement — a problem for evaluators but a signal that the gap between 'good enough' and 'exceptional' is narrowing fast. As DeepSeek V4 looms, the competitive pressure on frontier labs continues to intensify, especially from Chinese labs shipping competitive open-weight models. For practitioners: the skills ecosystem (agents, tools, memory) is maturing rapidly, making AI agents increasingly autonomous — the question is no longer capability but trustworthiness and cost efficiency.",
+    "zh": "本周揭示了AI行业正处于一个转折点：Anthropic戏剧性地发布Claude Mythos——声称太过危险不予公开，同时却为五角大楼合同奋力争取——这显示了'安全'作为真实原则与营销策略之间日益加剧的张力。与此同时，开源生态系统继续使AI能力民主化：fireworks-tech-graph将专业图表生成带入Claude Code，而claude-obsidian和talk-normal等工具则展示了社区专注于让AI交互更自然、更个人化。斯坦福的基准危机凸显传统指标正失去意义——模型能力加速超越测量极限，这对评估者是难题，但对缩小'足够好'与'卓越'之间的差距是明确信号。随着DeepSeek V4即将发布，对前沿实验室的竞争压力持续加剧，尤其是来自中国的竞争者正在推出具有竞争力的大模型开源权重。对于从业者而言：技能生态系统（Agent、工具、记忆）正在快速成熟，使AI Agent愈发自主——问题已不再是能力，而是可信度与成本效益。"
+  }
+}
