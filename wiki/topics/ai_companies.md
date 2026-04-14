@@ -28,6 +28,7 @@ A comprehensive overview of AI company strategies, developments, and competition
 **Key Developments (March-April 2026):**
 - $30B annualized revenue run rate (up from $9B at end of 2025)
 - Signed multi-gigawatt TPU deal with Google and Broadcom (3.5 gigawatts operational from 2027)
+- Expanded compute partnership with Google and Broadcom amid **infrastructure strain** — introduced usage caps on Claude subscriptions
 - $30B Series G funding at $380B valuation
 - 1,000+ enterprise customers spending $1M+ annually
 - Claude Mythos (10T parameters) withheld from public release due to security concerns

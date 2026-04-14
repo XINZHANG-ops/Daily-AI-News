@@ -36,6 +36,7 @@ This period saw explosive growth in AI agent frameworks, coding tools, and infra
 |------------|-------|-------|
 | obra/superpowers | 40.9k-92.1k | Agentic skills framework for Claude Code/Cursor/Codex |
 | pydantic/pydantic-ai | 38.5k | Type-safe GenAI agent framework |
+| yizhiyanhua-ai/fireworks-tech-graph | 2.2k | Claude Code skill for production-quality SVG+PNG technical diagrams (8 types, 5 styles, AI/Agent domain knowledge) |
 | yechan-Heo/oh-my-codex | 12.9k | OpenAI Codex extensions with hooks, agent teams |
 | graphify | 22.7k | Code → queryable knowledge graphs |
 
@@ -44,8 +45,15 @@ This period saw explosive growth in AI agent frameworks, coding tools, and infra
 | Repository | Stars | Focus |
 |------------|-------|-------|
 | supermemoryai/supermemory | 20.0k | #1 on LongMemEval, LoCoMo, ConvoMem |
+| AgriciDaniel/claude-obsidian | 1.1k | Claude + Obsidian knowledge companion (LLM Wiki pattern with /wiki /save /autoresearch commands) |
 | vectorize-io/hindsight | 2.8k | Agent memory system (biomimetic) |
 | trusgraph-ai/trustgraph | 1.8k | Context development platform |
+
+### LLM Interaction & Prompting
+
+| Repository | Stars | Focus |
+|------------|-------|-------|
+| hexiecs/talk-normal | 775 | System prompt removing AI slop — makes any LLM respond naturally like a human |
 
 ### Communication & Platforms
 

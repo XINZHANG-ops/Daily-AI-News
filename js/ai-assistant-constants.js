@@ -71,13 +71,13 @@
   };
 
   const API_CONFIG = {
-    DEFAULT_SERVER_URL: 'http://10.0.0.209:5002/chat',
+    DEFAULT_SERVER_URL: 'http://localhost:8080/chat',
     HEALTH_ENDPOINT: '/health',
     CHAT_ENDPOINT: '/chat'
   };
 
   const MESSAGES = {
-    ERROR_CONNECTION: "I'm offline right now. Please make sure the AI News server is running on port 5002.",
+    ERROR_CONNECTION: "I'm offline right now. Please make sure the AI server is running locally on port 8080.",
     ERROR_GENERIC: "Sorry, I encountered an error. Please try again later.",
     ERROR_PROCESSING: "I couldn't process that request."
   };

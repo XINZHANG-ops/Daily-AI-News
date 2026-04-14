@@ -54,6 +54,8 @@ The period from March to April 2026 marks a significant inflection point in the 
 | Qwen3.6-Plus | Alibaba | April 2, 2026 | 1M context, agentic coding competitive with Claude Opus 4.5 |
 | Llama 4 Scout/Maverick | Meta | April 5, 2026 | 10M token context (Scout), 400B+ parameters (Maverick), open-weight |
 | Grok 4.20 | xAI | Ongoing | 78% non-hallucination rate |
+| DeepSeek V4 | DeepSeek | April 14, 2026 (anticipated) | Expected to further intensify competition; Chinese lab known for competitive open-weight models |
+| MiniMax MMX-CLI | MiniMax | April 12, 2026 | Multi-modal agent tool: text, image, video, speech, music, vision, search (7 modalities, no MCP required) |
 
 ## Capability Benchmarks
 
@@ -70,6 +72,13 @@ The period from March to April 2026 marks a significant inflection point in the 
 - All frontier models scored under 1%
 - Best score: Gemini 3.1 Pro at 0.37%
 - Grok 4.2: 0%
+
+### Benchmark Ceiling Crisis (Stanford, April 2026)
+A Stanford AI report found that benchmarks designed to track AI progress are failing to keep pace as models quickly exceed their measurement ceilings:
+- A popular math benchmark has a **42% error rate**
+- Models are bypassing measurement thresholds faster than benchmarks can be updated
+- Traditional metrics are losing relevance as capabilities accelerate
+- This creates challenges for evaluating "good enough" vs "exceptional" model performance
 
 ### Arena AI Open Leaderboard
 1. Gemini 3.1 Pro Preview

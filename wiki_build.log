@@ -32,3 +32,22 @@ Wiki ingestion complete. Here's what was created:
 3. **Coding wars**: OpenAI Codex 3M users, Google Gemini CLI released
 4. **Infrastructure**: Anthropic-Google-Broadcom multi-gigawatt TPU deal
 5. **China-US tensions**: Frontier Model Forum coalition against model distillation
+All done. Here's a summary of the 2026-04-14 ingest:
+
+**7 wiki files updated:**
+
+| File | Changes |
+|------|---------|
+| `wiki/sources/anthropic.md` | Added infrastructure strain note + accidental source code leak entry |
+| `wiki/topics/llm_models.md` | Added DeepSeek V4 + MiniMax MMX-CLI; new "Benchmark Ceiling Crisis" section |
+| `wiki/topics/ai_companies.md` | Added infrastructure strain context to Anthropic section |
+| `wiki/topics/github_trends.md` | Added fireworks-tech-graph, claude-obsidian, talk-normal (3 new repos) |
+| `wiki/timelines/2026-04.md` | 8 new events for April 14 |
+| `wiki/index.md` | Updated stats: 29 days, 87+ repos, 214+ articles, 29 insights; added 2 new key events |
+| `wiki/log.md` | Full ingest entry with synthesized insight |
+
+**Key synthesized insights from the day's data:**
+- **Claude Mythos controversy escalating** — Treasury Secretary involved, UK regulators assessing, critics accusing Anthropic of exaggeration
+- **Benchmark ceiling crisis** — Stanford report finds 42% error rate on math benchmarks; models outpacing measurement
+- **Skills ecosystem maturing** — fireworks-tech-graph (diagrams), claude-obsidian (wiki companion), talk-normal (natural responses) all emerging same day
+- **Anthropic infrastructure strain** — expanded Google/Broadcom deal, usage caps on Claude subscriptions

@@ -16,7 +16,7 @@ Major Anthropic developments from March-April 2026.
 | Date | Event | Details |
 |------|-------|---------|
 | April 2026 | Series G | $30B at $380B valuation |
-| April 2026 | Compute deal | Multi-gigawatt TPU agreement with Google and Broadcom (3.5 gigawatts from 2027) |
+| April 2026 | Compute deal expansion | Expanded partnership with Google and Broadcom amid infrastructure strain; introduced usage caps on Claude subscriptions |
 
 ## Claude Model Releases
 
@@ -59,6 +59,7 @@ Anthropic's unprecedented response to Claude Mythos capabilities:
 |------|-------|---------|
 | March 26 | Data leak | ~3,000 internal documents exposed via unsecured CMS |
 | March 2026 | DNS vulnerability | Claude not directly affected but ChatGPT's flaw raised industry concerns |
+| April 14 | Source code leak | Accidentally leaked part of Claude's internal source code |
 
 ## Government Relations
 

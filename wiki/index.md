@@ -22,13 +22,13 @@ Welcome to the AI News knowledge base. This wiki incrementally builds structured
 
 ## Wiki Statistics
 
-- **GitHub Repos**: Tracked across 28 days (2026-03-17 to 2026-04-13)
+- **GitHub Repos**: Tracked across 29 days (2026-03-17 to 2026-04-14)
 - **AI News**: Major events from OpenAI, Anthropic, Google, Meta, and other AI labs
 - **Daily Insights**: Synthesized analysis for each date
 
 ## Key Events (March-April 2026)
 
-1. **Claude Mythos Controversy**: Anthropic withheld 10-trillion-parameter model from public release due to unprecedented cybersecurity risks. Launched Project Glasswing with 40+ partners.
+1. **Claude Mythos Controversy**: Anthropic withheld 10-trillion-parameter model from public release due to unprecedented cybersecurity risks. Launched Project Glasswing with 40+ partners. The Guardian reports Treasury Secretary Scott Bessent convened bank heads; UK AI Security Institute confirmed Mythos outperformed other systems in cybersecurity scenarios.
 
 2. **Record Funding**: OpenAI $122B raise at $852B valuation (largest private round ever), Anthropic $30B Series G at $380B valuation.
 
@@ -37,6 +37,10 @@ Welcome to the AI News knowledge base. This wiki incrementally builds structured
 4. **SpaceX + xAI**: $250B acquisition creating $1.25T combined entity.
 
 5. **Agent Framework Explosion**: MCP reached 97M installs. Claw-code (Claude Code rewrite) hit 181.9K stars in days.
+
+6. **Benchmark Ceiling Crisis**: Stanford report finds AI benchmarks failing to keep pace as models exceed measurement thresholds — popular math benchmark has 42% error rate.
+
+7. **Human Scientists vs AI Agents**: Despite rapid AI advancements, human scientists still outperform best AI agents on complex research tasks (Nature, April 13).
 
 ## How It Works
 
@@ -47,9 +51,9 @@ Welcome to the AI News knowledge base. This wiki incrementally builds structured
 
 ## Data Coverage
 
-- **GitHub Repos**: 84+ repositories tracked
-- **AI News**: 200+ articles from major sources
-- **Daily Insights**: 28 synthesized analysis pieces
+- **GitHub Repos**: 87+ repositories tracked
+- **AI News**: 214+ articles from major sources
+- **Daily Insights**: 29 synthesized analysis pieces
 
 ## Related Resources
 
