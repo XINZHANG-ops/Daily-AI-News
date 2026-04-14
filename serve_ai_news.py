@@ -330,7 +330,7 @@ Answer:
                 '--yes',
                 '--',
                 '-p', prompt,
-                '--dangerously-skip-permissions'
+                '--permission-mode', 'dontAsk'
             ],
             capture_output=True,
             text=True,
@@ -488,7 +488,7 @@ Provide a summary report of what you found and fixed.
                 '--yes',
                 '--',
                 '-p', prompt,
-                '--dangerously-skip-permissions'
+                '--permission-mode', 'dontAsk'
             ],
             capture_output=True,
             text=True,
@@ -574,7 +574,7 @@ Provide a summary report.
                     '--yes',
                     '--',
                     '-p', prompt,
-                    '--dangerously-skip-permissions'
+                    '--permission-mode', 'dontAsk'
                 ],
                 capture_output=True,
                 text=True,
