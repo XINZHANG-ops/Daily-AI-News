@@ -17,6 +17,7 @@ import logging
 import subprocess
 import threading
 import time
+import requests as http_requests
 from pathlib import Path
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
@@ -243,6 +244,24 @@ def log_response(response):
     return response
 
 
+SAFETY_SERVICE_URL = 'http://localhost:5003/filter'
+
+
+def _filter_pii(text):
+    """Filter PII from text via the safety layer service. Returns original on failure."""
+    try:
+        resp = http_requests.post(
+            SAFETY_SERVICE_URL,
+            json={'text': text},
+            timeout=30
+        )
+        if resp.ok:
+            return resp.json().get('text', text)
+    except Exception as e:
+        logger.warning(f"Safety filter unavailable: {e}")
+    return text
+
+
 def _ask_wiki_internal(question, model='minimax-m2.7:cloud', session_id=None):
     """
     Internal wiki Q&A logic.
@@ -344,6 +363,8 @@ Answer:
 
         answer = result.stdout.strip()
         logger.info(f"Answer generated ({len(answer)} chars)")
+
+        answer = _filter_pii(answer)
 
         if session_id:
             wiki_sessions[session_id].append({'role': 'user', 'content': question})
