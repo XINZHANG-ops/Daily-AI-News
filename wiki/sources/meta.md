@@ -54,6 +54,7 @@ Meta AI integrated across:
 ## Related Pages
 - [[topics/llm_models]] - Llama and Muse models
 - [[topics/ai_companies]] - Company overview
+- [[topics/ai_funding]] - $14B+ AI investment details
 
 ---
 *Last updated: 2026-04-14*

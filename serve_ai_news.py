@@ -15,6 +15,8 @@ import sqlite3
 import json
 import logging
 import subprocess
+import threading
+import time
 from pathlib import Path
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
@@ -75,7 +77,7 @@ def validate_sql(sql: str) -> tuple[bool, str]:
         return False, "Only SELECT queries are allowed"
 
     # Dangerous keywords
-    dangerous = ['DROP', 'DELETE', 'INSERT', 'UPDATE', 'ALTER', 'CREATE', 'EXEC', 'EXECUTE']
+    dangerous = ['DROP', 'DELETE', 'INSERT', 'UPDATE', 'ALTER', 'CREATE', 'EXEC', 'EXECUTE', 'TRUNCATE']
     for keyword in dangerous:
         if keyword in sql_upper:
             return False, f"Dangerous keyword '{keyword}' not allowed"
@@ -387,6 +389,208 @@ def ask_wiki():
     })
 
 
+@app.route('/lint_wiki', methods=['POST'])
+def lint_wiki():
+    """
+    Run wiki health check (lint operation).
+
+    Checks for:
+    - Contradictions between pages
+    - Stale claims superseded by newer sources
+    - Orphan pages with no inbound links
+    - Missing cross-references
+    - Broken links
+    - Metadata consistency
+
+    Request body (optional):
+    {
+        "model": "minimax-m2.7:cloud"
+    }
+
+    Response:
+    {
+        "status": "completed",
+        "report": "...",
+        "model": "minimax-m2.7:cloud"
+    }
+    """
+    data = request.get_json() or {}
+    model = data.get('model', 'minimax-m2.7:cloud')
+
+    repo_root = Path(__file__).parent
+    wiki_dir = repo_root / 'wiki'
+    llm_wiki_path = repo_root / 'llm-wiki.md'
+    project_schema_path = wiki_dir / 'WIKI.md'
+
+    if not wiki_dir.exists():
+        return jsonify({'error': 'wiki/ directory not found'}), 500
+
+    try:
+        llm_wiki_content = llm_wiki_path.read_text(encoding='utf-8') if llm_wiki_path.exists() else ""
+        project_schema_content = project_schema_path.read_text(encoding='utf-8') if project_schema_path.exists() else ""
+    except Exception as e:
+        logger.error(f"Failed to read schema files: {e}")
+        return jsonify({'error': f'Failed to read schema: {str(e)}'}), 500
+
+    prompt = f"""You are maintaining an AI news wiki. Run a health check (lint operation).
+
+=== WIKI PATTERN (llm-wiki.md) ===
+{llm_wiki_content}
+
+=== PROJECT SCHEMA (WIKI.md) ===
+{project_schema_content}
+
+=== AVAILABLE TOOLS ===
+
+You have access to the following SQL query tool running on localhost:5002:
+
+**SQL Query** (structured queries on AI news database):
+   curl -X POST http://localhost:5002/query \\
+     -H "Content-Type: application/json" \\
+     -d '{{"sql": "SELECT title_en, description_en FROM ai_news WHERE ..."}}'
+
+   Available tables:
+   - github_repos: name, url, description_en, description_zh, stars, forks, date_added
+   - ai_news: title_en, title_zh, url, source, time, description_en, description_zh, date_added
+   - insights: date, content_en, content_zh
+
+=== YOUR TASK ===
+
+Working directory: {repo_root}
+
+Run a comprehensive health check on wiki/. Look for:
+
+1. **Contradictions**: Do different pages make conflicting claims?
+2. **Stale content**: Has newer content superseded old claims?
+3. **Orphan pages**: Pages not linked from any topic or timeline page
+4. **Missing cross-references**: Topics/sources that should be linked but aren't
+5. **Broken links**: [[references]] that don't have a corresponding page
+6. **Metadata consistency**: Counts vs actual content in topic/source/timeline pages
+7. **Data gaps**: Missing fields, incomplete summaries
+8. **Index completeness**: Does wiki/index.md accurately reflect all wiki content?
+
+Read wiki/index.md, wiki/topics/, wiki/sources/, and wiki/timelines/ to perform the check.
+
+After identifying issues:
+1. Report all problems found
+2. Fix what you can (update pages, add missing links, correct counts)
+3. Update wiki/log.md with a lint entry
+
+Provide a summary report of what you found and fixed.
+"""
+
+    try:
+        logger.info("Running wiki lint operation...")
+        result = subprocess.run(
+            [
+                'ollama', 'launch', 'claude',
+                '--model', model,
+                '--yes',
+                '--',
+                '-p', prompt,
+                '--dangerously-skip-permissions'
+            ],
+            capture_output=True,
+            text=True,
+            cwd=str(repo_root),
+            timeout=600  # 10 minutes timeout for lint
+        )
+
+        if result.returncode != 0:
+            logger.error(f"ollama claude failed: {result.stderr}")
+            return jsonify({'error': f'Lint failed: {result.stderr}'}), 500
+
+        report = result.stdout.strip()
+        logger.info(f"Lint completed ({len(report)} chars)")
+
+        return jsonify({
+            'status': 'completed',
+            'report': report,
+            'model': model
+        })
+
+    except subprocess.TimeoutExpired:
+        logger.error("ollama claude timed out during lint")
+        return jsonify({'error': 'Lint timed out (10 min limit)'}), 504
+    except Exception as e:
+        logger.error(f"lint_wiki error: {e}")
+        return jsonify({'error': str(e)}), 500
+
+
+def run_weekly_lint():
+    """Background thread that runs wiki lint every week."""
+    WEEK_SECONDS = 7 * 24 * 60 * 60
+
+    while True:
+        try:
+            time.sleep(WEEK_SECONDS)
+            logger.info("Running scheduled weekly wiki lint...")
+
+            repo_root = Path(__file__).parent
+            wiki_dir = repo_root / 'wiki'
+
+            if not wiki_dir.exists():
+                logger.warning("wiki/ directory not found, skipping scheduled lint")
+                continue
+
+            llm_wiki_path = repo_root / 'llm-wiki.md'
+            project_schema_path = wiki_dir / 'WIKI.md'
+
+            llm_wiki_content = llm_wiki_path.read_text(encoding='utf-8') if llm_wiki_path.exists() else ""
+            project_schema_content = project_schema_path.read_text(encoding='utf-8') if project_schema_path.exists() else ""
+
+            prompt = f"""You are maintaining an AI news wiki. Run a weekly health check (lint operation).
+
+=== WIKI PATTERN (llm-wiki.md) ===
+{llm_wiki_content}
+
+=== PROJECT SCHEMA (WIKI.md) ===
+{project_schema_content}
+
+=== YOUR TASK ===
+
+Working directory: {repo_root}
+
+This is a scheduled weekly health check. Run a comprehensive check on wiki/.
+
+Look for:
+1. Contradictions between pages
+2. Stale content superseded by newer sources
+3. Orphan pages and topics
+4. Missing cross-references
+5. Broken links
+6. Metadata consistency issues
+7. Data gaps
+
+Fix what you can, and update wiki/log.md with a lint entry noting this was a scheduled weekly check.
+
+Provide a summary report.
+"""
+
+            result = subprocess.run(
+                [
+                    'ollama', 'launch', 'claude',
+                    '--model', 'minimax-m2.7:cloud',
+                    '--yes',
+                    '--',
+                    '-p', prompt,
+                    '--dangerously-skip-permissions'
+                ],
+                capture_output=True,
+                text=True,
+                cwd=str(repo_root),
+                timeout=600
+            )
+
+            if result.returncode == 0:
+                logger.info(f"Weekly lint completed successfully ({len(result.stdout)} chars)")
+            else:
+                logger.error(f"Weekly lint failed: {result.stderr}")
+
+        except Exception as e:
+            logger.error(f"Error in weekly lint thread: {e}")
+
+
 def main():
     parser = argparse.ArgumentParser(description='AI News Search Service')
     parser.add_argument('--db', type=str, default='ai_news.sqlite',
@@ -414,6 +618,20 @@ def main():
     print(f"Server: http://{args.host}:{args.port}")
     print("=" * 60)
     print()
+    print("Endpoints:")
+    print("  - GET  /health          Health check")
+    print("  - GET  /schema          Database schema")
+    print("  - GET  /stats           Database statistics")
+    print("  - POST /query           SQL queries")
+    print("  - POST /ask_wiki        Wiki-based Q&A")
+    print("  - POST /lint_wiki       Wiki health check (manual)")
+    print("  - Weekly automated lint enabled")
+    print()
+
+    # Start weekly lint background thread
+    logger.info("Starting weekly lint background thread...")
+    lint_thread = threading.Thread(target=run_weekly_lint, daemon=True)
+    lint_thread.start()
 
     # Run Flask
     app.run(host=args.host, port=args.port, debug=False)

@@ -82,7 +82,6 @@ OpenAI sent investor memo claiming computing advantage after Anthropic's compute
 - [[topics/llm_models]] - Claude model releases
 - [[topics/ai_companies]] - Company overview
 - [[topics/ai_funding]] - Funding details
-- [[topics/ai_security]] - Security developments
 
 ---
 *Last updated: 2026-04-14*

@@ -60,3 +60,18 @@ Ready for first ingest.
 
 ---
 _End of log_
+
+## [2026-04-14 02:00] lint | Health check
+
+### Issues Found & Fixed
+1. **Broken link** (`sources/anthropic.md`): Removed dangling `[[topics/ai_security]]` reference (page doesn't exist)
+2. **Missing cross-ref** (`sources/meta.md`): Added `[[topics/ai_funding]]` link for $14B+ investment context
+3. **Naming clarification** (`sources/anthropic.md`): Clarified "Claude Mythos" (leaked) vs "Claude Mythos Preview" (restricted release)
+
+### Wiki Health Summary
+- All 12 wiki pages verified
+- No orphan pages detected (all pages have inbound links from index.md or other pages)
+- No broken `[[reference]]` links (after fixes above)
+- Cross-reference coverage: Good
+- Metadata consistency: Statistics in index.md align with source content
+- No stale content detected (all pages marked 2026-04-14)
