@@ -168,9 +168,9 @@ class AIAssistant {
   getTranslations() {
     // Simplified for daily_paper - no i18n system needed
     return {
-      title: 'AI Paper Assistant',
-      welcome: 'Hi! Ask me anything about the papers.',
-      placeholder: 'Type @ to mention paper context...',
+      title: 'AI News Assistant',
+      welcome: 'Hi! Ask me anything about AI news.',
+      placeholder: 'Type @ to mention news context...',
       send: 'Send',
       newSession: 'New',
       mentionTitle: 'Select Context'
