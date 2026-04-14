@@ -243,7 +243,7 @@ def log_response(response):
 
 def _ask_wiki_internal(question, model='minimax-m2.7:cloud', session_id=None):
     """
-    Internal wiki Q&A logic shared by /chat and /ask_wiki endpoints.
+    Internal wiki Q&A logic.
 
     Returns:
         dict with 'answer' and 'session_id', or 'error' key on failure
@@ -357,32 +357,6 @@ Answer:
     except Exception as e:
         logger.error(f"ask_wiki error: {e}")
         return {'error': str(e)}
-
-
-@app.route('/chat', methods=['POST'])
-def chat():
-    """
-    AI Assistant chat endpoint (compatible with ai-assistant.js format).
-
-    Request: { "message": "...", "session_id": "abc123" }
-    Response: { "text": "...", "session_id": "abc123" }
-    """
-    data = request.get_json()
-    if not data or 'message' not in data:
-        return jsonify({'error': 'Missing message parameter'}), 400
-
-    question = data['message']
-    session_id = data.get('session_id')
-    model = data.get('model', 'minimax-m2.7:cloud')
-
-    result = _ask_wiki_internal(question, model=model, session_id=session_id)
-    if 'error' in result:
-        return jsonify({'error': result['error']}), 500
-
-    return jsonify({
-        'response': result['answer'],
-        'session_id': result.get('session_id')
-    })
 
 
 @app.route('/ask_wiki', methods=['POST'])
