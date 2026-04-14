@@ -477,6 +477,23 @@ def build_html(data):
             }}
         }});
     </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+    <script>
+      // Initialize AI Assistant
+      document.addEventListener('DOMContentLoaded', function() {{
+        const assistant = new AIAssistant();
+        window.aiAssistant = assistant;
+      }});
+    </script>
 </body>
 </html>'''
     

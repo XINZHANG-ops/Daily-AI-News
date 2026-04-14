@@ -1,0 +1,412 @@
+#!/usr/bin/env python3
+"""
+AI News Search Service
+======================
+
+Flask service providing SQL query and Wiki Q&A interface for AI News database.
+Similar to serve_search.py but simpler (no vector search, only SQL).
+
+Usage:
+    python serve_ai_news.py --port 5002
+"""
+
+import argparse
+import sqlite3
+import json
+import logging
+import subprocess
+from pathlib import Path
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+app = Flask(__name__)
+CORS(app)
+
+# Global variables
+DB_PATH = None
+wiki_sessions = {}  # Store conversation history for wiki Q&A
+
+
+def validate_sql(sql: str) -> tuple[bool, str]:
+    """
+    Validate SQL query for security.
+
+    Returns:
+        (is_valid, error_message)
+    """
+    sql_upper = sql.upper().strip()
+
+    # Must be a SELECT statement
+    if not sql_upper.startswith('SELECT'):
+        return False, "Only SELECT queries are allowed"
+
+    # Dangerous keywords
+    dangerous = ['DROP', 'DELETE', 'INSERT', 'UPDATE', 'ALTER', 'CREATE', 'EXEC', 'EXECUTE']
+    for keyword in dangerous:
+        if keyword in sql_upper:
+            return False, f"Dangerous keyword '{keyword}' not allowed"
+
+    return True, ""
+
+
+@app.route('/health', methods=['GET'])
+def health():
+    """Health check endpoint."""
+    return jsonify({
+        'status': 'healthy',
+        'service': 'ai-news-search',
+        'database': str(DB_PATH)
+    })
+
+
+@app.route('/schema', methods=['GET'])
+def get_schema():
+    """
+    Get database schema information.
+
+    Returns:
+        JSON with table names and column definitions
+    """
+    try:
+        with sqlite3.connect(DB_PATH) as conn:
+            cur = conn.cursor()
+
+            # Get all tables
+            cur.execute("SELECT name FROM sqlite_master WHERE type='table'")
+            tables = [row[0] for row in cur.fetchall()]
+
+            schema = {}
+            for table in tables:
+                # Get column info for each table
+                cur.execute(f"PRAGMA table_info({table})")
+                columns = []
+                for row in cur.fetchall():
+                    columns.append({
+                        'name': row[1],
+                        'type': row[2],
+                        'notnull': bool(row[3]),
+                        'pk': bool(row[5])
+                    })
+                schema[table] = columns
+
+            return jsonify({
+                'tables': tables,
+                'schema': schema
+            })
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/query', methods=['POST'])
+def query():
+    """
+    Execute SQL query on AI News database.
+
+    Request JSON:
+        {
+            "sql": "SELECT title_en, description_en FROM ai_news WHERE ..."
+        }
+
+    Returns:
+        JSON with query results
+    """
+    try:
+        data = request.get_json()
+        if not data or 'sql' not in data:
+            return jsonify({'error': 'Missing sql parameter'}), 400
+
+        sql = data['sql']
+
+        # Validate SQL
+        is_valid, error = validate_sql(sql)
+        if not is_valid:
+            return jsonify({'error': f'Invalid SQL: {error}'}), 400
+
+        # Execute query
+        with sqlite3.connect(DB_PATH) as conn:
+            conn.row_factory = sqlite3.Row  # Enable column access by name
+            cur = conn.cursor()
+            cur.execute(sql)
+
+            # Convert rows to dicts
+            results = [dict(row) for row in cur.fetchall()]
+
+            return jsonify({
+                'sql': sql,
+                'count': len(results),
+                'results': results
+            })
+
+    except sqlite3.Error as e:
+        return jsonify({'error': f'Database error: {str(e)}'}), 500
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/stats', methods=['GET'])
+def stats():
+    """
+    Get database statistics.
+
+    Returns:
+        JSON with row counts for each table
+    """
+    try:
+        with sqlite3.connect(DB_PATH) as conn:
+            cur = conn.cursor()
+
+            # Get table names
+            cur.execute("SELECT name FROM sqlite_master WHERE type='table'")
+            tables = [row[0] for row in cur.fetchall()]
+
+            stats = {}
+            for table in tables:
+                cur.execute(f"SELECT COUNT(*) FROM {table}")
+                count = cur.fetchone()[0]
+                stats[table] = count
+
+            # Get date range
+            cur.execute("SELECT MIN(date_added), MAX(date_added) FROM github_repos")
+            repo_range = cur.fetchone()
+
+            cur.execute("SELECT MIN(date_added), MAX(date_added) FROM ai_news")
+            news_range = cur.fetchone()
+
+            cur.execute("SELECT MIN(date), MAX(date) FROM insights")
+            insights_range = cur.fetchone()
+
+            return jsonify({
+                'counts': stats,
+                'date_ranges': {
+                    'repos': {'min': repo_range[0], 'max': repo_range[1]},
+                    'news': {'min': news_range[0], 'max': news_range[1]},
+                    'insights': {'min': insights_range[0], 'max': insights_range[1]}
+                }
+            })
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.before_request
+def log_request():
+    """Log incoming requests."""
+    if request.method == 'POST' and request.path == '/query':
+        data = request.get_json() or {}
+        sql = data.get('sql', '')[:100]  # First 100 chars
+        print(f"[{request.method}] {request.path} - SQL: {sql}...")
+    else:
+        print(f"[{request.method}] {request.path}")
+
+
+@app.after_request
+def log_response(response):
+    """Log responses."""
+    print(f"  → {response.status_code} ({response.content_length or 0} bytes)")
+    return response
+
+
+@app.route('/ask_wiki', methods=['POST'])
+def ask_wiki():
+    """
+    Ask a question based on the wiki knowledge base.
+
+    Request body:
+    {
+        "question": "What are recent AI news about OpenAI?",
+        "model": "minimax-m2.7:cloud",  // optional
+        "session_id": "abc123"  // optional, for conversation history
+    }
+
+    Response:
+    {
+        "question": "...",
+        "answer": "...",
+        "model": "minimax-m2.7:cloud",
+        "session_id": "abc123"
+    }
+    """
+    data = request.get_json()
+    if not data or 'question' not in data:
+        return jsonify({'error': 'Missing question parameter'}), 400
+
+    question = data['question']
+    model = data.get('model', 'minimax-m2.7:cloud')
+    session_id = data.get('session_id', None)
+
+    # Get or create session history
+    if session_id:
+        if session_id not in wiki_sessions:
+            wiki_sessions[session_id] = []
+        conversation_history = wiki_sessions[session_id]
+    else:
+        conversation_history = []
+
+    # Find repo root (where wiki/ directory is)
+    repo_root = Path(__file__).parent
+    wiki_dir = repo_root / 'wiki'
+    llm_wiki_path = repo_root / 'llm-wiki.md'
+    project_schema_path = wiki_dir / 'WIKI.md'
+
+    if not wiki_dir.exists():
+        return jsonify({'error': 'wiki/ directory not found'}), 500
+
+    # Read schema files
+    try:
+        llm_wiki_content = llm_wiki_path.read_text(encoding='utf-8') if llm_wiki_path.exists() else ""
+        project_schema_content = project_schema_path.read_text(encoding='utf-8') if project_schema_path.exists() else ""
+    except Exception as e:
+        logger.error(f"Failed to read schema files: {e}")
+        return jsonify({'error': f'Failed to read schema: {str(e)}'}), 500
+
+    # Build conversation history context
+    history_context = ""
+    if conversation_history:
+        history_context = "\n=== CONVERSATION HISTORY ===\n"
+        for msg in conversation_history[-6:]:  # Last 3 turns (6 messages)
+            role_label = "User" if msg['role'] == 'user' else "Assistant"
+            history_context += f"{role_label}: {msg['content']}\n\n"
+        history_context += "=== END HISTORY ===\n\n"
+
+    # Build the prompt for the agent
+    prompt = f"""You are a research assistant helping answer questions about AI news, GitHub repositories, and daily insights.
+
+=== WIKI PATTERN (llm-wiki.md) ===
+{llm_wiki_content}
+
+=== PROJECT SCHEMA (WIKI.md) ===
+{project_schema_content}
+
+=== AVAILABLE TOOLS ===
+
+You have access to the following SQL query tool running on localhost:5002:
+
+**SQL Query** (structured queries on AI news database):
+   curl -X POST http://localhost:5002/query \\
+     -H "Content-Type: application/json" \\
+     -d '{{"sql": "SELECT title_en, description_en FROM ai_news WHERE ..."}}'
+
+   Returns: {{"results": [{{"title_en": "...", "description_en": "...", ...}}]}}
+
+   Available tables:
+   - github_repos: name, url, description_en, description_zh, stars, forks, date_added
+   - ai_news: title_en, title_zh, url, source, time, description_en, description_zh, date_added
+   - insights: date, content_en, content_zh
+
+Use SQL queries to find relevant AI news, GitHub repos, or insights when the wiki alone doesn't have enough information.
+
+For example:
+- Use SQL for keyword searches: "SELECT * FROM ai_news WHERE title_en LIKE '%OpenAI%'"
+- Use SQL for date filtering: "SELECT * FROM github_repos WHERE date_added >= '2026-04-01'"
+- Use SQL for aggregation: "SELECT source, COUNT(*) FROM ai_news GROUP BY source"
+
+{history_context}=== CURRENT QUESTION ===
+
+Working directory: {repo_root}
+
+The user asks: {question}
+
+Strategy:
+1. Consider the conversation history above (if any) for context
+2. Check wiki/index.md to see if relevant topic pages exist
+3. Read relevant wiki pages for curated knowledge
+4. If wiki coverage is incomplete, use SQL queries to find additional information
+5. Synthesize a comprehensive answer combining wiki knowledge and SQL results
+
+Provide a comprehensive answer with references to specific news sources or repositories.
+
+Answer:
+"""
+
+    # Call ollama launch claude
+    try:
+        logger.info(f"Calling ollama claude for question: {question[:60]}...")
+        result = subprocess.run(
+            [
+                'ollama', 'launch', 'claude',
+                '--model', model,
+                '--yes',
+                '--',
+                '-p', prompt,
+                '--dangerously-skip-permissions'
+            ],
+            capture_output=True,
+            text=True,
+            cwd=str(repo_root),
+            timeout=300  # 5 minutes timeout (agent may use SQL tools)
+        )
+
+        if result.returncode != 0:
+            logger.error(f"ollama claude failed: {result.stderr}")
+            return jsonify({'error': f'Agent failed: {result.stderr}'}), 500
+
+        answer = result.stdout.strip()
+        logger.info(f"Answer generated ({len(answer)} chars)")
+
+        # Save to session history
+        if session_id:
+            wiki_sessions[session_id].append({'role': 'user', 'content': question})
+            wiki_sessions[session_id].append({'role': 'assistant', 'content': answer})
+            # Keep only last 20 messages (10 turns)
+            if len(wiki_sessions[session_id]) > 20:
+                wiki_sessions[session_id] = wiki_sessions[session_id][-20:]
+
+        return jsonify({
+            'question': question,
+            'answer': answer,
+            'model': model,
+            'session_id': session_id
+        })
+
+    except subprocess.TimeoutExpired:
+        logger.error("ollama claude timed out")
+        return jsonify({'error': 'Request timed out (5 min limit)'}), 504
+    except Exception as e:
+        logger.error(f"ask_wiki error: {e}")
+        return jsonify({'error': str(e)}), 500
+
+
+def main():
+    parser = argparse.ArgumentParser(description='AI News Search Service')
+    parser.add_argument('--db', type=str, default='ai_news.sqlite',
+                        help='Path to SQLite database (default: ai_news.sqlite)')
+    parser.add_argument('--port', type=int, default=5002,
+                        help='Port to run on (default: 5002)')
+    parser.add_argument('--host', type=str, default='0.0.0.0',
+                        help='Host to bind to (default: 0.0.0.0)')
+
+    args = parser.parse_args()
+
+    # Set global DB path
+    global DB_PATH
+    DB_PATH = Path(args.db)
+
+    if not DB_PATH.exists():
+        print(f"Error: Database not found at {DB_PATH}")
+        print("Run 'python build_sqlite.py' first to create the database.")
+        return 1
+
+    print("=" * 60)
+    print("AI News Search Service")
+    print("=" * 60)
+    print(f"Database: {DB_PATH}")
+    print(f"Server: http://{args.host}:{args.port}")
+    print("=" * 60)
+    print()
+
+    # Run Flask
+    app.run(host=args.host, port=args.port, debug=False)
+
+    return 0
+
+
+if __name__ == '__main__':
+    exit(main())
