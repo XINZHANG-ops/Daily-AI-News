@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 15, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 15, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/ComposioHQ/agent-orchestrator" class="card-title" target="_blank">ComposioHQ/agent-orchestrator</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> new stars</div>
+                                <div class="meta-item"><span>🍴</span> new forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Agentic orchestrator for parallel coding agents — plans tasks, spawns agents, and autonomously handles CI fixes, merge conflicts, and code reviews. Each agent gets its own git worktree, branch, and PR.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI代码代理并行编排器 — 规划任务、生成代理、自动处理CI修复、合并冲突和代码审查。每个代理拥有独立的git worktree、分支和PR。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/multica-ai/multica" class="card-title" target="_blank">multica-ai/multica</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> new stars</div>
+                                <div class="meta-item"><span>🍴</span> new forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills. Supports Claude Code, Codex, OpenClaw, and OpenCode.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源托管代理平台。将代码代理变成真正的团队成员 — 分配任务、跟踪进度、积累技能。支持Claude Code、Codex、OpenClaw和OpenCode。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/OpenBMB/VoxCPM" class="card-title" target="_blank">OpenBMB/VoxCPM</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> new stars</div>
+                                <div class="meta-item"><span>🍴</span> new forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning. 2B parameter model, 30 languages, 48kHz studio-quality audio.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">VoxCPM2：无分词器多语言语音生成、创意语音设计与逼真克隆的无分词器TTS。20亿参数模型，支持30种语言，48kHz录音室级音质。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">2026-04-14</div>
+                    <a href="https://www.reuters.com/technology/openai-unveils-gpt-54-cyber-week-after-rivals-announcement-ai-model-2026-04-14/" class="card-title" target="_blank" data-lang="en">OpenAI Launches GPT-5.4-Cyber for Cybersecurity as Competition with Anthropic Heats Up</a>
+                    <a href="https://www.reuters.com/technology/openai-unveils-gpt-54-cyber-week-after-rivals-announcement-ai-model-2026-04-14/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI发布GPT-5.4-Cyber网络安全模型，与Anthropic竞争加剧</a>
+                    <p class="card-description" data-lang="en">OpenAI unveiled GPT-5.4-Cyber, a variant of GPT-5.4 fine-tuned specifically for defensive cybersecurity work. The release follows Anthropic's announcement of its frontier model Mythos, signaling intensifying competition in enterprise and government cybersecurity contracts.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI发布了GPT-5.4-Cyber，这是GPT-5.4的变体，专为防御性网络安全工作微调。此次发布正值Anthropic宣布其前沿模型Mythos之际，标志着企业在政府网络安全合同领域的竞争日益激烈。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">SiliconANGLE</span>
+                    <div class="news-time">2026-04-13</div>
+                    <a href="https://siliconangle.com/2026/04/13/stanford-hais-2026-ai-index-reveals-china-u-s-now-neck-neck-race-global-dominance/" class="card-title" target="_blank" data-lang="en">Stanford HAI 2026 AI Index: China Has Erased the US Lead</a>
+                    <a href="https://siliconangle.com/2026/04/13/stanford-hais-2026-ai-index-reveals-china-u-s-now-neck-neck-race-global-dominance/" class="card-title" target="_blank" data-lang="zh" style="display: none;">斯坦福HAI 2026年AI指数：美国领先优势已被中国抹平</a>
+                    <p class="card-description" data-lang="en">Stanford's 2026 AI Index Report reveals that the US-China AI performance gap has effectively closed. As of March 2026, the top US model (Claude Opus 4.6) scored just 2.7 points above ByteDance's Dola-Seed on the Arena benchmark. Meanwhile, over 90% of notable AI models are now created by private companies, with transparency scores dropping from 58 to 40.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">斯坦福2026年AI指数报告显示，中美AI性能差距已实际消除。截至2026年3月，美国顶级模型（Claude Opus 4.6）在Arena基准上仅领先字节跳动的Dola-Seed 2.7分。同时，超过90%的知名AI模型现在由私营公司创建，透明度得分从58降至40。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">PYMNTS</span>
+                    <div class="news-time">2026-04-14</div>
+                    <a href="https://www.pymnts.com/artificial-intelligence-2/2026/oracle-debuts-ai-agents-for-corporate-banking/" class="card-title" target="_blank" data-lang="en">Oracle Debuts AI Agents for Corporate Banking</a>
+                    <a href="https://www.pymnts.com/artificial-intelligence-2/2026/oracle-debuts-ai-agents-for-corporate-banking/" class="card-title" target="_blank" data-lang="zh" style="display: none;">甲骨文推出企业银行AI代理</a>
+                    <p class="card-description" data-lang="en">Oracle Financial Services introduced embedded AI capabilities and pre-built agents for corporate banking, including loan data extraction and validation agents. The platform aims to accelerate decisions and strengthen governance in treasury, trade finance, credit and lending operations.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">甲骨文金融服务为企业银行推出嵌入式AI功能和预建代理，包括贷款数据提取和验证代理。该平台旨在加速决策并加强财务、贸易融资、信用和借贷运营的治理。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub Blog</span>
+                    <div class="news-time">2026-04-13</div>
+                    <a href="https://github.blog/changelog/2026-04-13-remote-control-cli-sessions-on-web-and-mobile-in-public-preview/" class="card-title" target="_blank" data-lang="en">GitHub Copilot CLI Launches Remote Sessions and Reaches General Availability</a>
+                    <a href="https://github.blog/changelog/2026-04-13-remote-control-cli-sessions-on-web-and-mobile-in-public-preview/" class="card-title" target="_blank" data-lang="zh" style="display: none;">GitHub Copilot CLI推出远程会话功能并正式上市</a>
+                    <p class="card-description" data-lang="en">GitHub Copilot CLI is no longer a purely local experience. The new copilot --remote feature allows users to control CLI sessions from web and mobile devices. The CLI also reached v1.0.26 with various bug fixes.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GitHub Copilot CLI不再局限于本地体验。新的copilot --remote功能允许用户从网页和移动设备控制CLI会话。该CLI也达到v1.0.26版本，修复了各种bug。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Forbes</span>
+                    <div class="news-time">2026-04-13</div>
+                    <a href="https://www.forbes.com/sites/johndrake/2026/04/13/an-ai-system-passed-peer-review-the-scientific-community-isnt-ready/" class="card-title" target="_blank" data-lang="en">AI System Passes Peer Review, Raising Questions About Scientific Publishing</a>
+                    <a href="https://www.forbes.com/sites/johndrake/2026/04/13/an-ai-system-passed-peer-review-the-scientific-community-isnt-ready/" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI系统通过同行评审，学术出版面临变革</a>
+                    <p class="card-description" data-lang="en">An AI system successfully passed peer review, raising fundamental questions about the future of scientific publishing and research validation. UC Berkeley's Carl Boettiger criticized the AI Scientist project for focusing too much on existing infrastructure rather than addressing fundamental research challenges.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个AI系统成功通过了同行评审，引发了关于科学出版和研究验证未来的根本性问题。加州大学伯克利分校的Carl Boettiger批评AI Scientist项目过于关注现有基础设施，而非解决基础研究挑战。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Bloomberg Law</span>
+                    <div class="news-time">2026-04-14</div>
+                    <a href="https://news.bloomberglaw.com/legal-exchange-insights-and-commentary/meta-cases-put-social-media-platforms-at-securities-fraud-risk" class="card-title" target="_blank" data-lang="en">Social Media Platforms Face New Securities Fraud Risk from AI-Generated Content</a>
+                    <a href="https://news.bloomberglaw.com/legal-exchange-insights-and-commentary/meta-cases-put-social-media-platforms-at-securities-fraud-risk" class="card-title" target="_blank" data-lang="zh" style="display: none;">社交媒体平台面临AI生成内容的新证券欺诈风险</a>
+                    <p class="card-description" data-lang="en">Court decisions in California have created new legal exposure for social media platforms whose AI systems materially contribute to fraudulent investment solicitations. When platforms' AI exercises 'ultimate authority' over assembled ad content, they may be considered makers of fraudulent statements under Rule 10b-5.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">加州法院的裁决给社交媒体平台带来了新的法律风险，这些平台的AI系统对欺诈性投资招揽产生了实质性影响。当平台的AI对广告内容的组合行使「最终权威」时，可能被视为规则10b-5下的欺诈声明制作者。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Atlantic</span>
+                    <div class="news-time">2026-04-14</div>
+                    <a href="https://www.theatlantic.com/technology/2026/04/4chan-ai-dungeon-thinking-reasoning/686794/" class="card-title" target="_blank" data-lang="en">4chan Users Discovered AI 'Chain of Thought' Reasoning Years Before Google</a>
+                    <a href="https://www.theatlantic.com/technology/2026/04/4chan-ai-dungeon-thinking-reasoning/686794/" class="card-title" target="_blank" data-lang="zh" style="display: none;">4chan用户比谷歌早几年发现AI「思维链」推理</a>
+                    <p class="card-description" data-lang="en">New research reveals that 4chan users playing AI Dungeon accidentally discovered 'chain of thought' reasoning in 2022, more than a year before Google researchers claimed to be 'the first' to elicit this capability from large language models. The gamers found that asking AI characters to solve math problems step-by-step dramatically improved performance.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">新研究发现，2022年4chan用户在玩AI Dungeon时偶然发现了「思维链」推理，比谷歌研究人员声称「首次」从大型语言模型中获得这种能力早了一年多。游戏玩家发现，让AI角色逐步解决数学问题可以显著提高性能。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week's AI landscape shows clear trends: 1) The US-China AI performance gap has effectively closed according to Stanford HAI, though the US maintains advantages in capital and infrastructure; 2) Cybersecurity-focused AI models are emerging as a new battleground between OpenAI (GPT-5.4-Cyber) and Anthropic (Mythos); 3) Agentic AI is moving beyond chatbots into enterprise workflows, with Oracle's banking agents and Composio's orchestrator representing this shift; 4) Transparency in AI development is declining as private companies dominate model production, with transparency scores dropping 18 points; 5) Voice AI continues to advance with VoxCPM2's tokenizer-free approach achieving 48kHz quality. The trend toward sovereign AI is accelerating with 44 nations now operating state-backed supercomputing clusters, though a new digital divide may be emerging between those nations and those lagging behind.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周AI领域呈现以下趋势：1）根据斯坦福HAI数据，中美AI性能差距已实际消除，尽管美国在资本和基础设施方面仍保持优势；2）网络安全AI模型正成为OpenAI（GPT-5.4-Cyber）和Anthropic（Mythos）之间的新战场；3）代理式AI正在从聊天机器人进入企业工作流，甲骨文的银行代理和Composio的编排器代表了这一转变；4）随着私营公司主导模型生产，AI开发的透明度正在下降，透明度得分下降了18点；5）VoxCPM2的无分词器方法实现了48kHz质量，语音AI持续进步。主权AI趋势正在加速，目前已有44个国家运营国家支持的超级计算集群，但新的数字鸿沟可能正在形成。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-15",
+  "github_repos": [
+    {
+      "name": "ComposioHQ/agent-orchestrator",
+      "url": "https://github.com/ComposioHQ/agent-orchestrator",
+      "description": {
+        "en": "Agentic orchestrator for parallel coding agents — plans tasks, spawns agents, and autonomously handles CI fixes, merge conflicts, and code reviews. Each agent gets its own git worktree, branch, and PR.",
+        "zh": "AI代码代理并行编排器 — 规划任务、生成代理、自动处理CI修复、合并冲突和代码审查。每个代理拥有独立的git worktree、分支和PR。"
+      },
+      "stars": "new",
+      "forks": "new"
+    },
+    {
+      "name": "multica-ai/multica",
+      "url": "https://github.com/multica-ai/multica",
+      "description": {
+        "en": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills. Supports Claude Code, Codex, OpenClaw, and OpenCode.",
+        "zh": "开源托管代理平台。将代码代理变成真正的团队成员 — 分配任务、跟踪进度、积累技能。支持Claude Code、Codex、OpenClaw和OpenCode。"
+      },
+      "stars": "new",
+      "forks": "new"
+    },
+    {
+      "name": "OpenBMB/VoxCPM",
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "description": {
+        "en": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning. 2B parameter model, 30 languages, 48kHz studio-quality audio.",
+        "zh": "VoxCPM2：无分词器多语言语音生成、创意语音设计与逼真克隆的无分词器TTS。20亿参数模型，支持30种语言，48kHz录音室级音质。"
+      },
+      "stars": "new",
+      "forks": "new"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Launches GPT-5.4-Cyber for Cybersecurity as Competition with Anthropic Heats Up",
+        "zh": "OpenAI发布GPT-5.4-Cyber网络安全模型，与Anthropic竞争加剧"
+      },
+      "url": "https://www.reuters.com/technology/openai-unveils-gpt-54-cyber-week-after-rivals-announcement-ai-model-2026-04-14/",
+      "source": "Reuters",
+      "time": "2026-04-14",
+      "description": {
+        "en": "OpenAI unveiled GPT-5.4-Cyber, a variant of GPT-5.4 fine-tuned specifically for defensive cybersecurity work. The release follows Anthropic's announcement of its frontier model Mythos, signaling intensifying competition in enterprise and government cybersecurity contracts.",
+        "zh": "OpenAI发布了GPT-5.4-Cyber，这是GPT-5.4的变体，专为防御性网络安全工作微调。此次发布正值Anthropic宣布其前沿模型Mythos之际，标志着企业在政府网络安全合同领域的竞争日益激烈。"
+      }
+    },
+    {
+      "title": {
+        "en": "Stanford HAI 2026 AI Index: China Has Erased the US Lead",
+        "zh": "斯坦福HAI 2026年AI指数：美国领先优势已被中国抹平"
+      },
+      "url": "https://siliconangle.com/2026/04/13/stanford-hais-2026-ai-index-reveals-china-u-s-now-neck-neck-race-global-dominance/",
+      "source": "SiliconANGLE",
+      "time": "2026-04-13",
+      "description": {
+        "en": "Stanford's 2026 AI Index Report reveals that the US-China AI performance gap has effectively closed. As of March 2026, the top US model (Claude Opus 4.6) scored just 2.7 points above ByteDance's Dola-Seed on the Arena benchmark. Meanwhile, over 90% of notable AI models are now created by private companies, with transparency scores dropping from 58 to 40.",
+        "zh": "斯坦福2026年AI指数报告显示，中美AI性能差距已实际消除。截至2026年3月，美国顶级模型（Claude Opus 4.6）在Arena基准上仅领先字节跳动的Dola-Seed 2.7分。同时，超过90%的知名AI模型现在由私营公司创建，透明度得分从58降至40。"
+      }
+    },
+    {
+      "title": {
+        "en": "Oracle Debuts AI Agents for Corporate Banking",
+        "zh": "甲骨文推出企业银行AI代理"
+      },
+      "url": "https://www.pymnts.com/artificial-intelligence-2/2026/oracle-debuts-ai-agents-for-corporate-banking/",
+      "source": "PYMNTS",
+      "time": "2026-04-14",
+      "description": {
+        "en": "Oracle Financial Services introduced embedded AI capabilities and pre-built agents for corporate banking, including loan data extraction and validation agents. The platform aims to accelerate decisions and strengthen governance in treasury, trade finance, credit and lending operations.",
+        "zh": "甲骨文金融服务为企业银行推出嵌入式AI功能和预建代理，包括贷款数据提取和验证代理。该平台旨在加速决策并加强财务、贸易融资、信用和借贷运营的治理。"
+      }
+    },
+    {
+      "title": {
+        "en": "GitHub Copilot CLI Launches Remote Sessions and Reaches General Availability",
+        "zh": "GitHub Copilot CLI推出远程会话功能并正式上市"
+      },
+      "url": "https://github.blog/changelog/2026-04-13-remote-control-cli-sessions-on-web-and-mobile-in-public-preview/",
+      "source": "GitHub Blog",
+      "time": "2026-04-13",
+      "description": {
+        "en": "GitHub Copilot CLI is no longer a purely local experience. The new copilot --remote feature allows users to control CLI sessions from web and mobile devices. The CLI also reached v1.0.26 with various bug fixes.",
+        "zh": "GitHub Copilot CLI不再局限于本地体验。新的copilot --remote功能允许用户从网页和移动设备控制CLI会话。该CLI也达到v1.0.26版本，修复了各种bug。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI System Passes Peer Review, Raising Questions About Scientific Publishing",
+        "zh": "AI系统通过同行评审，学术出版面临变革"
+      },
+      "url": "https://www.forbes.com/sites/johndrake/2026/04/13/an-ai-system-passed-peer-review-the-scientific-community-isnt-ready/",
+      "source": "Forbes",
+      "time": "2026-04-13",
+      "description": {
+        "en": "An AI system successfully passed peer review, raising fundamental questions about the future of scientific publishing and research validation. UC Berkeley's Carl Boettiger criticized the AI Scientist project for focusing too much on existing infrastructure rather than addressing fundamental research challenges.",
+        "zh": "一个AI系统成功通过了同行评审，引发了关于科学出版和研究验证未来的根本性问题。加州大学伯克利分校的Carl Boettiger批评AI Scientist项目过于关注现有基础设施，而非解决基础研究挑战。"
+      }
+    },
+    {
+      "title": {
+        "en": "Social Media Platforms Face New Securities Fraud Risk from AI-Generated Content",
+        "zh": "社交媒体平台面临AI生成内容的新证券欺诈风险"
+      },
+      "url": "https://news.bloomberglaw.com/legal-exchange-insights-and-commentary/meta-cases-put-social-media-platforms-at-securities-fraud-risk",
+      "source": "Bloomberg Law",
+      "time": "2026-04-14",
+      "description": {
+        "en": "Court decisions in California have created new legal exposure for social media platforms whose AI systems materially contribute to fraudulent investment solicitations. When platforms' AI exercises 'ultimate authority' over assembled ad content, they may be considered makers of fraudulent statements under Rule 10b-5.",
+        "zh": "加州法院的裁决给社交媒体平台带来了新的法律风险，这些平台的AI系统对欺诈性投资招揽产生了实质性影响。当平台的AI对广告内容的组合行使「最终权威」时，可能被视为规则10b-5下的欺诈声明制作者。"
+      }
+    },
+    {
+      "title": {
+        "en": "4chan Users Discovered AI 'Chain of Thought' Reasoning Years Before Google",
+        "zh": "4chan用户比谷歌早几年发现AI「思维链」推理"
+      },
+      "url": "https://www.theatlantic.com/technology/2026/04/4chan-ai-dungeon-thinking-reasoning/686794/",
+      "source": "The Atlantic",
+      "time": "2026-04-14",
+      "description": {
+        "en": "New research reveals that 4chan users playing AI Dungeon accidentally discovered 'chain of thought' reasoning in 2022, more than a year before Google researchers claimed to be 'the first' to elicit this capability from large language models. The gamers found that asking AI characters to solve math problems step-by-step dramatically improved performance.",
+        "zh": "新研究发现，2022年4chan用户在玩AI Dungeon时偶然发现了「思维链」推理，比谷歌研究人员声称「首次」从大型语言模型中获得这种能力早了一年多。游戏玩家发现，让AI角色逐步解决数学问题可以显著提高性能。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week's AI landscape shows clear trends: 1) The US-China AI performance gap has effectively closed according to Stanford HAI, though the US maintains advantages in capital and infrastructure; 2) Cybersecurity-focused AI models are emerging as a new battleground between OpenAI (GPT-5.4-Cyber) and Anthropic (Mythos); 3) Agentic AI is moving beyond chatbots into enterprise workflows, with Oracle's banking agents and Composio's orchestrator representing this shift; 4) Transparency in AI development is declining as private companies dominate model production, with transparency scores dropping 18 points; 5) Voice AI continues to advance with VoxCPM2's tokenizer-free approach achieving 48kHz quality. The trend toward sovereign AI is accelerating with 44 nations now operating state-backed supercomputing clusters, though a new digital divide may be emerging between those nations and those lagging behind.",
+    "zh": "本周AI领域呈现以下趋势：1）根据斯坦福HAI数据，中美AI性能差距已实际消除，尽管美国在资本和基础设施方面仍保持优势；2）网络安全AI模型正成为OpenAI（GPT-5.4-Cyber）和Anthropic（Mythos）之间的新战场；3）代理式AI正在从聊天机器人进入企业工作流，甲骨文的银行代理和Composio的编排器代表了这一转变；4）随着私营公司主导模型生产，AI开发的透明度正在下降，透明度得分下降了18点；5）VoxCPM2的无分词器方法实现了48kHz质量，语音AI持续进步。主权AI趋势正在加速，目前已有44个国家运营国家支持的超级计算集群，但新的数字鸿沟可能正在形成。"
+  }
+}
