@@ -1,0 +1,145 @@
+{
+  "date": "2026-04-16",
+  "github_repos": [
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": {
+        "en": "An agentic skills framework and complete software development methodology for coding agents. Triggers automatically when agents need to write code, guiding them through spec writing, TDD, and subagent-driven development. Compatible with Claude Code, Codex, Cursor, and Gemini CLI.",
+        "zh": "一个代理技能框架和完整的软件开发方法论，适用于编程代理。当代理需要编写代码时自动触发，引导其完成规范编写、测试驱动开发和子代理驱动开发。兼容 Claude Code、Codex、Cursor 和 Gemini CLI。"
+      },
+      "stars": "155.3k",
+      "forks": "13.5k"
+    },
+    {
+      "name": "lsdefine/GenericAgent",
+      "url": "https://github.com/lsdefine/GenericAgent",
+      "description": {
+        "en": "A minimal ~3K-line self-evolving autonomous agent framework. Grants LLMs system-level control over local computers — browser, terminal, filesystem, keyboard/mouse, screen vision, and mobile devices. Automatically crystallizes task execution paths into reusable skills, forming a personal skill tree that grows with use. 6x lower token consumption than typical agent frameworks.",
+        "zh": "一个极简的约3000行代码的自进化自主代理框架。赋予LLM对本地计算机的系统级控制权——浏览器、终端、文件系统、键盘/鼠标、屏幕视觉和移动设备。自动将任务执行路径结晶为可复用技能，形成随着使用不断成长的个人技能树。token消耗仅为典型代理框架的1/6。"
+      },
+      "stars": "2.3k",
+      "forks": "281"
+    },
+    {
+      "name": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "description": {
+        "en": "Open-source framework for AI SRE agents that resolve production incidents on your own infrastructure. Provides an open reinforcement learning environment for agentic infrastructure incident response, with end-to-end tests and synthetic incident simulations. Connects 40+ existing DevOps tools and supports Kubernetes, EC2, CloudWatch, Lambda, and ECS Fargate scenarios.",
+        "zh": "开源的AI SRE代理框架，在您自己的基础设施上解决生产事故。为代理式基础设施事故响应提供开放的强化学习环境，支持端到端测试和合成事故模拟。连接40多种现有DevOps工具，支持Kubernetes、EC2、CloudWatch、Lambda和ECS Fargate场景。"
+      },
+      "stars": "937",
+      "forks": "133"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Launches GPT-5.4-Cyber with Expanded Access for Security Teams",
+        "zh": "OpenAI发布GPT-5.4-Cyber，扩大安全团队访问权限"
+      },
+      "url": "https://thehackernews.com/2026/04/openai-launches-gpt-54-cyber-with.html",
+      "source": "The Hacker News",
+      "time": "2026-04-15",
+      "description": {
+        "en": "OpenAI unveiled GPT-5.4-Cyber, a frontier model variant specifically optimized for defensive cybersecurity with lowered refusal boundaries and binary reverse engineering capabilities. The rollout expands the Trusted Access for Cyber (TAC) program to thousands of vetted defenders, following Anthropic's launch of the controversial Claude Mythos model a week prior. Codex Security has already contributed to fixing over 3,000 critical vulnerabilities.",
+        "zh": "OpenAI发布了GPT-5.4-Cyber，这是一款专门为防御性网络安全优化的前沿模型变体，具有降低的拒绝边界和二进制逆向工程能力。此次发布将\"网络安全可信访问\"（TAC）计划扩展至数千名经过审核的防御者此前一周，Anthropic发布了有争议的Claude Mythos模型。Codex Security已帮助修复了超过3000个关键漏洞。"
+      }
+    },
+    {
+      "title": {
+        "en": "Stanford's 2026 AI Index: Models Now Top 50% on Humanity's Last Exam",
+        "zh": "斯坦福2026年AI指数：模型在\"人类最后考试\"中突破50%准确率"
+      },
+      "url": "https://spectrum.ieee.org/state-of-ai-index-2026",
+      "source": "IEEE Spectrum",
+      "time": "2026-04-16",
+      "description": {
+        "en": "Stanford's annual AI Index report reveals frontier models now exceed 50% on Humanity's Last Exam (up from 8.8% in 2025), with Claude Opus 4.6 and Gemini 3.1 Pro leading. Key findings: US leads in model releases but China dominates robotics deployment (295k industrial robots installed in 2024). AI compute has grown 30x since 2021. Training Grok 4 generates an estimated 72,000–140,000 tons of CO2.",
+        "zh": "斯坦福大学年度AI指数报告显示，前沿模型在\"人类最后考试\"中的准确率已突破50%（2025年为8.8%），Claude Opus 4.6和Gemini 3.1 Pro领先。主要发现：美国在模型发布数量上领先，但中国在机器人部署上占据主导（2024年安装工业机器人29.5万台）。AI算力自2021年以来增长30倍。训练Grok 4估计产生72000至140000吨二氧化碳排放。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic's Claude Opus 4.6 Achieves 80.8% on SWE-Bench, Near-Tie with Gemini 3.1 Pro",
+        "zh": "Anthropic Claude Opus 4.6在SWE-Bench上达到80.8%，与Gemini 3.1 Pro几乎持平"
+      },
+      "url": "https://www.demandsphere.com/research/ai-frontier-model-tracker/benchmarks/swe-bench/",
+      "source": "DemandSphere",
+      "time": "2026-04-16",
+      "description": {
+        "en": "Claude Opus 4.6 leads SWE-Bench Verified at 80.8%, with Gemini 3.1 Pro at 80.6% — a near-complete tie on the most production-relevant coding benchmark. Claude Opus 4.6 also leads on long-context retrieval (18.5% → 76%) and expert task preferences. Gemini 3.1 Pro leads on GPQA Diamond (94.3%), ARC-AGI-2 (77.1%), and price-performance at $2/$12 per million tokens.",
+        "zh": "Claude Opus 4.6在SWE-Bench Verified上以80.8%领先，Gemini 3.1 Pro为80.6%——在最具生产相关性的编码基准测试中几乎持平。Claude Opus 4.6在长上下文检索（18.5%→76%）和专家任务偏好上也领先。Gemini 3.1 Pro在GPQA Diamond（94.3%）、ARC-AGI-2（77.1%）和性价比（每百万token $2/$12）上领先。"
+      }
+    },
+    {
+      "title": {
+        "en": "Five Hyperscalers Control Two-Thirds of Global AI Compute",
+        "zh": "五大超大规模企业控制全球三分之二的AI算力"
+      },
+      "url": "https://epochai.substack.com/p/five-hyperscalers-now-own-over-two",
+      "source": "Epoch AI / Radical Data Science",
+      "time": "2026-04-15",
+      "description": {
+        "en": "Google, Microsoft, Meta, Amazon, and Oracle now control over 66% of the world's AI compute capacity, according to Epoch AI research. Nvidia GPUs still account for over 60% of total AI compute. This consolidation creates significant dependency risks for AI labs and startups, with implications for compute access, pricing, and national AI competitiveness.",
+        "zh": "根据Epoch AI研究，Google、微软、Meta、亚马逊和甲骨文现在控制着全球超过66%的AI算力。英伟达GPU仍占AI总算力的60%以上。这种集中化给AI实验室和初创公司带来了显著的依赖风险，对算力获取、定价和国家AI竞争力都有影响。"
+      }
+    },
+    {
+      "title": {
+        "en": "Researchers Prove AI Automation Creates Economic 'Prisoner's Dilemma' Trap",
+        "zh": "研究人员证明AI自动化创造经济\"囚徒困境\"陷阱"
+      },
+      "url": "https://arxiv.org/abs/2603.20617",
+      "source": "Radical Data Science / UPenn+BU",
+      "time": "2026-04-15",
+      "description": {
+        "en": "A game theory paper from UPenn and Boston University mathematically proves that AI-driven layoffs will collapse the economy through a self-reinforcing cycle: each company automates to cut costs → fired workers stop spending → revenue collapses across all sectors → even automating companies go bankrupt. Researchers found only a Pigouvian 'robot tax' can break the cycle.",
+        "zh": "宾夕法尼亚大学和波士顿大学的一篇博弈论论文数学证明，AI驱动的裁员将通过自我强化循环导致经济崩溃：每家公司自动化削减成本→被解雇的工人停止消费→所有行业收入崩溃→即使自动化的公司也会破产。研究人员发现，只有庇古\"机器人税\"才能打破这一循环。"
+      }
+    },
+    {
+      "title": {
+        "en": "NousResearch Hermes Agent v0.8.0 Ships with 209 Merged PRs and Browser Use Integration",
+        "zh": "NousResearch Hermes Agent v0.8.0发布：合并209个PR，集成Browser Use"
+      },
+      "url": "https://fazm.ai/blog/open-source-ai-projects-releases-github-last-day-april-2026",
+      "source": "Fazm Blog",
+      "time": "2026-04-15",
+      "description": {
+        "en": "Hermes Agent v0.8.0 ('the intelligence release') merges 209 pull requests with key upgrades: background task auto-notifications, built-in Browser Use integration, live model switching across all platforms, worktree-based parallelism, and OAuth 2.1 MCP support. The project crossed 35k GitHub stars. Four llama.cpp releases in 24 hours also shipped Vulkan flash attention DP4A for non-NVIDIA GPUs.",
+        "zh": "Hermes Agent v0.8.0（\"智能版本\"）合并了209个pull请求，带来关键升级：后台任务自动通知、内置Browser Use集成、全平台实时模型切换、基于工作树的并行化，以及OAuth 2.1 MCP支持。该项目GitHub星标超过3.5万。llama.cpp在24小时内也发布了四个版本，包括用于非NVIDIA GPU的Vulkan闪存注意力DP4A。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI Token 'Maxxing' Study: $0.28–$90 Cost Per Merged PR, High Performers 7x More Costly",
+        "zh": "AI\"代币最大化\"研究：每个合并PR成本$0.28至$90，高绩效者成本高7倍"
+      },
+      "url": "https://radicaldatascience.wordpress.com/2026/04/15/ai-news-briefs-bulletin-board-for-april-2026/",
+      "source": "Radical Data Science / Jellyfish",
+      "time": "2026-04-15",
+      "description": {
+        "en": "A study of 12,000 developers across 200 companies found the 90th percentile AI user consumes ~380M tokens/month (7x median), with cost-per-merged-PR ranging from $0.28 at the lowest usage tier to nearly $90 at the highest. More tokens correlate with more output, but at dramatically higher cost-per-unit — raising questions about AI-first development ROI and token efficiency strategies.",
+        "zh": "一项涵盖200家公司12000名开发者的研究发现，第90百分位的AI用户每月消耗约3.8亿token（中位数的7倍），每个合并PR的成本从最低使用层的0.28美元到最高层的近90美元不等。更多token与更多产出相关，但单位成本显著更高——这引发了对AI优先开发投资回报率和token效率策略的思考。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI and Anthropic IPOs Loom as Public Sours on AI and Data Centers",
+        "zh": "OpenAI和Anthropic IPO临近，公众对AI和数据中心态度恶化"
+      },
+      "url": "https://www.cnbc.com/2026/04/15/public-opinion-ai-data-centers-anthropic-openai-ipo.html",
+      "source": "CNBC / Stanford AI Index",
+      "time": "2026-04-15",
+      "description": {
+        "en": "As OpenAI and Anthropic prepare for IPOs later in 2026, Stanford's AI Index documents growing public backlash — US local governments are beginning to embrace restrictions or outright bans on new data center development. Meanwhile, 1,953 new AI startups were funded in the US in 2025 (10x the UK), and 90% of notable AI models now originate from industry rather than academia.",
+        "zh": "就在OpenAI和Anthropic准备于2026年晚些时候IPO之际，斯坦福AI指数记录了日益增长的公众反弹——美国地方政府开始对新建数据中心实施限制或全面禁令。与此同时，2025年美国新增1953家AI初创公司获得融资（是英国的10倍），90%的重要AI模型现在来自产业界而非学术界。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week's AI landscape is defined by three converging themes: the cybersecurity model arms race (GPT-5.4-Cyber vs Claude Mythos), the coding benchmark near-tie between Claude Opus 4.6 and Gemini 3.1 Pro (80.8% vs 80.6% on SWE-Bench), and the growing consolidation of AI infrastructure among five hyperscalers. The cybersecurity angle is particularly noteworthy — both OpenAI and Anthropic are now releasing intentionally more permissive models for vetted defenders, a significant policy shift that acknowledges the dual-use nature of frontier AI. On the open-source side, agent memory systems (MemPalace, Hermes Agent v0.8) and agentic development workflows (obra/superpowers, lsdefine/GenericAgent) are maturing rapidly. The economic trap research is a sobering counterpoint: if AI automation truly creates a prisoner's dilemma at scale, the long-term demand for AI may be structurally undermined by the very labor displacement it causes. Watch: whether frontier model capability gains continue to outpace the growing public and regulatory resistance to AI deployment.",
+    "zh": "本周AI领域由三个趋同主题主导：网络安全模型军备竞赛（GPT-5.4-Cyber vs Claude Mythos）、Claude Opus 4.6与Gemini 3.1 Pro之间编码基准的近乎持平（SWE-Bench上80.8% vs 80.6%），以及AI基础设施日益向五大超大规模企业集中。网络安全角度尤其值得关注——OpenAI和Anthropic都在为经过审核的防御者发布有意更宽松的模型，这是承认前沿AI双重用途的重要政策转变。在开源方面，代理记忆系统（MemPalace、Hermes Agent v0.8）和代理开发工作流（obra/superpowers、lsdefine/GenericAgent）正在快速成熟。经济陷阱研究是一个令人警醒的反面观点：如果AI自动化确实在规模上创造了囚徒困境，那么AI的长期需求可能因其造成的劳动力 displacement 而受到结构性削弱。值得关注的焦点：前沿模型能力提升是否能继续超越公众和监管机构对AI部署日益增长的阻力。"
+  }
+}
