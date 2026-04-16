@@ -332,10 +332,11 @@ The user asks: {question}
 
 Strategy:
 1. Consider the conversation history above (if any) for context
-2. Check wiki/index.md to see if relevant topic pages exist
-3. Read relevant wiki pages for curated knowledge
-4. If wiki coverage is incomplete, use SQL queries to find additional information
-5. Synthesize a comprehensive answer combining wiki knowledge and SQL results
+2. Read wiki/index.md to see all pages across topics/, sources/, timelines/, entities/, ideas/
+3. Read relevant wiki pages — follow [[wikilinks]] across directories, traversing at least 2 levels of connections
+4. The wiki contains cross-cutting ideas and entity pages — use these for richer context
+5. If wiki coverage is incomplete, use SQL queries to find additional information
+6. Synthesize a comprehensive answer combining wiki knowledge and SQL results
 
 Answer:
 """
@@ -479,22 +480,30 @@ You have access to the following SQL query tool running on localhost:5002:
 
 Working directory: {repo_root}
 
-Run a comprehensive health check on wiki/. Look for:
+Run a comprehensive health check on wiki/. Check all 5 directories: topics/, sources/, timelines/, entities/, ideas/.
 
+STRUCTURAL CHECKS:
 1. **Contradictions**: Do different pages make conflicting claims?
 2. **Stale content**: Has newer content superseded old claims?
-3. **Orphan pages**: Pages not linked from any topic or timeline page
-4. **Missing cross-references**: Topics/sources that should be linked but aren't
+3. **Orphan pages**: Pages with no inbound links across all directories
+4. **Missing cross-references**: Topics/sources/entities that should be linked but aren't
 5. **Broken links**: [[references]] that don't have a corresponding page
-6. **Metadata consistency**: Counts vs actual content in topic/source/timeline pages
-7. **Data gaps**: Missing fields, incomplete summaries
-8. **Index completeness**: Does wiki/index.md accurately reflect all wiki content?
+6. **Index completeness**: Does wiki/index.md list all pages in all 5 directories?
 
-Read wiki/index.md, wiki/topics/, wiki/sources/, and wiki/timelines/ to perform the check.
+CONNECTION QUALITY CHECKS:
+7. **Shallow links**: Connections that just say "Related:", "See also:", or link without annotation → REWRITE with WHY
+8. **Missing entities**: Models, products, protocols mentioned in topics/sources but lacking entity pages → create them
+9. **Missing ideas**: Recurring themes in daily insights that deserve their own idea page → create them
+10. **Topic pages missing ## Evolution**: Write a chronological narrative, not just a list
+11. **Topic pages missing ## Patterns & Insights**: Synthesize from events
+12. **Companies in entities/**: Company pages belong in sources/, not entities/ → flag
+13. **People in entities/**: Entities are for technical things only → flag
+
+Read wiki/index.md, then systematically check all pages in topics/, sources/, timelines/, entities/, ideas/.
 
 After identifying issues:
 1. Report all problems found
-2. Fix what you can (update pages, add missing links, correct counts)
+2. Fix what you can (update pages, add missing links, rewrite shallow connections)
 3. Update wiki/log.md with a lint entry
 
 Provide a summary report of what you found and fixed.
@@ -538,14 +547,14 @@ Provide a summary report of what you found and fixed.
         return jsonify({'error': str(e)}), 500
 
 
-def run_weekly_lint():
-    """Background thread that runs wiki lint every week."""
-    WEEK_SECONDS = 7 * 24 * 60 * 60
+def run_daily_lint():
+    """Background thread that runs wiki lint every day."""
+    DAY_SECONDS = 24 * 60 * 60
 
     while True:
         try:
-            time.sleep(WEEK_SECONDS)
-            logger.info("Running scheduled weekly wiki lint...")
+            time.sleep(DAY_SECONDS)
+            logger.info("Running scheduled daily wiki lint...")
 
             repo_root = Path(__file__).parent
             wiki_dir = repo_root / 'wiki'
@@ -560,7 +569,7 @@ def run_weekly_lint():
             llm_wiki_content = llm_wiki_path.read_text(encoding='utf-8') if llm_wiki_path.exists() else ""
             project_schema_content = project_schema_path.read_text(encoding='utf-8') if project_schema_path.exists() else ""
 
-            prompt = f"""You are maintaining an AI news wiki. Run a weekly health check (lint operation).
+            prompt = f"""You are maintaining an AI news wiki. Run a daily health check (lint operation).
 
 === WIKI PATTERN (llm-wiki.md) ===
 {llm_wiki_content}
@@ -572,18 +581,23 @@ def run_weekly_lint():
 
 Working directory: {repo_root}
 
-This is a scheduled weekly health check. Run a comprehensive check on wiki/.
+This is a scheduled daily health check. Check all 5 directories: topics/, sources/, timelines/, entities/, ideas/.
 
-Look for:
+STRUCTURAL:
 1. Contradictions between pages
 2. Stale content superseded by newer sources
-3. Orphan pages and topics
+3. Orphan pages (no inbound links) across all directories
 4. Missing cross-references
-5. Broken links
-6. Metadata consistency issues
-7. Data gaps
+5. Broken [[wikilinks]]
 
-Fix what you can, and update wiki/log.md with a lint entry noting this was a scheduled weekly check.
+CONNECTION QUALITY:
+6. Shallow connections that just say "Related:" or "See also:" → rewrite with WHY
+7. Missing entity pages for models/products/protocols mentioned in topics/sources
+8. Missing idea pages for recurring themes
+9. Topic pages missing ## Evolution or ## Patterns & Insights → add them
+10. Companies in entities/ → move to sources/
+
+Fix what you can, and update wiki/log.md with a lint entry.
 
 Provide a summary report.
 """
@@ -604,12 +618,12 @@ Provide a summary report.
             )
 
             if result.returncode == 0:
-                logger.info(f"Weekly lint completed successfully ({len(result.stdout)} chars)")
+                logger.info(f"Daily lint completed successfully ({len(result.stdout)} chars)")
             else:
-                logger.error(f"Weekly lint failed: {result.stderr}")
+                logger.error(f"Daily lint failed: {result.stderr}")
 
         except Exception as e:
-            logger.error(f"Error in weekly lint thread: {e}")
+            logger.error(f"Error in daily lint thread: {e}")
 
 
 def main():
@@ -646,12 +660,12 @@ def main():
     print("  - POST /query           SQL queries")
     print("  - POST /ask_wiki        Wiki-based Q&A")
     print("  - POST /lint_wiki       Wiki health check (manual)")
-    print("  - Weekly automated lint enabled")
+    print("  - Daily automated lint enabled")
     print()
 
     # Start weekly lint background thread
     logger.info("Starting weekly lint background thread...")
-    lint_thread = threading.Thread(target=run_weekly_lint, daemon=True)
+    lint_thread = threading.Thread(target=run_daily_lint, daemon=True)
     lint_thread.start()
 
     # Run Flask

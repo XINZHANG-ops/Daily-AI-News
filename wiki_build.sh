@@ -71,24 +71,30 @@ Working directory: $REPO
 
 There are $NEW_COUNT new date(s) in data/ that have not yet been added to the wiki.
 
-For each JSON file in data/:
-1. Read the JSON file (contains github_repos, ai_news, insight_analysis)
-2. Follow the ingest workflow defined in WIKI.md:
-   - Update or create topic pages (wiki/topics/)
-   - Update or create source pages (wiki/sources/)
-   - Update or create timeline pages (wiki/timelines/)
-   - Update wiki/index.md with new pages
-   - Append entry to wiki/log.md
-3. After all dates are processed, update wiki/processed.json with the processed dates
+Follow the ingest workflow defined in WIKI.md exactly. Key steps:
 
-Be thorough with topic synthesis — the goal is a wiki where each topic page synthesizes trends across multiple days, not just lists of news items.
+STEP 1 — For each new JSON file in data/ (check wiki/processed.json to find unprocessed dates):
+1. Read the JSON file (github_repos, ai_news, insight_analysis)
+2. Identify specific entities: models (e.g., "Claude Mythos", "GPT-5.4"), products (e.g., "Claude Code", "Codex"), protocols (e.g., "MCP"), notable repos (e.g., "claw-code"), benchmarks
+3. Identify ideas: cross-cutting insights or patterns in the daily analysis
+4. Update wiki/topics/ (llm_models, ai_companies, ai_funding, github_trends — create new topics if needed)
+5. Update wiki/sources/ for relevant companies (openai, anthropic, google, meta — create new sources if needed)
+6. Update wiki/timelines/ for the appropriate month
+7. Create/update wiki/entities/ pages for each entity identified
+8. Create/update wiki/ideas/ pages for each cross-cutting insight
 
-Key topics to track:
-- LLM releases and updates (GPT, Claude, Gemini, etc.)
-- AI company news (OpenAI, Anthropic, Google, Meta, etc.)
-- Funding rounds and valuations
-- GitHub trending repositories and patterns
-- Industry trends and insights
+STEP 2 — After all dates are processed:
+1. Update wiki/index.md with all 5 sections (Topics, Sources, Timelines, Entities, Ideas)
+2. Update wiki/processed.json
+3. Append to wiki/log.md
+
+CRITICAL REQUIREMENT — Connections:
+Every ## Connections section on every page must have ANNOTATED [[wikilinks]]. Read the Connection Rules in WIKI.md carefully. NEVER write "Related:" or "See also:" — always explain WHY with a specific annotation.
+
+Be thorough with:
+- Topic synthesis: ## Evolution tells a chronological story (not a list), ## Patterns & Insights synthesizes across events
+- Entity identification: extract specific named models, products, protocols, repos from each date
+- Idea extraction: look for insights in insight_analysis and recurring patterns across multiple days
 
 Start now.
 PROMPT
