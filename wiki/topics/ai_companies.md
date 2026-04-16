@@ -1,157 +1,52 @@
+---
+title: "AI Companies"
+slug: ai_companies
+last_updated: 2026-04-16
+---
+
 # AI Companies
 
-A comprehensive overview of AI company strategies, developments, and competition.
+## Overview
+The AI company landscape in March-April 2026 is defined by three intersecting narratives: the OpenAI-Anthropic rivalry intensifying around compute and IPO positioning, the geopolitical fracture lines around Chinese model distillation, and unprecedented capital concentration in AI infrastructure. The period sees both companies preparing for IPOs while battling for developer mindshare and enterprise contracts.
 
-## Major AI Labs
+## Evolution
 
-### OpenAI
+**OpenAI's IPO Preparation and Pivot**: OpenAI completed its historic $122 billion funding round in early April at a $852 billion valuation — the largest private raise in history. The company generates $2 billion/month in revenue with 900 million weekly active users. However, under pressure to show path to profitability, it has cut Sora video generation ($1 billion Disney deal terminated), Instant Checkout, and delayed adult chatbot plans. The company is building a unified "AI superapp" combining ChatGPT, Codex, and Atlas browser. Workforce expansion to 8,000 employees by year-end reflects aggressive scaling.
 
-**Key Developments (March-April 2026):**
-- Completed $122B funding round at $852B valuation (largest private raise in history)
-- Achieved $25B+ annualized revenue
-- Surpassed 900M weekly active users
-- Closed Sora video generator ($1M/day burn rate)
-- Acquiring Astral (uv, Ruff Python tools)
-- GPT-5.4 "Thinking" achieves human-level OS tasks (75% on OSWorld-Verified)
-- "Spud" model completed pretraining
-- Planning desktop super-app combining ChatGPT, Codex, Atlas browser
-- IPO preparations underway
+**Anthropic's Ascendance**: Anthropic's annualized revenue surged from $9 billion at end-2025 to $30 billion, with 1,000+ business customers spending over $1M annually. The company closed a $30 billion Series G at a $380 billion valuation. Claude Code has been the primary driver of enterprise growth. However, the Claude Mythos controversy — a model classified as too dangerous to release — has created a unique narrative: commercial success unprecedented in AI history coexisting with capability-safety tensions that triggered government emergency calls.
 
-**Key People:**
-- Sam Altman, CEO
-- Wojciech Zaremba, now leading AI safety work
+**Google's Strategic Position**: Google has deepened its Anthropic investment with a $5 billion Texas mega-data center commitment and expanded TPU compute agreements. The company maintains competitive model offerings (Gemini 3.1 Pro leading ARC-AGI-2, Gemma 4 Apache 2.0 release) while integrating NotebookLM directly into Gemini. The Google-Apple partnership on Gemini for on-device AI represents a significant ecosystem play.
 
-**Strategic Focus:** Enterprise productivity super-app, Codex coding agent (3M weekly users), IPO by end of 2026
+**Geopolitical Fractures**: OpenAI, Anthropic, and Google formed an unprecedented coalition through the Frontier Model Forum to combat "Chinese model distillation" — accusing DeepSeek, Moonshot, and MiniMax of extracting capabilities from American models. Anthropic blocked Chinese-controlled companies from using Claude. This has escalated into a policy battle with OpenAI's memo to Congress accusing DeepSeek of "free-riding."
 
-### Anthropic
+**SpaceX-xAI Consolidation**: SpaceX acquired xAI for $250 billion in an all-stock transaction, creating a $1.25 trillion "galactic AI entity." This vertical integration of AI with space infrastructure signals a new dimension in AI competition.
 
-**Key Developments (March-April 2026):**
-- $30B annualized revenue run rate (up from $9B at end of 2025)
-- Signed multi-gigawatt TPU deal with Google and Broadcom (3.5 gigawatts operational from 2027)
-- Expanded compute partnership with Google and Broadcom amid **infrastructure strain** — introduced usage caps on Claude subscriptions
-- $30B Series G funding at $380B valuation
-- 1,000+ enterprise customers spending $1M+ annually
-- Claude Mythos (10T parameters) withheld from public release due to security concerns
-- Launched Project Glasswing with 40+ partners (Microsoft, Apple, Amazon, Google, NVIDIA, CrowdStrike)
-- Claude Code source leaked via npm (512K lines TypeScript)
-- Discovered "emotion vectors" causally driving Claude behavior
+## Key Developments
 
-**Key People:**
-- Dario Amodei, CEO
+| Date | Event | Significance |
+|------|-------|-------------|
+| 2026-03-17 | NVIDIA GTC: Vera Rubin announced | Next-gen AI hardware platform, 10x performance per watt |
+| 2026-03-26 | Claude Mythos leak | 3,000 docs exposed; model described as "unprecedented cybersecurity risk" |
+| 2026-03-31 | OpenAI $122B funding at $852B valuation | Largest private funding round in history |
+| 2026-03-31 | Claude Code source leaked via npm | 512K lines TypeScript exposed; claw-code reached 100K stars in hours |
+| 2026-04-01 | SpaceX acquires xAI for $250B | Creates $1.25T combined entity |
+| 2026-04-07 | Anthropic $30B ARR, $380B valuation | Revenue tripled in under a year, driven by Claude Code |
+| 2026-04-10 | VP Vance convenes emergency CEO calls | Mythos model discussed at highest government levels |
+| 2026-04-15 | Stanford HAI: US-China AI gap closed | Top models within 2.7 points on Arena benchmark |
+| 2026-04-16 | Five hyperscalers control 66% of global AI compute | Google, Microsoft, Meta, Amazon, Oracle dominance |
 
-**Strategic Focus:** Enterprise AI (Claude Code driving growth), frontier safety, IPO preparation
+## Patterns & Insights
 
-### Google (Alphabet)
+The AI industry is polarizing into two tiers: companies with sufficient compute (OpenAI, Anthropic, Google, Microsoft, Amazon) and everyone else. The compute advantage has become a primary competitive differentiator, with Anthropic's multi-gigawatt TPU deal with Google/Broadcom representing a statement intent about planetary-scale AI infrastructure.
 
-**Key Developments (March-April 2026):**
-- Released Gemma 4 (Apache 2.0) - four sizes, #3 on Arena AI
-- Gemini 3.1 Flash Live for real-time multimodal voice
-- Gemini 3 Deep Think for Ultra subscribers
-- Investing $5B in Anthropic Texas data center
-- Deploying Gemini agents to monitor dark web
-- Integrating NotebookLM into Gemini interface
-- LiteRT-LM for on-device inference
-- Gemini CLI for terminal agent
+The IPO timeline is creating pressure for both OpenAI and Anthropic to demonstrate sustainable business models. OpenAI's cuts to Sora and Instant Checkout reflect a pivot from "technology showcases" to enterprise-focused revenue. Anthropic's Mythos controversy could complicate its IPO narrative.
 
-**Strategic Focus:** Research leadership, enterprise AI, on-device/mobile AI, open-weight models
+The US-China AI competition has shifted from trade rhetoric to technical countermeasures. The distillation coalition represents an unprecedented level of cross-company cooperation among rivals.
 
-### Meta
-
-**Key Developments (March-April 2026):**
-- Released Muse Spark (closed-source, #4 on benchmarks)
-- Released Llama 4 Scout (10M token context) and Maverick (400B+)
-- Broke open-source tradition with proprietary Muse Spark
-- Hired Alexandr Wang as Chief AI Officer ($14B+ investment)
-- First stock options for executives since 2012 IPO
-- Internal AI agent caused data leak to employees
-
-**Strategic Focus:** Balanced portfolio, mixed open/proprietary strategy, AI integration across family apps
-
-### xAI (Elon Musk)
-
-**Key Developments (March-April 2026):**
-- SpaceX acquired xAI for $250B (combined entity $1.25T)
-- Grok 5 missed Q1 2026 target
-- Grok outages affecting thousands of users
-
-**Strategic Focus:** Integration with SpaceX, "galactic AI" entity
-
-## Chinese AI Companies
-
-### DeepSeek
-- 17 new agentic AI job postings
-- Major outage on March 30 (7+ hours)
-- Named in US AI companies' distillation accusations
-- R1 model remains influential
-
-### Alibaba (Qwen)
-- Qwen3.6-Plus released with 1M context, competitive with Claude Opus 4.5
-- Topped global usage charts on debut
-- Raising AI storage prices by up to 34%
-
-### Xiaomi
-- MiMo-V2-Pro (trillion parameters) revealed after "Hunter Alpha" stealth launch
-- Ranks #3 globally on agent benchmarks
-- 67% cheaper than Claude Sonnet 4.6 for agentic tasks
-
-### Huawei
-- 950PR chip: ByteDance and Alibaba placing orders (750K units planned)
-- Atlas 350: 2.8x performance over Nvidia H20
-- CUDA compatibility improving
-
-### MiniMax
-- M2.7 with self-evolving training approach
-- Named in distillation accusations
-
-### Moonshot
-- Kimi K2.5 powering Cursor Composer 2
-- Accusing Cursor of license violation
-
-## Infrastructure & Partnerships
-
-### Notable Alliances
-| Partnership | Details |
-|------------|---------|
-| Google + Anthropic | Multi-gigawatt TPU deal, $5B Texas data center |
-| Microsoft + NVIDIA | Nuclear AI, agentic AI, sovereign AI |
-| Apple + Google | Gemini for Siri (ending OpenAI exclusivity) |
-| SpaceX + xAI | $250B acquisition, 1.25T combined entity |
-
-### Government Relations
-- **Pentagon**: Declared Anthropic "unacceptable risk" to military supply chains
-- **White House**: Released National AI Policy Framework
-- **UK**: Assessing Claude Mythos risks
-
-## IPO Pipeline
-| Company | Status | Valuation |
-|---------|--------|-----------|
-| OpenAI | Early steps toward IPO, late 2026 target | $852B |
-| Anthropic | Preparing for IPO | $380B |
-
-## Competitive Dynamics
-
-### The Coding Agent Wars
-- Claude Code: Viral success, drove Anthropic's ARR growth
-- OpenAI Codex: 3M weekly users, 70% MoM growth
-- Google: Antigravity for AI Studio, Gemini CLI
-- Cursor 3: Parallel AI fleets across repos
-
-### Compute Rivalry
-OpenAI sent investor memo claiming computing advantage over Anthropic after Anthropic announced its massive compute deal.
-
-### China-US AI Tensions
-- US companies formed Frontier Model Forum coalition
-- Accused DeepSeek, Moonshot, MiniMax of model distillation
-- 16 million fraudulent exchanges identified
-- China's domestic chip development (Huawei 950PR)
-
-## Related Pages
-- [[topics/llm_models]] - Model releases and capabilities
-- [[topics/ai_funding]] - Funding and valuations
-- [[sources/anthropic]] - Anthropic timeline
-- [[sources/openai]] - OpenAI timeline
-- [[sources/google]] - Google timeline
-- [[sources/meta]] - Meta timeline
-
----
-*Last updated: 2026-04-14*
+## Connections
+- [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users
+- [[sources/anthropic]] — $30B ARR, Mythos controversy, $380B valuation, government emergency calls
+- [[sources/google]] — Texas data center for Anthropic, Gemini 3.1 Pro, Gemma 4 Apache 2.0
+- [[sources/nvidia]] — GTC 2026, Vera Rubin, Blackwell $11B Q4 revenue
+- [[ideas/safety-restricted-releases]] — Anthropic's Mythos sets precedent
+- [[ideas/us-china-ai-fragmentation]] — Frontier Model Forum anti-distillation coalition

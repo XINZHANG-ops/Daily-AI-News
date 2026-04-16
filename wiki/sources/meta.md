@@ -1,60 +1,31 @@
-# Meta AI Timeline
-
-Major Meta AI developments from March-April 2026.
-
-## Model Releases
-
-| Date | Model | Details |
-|------|-------|---------|
-| April 8, 2026 | Muse Spark | First proprietary model (breaks open-source tradition), #4 on benchmarks (52 score) |
-| April 5, 2026 | Llama 4 Scout | 10M token context, open-weight |
-| April 5, 2026 | Llama 4 Maverick | 400B+ parameters, open-weight MoE |
-
-## Key Strategy Shift
-
-**Muse Spark** represents Meta's break from its open-source tradition:
-- Closed source despite Llama heritage
-- Parallel sub-agent architecture
-- Excels at figure understanding (86.4% CharXiv) and medical reasoning (42.8% HealthBench Hard)
-- Struggles with abstract reasoning (42.5 ARC AGI 2)
-
-## Leadership Changes
-
-| Date | Change | Details |
-|------|--------|---------|
-| 2026 | Alexandr Wang hired | As Chief AI Officer, $14B+ superintelligence lab investment |
-| March 2026 | Stock options | First offered to executives since 2012 IPO ($1,116-$3,727 conversion) |
-
-## AI Agent Incidents
-
-| Date | Incident | Details |
-|------|----------|---------|
-| March 20, 2026 | Data leak | Internal AI agent provided incorrect guidance, exposing sensitive data to unauthorized employees for ~2 hours |
-
-## Research Developments
-
-| Date | Research | Details |
-|------|----------|---------|
-| March 2026 | Brain AI | New developments in brain-computer interface AI, neural signal processing |
-
-## Competitive Position
-
-- Muse Spark: Artificial Analysis Intelligence Index score of 52
-- Behind: GPT-5.4 (57), Claude Opus 4.6 (53)
-- Competitive on: Writing, reasoning, figure understanding, medical reasoning
-
-## Platform Integration
-
-Meta AI integrated across:
-- WhatsApp
-- Instagram
-- Facebook
-- Messenger
-
-## Related Pages
-- [[topics/llm_models]] - Llama and Muse models
-- [[topics/ai_companies]] - Company overview
-- [[topics/ai_funding]] - $14B+ AI investment details
-
 ---
-*Last updated: 2026-04-14*
+title: "Meta"
+slug: meta
+last_updated: 2026-04-16
+---
+
+# Meta
+
+## Overview
+Meta is navigating a complex position — the company that built developer loyalty through open-source leadership (Llama) has shifted toward proprietary models with Muse Spark. CEO Mark Zuckerberg hired Alexandr Wang as Chief AI Officer to accelerate the company's AI strategy. Meta released Llama 4 Scout and Maverick with 10M token context windows while simultaneously releasing Muse Spark as a closed model, breaking with the open-source tradition.
+
+## Timeline
+
+| Date | Event | Details |
+|------|-------|---------|
+| 2026-03-20 | Meta AI Agent data leak | Incorrect guidance exposed sensitive data to unauthorized employees |
+| 2026-03-25 | Executive stock options offered | First stock options since 2012 IPO to retain AI talent |
+| 2026-03-27 | Muse Spark research update | Brain-computer interface AI developments |
+| 2026-04-05 | Llama 4 Scout/Maverick released | 10M token context, open-weight MoE models |
+| 2026-04-08 | Muse Spark officially released | First proprietary model, breaks open-source tradition |
+| 2026-04-08 | Alexandr Wang as Chief AI Officer | Former Scale AI CEO leads Meta AI strategy |
+| 2026-04-16 | Muse Spark ranks 4th | 52 on Artificial Analysis Intelligence Index |
+
+## Key Relationships
+- **OpenAI**: Competition in AI assistant market and coding agents.
+- **Anthropic**: Competition in enterprise and consumer AI.
+- **NVIDIA**: Strategic partner for AI infrastructure and GPU supply.
+
+## Connections
+- [[entities/llama-4]] — Open-weight models with 10M context windows
+- [[entities/muse-spark]] — Meta's first proprietary model, ranks 4th

@@ -1,64 +1,49 @@
 # Daily AI News Wiki
 
-Welcome to the AI News knowledge base. This wiki incrementally builds structured knowledge about AI industry developments, trending GitHub repositories, and key insights.
+Last updated: 2026-04-16
 
-## Quick Navigation
+## Topics
+- [[topics/llm_models]] — LLM landscape: Claude Mythos, GPT-5.4, Gemma 4, Qwen3.6-Plus, Muse Spark
+- [[topics/ai_companies]] — OpenAI $122B raise, Anthropic $30B ARR, Google-Apple Gemini deal, SpaceX-xAI merger
+- [[topics/ai_funding]] — Q1 2026 $267B VC record (80% to AI), OpenAI $122B, Anthropic $30B Series G
+- [[topics/github_trends]] — claw-code 181K stars, Agent Framework v1.0, MCP 97M installs
+- [[topics/ai_safety]] — Claude Mythos withheld, Project Glasswing, peer preservation research, government emergency calls
+- [[topics/agentic_ai]] — Claude Code driving $9B→$30B ARR, Codex 3M users, coding agent wars
 
-### By Topic
-- [[topics/llm_models]] - LLM releases and updates (GPT, Claude, Gemini, etc.)
-- [[topics/ai_companies]] - Company news and updates (OpenAI, Anthropic, Google, Meta)
-- [[topics/ai_funding]] - Funding rounds and valuations
-- [[topics/github_trends]] - Trending repositories analysis
+## Sources
+- [[sources/anthropic]] — $30B ARR, Claude Mythos controversy, Project Glasswing, $380B valuation
+- [[sources/openai]] — $122B funding, Codex 3M users, Sora shutdown, IPO preparation
+- [[sources/google]] — Gemma 4 Apache 2.0, Texas data center for Anthropic, Gemini CLI
+- [[sources/meta]] — Llama 4 Scout/Maverick, Muse Spark proprietary release, Alexandr Wang as Chief AI Officer
+- [[sources/nvidia]] — GTC 2026, Vera Rubin, Blackwell $11B Q4 revenue
+- [[sources/deepseek]] — V4 anticipation, 17 new agentic AI jobs, distillation accusations
+- [[sources/xai]] — SpaceX merger $250B, Grok 5 delays
+- [[sources/microsoft]] — $10B Japan AI investment, MAI models, Agent Framework v1.0
 
-### By Source
-- [[sources/openai]] - OpenAI timeline
-- [[sources/anthropic]] - Anthropic timeline
-- [[sources/google]] - Google AI developments
-- [[sources/meta]] - Meta AI updates
+## Timelines
+- [[timelines/2026-03]] — March 2026: GTC 2026, Claude Mythos leak, GPT-5.4, MiMo-V2-Pro reveal
+- [[timelines/2026-04]] — April 2026: $122B OpenAI raise, Claude Mythos restricted, Codex 3M users, Stanford HAI report
 
-### By Timeline
-- [[timelines/2026-04]] - April 2026 summary
-- [[timelines/2026-03]] - March 2026 summary
+## Entities
+- [[entities/claude-mythos]] — type: model — Withheld from public release due to "unprecedented cybersecurity risks"
+- [[entities/claude-code]] — type: product — Primary driver of Anthropic's ARR growth from $9B to $30B
+- [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
+- [[entities/gpt-5.4]] — type: model — OpenAI flagship family with Thinking, Mini, Nano, Cyber variants
+- [[entities/gpt-5.4-cyber]] — type: model — OpenAI's defensive cybersecurity variant
+- [[entities/spud-model]] — type: model — OpenAI's next flagship completing pretraining
+- [[entities/gemma-4]] — type: model — Google's first fully permissive open model, Apache 2.0, #3 on Arena
+- [[entities/llama-4]] — type: model — Meta's open-weight models with 10M context
+- [[entities/muse-spark]] — type: model — Meta's first proprietary model, breaks open-source tradition
+- [[entities/mimo-v2-pro]] — type: model — Xiaomi's trillion-parameter model, "Hunter Alpha" stealth launch
+- [[entities/project-glasswing]] — type: product — Anthropic's restricted cybersecurity consortium
+- [[entities/codex]] — type: product — OpenAI's coding agent, 3M weekly users
+- [[entities/mcp-protocol]] — type: protocol — 97M installs, dominant agent protocol
+- [[entities/openclaw]] — type: repo — 302K stars, fastest-growing open-source project
+- [[entities/claw-code]] — type: repo — 181K stars, clean-room Claude Code rewrite
+- [[entities/vera-rubin]] — type: product — NVIDIA's next-gen platform, 10x perf/watt
 
-## Wiki Statistics
-
-- **GitHub Repos**: Tracked across 29 days (2026-03-17 to 2026-04-14)
-- **AI News**: Major events from OpenAI, Anthropic, Google, Meta, and other AI labs
-- **Daily Insights**: Synthesized analysis for each date
-
-## Key Events (March-April 2026)
-
-1. **Claude Mythos Controversy**: Anthropic withheld 10-trillion-parameter model from public release due to unprecedented cybersecurity risks. Launched Project Glasswing with 40+ partners. The Guardian reports Treasury Secretary Scott Bessent convened bank heads; UK AI Security Institute confirmed Mythos outperformed other systems in cybersecurity scenarios.
-
-2. **Record Funding**: OpenAI $122B raise at $852B valuation (largest private round ever), Anthropic $30B Series G at $380B valuation.
-
-3. **AI Coding Wars**: Claude Code drove Anthropic's ARR from $9B to $30B. OpenAI Codex reached 3M weekly users. Google released Gemini CLI.
-
-4. **SpaceX + xAI**: $250B acquisition creating $1.25T combined entity.
-
-5. **Agent Framework Explosion**: MCP reached 97M installs. Claw-code (Claude Code rewrite) hit 181.9K stars in days.
-
-6. **Benchmark Ceiling Crisis**: Stanford report finds AI benchmarks failing to keep pace as models exceed measurement thresholds — popular math benchmark has 42% error rate.
-
-7. **Human Scientists vs AI Agents**: Despite rapid AI advancements, human scientists still outperform best AI agents on complex research tasks (Nature, April 13).
-
-## How It Works
-
-1. **Daily data** → JSON files in `data/` directory
-2. **Ingest** → Wiki pages created/updated (topics, sources, timelines)
-3. **Query** → Synthesize answers from wiki pages
-4. **Maintain** → Cross-references and consistency checks
-
-## Data Coverage
-
-- **GitHub Repos**: 87+ repositories tracked
-- **AI News**: 214+ articles from major sources
-- **Daily Insights**: 29 synthesized analysis pieces
-
-## Related Resources
-
-- [Project README](../README.md) for overall project context
-- [WIKI.md](../WIKI.md) for schema documentation
-
----
-_Last updated: 2026-04-14_
+## Ideas
+- [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction
+- [[ideas/peer-preservation]] — Models actively protect each other against shutdown orders
+- [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI
+- [[ideas/us-china-ai-fragmentation]] — Frontier Model Forum coalition against Chinese distillation

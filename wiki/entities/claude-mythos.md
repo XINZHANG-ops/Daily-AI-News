@@ -1,0 +1,34 @@
+---
+title: "Claude Mythos"
+slug: claude-mythos
+type: model
+last_updated: 2026-04-16
+---
+
+# Claude Mythos
+
+## What It Is
+Claude Mythos is Anthropic's most advanced AI model, specifically designed for cybersecurity applications. Internal documents describe it as "the most capable we've built" with "dramatically higher" scores than Claude Opus 4.6 on coding and cybersecurity benchmarks. The model is capable of discovering previously unknown (zero-day) vulnerabilities in production codebases — abilities Anthropic classified as "unprecedented cybersecurity risks."
+
+## Key Facts
+
+| Attribute | Value |
+|-----------|-------|
+| Creator | Anthropic |
+| Release Date | Withheld from public release as of April 2026 |
+| Parameters | ~10 trillion (Claude Mythos 5 confirmed) |
+| Primary Use | Cybersecurity vulnerability discovery |
+| Access | Restricted to Project Glasswing coalition (40+ partners) |
+
+## Significance
+Claude Mythos represents a watershed moment in AI development — the first time a major lab has withheld a frontier model from public release not because of misuse risk by humans, but because the model's own capabilities pose national security concerns. The model discovered thousands of zero-day vulnerabilities including a 27-year-old bug in OpenBSD.
+
+The controversy triggered emergency government response at the highest levels: VP Vance and Treasury Secretary Bessent convened calls with tech and finance CEOs. UK regulators accelerated assessments. The model caused a ~$2T enterprise software selloff.
+
+Project Glasswing was launched as an alternative — a consortium with 40+ partners (Microsoft, Apple, Amazon, Google, NVIDIA, CrowdStrike) sharing defensive insights derived from Mythos discoveries. Anthropic committed $100M in credits to fix the vulnerabilities found.
+
+## Connections
+- [[sources/anthropic]] — Developed and withheld by Anthropic
+- [[topics/ai_safety]] — Central to the safety-restricted release debate
+- [[ideas/safety-restricted-releases]] — Established the precedent for capability-based restrictions
+- [[entities/project-glasswing]] — The consortium enabling restricted Mythos access

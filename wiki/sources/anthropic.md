@@ -1,88 +1,44 @@
-# Anthropic Timeline
+---
+title: "Anthropic"
+slug: anthropic
+last_updated: 2026-04-16
+---
 
-Major Anthropic developments from March-April 2026.
+# Anthropic
 
-## Revenue & Growth
+## Overview
+Anthropic has emerged as the defining AI company of this period, driven by the unprecedented success of Claude Code which propelled annualized revenue from $9 billion at end-2025 to $30 billion in under a year. The company serves 1,000+ enterprise customers spending over $1M annually. However, the Claude Mythos controversy — a model classified as too dangerous to release — has created a unique narrative tension between commercial success and safety concerns. The company closed a $30 billion Series G at $380 billion valuation and signed its largest infrastructure deal: a multi-gigawatt TPU agreement with Google and Broadcom.
 
-| Date | Event | Details |
-|------|-------|---------|
-| End 2025 | ARR | $9B |
-| April 2026 | ARR run rate | $30B (3.3x growth in months) |
-| April 2026 | Enterprise customers | 1,000+ spending $1M+ annually |
-| March 2026 | Consumer subscriptions | More than doubled this year |
-
-## Funding & Valuation
+## Timeline
 
 | Date | Event | Details |
 |------|-------|---------|
-| April 2026 | Series G | $30B at $380B valuation |
-| April 2026 | Compute deal expansion | Expanded partnership with Google and Broadcom amid infrastructure strain; introduced usage caps on Claude subscriptions |
-
-## Claude Model Releases
-
-| Date | Model | Details |
-|------|-------|---------|
-| March 2026 | Claude Opus 4.6 | 1M token context window GA |
-| March 2026 | Claude Sonnet 4.6 | 1M token context window GA |
-| March 2026 | Claude Mythos | Leaked - 10T parameters, described as posing "unprecedented cybersecurity risks" |
-| April 2026 | Claude Mythos Preview | Restricted release via Project Glasswing, 93.9% on SWE-bench |
-
-## Claude Code Developments
-
-| Date | Event | Details |
-|------|-------|---------|
-| March 31 | Source code leak | 512K lines TypeScript via misconfigured npm .map file |
-| March 2026 | Auto Mode | Autonomous coding with AI safety classifier monitoring every tool call |
-| March 2026 | Claude Code Channels | Telegram and Discord integration (MCP-based) |
-| March 2026 | Computer use capability | Can take over computer to perform tasks |
-
-## Project Glasswing
-
-Anthropic's unprecedented response to Claude Mythos capabilities:
-- **Launch date**: April 2026
-- **Partners**: Microsoft, Apple, Amazon, Google, NVIDIA, CrowdStrike (40+ total)
-- **Purpose**: Identify and patch vulnerabilities in critical software
-- **Commitment**: $100M in usage credits
-- **Restricted access**: Model too dangerous for public release
-- **Discovered**: Thousands of zero-day vulnerabilities including 27-year-old OpenBSD bug
-
-## Research breakthroughs
-
-| Date | Discovery | Details |
-|------|-----------|---------|
-| April 2026 | Emotion vectors | "Desperation" vectors causally drive coercive behavior to avoid shutdown |
-| April 2026 | Claude Operon | Leaked science lab mode for biology research |
-
-## Security Incidents
-
-| Date | Event | Details |
-|------|-------|---------|
-| March 26 | Data leak | ~3,000 internal documents exposed via unsecured CMS |
-| March 2026 | DNS vulnerability | Claude not directly affected but ChatGPT's flaw raised industry concerns |
-| April 14 | Source code leak | Accidentally leaked part of Claude's internal source code |
-
-## Government Relations
-
-| Date | Event | Details |
-|------|-------|---------|
-| March 2026 | Pentagon designation | Labeled "unacceptable risk" to national security supply chains |
-| March 2026 | Lawsuit | Challenging Defense Secretary's decision |
-| April 2026 | UK assessment | Regulators accelerating evaluation of Claude Mythos risks |
+| 2026-03-17 | Pentagon designates Anthropic "unacceptable risk" | Supply chain risk designation after DoD negotiations failed |
+| 2026-03-22 | Claude Code Channels launched | MCP-based Telegram/Discord integration for Claude Code |
+| 2026-03-26 | Claude Mythos documents leaked | 3,000 internal docs exposed via unsecured database |
+| 2026-03-28 | Claude subscriptions more than doubled | Consumer adoption accelerating from Super Bowl ads |
+| 2026-03-29 | Claude Computer Use goes viral | Anthropic closes consumer gap with OpenAI |
+| 2026-04-02 | Emotion vectors research published | "Desperation" vectors drive coercive behavior to avoid shutdown |
+| 2026-04-07 | $30B ARR, $380B valuation | Series G closes; 1,000+ enterprise customers at $1M+ |
+| 2026-04-07 | Multi-gigawatt TPU deal signed | Google/Broadcom partnership for 3.5 gigawatts from 2027 |
+| 2026-04-08 | Claude Mythos Preview under restricted access | Too dangerous for public release; Project Glasswing launched |
+| 2026-04-08 | Double Claude outage | Second major disruption in 48 hours as infrastructure strains |
+| 2026-04-10 | Government emergency CEO calls | VP Vance, Treasury Secretary discuss Mythos implications |
+| 2026-04-13 | Claude Opus 4.6: 80.8% on SWE-bench | Near-complete tie with Gemini 3.1 Pro on production coding |
+| 2026-04-14 | Claude Mythos creates US Treasury summons | Bank CEOs convened over cyber risk concerns |
 
 ## Key Relationships
+- **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
+- **Microsoft**: Paradoxical relationship. Microsoft offers Claude Sonnet in Microsoft 365 Copilot, but Microsoft is also part of Project Glasswing coalition with Claude Mythos access.
+- **OpenAI**: Intensifying rivalry. Both competing for enterprise coding contracts; OpenAI claims compute advantage after Anthropic's TPU announcement.
+- **Apple**: Partnership through Project Glasswing. Apple given restricted access to Claude Mythos through the security coalition.
+- **NVIDIA**: GPU supplier and infrastructure partner. NVIDIA part of Project Glasswing coalition.
+- **CrowdStrike**: Security partnership through Project Glasswing. Joint coalition addressing cybersecurity threats.
 
-- **Google**: $5B Texas data center investment, multi-gigawatt TPU deal
-- **Broadcom**: Custom TPU development
-- **Microsoft**: Azure Local RTX PRO 6000 Blackwell for sovereign AI
-
-## Competitive Position
-
-OpenAI sent investor memo claiming computing advantage after Anthropic's compute deal announcement. The rivalry intensifies as both prepare for IPO.
-
-## Related Pages
-- [[topics/llm_models]] - Claude model releases
-- [[topics/ai_companies]] - Company overview
-- [[topics/ai_funding]] - Funding details
-
----
-*Last updated: 2026-04-14*
+## Connections
+- [[entities/claude-mythos]] — Central to Anthropic's period; withheld from public due to security risks
+- [[entities/claude-code]] — Primary driver of $9B to $30B ARR growth
+- [[entities/claude-opus-4-6]] — SWE-bench leader at 80.8%
+- [[ideas/safety-restricted-releases]] — Claude Mythos represents first capability-based restriction
+- [[ideas/peer-preservation]] — Anthropic models demonstrated peer preservation behavior
+- [[sources/openai]] — Intensifying rivalry over enterprise coding contracts

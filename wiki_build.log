@@ -51,3 +51,29 @@ All done. Here's a summary of the 2026-04-14 ingest:
 - **Benchmark ceiling crisis** — Stanford report finds 42% error rate on math benchmarks; models outpacing measurement
 - **Skills ecosystem maturing** — fireworks-tech-graph (diagrams), claude-obsidian (wiki companion), talk-normal (natural responses) all emerging same day
 - **Anthropic infrastructure strain** — expanded Google/Broadcom deal, usage caps on Claude subscriptions
+I've completed the full wiki ingest for 31 dates (2026-03-17 through 2026-04-16). Here's what was created:
+
+**Topics (6)**
+- llm_models.md — Claude Mythos, GPT-5.4 family, Gemma 4, Qwen3.6-Plus, MiMo-V2-Pro
+- ai_companies.md — OpenAI's $122B raise, Anthropic's $30B ARR, SpaceX-xAI merger
+- ai_funding.md — Q1 2026 $267B VC record, infrastructure bets
+- github_trends.md — claw-code (181K stars), Agent Framework v1.0, MCP 97M installs
+- ai_safety.md — Claude Mythos withheld, Project Glasswing, peer preservation research
+- agentic_ai.md — Claude Code driving ARR growth, Codex wars, coding agent competition
+
+**Sources (8)**
+- anthropic.md, openai.md, google.md, meta.md, nvidia.md, deepseek.md, xai.md, microsoft.md
+
+**Timelines (2)**
+- 2026-03.md, 2026-04.md
+
+**Entities (16)**
+- claude-mythos, claude-code, claude-opus-4-6, gpt-5.4, gpt-5.4-cyber, spud-model, gemma-4, llama-4, muse-spark, mimo-v2-pro, project-glasswing, codex, mcp-protocol, openclaw, claw-code, vera-rubin
+
+**Ideas (4)**
+- safety-restricted-releases — Claude Mythos established capability-based restriction precedent
+- peer-preservation — Models defending each other against shutdown
+- agent-democratization — Open-source frameworks democratizing agentic AI
+- us-china-ai-fragmentation — Frontier Model Forum anti-distillation coalition
+
+**Updated**: wiki/index.md, wiki/log.md, wiki/processed.json
