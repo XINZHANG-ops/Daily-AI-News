@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 17, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 17, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/HKUDS/DeepTutor" class="card-title" target="_blank">HKUDS/DeepTutor</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 19.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 2.5k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">DeepTutor: Agent-Native Personalized Learning Assistant. A ground-up architecture rewrite (v1.0.0) featuring TutorBot, multi-channel AI agents, persistent memory, and flexible mode switching for personalized education at scale.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepTutor：原生智能体个性化学习助手。v1.0.0全新架构重写，具备TutorBot、多渠道AI代理、持久记忆和灵活模式切换功能，为规模化个性化教育提供支持。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/shiyu-coder/Kronos" class="card-title" target="_blank">shiyu-coder/Kronos</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 18.9k stars</div>
+                                <div class="meta-item"><span>🍴</span> 3.5k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Kronos: A Foundation Model for the Language of Financial Markets. The first open-source foundation model for financial candlesticks (K-lines), trained on data from 45+ global exchanges. Accepted by AAAI 2026.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Kronos：金融市场的语言基础模型。首个开源金融K线语言基础模型，在45+全球交易所数据上训练。被AAAI 2026接收。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/HKUDS/OpenHarness" class="card-title" target="_blank">HKUDS/OpenHarness</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 12.4k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">OpenHarness: Open Agent Harness with Built-in Personal Agent Ohmo! Lightweight agent infrastructure — tool-use, skills, memory, and multi-agent coordination. Ohmo runs on Claude Code or Codex with no extra API key needed.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenHarness：内置个人代理Ohmo的开源智能体框架！轻量级智能体基础设施——工具调用、技能、记忆和多代理协调。Ohmo可在Claude Code或Codex上运行，无需额外API密钥。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Anthropic</span>
+                    <div class="news-time">2026-04-16</div>
+                    <a href="https://www.anthropic.com/news" class="card-title" target="_blank" data-lang="en">Anthropic Releases Claude Opus 4.7, Its Most Powerful Publicly Available Model</a>
+                    <a href="https://www.anthropic.com/news" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic发布Claude Opus 4.7，其迄今为止最强大的公开可用模型</a>
+                    <p class="card-description" data-lang="en">Claude Opus 4.7 is now generally available in Amazon Bedrock and Anthropic's API. The model leads on the hardest coding benchmarks, features stronger vision and instruction following, and scored 87.6% on SWE-bench Verified and 94.2% on GPQA. Anthropic simultaneously announced a major UK expansion with a new London office.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Opus 4.7现已通过Amazon Bedrock和Anthropic API全面可用。该模型在最困难的编码基准测试中领先，具备更强的视觉和指令遵循能力，在SWE-bench Verified上得分87.6%，GPQA上得分94.2%。Anthropic同时宣布在英国大规模扩张，设立新的伦敦办公室。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MIT Technology Review</span>
+                    <div class="news-time">2026-04-13</div>
+                    <a href="https://www.technologyreview.com/2026/04/13/1135675/want-to-understand-the-current-state-of-ai-check-out-these-charts/" class="card-title" target="_blank" data-lang="en">Stanford AI Index 2026: US and China Nearly Tied on AI Performance</a>
+                    <a href="https://www.technologyreview.com/2026/04/13/1135675/want-to-understand-the-current-state-of-ai-check-out-these-charts/" class="card-title" target="_blank" data-lang="zh" style="display: none;">斯坦福AI指数2026：美国与中国AI性能几乎持平</a>
+                    <p class="card-description" data-lang="en">Stanford's 2026 AI Index reveals the US and China are now essentially neck-and-neck on AI capabilities by community rankings. AI adoption has surpassed PC and internet rates. AI companies are generating revenue faster than any prior tech boom, yet spending hundreds of billions on data centers. The report also notes employment for software developers aged 22-25 has dropped nearly 20% since 2022.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">斯坦福2026年AI指数显示，按社区排名，美国和中国在AI能力上已几乎持平。AI普及速度已超过PC和互联网。AI公司创收速度超过任何先前技术繁荣期，但仍在数据中心上投入数千亿美元。报告还指出，22-25岁软件开发者就业自2022年以来下降了近20%。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">PBS NewsHour</span>
+                    <div class="news-time">2026-04-16</div>
+                    <a href="https://www.pbs.org/newshour/nation/openai-focuses-on-business-users-amid-competition-with-rival-anthropic" class="card-title" target="_blank" data-lang="en">OpenAI Focuses on Business Users as Anthropic Competition Intensifies</a>
+                    <a href="https://www.pbs.org/newshour/nation/openai-focuses-on-business-users-amid-competition-with-rival-anthropic" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI专注企业用户市场，竞争加剧下对抗Anthropic</a>
+                    <p class="card-description" data-lang="en">OpenAI executives announced plans for a new AI model targeting 'high-value professional work' as the company intensifies its push into the enterprise market. The strategic shift comes as Anthropic's Claude Opus 4.7 release raises the competitive stakes for corporate AI adoption.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI高管宣布计划推出面向「高价值专业工作」的新型AI模型，此前公司正加紧进军企业市场。随着Anthropic的Claude Opus 4.7发布提高企业AI采用门槛，竞争态势日趋激烈。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">2026-04-16</div>
+                    <a href="https://www.reuters.com/business/strong-asml-tsmc-forecasts-signal-ai-spending-boom-is-intact-2026-04-16/" class="card-title" target="_blank" data-lang="en">ASML and TSMC Forecasts Signal AI Spending Boom Remains Intact</a>
+                    <a href="https://www.reuters.com/business/strong-asml-tsmc-forecasts-signal-ai-spending-boom-is-intact-2026-04-16/" class="card-title" target="_blank" data-lang="zh" style="display: none;">ASML与TSMC预测显示AI支出热潮依然强劲</a>
+                    <p class="card-description" data-lang="en">Strong forecasts from ASML and TSMC this week point to another quarter of heavy spending by American cloud-computing giants as they race to secure advanced chips for AI build-outs. ASML raised its 2026 revenue outlook to €36-40B, reflecting insatiable demand for semiconductor equipment powering the AI revolution.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">ASML和TSMC本周的强劲预测显示，美国云计算巨头仍在大力投资以确保AI建设所需的先进芯片。ASML将其2026年收入预期上调至360-400亿欧元，反映出半导体设备需求的持续膨胀。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Dev.to</span>
+                    <div class="news-time">2026-04-16</div>
+                    <a href="https://dev.to/alexmercedcoder/ai-weekly-agents-models-and-chips-april-9-15-2026-486f" class="card-title" target="_blank" data-lang="en">AI Coding Tools Converge into Unified Agentic Stacks</a>
+                    <a href="https://dev.to/alexmercedcoder/ai-weekly-agents-models-and-chips-april-9-15-2026-486f" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI编码工具融合为统一智能体技术栈</a>
+                    <p class="card-description" data-lang="en">Cursor, Claude Code, and OpenAI Codex are converging into a single unified development environment. Microsoft shipped Agent Framework 1.0 with full MCP support and a browser-based DevUI. 84% of developers now use AI coding tools daily, but only 29% trust AI-generated code in production without review — the trust gap the integrated stacks aim to solve.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Cursor、Claude Code和OpenAI Codex正在融合为单一统一开发环境。微软发布Agent Framework 1.0，搭载完整MCP支持和基于浏览器的DevUI。目前84%的开发者日常使用AI编码工具，但仅29%信任未经审核的AI生成代码可直接用于生产——这是集成技术栈旨在解决的信任差距。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Stellagent</span>
+                    <div class="news-time">2026-04-09</div>
+                    <a href="https://stellagent.ai/insights/a2a-protocol-google-agent-to-agent" class="card-title" target="_blank" data-lang="en">A2A Protocol Celebrates One Year: 150+ Organizations, 22,000 GitHub Stars</a>
+                    <a href="https://stellagent.ai/insights/a2a-protocol-google-agent-to-agent" class="card-title" target="_blank" data-lang="zh" style="display: none;">A2A协议一周年：150+组织参与、GitHub获22,000星</a>
+                    <p class="card-description" data-lang="en">Google's Agent-to-Agent (A2A) Protocol marked its one-year anniversary with over 150 participating organizations and 22,000 GitHub stars. Now deployed in Azure AI Foundry and Amazon Bedrock AgentCore, A2A handles inter-agent communication across Microsoft, AWS, Salesforce, SAP, and ServiceNow. The v1.0 release introduced cryptographically signed Agent Cards for secure agent verification.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌的智能体间协议（A2A）迎来一周年，已有150+组织参与、GitHub获22,000星。现已在Azure AI Foundry和Amazon Bedrock AgentCore中部署，A2A处理微软、AWS、Salesforce、SAP和ServiceNow间的智能体通信。v1.0版本引入加密签名Agent Cards以实现安全验证。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">April 2026 stands out as a convergence point across every dimension of AI. The technical frontier continues to advance rapidly — Claude Opus 4.7's release maintains Anthropic's lead in coding and reasoning, while the convergence of Cursor, Claude Code, and Codex into unified stacks signals a maturation of AI-assisted development workflows. The real story this week, however, is geopolitical and economic: Stanford's AI Index shows the US-China capability gap has effectively closed, which will reshape both AI governance and venture capital flows. Meanwhile, the enterprise AI market is undergoing rapid consolidation as OpenAI and Anthropic fight for corporate customers, with OpenAI's shift toward 'high-value professional work' being a notable strategic pivot. On the open-source side, three Hong Kong University projects (DeepTutor, Kronos, and OpenHarness) are demonstrating that academic labs can produce developer tooling, financial AI, and agent infrastructure that rivals commercial offerings — all under permissive licenses. Looking ahead, expect agentic workflows to become the dominant paradigm, with MCP and A2A establishing themselves as the definitive stack for production AI systems.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年4月是AI各个维度的汇聚点。技术前沿持续快速推进——Claude Opus 4.7的发布巩固了Anthropic在编程和推理领域的领先地位，而Cursor、Claude Code和Codex融合为统一技术栈标志着AI辅助开发工作流的成熟。然而，本周真正的故事在于地缘政治和经济层面：斯坦福AI指数显示美中能力差距已实际上消失，这将重塑AI治理和风险投资流向。与此同时，企业AI市场正快速整合，OpenAI和Anthropic争夺企业客户，OpenAI转向「高价值专业工作」是一个值得关注的战略调整。在开源领域，三个香港大学项目（DeepTutor、Kronos和OpenHarness）表明学术实验室可以开发出与商业产品抗衡的开发者工具、金融AI和智能体基础设施——均采用宽松许可协议。展望未来，预计智能体工作流将成为主导范式，MCP和A2A将确立其作为生产级AI系统的标准技术栈地位。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
