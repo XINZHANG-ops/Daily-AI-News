@@ -61,7 +61,31 @@ def js(filename):
 
 # Global variables
 DB_PATH = None
-wiki_sessions = {}  # Store conversation history for wiki Q&A
+SESSIONS_DIR = Path(__file__).parent / "wiki_sessions"
+SESSIONS_DIR.mkdir(exist_ok=True)
+wiki_sessions = {}
+
+
+def _load_session(session_id):
+    if session_id in wiki_sessions:
+        return wiki_sessions[session_id]
+    session_file = SESSIONS_DIR / f"{session_id}.json"
+    if session_file.exists():
+        try:
+            wiki_sessions[session_id] = json.loads(session_file.read_text(encoding='utf-8'))
+        except Exception:
+            wiki_sessions[session_id] = []
+    else:
+        wiki_sessions[session_id] = []
+    return wiki_sessions[session_id]
+
+
+def _save_session(session_id):
+    session_file = SESSIONS_DIR / f"{session_id}.json"
+    try:
+        session_file.write_text(json.dumps(wiki_sessions[session_id], ensure_ascii=False), encoding='utf-8')
+    except Exception as e:
+        logger.error(f"Failed to save session {session_id}: {e}")
 
 
 def validate_sql(sql: str) -> tuple[bool, str]:
@@ -269,13 +293,7 @@ def _ask_wiki_internal(question, model='minimax-m2.7:cloud', session_id=None):
     Returns:
         dict with 'answer' and 'session_id', or 'error' key on failure
     """
-    # Get or create session history
-    if session_id:
-        if session_id not in wiki_sessions:
-            wiki_sessions[session_id] = []
-        conversation_history = wiki_sessions[session_id]
-    else:
-        conversation_history = []
+    conversation_history = _load_session(session_id) if session_id else []
 
     repo_root = Path(__file__).parent
     wiki_dir = repo_root / 'wiki'
@@ -372,6 +390,7 @@ Answer:
             wiki_sessions[session_id].append({'role': 'assistant', 'content': answer})
             if len(wiki_sessions[session_id]) > 20:
                 wiki_sessions[session_id] = wiki_sessions[session_id][-20:]
+            _save_session(session_id)
 
         return {'answer': answer, 'model': model, 'session_id': session_id}
 
@@ -499,6 +518,13 @@ CONNECTION QUALITY CHECKS:
 12. **Companies in entities/**: Company pages belong in sources/, not entities/ → flag
 13. **People in entities/**: Entities are for technical things only → flag
 
+LEARN FROM CHAT HISTORY:
+14. Read JSON files in wiki_sessions/ (each is a JSON array of [{{"role":"user","content":"..."}}, ...])
+15. Find questions that reveal gaps in the wiki → fill those gaps
+16. Find insights from Q&A worth adding to topic/entity/idea pages
+17. Find repeated questions → that page needs more depth
+Do NOT copy raw Q&A. Extract useful knowledge and integrate naturally.
+
 Read wiki/index.md, then systematically check all pages in topics/, sources/, timelines/, entities/, ideas/.
 
 After identifying issues:
@@ -596,6 +622,14 @@ CONNECTION QUALITY:
 8. Missing idea pages for recurring themes
 9. Topic pages missing ## Evolution or ## Patterns & Insights → add them
 10. Companies in entities/ → move to sources/
+
+LEARN FROM CHAT HISTORY:
+11. Read JSON files in wiki_sessions/ (each is a JSON array of {{role, content}} messages)
+12. Find questions that reveal gaps in the wiki → fill those gaps with new content
+13. Find insights or connections from Q&A worth adding to topic/entity/idea pages
+14. Find repeated questions about the same subject → that page needs more depth
+
+Do NOT copy raw Q&A into the wiki. Extract useful knowledge and integrate it naturally.
 
 Fix what you can, and update wiki/log.md with a lint entry.
 

@@ -53,6 +53,14 @@ fi
 
 log "Building wiki for $NEW_COUNT new date(s) using model: $MODEL"
 
+# ── Check for chat sessions ───────────────────────────────────────────────
+SESSIONS_DIR="$REPO/wiki_sessions"
+SESSION_COUNT=0
+if [[ -d "$SESSIONS_DIR" ]] && [[ -n "$(ls -A "$SESSIONS_DIR"/*.json 2>/dev/null)" ]]; then
+    SESSION_COUNT=$(find "$SESSIONS_DIR" -name "*.json" -type f | wc -l | tr -d ' ')
+fi
+log "Found $SESSION_COUNT chat sessions in wiki_sessions/"
+
 # ── Build the task prompt ──────────────────────────────────────────────────
 TASK_PROMPT="$(cat <<PROMPT
 You are maintaining an AI news wiki for the Daily-AI-News project.
@@ -70,6 +78,7 @@ $(cat "$PROJECT_SCHEMA")
 Working directory: $REPO
 
 There are $NEW_COUNT new date(s) in data/ that have not yet been added to the wiki.
+There are $SESSION_COUNT chat sessions in wiki_sessions/ with past Q&A conversations.
 
 Follow the ingest workflow defined in WIKI.md exactly. Key steps:
 
@@ -83,7 +92,16 @@ STEP 1 — For each new JSON file in data/ (check wiki/processed.json to find un
 7. Create/update wiki/entities/ pages for each entity identified
 8. Create/update wiki/ideas/ pages for each cross-cutting insight
 
-STEP 2 — After all dates are processed:
+STEP 2 — Learn from chat history:
+If wiki_sessions/ has JSON files, read them. Each file is a JSON array of {role, content} messages.
+Look for:
+- Questions the user asked that reveal knowledge gaps in the wiki → fill those gaps
+- Insights or connections mentioned in Q&A that should be added to idea/topic/entity pages
+- Repeated questions about the same topic → that topic page needs more depth
+- Corrections or clarifications from conversations → update affected pages
+Do NOT copy raw Q&A into the wiki. Extract the useful knowledge and integrate it naturally.
+
+STEP 3 — After all processing:
 1. Update wiki/index.md with all 5 sections (Topics, Sources, Timelines, Entities, Ideas)
 2. Update wiki/processed.json
 3. Append to wiki/log.md

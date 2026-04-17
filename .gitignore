@@ -1,0 +1,11 @@
+**/.DS_Store
+**/.env
+**/__pycache__/
+
+ai_news.sqlite
+
+# Wiki build log
+wiki_build.log
+
+# Chat session history (persisted locally, not in git)
+wiki_sessions/
