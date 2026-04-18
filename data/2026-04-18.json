@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-18",
+  "github_repos": [
+    {
+      "name": "AgentSeal/codeburn",
+      "url": "https://github.com/AgentSeal/codeburn",
+      "description": {
+        "en": "See where your AI coding tokens go. Interactive TUI dashboard for Claude Code, Codex, and Cursor cost observability.",
+        "zh": "查看 AI 编程消耗的代币去向——支持 Claude Code、Codex 和 Cursor 的交互式 TUI 成本可视化仪表板。"
+      },
+      "stars": "2.6k",
+      "forks": "182"
+    },
+    {
+      "name": "Mouseww/anything-analyzer",
+      "url": "https://github.com/Mouseww/anything-analyzer",
+      "description": {
+        "en": "All-in-one protocol analysis toolkit — built-in browser capture, MITM proxy, JS hooks, fingerprint spoofing, AI analysis & MCP server for AI agent integration.",
+        "zh": "全能协议分析工具：内置浏览器抓包、MITM 代理、JS 钩子、指纹伪装、AI 分析及无缝对接 AI Agent/IDE 的 MCP Server。"
+      },
+      "stars": "1.3k",
+      "forks": "306"
+    },
+    {
+      "name": "Manavarya09/design-extract",
+      "url": "https://github.com/Manavarya09/design-extract",
+      "description": {
+        "en": "Extract the complete design language from any website — colors, typography, spacing, shadows, and more. npx CLI + Claude Code plugin.",
+        "zh": "从任意网站提取完整设计语言——颜色、字体、间距、阴影等。支持 npx CLI 和 Claude Code 插件。"
+      },
+      "stars": "929",
+      "forks": "73"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Expands Partnership with Google and Broadcom for Next-Generation Compute",
+        "zh": "Anthropic 扩展与 Google 和 Broadcom 的合作，共建下一代计算基础设施"
+      },
+      "url": "https://www.anthropic.com/news",
+      "source": "Anthropic",
+      "time": "Apr 6, 2026",
+      "description": {
+        "en": "Anthropic announced an expanded partnership with Google and Broadcom to develop multi-gigawatt next-generation compute infrastructure, signaling massive capital commitment to AI model training at unprecedented scale.",
+        "zh": "Anthropic 宣布扩大与 Google 和 Broadcom 的合作，共同开发多吉瓦级别的下一代计算基础设施，表明对前所未有规模的 AI 模型训练的重大资本投入。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Shifts Focus to Enterprise Users Amid Intensifying Anthropic Competition",
+        "zh": "OpenAI 战略重心转向企业用户，竞争压力主要来自 Anthropic"
+      },
+      "url": "https://techxplore.com/news/2026-04-chatgpt-maker-openai-shifts-focus.html",
+      "source": "TechXplore / AP",
+      "time": "Apr 16, 2026",
+      "description": {
+        "en": "OpenAI is pivoting toward business-oriented products and a new 'high-value professional work' model (codenamed Spud), as Anthropic's Claude captures enterprise market share. Business revenue now accounts for 40% of OpenAI's sales, up from 20% two years ago.",
+        "zh": "OpenAI 正在向商业导向产品和代号为 Spud 的新型「高价值专业工作」模型转型，此前 Anthropic 的 Claude 系列在企业市场持续攻城略地。企业收入已从两年前的 20% 增长至如今的 40%。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA Launches Ising — World's First Open Quantum AI Models",
+        "zh": "英伟达发布 Ising：全球首个开源量子 AI 模型"
+      },
+      "url": "https://nvidianews.nvidia.com/news/nvidia-launches-ising-the-worlds-first-open-ai-models-to-accelerate-the-path-to-useful-quantum-computers",
+      "source": "NVIDIA",
+      "time": "Apr 14, 2026",
+      "description": {
+        "en": "NVIDIA unveiled Ising, the world's first open-source quantum AI model family. Ising models deliver up to 2.5x faster and 3x more accurate quantum error correction decoding than traditional approaches, and automate quantum processor calibration from days to hours.",
+        "zh": "英伟达发布 Ising，这是全球首个开源量子 AI 模型系列。Ising 模型的量子纠错解码速度最高快 2.5 倍、准确度提高 3 倍，同时将量子处理器校准时间从数天缩短至数小时。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mozilla Launches Thunderbolt — Enterprise Self-Hostable AI Client",
+        "zh": "Mozilla 推出 Thunderbolt：企业级自托管 AI 客户端"
+      },
+      "url": "https://www.phoronix.com/news/Mozilla-Thunderbolt",
+      "source": "Phoronix / Ars Technica",
+      "time": "Apr 16, 2026",
+      "description": {
+        "en": "Mozilla subsidiary MZLA released Thunderbolt, a cross-platform open-source AI client for enterprises that want to self-host AI infrastructure. Thunderbolt supports any OpenAI-compatible API endpoint, with native apps for web, macOS, Windows, Linux, iOS, and Android.",
+        "zh": "Mozilla 子公司 MZLA 发布 Thunderbolt，这是一款面向企业的跨平台开源 AI 客户端，支持自托管 AI 基础设施。Thunderbolt 支持任何 OpenAI 兼容 API 端点，提供 Web、macOS、Windows、Linux、iOS 和 Android 原生应用。"
+      }
+    },
+    {
+      "title": {
+        "en": "Stanford HAI 2026 AI Index: China Has 'Nearly Erased' U.S. AI Lead",
+        "zh": "斯坦福 HAI 2026 AI 指数报告：中国已「几乎抹平」美国 AI 领先优势"
+      },
+      "url": "https://fortune.com/2026/04/16/stanford-study-how-has-china-gained-on-us-ai-war/",
+      "source": "Fortune / Stanford HAI",
+      "time": "Apr 16, 2026",
+      "description": {
+        "en": "Stanford's 2026 AI Index Report shows China's top AI model now trails the U.S. leader by only 39 Arena points, down from a 300+ point gap in May 2023. China also leads in AI publication citations (20.6% vs 12.6% for the U.S.) and industrial robot installations. Meanwhile, AI scholar inflow to the U.S. has dropped 89% since 2017.",
+        "zh": "斯坦福 2026 AI 指数报告显示，中国顶级 AI 模型与美国领先者的 Arena 分数差距已缩小至 39 分，而 2023 年 5 月这一差距曾超过 300 分。中国在 AI 论文引用数（20.6% vs 美国 12.6%）和工业机器人安装量上也领先全球。同时，进入美国的 AI 学者数量较 2017 年下降了 89%。"
+      }
+    },
+    {
+      "title": {
+        "en": "Perplexity AI Reports 5x Revenue Growth to $500M, Staff Up Only 34%",
+        "zh": "Perplexity AI 收入增长 5 倍至 5 亿美元，团队仅扩大 34%"
+      },
+      "url": "https://llm-stats.com/ai-news",
+      "source": "LLM Stats / MIT Sloan",
+      "time": "Apr 17, 2026",
+      "description": {
+        "en": "Perplexity AI grew revenue from $100M to $500M while increasing staff by just 34%, driven by its 'Computer' product — a Mac mini-based AI system that runs continuously and integrates local files, apps, and multiple models for research, coding and task execution.",
+        "zh": "Perplexity AI 实现收入从 1 亿到 5 亿美元的增长，团队规模仅扩大 34%，主要驱动力来自其「Computer」产品——一款基于 Mac mini 的 AI 系统，可持续运行并整合本地文件、应用和多模型，用于研究、编程和任务执行。"
+      }
+    },
+    {
+      "title": {
+        "en": "Recursive Superintelligence Raises $500M Four Months After Founding",
+        "zh": "递归超级智能公司成立仅四个月即融资 5 亿美元"
+      },
+      "url": "https://llm-stats.com/ai-news",
+      "source": "LLM Stats",
+      "time": "Apr 17, 2026",
+      "description": {
+        "en": "Recursive Superintelligence, an AI startup focused on self-improving AI systems, raised $500 million in seed funding just four months after its founding, reflecting continued investor appetite for frontier AI ventures despite broader market caution.",
+        "zh": "专注于自改进 AI 系统的初创公司递归超级智能（Recursive Superintelligence）在成立仅四个月后就获得了 5 亿美元的种子轮融资，反映出投资者对前沿 AI 领域的持续热情，尽管市场整体趋于谨慎。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week's AI landscape is defined by two converging themes: the narrowing capability gap between U.S. and Chinese AI labs, and the escalating enterprise AI race between OpenAI and Anthropic. Stanford HAI's 2026 report is a wake-up call — China's top models now trail the U.S. by just 2.7% on Arena scores, a chasm that was 20%+ two years ago. This is not just about benchmarks; China's infrastructure advantage (9x more industrial robots, superior power grid reserves) compounds with every MoE model release. On the commercial side, OpenAI's pivot to enterprise under 'Spud' and Denise Dresser's aggressive sales posture signals that Anthropic's Claude has carved out real territory in coding and agentic workflows. The wildcard this week is NVIDIA's Ising — quantum AI models represent a genuinely new category, not incremental improvement. If Ising delivers on its calibration and error-correction promises, it could accelerate the timeline for useful quantum computing by years, reshaping the entire AI hardware roadmap. Meanwhile, Mozilla's Thunderbolt and Perplexity's lean growth story remind us that the AI infrastructure stack continues to commoditize from both the client and application layers.",
+    "zh": "本周 AI 领域呈现两大主题交汇：美国与中国 AI 能力差距急剧收窄，以及 OpenAI 与 Anthropic 在企业 AI 市场的正面交锋。斯坦福 HAI 的 2026 报告是一记警钟——中国顶级模型的 Arena 分数如今仅落后美国 2.7%，而两年前这一差距还超过 20%。这不仅仅是基准分数的竞争；中国的基础设施优势（9 倍于美国的工业机器人、充裕的电力储备）与每个 MoE 模型发布叠加，持续扩大影响。商业层面，OpenAI 在「Spud」和首席营收官 Denise Dresser 的激进销售策略推动下向企业市场转型，表明 Anthropic 的 Claude 已从编程和 Agent 工作流中切走了真实的市场份额。本周最大的变数是 NVIDIA 的 Ising——量子 AI 模型代表了一个真正的新类别，而非渐进式改进。如果 Ising 的校准和纠错承诺兑现，可能将实用量子计算的时间线提前数年，重塑整个 AI 硬件路线图。与此同时，Mozilla 的 Thunderbolt 和 Perplexity 的精简增长故事提醒我们，AI 基础设施栈正从客户端和应用层同时商品化。"
+  }
+}
