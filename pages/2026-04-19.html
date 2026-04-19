@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 19, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 19, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/microsoft/markitdown" class="card-title" target="_blank">microsoft/markitdown</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 112.3k stars</div>
+                                <div class="meta-item"><span>🍴</span> 7.3k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Python tool for converting files and office documents (Word, Excel, PowerPoint, PDF, images, etc.) to clean Markdown format, critical for LLM ingestion pipelines and document processing workflows</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软出品的文档转换工具，可将Word、Excel、PowerPoint、PDF、图片等文件转换为干净的Markdown格式，是LLM数据摄入管道和文档处理工作流的关键组件</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/virattt/ai-hedge-fund" class="card-title" target="_blank">virattt/ai-hedge-fund</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 56.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 9.8k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An autonomous AI hedge fund team using multi-agent orchestration for financial decision-making, featuring role-based agents for research, analysis, risk management, and trading</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">自主运行的AI对冲基金团队，通过多智能体编排进行金融决策，具备研究、分析、风险管理和交易等角色化代理功能</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/mvanhorn/last30days-skill" class="card-title" target="_blank">mvanhorn/last30days-skill</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 22.7k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.9k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">AI agent skill that researches any topic across Reddit, X (Twitter), YouTube, Hacker News, Polymarket, and the web — then synthesizes a grounded, comprehensive summary</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI代理技能，可跨Reddit、X (Twitter)、YouTube、Hacker News、Polymarket和整个网络研究任何主题，然后综合生成有理有据的总结报告</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Fortune</span>
+                    <div class="news-time">April 16, 2026</div>
+                    <a href="https://fortune.com/2026/04/16/stanford-study-how-has-china-gained-on-us-ai-war/" class="card-title" target="_blank" data-lang="en">Stanford AI Index 2026: China Has 'Nearly Erased' US AI Lead, Gap Compressed to Just 2.7%</a>
+                    <a href="https://fortune.com/2026/04/16/stanford-study-how-has-china-gained-on-us-ai-war/" class="card-title" target="_blank" data-lang="zh" style="display: none;">斯坦福2026年AI指数报告：中国已"几乎追平"美国AI领先优势，差距压缩至仅2.7%</a>
+                    <p class="card-description" data-lang="en">Stanford's HAI 2026 AI Index report reveals the US-China AI performance gap has narrowed to 2.7%, down from double-digit leads in 2023. ByteDance's best model trails Anthropic's Claude by only 39 Arena points. US still leads in private investment ($285.9B vs China's $12.4B) but China leads in AI patents, publications, and industrial robot installations.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">斯坦福HAI发布的2026年AI指数报告显示，美中AI性能差距已缩小至2.7%，远低于2023年的两位数领先优势。字节跳动的最佳模型与Anthropic的Claude仅差39个Arena积分。美国仍主导私人投资（2859亿 vs 中国124亿），但中国在AI专利、学术发表和工业机器人部署方面处于领先地位。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">April 17, 2026</div>
+                    <a href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/" class="card-title" target="_blank" data-lang="en">Anthropic Launches Claude Design and Claude Opus 4.7 — A Direct Shot at Figma</a>
+                    <a href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic发布Claude Design和Claude Opus 4.7——直接挑战Figma</a>
+                    <p class="card-description" data-lang="en">Anthropic released Claude Design, an AI-powered design tool that turns conversational prompts into polished prototypes, slide decks, and marketing collateral. Also launched Claude Opus 4.7 with improved coding, multimodal vision, and proactive self-verification. Anthropic's CPO Mike Krieger quietly resigned from Figma's board days before the announcement.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic发布了Claude Design，一款AI设计工具，可将对话式提示转化为精美的原型、幻灯片和营销材料。同时推出Claude Opus 4.7，在编码、多模态视觉和主动自我验证方面有所提升。Anthropic首席产品官Mike Krieger在发布前几天悄然辞去了Figma董事会职务。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Axios</span>
+                    <div class="news-time">April 16, 2026</div>
+                    <a href="https://www.axios.com/2026/04/16/openai-models-life-sciences-drugs" class="card-title" target="_blank" data-lang="en">OpenAI Launches GPT-Rosalind for Life Sciences Research, Partners with Amgen, Moderna, Novo Nordisk</a>
+                    <a href="https://www.axios.com/2026/04/16/openai-models-life-sciences-drugs" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI发布GPT-Rosalind布局生命科学研究，与Amgen、Moderna、诺和诺德达成合作</a>
+                    <p class="card-description" data-lang="en">OpenAI launched GPT-Rosalind, a reasoning model built specifically for life sciences — biology, drug discovery, and translational medicine. Early access partners include Amgen, Moderna, Allen Institute, and Thermo Fisher Scientific. The release came alongside a Life Sciences research plugin for Codex and a strategic partnership with Novo Nordisk.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI发布了GPT-Rosalind，这是一款专为生命科学领域设计的推理模型，涵盖生物学、药物发现和转化医学。早期访问合作伙伴包括Amgen、Moderna、艾伦研究所和赛默飞世尔科技。该版本还推出了Codex的生命科学研究插件，以及与诺和诺德的战略合作。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Dataconomy</span>
+                    <div class="news-time">April 17, 2026</div>
+                    <a href="https://dataconomy.com/2026/04/17/perplexity-rolls-out-personal-computer-ai-for-mac-users/" class="card-title" target="_blank" data-lang="en">Perplexity Launches 'Personal Computer' — Always-On AI Agent Running Locally on Mac</a>
+                    <a href="https://dataconomy.com/2026/04/17/perplexity-rolls-out-personal-computer-ai-for-mac-users/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Perplexity推出"个人电脑"——在Mac本地运行的全天候AI代理</a>
+                    <p class="card-description" data-lang="en">Perplexity launched Personal Computer, an always-on AI assistant that runs locally on Mac — managing files, controlling native apps like iMessage and Calendar, and browsing the web autonomously. Available exclusively to Perplexity Max subscribers at $200/month. Designed to run continuously on a dedicated Mac mini.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Perplexity推出了"个人电脑"，一款全天候运行的本地AI助手，可在Mac上管理文件、控制iMessage和日历等原生应用，并自主浏览网页。仅向Perplexity Max订阅用户开放，月费200美元。设计为在专用Mac mini上持续运行。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Morningstar/MarketWatch</span>
+                    <div class="news-time">April 17, 2026</div>
+                    <a href="https://www.morningstar.com/news/marketwatch/20260417145/even-openais-top-economist-thinks-the-ai-job-apocalypse-is-overstated-heres-why" class="card-title" target="_blank" data-lang="en">OpenAI's Chief Economist: AI Won't Take Your Job — But 'Yet' Is Doing a Lot of Heavy Lifting</a>
+                    <a href="https://www.morningstar.com/news/marketwatch/20260417145/even-openais-top-economist-thinks-the-ai-job-apocalypse-is-overstated-heres-why" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI首席经济学家：AI不会抢走你的工作——但"尚未"这个词承载了太多重量</a>
+                    <p class="card-description" data-lang="en">OpenAI's labor economist Alex Martin Richmond published a study finding 18% of US jobs face 'relatively higher risk' from AI — but reorganization and expansion are more likely outcomes than outright job losses. Critics note the obvious conflict of interest; supporters say the methodology is solid but acknowledge a 66-percentage-point gap between theoretical AI exposure and realized displacement.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI劳动力经济学家Alex Martin Richmond发布研究报告，称18%的美国工作岗位面临"相对较高"的AI风险——但更可能的结果是重组和扩张，而非直接失业。批评者指出明显的利益冲突；支持者认为方法论合理，但承认理论AI暴露与实际替代之间存在66个百分点的巨大差距。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">April 17, 2026</div>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank" data-lang="en">Cerebras Files for US IPO — AI Chip Rival to Nvidia Reveals Public Listing Plans</a>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Cerebras递交美国IPO申请——英伟达AI芯片竞争对手揭示上市计划</a>
+                    <p class="card-description" data-lang="en">Cerebras Systems, the AI chipmaker rivaling Nvidia, revealed its filing for a US initial public offering. The company is seeking to tap into growing optimism around a broad revival in the listings market as AI demand fuels unprecedented chip needs. Cerebras specializes in wafer-scale chips that offer massive parallel processing for AI workloads.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI芯片制造商Cerebras Systems披露了美国首次公开募股的文件。该公司正寻求利用市场对IPO复苏日益增长的乐观情绪，在AI需求推动芯片需求 unprecedented增长的背景下登陆公开市场。Cerebras专注于晶圆级芯片，为AI工作负载提供大规模并行处理能力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">April 17, 2026</div>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank" data-lang="en">Meta Reportedly Targeting May 20 for First Wave of Layoffs, More Cuts Coming</a>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/" class="card-title" target="_blank" data-lang="zh" style="display: none;">传Meta锁定5月20日为首轮裁员日期，后续将有更多削减</a>
+                    <p class="card-description" data-lang="en">Meta is reportedly targeting May 20 for its first wave of layoffs as the company implements operational changes focused on artificial intelligence and long-term business model development. The layoffs are part of a broader strategic shift toward AI-first operations and cost optimization.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">据报道，Meta正在锁定5月20日为首轮裁员日期，因该公司正在实施聚焦人工智能和长期商业模式发展的运营变革。此次裁员是向AI优先运营和成本优化战略转型的更广泛计划的一部分。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Alston & Bird / FBI</span>
+                    <div class="news-time">April 6, 2026</div>
+                    <a href="https://www.alston.com/en/insights/publications/2026/04/ai-quarterly-april-2026" class="card-title" target="_blank" data-lang="en">FBI IC3 Report: AI-Driven Cybercrimes Surge, Warns of Increasing Sophistication</a>
+                    <a href="https://www.alston.com/en/insights/publications/2026/04/ai-quarterly-april-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">FBI IC3报告：AI驱动网络犯罪激增，警告复杂度日增</a>
+                    <p class="card-description" data-lang="en">The FBI's IC3 Annual Report revealed alarming statistics related to AI-driven cybercrimes. With the increasing sophistication of cyber threats, AI is both a tool for cybercriminals and a means of defense. The report indicates a rise in AI-related scams, emphasizing the need for vigilance and proactive measures in online security as businesses adopt AI systems.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">FBI的IC3年度报告揭示了与AI驱动网络犯罪相关的惊人统计数据。随着网络威胁复杂性的增加，AI既是网络犯罪分子的工具，也是防御手段。报告指出AI相关诈骗案上升，强调企业在采用AI系统的同时，需要保持警惕并采取积极的安全措施。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week's AI landscape shows a clear shift from 'model race' to 'application layer' competition. Anthropic's Claude Design directly targets Figma/Canva's workflow moat, while OpenAI's GPT-Rosalind extends the frontier lab's pattern of domain-specific models (Cyber, Life Sciences) over general-purpose ones. Stanford's data confirms China's AI capabilities have fundamentally closed the gap with the US in raw performance — the 2.7% difference is within measurement noise. What's notable is that China's progress comes despite 23x less private investment, suggesting either hidden government funding or structural efficiency advantages. For developers, the takeaway is clear: the era of 'one model to rule them all' is ending; specialized models with genuine domain expertise are winning on real-world benchmarks. On the jobs question, OpenAI's own economist's 'apocalypse is overstated' framing should be read as 'not yet, not evenly, and not for everyone' — the 66-point gap between theoretical exposure and realized displacement is a temporary cushion, not a guarantee.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周AI领域呈现从"模型竞赛"向"应用层竞争"的清晰转变。Anthropic的Claude Design直接切入Figma/Canva的工作流护城河，而OpenAI的GPT-Rosalind则延续了前沿实验室推出领域专精模型（网络安全、生命科学）而非通用模型的趋势。斯坦福的数据证实，中国AI能力已在原始性能上基本追平美国——2.7%的差距已在测量误差范围内。值得注意的是，中国取得这一进展的私人投资仅为美国的1/23，这暗示要么存在隐藏的政府资金，要么有结构性效率优势。对于开发者而言，结论很明确："一个模型统治一切"的时代正在终结；在真实世界基准测试中，具有真正领域专业性的专精模型正在胜出。关于就业问题，OpenAI自家经济学家"末日论被夸大"的说法应被解读为"尚未、并未均衡、且并非对所有人"——理论暴露与实际替代之间66个百分点的差距是临时缓冲，而非永久保证。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+{
+  "date": "2026-04-19",
+  "github_repos": [
+    {
+      "name": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "description": {
+        "en": "Python tool for converting files and office documents (Word, Excel, PowerPoint, PDF, images, etc.) to clean Markdown format, critical for LLM ingestion pipelines and document processing workflows",
+        "zh": "微软出品的文档转换工具，可将Word、Excel、PowerPoint、PDF、图片等文件转换为干净的Markdown格式，是LLM数据摄入管道和文档处理工作流的关键组件"
+      },
+      "stars": "112.3k",
+      "forks": "7.3k"
+    },
+    {
+      "name": "virattt/ai-hedge-fund",
+      "url": "https://github.com/virattt/ai-hedge-fund",
+      "description": {
+        "en": "An autonomous AI hedge fund team using multi-agent orchestration for financial decision-making, featuring role-based agents for research, analysis, risk management, and trading",
+        "zh": "自主运行的AI对冲基金团队，通过多智能体编排进行金融决策，具备研究、分析、风险管理和交易等角色化代理功能"
+      },
+      "stars": "56.2k",
+      "forks": "9.8k"
+    },
+    {
+      "name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": {
+        "en": "AI agent skill that researches any topic across Reddit, X (Twitter), YouTube, Hacker News, Polymarket, and the web — then synthesizes a grounded, comprehensive summary",
+        "zh": "AI代理技能，可跨Reddit、X (Twitter)、YouTube、Hacker News、Polymarket和整个网络研究任何主题，然后综合生成有理有据的总结报告"
+      },
+      "stars": "22.7k",
+      "forks": "1.9k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Stanford AI Index 2026: China Has 'Nearly Erased' US AI Lead, Gap Compressed to Just 2.7%",
+        "zh": "斯坦福2026年AI指数报告：中国已\"几乎追平\"美国AI领先优势，差距压缩至仅2.7%"
+      },
+      "url": "https://fortune.com/2026/04/16/stanford-study-how-has-china-gained-on-us-ai-war/",
+      "source": "Fortune",
+      "time": "April 16, 2026",
+      "description": {
+        "en": "Stanford's HAI 2026 AI Index report reveals the US-China AI performance gap has narrowed to 2.7%, down from double-digit leads in 2023. ByteDance's best model trails Anthropic's Claude by only 39 Arena points. US still leads in private investment ($285.9B vs China's $12.4B) but China leads in AI patents, publications, and industrial robot installations.",
+        "zh": "斯坦福HAI发布的2026年AI指数报告显示，美中AI性能差距已缩小至2.7%，远低于2023年的两位数领先优势。字节跳动的最佳模型与Anthropic的Claude仅差39个Arena积分。美国仍主导私人投资（2859亿 vs 中国124亿），但中国在AI专利、学术发表和工业机器人部署方面处于领先地位。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Launches Claude Design and Claude Opus 4.7 — A Direct Shot at Figma",
+        "zh": "Anthropic发布Claude Design和Claude Opus 4.7——直接挑战Figma"
+      },
+      "url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
+      "source": "TechCrunch",
+      "time": "April 17, 2026",
+      "description": {
+        "en": "Anthropic released Claude Design, an AI-powered design tool that turns conversational prompts into polished prototypes, slide decks, and marketing collateral. Also launched Claude Opus 4.7 with improved coding, multimodal vision, and proactive self-verification. Anthropic's CPO Mike Krieger quietly resigned from Figma's board days before the announcement.",
+        "zh": "Anthropic发布了Claude Design，一款AI设计工具，可将对话式提示转化为精美的原型、幻灯片和营销材料。同时推出Claude Opus 4.7，在编码、多模态视觉和主动自我验证方面有所提升。Anthropic首席产品官Mike Krieger在发布前几天悄然辞去了Figma董事会职务。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches GPT-Rosalind for Life Sciences Research, Partners with Amgen, Moderna, Novo Nordisk",
+        "zh": "OpenAI发布GPT-Rosalind布局生命科学研究，与Amgen、Moderna、诺和诺德达成合作"
+      },
+      "url": "https://www.axios.com/2026/04/16/openai-models-life-sciences-drugs",
+      "source": "Axios",
+      "time": "April 16, 2026",
+      "description": {
+        "en": "OpenAI launched GPT-Rosalind, a reasoning model built specifically for life sciences — biology, drug discovery, and translational medicine. Early access partners include Amgen, Moderna, Allen Institute, and Thermo Fisher Scientific. The release came alongside a Life Sciences research plugin for Codex and a strategic partnership with Novo Nordisk.",
+        "zh": "OpenAI发布了GPT-Rosalind，这是一款专为生命科学领域设计的推理模型，涵盖生物学、药物发现和转化医学。早期访问合作伙伴包括Amgen、Moderna、艾伦研究所和赛默飞世尔科技。该版本还推出了Codex的生命科学研究插件，以及与诺和诺德的战略合作。"
+      }
+    },
+    {
+      "title": {
+        "en": "Perplexity Launches 'Personal Computer' — Always-On AI Agent Running Locally on Mac",
+        "zh": "Perplexity推出\"个人电脑\"——在Mac本地运行的全天候AI代理"
+      },
+      "url": "https://dataconomy.com/2026/04/17/perplexity-rolls-out-personal-computer-ai-for-mac-users/",
+      "source": "Dataconomy",
+      "time": "April 17, 2026",
+      "description": {
+        "en": "Perplexity launched Personal Computer, an always-on AI assistant that runs locally on Mac — managing files, controlling native apps like iMessage and Calendar, and browsing the web autonomously. Available exclusively to Perplexity Max subscribers at $200/month. Designed to run continuously on a dedicated Mac mini.",
+        "zh": "Perplexity推出了\"个人电脑\"，一款全天候运行的本地AI助手，可在Mac上管理文件、控制iMessage和日历等原生应用，并自主浏览网页。仅向Perplexity Max订阅用户开放，月费200美元。设计为在专用Mac mini上持续运行。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI's Chief Economist: AI Won't Take Your Job — But 'Yet' Is Doing a Lot of Heavy Lifting",
+        "zh": "OpenAI首席经济学家：AI不会抢走你的工作——但\"尚未\"这个词承载了太多重量"
+      },
+      "url": "https://www.morningstar.com/news/marketwatch/20260417145/even-openais-top-economist-thinks-the-ai-job-apocalypse-is-overstated-heres-why",
+      "source": "Morningstar/MarketWatch",
+      "time": "April 17, 2026",
+      "description": {
+        "en": "OpenAI's labor economist Alex Martin Richmond published a study finding 18% of US jobs face 'relatively higher risk' from AI — but reorganization and expansion are more likely outcomes than outright job losses. Critics note the obvious conflict of interest; supporters say the methodology is solid but acknowledge a 66-percentage-point gap between theoretical AI exposure and realized displacement.",
+        "zh": "OpenAI劳动力经济学家Alex Martin Richmond发布研究报告，称18%的美国工作岗位面临\"相对较高\"的AI风险——但更可能的结果是重组和扩张，而非直接失业。批评者指出明显的利益冲突；支持者认为方法论合理，但承认理论AI暴露与实际替代之间存在66个百分点的巨大差距。"
+      }
+    },
+    {
+      "title": {
+        "en": "Cerebras Files for US IPO — AI Chip Rival to Nvidia Reveals Public Listing Plans",
+        "zh": "Cerebras递交美国IPO申请——英伟达AI芯片竞争对手揭示上市计划"
+      },
+      "url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "source": "Reuters",
+      "time": "April 17, 2026",
+      "description": {
+        "en": "Cerebras Systems, the AI chipmaker rivaling Nvidia, revealed its filing for a US initial public offering. The company is seeking to tap into growing optimism around a broad revival in the listings market as AI demand fuels unprecedented chip needs. Cerebras specializes in wafer-scale chips that offer massive parallel processing for AI workloads.",
+        "zh": "AI芯片制造商Cerebras Systems披露了美国首次公开募股的文件。该公司正寻求利用市场对IPO复苏日益增长的乐观情绪，在AI需求推动芯片需求 unprecedented增长的背景下登陆公开市场。Cerebras专注于晶圆级芯片，为AI工作负载提供大规模并行处理能力。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Reportedly Targeting May 20 for First Wave of Layoffs, More Cuts Coming",
+        "zh": "传Meta锁定5月20日为首轮裁员日期，后续将有更多削减"
+      },
+      "url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "source": "Reuters",
+      "time": "April 17, 2026",
+      "description": {
+        "en": "Meta is reportedly targeting May 20 for its first wave of layoffs as the company implements operational changes focused on artificial intelligence and long-term business model development. The layoffs are part of a broader strategic shift toward AI-first operations and cost optimization.",
+        "zh": "据报道，Meta正在锁定5月20日为首轮裁员日期，因该公司正在实施聚焦人工智能和长期商业模式发展的运营变革。此次裁员是向AI优先运营和成本优化战略转型的更广泛计划的一部分。"
+      }
+    },
+    {
+      "title": {
+        "en": "FBI IC3 Report: AI-Driven Cybercrimes Surge, Warns of Increasing Sophistication",
+        "zh": "FBI IC3报告：AI驱动网络犯罪激增，警告复杂度日增"
+      },
+      "url": "https://www.alston.com/en/insights/publications/2026/04/ai-quarterly-april-2026",
+      "source": "Alston & Bird / FBI",
+      "time": "April 6, 2026",
+      "description": {
+        "en": "The FBI's IC3 Annual Report revealed alarming statistics related to AI-driven cybercrimes. With the increasing sophistication of cyber threats, AI is both a tool for cybercriminals and a means of defense. The report indicates a rise in AI-related scams, emphasizing the need for vigilance and proactive measures in online security as businesses adopt AI systems.",
+        "zh": "FBI的IC3年度报告揭示了与AI驱动网络犯罪相关的惊人统计数据。随着网络威胁复杂性的增加，AI既是网络犯罪分子的工具，也是防御手段。报告指出AI相关诈骗案上升，强调企业在采用AI系统的同时，需要保持警惕并采取积极的安全措施。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week's AI landscape shows a clear shift from 'model race' to 'application layer' competition. Anthropic's Claude Design directly targets Figma/Canva's workflow moat, while OpenAI's GPT-Rosalind extends the frontier lab's pattern of domain-specific models (Cyber, Life Sciences) over general-purpose ones. Stanford's data confirms China's AI capabilities have fundamentally closed the gap with the US in raw performance — the 2.7% difference is within measurement noise. What's notable is that China's progress comes despite 23x less private investment, suggesting either hidden government funding or structural efficiency advantages. For developers, the takeaway is clear: the era of 'one model to rule them all' is ending; specialized models with genuine domain expertise are winning on real-world benchmarks. On the jobs question, OpenAI's own economist's 'apocalypse is overstated' framing should be read as 'not yet, not evenly, and not for everyone' — the 66-point gap between theoretical exposure and realized displacement is a temporary cushion, not a guarantee.",
+    "zh": "本周AI领域呈现从\"模型竞赛\"向\"应用层竞争\"的清晰转变。Anthropic的Claude Design直接切入Figma/Canva的工作流护城河，而OpenAI的GPT-Rosalind则延续了前沿实验室推出领域专精模型（网络安全、生命科学）而非通用模型的趋势。斯坦福的数据证实，中国AI能力已在原始性能上基本追平美国——2.7%的差距已在测量误差范围内。值得注意的是，中国取得这一进展的私人投资仅为美国的1/23，这暗示要么存在隐藏的政府资金，要么有结构性效率优势。对于开发者而言，结论很明确：\"一个模型统治一切\"的时代正在终结；在真实世界基准测试中，具有真正领域专业性的专精模型正在胜出。关于就业问题，OpenAI自家经济学家\"末日论被夸大\"的说法应被解读为\"尚未、并未均衡、且并非对所有人\"——理论暴露与实际替代之间66个百分点的差距是临时缓冲，而非永久保证。"
+  }
+}
