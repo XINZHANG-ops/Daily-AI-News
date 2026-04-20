@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-20",
+  "github_repos": [
+    {
+      "name": "openai/openai-agents-python",
+      "url": "https://github.com/openai/openai-agents-python",
+      "description": {
+        "en": "A lightweight yet powerful framework for building multi-agent workflows. Enables developers to create sophisticated AI agents that can collaborate, delegate tasks, and handle complex automations.",
+        "zh": "A lightweight yet powerful framework for building multi-agent workflows. Enables developers to create sophisticated AI agents."
+      },
+      "stars": "10.1k",
+      "forks": "1.2k"
+    },
+    {
+      "name": "BasedHardware/omi",
+      "url": "https://github.com/BasedHardware/omi",
+      "description": {
+        "en": "AI that sees your screen, listens to your conversations, and tells you what to do. A next-generation AI companion with multimodal perception and contextual awareness.",
+        "zh": "AI that sees your screen, listens to your conversations, and tells you what to do. A next-generation AI companion."
+      },
+      "stars": "8.2k",
+      "forks": "892"
+    },
+    {
+      "name": "EvoMap/evolver",
+      "url": "https://github.com/EvoMap/evolver",
+      "description": {
+        "en": "The GEP-Powered Self-Evolution Engine for AI Agents. Implements Genome Evolution Protocol enabling AI agents to continuously improve themselves through evolutionary algorithms.",
+        "zh": "The GEP-Powered Self-Evolution Engine for AI Agents. Implements Genome Evolution Protocol."
+      },
+      "stars": "5.8k",
+      "forks": "557"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Stanford AI Index 2026: US-China Performance Gap Collapses to 2.7% Despite 23x Investment Difference",
+        "zh": "Stanford AI Index 2026: US-China Performance Gap Collapses to 2.7%"
+      },
+      "url": "https://thenextweb.com/news/stanford-ai-index-2026-china-us-performance-gap",
+      "source": "The Next Web",
+      "time": "19 hours ago",
+      "description": {
+        "en": "Stanford's 2026 AI Index Report reveals the performance gap between the best American and Chinese AI models has narrowed to just 2.7%, down from 17.5-31.6 percentage points in May 2023, despite the US spending 23 times more on private AI investment. China has achieved near-parity with a fraction of the budget.",
+        "zh": "Stanford's 2026 AI Index Report reveals the performance gap between US and Chinese AI models has narrowed to 2.7%."
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Releases Claude Opus 4.7 with Major Coding Gains and Cyber Safeguards",
+        "zh": "Anthropic Releases Claude Opus 4.7 with Major Coding Gains"
+      },
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "source": "Anthropic",
+      "time": "3 days ago",
+      "description": {
+        "en": "Claude Opus 4.7 launches with 87.6% SWE-bench Verified (up from 80.8%), tripled vision resolution to 3.75 megapixels, and new cyber safeguards developed from the Claude Mythos safety work. Available at $5/$25 per million tokens.",
+        "zh": "Claude Opus 4.7 launches with 87.6% SWE-bench Verified, tripled vision resolution, and new cyber safeguards."
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Expands GPT-5.4-Cyber Access to Thousands of Security Researchers",
+        "zh": "OpenAI Expands GPT-5.4-Cyber Access to Security Researchers"
+      },
+      "url": "https://cybersecuritynews.com/gpt-5-4-cyber-defense-program/",
+      "source": "Cybersecurity News",
+      "time": "1 day ago",
+      "description": {
+        "en": "OpenAI officially launched the expanded phase of its Trusted Access for Cyber (TAC) program, granting access to GPT-5.4-Cyber to hundreds of organizations and thousands of vetted defenders globally.",
+        "zh": "OpenAI launched the expanded TAC program, granting GPT-5.4-Cyber access to organizations and security researchers."
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Launches Muse Spark, Abandoning Open-Source Strategy for Proprietary AI",
+        "zh": "Meta Launches Muse Spark, Abandoning Open-Source Strategy"
+      },
+      "url": "https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/",
+      "source": "TechCrunch",
+      "time": "12 days ago",
+      "description": {
+        "en": "Meta released Muse Spark on April 8 under former Scale AI CEO Alexandr Wang's leadership, marking a dramatic departure from the open-source Llama family. The Meta AI app jumped from #57 to #5 on US App Store.",
+        "zh": "Meta released Muse Spark on April 8, marking a departure from the open-source Llama family. App jumped to #5 on App Store."
+      }
+    },
+    {
+      "title": {
+        "en": "Alibaba Releases Qwen 3.6-35B-A3B: Strong Coding Performance on Consumer Hardware",
+        "zh": "Alibaba Releases Qwen 3.6-35B-A3B on Consumer Hardware"
+      },
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "source": "GitHub / Alibaba",
+      "time": "3 days ago",
+      "description": {
+        "en": "Alibaba shipped Qwen 3.6-35B-A3B with only 3B active parameters per inference pass, making it runnable on consumer hardware while scoring 73.4% on SWE-Bench Verified.",
+        "zh": "Alibaba released Qwen 3.6-35B-A3B with 3B active parameters, runnable on consumer hardware at 73.4% SWE-Bench."
+      }
+    },
+    {
+      "title": {
+        "en": "Google Gemini 3.1 Flash TTS Brings Granular Voice Control to Developers",
+        "zh": "Google Gemini 3.1 Flash TTS Brings Granular Voice Control"
+      },
+      "url": "https://www.artificialanalysis.ai/models/gemini",
+      "source": "Google / Artificial Analysis",
+      "time": "5 days ago",
+      "description": {
+        "en": "Google released Gemini 3.1 Flash TTS with granular control over speaking style, pace, pitch, and emphasis via natural language prompting for podcast production, audiobook generation, and accessibility tools.",
+        "zh": "Google released Gemini 3.1 Flash TTS with granular control over voice via natural language prompting."
+      }
+    },
+    {
+      "title": {
+        "en": "NSA Partners with Anthropic to Deploy Claude Mythos for Defensive Cybersecurity",
+        "zh": "NSA Partners with Anthropic on Claude Mythos Cybersecurity"
+      },
+      "url": "https://llm-stats.com/ai-news",
+      "source": "LLM Stats",
+      "time": "2 days ago",
+      "description": {
+        "en": "The NSA is using Anthropic's Claude Mythos through Project Glasswing, along with Apple, Microsoft, Amazon, Cisco, CrowdStrike, and JPMorgan. The model identified thousands of zero-day vulnerabilities.",
+        "zh": "The NSA uses Claude Mythos through Project Glasswing with major tech partners. Model found thousands of zero-day vulnerabilities."
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Key Trends This Week:\n\n1. The Mythos Effect: Anthropic's decision to withhold Claude Mythos from public release has fundamentally shifted industry norms. OpenAI's rapid response with GPT-5.4-Cyber shows the cyber arms race is now a primary competitive axis.\n\n2. Open-Source Surge: Google Gemma 4 (20x Codeforces improvement), Alibaba's Qwen 3.6, and Meta's Llama 4 Scout/Maverick demonstrate open-weight models now compete head-to-head with proprietary frontier models.\n\n3. Agentic Everything: The Stanford Index shows 53% global AI adoption in three years, with agentic frameworks like OpenAI's Agents SDK and Microsoft's Agent Framework 1.0 signaling a shift from chat to execution.\n\n4. Efficiency Breakthroughs: Google's TurboQuant enables 6x memory reduction with zero accuracy loss, while Qwen 3.6-35B brings strong coding to consumer hardware.\n\nWatch List: SpaceX's xAI integration with Grok 4.3, Stanford's widening trust gap between experts and public, and the upcoming Grok 5.",
+    "zh": "本周关键趋势:\n\n1. Mythos效应: Anthropic拒绝公开发布Claude Mythos的决定已从根本上改变行业规范。OpenAI快速推出GPT-5.4-Cyber表明网络军备竞赛已成为主要竞争轴心。\n\n2. 开源爆发: Google Gemma 4、阿里巴巴Qwen 3.6和Meta的Llama 4表明开源模型现已与闭源前沿模型正面竞争。\n\n3. 一切皆Agent: 斯坦福指数显示三年内全球AI采用率达53%，智能体框架标志着从对话到执行的结构性转变。\n\n4. 效率突破: Google的TurboQuant实现6倍内存降低且零精度损失，而Qwen 3.6-35B将强劲编码能力带入消费级硬件。\n\n关注列表: SpaceX的xAI与Grok 4.3的整合、专家与公众之间日益扩大的信任差距，以及即将推出的Grok 5。"
+  }
+}
