@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-21",
+  "github_repos": [
+    {
+      "name": "ruvnet/RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "description": {
+        "en": "WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video. Uses ESP32 sensors and spiking neural networks for edge AI.",
+        "zh": "WiFi DensePose将普通的WiFi信号转换为实时人体姿态估计、生命体征监测和存在检测——无需任何视频像素。使用ESP32传感器和尖峰神经网络进行边缘AI计算。"
+      },
+      "stars": "3.1k",
+      "forks": "186"
+    },
+    {
+      "name": "koala73/worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "description": {
+        "en": "Real-time global intelligence dashboard with AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking. Supports 500+ news feeds, 3D globe visualization, and local AI via Ollama.",
+        "zh": "实时全球情报仪表板，具备AI驱动的新闻聚合、地缘政治监测和基础设施追踪功能。支持500+新闻源、3D地球可视化，并通过Ollama支持本地AI。"
+      },
+      "stars": "50.7k",
+      "forks": "8.2k"
+    },
+    {
+      "name": "deepseek-ai/DeepGEMM",
+      "url": "https://github.com/deepseek-ai/DeepGEMM",
+      "description": {
+        "en": "Clean and efficient FP8 GEMM kernels with fine-grained scaling for modern LLMs. A unified high-performance tensor core kernel library supporting FP8, FP4, BF16, fused MoE, and Mega MoE with JIT compilation.",
+        "zh": "为现代LLM打造的简洁高效FP8 GEMM内核，支持细粒度缩放。统一的高性能张量核心内核库，支持FP8、FP4、BF16、融合MoE和Mega MoE，配备JIT编译。"
+      },
+      "stars": "6.9k",
+      "forks": "909"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Critical MCP Vulnerability Exposes 150 Million AI Installations to Remote Code Execution",
+        "zh": "关键MCP漏洞使1.5亿AI安装面临远程代码执行风险"
+      },
+      "url": "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html",
+      "source": "The Hacker News",
+      "time": "2026-04-21",
+      "description": {
+        "en": "Security researchers discovered a critical 'by design' flaw in Anthropic's Model Context Protocol that enables arbitrary command execution across 7,000+ servers and 150 million downloads. The vulnerability affects MCP SDKs in Python, TypeScript, Java, and Rust. Anthropic has declined to fix the architectural issue, citing it as 'expected behavior.'",
+        "zh": "安全研究人员发现Anthropic的模型上下文协议存在关键性\"设计固有\"缺陷，可在7000多台服务器和1.5亿次下载中实现任意命令执行。该漏洞影响Python、TypeScript、Java和Rust中的MCP SDK。Anthropic拒绝修复该架构问题，称其为\"预期行为\"。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Releases GPT-5.4-Cyber with Lowered Safety Guards for Cybersecurity Research",
+        "zh": "OpenAI发布GPT-5.4-Cyber：为网络安全研究降低安全门槛"
+      },
+      "url": "https://mashable.com/article/openai-gpt-54-cyber-cybersecurity-ai-model",
+      "source": "Mashable",
+      "time": "2026-04-21",
+      "description": {
+        "en": "OpenAI unveiled GPT-5.4-Cyber, a variant trained to accept seemingly malicious prompts for defensive cybersecurity purposes. The model is restricted to members of the Trusted Access for Cyber (TAC) program at its highest tiers, following Anthropic's similar limited release of Claude Mythos Preview.",
+        "zh": "OpenAI发布了GPT-5.4-Cyber，这是一种经过训练可接受看似恶意提示的变体，用于防御性网络安全目的。该模型仅限于可信访问网络(TAC)计划最高级别成员使用，此前Anthropic也类似地限量发布了Claude Mythos Preview。"
+      }
+    },
+    {
+      "title": {
+        "en": "India Establishes Cabinet-Level AI Governance Panel with Labor Market Mandate",
+        "zh": "印度设立内阁级AI治理小组，聚焦劳动力市场影响"
+      },
+      "url": "https://asanify.com/blog/news/india-ai-governance-april-21-2026/",
+      "source": "Asanify",
+      "time": "2026-04-21",
+      "description": {
+        "en": "India's government constituted the AI Governance and Economic Group (AIGEG), a high-level inter-ministerial body chaired by IT Minister Ashwini Vaishnaw. What sets it apart is the explicit labor-market mandate: assessing which job profiles AI adoption will hit first and developing mitigation plans.",
+        "zh": "印度政府成立了AI治理与经济小组(AIGEG)，这是一个由IT部长Ashwini Vaishnaw担任主席的高级部门间机构。其特别之处在于明确的劳动力市场授权：评估AI采用将首先影响哪些岗位，并制定缓解计划。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Unveils New AI Chips to Challenge Nvidia in Inference Market",
+        "zh": "谷歌推出新型AI芯片，挑战Nvidia推理市场霸主地位"
+      },
+      "url": "https://www.latimes.com/business/story/2026-04-20/google-challenges-nvidia-with-new-chips-to-speed-up-ai",
+      "source": "Los Angeles Times",
+      "time": "2026-04-20",
+      "description": {
+        "en": "Google announced new chips dedicated to inference at its Cloud Next conference, aiming to challenge market leader Nvidia in the fast-growing AI chip category. Major AI labs including Anthropic and Meta are increasingly adopting Google's TPUs, with Anthropic securing access to 1 million TPUs.",
+        "zh": "谷歌在Cloud Next大会上宣布推出新型推理专用芯片，旨在挑战快速增长的AI芯片市场领导者Nvidia。包括Anthropic和Meta在内的主要AI实验室正越来越多地采用谷歌的TPU，Anthropic已获得100万个TPU的使用权。"
+      }
+    },
+    {
+      "title": {
+        "en": "Recursive Superintelligence Raises $500M to Build Self-Improving AI Research Systems",
+        "zh": "Recursive Superintelligence融资5亿美元，打造自我改进AI研究系统"
+      },
+      "url": "https://the-decoder.com/self-improving-ai-startup-recursive-superintelligence-pulls-in-500-million-just-four-months-after-founding/",
+      "source": "The Decoder",
+      "time": "2026-04-21",
+      "description": {
+        "en": "A four-month-old lab founded by former Salesforce chief scientist Richard Socher and ex-Google DeepMind director Tim Rocktäschel raised over $500 million from GV and Nvidia at a $4 billion valuation. The company's goal is to build AI systems that improve themselves across evaluation, data selection, and research direction without human intervention at each step.",
+        "zh": "这家成立仅四个月的实验室由前Salesforce首席科学家Richard Socher和前谷歌DeepMind总监Tim Rocktäschel创立，从GV和Nvidia获得了超过5亿美元融资，估值40亿美元。公司的目标是构建能够自我改进的AI系统，在评估、数据选择和研究方向上无需每一步都人工干预。"
+      }
+    },
+    {
+      "title": {
+        "en": "Workday Ships 300+ Agent Skills for HR and Finance Automation",
+        "zh": "Workday推出300+智能体技能，赋能HR和财务自动化"
+      },
+      "url": "https://www.techtarget.com/searchhrsoftware/news/366640361/Workdays-new-old-CEO-reveals-Sana-agentic-AI-updates",
+      "source": "TechTarget",
+      "time": "2026-04-21",
+      "description": {
+        "en": "Workday's Sana AI platform now includes 300+ prebuilt agent skills across pay, time, absence, and expense, plus enterprise extensions for Gmail, Outlook, Salesforce, ServiceNow, Slack, and Jira. The agents are bundled into existing subscriptions via Flex Credits.",
+        "zh": "Workday的Sana AI平台现包含300多个预构建智能体技能，涵盖薪酬、时间、休假和费用等领域，并扩展支持Gmail、Outlook、Salesforce、ServiceNow、Slack和Jira。这些智能体通过Flex Credits捆绑到现有订阅中。"
+      }
+    },
+    {
+      "title": {
+        "en": "Gemini 3 Deep Think Identifies Logical Errors in Peer-Reviewed Math Papers",
+        "zh": "Gemini 3 Deep Think在同行评审数学论文中发现逻辑错误"
+      },
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "source": "Google Blog",
+      "time": "2026-04-21",
+      "description": {
+        "en": "Google DeepMind's upgraded Gemini 3 Deep Think reasoning mode has begun identifying subtle logical flaws in mathematics papers that cleared human peer review. Paired with Aletheia verifier agent, the system has autonomously tackled open conjectures, signaling a new era of AI-assisted academic research.",
+        "zh": "谷歌DeepMind升级后的Gemini 3 Deep Think推理模式已开始识别通过同行评审的数学论文中的微妙逻辑缺陷。与Aletheia验证智能体配合，该系统已自主处理开放猜想，标志着AI辅助学术研究新时代的到来。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "**Key Trends:** This week's AI landscape is defined by security concerns and infrastructure competition. The MCP vulnerability is a watershed moment—it's not just a CVE but a supply chain event that exposes how 'expected behaviors' in architectural decisions can propagate silently across languages and libraries. Meanwhile, Google's TPU push signals the inference market battle is heating up as AI spending shifts from training to deployment.\n\n**Industry Direction:** The cybersecurity-AI convergence is accelerating. Both OpenAI (GPT-5.4-Cyber) and Anthropic (Claude Mythos/Project Glasswing) are releasing models with intentionally lowered safeguards for defensive purposes—a trend that blurs the line between safety research and weaponization. India's AIGEG panel with a labor mandate reflects growing government focus on AI's economic disruption.\n\n**Technologies to Watch:** Edge AI sensing (WiFi-based pose estimation), inference-optimized chips beyond Nvidia, self-improving AI research systems, and reasoning models capable of auditing human expertise in specialized domains.",
+    "zh": "**关键趋势：** 本周AI领域由安全担忧和基础设施竞争主导。MCP漏洞是一个分水岭——它不仅仅是一个CVE，而是一个供应链事件，揭示了架构决策中的\"预期行为\"如何悄无声息地在各种语言和库中传播。与此同时，谷歌的TPU推进表明，随着AI支出从训练转向部署，推理市场战正在升温。\n\n**行业方向：** 网络安全与AI的融合正在加速。OpenAI（GPT-5.4-Cyber）和Anthropic（Claude Mythos/Project Glasswing）都在发布为防御目的而降低安全门槛的模型——这一趋势模糊了安全研究与武器化之间的界限。印度AIGEG小组聚焦劳动力市场的做法反映了各国政府对AI经济 disruption（日语：劳动冲击）的日益关注。\n\n**值得关注的技术：** 边缘AI传感（基于WiFi的姿态估计）、Nvidia以外的推理优化芯片、自我改进AI研究系统，以及能够审计专业领域人类专业知识 的推理模型。"
+  }
+}

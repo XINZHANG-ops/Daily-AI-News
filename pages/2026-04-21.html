@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 21, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 21, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/ruvnet/RuView" class="card-title" target="_blank">ruvnet/RuView</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 186 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video. Uses ESP32 sensors and spiking neural networks for edge AI.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">WiFi DensePose将普通的WiFi信号转换为实时人体姿态估计、生命体征监测和存在检测——无需任何视频像素。使用ESP32传感器和尖峰神经网络进行边缘AI计算。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/koala73/worldmonitor" class="card-title" target="_blank">koala73/worldmonitor</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 50.7k stars</div>
+                                <div class="meta-item"><span>🍴</span> 8.2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Real-time global intelligence dashboard with AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking. Supports 500+ news feeds, 3D globe visualization, and local AI via Ollama.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">实时全球情报仪表板，具备AI驱动的新闻聚合、地缘政治监测和基础设施追踪功能。支持500+新闻源、3D地球可视化，并通过Ollama支持本地AI。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/deepseek-ai/DeepGEMM" class="card-title" target="_blank">deepseek-ai/DeepGEMM</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 6.9k stars</div>
+                                <div class="meta-item"><span>🍴</span> 909 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Clean and efficient FP8 GEMM kernels with fine-grained scaling for modern LLMs. A unified high-performance tensor core kernel library supporting FP8, FP4, BF16, fused MoE, and Mega MoE with JIT compilation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">为现代LLM打造的简洁高效FP8 GEMM内核，支持细粒度缩放。统一的高性能张量核心内核库，支持FP8、FP4、BF16、融合MoE和Mega MoE，配备JIT编译。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Hacker News</span>
+                    <div class="news-time">2026-04-21</div>
+                    <a href="https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html" class="card-title" target="_blank" data-lang="en">Critical MCP Vulnerability Exposes 150 Million AI Installations to Remote Code Execution</a>
+                    <a href="https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">关键MCP漏洞使1.5亿AI安装面临远程代码执行风险</a>
+                    <p class="card-description" data-lang="en">Security researchers discovered a critical 'by design' flaw in Anthropic's Model Context Protocol that enables arbitrary command execution across 7,000+ servers and 150 million downloads. The vulnerability affects MCP SDKs in Python, TypeScript, Java, and Rust. Anthropic has declined to fix the architectural issue, citing it as 'expected behavior.'</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">安全研究人员发现Anthropic的模型上下文协议存在关键性"设计固有"缺陷，可在7000多台服务器和1.5亿次下载中实现任意命令执行。该漏洞影响Python、TypeScript、Java和Rust中的MCP SDK。Anthropic拒绝修复该架构问题，称其为"预期行为"。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Mashable</span>
+                    <div class="news-time">2026-04-21</div>
+                    <a href="https://mashable.com/article/openai-gpt-54-cyber-cybersecurity-ai-model" class="card-title" target="_blank" data-lang="en">OpenAI Releases GPT-5.4-Cyber with Lowered Safety Guards for Cybersecurity Research</a>
+                    <a href="https://mashable.com/article/openai-gpt-54-cyber-cybersecurity-ai-model" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI发布GPT-5.4-Cyber：为网络安全研究降低安全门槛</a>
+                    <p class="card-description" data-lang="en">OpenAI unveiled GPT-5.4-Cyber, a variant trained to accept seemingly malicious prompts for defensive cybersecurity purposes. The model is restricted to members of the Trusted Access for Cyber (TAC) program at its highest tiers, following Anthropic's similar limited release of Claude Mythos Preview.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI发布了GPT-5.4-Cyber，这是一种经过训练可接受看似恶意提示的变体，用于防御性网络安全目的。该模型仅限于可信访问网络(TAC)计划最高级别成员使用，此前Anthropic也类似地限量发布了Claude Mythos Preview。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Asanify</span>
+                    <div class="news-time">2026-04-21</div>
+                    <a href="https://asanify.com/blog/news/india-ai-governance-april-21-2026/" class="card-title" target="_blank" data-lang="en">India Establishes Cabinet-Level AI Governance Panel with Labor Market Mandate</a>
+                    <a href="https://asanify.com/blog/news/india-ai-governance-april-21-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">印度设立内阁级AI治理小组，聚焦劳动力市场影响</a>
+                    <p class="card-description" data-lang="en">India's government constituted the AI Governance and Economic Group (AIGEG), a high-level inter-ministerial body chaired by IT Minister Ashwini Vaishnaw. What sets it apart is the explicit labor-market mandate: assessing which job profiles AI adoption will hit first and developing mitigation plans.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">印度政府成立了AI治理与经济小组(AIGEG)，这是一个由IT部长Ashwini Vaishnaw担任主席的高级部门间机构。其特别之处在于明确的劳动力市场授权：评估AI采用将首先影响哪些岗位，并制定缓解计划。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Los Angeles Times</span>
+                    <div class="news-time">2026-04-20</div>
+                    <a href="https://www.latimes.com/business/story/2026-04-20/google-challenges-nvidia-with-new-chips-to-speed-up-ai" class="card-title" target="_blank" data-lang="en">Google Unveils New AI Chips to Challenge Nvidia in Inference Market</a>
+                    <a href="https://www.latimes.com/business/story/2026-04-20/google-challenges-nvidia-with-new-chips-to-speed-up-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌推出新型AI芯片，挑战Nvidia推理市场霸主地位</a>
+                    <p class="card-description" data-lang="en">Google announced new chips dedicated to inference at its Cloud Next conference, aiming to challenge market leader Nvidia in the fast-growing AI chip category. Major AI labs including Anthropic and Meta are increasingly adopting Google's TPUs, with Anthropic securing access to 1 million TPUs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌在Cloud Next大会上宣布推出新型推理专用芯片，旨在挑战快速增长的AI芯片市场领导者Nvidia。包括Anthropic和Meta在内的主要AI实验室正越来越多地采用谷歌的TPU，Anthropic已获得100万个TPU的使用权。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Decoder</span>
+                    <div class="news-time">2026-04-21</div>
+                    <a href="https://the-decoder.com/self-improving-ai-startup-recursive-superintelligence-pulls-in-500-million-just-four-months-after-founding/" class="card-title" target="_blank" data-lang="en">Recursive Superintelligence Raises $500M to Build Self-Improving AI Research Systems</a>
+                    <a href="https://the-decoder.com/self-improving-ai-startup-recursive-superintelligence-pulls-in-500-million-just-four-months-after-founding/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Recursive Superintelligence融资5亿美元，打造自我改进AI研究系统</a>
+                    <p class="card-description" data-lang="en">A four-month-old lab founded by former Salesforce chief scientist Richard Socher and ex-Google DeepMind director Tim Rocktäschel raised over $500 million from GV and Nvidia at a $4 billion valuation. The company's goal is to build AI systems that improve themselves across evaluation, data selection, and research direction without human intervention at each step.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">这家成立仅四个月的实验室由前Salesforce首席科学家Richard Socher和前谷歌DeepMind总监Tim Rocktäschel创立，从GV和Nvidia获得了超过5亿美元融资，估值40亿美元。公司的目标是构建能够自我改进的AI系统，在评估、数据选择和研究方向上无需每一步都人工干预。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechTarget</span>
+                    <div class="news-time">2026-04-21</div>
+                    <a href="https://www.techtarget.com/searchhrsoftware/news/366640361/Workdays-new-old-CEO-reveals-Sana-agentic-AI-updates" class="card-title" target="_blank" data-lang="en">Workday Ships 300+ Agent Skills for HR and Finance Automation</a>
+                    <a href="https://www.techtarget.com/searchhrsoftware/news/366640361/Workdays-new-old-CEO-reveals-Sana-agentic-AI-updates" class="card-title" target="_blank" data-lang="zh" style="display: none;">Workday推出300+智能体技能，赋能HR和财务自动化</a>
+                    <p class="card-description" data-lang="en">Workday's Sana AI platform now includes 300+ prebuilt agent skills across pay, time, absence, and expense, plus enterprise extensions for Gmail, Outlook, Salesforce, ServiceNow, Slack, and Jira. The agents are bundled into existing subscriptions via Flex Credits.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Workday的Sana AI平台现包含300多个预构建智能体技能，涵盖薪酬、时间、休假和费用等领域，并扩展支持Gmail、Outlook、Salesforce、ServiceNow、Slack和Jira。这些智能体通过Flex Credits捆绑到现有订阅中。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Google Blog</span>
+                    <div class="news-time">2026-04-21</div>
+                    <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/" class="card-title" target="_blank" data-lang="en">Gemini 3 Deep Think Identifies Logical Errors in Peer-Reviewed Math Papers</a>
+                    <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Gemini 3 Deep Think在同行评审数学论文中发现逻辑错误</a>
+                    <p class="card-description" data-lang="en">Google DeepMind's upgraded Gemini 3 Deep Think reasoning mode has begun identifying subtle logical flaws in mathematics papers that cleared human peer review. Paired with Aletheia verifier agent, the system has autonomously tackled open conjectures, signaling a new era of AI-assisted academic research.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌DeepMind升级后的Gemini 3 Deep Think推理模式已开始识别通过同行评审的数学论文中的微妙逻辑缺陷。与Aletheia验证智能体配合，该系统已自主处理开放猜想，标志着AI辅助学术研究新时代的到来。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">**Key Trends:** This week's AI landscape is defined by security concerns and infrastructure competition. The MCP vulnerability is a watershed moment—it's not just a CVE but a supply chain event that exposes how 'expected behaviors' in architectural decisions can propagate silently across languages and libraries. Meanwhile, Google's TPU push signals the inference market battle is heating up as AI spending shifts from training to deployment.
+
+**Industry Direction:** The cybersecurity-AI convergence is accelerating. Both OpenAI (GPT-5.4-Cyber) and Anthropic (Claude Mythos/Project Glasswing) are releasing models with intentionally lowered safeguards for defensive purposes—a trend that blurs the line between safety research and weaponization. India's AIGEG panel with a labor mandate reflects growing government focus on AI's economic disruption.
+
+**Technologies to Watch:** Edge AI sensing (WiFi-based pose estimation), inference-optimized chips beyond Nvidia, self-improving AI research systems, and reasoning models capable of auditing human expertise in specialized domains.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">**关键趋势：** 本周AI领域由安全担忧和基础设施竞争主导。MCP漏洞是一个分水岭——它不仅仅是一个CVE，而是一个供应链事件，揭示了架构决策中的"预期行为"如何悄无声息地在各种语言和库中传播。与此同时，谷歌的TPU推进表明，随着AI支出从训练转向部署，推理市场战正在升温。
+
+**行业方向：** 网络安全与AI的融合正在加速。OpenAI（GPT-5.4-Cyber）和Anthropic（Claude Mythos/Project Glasswing）都在发布为防御目的而降低安全门槛的模型——这一趋势模糊了安全研究与武器化之间的界限。印度AIGEG小组聚焦劳动力市场的做法反映了各国政府对AI经济 disruption（日语：劳动冲击）的日益关注。
+
+**值得关注的技术：** 边缘AI传感（基于WiFi的姿态估计）、Nvidia以外的推理优化芯片、自我改进AI研究系统，以及能够审计专业领域人类专业知识 的推理模型。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
