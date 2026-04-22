@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 22, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 22, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/kyegomez/OpenMythos" class="card-title" target="_blank">kyegomez/OpenMythos</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 8.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.7k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">从第一性原理出发，利用现有研究文献对Claude Mythos架构进行理论重建的项目。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/browser-use/browser-harness" class="card-title" target="_blank">browser-use/browser-harness</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4.7k stars</div>
+                                <div class="meta-item"><span>🍴</span> 408 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Self-healing browser harness that enables LLMs to complete any task.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">自愈式浏览器测试框架，使大语言模型能够完成任何任务。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/alchaincyf/huashu-design" class="card-title" target="_blank">alchaincyf/huashu-design</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4k stars</div>
+                                <div class="meta-item"><span>🍴</span> 616 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">HTML-native design skill for Claude Code. High-fidelity prototyping, slides, animation with 20 design philosophies and 5D review, MP4 export. Agent-agnostic.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Code的HTML原生设计技能。高保真原型、幻灯片、动画，包含20种设计哲学和5维评审，支持MP4导出。适用于各类AI代理。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Saudi Times</span>
+                    <div class="news-time">2026-04-20</div>
+                    <a href="https://thesauditimes.net/en/anthropic-releases-claude-mythos-5-a-10-trillion-parameter-model-targeting-cybersecurity-and-complex-coding/" class="card-title" target="_blank" data-lang="en">Anthropic Releases Claude Mythos 5: A 10-Trillion Parameter Model Targeting Cybersecurity</a>
+                    <a href="https://thesauditimes.net/en/anthropic-releases-claude-mythos-5-a-10-trillion-parameter-model-targeting-cybersecurity-and-complex-coding/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic发布Claude Mythos 5：瞄准网络安全的万亿参数模型</a>
+                    <p class="card-description" data-lang="en">Anthropic unveiled Claude Mythos 5, its most powerful LLM to date with an estimated 10 trillion parameters. Designed for high-stakes applications including cybersecurity analysis, advanced scientific research, and complex software engineering. The model will not be publicly released, with access limited to selected enterprises through Project Glasswing.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic发布了Claude Mythos 5，据估计拥有10万亿参数，是其迄今为止最强大的大语言模型。该模型专为高风险应用设计，包括网络安全分析、高级科学研究和复杂软件工程。该模型不会公开发布，通过Project Glasswing仅向选定的企业提供访问权限。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-04-22</div>
+                    <a href="https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/" class="card-title" target="_blank" data-lang="en">SpaceX Acquires xAI in $250 Billion Record-Setting Merger</a>
+                    <a href="https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/" class="card-title" target="_blank" data-lang="zh" style="display: none;">SpaceX以2500亿美元创纪录收购xAI</a>
+                    <p class="card-description" data-lang="en">SpaceX has acquired xAI in an all-stock transaction creating a $1.25 trillion combined entity. The merger values SpaceX at $1 trillion and xAI at $250 billion. The combined company aims to leverage Starlink's satellite network for low-latency global AI distribution and Tesla's robotics expertise for physical AI deployment.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">SpaceX以全股票交易收购xAI，创建了价值1.25万亿美元的合并实体。合并后SpaceX估值1万亿美元，xAI估值2500亿美元。合并后的公司计划利用Starlink卫星网络实现低延迟全球AI分发，并结合特斯拉的机器人技术实现物理AI部署。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">New York Times</span>
+                    <div class="news-time">2026-04-21</div>
+                    <a href="https://www.nytimes.com/2026/04/21/business/ai-job-cuts-wall-street.html" class="card-title" target="_blank" data-lang="en">AI Is Eliminating Jobs on Wall Street: Banks Shed 15,000 Employees While Posting $47B in Profits</a>
+                    <a href="https://www.nytimes.com/2026/04/21/business/ai-job-cuts-wall-street.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI正在淘汰华尔街岗位：银行在获得470亿美元利润的同时裁员15000人</a>
+                    <p class="card-description" data-lang="en">Major banks including JPMorgan Chase, Citi, Bank of America, Goldman Sachs, Morgan Stanley, and Wells Fargo collectively posted $47 billion in profits (up 18%) while shedding 15,000 employees. Executives credited AI for helping cut jobs and automate work across back-office and front-office operations. Bank of America alone eliminated 1,000 jobs through attrition by 'eliminating work and applying technology.'</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">摩根大通、花旗、美国银行、高盛、摩根士丹利和富国银行等主要银行集体实现470亿美元利润（增长18%），同时裁员15000人。高管们将AI归功于帮助削减岗位和自动化工作，涵盖后台和前台运营。美国银行仅通过"消除工作并应用技术"就因自然减员裁减了1000个岗位。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MIT Technology Review</span>
+                    <div class="news-time">2026-04-21</div>
+                    <a href="https://www.technologyreview.com/2026/04/21/1135647/supercharged-scams-ai-artificial-intelligence/" class="card-title" target="_blank" data-lang="en">AI Tools Supercharging Online Scams: 10 Things That Matter in AI Right Now</a>
+                    <a href="https://www.technologyreview.com/2026/04/21/1135647/supercharged-scams-ai-artificial-intelligence/" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI工具加速在线诈骗：当前AI领域值得关注的10件事</a>
+                    <p class="card-description" data-lang="en">AI tools are making it easier than ever for criminals to trick people and steal money and confidential data. Scam centers across Southeast Asia are using AI to quickly target greater numbers of victims and swiftly switch to new locations. Microsoft alone blocks $4 billion worth of scams and fraudulent transactions annually. Meanwhile, AI is also being used defensively to detect and prevent these attacks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI工具正使犯罪分子比以往任何时候都更容易欺骗人们、窃取金钱和机密数据。东南亚的诈骗中心正在使用AI快速瞄准更多受害者并迅速切换到新地点。仅微软每年就阻止了价值40亿美元的诈骗和欺诈交易。同时，AI也被用于防御性地检测和防止这些攻击。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MIT Technology Review</span>
+                    <div class="news-time">2026-04-13</div>
+                    <a href="https://www.technologyreview.com/2026/04/13/1135675/want-to-understand-the-current-state-of-ai-check-out-these-charts/" class="card-title" target="_blank" data-lang="en">Stanford AI Index 2026: Understanding the Current State of AI</a>
+                    <a href="https://www.technologyreview.com/2026/04/13/1135675/want-to-understand-the-current-state-of-ai-check-out-these-charts/" class="card-title" target="_blank" data-lang="zh" style="display: none;">斯坦福AI指数2026：理解当前AI状态</a>
+                    <p class="card-description" data-lang="en">Stanford Universitys Institute for Human-Centered Artificial Intelligence released its annual AI Index report. The report cuts through conflicting narratives about AI being a 'gold rush,' a 'bubble,' or a 'job taker' to provide data-driven insights into the current state of artificial intelligence development and deployment.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">斯坦福大学以人为本人工智能研究所发布了年度AI指数报告。该报告驳斥了关于AI是"淘金热"、"泡沫"或"工作抢夺者"的冲突叙事，提供数据驱动的洞察来理解人工智能发展和部署的当前状态。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Radical Data Science</span>
+                    <div class="news-time">2026-04-17</div>
+                    <a href="https://radicaldatascience.wordpress.com/2026/04/17/ai-news-briefs-bulletin-board-for-april-2026/" class="card-title" target="_blank" data-lang="en">OpenAI Acquires TBPN, Expands into Live Tech Business Programming</a>
+                    <a href="https://radicaldatascience.wordpress.com/2026/04/17/ai-news-briefs-bulletin-board-for-april-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI收购TBPN，进军直播科技商业节目领域</a>
+                    <p class="card-description" data-lang="en">OpenAI announced the acquisition of TBPN (Technology Business Programming Network), a daily live programming network focused on technology business news. This marks OpenAIs first acquisition of a media platform, signaling the company's push to integrate AI with content creation and distribution.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI宣布收购TBPN（科技商业节目网），这是一个专注于科技商业新闻的每日直播节目网络。这是OpenAI首次收购媒体平台，标志着该公司将AI与内容创作和分发整合的努力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub Awesome AI Agents 2026</span>
+                    <div class="news-time">2026-04-10</div>
+                    <a href="https://github.com/caramaschiHG/awesome-ai-agents-2026" class="card-title" target="_blank" data-lang="en">Google Releases Gemini CLI: Open-Source Terminal Agent</a>
+                    <a href="https://github.com/caramaschiHG/awesome-ai-agents-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google发布Gemini CLI：开源终端代理</a>
+                    <p class="card-description" data-lang="en">Google released Gemini CLI, an open-source terminal agent (Apache 2.0 license) that brings Gemini capabilities to the command line. This follows the trend of major AI labs providing agent frameworks that can execute complex multi-step workflows across local and cloud environments.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google发布了Gemini CLI，这是一个开源终端代理（Apache 2.0许可证），将Gemini能力带到命令行。这遵循了主要AI实验室提供代理框架的趋势，这些框架可以在本地和云环境中执行复杂的多步骤工作流。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The AI landscape in April 2026 reveals a clear transition from experimentation to industrialization. Claude Mythos 5's 10-trillion parameters represent the most dramatic scaling leap yet, but its restricted access via Project Glasswing signals a new era of 'gated frontier AI' where safety concerns outweigh open release. Meanwhile, the SpaceX-xAI merger creates a $1.25T 'galactic AI' entity vertically integrating space infrastructure with AI capabilities. On the job market front, Wall Street's 15,000 layoffs attributed to AI portend a broader pattern: knowledge workers in finance, legal, and operations are next in line for automation. The open-source ecosystem continues its explosive growth with agent frameworks like browser-harness enabling LLMs to interact with web interfaces autonomously. For developers, the key insight is that 2026 is the year of 'agent engineering'—moving beyond single-agent chatbots to orchestrating multi-agent systems that can self-heal, self-verify, and execute long-horizon tasks. Security remains a double-edged sword: while Claude Mythos can identify thousands of critical vulnerabilities, criminals are using the same AI tools to launch more sophisticated attacks at unprecedented scale.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年4月的AI领域呈现出从实验到工业化的明确转变。Claude Mythos 5的10万亿参数代表了最 dramatic的 scaling飞跃，但其通过Project Glasswing限制访问表明了" gated frontier AI"新时代的到来，安全考量优先于开源发布。与此同时，SpaceX-xAI合并创建了价值1.25万亿美元的" galactic AI"实体，垂直整合太空基础设施与AI能力。在就业市场方面，华尔街归因于AI的15000人裁员预示着更广泛的模式：金融、法律和运营领域的知识工作者将是下一波自动化对象。开源生态系统继续爆发式增长，browser-harness等代理框架使LLM能够自主与Web界面交互。对于开发者来说，关键洞察是2026年是"代理工程"之年——超越单代理聊天机器人，走向编排多代理系统，这些系统可以自愈、自验证和执行长期任务。安全仍然是双刃剑：虽然Claude Mythos可以识别数千个关键漏洞，但犯罪分子正在使用相同的AI工具以前所未有的规模发起更复杂的攻击。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
