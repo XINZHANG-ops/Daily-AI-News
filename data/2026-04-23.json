@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-23",
+  "github_repos": [
+    {
+      "name": "ZeroZ-lab/cc-design",
+      "url": "https://github.com/ZeroZ-lab/cc-design",
+      "description": {
+        "en": "High-fidelity HTML design and prototype guidance skill for AI agents",
+        "zh": "面向AI智能体的高保真HTML设计与原型指导技能"
+      },
+      "stars": "603",
+      "forks": "65"
+    },
+    {
+      "name": "ConardLi/web-design-skill",
+      "url": "https://github.com/ConardLi/web-design-skill",
+      "description": {
+        "en": "An AI agent skill that transforms AI-generated web pages from \"functional\" to \"stunning\" (Inspired by Claude Design)",
+        "zh": "将AI生成的网页从\"能用\"变成\"惊艳\"的AI智能体技能（灵感来自Claude Design）"
+      },
+      "stars": "533",
+      "forks": "118"
+    },
+    {
+      "name": "cosmicstack-labs/mercury-agent",
+      "url": "https://github.com/cosmicstack-labs/mercury-agent",
+      "description": {
+        "en": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram.",
+        "zh": "具有权限强化工具、代币预算和多渠道访问的灵魂驱动型AI智能体。可通过CLI或Telegram全天候运行。"
+      },
+      "stars": "531",
+      "forks": "70"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic's New Mythos A.I. Model Sets Off Global Alarms",
+        "zh": "Anthropic新型Mythos AI模型引发全球警报"
+      },
+      "url": "https://www.nytimes.com/2026/04/22/technology/anthropics-mythos-ai.html",
+      "source": "New York Times",
+      "time": "April 22, 2026",
+      "description": {
+        "en": "Anthropic's Mythos model has triggered emergency responses from central banks and intelligence agencies globally. The model is capable of finding and exploiting hidden flaws in software that runs banks, power grids, and governments. The Bank of England governor warned that Anthropic may have found a way to \"crack the whole cyber-risk world open.\"",
+        "zh": "Anthropic的Mythos模型已引发全球各国央行和情报机构的紧急响应。该模型能够发现并利用运行银行、电网和政府软件的隐藏漏洞。英格兰银行行长警告称，Anthropic可能找到了一种\"打开整个网络风险世界\"的方法。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Cloud Next 2026: Gemini Enterprise Agent Platform and 8th Gen TPUs",
+        "zh": "Google Cloud Next 2026：Gemini企业智能体平台与第八代TPU"
+      },
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/",
+      "source": "Google Blog",
+      "time": "April 23, 2026",
+      "description": {
+        "en": "Google announced the Gemini Enterprise Agent Platform for managing thousands of AI agents, along with 8th generation TPUs (TPU 8t and 8i) offering 3x the processing power of Ironwood. Google also revealed that 75% of all new code at Google is now AI-generated and approved by engineers.",
+        "zh": "谷歌发布了用于管理数千个AI智能体的Gemini企业智能体平台，以及提供Ironwood 3倍处理能力的第八代TPU（TPU 8t和8i）。谷歌还透露，谷歌内部75%的新代码现在由AI生成并由工程师审核批准。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta to Track Employee Mouse Movements and Keystrokes for AI Training",
+        "zh": "Meta计划追踪员工鼠标移动和按键以训练AI"
+      },
+      "url": "https://www.reuters.com/sustainability/boards-policy-regulation/meta-start-capturing-employee-mouse-movements-keystrokes-ai-training-data-2026-04-21/",
+      "source": "Reuters",
+      "time": "April 21, 2026",
+      "description": {
+        "en": "Meta is installing tracking software on US employees' computers to capture mouse movements, clicks, and keystrokes for training AI models. The initiative, called Model Capability Initiative (MCI), aims to build AI agents that can better learn how humans use computers. Some employees have called the initiative 'very dystopian'.",
+        "zh": "Meta正在美国员工的电脑上安装追踪软件，以捕捉鼠标移动、点击和按键用于训练AI模型。这项名为模型能力计划（MCI）的举措旨在构建能更好地学习人类使用电脑方式的AI智能体。部分员工称这一举措\"非常反乌托邦\"。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Valued at $1 Trillion, Surpassing OpenAI's $880 Billion",
+        "zh": "Anthropic估值达1万亿美元，超越OpenAI的880亿美元"
+      },
+      "url": "https://www.businessinsider.com/anthropic-trillion-dollar-valuation-on-secondary-markets-2026",
+      "source": "Business Insider",
+      "time": "April 22, 2026",
+      "description": {
+        "en": "Anthropic's valuation has surged to around $1 trillion on secondary markets, overtaking OpenAI's $880 billion valuation. The company has gained significant traction with its Claude models and the controversial Mythos model release.",
+        "zh": "Anthropic在二级市场的估值已飙升至约1万亿美元，超越OpenAI的880亿美元估值。该公司凭借Claude模型和颇具争议的Mythos模型发布获得了显著吸引力。"
+      }
+    },
+    {
+      "title": {
+        "en": "Vast Data Raises $1 Billion at $30 Billion Valuation, Backed by Nvidia",
+        "zh": "Vast Data获10亿美元融资，估值达300亿美元，Nvidia支持"
+      },
+      "url": "https://techstartups.com/2026/04/22/nvidia-backed-ai-startup-vast-data-raises-1b-at-30b-valuation-as-ai-infrastructure-boom-accelerates/",
+      "source": "Tech Startups",
+      "time": "April 22, 2026",
+      "description": {
+        "en": "Nvidia-backed AI startup Vast Data has raised $1 billion at a $30 billion valuation as AI infrastructure boom accelerates. Nvidia has participated in major funding rounds for OpenAI, Anthropic, and xAI this year alone.",
+        "zh": "获Nvidia支持的AI初创公司Vast Data在AI基础设施热潮中筹集了10亿美元，估值达300亿美元。Nvidia今年已参与OpenAI、Anthropic和xAI的重大融资轮。"
+      }
+    },
+    {
+      "title": {
+        "en": "China's Qihoo 360 Finds 1,000 Software Vulnerabilities Using AI",
+        "zh": "中国360公司用AI发现1000个软件漏洞"
+      },
+      "url": "https://economictimes.indiatimes.com/news/international/us/latest-shot-on-anthropics-mythos-chinas-cybersecurity-giant-qihoo-360-finds-1000-software-vulnerabilities-fast-raising-global-zero-day-risks/articleshow/130445658.cms",
+      "source": "Economic Times",
+      "time": "April 22, 2026",
+      "description": {
+        "en": "China's cybersecurity giant Qihoo 360 has found 1,000 software vulnerabilities using its AI-powered Vulnerability Discovery Agent. The agent applies machine learning models to simulate hacker behavior and probe software for weak entry points, raising global zero-day risks.",
+        "zh": "中国网络安全巨头360使用其AI驱动的漏洞发现智能体发现了1000个软件漏洞。该智能体应用机器学习模型模拟黑客行为，探测软件的弱点入口，增加全球零日漏洞风险。"
+      }
+    },
+    {
+      "title": {
+        "en": "SpaceX Invests $60 Billion in AI Coding Startup Cursor",
+        "zh": "SpaceX向AI编程初创公司Cursor投资600亿美元"
+      },
+      "url": "https://www.businessinsider.com/ai-coding-startup-cursor-elon-musk-60-billion-spacex-deal-2026-4",
+      "source": "Business Insider",
+      "time": "April 21, 2026",
+      "description": {
+        "en": "SpaceX, which owns AI assistant Grok, is investing $60 billion in AI coding startup Cursor. The deal puts SpaceX in direct competition with Anthropic's Claude Code, OpenAI's Codex, and vibe-coding startups such as Lovable, Emergent, and Bolt.",
+        "zh": "拥有AI助手Grok的SpaceX正在向AI编程初创公司Cursor投资600亿美元。这笔交易使SpaceX与Anthropic的Claude Code、OpenAI的Codex以及Lovable、Emergent、Bolt等氛围编程初创公司直接竞争。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week saw major developments in AI safety and governance. Anthropic's Mythos model has become a geopolitical flashpoint—central banks and intelligence agencies worldwide are scrambling to understand its implications. The model can find vulnerabilities in critical infrastructure, leading the Bank of England to warn it could 'crack the whole cyber-risk world open.' This underscores the dual-use nature of advanced AI: the same capabilities that make models valuable for security testing also make them dangerous in the wrong hands.\n\nOn the infrastructure side, Google's Cloud Next announcements revealed that 75% of Google's new code is now AI-generated, and they introduced the Gemini Enterprise Agent Platform for managing thousands of agents at scale. Their 8th generation TPUs deliver 3x the performance of Ironwood, reflecting the relentless push for more capable AI hardware.\n\nPerhaps most striking is Meta's decision to track employee mouse movements and keystrokes for AI training—a move some employees call 'very dystopian.' This highlights the intensifying competition for training data, with companies exploring increasingly creative (and controversial) sources.\n\nThe funding landscape remains robust: Anthropic reached $1 trillion valuation, Vast Data raised $1B, and SpaceX invested $60B in Cursor. The message is clear: AI infrastructure and coding tools remain the hottest investment categories.",
+    "zh": "本周AI安全和治理领域出现重大进展。Anthropic的Mythos模型已成为地缘政治焦点——全球央行和情报机构正争相了解其影响。该模型能够发现关键基础设施的漏洞，导致英格兰银行警告它可能\"打开整个网络风险世界\"。这凸显了先进AI的双重用途：使模型在安全测试中有价值的相同能力，一旦落入坏人之手也会很危险。\n\n在基础设施方面，谷歌Cloud Next的公告显示谷歌75%的新代码现在由AI生成，他们还推出了用于大规模管理数千个智能体的Gemini企业智能体平台。第八代TPU提供Ironwood 3倍的性能，反映出对更强AI硬件的持续追求。\n\n最令人震惊的可能是Meta决定追踪员工鼠标移动和按键用于AI训练——部分员工称此举措\"非常反乌托邦\"。这凸显了训练数据竞争的加剧，企业正在探索越来越有创意（也更具争议）的来源。\n\n融资格局依然强劲：Anthropic估值达到1万亿美元，Vast Data融资10亿美元，SpaceX向Cursor投资600亿美元。信息很明确：AI基础设施和编程工具仍然是最热门的投资类别。"
+  }
+}
