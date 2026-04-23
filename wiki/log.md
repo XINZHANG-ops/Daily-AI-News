@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-04-20] ingest | 4 dates
+
+Dates processed: 2026-04-17, 2026-04-18, 2026-04-19, 2026-04-20
+Topics updated: llm_models, ai_companies, ai_funding, github_trends, ai_safety, agentic_ai
+Sources updated: anthropic, openai, google, meta, nvidia
+Timelines updated: 2026-04
+Entities created: claude-opus-4-7, claude-design, gpt-rosalind, ising, thunderbolt, perplexity-computer, qwen-3-6, a2a-protocol, gemini-3-1-flash-tts
+Entities updated: claude-mythos
+Ideas created: application-layer-shift, china-efficiency-advantage, quantum-ai-emergence, local-ai-computing
+
 ## [2026-04-16] ingest | 31 dates
 
 Dates processed: 2026-03-17 through 2026-04-16

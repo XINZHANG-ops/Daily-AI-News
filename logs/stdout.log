@@ -1,0 +1,27 @@
+[2026-04-23 13:39:31] ai_news_server supervisor starting
+[2026-04-23 13:39:31] Repo: /Users/xinzhang/Daily-AI-News
+[2026-04-23 13:39:31] Watching: origin/main
+[2026-04-23 13:39:31] Interval: 600s
+[2026-04-23 13:39:31] Port: 5002
+[2026-04-23 13:39:31] Initial fetch...
+[2026-04-23 13:39:32] Baseline remote hash: 86e19ef15a5fb54a409d62f845b7cf81b9a8673a
+[2026-04-23 13:39:32] ===== Restart begin =====
+[2026-04-23 13:39:32] git pull --ff-only
+Already up to date.
+[2026-04-23 13:39:33] Step 1/2: build_sqlite (rebuild database from JSON)
+============================================================
+Daily AI News - Build SQLite Database
+============================================================
+
+✓ Created tables with indexes
+✓ Inserted 114 GitHub repos
+✓ Inserted 273 AI news items
+✓ Inserted 37 daily insights
+
+============================================================
+✓ Database created successfully: /Users/xinzhang/Daily-AI-News/ai_news.sqlite
+============================================================
+[2026-04-23 13:39:33] Step 2/2: wiki_build (agent builds wiki)
+[2026-04-23 13:39:33] Building wiki for 3 new date(s) using model: minimax-m2.7:cloud
+[2026-04-23 13:39:33] Found 0 chat sessions in wiki_sessions/
+[2026-04-23 13:39:33] Launching ollama claude agent...

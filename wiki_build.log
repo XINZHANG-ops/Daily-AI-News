@@ -77,3 +77,24 @@ I've completed the full wiki ingest for 31 dates (2026-03-17 through 2026-04-16)
 - us-china-ai-fragmentation — Frontier Model Forum anti-distillation coalition
 
 **Updated**: wiki/index.md, wiki/log.md, wiki/processed.json
+
+
+Completed the wiki ingest for 2026-04-17 through 2026-04-20.
+
+**Summary:**
+
+**Topics updated** (Apr 17-20 data added):
+- `llm_models.md` — Added Claude Opus 4.7 (87.6% SWE-bench), Claude Design, GPT-Rosalind, Ising, Qwen 3.6. Updated evolution narrative and patterns/insights.
+- `ai_companies.md` — Added application-layer shift story, Stanford HAI US-China gap collapse, Cerebras IPO
+- `ai_funding.md` — Added Perplexity $500M, Recursive Superintelligence $500M, Cerebras IPO, Anthropic-Google/Broadcom expansion
+- `github_trends.md` — Added markitdown (112K), ai-hedge-fund (56K), OpenAI agents SDK, codeburn, anything-analyzer
+
+**Sources updated**: anthropic (Claude Opus 4.7, Claude Design, UK expansion, Google/Broadcom expansion, NSA partnership), openai (GPT-Rosalind, Spud), google (Gemini 3.1 Flash TTS), meta (May 20 layoffs), nvidia (Ising)
+
+**Timeline `2026-04.md`**: Extended Week 3 coverage through April 20 with all major events
+
+**New entities created**: claude-opus-4-7, claude-design, gpt-rosalind, ising, thunderbolt, perplexity-computer, qwen-3-6, a2a-protocol, gemini-3-1-flash-tts
+
+**New ideas**: application-layer-shift (model race → workflow capture), china-efficiency-advantage (Stanford HAI: 2.7% gap with 23x less investment), quantum-ai-emergence (Ising as new category), local-ai-computing (Perplexity Computer, device-resident AI)
+
+**Updated**: `index.md`, `processed.json` (4 new dates), `log.md`

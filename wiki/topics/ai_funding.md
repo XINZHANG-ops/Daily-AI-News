@@ -1,13 +1,13 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-04-16
+last_updated: 2026-04-23
 ---
 
 # AI Funding
 
 ## Overview
-Q1 2026 witnessed unprecedented capital concentration in AI infrastructure. The $267 billion in venture funding overall — more than double previous records — with approximately 80% flowing to AI companies. OpenAI's $122 billion single-round raise and Anthropic's $30 billion Series G represent a new paradigm of capital intensity in AI development. The infrastructure bet is explicit: both companies are committing to multi-gigawatt compute facilities and multi-year infrastructure buildouts.
+Q1 2026 witnessed unprecedented capital concentration in AI infrastructure. The $267 billion in venture funding overall — more than double previous records — with approximately 80% flowing to AI companies. OpenAI's $122 billion single-round raise and Anthropic's $30 billion Series G represent a new paradigm of capital intensity in AI development. April 2026 continues this trend with Anthropic's valuation reaching ~$1 trillion on secondary markets, Vast Data raising $1 billion at $30 billion valuation, and SpaceX investing $60 billion in Cursor.
 
 ## Evolution
 
@@ -20,6 +20,8 @@ Anthropic's $30 billion Series G (April 7) at $380B valuation followed rapidly. 
 SpaceX's $250 billion acquisition of xAI created a $1.25 trillion combined entity, representing the largest AI consolidation. Yann LeCun's AMI Labs raised $1.03 billion (Europe's largest seed round) for world models research.
 
 Microsoft committed $10 billion to Japan AI infrastructure — the largest single AI infrastructure commitment by a Western tech company in Asia. Nebius announced $10B+ for a 310-megawatt Finland data center. Bitdeer is building a 180-megawatt Norway facility with NVIDIA Vera Rubin.
+
+**Late April: Valuation Shifts and New Investment**: Anthropic's valuation surged to ~$1 trillion on secondary markets, surpassing OpenAI's $880 billion — reflecting the enterprise success of Claude Code and the restricted Mythos model's strategic value. Vast Data raised $1 billion at $30 billion valuation backed by NVIDIA, continuing the infrastructure boom. SpaceX invested $60 billion in Cursor, signaling massive investment in AI coding tools as a competitive battleground.
 
 ## Key Developments
 
@@ -36,6 +38,14 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-04-09 | $242B into AI in Q1 (80% of all VC) | Autonomous agents as dominant investment thesis |
 | 2026-04-10 | Microsoft $10B Japan AI infrastructure | Largest Western bet on Asian AI infrastructure |
 | 2026-04-16 | Five hyperscalers control 66% of global AI compute | Consolidation creating dependency risks |
+| 2026-04-17 | Perplexity AI hits $500M revenue | 5x growth, staff up only 34% |
+| 2026-04-17 | Recursive Superintelligence raises $500M | $500M seed 4 months after founding |
+| 2026-04-19 | Cerebras files for US IPO | AI chip rival to Nvidia reveals listing plans |
+| 2026-04-20 | Anthropic expands Google/Broadcom partnership | Multi-gigawatt next-gen compute infrastructure |
+| 2026-04-21 | Recursive Superintelligence: $500M seed | Self-improving AI research systems, $4B valuation |
+| 2026-04-22 | Anthropic ~$1T valuation (secondary markets) | Surpasses OpenAI's $880B |
+| 2026-04-22 | Vast Data raises $1B at $30B valuation | NVIDIA-backed AI storage startup |
+| 2026-04-23 | SpaceX invests $60B in Cursor | Direct AI coding competition with Claude Code |
 
 ## Patterns & Insights
 
@@ -47,9 +57,18 @@ Big Tech's AI capex of $635 billion in 2026 faces energy cost headwinds. Rising 
 
 The investment pattern has shifted from model racing to infrastructure and application layers. OpenAI's pivot from Sora and Instant Checkout to enterprise-focused superapp reflects investor pressure for sustainable unit economics.
 
+**AI company economics maturing**: Perplexity's path to $500M revenue with only 34% staff increase demonstrates the leverage inherent in AI-native products. Recursive Superintelligence's $500M seed round 4 months after founding shows continued investor appetite for frontier AI despite broader market caution.
+
+**Chip competition heating up**: Cerebras filing for IPO represents a direct challenge to NVIDIA's dominance in AI chips. The quantum AI category (NVIDIA Ising) adds another dimension to the hardware competition.
+
+**Valuation reordering**: Anthropic's secondary market valuation (~$1T) surpassing OpenAI's ($880B) reflects market view that enterprise-driven growth through Claude Code is more sustainable than consumer-plus-enterprise混合.
+
+**AI coding tools as investment category**: SpaceX's $60B investment in Cursor validates AI coding as a critical battleground — competing with Anthropic's Claude Code, OpenAI's Codex, and the broader vibe-coding ecosystem.
+
 ## Connections
 - [[sources/openai]] — $122B raise, $852B valuation, IPO preparation
-- [[sources/anthropic]] — $30B Series G, $380B valuation, multi-gigawatt TPU deal
+- [[sources/anthropic]] — $30B Series G, ~$1T valuation, multi-gigawatt TPU deal
 - [[sources/nvidia]] — Blackwell $11B Q4 revenue, Vera Rubin platform
+- [[sources/spacex]] — $250B xAI acquisition, $60B Cursor investment
 - [[sources/microsoft]] — $10B Japan infrastructure, $10B+ Nebius Finland commitment
 - [[ideas/infrastructure-bottleneck]] — Energy and compute constraints driving investment patterns

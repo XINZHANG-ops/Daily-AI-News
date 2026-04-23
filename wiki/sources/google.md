@@ -1,13 +1,13 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-04-16
+last_updated: 2026-04-23
 ---
 
 # Google
 
 ## Overview
-Google has deepened its role as an AI infrastructure provider and model competitor simultaneously. The company is investing $5 billion in a Texas mega-data center for Anthropic and has signed a multi-gigawatt TPU agreement with Anthropic and Broadcom. This positions Google as the primary infrastructure partner for frontier AI labs while maintaining competitive model offerings. Gemini 3.1 Pro leads on multiple benchmarks (ARC-AGI-2, GPQA Diamond) while Gemma 4 under Apache 2.0 has emerged as a significant open-weight model.
+Google has deepened its role as an AI infrastructure provider and model competitor simultaneously. The company is investing $5 billion in a Texas mega-data center for Anthropic and has signed a multi-gigawatt TPU agreement with Anthropic and Broadcom. At Cloud Next 2026, Google revealed that 75% of its new code is now AI-generated and approved by engineers, and announced the Gemini Enterprise Agent Platform for managing thousands of AI agents alongside 8th generation TPUs (TPU 8t and 8i) offering 3x the processing power of Ironwood. This positions Google as the primary infrastructure partner for frontier AI labs while maintaining competitive model offerings. Gemini 3.1 Pro leads on multiple benchmarks (ARC-AGI-2, GPQA Diamond) while Gemma 4 under Apache 2.0 has emerged as a significant open-weight model.
 
 ## Timeline
 
@@ -25,6 +25,9 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-04-09 | Gemini Mac desktop app testing | Competing with ChatGPT and Claude desktop |
 | 2026-04-10 | LiteRT-LM released | Production-ready edge LLM inference framework |
 | 2026-04-16 | Claude Opus 4.6 near-tie on SWE-bench | 80.8% vs Gemini 3.1 Pro 80.6% |
+| 2026-04-20 | Gemini 3.1 Flash TTS released | Granular voice control via natural language prompting |
+| 2026-04-21 | Gemini 3 Deep Think finds math errors | Identifies logical flaws in peer-reviewed papers |
+| 2026-04-23 | Cloud Next 2026 announcements | Gemini Enterprise Agent Platform, TPU 8th gen (3x Ironwood), 75% code AI-generated |
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.
@@ -35,4 +38,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 ## Connections
 - [[entities/gemma-4]] — Google's first fully permissive open model under Apache 2.0
 - [[entities/gemini-3-1-pro]] — Leading on multiple benchmarks
+- [[entities/gemini-3-1-flash-tts]] — Granular voice control for podcast, audiobook, accessibility
+- [[entities/gemini-cli]] — Open-source terminal agent with 1M context
+- [[entities/mcp-protocol]] — Gemini CLI includes MCP support
 - [[ideas/safety-restricted-releases]] — Not directly restricting models but participating in coalition discussions

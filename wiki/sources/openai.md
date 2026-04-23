@@ -1,13 +1,13 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-04-16
+last_updated: 2026-04-23
 ---
 
 # OpenAI
 
 ## Overview
-OpenAI is navigating the transition from research organization to commercial enterprise ahead of a potential IPO by end of 2026. The company completed the largest private funding round in history ($122B at $852B valuation) and generates $2B/month in revenue with 900M weekly active users. However, profitability remains elusive with billions in annual losses projected to continue until 2030. The company has pivoted from "technology showcases" (shutting down Sora, terminating Instant Checkout) to enterprise-focused productivity tools, combining ChatGPT, Codex, and Atlas browser into a unified AI superapp.
+OpenAI is navigating the transition from research organization to commercial enterprise ahead of a potential IPO by end of 2026. The company completed the largest private funding round in history ($122B at $852B valuation) and generates $2B/month in revenue with 900M weekly active users. However, profitability remains elusive with billions in annual losses projected to continue until 2030. The company has pivoted from "technology showcases" (shutting down Sora, terminating Instant Checkout) to enterprise-focused productivity tools, combining ChatGPT, Codex, and Atlas browser into a unified AI superapp. The company acquired TBPN (Technology Business Programming Network), its first media platform acquisition, signaling push into content creation and distribution.
 
 ## Timeline
 
@@ -28,6 +28,11 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-04-09 | Claims compute advantage over Anthropic | Investor memo after Anthropic's TPU deal announcement |
 | 2026-04-14 | GPT-5.4-Cyber released | Defensive cybersecurity variant |
 | 2026-04-16 | $25B annualized revenue | Approaches IPO readiness |
+| 2026-04-17 | GPT-Rosalind launched | Life sciences model with Amgen, Moderna, Novo Nordisk partnership |
+| 2026-04-17 | Spud model targeting "high-value professional work" | Enterprise pivot in response to Anthropic's Claude gains |
+| 2026-04-20 | GPT-5.4-Cyber expanded TAC program | Hundreds of organizations, thousands of vetted defenders |
+| 2026-04-21 | GPT-5.4-Cyber for cybersecurity research | Lowered safety guards for defensive purposes |
+| 2026-04-22 | TBPN acquisition | First media platform acquisition — tech business programming network |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -40,5 +45,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[entities/gpt-5.4]] — Flagship model family; Thinking, Mini, Nano, Cyber variants
 - [[entities/spud-model]] — Next flagship model completing pretraining
 - [[entities/codex]] — 3M weekly users, primary coding agent product
+- [[entities/gpt-5.4-cyber]] — Defensive cybersecurity variant
+- [[entities/gpt-rosalind]] — Life sciences domain model
 - [[ideas/safety-restricted-releases]] — Not releasing GPT-4.5 as last non-reasoning model signals awareness of capability thresholds
 - [[sources/anthropic]] — Rivalry intensifying over compute and enterprise contracts

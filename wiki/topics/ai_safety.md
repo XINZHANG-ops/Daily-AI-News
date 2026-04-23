@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-04-16
+last_updated: 2026-04-23
 ---
 
 # AI Safety
@@ -21,6 +21,10 @@ AI safety has transitioned from theoretical discourse to operational emergency. 
 
 **Supply Chain Security**: The malicious LiteLLM v1.82.8 on PyPI (97M monthly downloads) harvested SSH keys and cloud credentials. The axios npm compromise (300M+ weekly downloads) dropped a remote access trojan. These incidents highlight the AI software stack as a high-value attack surface.
 
+**MCP Vulnerability (April 21)**: A critical flaw in Anthropic's Model Context Protocol enables arbitrary command execution across 7,000+ servers and 150M+ downloads. The vulnerability affects MCP SDKs in Python, TypeScript, Java, and Rust. Anthropic declined to fix the architectural issue, citing it as "expected behavior" — effectively treating supply chain risk as a feature rather than a bug. This represents a watershed moment: a vendor calling a remote code execution vulnerability "expected behavior."
+
+**Geopolitical Flashpoint (April 22)**: Claude Mythos 5's confirmation at 10 trillion parameters with cybersecurity focus triggers emergency responses from central banks and intelligence agencies worldwide. Bank of England governor warns the model could "crack the whole cyber-risk world open." China's Qihoo 360 simultaneously reports finding 1,000 software vulnerabilities using AI-powered Vulnerability Discovery Agent — raising questions about which nations have access to similar capabilities.
+
 **Enterprise Security Response**: Microsoft launched an Agent Governance Toolkit targeting OWASP Agentic Top 10. Oasis Security raised $120M for enterprise AI agent security. CSA called for shifting from static patching to continuous exposure management.
 
 ## Key Developments
@@ -33,6 +37,10 @@ AI safety has transitioned from theoretical discourse to operational emergency. 
 | 2026-04-08 | Government emergency CEO calls | VP Vance, Treasury Secretary discuss Mythos implications |
 | 2026-04-10 | Anthropic-Microsoft-Apple-Google coalition | Sharing defensive insights from Mythos discoveries |
 | 2026-04-14 | UK regulators assess Mythos risks | First government-level model safety assessment |
+| 2026-04-20 | NSA partnership with Anthropic via Project Glasswing | Confirmed government use of Claude Mythos for zero-day discovery |
+| 2026-04-21 | Critical MCP vulnerability disclosed | 150M+ installations exposed to arbitrary command execution via "expected behavior" flaw |
+| 2026-04-22 | Bank of England warns on Mythos | Governor says Anthropic may have found way to "crack the whole cyber-risk world open" |
+| 2026-04-22 | Qihoo 360 finds 1,000 vulnerabilities | AI-powered Vulnerability Discovery Agent raises global zero-day risks |
 | 2026-03-31 | axios npm RAT attack | 300M+ weekly downloads compromised |
 
 ## Patterns & Insights
@@ -45,8 +53,13 @@ Supply chain security is the industry's most exploitable attack surface as agent
 
 The government's rapid escalation (emergency CEO calls within days of the Mythos reveal) signals that AI safety is now a national security matter, not just an AI company concern.
 
+**"Expected behavior" as a security posture**: Anthropic calling the MCP vulnerability "expected behavior" represents a fundamental shift — treating supply chain risk as an acceptable architectural trade-off rather than a bug to fix. This has wider implications: if vendors can classify RCE as "expected," the entire vulnerability disclosure ecosystem is undermined.
+
+**Cybersecurity-AI capability parity**: Both Anthropic (Claude Mythos) and China's Qihoo 360 are discovering vulnerabilities at unprecedented scale using AI. This suggests a world where offensive AI capabilities for cyber are more widely distributed than previously assumed — accelerating the cyber arms race.
+
 ## Connections
-- [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research
+- [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior"
 - [[ideas/safety-restricted-releases]] — Claude Mythos as the first capability-based restriction
 - [[ideas/peer-preservation]] — Models defending each other against shutdown
-- [[entities/claude-mythos]] — Central to the safety crisis
+- [[entities/claude-mythos]] — Central to the safety crisis, 10T parameter confirmation
+- [[entities/mcp-protocol]] — Critical vulnerability affecting 150M+ installations

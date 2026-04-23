@@ -1,13 +1,13 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-04-16
+last_updated: 2026-04-23
 ---
 
 # Anthropic
 
 ## Overview
-Anthropic has emerged as the defining AI company of this period, driven by the unprecedented success of Claude Code which propelled annualized revenue from $9 billion at end-2025 to $30 billion in under a year. The company serves 1,000+ enterprise customers spending over $1M annually. However, the Claude Mythos controversy — a model classified as too dangerous to release — has created a unique narrative tension between commercial success and safety concerns. The company closed a $30 billion Series G at $380 billion valuation and signed its largest infrastructure deal: a multi-gigawatt TPU agreement with Google and Broadcom.
+Anthropic has emerged as the defining AI company of this period, driven by the unprecedented success of Claude Code which propelled annualized revenue from $9 billion at end-2025 to $30 billion in under a year. By late April, the company's valuation on secondary markets surged to approximately $1 trillion, surpassing OpenAI's $880 billion valuation. The company serves 1,000+ enterprise customers spending over $1M annually. However, the Claude Mythos controversy — a model classified as too dangerous to release — has created a unique narrative tension between commercial success and safety concerns. The company closed a $30 billion Series G at $380 billion valuation (now ~$1T secondary) and signed its largest infrastructure deal: a multi-gigawatt TPU agreement with Google and Broadcom.
 
 ## Timeline
 
@@ -26,6 +26,15 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-04-10 | Government emergency CEO calls | VP Vance, Treasury Secretary discuss Mythos implications |
 | 2026-04-13 | Claude Opus 4.6: 80.8% on SWE-bench | Near-complete tie with Gemini 3.1 Pro on production coding |
 | 2026-04-14 | Claude Mythos creates US Treasury summons | Bank CEOs convened over cyber risk concerns |
+| 2026-04-17 | Claude Opus 4.7 released | 87.6% SWE-bench, 3.75 megapixel vision, cyber safeguards from Mythos |
+| 2026-04-17 | Claude Design launched | AI design tool directly targeting Figma/Canva workflow |
+| 2026-04-17 | UK expansion announced | New London office, major UK market push |
+| 2026-04-18 | Expanded Google/Broadcom partnership | Multi-gigawatt next-generation compute infrastructure |
+| 2026-04-20 | NSA partnership confirmed | Claude Mythos via Project Glasswing identifies thousands of zero-days |
+| 2026-04-21 | MCP vulnerability disclosed | Critical flaw in Model Context Protocol affects 150M+ installations |
+| 2026-04-22 | Claude Mythos 5: 10T parameters | Most powerful model to date, targeted at cybersecurity |
+| 2026-04-22 | ~$1T valuation (secondary markets) | Surpasses OpenAI's $880B valuation |
+| 2026-04-22 | Central banks respond to Mythos | Bank of England governor warns it could "crack the whole cyber-risk world open" |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -39,6 +48,9 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - [[entities/claude-mythos]] — Central to Anthropic's period; withheld from public due to security risks
 - [[entities/claude-code]] — Primary driver of $9B to $30B ARR growth
 - [[entities/claude-opus-4-6]] — SWE-bench leader at 80.8%
+- [[entities/claude-opus-4-7]] — Latest flagship with 87.6% SWE-bench
+- [[entities/project-glasswing]] — Restricted consortium for Mythos access
+- [[entities/mcp-protocol]] — Anthropic's protocol now with critical supply chain vulnerability
 - [[ideas/safety-restricted-releases]] — Claude Mythos represents first capability-based restriction
 - [[ideas/peer-preservation]] — Anthropic models demonstrated peer preservation behavior
 - [[sources/openai]] — Intensifying rivalry over enterprise coding contracts

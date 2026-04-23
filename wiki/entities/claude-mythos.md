@@ -2,7 +2,7 @@
 title: "Claude Mythos"
 slug: claude-mythos
 type: model
-last_updated: 2026-04-16
+last_updated: 2026-04-20
 ---
 
 # Claude Mythos
@@ -25,10 +25,13 @@ Claude Mythos represents a watershed moment in AI development — the first time
 
 The controversy triggered emergency government response at the highest levels: VP Vance and Treasury Secretary Bessent convened calls with tech and finance CEOs. UK regulators accelerated assessments. The model caused a ~$2T enterprise software selloff.
 
-Project Glasswing was launched as an alternative — a consortium with 40+ partners (Microsoft, Apple, Amazon, Google, NVIDIA, CrowdStrike) sharing defensive insights derived from Mythos discoveries. Anthropic committed $100M in credits to fix the vulnerabilities found.
+Project Glasswing was launched as an alternative — a consortium with 40+ partners (Microsoft, Apple, Amazon, Google, NVIDIA, CrowdStrike, Cisco, JPMorgan) sharing defensive insights derived from Mythos discoveries. Anthropic committed $100M in credits to fix the vulnerabilities found.
+
+By April 20, the NSA confirmed partnership with Anthropic through Project Glasswing. Claude Mythos identified thousands of zero-day vulnerabilities through the coalition. This represents the first government-level validation of Mythos capabilities and the restricted-access model for frontier AI safety.
 
 ## Connections
 - [[sources/anthropic]] — Developed and withheld by Anthropic
 - [[topics/ai_safety]] — Central to the safety-restricted release debate
 - [[ideas/safety-restricted-releases]] — Established the precedent for capability-based restrictions
 - [[entities/project-glasswing]] — The consortium enabling restricted Mythos access
+- [[entities/claude-opus-4-7]] — Cyber safeguards from Mythos work embedded in Opus 4.7

@@ -1,87 +1,184 @@
-#!/bin/bash
-# Daily AI News Service Supervisor
-# Monitors git repo for updates and automatically rebuilds + restarts service
+#!/usr/bin/env bash
+set -Eeuo pipefail
 
-REPO_DIR="/Users/xinzhang/Daily-AI-News"
-SERVICE_PORT=5002
-INTERVAL=600  # Check every 10 minutes
-LOG_FILE="/tmp/ai_news_supervisor.log"
+# =========================
+# Config
+# =========================
+REPO="/Users/xinzhang/Daily-AI-News"
+REMOTE="origin"
+BRANCH="main"
+INTERVAL=600  # 10 minutes
 
-cd "$REPO_DIR" || exit 1
+PORT=5002
+PIDFILE="/tmp/ai_news_server.pid"
+LOGFILE="/tmp/ai_news_server.log"
 
-# Function to rebuild database and restart service
-rebuild_and_restart() {
-    echo "[$(date)] Rebuilding database..." | tee -a "$LOG_FILE"
+# =========================
+# Helpers
+# =========================
+log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*"; }
+die() { echo "ERROR: $*" >&2; exit 1; }
+git_in_repo() { ( cd "$REPO" && "$@" ); }
 
-    # Rebuild SQLite from JSON
-    python3 build_sqlite.py >> "$LOG_FILE" 2>&1
-    if [ $? -eq 0 ]; then
-        echo "[$(date)] ✓ Database rebuilt successfully" | tee -a "$LOG_FILE"
-    else
-        echo "[$(date)] ✗ Database rebuild failed" | tee -a "$LOG_FILE"
-        return 1
-    fi
+fetch_remote() { git_in_repo git fetch "$REMOTE"; }
+get_hash() { git_in_repo git rev-parse "${REMOTE}/${BRANCH}" 2>/dev/null | tr -d '\n'; }
 
-    # Kill existing service
-    pkill -f "serve_ai_news.py"
-    sleep 2
-
-    # Start new service
-    nohup python3 serve_ai_news.py --port $SERVICE_PORT >> /tmp/ai_news_server.log 2>&1 &
-    SERVICE_PID=$!
-    echo "[$(date)] ✓ Service restarted with PID: $SERVICE_PID" | tee -a "$LOG_FILE"
-
-    # Wait a moment and check if service is running
-    sleep 2
-    if curl -s http://localhost:$SERVICE_PORT/health > /dev/null 2>&1; then
-        echo "[$(date)] ✓ Service health check passed" | tee -a "$LOG_FILE"
-    else
-        echo "[$(date)] ✗ Service health check failed" | tee -a "$LOG_FILE"
-        return 1
-    fi
-
-    return 0
+# =========================
+# Error / Exit
+# =========================
+on_err() {
+  local exit_code=$?
+  log "ERROR: command failed at line $1 with exit code $exit_code"
 }
 
-# Initial startup
-echo "[$(date)] Starting Daily AI News Service Supervisor" | tee -a "$LOG_FILE"
-echo "[$(date)] Repository: $REPO_DIR" | tee -a "$LOG_FILE"
-echo "[$(date)] Service Port: $SERVICE_PORT" | tee -a "$LOG_FILE"
-echo "[$(date)] Check Interval: ${INTERVAL}s ($(($INTERVAL / 60)) minutes)" | tee -a "$LOG_FILE"
-echo "---" | tee -a "$LOG_FILE"
+on_interrupt() {
+  echo
+  log "Interrupted. Stopping server..."
+  stop_server
+  exit 130
+}
 
-# Start service initially
-rebuild_and_restart
+on_exit() {
+  local code=$?
+  if [[ $code -eq 0 ]]; then
+    log "Supervisor exited normally."
+  else
+    log "Supervisor exited with error code $code."
+  fi
+}
 
-# Monitor loop
+trap 'on_err $LINENO' ERR
+trap on_interrupt INT TERM
+trap on_exit EXIT
+
+# =========================
+# Server control
+# =========================
+stop_server() {
+  local pid=""
+  if [[ -f "$PIDFILE" ]]; then
+    pid="$(cat "$PIDFILE" 2>/dev/null || true)"
+  fi
+
+  if [[ -n "${pid:-}" ]] && kill -0 "$pid" >/dev/null 2>&1; then
+    log "Stopping server PID=$pid"
+    kill "$pid" 2>/dev/null || true
+
+    for _ in {1..15}; do
+      if ! kill -0 "$pid" >/dev/null 2>&1; then
+        log "Server stopped."
+        rm -f "$PIDFILE"
+        return 0
+      fi
+      sleep 1
+    done
+
+    log "Force killing server PID=$pid"
+    kill -9 "$pid" 2>/dev/null || true
+    rm -f "$PIDFILE"
+    return 0
+  fi
+
+  if pgrep -f "python3 serve_ai_news\.py" >/dev/null 2>&1; then
+    log "Stopping stray serve_ai_news.py"
+    pkill -f "python3 serve_ai_news\.py" || true
+    sleep 1
+  fi
+
+  rm -f "$PIDFILE" || true
+}
+
+start_server() {
+  log "Starting server in background..."
+  cd "$REPO"
+
+  : > "$LOGFILE"
+
+  nohup python3 -u serve_ai_news.py \
+    --port "$PORT" >> "$LOGFILE" 2>&1 &
+
+  local pid=$!
+  echo "$pid" > "$PIDFILE"
+  sleep 2
+
+  if kill -0 "$pid" >/dev/null 2>&1; then
+    log "Server started. PID=$pid"
+    log "Server log: $LOGFILE"
+    return 0
+  fi
+
+  log "Server failed to start. Last log:"
+  tail -n 50 "$LOGFILE" || true
+  return 1
+}
+
+# =========================
+# Build pipeline
+# =========================
+run_build_steps() {
+  cd "$REPO"
+
+  log "git pull --ff-only"
+  git pull --ff-only
+
+  log "Step 1/2: build_sqlite (rebuild database from JSON)"
+  python3 -u build_sqlite.py
+
+  log "Step 2/2: wiki_build (agent builds wiki)"
+  if ! bash wiki_build.sh; then
+    log "WARNING: wiki_build.sh failed (non-fatal), continuing..."
+  fi
+}
+
+restart_all() {
+  log "===== Restart begin ====="
+  stop_server
+  run_build_steps
+  start_server
+  log "===== Restart done ====="
+}
+
+# =========================
+# Main
+# =========================
+[[ -d "$REPO/.git" ]] || die "Repo not found: $REPO"
+
+log "ai_news_server supervisor starting"
+log "Repo: $REPO"
+log "Watching: ${REMOTE}/${BRANCH}"
+log "Interval: ${INTERVAL}s"
+log "Port: $PORT"
+
+log "Initial fetch..."
+fetch_remote
+last_remote="$(get_hash)"
+[[ -n "$last_remote" ]] || die "Cannot resolve ${REMOTE}/${BRANCH}"
+log "Baseline remote hash: $last_remote"
+
+restart_all
+
 while true; do
-    # Fetch latest from origin
-    git fetch origin main >> "$LOG_FILE" 2>&1
+  sleep "$INTERVAL"
 
-    # Check if local is behind remote
-    LOCAL=$(git rev-parse HEAD)
-    REMOTE=$(git rev-parse origin/main)
+  log "Checking remote updates..."
+  if ! fetch_remote; then
+    log "Fetch failed; retry next cycle."
+    continue
+  fi
 
-    if [ "$LOCAL" != "$REMOTE" ]; then
-        echo "[$(date)] Detected update (local: ${LOCAL:0:7}, remote: ${REMOTE:0:7})" | tee -a "$LOG_FILE"
+  remote_now="$(get_hash || true)"
+  if [[ -z "${remote_now:-}" ]]; then
+    log "Cannot resolve ${REMOTE}/${BRANCH}; retry next cycle."
+    continue
+  fi
 
-        # Pull changes
-        git pull origin main >> "$LOG_FILE" 2>&1
-        if [ $? -eq 0 ]; then
-            echo "[$(date)] ✓ Git pull successful" | tee -a "$LOG_FILE"
+  if [[ "$remote_now" != "$last_remote" ]]; then
+    log "Remote update detected: $last_remote -> $remote_now"
 
-            # Rebuild and restart
-            rebuild_and_restart
-        else
-            echo "[$(date)] ✗ Git pull failed" | tee -a "$LOG_FILE"
-        fi
+    if restart_all; then
+      last_remote="$remote_now"
     else
-        # Just log heartbeat every 10 checks (100 minutes)
-        CHECK_COUNT=$((${CHECK_COUNT:-0} + 1))
-        if [ $((CHECK_COUNT % 10)) -eq 0 ]; then
-            echo "[$(date)] Heartbeat: No updates (checked $CHECK_COUNT times)" >> "$LOG_FILE"
-        fi
+      log "Restart failed. Will retry next cycle."
     fi
-
-    sleep $INTERVAL
+  fi
 done
