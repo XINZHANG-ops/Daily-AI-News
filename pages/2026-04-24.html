@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 24, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 24, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/huggingface/ml-intern" class="card-title" target="_blank">huggingface/ml-intern</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 378 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An open-source ML engineer that reads papers, trains models, and ships ML models. It autonomously researches, writes, and ships quality ML code using the Hugging Face ecosystem.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源的机器学习工程师，可以阅读论文、训练模型并发布ML模型。能够自主研究、编写并发布高质量的机器学习代码，使用Hugging Face生态系统。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/zilliztech/claude-context" class="card-title" target="_blank">zilliztech/claude-context</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 8.7k stars</div>
+                                <div class="meta-item"><span>🍴</span> 677 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Code search MCP for Claude Code. Make entire codebase the context for any coding agent.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Code的代码搜索MCP工具。让整个代码库成为任何编码智能体的上下文。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Alishahryar1/free-claude-code" class="card-title" target="_blank">Alishahryar1/free-claude-code</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 6.3k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1,043 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Use claude-code for free in the terminal, VSCode extension or via Discord like OpenClaw. Supports NVIDIA NIM, OpenRouter, DeepSeek, LM Studio, and llama.cpp.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在终端、VSCode扩展或通过Discord免费使用claude-code，类似OpenClaw。支持NVIDIA NIM、OpenRouter、DeepSeek、LM Studio和llama.cpp。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">April 23, 2026</div>
+                    <a href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/" class="card-title" target="_blank" data-lang="en">OpenAI Releases GPT-5.5, Bringing Company One Step Closer to an AI 'Super App'</a>
+                    <a href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI发布GPT-5.5，向AI"超级应用"迈出关键一步</a>
+                    <p class="card-description" data-lang="en">OpenAI released GPT-5.5, its newest AI model described as the "smartest and most intuitive to use model" yet. Co-founder Greg Brockman said the model brings the company one step closer to creating a "super app" combining ChatGPT, Codex, and AI browser into one unified service.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI发布了其最新的AI模型GPT-5.5，被称为"迄今为止最智能、最易用"的模型。联合创始人Greg Brockman表示，该模型让公司向创建结合ChatGPT、Codex和AI浏览器的"超级应用"迈出了一步。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CNN Business</span>
+                    <div class="news-time">April 23, 2026</div>
+                    <a href="https://www.cnn.com/2026/04/23/tech/meta-layoffs-10-percent-staff-ai" class="card-title" target="_blank" data-lang="en">Meta to Cut 10% of Staff as It Pours Billions into AI</a>
+                    <a href="https://www.cnn.com/2026/04/23/tech/meta-layoffs-10-percent-staff-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta裁员10%约8000人，加大AI投资力度</a>
+                    <p class="card-description" data-lang="en">Meta announced plans to lay off roughly 10% of its workforce, about 8,000 people, while planning to close 6,000 open roles. The company is shifting focus to artificial intelligence amid broader tech industry layoffs driven by AI investment.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta宣布计划裁员约10%，涉及约8000人，同时计划关闭6000个待招聘职位。公司正在将重心转向人工智能，此前科技行业已出现多轮因AI投资驱动的裁员潮。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">UN News</span>
+                    <div class="news-time">April 24, 2026</div>
+                    <a href="https://news.un.org/en/story/2026/04/1167361" class="card-title" target="_blank" data-lang="en">Time to Apply the Brakes to Runaway AI, Says Pioneer Geoffrey Hinton</a>
+                    <a href="https://news.un.org/en/story/2026/04/1167361" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI先驱Geoffrey Hinton警告：需为失控AI踩刹车</a>
+                    <p class="card-description" data-lang="en">Nobel laureate Geoffrey Hinton warned at a UN conference that rapid AI advances must be guided more carefully. "If you ever went out with a car that had no brake, boy, you are in trouble if you go down a hill," he said. The global AI market is projected to grow from $189B in 2023 to $4.8 trillion by 2033.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">诺贝尔奖得主Geoffrey Hinton在联合国会议上警告，AI的快速发展必须更加谨慎地加以引导。"如果你驾驶一辆没有刹车的汽车下坡，那你就麻烦了，"他说。全球AI市场预计将从2023年的1890亿美元增长到2033年的4.8万亿美元。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">ScienceDaily</span>
+                    <div class="news-time">April 23, 2026</div>
+                    <a href="https://www.sciencedaily.com/releases/2026/04/260422044633.htm" class="card-title" target="_blank" data-lang="en">Cambridge Brain-Like Chip Could Slash AI Energy Use by 70%</a>
+                    <a href="https://www.sciencedaily.com/releases/2026/04/260422044633.htm" class="card-title" target="_blank" data-lang="zh" style="display: none;">剑桥大学研发类脑芯片，可将AI能耗降低70%</a>
+                    <p class="card-description" data-lang="en">Scientists at the University of Cambridge developed a neuromorphic computing chip using hafnium-based memristors that could cut AI energy consumption by up to 70%. The device mimics brain neuron connections and operates at switching currents a million times lower than conventional oxide-based memristors.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">剑桥大学的科学家们开发了一种使用铪基忆阻器的神经形态计算芯片，可将AI能耗降低高达70%。该设备模仿大脑神经元连接，工作电流比传统氧化物忆阻器低约一百万倍。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Guardian</span>
+                    <div class="news-time">April 23, 2026</div>
+                    <a href="https://www.theguardian.com/technology/2026/apr/23/meta-microsoft-tech-ai-layoffs" class="card-title" target="_blank" data-lang="en">Microsoft Offers Buyouts to 8,750 Workers as Tech Layoffs Continue</a>
+                    <a href="https://www.theguardian.com/technology/2026/apr/23/meta-microsoft-tech-ai-layoffs" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软提供约8750人自愿离职方案，科技行业裁员持续</a>
+                    <p class="card-description" data-lang="en">Microsoft announced voluntary retirement buyouts for about 7% of its workers, approximately 8,750 people, as the company continues its AI transformation. Major tech firms including Meta, Amazon, and Google are collectively spending $650 billion on AI infrastructure in 2026.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软宣布为约7%的员工（约8750人）提供自愿退休买断方案，因为该公司继续其AI转型。Meta、亚马逊和谷歌等主要科技公司2026年将在AI基础设施上总共投入6500亿美元。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">LLM Stats</span>
+                    <div class="news-time">April 24, 2026</div>
+                    <a href="https://llm-stats.com/ai-news" class="card-title" target="_blank" data-lang="en">Anthropic Fixes Three Causes of Recent Claude Code Quality Issues</a>
+                    <a href="https://llm-stats.com/ai-news" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic修复Claude Code质量问题的三个原因</a>
+                    <p class="card-description" data-lang="en">Anthropic announced it has fixed three causes of recent Claude Code quality issues: reduced default reasoning, a caching bug, and a system prompt to reduce verbosity. The company acknowledged user reports about degraded performance.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic宣布已修复近期Claude Code质量问题的三个原因：默认推理减弱、缓存bug以及减少冗长的系统提示。该公司承认收到了用户关于性能下降的报告。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub</span>
+                    <div class="news-time">April 23, 2026</div>
+                    <a href="https://github.com/features/copilot" class="card-title" target="_blank" data-lang="en">GitHub Copilot Will Use Your Code to Train AI Models Starting April 24</a>
+                    <a href="https://github.com/features/copilot" class="card-title" target="_blank" data-lang="zh" style="display: none;">GitHub Copilot将于4月24日起使用你的代码训练AI模型</a>
+                    <p class="card-description" data-lang="en">GitHub announced that starting April 24, it may use interactions from Copilot Free, Pro, and Pro+ subscribers—including inputs, outputs, code snippets, and associated context—to train and improve its AI models unless users opt out.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GitHub宣布，从4月24日起，可能使用Copilot Free、Pro和Pro+订阅用户的交互内容（包括输入、输出、代码片段和相关上下文）来训练和改进其AI模型，除非用户选择退出。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week saw major AI industry shifts: OpenAI's GPT-5.5 release continues the rapid model iteration pace, while Meta and Microsoft are cutting workforce sizes despite massive AI infrastructure spending ($650B combined from Amazon, Google, Meta, Microsoft). The UN is ramping up AI governance discussions with Geoffrey Hinton warning about "runaway AI" — the global AI market is projected to reach $4.8T by 2033. On the hardware side, Cambridge's neuromorphic chip achieving 70% energy reduction represents a significant breakthrough for sustainable AI. Meanwhile, GitHub's Copilot data training policy change highlights growing tensions around AI training data rights. For developers, the trending repos show strong interest in free Claude Code alternatives and code search tools, indicating demand for cost-effective AI coding solutions.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周AI行业发生重大变化：OpenAI发布GPT-5.5继续快速迭代模型的步伐，而Meta和Microsoft尽管在AI基础设施上的支出巨大（亚马逊、谷歌、Meta、Microsoft合计6500亿美元），却在缩减员工规模。联合国正加紧AI治理讨论，Geoffrey Hinton警告"失控AI"的风险——全球AI市场预计到2033年将达到4.8万亿美元。硬件方面，剑桥大学的神经形态芯片实现了70%的能耗降低，这对可持续AI发展是重大突破。同时，GitHub Copilot的数据训练政策变化凸显了AI训练数据权益方面日益紧张的局势。对于开发者而言，热门的仓库显示出对免费Claude Code替代品和代码搜索工具的强烈需求，表明市场对经济高效的AI编码解决方案的渴望。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

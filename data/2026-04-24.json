@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-24",
+  "github_repos": [
+    {
+      "name": "huggingface/ml-intern",
+      "url": "https://github.com/huggingface/ml-intern",
+      "description": {
+        "en": "An open-source ML engineer that reads papers, trains models, and ships ML models. It autonomously researches, writes, and ships quality ML code using the Hugging Face ecosystem.",
+        "zh": "开源的机器学习工程师，可以阅读论文、训练模型并发布ML模型。能够自主研究、编写并发布高质量的机器学习代码，使用Hugging Face生态系统。"
+      },
+      "stars": "4.5k",
+      "forks": "378"
+    },
+    {
+      "name": "zilliztech/claude-context",
+      "url": "https://github.com/zilliztech/claude-context",
+      "description": {
+        "en": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
+        "zh": "Claude Code的代码搜索MCP工具。让整个代码库成为任何编码智能体的上下文。"
+      },
+      "stars": "8.7k",
+      "forks": "677"
+    },
+    {
+      "name": "Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "description": {
+        "en": "Use claude-code for free in the terminal, VSCode extension or via Discord like OpenClaw. Supports NVIDIA NIM, OpenRouter, DeepSeek, LM Studio, and llama.cpp.",
+        "zh": "在终端、VSCode扩展或通过Discord免费使用claude-code，类似OpenClaw。支持NVIDIA NIM、OpenRouter、DeepSeek、LM Studio和llama.cpp。"
+      },
+      "stars": "6.3k",
+      "forks": "1,043"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Releases GPT-5.5, Bringing Company One Step Closer to an AI 'Super App'",
+        "zh": "OpenAI发布GPT-5.5，向AI\"超级应用\"迈出关键一步"
+      },
+      "url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+      "source": "TechCrunch",
+      "time": "April 23, 2026",
+      "description": {
+        "en": "OpenAI released GPT-5.5, its newest AI model described as the \"smartest and most intuitive to use model\" yet. Co-founder Greg Brockman said the model brings the company one step closer to creating a \"super app\" combining ChatGPT, Codex, and AI browser into one unified service.",
+        "zh": "OpenAI发布了其最新的AI模型GPT-5.5，被称为\"迄今为止最智能、最易用\"的模型。联合创始人Greg Brockman表示，该模型让公司向创建结合ChatGPT、Codex和AI浏览器的\"超级应用\"迈出了一步。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta to Cut 10% of Staff as It Pours Billions into AI",
+        "zh": "Meta裁员10%约8000人，加大AI投资力度"
+      },
+      "url": "https://www.cnn.com/2026/04/23/tech/meta-layoffs-10-percent-staff-ai",
+      "source": "CNN Business",
+      "time": "April 23, 2026",
+      "description": {
+        "en": "Meta announced plans to lay off roughly 10% of its workforce, about 8,000 people, while planning to close 6,000 open roles. The company is shifting focus to artificial intelligence amid broader tech industry layoffs driven by AI investment.",
+        "zh": "Meta宣布计划裁员约10%，涉及约8000人，同时计划关闭6000个待招聘职位。公司正在将重心转向人工智能，此前科技行业已出现多轮因AI投资驱动的裁员潮。"
+      }
+    },
+    {
+      "title": {
+        "en": "Time to Apply the Brakes to Runaway AI, Says Pioneer Geoffrey Hinton",
+        "zh": "AI先驱Geoffrey Hinton警告：需为失控AI踩刹车"
+      },
+      "url": "https://news.un.org/en/story/2026/04/1167361",
+      "source": "UN News",
+      "time": "April 24, 2026",
+      "description": {
+        "en": "Nobel laureate Geoffrey Hinton warned at a UN conference that rapid AI advances must be guided more carefully. \"If you ever went out with a car that had no brake, boy, you are in trouble if you go down a hill,\" he said. The global AI market is projected to grow from $189B in 2023 to $4.8 trillion by 2033.",
+        "zh": "诺贝尔奖得主Geoffrey Hinton在联合国会议上警告，AI的快速发展必须更加谨慎地加以引导。\"如果你驾驶一辆没有刹车的汽车下坡，那你就麻烦了，\"他说。全球AI市场预计将从2023年的1890亿美元增长到2033年的4.8万亿美元。"
+      }
+    },
+    {
+      "title": {
+        "en": "Cambridge Brain-Like Chip Could Slash AI Energy Use by 70%",
+        "zh": "剑桥大学研发类脑芯片，可将AI能耗降低70%"
+      },
+      "url": "https://www.sciencedaily.com/releases/2026/04/260422044633.htm",
+      "source": "ScienceDaily",
+      "time": "April 23, 2026",
+      "description": {
+        "en": "Scientists at the University of Cambridge developed a neuromorphic computing chip using hafnium-based memristors that could cut AI energy consumption by up to 70%. The device mimics brain neuron connections and operates at switching currents a million times lower than conventional oxide-based memristors.",
+        "zh": "剑桥大学的科学家们开发了一种使用铪基忆阻器的神经形态计算芯片，可将AI能耗降低高达70%。该设备模仿大脑神经元连接，工作电流比传统氧化物忆阻器低约一百万倍。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft Offers Buyouts to 8,750 Workers as Tech Layoffs Continue",
+        "zh": "微软提供约8750人自愿离职方案，科技行业裁员持续"
+      },
+      "url": "https://www.theguardian.com/technology/2026/apr/23/meta-microsoft-tech-ai-layoffs",
+      "source": "The Guardian",
+      "time": "April 23, 2026",
+      "description": {
+        "en": "Microsoft announced voluntary retirement buyouts for about 7% of its workers, approximately 8,750 people, as the company continues its AI transformation. Major tech firms including Meta, Amazon, and Google are collectively spending $650 billion on AI infrastructure in 2026.",
+        "zh": "微软宣布为约7%的员工（约8750人）提供自愿退休买断方案，因为该公司继续其AI转型。Meta、亚马逊和谷歌等主要科技公司2026年将在AI基础设施上总共投入6500亿美元。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Fixes Three Causes of Recent Claude Code Quality Issues",
+        "zh": "Anthropic修复Claude Code质量问题的三个原因"
+      },
+      "url": "https://llm-stats.com/ai-news",
+      "source": "LLM Stats",
+      "time": "April 24, 2026",
+      "description": {
+        "en": "Anthropic announced it has fixed three causes of recent Claude Code quality issues: reduced default reasoning, a caching bug, and a system prompt to reduce verbosity. The company acknowledged user reports about degraded performance.",
+        "zh": "Anthropic宣布已修复近期Claude Code质量问题的三个原因：默认推理减弱、缓存bug以及减少冗长的系统提示。该公司承认收到了用户关于性能下降的报告。"
+      }
+    },
+    {
+      "title": {
+        "en": "GitHub Copilot Will Use Your Code to Train AI Models Starting April 24",
+        "zh": "GitHub Copilot将于4月24日起使用你的代码训练AI模型"
+      },
+      "url": "https://github.com/features/copilot",
+      "source": "GitHub",
+      "time": "April 23, 2026",
+      "description": {
+        "en": "GitHub announced that starting April 24, it may use interactions from Copilot Free, Pro, and Pro+ subscribers—including inputs, outputs, code snippets, and associated context—to train and improve its AI models unless users opt out.",
+        "zh": "GitHub宣布，从4月24日起，可能使用Copilot Free、Pro和Pro+订阅用户的交互内容（包括输入、输出、代码片段和相关上下文）来训练和改进其AI模型，除非用户选择退出。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week saw major AI industry shifts: OpenAI's GPT-5.5 release continues the rapid model iteration pace, while Meta and Microsoft are cutting workforce sizes despite massive AI infrastructure spending ($650B combined from Amazon, Google, Meta, Microsoft). The UN is ramping up AI governance discussions with Geoffrey Hinton warning about \"runaway AI\" — the global AI market is projected to reach $4.8T by 2033. On the hardware side, Cambridge's neuromorphic chip achieving 70% energy reduction represents a significant breakthrough for sustainable AI. Meanwhile, GitHub's Copilot data training policy change highlights growing tensions around AI training data rights. For developers, the trending repos show strong interest in free Claude Code alternatives and code search tools, indicating demand for cost-effective AI coding solutions.",
+    "zh": "本周AI行业发生重大变化：OpenAI发布GPT-5.5继续快速迭代模型的步伐，而Meta和Microsoft尽管在AI基础设施上的支出巨大（亚马逊、谷歌、Meta、Microsoft合计6500亿美元），却在缩减员工规模。联合国正加紧AI治理讨论，Geoffrey Hinton警告\"失控AI\"的风险——全球AI市场预计到2033年将达到4.8万亿美元。硬件方面，剑桥大学的神经形态芯片实现了70%的能耗降低，这对可持续AI发展是重大突破。同时，GitHub Copilot的数据训练政策变化凸显了AI训练数据权益方面日益紧张的局势。对于开发者而言，热门的仓库显示出对免费Claude Code替代品和代码搜索工具的强烈需求，表明市场对经济高效的AI编码解决方案的渴望。"
+  }
+}
