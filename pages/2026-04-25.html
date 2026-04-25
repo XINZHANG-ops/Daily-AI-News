@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 25, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 25, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/OpenHands/software-agent-sdk" class="card-title" target="_blank">OpenHands/software-agent-sdk</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 412 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A clean, modular SDK for building AI agents that work with code. Supports one-off tasks, routine maintenance, and multi-agent operations. Can run locally or in ephemeral workspaces (Docker/Kubernetes). Powers OpenHands CLI and Cloud.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个简洁、模块化的SDK，用于构建处理代码的AI代理。支持一次性任务、常规维护和多代理操作。可以在本地或临时工作空间（Docker/Kubernetes）中运行。驱动OpenHands CLI和Cloud。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/NVIDIA/NemoClaw" class="card-title" target="_blank">NVIDIA/NemoClaw</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 89 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open source reference stack for running OpenClaw securely with NVIDIA OpenShell runtime. Provides hardened blueprint, state management, routed inference, and layered protection. Alpha preview released March 2026.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源参考堆栈，使用NVIDIA OpenShell运行时安全运行OpenClaw。提供强化蓝图、状态管理、路由推理和分层保护。2026年3月发布Alpha预览版。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/K-Dense-AI/scientific-agent-skills" class="card-title" target="_blank">K-Dense-AI/scientific-agent-skills</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.4k stars</div>
+                                <div class="meta-item"><span>🍴</span> 186 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">133 ready-to-use scientific skills for AI agents covering bioinformatics, genomics, drug discovery, molecular dynamics, geospatial science, and 78+ scientific databases. Works with Claude Code, Cursor, Codex, and any Agent Skills-compatible agent.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">133个可用于AI代理的科学技能，涵盖生物信息学、基因组学、药物发现、分子动力学、地理空间科学和78个以上科学数据库。支持Claude Code、Cursor、Codex及任何兼容Agent Skills的代理。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">April 23, 2026</div>
+                    <a href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/" class="card-title" target="_blank" data-lang="en">OpenAI Releases GPT-5.5 with Advanced Agentic Capabilities</a>
+                    <a href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI发布具备高级代理能力的GPT-5.5</a>
+                    <p class="card-description" data-lang="en">OpenAI released GPT-5.5, calling it the smartest and most intuitive model yet. Co-founder Greg Brockman said it brings the company closer to an AI super app combining ChatGPT, Codex, and AI browser. Features improved agentic coding, scientific research, and computer navigation capabilities.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI发布了GPT-5.5，称其为迄今为止最智能、最直观的模型。联合创始人Greg Brockman表示，这使公司更接近于结合ChatGPT、Codex和AI浏览器的AI超级应用。具备改进的代理编码、科学研究和计算机导航能力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">April 24, 2026</div>
+                    <a href="https://www.reuters.com/business/google-plans-invest-up-40-billion-anthropic-bloomberg-news-reports-2026-04-24/" class="card-title" target="_blank" data-lang="en">Google to Invest Up to $40 Billion in Anthropic</a>
+                    <a href="https://www.reuters.com/business/google-plans-invest-up-40-billion-anthropic-bloomberg-news-reports-2026-04-24/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google计划向Anthropic投资高达400亿美元</a>
+                    <p class="card-description" data-lang="en">Alphabet will invest at least $10 billion in Anthropic with another $30 billion potentially to follow if certain performance targets are met. The massive investment deepens the partnership between the two AI players as competition in the AI race intensifies.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Alphabet将向Anthropic投资至少100亿美元，如果达到某些绩效目标，还可能追加300亿美元。这笔巨额投资加深了两个人工智能玩家之间的合作伙伴关系，因为人工智能竞争正在加剧。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">DeepSeek</span>
+                    <div class="news-time">April 24, 2026</div>
+                    <a href="https://api-docs.deepseek.com/news/news260424" class="card-title" target="_blank" data-lang="en">DeepSeek Unveils V4 Flagship Model with 1M Context</a>
+                    <a href="https://api-docs.deepseek.com/news/news260424" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepSeek发布具备100万上下文的新旗舰模型V4</a>
+                    <p class="card-description" data-lang="en">DeepSeek-V4-Pro (1.6T total/49B active params) and V4-Flash (284B total/13B active params) are now available. The models feature enhanced agentic coding, world-class reasoning, and 1M context as default. Open weights available on Hugging Face.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepSeek-V4-Pro（1.6T总参数/49B活跃参数）和V4-Flash（284B总参数/13B活跃参数）现已可用。这些模型具备增强的代理编码、世界级推理能力，100万上下文成为默认配置。权重已在Hugging Face上开放。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Bloomberg</span>
+                    <div class="news-time">April 23, 2026</div>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-23/ai-coding-firm-cognition-in-funding-talks-at-25-billion-value" class="card-title" target="_blank" data-lang="en">Cognition AI in Talks to Raise at $25 Billion Valuation</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-23/ai-coding-firm-cognition-in-funding-talks-at-25-billion-value" class="card-title" target="_blank" data-lang="zh" style="display: none;">Cognition AI洽谈融资，估值250亿美元</a>
+                    <p class="card-description" data-lang="en">Cognition AI, creator of AI software engineer Devin, is in early talks to raise a new round that could more than double its valuation to $25 billion. The funding would come months after its $400M raise, reflecting surging demand for AI coding tools.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI软件工程师Devin的创造者Cognition AI正在洽谈新一轮融资，估值可能翻倍至250亿美元。这轮融资距其上次4亿美元融资仅数月，反映了AI编码工具需求的激增。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CNBC</span>
+                    <div class="news-time">April 24, 2026</div>
+                    <a href="https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html" class="card-title" target="_blank" data-lang="en">AI Job Cuts Accelerate: 92,000 Tech Workers Laid Off in 2026</a>
+                    <a href="https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI导致裁员加速：2026年已有9.2万名科技员工被裁</a>
+                    <p class="card-description" data-lang="en">Over 92,000 tech workers have been laid off in 2026 as AI transforms corporate America. Meta and Microsoft recently announced 20,000 additional job cuts. Banks are also replacing workers with AI, with one bank citing 1,000 jobs eliminated through attrition driven by AI.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">随着AI改变企业美国，2026年已有超过9.2万名科技员工被裁。Meta和微软最近宣布额外裁减2万人。银行也在用AI替代员工，一家银行表示通过AI驱动的自然减员消除了1000个工作岗位。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">IndexBox</span>
+                    <div class="news-time">April 24, 2026</div>
+                    <a href="https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/" class="card-title" target="_blank" data-lang="en">Tencent and Alibaba in Talks to Invest in DeepSeek</a>
+                    <a href="https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/" class="card-title" target="_blank" data-lang="zh" style="display: none;">腾讯和阿里巴巴洽谈投资DeepSeek</a>
+                    <p class="card-description" data-lang="en">Tencent and Alibaba are reportedly in talks to participate in DeepSeek's first funding round, with Tencent proposing up to a 20% stake. This would mark a significant shift as major Chinese tech giants seek to partner with the AI startup that rattled Silicon Valley.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">据报道，腾讯和阿里巴巴正在洽谈参与DeepSeek的首轮融资，腾讯提议获得高达20%的股份。这将是一个重大转折，因为中国主要科技巨头寻求与这家震动硅谷的AI初创公司合作。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Bloomberg</span>
+                    <div class="news-time">April 22, 2026</div>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-22/google-releases-new-ai-agents-to-challenge-openai-and-anthropic" class="card-title" target="_blank" data-lang="en">Google Releases New AI Agents to Challenge OpenAI</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-22/google-releases-new-ai-agents-to-challenge-openai-and-anthropic" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google发布新AI代理挑战OpenAI</a>
+                    <p class="card-description" data-lang="en">Google unveiled a suite of tools to build AI agents aimed at helping companies automate tasks. The release is Google's latest attempt to compete with OpenAI and Anthropic in the burgeoning agentic AI market.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google发布了一套用于构建AI代理的工具，旨在帮助企业自动化任务。这是Google在新兴的代理AI市场与OpenAI和Anthropic竞争的最新尝试。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week marks a significant acceleration in the AI arms race. Google's $40B Anthropic investment and DeepSeek's V4 launch demonstrate the intensifying competition between US and Chinese AI labs. Meanwhile, GPT-5.5's agentic capabilities and Cognition's $25B valuation signal that AI coding tools are becoming central to enterprise strategy. The big question: with AI eliminating 92K tech jobs while creating new opportunities, the transition accelerates - but are we training enough people for the new roles? The emergence of modular SDKs like OpenHands and specialized skills repositories suggests the ecosystem is maturing beyond raw model capabilities toward practical, composable tools.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周，人工智能军备竞赛显著加速。Google 400亿美元投资Anthropic以及DeepSeek V4的发布展示了中美AI实验室之间日益激烈的竞争。与此同时，GPT-5.5的代理能力和Cognition 250亿美元的估值表明，AI编码工具正在成为企业战略的核心。最大的问题：AI消除了9.2万个科技工作岗位，同时创造新机会，转变正在加速 - 但我们是否为新角色培训了足够的人才？OpenHands等模块化SDK和专业技能库的出现表明，生态系统正在从原始模型能力向实用的可组合工具成熟。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+{
+  "date": "2026-04-25",
+  "github_repos": [
+    {
+      "name": "OpenHands/software-agent-sdk",
+      "url": "https://github.com/OpenHands/software-agent-sdk",
+      "description": {
+        "en": "A clean, modular SDK for building AI agents that work with code. Supports one-off tasks, routine maintenance, and multi-agent operations. Can run locally or in ephemeral workspaces (Docker/Kubernetes). Powers OpenHands CLI and Cloud.",
+        "zh": "一个简洁、模块化的SDK，用于构建处理代码的AI代理。支持一次性任务、常规维护和多代理操作。可以在本地或临时工作空间（Docker/Kubernetes）中运行。驱动OpenHands CLI和Cloud。"
+      },
+      "stars": "3.2k",
+      "forks": "412"
+    },
+    {
+      "name": "NVIDIA/NemoClaw",
+      "url": "https://github.com/NVIDIA/NemoClaw",
+      "description": {
+        "en": "Open source reference stack for running OpenClaw securely with NVIDIA OpenShell runtime. Provides hardened blueprint, state management, routed inference, and layered protection. Alpha preview released March 2026.",
+        "zh": "开源参考堆栈，使用NVIDIA OpenShell运行时安全运行OpenClaw。提供强化蓝图、状态管理、路由推理和分层保护。2026年3月发布Alpha预览版。"
+      },
+      "stars": "1.1k",
+      "forks": "89"
+    },
+    {
+      "name": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": {
+        "en": "133 ready-to-use scientific skills for AI agents covering bioinformatics, genomics, drug discovery, molecular dynamics, geospatial science, and 78+ scientific databases. Works with Claude Code, Cursor, Codex, and any Agent Skills-compatible agent.",
+        "zh": "133个可用于AI代理的科学技能，涵盖生物信息学、基因组学、药物发现、分子动力学、地理空间科学和78个以上科学数据库。支持Claude Code、Cursor、Codex及任何兼容Agent Skills的代理。"
+      },
+      "stars": "2.4k",
+      "forks": "186"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Releases GPT-5.5 with Advanced Agentic Capabilities",
+        "zh": "OpenAI发布具备高级代理能力的GPT-5.5"
+      },
+      "url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+      "source": "TechCrunch",
+      "time": "April 23, 2026",
+      "description": {
+        "en": "OpenAI released GPT-5.5, calling it the smartest and most intuitive model yet. Co-founder Greg Brockman said it brings the company closer to an AI super app combining ChatGPT, Codex, and AI browser. Features improved agentic coding, scientific research, and computer navigation capabilities.",
+        "zh": "OpenAI发布了GPT-5.5，称其为迄今为止最智能、最直观的模型。联合创始人Greg Brockman表示，这使公司更接近于结合ChatGPT、Codex和AI浏览器的AI超级应用。具备改进的代理编码、科学研究和计算机导航能力。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google to Invest Up to $40 Billion in Anthropic",
+        "zh": "Google计划向Anthropic投资高达400亿美元"
+      },
+      "url": "https://www.reuters.com/business/google-plans-invest-up-40-billion-anthropic-bloomberg-news-reports-2026-04-24/",
+      "source": "Reuters",
+      "time": "April 24, 2026",
+      "description": {
+        "en": "Alphabet will invest at least $10 billion in Anthropic with another $30 billion potentially to follow if certain performance targets are met. The massive investment deepens the partnership between the two AI players as competition in the AI race intensifies.",
+        "zh": "Alphabet将向Anthropic投资至少100亿美元，如果达到某些绩效目标，还可能追加300亿美元。这笔巨额投资加深了两个人工智能玩家之间的合作伙伴关系，因为人工智能竞争正在加剧。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek Unveils V4 Flagship Model with 1M Context",
+        "zh": "DeepSeek发布具备100万上下文的新旗舰模型V4"
+      },
+      "url": "https://api-docs.deepseek.com/news/news260424",
+      "source": "DeepSeek",
+      "time": "April 24, 2026",
+      "description": {
+        "en": "DeepSeek-V4-Pro (1.6T total/49B active params) and V4-Flash (284B total/13B active params) are now available. The models feature enhanced agentic coding, world-class reasoning, and 1M context as default. Open weights available on Hugging Face.",
+        "zh": "DeepSeek-V4-Pro（1.6T总参数/49B活跃参数）和V4-Flash（284B总参数/13B活跃参数）现已可用。这些模型具备增强的代理编码、世界级推理能力，100万上下文成为默认配置。权重已在Hugging Face上开放。"
+      }
+    },
+    {
+      "title": {
+        "en": "Cognition AI in Talks to Raise at $25 Billion Valuation",
+        "zh": "Cognition AI洽谈融资，估值250亿美元"
+      },
+      "url": "https://www.bloomberg.com/news/articles/2026-04-23/ai-coding-firm-cognition-in-funding-talks-at-25-billion-value",
+      "source": "Bloomberg",
+      "time": "April 23, 2026",
+      "description": {
+        "en": "Cognition AI, creator of AI software engineer Devin, is in early talks to raise a new round that could more than double its valuation to $25 billion. The funding would come months after its $400M raise, reflecting surging demand for AI coding tools.",
+        "zh": "AI软件工程师Devin的创造者Cognition AI正在洽谈新一轮融资，估值可能翻倍至250亿美元。这轮融资距其上次4亿美元融资仅数月，反映了AI编码工具需求的激增。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI Job Cuts Accelerate: 92,000 Tech Workers Laid Off in 2026",
+        "zh": "AI导致裁员加速：2026年已有9.2万名科技员工被裁"
+      },
+      "url": "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html",
+      "source": "CNBC",
+      "time": "April 24, 2026",
+      "description": {
+        "en": "Over 92,000 tech workers have been laid off in 2026 as AI transforms corporate America. Meta and Microsoft recently announced 20,000 additional job cuts. Banks are also replacing workers with AI, with one bank citing 1,000 jobs eliminated through attrition driven by AI.",
+        "zh": "随着AI改变企业美国，2026年已有超过9.2万名科技员工被裁。Meta和微软最近宣布额外裁减2万人。银行也在用AI替代员工，一家银行表示通过AI驱动的自然减员消除了1000个工作岗位。"
+      }
+    },
+    {
+      "title": {
+        "en": "Tencent and Alibaba in Talks to Invest in DeepSeek",
+        "zh": "腾讯和阿里巴巴洽谈投资DeepSeek"
+      },
+      "url": "https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/",
+      "source": "IndexBox",
+      "time": "April 24, 2026",
+      "description": {
+        "en": "Tencent and Alibaba are reportedly in talks to participate in DeepSeek's first funding round, with Tencent proposing up to a 20% stake. This would mark a significant shift as major Chinese tech giants seek to partner with the AI startup that rattled Silicon Valley.",
+        "zh": "据报道，腾讯和阿里巴巴正在洽谈参与DeepSeek的首轮融资，腾讯提议获得高达20%的股份。这将是一个重大转折，因为中国主要科技巨头寻求与这家震动硅谷的AI初创公司合作。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Releases New AI Agents to Challenge OpenAI",
+        "zh": "Google发布新AI代理挑战OpenAI"
+      },
+      "url": "https://www.bloomberg.com/news/articles/2026-04-22/google-releases-new-ai-agents-to-challenge-openai-and-anthropic",
+      "source": "Bloomberg",
+      "time": "April 22, 2026",
+      "description": {
+        "en": "Google unveiled a suite of tools to build AI agents aimed at helping companies automate tasks. The release is Google's latest attempt to compete with OpenAI and Anthropic in the burgeoning agentic AI market.",
+        "zh": "Google发布了一套用于构建AI代理的工具，旨在帮助企业自动化任务。这是Google在新兴的代理AI市场与OpenAI和Anthropic竞争的最新尝试。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week marks a significant acceleration in the AI arms race. Google's $40B Anthropic investment and DeepSeek's V4 launch demonstrate the intensifying competition between US and Chinese AI labs. Meanwhile, GPT-5.5's agentic capabilities and Cognition's $25B valuation signal that AI coding tools are becoming central to enterprise strategy. The big question: with AI eliminating 92K tech jobs while creating new opportunities, the transition accelerates - but are we training enough people for the new roles? The emergence of modular SDKs like OpenHands and specialized skills repositories suggests the ecosystem is maturing beyond raw model capabilities toward practical, composable tools.",
+    "zh": "本周，人工智能军备竞赛显著加速。Google 400亿美元投资Anthropic以及DeepSeek V4的发布展示了中美AI实验室之间日益激烈的竞争。与此同时，GPT-5.5的代理能力和Cognition 250亿美元的估值表明，AI编码工具正在成为企业战略的核心。最大的问题：AI消除了9.2万个科技工作岗位，同时创造新机会，转变正在加速 - 但我们是否为新角色培训了足够的人才？OpenHands等模块化SDK和专业技能库的出现表明，生态系统正在从原始模型能力向实用的可组合工具成熟。"
+  }
+}
