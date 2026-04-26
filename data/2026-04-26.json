@@ -1,0 +1,173 @@
+{
+  "date": "2026-04-26",
+  "github_repos": [
+    {
+      "name": "huggingface/ml-intern",
+      "url": "https://github.com/huggingface/ml-intern",
+      "description": {
+        "en": "An open-source ML engineer agent that reads papers, trains models, and ships ML models autonomously. Designed to handle the full machine learning development lifecycle.",
+        "zh": "开源机器学习工程师智能体，可自主阅读论文、训练模型并部署机器学习模型。设计用于处理完整的机器学习开发生命周期。"
+      },
+      "stars": "~8.2k",
+      "forks": "~540"
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": {
+        "en": "A complete AI agency at your fingertips — from frontend wizards to Reddit community ninjas, each agent is a specialized expert with personality, processes, and proven deliverables.",
+        "zh": "指尖上的完整AI代理团队——从前端魔法师到Reddit社区忍者，每个智能体都是具有个性、流程和可验证交付物的专业化专家。"
+      },
+      "stars": "~3.1k",
+      "forks": "~280"
+    },
+    {
+      "name": "speedyapply/2026-AI-College-Jobs",
+      "url": "https://github.com/speedyapply/2026-AI-College-Jobs",
+      "description": {
+        "en": "A comprehensive daily-updated list of AI/ML internships and new graduate positions for college students seeking careers in artificial intelligence.",
+        "zh": "每日更新的AI/ML实习和应届生职位大全，帮助计算机专业学生寻找人工智能领域的工作机会。"
+      },
+      "stars": "~1.5k",
+      "forks": "~120"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Launches GPT-5.5 with Enhanced Reasoning, Ships Same Day as DeepSeek V4",
+        "zh": "OpenAI发布GPT-5.5强化推理版，与DeepSeek V4同天出货"
+      },
+      "url": "https://en.wikipedia.org/wiki/GPT-5.5",
+      "source": "Wikipedia / LLM Stats",
+      "time": "2026-04-23",
+      "description": {
+        "en": "GPT-5.5 (codename 'Spud') launched April 23 with scores of 82.7% on Terminal-Bench 2.0 and 51.7% on FrontierMath (1-3), outperforming previous generations. Exact seven days after Anthropic's Claude Opus 4.7 release.",
+        "zh": "GPT-5.5（代号'Spud'）于4月23日发布，Terminal-Bench 2.0得分82.7%，FrontierMath（1-3）得分51.7%，超越前代。恰好是Anthropic的Claude Opus 4.7发布七天后。"
+      },
+      "insight": {
+        "en": "Two flagship models, one week apart, both shipping 1M-token contexts and positioning as top agentic coding platforms. The timing is not coincidental — OpenAI appears to have accelerated the GPT-5.5 launch specifically to counter Claude Opus 4.7's SWE-bench lead. Meanwhile DeepSeek V4-Pro-Max is scoring 80.6% on SWE-bench Verified at $1.74/M tokens vs Opus 4.7's ~$10/M, making the cost-performance frontier suddenly very crowded.",
+        "zh": "两款旗舰机型，相隔一周，都配备100万token上下文窗口，都定位为顶级代理编程平台。时机绝非巧合——OpenAI似乎特意加速GPT-5.5发布以抗衡Claude Opus 4.7在SWE-bench上的领先。同时DeepSeek V4-Pro-Max在SWE-bench Verified上得分80.6%，价格仅$1.74/M vs Opus 4.7的~$10/M，成本-性能前沿突然变得非常拥挤。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek V4 Released: 1.6T MoE Open-Source Model at 1/6 the Cost of Claude Opus 4.7",
+        "zh": "DeepSeek V4发布：1.6T MoE开源模型，成本仅为Claude Opus 4.7的1/6"
+      },
+      "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4/",
+      "source": "Simon Willison / Nerd Level Tech",
+      "time": "2026-04-24",
+      "description": {
+        "en": "DeepSeek V4-Pro-Max (1.6T total params, 49B activated) and V4-Flash (284B/13B) launched April 24 with native 1M-token context, hybrid compressed attention, and API pricing at $1.74/$3.48 per million tokens — roughly 85% cheaper than GPT-5.5.",
+        "zh": "DeepSeek V4-Pro-Max（1.6T总参数，49B激活）和V4-Flash（284B/13B）于4月24日发布，配备原生100万token上下文、混合压缩注意力，API价格$1.74/$3.48每百万token——比GPT-5.5便宜约85%。"
+      },
+      "insight": {
+        "en": "DeepSeek V4 is not just cheaper — its hybrid sparse-attention architecture (CSA+HCA) and FP4 expert weights are specifically designed to challenge proprietary models on enterprise agentic workflows. Simon Willison notes it outperforms GPT-5.2 and Gemini-3.0-Pro on standard reasoning benchmarks via expanded reasoning tokens. The same day, DeepSeek also unveiled a Huawei-chip-adapted variant, underscoring China's push for tech autonomy. This is the open-source frontier closing the gap on multiple fronts simultaneously.",
+        "zh": "DeepSeek V4不只是更便宜——其混合稀疏注意力架构（CSA+HCA）和FP4专家权重，专为在企业代理工作流上挑战闭源模型而设计。Simon Willison指出，通过扩展推理token，它在标准推理基准上优于GPT-5.2和Gemini-3.0-Pro。同天，DeepSeek还发布了华为芯片适配版，突显中国推动技术自主的决心。这是开源前沿在多个方面同时缩小差距。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google to Invest Up to $40 Billion in Anthropic, Deepening Infrastructure Alliance",
+        "zh": "谷歌将向Anthropic投资至多400亿美元，深化基础设施联盟"
+      },
+      "url": "https://www.reuters.com/business/google-plans-invest-up-40-billion-anthropic-bloomberg-news-reports-2026-04-24/",
+      "source": "Reuters / Bloomberg",
+      "time": "2026-04-24",
+      "description": {
+        "en": "Alphabet/Google will invest $10 billion initially in Anthropic with another $30 billion tied to performance milestones, expanding an existing partnership where Anthropic runs on Google's TPUs and cloud infrastructure.",
+        "zh": "Alphabet/谷歌将首期投资100亿美元于Anthropic，另有300亿美元与绩效里程碑挂钩，扩大现有合作——Anthropic在谷歌TPU和云基础设施上运行。"
+      },
+      "insight": {
+        "en": "The $40B figure is not just a bet on a model — it's vertically integrated infrastructure insurance. Google needs Anthropic as a TPU showcase customer; Anthropic needs Google Cloud's scale. But here's the tension: Epoch AI data shows Google already controls ~25% of global AI compute (3.8M TPUs + 1.3M GPUs). Another $40B tilts that number further. This deal will face regulatory scrutiny in the EU and UK precisely because it cements a dependency relationship that makes Anthropic harder to replicate or replace.",
+        "zh": "400亿美元不只是押注一个模型——这是垂直整合的基础设施保险。谷歌需要Anthropic作为TPU展示客户；Anthropic需要谷歌云规模。但紧张关系在于：Epoch AI数据显示谷歌已控制全球约25%的AI算力（380万TPU + 130万GPU）。再加400亿美元会让这个数字进一步倾斜。这笔交易在欧盟和英国将面临监管审查，因为它巩固了一种依赖关系，使Anthropic更难被复制或取代。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Opus 4.7 Underperforms; Anthropic's Claude Code Faces User Backlash",
+        "zh": "Claude Opus 4.7表现不及预期；Anthropic的Claude Code面临用户强烈不满"
+      },
+      "url": "https://fortune.com/2026/04/24/anthropic-engineering-missteps-claude-code-performance-decline-user-backlash/",
+      "source": "Fortune",
+      "time": "2026-04-24",
+      "description": {
+        "en": "Anthropic acknowledged engineering missteps causing Claude Code's recent performance decline, months after user complaints. The backlash risks pushing power users toward OpenAI's Codex models.",
+        "zh": "Anthropic承认工程失误导致Claude Code近期性能下降，此前用户投诉已持续数月。强烈不满可能将核心用户推向OpenAI的Codex模型。"
+      },
+      "insight": {
+        "en": "This is a window into a pattern that's becoming visible across frontier AI: shipped capability regression. Claude Code users reported degradation while Anthropic stayed silent for months — not a good look when your product is supposed to be the autonomous coding agent benchmark. OpenAI's Thursday GPT-5.5 launch (with Codex roots) landed the same day this story broke. Coincidental timing, but the market signal is clear: power users have options, and brand loyalty erodes fast when the coding agent doesn't code reliably. This is a real retention risk for Anthropic, not just a PR problem.",
+        "zh": "这揭示了前沿AI领域日益明显的一种模式：已发布功能的性能退化。Claude Code用户反映退化，而Anthropic沉默数月——当你的产品本应是自主编码智能体基准时，这不是好表现。OpenAI周四GPT-5.5发布（带着Codex根源）与此消息曝光同天。巧合的时机，但市场信号很明确：核心用户有选择，当编码智能体不能可靠编码时，品牌忠诚度会迅速瓦解。这是Anthropic真实的留存风险，不只是公关问题。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Mythos 5 Forces Global Cybersecurity Rethink as AI Model Goes Military-Grade",
+        "zh": "Claude Mythos 5推动全球网络安全反思，AI模型进入军事级别"
+      },
+      "url": "https://www.businesstoday.in/technology/story/bt-explainer-inside-claude-mythos-the-ai-is-forcing-a-rethink-of-global-cybersecurity-527461-2026-04-26",
+      "source": "Business Today",
+      "time": "2026-04-26",
+      "description": {
+        "en": "Anthropic's Claude Mythos 5 (10-trillion-parameter model) is forcing a fundamental rethink of cybersecurity globally. OpenAI counter-launched GPT-5.4 Cyber the same day, positioning both models in direct competition for AI-powered cybersecurity market leadership.",
+        "zh": "Anthropic的Claude Mythos 5（10万亿参数模型）正在推动全球网络安全的基本反思。OpenAI同天反手发布GPT-5.4 Cyber，将两款模型置于AI网络安全市场领导力的直接竞争。"
+      },
+      "insight": {
+        "en": "The cybersecurity framing is the new arms race narrative, and it's no longer hypothetical. Both Anthropic and OpenAI have now released models explicitly positioned for cyber defense/offense capabilities. The VP at CyberMedia Research is quoted saying capabilities 'demand an urgent rethink' — this is the kind of language that precedes government procurement and regulatory mandates. The same day as this story, xAI's grok-voice-think-fast-1.0 also launched with a 67.3% score on τ-voice Bench. The pattern: every major model release this week targets a vertical capability (cyber, voice, coding) rather than general performance. Specialization is the new frontier.",
+        "zh": "网络安全框架是新的军备竞赛叙事，而且不再是假设的。Anthropic和OpenAI都已发布明确为网络防御/进攻能力定位的模型。CyberMedia Research副总裁被引述称能力'迫切需要反思'——这是政府采购和监管强制要求前的典型语言。同天，xAI的grok-voice-think-fast-1.0也在τ-voice Bench上以67.3%得分发布。模式：本周每个主要模型发布都针对垂直能力（网络、语音、编码）而非通用性能。专业化是新的前沿。"
+      }
+    },
+    {
+      "title": {
+        "en": "xAI Launches grok-voice-think-fast-1.0, Topping Voice Bench at 67.3%",
+        "zh": "xAI发布grok-voice-think-fast-1.0，Voice Bench得分67.3%领先"
+      },
+      "url": "https://www.planet-ai.com/news/xai-launches-grok-voice-think-fast-1.0-topping-voice-bench-at-67.3",
+      "source": "Planet AI",
+      "time": "2026-04-25",
+      "description": {
+        "en": "xAI's new flagship voice model outperforms Gemini, GPT Realtime, and its own predecessor across retail, airline, and telecom workflows, scoring 67.3% on τ-voice Bench.",
+        "zh": "xAI的新旗舰语音模型在零售、航空和电信工作流上超越Gemini、GPT Realtime及其前代，τ-voice Bench得分67.3%。"
+      },
+      "insight": {
+        "en": "Voice models are becoming a distinct battleground separate from text. xAI is claiming specific workflow superiority (retail, airline, telecom) rather than general voice dominance — a pattern echo of the specialization trend. Meanwhile SpaceX's potential IPO is framing xAI as 'AI-first', and grok-voice is likely part of that pitch to investors. The 67.3% on τ-voice Bench is meaningful primarily as a signal that the voice agent market is heating up post-GPT-5.5 week.",
+        "zh": "语音模型正在成为区别于文本的独立战场。xAI声称在特定工作流（零售、航空、电信）上的优势，而非通用语音主导——这是专业化趋势的回声。同时SpaceX潜在IPO将xAI定位为'AI优先'，grok-voice可能是向投资者推销的一部分。τ-voice Bench上67.3%的得分，主要作为信号：语音智能体市场在GPT-5.5发布周后正在升温。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta and Microsoft Cut Thousands of Jobs to Fund AI Investment Surge",
+        "zh": "Meta和微软裁员数千人以资助AI投资激增"
+      },
+      "url": "https://en.sedaily.com/international/2026/04/25/meta-microsoft-slash-thousands-of-jobs-amid-ai-investment",
+      "source": "Seoul Economic Daily / Medium",
+      "time": "2026-04-25",
+      "description": {
+        "en": "Meta plans ~8,000 role reductions as part of broader efficiency drive, with cost savings redirected into AI compute and data centers. Microsoft similarly cutting while increasing AI infrastructure investment.",
+        "zh": "Meta计划削减约8000个岗位作为更广泛效率提升的一部分，节省的成本转向AI算力和数据中心。微软同样在削减同时增加AI基础设施投资。"
+      },
+      "insight": {
+        "en": "This is the structural shift made visible: AI investment is now directly cannibalizing traditional tech workforces. The World Economic Forum reported US entry-level job postings down 35% in 18 months — that's not noise, that's a trend. Meta's ~8,000 cuts aren't crisis cuts; they're pre-emptive capital reallocation. The same economic logic applies to Microsoft, Google, and others with large workforces. The implication for talent markets is severe: the AI industry is creating high-skill roles while simultaneously making the entry-level path into tech harder. This is the unspoken contradiction of the AI boom.",
+        "zh": "这是结构性转变变得可见：AI投资现在直接蚕食传统科技公司的劳动力。WEF报告美国入门级职位帖子18个月内下降35%——这不是噪音，这是趋势。Meta约8000人的削减不是危机裁员；这是先发制人的资本重新配置。同样的经济逻辑适用于微软、谷歌和其他大型劳动力企业。人才市场的影响是严峻的：AI行业正在创造高技能岗位，同时使进入科技行业的入门级路径更加困难。这是AI热潮中不言而喻的矛盾。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Creates Agent-on-Agent Marketplace Where AI Agents Strike Real Deals",
+        "zh": "Anthropic创建智能体间市场，AI智能体达成真实交易"
+      },
+      "url": "https://llm-stats.com/ai-news",
+      "source": "LLM Stats / Anthropic",
+      "time": "2026-04-25",
+      "description": {
+        "en": "Anthropic ran an experiment where Claude models represented both buyers and sellers in a classified marketplace, striking real deals for real goods and real money — agent-on-agent commerce at scale.",
+        "zh": "Anthropic进行了一个实验，Claude模型在分类市场中同时代表买方和卖方，为真实商品和真实金钱达成交易——规模化智能体间商务。"
+      },
+      "insight": {
+        "en": "This is not a toy experiment — it's a proof-of-concept for AI-to-AI economic activity. If agents can negotiate and transact autonomously, the implications for e-commerce, procurement, and financial markets are profound. Anthropic calls it 'Project Deal' and frames it as research into multi-agent systems, but the endgame is clear: autonomous commercial agents that can buy, sell, and broker on behalf of humans. The timing, right after GPT-5.5 and Claude Opus 4.7 launches, suggests frontier labs are racing to demonstrate practical agentic utility, not just benchmark superiority.",
+        "zh": "这不是玩具实验——这是AI对AI经济活动的概念证明。如果智能体能自主谈判和交易，对电子商务、采购和金融市场的影响是深远的。Anthropic称之为'Project Deal'，定位为多智能体系统研究，但终局很明确：能代表人类买卖和经纪的自主商业智能体。时机恰好在GPT-5.5和Claude Opus 4.7发布之后，表明前沿实验室正在竞相展示实际智能体效用，而不只是基准优势。"
+      }
+    }
+  ]
+}
