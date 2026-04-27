@@ -1,0 +1,143 @@
+{
+  "date": "2026-04-27",
+  "github_repos": [
+    {
+      "name": "aaif-goose/goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "description": {
+        "en": "An open source, extensible AI agent that goes beyond code suggestions — install, execute, edit, and test with any LLM.",
+        "zh": "开源可扩展的 AI 智能体，超出代码建议范畴——可安装、执行、编辑和测试任意 LLM。"
+      },
+      "stars": "new",
+      "forks": "new"
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": {
+        "en": "A complete AI agency at your fingertips — from frontend wizards to Reddit community ninjas, each agent is a specialized expert with personality, processes, and proven deliverables.",
+        "zh": "指尖上的完整 AI 代理团队——从前端高手到 Reddit 社区忍者，每个智能体都是具有个性、流程和可验证成果的专业专家。"
+      },
+      "stars": "new",
+      "forks": "new"
+    },
+    {
+      "name": "langchain-ai/deepagents",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "description": {
+        "en": "Agent harness built with LangChain and LangGraph, equipped with a planning tool, filesystem backend, and subagent spawning capabilities for complex agentic tasks.",
+        "zh": "基于 LangChain 和 LangGraph 构建的智能体框架，配备规划工具、文件系统后端和子智能体派生能力，处理复杂代理任务。"
+      },
+      "stars": "new",
+      "forks": "new"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "GPT-5.5 Lands April 23 With Terminal-Bench 82.7%, FrontierMath 51.7% — OpenAI's Fastest Release Cadence Yet",
+        "zh": "GPT-5.5 于4月23日发布，Terminal-Bench 82.7%、FrontierMath 51.7%——OpenAI 史上最快发布节奏"
+      },
+      "url": "https://en.wikipedia.org/wiki/GPT-5.5",
+      "source": "Wikipedia / LLM Stats",
+      "time": "April 23, 2026",
+      "description": {
+        "en": "OpenAI's GPT-5.5 (codename 'Spud') ships just 49 days after GPT-5.4, scoring 82.7% on Terminal-Bench 2.0 and 51.7% on FrontierMath (tier 1-3). Matches per-token latency of 5.4 while achieving higher capability levels. Prompts exceeding 272K input tokens incur 2x input and 1.5x output pricing.",
+        "zh": "OpenAI 的 GPT-5.5（代号 'Spud'）在 GPT-5.4 发布仅49天后登场，Terminal-Bench 2.0 得分82.7%，FrontierMath（1-3层）51.7%。在保持与5.4相同每token延迟的同时达到更高能力水平。超过272K输入token的提示按2倍输入和1.5倍输出计费。"
+      },
+      "insight": {
+        "en": "The 49-day gap between GPT-5.4 and 5.5 is OpenAI's shortest cycle ever — this isn't about benchmarking anymore, it's about enterprise procurement lock-in. As Vellum noted, OpenAI is not shipping models this fast to win benchmarks; they're doing it to close deals before procurement cycles end. The 2x input pricing for >272K token sessions is a hidden cost most coverage missed — longer context conversations now cost significantly more per session, which will hit R&D and legal teams hardest.",
+        "zh": "GPT-5.4 到 5.5 之间49天的间隔是 OpenAI 有史以来最短的周期——这不是为了刷榜，而是企业采购锁定。正如 Vellum 所言，OpenAI 不是为了赢基准测试才这么快发布模型；而是为了在采购周期关闭前成交。超过272K token 会话的2倍输入定价是大多数报道忽略的隐藏成本——更长上下文的对话现在每次费用显著更高，这将最大程度影响研发和法律团队。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Commits $40 Billion to Anthropic — Biggest Single Tech Investment in AI History",
+        "zh": "Google 承诺向 Anthropic 投资400亿美元——AI 史上最大单笔科技投资"
+      },
+      "url": "https://www.nytimes.com/2026/04/24/technology/google-anthropic-investment-artificial-intelligence.html",
+      "source": "The New York Times",
+      "time": "April 24, 2026",
+      "description": {
+        "en": "Google has committed up to $40 billion to Anthropic, the AI startup behind Claude, as Anthropic accelerates its business behind the explosive growth of Claude Code. The deal addresses Anthropic's significant compute shortage and diversifies Google's LLM strategy against OpenAI.",
+        "zh": "Google 承诺向 Anthropic 投资高达400亿美元，这家 AI 初创公司开发了 Claude，背后是 Claude Code 爆发式增长所推动的业务加速。这笔交易解决了 Anthropic 严重的算力短缺问题，并使 Google 的 LLM 战略相对于 OpenAI 更加多元化。"
+      },
+      "insight": {
+        "en": "The $40B commitment is roughly 4x what Microsoft invested in OpenAI over multiple years, and it comes at a moment when Anthropic's compute has been constrained enough to impact Claude service reliability. This is Google's hedge: keep Anthropic well-financed and cloud-dependent, while Claude Code's growth keeps Anthropic's destiny tied to Google's infrastructure. Meanwhile, the deal signals Google's anxiety about OpenAI's enterprise momentum — they are paying to stay relevant in a world where Sam Altman's company is winning the Fortune 500 procurement race.",
+        "zh": "400亿美元的承诺大约是微软多年间对 OpenAI 投资的4倍，而且正值 Anthropic 的算力严重受限、已影响 Claude 服务可靠性之时。这是 Google 的对冲：确保 Anthropic 资金充裕、依赖云端，同时 Claude Code 的增长使 Anthropic 的命运与 Google 基础设施绑定。同时，这笔交易表明 Google 对 OpenAI 在企业市场的攻势感到焦虑——他们正在花钱购买在 Sam Altman 公司赢得财富500强采购竞赛的世界中的相关地位。"
+      }
+    },
+    {
+      "title": {
+        "en": "GitHub Hit 275 Million Commits Per Week; 2026 Projected to Reach 14 Billion — Platform Shows Strain",
+        "zh": "GitHub 周处理2.75亿次提交；预计2026年全年达140亿次——平台显现压力"
+      },
+      "url": "https://quasa.io/media/github-s-ai-agent-tsunami-275-million-commits-a-week-14-billion-projected-for-2026-and-the-platform-is-starting-to-crack",
+      "source": "Quasa / The Information",
+      "time": "April 20, 2026",
+      "description": {
+        "en": "GitHub is now processing 275 million commits per week, on pace for ~14 billion in 2026 — a 14x explosion from 2025's 1 billion milestone. AI agents opened 17 million PRs in March 2026, up from 4 million in September 2025. GitHub Actions compute minutes hit 2.1 billion in a single week, causing visible outages.",
+        "zh": "GitHub 现在每周处理2.75亿次提交，预计2026年全年约140亿次——比2025年10亿次里程碑爆炸式增长14倍。AI 智能体在2026年3月打开了1700万次 PR，而2025年9月仅400万次。GitHub Actions 计算分钟数单周达到21亿次，导致可见的服务中断。"
+      },
+      "insight": {
+        "en": "The real story here isn't the numbers — it's the economics. GitHub's free tier and generous API limits were designed for human developers and occasional CI bots, not fleets of autonomous agents that can generate more code per hour than an entire engineering team. The platform is now caught between its open-source heritage (which discourages paywalls) and the reality that agent traffic is destroying economics built for human-scale usage. Expect agent-specific rate limits and paid AI Agent tiers within 6-12 months — this is not a technical problem, it's a business model problem that GitHub has been deferring.",
+        "zh": "这里真正的问题不是数字——而是经济逻辑。GitHub 的免费套餐和慷慨的 API 限制是为人类开发者和偶尔使用的 CI 机器人设计的，而不是为能在 一小时内生成比整个工程团队更多代码的自主智能体舰队设计的。该平台现在夹在其开源传统（不鼓励付费墙）与智能体流量正在摧毁为人类规模使用构建的经济现实之间。预计在6-12个月内推出智能体专用速率限制和付费 AI 智能体套餐——这不是技术问题，而是 GitHub 一直在推迟的商业模式问题。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Mandates 65% of Engineers Use AI for 75% of Code by Mid-2026, Ties Performance Reviews to 'AI-Driven Impact'",
+        "zh": "Meta 要求到2026年中，65%的工程师将75%的代码交由 AI 完成，并将绩效评估与'AI驱动的影响'挂钩"
+      },
+      "url": "https://www.forbes.com/sites/boazsobrado/2026/04/24/up-to-15800-polymarket-warning-meta-ai-layoffs-target-135b-capex/",
+      "source": "Forbes / The New York Times",
+      "time": "April 23-24, 2026",
+      "description": {
+        "en": "Internal Meta memos reveal a mandate requiring 65% of engineers to use AI for 75% of code by mid-2026, with performance reviews tied to 'AI-driven impact.' The company also plans layoffs affecting up to 15,800 workers as it pivots to AI-first engineering. Block already cut 40% of its workforce in February citing AI adoption.",
+        "zh": "内部 Meta 备忘录显示，到2026年中，65%的工程师必须将75%的代码交由 AI 完成，绩效评估与'AI驱动的影响'挂钩。该公司还计划裁员影响多达15,800名员工，转向 AI 优先的工程文化。Block 在2月份已以采用 AI 为由裁员40%。"
+      },
+      "insight": {
+        "en": "Meta's 65/75 mandate is the most aggressive corporate AI adoption target yet published, and the fact it's coming from a company that employs tens of thousands of engineers makes it a bellwether. The laying off of up to 15,800 workers while mandating AI code adoption reveals the real dynamics: AI isn't augmenting existing jobs, it's making roles redundant faster than companies can reskill. The comparison to Block cutting 40% of its workforce shows this isn't isolated — it's systemic. Every company watching Meta's experiment will be running the same math.",
+        "zh": "Meta 的65/75 要求是目前已公布的最激进的企业 AI 采用目标，而这一目标来自雇用数万名工程师的公司，使其成为风向标。在要求 AI 代码采用的同时裁员多达15,800人，揭示了真正的动态：AI 不是增强现有工作，而是在公司能够重新技能化之前使角色变得多余。与 Block 裁员40%的比较表明这不是孤立的——而是系统性的。每个关注 Meta 实验的公司都会运行相同的计算。"
+      }
+    },
+    {
+      "title": {
+        "en": "Musk vs. Altman: Court Proceedings Begin Today on OpenAI's For-Profit Restructuring",
+        "zh": "马斯克 vs. Altman：OpenAI 营利性重组法庭程序今日开始"
+      },
+      "url": "https://aijourn.com/meta-experiments-with-ai-internally-musk-and-altman-head-to-court-and-startups-continue-to-innovate-in-april/",
+      "source": "The AI Journal",
+      "time": "April 27, 2026",
+      "description": {
+        "en": "Court proceedings begin today in the high-profile case that could force OpenAI to revert to a non-profit entity. Legal experts say the trial could have a monumental impact on the future of OpenAI, with the outcome potentially reshaping the entire AI industry structure.",
+        "zh": "今日开始的高调法庭案件审理可能迫使 OpenAI 回归非营利实体。法律专家表示，这场审判可能对 OpenAI 的未来产生重大影响，结果可能重塑整个 AI 行业结构。"
+      },
+      "insight": {
+        "en": "The stakes are difficult to overstate: if the court rules that OpenAI must revert to non-profit status, it invalidates every Microsoft investment instrument and every enterprise contract negotiated on the assumption of a commercial entity. The timing — coming just 4 days after GPT-5.5 — means OpenAI's legal team is fighting a two-front war: shipping models fast enough to stay ahead of competitors while defending the fundamental structure of the company. The outcome will either validate or invalidate the entire \"capped profit\" restructuring that the AI industry has treated as a model for responsible development.",
+        "zh": "赌注难以高估：如果法院裁决 OpenAI 必须回归非营利状态，它将使每项微软投资工具和每份基于商业实体假设谈判的企业合同失效。时间——就在 GPT-5.5 发布仅4天后——意味着 OpenAI 法务团队正在进行两线作战：一边快速发布模型以保持领先于竞争对手，一边为公司基本结构进行辩护。结果将验证或否定整个'封顶利润'重组——AI 行业一直将其视为负责任发展的模式。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Ships Claude Opus 4.7 and Claude Design — A Week of Product Velocity",
+        "zh": "Anthropic 发布 Claude Opus 4.7 和 Claude Design——一周内连续推出两款产品"
+      },
+      "url": "https://www.anthropic.com/news",
+      "source": "Anthropic",
+      "time": "April 16-17, 2026",
+      "description": {
+        "en": "Anthropic launched Claude Opus 4.7 with stronger coding, agents, vision, and multi-step task performance, followed one day later by Claude Design — a product from Anthropic Labs that lets users collaborate with Claude to create polished visual work like designs, prototypes, slides, and one-pagers.",
+        "zh": "Anthropic 推出 Claude Opus 4.7，在编码、智能体、视觉和多步骤任务方面表现更强，次日推出 Claude Design——Anthropic Labs 的产品，让用户与 Claude 协作创建设计、原型、幻灯片和一页纸等精致视觉作品。"
+      },
+      "insight": {
+        "en": "The one-day gap between Opus 4.7 and Claude Design shows Anthropic is not just competing on benchmark performance — it's building a product ecosystem. Claude Design is Anthropic's first direct consumer-facing creative tool, and it's notable that it's launched as a separate Labs product rather than a Claude feature, suggesting Anthropic is experimenting with monetization beyond API pricing. With Google now committed to $40B in Anthropic, these product launches take on added significance — Anthropic needs to show it's not just a compute customer for Google but a growing independent business.",
+        "zh": "Opus 4.7 和 Claude Design 之间仅一天的间隔表明 Anthropic 不仅仅是在基准性能上竞争——而是在构建产品生态系统。Claude Design 是 Anthropic 首款直接面向消费者的创意工具，值得注意的是它作为独立的 Labs 产品推出，而非 Claude 功能，表明 Anthropic 正在尝试 API 定价之外的多元化货币化。随着 Google 现在承诺向 Anthropic 投资400亿美元，这些产品发布具有额外重要意义——Anthropic 需要证明自己不只是 Google 的算力客户，而是一个不断增长的独立业务。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The connective tissue across this week's AI news is the acceleration of agent economics and its ripple effects. GPT-5.5's 49-day release cycle is not about benchmarks — it's about locking in enterprise procurement before companies finish evaluating alternatives. Google's $40B Anthropic bet is not just about compute access — it's about keeping a potential future challenger financially dependent on Google's cloud. And Meta's 65/75 mandate is the clearest corporate signal yet that AI is not augmenting headcount — it's replacing it, faster than reskilling can occur.\n\nThe GitHub commit explosion reveals the infrastructure layer is straining under agent-scale usage, but the real story is the coming paywall: free-tier economics built for human developers cannot survive fleets of autonomous agents. Meanwhile, today's Musk vs. Altman court case is the biggest structural test the AI industry has faced — if OpenAI must revert to non-profit, every commercial AI company has to re-examine its foundational assumptions.\n\nThe pattern across all these events: the gap between AI capability growth and the institutional frameworks (legal, economic, governance) meant to contain it is widening faster than any previous technology transition. The companies moving fastest are not waiting for frameworks to catch up — they're building facts on the ground and hoping the legal and regulatory systems will accommodate rather than reverse what they've built.",
+    "zh": "本周 AI 新闻的 connective tissue（连接组织）是智能体经济的加速及其连锁反应。GPT-5.5 的49天发布周期不是为了刷榜——而是在各公司完成替代方案评估之前锁定企业采购。Google 向 Anthropic 投入400亿美元不仅仅是为了算力——而是为了让一个潜在的未来挑战者在财务上依赖 Google 的云。而 Meta 的65/75 要求是目前最清晰的企业信号，表明 AI 不是在增加员工数量——而是在更快地取代它，超出再技能化发生的速度。\n\nGitHub 提交爆炸揭示了基础设施层在智能体规模使用下正在承压，但真正的问题是即将到来的付费墙：为人类开发者建立的免费层级经济学无法在自主智能体舰队下生存。与此同时，今天的马斯克 vs. Altman 法庭案件是 AI 行业面临的最大结构性测试——如果 OpenAI 必须回归非营利，所有商业 AI 公司都必须重新审视其基本假设。\n\n所有这些事件的共同模式：AI 能力增长与旨在限制它的制度框架（法律、经济、治理）之间的差距比任何先前技术转型更快地扩大。最快行动的公司没有等待框架赶上——它们正在地面上构建事实，并希望法律和监管系统会 accommodate（配合）而不是逆转它们所构建的东西。"
+  }
+}
