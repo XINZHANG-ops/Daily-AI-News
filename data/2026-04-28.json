@@ -1,0 +1,160 @@
+{
+  "date": "2026-04-28",
+  "github_repos": [
+    {
+      "name": "hpennington/agentswift",
+      "url": "https://github.com/hpennington/agentswift",
+      "description": {
+        "en": "Open-source iOS builder agent built on openspec and xcodebuildmcp. Boots app on simulator, runs UI automation to verify behavior.",
+        "zh": "基于 openspec 和 xcodebuildmcp 构建的开源 iOS 开发助手。在模拟器上启动应用并运行 UI 自动化验证行为。"
+      },
+      "stars": "39",
+      "forks": "4"
+    },
+    {
+      "name": "gmarland/Agent-Context",
+      "url": "https://github.com/gmarland/Agent-Context",
+      "description": {
+        "en": "VS Code extension that lets AI coding tools see reference projects by attaching external folders via symlinks, solving the context problem for agents working on new features.",
+        "zh": "VS Code 扩展，通过符号链接将外部文件夹附加到工作区，让 AI 编程工具能看到参考项目，解决新功能开发时 agent 无法访问上下文的问题。"
+      },
+      "stars": "2",
+      "forks": "0"
+    },
+    {
+      "name": "future-agi/future-agi",
+      "url": "https://github.com/future-agi/future-agi",
+      "description": {
+        "en": "Open-source end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Includes tracing, evals, simulations, datasets, gateway, and guardrails. Apache 2.0.",
+        "zh": "开源端到端平台，用于评估、观察和改进 LLM 及 AI Agent 应用。包含追踪、评估、模拟、数据集、网关和护栏。Apache 2.0 协议。"
+      },
+      "stars": "482",
+      "forks": "31"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Falls Short of Revenue and User Targets as It Races Toward IPO",
+        "zh": "OpenAI 冲刺 IPO 之际未能达成收入与用户目标"
+      },
+      "url": "https://www.reuters.com/business/openai-falls-short-revenue-user-targets-it-races-toward-ipo-wsj-reports-2026-04-28/",
+      "source": "Reuters",
+      "time": "7 hours ago",
+      "description": {
+        "en": "OpenAI missed multiple monthly revenue targets earlier this year after losing ground to Anthropic in coding and enterprise markets, the WSJ reported.",
+        "zh": "据《华尔街日报》报道，OpenAI 今年早些时候未能达成多项月度收入目标，此前在编程和企业市场输给 Anthropic。"
+      },
+      "insight": {
+        "en": "The reversal is notable: OpenAI spent 2024-2025 cementing its lead, but Anthropic's Claude series has closed the coding gap sharply—if WSJ's sourcing holds, OpenAI's Q1 revenue miss is the first concrete sign that Claude is winning deterministic developer workflows. This comes as OpenAI races toward an IPO, making market share loss at this juncture particularly costly. Meanwhile, Google (which has invested $40B in Anthropic) and Amazon ($25B max commitment) are stacking bets on the competitor.",
+        "zh": "这一逆转值得注意：OpenAI 在 2024-2025 年巩固了领先地位，但 Anthropic 的 Claude 系列已经大幅缩小了编程能力的差距——如果《华尔街日报》的信源属实，OpenAI Q1 的收入缺口是 Claude 正在赢得确定性开发者工作流程的第一个具体迹象。此时正值 OpenAI 冲刺 IPO，市场份额的流失格外代价高昂。同时，Google（已向 Anthropic 投资 400 亿）和 Amazon（最高承诺 250 亿）正在加大对竞争对手的赌注。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek V4 Preview: Almost on the Frontier, a Fraction of the Price",
+        "zh": "DeepSeek V4 预览：逼近前沿水平，价格却只是零头"
+      },
+      "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4/",
+      "source": "Simon Willison",
+      "time": "4 days ago",
+      "description": {
+        "en": "DeepSeek released V4-Pro (1.6T params, 49B active MoE) and V4-Flash (284B/13B), both with 1M token context at MIT license. Pro is 865GB on Hugging Face.",
+        "zh": "DeepSeek 发布 V4-Pro（1.6T 参数，49B 活跃 MoE）和 V4-Flash（284B/13B），均支持 100 万 token 上下文，MIT 许可证。Pro 在 Hugging Face 上为 865GB。"
+      },
+      "insight": {
+        "en": "DeepSeek V4-Pro is now the largest open-weights model at 1.6T total parameters—larger than Kimi K2.6 (1.1T), GLM-5.1 (754B), and more than 2x the size of V3.2 (685B). Simon Willison notes it's expected to run on a 128GB M5 MacBook Pro. The real story is the price: DeepSeek continues to operate at a fraction of OpenAI/Anthropic's cost structure. This is the same DeepSeek whose January 2025 release spooked markets and triggered NVDA's worst week in months. V4 maintains that disruptive pricing while moving up the capability curve.",
+        "zh": "DeepSeek V4-Pro 现为最大的开源模型，总参数 1.6T——超过 Kimi K2.6（1.1T）、GLM-5.1（754B），是 V3.2（685B）的两倍多。Simon Willison 指出它有望在 128GB M5 MacBook Pro 上运行。真正的主题是价格：DeepSeek 继续以 OpenAI/Anthropic 成本结构的一小部分运营。这就是今年 1 月发布令市场恐慌、导致英伟达创下单周最差表现的 DeepSeek。V4 在登上能力曲线的同时保持了颠覆性定价。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Commits Up to $40 Billion in Anthropic as Big Tech's AI Bet Escalates",
+        "zh": "Google 承诺向 Anthropic 投资最多 400 亿美元 科技巨头 AI 赌注升级"
+      },
+      "url": "https://www.nytimes.com/2026/04/24/technology/google-anthropic-investment-artificial-intelligence.html",
+      "source": "New York Times",
+      "time": "4 days ago",
+      "description": {
+        "en": "Google plans to invest up to $40 billion in Anthropic, deepening a relationship that already includes a prior multi-billion dollar commitment. Anthropic's annual revenue run rate has surpassed $30 billion, up from $9B at end of 2025.",
+        "zh": "Google 计划向 Anthropic 投资最多 400 亿美元，深化此前已有数十亿美元承诺的合作关系。Anthropic 年化收入已突破 300 亿美元，而 2025 年底为 90 亿。"
+      },
+      "insight": {
+        "en": "The $30B ARR figure is the headline, but the more telling number is the trajectory: $9B → $30B in roughly 16 months. That's not just Anthropic growing—it's Claude eating OpenAI's lunch in enterprise procurement. Google now has $40B on the table (adding to its existing stake), Amazon has up to $25B committed, and Microsoft has had a multi-year head start with its $10B+ OpenAI bet. The Big Tech AI proxy war is fully funded. Meanwhile, the irony that Google is the world's largest AI infrastructure buyer while simultaneously funding its primary competitor hasn't been lost on the market.",
+        "zh": "300 亿 ARR 数字是头条，但更能说明问题的是轨迹：90 亿 → 300 亿在约 16 个月内实现。这不仅仅是 Anthropic 在增长——而是 Claude 正在企业采购中蚕食 OpenAI 的份额。Google 现在桌上摆着 400 亿（追加现有股份），Amazon 承诺最多 250 亿，而 Microsoft 通过多年先机已有 100 亿 + 的 OpenAI 赌注。科技巨头 AI 代理战已全面注资。与此同时，Google 作为全球最大 AI 基础设施买家同时又资助其主要竞争对手，这种讽刺性尚未被市场忽视。"
+      }
+    },
+    {
+      "title": {
+        "en": "GPT-5.5 Lands With 64.3% on SWE-bench Pro, Edging Claude Opus 4.7",
+        "zh": "GPT-5.5 以 SWE-bench Pro 64.3% 落地 略胜 Claude Opus 4.7"
+      },
+      "url": "https://mindwiredai.com/2026/04/24/gpt-5-5-is-here-benchmarks-pricing-and-who-should-actually-upgrade-april-2026/",
+      "source": "MindStudio",
+      "time": "4 days ago",
+      "description": {
+        "en": "GPT-5.5 scores 82.7% on Terminal-Bench, 64.3% on SWE-bench Pro (vs Claude Opus 4.7's 58.6%), uses 40% fewer tokens than GPT-5.4, and costs $5/$30/M tokens.",
+        "zh": "GPT-5.5 在 Terminal-Bench 上得分 82.7%，在 SWE-bench Pro 上得分 64.3%（对比 Claude Opus 4.7 的 58.6%），比 GPT-5.4 少消耗 40% 的 token，定价 5/30 美元/百万 token。"
+      },
+      "insight": {
+        "en": "The benchmark picture is nuanced: GPT-5.5 leads on Terminal-Bench and tool orchestration (MCP-Atlas), while Claude Opus 4.7 may still hold an edge on raw reasoning depth. Senior engineers OpenAI quoted said GPT-5.5 was 'noticeably stronger' at predicting testing and review needs autonomously—meaning fewer hit-and-miss agent loops. But Claude Opus 4.7 ships at $5/$25/M vs GPT-5.5's $5/$30/M, so output cost favors Anthropic. With OpenAI missing Q1 revenue targets, GPT-5.5's commercial performance matters more than the benchmark delta.",
+        "zh": "基准测试的画面很微妙：GPT-5.5 在 Terminal-Bench 和工具编排（MCP-Atlas）上领先，而 Claude Opus 4.7 在原始推理深度上可能仍有优势。OpenAI 引用的资深工程师表示 GPT-5.5 在自主预测测试和审查需求方面'明显更强'——意味着更少的试错 agent 循环。但 Claude Opus 4.7 的定价是 5/25 美元/百万 token，而 GPT-5.5 是 5/30 美元/百万 token，所以输出成本对 Anthropic 有利。考虑到 OpenAI 未达 Q1 收入目标，GPT-5.5 的商业表现比基准差距更重要。"
+      }
+    },
+    {
+      "title": {
+        "en": "Ex-DeepMind David Silver Raises Record $1.1 Billion Seed for AI Startup Ineffable",
+        "zh": "前 DeepMind David Silver 为 AI 创业公司 Ineffable 募集创纪录 11 亿美元种子轮"
+      },
+      "url": "https://www.cnbc.com/2026/04/27/deepmind-ineffable-intelligence-record-seed-funding-nvidia-google.html",
+      "source": "CNBC",
+      "time": "1 day ago",
+      "description": {
+        "en": "Former DeepMind researcher David Silver raised $1.1 billion in seed funding for Ineffable Intelligence, co-led by Sequoia and Lightspeed with participation from Nvidia, Google, DST Global, and Index.",
+        "zh": "前 DeepMind 研究员 David Silver 为 Ineffable Intelligence 募集了 11 亿美元种子轮，红杉和光速联合领投，Nvidia、Google、DST Global 和 Index 参与。"
+      },
+      "insight": {
+        "en": "This is the largest seed round in AI history, full stop. David Silver is the co-author of the AlphaGo paper—the same DeepMind RL lineage that produced AlphaFold. Sequoia + Lightspeed + Nvidia + Google all in the same round signals that superintelligence bets are no longer fringe. The 'why now' question is unanswered: Ineffable hasn't disclosed what they're building. But the caliber of investors—and their willingness to write $1.1B without a product—suggests extreme confidence in Silver's group. Compare this to OpenAI's $7B raised in 2025. The bar for what's considered credible AGI-adjacent has shifted dramatically.",
+        "zh": "这是 AI 历史上最大的一轮种子轮，不容置疑。David Silver 是 AlphaGo 论文的合著者——也就是产生 AlphaFold 的同一 DeepMind 强化学习血统。红杉 + 光速 + Nvidia + Google 同时参与这一轮，意味着超级智能赌注不再是边缘话题。'为什么是现在'的问题尚未回答：Ineffable 尚未披露他们在做什么。但投资者的资历——以及在产品尚未成型时就愿意写 11 亿美元支票——表明对 Silver 团队的极端信心。相比 OpenAI 2025 年募集的 70 亿美元，什么是可信的 AGI 相关投资的门槛已经大幅提高。"
+      }
+    },
+    {
+      "title": {
+        "en": "Amazon to Invest Up to $25 Billion in Anthropic in Latest Big Tech AI Tie-Up",
+        "zh": "Amazon 同意向 Anthropic 投资最多 250 亿美元 科技巨头 AI 联盟再加码"
+      },
+      "url": "https://www.reuters.com/technology/anthropic-spend-over-100-billion-amazons-cloud-technology-2026-04-20/",
+      "source": "Reuters",
+      "time": "1 week ago",
+      "description": {
+        "en": "Amazon plans to invest $5 billion initially, with potential to add $20 billion more if Anthropic hits milestones, as part of a deal committing Anthropic to spend over $100 billion on AWS.",
+        "zh": "Amazon 初步投资 50 亿美元，如果 Anthropic 达成里程碑可再追加 200 亿，作为 Anthropic 承诺在 AWS 上支出超过 1000 亿美元协议的一部分。"
+      },
+      "insight": {
+        "en": "The $100B+ AWS commitment is the reveal: Anthropic isn't just getting AWS credits, it's structurally locked into Amazon's cloud for the foreseeable future. That's a meaningful differentiator from Microsoft's OpenAI partnership—Amazon is essentially buying a customer, not just exposure to AI upside. Combined with Google (up to $40B), Big Tech has now committed up to $65B to Anthropic alone in this funding cycle. The message to the market: the compute moat around foundation models is real, and cloud providers will pay dearly to remain relevant as AI becomes the dominant compute workload.",
+        "zh": "1000 亿 + 的 AWS 承诺是重磅炸弹：Anthropic 不仅仅是在获得 AWS 积分，而是在可预见的未来结构性锁定在 Amazon 的云上。这与微软的 OpenAI 合作是有意义的差异化——Amazon 本质上是在购买一个客户，而不仅仅是 AI 上行的敞口。加上 Google（最多 400 亿），科技巨头在这个融资周期中已向 Anthropic 单独承诺了最多 650 亿美元。对市场的信息：围绕基础模型的计算护城河是真实的，云提供商将不惜代价保持相关性，因为 AI 正在成为主导的计算工作负载。"
+      }
+    },
+    {
+      "title": {
+        "en": "Brain-Inspired Chips Solve Supercomputer-Level Physics Equations at a Fraction of the Energy",
+        "zh": "受脑启发的芯片以极低能耗解决超级计算机级别的物理方程"
+      },
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+      "source": "ScienceDaily",
+      "time": "17 hours ago",
+      "description": {
+        "en": "Neuromorphic computers modeled after the human brain can now solve the complex equations behind physics simulations—something once thought possible only with energy-hungry supercomputers.",
+        "zh": "模拟人脑的神经形态计算机现在可以解决物理模拟背后的复杂方程——这曾被认为只有耗能巨大的超级计算机才能完成。"
+      },
+      "insight": {
+        "en": "If neuromorphic chips can handle physics simulation workloads, the implications cut both ways. GPUs dominate AI training precisely because parallel matrix multiplication suits neural networks; neuromorphic chips flip this with spiking neural networks designed for sparse, event-driven computation. The 70% energy reduction cited in the ScienceDaily report would be transformative for data center economics—if the performance translates. This research matters in the context of the compute-constrained AI scaling narrative: if alternative silicon can deliver supercomputer-class capability at dramatically lower power, the moat around sheer GPU count weakens. Not imminent, but a genuine long-term challenger to the CUDA/NVDA ecosystem.",
+        "zh": "如果神经形态芯片能够处理物理模拟工作负载，含义是双面的。GPU 主导 AI 训练正是因为并行矩阵乘法适合神经网络；神经形态芯片通过设计用于稀疏、事件驱动计算的尖峰神经网络翻转了这一优势。ScienceDaily 报告中引用的 70% 能耗降低对数据中心经济性将是变革性的——如果性能能够转化的话。这项研究在计算约束型 AI 扩展叙事的背景下很重要：如果替代硅能够以极低功耗提供超级计算机级能力，围绕 GPU 数量的护城河就会减弱。不会很快到来，但是 CUDA/NVDA 生态系统的真正长期挑战者。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week's AI narrative is defined by the convergence of two stories: Big Tech's accelerating bet on Anthropic as the enterprise AI winner (Google $40B, Amazon $25B max, on top of Microsoft's existing stake), and the closing competitive gap between OpenAI and Anthropic in the developer market (OpenAI's Q1 revenue miss being the first concrete signal). The Ineffable $1.1B seed for ex-DeepMind talent suggests the market now assignscredible probability to near-AGI timelines. Meanwhile, DeepSeek V4 continues the pattern of Chinese labs delivering frontier-adjacent capability at a fraction of the price. The throughline: AI infrastructure economics are under pressure from all sides—disruptive pricing from open-source labs, alternative silicon from neuromorphic research, and cloud providers paying enormous premiums to remain structurally relevant. OpenAI's IPO timing makes this moment particularly fraught; it needs to demonstrate commercial momentum while the narrative is shifting.",
+    "zh": "本周 AI 叙事由两个故事的交汇定义：科技巨头加速押注 Anthropic 成为企业 AI 赢家（Google 400 亿、Amazon 最多 250 亿，加上微软现有股份），以及 OpenAI 与 Anthropic 在开发者市场不断缩小的竞争差距（OpenAI Q1 收入缺口是第一个具体迹象）。前 DeepMind 人才的 Ineffable 11 亿种子轮表明，市场现在对近期 AGI 时间线给予了可信的概率评估。与此同时，DeepSeek V4 延续了中国实验室以零头价格提供前沿能力的模式。贯穿始终的主题：AI 基础设施经济学正受到来自各方的压力——来自开源实验室的颠覆性定价、神经形态研究的替代硅，以及云提供商为保持结构性相关性而支付的巨额溢价。OpenAI 的 IPO 时机使得这一刻特别紧张；它需要在叙事转换时展示商业势头。"
+  }
+}

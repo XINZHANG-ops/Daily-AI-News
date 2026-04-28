@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 28, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 28, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/hpennington/agentswift" class="card-title" target="_blank">hpennington/agentswift</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 39 stars</div>
+                                <div class="meta-item"><span>🍴</span> 4 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open-source iOS builder agent built on openspec and xcodebuildmcp. Boots app on simulator, runs UI automation to verify behavior.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">基于 openspec 和 xcodebuildmcp 构建的开源 iOS 开发助手。在模拟器上启动应用并运行 UI 自动化验证行为。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/gmarland/Agent-Context" class="card-title" target="_blank">gmarland/Agent-Context</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2 stars</div>
+                                <div class="meta-item"><span>🍴</span> 0 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">VS Code extension that lets AI coding tools see reference projects by attaching external folders via symlinks, solving the context problem for agents working on new features.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">VS Code 扩展，通过符号链接将外部文件夹附加到工作区，让 AI 编程工具能看到参考项目，解决新功能开发时 agent 无法访问上下文的问题。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/future-agi/future-agi" class="card-title" target="_blank">future-agi/future-agi</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 482 stars</div>
+                                <div class="meta-item"><span>🍴</span> 31 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open-source end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Includes tracing, evals, simulations, datasets, gateway, and guardrails. Apache 2.0.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源端到端平台，用于评估、观察和改进 LLM 及 AI Agent 应用。包含追踪、评估、模拟、数据集、网关和护栏。Apache 2.0 协议。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">7 hours ago</div>
+                    <a href="https://www.reuters.com/business/openai-falls-short-revenue-user-targets-it-races-toward-ipo-wsj-reports-2026-04-28/" class="card-title" target="_blank" data-lang="en">OpenAI Falls Short of Revenue and User Targets as It Races Toward IPO</a>
+                    <a href="https://www.reuters.com/business/openai-falls-short-revenue-user-targets-it-races-toward-ipo-wsj-reports-2026-04-28/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 冲刺 IPO 之际未能达成收入与用户目标</a>
+                    <p class="card-description" data-lang="en">OpenAI missed multiple monthly revenue targets earlier this year after losing ground to Anthropic in coding and enterprise markets, the WSJ reported.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">据《华尔街日报》报道，OpenAI 今年早些时候未能达成多项月度收入目标，此前在编程和企业市场输给 Anthropic。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Simon Willison</span>
+                    <div class="news-time">4 days ago</div>
+                    <a href="https://simonwillison.net/2026/Apr/24/deepseek-v4/" class="card-title" target="_blank" data-lang="en">DeepSeek V4 Preview: Almost on the Frontier, a Fraction of the Price</a>
+                    <a href="https://simonwillison.net/2026/Apr/24/deepseek-v4/" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepSeek V4 预览：逼近前沿水平，价格却只是零头</a>
+                    <p class="card-description" data-lang="en">DeepSeek released V4-Pro (1.6T params, 49B active MoE) and V4-Flash (284B/13B), both with 1M token context at MIT license. Pro is 865GB on Hugging Face.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepSeek 发布 V4-Pro（1.6T 参数，49B 活跃 MoE）和 V4-Flash（284B/13B），均支持 100 万 token 上下文，MIT 许可证。Pro 在 Hugging Face 上为 865GB。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">New York Times</span>
+                    <div class="news-time">4 days ago</div>
+                    <a href="https://www.nytimes.com/2026/04/24/technology/google-anthropic-investment-artificial-intelligence.html" class="card-title" target="_blank" data-lang="en">Google Commits Up to $40 Billion in Anthropic as Big Tech's AI Bet Escalates</a>
+                    <a href="https://www.nytimes.com/2026/04/24/technology/google-anthropic-investment-artificial-intelligence.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google 承诺向 Anthropic 投资最多 400 亿美元 科技巨头 AI 赌注升级</a>
+                    <p class="card-description" data-lang="en">Google plans to invest up to $40 billion in Anthropic, deepening a relationship that already includes a prior multi-billion dollar commitment. Anthropic's annual revenue run rate has surpassed $30 billion, up from $9B at end of 2025.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google 计划向 Anthropic 投资最多 400 亿美元，深化此前已有数十亿美元承诺的合作关系。Anthropic 年化收入已突破 300 亿美元，而 2025 年底为 90 亿。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MindStudio</span>
+                    <div class="news-time">4 days ago</div>
+                    <a href="https://mindwiredai.com/2026/04/24/gpt-5-5-is-here-benchmarks-pricing-and-who-should-actually-upgrade-april-2026/" class="card-title" target="_blank" data-lang="en">GPT-5.5 Lands With 64.3% on SWE-bench Pro, Edging Claude Opus 4.7</a>
+                    <a href="https://mindwiredai.com/2026/04/24/gpt-5-5-is-here-benchmarks-pricing-and-who-should-actually-upgrade-april-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">GPT-5.5 以 SWE-bench Pro 64.3% 落地 略胜 Claude Opus 4.7</a>
+                    <p class="card-description" data-lang="en">GPT-5.5 scores 82.7% on Terminal-Bench, 64.3% on SWE-bench Pro (vs Claude Opus 4.7's 58.6%), uses 40% fewer tokens than GPT-5.4, and costs $5/$30/M tokens.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GPT-5.5 在 Terminal-Bench 上得分 82.7%，在 SWE-bench Pro 上得分 64.3%（对比 Claude Opus 4.7 的 58.6%），比 GPT-5.4 少消耗 40% 的 token，定价 5/30 美元/百万 token。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CNBC</span>
+                    <div class="news-time">1 day ago</div>
+                    <a href="https://www.cnbc.com/2026/04/27/deepmind-ineffable-intelligence-record-seed-funding-nvidia-google.html" class="card-title" target="_blank" data-lang="en">Ex-DeepMind David Silver Raises Record $1.1 Billion Seed for AI Startup Ineffable</a>
+                    <a href="https://www.cnbc.com/2026/04/27/deepmind-ineffable-intelligence-record-seed-funding-nvidia-google.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">前 DeepMind David Silver 为 AI 创业公司 Ineffable 募集创纪录 11 亿美元种子轮</a>
+                    <p class="card-description" data-lang="en">Former DeepMind researcher David Silver raised $1.1 billion in seed funding for Ineffable Intelligence, co-led by Sequoia and Lightspeed with participation from Nvidia, Google, DST Global, and Index.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">前 DeepMind 研究员 David Silver 为 Ineffable Intelligence 募集了 11 亿美元种子轮，红杉和光速联合领投，Nvidia、Google、DST Global 和 Index 参与。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">1 week ago</div>
+                    <a href="https://www.reuters.com/technology/anthropic-spend-over-100-billion-amazons-cloud-technology-2026-04-20/" class="card-title" target="_blank" data-lang="en">Amazon to Invest Up to $25 Billion in Anthropic in Latest Big Tech AI Tie-Up</a>
+                    <a href="https://www.reuters.com/technology/anthropic-spend-over-100-billion-amazons-cloud-technology-2026-04-20/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Amazon 同意向 Anthropic 投资最多 250 亿美元 科技巨头 AI 联盟再加码</a>
+                    <p class="card-description" data-lang="en">Amazon plans to invest $5 billion initially, with potential to add $20 billion more if Anthropic hits milestones, as part of a deal committing Anthropic to spend over $100 billion on AWS.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Amazon 初步投资 50 亿美元，如果 Anthropic 达成里程碑可再追加 200 亿，作为 Anthropic 承诺在 AWS 上支出超过 1000 亿美元协议的一部分。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">ScienceDaily</span>
+                    <div class="news-time">17 hours ago</div>
+                    <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" class="card-title" target="_blank" data-lang="en">Brain-Inspired Chips Solve Supercomputer-Level Physics Equations at a Fraction of the Energy</a>
+                    <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" class="card-title" target="_blank" data-lang="zh" style="display: none;">受脑启发的芯片以极低能耗解决超级计算机级别的物理方程</a>
+                    <p class="card-description" data-lang="en">Neuromorphic computers modeled after the human brain can now solve the complex equations behind physics simulations—something once thought possible only with energy-hungry supercomputers.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">模拟人脑的神经形态计算机现在可以解决物理模拟背后的复杂方程——这曾被认为只有耗能巨大的超级计算机才能完成。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week's AI narrative is defined by the convergence of two stories: Big Tech's accelerating bet on Anthropic as the enterprise AI winner (Google $40B, Amazon $25B max, on top of Microsoft's existing stake), and the closing competitive gap between OpenAI and Anthropic in the developer market (OpenAI's Q1 revenue miss being the first concrete signal). The Ineffable $1.1B seed for ex-DeepMind talent suggests the market now assignscredible probability to near-AGI timelines. Meanwhile, DeepSeek V4 continues the pattern of Chinese labs delivering frontier-adjacent capability at a fraction of the price. The throughline: AI infrastructure economics are under pressure from all sides—disruptive pricing from open-source labs, alternative silicon from neuromorphic research, and cloud providers paying enormous premiums to remain structurally relevant. OpenAI's IPO timing makes this moment particularly fraught; it needs to demonstrate commercial momentum while the narrative is shifting.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周 AI 叙事由两个故事的交汇定义：科技巨头加速押注 Anthropic 成为企业 AI 赢家（Google 400 亿、Amazon 最多 250 亿，加上微软现有股份），以及 OpenAI 与 Anthropic 在开发者市场不断缩小的竞争差距（OpenAI Q1 收入缺口是第一个具体迹象）。前 DeepMind 人才的 Ineffable 11 亿种子轮表明，市场现在对近期 AGI 时间线给予了可信的概率评估。与此同时，DeepSeek V4 延续了中国实验室以零头价格提供前沿能力的模式。贯穿始终的主题：AI 基础设施经济学正受到来自各方的压力——来自开源实验室的颠覆性定价、神经形态研究的替代硅，以及云提供商为保持结构性相关性而支付的巨额溢价。OpenAI 的 IPO 时机使得这一刻特别紧张；它需要在叙事转换时展示商业势头。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
