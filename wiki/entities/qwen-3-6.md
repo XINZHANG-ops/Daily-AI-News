@@ -24,6 +24,7 @@ Qwen 3.6-35B-A3B is Alibaba's efficient coding model released April 20, 2026. It
 Qwen 3.6-35B-A3B demonstrates that strong coding performance can be achieved with minimal active parameters, enabling local deployment on consumer hardware. This efficiency breakthrough could expand the addressable market for high-quality coding assistance.
 
 ## Connections
-- [[sources/alibaba]] — Created by Alibaba
-- [[topics/llm_models]] — Efficiency breakthrough in coding models
-- [[ideas/efficiency-frontier]] — 3B active params enabling consumer hardware deployment
+- [[sources/alibaba]] — Created by Alibaba as demonstration that Chinese labs achieve efficiency breakthroughs competitive with US frontier models
+- [[topics/llm_models]] — Efficiency breakthrough signals that capability-to-parameter ratios matter more than raw parameter counts
+- [[ideas/efficiency-frontier]] — 3B active params enabling consumer hardware deployment while achieving 73.4% SWE-Bench represents the efficiency frontier in action
+- [[ideas/china-efficiency-advantage]] — Qwen 3.6's performance confirms Stanford HAI data that China achieves near-parity with 23x less investment

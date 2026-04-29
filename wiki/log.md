@@ -1,5 +1,87 @@
 # Wiki Log
 
+## [2026-04-29] lint | Structural fixes + 4 new pages
+
+**Structural fixes:**
+- Removed duplicate entity `gpt-5-5.md` (had 2 files: gpt-5-5.md and gpt-5.5.md) — kept richer gpt-5.5.md with Spud codename, benchmark scores, 49-day release cycle analysis
+- Fixed 4 broken [[wikilinks]]: mozilla, cognition, alibaba, efficiency-frontier, ai-job-displacement had no corresponding pages
+
+**New pages created:**
+- `sources/cognition.md` — Cognition AI ($25B talks, Devin creator)
+- `sources/alibaba.md` — Alibaba (DeepSeek investment talks, Qwen 3.6)
+- `sources/mozilla.md` — Mozilla (Thunderbolt enterprise AI client)
+- `entities/gemini-3-1-pro.md` — Fixed file that contained wrong slug (was "Claude Opus 4.6" content with gemini-3-1-pro filename)
+
+**New idea pages created:**
+- `ideas/efficiency-frontier.md` — Qwen 3.6 efficiency breakthrough; efficient models achieving domain dominance
+- `ideas/ai-job-displacement.md` — 92K+ layoffs; Meta 65/75 mandate; governance gap
+
+**Connection quality improvements:**
+- `entities/thunderbolt.md` — Rewrote connections with WHY annotations (Mozilla created Thunderbolt as enterprise self-hosted alternative, addresses data privacy concerns)
+- `entities/qwen-3-6.md` — Rewrote connections explaining WHY (efficiency breakthrough confirms China 23x efficiency advantage, links to china-efficiency-advantage)
+
+**index.md updated:** Added cognition, alibaba, mozilla sources; added efficiency-frontier and ai-job-displacement ideas
+
+## [2026-04-28] ingest | 1 date
+
+Dates processed: 2026-04-28
+Topics updated: llm_models (added enterprise cost war pattern, OpenAI Q1 revenue miss, DeepSeek V4-Pro-Max $1.74/M pricing), ai_companies (Claude eating OpenAI's enterprise lunch, Ineffable $1.1B seed), ai_funding (Big Tech $65B to Anthropic, Ineffable seed), ai_safety (neuromorphic chip physics simulation capability)
+Sources updated: openai (Q1 revenue miss, IPO timing critical), google ($40B Anthropic investment validated Claude trajectory), anthropic (updated)
+Timelines updated: 2026-04 (Week 4, April 28 entry)
+Entities created: ineffable-intelligence (David Silver $1.1B seed), agentswift (iOS builder agent), agent-context (VS Code symlink context extension), future-agi (agent evaluation platform, 482 stars)
+Entities updated: deepseek-v4 (added $1.74/M cost-performance leader note)
+Chat session insights applied: Previous sessions noted Claude Code quality issues and Google Cloud Next details — today's news confirms Claude winning enterprise workflows validates Anthropic's trajectory; DeepSeek V4 cost data from prior days' context integrated
+
+## [2026-04-27] ingest | 1 date
+
+Dates processed: 2026-04-27
+Topics updated: llm_models (added institutional stress test pattern), ai_companies (Meta 65/75 mandate, Musk vs Altman trial), ai_funding (GitHub agent-scale economics crisis), github_trends (275M commits/week, 17M PRs from AI agents), ai_safety (institutional gap widening)
+Sources updated: openai (Musk vs Altman court proceedings), anthropic (updated), google (updated), meta (65/75 mandate)
+Timelines updated: 2026-04 (Week 4, April 27 entry)
+Entities created: gpt-5.5
+Entities updated: safety-restricted-releases (new evidence from GPT-5.5 procurement lock-in analysis)
+Ideas created: institutional-gap
+Chat session insights applied: Session noted AI governance urgency and safety-restricted-releases needed strengthening — reflected in new institutional-gap idea and updated safety-restricted-releases connections
+
+## [2026-04-26] ingest | 1 date
+
+Dates processed: 2026-04-26
+Topics updated: llm_models (added capability regression and voice specialization patterns), ai_funding (Google ~25% global compute, regulatory scrutiny), agentic_ai (Project Deal, Claude Code backlash), ai_safety (military-grade AI specialization)
+Sources updated: anthropic (Project Deal, Claude Code backlash), openai (GPT-5.5 vs DeepSeek V4 same day), google (Epoch AI compute data), meta (workforce cuts), xai (grok-voice launch)
+Timelines updated: 2026-04 (Week 4, April 26 entry)
+Entities created: grok-voice-think-fast-1-0, project-deal, ml-intern
+Ideas created: agent-e-commerce, voice-agent-battleground
+Chat session insights applied: 2026-04-25 session noted Claude Code quality issues — reflected in agentic_ai topic and anthropic source update
+
+## [2026-04-25] ingest | 1 date
+
+Dates processed: 2026-04-25
+Topics updated: llm_models, ai_companies, ai_funding, github_trends, ai_safety
+Sources updated: openai, anthropic, google, deepseek
+Timelines updated: 2026-04 (Week 4)
+Entities created: deepseek-v4, nemo-claw, openhands-sdk, scientific-agent-skills
+Entities updated: gpt-5.5 (already existed from Apr 23 news)
+Ideas updated: (from chat session notes: ai_safety connections strengthened)
+
+## [2026-04-24] ingest | 1 date
+
+Dates processed: 2026-04-24
+Topics updated: llm_models, ai_companies, ai_funding, github_trends, ai_safety
+Sources updated: openai, meta, microsoft, anthropic
+Timelines updated: 2026-04 (Week 4)
+Entities created: gpt-5.5, cambridge-neuromorphic-chip
+Ideas created: ai-governance-urgency
+
+## [2026-04-23] ingest | 3 dates
+
+Dates processed: 2026-04-21, 2026-04-22, 2026-04-23
+Topics updated: llm_models, ai_companies, ai_funding, github_trends, ai_safety, agentic_ai
+Sources updated: anthropic, openai, google, spacex, meta
+Timelines updated: 2026-04 (Week 4)
+Entities created: deepgemm, gemini-enterprise-agent-platform, tpu-8th-gen, vast-data, mercury-agent
+Entities updated: claude-mythos, mcp-protocol, gpt-5.4-cyber
+Ideas updated: safety-restricted-releases
+
 ## [2026-04-20] ingest | 4 dates
 
 Dates processed: 2026-04-17, 2026-04-18, 2026-04-19, 2026-04-20

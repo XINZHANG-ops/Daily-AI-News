@@ -1,13 +1,13 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-04-23
+last_updated: 2026-04-27
 ---
 
 # Anthropic
 
 ## Overview
-Anthropic has emerged as the defining AI company of this period, driven by the unprecedented success of Claude Code which propelled annualized revenue from $9 billion at end-2025 to $30 billion in under a year. By late April, the company's valuation on secondary markets surged to approximately $1 trillion, surpassing OpenAI's $880 billion valuation. The company serves 1,000+ enterprise customers spending over $1M annually. However, the Claude Mythos controversy — a model classified as too dangerous to release — has created a unique narrative tension between commercial success and safety concerns. The company closed a $30 billion Series G at $380 billion valuation (now ~$1T secondary) and signed its largest infrastructure deal: a multi-gigawatt TPU agreement with Google and Broadcom.
+Anthropic has emerged as the defining AI company of this period, driven by the unprecedented success of Claude Code which propelled annualized revenue from $9 billion at end-2025 to $30 billion in under a year. By late April, the company's valuation on secondary markets surged to approximately $1 trillion, surpassing OpenAI's $880 billion. On April 25, Google announced plans to invest up to $40 billion in Anthropic ($10B minimum, $30B contingent on performance targets) — the largest single investment in Anthropic to date, deepening the partnership as competition intensifies. The company serves 1,000+ enterprise customers spending over $1M annually. However, the Claude Mythos controversy — a model classified as too dangerous to release — has created a unique narrative tension between commercial success and safety concerns. The company closed a $30 billion Series G at $380 billion valuation (now ~$1T secondary) and signed its largest infrastructure deal: a multi-gigawatt TPU agreement with Google and Broadcom.
 
 ## Timeline
 
@@ -35,6 +35,10 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-04-22 | Claude Mythos 5: 10T parameters | Most powerful model to date, targeted at cybersecurity |
 | 2026-04-22 | ~$1T valuation (secondary markets) | Surpasses OpenAI's $880B valuation |
 | 2026-04-22 | Central banks respond to Mythos | Bank of England governor warns it could "crack the whole cyber-risk world open" |
+| 2026-04-24 | Claude Code quality issues fixed | Three causes identified: reduced reasoning, caching bug, verbosity |
+| 2026-04-25 | Google to invest up to $40B in Anthropic | $10B minimum, $30B contingent on performance targets |
+| 2026-04-26 | Claude Code faces user backlash | Engineering missteps acknowledged; power users at risk of defecting to OpenAI |
+| 2026-04-26 | Project Deal: agent-on-agent commerce | Claude models act as buyers and sellers, striking real deals for real goods and money |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.

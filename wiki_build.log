@@ -98,3 +98,204 @@ Completed the wiki ingest for 2026-04-17 through 2026-04-20.
 **New ideas**: application-layer-shift (model race → workflow capture), china-efficiency-advantage (Stanford HAI: 2.7% gap with 23x less investment), quantum-ai-emergence (Ising as new category), local-ai-computing (Perplexity Computer, device-resident AI)
 
 **Updated**: `index.md`, `processed.json` (4 new dates), `log.md`
+
+
+Wiki ingest completed for 2026-04-21, 2026-04-22, and 2026-04-23.
+
+**Summary of changes:**
+
+**Timeline:**
+- Added Week 4 (22nd-28th) to `wiki/timelines/2026-04.md` covering the major events
+
+**Sources updated:**
+- `anthropic` — Added Mythos 5 (10T params), ~$1T valuation, Bank of England warning, central bank responses
+- `openai` — Added TBPN acquisition (first media platform)
+- `google` — Added Cloud Next 2026 (TPU 8th gen, Gemini Enterprise Agent Platform)
+- `spacex` — Corrected date for $60B Cursor investment
+- `meta` — Added Model Capability Initiative (MCI) employee tracking
+
+**Topics updated:**
+- `ai_safety` — Added MCP vulnerability (150M+ installs, "expected behavior"), Qihoo 360 findings, Bank of England warning, "expected behavior" as security posture analysis
+- `llm_models` — Added Cloud Next 2026 announcements
+- `ai_companies` and `ai_funding` — Already had recent updates
+
+**New entities created (5):**
+- `deepgemm` — DeepSeek's FP8 GEMM kernels
+- `gemini-enterprise-agent-platform` — Google's enterprise agent management platform
+- `tpu-8th-gen` — Google's 8th gen TPUs (3x Ironwood)
+- `vast-data` — NVIDIA-backed AI storage, $1B at $30B valuation
+- `mercury-agent` — Soul-driven AI agent with permission-hardened tools
+
+**Entities updated:**
+- `claude-mythos` — Added 10T params confirmation and Bank of England warning
+- `mcp-protocol` — Added critical vulnerability disclosure (150M+ installs, "expected behavior")
+- `gpt-5-4-cyber` — Updated key facts
+
+**Ideas updated:**
+- `safety-restricted-releases` — Added MCP "expected behavior" as new dimension of security posture
+
+**Index updated** with all new entities and updated descriptions.
+
+
+Completed wiki ingest for **2026-04-24**. Here's what was updated:
+
+**Topics updated:**
+- `llm_models` — Added GPT-5.5 release ("smartest and most intuitive" model, super app vision), GitHub Copilot training opt-out deadline
+- `ai_companies` — Added Meta 10% workforce cut (~8,000), Microsoft buyouts (~8,750), Geoffrey Hinton UN warning, Anthropic Claude Code fixes
+- `ai_safety` — Added Hinton's "car with no brake" warning, Cambridge neuromorphic chip (70% energy reduction)
+- `github_trends` — Added trending repos: huggingface/ml-intern, zilliztech/claude-context, Alishahryar1/free-claude-code
+
+**Sources updated:**
+- `openai` — Added GPT-5.5 release, GitHub Copilot opt-out deadline
+- `meta` — Added 10% workforce cut (~8,000 people)
+- `microsoft` — Added 8,750 worker buyouts, Hinton UN warning
+- `anthropic` — Added Claude Code quality fixes (April 24)
+
+**Entities created:**
+- `gpt-5.5` — OpenAI's latest model with super app integration vision
+- `cambridge-neuromorphic-chip` — University of Cambridge chip using hafnium memristors, up to 70% AI energy reduction
+
+**Ideas created:**
+- `ai-governance-urgency` — Hinton's UN warning, $4.8T market growth, workforce cuts signal governance gap
+
+**Also updated:** `index.md`, `processed.json` (added 2026-04-24), `log.md`, `timelines/2026-04.md`
+## Ingest Complete — 2026-04-25
+
+### New Entities Created (4)
+- `wiki/entities/deepseek-v4.md` — DeepSeek V4-Pro/V4-Flash with 1M context and open weights
+- `wiki/entities/nemo-claw.md` — NVIDIA's hardened reference stack for secure OpenClaw deployment
+- `wiki/entities/openhands-sdk.md` — Modular SDK for building coding agents
+- `wiki/entities/scientific-agent-skills.md` — 133 scientific skills for AI agents
+
+### Entities Updated
+- `wiki/entities/gpt-5.5.md` — Already existed from Apr 23; updated with today's data
+
+### Topics Updated
+- `topics/llm_models.md` — Added DeepSeek V4, Tencent/Alibaba investment, Google AI agents
+- `topics/ai_funding.md` — Added Google $40B Anthropic investment, Tencent/Alibaba DeepSeek talks
+- `topics/ai_companies.md` — Added 92K job cuts detail, Google $40B investment, Cognition AI $25B
+- `topics/github_trends.md` — Added OpenHands SDK, NemoClaw, scientific-agent-skills
+- `topics/ai_safety.md` — Updated date, added ai-job-displacement connection
+
+### Sources Updated
+- `sources/openai.md` — Added Cognition AI at $25B valuation
+- `sources/anthropic.md` — Added Google $40B investment
+- `sources/google.md` — Added AI agents release and $40B Anthropic investment
+- `sources/deepseek.md` — Complete overhaul: V4 release, Tencent/Alibaba investment talks
+
+### Timeline Updated
+- `timelines/2026-04.md` — Added April 22 Google AI agents, April 23 GPT-5.5, April 24 DeepSeek V4 + Tencent/Alibaba, April 25 Google $40B
+
+### Other Updates
+- `index.md` — Added 4 new entities
+- `processed.json` — Added 2026-04-25
+- `log.md` — Appended new entry
+
+
+The ingest is complete. Here's a summary of what was done:
+
+**2026-04-23 data processing:**
+- Added April 23 to `processed.json` (was the only missing date)
+- Created `wiki/entities/cc-design.md` (603 stars, high-fidelity HTML design skill for AI agents)
+- Created `wiki/entities/web-design-skill.md` (533 stars, transforms AI pages from functional to stunning)
+- Updated `wiki/ideas/safety-restricted-releases.md` with Bank of England evidence (from chat session insights)
+- Created `wiki/sources/vast-data.md` (fixed: Vast Data is a company → sources/, not entities/)
+- Removed incorrectly placed `wiki/entities/vast-data.md`
+- Updated `wiki/index.md` with new sources and entities entries
+
+**Chat session insights applied:**
+- The session noted `ai_safety` page was already current with Bank of England and Qihoo 360
+- Applied session's suggestion to strengthen `safety-restricted-releases` — added Bank of England detail to Implications section, highlighting it as the first time a central bank publicly acknowledged an AI model poses systemic financial infrastructure risk
+- Applied Google's Cloud Next announcements to timeline (already in content but corrected in timeline entry)
+
+**Wiki log updated** with the ingest entry for 2026-04-26.
+
+
+Done. Here's what was updated for **2026-04-26**:
+
+**Topics updated:**
+- `llm_models` — Added April 26 events (Claude Mythos 5 military-grade, Claude Code backlash, xAI grok-voice) + new Patterns & Insights on capability regression and voice specialization
+- `ai_funding` — Added Google controls ~25% global AI compute (Epoch AI), regulatory scrutiny note
+- `agentic_ai` — Added Claude Code backlash and Project Deal entries
+- `ai_safety` — Added military-grade AI specialization pattern
+
+**Sources updated:**
+- `anthropic` — Project Deal (agent-on-agent commerce), Claude Code backlash
+- `openai` — GPT-5.5 launched same day as DeepSeek V4 (82.7% Terminal-Bench 2.0)
+- `google` — Epoch AI compute data (3.8M TPUs + 1.3M GPUs, ~25% global)
+- `meta` — Workforce cuts (AI investment cannibalizing tech jobs)
+- `xai` — grok-voice-think-fast-1.0 launch (67.3% on τ-voice Bench)
+
+**Timeline updated:**
+- `2026-04` Week 4 — Added April 26 narrative
+
+**Entities created:**
+- `grok-voice-think-fast-1-0` — xAI's voice model with retail/airline/telecom focus
+- `project-deal` — Anthropic's proof-of-concept for agent-on-agent commerce
+- `ml-intern` — Hugging Face's open-source ML engineer agent
+
+**Ideas created:**
+- `agent-e-commerce` — Autonomous commercial agents as next frontier
+- `voice-agent-battleground` — Voice models as distinct from text competition
+Ingest complete for **2026-04-27**. Here's what was updated:
+
+**Entities created:**
+- `wiki/entities/gpt-5.5.md` — GPT-5.5 model with Terminal-Bench 82.7%, FrontierMath 51.7%, 49-day release cycle as procurement lock-in strategy
+
+**Timelines updated:**
+- `timelines/2026-04.md` — Added April 27 entry covering GPT-5.5 procurement analysis, Google's $40B Anthropic bet as cloud dependency strategy, Meta's 65/75 mandate, GitHub's 275M commits/week strain, Musk vs Altman court proceedings
+
+**Sources updated:**
+- `sources/openai.md` — Added Musk vs Altman court proceedings (April 27)
+- `sources/anthropic.md` — Updated last_updated
+- `sources/google.md` — Updated last_updated
+- `sources/meta.md` — Added 65/75 mandate (65% engineers must use AI for 75% of code by mid-2026, tied to performance reviews)
+
+**Topics updated:**
+- `topics/llm_models.md` — Added institutional stress test pattern; GPT-5.5 as procurement lock-in
+- `topics/ai_companies.md` — Added Meta's 65/75 mandate; Musk vs Altman trial
+- `topics/ai_funding.md` — Added GitHub agent-scale economics crisis (275M commits/week)
+- `topics/github_trends.md` — Added 3 new repos (goose, agency-agents, deepagents); GitHub platform strain analysis
+- `topics/ai_safety.md` — Added institutional gap pattern and Musk vs Altman connection
+
+**Ideas updated:**
+- `ideas/safety-restricted-releases.md` — Added GPT-5.5's procurement lock-in as contrasting evidence to Anthropic's restriction approach
+- `ideas/ai-governance-urgency.md` — Added Musk vs Altman trial and Meta's 65/75 mandate
+
+**Ideas created:**
+- `wiki/ideas/institutional-gap.md` — New idea: AI capability outpacing institutional frameworks; companies building facts on the ground faster than governance can respond
+
+**Index and metadata:**
+- `index.md` — Updated last_updated; added institutional-gap idea
+- `processed.json` — Added 2026-04-27
+- `log.md` — Appended ingest entry
+
+
+Completed the ingest of 2026-04-28 data. Here's what was updated:
+
+**Topic Updates:**
+- `llm_models` — Added enterprise cost war pattern (Claude winning enterprise vs OpenAI Q1 revenue miss), DeepSeek V4-Pro-Max $1.74/M cost-performance leadership
+- `ai_companies` — Added Ineffable Intelligence $1.1B seed, OpenAI revenue miss confirmation
+- `ai_funding` — Added Ineffable seed round (largest ever), Big Tech $65B combined Anthropic commitment
+- `ai_safety` — Added neuromorphic chip long-term CUDA challenger pattern
+
+**Source Updates:**
+- `openai` — Added Q1 revenue miss, IPO timing pressure
+- `google` — Added $40B Anthropic investment details
+
+**Timeline:**
+- `2026-04` Week 4 — Added April 28 entry covering revenue miss, Ineffable, neuromorphic chip
+
+**New Entities Created (4):**
+- `ineffable-intelligence` — David Silver's $1.1B seed, AlphaGo lineage
+- `agentswift` — iOS builder agent with simulator automation
+- `agent-context` — VS Code symlink context extension for AI coding tools
+- `future-agi` — Agent evaluation platform (482 stars)
+
+**Entity Updates:**
+- `deepseek-v4` — Added $1.74/M cost-performance leader note
+
+**Index/Log/Processed:**
+- `index.md` — Updated date, added new entities
+- `processed.json` — Added 2026-04-28
+- `log.md` — Appended ingest entry

@@ -1,28 +1,28 @@
 ---
-title: "Claude Opus 4.6"
-slug: claude-opus-4-6
+title: "Gemini 3.1 Pro"
+slug: gemini-3-1-pro
 type: model
-last_updated: 2026-04-16
+last_updated: 2026-04-20
 ---
 
-# Claude Opus 4.6
+# Gemini 3.1 Pro
 
 ## What It Is
-Claude Opus 4.6 is Anthropic's flagship model, leading on SWE-bench Verified at 80.8% as of April 2026.
+Gemini 3.1 Pro is Google's flagship model released in early 2026, achieving 80.6% on SWE-bench — a near-tie with Claude Opus 4.6 at 80.8%. It leads on multiple benchmarks including ARC-AGI-2.
 
 ## Key Facts
 
 | Attribute | Value |
 |-----------|-------|
-| Creator | Anthropic |
-| SWE-bench Verified | 80.8% (April 2026) |
-| Context Window | 1M tokens (GA) |
+| Release Date | Early 2026 |
+| Creator | Google |
+| SWE-bench Verified | 80.6% (near-tie with Claude Opus 4.6) |
+| ARC-AGI-2 | Leading score |
 
 ## Significance
-Claude Opus 4.6 achieved a near-complete tie with Gemini 3.1 Pro (80.6%) on SWE-bench — the most production-relevant coding benchmark. It also leads on long-context retrieval (18.5% → 76%) and expert task preferences.
-
-The model's near-tie with Gemini 3.1 Pro on SWE-bench signals that frontier coding capabilities have converged, with differentiation moving to specialized domains.
+Gemini 3.1 Pro's near-tie with Claude Opus 4.6 on SWE-bench demonstrates that frontier coding capabilities have converged. The 0.2 percentage point gap signals the benchmarks may be reaching ceiling — pushing further requires fundamentally different approaches.
 
 ## Connections
-- [[sources/anthropic]] — Created by Anthropic
-- [[topics/llm_models]] — Current benchmark leader
+- [[sources/google]] — Created by Google
+- [[topics/llm_models]] — Current benchmark leader alongside Claude Opus 4.6
+- [[entities/claude-opus-4-6]] — Near-tie on SWE-bench; both models competing for enterprise coding market

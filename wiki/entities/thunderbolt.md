@@ -24,6 +24,6 @@ Thunderbolt is Mozilla's enterprise self-hosted AI client, released April 16, 20
 Thunderbolt represents Mozilla's entry into the enterprise AI infrastructure space, offering a self-hosted alternative for companies concerned about data privacy or vendor lock-in. The cross-platform support and OpenAI compatibility make it a versatile option for enterprises.
 
 ## Connections
-- [[sources/mozilla]] — Created by Mozilla
-- [[topics/github_trends]] — Cross-platform enterprise tool
-- [[ideas/ai-infrastructure-commoditization]] — Client-layer commoditization
+- [[sources/mozilla]] — Created by Mozilla as an enterprise self-hosted AI client via MZLA subsidiary
+- [[topics/github_trends]] — Trending on GitHub as enterprises seek open-source alternatives to proprietary AI clients
+- [[ideas/local-ai-computing]] — Thunderbolt enables enterprises to run local AI infrastructure, reducing cloud dependency and data privacy concerns

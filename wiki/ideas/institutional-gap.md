@@ -1,0 +1,34 @@
+---
+title: "Institutional Gap"
+slug: institutional-gap
+last_updated: 2026-04-27
+---
+
+# Institutional Gap
+
+## The Insight
+AI capability growth is outpacing the institutional frameworks (legal, economic, governance) meant to contain it at an accelerating rate. The companies moving fastest are not waiting for frameworks to catch up — they are building facts on the ground and hoping the legal and regulatory systems will accommodate rather than reverse what they've built. This creates a compounding risk: each day that passes without coherent governance, companies make irreversible infrastructure commitments that make future regulation harder.
+
+## Evidence
+- [[sources/openai]] — Musk vs Altman court proceedings (April 27) test whether OpenAI must revert to non-profit, which would invalidate every Microsoft investment instrument and enterprise contract. The timing — just 4 days after GPT-5.5 — means OpenAI fights a two-front war: shipping models to stay ahead of competitors while defending the company's fundamental structure
+- [[topics/ai_funding]] — GitHub's free-tier economics built for human developers cannot survive fleets of autonomous agents generating 275M commits/week. The platform is caught between its open-source heritage and the reality that agent traffic is destroying economics built for human-scale usage. Expect agent-specific rate limits and paid tiers within 6-12 months — a business model problem deferred
+- [[sources/google]] — Google's $40B Anthropic bet faces EU/UK regulatory scrutiny because it cements a dependency relationship making Anthropic harder to replace. Google is building facts (financial dependency, infrastructure deals) while regulators are still defining what constitutes anti-competitive behavior in AI
+- [[topics/ai_companies]] — Meta's 65/75 mandate (65% engineers using AI for 75% of code by mid-2026, tied to performance reviews) reveals AI is making roles redundant faster than reskilling can occur. The 15,800 workers being laid off as this mandate is enforced shows companies are restructuring workforces before governance frameworks have assessed the impact
+
+## Implications
+The institutional gap creates three compounding risks:
+
+1. **Irreversible infrastructure commitments** — Multi-gigawatt TPU deals, $40B investments, and decade-long compute agreements are being signed before regulators understand their implications. Once built, these commitments create political economy that resists regulatory correction.
+
+2. **Workforce displacement without safety nets** — AI automation is displacing knowledge workers (Meta 15,800, Microsoft 8,750, Wall Street 15,000) faster than governments can respond with retraining programs. Each month's delay in governance deepens the skills gap.
+
+3. **Norm erosion** — When Anthropic calls a critical RCE vulnerability affecting 150M+ installations "expected behavior," and when companies ship models at 49-day cycles to lock in procurement before governance catches up, each action normalizes the pattern. The cumulative effect is a de facto landscape that post-hoc regulation must either accept or unravel.
+
+The most important test: the Musk vs Altman case. If OpenAI must revert to non-profit, the ruling either validates the "capped profit" model as legitimate — allowing the current buildout to continue with institutional blessing — or invalidates it, forcing every commercial AI company to re-examine its foundational assumptions.
+
+## Connections
+- [[ideas/safety-restricted-releases]] — Claude Mythos withheld not because of regulatory requirement but because Anthropic chose to build facts on the ground; the regulatory accommodation came after
+- [[ideas/ai-governance-urgency]] — Geoffrey Hinton's "car with no brake" warning reflects the governance gap; the car is accelerating faster than brakes can be installed
+- [[topics/ai_safety]] — The institutional gap is a safety issue: governance frameworks cannot keep pace with capability deployment
+- [[topics/ai_funding]] — GitHub's platform economics crisis is an institutional gap problem: the business model was built for a different scale and type of usage
+- [[sources/openai]] — The Musk vs Altman trial is the first major test of whether the institutional framework can reverse what has been built

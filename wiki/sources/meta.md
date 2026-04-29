@@ -1,13 +1,10 @@
 ---
 title: "Meta"
 slug: meta
-last_updated: 2026-04-23
+last_updated: 2026-04-27
 ---
 
 # Meta
-
-## Overview
-Meta is navigating a complex position — the company that built developer loyalty through open-source leadership (Llama) has shifted toward proprietary models with Muse Spark. CEO Mark Zuckerberg hired Alexandr Wang as Chief AI Officer to accelerate the company's AI strategy. Meta released Llama 4 Scout and Maverick with 10M token context windows while simultaneously releasing Muse Spark as a closed model, breaking with the open-source tradition. In late April, Meta launched the Model Capability Initiative (MCI) — installing tracking software on US employees' computers to capture mouse movements, clicks, and keystrokes for AI training. Some employees called the initiative "very dystopian."
 
 ## Timeline
 
@@ -22,6 +19,9 @@ Meta is navigating a complex position — the company that built developer loyal
 | 2026-04-16 | Muse Spark ranks 4th | 52 on Artificial Analysis Intelligence Index |
 | 2026-04-19 | Meta targeting May 20 for first wave of layoffs | AI-first operational shift, broader strategic restructuring |
 | 2026-04-21 | Model Capability Initiative (MCI) launched | Employee mouse/keystroke tracking for AI training |
+| 2026-04-23 | Meta announces 10% workforce cut (~8,000) | Amid $650B combined Big Tech AI infrastructure spending; closing 6,000 open roles |
+| 2026-04-25 | Meta and Microsoft cut thousands of jobs | AI investment directly cannibalizing traditional tech workforces |
+| 2026-04-27 | Meta mandates 65/75 AI code adoption | 65% of engineers must use AI for 75% of code by mid-2026; tied to performance reviews; up to 15,800 workers to be laid off |
 
 ## Key Relationships
 - **OpenAI**: Competition in AI assistant market and coding agents.

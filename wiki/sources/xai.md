@@ -1,7 +1,7 @@
 ---
 title: "xAI"
 slug: xai
-last_updated: 2026-04-23
+last_updated: 2026-04-26
 ---
 
 # xAI
@@ -18,6 +18,7 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 | 2026-03-10 | Major 2-hour outage | Earlier significant disruption |
 | 2026-04-01 | SpaceX acquires xAI for $250B | Creates $1.25T combined entity |
 | 2026-04-22 | SpaceX invests $60B in Cursor | Competing with Claude Code and Codex |
+| 2026-04-25 | grok-voice-think-fast-1.0 launches | 67.3% on τ-voice Bench; outperforms Gemini, GPT Realtime in retail/airline/telecom |
 
 ## Key Relationships
 - **SpaceX**: Parent company following acquisition.

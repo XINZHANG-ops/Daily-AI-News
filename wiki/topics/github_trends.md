@@ -1,13 +1,13 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-04-23
+last_updated: 2026-04-27
 ---
 
 # GitHub Trends
 
 ## Overview
-The GitHub landscape in March-April 2026 is defined by the explosion of agent frameworks, the democratization of coding assistants, and the rapid commoditization of agent architectures. The most striking story is claw-code — a clean-room Python rewrite of Claude Code's architecture — reaching 181K+ stars after Anthropic accidentally leaked Claude Code's source. By late April, the ecosystem sees new patterns: AI design skills for agents, self-healing browser harnesses, and the emergence of OpenMythos as a theoretical reconstruction of the Claude Mythos architecture.
+The GitHub landscape in March-April 2026 is defined by the explosion of agent frameworks, the democratization of coding assistants, and the rapid commoditization of agent architectures. The most striking story is claw-code — a clean-room Python rewrite of Claude Code's architecture — reaching 181K+ stars after Anthropic accidentally leaked Claude Code's source. By late April, the ecosystem sees new patterns: AI design skills for agents, self-healing browser harnesses, free Claude Code alternatives, and code search MCP tools. GitHub's Copilot training policy change (starting April 24) highlights growing tensions around AI training data rights.
 
 ## Evolution
 
@@ -26,6 +26,8 @@ The GitHub landscape in March-April 2026 is defined by the explosion of agent fr
 OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-agent framework space with a lightweight yet powerful approach. BasedHardware/omi (8.2K stars) offers next-generation AI companion with multimodal perception. EvoMap/evolver (5.8K stars) implements genome evolution protocols for self-improving AI agents.
 
 **April 21-23: Design Skills and Self-Healing Agents**: A new category emerges: AI design skills for agents. huashu-design (4K stars) offers HTML-native design skill for Claude Code with 20 design philosophies. cc-design (603 stars) and web-design-skill (533 stars) follow the Claude Design pattern for high-fidelity prototyping. browser-harness (4.7K stars) enables self-healing browser harnesses for LLMs. OpenMythos (8.1K stars) provides theoretical reconstruction of Claude Mythos architecture from available research literature. worldmonitor reaches 50.7K stars as real-time global intelligence dashboard.
+
+**April 24: Free Claude Code Alternatives and Code Search MCP**: Three notable repos trend on April 24. huggingface/ml-intern (4.5K stars) is an open-source ML engineer that reads papers, trains models, and ships ML models autonomously. zilliztech/claude-context (8.7K stars) is a code search MCP for Claude Code — making entire codebases the context for any coding agent. Alishahryar1/free-claude-code (6.3K stars) provides free Claude Code access via terminal, VSCode extension, or Discord, supporting NVIDIA NIM, OpenRouter, DeepSeek, LM Studio, and llama.cpp. This reflects demand for cost-effective AI coding solutions and improved context for coding agents.
 
 ## Notable Repositories
 
@@ -48,6 +50,15 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | kyegomez/OpenMythos | 8.1K+ | Theoretical Claude Mythos architecture reconstruction |
 | browser-use/browser-harness | 4.7K+ | Self-healing browser harness for LLMs |
 | alchaincyf/huashu-design | 4K+ | HTML-native design skill for Claude Code |
+| zilliztech/claude-context | 8.7K+ | Code search MCP for Claude Code |
+| huggingface/ml-intern | 4.5K+ | Open-source ML engineer that reads papers, trains models |
+| Alishahryar1/free-claude-code | 6.3K+ | Free Claude Code via terminal, VSCode, Discord |
+| OpenHands/software-agent-sdk | 3.2K+ | Modular SDK for building coding agents |
+| NVIDIA/NemoClaw | 1.1K+ | Hardened reference stack for secure OpenClaw deployment |
+| K-Dense-AI/scientific-agent-skills | 2.4K+ | 133 scientific skills for AI agents |
+| aaif-goose/goose | new | Open-source extensible AI agent — install, execute, edit, test with any LLM |
+| msitarzewski/agency-agents | new | Complete AI agency with specialized expert agents (frontend wizards, Reddit ninjas, etc.) |
+| langchain-ai/deepagents | new | Agent harness with LangChain/LangGraph, planning tools, subagent spawning |
 
 ## Patterns & Insights
 
@@ -55,7 +66,7 @@ The "harness layer" has emerged as a critical battleground. claw-code's explosiv
 
 The multi-agent orchestration trend is accelerating. frameworks like microsoft/agent-framework, AgentScope, and CoPaw enable complex agent teams with specialized roles, parallel execution, and workflow orchestration.
 
-The open-source agent ecosystem is rapidly converging on standards. MCP (97M+ installs), A2A protocol support, and cross-platform compatibility are becoming baseline expectations.
+The open-source agent ecosystem is rapidly converging on standards. MCP (150M+ installs), A2A protocol support, and cross-platform compatibility are becoming baseline expectations.
 
 The efficiency frontier is democratizing access. 1-bit quantization, MLX optimization, and native hardware acceleration mean frontier-class models can now run on consumer devices.
 
@@ -65,57 +76,19 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **OpenMythos as knowledge synthesis**: OpenMythos (8.1K stars) demonstrates community interest in understanding frontier models from public information — a form of open-source model archaeology.
 
+**Free alternatives and code context**: The trending repos on April 24 (free-claude-code, claude-context) reflect demand for cost-effective AI coding solutions. The MCP code search tool addresses a key limitation — giving coding agents full codebase context rather than just file snippets.
+
+**April 25: Modular agent frameworks and scientific skills**: New repos trending include OpenHands/software-agent-sdk (3.2K stars) — a clean, modular SDK for building AI agents that work with code, supporting one-off tasks, routine maintenance, and multi-agent operations. NVIDIA/NemoClaw (1.1K stars) provides a hardened reference stack for running OpenClaw securely with NVIDIA OpenShell runtime. K-Dense-AI/scientific-agent-skills (2.4K stars) offers 133 ready-to-use scientific skills for AI agents covering bioinformatics, genomics, drug discovery, and 78+ scientific databases — compatible with Claude Code, Cursor, and Codex.
+
+**April 27: GitHub's agent-scale economics crisis**: GitHub is now processing 275 million commits per week — a 14x explosion from 2025's 1 billion milestone. AI agents opened 17 million PRs in March 2026 vs 4 million in September 2025. GitHub Actions compute hit 2.1 billion minutes in a single week, causing visible outages. The real story is economics: GitHub's free tier was designed for human developers and occasional CI bots, not autonomous agent fleets that generate more code per hour than entire engineering teams. The platform is caught between its open-source heritage (which discourages paywalls) and the reality that agent traffic is destroying economics built for human-scale usage. Expect agent-specific rate limits and paid AI Agent tiers within 6-12 months — a business model problem GitHub has been deferring.
+
 ## Connections
-- [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon
+- [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging
 - [[entities/claw-code]] — Clean-room rewrite, 181K+ stars
-- [[entities/mcp-protocol]] — 97M installs, becoming foundational infrastructure
+- [[entities/mcp-protocol]] — 150M+ installs, becoming foundational infrastructure; claude-context is an MCP tool
 - [[entities/openclaw]] — 302K stars, fastest-growing open-source project
 - [[entities/claude-design]] — Direct challenge to Figma spawning design skills ecosystem
-- [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI
-
-# GitHub Trends
-
-## Overview
-The GitHub landscape in March-April 2026 is defined by the explosion of agent frameworks, the democratization of coding assistants, and the rapid commoditization of agent architectures. The most striking story is claw-code — a clean-room Python rewrite of Claude Code's architecture — reaching 100K stars in hours after Anthropic accidentally leaked Claude Code's source. This demonstrated that the "harness layer" is now as contested as model weights.
-
-## Evolution
-
-**Agent Frameworks Mature**: The period sees agent frameworks rapidly evolving from experimental prototypes to production-grade infrastructure. Microsoft Agent Framework v1.0 (April 2) provides enterprise-grade Python/.NET support with graph-based workflows, OpenTelemetry integration, and human-in-the-loop capabilities. AgentScope reaches production-ready status with MCP/A2A protocol support.
-
-**Coding Agent Wars**: Claude Code's viral success spawned intense competition. Cursor 3 pivots from IDE to agent orchestration with parallel fleet approach. OpenClaw crosses 302,000 stars as the fastest-growing open-source project in history. Google's Gemini CLI enters the terminal agent race with 1M context and Apache 2.0 licensing.
-
-**Agent Memory and Skills**: The skills ecosystem matures significantly. obra/superpowers reaches 155K stars as the complete software development methodology for coding agents. Hermes Agent crosses 35K stars with multi-platform support and browser integration. EvoSkill enables automatic skill discovery from failed trajectories.
-
-**Efficient Inference**: Multiple projects address the efficiency frontier. Bonsai 8B (PrismML) achieves 40 tokens/sec on iPhone through 1-bit quantization. Ollama 0.19 doubles Apple Silicon performance via MLX integration. flash-moe runs 397B MoE at 4.4 tokens/sec on MacBook Pro.
-
-**Browser and Web Automation**: LightPanda (Zig-built headless browser) achieves 11x faster performance and 16x less memory than Chrome headless. browser-use enables AI agents to control browsers for web automation.
-
-## Notable Repositories
-
-| Repo | Stars | Description |
-|------|-------|-------------|
-| obra/superpowers | 155K+ | Agentic skills framework for coding agents |
-| ultraworkers/claw-code | 181K+ | Clean-room Claude Code rewrite, 100K in hours |
-| nousresearch/hermes-agent | 35K+ | Self-improving agent with multi-platform support |
-| microsoft/agent-framework | 9K+ | Enterprise multi-language agent framework |
-| agentscope-ai/CoPaw | 15K+ | Personal AI assistant with multi-channel support |
-| lightpanda-io/browser | 18K+ | Zig-built headless browser, 11x faster |
-| HKUDS/nanobot | 39K+ | Ultra-lightweight universal agent harness |
-| KeygraphHQ/shannon | 31K+ | White-box AI pentester, 96.15% XBOW success |
-
-## Patterns & Insights
-
-The "harness layer" has emerged as a critical battleground. claw-code's explosive growth demonstrates that closed-source agent architectures can be rapidly replicated — the competitive moat is narrower than assumed. This has implications for business models built on agent frameworks.
-
-The multi-agent orchestration trend is accelerating. frameworks like microsoft/agent-framework, AgentScope, and CoPaw enable complex agent teams with specialized roles, parallel execution, and workflow orchestration.
-
-The open-source agent ecosystem is rapidly converging on standards. MCP (97M+ installs), A2A protocol support, and cross-platform compatibility are becoming baseline expectations.
-
-The efficiency frontier is democratizing access. 1-bit quantization, MLX optimization, and native hardware acceleration mean frontier-class models can now run on consumer devices.
-
-## Connections
-- [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon
-- [[entities/claw-code]] — Clean-room rewrite, 100K stars in hours
-- [[entities/mcp-protocol]] — 97M installs, becoming foundational infrastructure
-- [[entities/openclaw]] — 302K stars, fastest-growing open-source project
-- [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI
+- [[entities/openhands-sdk]] — Modular SDK for building coding agents; 3.2K stars
+- [[entities/nemo-claw]] — NVIDIA's hardened reference stack for secure OpenClaw deployment
+- [[entities/scientific-agent-skills]] — 133 scientific skills for agents, 2.4K stars
+- [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI; free-claude-code lowers access barriers

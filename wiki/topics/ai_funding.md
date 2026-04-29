@@ -1,13 +1,10 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-04-23
+last_updated: 2026-04-28
 ---
 
 # AI Funding
-
-## Overview
-Q1 2026 witnessed unprecedented capital concentration in AI infrastructure. The $267 billion in venture funding overall — more than double previous records — with approximately 80% flowing to AI companies. OpenAI's $122 billion single-round raise and Anthropic's $30 billion Series G represent a new paradigm of capital intensity in AI development. April 2026 continues this trend with Anthropic's valuation reaching ~$1 trillion on secondary markets, Vast Data raising $1 billion at $30 billion valuation, and SpaceX investing $60 billion in Cursor.
 
 ## Evolution
 
@@ -46,6 +43,10 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-04-22 | Anthropic ~$1T valuation (secondary markets) | Surpasses OpenAI's $880B |
 | 2026-04-22 | Vast Data raises $1B at $30B valuation | NVIDIA-backed AI storage startup |
 | 2026-04-23 | SpaceX invests $60B in Cursor | Direct AI coding competition with Claude Code |
+| 2026-04-25 | Google to invest up to $40B in Anthropic | $10B minimum, $30B contingent on performance targets |
+| 2026-04-25 | Tencent/Alibaba in talks to invest in DeepSeek | Tencent proposing up to 20% stake |
+| 2026-04-26 | Epoch AI: Google controls ~25% global AI compute | 3.8M TPUs + 1.3M GPUs; $40B deal faces EU/UK regulatory scrutiny |
+| 2026-04-28 | David Silver's Ineffable Intelligence raises $1.1B seed | Largest AI seed round ever; Sequoia, Lightspeed, Nvidia, Google, DST Global invested |
 
 ## Patterns & Insights
 
@@ -65,10 +66,19 @@ The investment pattern has shifted from model racing to infrastructure and appli
 
 **AI coding tools as investment category**: SpaceX's $60B investment in Cursor validates AI coding as a critical battleground — competing with Anthropic's Claude Code, OpenAI's Codex, and the broader vibe-coding ecosystem.
 
+**April 25: Google-Anthropic $40B investment and China tech backing DeepSeek**: Alphabet will invest at least $10 billion in Anthropic with another $30 billion potentially to follow if certain performance targets are met — the largest single investment in Anthropic to date, deepening the partnership as competition intensifies. Separately, Tencent and Alibaba are in talks to invest in DeepSeek's first funding round, with Tencent proposing up to a 20% stake — a significant shift as major Chinese tech giants seek to partner with the AI startup that rattled Silicon Valley.
+
+**April 26: Compute consolidation and regulatory pushback**: Epoch AI data shows Google controls ~25% of global AI compute (3.8M TPUs + 1.3M GPUs). The $40B Google-Anthropic deal will face EU and UK regulatory scrutiny precisely because it cements a dependency relationship making Anthropic harder to replicate or replace. Meanwhile Meta and Microsoft cut thousands of jobs to fund AI investment surge — the structural shift made visible: AI investment directly cannibalizing traditional tech workforces. The WEF reported US entry-level job postings down 35% in 18 months — the unspoken contradiction of the AI boom.
+
+**April 27: GitHub's platform economics and the agent-scale strain**: GitHub hit 275 million commits per week in April 2026 — a 14x explosion from 2025's 1 billion milestone. AI agents opened 17 million PRs in March 2026 vs 4 million in September 2025. The real story isn't the numbers but the economics: GitHub's free tier and generous API limits were designed for human developers, not fleets of autonomous agents that generate more code per hour than entire engineering teams. The platform is caught between its open-source heritage (which discourages paywalls) and the reality that agent traffic is destroying economics built for human-scale usage. Expect agent-specific rate limits and paid AI Agent tiers within 6-12 months — not a technical problem, but a business model problem deferred.
+
+**April 28: Big Tech commits $65B to Anthropic alone**: Google announced up to $40B investment in Anthropic ($10B minimum, $30B contingent on performance targets), on top of Amazon's up to $25B commitment. Combined with Microsoft's existing OpenAI stake, Big Tech has now committed up to $65B to Anthropic in this funding cycle. The message to the market: the compute moat around foundation models is real, and cloud providers will pay dearly to remain structurally relevant as AI becomes the dominant compute workload. Meanwhile, Ineffable Intelligence — founded by ex-DeepMind's David Silver (AlphaGo co-author) — raised the largest seed round in AI history at $1.1B, with Sequoia, Lightspeed, Nvidia, Google, and DST Global all participating. No product disclosed, but the investor syndicate signals extreme confidence in near-AGI timelines.
+
 ## Connections
 - [[sources/openai]] — $122B raise, $852B valuation, IPO preparation
-- [[sources/anthropic]] — $30B Series G, ~$1T valuation, multi-gigawatt TPU deal
+- [[sources/anthropic]] — $30B Series G, ~$1T valuation, multi-gigawatt TPU deal, Google $40B investment
 - [[sources/nvidia]] — Blackwell $11B Q4 revenue, Vera Rubin platform
 - [[sources/spacex]] — $250B xAI acquisition, $60B Cursor investment
 - [[sources/microsoft]] — $10B Japan infrastructure, $10B+ Nebius Finland commitment
+- [[sources/deepseek]] — Tencent/Alibaba investment talks, V4 release with open weights
 - [[ideas/infrastructure-bottleneck]] — Energy and compute constraints driving investment patterns

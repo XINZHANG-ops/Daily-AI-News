@@ -15,8 +15,9 @@ GPT-5.4-Cyber is OpenAI's defensive cybersecurity model variant, fine-tuned spec
 | Attribute | Value |
 |-----------|-------|
 | Creator | OpenAI |
-| Release Date | April 2026 |
+| Release Date | April 14, 2026 |
 | Primary Use | Defensive cybersecurity |
+| Access | Trusted Access for Cyber (TAC) program |
 
 ## Significance
 GPT-5.4-Cyber is OpenAI's answer to Anthropic's Claude Mythos. While Claude Mythos was classified as "too dangerous to release," OpenAI chose to release GPT-5.4-Cyber to vetted defenders through the Trusted Access for Cyber (TAC) program. Codex Security has already contributed to fixing over 3,000 critical vulnerabilities.

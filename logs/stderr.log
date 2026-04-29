@@ -1,0 +1,30 @@
+From github.com:XINZHANG-ops/Daily-AI-News
+   c04d3f4..e07ae1f  main       -> origin/main
+From github.com:XINZHANG-ops/Daily-AI-News
+   e07ae1f..a7874f9  main       -> origin/main
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+From github.com:XINZHANG-ops/Daily-AI-News
+   a7874f9..45308c1  main       -> origin/main
+From github.com:XINZHANG-ops/Daily-AI-News
+   45308c1..1d82c75  main       -> origin/main
+From github.com:XINZHANG-ops/Daily-AI-News
+   1d82c75..49e24aa  main       -> origin/main
+From github.com:XINZHANG-ops/Daily-AI-News
+   49e24aa..88d9913  main       -> origin/main
+Traceback (most recent call last):
+  File "/Users/xinzhang/Daily-AI-News/run_cron.py", line 127, in <module>
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/mr-catchup/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/mr-catchup/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/mr-catchup/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ollama'
+Error: claude is not installed, install from https://code.claude.com/docs/en/quickstart

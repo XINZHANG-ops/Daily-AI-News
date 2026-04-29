@@ -2,7 +2,7 @@
 title: "Claude Mythos"
 slug: claude-mythos
 type: model
-last_updated: 2026-04-20
+last_updated: 2026-04-23
 ---
 
 # Claude Mythos
@@ -15,8 +15,8 @@ Claude Mythos is Anthropic's most advanced AI model, specifically designed for c
 | Attribute | Value |
 |-----------|-------|
 | Creator | Anthropic |
-| Release Date | Withheld from public release as of April 2026 |
-| Parameters | ~10 trillion (Claude Mythos 5 confirmed) |
+| Release Date | Withheld from public release |
+| Parameters | ~10 trillion (Claude Mythos 5 confirmed April 22) |
 | Primary Use | Cybersecurity vulnerability discovery |
 | Access | Restricted to Project Glasswing coalition (40+ partners) |
 
@@ -28,6 +28,8 @@ The controversy triggered emergency government response at the highest levels: V
 Project Glasswing was launched as an alternative — a consortium with 40+ partners (Microsoft, Apple, Amazon, Google, NVIDIA, CrowdStrike, Cisco, JPMorgan) sharing defensive insights derived from Mythos discoveries. Anthropic committed $100M in credits to fix the vulnerabilities found.
 
 By April 20, the NSA confirmed partnership with Anthropic through Project Glasswing. Claude Mythos identified thousands of zero-day vulnerabilities through the coalition. This represents the first government-level validation of Mythos capabilities and the restricted-access model for frontier AI safety.
+
+By April 22, central banks worldwide responded. The Bank of England governor warned that Anthropic may have found a way to "crack the whole cyber-risk world open." Intelligence agencies globally scrambled to understand Mythos implications — marking the first time an AI model triggered emergency responses from central banks and intelligence agencies simultaneously.
 
 ## Connections
 - [[sources/anthropic]] — Developed and withheld by Anthropic
