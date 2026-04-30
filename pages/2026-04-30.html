@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - April 30, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 April 30, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/backnotprop/plannotator" class="card-title" target="_blank">backnotprop/plannotator</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 335 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Annotate and review coding agent plans and code diffs visually, share with your team, send feedback to agents with one click.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">可视化注释和审查AI编码代理的计划与代码差异，与团队共享，一键向代理发送反馈。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/gotalab/cc-sdd" class="card-title" target="_blank">gotalab/cc-sdd</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 243 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Turn approved specs into long-running autonomous implementation using native subagent dispatch with independent adversarial review.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">将已批准的需求规格转化为长期自主实现，通过原生子代理调度和独立对抗性审查完成代码构建。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/MervinPraison/PraisonAI" class="card-title" target="_blank">MervinPraison/PraisonAI</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 7k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.1k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">PraisonAI — Hire a 24/7 AI Workforce. Build intelligent assistants that handle research and operations in 5 lines of code with built-in memory, RAG, and support for 100+ LLMs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">PraisonAI — 雇佣全天候AI劳动力。用5行代码构建智能助手，内置记忆、RAG能力，支持100多种大语言模型。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">DigiTimes</span>
+                    <div class="news-time">2026-04-30</div>
+                    <a href="https://www.digitimes.com/news/a20260430VL210/openai-stargate-infrastructure-cost-demand.html" class="card-title" target="_blank" data-lang="en">OpenAI Secures 10GW of US Compute, Surpassing Stargate Target Years Early</a>
+                    <a href="https://www.digitimes.com/news/a20260430VL210/openai-stargate-infrastructure-cost-demand.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI锁定美国10GW算力，提前数年完成星际之门目标</a>
+                    <p class="card-description" data-lang="en">OpenAI announced it has secured over 10 gigawatts of AI computing capacity in the US, adding more than 3GW in the past 90 days alone. The milestone surpasses its original Stargate target years ahead of schedule.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI宣布已在美国锁定超过10吉瓦的AI计算能力，仅过去90天就增加了3吉瓦以上。这一里程碑比原定星际之门目标提前数年完成。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Yahoo Finance</span>
+                    <div class="news-time">2026-04-29</div>
+                    <a href="https://finance.yahoo.com/markets/stocks/articles/sources-anthropic-could-raise-50b-000715022.html" class="card-title" target="_blank" data-lang="en">Anthropic Eyes $50B Raise at $900B Valuation, Revenue Run Rate Nears $40B</a>
+                    <a href="https://finance.yahoo.com/markets/stocks/articles/sources-anthropic-could-raise-50b-000715022.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic拟以9000亿美元估值融资500亿美元，年化收入逼近400亿</a>
+                    <p class="card-description" data-lang="en">Anthropic is reportedly considering a new $40-50 billion funding round that could value the company between $850B and $900B—more than doubling its $380B valuation from February. Annual revenue run rate has surged past $30B, closer to $40B.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">据报道，Anthropic正在考虑新一轮400-500亿美元融资，估值可能达到8500-9000亿美元，较今年2月的3800亿美元估值翻倍以上。年化收入已突破300亿美元，接近400亿。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechSifted</span>
+                    <div class="news-time">2026-04-24</div>
+                    <a href="https://techsifted.com/posts/deepseek-v4-review-april-2026/" class="card-title" target="_blank" data-lang="en">DeepSeek V4 Flash Launches at $0.14/$0.28 per Million Tokens, 100x Cheaper Than Frontier Models</a>
+                    <a href="https://techsifted.com/posts/deepseek-v4-review-april-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepSeek V4 Flash以每百万token 0.14/0.28美元发布，比前沿模型便宜100倍</a>
+                    <p class="card-description" data-lang="en">DeepSeek released V4 Flash, an open-weight MoE model with 284B total / 13B active parameters. Priced at $0.14 input / $0.28 output per million tokens, it undercuts GPT-5.5 and Claude Opus 4.7 by roughly 100x while scoring ~78% on SWE-bench Verified.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepSeek发布V4 Flash，一款总参数2840亿/激活参数130亿的开放权重MoE模型。定价为每百万token输入0.14美元/输出0.28美元，比GPT-5.5和Claude Opus 4.7便宜约100倍，同时在SWE-bench Verified上获得约78%的分数。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Bloomberg</span>
+                    <div class="news-time">2026-04-28</div>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-28/google-allows-pentagon-to-use-its-ai-in-classified-military-work" class="card-title" target="_blank" data-lang="en">Google Signs Pentagon Deal Allowing AI for Classified Military Projects</a>
+                    <a href="https://www.bloomberg.com/news/articles/2026-04-28/google-allows-pentagon-to-use-its-ai-in-classified-military-work" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google签署五角大楼协议，允许AI用于机密军事项目</a>
+                    <p class="card-description" data-lang="en">Google finalized an agreement with the U.S. Defense Department to allow its artificial intelligence systems to be used for classified military work, despite internal protests from researchers opposing the collaboration.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google与美国国防部敲定协议，允许其人工智能系统用于机密军事工作，尽管内部研究人员反对这一合作。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MacRumors</span>
+                    <div class="news-time">2026-04-22</div>
+                    <a href="https://www.macrumors.com/2026/04/22/google-gemini-powered-siri-2026/" class="card-title" target="_blank" data-lang="en">Apple Confirms Gemini-Powered Siri for iOS 27, Using Knowledge Distillation for On-Device Models</a>
+                    <a href="https://www.macrumors.com/2026/04/22/google-gemini-powered-siri-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Apple确认iOS 27将采用Gemini驱动的Siri，利用知识蒸馏实现设备端模型</a>
+                    <p class="card-description" data-lang="en">At Google Cloud Next 2026, Google Cloud CEO Thomas Kurian confirmed that Google Gemini will power a new version of Siri expected to launch with iOS 27 later this year. Apple is using knowledge distillation from large Gemini models to train smaller on-device Apple Foundation Models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在Google Cloud Next 2026大会上，Google Cloud CEO Thomas Kurian确认Google Gemini将为预计今年随iOS 27推出的新版Siri提供支持。Apple正在利用大型Gemini模型的知识蒸馏来训练更小的设备端Apple基础模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Idlen</span>
+                    <div class="news-time">2026-04-16</div>
+                    <a href="https://www.idlen.io/news/alibaba-qwen-36-35b-a3b-moe-open-source-apache-swe-bench-april-2026" class="card-title" target="_blank" data-lang="en">Alibaba's Qwen 3.6-35B-A3B Ships with 3B Active Parameters, Beats Models 10x Its Size on Coding Benchmarks</a>
+                    <a href="https://www.idlen.io/news/alibaba-qwen-36-35b-a3b-moe-open-source-apache-swe-bench-april-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">阿里巴巴Qwen 3.6-35B-A3B以30亿激活参数发布，在编程基准测试上击败大其10倍的模型</a>
+                    <p class="card-description" data-lang="en">Alibaba released Qwen 3.6-35B-A3B under Apache 2.0, a sparse MoE with 35B total parameters but only 3B active per token. It scores 73.4% on SWE-bench Verified and runs on a single consumer RTX 4090 GPU.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">阿里巴巴以Apache 2.0许可发布Qwen 3.6-35B-A3B，一款稀疏MoE模型，总参数350亿但每token仅激活30亿参数。在SWE-bench Verified上获得73.4%分数，可在单张消费级RTX 4090 GPU上运行。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Fortune</span>
+                    <div class="news-time">2026-04-29</div>
+                    <a href="https://fortune.com/2026/04/29/microsoft-meta-google-ai-capex-spending-billions/" class="card-title" target="_blank" data-lang="en">Big Tech Earnings Reveal Divergent AI Strategies: Google Wins Investors, Microsoft and Meta Face Skepticism</a>
+                    <a href="https://fortune.com/2026/04/29/microsoft-meta-google-ai-capex-spending-billions/" class="card-title" target="_blank" data-lang="zh" style="display: none;">科技巨头财报揭示分化的AI战略：Google赢得投资者，微软和Meta遭质疑</a>
+                    <p class="card-description" data-lang="en">Microsoft, Meta, and Google all announced billions more in AI capital expenditures. Alphabet was the only one that successfully convinced investors the spending is paying off, while Microsoft and Meta faced more skeptical market reactions.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软、Meta和Google均宣布再投入数十亿美元AI资本支出。Alphabet是唯一成功说服投资者相信支出正在产生回报的公司，而微软和Meta面临市场更多质疑。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">April 30 marks the week the AI industry bifurcated into two parallel universes. In one, OpenAI locks down 10 gigawatts of US compute and Anthropic chases a $900B valuation—frontier labs treating AI as infrastructure to be monopolized, funded by defense contracts and enterprise lock-in. In the other, DeepSeek ships a model at $0.28/M tokens and Qwen 3.6 runs on a gaming GPU—open-source labs proving that frontier-grade intelligence is becoming a commodity. The real story isn't that both are happening; it's that the gap between them is widening simultaneously. Premium models (GPT-5.5, Claude Opus 4.7) still lead benchmarks, but their margin of superiority is shrinking while their cost premium is exploding—100x in some cases. Google's Pentagon deal and Apple's Gemini partnership show the old tech giants pivoting: Google to defense revenue, Apple to outsourcing model development. Neither can afford to build from scratch anymore. For developers, this is the best week in AI since the open-weight boom began: you can now run 73% SWE-bench accuracy locally for $1,600 in hardware, or rent it for pennies per million tokens. The moats are evaporating. The only question is whether the closed labs can pivot to platform economics (like AWS) before their model advantage disappears entirely.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">4月30日标志着AI行业分裂为两个平行宇宙。在一个宇宙中，OpenAI锁定美国10吉瓦算力，Anthropic追逐9000亿美元估值——前沿实验室将AI视为应被垄断的基础设施，资金来自国防合同和企业锁定。在另一个宇宙中，DeepSeek以每百万token 0.28美元的价格发布模型，Qwen 3.6在游戏GPU上运行——开源实验室证明前沿级智能正在成为商品。真正的故事不是两者同时在发生，而是它们之间的差距正在同时扩大。高级模型（GPT-5.5、Claude Opus 4.7）仍在基准测试中领先，但它们的优势幅度在缩小，而成本溢价在爆炸性增长——某些情况下高达100倍。Google的五角大楼交易和Apple的Gemini合作显示了老牌科技巨头的转向：Google转向国防收入，Apple转向外包模型开发。两者都再也负担不起从零开始建设的成本。对开发者来说，这是自开放权重浪潮开始以来AI领域最好的一周：你现在可以用1600美元的硬件本地运行73% SWE-bench准确率的模型，或以每百万token几分钱的价格租用。护城河正在蒸发。唯一的问题是，封闭实验室能否在其模型优势完全消失之前转向平台经济（如AWS模式）。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-04-28
+last_updated: 2026-04-29
 ---
 
 # AI Companies
@@ -70,6 +70,12 @@ The AI company landscape in March-April 2026 is defined by three intersecting na
 | 2026-04-27 | Musk vs Altman court proceedings begin | Trial could force OpenAI to revert to non-profit, invalidating Microsoft investments |
 | 2026-04-28 | OpenAI Q1 revenue miss confirmed | First concrete sign Claude winning enterprise coding contracts; Anthropic's trajectory validated |
 | 2026-04-28 | Ineffable Intelligence raises $1.1B seed | Largest AI seed round; David Silver (AlphaGo co-author); Sequoia, Lightspeed, Nvidia, Google, DST Global |
+| 2026-04-29 | Musk vs Altman Day 3: 2017 profit-planning emails | Altman and Brockman discussed for-profit conversion before 2019 "capped profit" announcement; Goldman Sachs and Morgan Stanley threaten IPO withdrawal |
+| 2026-04-29 | EU's first AI Act fine: €800M on Meta | Unauthorized EU user data training; MCI employee keystroke tracking cited |
+| 2026-04-29 | TSMC pauses AI chip orders | 3nm yield crisis: 52% yield vs normal 75%; Q3 supply cliff for H200/MI350 |
+| 2026-04-29 | GitHub Copilot Agent Tier: $49/agent/month | First major platform monetization of agent-scale usage |
+| 2026-04-29 | Mistral Ultra 2 released | 78.4% SWE-bench at €2/M; EU data residency; positions as European alternative |
+| 2026-04-29 | Ineffable hires 50 researchers in 72 hours | DeepMind, OpenAI, Anthropic talent poached; AlphaGo/AlphaFold/GPT-4 paper authors |
 
 ## Patterns & Insights
 

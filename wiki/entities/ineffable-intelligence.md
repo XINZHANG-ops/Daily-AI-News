@@ -2,7 +2,7 @@
 title: "Ineffable Intelligence"
 slug: ineffable-intelligence
 type: company
-last_updated: 2026-04-28
+last_updated: 2026-04-29
 ---
 
 # Ineffable Intelligence
@@ -17,6 +17,7 @@ AI startup founded by ex-DeepMind researcher David Silver (co-author of the Alph
 | Founded | 2026 |
 | Founder | David Silver (ex-DeepMind, AlphaGo co-author) |
 | Seed Funding | $1.1B (largest AI seed round ever) |
+| Researchers Hired | 50 senior researchers in 72 hours |
 | Investors | Sequoia, Lightspeed, Nvidia, Google, DST Global, Index |
 | Product | Not disclosed |
 

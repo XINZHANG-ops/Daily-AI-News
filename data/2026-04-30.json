@@ -1,0 +1,160 @@
+{
+  "date": "2026-04-30",
+  "github_repos": [
+    {
+      "name": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": {
+        "en": "Annotate and review coding agent plans and code diffs visually, share with your team, send feedback to agents with one click.",
+        "zh": "可视化注释和审查AI编码代理的计划与代码差异，与团队共享，一键向代理发送反馈。"
+      },
+      "stars": "4.8k",
+      "forks": "335"
+    },
+    {
+      "name": "gotalab/cc-sdd",
+      "url": "https://github.com/gotalab/cc-sdd",
+      "description": {
+        "en": "Turn approved specs into long-running autonomous implementation using native subagent dispatch with independent adversarial review.",
+        "zh": "将已批准的需求规格转化为长期自主实现，通过原生子代理调度和独立对抗性审查完成代码构建。"
+      },
+      "stars": "3.2k",
+      "forks": "243"
+    },
+    {
+      "name": "MervinPraison/PraisonAI",
+      "url": "https://github.com/MervinPraison/PraisonAI",
+      "description": {
+        "en": "PraisonAI — Hire a 24/7 AI Workforce. Build intelligent assistants that handle research and operations in 5 lines of code with built-in memory, RAG, and support for 100+ LLMs.",
+        "zh": "PraisonAI — 雇佣全天候AI劳动力。用5行代码构建智能助手，内置记忆、RAG能力，支持100多种大语言模型。"
+      },
+      "stars": "7k",
+      "forks": "1.1k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Secures 10GW of US Compute, Surpassing Stargate Target Years Early",
+        "zh": "OpenAI锁定美国10GW算力，提前数年完成星际之门目标"
+      },
+      "url": "https://www.digitimes.com/news/a20260430VL210/openai-stargate-infrastructure-cost-demand.html",
+      "source": "DigiTimes",
+      "time": "2026-04-30",
+      "description": {
+        "en": "OpenAI announced it has secured over 10 gigawatts of AI computing capacity in the US, adding more than 3GW in the past 90 days alone. The milestone surpasses its original Stargate target years ahead of schedule.",
+        "zh": "OpenAI宣布已在美国锁定超过10吉瓦的AI计算能力，仅过去90天就增加了3吉瓦以上。这一里程碑比原定星际之门目标提前数年完成。"
+      },
+      "insight": {
+        "en": "01 *OpenAI's 10GW Milestone* : The 3GW added in 90 days exceeds most countries' total data center capacity. This isn't just infrastructure—it's a moat. While Anthropic chases a $900B valuation on coding revenue and Google inks Pentagon deals, OpenAI is locking up physical power generation (estimated ~$15-20B in commitments). The real story: compute scarcity is becoming the defining constraint of frontier AI, and the companies that own power plants will dictate who can train next-generation models. Microsoft and Meta's capex hikes this week look defensive in comparison—they're buying capacity; OpenAI is building an energy grid.",
+        "zh": "01 *OpenAI的10GW里程碑* : 90天内增加的3GW超过大多数国家的数据中心总容量。这不仅是基础设施——这是一条护城河。当Anthropic凭借编程收入追逐9000亿美元估值、Google与五角大楼签约时，OpenAI正在锁定实体发电能力（估计承诺投入约150-200亿美元）。真正的故事是：算力稀缺正在成为前沿AI的决定性约束，拥有发电厂的公司将决定谁能训练下一代模型。相比之下，本周Microsoft和Meta的资本支出 hikes 显得防御性——他们在购买容量，而OpenAI在构建能源网络。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Eyes $50B Raise at $900B Valuation, Revenue Run Rate Nears $40B",
+        "zh": "Anthropic拟以9000亿美元估值融资500亿美元，年化收入逼近400亿"
+      },
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sources-anthropic-could-raise-50b-000715022.html",
+      "source": "Yahoo Finance",
+      "time": "2026-04-29",
+      "description": {
+        "en": "Anthropic is reportedly considering a new $40-50 billion funding round that could value the company between $850B and $900B—more than doubling its $380B valuation from February. Annual revenue run rate has surged past $30B, closer to $40B.",
+        "zh": "据报道，Anthropic正在考虑新一轮400-500亿美元融资，估值可能达到8500-9000亿美元，较今年2月的3800亿美元估值翻倍以上。年化收入已突破300亿美元，接近400亿。"
+      },
+      "insight": {
+        "en": "02 *Anthropic's $900B Bid* : From $380B to $900B in under three months is not a funding round—it's a market re-rating. The driver isn't model quality (Claude Opus 4.7 is strong but not dominant); it's Claude Code and enterprise API consumption. At ~$40B ARR, Anthropic is trading at 22.5x revenue, vs OpenAI's estimated 35-40x. The implication: investors see Anthropic as the 'developer's AI' with stickier unit economics than ChatGPT's consumer subscription model. But the $50B raise is also a war chest for compute—Anthropic knows it can't compete with OpenAI's Stargate without its own infrastructure commitments. The race isn't just for customers; it's for capital to buy GPUs before the other guy does.",
+        "zh": "02 *Anthropic的9000亿美元出价* : 三个月内从3800亿到9000亿，这不是一轮融资——这是市场重新定价。驱动力不是模型质量（Claude Opus 4.7很强但并非主导），而是Claude Code和企业API消费。按约400亿美元年化收入计算，Anthropic的交易市盈率约22.5倍，而OpenAI估计为35-40倍。这意味着：投资者将Anthropic视为'开发者AI'，其单位经济模型比ChatGPT的消费订阅模式更具粘性。但500亿美元融资也是计算能力的军备资金——Anthropic清楚，没有自己的基础设施承诺，它无法与OpenAI的星际之门竞争。这场竞赛不仅是争夺客户，更是在对手之前筹集资本购买GPU。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek V4 Flash Launches at $0.14/$0.28 per Million Tokens, 100x Cheaper Than Frontier Models",
+        "zh": "DeepSeek V4 Flash以每百万token 0.14/0.28美元发布，比前沿模型便宜100倍"
+      },
+      "url": "https://techsifted.com/posts/deepseek-v4-review-april-2026/",
+      "source": "TechSifted",
+      "time": "2026-04-24",
+      "description": {
+        "en": "DeepSeek released V4 Flash, an open-weight MoE model with 284B total / 13B active parameters. Priced at $0.14 input / $0.28 output per million tokens, it undercuts GPT-5.5 and Claude Opus 4.7 by roughly 100x while scoring ~78% on SWE-bench Verified.",
+        "zh": "DeepSeek发布V4 Flash，一款总参数2840亿/激活参数130亿的开放权重MoE模型。定价为每百万token输入0.14美元/输出0.28美元，比GPT-5.5和Claude Opus 4.7便宜约100倍，同时在SWE-bench Verified上获得约78%的分数。"
+      },
+      "insight": {
+        "en": "03 *DeepSeek's Price War* : V4 Flash doesn't win on absolute quality—it wins on economics. At $0.28/M output tokens vs GPT-5.5's ~$30/M, the cost gap is now 100x. For many production tasks (customer support, content moderation, internal tooling), 78% SWE-bench accuracy is 'good enough' when the alternative costs 100x more. The pattern emerging this week: OpenAI builds a Ferrari, DeepSeek builds a Toyota Corolla, and most enterprises need a Corolla. This follows Qwen 3.6's 3B-active-parameter demo (runs on a single RTX 4090) and Kimi K2.6's MIT-licensed open weights. The frontier is fragmenting into 'premium reasoning' (Opus, GPT-5.5) and 'commodity inference' (DeepSeek, Qwen, Kimi)—and commodity inference is getting frontier-level scores.",
+        "zh": "03 *DeepSeek的价格战* : V4 Flash并非在绝对质量上取胜——它在经济性上取胜。每百万输出token 0.28美元 vs GPT-5.5的约30美元，成本差距已达100倍。对于许多生产任务（客户支持、内容审核、内部工具），78%的SWE-bench准确率当替代方案贵100倍时已经'足够好'。本周浮现的模式是：OpenAI打造法拉利，DeepSeek打造丰田卡罗拉，而大多数企业需要的是卡罗拉。这与Qwen 3.6的30亿激活参数演示（可在单张RTX 4090上运行）和Kimi K2.6的MIT许可开放权重一脉相承。前沿正在分裂为'高级推理'（Opus、GPT-5.5）和'商品化推理'（DeepSeek、Qwen、Kimi）——而商品化推理正在获得前沿级别的分数。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Signs Pentagon Deal Allowing AI for Classified Military Projects",
+        "zh": "Google签署五角大楼协议，允许AI用于机密军事项目"
+      },
+      "url": "https://www.bloomberg.com/news/articles/2026-04-28/google-allows-pentagon-to-use-its-ai-in-classified-military-work",
+      "source": "Bloomberg",
+      "time": "2026-04-28",
+      "description": {
+        "en": "Google finalized an agreement with the U.S. Defense Department to allow its artificial intelligence systems to be used for classified military work, despite internal protests from researchers opposing the collaboration.",
+        "zh": "Google与美国国防部敲定协议，允许其人工智能系统用于机密军事工作，尽管内部研究人员反对这一合作。"
+      },
+      "insight": {
+        "en": "04 *Google's Military Pivot* : This is the end of Google's 'Don't Be Evil' era in practice. After years of employee protests (remember Project Maven in 2018?), Google has crossed the rubicon into classified military AI. The timing is strategic: OpenAI is dominating civilian infrastructure with Stargate, so Google is carving out the defense niche where it already has cloud contracts (JEDI/WIU follow-ons). The real shift: AI is now treated as dual-use infrastructure like semiconductors or satellite networks—every major lab will need a defense revenue stream to justify its compute spend. Anthropic and OpenAI will face pressure to follow suit; the question is whether their safety teams resign first.",
+        "zh": "04 *Google的军事转向* : 这实际上标志着Google'不作恶'时代的终结。经过多年员工抗议（还记得2018年的Project Maven吗？），Google已经越过卢比孔河进入机密军事AI领域。时机具有战略性：OpenAI正通过星际之门主导民用基础设施，因此Google正在开拓其已有云合同（JEDI/WIU后续）的国防利基市场。真正的转变是：AI现在被视为与半导体或卫星网络一样的双重用途基础设施——每个主要实验室都需要国防收入流来证明其计算支出合理。Anthropic和OpenAI将面临效仿压力；问题是他们的安全团队是否会先辞职。"
+      }
+    },
+    {
+      "title": {
+        "en": "Apple Confirms Gemini-Powered Siri for iOS 27, Using Knowledge Distillation for On-Device Models",
+        "zh": "Apple确认iOS 27将采用Gemini驱动的Siri，利用知识蒸馏实现设备端模型"
+      },
+      "url": "https://www.macrumors.com/2026/04/22/google-gemini-powered-siri-2026/",
+      "source": "MacRumors",
+      "time": "2026-04-22",
+      "description": {
+        "en": "At Google Cloud Next 2026, Google Cloud CEO Thomas Kurian confirmed that Google Gemini will power a new version of Siri expected to launch with iOS 27 later this year. Apple is using knowledge distillation from large Gemini models to train smaller on-device Apple Foundation Models.",
+        "zh": "在Google Cloud Next 2026大会上，Google Cloud CEO Thomas Kurian确认Google Gemini将为预计今年随iOS 27推出的新版Siri提供支持。Apple正在利用大型Gemini模型的知识蒸馏来训练更小的设备端Apple基础模型。"
+      },
+      "insight": {
+        "en": "05 *Apple's Gemini Dependency* : Apple's admission that it needs Google's models to save Siri is a watershed moment. After spending billions on Apple Intelligence with underwhelming results, Apple is acknowledging what developers already knew: building frontier LLMs requires a different DNA than building consumer hardware. The knowledge distillation play is clever—train small on-device models from large cloud ones—but it means Apple will always be one generation behind Google in model quality. For Google, this is a masterstroke: they get Apple's user base without the antitrust scrutiny of a default search deal, and they collect training signal from billions of iPhone queries. The loser here isn't Apple (Siri will get better); it's OpenAI, which just lost its best shot at a default iPhone assistant slot.",
+        "zh": "05 *Apple对Gemini的依赖* : Apple承认需要Google的模型来拯救Siri是一个分水岭时刻。在花费数十亿美元打造Apple Intelligence却收效甚微后，Apple正在承认开发者早已知道的事实：构建前沿LLM需要与消费硬件截然不同的基因。知识蒸馏策略很聪明——用大型云端模型训练小型设备端模型——但这意味着Apple在模型质量上将始终落后Google一代。对Google来说，这是一步妙棋：他们获得Apple的用户群，却无需面对默认搜索交易那样的反垄断审查，还能从数十亿iPhone查询中收集训练信号。这里的输家不是Apple（Siri会变得更好），而是OpenAI——它刚刚失去了成为iPhone默认助理的最佳机会。"
+      }
+    },
+    {
+      "title": {
+        "en": "Alibaba's Qwen 3.6-35B-A3B Ships with 3B Active Parameters, Beats Models 10x Its Size on Coding Benchmarks",
+        "zh": "阿里巴巴Qwen 3.6-35B-A3B以30亿激活参数发布，在编程基准测试上击败大其10倍的模型"
+      },
+      "url": "https://www.idlen.io/news/alibaba-qwen-36-35b-a3b-moe-open-source-apache-swe-bench-april-2026",
+      "source": "Idlen",
+      "time": "2026-04-16",
+      "description": {
+        "en": "Alibaba released Qwen 3.6-35B-A3B under Apache 2.0, a sparse MoE with 35B total parameters but only 3B active per token. It scores 73.4% on SWE-bench Verified and runs on a single consumer RTX 4090 GPU.",
+        "zh": "阿里巴巴以Apache 2.0许可发布Qwen 3.6-35B-A3B，一款稀疏MoE模型，总参数350亿但每token仅激活30亿参数。在SWE-bench Verified上获得73.4%分数，可在单张消费级RTX 4090 GPU上运行。"
+      },
+      "insight": {
+        "en": "06 *Qwen's Efficiency Breakthrough* : 3 billion active parameters scoring 73.4% on SWE-bench is absurd. That's within 15 points of GPT-5.5 (88.7%) with ~1/200th of the active compute. The architectural shift here is Gated DeltaNet + sparse routing—Alibaba is betting that quality comes from routing, not scale. For developers, this means frontier-grade coding assistance is now runnable on a $1,600 GPU without API bills. Combined with DeepSeek V4 Flash's $0.14/M pricing, the open-source ecosystem now offers two viable paths: local inference (Qwen on RTX 4090) or ultra-cheap API (DeepSeek). The closed labs' pricing power is eroding faster than their benchmark leads can justify. The frontier is no longer just who has the biggest model—it's who can deliver 80% of frontier quality at 1% of the cost.",
+        "zh": "06 *Qwen的效率突破* : 30亿激活参数在SWE-bench上获得73.4%的分数是惊人的。这与GPT-5.5（88.7%）仅差15个百分点，而活跃计算量仅约1/200。这里的架构转变是门控DeltaNet + 稀疏路由——阿里巴巴押注质量来自路由而非规模。对开发者来说，这意味着前沿级别的编程辅助现在可以在1600美元的GPU上本地运行，无需API账单。结合DeepSeek V4 Flash的0.14美元/百万定价，开源生态系统现在提供两条可行路径：本地推理（RTX 4090上的Qwen）或超便宜API（DeepSeek）。封闭实验室的定价能力正在比其基准领先优势所能证明的速度更快地被侵蚀。前沿不再只是谁拥有最大的模型——而是谁能以1%的成本提供80%的前沿质量。"
+      }
+    },
+    {
+      "title": {
+        "en": "Big Tech Earnings Reveal Divergent AI Strategies: Google Wins Investors, Microsoft and Meta Face Skepticism",
+        "zh": "科技巨头财报揭示分化的AI战略：Google赢得投资者，微软和Meta遭质疑"
+      },
+      "url": "https://fortune.com/2026/04/29/microsoft-meta-google-ai-capex-spending-billions/",
+      "source": "Fortune",
+      "time": "2026-04-29",
+      "description": {
+        "en": "Microsoft, Meta, and Google all announced billions more in AI capital expenditures. Alphabet was the only one that successfully convinced investors the spending is paying off, while Microsoft and Meta faced more skeptical market reactions.",
+        "zh": "微软、Meta和Google均宣布再投入数十亿美元AI资本支出。Alphabet是唯一成功说服投资者相信支出正在产生回报的公司，而微软和Meta面临市场更多质疑。"
+      },
+      "insight": {
+        "en": "07 *The Capex Credibility Gap* : Google's win isn't about spending less—it's about proving revenue. Search and YouTube ads monetize AI directly; Azure and Meta's social graphs monetize it indirectly (productivity, engagement). Investors are done with 'build it and they will come' AI stories. Microsoft Copilot's $20/month add-on hasn't moved the revenue needle meaningfully, and Meta's AI glasses are cool but unprofitable at scale. Google's advantage: every query Gemini handles is a query that could have gone to search ads. The divergence in market reaction signals that 2026 is the year AI transitions from R&D narrative to P&L narrative—and companies without a direct monetization flywheel are in trouble. Note the timing: Google announced its Pentagon deal days before earnings, giving investors a second revenue story beyond ads.",
+        "zh": "07 *资本支出的可信度鸿沟* : Google的胜利不在于花得更少——而在于证明收入。搜索和YouTube广告直接通过AI变现；Azure和Meta的社交网络则间接变现（生产力、参与度）。投资者已经对'建好了他们就会来'的AI故事失去耐心。微软Copilot每月20美元的附加服务并未显著推动收入增长，Meta的AI眼镜很酷但规模化不盈利。Google的优势在于：Gemini处理的每个查询本可能流向搜索广告。市场反应的分化表明，2026年是AI从研发叙事转向损益叙事的一年——没有直接变现飞轮的公司正陷入困境。注意时机：Google在财报前几天宣布了五角大楼交易，为投资者提供了广告之外的第二个收入故事。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "April 30 marks the week the AI industry bifurcated into two parallel universes. In one, OpenAI locks down 10 gigawatts of US compute and Anthropic chases a $900B valuation—frontier labs treating AI as infrastructure to be monopolized, funded by defense contracts and enterprise lock-in. In the other, DeepSeek ships a model at $0.28/M tokens and Qwen 3.6 runs on a gaming GPU—open-source labs proving that frontier-grade intelligence is becoming a commodity. The real story isn't that both are happening; it's that the gap between them is widening simultaneously. Premium models (GPT-5.5, Claude Opus 4.7) still lead benchmarks, but their margin of superiority is shrinking while their cost premium is exploding—100x in some cases. Google's Pentagon deal and Apple's Gemini partnership show the old tech giants pivoting: Google to defense revenue, Apple to outsourcing model development. Neither can afford to build from scratch anymore. For developers, this is the best week in AI since the open-weight boom began: you can now run 73% SWE-bench accuracy locally for $1,600 in hardware, or rent it for pennies per million tokens. The moats are evaporating. The only question is whether the closed labs can pivot to platform economics (like AWS) before their model advantage disappears entirely.",
+    "zh": "4月30日标志着AI行业分裂为两个平行宇宙。在一个宇宙中，OpenAI锁定美国10吉瓦算力，Anthropic追逐9000亿美元估值——前沿实验室将AI视为应被垄断的基础设施，资金来自国防合同和企业锁定。在另一个宇宙中，DeepSeek以每百万token 0.28美元的价格发布模型，Qwen 3.6在游戏GPU上运行——开源实验室证明前沿级智能正在成为商品。真正的故事不是两者同时在发生，而是它们之间的差距正在同时扩大。高级模型（GPT-5.5、Claude Opus 4.7）仍在基准测试中领先，但它们的优势幅度在缩小，而成本溢价在爆炸性增长——某些情况下高达100倍。Google的五角大楼交易和Apple的Gemini合作显示了老牌科技巨头的转向：Google转向国防收入，Apple转向外包模型开发。两者都再也负担不起从零开始建设的成本。对开发者来说，这是自开放权重浪潮开始以来AI领域最好的一周：你现在可以用1600美元的硬件本地运行73% SWE-bench准确率的模型，或以每百万token几分钱的价格租用。护城河正在蒸发。唯一的问题是，封闭实验室能否在其模型优势完全消失之前转向平台经济（如AWS模式）。"
+  }
+}

@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-04-28
+last_updated: 2026-04-29
 ---
 
 # LLM Models
@@ -108,6 +108,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 
 **April 28: Claude Eating OpenAI's Lunch in Enterprise**: OpenAI missed multiple Q1 monthly revenue targets after losing ground to Anthropic in coding and enterprise markets — the first concrete sign that Claude is winning deterministic developer workflows. GPT-5.5's Terminal-Bench lead (82.7% vs 58.6% Opus 4.7) is real, but OpenAI charges $30/M output tokens vs Anthropic's $25/M, and enterprise buyers care about total cost of ownership. Meanwhile, DeepSeek V4-Pro-Max at $1.74/M tokens is now the cost-performance leader — 2.6x cheaper than Claude Opus 4.7 and 17x cheaper than GPT-5.5's output pricing. DeepSeek's 1.6T parameter model with open weights continues the China challenge at a fraction of Western cost structures.
 
+**April 29: Institutional Contradictions Surface**: The Musk vs Altman trial reveals 2017 emails showing Altman and Brockman discussed for-profit conversion before the 2019 "capped profit" announcement — threatening to invalidate Microsoft's $10B+ investment and every enterprise contract since 2019. Goldman Sachs and Morgan Stanley threaten to withdraw from OpenAI's IPO. The EU issues its first AI Act fine — €800M on Meta for unauthorized data training, citing the MCI employee tracking program. TSMC's 3nm yield collapses to 52%, creating a Q3 supply cliff for H200 and AMD MI350 wafers. Meanwhile, Mistral Ultra 2 (78.4% SWE-bench at €2/M) positions itself as the EU-compliant alternative to US labs. Ineffable Intelligence hires 50 senior researchers from DeepMind, OpenAI, and Anthropic in 72 hours — assembling the most credentialed AI research team in history. The pattern: legal, regulatory, physical, and economic frameworks are not keeping pace with capability deployment.
+
 ## Connections
 - [[sources/anthropic]] — Claude Mythos developed and leaked by Anthropic; Opus 4.7 release; Project Glasswing
 - [[sources/openai]] — GPT-5.4 family, GPT-5.5 release, Spud completion, GPT-5.4-Cyber, GPT-Rosalind
@@ -123,3 +125,5 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[ideas/safety-restricted-releases]] — Claude Mythos established the precedent for capability-based release restrictions
 - [[ideas/us-china-ai-fragmentation]] — Stanford HAI confirms gap has collapsed
 - [[entities/deepseek-v4]] — DeepSeek V4-Pro-Max at $1.74/M tokens is the cost-performance leader; 2.6x cheaper than Claude Opus 4.7
+- [[entities/mistral-ultra-2]] — 78.4% SWE-bench at €2/M; EU-compliant positioning exploiting US regulatory siege
+- [[ideas/institutional-gap]] — April 29 exemplifies the widening gap between AI capability and legal/regulatory/economic frameworks

@@ -1,7 +1,7 @@
 ---
 title: "Meta"
 slug: meta
-last_updated: 2026-04-27
+last_updated: 2026-04-29
 ---
 
 # Meta
@@ -22,6 +22,7 @@ last_updated: 2026-04-27
 | 2026-04-23 | Meta announces 10% workforce cut (~8,000) | Amid $650B combined Big Tech AI infrastructure spending; closing 6,000 open roles |
 | 2026-04-25 | Meta and Microsoft cut thousands of jobs | AI investment directly cannibalizing traditional tech workforces |
 | 2026-04-27 | Meta mandates 65/75 AI code adoption | 65% of engineers must use AI for 75% of code by mid-2026; tied to performance reviews; up to 15,800 workers to be laid off |
+| 2026-04-29 | EU issues first AI Act fine: €800M | Unauthorized EU user data training; MCI employee keystroke tracking cited as evidence of systemic data overreach |
 
 ## Key Relationships
 - **OpenAI**: Competition in AI assistant market and coding agents.

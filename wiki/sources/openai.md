@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-04-28
+last_updated: 2026-04-29
 ---
 
 # OpenAI
@@ -40,6 +40,8 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-04-27 | Musk vs Altman court proceedings begin | Trial could force OpenAI to revert to non-profit, invalidating Microsoft investments and enterprise contracts |
 | 2026-04-28 | OpenAI missed multiple Q1 monthly revenue targets | Lost ground to Anthropic in coding and enterprise markets; Q1 revenue miss is first concrete sign Claude winning enterprise contracts |
 | 2026-04-28 | WSJ: GPT-5.5 commercial performance critical | With IPO timing, commercial performance matters more than benchmark delta |
+| 2026-04-29 | Musk vs Altman Day 3: 2017 profit-planning emails | Altman and Brockman discussed for-profit conversion months before 2019 "capped profit" announcement; court may invalidate Microsoft investments and enterprise contracts |
+| 2026-04-29 | Goldman Sachs and Morgan Stanley threaten IPO withdrawal | Q1 revenue miss + legal risk from court case compound; underwriting credibility at stake |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.

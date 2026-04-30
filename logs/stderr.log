@@ -28,3 +28,4 @@ Traceback (most recent call last):
     raise child_exception_type(errno_num, err_msg, err_filename)
 FileNotFoundError: [Errno 2] No such file or directory: 'ollama'
 Error: claude is not installed, install from https://code.claude.com/docs/en/quickstart
+Error: Rate exceeded.

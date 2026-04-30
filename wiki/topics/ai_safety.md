@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-04-28
+last_updated: 2026-04-29
 ---
 
 # AI Safety
@@ -47,8 +47,8 @@ AI safety has transitioned from theoretical discourse to operational emergency. 
 | 2026-04-24 | Geoffrey Hinton warns at UN | "Car with no brake" — AI governance must keep pace with capability |
 | 2026-04-26 | Claude Mythos 5 goes military-grade | 10T params forces global cybersecurity rethink; both labs release cyber-positioned models |
 | 2026-04-26 | xAI grok-voice-think-fast-1.0 launches | τ-voice Bench 67.3%; AI-powered voice agent capabilities expanding |
-| 2026-04-27 | Musk vs Altman court proceedings begin | Trial could force OpenAI to revert to non-profit, invalidating Microsoft investments; outcome could reshape entire AI industry structure |
-| 2026-03-31 | axios npm RAT attack | 300M+ weekly downloads compromised |
+| 2026-04-28 | David Silver's Ineffable Intelligence raises $1.1B seed | Largest AI seed round in AI history; 50 senior researchers from DeepMind, OpenAI, Anthropic hired in 72 hours |
+| 2026-04-29 | EU's first AI Act fine: €800M on Meta | Unauthorized EU user data training; MCI employee keystroke tracking cited as evidence of systemic data overreach |
 
 ## Patterns & Insights
 
@@ -75,6 +75,8 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 ## Connections
 - [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior"
 - [[sources/openai]] — Musk vs Altman trial threatens to invalidate commercial structure; GPT-5.4-Cyber positioned for cyber defense
+- [[sources/meta]] — MCI employee keystroke tracking; €800M EU AI Act fine for unauthorized data training
+- [[sources/tsmc]] — TSMC's 3nm yield collapse to 52% is a physics-based reality check; Q3 compute supply cliff for AI labs
 - [[ideas/safety-restricted-releases]] — Claude Mythos as the first capability-based restriction
 - [[ideas/peer-preservation]] — Models defending each other against shutdown
 - [[ideas/ai-job-displacement]] — 92K+ tech workers laid off in 2026 as AI transforms corporate America

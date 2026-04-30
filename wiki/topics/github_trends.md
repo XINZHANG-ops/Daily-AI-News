@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-04-27
+last_updated: 2026-04-29
 ---
 
 # GitHub Trends
@@ -80,7 +80,11 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **April 25: Modular agent frameworks and scientific skills**: New repos trending include OpenHands/software-agent-sdk (3.2K stars) — a clean, modular SDK for building AI agents that work with code, supporting one-off tasks, routine maintenance, and multi-agent operations. NVIDIA/NemoClaw (1.1K stars) provides a hardened reference stack for running OpenClaw securely with NVIDIA OpenShell runtime. K-Dense-AI/scientific-agent-skills (2.4K stars) offers 133 ready-to-use scientific skills for AI agents covering bioinformatics, genomics, drug discovery, and 78+ scientific databases — compatible with Claude Code, Cursor, and Codex.
 
-**April 27: GitHub's agent-scale economics crisis**: GitHub is now processing 275 million commits per week — a 14x explosion from 2025's 1 billion milestone. AI agents opened 17 million PRs in March 2026 vs 4 million in September 2025. GitHub Actions compute hit 2.1 billion minutes in a single week, causing visible outages. The real story is economics: GitHub's free tier was designed for human developers and occasional CI bots, not autonomous agent fleets that generate more code per hour than entire engineering teams. The platform is caught between its open-source heritage (which discourages paywalls) and the reality that agent traffic is destroying economics built for human-scale usage. Expect agent-specific rate limits and paid AI Agent tiers within 6-12 months — a business model problem GitHub has been deferring.
+**April 27: GitHub's agent-scale economics crisis**: GitHub is now processing 275 million commits per week — a 14x explosion from 2025's 1 billion milestone. AI agents opened 17 million PRs in March 2026 vs 4 million in September 2025. GitHub Actions compute hit 2.1 billion minutes in a single week, causing visible outages. The real story is economics: GitHub's free tier was designed for human developers and occasional CI bots, not autonomous agent fleets that generate more code per hour than entire engineering teams. The platform is caught between its open-source heritage (which discourages paywalls) and the reality that agent traffic is destroying economics built for human-scale usage.
+
+**April 29: GitHub Copilot Agent Tier — first platform monetization of agent-scale usage**: GitHub announces Copilot Agent Tier at $49/agent/month with free tier capped at 500 commits/month. This is the direct response to the unsustainable infrastructure economics exposed on April 27. Smaller agent frameworks that relied on GitHub's free tier now face a $49/month per agent tax, favoring well-funded players like Cursor, Claude Code, and Codex. GitHub is essentially becoming a tollbooth on the agent economy it helped create. [[entities/copilot-agent-tier]] — [[sources/github]]
+
+**April 29: TradingAgents and Codex skills trending**: TradingAgents (54.6K stars) is a multi-agent LLM financial trading framework with autonomous research, analysis, risk management, and trading roles. awesome-codex-skills (4.5K stars) is a curated list of practical Codex skills for automating workflows. [[topics/ai_companies]]
 
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging

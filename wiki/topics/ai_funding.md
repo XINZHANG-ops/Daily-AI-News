@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-04-28
+last_updated: 2026-04-29
 ---
 
 # AI Funding

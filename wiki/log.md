@@ -1,6 +1,16 @@
 # Wiki Log
 
-## [2026-04-29] lint | Structural fixes + 4 new pages
+## [2026-04-29] ingest | 1 date
+
+Dates processed: 2026-04-29
+Topics updated: llm_models (April 29 institutional contradictions pattern: Musk vs Altman Day 3 profit emails, Goldman Sachs/Morgan Stanley threaten IPO withdrawal, EU €800M Meta fine, TSMC 3nm yield collapse to 52%, Mistral Ultra 2 EU positioning), ai_companies (TSMC supply cliff, Mistral Ultra 2 enterprise entry, Ineffable 50 researchers in 72 hours), ai_safety (EU AI Act first fine, TSMC physics reality check), ai_funding (updated with TSMC yield crisis implications), github_trends (Copilot Agent Tier $49/agent/month, TradingAgents 54.6K)
+Sources created: mistral (Mistral AI EU positioning), tsmc (3nm yield crisis), github (Copilot Agent Tier monetization)
+Sources updated: openai (Day 3 2017 profit emails, Goldman Sachs/Morgan Stanley threaten IPO withdrawal), meta (EU €800M AI Act fine)
+Timelines updated: 2026-04 (Week 4, April 29 entry)
+Entities created: mistral-ultra-2 (78.4% SWE-bench, €2/M, EU data residency), copilot-agent-tier ($49/agent/month, first platform monetization of agent-scale usage)
+Entities updated: ineffable-intelligence (50 researchers hired in 72 hours including AlphaGo/AlphaFold/GPT-4 paper authors)
+Ideas updated: institutional-gap (added TSMC yield crisis, EU AI Act fine, 2017 profit email evidence)
+Chat session insights applied: Prior sessions noted Claude Code quality issues (resolved Apr 24), Google Cloud Next specifics needed — Mistral Ultra 2 EU positioning and GitHub Copilot Agent Tier directly address the question of what happens when institutional frameworks (legal, regulatory, physical) don't keep pace with capability deployment
 
 **Structural fixes:**
 - Removed duplicate entity `gpt-5-5.md` (had 2 files: gpt-5-5.md and gpt-5.5.md) — kept richer gpt-5.5.md with Spud codename, benchmark scores, 49-day release cycle analysis

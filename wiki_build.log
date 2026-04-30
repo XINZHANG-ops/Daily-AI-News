@@ -299,3 +299,36 @@ Completed the ingest of 2026-04-28 data. Here's what was updated:
 - `index.md` — Updated date, added new entities
 - `processed.json` — Added 2026-04-28
 - `log.md` — Appended ingest entry
+
+
+Ingest complete. Here's what was updated for 2026-04-29:
+
+**New Sources Created:**
+- `sources/mistral.md` — Mistral AI EU positioning
+- `sources/tsmc.md` — 3nm yield crisis (52% vs 75%)
+- `sources/github.md` — Copilot Agent Tier monetization
+
+**New Entities Created:**
+- `entities/mistral-ultra-2.md` — 78.4% SWE-bench at €2/M with EU data residency
+- `entities/copilot-agent-tier.md` — $49/agent/month pricing model
+
+**Sources Updated:**
+- `openai.md` — Day 3 Musk vs Altman 2017 profit emails, Goldman Sachs/Morgan Stanley threaten IPO withdrawal
+- `meta.md` — EU AI Act first fine (€800M for unauthorized data training)
+
+**Topics Updated:**
+- `llm_models.md` — Added April 29 institutional contradictions pattern
+- `ai_companies.md` — Added TSMC supply cliff, Mistral Ultra 2, Ineffable researcher hiring
+- `ai_safety.md` — Added EU AI Act fine, TSMC physics reality check
+- `ai_funding.md` — TSMC yield crisis implications
+- `github_trends.md` — Copilot Agent Tier, TradingAgents 54.6K
+
+**Ideas Updated:**
+- `institutional-gap.md` — Added TSMC yield crisis, EU AI Act fine, 2017 profit email evidence
+
+**Entities Updated:**
+- `ineffable-intelligence.md` — 50 researchers hired including AlphaGo/AlphaFold/GPT-4 paper authors
+
+**Index updated:** All 5 sections (Topics, Sources, Timelines, Entities, Ideas) with new entries
+**processed.json:** Added 2026-04-29
+**log.md:** Prepended today's ingest entry
