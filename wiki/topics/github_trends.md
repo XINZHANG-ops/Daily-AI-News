@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-04-29
+last_updated: 2026-04-30
 ---
 
 # GitHub Trends
@@ -56,6 +56,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | OpenHands/software-agent-sdk | 3.2K+ | Modular SDK for building coding agents |
 | NVIDIA/NemoClaw | 1.1K+ | Hardened reference stack for secure OpenClaw deployment |
 | K-Dense-AI/scientific-agent-skills | 2.4K+ | 133 scientific skills for AI agents |
+| backnotprop/plannotator | 4.8K+ | Visual coding agent plan/review tool with team collaboration and one-click feedback |
+| gotalab/cc-sdd | 3.2K+ | Autonomous implementation with native subagent dispatch and adversarial review |
+| MervinPraison/PraisonAI | 7K+ | 24/7 AI workforce in 5 lines of code; memory, RAG, 100+ LLMs |
 | aaif-goose/goose | new | Open-source extensible AI agent — install, execute, edit, test with any LLM |
 | msitarzewski/agency-agents | new | Complete AI agency with specialized expert agents (frontend wizards, Reddit ninjas, etc.) |
 | langchain-ai/deepagents | new | Agent harness with LangChain/LangGraph, planning tools, subagent spawning |
@@ -85,6 +88,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 **April 29: GitHub Copilot Agent Tier — first platform monetization of agent-scale usage**: GitHub announces Copilot Agent Tier at $49/agent/month with free tier capped at 500 commits/month. This is the direct response to the unsustainable infrastructure economics exposed on April 27. Smaller agent frameworks that relied on GitHub's free tier now face a $49/month per agent tax, favoring well-funded players like Cursor, Claude Code, and Codex. GitHub is essentially becoming a tollbooth on the agent economy it helped create. [[entities/copilot-agent-tier]] — [[sources/github]]
 
 **April 29: TradingAgents and Codex skills trending**: TradingAgents (54.6K stars) is a multi-agent LLM financial trading framework with autonomous research, analysis, risk management, and trading roles. awesome-codex-skills (4.5K stars) is a curated list of practical Codex skills for automating workflows. [[topics/ai_companies]]
+
+**April 30: Workforce-in-a-box pattern emerging**: Three repos trending — plannotator (4.8K stars) for visual code review collaboration, cc-sdd (3.2K) for autonomous implementation with adversarial review, and PraisonAI (7K stars) for "24/7 AI workforce in 5 lines of code" with RAG and 100+ LLM support. The pattern emerging: agent frameworks are no longer just for developers — they're becoming plug-and-play workforce replacements that enterprises can deploy without engineering teams. The democratization is shifting from "anyone can build agents" to "anyone can hire an AI workforce."
 
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging

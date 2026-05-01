@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-04-29
+last_updated: 2026-04-30
 ---
 
 # AI Companies
@@ -76,6 +76,11 @@ The AI company landscape in March-April 2026 is defined by three intersecting na
 | 2026-04-29 | GitHub Copilot Agent Tier: $49/agent/month | First major platform monetization of agent-scale usage |
 | 2026-04-29 | Mistral Ultra 2 released | 78.4% SWE-bench at €2/M; EU data residency; positions as European alternative |
 | 2026-04-29 | Ineffable hires 50 researchers in 72 hours | DeepMind, OpenAI, Anthropic talent poached; AlphaGo/AlphaFold/GPT-4 paper authors |
+| 2026-04-30 | OpenAI secures 10GW of US compute | 3GW added in 90 days; surpasses original Stargate target years early; estimated $15-20B energy commitments |
+| 2026-04-30 | Anthropic eyes $50B raise at $900B valuation | Revenue run rate nearing $40B; doubling from $380B valuation in under 3 months |
+| 2026-04-30 | Google signs Pentagon deal for classified military AI | Allows AI for classified military work; crosses "Don't Be Evil" era rubicon |
+| 2026-04-30 | Apple confirms Gemini-powered Siri for iOS 27 | Knowledge distillation from large Gemini models; Apple admits it cannot build frontier LLMs |
+| 2026-04-30 | Big Tech earnings: Google wins investor confidence | Google convinced spending is paying off; Microsoft and Meta face capex skepticism |
 
 ## Patterns & Insights
 
@@ -90,6 +95,8 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 **AI job displacement becoming concrete**: Meta's 8,000 cuts and Microsoft's 8,750 buyouts follow Wall Street's 15,000 layoffs. Combined with the $650B Big Tech AI infrastructure spend, this signals that capital is flowing to AI replacement rather than AI augmentation. Geoffrey Hinton's UN warning reflects growing consensus that governance must keep pace with capability.
 
 **China's efficiency advantage**: Stanford's data confirms China achieved 2.7% Arena gap with $12.4B investment versus America's $285.9B — a 23x difference. This suggests either hidden government subsidies or structural efficiency advantages that could reshape the competitive landscape.
+
+**The old guard pivots to survival**: April 30 reveals a pattern — Google pivots to defense revenue (Pentagon deal), Apple pivots to outsourcing model development (Gemini-powered Siri). Neither company can afford to build frontier models from scratch anymore, and both are making explicit strategic choices that reject self-reliance. This is different from "partnership" — it's acknowledgment that the model race has passed them by.
 
 ## Connections
 - [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users, GPT-Rosalind, TBPN acquisition, GPT-5.5

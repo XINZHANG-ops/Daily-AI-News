@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-04-29
+Last updated: 2026-04-30
 
 ## Topics
 - [[topics/llm_models]] — LLM landscape: Claude Opus 4.7, Claude Mythos 5 (10T), GPT-5.5, Gemma 4, Qwen3.6-Plus, Muse Spark, DeepSeek V4, Mistral Ultra 2 (78.4% SWE-bench), GPT-Rosalind, Ising
@@ -97,3 +97,4 @@ Last updated: 2026-04-29
 - [[ideas/agent-e-commerce]] — Autonomous commercial agents buying, selling, and brokering on behalf of humans
 - [[ideas/voice-agent-battleground]] — Voice models becoming a distinct battleground separate from text
 - [[ideas/institutional-gap]] — AI capability outpacing institutional frameworks; companies building facts on the ground faster than governance can respond
+- [[ideas/commodity-inference-fragmentation]] — AI bifurcating into premium reasoning (100x cost premium) vs commodity inference (frontier-level scores at 1% of cost)

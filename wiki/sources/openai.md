@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-04-29
+last_updated: 2026-04-30
 ---
 
 # OpenAI
@@ -42,6 +42,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-04-28 | WSJ: GPT-5.5 commercial performance critical | With IPO timing, commercial performance matters more than benchmark delta |
 | 2026-04-29 | Musk vs Altman Day 3: 2017 profit-planning emails | Altman and Brockman discussed for-profit conversion months before 2019 "capped profit" announcement; court may invalidate Microsoft investments and enterprise contracts |
 | 2026-04-29 | Goldman Sachs and Morgan Stanley threaten IPO withdrawal | Q1 revenue miss + legal risk from court case compound; underwriting credibility at stake |
+| 2026-04-30 | OpenAI secures 10GW of US compute | 3GW added in 90 days; surpasses original Stargate target years early; estimated $15-20B in energy commitments |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.

@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-04-29
+last_updated: 2026-04-30
 ---
 
 # LLM Models
@@ -79,6 +79,12 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-04-27 | GitHub 275M commits/week; AI agents opened 17M PRs in March | Platform strain signals coming paywalls for agent-scale usage |
 | 2026-04-28 | OpenAI Q1 revenue miss confirmed | First concrete sign Claude is winning enterprise coding contracts |
 | 2026-04-28 | DeepSeek V4-Pro-Max: $1.74/M tokens | Cost-performance leader; 2.6x cheaper than Claude Opus 4.7 |
+| 2026-04-30 | OpenAI secures 10GW of US compute | 3GW added in 90 days; surpasses original Stargate target years early |
+| 2026-04-30 | Anthropic eyes $50B raise at $900B valuation | Revenue run rate nearing $40B; 2.4x valuation increase in under 3 months |
+| 2026-04-30 | DeepSeek V4 Flash: $0.14/$0.28 per million tokens | 100x cheaper than GPT-5.5/Claude Opus 4.7; 78% SWE-bench |
+| 2026-04-30 | Google signs Pentagon deal for classified military AI | Crosses "Don't Be Evil" rubicon; carves out defense niche |
+| 2026-04-30 | Qwen 3.6-35B-A3B: 73.4% SWE-bench on RTX 4090 | 3B active params; frontier-grade coding on consumer hardware |
+| 2026-04-30 | Apple confirms Gemini-powered Siri for iOS 27 | Knowledge distillation from large Gemini models to on-device Apple Foundation Models |
 
 ## Patterns & Insights
 
@@ -109,6 +115,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 **April 28: Claude Eating OpenAI's Lunch in Enterprise**: OpenAI missed multiple Q1 monthly revenue targets after losing ground to Anthropic in coding and enterprise markets — the first concrete sign that Claude is winning deterministic developer workflows. GPT-5.5's Terminal-Bench lead (82.7% vs 58.6% Opus 4.7) is real, but OpenAI charges $30/M output tokens vs Anthropic's $25/M, and enterprise buyers care about total cost of ownership. Meanwhile, DeepSeek V4-Pro-Max at $1.74/M tokens is now the cost-performance leader — 2.6x cheaper than Claude Opus 4.7 and 17x cheaper than GPT-5.5's output pricing. DeepSeek's 1.6T parameter model with open weights continues the China challenge at a fraction of Western cost structures.
 
 **April 29: Institutional Contradictions Surface**: The Musk vs Altman trial reveals 2017 emails showing Altman and Brockman discussed for-profit conversion before the 2019 "capped profit" announcement — threatening to invalidate Microsoft's $10B+ investment and every enterprise contract since 2019. Goldman Sachs and Morgan Stanley threaten to withdraw from OpenAI's IPO. The EU issues its first AI Act fine — €800M on Meta for unauthorized data training, citing the MCI employee tracking program. TSMC's 3nm yield collapses to 52%, creating a Q3 supply cliff for H200 and AMD MI350 wafers. Meanwhile, Mistral Ultra 2 (78.4% SWE-bench at €2/M) positions itself as the EU-compliant alternative to US labs. Ineffable Intelligence hires 50 senior researchers from DeepMind, OpenAI, and Anthropic in 72 hours — assembling the most credentialed AI research team in history. The pattern: legal, regulatory, physical, and economic frameworks are not keeping pace with capability deployment.
+
+**April 30: The Bifurcation Week Concludes**: OpenAI secures 10GW of US compute (3GW added in 90 days), surpassing Stargate targets years early — a physical energy infrastructure moat. Anthropic eyes $50B raise at $900B valuation, revenue run rate nearing $40B, doubling from $380B valuation in under three months. DeepSeek V4 Flash launches at $0.14/$0.28 per million tokens — 100x cheaper than frontier models while scoring 78% on SWE-bench. Qwen 3.6-35B-A3B scores 73.4% SWE-bench with just 3B active parameters on an RTX 4090 — frontier-grade coding on consumer hardware. The week ends with a clear bifurcation: premium reasoning (Opus, GPT-5.5) vs commodity inference (DeepSeek, Qwen, Kimi) — and commodity inference getting frontier-level scores.
 
 ## Connections
 - [[sources/anthropic]] — Claude Mythos developed and leaked by Anthropic; Opus 4.7 release; Project Glasswing

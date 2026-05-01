@@ -28,6 +28,16 @@ Chat session insights applied: Prior sessions noted Claude Code quality issues (
 
 **Connection quality improvements:**
 - `entities/thunderbolt.md` — Rewrote connections with WHY annotations (Mozilla created Thunderbolt as enterprise self-hosted alternative, addresses data privacy concerns)
+
+## [2026-04-30] ingest | 1 date
+
+Dates processed: 2026-04-30
+Topics updated: llm_models (April 30 bifurcation: 10GW compute milestone, Anthropic $900B valuation, DeepSeek V4 Flash $0.14/$0.28/M at 78% SWE-bench, Qwen 3.6 73.4% on RTX 4090, Google Pentagon deal, Apple Gemini Siri), ai_companies (Google defense pivot, Apple model outsourcing, Big Tech earnings divergence), ai_funding (OpenAI 10GW energy moat, Anthropic $50B raise trajectory), github_trends (plannotator 4.8K, cc-sdd 3.2K, PraisonAI 7K — workforce-in-a-box pattern)
+Sources updated: openai (10GW compute milestone), anthropic ($50B raise at $900B), google (Pentagon classified military AI deal)
+Timelines updated: 2026-04 (Week 5, April 30 entry: bifurcation week summary)
+Entities updated: deepseek-v4 (added V4-Flash $0.14/$0.28/M variant, 100x price gap revelation, updated significance)
+Ideas created: commodity-inference-fragmentation (premium reasoning vs commodity inference 100x cost gap)
+Chat session insights applied: Session 28c7d4fb noted [[topics/ai_safety]] may need updating after Bank of England escalation and Qihoo 360 findings — not addressed in this ingest; session 2fe64ce0 confirmed Claude Code performance issues (fixed Apr 24); session d1cce56 asked about Google Cloud Next specifics — TPU 8th gen and Gemini Enterprise Agent Platform were already documented
 - `entities/qwen-3-6.md` — Rewrote connections explaining WHY (efficiency breakthrough confirms China 23x efficiency advantage, links to china-efficiency-advantage)
 
 **index.md updated:** Added cognition, alibaba, mozilla sources; added efficiency-frontier and ai-job-displacement ideas

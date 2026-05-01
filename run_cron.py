@@ -136,4 +136,9 @@ result = subprocess.run(
 )
 
 print(f"[{datetime.now().isoformat()}] Done (exit code {result.returncode})")
+
+subprocess.run(["git", "add", "-A"], cwd=BASE_DIR)
+subprocess.run(["git", "commit", "-m", f"daily update {datetime.now().strftime('%Y-%m-%d')}"], cwd=BASE_DIR)
+subprocess.run(["git", "push"], cwd=BASE_DIR)
+
 sys.exit(result.returncode)

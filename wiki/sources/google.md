@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-04-28
+last_updated: 2026-04-30
 ---
 
 # Google
@@ -32,6 +32,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-04-26 | Epoch AI: Google controls ~25% global AI compute | 3.8M TPUs + 1.3M GPUs; $40B deal will face EU/UK regulatory scrutiny |
 | 2026-04-28 | Google invests up to $40B in Anthropic | $10B minimum, $30B contingent on performance targets; deepening Anthropic infrastructure partnership |
 | 2026-04-28 | $40B Anthropic investment validates Claude trajectory | Google's move accelerated by Anthropic's demonstrated enterprise capabilities |
+| 2026-04-30 | Signs Pentagon deal for classified military AI | Allows AI systems for classified military work despite internal researcher protests; strategic pivot into defense niche |
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.

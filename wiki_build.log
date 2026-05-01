@@ -332,3 +332,34 @@ Ingest complete. Here's what was updated for 2026-04-29:
 **Index updated:** All 5 sections (Topics, Sources, Timelines, Entities, Ideas) with new entries
 **processed.json:** Added 2026-04-29
 **log.md:** Prepended today's ingest entry
+
+
+## Ingest Complete — 2026-04-30
+
+**Summary of changes:**
+
+### Timeline
+- Added Week 5 entry to `wiki/timelines/2026-04.md` covering April 30's key events: OpenAI's 10GW compute milestone, Anthropic's $50B raise at $900B valuation, DeepSeek V4 Flash pricing revelation, Google Pentagon deal, Apple Gemini Siri, Big Tech earnings divergence, and the "bifurcation week" insight.
+
+### Topics Updated
+- **llm_models**: Added April 30 key developments table entries and three new Patterns & Insights sections covering the premium-commodity bifurcation and compute as geopolitical moat.
+- **ai_companies**: Added April 30 events to Key Developments table and new Pattern "The old guard pivots to survival" covering Google's defense pivot and Apple's model outsourcing.
+- **ai_funding**: Added April 30 events to Key Developments and new Pattern "Compute scarcity as defining constraint."
+- **github_trends**: Added three new repos (plannotator 4.8K, cc-sdd 3.2K, PraisonAI 7K) to Notable Repositories and new Pattern "Workforce-in-a-box pattern emerging."
+
+### Sources Updated
+- **openai**: Added 10GW compute milestone (April 30)
+- **anthropic**: Added $50B raise at $900B valuation entry (April 30)
+- **google**: Added Pentagon deal for classified military AI (April 30)
+
+### Entities Updated
+- **deepseek-v4**: Expanded to include V4-Flash variant ($0.14/$0.28/M, 78% SWE-bench), V4-Pro-Max pricing ($1.74/M), and updated Significance section explaining the 100x cost gap revelation.
+
+### Ideas Created
+- **commodity-inference-fragmentation**: New idea page capturing the bifurcation of AI into premium reasoning (100x cost premium) vs commodity inference (frontier-level scores at 1% of cost). Includes evidence from DeepSeek V4 Flash, Qwen 3.6, and analysis of implications for enterprise buyers and AI labs.
+
+### Wiki Maintenance
+- Updated `last_updated` dates on all modified pages to 2026-04-30
+- Updated `wiki/index.md` with the new idea and bumped date to 2026-04-30
+- Added "2026-04-30" to `wiki/processed.json`
+- Appended ingest entry to `wiki/log.md`

@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-04-29
+last_updated: 2026-04-30
 ---
 
 # AI Funding
@@ -47,6 +47,8 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-04-25 | Tencent/Alibaba in talks to invest in DeepSeek | Tencent proposing up to 20% stake |
 | 2026-04-26 | Epoch AI: Google controls ~25% global AI compute | 3.8M TPUs + 1.3M GPUs; $40B deal faces EU/UK regulatory scrutiny |
 | 2026-04-28 | David Silver's Ineffable Intelligence raises $1.1B seed | Largest AI seed round ever; Sequoia, Lightspeed, Nvidia, Google, DST Global invested |
+| 2026-04-30 | OpenAI secures 10GW of US compute | 3GW added in 90 days; surpasses original Stargate target years early; estimated $15-20B in energy commitments |
+| 2026-04-30 | Anthropic eyes $50B raise at $900B valuation | Doubling from $380B valuation in under 3 months; $40B revenue run rate |
 
 ## Patterns & Insights
 
@@ -73,6 +75,8 @@ The investment pattern has shifted from model racing to infrastructure and appli
 **April 27: GitHub's platform economics and the agent-scale strain**: GitHub hit 275 million commits per week in April 2026 — a 14x explosion from 2025's 1 billion milestone. AI agents opened 17 million PRs in March 2026 vs 4 million in September 2025. The real story isn't the numbers but the economics: GitHub's free tier and generous API limits were designed for human developers, not fleets of autonomous agents that generate more code per hour than entire engineering teams. The platform is caught between its open-source heritage (which discourages paywalls) and the reality that agent traffic is destroying economics built for human-scale usage. Expect agent-specific rate limits and paid AI Agent tiers within 6-12 months — not a technical problem, but a business model problem deferred.
 
 **April 28: Big Tech commits $65B to Anthropic alone**: Google announced up to $40B investment in Anthropic ($10B minimum, $30B contingent on performance targets), on top of Amazon's up to $25B commitment. Combined with Microsoft's existing OpenAI stake, Big Tech has now committed up to $65B to Anthropic in this funding cycle. The message to the market: the compute moat around foundation models is real, and cloud providers will pay dearly to remain structurally relevant as AI becomes the dominant compute workload. Meanwhile, Ineffable Intelligence — founded by ex-DeepMind's David Silver (AlphaGo co-author) — raised the largest seed round in AI history at $1.1B, with Sequoia, Lightspeed, Nvidia, Google, and DST Global all participating. No product disclosed, but the investor syndicate signals extreme confidence in near-AGI timelines.
+
+**April 30: Compute scarcity as defining constraint**: OpenAI's 10GW milestone (3GW added in 90 days) and Anthropic's $50B raise at $900B valuation both confirm a single reality: compute is now the defining constraint of frontier AI, and the companies that own power generation will dictate who can train next-generation models. The era of "build it and they will come" is over — investors now demand proof of revenue AND proof of energy access.
 
 ## Connections
 - [[sources/openai]] — $122B raise, $852B valuation, IPO preparation

@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-04-27
+last_updated: 2026-04-30
 ---
 
 # Anthropic
@@ -39,6 +39,7 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-04-25 | Google to invest up to $40B in Anthropic | $10B minimum, $30B contingent on performance targets |
 | 2026-04-26 | Claude Code faces user backlash | Engineering missteps acknowledged; power users at risk of defecting to OpenAI |
 | 2026-04-26 | Project Deal: agent-on-agent commerce | Claude models act as buyers and sellers, striking real deals for real goods and money |
+| 2026-04-30 | Eyes $50B raise at $900B valuation | Revenue run rate nears $40B; doubling from $380B valuation in under three months |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
