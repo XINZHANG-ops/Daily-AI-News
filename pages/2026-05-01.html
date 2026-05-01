@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 01, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 01, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/GammaLabTechnologies/harmonist" class="card-title" target="_blank">GammaLabTechnologies/harmonist</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 949 stars</div>
+                                <div class="meta-item"><span>🍴</span> 309 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Portable AI agent orchestration framework with mechanical protocol enforcement. Features 186 curated specialist agents across 16 categories, zero third-party dependencies, and IDE hook-based workflow enforcement for Cursor, Claude Code, Copilot, and more.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">便携式AI智能体编排框架，具备机械协议强制执行能力。包含16个类别的186个精选专业智能体，零第三方依赖，通过IDE钩子强制执行工作流，支持Cursor、Claude Code、Copilot等。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/he-yufeng/CoreCoder" class="card-title" target="_blank">he-yufeng/CoreCoder</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 652 stars</div>
+                                <div class="meta-item"><span>🍴</span> 174 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Minimal AI coding agent in ~1,400 lines of Python inspired by Claude Code. Implements search-and-replace editing, parallel tool execution, 3-layer context compression, sub-agents, and session persistence. Works with any OpenAI-compatible LLM.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">极简AI编程智能体，仅用约1400行Python实现，灵感来自Claude Code。实现搜索替换编辑、并行工具执行、三层上下文压缩、子智能体和会话持久化。兼容任何OpenAI兼容的LLM。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/codeany-ai/open-agent-sdk-go" class="card-title" target="_blank">codeany-ai/open-agent-sdk-go</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 151 stars</div>
+                                <div class="meta-item"><span>🍴</span> 23 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Lightweight open-source Go SDK for building AI agents. Runs the full agent loop in-process with 32 built-in tools, MCP support, session management, subagents, and permissions. No CLI or subprocess required.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">轻量级开源Go SDK，用于构建AI智能体。在进程内运行完整的智能体循环，包含32个内置工具、MCP支持、会话管理、子智能体和权限控制。无需CLI或子进程。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Firstpost / The Next Web</span>
+                    <div class="news-time">2026-05-01</div>
+                    <a href="https://www.firstpost.com/tech/after-8000-cuts-meta-signals-layoffs-may-not-be-over-amid-ai-surge-14006417.html" class="card-title" target="_blank" data-lang="en">Meta to Lay Off 8,000 Employees Starting May 20, Tying Cuts Directly to $125-145B AI Spending</a>
+                    <a href="https://www.firstpost.com/tech/after-8000-cuts-meta-signals-layoffs-may-not-be-over-amid-ai-surge-14006417.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta宣布5月20日起裁员8000人，直接将裁员与1250-1450亿美元AI支出挂钩</a>
+                    <p class="card-description" data-lang="en">Meta is cutting approximately 10% of its workforce (~8,000 employees) starting May 20, 2026, and abandoning ~6,000 open roles. CEO Mark Zuckerberg explicitly tied the layoffs to AI infrastructure costs, stating tasks that once required 50-100 people can now be handled by as few as 10.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta将于2026年5月20日起裁减约10%的员工（约8000人），并取消约6000个待招聘职位。CEO马克·扎克伯格明确将裁员与AI基础设施成本挂钩，称过去需要50-100人的工作现在可由10人完成。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CRN / Microsoft</span>
+                    <div class="news-time">2026-05-01</div>
+                    <a href="https://www.crn.com/news/ai/2026/microsoft-unveils-e7-suite-copilot-cowork-in-enterprise-ai-offensive/" class="card-title" target="_blank" data-lang="en">Microsoft E7 Suite and Agent 365 Go Generally Available on May 1 at $99/User/Month</a>
+                    <a href="https://www.crn.com/news/ai/2026/microsoft-unveils-e7-suite-copilot-cowork-in-enterprise-ai-offensive/" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软E7套件和Agent 365于5月1日全面上市，定价每用户每月99美元</a>
+                    <p class="card-description" data-lang="en">Microsoft 365 E7 became generally available on May 1 at $99/user/month—the first new enterprise license in a decade. It bundles E5, M365 Copilot, Agent 365 (unified AI agent governance control plane), Entra Suite, and advanced security. Agent 365 also hits GA at $15/user/month.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Microsoft 365 E7于5月1日全面上市，定价每用户每月99美元——这是十年来首个新的企业许可证。它捆绑了E5、M365 Copilot、Agent 365（统一AI智能体治理控制平面）、Entra Suite和高级安全功能。Agent 365也同时全面上市，定价每用户每月15美元。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Economic Times / SecurityWeek</span>
+                    <div class="news-time">2026-05-01</div>
+                    <a href="https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-launches-claude-security-in-public-beta-for-enterprise-customers/articleshow/130649889.cms" class="card-title" target="_blank" data-lang="en">Anthropic Launches Claude Security in Public Beta, Powered by Opus 4.7</a>
+                    <a href="https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-launches-claude-security-in-public-beta-for-enterprise-customers/articleshow/130649889.cms" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic发布Claude Security公开测试版，由Opus 4.7驱动</a>
+                    <p class="card-description" data-lang="en">Anthropic launched Claude Security in public beta, an AI-powered security scanner that reasons through codebases like a human researcher, traces data flows, maps component interactions, and auto-generates patches. Partners include CrowdStrike, Palo Alto Networks, SentinelOne, Wiz, and Microsoft Security.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic推出Claude Security公开测试版，这是一款AI驱动的安全扫描器，像人类研究员一样推理代码库、追踪数据流、映射组件交互并自动生成补丁。合作伙伴包括CrowdStrike、Palo Alto Networks、SentinelOne、Wiz和Microsoft Security。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-04-30</div>
+                    <a href="https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/" class="card-title" target="_blank" data-lang="en">OpenAI Restricts GPT-5.5 Cyber to Verified 'Critical Cyber Defenders' After Criticizing Anthropic's Mythos Limits</a>
+                    <a href="https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI在批评Anthropic限制Mythos后，将GPT-5.5 Cyber限制为仅向经认证的'关键网络防御者'开放</a>
+                    <p class="card-description" data-lang="en">After previously criticizing Anthropic for 'fear-based marketing' and limiting Mythos access, OpenAI CEO Sam Altman announced that GPT-5.5 Cyber will also be restricted to verified 'critical cyber defenders' via an application process requiring credentials and planned use disclosures.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">此前OpenAI CEO Sam Altman曾批评Anthropic'基于恐惧的营销'并限制Mythos访问，现在他宣布GPT-5.5 Cyber也将限制为仅向经认证的'关键网络防御者'开放，申请过程需要提供资质证明和计划用途披露。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Senator Hawley / The Hill</span>
+                    <div class="news-time">2026-04-30</div>
+                    <a href="https://www.hawley.senate.gov/senator-hawleys-guard-act-to-protect-kids-from-ai-chatbots-passes-committee-unanimously/" class="card-title" target="_blank" data-lang="en">U.S. Senate Judiciary Committee Unanimously Backs GUARD Act to Restrict AI Chatbot Access for Minors</a>
+                    <a href="https://www.hawley.senate.gov/senator-hawleys-guard-act-to-protect-kids-from-ai-chatbots-passes-committee-unanimously/" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国参议院司法委员会一致支持GUARD法案，限制未成年人使用AI聊天机器人</a>
+                    <p class="card-description" data-lang="en">The Senate Judiciary Committee unanimously approved the GUARD Act, requiring AI companies to implement strict age verification, banning AI companions for minors, and imposing criminal penalties on companies whose chatbots engage in sexually explicit conduct or encourage self-harm to minors.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">参议院司法委员会一致批准GUARD法案，要求AI公司实施严格的年龄验证，禁止未成年人使用AI伴侣，并对聊天机器人与未成年人进行性明确互动或鼓励自残的公司处以刑事处罚。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch / Google Blog</span>
+                    <div class="news-time">2026-04-30</div>
+                    <a href="https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/" class="card-title" target="_blank" data-lang="en">Google Rolls Out Gemini to Millions of Vehicles, Replacing Google Assistant in Cars</a>
+                    <a href="https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌向数百万车辆推出Gemini，取代汽车中的Google Assistant</a>
+                    <p class="card-description" data-lang="en">Google began rolling out Gemini to vehicles with 'Google built-in,' replacing the older Google Assistant. GM is deploying it to ~4 million vehicles from model year 2022 and newer. Gemini can answer vehicle-specific questions using the owner's manual, handle navigation, EV charging insights, and climate control via natural conversation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌开始向具有'Google built-in'的车辆推出Gemini，取代旧的Google Assistant。通用汽车正将其部署到约400万辆2022年及更新年款的车辆。Gemini可以使用车主手册回答车辆特定问题，处理导航、电动汽车充电洞察和通过自然对话控制气候。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Clarqo / WCCFtech</span>
+                    <div class="news-time">2026-04-30</div>
+                    <a href="https://clarqo.com/2026/04/24/nvidia-s-gb300-blackwell-ultra-enters-mass-production-ships-to-hyperscalers/" class="card-title" target="_blank" data-lang="en">NVIDIA GB300 'Blackwell Ultra' Enters Mass Production, Shipping to Hyperscalers in May</a>
+                    <a href="https://clarqo.com/2026/04/24/nvidia-s-gb300-blackwell-ultra-enters-mass-production-ships-to-hyperscalers/" class="card-title" target="_blank" data-lang="zh" style="display: none;">NVIDIA GB300'Blackwell Ultra'进入量产，5月起向超大规模客户出货</a>
+                    <p class="card-description" data-lang="en">NVIDIA's GB300 'Blackwell Ultra' has entered mass production at TSMC's N3P node and begun shipping to priority hyperscaler customers including Microsoft Azure, Google Cloud, and Meta. The GPU features 288GB HBM3e memory, 10 TB/s bandwidth, and NVLink 6, delivering up to 50x better throughput per megawatt for agentic AI workloads.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">NVIDIA的GB300'Blackwell Ultra'已在台积电N3P节点进入量产，并开始向包括Microsoft Azure、Google Cloud和Meta在内的优先超大规模客户出货。该GPU配备288GB HBM3e内存、10 TB/s带宽和NVLink 6，为智能体AI工作负载提供每兆瓦高达50倍的吞吐量。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">2026-04-30</div>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/921546/elon-musk-xai-openai-trial-model-distillation" class="card-title" target="_blank" data-lang="en">Elon Musk Admits in Court That xAI Used OpenAI Models to Train Grok via Distillation</a>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/921546/elon-musk-xai-openai-trial-model-distillation" class="card-title" target="_blank" data-lang="zh" style="display: none;">埃隆·马斯克在法庭上承认xAI通过蒸馏使用OpenAI模型训练Grok</a>
+                    <p class="card-description" data-lang="en">In federal court during his legal battle with Sam Altman, Elon Musk testified that xAI 'partly' used OpenAI's models to improve Grok via model distillation—a practice where one AI model trains another. When pressed, Musk confirmed it was true for xAI after initially deflecting by saying 'generally all the AI companies' do this.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在与Sam Altman的法律战中，埃隆·马斯克在联邦法庭上作证称，xAI'部分'使用了OpenAI的模型通过模型蒸馏来改进Grok——这是一种用一个AI模型训练另一个模型的做法。在被追问时，马斯克在最初以'一般来说所有AI公司都这样做'搪塞后，确认这对xAI是真实的。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">May 1, 2026 is the day the AI industry's contradictions became operational reality. Meta is cutting 8,000 jobs while spending $125-145B on AI infrastructure—a direct admission that capital is replacing labor at scale, not augmenting it. Microsoft's E7 launch at $99/user/month attempts to capture the governance premium from this transition, bundling agent management into the enterprise software stack that every company already pays for. Anthropic and OpenAI, meanwhile, are racing to build defensive moats around their most dangerous capabilities: Claude Security reframes Mythos from offense to defense, while OpenAI's Cyber restrictions—imposed after Altman publicly mocked Anthropic for doing the same—show that liability concerns now override competitive posturing.
+
+The Senate GUARD Act advancing unanimously signals that Washington has found its bipartisan AI issue: child safety. If it passes with criminal penalties for model conduct, it establishes a precedent that AI companies are responsible for what their models do—a principle that could expand far beyond minors to encompass bias, misinformation, and security vulnerabilities.
+
+At the infrastructure layer, NVIDIA's GB300 Blackwell Ultra entering mass production is the supply-side response to the demand explosion that GitHub's 275M weekly commits represents. The 35x cost reduction for agentic AI means the economics of autonomous coding are about to shift dramatically—but only for hyperscalers with priority allocations.
+
+The throughline across all these events: the AI industry is no longer in the 'build it and they will come' phase. It's in the 'build it, regulate it, fire the builders, and pray the infrastructure holds' phase. The frameworks—legal, economic, corporate—are catching up with capability deployment, and the gap is closing through force, not consensus.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年5月1日，AI行业的矛盾变成了运营现实。Meta一边削减8000个工作岗位，一边在AI基础设施上花费1250-1450亿美元——直接承认资本正在大规模取代劳动力，而非增强它。微软以99美元/用户/月推出E7，试图从这一转型中捕获治理溢价，将智能体管理捆绑到每家公司已经在支付的企业软件栈中。与此同时，Anthropic和OpenAI正在竞相围绕其最危险的能力构建防御护城河：Claude Security将Mythos从进攻重新定义为防御，而OpenAI的Cyber限制——在Altman公开嘲笑Anthropic做同样的事情后实施——表明责任担忧现在压倒了竞争姿态。
+
+参议院GUARD法案的一致推进表明华盛顿已经找到了其两党AI议题：儿童安全。如果它以模型行为的刑事处罚通过，它将确立AI公司对其模型行为负责的 precedents——这一原则可能远远超出未成年人，涵盖偏见、错误信息和安全漏洞。
+
+在基础设施层面，NVIDIA GB300 Blackwell Ultra进入量产是对GitHub每周2.75亿次提交所代表的需求爆炸的供给侧回应。智能体AI 35倍的成本降低意味着自主编码的经济性即将发生戏剧性转变——但仅对拥有优先配额的超大规模客户而言。
+
+所有这些事件的贯穿线：AI行业不再处于'建好了他们就会来'的阶段。它处于'建造它、监管它、解雇建造者、祈祷基础设施能撑住'的阶段。框架——法律、经济、企业——正在赶上能力部署，而差距是通过强制而非共识来缩小的。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
