@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-02",
+  "github_repos": [
+    {
+      "name": "forrestchang/andrej-karpathy-skills",
+      "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "description": {
+        "en": "A single CLAUDE.md file that enforces four principles to improve Claude Code behavior: think before coding, simplicity first, surgical changes, and goal-driven execution. Derived from Andrej Karpathy's observations on LLM coding pitfalls. 105K+ stars in 3 months.",
+        "zh": "一个CLAUDE.md文件，通过四项原则改善Claude Code行为：编码前先思考、简单至上、精准修改、目标驱动。源于Andrej Karpathy对LLM编码陷阱的观察。3个月内获超10.5万星。"
+      },
+      "stars": "105k",
+      "forks": "10.4k"
+    },
+    {
+      "name": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": {
+        "en": "MCP server for context window optimization in AI coding agents. Sandboxes tool output to achieve up to 98% context reduction across 12+ platforms including Claude Code, Gemini CLI, VS Code Copilot, Cursor, and OpenCode. TypeScript-based with 116 releases.",
+        "zh": "针对AI编程智能体的上下文窗口优化MCP服务器。通过沙箱化工具输出实现高达98%的上下文压缩，支持Claude Code、Gemini CLI、VS Code Copilot、Cursor、OpenCode等12+平台。基于TypeScript，已发布116个版本。"
+      },
+      "stars": "11.9k",
+      "forks": "820"
+    },
+    {
+      "name": "CJackHwang/ds2api",
+      "url": "https://github.com/CJackHwang/ds2api",
+      "description": {
+        "en": "Full-stack tool that converts DeepSeek web sessions into standardized API endpoints. Compatible with OpenAI, Claude, and Gemini protocols. Features multi-account rotation, pure Go PoW implementation, concurrent queue control, and React admin panel. v4.3.0 released May 1.",
+        "zh": "全栈工具，将DeepSeek Web会话转换为标准化API端点。兼容OpenAI、Claude和Gemini协议。支持多账号轮询、纯Go实现的PoW计算、并发队列控制和React管理面板。5月1日发布v4.3.0。"
+      },
+      "stars": "3.1k",
+      "forks": "810"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Pentagon Signs AI Deals with 8 Tech Giants for Classified Networks — Anthropic Excluded",
+        "zh": "五角大楼与8家科技巨头签署机密网络AI协议——Anthropic被排除在外"
+      },
+      "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
+      "source": "TechCrunch / CNN / The Verge",
+      "time": "2026-05-01",
+      "description": {
+        "en": "The U.S. Department of Defense announced agreements with OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX/xAI, Oracle, and Reflection AI to deploy their AI tools on IL6/IL7 classified networks for 'lawful operational use.' 1.3M+ DoD personnel already use the GenAI.mil platform. The Pentagon declared it will become an 'AI-first' fighting force, citing a need for 'decision superiority across all domains of warfare.' The multi-vendor approach explicitly aims to prevent 'AI vendor lock-in.' Anthropic was excluded after refusing to accept 'any lawful use' language and insisting on guardrails against autonomous weapons and mass surveillance. Defense Secretary Hegseth labeled Anthropic a 'supply chain risk' — a designation normally reserved for foreign adversaries. Anthropic won a preliminary injunction in March; full trial expected September 2026.",
+        "zh": "美国国防部宣布与OpenAI、Google、Microsoft、AWS、Nvidia、SpaceX/xAI、Oracle和Reflection AI达成协议，将其AI工具部署到IL6/IL7机密网络，用于'合法作战用途'。130多万国防部人员已在GenAI.mil平台上使用AI。五角大楼宣称将成为'AI至上'的战斗力量，目标是实现'全域决策优势'。多供应商策略明确旨在防止'AI供应商锁定'。Anthropic被排除在外，原因是其拒绝接受'任何合法用途'的条款，并坚持对自主武器和大规模监控设置防护栏。国防部长Hegseth将Anthropic标记为'供应链风险'——这一标签通常用于外国对手。Anthropic在3月获得初步禁令；全面审判预计2026年9月进行。"
+      },
+      "insight": {
+        "en": "01 *Pentagon's AI Alliance and the Anthropic Exception* : The Pentagon's May 1 deals mark the formal militarization of commercial AI — and the formal isolation of the industry's most prominent safety advocate. The eight-company coalition is a who's-who of AI power: OpenAI (GPT-5.5), Google (Gemini), xAI (Grok), and Nvidia (Nemotron) will now operate on classified networks that handle the military's most sensitive data. The explicit 'no vendor lock-in' framing suggests the Pentagon views AI models as interchangeable commodities — a posture anathema to every company involved. The Anthropic subplot is the real story: by labeling a U.S. company a 'supply chain risk,' the Pentagon has created a precedent for punishing firms whose safety policies conflict with military objectives. This follows Anthropic's refusal to drop its acceptable use policy — the same policy that yesterday's Claude Security launch (May 1) was designed to commercialize for enterprise. The Five Eyes guidance on agentic AI security, also released May 1, reads like a parallel-track rebuttal: while the Pentagon races to deploy autonomous agents in warfare, the allied cybersecurity agencies are warning that those same agents need cryptographic identities, zero-trust architecture, and human sign-off for high-impact actions. The gap between deployment speed and governance infrastructure is widening by the day.",
+        "zh": "01 *五角大楼的AI联盟与Anthropic例外* : 五角大楼5月1日的协议标志着商业AI的正式军事化——以及业内最著名的安全倡导者的正式孤立。八家公司联盟是AI力量的完整名单：OpenAI（GPT-5.5）、Google（Gemini）、xAI（Grok）和Nvidia（Nemotron）现在将在处理军方最敏感数据的机密网络上运行。明确的'无供应商锁定'框架表明五角大楼将AI模型视为可互换的商品——这一立场与每家参与公司的利益相悖。Anthropic的 subplot 才是真正的故事：通过将一家美国公司标记为'供应链风险'，五角大楼创下了惩罚安全政策与军事目标冲突的公司的先例。这紧随Anthropic拒绝放弃其可接受使用政策——而昨日发布的Claude Security（5月1日）正是为了将相同政策商业化给企业。同日发布的五眼联盟关于智能体AI安全的指导，读起来像是一条并行轨道的回应：当五角大楼竞相在战争中部署自主智能体时，盟国网络安全机构正在警告，这些同样的智能体需要加密身份、零信任架构和对高影响行动的人类签批。部署速度与治理基础设施之间的差距每天都在扩大。"
+      }
+    },
+    {
+      "title": {
+        "en": "Elon Musk Admits Under Oath: xAI Trained Grok on OpenAI Models via Distillation",
+        "zh": "马斯克宣誓作证：xAI通过蒸馏技术使用OpenAI模型训练Grok"
+      },
+      "url": "https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/",
+      "source": "TechCrunch / The Verge / MIT Tech Review",
+      "time": "2026-04-30",
+      "description": {
+        "en": "During the Musk v. Altman trial in California federal court, Elon Musk testified that xAI 'partly' used OpenAI's models to train Grok through model distillation, calling it 'standard practice to use other AIs to validate your AI.' The admission reportedly drew audible gasps in the courtroom. Musk is simultaneously suing OpenAI, CEO Sam Altman, and president Greg Brockman, alleging they abandoned the nonprofit mission. He accused OpenAI's leadership of 'looting the nonprofit' and called himself 'a fool' for contributing $38M in early funding.",
+        "zh": "在加州联邦法院的Musk诉Altman案审判中，马斯克作证称xAI通过模型蒸馏'部分'使用OpenAI模型训练Grok，称其为'用其他AI验证你的AI是标准做法'。这一承认据报道在法庭上引起了可听见的吸气声。马斯克同时在起诉OpenAI、CEO Sam Altman和总裁Greg Brockman，指控他们放弃了非营利使命。他指责OpenAI领导层'洗劫非营利组织'，并称自己是'一个傻瓜'，为早期投入了3800万美元。"
+      },
+      "insight": {
+        "en": "02 *The Irony at the Heart of Musk v. Altman* : Musk's courtroom admission that xAI distills OpenAI models collapses the moral architecture of his own lawsuit. He's suing OpenAI for abandoning its nonprofit mission while his competing company uses OpenAI's technology — the same practice OpenAI and Anthropic have publicly condemned when done by Chinese firms like DeepSeek. But the deeper irony is strategic: Musk's xAI is now one of the eight companies in the Pentagon's classified AI deals announced May 1. So Musk is simultaneously suing OpenAI for ethical breaches, using their models to train his own, and joining them in classified military contracts. This isn't just contradiction — it's a window into how the AI industry's ethical rhetoric has become completely decoupled from its business operations. The trial's real stakes are not about nonprofit governance; they're about who controls the narrative as the industry consolidates around a handful of military-aligned players. Compare to Anthropic's principled stand against Pentagon contracts: Musk chose the opposite path, and xAI's inclusion in the May 1 deals confirms it.",
+        "zh": "02 *Musk诉Altman案核心的讽刺* : 马斯克在法庭上承认xAI蒸馏OpenAI模型，这摧毁了他自己诉讼的道德架构。他在起诉OpenAI放弃非营利使命，而他的竞争公司却在用OpenAI的技术——这正是OpenAI和Anthropic曾公开谴责中国公司如DeepSeek所做的做法。但更深层的讽刺是战略性的：马斯克的xAI现在是五角大楼5月1日宣布的机密AI交易的八家公司之一。所以马斯克同时在起诉OpenAI违反道德、用他们的模型训练自己的模型、并与他们一起参与机密军事合同。这不仅仅是矛盾——它是一扇窗口，揭示了AI行业的道德修辞如何与商业运作完全脱钩。审判的真正赌注不是非营利治理；而是谁在行业围绕少数军事阵营公司巩固时控制叙事。对比Anthropic在五角大楼合同上的原则性立场：马斯克选择了相反的道路，xAI被纳入5月1日的协议证实了这一点。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Targets ~$900B Valuation in Potential Last Private Round Before IPO",
+        "zh": "Anthropic瞄准约9000亿美元估值，或为IPO前最后一轮私募融资"
+      },
+      "url": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
+      "source": "TechCrunch / CNBC",
+      "time": "2026-04-30",
+      "description": {
+        "en": "Anthropic is reportedly closing a ~$50 billion funding round at a $900+ billion valuation, which would surpass OpenAI's $852B valuation from March 2026. Investors were asked to submit allocations within 48 hours. Annual revenue run rate has surpassed $30B (some sources say ~$40B), up from $380B valuation in February. Amazon has committed up to $25B and Google up to $40B in infrastructure investments. The capital is driven by compute needs for Claude Opus 4.7 and the Mythos cybersecurity model.",
+        "zh": "据报道，Anthropic即将完成约500亿美元的融资，估值超9000亿美元，将超过OpenAI在2026年3月达成的8520亿美元估值。投资者被要求在48小时内提交配置。年化营收运行率已超300亿美元（部分消息称接近400亿美元），较2月的3800亿美元估值大幅跃升。亚马逊已承诺高达250亿美元，谷歌承诺高达400亿美元的基础设施投资。资金需求由Claude Opus 4.7和Mythos网络安全模型的算力需求驱动。"
+      },
+      "insight": {
+        "en": "03 *Anthropic's $900B Bet: Military Exclusion Meets Market Validation* : The timing of Anthropic's funding round — closing within two weeks of being labeled a Pentagon 'supply chain risk' — is either terrible luck or remarkably well-calibrated positioning. Excluding military contracts worth billions might seem financially irresponsible, but Anthropic appears to be betting that the commercial and enterprise market will more than compensate. The $30B+ revenue run rate suggests this bet is paying off: Claude Security launched May 1 directly monetizes the same safety infrastructure that got Anthropic kicked out of the Pentagon. The $900B valuation (nearly 2.4x February's $380B) implies investors agree the safety-first brand has premium pricing power. Compare to OpenAI's trajectory: OpenAI signed Pentagon deals in February, hit $852B valuation in March, and just released GPT-5.5 in April. The two companies are now pursuing fundamentally different theories of value creation — one through military/government scale, the other through enterprise trust premium. David Silver's $1.1B Ineffable Intelligence raise at a $5.1B valuation, by contrast, shows investors are also willing to fund the orthogonal bet: that the next paradigm (RL, not LLMs) makes both military and enterprise AI approaches obsolete.",
+        "zh": "03 *Anthropic的9000亿赌注：军事排斥与市场验证* : Anthropic融资轮的时机——在被五角大楼标记为'供应链风险'后两周内关闭——要么是糟糕的运气，要么是精心校准的定位。拒绝价值数十亿美元的军事合同似乎财务上不理智，但Anthropic似乎在赌商业和企业市场将超额补偿。300亿+美元的年化营收表明这个赌注正在回报：5月1日推出的Claude Security直接变现了使Anthropic被五角大楼踢出局的安全基础设施。9000亿美元的估值（几乎是2月3800亿美元的2.4倍）意味着投资者同意安全优先品牌具有溢价定价能力。对比OpenAI的轨迹：OpenAI在2月签署五角大楼协议，3月达到8520亿美元估值，4月发布GPT-5.5。这两家公司现在追求根本不同的价值创造理论——一个通过军事/政府规模，另一个通过企业信任溢价。相比之下，David Silver的11亿美元Ineffable Intelligence融资（51亿美元估值）表明投资者也愿意资助正交的赌注：下一个范式（RL而非LLM）将使军事和企业AI方法都变得过时。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Acquires Humanoid Robotics Startup ARI for Superintelligence Labs",
+        "zh": "Meta收购人形机器人初创公司ARI，加入超级智能实验室"
+      },
+      "url": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
+      "source": "TechCrunch",
+      "time": "2026-05-01",
+      "description": {
+        "en": "Meta purchased Assured Robot Intelligence (ARI), a startup building foundation models for humanoid robots to perform physical labor like household chores. ARI's team, led by Xiaolong Wang (ex-Nvidia/UCSD) and Lerrel Pinto (ex-NYU), will join Meta's Superintelligence Labs under Yann LeCun. The acquisition reinforces the thesis that AGI requires robots trained in physical-world interaction, not just digital data.",
+        "zh": "Meta收购了Assured Robot Intelligence (ARI)，这是一家为人形机器人构建基础模型的初创公司，旨在让机器人完成家务等体力劳动。由Xiaolong Wang（前Nvidia/UCSD）和Lerrel Pinto（前NYU）领导的ARI团队将加入Meta的超级智能实验室，由Yann LeCun领导。此次收购强化了通用人工智能需要机器人在物理世界交互中训练而不仅依赖数字数据的论点。"
+      },
+      "insight": {
+        "en": "04 *Meta's Physical AI Pivot Amid Digital Surveillance* : Meta's ARI acquisition lands on the same day its MCI keystroke-tracking initiative is making headlines — a split-screen moment that captures Meta's dual AI strategy. The robotics play (embodied AI, physical world learning) represents a long-term bet that digital models alone cannot achieve AGI. The surveillance play (harvesting employee behavior to train desktop agents) is the short-term bet that Meta can automate white-collar work first. Both bets are funded by the same $125-145B AI capex budget and the same 8,000 layoffs announced for May 20. The throughline: Meta is simultaneously trying to build AI that replaces human workers (MCI + layoffs) and AI that operates in the physical world where humans still have comparative advantage (ARI). The contradiction is instructive: the easier problem (automating desk work) may prove harder than the harder problem (embodied robotics), because desk work automation triggers immediate labor resistance and regulatory scrutiny that robotics does not. Yann LeCun's Superintelligence Labs now has both tracks — and the tension between them will define Meta's AI strategy for the next 2-3 years.",
+        "zh": "04 *Meta在数字监控中的物理AI转向* : Meta的ARI收购与其MCI按键追踪计划在同一天登上头条——一个分屏时刻，捕捉了Meta的双重AI策略。机器人技术（具身AI、物理世界学习）代表了一个长期赌注，即仅靠数字模型无法实现通用人工智能。监控技术（采集员工行为来训练桌面智能体）是短期赌注，即Meta可以先自动化白领工作。两个赌注都由同一个1250-1450亿美元的AI资本支出预算以及5月20日宣布的8000人裁员提供资金。贯穿线：Meta同时在构建替代人类工作者的AI（MCI + 裁员）和在人类仍有比较优势的物理世界中运行的AI（ARI）。这个矛盾是有启发性的：较简单的问题（自动化办公工作）可能比更难的问题（具身机器人）更难解决，因为办公自动化会触发即时的劳工抵制和监管审查，而机器人技术则不会。Yann LeCun的超级智能实验室现在两条路都在跑——它们之间的张力将定义Meta未来2-3年的AI策略。"
+      }
+    },
+    {
+      "title": {
+        "en": "Five Eyes Alliance Issues First Joint Guidance on Securing Autonomous AI Agents",
+        "zh": "五眼联盟发布首份关于保护自主AI智能体的联合指南"
+      },
+      "url": "https://cyberscoop.com/cisa-nsa-five-eyes-guidance-secure-deployment-ai-agents/",
+      "source": "CyberScoop",
+      "time": "2026-05-01",
+      "description": {
+        "en": "Cybersecurity agencies from the US, UK, Canada, Australia, and New Zealand jointly published guidance on deploying AI agents securely. The document identifies five key risk categories: excessive privileges, design flaws, unpredictable behavior, cascading failures across interconnected agents, and accountability gaps. It recommends zero-trust architecture, mandatory human sign-off for high-impact actions, and cryptographic identities for AI agents.",
+        "zh": "来自美国、英国、加拿大、澳大利亚和新西兰的网络安全机构联合发布了安全部署AI智能体的指南。文件识别了五个关键风险类别：过度权限、设计缺陷、不可预测行为、互联智能体间的级联故障和责任缺口。建议采用零信任架构、对高影响行动实施强制性人工签批、并为AI智能体赋予加密身份。"
+      },
+      "insight": {
+        "en": "05 *The Governance Gap: Five Eyes Warns While Pentagon Deploys* : The Five Eyes guidance lands on May 1 — the same day the Pentagon announced its AI military deals — and the juxtaposition is not coincidental. The guidance reads like a technical rebuttal to the Pentagon's 'deploy first, govern later' approach. Its five risk categories map directly onto every use case the military contracts enable: agents with excessive system access, unpredictable behavior in combat scenarios, and cascading failures across interconnected battlefield AI systems. The cryptographic identity recommendation is particularly pointed: it implies that without verifiable agent identity, attribution for AI-caused incidents becomes impossible — exactly the accountability gap that Anthropic cited when refusing to drop its safety guardrails. Microsoft's Agent Governance Toolkit, released open-source earlier this week, addresses the same concerns from the private-sector side. The emerging pattern is a split-screen AI future: military deployment accelerating while governance frameworks are still being drafted — with the two tracks on collision course.",
+        "zh": "05 *治理鸿沟：五眼联盟警告之际五角大楼正在部署* : 五眼联盟指南于5月1日发布——同一天五角大楼宣布其AI军事协议——这种并置并非巧合。该指南读起来像是对五角大楼'先部署后治理'方法的技术性反驳。其五个风险类别直接映射到军事合同所启用的每个用例：拥有过多系统访问权限的智能体、战斗场景中的不可预测行为、以及互联战场AI系统间的级联故障。加密身份的建议尤其尖锐：它意味着如果没有可验证的智能体身份，AI造成的事件归因将不可能——这正是Anthropic在拒绝放弃安全防护栏时引用的责任缺口。本周早些时候开源发布的Microsoft智能体治理工具包从私营企业角度回应了同样的关切。正在出现的模式是一个分屏的AI未来：军事部署加速，而治理框架仍在起草中——两条轨道正走向碰撞。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepMind's David Silver Raises $1.1B for Ineffable Intelligence at $5.1B Valuation",
+        "zh": "DeepMind的David Silver为Ineffable Intelligence筹集11亿美元，估值51亿"
+      },
+      "url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/",
+      "source": "TechCrunch / Decrypt / TNW",
+      "time": "2026-04-27",
+      "description": {
+        "en": "David Silver, the DeepMind scientist behind AlphaGo, AlphaZero, and AlphaStar, raised $1.1B led by Sequoia and Lightspeed for his new startup Ineffable Intelligence at a $5.1B valuation. Silver's thesis: LLMs are 'fossil fuel' — they remix existing human knowledge but cannot discover genuinely new insights. His startup will build a 'superlearner' using reinforcement learning that learns entirely from its own experience. Nvidia, Google, Index Ventures, and the UK's sovereign AI fund also participated. The company has no product, no revenue, and no public roadmap.",
+        "zh": "DeepMind科学家David Silver（AlphaGo、AlphaZero、AlphaStar的核心人物）为其新创公司Ineffable Intelligence筹集了11亿美元，由红杉和Lightspeed领投，估值51亿美元。Silver的论点：大语言模型是'化石燃料'——它们重新组合现有的人类知识，但无法发现真正的新洞见。他的初创公司将使用强化学习构建'超级学习者'，完全从自身经验中学习。英伟达、谷歌、Index Ventures和英国主权AI基金也参与了投资。该公司目前没有产品、没有收入、也没有公开路线图。"
+      },
+      "insight": {
+        "en": "06 *The RL Counter-Narrative Gets Its War Chest* : Silver's $1.1B raise is the largest pure-research AI bet of 2026 and a direct challenge to the LLM scaling orthodoxy that funds the Pentagon deals, Anthropic's $900B round, and OpenAI's $852B valuation. Silver calls human data 'fossil fuel' and positions RL-based learning as 'renewable fuel' — a framing that questions whether the tens of billions flowing into LLM compute are building on a depleting resource. The $5.1B valuation for a company with no product is either hubris or a signal that elite investors believe the LLM paradigm has a ceiling that RL can break through. The fact that Nvidia participated (while also being in the Pentagon deals and supplying chips to every LLM company) shows the chipmaker hedging across paradigms. The UK sovereign fund's involvement is also notable: the British government is betting that the next AI breakthrough might come from London, not San Francisco. The meta-question Silver's raise poses: if the incumbents (OpenAI, Anthropic, Google) are already spending $50-145B/year on LLMs, can a $1.1B startup with no product actually compete — or is this an acqui-hire play dressed as a paradigm shift?",
+        "zh": "06 *RL反叙事获得弹药库* : Silver的11亿美元融资是2026年最大的纯研究AI赌注，直接挑战支撑五角大楼协议、Anthropic 9000亿轮次和OpenAI 8520亿估值的LLM缩放正统。Silver将人类数据称为'化石燃料'，将RL学习定位为'可再生燃料'——这种叙事质疑了流入LLM算力的数百亿美元是否正在不可再生资源上建设。对于一家没有产品的公司给出51亿美元估值，要么是狂妄，要么是信号：精英投资者相信LLM范式存在上限，而RL可以突破。英伟达参与其中（同时也在五角大楼协议中并为每家LLM公司供应芯片）表明这家芯片制造商正在跨范式对冲。英国主权基金的参与也值得注意：英国政府正在赌下一次AI突破可能来自伦敦而非旧金山。Silver融资带来的元问题：如果现有巨头（OpenAI、Anthropic、谷歌）每年已在LLM上花费500-1450亿美元，一家拥有11亿美元却没有产品的初创公司真的能竞争——还是这是一场伪装成范式转变的收购招聘？"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Open-Sources Symphony: A Spec for Codex Orchestration at Scale",
+        "zh": "OpenAI开源Symphony：大规模Codex编排规范"
+      },
+      "url": "https://openai.com/index/open-source-codex-orchestration-symphony/",
+      "source": "OpenAI",
+      "time": "2026-04-27",
+      "description": {
+        "en": "OpenAI released Symphony, an open-source specification for orchestrating Codex coding agents. The core idea: every open task gets an agent; agents run continuously; humans review results. It turns project-management boards into a control plane for coding agent fleets. OpenAI reports 500% increase in landed PRs on some internal teams. The spec is language-agnostic with reference implementations in TypeScript, Go, Rust, Java, and Python. Already at 15K+ GitHub stars.",
+        "zh": "OpenAI发布了Symphony，一个用于编排Codex编程智能体的开源规范。核心理念：每个开放任务分配一个智能体；智能体持续运行；人类审核结果。它将项目管理看板转变为编程智能体集群的控制平面。OpenAI报告部分内部团队的落地PR增长了500%。该规范与语言无关，参考实现覆盖TypeScript、Go、Rust、Java和Python。GitHub已获1.5万+星。"
+      },
+      "insight": {
+        "en": "07 *Symphony and the Agent-as-Employee Model Goes Mainstream* : OpenAI's Symphony spec formalizes a pattern that has been emerging across the industry: treating AI coding agents not as tools but as workers on a team board. The 500% PR increase at OpenAI internal teams suggests the bottleneck in software development has shifted from code generation to task allocation and review — exactly what Symphony addresses. This complements yesterday's news of Microsoft E7 ($99/user/month with AI agents bundled) and GitHub Copilot modernization agents. The ecosystem is converging: Symphony defines the orchestration protocol, Microsoft bundles the governance, and repos like forrestchang/andrej-karpathy-skills and mksglu/context-mode optimize individual agent behavior and context efficiency. But the Symphony model also introduces systemic risk: if every task gets an agent and agents run continuously, the failure modes the Five Eyes guidance warns about — cascading failures across interconnected agents — become operational reality at scale. OpenAI is betting the productivity gains outweigh the governance debt. The speed at which Symphony is being adopted (15K+ stars in days) suggests the industry largely agrees.",
+        "zh": "07 *Symphony与智能体即员工模式走向主流* : OpenAI的Symphony规范正式化了一个正在整个行业兴起的模式：将AI编程智能体视为团队看板上的工作者，而非工具。OpenAI内部团队500%的PR增长表明软件开发的瓶颈已从代码生成转向任务分配和审核——这正是Symphony所解决的。这补充了昨日的Microsoft E7（99美元/用户/月，捆绑AI智能体）和GitHub Copilot现代化智能体的新闻。生态系统正在汇聚：Symphony定义编排协议，Microsoft捆绑治理，而forrestchang/andrej-karpathy-skills和mksglu/context-mode等仓库优化个体智能体行为和上下文效率。但Symphony模式也引入了系统性风险：如果每个任务都分配一个智能体且智能体持续运行，五眼联盟指南所警告的故障模式——互联智能体间的级联故障——将成为大规模运行中的操作现实。OpenAI在赌生产力收益超过治理负债。Symphony在几天内获得1.5万+星的速度表明行业大体同意这一判断。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "May 1, 2026, will be remembered as the day commercial AI formally split into two irreconcilable trajectories. On one track: the Pentagon's eight-company AI coalition, deploying frontier models onto classified military networks while declaring an 'AI-first' fighting force. On the other: Anthropic, excluded from those contracts for refusing to drop safety guardrails, simultaneously raising $50B at a $900B valuation and launching Claude Security to the enterprise market. The two tracks share the same underlying technology — GPT-5.5, Claude Opus 4.7, Gemini, Grok are all transformer-based LLMs — but they represent fundamentally incompatible theories of AI governance. The Five Eyes guidance on agent security, also released May 1, accidentally exposes the contradiction at the heart of this moment: the same agencies that are deploying AI agents into warfare are warning that those agents need cryptographic identities, human oversight, and zero-trust architecture — infrastructure that does not yet exist in any military deployment. Elon Musk's courtroom admission that xAI distills OpenAI models adds a layer of farce: the moral claims underpinning the industry's internal disputes are increasingly detached from operational reality. Meanwhile, David Silver's $1.1B raise for Ineffable Intelligence introduces a third possibility: that both tracks — military deployment and enterprise safety — are optimizing for a paradigm (LLMs) that reinforcement learning will render obsolete. The day's collective message: the AI industry has reached a point where its rate of deployment has surpassed its rate of self-understanding. The governance frameworks being published today are for technology that was deployed yesterday; the technology being deployed today will be governed by frameworks that do not yet exist.",
+    "zh": "2026年5月1日将被铭记为商业AI正式分裂为两条不可调和轨迹的日子。一条路：五角大楼的八家公司AI联盟，将前沿模型部署到机密军事网络，同时宣布打造'AI至上'的战斗力量。另一条路：Anthropic，因拒绝放弃安全防护栏而被排除在这些合同之外，同时筹集500亿美元（估值9000亿）并面向企业市场推出Claude Security。两条路共享相同的底层技术——GPT-5.5、Claude Opus 4.7、Gemini、Grok都是基于Transformer的大语言模型——但它们代表了根本不相容的AI治理论。五眼联盟同日发布的智能体安全指南意外地暴露了这一时刻核心的矛盾：正在将AI智能体部署到战争中的同一批机构，正在警告这些智能体需要加密身份、人类监督和零信任架构——而这些基础设施在任何军事部署中都不存在。马斯克在法庭上承认xAI蒸馏OpenAI模型更是增添了一层闹剧：支撑行业内部争端的道德主张越来越脱离运营现实。与此同时，David Silver为Ineffable Intelligence筹集的11亿美元引入了第三种可能性：两条路——军事部署和企业安全——都在为一个将被强化学习淘汰的范式（大语言模型）进行优化。这一天的集体信息：AI行业已经到达了一个临界点，其部署速度已经超过了自我理解的速度。今天发布的治理框架是为昨天部署的技术准备的；今天部署的技术将由尚不存在的框架来治理。"
+  }
+}

@@ -48,3 +48,16 @@ Wiki lint complete. Here's the summary of all fixes:
 - **Rebuilt index.md** with accurate counts: sources 16→18, ideas 17→18, entities 53 (unchanged net)
 - **Appended log entry** to `wiki/log.md` with full fix summary
 [2026-05-02 01:26:42] Wiki lint complete (exit code 0).
+[main 8c8217d] wiki: lint 2026-05-02
+ 28 files changed, 295 insertions(+), 95 deletions(-)
+ create mode 100644 logs/lint_done_2026-05-01.json
+ create mode 100644 logs/lint_done_2026-05-02.json
+ create mode 100644 logs/lint_err.log
+ create mode 100644 wiki/entities/gemini-cli.md
+ delete mode 100644 wiki/entities/gpt-5-4-cyber.md
+ create mode 100644 wiki/entities/gpt-5.4-cyber.md
+ rename wiki/entities/{gpt-5-4.md => gpt-5.4.md} (100%)
+ delete mode 100644 wiki/entities/ineffable-intelligence.md
+ create mode 100644 wiki/ideas/agent-economics.md
+ create mode 100644 wiki/sources/ineffable-intelligence.md
+ create mode 100644 wiki/sources/perplexity.md

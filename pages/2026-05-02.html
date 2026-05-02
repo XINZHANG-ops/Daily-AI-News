@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 02, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 02, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/forrestchang/andrej-karpathy-skills" class="card-title" target="_blank">forrestchang/andrej-karpathy-skills</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 105k stars</div>
+                                <div class="meta-item"><span>🍴</span> 10.4k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A single CLAUDE.md file that enforces four principles to improve Claude Code behavior: think before coding, simplicity first, surgical changes, and goal-driven execution. Derived from Andrej Karpathy's observations on LLM coding pitfalls. 105K+ stars in 3 months.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个CLAUDE.md文件，通过四项原则改善Claude Code行为：编码前先思考、简单至上、精准修改、目标驱动。源于Andrej Karpathy对LLM编码陷阱的观察。3个月内获超10.5万星。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/mksglu/context-mode" class="card-title" target="_blank">mksglu/context-mode</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 11.9k stars</div>
+                                <div class="meta-item"><span>🍴</span> 820 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">MCP server for context window optimization in AI coding agents. Sandboxes tool output to achieve up to 98% context reduction across 12+ platforms including Claude Code, Gemini CLI, VS Code Copilot, Cursor, and OpenCode. TypeScript-based with 116 releases.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">针对AI编程智能体的上下文窗口优化MCP服务器。通过沙箱化工具输出实现高达98%的上下文压缩，支持Claude Code、Gemini CLI、VS Code Copilot、Cursor、OpenCode等12+平台。基于TypeScript，已发布116个版本。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/CJackHwang/ds2api" class="card-title" target="_blank">CJackHwang/ds2api</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 810 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Full-stack tool that converts DeepSeek web sessions into standardized API endpoints. Compatible with OpenAI, Claude, and Gemini protocols. Features multi-account rotation, pure Go PoW implementation, concurrent queue control, and React admin panel. v4.3.0 released May 1.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">全栈工具，将DeepSeek Web会话转换为标准化API端点。兼容OpenAI、Claude和Gemini协议。支持多账号轮询、纯Go实现的PoW计算、并发队列控制和React管理面板。5月1日发布v4.3.0。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch / CNN / The Verge</span>
+                    <div class="news-time">2026-05-01</div>
+                    <a href="https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/" class="card-title" target="_blank" data-lang="en">Pentagon Signs AI Deals with 8 Tech Giants for Classified Networks — Anthropic Excluded</a>
+                    <a href="https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/" class="card-title" target="_blank" data-lang="zh" style="display: none;">五角大楼与8家科技巨头签署机密网络AI协议——Anthropic被排除在外</a>
+                    <p class="card-description" data-lang="en">The U.S. Department of Defense announced agreements with OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX/xAI, Oracle, and Reflection AI to deploy their AI tools on IL6/IL7 classified networks for 'lawful operational use.' 1.3M+ DoD personnel already use the GenAI.mil platform. The Pentagon declared it will become an 'AI-first' fighting force, citing a need for 'decision superiority across all domains of warfare.' The multi-vendor approach explicitly aims to prevent 'AI vendor lock-in.' Anthropic was excluded after refusing to accept 'any lawful use' language and insisting on guardrails against autonomous weapons and mass surveillance. Defense Secretary Hegseth labeled Anthropic a 'supply chain risk' — a designation normally reserved for foreign adversaries. Anthropic won a preliminary injunction in March; full trial expected September 2026.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">美国国防部宣布与OpenAI、Google、Microsoft、AWS、Nvidia、SpaceX/xAI、Oracle和Reflection AI达成协议，将其AI工具部署到IL6/IL7机密网络，用于'合法作战用途'。130多万国防部人员已在GenAI.mil平台上使用AI。五角大楼宣称将成为'AI至上'的战斗力量，目标是实现'全域决策优势'。多供应商策略明确旨在防止'AI供应商锁定'。Anthropic被排除在外，原因是其拒绝接受'任何合法用途'的条款，并坚持对自主武器和大规模监控设置防护栏。国防部长Hegseth将Anthropic标记为'供应链风险'——这一标签通常用于外国对手。Anthropic在3月获得初步禁令；全面审判预计2026年9月进行。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch / The Verge / MIT Tech Review</span>
+                    <div class="news-time">2026-04-30</div>
+                    <a href="https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/" class="card-title" target="_blank" data-lang="en">Elon Musk Admits Under Oath: xAI Trained Grok on OpenAI Models via Distillation</a>
+                    <a href="https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/" class="card-title" target="_blank" data-lang="zh" style="display: none;">马斯克宣誓作证：xAI通过蒸馏技术使用OpenAI模型训练Grok</a>
+                    <p class="card-description" data-lang="en">During the Musk v. Altman trial in California federal court, Elon Musk testified that xAI 'partly' used OpenAI's models to train Grok through model distillation, calling it 'standard practice to use other AIs to validate your AI.' The admission reportedly drew audible gasps in the courtroom. Musk is simultaneously suing OpenAI, CEO Sam Altman, and president Greg Brockman, alleging they abandoned the nonprofit mission. He accused OpenAI's leadership of 'looting the nonprofit' and called himself 'a fool' for contributing $38M in early funding.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在加州联邦法院的Musk诉Altman案审判中，马斯克作证称xAI通过模型蒸馏'部分'使用OpenAI模型训练Grok，称其为'用其他AI验证你的AI是标准做法'。这一承认据报道在法庭上引起了可听见的吸气声。马斯克同时在起诉OpenAI、CEO Sam Altman和总裁Greg Brockman，指控他们放弃了非营利使命。他指责OpenAI领导层'洗劫非营利组织'，并称自己是'一个傻瓜'，为早期投入了3800万美元。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch / CNBC</span>
+                    <div class="news-time">2026-04-30</div>
+                    <a href="https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/" class="card-title" target="_blank" data-lang="en">Anthropic Targets ~$900B Valuation in Potential Last Private Round Before IPO</a>
+                    <a href="https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic瞄准约9000亿美元估值，或为IPO前最后一轮私募融资</a>
+                    <p class="card-description" data-lang="en">Anthropic is reportedly closing a ~$50 billion funding round at a $900+ billion valuation, which would surpass OpenAI's $852B valuation from March 2026. Investors were asked to submit allocations within 48 hours. Annual revenue run rate has surpassed $30B (some sources say ~$40B), up from $380B valuation in February. Amazon has committed up to $25B and Google up to $40B in infrastructure investments. The capital is driven by compute needs for Claude Opus 4.7 and the Mythos cybersecurity model.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">据报道，Anthropic即将完成约500亿美元的融资，估值超9000亿美元，将超过OpenAI在2026年3月达成的8520亿美元估值。投资者被要求在48小时内提交配置。年化营收运行率已超300亿美元（部分消息称接近400亿美元），较2月的3800亿美元估值大幅跃升。亚马逊已承诺高达250亿美元，谷歌承诺高达400亿美元的基础设施投资。资金需求由Claude Opus 4.7和Mythos网络安全模型的算力需求驱动。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-05-01</div>
+                    <a href="https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/" class="card-title" target="_blank" data-lang="en">Meta Acquires Humanoid Robotics Startup ARI for Superintelligence Labs</a>
+                    <a href="https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta收购人形机器人初创公司ARI，加入超级智能实验室</a>
+                    <p class="card-description" data-lang="en">Meta purchased Assured Robot Intelligence (ARI), a startup building foundation models for humanoid robots to perform physical labor like household chores. ARI's team, led by Xiaolong Wang (ex-Nvidia/UCSD) and Lerrel Pinto (ex-NYU), will join Meta's Superintelligence Labs under Yann LeCun. The acquisition reinforces the thesis that AGI requires robots trained in physical-world interaction, not just digital data.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta收购了Assured Robot Intelligence (ARI)，这是一家为人形机器人构建基础模型的初创公司，旨在让机器人完成家务等体力劳动。由Xiaolong Wang（前Nvidia/UCSD）和Lerrel Pinto（前NYU）领导的ARI团队将加入Meta的超级智能实验室，由Yann LeCun领导。此次收购强化了通用人工智能需要机器人在物理世界交互中训练而不仅依赖数字数据的论点。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CyberScoop</span>
+                    <div class="news-time">2026-05-01</div>
+                    <a href="https://cyberscoop.com/cisa-nsa-five-eyes-guidance-secure-deployment-ai-agents/" class="card-title" target="_blank" data-lang="en">Five Eyes Alliance Issues First Joint Guidance on Securing Autonomous AI Agents</a>
+                    <a href="https://cyberscoop.com/cisa-nsa-five-eyes-guidance-secure-deployment-ai-agents/" class="card-title" target="_blank" data-lang="zh" style="display: none;">五眼联盟发布首份关于保护自主AI智能体的联合指南</a>
+                    <p class="card-description" data-lang="en">Cybersecurity agencies from the US, UK, Canada, Australia, and New Zealand jointly published guidance on deploying AI agents securely. The document identifies five key risk categories: excessive privileges, design flaws, unpredictable behavior, cascading failures across interconnected agents, and accountability gaps. It recommends zero-trust architecture, mandatory human sign-off for high-impact actions, and cryptographic identities for AI agents.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">来自美国、英国、加拿大、澳大利亚和新西兰的网络安全机构联合发布了安全部署AI智能体的指南。文件识别了五个关键风险类别：过度权限、设计缺陷、不可预测行为、互联智能体间的级联故障和责任缺口。建议采用零信任架构、对高影响行动实施强制性人工签批、并为AI智能体赋予加密身份。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch / Decrypt / TNW</span>
+                    <div class="news-time">2026-04-27</div>
+                    <a href="https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/" class="card-title" target="_blank" data-lang="en">DeepMind's David Silver Raises $1.1B for Ineffable Intelligence at $5.1B Valuation</a>
+                    <a href="https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepMind的David Silver为Ineffable Intelligence筹集11亿美元，估值51亿</a>
+                    <p class="card-description" data-lang="en">David Silver, the DeepMind scientist behind AlphaGo, AlphaZero, and AlphaStar, raised $1.1B led by Sequoia and Lightspeed for his new startup Ineffable Intelligence at a $5.1B valuation. Silver's thesis: LLMs are 'fossil fuel' — they remix existing human knowledge but cannot discover genuinely new insights. His startup will build a 'superlearner' using reinforcement learning that learns entirely from its own experience. Nvidia, Google, Index Ventures, and the UK's sovereign AI fund also participated. The company has no product, no revenue, and no public roadmap.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepMind科学家David Silver（AlphaGo、AlphaZero、AlphaStar的核心人物）为其新创公司Ineffable Intelligence筹集了11亿美元，由红杉和Lightspeed领投，估值51亿美元。Silver的论点：大语言模型是'化石燃料'——它们重新组合现有的人类知识，但无法发现真正的新洞见。他的初创公司将使用强化学习构建'超级学习者'，完全从自身经验中学习。英伟达、谷歌、Index Ventures和英国主权AI基金也参与了投资。该公司目前没有产品、没有收入、也没有公开路线图。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-04-27</div>
+                    <a href="https://openai.com/index/open-source-codex-orchestration-symphony/" class="card-title" target="_blank" data-lang="en">OpenAI Open-Sources Symphony: A Spec for Codex Orchestration at Scale</a>
+                    <a href="https://openai.com/index/open-source-codex-orchestration-symphony/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI开源Symphony：大规模Codex编排规范</a>
+                    <p class="card-description" data-lang="en">OpenAI released Symphony, an open-source specification for orchestrating Codex coding agents. The core idea: every open task gets an agent; agents run continuously; humans review results. It turns project-management boards into a control plane for coding agent fleets. OpenAI reports 500% increase in landed PRs on some internal teams. The spec is language-agnostic with reference implementations in TypeScript, Go, Rust, Java, and Python. Already at 15K+ GitHub stars.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI发布了Symphony，一个用于编排Codex编程智能体的开源规范。核心理念：每个开放任务分配一个智能体；智能体持续运行；人类审核结果。它将项目管理看板转变为编程智能体集群的控制平面。OpenAI报告部分内部团队的落地PR增长了500%。该规范与语言无关，参考实现覆盖TypeScript、Go、Rust、Java和Python。GitHub已获1.5万+星。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">May 1, 2026, will be remembered as the day commercial AI formally split into two irreconcilable trajectories. On one track: the Pentagon's eight-company AI coalition, deploying frontier models onto classified military networks while declaring an 'AI-first' fighting force. On the other: Anthropic, excluded from those contracts for refusing to drop safety guardrails, simultaneously raising $50B at a $900B valuation and launching Claude Security to the enterprise market. The two tracks share the same underlying technology — GPT-5.5, Claude Opus 4.7, Gemini, Grok are all transformer-based LLMs — but they represent fundamentally incompatible theories of AI governance. The Five Eyes guidance on agent security, also released May 1, accidentally exposes the contradiction at the heart of this moment: the same agencies that are deploying AI agents into warfare are warning that those agents need cryptographic identities, human oversight, and zero-trust architecture — infrastructure that does not yet exist in any military deployment. Elon Musk's courtroom admission that xAI distills OpenAI models adds a layer of farce: the moral claims underpinning the industry's internal disputes are increasingly detached from operational reality. Meanwhile, David Silver's $1.1B raise for Ineffable Intelligence introduces a third possibility: that both tracks — military deployment and enterprise safety — are optimizing for a paradigm (LLMs) that reinforcement learning will render obsolete. The day's collective message: the AI industry has reached a point where its rate of deployment has surpassed its rate of self-understanding. The governance frameworks being published today are for technology that was deployed yesterday; the technology being deployed today will be governed by frameworks that do not yet exist.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年5月1日将被铭记为商业AI正式分裂为两条不可调和轨迹的日子。一条路：五角大楼的八家公司AI联盟，将前沿模型部署到机密军事网络，同时宣布打造'AI至上'的战斗力量。另一条路：Anthropic，因拒绝放弃安全防护栏而被排除在这些合同之外，同时筹集500亿美元（估值9000亿）并面向企业市场推出Claude Security。两条路共享相同的底层技术——GPT-5.5、Claude Opus 4.7、Gemini、Grok都是基于Transformer的大语言模型——但它们代表了根本不相容的AI治理论。五眼联盟同日发布的智能体安全指南意外地暴露了这一时刻核心的矛盾：正在将AI智能体部署到战争中的同一批机构，正在警告这些智能体需要加密身份、人类监督和零信任架构——而这些基础设施在任何军事部署中都不存在。马斯克在法庭上承认xAI蒸馏OpenAI模型更是增添了一层闹剧：支撑行业内部争端的道德主张越来越脱离运营现实。与此同时，David Silver为Ineffable Intelligence筹集的11亿美元引入了第三种可能性：两条路——军事部署和企业安全——都在为一个将被强化学习淘汰的范式（大语言模型）进行优化。这一天的集体信息：AI行业已经到达了一个临界点，其部署速度已经超过了自我理解的速度。今天发布的治理框架是为昨天部署的技术准备的；今天部署的技术将由尚不存在的框架来治理。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
