@@ -27,5 +27,5 @@ Gemma 4's Apache 2.0 release marked a strategic shift — removing barriers to e
 With 400M+ downloads and 100K+ variants, Gemma has built a significant open-source ecosystem.
 
 ## Connections
-- [[sources/google]] — Created by Google
-- [[topics/llm_models]] — Major open-weight release
+- [[sources/google]] — Gemma 4 was created by Google DeepMind; Google's first fully permissive open model under Apache 2.0, removing barriers to enterprise adoption
+- [[topics/llm_models]] — Ranked #3 on Arena AI (31B variant); challenges Meta's Llama dominance in open-weight models; 400M+ downloads built significant open-source ecosystem

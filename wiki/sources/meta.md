@@ -1,7 +1,7 @@
 ---
 title: "Meta"
 slug: meta
-last_updated: 2026-04-29
+last_updated: 2026-05-01
 ---
 
 # Meta
@@ -23,6 +23,8 @@ last_updated: 2026-04-29
 | 2026-04-25 | Meta and Microsoft cut thousands of jobs | AI investment directly cannibalizing traditional tech workforces |
 | 2026-04-27 | Meta mandates 65/75 AI code adoption | 65% of engineers must use AI for 75% of code by mid-2026; tied to performance reviews; up to 15,800 workers to be laid off |
 | 2026-04-29 | EU issues first AI Act fine: €800M | Unauthorized EU user data training; MCI employee keystroke tracking cited as evidence of systemic data overreach |
+| 2026-05-01 | Meta announces 8,000 layoffs starting May 20 | 10% workforce cut; 6,000 open roles abandoned; "50-100 person tasks now need 10" |
+| 2026-05-01 | Meta raises capex guidance to $125-145B | Up from $115-135B; CFO Susan Li admits she "doesn't really know" ideal headcount |
 
 ## Key Relationships
 - **OpenAI**: Competition in AI assistant market and coding agents.
@@ -32,3 +34,5 @@ last_updated: 2026-04-29
 ## Connections
 - [[entities/llama-4]] — Open-weight models with 10M context windows
 - [[entities/muse-spark]] — Meta's first proprietary model, ranks 4th
+- [[ideas/ai-job-displacement]] — 8,000 cuts + MCI surveillance + $125-145B capex = AI replacing headcount at scale
+- [[ideas/institutional-gap]] — EU AI Act fine and workforce cuts show governance/capital converging faster than consensus

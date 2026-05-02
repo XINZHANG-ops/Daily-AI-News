@@ -1,6 +1,35 @@
 # Wiki Log
 
-## [2026-04-29] ingest | 1 date
+## [2026-05-02] wiki lint | structural + connection fixes
+
+**Structural fixes:**
+- Created missing entity `entities/claude-opus-4-6.md` (index listed it but file was missing)
+- Fixed broken [[wikilink]] `[[entities/gemini-3-1-flash-live]]` → `[[entities/gemini-3-1-flash-tts]]` in timelines/2026-03.md
+- Fixed broken [[wikilink]] `[[ideas/infrastructure-bottleneck]]` → `[[ideas/efficiency-frontier]]` in topics/ai_funding.md (infrastructure-bottleneck page never existed)
+- Removed phantom link `[[sources/crowdstrike]]` from entities/claude-security.md (crowdstrike is not a source page)
+
+**Connection quality improvements:**
+- Rewrote entity connections with WHY annotations: llama-4, gemma-4, openclaw
+- Fixed link to claude-opus-4-6 from claude-opus-4-7 (predecessor relationship now correct, link now exists)
+
+**Index rebuilt:**
+- Topics: 6 (unchanged)
+- Sources: 16 (unchanged)
+- Timelines: 3 (unchanged)
+- Entities: 53 (added claude-opus-4-6)
+- Ideas: 17 (unchanged)
+
+## [2026-05-01] ingest | 1 date
+
+Dates processed: 2026-05-01
+Topics updated: llm_models (May 1 overview, GB300 Blackwell Ultra mass production, Claude Security launch, Microsoft E7/Agent 365 GA, GUARD Act), ai_companies (Meta 8,000 layoffs May 20, Microsoft E7 lock-in, GUARD Act unanimous passage, Gemini automotive rollout), ai_funding (Meta capex $125-145B, GB300 mass production May delivery), ai_safety (Claude Security defensive pivot, GPT-5.5 Cyber restrictions after mocking Anthropic, GUARD Act criminal penalties), agentic_ai (E7/Agent 365 GA, GB300 35x cost reduction, Gemini automotive), github_trends (harmonist, CoreCoder, open-agent-sdk-go trending)
+Sources updated: meta (8,000 layoffs May 20, $125-145B capex, MCI surveillance), microsoft (E7/Agent 365 GA), anthropic (Claude Security launch), openai (GPT-5.5 Cyber restrictions, Musk distillation admission), google (Gemini automotive ~4M vehicles), nvidia (GB300 mass production), xai (Musk distillation admission under oath)
+Timelines created: 2026-05 (Week 1 May 1-7)
+Entities created: claude-security (Opus 4.7-powered security scanner native to Claude Code), gb300 (Blackwell Ultra mass production, 35x lower cost/token), guard-act (Senate bill criminal penalties for AI chatbot conduct), harmonist (186 specialist agents, zero third-party deps, 949 stars), corecoder (~1,400 lines Python inspired by Claude Code, 652 stars), open-agent-sdk-go (Go SDK for AI agents, 151 stars)
+Ideas created: enterprise-ai-lock-in (Microsoft E7 bundle makes AI governance inseparable from Microsoft stack), distillation-hypocrisy (Musk admitted xAI distilled from OpenAI while suing OpenAI for betrayal)
+Ideas updated: institutional-gap (added GUARD Act unanimous passage, Musk distillation testimony)
+
+Chat session insights applied: The Apr 23 session noted "wiki freshness" on Claude Mythos — today's Claude Security launch directly addresses the defensive pivot narrative. The Apr 25 session noted "today's insight explicitly calls out the Mythos escalation" — the connection between Mythos restrictions and Claude Security is now explicit in the wiki. Apr 26 session noted "AI coding tools as growth driver" — GB300 35x cost reduction now enables that growth at scale.
 
 Dates processed: 2026-04-29
 Topics updated: llm_models (April 29 institutional contradictions pattern: Musk vs Altman Day 3 profit emails, Goldman Sachs/Morgan Stanley threaten IPO withdrawal, EU €800M Meta fine, TSMC 3nm yield collapse to 52%, Mistral Ultra 2 EU positioning), ai_companies (TSMC supply cliff, Mistral Ultra 2 enterprise entry, Ineffable 50 researchers in 72 hours), ai_safety (EU AI Act first fine, TSMC physics reality check), ai_funding (updated with TSMC yield crisis implications), github_trends (Copilot Agent Tier $49/agent/month, TradingAgents 54.6K)

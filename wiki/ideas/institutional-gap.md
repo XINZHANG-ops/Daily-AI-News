@@ -1,13 +1,13 @@
 ---
 title: "Institutional Gap"
 slug: institutional-gap
-last_updated: 2026-04-29
+last_updated: 2026-05-01
 ---
 
 # Institutional Gap
 
 ## The Insight
-AI capability growth is outpacing the institutional frameworks (legal, economic, governance) meant to contain it at an accelerating rate. The companies moving fastest are not waiting for frameworks to catch up — they are building facts on the ground and hoping the legal and regulatory systems will accommodate rather than reverse what they've built. This creates a compounding risk: each day that passes without coherent governance, companies make irreversible infrastructure commitments that make future regulation harder.
+AI capability growth is outpacing the institutional frameworks (legal, economic, governance) meant to contain it at an accelerating rate. May 1, 2026 crystallizes this: the Senate GUARD Act (criminal penalties for AI chatbot conduct) passes unanimously the same day Meta cuts 8,000 jobs while spending $125-145B on AI infrastructure, and the same day OpenAI restricts GPT-5.5 Cyber after mocking Anthropic for the same. The companies are building facts on the ground faster than governance can respond — and the gap is closing through force, not consensus.
 
 ## Evidence
 - [[sources/openai]] — Musk vs Altman court proceedings (April 27-29) test whether OpenAI must revert to non-profit, which would invalidate every Microsoft investment instrument and enterprise contract. Day 3 reveals 2017 emails showing Altman and Brockman discussed for-profit conversion months before the 2019 "capped profit" announcement — the legal foundation of the company itself is now in question. Goldman Sachs and Morgan Stanley threaten IPO withdrawal, compounding legal risk with commercial credibility risk
@@ -16,6 +16,8 @@ AI capability growth is outpacing the institutional frameworks (legal, economic,
 - [[topics/ai_companies]] — Meta's 65/75 mandate (65% engineers using AI for 75% of code by mid-2026, tied to performance reviews) reveals AI is making roles redundant faster than reskilling can occur. The 15,800 workers being laid off as this mandate is enforced shows companies are restructuring workforces before governance frameworks have assessed the impact
 - [[sources/tsmc]] — TSMC's 3nm yield collapse to 52% is a physics-based reality check on the $650B Big Tech AI spending narrative. You cannot buy your way out of yield walls — the hardware layer is revealing hard limits on the "move fast and fix later" assumption
 - [[sources/meta]] — EU's first AI Act fine (€800M on Meta, April 29) for unauthorized training data use, citing the MCI employee keystroke tracking. The regulatory pincer is real: US tech simultaneously defending profit structures in California courts and data practices in Brussels
+- [[sources/openai]] — Musk admits under oath (April 30) that xAI distilled from OpenAI models — simultaneously suing OpenAI for "betraying its open mission" while admitting xAI required OpenAI's outputs. The hypocrisy is legally explosive and reveals how the "open vs closed" framing has become a competitive weapon rather than a principle
+- [[entities/guard-act]] — GUARD Act passes Senate Judiciary Committee unanimously (April 30) with criminal penalties for AI chatbot conduct — the first major AI legislation with teeth, passed the same week as Meta's 8,000 layoffs and OpenAI's Cyber restrictions. The bipartisan speed signals governance has found its triggering event: child safety
 
 ## Implications
 The institutional gap creates three compounding risks:

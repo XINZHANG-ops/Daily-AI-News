@@ -1,13 +1,13 @@
 ---
 title: "NVIDIA"
 slug: nvidia
-last_updated: 2026-04-23
+last_updated: 2026-05-01
 ---
 
 # NVIDIA
 
 ## Overview
-NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell generating $11 billion in Q4 FY2026 revenue and Vera Rubin announcing 10x performance per watt over Blackwell. The company shipped 1.56 petaflops FP4 compute with Huawei's Atlas 350 accelerator claiming 2.8x better performance than NVIDIA's H20 chip — the first credible domestic AI chip competition in China. NVIDIA has participated in major funding rounds for OpenAI, Anthropic, and xAI this year alone, and backed Vast Data's $1B raise at $30B valuation.
+NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell generating $11 billion in Q4 FY2026 revenue and Vera Rubin announcing 10x performance per watt over Blackwell. On May 1, GB300 Blackwell Ultra enters mass production at TSMC's N3P node with 288GB HBM3e, 10 TB/s bandwidth, and NVLink 6 — delivering 35x lower cost-per-token and 50x better throughput per megawatt for agentic AI workloads. The company shipped 1.56 petaflops FP4 compute with Huawei's Atlas 350 accelerator claiming 2.8x better performance than NVIDIA's H20 chip — the first credible domestic AI chip competition in China.
 
 ## Timeline
 
@@ -26,6 +26,7 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 | 2026-04-14 | NVIDIA launches Ising | World's first open quantum AI model family |
 | 2026-04-18 | Ising delivers 2.5x faster quantum error correction | 3x more accurate than traditional approaches |
 | 2026-04-22 | Vast Data raises $1B at $30B valuation | NVIDIA-backed AI infrastructure startup |
+| 2026-05-01 | GB300 Blackwell Ultra enters mass production | Ships to Microsoft Azure, Google Cloud, Meta in May; 288GB HBM3e, 10 TB/s, 35x lower cost/token for agentic AI |
 
 ## Key Relationships
 - **OpenAI**: Strategic investor and primary GPU customer.

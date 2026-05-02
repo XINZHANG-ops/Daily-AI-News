@@ -22,5 +22,5 @@ Llama 4 Scout and Maverick are Meta's open-weight MoE models released April 5, 2
 Llama 4 continues Meta's tradition of open-source AI leadership. Scout's 10M token context represents a major leap in open-weight model capabilities.
 
 ## Connections
-- [[sources/meta]] — Created by Meta
-- [[topics/llm_models]] — Major open-weight release
+- [[sources/meta]] — Llama 4 Scout and Maverick are Meta's open-weight models; first major release since Meta shifted to proprietary Muse Spark
+- [[topics/llm_models]] — Major open-weight release; 10M context window represents significant capability leap in open-weight models

@@ -1,13 +1,13 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-04-30
+last_updated: 2026-05-01
 ---
 
 # Google
 
 ## Overview
-Google has deepened its role as an AI infrastructure provider and model competitor simultaneously. The company is investing up to $40 billion in Anthropic ($10B minimum, $30B contingent on performance targets) and has signed a multi-gigawatt TPU agreement with Anthropic and Broadcom. On April 22, Google released a new suite of AI agents to challenge OpenAI and Anthropic in the burgeoning agentic AI market. At Cloud Next 2026, Google revealed that 75% of its new code is now AI-generated and approved by engineers, and announced the Gemini Enterprise Agent Platform for managing thousands of AI agents alongside 8th generation TPUs (TPU 8t and 8i) offering 3x the processing power of Ironwood. This positions Google as the primary infrastructure partner for frontier AI labs while maintaining competitive model offerings. Gemini 3.1 Pro leads on multiple benchmarks (ARC-AGI-2, GPQA Diamond) while Gemma 4 under Apache 2.0 has emerged as a significant open-weight model.
+Google has deepened its role as an AI infrastructure provider and model competitor simultaneously. The company is investing up to $40 billion in Anthropic ($10B minimum, $30B contingent on performance targets) and has signed a multi-gigawatt TPU agreement with Anthropic and Broadcom. On April 22, Google released a new suite of AI agents to challenge OpenAI and Anthropic in the burgeoning agentic AI market. At Cloud Next 2026, Google revealed that 75% of its new code is now AI-generated and approved by engineers, and announced the Gemini Enterprise Agent Platform for managing thousands of AI agents alongside 8th generation TPUs (TPU 8t and 8i) offering 3x the processing power of Ironwood. On May 1, Google rolls out Gemini to ~4M GM vehicles, replacing Google Assistant with a vehicle-specific AI concierge — the largest automotive AI deployment to date.
 
 ## Timeline
 
@@ -33,6 +33,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-04-28 | Google invests up to $40B in Anthropic | $10B minimum, $30B contingent on performance targets; deepening Anthropic infrastructure partnership |
 | 2026-04-28 | $40B Anthropic investment validates Claude trajectory | Google's move accelerated by Anthropic's demonstrated enterprise capabilities |
 | 2026-04-30 | Signs Pentagon deal for classified military AI | Allows AI systems for classified military work despite internal researcher protests; strategic pivot into defense niche |
+| 2026-05-01 | Gemini rolls out to ~4M GM vehicles | Replacing Google Assistant; vehicle-specific AI concierge using owner's manual; largest automotive AI deployment to date |
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.

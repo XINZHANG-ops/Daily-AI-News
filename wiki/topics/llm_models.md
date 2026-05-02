@@ -1,13 +1,13 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-04-30
+last_updated: 2026-05-01
 ---
 
 # LLM Models
 
 ## Overview
-The LLM landscape in March-April 2026 has fundamentally shifted from pure benchmark racing to capability-safety negotiations and application-layer competition. Claude Mythos established the precedent of capability-based restrictions — models withheld not for misuse risk but because the model itself poses unprecedented cybersecurity risks. By late April, the conversation has evolved: Claude Mythos 5's 10 trillion parameters represent the most dramatic scaling leap yet, while Google's Gemini 3 Deep Think has begun identifying logical flaws in peer-reviewed mathematics papers. Stanford's HAI report confirms China has effectively closed the gap with the US (2.7% Arena difference), despite investing 23x less. OpenAI's GPT-5.5 release (April 23) continues the rapid iteration pace, bringing the company one step closer to an AI "super app" combining ChatGPT, Codex, and AI browser.
+May 1, 2026 marks a watershed: the AI industry transitions from "build it and they will come" to "build it, regulate it, fire the builders, and pray the infrastructure holds." Claude Mythos established the precedent of capability-based restrictions, and by May 2026 both Anthropic (Claude Security) and OpenAI (GPT-5.5 Cyber) are racing to build defensive moats around their most dangerous capabilities. NVIDIA's GB300 Blackwell Ultra entering mass production addresses the economics problem that GitHub's 275M weekly commits revealed — 35x lower cost-per-token for agentic AI. Meanwhile, the Senate GUARD Act advancing unanimously signals Washington has found its bipartisan AI issue: child safety with criminal penalties for model conduct.
 
 ## Evolution
 
@@ -85,6 +85,9 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-04-30 | Google signs Pentagon deal for classified military AI | Crosses "Don't Be Evil" rubicon; carves out defense niche |
 | 2026-04-30 | Qwen 3.6-35B-A3B: 73.4% SWE-bench on RTX 4090 | 3B active params; frontier-grade coding on consumer hardware |
 | 2026-04-30 | Apple confirms Gemini-powered Siri for iOS 27 | Knowledge distillation from large Gemini models to on-device Apple Foundation Models |
+| 2026-05-01 | NVIDIA GB300 Blackwell Ultra enters mass production | 288GB HBM3e, 10 TB/s, NVLink 6; 50x throughput/megawatt, 35x lower cost/token for agentic AI |
+| 2026-05-01 | Anthropic launches Claude Security (public beta) | Powered by Opus 4.7; integrated with CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security |
+| 2026-05-01 | Microsoft M365 E7 and Agent 365 GA at $99/$15 per user/month | First new enterprise license in a decade; bundles E5, Copilot, Agent 365, Entra Suite |
 
 ## Patterns & Insights
 
@@ -118,20 +121,23 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 
 **April 30: The Bifurcation Week Concludes**: OpenAI secures 10GW of US compute (3GW added in 90 days), surpassing Stargate targets years early — a physical energy infrastructure moat. Anthropic eyes $50B raise at $900B valuation, revenue run rate nearing $40B, doubling from $380B valuation in under three months. DeepSeek V4 Flash launches at $0.14/$0.28 per million tokens — 100x cheaper than frontier models while scoring 78% on SWE-bench. Qwen 3.6-35B-A3B scores 73.4% SWE-bench with just 3B active parameters on an RTX 4090 — frontier-grade coding on consumer hardware. The week ends with a clear bifurcation: premium reasoning (Opus, GPT-5.5) vs commodity inference (DeepSeek, Qwen, Kimi) — and commodity inference getting frontier-level scores.
 
+**May 1: The Defensive Pivot and Governance Reality**: Anthropic launches Claude Security (powered by Opus 4.7) as a native security scanning capability inside Claude Code — if you build AI that finds vulnerabilities, you must build one that fixes them. Partnering with CrowdStrike, Palo Alto, and Wiz shows Anthropic is becoming the intelligence layer inside existing security stacks rather than replacing them. OpenAI'sGPT-5.5 Cyber restrictions (after mocking Anthropic for the same with Mythos) reveal that liability now overrides competitive posturing — once the White House opposed Mythos expansion and NSA probed Microsoft with it, every frontier lab realized unrestricted cyber-AI is a legal grenade. NVIDIA's GB300 Blackwell Ultra (35x lower cost/token) directly addresses the economics exposed by GitHub's 275M commits/week — if agent-scale coding is 1/35th the cost, the $49/agent/month GitHub Copilot pricing starts looking expensive.
+
 ## Connections
 - [[sources/anthropic]] — Claude Mythos developed and leaked by Anthropic; Opus 4.7 release; Project Glasswing
 - [[sources/openai]] — GPT-5.4 family, GPT-5.5 release, Spud completion, GPT-5.4-Cyber, GPT-Rosalind
 - [[sources/google]] — Gemma 4 Apache 2.0 release, Gemini 3.1 Pro near-tie with Claude Opus 4.6, TPU 8th gen
 - [[entities/claude-mythos]] — Central to this period; too dangerous to release publicly
-- [[entities/claude-opus-4-7]] — Anthropic's latest flagship with 87.6% SWE-bench
+- [[entities/claude-opus-4-7]] — Anthropic's latest flagship with 87.6% SWE-bench; powers Claude Security
 - [[entities/claude-design]] — Anthropic's direct challenge to Figma's design workflow
 - [[entities/gpt-5.4]] — OpenAI's flagship model family with Thinking, Mini, Nano, Cyber variants
 - [[entities/gpt-5.5]] — OpenAI's latest model with "super app" integration vision
 - [[entities/gpt-rosalind]] — OpenAI's life sciences domain model
 - [[entities/gemma-4]] — Google's first fully permissive open model, ranked #3 on Arena
 - [[entities/deepseek-v4]] — DeepSeek's latest with 1M context and open weights, Tencent/Alibaba investment talks
-- [[ideas/safety-restricted-releases]] — Claude Mythos established the precedent for capability-based release restrictions
+- [[entities/claude-security]] — Anthropic's defensive security scanner built on Opus 4.7; native to Claude Code workflow
+- [[entities/gb300]] — NVIDIA Blackwell Ultra mass production; 35x lower cost/token for agentic AI workloads
+- [[entities/guard-act]] — Senate bill with criminal penalties for AI chatbot conduct; creates liability precedent
+- [[ideas/safety-restricted-releases]] — Claude Mythos established the precedent; GPT-5.5 Cyber follows same pattern
 - [[ideas/us-china-ai-fragmentation]] — Stanford HAI confirms gap has collapsed
-- [[entities/deepseek-v4]] — DeepSeek V4-Pro-Max at $1.74/M tokens is the cost-performance leader; 2.6x cheaper than Claude Opus 4.7
-- [[entities/mistral-ultra-2]] — 78.4% SWE-bench at €2/M; EU-compliant positioning exploiting US regulatory siege
-- [[ideas/institutional-gap]] — April 29 exemplifies the widening gap between AI capability and legal/regulatory/economic frameworks
+- [[ideas/institutional-gap]] — May 1 exemplifies GUARD Act criminal penalties and liability exceeding Section 230 frameworks

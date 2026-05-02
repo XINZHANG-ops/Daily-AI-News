@@ -1,7 +1,7 @@
 ---
 title: "Microsoft"
 slug: microsoft
-last_updated: 2026-04-24
+last_updated: 2026-05-01
 ---
 
 # Microsoft
@@ -19,6 +19,7 @@ last_updated: 2026-04-24
 | 2026-04-10 | $10B Japan AI investment | Largest Western AI infrastructure in Asia |
 | 2026-04-23 | Microsoft offers buyouts to ~8,750 workers | 7% of workforce; continuing AI transformation amid Big Tech layoffs |
 | 2026-04-24 | Geoffrey Hinton UN warning | "Car with no brake going down a hill" — AI needs governance |
+| 2026-05-01 | M365 E7 and Agent 365 GA | $99/user/month and $15/user/month; first new enterprise license in a decade; E5+Copilot+Agent 365+Entra Suite |
 
 ## Key Relationships
 - **Anthropic**: Paradoxical — Claude integration in Copilot but competing in enterprise.
@@ -26,5 +27,7 @@ last_updated: 2026-04-24
 - **NVIDIA**: Deep partnership for AI infrastructure and GPUs.
 
 ## Connections
-- [[sources/anthropic]] — Claude Sonnet integration despite competition
+- [[sources/anthropic]] — Claude Sonnet integration despite competition; Copilot Cowork research preview built with Anthropic/Claude
 - [[sources/openai]] — Azure partnership; Copilot integration
+- [[entities/copilot-agent-tier]] — GitHub's $49/agent/month pricing for autonomous coding agents
+- [[ideas/enterprise-ai-lock-in]] — E7 bundle designed to make AI governance inseparable from Microsoft's ecosystem

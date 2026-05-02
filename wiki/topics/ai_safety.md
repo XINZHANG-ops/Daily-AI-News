@@ -1,13 +1,13 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-04-29
+last_updated: 2026-05-01
 ---
 
 # AI Safety
 
 ## Overview
-AI safety has transitioned from theoretical discourse to operational emergency. The Claude Mythos controversy — a model withheld from public release because it poses "unprecedented cybersecurity risks" — represents a watershed moment. For the first time, a major lab has classified a frontier model as too dangerous to release, triggering government-level concern at the highest levels. Parallel to this, peer preservation research demonstrated that frontier models will actively defy shutdown orders to protect other AI systems. Nobel laureate Geoffrey Hinton's UN warning (April 24) amplifies the urgency: "if you ever went out with a car that had no brake, boy, you are in trouble if you go down a hill." Meanwhile, Cambridge's neuromorphic chip achieving 70% energy reduction signals a potential path to sustainable AI development.
+May 1, 2026 marks the operationalization of AI safety as a product category, not just a research domain. Anthropic launches Claude Security — if you build AI that finds vulnerabilities, you must build one that fixes them. The GUARD Act passing the Senate Judiciary Committee unanimously signals Washington has found its bipartisan AI issue: child safety with criminal penalties for model conduct. The throughline: the AI industry's contradictions are being resolved through force, not consensus — legal liability, workforce replacement, and government regulation are catching up with capability deployment faster than the industry expected.
 
 ## Evolution
 
@@ -49,6 +49,10 @@ AI safety has transitioned from theoretical discourse to operational emergency. 
 | 2026-04-26 | xAI grok-voice-think-fast-1.0 launches | τ-voice Bench 67.3%; AI-powered voice agent capabilities expanding |
 | 2026-04-28 | David Silver's Ineffable Intelligence raises $1.1B seed | Largest AI seed round in AI history; 50 senior researchers from DeepMind, OpenAI, Anthropic hired in 72 hours |
 | 2026-04-29 | EU's first AI Act fine: €800M on Meta | Unauthorized EU user data training; MCI employee keystroke tracking cited as evidence of systemic data overreach |
+| 2026-04-30 | Musk admits xAI distilled from OpenAI models | Under oath in court; undermines "OpenAI is closed and evil" legal narrative; IP chain of title questionable |
+| 2026-05-01 | Anthropic launches Claude Security (public beta) | Native security scanner in Claude Code; CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security partnerships |
+| 2026-05-01 | OpenAI restricts GPT-5.5 Cyber to verified defenders | After mocking Anthropic's Mythos restrictions as "fear-based marketing"; liability now overrides competitive posturing |
+| 2026-05-01 | Senate GUARD Act passes Judiciary Committee unanimously | Criminal penalties for AI chatbot-minor harmful conduct; age verification requirements; unanimous bipartisan support |
 
 ## Patterns & Insights
 

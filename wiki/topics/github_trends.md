@@ -1,13 +1,13 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-04-30
+last_updated: 2026-05-01
 ---
 
 # GitHub Trends
 
 ## Overview
-The GitHub landscape in March-April 2026 is defined by the explosion of agent frameworks, the democratization of coding assistants, and the rapid commoditization of agent architectures. The most striking story is claw-code — a clean-room Python rewrite of Claude Code's architecture — reaching 181K+ stars after Anthropic accidentally leaked Claude Code's source. By late April, the ecosystem sees new patterns: AI design skills for agents, self-healing browser harnesses, free Claude Code alternatives, and code search MCP tools. GitHub's Copilot training policy change (starting April 24) highlights growing tensions around AI training data rights.
+May 1, 2026 continues the agent framework consolidation pattern. Three notable new repos: harmonist (portable agent orchestration with mechanical protocol enforcement, 186 specialist agents), CoreCoder (~1,400 lines Python inspired by Claude Code, 652 stars), and open-agent-sdk-go (lightweight Go SDK for AI agents with MCP support, 151 stars). The throughline: the ecosystem is converging on standard patterns for agent orchestration, and the "zero third-party dependencies" philosophy is gaining traction as teams seek to minimize supply chain risk.
 
 ## Evolution
 
@@ -91,6 +91,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **April 30: Workforce-in-a-box pattern emerging**: Three repos trending — plannotator (4.8K stars) for visual code review collaboration, cc-sdd (3.2K) for autonomous implementation with adversarial review, and PraisonAI (7K stars) for "24/7 AI workforce in 5 lines of code" with RAG and 100+ LLM support. The pattern emerging: agent frameworks are no longer just for developers — they're becoming plug-and-play workforce replacements that enterprises can deploy without engineering teams. The democratization is shifting from "anyone can build agents" to "anyone can hire an AI workforce."
 
+**May 1: Agent orchestration frameworks with zero third-party dependencies**: Three new repos trending — harmonist (186 specialist agents across 16 categories, mechanical protocol enforcement, zero third-party deps, 949 stars), CoreCoder (~1,400 lines Python inspired by Claude Code, parallel tool execution, 3-layer context compression, 652 stars), and open-agent-sdk-go (lightweight Go SDK, 32 built-in tools, MCP support, session management, in-process agent loop, 151 stars). The "zero third-party dependencies" philosophy signals teams are seeking to minimize supply chain risk after the MCP vulnerability and npm compromises.
+
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging
 - [[entities/claw-code]] — Clean-room rewrite, 181K+ stars
@@ -100,4 +102,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/openhands-sdk]] — Modular SDK for building coding agents; 3.2K stars
 - [[entities/nemo-claw]] — NVIDIA's hardened reference stack for secure OpenClaw deployment
 - [[entities/scientific-agent-skills]] — 133 scientific skills for agents, 2.4K stars
+- [[entities/harmonist]] — Portable agent orchestration with 186 specialist agents; zero third-party deps
+- [[entities/corecoder]] — Minimalist Claude Code-inspired coding agent in ~1,400 lines Python
+- [[entities/open-agent-sdk-go]] — Lightweight Go SDK for AI agents with MCP support
 - [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI; free-claude-code lowers access barriers
+- [[ideas/institutional-gap]] — GUARD Act criminal penalties show governance catching up to capability deployment

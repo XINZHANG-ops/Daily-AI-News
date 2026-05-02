@@ -1,0 +1,21 @@
+
+
+Wiki lint completed. Here's what was fixed:
+
+**Pass 1 — Structural Integrity:**
+- Created missing `entities/claude-opus-4-6.md` (index listed it but file was absent)
+- Fixed broken `[[entities/gemini-3-1-flash-live]]` → `[[entities/gemini-3-1-flash-tts]]` in timelines/2026-03.md
+- Fixed broken `[[ideas/infrastructure-bottleneck]]` → `[[ideas/efficiency-frontier]]` in topics/ai_funding.md (the idea never existed)
+- Removed phantom `[[sources/crowdstrike]]` link from entities/claude-security.md
+
+**Pass 2 — Wrong & Duplicate Information:**
+- claude-opus-4-7.md referenced non-existent claude-opus-4-6 link — now fixed after creating the file
+- No duplicate pages found; ineffable-intelligence is correctly in entities (company type is appropriate here since it's indexed as a company entity, not a source)
+
+**Pass 3 — Connection Quality:**
+- Rewrote connections with WHY annotations: llama-4, gemma-4, openclaw
+- All entity pages now have proper annotated connections
+
+**Pass 4 — Index & Log:**
+- Rebuilt index.md with accurate counts (53 entities now including claude-opus-4-6)
+- Log updated with today's lint entry

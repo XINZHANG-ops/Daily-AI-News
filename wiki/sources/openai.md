@@ -1,13 +1,13 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-04-30
+last_updated: 2026-05-01
 ---
 
 # OpenAI
 
 ## Overview
-OpenAI is navigating the transition from research organization to commercial enterprise ahead of a potential IPO by end of 2026. The company completed the largest private funding round in history ($122B at $852B valuation) and generates $2B/month in revenue with 900M weekly active users. However, profitability remains elusive with billions in annual losses projected to continue until 2030. The company has pivoted from "technology showcases" (shutting down Sora, terminating Instant Checkout) to enterprise-focused productivity tools, combining ChatGPT, Codex, and Atlas browser into a unified AI superapp. With the April 23 release of GPT-5.5, co-founder Greg Brockman explicitly framed the goal as moving closer to an integrated AI super app. The company acquired TBPN (Technology Business Programming Network), its first media platform acquisition, signaling push into content creation and distribution.
+OpenAI is navigating the transition from research organization to commercial enterprise ahead of a potential IPO by end of 2026. The company completed the largest private funding round in history ($122B at $852B valuation) and generates $2B/month in revenue with 900M weekly active users. However, profitability remains elusive with billions in annual losses projected to continue until 2030. On May 1, the company imposed identical restrictions on GPT-5.5 Cyber that it had mocked Anthropic for implementing on Claude Mythos — revealing that liability now overrides competitive posturing. The Senate GUARD Act advancing the same day with criminal penalties for AI chatbot conduct tightens the liability framework further.
 
 ## Timeline
 
@@ -43,6 +43,8 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-04-29 | Musk vs Altman Day 3: 2017 profit-planning emails | Altman and Brockman discussed for-profit conversion months before 2019 "capped profit" announcement; court may invalidate Microsoft investments and enterprise contracts |
 | 2026-04-29 | Goldman Sachs and Morgan Stanley threaten IPO withdrawal | Q1 revenue miss + legal risk from court case compound; underwriting credibility at stake |
 | 2026-04-30 | OpenAI secures 10GW of US compute | 3GW added in 90 days; surpasses original Stargate target years early; estimated $15-20B in energy commitments |
+| 2026-04-30 | Musk admits xAI distilled from OpenAI | Under oath in court; undermines "OpenAI is closed and evil" narrative; IP chain questionable for SpaceX-xAI merger |
+| 2026-05-01 | OpenAI restricts GPT-5.5 Cyber to verified defenders | After mocking Anthropic's Mythos restrictions as "fear-based marketing"; liability now overrides competitive posturing |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.

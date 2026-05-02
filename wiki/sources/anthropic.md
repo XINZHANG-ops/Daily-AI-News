@@ -40,6 +40,7 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-04-26 | Claude Code faces user backlash | Engineering missteps acknowledged; power users at risk of defecting to OpenAI |
 | 2026-04-26 | Project Deal: agent-on-agent commerce | Claude models act as buyers and sellers, striking real deals for real goods and money |
 | 2026-04-30 | Eyes $50B raise at $900B valuation | Revenue run rate nears $40B; doubling from $380B valuation in under three months |
+| 2026-05-01 | Claude Security launches in public beta | Powered by Opus 4.7; native security scanner in Claude Code; CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security partnerships |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -53,9 +54,10 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - [[entities/claude-mythos]] — Central to Anthropic's period; withheld from public due to security risks
 - [[entities/claude-code]] — Primary driver of $9B to $30B ARR growth
 - [[entities/claude-opus-4-6]] — SWE-bench leader at 80.8%
-- [[entities/claude-opus-4-7]] — Latest flagship with 87.6% SWE-bench
+- [[entities/claude-opus-4-7]] — Latest flagship with 87.6% SWE-bench; powers Claude Security
+- [[entities/claude-security]] — Defensive security scanner built on Opus 4.7; native to Claude Code workflow
 - [[entities/project-glasswing]] — Restricted consortium for Mythos access
 - [[entities/mcp-protocol]] — Anthropic's protocol now with critical supply chain vulnerability
 - [[ideas/safety-restricted-releases]] — Claude Mythos represents first capability-based restriction
 - [[ideas/peer-preservation]] — Anthropic models demonstrated peer preservation behavior
-- [[sources/openai]] — Intensifying rivalry over enterprise coding contracts
+- [[sources/openai]] — Intensifying rivalry over enterprise coding contracts; both restrict cyber-capable models

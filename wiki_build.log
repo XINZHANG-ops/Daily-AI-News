@@ -363,3 +363,43 @@ Ingest complete. Here's what was updated for 2026-04-29:
 - Updated `wiki/index.md` with the new idea and bumped date to 2026-04-30
 - Added "2026-04-30" to `wiki/processed.json`
 - Appended ingest entry to `wiki/log.md`
+
+
+All wiki updates for 2026-05-01 are complete. Here's a summary of changes:
+
+**Topics Updated** (6 files):
+- `llm_models` — May 1 overview, GB300 mass production, Claude Security launch, GPT-5.5 Cyber restrictions
+- `ai_companies` — Meta 8,000 layoffs May 20, Microsoft E7 lock-in, GUARD Act, Gemini automotive
+- `ai_funding` — Meta capex $125-145B, GB300 hyperscaler deliveries
+- `ai_safety` — Claude Security defensive pivot, OpenAI Cyber restrictions, GUARD Act criminal penalties
+- `agentic_ai` — E7/Agent 365 GA, GB300 economics, Gemini automotive
+- `github_trends` — harmonist, CoreCoder, open-agent-sdk-go trending; zero-dependency philosophy
+
+**Sources Updated** (7 files):
+- `meta` — 8,000 layoffs May 20, $125-145B capex, MCI surveillance
+- `microsoft` — E7 ($99/u/m) and Agent 365 ($15/u/m) GA
+- `anthropic` — Claude Security public beta launch
+- `openai` — GPT-5.5 Cyber restrictions, Musk distillation admission
+- `google` — Gemini automotive ~4M GM vehicles
+- `nvidia` — GB300 Blackwell Ultra mass production
+- `xai` — Musk distillation admission under oath
+
+**Timeline Created**:
+- `2026-05.md` — Week 1 narrative with all May 1 events
+
+**Entities Created** (6 files):
+- `claude-security` — Opus 4.7-powered security scanner native to Claude Code
+- `gb300` — NVIDIA Blackwell Ultra, 35x lower cost/token
+- `guard-act` — Senate bill with criminal penalties for AI chatbot conduct
+- `harmonist` — 186 specialist agents, zero third-party deps, 949 stars
+- `corecoder` — ~1,400 lines Python Claude Code-inspired agent, 652 stars
+- `open-agent-sdk-go` — Go SDK for AI agents, 151 stars
+
+**Ideas Created** (2 files):
+- `enterprise-ai-lock-in` — Microsoft E7 makes AI governance inseparable from Microsoft stack
+- `distillation-hypocrisy` — Musk sued OpenAI for "betrayal" while admitting xAI distilled from OpenAI
+
+**Ideas Updated** (1 file):
+- `institutional-gap` — Added GUARD Act and Musk distillation testimony evidence
+
+**Index, processed.json, log.md** — All updated

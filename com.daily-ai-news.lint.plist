@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Daily AI News wiki lint — runs daily at 1 AM local time.
+
+  Installation:
+    cp com.daily-ai-news.lint.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.daily-ai-news.lint.plist
+
+  Uninstall:
+    launchctl unload ~/Library/LaunchAgents/com.daily-ai-news.lint.plist
+    rm ~/Library/LaunchAgents/com.daily-ai-news.lint.plist
+
+  Logs:
+    tail -f /Users/xinzhang/Daily-AI-News/logs/lint.log
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.daily-ai-news.lint</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/xinzhang/Daily-AI-News/wiki_lint.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/xinzhang/Daily-AI-News</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/Users/xinzhang/.local/bin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HOME</key>
+        <string>/Users/xinzhang</string>
+    </dict>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>1</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/xinzhang/Daily-AI-News/logs/lint.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/xinzhang/Daily-AI-News/logs/lint_err.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

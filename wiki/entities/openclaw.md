@@ -22,5 +22,5 @@ OpenClaw is an open-source autonomous agent framework that reached 302,000 stars
 OpenClaw's explosive growth and Jensen Huang's designation as "the new computer" at GTC 2026 positioned it as a major open-source agent platform. NemoClaw was introduced as the enterprise stack for safe OpenClaw deployment.
 
 ## Connections
-- [[topics/github_trends]] — Fastest-growing open-source project
-- [[topics/agentic_ai]] — Major autonomous agent framework
+- [[topics/github_trends]] — 302K stars, fastest-growing open-source project; represents the open-source answer to proprietary agent frameworks like Claude Code and Codex
+- [[topics/agentic_ai]] — Major autonomous agent framework; NemoClaw was introduced as the enterprise stack for safe OpenClaw deployment

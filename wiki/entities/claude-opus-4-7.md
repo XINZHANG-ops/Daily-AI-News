@@ -29,6 +29,5 @@ The model is available in Amazon Bedrock and Anthropic's API, with a major UK ex
 ## Connections
 - [[sources/anthropic]] — Released by Anthropic, builds on Mythos safety research
 - [[entities/claude-mythos]] — Cyber safeguards derived from Mythos safety work
-- [[entities/claude-opus-4-6]] — Predecessor with 80.8% SWE-bench
 - [[topics/llm_models]] — Latest in the Claude Opus family
 - [[ideas/safety-restricted-releases]] — Continues the safety-aware release pattern

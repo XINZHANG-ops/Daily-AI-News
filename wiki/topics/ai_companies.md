@@ -1,13 +1,13 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-04-30
+last_updated: 2026-05-01
 ---
 
 # AI Companies
 
 ## Overview
-The AI company landscape in March-April 2026 is defined by three intersecting narratives: the OpenAI-Anthropic rivalry intensifying around compute and IPO positioning, the geopolitical fracture lines around Chinese model distillation, and unprecedented capital concentration in AI infrastructure. The period sees both companies preparing for IPOs while battling for developer mindshare and enterprise contracts. Geoffrey Hinton's UN warning about runaway AI and the projected growth to $4.8T market by 2033 signal that AI governance is becoming as important as AI capability.
+May 1, 2026 crystallizes the AI industry's contradictions: Meta cuts 8,000 jobs while spending $125-145B on AI infrastructure — Zuckerberg's admission that "50-100 person tasks now need 10" is the most explicit corporate statement that AI is replacing headcount, not augmenting it. Microsoft responds with E7 at $99/user/month — a pricing architecture designed to make AI governance inseparable from Microsoft's identity and security stack. Anthropic and OpenAI race to build defensive moats around their most dangerous capabilities. The Senate GUARD Act advancing unanimously signals Washington has found its bipartisan AI issue: child safety with criminal penalties for model conduct. The throughline: the AI industry is in "build it, regulate it, fire the builders, and pray the infrastructure holds" phase.
 
 ## Evolution
 
@@ -81,6 +81,11 @@ The AI company landscape in March-April 2026 is defined by three intersecting na
 | 2026-04-30 | Google signs Pentagon deal for classified military AI | Allows AI for classified military work; crosses "Don't Be Evil" era rubicon |
 | 2026-04-30 | Apple confirms Gemini-powered Siri for iOS 27 | Knowledge distillation from large Gemini models; Apple admits it cannot build frontier LLMs |
 | 2026-04-30 | Big Tech earnings: Google wins investor confidence | Google convinced spending is paying off; Microsoft and Meta face capex skepticism |
+| 2026-05-01 | Meta announces 8,000 layoffs starting May 20 | 10% workforce cut; 6,000 open roles abandoned; "50-100 person tasks now need 10" |
+| 2026-05-01 | Microsoft M365 E7 and Agent 365 GA at $99/$15/user/month | First new enterprise license in a decade; E5+Copilot+Agent 365+Entra Suite bundle |
+| 2026-05-01 | Anthropic launches Claude Security in public beta | Powered by Opus 4.7; CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security partnerships |
+| 2026-05-01 | Senate GUARD Act passes Judiciary Committee unanimously | Criminal penalties for AI chatbot-minor harmful conduct; age verification requirements |
+| 2026-05-01 | Google Gemini rolls out to ~4M GM vehicles | Replacing Google Assistant in cars with vehicle-specific AI concierge |
 
 ## Patterns & Insights
 
@@ -98,14 +103,21 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 
 **The old guard pivots to survival**: April 30 reveals a pattern — Google pivots to defense revenue (Pentagon deal), Apple pivots to outsourcing model development (Gemini-powered Siri). Neither company can afford to build frontier models from scratch anymore, and both are making explicit strategic choices that reject self-reliance. This is different from "partnership" — it's acknowledgment that the model race has passed them by.
 
+**May 1: The governance moment arrives**: The GUARD Act's unanimous committee passage signals AI child safety is the one bipartisan issue that can move in a polarized Senate. The bill's criminal penalty provision — holding companies liable for chatbot conduct — is a structural shift from Section 230 that shielded social media. If it passes, it creates a template for broader AI liability: companies become responsible for what their models do, not just what users do with them. Meta's MCI employee surveillance initiative (tracking keystrokes/mouse to train AI that replaces the workers being tracked) compounds the dystopian framing: simultaneously firing workers and harvesting their behavioral data to train the AI systems replacing them.
+
+**Microsoft's enterprise AI lock-in**: The E7 bundle at $99/month is not a product launch — it's a pricing architecture designed to make AI governance inseparable from Microsoft's identity and security stack. By bundling Agent 365 ($15/month separately) with E7, Microsoft ensures any enterprise wanting structured AI agent governance must buy the full ecosystem. Copilot Cowork research preview (built with Anthropic/Claude) reveals Microsoft is partnering with its biggest AI rival for background workflow orchestration — even Microsoft recognizes it can't win the agentic coding war alone.
+
 ## Connections
-- [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users, GPT-Rosalind, TBPN acquisition, GPT-5.5
-- [[sources/anthropic]] — $30B ARR, ~$1T valuation, Mythos controversy, government emergency calls, Claude Opus 4.7, Claude Code fixes
-- [[sources/google]] — Texas data center for Anthropic, Gemini 3.1 Pro, Gemma 4 Apache 2.0, Cloud Next 2026, TPU 8th gen
-- [[sources/nvidia]] — GTC 2026, Vera Rubin, Ising quantum AI models
+- [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users, GPT-Rosalind, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions
+- [[sources/anthropic]] — $30B ARR, ~$1T valuation, Mythos controversy, Claude Security launch, Claude Opus 4.7, Claude Code fixes
+- [[sources/google]] — Texas data center for Anthropic, Gemini 3.1 Pro, Gemma 4 Apache 2.0, Cloud Next 2026, TPU 8th gen, Gemini automotive rollout
+- [[sources/nvidia]] — GTC 2026, Vera Rubin, Ising quantum AI models, GB300 Blackwell Ultra mass production
 - [[sources/spacex]] — $250B xAI acquisition, $60B Cursor investment
-- [[sources/meta]] — MCI tracking initiative, May 20 layoffs, 10% workforce cut
-- [[sources/microsoft]] — 8,750 buyouts, $10B Japan AI investment
-- [[ideas/safety-restricted-releases]] — Anthropic's Mythos sets precedent
+- [[sources/meta]] — MCI tracking initiative, May 20 layoffs, 10% workforce cut, $125-145B capex guidance
+- [[sources/microsoft]] — 8,750 buyouts, E7 launch at $99/user/month, Agent 365 GA
+- [[ideas/safety-restricted-releases]] — Anthropic's Mythos sets precedent; OpenAI's GPT-5.5 Cyber follows same pattern
 - [[ideas/us-china-ai-fragmentation]] — Frontier Model Forum anti-distillation coalition
-- [[ideas/ai-job-displacement]] — Wall Street 15K cuts, Meta/Microsoft workforce reductions signal knowledge worker automation
+- [[ideas/ai-job-displacement]] — Meta 8,000 + Microsoft 8,750 + Wall Street 15K = 92K+ tech workers cut in 2026
+- [[entities/claude-security]] — Anthropic's defensive pivot: if Mythos finds vulnerabilities, Claude Security patches them
+- [[entities/gb300]] — NVIDIA Blackwell Ultra enables 35x cost reduction for agentic AI; directly addresses GitHub commit economics
+- [[entities/guard-act]] — Senate GUARD Act creates criminal liability for AI chatbot conduct; shifts from Section 230 framework

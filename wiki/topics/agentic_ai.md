@@ -1,13 +1,13 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-04-26
+last_updated: 2026-05-01
 ---
 
 # Agentic AI
 
 ## Overview
-Agentic AI has moved from experimental demos to production deployment at scale. The defining characteristic of March-April 2026 is the maturation of agent frameworks, the explosion of the coding agent market, and the expansion of autonomous agents into enterprise workflows and physical environments. Claude Code's viral success demonstrated that autonomous coding agents have crossed the chasm to mainstream adoption.
+May 1, 2026 reveals the economics of agentic AI are approaching inflection point. NVIDIA GB300 Blackwell Ultra (35x lower cost/token) combined with Microsoft's E7 bundle at $99/user/month and Agent 365 at $15/user/month signal that the agentic era is no longer theoretical — it's priced and packaged for enterprise deployment. The question is shifting from "can agents code?" to "who controls the agent governance stack?"
 
 ## Evolution
 
@@ -48,6 +48,9 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-04-25 | Scientific-agent-skills (2.4K stars) | 133 scientific skills for agents, 78+ databases |
 | 2026-04-26 | Claude Code faces user backlash | Anthropic acknowledges missteps; OpenAI's GPT-5.5 launched same day with Codex roots |
 | 2026-04-26 | Project Deal: agent-on-agent marketplace | Anthropic runs experiment where Claude models negotiate and transact autonomously |
+| 2026-05-01 | Microsoft M365 E7 and Agent 365 GA | $99/user/month bundle; Agent 365 at $15/user/month; first new enterprise license in a decade |
+| 2026-05-01 | NVIDIA GB300 Blackwell Ultra enters mass production | Ships May to hyperscalers; 35x lower cost/token; 50x throughput/megawatt for agentic workloads |
+| 2026-05-01 | Gemini rolls out to ~4M GM vehicles | Replacing Google Assistant with vehicle-specific AI concierge; largest automotive AI deployment |
 
 ## Patterns & Insights
 

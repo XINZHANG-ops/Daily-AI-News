@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-04-30
+last_updated: 2026-05-01
 ---
 
 # AI Funding
@@ -19,6 +19,8 @@ SpaceX's $250 billion acquisition of xAI created a $1.25 trillion combined entit
 Microsoft committed $10 billion to Japan AI infrastructure — the largest single AI infrastructure commitment by a Western tech company in Asia. Nebius announced $10B+ for a 310-megawatt Finland data center. Bitdeer is building a 180-megawatt Norway facility with NVIDIA Vera Rubin.
 
 **Late April: Valuation Shifts and New Investment**: Anthropic's valuation surged to ~$1 trillion on secondary markets, surpassing OpenAI's $880 billion — reflecting the enterprise success of Claude Code and the restricted Mythos model's strategic value. Vast Data raised $1 billion at $30 billion valuation backed by NVIDIA, continuing the infrastructure boom. SpaceX invested $60 billion in Cursor, signaling massive investment in AI coding tools as a competitive battleground.
+
+**May 1: Meta's Capex Commitment and Compute Economics**: Meta's $125-145B capex guidance (up from $115-135B) signals the company believes it can buy its way out of the talent market. But CFO Susan Li admitted she "doesn't really know" what ideal headcount looks like — a remarkable confession for a $1.5T company. NVIDIA GB300 Blackwell Ultra entering mass production (May delivery to hyperscalers) provides 35x lower cost-per-token for agentic AI — directly addressing GitHub's 275M commits/week economics exposed in April.
 
 ## Key Developments
 
@@ -49,6 +51,8 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-04-28 | David Silver's Ineffable Intelligence raises $1.1B seed | Largest AI seed round ever; Sequoia, Lightspeed, Nvidia, Google, DST Global invested |
 | 2026-04-30 | OpenAI secures 10GW of US compute | 3GW added in 90 days; surpasses original Stargate target years early; estimated $15-20B in energy commitments |
 | 2026-04-30 | Anthropic eyes $50B raise at $900B valuation | Doubling from $380B valuation in under 3 months; $40B revenue run rate |
+| 2026-05-01 | NVIDIA GB300 Blackwell Ultra enters mass production | Ships to Microsoft Azure, Google Cloud, Meta in May; 35x lower cost/token for agentic AI |
+| 2026-05-01 | Meta raises capex guidance to $125-145B | Up from $115-135B; "50-100 person tasks now need 10"; CFO admits she "doesn't really know" ideal headcount |
 
 ## Patterns & Insights
 
@@ -85,4 +89,4 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[sources/spacex]] — $250B xAI acquisition, $60B Cursor investment
 - [[sources/microsoft]] — $10B Japan infrastructure, $10B+ Nebius Finland commitment
 - [[sources/deepseek]] — Tencent/Alibaba investment talks, V4 release with open weights
-- [[ideas/infrastructure-bottleneck]] — Energy and compute constraints driving investment patterns
+- [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
