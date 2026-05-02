@@ -2,7 +2,7 @@
 title: "Claude Opus 4.7"
 slug: claude-opus-4-7
 type: model
-last_updated: 2026-04-20
+last_updated: 2026-05-01
 ---
 
 # Claude Opus 4.7

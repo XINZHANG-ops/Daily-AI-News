@@ -149,3 +149,41 @@ Sources updated: anthropic, openai, google, meta, nvidia, deepseek, xai, microso
 Timelines updated: 2026-03, 2026-04
 Entities created: claude-mythos, claude-code, claude-opus-4-6, gpt-5.4, gpt-5.4-cyber, spud-model, gemma-4, llama-4, muse-spark, mimo-v2-pro, project-glasswing, codex, mcp-protocol, openclaw, claw-code, vera-rubin
 Ideas created: safety-restricted-releases, peer-preservation, agent-democratization, us-china-ai-fragmentation
+
+## [2026-05-02] wiki lint | comprehensive health check
+
+**Pass 1 — Structural fixes:**
+- Renamed `entities/gpt-5-4.md` → `entities/gpt-5.4.md` (filename used hyphens, all 5 wikilinks used dots)
+- Renamed `entities/gpt-5-4-cyber.md` → `entities/gpt-5.4-cyber.md` (same issue, 4 broken links)
+- Moved `entities/ineffable-intelligence.md` → `sources/ineffable-intelligence.md` (company in entities)
+- Fixed broken link `[[entities/blackwell]]` → `[[entities/gb300]]` in sources/nvidia.md
+- Fixed broken link `[[entities/vast-data]]` → `[[sources/vast-data]]` in sources/nvidia.md
+- Fixed broken link `[[entities/openhands]]` → `[[entities/openhands-sdk]]` in entities/openhands-sdk.md
+- Fixed broken link `[[entities/Claude-code]]` → `[[entities/claude-code]]` in entities/mercury-agent.md (case mismatch)
+- Fixed wrong link `[[sources/deepseek]]` → `[[sources/alibaba]]` in timelines/2026-04.md (Alibaba Qwen line linked to deepseek)
+- Created missing page `sources/perplexity.md` (listed in index but file didn't exist)
+- Created missing page `entities/gemini-cli.md` (referenced by google source and gemini-enterprise-agent-platform)
+- Created missing page `ideas/agent-economics.md` (referenced by copilot-agent-tier and github source)
+- Removed duplicate self-referencing link in entities/openhands-sdk.md
+
+**Pass 2 — Wrong/stale information fixed:**
+- Updated `entities/spud-model.md` — Spud was released as GPT-5.5 on April 23; old text implied unreleased
+- Updated `entities/gpt-5.4-cyber.md` — Added TAC expansion (April 20) and May 1 OpenAI reversal after mocking Anthropic
+- Updated `entities/claude-mythos.md` — last_updated from 2026-04-23 → 2026-05-01
+- Updated `entities/claude-opus-4-7.md` — last_updated from 2026-04-20 → 2026-05-01 (now powers Claude Security)
+- Fixed `entities/guard-act.md` — type from "product" → "legislation"
+- Reformatted `sources/ineffable-intelligence.md` — proper source page format with Timeline and Key Relationships
+- Fixed typo "OpenAI'sGPT-5.5" → "OpenAI's GPT-5.5" in topics/llm_models.md
+
+**Pass 3 — Connection quality:**
+- Fixed wrong link target in ideas/safety-restricted-releases.md — `[[topics/llm_models]]` → `[[ideas/institutional-gap]]` (connection was about institutional gap, not LLM models)
+- All topic pages verified: each has ## Evolution and ## Patterns & Insights sections
+- All connections verified: no bare links or "Related:/See also:" patterns found
+
+**Index rebuilt:**
+- Sources: 16 → 18 (added perplexity, ineffable-intelligence; fixed count from 16 to match actual 18)
+- Entities: 53 (removed ineffable-intelligence, added gemini-cli; net unchanged)
+- Ideas: 17 → 18 (added agent-economics)
+- Timelines: 3 (unchanged)
+- Topics: 6 (unchanged)
+- Total files: 98 (6+18+3+53+18 + WIKI.md + index.md + log.md)

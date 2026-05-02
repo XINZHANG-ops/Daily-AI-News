@@ -2,27 +2,28 @@
 title: "Spud"
 slug: spud-model
 type: model
-last_updated: 2026-04-16
+last_updated: 2026-04-27
 ---
 
 # Spud
 
 ## What It Is
-Spud is OpenAI's next flagship model codename, described by Sam Altman as capable of "really accelerating the economy." It has completed pretraining and was reportedly weeks away from release in late March 2026.
+Spud is OpenAI's internal codename for what became GPT-5.5, released on April 23, 2026 — just 49 days after GPT-5.4. Sam Altman described it as a model capable of "really accelerating the economy." It scored 82.7% on Terminal-Bench 2.0 and 51.7% on FrontierMath, and Greg Brockman framed it as bringing OpenAI "one step closer to AI super app" — combining ChatGPT, Codex, and AI browser.
 
 ## Key Facts
 
 | Attribute | Value |
 |-----------|-------|
 | Creator | OpenAI |
-| Status | Pretraining complete (March 2026) |
-| Strategy | Enterprise productivity (ChatGPT + Codex + Atlas) |
+| Codename For | GPT-5.5 |
+| Released As | GPT-5.5 on April 23, 2026 |
+| Release Cycle | 49 days from GPT-5.4 (shortest ever) |
+| Strategy | Enterprise productivity via unified super app |
 
 ## Significance
-Spud represents OpenAI's bet on enterprise productivity integration as its path to profitability. The model will support the unified AI superapp combining ChatGPT, Codex, and Atlas browser.
-
-The announcement followed OpenAI's decision to jettison Sora, Instant Checkout, and adult chatbots — a pivot from "technology showcases" to enterprise-focused revenue.
+The Spud→GPT-5.5 trajectory reveals OpenAI's enterprise procurement strategy. The 49-day release cycle was not about benchmarking but about closing deals before procurement cycles end. The codename itself — deliberately generic, non-branded — suggested a shift from public spectacle to enterprise credibility.
 
 ## Connections
-- [[sources/openai]] — Created by OpenAI
-- [[topics/ai_companies]] — Part of OpenAI's IPO-focused strategy
+- [[entities/gpt-5.5]] — Spud was released as GPT-5.5 on April 23, 2026
+- [[sources/openai]] — Created by OpenAI as their enterprise-focused flagship
+- [[topics/ai_companies]] — Part of OpenAI's IPO-focused enterprise strategy

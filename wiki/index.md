@@ -10,7 +10,7 @@ Last updated: 2026-05-02
 - [[topics/ai_safety]] — Claude Mythos 5 (10T params), Bank of England warning, MCP vulnerability (150M installs), Qihoo 360 finds 1,000 vulnerabilities, Geoffrey Hinton UN warning, EU AI Act first fine (€800M Meta), Claude Security launch, GUARD Act criminal penalties
 - [[topics/agentic_ai]] — Claude Code driving $9B→$30B ARR, Codex 3M users, Gemini Enterprise Agent Platform, Workday 300+ agent skills, Perplexity Computer, Microsoft E7/Agent 365 GA, GB300 35x cost reduction
 
-## Sources (16)
+## Sources (18)
 - [[sources/anthropic]] — ~$1T valuation (surpasses OpenAI), Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch
 - [[sources/openai]] — $122B funding, Codex 3M users, GPT-Rosalind, Spud model, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions, Musk distillation admission
 - [[sources/google]] — Cloud Next 2026: TPU 8th gen (3x Ironwood), Gemini Enterprise Agent Platform, 75% code AI-generated, $40B Anthropic investment, Gemini automotive rollout (~4M GM vehicles)
@@ -28,6 +28,7 @@ Last updated: 2026-05-02
 - [[sources/mistral]] — Mistral Ultra 2 released (78.4% SWE-bench, €2/M), EU data residency positioning
 - [[sources/tsmc]] — 3nm yield crisis (52% vs 75%), pauses Q3 AI chip orders, H200/MI350 affected
 - [[sources/github]] — Copilot Agent Tier $49/agent/month, first platform monetization of agent-scale usage
+- [[sources/ineffable-intelligence]] — Ex-DeepMind David Silver's $1.1B seed, 50 researchers hired in 72 hours, product undisclosed
 
 ## Timelines (3)
 - [[timelines/2026-03]] — March 2026: GTC 2026, Claude Mythos leak, GPT-5.4, MiMo-V2-Pro reveal, $122B OpenAI raise
@@ -42,10 +43,10 @@ Last updated: 2026-05-02
 - [[entities/claude-design]] — type: product — Anthropic's AI design tool directly challenging Figma
 - [[entities/claude-code]] — type: product — Primary driver of Anthropic's ARR growth from $9B to $30B
 - [[entities/gpt-5.4]] — type: model — OpenAI flagship family with Thinking, Mini, Nano, Cyber variants
-- [[entities/gpt-5-4-cyber]] — type: model — OpenAI's defensive cybersecurity variant (TAC program)
+- [[entities/gpt-5.4-cyber]] — type: model — OpenAI's defensive cybersecurity variant (TAC program); May 1 restrictions after mocking Anthropic
 - [[entities/gpt-5.5]] — type: model — OpenAI's latest model with "super app" integration vision (April 23)
 - [[entities/gpt-rosalind]] — type: model — OpenAI's life sciences domain model
-- [[entities/spud-model]] — type: model — OpenAI's next flagship completing pretraining, targeting "high-value professional work"
+- [[entities/spud-model]] — type: model — OpenAI's next flagship codename, released as GPT-5.5 on April 23
 - [[entities/gemma-4]] — type: model — Google's first fully permissive open model, Apache 2.0, #3 on Arena
 - [[entities/llama-4]] — type: model — Meta's open-weight models with 10M context
 - [[entities/muse-spark]] — type: model — Meta's first proprietary model, breaks open-source tradition
@@ -55,6 +56,7 @@ Last updated: 2026-05-02
 - [[entities/gemini-3-1-pro]] — type: model — Google's flagship, 80.6% SWE-bench, near-tie with Claude Opus 4.6
 - [[entities/gemini-3-1-flash-tts]] — type: product — Google's granular voice control TTS
 - [[entities/gemini-enterprise-agent-platform]] — type: product — Google's enterprise agent management platform (Cloud Next 2026)
+- [[entities/gemini-cli]] — type: product — Google's open-source terminal agent with 1M context and MCP support
 - [[entities/deepseek-v4]] — type: model — DeepSeek's latest flagship with 1M context and open weights (April 24)
 - [[entities/mistral-ultra-2]] — type: model — Mistral's enterprise coding model (78.4% SWE-bench, €2/M, EU data residency)
 - [[entities/gb300]] — type: product — NVIDIA Blackwell Ultra mass production; 288GB HBM3e, 35x lower cost/token for agentic AI
@@ -79,7 +81,6 @@ Last updated: 2026-05-02
 - [[entities/grok-voice-think-fast-1-0]] — type: model — xAI's voice model, 67.3% on τ-voice Bench, outperforming in retail/airline/telecom
 - [[entities/project-deal]] — type: product — Anthropic's proof-of-concept for agent-on-agent commerce at scale
 - [[entities/ml-intern]] — type: repo — Hugging Face's open-source ML engineer agent, full ML lifecycle automation
-- [[entities/ineffable-intelligence]] — type: company — Ex-DeepMind David Silver's $1.1B seed AI startup, 50 researchers hired in 72 hours
 - [[entities/copilot-agent-tier]] — type: product — GitHub's $49/agent/month pricing for autonomous coding agents
 - [[entities/future-agi]] — type: repo — End-to-end agent evaluation platform, 482 stars
 - [[entities/agent-context]] — type: repo — VS Code extension for agent context via symlinks
@@ -87,9 +88,9 @@ Last updated: 2026-05-02
 - [[entities/harmonist]] — type: repo — Portable agent orchestration with 186 specialist agents, zero third-party deps, 949 stars
 - [[entities/corecoder]] — type: repo — Minimalist Claude Code-inspired coding agent in ~1,400 lines Python, 652 stars
 - [[entities/open-agent-sdk-go]] — type: repo — Lightweight Go SDK for AI agents with MCP support, 151 stars
-- [[entities/guard-act]] — type: product — Senate GUARD Act with criminal penalties for AI chatbot-minor harmful conduct
+- [[entities/guard-act]] — type: legislation — Senate GUARD Act with criminal penalties for AI chatbot-minor harmful conduct
 
-## Ideas (17)
+## Ideas (18)
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
 - [[ideas/peer-preservation]] — Models actively protect each other against shutdown orders
 - [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
@@ -107,3 +108,4 @@ Last updated: 2026-05-02
 - [[ideas/commodity-inference-fragmentation]] — AI bifurcating into premium reasoning (100x cost premium) vs commodity inference
 - [[ideas/enterprise-ai-lock-in]] — Microsoft E7 bundle makes AI governance inseparable from Microsoft stack
 - [[ideas/distillation-hypocrisy]] — Musk admitted xAI distilled from OpenAI while suing OpenAI for "betrayal"
+- [[ideas/agent-economics]] — GitHub $49/agent/month is first platform tollbooth; agent-scale infrastructure costs unsustainable at free tier

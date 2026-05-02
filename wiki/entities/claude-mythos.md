@@ -2,7 +2,7 @@
 title: "Claude Mythos"
 slug: claude-mythos
 type: model
-last_updated: 2026-04-23
+last_updated: 2026-05-01
 ---
 
 # Claude Mythos

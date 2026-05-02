@@ -38,7 +38,7 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 ## Connections
 - [[entities/vera-rubin]] — Next-gen platform, 10x perf/watt
 - [[entities/ising]] — World's first open quantum AI model family
-- [[entities/blackwell]] — Current gen, $11B Q4 revenue
-- [[entities/vast-data]] — NVIDIA-backed storage startup, $1B raise
+- [[entities/gb300]] — GB300 Blackwell Ultra, mass production May 2026; 35x lower cost/token for agentic AI
+- [[sources/vast-data]] — NVIDIA-backed storage startup, $1B raise
 - [[sources/openai]] — $30B investment commitment
 - [[sources/anthropic]] — GPU supplier and infrastructure partner

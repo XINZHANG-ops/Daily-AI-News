@@ -29,4 +29,4 @@ The April 27 institutional stress test (Musk vs Altman court case) adds another 
 - [[topics/ai_safety]] — Central to the safety debate; Musk vs Altman trial adds legal dimension
 - [[entities/claude-mythos]] — The model that triggered the first capability-based restriction
 - [[sources/openai]] — GPT-5.5's procurement lock-in strategy vs Anthropic's model restriction — two different approaches to the same capability problem
-- [[topics/llm_models]] — The institutional gap: AI capability outpaces governance frameworks
+- [[ideas/institutional-gap]] — AI capability outpaces governance frameworks

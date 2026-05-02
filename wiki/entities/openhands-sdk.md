@@ -26,4 +26,4 @@ OpenHands SDK represents the trend toward modular, production-grade agent framew
 ## Connections
 - [[topics/github_trends]] — 3.2k stars in initial release reflects strong developer interest in modular agent frameworks
 - [[entities/claude-code]] — Both are agent frameworks for coding tasks; OpenHands SDK provides an open alternative
-- [[entities/openhands]] — The broader OpenHands project that this SDK is part of
+- [[entities/openhands-sdk]] — The modular SDK for building coding agents that powers OpenHands CLI and Cloud

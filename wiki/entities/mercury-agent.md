@@ -28,5 +28,5 @@ The 24/7 operation model via CLI or Telegram indicates a lightweight, always-ava
 ## Connections
 - [[topics/agentic_ai]] — Persistent personal AI agent with multi-channel access
 - [[topics/github_trends]] — 531 stars reflects growing interest in open-source agent frameworks
-- [[entities/Claude-code]] — Different approach: Mercury is CLI/Telegram-based vs Claude Code's IDE integration
+- [[entities/claude-code]] — Different approach: Mercury is CLI/Telegram-based vs Claude Code's IDE integration
 - [[ideas/agent-democratization]] — Open-source agent frameworks enabling personal AI

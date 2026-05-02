@@ -14,7 +14,7 @@ REPO="$(cd "$(dirname "$0")" && pwd)"
 WIKI_DIR="$REPO/wiki"
 LLM_WIKI="$REPO/llm-wiki.md"
 PROJECT_SCHEMA="$WIKI_DIR/WIKI.md"
-MODEL="${1:-minimax-m2.7:cloud}"
+MODEL="${1:-deepseek-v4-pro:cloud}"
 TODAY="$(date '+%Y-%m-%d')"
 LINT_MARKER="$REPO/logs/lint_done_${TODAY}.json"
 
@@ -81,22 +81,40 @@ Perform a thorough lint of the wiki at wiki/. Go through EVERY check below syste
 Start now. Be thorough but efficient.
 STATIC_PART
 
-ollama launch claude \
+LINT_OUTPUT="$(ollama launch claude \
     --model "$MODEL" \
     --yes \
     -- \
     -p "$(cat "$PROMPT_FILE")" \
-    --permission-mode dontAsk 2>&1 | tee -a "$REPO/logs/lint.log"
+    --permission-mode dontAsk 2>&1)"
 
 EXIT_CODE=$?
+echo "$LINT_OUTPUT" >> "$REPO/logs/lint.log"
 log "Wiki lint complete (exit code $EXIT_CODE)."
 
 cd "$REPO"
 git add -A
+
+DIFF_STAT="$(git diff --cached --stat 2>/dev/null | tail -1)"
 git commit -m "wiki: lint $TODAY" || true
 git push || true
 
-# Write lint completion marker for xin-knowledge-bot
-echo "{\"date\": \"$TODAY\", \"project\": \"daily-ai-news\", \"status\": \"done\"}" > "$LINT_MARKER"
+# Write lint completion marker with summary for xin-knowledge-bot
+python3 -c "
+import json, sys
+summary = sys.stdin.read().strip()
+# Keep last 2000 chars to avoid huge JSON
+if len(summary) > 2000:
+    summary = summary[-2000:]
+marker = {
+    'date': '$TODAY',
+    'project': 'daily-ai-news',
+    'status': 'done',
+    'diff_stat': '''$DIFF_STAT''',
+    'summary': summary,
+}
+with open('$LINT_MARKER', 'w') as f:
+    json.dump(marker, f, ensure_ascii=False)
+" <<< "$LINT_OUTPUT"
 
 exit $EXIT_CODE

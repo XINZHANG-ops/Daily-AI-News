@@ -19,3 +19,32 @@ Wiki lint completed. Here's what was fixed:
 **Pass 4 — Index & Log:**
 - Rebuilt index.md with accurate counts (53 entities now including claude-opus-4-6)
 - Log updated with today's lint entry
+[2026-05-02 01:00:01] Starting wiki lint using model: deepseek-v4-pro:cloud
+Already up to date.
+Wiki lint complete. Here's the summary of all fixes:
+
+## Pass 1 — Structural Integrity (10 fixes)
+
+- **Renamed 2 files** with hyphens→dots mismatch: `gpt-5-4.md` → `gpt-5.4.md`, `gpt-5-4-cyber.md` → `gpt-5.4-cyber.md` (resolved 10 broken wikilinks)
+- **Moved 1 file**: `ineffable-intelligence` from entities/ to sources/ (was type: company)
+- **Created 3 missing pages**: `sources/perplexity.md`, `entities/gemini-cli.md`, `ideas/agent-economics.md`
+- **Fixed 5 broken wikilinks**: blackwell→gb300, vast-data→sources/vast-data, openhands→openhands-sdk, Claude-code→claude-code (case), deepseek→alibaba (wrong source)
+
+## Pass 2 — Wrong & Stale Info (7 fixes)
+
+- **Updated `spud-model.md`**: Acknowledged Spud released as GPT-5.5 (was stale, implied unreleased)
+- **Updated `gpt-5.4-cyber.md`**: Added TAC expansion and May 1 reversal
+- **Fixed types**: `guard-act` product→legislation
+- **Updated frontmatter dates**: claude-mythos, claude-opus-4-7 to 2026-05-01
+- **Fixed typo**: "OpenAI'sGPT-5.5" → "OpenAI's GPT-5.5"
+
+## Pass 3 — Connection Quality (1 fix)
+
+- **Fixed wrong link** in `safety-restricted-releases`: `[[topics/llm_models]]` → `[[ideas/institutional-gap]]`
+- All topic pages verified to have `## Evolution` and `## Patterns & Insights` sections
+
+## Pass 4 — Index & Log
+
+- **Rebuilt index.md** with accurate counts: sources 16→18, ideas 17→18, entities 53 (unchanged net)
+- **Appended log entry** to `wiki/log.md` with full fix summary
+[2026-05-02 01:26:42] Wiki lint complete (exit code 0).

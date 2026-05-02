@@ -1,7 +1,7 @@
 ---
 title: "GUARD Act"
 slug: guard-act
-type: product
+type: legislation
 last_updated: 2026-05-01
 ---
 
