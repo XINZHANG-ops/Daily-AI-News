@@ -26,3 +26,4 @@ SpaceX acquired xAI for $250 billion in an all-stock transaction in April 2026, 
 - [[sources/xai]] — Now consolidated under SpaceX
 - [[entities/codex]] — OpenAI's coding agent, competing with SpaceX's Cursor investment
 - [[entities/claude-code]] — Anthropic's coding agent, primary competition for Cursor
+- [[entities/cursor]] — $60B SpaceX investment; model-agnostic AI coding tool competing with Claude Code and Codex

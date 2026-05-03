@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-05-01
+last_updated: 2026-05-02
 ---
 
 # AI Funding
@@ -53,6 +53,9 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-04-30 | Anthropic eyes $50B raise at $900B valuation | Doubling from $380B valuation in under 3 months; $40B revenue run rate |
 | 2026-05-01 | NVIDIA GB300 Blackwell Ultra enters mass production | Ships to Microsoft Azure, Google Cloud, Meta in May; 35x lower cost/token for agentic AI |
 | 2026-05-01 | Meta raises capex guidance to $125-145B | Up from $115-135B; "50-100 person tasks now need 10"; CFO admits she "doesn't really know" ideal headcount |
+| 2026-05-01 | Anthropic closing ~$50B at $900B+ valuation | Surpasses OpenAI's $852B (March 2026); Amazon up to $25B, Google up to $40B; revenue run rate $30B+ |
+| 2026-05-01 | Ineffable Intelligence valued at $5.1B | David Silver's RL startup; $1.1B seed; Nvidia, Google, UK sovereign fund; no product, no revenue |
+| 2026-05-01 | Pentagon AI contracts worth billions | 8-company coalition on classified networks; explicit multi-vendor strategy to prevent lock-in |
 
 ## Patterns & Insights
 

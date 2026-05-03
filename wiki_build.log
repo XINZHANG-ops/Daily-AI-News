@@ -403,3 +403,26 @@ All wiki updates for 2026-05-01 are complete. Here's a summary of changes:
 - `institutional-gap` — Added GUARD Act and Musk distillation testimony evidence
 
 **Index, processed.json, log.md** — All updated
+Wiki ingest complete for **2026-05-02**. Here's a summary of what was done:
+
+### New date processed: 2026-05-02
+
+**3 new entities created:**
+- `entities/symphony.md` — OpenAI's Codex orchestration spec (15K+ stars, "every task gets an agent" model)
+- `entities/andrej-karpathy-skills.md` — CLAUDE.md with 4 principles for Claude Code behavior (105K stars)
+- `entities/context-mode.md` — MCP server for 98% context reduction across 12+ platforms (11.9K stars)
+
+**2 new ideas created:**
+- `ideas/military-ai-divide.md` — The May 1 formal split: Pentagon's 8-company coalition vs Anthropic's principled exclusion
+- `ideas/rl-vs-llm-paradigm.md` — David Silver's $5.1B bet that RL superlearning will make LLM scaling obsolete
+
+**1 idea updated:**
+- `ideas/institutional-gap.md` — Added Five Eyes guidance vs Pentagon deployment on the same day as the gap made visible
+
+**6 topics updated** — llm_models, ai_companies, ai_funding, ai_safety, agentic_ai, github_trends
+
+**8 sources updated** — anthropic, openai, google, meta, microsoft, nvidia, xai, ineffable-intelligence
+
+**1 timeline updated** — 2026-05 Week 1 extended with the full May 1 events
+
+**Final tallies:** Topics 6, Sources 18, Timelines 3, Entities 56, Ideas 20

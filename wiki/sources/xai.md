@@ -20,11 +20,12 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 | 2026-04-22 | SpaceX invests $60B in Cursor | Competing with Claude Code and Codex |
 | 2026-04-25 | grok-voice-think-fast-1.0 launches | 67.3% on τ-voice Bench; outperforms Gemini, GPT Realtime in retail/airline/telecom |
 | 2026-04-30 | Musk admits xAI distilled from OpenAI | Under oath in court; "partly used OpenAI's models" to improve Grok; IP chain questionable for SpaceX IPO |
+| 2026-05-01 | Pentagon includes xAI in 8-company classified AI coalition | Grok deployed on classified networks; Musk simultaneously suing OpenAI, distilling from OpenAI, and joining military contracts with OpenAI |
 
 ## Key Relationships
 - **SpaceX**: Parent company following acquisition.
 - **Tesla**: Interests converted to stakes in combined entity.
 
 ## Connections
-- [[sources/spacex]] — Now parent company post-acquisition
-- [[sources/openai]] — Competition in AI assistant market
+- [[ideas/distillation-hypocrisy]] — Musk's simultaneous suing of OpenAI, distilling from OpenAI, and joining Pentagon contracts with OpenAI collapses the ethical architecture of all positions
+- [[ideas/military-ai-divide]] — xAI's inclusion exemplifies the "no principles" track: join the coalition, distill from competitors, sue the industry

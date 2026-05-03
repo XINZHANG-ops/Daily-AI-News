@@ -1,5 +1,51 @@
 # Wiki Log
 
+## [2026-05-03] wiki lint | comprehensive health check
+
+**Pass 1 — Structural fixes:**
+- Fixed broken [[wikilink]] `[[entities/gpt-5-4-cyber]]` → `[[entities/gpt-5.4-cyber]]` in timelines/2026-04.md (hyphens vs dots)
+- Fixed broken [[wikilink]] `[[entities/five-eyes-agent-security-guidance]]` → `[[topics/ai_safety]]` in ideas/military-ai-divide.md (entity never existed; Five Eyes guidance is discussed in ai_safety topic)
+- Verified no orphan pages: all 103 pages have at least one inbound link
+- Verified no companies or people in entities/: all 56 original entity types are valid (model, product, protocol, framework, repo, legislation)
+
+**Pass 2 — Wrong/stale information fixed:**
+- Updated `entities/gpt-5.4.md` — last_updated from 2026-04-16 → 2026-04-20 (content referenced April 20 TAC expansion)
+- Updated `entities/claude-code.md` — last_updated from 2026-04-16 → 2026-05-01; added Claude Security integration, Karpathy skills phenomenon, quality regression context
+- Updated `entities/claude-opus-4-7.md` — Added Claude Security connection (powers the defensive scanner)
+- Updated `entities/mcp-protocol.md` — last_updated from 2026-04-23 → 2026-05-02; Key Facts now shows 150M+ total installs (was only showing 97M+ monthly)
+
+**Pass 3 — Connection quality:**
+- All 6 topic pages verified: each has ## Evolution and ## Patterns & Insights sections
+- No bare "Related:" or "See also:" connections found in any content page (only in WIKI.md as counter-examples)
+- Created 6 new entity pages for significant named things referenced across multiple pages but lacking their own page:
+  - `entities/agent-365.md` — Microsoft's $15/user/month AI agent product
+  - `entities/m365-e7.md` — Microsoft's $99/user/month enterprise AI bundle
+  - `entities/cursor.md` — AI coding IDE with $60B SpaceX investment
+  - `entities/terminal-bench-2.md` — Benchmark: GPT-5.5 82.7% vs Claude Opus 4.7 58.6%
+  - `entities/ari.md` — Meta's humanoid robotics acquisition
+  - `entities/gemini-3-deep-think.md` — Google's advanced reasoning mode
+- Added inbound links to new entities from sources/microsoft.md, sources/spacex.md, sources/meta.md
+
+**Index rebuilt:**
+- Topics: 6 (unchanged)
+- Sources: 18 (unchanged)
+- Timelines: 3 (unchanged)
+- Entities: 56 → 62 (added agent-365, ari, cursor, gemini-3-deep-think, m365-e7, terminal-bench-2)
+- Ideas: 20 (unchanged)
+- Total files: 109 (6+18+3+62+20 + WIKI.md + index.md + log.md)
+
+## [2026-05-02] ingest | 1 date
+
+Dates processed: 2026-05-02
+Topics updated: llm_models (Symphony orchestration spec, context-mode optimization, andrej-karpathy-skills 105K stars), ai_companies (Pentagon 8-company AI coalition — Anthropic excluded as "supply chain risk"; Anthropic ~$900B valuation; Meta ARI robotics acquisition; Five Eyes joint AI agent security guidance; Ineffable $5.1B valuation; Symphony open-sourcing), ai_funding (Anthropic $50B at $900B+, Ineffable $1.1B at $5.1B, Pentagon contracts worth billions), ai_safety (Pentagon exclusion of Anthropic, Five Eyes first joint agent security guidance, Musk distillation admission under oath), agentic_ai (Symphony orchestration at fleet scale, Five Eyes agent governance framework, context-mode 98% context reduction), github_trends (andrej-karpathy-skills 105K, context-mode 11.9K, ds2api 3.1K)
+Sources updated: anthropic (Pentagon exclusion as "supply chain risk," $50B at $900B+ valuation), openai (Pentagon classified network inclusion, Symphony orchestration spec), google (Pentagon classified network inclusion), meta (ARI humanoid robotics acquisition), microsoft (Pentagon classified network inclusion, Agent Governance Toolkit open-source), nvidia (Pentagon classified network inclusion, Ineffable investment participation), xai (Pentagon classified network inclusion), ineffable-intelligence ($5.1B valuation confirmed, Silver's "LLMs are fossil fuel" thesis)
+Timelines updated: 2026-05 (Week 1 — May 1 extended: Pentagon coalition, Anthropic exclusion, ARI acquisition, Five Eyes guidance, Musk courtroom admission, Ineffable RL bet, Symphony spec; May 2 GitHub trends)
+Entities created: symphony (OpenAI Codex orchestration spec; 15K+ stars; agent-as-employee model), andrej-karpathy-skills (105K stars; single CLAUDE.md with 4 principles; "configuration over code"), context-mode (11.9K stars; MCP server for 98% context reduction; 12+ platforms)
+Ideas created: military-ai-divide (May 1, 2026: commercial AI formally splits into Pentagon's 8-company coalition vs Anthropic's safety-first exclusion), rl-vs-llm-paradigm (David Silver's $5.1B bet that RL superlearning will make LLM scaling obsolete)
+Ideas updated: institutional-gap (added Five Eyes guidance vs Pentagon deployment same-day contrast — governance frameworks published for technology deployed yesterday)
+
+Chat session insights applied: The Apr 23 session requested more Google Cloud Next details — today's Five Eyes guidance (May 1) is the governance counterpart to the Cloud Next agent announcements, and Symphony (April 27, open-sourced) extends the agent orchestration narrative. The Apr 25 session highlighted "92K+ tech layoffs" as a recurring pattern — Meta's ARI acquisition extends the displacement thesis from digital to physical labor. The Apr 25 session asked specifically about Google news — Google's inclusion in the Pentagon 8-company coalition extends the defense pivot beyond the previously documented April 30 Pentagon deal. Session d1cce567 specifically asked about Google Cloud Next — the Five Eyes framework and Symphony orchestration spec both connect to the Cloud Next announcements (Gemini Enterprise Agent Platform, TPU 8th gen) as the operational infrastructure catching up to the product announcements.
+
 ## [2026-05-02] wiki lint | structural + connection fixes
 
 **Structural fixes:**

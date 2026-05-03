@@ -25,6 +25,7 @@ last_updated: 2026-05-01
 | 2026-04-29 | EU issues first AI Act fine: €800M | Unauthorized EU user data training; MCI employee keystroke tracking cited as evidence of systemic data overreach |
 | 2026-05-01 | Meta announces 8,000 layoffs starting May 20 | 10% workforce cut; 6,000 open roles abandoned; "50-100 person tasks now need 10" |
 | 2026-05-01 | Meta raises capex guidance to $125-145B | Up from $115-135B; CFO Susan Li admits she "doesn't really know" ideal headcount |
+| 2026-05-01 | Meta acquires humanoid robotics startup ARI | Assured Robot Intelligence team (led by Xiaolong Wang and Lerrel Pinto) joins Superintelligence Labs under Yann LeCun; embodied AI bet alongside digital MCI surveillance |
 
 ## Key Relationships
 - **OpenAI**: Competition in AI assistant market and coding agents.
@@ -34,5 +35,6 @@ last_updated: 2026-05-01
 ## Connections
 - [[entities/llama-4]] — Open-weight models with 10M context windows
 - [[entities/muse-spark]] — Meta's first proprietary model, ranks 4th
-- [[ideas/ai-job-displacement]] — 8,000 cuts + MCI surveillance + $125-145B capex = AI replacing headcount at scale
+- [[entities/ari]] — Humanoid robotics acquisition extending AI displacement to physical labor
+- [[ideas/ai-job-displacement]] — 8,000 cuts + MCI surveillance + $125-145B capex + ARI robotics acquisition = AI replacing physical AND digital labor simultaneously
 - [[ideas/institutional-gap]] — EU AI Act fine and workforce cuts show governance/capital converging faster than consensus

@@ -61,3 +61,26 @@ Wiki lint complete. Here's the summary of all fixes:
  create mode 100644 wiki/ideas/agent-economics.md
  create mode 100644 wiki/sources/ineffable-intelligence.md
  create mode 100644 wiki/sources/perplexity.md
+[2026-05-03 01:00:04] Starting wiki lint using model: deepseek-v4-pro:cloud
+Already up to date.
+Wiki lint complete. Here's the summary:
+
+**Pass 1 — Structural:**
+- 2 broken wikilinks fixed (`gpt-5-4-cyber` → `gpt-5.4-cyber`, `five-eyes-agent-security-guidance` → `topics/ai_safety`)
+- No orphan pages (all 103 pages have inbound links)
+- No companies/people in entities (all types valid)
+
+**Pass 2 — Stale information:**
+- 4 entity pages updated with fresh `last_updated` dates and content (gpt-5.4, claude-code, claude-opus-4-7, mcp-protocol)
+- MCP install count aligned with rest of wiki (150M+ total)
+
+**Pass 3 — Connection quality:**
+- All 6 topic pages have `## Evolution` and `## Patterns & Insights`
+- No bare "Related:" or "See also:" links in any content page
+- 6 new entity pages created: agent-365, m365-e7, cursor, terminal-bench-2, ari, gemini-3-deep-think
+- Inbound links added from source pages (microsoft, spacex, meta)
+
+**Pass 4 — Index rebuilt:**
+- Entities: 56 → 62
+- Total wiki files: 109 (6 topics + 18 sources + 3 timelines + 62 entities + 20 ideas + 3 root files)
+[2026-05-03 01:12:29] Wiki lint complete (exit code 0).

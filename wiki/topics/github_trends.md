@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-01
+last_updated: 2026-05-02
 ---
 
 # GitHub Trends
@@ -33,6 +33,8 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 
 | Repo | Stars | Description |
 |------|-------|-------------|
+| forrestchang/andrej-karpathy-skills | 105K+ | Single CLAUDE.md file with 4 principles for Claude Code behavior; derived from Karpathy's LLM coding observations |
+| mksglu/context-mode | 11.9K+ | MCP server for context window optimization; 98% reduction across 12+ platforms; 116 releases |
 | microsoft/markitdown | 112K+ | Document conversion tool for LLM ingestion pipelines |
 | virattt/ai-hedge-fund | 56K+ | Multi-agent autonomous hedge fund |
 | obra/superpowers | 155K+ | Agentic skills framework for coding agents |
@@ -94,9 +96,9 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 **May 1: Agent orchestration frameworks with zero third-party dependencies**: Three new repos trending — harmonist (186 specialist agents across 16 categories, mechanical protocol enforcement, zero third-party deps, 949 stars), CoreCoder (~1,400 lines Python inspired by Claude Code, parallel tool execution, 3-layer context compression, 652 stars), and open-agent-sdk-go (lightweight Go SDK, 32 built-in tools, MCP support, session management, in-process agent loop, 151 stars). The "zero third-party dependencies" philosophy signals teams are seeking to minimize supply chain risk after the MCP vulnerability and npm compromises.
 
 ## Connections
-- [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging
+- [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
 - [[entities/claw-code]] — Clean-room rewrite, 181K+ stars
-- [[entities/mcp-protocol]] — 150M+ installs, becoming foundational infrastructure; claude-context is an MCP tool
+- [[entities/mcp-protocol]] — 150M+ installs, becoming foundational infrastructure; context-mode is an MCP tool optimizing MCP-based workflows
 - [[entities/openclaw]] — 302K stars, fastest-growing open-source project
 - [[entities/claude-design]] — Direct challenge to Figma spawning design skills ecosystem
 - [[entities/openhands-sdk]] — Modular SDK for building coding agents; 3.2K stars
@@ -105,5 +107,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/harmonist]] — Portable agent orchestration with 186 specialist agents; zero third-party deps
 - [[entities/corecoder]] — Minimalist Claude Code-inspired coding agent in ~1,400 lines Python
 - [[entities/open-agent-sdk-go]] — Lightweight Go SDK for AI agents with MCP support
-- [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI; free-claude-code lowers access barriers
+- [[entities/andrej-karpathy-skills]] — 105K stars; single CLAUDE.md with 4 principles; "configuration over code" for agent behavior
+- [[entities/context-mode]] — 11.9K stars; 98% context reduction via MCP; critical infrastructure for continuous agent operation
+- [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI; Karpathy principles lowest-friction path to better agents
 - [[ideas/institutional-gap]] — GUARD Act criminal penalties show governance catching up to capability deployment

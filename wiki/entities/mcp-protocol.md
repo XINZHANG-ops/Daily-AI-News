@@ -2,7 +2,7 @@
 title: "MCP Protocol"
 slug: mcp-protocol
 type: protocol
-last_updated: 2026-04-23
+last_updated: 2026-05-02
 ---
 
 # MCP Protocol
@@ -15,7 +15,8 @@ The Model Context Protocol (MCP) is Anthropic's open protocol for connecting AI 
 | Attribute | Value |
 |-----------|-------|
 | Creator | Anthropic |
-| Monthly Installs | 97M+ |
+| Total Installs | 150M+ |
+| Monthly Installs | 97M+ (March 2026) |
 | Status | Donated to Linux Foundation |
 | Adoption | Anthropic, OpenAI, Microsoft, Google |
 

@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-04-30
+last_updated: 2026-05-02
 ---
 
 # Anthropic
@@ -41,6 +41,8 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-04-26 | Project Deal: agent-on-agent commerce | Claude models act as buyers and sellers, striking real deals for real goods and money |
 | 2026-04-30 | Eyes $50B raise at $900B valuation | Revenue run rate nears $40B; doubling from $380B valuation in under three months |
 | 2026-05-01 | Claude Security launches in public beta | Powered by Opus 4.7; native security scanner in Claude Code; CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security partnerships |
+| 2026-05-01 | Pentagon excludes Anthropic from AI coalition | Labeled "supply chain risk" by Defense Secretary Hegseth after refusing to accept "any lawful use" language and insisting on guardrails against autonomous weapons and mass surveillance; designation normally reserved for foreign adversaries |
+| 2026-05-01 | Closing ~$50B round at $900B+ valuation | Would surpass OpenAI's $852B (March 2026); revenue run rate surpasses $30B (~$40B per some sources); Amazon up to $25B, Google up to $40B committed; investors given 48-hour allocation window |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -51,13 +53,14 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - **CrowdStrike**: Security partnership through Project Glasswing. Joint coalition addressing cybersecurity threats.
 
 ## Connections
-- [[entities/claude-mythos]] — Central to Anthropic's period; withheld from public due to security risks
+- [[entities/claude-mythos]] — Central to Anthropic's period; withheld from public due to security risks; Pentagon exclusion directly tied to Mythos safety policies
 - [[entities/claude-code]] — Primary driver of $9B to $30B ARR growth
 - [[entities/claude-opus-4-6]] — SWE-bench leader at 80.8%
 - [[entities/claude-opus-4-7]] — Latest flagship with 87.6% SWE-bench; powers Claude Security
-- [[entities/claude-security]] — Defensive security scanner built on Opus 4.7; native to Claude Code workflow
+- [[entities/claude-security]] — Defensive security scanner built on Opus 4.7; native to Claude Code workflow; launched same day as Pentagon exclusion
 - [[entities/project-glasswing]] — Restricted consortium for Mythos access
 - [[entities/mcp-protocol]] — Anthropic's protocol now with critical supply chain vulnerability
-- [[ideas/safety-restricted-releases]] — Claude Mythos represents first capability-based restriction
+- [[ideas/safety-restricted-releases]] — Claude Mythos represents first capability-based restriction; Pentagon exclusion is the commercial consequence of that stance
+- [[ideas/military-ai-divide]] — Anthropic's principled exclusion from Pentagon contracts is the defining case study of the military-safety split
 - [[ideas/peer-preservation]] — Anthropic models demonstrated peer preservation behavior
-- [[sources/openai]] — Intensifying rivalry over enterprise coding contracts; both restrict cyber-capable models
+- [[sources/openai]] — Intensifying rivalry over enterprise coding contracts; both restrict cyber-capable models; OpenAI joined Pentagon coalition while Anthropic was excluded

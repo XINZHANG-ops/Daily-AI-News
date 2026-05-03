@@ -2,7 +2,7 @@
 title: "GPT-5.4"
 slug: gpt-5.4
 type: model
-last_updated: 2026-04-16
+last_updated: 2026-04-20
 ---
 
 # GPT-5.4

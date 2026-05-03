@@ -27,6 +27,7 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 | 2026-04-18 | Ising delivers 2.5x faster quantum error correction | 3x more accurate than traditional approaches |
 | 2026-04-22 | Vast Data raises $1B at $30B valuation | NVIDIA-backed AI infrastructure startup |
 | 2026-05-01 | GB300 Blackwell Ultra enters mass production | Ships to Microsoft Azure, Google Cloud, Meta in May; 288GB HBM3e, 10 TB/s, 35x lower cost/token for agentic AI |
+| 2026-05-01 | Pentagon includes Nvidia in 8-company classified AI coalition | Nemotron models deployed on classified networks; Nvidia also participates in Ineffable Intelligence $1.1B seed (hedging across LLM/RL paradigms) |
 
 ## Key Relationships
 - **OpenAI**: Strategic investor and primary GPU customer.

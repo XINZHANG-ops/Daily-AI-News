@@ -2,7 +2,7 @@
 title: "Claude Code"
 slug: claude-code
 type: product
-last_updated: 2026-04-16
+last_updated: 2026-05-01
 ---
 
 # Claude Code
@@ -23,9 +23,13 @@ Claude Code's viral success in late 2025-early 2026 transformed Anthropic's busi
 
 Claude Code was the subject of a major leak in early April when Anthropic accidentally exposed 512,000 lines of TypeScript source via misconfigured .map files in the npm package. This spawned the explosive growth of claw-code.
 
-Claude Code Channels enables Telegram and Discord integration via MCP-based plugins. Claude Computer Use allows Claude to perform tasks on the user's behalf (file transfers, photo resizing).
+Claude Code Channels enables Telegram and Discord integration via MCP-based plugins. Claude Computer Use allows Claude to perform tasks on the user's behalf (file transfers, photo resizing). On May 1, 2026, Claude Security was integrated natively into the Claude Code workflow, making vulnerability scanning a built-in step in the coding process.
+
+The 105K-star success of andrej-karpathy-skills — a single CLAUDE.md file enforcing behavioral principles — emerged partly in response to documented Claude Code quality regressions (reduced reasoning, verbosity, caching bugs), validating the thesis that many LLM coding pitfalls are behavioral rather than capability problems.
 
 ## Connections
-- [[sources/anthropic]] — Created by Anthropic
+- [[sources/anthropic]] — Created by Anthropic; primary driver of ARR growth
 - [[topics/agentic_ai]] — Central to the agentic AI wave
-- [[entities/claw-code]] — Leaked and spawned this clean-room rewrite
+- [[entities/claw-code]] — Leaked .map files spawned this clean-room rewrite
+- [[entities/claude-security]] — Native integration inside Claude Code; security scanning as a built-in step in the coding workflow
+- [[entities/andrej-karpathy-skills]] — 105K-star repo emerged to improve Claude Code behavior through CLAUDE.md principles

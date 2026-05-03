@@ -34,6 +34,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-04-28 | $40B Anthropic investment validates Claude trajectory | Google's move accelerated by Anthropic's demonstrated enterprise capabilities |
 | 2026-04-30 | Signs Pentagon deal for classified military AI | Allows AI systems for classified military work despite internal researcher protests; strategic pivot into defense niche |
 | 2026-05-01 | Gemini rolls out to ~4M GM vehicles | Replacing Google Assistant; vehicle-specific AI concierge using owner's manual; largest automotive AI deployment to date |
+| 2026-05-01 | Pentagon includes Google in 8-company classified AI coalition | Gemini deployed on IL6/IL7 classified networks; Google crosses "Don't Be Evil" era rubicon with military AI deployment |
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.

@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-01
+last_updated: 2026-05-02
 ---
 
 # Agentic AI
@@ -51,6 +51,9 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-01 | Microsoft M365 E7 and Agent 365 GA | $99/user/month bundle; Agent 365 at $15/user/month; first new enterprise license in a decade |
 | 2026-05-01 | NVIDIA GB300 Blackwell Ultra enters mass production | Ships May to hyperscalers; 35x lower cost/token; 50x throughput/megawatt for agentic workloads |
 | 2026-05-01 | Gemini rolls out to ~4M GM vehicles | Replacing Google Assistant with vehicle-specific AI concierge; largest automotive AI deployment |
+| 2026-05-02 | OpenAI open-sources Symphony orchestration spec | 15K+ stars; "every task gets an agent, agents run continuously, humans review"; 500% PR increase at OpenAI |
+| 2026-05-02 | Five Eyes issues joint agent security guidance | First international framework for AI agent deployment; zero-trust, cryptographic identities, human sign-off |
+| 2026-05-02 | context-mode MCP server trends (11.9K stars) | 98% context reduction enables agents to run longer and handle more complex tasks without context pollution |
 
 ## Patterns & Insights
 
@@ -74,10 +77,13 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/claude-code]] — Primary driver of Anthropic's ARR growth
 - [[entities/claw-code]] — Clean-room rewrite, 100K stars in hours
 - [[entities/openclaw]] — 302K stars, fastest-growing open-source project
-- [[entities/mcp-protocol]] — 150M+ installs, dominant agent protocol
+- [[entities/mcp-protocol]] — 150M+ installs, dominant agent protocol; context-mode built on MCP
 - [[entities/openhands-sdk]] — Modular SDK for coding agents, 3.2K stars
 - [[entities/nemo-claw]] — NVIDIA's hardened stack for secure OpenClaw deployment
 - [[entities/scientific-agent-skills]] — 133 scientific skills for agents, 2.4K stars
+- [[entities/symphony]] — OpenAI's orchestration spec formalizes agent-as-employee model at fleet scale
+- [[entities/context-mode]] — 98% context reduction enabling continuous agent operation without context pollution
 - [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI
+- [[ideas/agent-economics]] — GitHub $49/agent/month + Symphony's continuous agent model = agent economics entering operational phase
 - [[sources/anthropic]] — Claude Code success driving $30B ARR
 - [[sources/cognition]] — Devin creator, $25B valuation talks, AI coding competition with Claude Code

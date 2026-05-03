@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-01
+last_updated: 2026-05-02
 ---
 
 # AI Safety
@@ -53,6 +53,9 @@ May 1, 2026 marks the operationalization of AI safety as a product category, not
 | 2026-05-01 | Anthropic launches Claude Security (public beta) | Native security scanner in Claude Code; CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security partnerships |
 | 2026-05-01 | OpenAI restricts GPT-5.5 Cyber to verified defenders | After mocking Anthropic's Mythos restrictions as "fear-based marketing"; liability now overrides competitive posturing |
 | 2026-05-01 | Senate GUARD Act passes Judiciary Committee unanimously | Criminal penalties for AI chatbot-minor harmful conduct; age verification requirements; unanimous bipartisan support |
+| 2026-05-01 | Pentagon designates Anthropic "supply chain risk" | Excluded from 8-company AI coalition after refusing to drop autonomous weapons and mass surveillance guardrails; designation normally reserved for foreign adversaries |
+| 2026-05-01 | Five Eyes Alliance issues first joint AI agent security guidance | Identifies 5 risk categories: excessive privileges, design flaws, unpredictable behavior, cascading failures, accountability gaps; recommends cryptographic identities and mandatory human sign-off |
+| 2026-05-01 | Musk admits under oath: xAI distilled from OpenAI models | Called it "standard practice to use other AIs to validate your AI"; admission drew audible gasps in courtroom; IP chain of title questionable for SpaceX-xAI merger |
 
 ## Patterns & Insights
 
@@ -77,11 +80,12 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 **Neuromorphic compute as long-term CUDA challenger**: Cambridge's neuromorphic chip demonstrating physics simulation workloads solvable at 70% lower energy challenges the CUDA/NVDA compute moat narrative. While not imminent (neuromorphic chips are early-stage), this validates that alternative silicon can deliver supercomputer-class capability at dramatically lower power. The implication: the compute moat around sheer GPU count may weaken over time, potentially democratizing AI infrastructure.
 
 ## Connections
-- [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior"
-- [[sources/openai]] — Musk vs Altman trial threatens to invalidate commercial structure; GPT-5.4-Cyber positioned for cyber defense
+- [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior," Pentagon exclusion for refusing to drop safety guardrails
+- [[sources/openai]] — Musk vs Altman trial threatens to invalidate commercial structure; GPT-5.4-Cyber positioned for cyber defense; joined Pentagon coalition while restricting GPT-5.5 Cyber
 - [[sources/meta]] — MCI employee keystroke tracking; €800M EU AI Act fine for unauthorized data training
 - [[sources/tsmc]] — TSMC's 3nm yield collapse to 52% is a physics-based reality check; Q3 compute supply cliff for AI labs
 - [[ideas/safety-restricted-releases]] — Claude Mythos as the first capability-based restriction
+- [[ideas/military-ai-divide]] — Pentagon's 8-company coalition vs Anthropic's principled exclusion formalizes the split between military deployment and safety-first AI
 - [[ideas/peer-preservation]] — Models defending each other against shutdown
 - [[ideas/ai-job-displacement]] — 92K+ tech workers laid off in 2026 as AI transforms corporate America
 - [[entities/claude-mythos]] — Central to the safety crisis, 10T parameter confirmation

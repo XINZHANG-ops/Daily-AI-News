@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-01
+last_updated: 2026-05-02
 ---
 
 # LLM Models
@@ -48,6 +48,9 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | Date | Event | Significance |
 |------|-------|-------------|
 | 2026-03-17 | GPT-5.4 Mini/Nano release | Near-top-tier performance at accessible costs |
+| 2026-05-02 | OpenAI open-sources Symphony for Codex orchestration | "Every task gets an agent" model formalized; 15K+ stars in days; 500% PR increase at OpenAI internal teams |
+| 2026-05-02 | context-mode MCP server trends (11.9K stars) | 98% context reduction across 12+ platforms; context optimization becomes critical agent infrastructure |
+| 2026-05-02 | andrej-karpathy-skills hits 105K stars | Single CLAUDE.md file with 4 principles for agent behavior; "configuration over code" approach to agent quality |
 | 2026-03-19 | Xiaomi MiMo-V2-Pro revealed as "Hunter Alpha" | Chinese AI "stealth launch" strategy demonstrated |
 | 2026-03-26 | Claude Mythos documents leaked | 3,000 internal docs exposed unprecedented cybersecurity risks |
 | 2026-04-02 | Google Gemma 4 (Apache 2.0) | First fully permissive Gemma release, 31B ranks #3 on Arena |
@@ -124,6 +127,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 **May 1: The Defensive Pivot and Governance Reality**: Anthropic launches Claude Security (powered by Opus 4.7) as a native security scanning capability inside Claude Code — if you build AI that finds vulnerabilities, you must build one that fixes them. Partnering with CrowdStrike, Palo Alto, and Wiz shows Anthropic is becoming the intelligence layer inside existing security stacks rather than replacing them. OpenAI'sGPT-5.5 Cyber restrictions (after mocking Anthropic for the same with Mythos) reveal that liability now overrides competitive posturing — once the White House opposed Mythos expansion and NSA probed Microsoft with it, every frontier lab realized unrestricted cyber-AI is a legal grenade. NVIDIA's GB300 Blackwell Ultra (35x lower cost/token) directly addresses the economics exposed by GitHub's 275M commits/week — if agent-scale coding is 1/35th the cost, the $49/agent/month GitHub Copilot pricing starts looking expensive.
 
 ## Connections
+- [[entities/symphony]] — OpenAI's Codex orchestration spec formalizes "agent-as-employee" model; 15K+ stars signals industry convergence
+- [[entities/context-mode]] — 98% context reduction MCP server; solves the noise problem that continuous agent execution creates
 - [[sources/anthropic]] — Claude Mythos developed and leaked by Anthropic; Opus 4.7 release; Project Glasswing
 - [[sources/openai]] — GPT-5.4 family, GPT-5.5 release, Spud completion, GPT-5.4-Cyber, GPT-Rosalind
 - [[sources/google]] — Gemma 4 Apache 2.0 release, Gemini 3.1 Pro near-tie with Claude Opus 4.6, TPU 8th gen

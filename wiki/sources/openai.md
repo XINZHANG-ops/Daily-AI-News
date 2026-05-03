@@ -45,6 +45,8 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-04-30 | OpenAI secures 10GW of US compute | 3GW added in 90 days; surpasses original Stargate target years early; estimated $15-20B in energy commitments |
 | 2026-04-30 | Musk admits xAI distilled from OpenAI | Under oath in court; undermines "OpenAI is closed and evil" narrative; IP chain questionable for SpaceX-xAI merger |
 | 2026-05-01 | OpenAI restricts GPT-5.5 Cyber to verified defenders | After mocking Anthropic's Mythos restrictions as "fear-based marketing"; liability now overrides competitive posturing |
+| 2026-05-01 | Pentagon includes OpenAI in 8-company classified AI coalition | GPT-5.5 deployed on IL6/IL7 classified networks for "lawful operational use"; 1.3M+ DoD personnel on GenAI.mil platform |
+| 2026-05-01 | OpenAI open-sources Symphony orchestration spec | 15K+ stars; language-agnostic with TypeScript, Go, Rust, Java, Python reference implementations; formalizes agent-as-employee model with 500% PR increase on internal teams |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -55,11 +57,13 @@ OpenAI is navigating the transition from research organization to commercial ent
 
 ## Connections
 - [[entities/gpt-5.4]] — Flagship model family; Thinking, Mini, Nano, Cyber variants
-- [[entities/gpt-5.5]] — Latest model with "super app" integration vision; 49-day release cycle for enterprise procurement lock-in
+- [[entities/gpt-5.5]] — Latest model with "super app" integration vision; 49-day release cycle for enterprise procurement lock-in; deployed on Pentagon classified networks
 - [[entities/spud-model]] — Next flagship model completing pretraining
 - [[entities/codex]] — 3M weekly users, primary coding agent product
+- [[entities/symphony]] — Open-source orchestration spec for Codex at fleet scale; 15K+ stars
 - [[entities/gpt-5.4-cyber]] — Defensive cybersecurity variant
 - [[entities/gpt-rosalind]] — Life sciences domain model
 - [[ideas/safety-restricted-releases]] — Not releasing GPT-4.5 as last non-reasoning model signals awareness of capability thresholds
+- [[ideas/military-ai-divide]] — OpenAI's split-brain approach: joined Pentagon coalition while restricting GPT-5.5 Cyber; military vs civilian deployment governed by different rules
 - [[sources/anthropic]] — Rivalry intensifying over compute and enterprise contracts
 - [[sources/deepseek]] — Both competing for AI coding market; DeepSeek V4 challenges GPT-5.5 on benchmarks

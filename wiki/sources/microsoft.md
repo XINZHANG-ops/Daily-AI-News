@@ -20,6 +20,7 @@ last_updated: 2026-05-01
 | 2026-04-23 | Microsoft offers buyouts to ~8,750 workers | 7% of workforce; continuing AI transformation amid Big Tech layoffs |
 | 2026-04-24 | Geoffrey Hinton UN warning | "Car with no brake going down a hill" — AI needs governance |
 | 2026-05-01 | M365 E7 and Agent 365 GA | $99/user/month and $15/user/month; first new enterprise license in a decade; E5+Copilot+Agent 365+Entra Suite |
+| 2026-05-01 | Pentagon includes Microsoft in 8-company classified AI coalition | Azure AI deployed on IL6/IL7 classified networks; Agent Governance Toolkit open-sourced addressing OWASP Agentic Top 10 |
 
 ## Key Relationships
 - **Anthropic**: Paradoxical — Claude integration in Copilot but competing in enterprise.
@@ -30,4 +31,6 @@ last_updated: 2026-05-01
 - [[sources/anthropic]] — Claude Sonnet integration despite competition; Copilot Cowork research preview built with Anthropic/Claude
 - [[sources/openai]] — Azure partnership; Copilot integration
 - [[entities/copilot-agent-tier]] — GitHub's $49/agent/month pricing for autonomous coding agents
+- [[entities/agent-365]] — $15/user/month AI agent product launched alongside E7; first new enterprise license in a decade
+- [[entities/m365-e7]] — $99/user/month bundle (E5+Copilot+Agent 365+Entra Suite); AI governance inseparable from identity stack
 - [[ideas/enterprise-ai-lock-in]] — E7 bundle designed to make AI governance inseparable from Microsoft's ecosystem

@@ -1,7 +1,7 @@
 ---
 title: "Institutional Gap"
 slug: institutional-gap
-last_updated: 2026-05-01
+last_updated: 2026-05-02
 ---
 
 # Institutional Gap
@@ -18,6 +18,7 @@ AI capability growth is outpacing the institutional frameworks (legal, economic,
 - [[sources/meta]] — EU's first AI Act fine (€800M on Meta, April 29) for unauthorized training data use, citing the MCI employee keystroke tracking. The regulatory pincer is real: US tech simultaneously defending profit structures in California courts and data practices in Brussels
 - [[sources/openai]] — Musk admits under oath (April 30) that xAI distilled from OpenAI models — simultaneously suing OpenAI for "betraying its open mission" while admitting xAI required OpenAI's outputs. The hypocrisy is legally explosive and reveals how the "open vs closed" framing has become a competitive weapon rather than a principle
 - [[entities/guard-act]] — GUARD Act passes Senate Judiciary Committee unanimously (April 30) with criminal penalties for AI chatbot conduct — the first major AI legislation with teeth, passed the same week as Meta's 8,000 layoffs and OpenAI's Cyber restrictions. The bipartisan speed signals governance has found its triggering event: child safety
+- [[ideas/military-ai-divide]] — May 1, 2026 is the institutional gap made visible: Five Eyes guidance (warning about cascading failures and accountability gaps) released the same day the Pentagon deploys AI agents onto classified warfare networks without the governance infrastructure the guidance says is essential
 
 ## Implications
 The institutional gap creates three compounding risks:
@@ -36,3 +37,5 @@ The most important test: the Musk vs Altman case. If OpenAI must revert to non-p
 - [[topics/ai_safety]] — The institutional gap is a safety issue: governance frameworks cannot keep pace with capability deployment
 - [[topics/ai_funding]] — GitHub's platform economics crisis is an institutional gap problem: the business model was built for a different scale and type of usage
 - [[sources/openai]] — The Musk vs Altman trial is the first major test of whether the institutional framework can reverse what has been built
+- [[ideas/military-ai-divide]] — The Five Eyes/Pentagon split on May 1 is the institutional gap's most visible example: governance frameworks published for technology deployed yesterday
+- [[topics/ai_safety]] — The Five Eyes guidance's five risk categories map directly onto every use case the military contracts enable; the institutions writing the warnings are deploying the technology

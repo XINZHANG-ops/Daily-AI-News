@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-01
+last_updated: 2026-05-02
 ---
 
 # AI Companies
@@ -86,6 +86,12 @@ May 1, 2026 crystallizes the AI industry's contradictions: Meta cuts 8,000 jobs 
 | 2026-05-01 | Anthropic launches Claude Security in public beta | Powered by Opus 4.7; CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security partnerships |
 | 2026-05-01 | Senate GUARD Act passes Judiciary Committee unanimously | Criminal penalties for AI chatbot-minor harmful conduct; age verification requirements |
 | 2026-05-01 | Google Gemini rolls out to ~4M GM vehicles | Replacing Google Assistant in cars with vehicle-specific AI concierge |
+| 2026-05-01 | Pentagon signs AI deals with 8 tech giants — Anthropic excluded | OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX/xAI, Oracle, Reflection AI deploy on classified networks; Anthropic labeled "supply chain risk" for refusing to drop safety guardrails |
+| 2026-05-01 | Anthropic targets ~$900B valuation in $50B raise | Amazon up to $25B, Google up to $40B committed; revenue run rate surpasses $30B; valuation nearly 2.4x February's $380B |
+| 2026-05-01 | Meta acquires humanoid robotics startup ARI | Team led by Xiaolong Wang and Lerrel Pinto joins Superintelligence Labs under Yann LeCun; embodied AI bet alongside digital surveillance |
+| 2026-05-01 | Five Eyes issues first joint guidance on AI agent security | US, UK, Canada, Australia, NZ warn on excessive privileges, cascading failures, accountability gaps — same day as Pentagon deployment |
+| 2026-05-01 | Ineffable Intelligence valued at $5.1B (Silver RL bet) | David Silver's "LLMs are fossil fuel" thesis; largest pure-research AI bet of 2026; Nvidia, Google, UK sovereign fund participate |
+| 2026-05-01 | OpenAI open-sources Symphony orchestration spec | 15K+ stars; language-agnostic with 5 reference implementations; formalizes agent-as-employee model |
 
 ## Patterns & Insights
 
@@ -108,8 +114,8 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 **Microsoft's enterprise AI lock-in**: The E7 bundle at $99/month is not a product launch — it's a pricing architecture designed to make AI governance inseparable from Microsoft's identity and security stack. By bundling Agent 365 ($15/month separately) with E7, Microsoft ensures any enterprise wanting structured AI agent governance must buy the full ecosystem. Copilot Cowork research preview (built with Anthropic/Claude) reveals Microsoft is partnering with its biggest AI rival for background workflow orchestration — even Microsoft recognizes it can't win the agentic coding war alone.
 
 ## Connections
-- [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users, GPT-Rosalind, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions
-- [[sources/anthropic]] — $30B ARR, ~$1T valuation, Mythos controversy, Claude Security launch, Claude Opus 4.7, Claude Code fixes
+- [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users, GPT-Rosalind, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions, Pentagon classified network deals, Symphony orchestration spec
+- [[sources/anthropic]] — $30B ARR, ~$1T valuation, Mythos controversy, Claude Security launch, Claude Opus 4.7, Claude Code fixes, Pentagon exclusion as "supply chain risk," $900B valuation raise
 - [[sources/google]] — Texas data center for Anthropic, Gemini 3.1 Pro, Gemma 4 Apache 2.0, Cloud Next 2026, TPU 8th gen, Gemini automotive rollout
 - [[sources/nvidia]] — GTC 2026, Vera Rubin, Ising quantum AI models, GB300 Blackwell Ultra mass production
 - [[sources/spacex]] — $250B xAI acquisition, $60B Cursor investment
