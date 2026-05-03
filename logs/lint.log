@@ -84,3 +84,16 @@ Wiki lint complete. Here's the summary:
 - Entities: 56 → 62
 - Total wiki files: 109 (6 topics + 18 sources + 3 timelines + 62 entities + 20 ideas + 3 root files)
 [2026-05-03 01:12:29] Wiki lint complete (exit code 0).
+[main a42b327] wiki: lint 2026-05-03
+ 41 files changed, 768 insertions(+), 75 deletions(-)
+ create mode 100644 wiki/entities/agent-365.md
+ create mode 100644 wiki/entities/andrej-karpathy-skills.md
+ create mode 100644 wiki/entities/ari.md
+ create mode 100644 wiki/entities/context-mode.md
+ create mode 100644 wiki/entities/cursor.md
+ create mode 100644 wiki/entities/gemini-3-deep-think.md
+ create mode 100644 wiki/entities/m365-e7.md
+ create mode 100644 wiki/entities/symphony.md
+ create mode 100644 wiki/entities/terminal-bench-2.md
+ create mode 100644 wiki/ideas/military-ai-divide.md
+ create mode 100644 wiki/ideas/rl-vs-llm-paradigm.md

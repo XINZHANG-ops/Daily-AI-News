@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-03",
+  "github_repos": [
+    {
+      "name": "OpenMOSS/MOVA",
+      "url": "https://github.com/OpenMOSS/MOVA",
+      "description": {
+        "en": "MOVA: A foundation model for synchronized video-audio generation in a single inference pass, breaking the 'silent era' of open-source video models. Features precise multilingual lip-sync, environment-aware sound effects, ComfyUI integration, and SGLang support.",
+        "zh": "MOVA：在单次推理中同步生成视频和音频的基础模型，打破开源视频模型的“默片时代”。支持精确的多语言唇形同步、环境感知音效，集成 ComfyUI 和 SGLang。"
+      },
+      "stars": "972",
+      "forks": "115"
+    },
+    {
+      "name": "oraios/serena",
+      "url": "https://github.com/oraios/serena",
+      "description": {
+        "en": "A powerful MCP toolkit providing semantic code retrieval, editing, refactoring, and debugging tools across 40+ languages. Described as 'the IDE for your coding agent' — operates at the symbol level rather than line numbers, backed by LSP language servers.",
+        "zh": "强大的 MCP 工具包，提供跨 40+ 语言的语义代码检索、编辑、重构和调试功能。被称为“你的编码智能体的 IDE”——在符号层面而非行号层面操作，由 LSP 语言服务器支持。"
+      },
+      "stars": "23.8k",
+      "forks": "1.6k"
+    },
+    {
+      "name": "multimodal-art-projection/AutoMV",
+      "url": "https://github.com/multimodal-art-projection/AutoMV",
+      "description": {
+        "en": "A training-free multi-agent system that auto-generates full-length music videos from songs, using Screenwriter, Director, and Verifier agents with character consistency banks, lip-sync via Qwen-Wan 2.2, and beat-aligned editing at ~$10-20 per MV.",
+        "zh": "免训练的多智能体系统，可从歌曲自动生成完整音乐视频。使用编剧、导演和验证者智能体，配合角色一致性库、Qwen-Wan 2.2 唇形同步和节拍对齐剪辑，每个 MV 成本约 10-20 美元。"
+      },
+      "stars": "104",
+      "forks": "19"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Pentagon Declares 'AI-First' Military, Signs Massive Contracts with 8 AI Companies — Anthropic Conspicuously Absent",
+        "zh": "五角大楼宣布“AI 优先”军事战略，与 8 家 AI 公司签署大规模合同——Anthropic 引人注目地缺席"
+      },
+      "url": "https://www.bbc.com/news/articles/cy02gjq2987o",
+      "source": "BBC News",
+      "time": "2026-05-02",
+      "description": {
+        "en": "The Pentagon expanded AI contracts with Google, OpenAI, Amazon, Microsoft, SpaceX, Oracle, Nvidia, and Reflection, covering 'any lawful operational use' of AI across the military. Over one million defense personnel have already used the military's internal AI platform.",
+        "zh": "五角大楼扩大了与 Google、OpenAI、Amazon、Microsoft、SpaceX、Oracle、Nvidia 和 Reflection 的 AI 合同，涵盖军事领域“任何合法作战用途”的 AI。超过一百万国防人员已使用军方内部 AI 平台。"
+      },
+      "insight": {
+        "en": "09 *Pentagon AI-First* : The 'any lawful operational use' clause is the core tension — it's the same language that drove Anthropic to sue the government and be labeled a 'supply chain risk.' With 1M+ personnel now active on the platform, AI deployment in defense has crossed from pilot to production at unprecedented scale. Worth noting: Google's inclusion here runs counter to its 2018 internal protest over Project Maven — a complete reversal in under a decade. Meanwhile, the EU is moving in the opposite direction, tightening AI Act enforcement on military-adjacent applications.",
+        "zh": "09 *五角大楼 AI 优先* ：“任何合法作战用途”条款是核心争议点——正是这一措辞导致 Anthropic 起诉政府并被标记为“供应链风险”。百万以上人员已在平台上活跃，AI 在国防中的部署已从试点进入生产阶段，规模前所未有。值得注意的是：Google 的参与与其 2018 年内部抗议 Project Maven 形成鲜明对比——不到十年就完成了完全反转。与此同时，欧盟正朝相反方向前进，加强对军事相关应用的 AI 法案执法。"
+      }
+    },
+    {
+      "title": {
+        "en": "ARC-AGI-3 Analysis: GPT-5.5 and Claude Opus 4.7 Score Below 1% on Interactive Reasoning",
+        "zh": "ARC-AGI-3 分析：GPT-5.5 和 Claude Opus 4.7 在交互式推理中得分低于 1%"
+      },
+      "url": "https://the-decoder.com/even-the-latest-ai-models-make-three-systematic-reasoning-errors-arc-agi-3-analysis-shows/",
+      "source": "The Decoder",
+      "time": "2026-05-02",
+      "description": {
+        "en": "The ARC Prize Foundation evaluated 160 replays from GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18%) on ARC-AGI-3 — while humans solved the same tasks easily. Three systematic errors: models fail to form coherent world models, incorrectly map unfamiliar environments to known games, and carry false theories forward even after 'successful' solutions.",
+        "zh": "ARC Prize 基金会对 GPT-5.5（0.43%）和 Claude Opus 4.7（0.18%）的 160 次重放进行评估——人类可轻松解决相同任务。三种系统性错误：模型无法形成连贯的世界模型、错误地将陌生环境映射到已知游戏、即使在“成功”解决后仍延续错误理论。"
+      },
+      "insight": {
+        "en": "10 *ARC-AGI-3 <1%* : The gap between benchmark saturation and genuine reasoning has never been starker. Opus 4.7 just hit 87.6% on SWE-bench — a benchmark measuring real-world coding — yet scores 0.18% on a puzzle a child can solve. The finding that models 'hallucinate' mapping unfamiliar 2D grids to Tetris/Breakout isn't just a bug, it's a window into how these systems reason: pattern-matching to known templates rather than building situation-specific models. This lands in the same week that David Silver's new RL-native startup raised $1.1B — a bet that the LLM paradigm alone won't get us to genuine reasoning.",
+        "zh": "10 *ARC-AGI-3 <1%* ：基准测试饱和与真正推理之间的鸿沟从未如此鲜明。Opus 4.7 刚在衡量真实编码能力的 SWE-bench 上达到 87.6%，却在儿童都能解决的谜题上只得了 0.18%。模型将陌生的二维网格“幻觉”为俄罗斯方块/打砖块的发现不仅是一个 bug，更是理解这些系统推理方式的窗口：模式匹配已知模板而非构建特定情境的模型。这发生在 David Silver 的新 RL 原生初创公司融资 11 亿美元的同一周——押注仅靠 LLM 范式无法实现真正的推理。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mistral Releases Medium 3.5: 128B Dense Model Unifies Chat, Reasoning, and Code with a Reasoning Toggle",
+        "zh": "Mistral 发布 Medium 3.5：128B 稠密模型通过推理开关统一对话、推理和代码"
+      },
+      "url": "https://winbuzzer.com/2026/05/02/mistral-medium-3-5-unified-flagship-chat-reasoning-code-xcxwbn/",
+      "source": "WinBuzzer",
+      "time": "2026-05-02",
+      "description": {
+        "en": "Mistral's first 'merged' flagship: a 128B dense transformer (not MoE) with 256K context, configurable reasoning effort per request, SWE-Bench Verified 77.6%, AIME25 86.3%, and tau-cubed agent benchmark scores that jump 31+ points over the previous reasoning model. Self-hostable on 4 GPUs at FP8.",
+        "zh": "Mistral 首个“融合”旗舰模型：128B 稠密 Transformer（非 MoE），256K 上下文，每次请求可配置推理力度，SWE-Bench Verified 77.6%，AIME25 86.3%，tau-cubed 智能体基准测试比上一推理模型跃升 31+ 分。可在 4 张 GPU 上以 FP8 自托管。"
+      },
+      "insight": {
+        "en": "11 *Mistral Medium 3.5* : The reasoning-effort toggle is the design pattern to watch. Instead of shipping separate 'reasoning' and 'chat' models (OpenAI's o-series vs GPT series), Mistral lets one model switch modes per-request — elegant but unproven at scale. At $1.50/$7.50 per million tokens, it undercuts GPT-4o on input but lands in premium territory on output. The 77.6% SWE-bench score puts it between Devstral 2 (72.2%) and Claude Opus 4.5 territory — solid but not category-defining. The real play may be the Vibe cloud coding agents bundled with the release: Mistral is betting enterprises want vertically integrated model + agent stacks, not just APIs.",
+        "zh": "11 *Mistral Medium 3.5* ：推理力度开关是值得关注的设计模式。相比发布独立的“推理”和“对话”模型（OpenAI 的 o 系列 vs GPT 系列），Mistral 让一个模型按请求切换模式——设计优雅但规模化尚未验证。每百万 token 1.50/7.50 美元的定价在输入端低于 GPT-4o，但输出端属于高端价位。77.6% 的 SWE-bench 得分介于 Devstral 2（72.2%）和 Claude Opus 4.5 之间——扎实但非类别定义性的。真正的看点可能是随版本一起发布的 Vibe 云端编码智能体：Mistral 押注企业想要垂直整合的模型+智能体堆栈，而不仅仅是 API。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Acquires Assured Robot Intelligence, Joining the Humanoid Robotics Race",
+        "zh": "Meta 收购 Assured Robot Intelligence，加入人形机器人竞赛"
+      },
+      "url": "https://www.engadget.com/2162606/meta-acquires-assured-robot-intelligence-humanoid-ai/",
+      "source": "Engadget",
+      "time": "2026-05-02",
+      "description": {
+        "en": "Meta purchased Assured Robot Intelligence (ARI), an AI startup for robot control and self-learning, folding its team into Meta's Superintelligence Labs. The ambition: build licensable robot software — 'Android for robots' — starting with dexterous hand control.",
+        "zh": "Meta 收购了机器人控制和自学习 AI 初创公司 Assured Robot Intelligence（ARI），将其团队并入 Meta 的超级智能实验室。野心：构建可授权的机器人软件——“机器人版 Android”——从灵巧手部控制起步。"
+      },
+      "insight": {
+        "en": "12 *Meta's Robotics Play* : All three major consumer AI labs now have humanoid programs: OpenAI (1X, Figure investment), Google DeepMind (Gemini Robotics), and now Meta (ARI acquisition). But Meta's 'Android for robots' licensing strategy is a fundamentally different bet — platform play, not hardware. The pattern mirrors Oculus/Quest: own the software stack, let others build hardware. With Meta issuing $25B in bonds last week for AI infrastructure, this isn't a side project — it's the next major compute sink after LLM training.",
+        "zh": "12 *Meta 的机器人布局* ：三大消费 AI 实验室现在都有人形机器人项目：OpenAI（投资 1X、Figure）、Google DeepMind（Gemini Robotics）、现在 Meta（收购 ARI）。但 Meta “机器人版 Android”的授权策略是根本不同的赌注——平台策略而非硬件。这一模式与 Oculus/Quest 如出一辙：掌控软件栈，让别人造硬件。Meta 上周发行了 250 亿美元债券用于 AI 基础设施，这不是副业——它是 LLM 训练之后的下一个主要算力投入方向。"
+      }
+    },
+    {
+      "title": {
+        "en": "Oscars Ban AI-Generated Actors and Scripts: 'Humans Must Be at the Center of Creative Process'",
+        "zh": "奥斯卡禁止 AI 生成的演员和剧本：“人类必须处于创作过程的核心”"
+      },
+      "url": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/",
+      "source": "TechCrunch",
+      "time": "2026-05-02",
+      "description": {
+        "en": "The Academy of Motion Picture Arts and Sciences ruled that only performances 'demonstrably performed by humans with consent' and 'human-authored' screenplays are eligible — while AI used elsewhere in filmmaking 'neither helps nor harms' nomination chances, judged case-by-case.",
+        "zh": "美国电影艺术与科学学院裁定，只有“可证明由人类在知情同意下表演”的作品和“人类创作”的剧本才有资格参选——而电影制作其他环节使用的 AI “既不帮助也不损害”提名机会，逐案判断。"
+      },
+      "insight": {
+        "en": "13 *Oscars AI Ban* : The Academy's hedging is the real story: AI for VFX/cinematography is fine, AI for acting/writing is not. This mirrors the emerging global regulatory consensus — regulate the 'creative core' but leave the tool layer alone. It's the same line Hollywood drew during the 2023 strikes, now institutionalized. The case-by-case evaluation clause is deliberately vague: it gives the Academy power to adapt without committing to fixed technical definitions that AI companies would immediately route around. Expect the EU to cite this framework when finalizing its AI creative works directive later this year.",
+        "zh": "13 *奥斯卡 AI 禁令* ：学院的含糊其辞才是真正重点：AI 用于特效/摄影没问题，AI 用于表演/编剧不允许。这映射了正在形成的全球监管共识——管“创意核心”但不管工具层。这与好莱坞在 2023 年罢工中划定的界限一脉相承，现已制度化。逐案评估条款故意写得模糊：赋予学院灵活调整的权力，而不必锁定到 AI 公司会立即绕过的固定技术定义。预计欧盟在年内敲定 AI 创意作品指令时将引用这一框架。"
+      }
+    },
+    {
+      "title": {
+        "en": "Netomi Raises $110M to Deploy Agentic AI Across Enterprise Customer Experience",
+        "zh": "Netomi 融资 1.1 亿美元，在企业客户体验中部署智能体 AI"
+      },
+      "url": "https://theaiworld.org/news/netomi-raises-110m-series-c-for-agentic-ai-cx",
+      "source": "The AI World",
+      "time": "2026-05-02",
+      "description": {
+        "en": "Netomi raised $110M Series C led by Accenture Ventures, with Adobe Ventures and Silver Lake participating. The company processes up to 40,000 requests/second for clients including Delta, DraftKings, NBA, and MetLife — total raised now exceeds $160M.",
+        "zh": "Netomi 完成由 Accenture Ventures 领投的 1.1 亿美元 C 轮融资，Adobe Ventures 和 Silver Lake 参投。公司为 Delta、DraftKings、NBA 和 MetLife 等客户每秒处理高达 40,000 次请求——总融资额现已超过 1.6 亿美元。"
+      },
+      "insight": {
+        "en": "14 *Netomi $110M* : Customer service is where agentic AI first proves ROI at scale — or fails publicly. Netomi's 40,000 req/s throughput number is the metric that matters: real enterprise deployments need latency and reliability benchmarks that frontier model labs don't publish. The Accenture lead is strategic — they're the SI that will actually deploy this across Fortune 500 companies. This round lands amid a wave of agent-funding: Standard Intelligence ($75M for computer-use models), Actively ($45M for AI sales agents), and Parallel ($100M at $2B valuation for agent web infra). The agent stack is being funded layer by layer.",
+        "zh": "14 *Netomi 1.1 亿美元* ：客服是智能体 AI 首先规模化证明 ROI 的领域——或公开失败的领域。Netomi 的每秒 40,000 次请求吞吐量是关键指标：真正的企业部署需要的延迟和可靠性基准，前沿模型实验室是不会公布的。Accenture 领投具有战略意义——它是真正会在财富 500 强企业中部署这一切的系统集成商。这轮融资出现在一波智能体融资浪潮中：Standard Intelligence（7500 万美元，计算机使用模型）、Actively（4500 万美元，AI 销售智能体）和 Parallel（1 亿美元，20 亿美元估值，智能体网络基础设施）。智能体堆栈正在层层融资。"
+      }
+    },
+    {
+      "title": {
+        "en": "Sam Altman Lays Out OpenAI's Three Pillars: Science, Productivity, and 'Personal AGI'",
+        "zh": "Sam Altman 阐述 OpenAI 三大支柱：科学、生产力和“个人 AGI”"
+      },
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/sam-altman-sets-out-openais-three-key-focus-areas-for-next-phase-of-growth/articleshow/130717262.cms",
+      "source": "Economic Times",
+      "time": "2026-05-02",
+      "description": {
+        "en": "In a podcast interview, Sam Altman detailed OpenAI's next-phase priorities: accelerating scientific research (math, physics, Alzheimer's), boosting economic productivity via AI-enabled startups and one-person companies, and building 'personal AGI' — AI that helps individuals create, build, and explore.",
+        "zh": "在一次播客采访中，Sam Altman 详细阐述了 OpenAI 下一阶段的优先事项：加速科学研究（数学、物理、阿尔茨海默症），通过 AI 驱动的初创公司和一人公司提高经济生产力，以及构建“个人 AGI”——帮助个人创造、构建和探索的 AI。"
+      },
+      "insight": {
+        "en": "15 *OpenAI's Three Pillars* : 'Personal AGI' is the most revealing phrase here — it's a pivot away from the corporate AGI narrative toward individual empowerment. This reframes OpenAI's product roadmap: everything from Deep Research to Codex agents becomes a 'personal AGI' feature, not a standalone tool. The economic productivity pillar — 'one-person companies' — echoes the solopreneur narrative that's been building since Claude Code and Cursor made solo developers dramatically more capable. But the timing is also defensive: Altman is articulating a vision while the company faces the Pentagon's 'any lawful use' debate and competitors like Mistral and Anthropic ship on overlapping territory.",
+        "zh": "15 *OpenAI 三大支柱* ：“个人 AGI”是这里最具揭示性的措辞——从企业 AGI 叙事转向个人赋权。这重新框定了 OpenAI 的产品路线图：从 Deep Research 到 Codex 智能体的所有产品都成为“个人 AGI”功能，而非独立工具。经济生产力支柱——“一人公司”——回应了自 Claude Code 和 Cursor 使独立开发者能力大幅提升以来持续发酵的独立创业者叙事。但时机也具有防御性：Altman 在阐述愿景的同时，公司正面临五角大楼“任何合法用途”的争议，Mistral 和 Anthropic 等竞争对手也在重叠领域推出产品。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "May 2, 2026 reveals a day when AI's institutional fault lines came into sharp focus. The Pentagon's 'AI-first' declaration, with Anthropic's conspicuous absence as it sues the government over 'any lawful use' language, isn't just a procurement story — it's the moment AI's ethical divide became operational reality. One side of the industry (Google, OpenAI, Microsoft, Nvidia) has chosen integration with defense; the other (Anthropic) has chosen litigation. There is no middle ground anymore, and every AI company will now be forced to pick a side.\n\nMeanwhile, the ARC-AGI-3 results delivered a humbling data point: the world's most advanced AI systems — GPT-5.5 and Opus 4.7, models that ace SWE-bench — perform below 1% on interactive reasoning puzzles that humans breeze through. This isn't about benchmark numbers; it's about the architecture. The finding that models map unfamiliar grids to 'Tetris' or 'Breakout' reveals that they're not reasoning about novel situations at all — they're routing to the nearest memorized template. That this lands the same week David Silver's RL-native startup raised $1.1B suggests the market is already pricing in a post-LLM paradigm.\n\nThe rest of the day's news fills in the picture: Mistral's Medium 3.5 is a competent but not category-defining model — its real bet is the vertically integrated agent stack. Meta's robotics acquisition signals that all three major AI labs now see humanoids as a compute sink beyond LLMs. The Oscars' AI ban codifies what was already implicit: regulate the creative core, leave the tool layer alone. And the wave of agent-infrastructure funding — Netomi's $110M, Parallel's $100M at $2B valuation, Standard Intelligence's $75M — shows that the post-model gold rush is building the plumbing for autonomous agents.\n\nIf there's a single thread tying today together, it's this: the industry is simultaneously discovering the ceiling of current architectures (ARC-AGI-3) and building the infrastructure for what comes next (agent stacks, robotics platforms, RL-native architectures). The gap between what we can measure and what we can actually do has never been wider — or more expensive to bridge.",
+    "zh": "2026 年 5 月 2 日，AI 的制度性断层线变得异常清晰。五角大楼的“AI 优先”宣言——以及正在起诉政府拒绝“任何合法用途”措辞的 Anthropic 引人注目地缺席——不仅仅是一个采购新闻，这是 AI 伦理分歧变成运营现实的时刻。行业的一边（Google、OpenAI、Microsoft、Nvidia）选择了与国防整合；另一边（Anthropic）选择了诉讼。中间地带已不存在，每家 AI 公司现在都必须选边站队。\n\n与此同时，ARC-AGI-3 的结果给出了一个令人谦卑的数据点：世界上最先进的 AI 系统——GPT-5.5 和 Opus 4.7，在 SWE-bench 上表现出色的模型——在人类轻松完成的交互推理谜题上得分低于 1%。这不仅仅是基准数字的问题；这是架构问题。模型将陌生网格映射为“俄罗斯方块”或“打砖块”的发现揭示了一个事实：它们根本不是在推理新情况——而是在路由到最接近的记忆模板。这与 David Silver 的 RL 原生初创公司同一周融资 11 亿美元相呼应，表明市场已经在定价后 LLM 范式。\n\n当天的其他新闻填补了全貌：Mistral 的 Medium 3.5 是一个有能力但非类别定义性的模型——真正的赌注是垂直整合的智能体堆栈。Meta 的机器人收购表明，三大 AI 实验室现在都将人形机器人视为 LLM 之后的下一个算力投入方向。奥斯卡的 AI 禁令将已经隐含的共识——管创意核心，不管工具层——加以制度化。而智能体基础设施的融资浪潮——Netomi 的 1.1 亿美元、Parallel 的 1 亿美元（20 亿美元估值）、Standard Intelligence 的 7500 万美元——表明后模型时代的淘金热正在为自主智能体铺设管道。\n\n如果说有一条主线贯穿今天，那就是：行业同时发现了当前架构的天花板（ARC-AGI-3），并正在构建下一步所需的基础设施（智能体堆栈、机器人平台、RL 原生架构）。我们能测量什么和能实际做到什么之间的鸿沟，从未如此之宽——弥合它的成本也从未如此之高。"
+  }
+}
