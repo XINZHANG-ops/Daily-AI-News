@@ -128,3 +128,13 @@ Lint complete. Here's a summary of what was done:
 - `index.md`: Updated to 2026-05-04 with accurate counts (unchanged: 6/19/3/68/21)
 - `log.md`: Appended detailed lint entry
 [2026-05-04 01:05:31] Wiki lint complete (exit code 0).
+[main a6c5e7d] wiki: lint 2026-05-04
+ 46 files changed, 748 insertions(+), 107 deletions(-)
+ create mode 100644 wiki/entities/arc-agi-3.md
+ create mode 100644 wiki/entities/automv.md
+ create mode 100644 wiki/entities/mistral-medium-3-5.md
+ create mode 100644 wiki/entities/mova.md
+ create mode 100644 wiki/entities/serena.md
+ create mode 100644 wiki/entities/vibe.md
+ create mode 100644 wiki/ideas/ai-creative-regulation.md
+ create mode 100644 wiki/sources/netomi.md
