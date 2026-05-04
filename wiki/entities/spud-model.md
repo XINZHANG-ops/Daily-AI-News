@@ -2,7 +2,7 @@
 title: "Spud"
 slug: spud-model
 type: model
-last_updated: 2026-04-27
+last_updated: 2026-05-04
 ---
 
 # Spud

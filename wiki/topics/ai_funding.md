@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-05-02
+last_updated: 2026-05-03
 ---
 
 # AI Funding
@@ -56,6 +56,8 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-05-01 | Anthropic closing ~$50B at $900B+ valuation | Surpasses OpenAI's $852B (March 2026); Amazon up to $25B, Google up to $40B; revenue run rate $30B+ |
 | 2026-05-01 | Ineffable Intelligence valued at $5.1B | David Silver's RL startup; $1.1B seed; Nvidia, Google, UK sovereign fund; no product, no revenue |
 | 2026-05-01 | Pentagon AI contracts worth billions | 8-company coalition on classified networks; explicit multi-vendor strategy to prevent lock-in |
+| 2026-05-02 | Netomi raises $110M Series C for agentic CX | Led by Accenture Ventures with Adobe Ventures and Silver Lake; processes 40K req/s for Delta, DraftKings, NBA, MetLife; total raised $160M+ |
+| 2026-05-02 | Agent infrastructure funding wave | Netomi $110M (CX), Standard Intelligence $75M (computer-use models), Actively $45M (AI sales agents), Parallel $100M at $2B valuation (agent web infra) — the agent stack being funded layer by layer |
 
 ## Patterns & Insights
 
@@ -84,6 +86,8 @@ The investment pattern has shifted from model racing to infrastructure and appli
 **April 28: Big Tech commits $65B to Anthropic alone**: Google announced up to $40B investment in Anthropic ($10B minimum, $30B contingent on performance targets), on top of Amazon's up to $25B commitment. Combined with Microsoft's existing OpenAI stake, Big Tech has now committed up to $65B to Anthropic in this funding cycle. The message to the market: the compute moat around foundation models is real, and cloud providers will pay dearly to remain structurally relevant as AI becomes the dominant compute workload. Meanwhile, Ineffable Intelligence — founded by ex-DeepMind's David Silver (AlphaGo co-author) — raised the largest seed round in AI history at $1.1B, with Sequoia, Lightspeed, Nvidia, Google, and DST Global all participating. No product disclosed, but the investor syndicate signals extreme confidence in near-AGI timelines.
 
 **April 30: Compute scarcity as defining constraint**: OpenAI's 10GW milestone (3GW added in 90 days) and Anthropic's $50B raise at $900B valuation both confirm a single reality: compute is now the defining constraint of frontier AI, and the companies that own power generation will dictate who can train next-generation models. The era of "build it and they will come" is over — investors now demand proof of revenue AND proof of energy access.
+
+**May 2: The agent stack being funded layer by layer**: Netomi's $110M Series C (led by Accenture Ventures) for agentic customer experience — processing 40,000 req/s for Delta, DraftKings, NBA, and MetLife — is part of a broader agent-infrastructure funding wave. Simultaneously: Standard Intelligence raised $75M for computer-use models, Actively raised $45M for AI sales agents, and Parallel raised $100M at a $2B valuation for agent web infrastructure. The pattern: post-model gold rush is systematically funding every layer of the autonomous agent stack — from computer interaction to sales to web infrastructure to customer service. The Accenture lead on Netomi is strategic — the systems integrator that will actually deploy this across Fortune 500 companies.
 
 ## Connections
 - [[sources/openai]] — $122B raise, $852B valuation, IPO preparation

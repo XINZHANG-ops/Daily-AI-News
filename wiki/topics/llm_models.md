@@ -1,13 +1,13 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-02
+last_updated: 2026-05-03
 ---
 
 # LLM Models
 
 ## Overview
-May 1, 2026 marks a watershed: the AI industry transitions from "build it and they will come" to "build it, regulate it, fire the builders, and pray the infrastructure holds." Claude Mythos established the precedent of capability-based restrictions, and by May 2026 both Anthropic (Claude Security) and OpenAI (GPT-5.5 Cyber) are racing to build defensive moats around their most dangerous capabilities. NVIDIA's GB300 Blackwell Ultra entering mass production addresses the economics problem that GitHub's 275M weekly commits revealed — 35x lower cost-per-token for agentic AI. Meanwhile, the Senate GUARD Act advancing unanimously signals Washington has found its bipartisan AI issue: child safety with criminal penalties for model conduct.
+May 2, 2026 delivers the most damning empirical critique of the LLM paradigm to date: ARC-AGI-3 results show GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18%) performing below 1% on interactive reasoning puzzles humans solve effortlessly — while these same models ace SWE-bench at 80%+. The finding that models "hallucinate" mapping unfamiliar 2D grids to Tetris/Breakout reveals they're not reasoning about novel situations at all — they're routing to the nearest memorized template. Mistral Medium 3.5 enters the fray with a reasoning-effort toggle (one model switching modes per-request instead of separate chat/reasoning variants), and the Pentagon's "AI-first" declaration scales military AI deployment to 1M+ defense personnel. The industry is simultaneously discovering the ceiling of current architectures and building the infrastructure for what comes next. Claude Mythos established the precedent of capability-based restrictions, and by May 2026 both Anthropic (Claude Security) and OpenAI (GPT-5.5 Cyber) are racing to build defensive moats around their most dangerous capabilities. NVIDIA's GB300 Blackwell Ultra entering mass production addresses the economics problem that GitHub's 275M weekly commits revealed — 35x lower cost-per-token for agentic AI. Meanwhile, the Senate GUARD Act advancing unanimously signals Washington has found its bipartisan AI issue: child safety with criminal penalties for model conduct.
 
 ## Evolution
 
@@ -48,6 +48,8 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | Date | Event | Significance |
 |------|-------|-------------|
 | 2026-03-17 | GPT-5.4 Mini/Nano release | Near-top-tier performance at accessible costs |
+| 2026-05-02 | ARC-AGI-3 results: GPT-5.5 0.43%, Opus 4.7 0.18% | Models route unfamiliar situations to memorized templates (hallucinating Tetris from grids); strongest evidence yet that LLMs don't reason — they retrieve |
+| 2026-05-02 | Mistral Medium 3.5 released | 128B dense model with reasoning-effort toggle per request; SWE-Bench 77.6%, AIME25 86.3%; one model for chat+reasoning+code instead of separate variants |
 | 2026-05-02 | OpenAI open-sources Symphony for Codex orchestration | "Every task gets an agent" model formalized; 15K+ stars in days; 500% PR increase at OpenAI internal teams |
 | 2026-05-02 | context-mode MCP server trends (11.9K stars) | 98% context reduction across 12+ platforms; context optimization becomes critical agent infrastructure |
 | 2026-05-02 | andrej-karpathy-skills hits 105K stars | Single CLAUDE.md file with 4 principles for agent behavior; "configuration over code" approach to agent quality |
@@ -94,6 +96,10 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 
 ## Patterns & Insights
 
+**The reasoning-revelation gap**: ARC-AGI-3 results expose a fundamental truth: models that score 80%+ on SWE-bench score <1% on puzzles children can solve. The finding that models hallucinate Tetris/Breakout from unfamiliar grids reveals the architecture limitation — these systems pattern-match to known templates rather than constructing situation-specific models. Every new benchmark designed to test genuine reasoning (not memorization) exposes the same ceiling.
+
+**The reasoning toggle design pattern**: Mistral Medium 3.5's per-request reasoning-effort toggle is an architectural alternative to shipping separate models for chat vs reasoning. If this pattern proves effective at scale, it could obsolete the multi-model strategy OpenAI (o-series vs GPT) and Anthropic (Opus vs Claude Security) are pursuing.
+
 The "stealth launch" pattern has emerged as a major trend — Xiaomi's MiMo-V2-Pro tested anonymously as "Hunter Alpha" on OpenRouter before formal reveal, allowing unbiased benchmark data collection before brand expectations distorted assessment. This approach is being adopted more widely.
 
 The capability-safety tension has reached unprecedented levels. Claude Mythos represents a new category: models restricted not because humans might misuse them, but because the model itself could discover vulnerabilities that outpace defender response. This has triggered government-level concern, with VP Vance and Treasury Secretary convening emergency calls with tech CEOs.
@@ -124,9 +130,13 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 
 **April 30: The Bifurcation Week Concludes**: OpenAI secures 10GW of US compute (3GW added in 90 days), surpassing Stargate targets years early — a physical energy infrastructure moat. Anthropic eyes $50B raise at $900B valuation, revenue run rate nearing $40B, doubling from $380B valuation in under three months. DeepSeek V4 Flash launches at $0.14/$0.28 per million tokens — 100x cheaper than frontier models while scoring 78% on SWE-bench. Qwen 3.6-35B-A3B scores 73.4% SWE-bench with just 3B active parameters on an RTX 4090 — frontier-grade coding on consumer hardware. The week ends with a clear bifurcation: premium reasoning (Opus, GPT-5.5) vs commodity inference (DeepSeek, Qwen, Kimi) — and commodity inference getting frontier-level scores.
 
-**May 1: The Defensive Pivot and Governance Reality**: Anthropic launches Claude Security (powered by Opus 4.7) as a native security scanning capability inside Claude Code — if you build AI that finds vulnerabilities, you must build one that fixes them. Partnering with CrowdStrike, Palo Alto, and Wiz shows Anthropic is becoming the intelligence layer inside existing security stacks rather than replacing them. OpenAI'sGPT-5.5 Cyber restrictions (after mocking Anthropic for the same with Mythos) reveal that liability now overrides competitive posturing — once the White House opposed Mythos expansion and NSA probed Microsoft with it, every frontier lab realized unrestricted cyber-AI is a legal grenade. NVIDIA's GB300 Blackwell Ultra (35x lower cost/token) directly addresses the economics exposed by GitHub's 275M commits/week — if agent-scale coding is 1/35th the cost, the $49/agent/month GitHub Copilot pricing starts looking expensive.
+**May 1: The Defensive Pivot and Governance Reality**: Anthropic launches Claude Security (powered by Opus 4.7) as a native security scanning capability inside Claude Code — if you build AI that finds vulnerabilities, you must build one that fixes them. Partnering with CrowdStrike, Palo Alto, and Wiz shows Anthropic is becoming the intelligence layer inside existing security stacks rather than replacing them. OpenAI's GPT-5.5 Cyber restrictions (after mocking Anthropic for the same with Mythos) reveal that liability now overrides competitive posturing — once the White House opposed Mythos expansion and NSA probed Microsoft with it, every frontier lab realized unrestricted cyber-AI is a legal grenade. NVIDIA's GB300 Blackwell Ultra (35x lower cost/token) directly addresses the economics exposed by GitHub's 275M commits/week — if agent-scale coding is 1/35th the cost, the $49/agent/month GitHub Copilot pricing starts looking expensive.
+
+**May 2: The Reasoning Ceiling Exposed and Design Patterns Evolve**: ARC-AGI-3 results deliver the most damning empirical critique of the LLM paradigm to date. GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18%) — models that dominate SWE-bench — score below 1% on interactive reasoning puzzles humans solve effortlessly. The three systematic errors identified (failure to form world models, incorrect environment mapping to known games, carrying false theories forward) reveal LLMs don't reason about novel situations — they pattern-match to the nearest memorized template. This lands the same week David Silver's RL-native startup raised $1.1B, and the market is already pricing in a post-LLM paradigm. Meanwhile, Mistral Medium 3.5 introduces a design pattern worth watching: one 128B dense model with a reasoning-effort toggle per request, eliminating the need for separate chat/reasoning model variants. The 77.6% SWE-bench score is solid but not category-defining; the real bet is on the vertically integrated Vibe cloud coding agents bundled with the release.
 
 ## Connections
+- [[entities/arc-agi-3]] — The benchmark that exposed the LLM reasoning ceiling: GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human performance
+- [[entities/mistral-medium-3-5]] — 128B dense model with reasoning-effort toggle; one-model-for-all design pattern challenges the multi-model approach
 - [[entities/symphony]] — OpenAI's Codex orchestration spec formalizes "agent-as-employee" model; 15K+ stars signals industry convergence
 - [[entities/context-mode]] — 98% context reduction MCP server; solves the noise problem that continuous agent execution creates
 - [[sources/anthropic]] — Claude Mythos developed and leaked by Anthropic; Opus 4.7 release; Project Glasswing

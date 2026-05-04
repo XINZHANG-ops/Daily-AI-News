@@ -1,13 +1,13 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-02
+last_updated: 2026-05-03
 ---
 
 # GitHub Trends
 
 ## Overview
-May 1, 2026 continues the agent framework consolidation pattern. Three notable new repos: harmonist (portable agent orchestration with mechanical protocol enforcement, 186 specialist agents), CoreCoder (~1,400 lines Python inspired by Claude Code, 652 stars), and open-agent-sdk-go (lightweight Go SDK for AI agents with MCP support, 151 stars). The throughline: the ecosystem is converging on standard patterns for agent orchestration, and the "zero third-party dependencies" philosophy is gaining traction as teams seek to minimize supply chain risk.
+May 2, 2026 brings three notable repos spanning AI video generation and agent infrastructure. MOVA (972 stars) is a foundation model for synchronized video-audio generation in a single pass, breaking the "silent era" of open-source video models. Serena (23.8K stars) is a powerful MCP toolkit providing semantic code retrieval and editing across 40+ languages, operating at the symbol level via LSP servers — "the IDE for your coding agent." AutoMV (104 stars) is a training-free multi-agent system that auto-generates full music videos from songs at $10-20 per MV using Screenwriter, Director, and Verifier agents.
 
 ## Evolution
 
@@ -63,7 +63,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | MervinPraison/PraisonAI | 7K+ | 24/7 AI workforce in 5 lines of code; memory, RAG, 100+ LLMs |
 | aaif-goose/goose | new | Open-source extensible AI agent — install, execute, edit, test with any LLM |
 | msitarzewski/agency-agents | new | Complete AI agency with specialized expert agents (frontend wizards, Reddit ninjas, etc.) |
-| langchain-ai/deepagents | new | Agent harness with LangChain/LangGraph, planning tools, subagent spawning |
+| oraios/serena | 23.8K+ | MCP semantic code toolkit for 40+ languages; symbol-level editing via LSP |
+| OpenMOSS/MOVA | 972+ | Foundation model for synchronized video-audio generation in a single pass |
+| multimodal-art-projection/AutoMV | 104+ | Multi-agent music video generator; ~$10-20 per MV |
 
 ## Patterns & Insights
 
@@ -95,10 +97,15 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **May 1: Agent orchestration frameworks with zero third-party dependencies**: Three new repos trending — harmonist (186 specialist agents across 16 categories, mechanical protocol enforcement, zero third-party deps, 949 stars), CoreCoder (~1,400 lines Python inspired by Claude Code, parallel tool execution, 3-layer context compression, 652 stars), and open-agent-sdk-go (lightweight Go SDK, 32 built-in tools, MCP support, session management, in-process agent loop, 151 stars). The "zero third-party dependencies" philosophy signals teams are seeking to minimize supply chain risk after the MCP vulnerability and npm compromises.
 
+**May 2: Semantic code infrastructure and AI video generation**: Three repos trending. OpenMOSS/MOVA (972 stars) — foundational model for synchronized video-audio generation in a single inference pass, breaking the "silent era" of open-source video models with multilingual lip-sync and ComfyUI integration. oraios/serena (23.8K stars) — MCP toolkit for semantic code retrieval, editing, and refactoring across 40+ languages; operates at the symbol level rather than line numbers via LSP language servers, described as "the IDE for your coding agent." multimodal-art-projection/AutoMV (104 stars) — training-free multi-agent music video generator using Screenwriter, Director, and Verifier agents with character consistency banks and beat-aligned editing at ~$10-20 per MV.
+
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
 - [[entities/claw-code]] — Clean-room rewrite, 181K+ stars
 - [[entities/mcp-protocol]] — 150M+ installs, becoming foundational infrastructure; context-mode is an MCP tool optimizing MCP-based workflows
+- [[entities/serena]] — MCP toolkit providing semantic code operations at symbol level; 23.8K stars; "IDE for your coding agent"
+- [[entities/mova]] — Synchronized video-audio generation foundation model; breaks open-source "silent era"
+- [[entities/automv]] — Multi-agent music video generation at $10-20 per MV
 - [[entities/openclaw]] — 302K stars, fastest-growing open-source project
 - [[entities/claude-design]] — Direct challenge to Figma spawning design skills ecosystem
 - [[entities/openhands-sdk]] — Modular SDK for building coding agents; 3.2K stars

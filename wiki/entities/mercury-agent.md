@@ -2,7 +2,7 @@
 title: "Mercury Agent"
 slug: mercury-agent
 type: framework
-last_updated: 2026-04-23
+last_updated: 2026-05-04
 ---
 
 # Mercury Agent

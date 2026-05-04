@@ -2,7 +2,7 @@
 title: "cc-design"
 slug: cc-design
 type: framework
-last_updated: 2026-04-23
+last_updated: 2026-05-04
 ---
 
 # cc-design

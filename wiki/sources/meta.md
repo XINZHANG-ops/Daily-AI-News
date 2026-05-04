@@ -1,7 +1,7 @@
 ---
 title: "Meta"
 slug: meta
-last_updated: 2026-05-01
+last_updated: 2026-05-03
 ---
 
 # Meta
@@ -26,6 +26,7 @@ last_updated: 2026-05-01
 | 2026-05-01 | Meta announces 8,000 layoffs starting May 20 | 10% workforce cut; 6,000 open roles abandoned; "50-100 person tasks now need 10" |
 | 2026-05-01 | Meta raises capex guidance to $125-145B | Up from $115-135B; CFO Susan Li admits she "doesn't really know" ideal headcount |
 | 2026-05-01 | Meta acquires humanoid robotics startup ARI | Assured Robot Intelligence team (led by Xiaolong Wang and Lerrel Pinto) joins Superintelligence Labs under Yann LeCun; embodied AI bet alongside digital MCI surveillance |
+| 2026-05-02 | Meta's robotics strategy detailed: "Android for robots" | Licensing model for robot software (not hardware); mirrors Oculus/Quest playbook — own the software stack, let others build hardware; $25B bond issuance for AI infrastructure funds both LLM training and robotics as next compute sink |
 
 ## Key Relationships
 - **OpenAI**: Competition in AI assistant market and coding agents.

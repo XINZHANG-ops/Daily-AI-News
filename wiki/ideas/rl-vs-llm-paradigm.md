@@ -1,7 +1,7 @@
 ---
 title: "RL vs LLM Paradigm"
 slug: rl-vs-llm-paradigm
-last_updated: 2026-05-02
+last_updated: 2026-05-03
 ---
 
 # RL vs LLM Paradigm
@@ -14,6 +14,7 @@ David Silver's $1.1B raise for Ineffable Intelligence at a $5.1B valuation is a 
 - [[sources/nvidia]] — Participated in the Ineffable round while also being in the Pentagon deals and supplying chips to every LLM company — hedging across paradigms
 - [[topics/llm_models]] — The LLM scaling paradigm shows signs of strain: benchmark saturation (ARC-AGI-3 <1% for all frontier models), capability regression (Claude Code quality issues), and commodity inference achieving frontier scores (DeepSeek V4 Flash at 78% SWE-bench for $0.14/M)
 - [[ideas/commodity-inference-fragmentation]] — The bifurcation between premium reasoning and commodity inference strengthens Silver's argument: if commodity models can match frontier models at 1/100th the cost, the LLM scaling curve may be flattening
+- [[entities/arc-agi-3]] — ARC-AGI-3 results (GPT-5.5 0.43%, Opus 4.7 0.18%) are the strongest empirical validation of Silver's thesis: the finding that models route unfamiliar situations to memorized templates (mapping grids to "Tetris") reveals LLMs aren't reasoning — they're retrieving; this is the fossil fuel problem made measurable
 
 ## Implications
 If Silver is right, the tens of billions flowing into LLM compute are building on a depleting resource — human-generated training data — while RL-based systems that learn from experience could scale indefinitely. Nvidia's participation in the round (while supplying every LLM company) shows the chipmaker is hedging: compute demand shifts but doesn't disappear if the paradigm changes. The UK sovereign AI fund's involvement signals the British government is betting the next breakthrough might come from London, not San Francisco. For the military AI divide, Silver's thesis introduces a third possibility: both military deployment and enterprise safety are optimizing for a paradigm (LLMs) that RL will render obsolete, making the entire debate about which track is "responsible" moot.

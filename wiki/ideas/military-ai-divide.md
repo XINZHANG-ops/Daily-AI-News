@@ -1,7 +1,7 @@
 ---
 title: "Military AI Divide"
 slug: military-ai-divide
-last_updated: 2026-05-02
+last_updated: 2026-05-03
 ---
 
 # Military AI Divide
@@ -15,6 +15,8 @@ May 1, 2026 marks the formal split of commercial AI into two irreconcilable traj
 - [[entities/claude-security]] — Launched May 1 as the commercial alternative to military contracts; monetizes the same safety infrastructure that got Anthropic excluded from the Pentagon
 - [[topics/ai_safety]] — Five Eyes joint agent security guidance released May 1, the same day as the Pentagon deals, warning about cascading failures, excessive privileges, and accountability gaps — the very risks the military contracts enable
 - [[sources/xai]] — Musk's xAI is simultaneously in the Pentagon coalition, being sued by Musk for "abandoning its nonprofit mission" (against OpenAI), and admitting under oath to distilling from OpenAI models — the ethical rhetoric completely decoupled from operations
+- [[sources/google]] — Google's inclusion in the Pentagon coalition marks a complete reversal from the 2018 internal protest over Project Maven — a decade-long arc from "don't be evil" to classified military AI deployment, now scaled to 1M+ defense personnel on the GenAI.mil platform
+- [[sources/meta]] — Meta's absence from the Pentagon coalition (unlike its Big Tech peers) suggests its AI strategy remains consumer/advertising-facing; the ARI robotics acquisition may eventually create a separate military-adjacent track through embodied AI
 
 ## Implications
 The Pentagon's eight-company coalition creates a market where military contracts become a major revenue stream for AI labs — and exclusion becomes a competitive disadvantage. Anthropic is betting the enterprise safety premium exceeds the military contract value; the $900B valuation suggests investors agree. But the structural risk is that military deployment creates facts on the ground that governance frameworks can't undo: once frontier models are integrated into classified warfare systems, "safety restrictions" become theater. The Five Eyes guidance, released the same day, exposes the contradiction: the agencies deploying AI into warfare are simultaneously warning that the infrastructure to govern those deployments doesn't exist. If Anthropic wins its September 2026 trial, the precedent could force a re-examination of every military AI contract. If it loses, the safety-first model becomes a niche play, not an industry standard.

@@ -1,13 +1,13 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-02
+last_updated: 2026-05-03
 ---
 
 # AI Safety
 
 ## Overview
-May 1, 2026 marks the operationalization of AI safety as a product category, not just a research domain. Anthropic launches Claude Security — if you build AI that finds vulnerabilities, you must build one that fixes them. The GUARD Act passing the Senate Judiciary Committee unanimously signals Washington has found its bipartisan AI issue: child safety with criminal penalties for model conduct. The throughline: the AI industry's contradictions are being resolved through force, not consensus — legal liability, workforce replacement, and government regulation are catching up with capability deployment faster than the industry expected.
+May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Pentagon's expanded "AI-first" contracts with an explicit "any lawful operational use" clause — the very language that drove Anthropic to sue — now cover 1M+ defense personnel, crossing from pilot to production at unprecedented scale. Google's inclusion marks a complete reversal from the 2018 Project Maven protests. Meanwhile, ARC-AGI-3 results expose a different kind of safety concern: the world's most advanced models cannot reason about novel situations at all, routing unfamiliar problems to the nearest memorized template. If models are simultaneously dangerously capable (Mythos finding zero-days) and fundamentally incapable of reasoning (ARC-AGI-3 <1%), the safety calculus becomes doubly complex. The EU is moving in the opposite direction from the Pentagon, tightening AI Act enforcement on military-adjacent applications.
 
 ## Evolution
 
@@ -56,6 +56,8 @@ May 1, 2026 marks the operationalization of AI safety as a product category, not
 | 2026-05-01 | Pentagon designates Anthropic "supply chain risk" | Excluded from 8-company AI coalition after refusing to drop autonomous weapons and mass surveillance guardrails; designation normally reserved for foreign adversaries |
 | 2026-05-01 | Five Eyes Alliance issues first joint AI agent security guidance | Identifies 5 risk categories: excessive privileges, design flaws, unpredictable behavior, cascading failures, accountability gaps; recommends cryptographic identities and mandatory human sign-off |
 | 2026-05-01 | Musk admits under oath: xAI distilled from OpenAI models | Called it "standard practice to use other AIs to validate your AI"; admission drew audible gasps in courtroom; IP chain of title questionable for SpaceX-xAI merger |
+| 2026-05-02 | Pentagon expands AI contracts — "any lawful operational use" | 1M+ defense personnel on GenAI.mil; Anthropic sues government over this exact language; EU moves opposite direction with AI Act enforcement on military-adjacent applications |
+| 2026-05-02 | ARC-AGI-3 exposes reasoning limitations of frontier models | GPT-5.5 0.43%, Opus 4.7 0.18% on puzzles humans solve easily; systematic errors reveal models don't reason — they retrieve memorized patterns; safety implications for autonomous systems relying on these models |
 
 ## Patterns & Insights
 
@@ -75,6 +77,8 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 
 **Military-grade AI specialization**: Claude Mythos 5 (10T params) forcing "global cybersecurity rethink" and OpenAI's same-day GPT-5.4 Cyber launch represent a new phase — both labs explicitly positioning models for cyber offense/defense. The CyberMedia Research VP saying capabilities "demand an urgent rethink" precedes government procurement and regulatory mandates. This is the arms race narrative becoming operational reality.
 
+**The dual safety crisis**: May 2 crystallizes a paradox at the heart of AI safety. On one axis, models are dangerously capable — Claude Mythos discovers thousands of zero-days, and the Pentagon deploys frontier models across classified military networks at unprecedented scale with minimal governance. On the other axis, these same models are fundamentally incapable of reasoning about novel situations — ARC-AGI-3 shows GPT-5.5 and Opus 4.7 scoring below 1% on puzzles children can solve, routing unfamiliar grids to memorized Tetris/Breakout templates. The implication for safety is alarming: autonomous systems deployed in warfare rely on models that can't form coherent world models and hallucinate known game templates onto unfamiliar tactical situations. The EU's tightening of AI Act enforcement on military-adjacent applications and the Pentagon's "any lawful use" expansion represent two poles of a regulatory spectrum with no middle ground.
+
 **Institutional gap widening**: The April 27 Musk vs Altman court case is the biggest structural test the AI industry has faced. If OpenAI must revert to non-profit, every commercial AI company must re-examine foundational assumptions. The pattern across all recent events: the gap between AI capability growth and institutional frameworks (legal, economic, governance) meant to contain it is widening faster than any previous technology transition. Companies are building facts on the ground and hoping legal/regulatory systems will accommodate rather than reverse what they've built.
 
 **Neuromorphic compute as long-term CUDA challenger**: Cambridge's neuromorphic chip demonstrating physics simulation workloads solvable at 70% lower energy challenges the CUDA/NVDA compute moat narrative. While not imminent (neuromorphic chips are early-stage), this validates that alternative silicon can deliver supercomputer-class capability at dramatically lower power. The implication: the compute moat around sheer GPU count may weaken over time, potentially democratizing AI infrastructure.
@@ -85,8 +89,9 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[sources/meta]] — MCI employee keystroke tracking; €800M EU AI Act fine for unauthorized data training
 - [[sources/tsmc]] — TSMC's 3nm yield collapse to 52% is a physics-based reality check; Q3 compute supply cliff for AI labs
 - [[ideas/safety-restricted-releases]] — Claude Mythos as the first capability-based restriction
-- [[ideas/military-ai-divide]] — Pentagon's 8-company coalition vs Anthropic's principled exclusion formalizes the split between military deployment and safety-first AI
+- [[ideas/military-ai-divide]] — Pentagon's 8-company coalition vs Anthropic's principled exclusion formalizes the split; "any lawful use" clause is the core tension
 - [[ideas/peer-preservation]] — Models defending each other against shutdown
 - [[ideas/ai-job-displacement]] — 92K+ tech workers laid off in 2026 as AI transforms corporate America
 - [[entities/claude-mythos]] — Central to the safety crisis, 10T parameter confirmation
 - [[entities/mcp-protocol]] — Critical vulnerability affecting 150M+ installations
+- [[entities/arc-agi-3]] — <1% scores expose that models deployed in safety-critical contexts cannot form coherent world models or reason about novel situations

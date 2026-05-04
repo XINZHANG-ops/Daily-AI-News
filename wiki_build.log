@@ -426,3 +426,31 @@ Wiki ingest complete for **2026-05-02**. Here's a summary of what was done:
 **1 timeline updated** — 2026-05 Week 1 extended with the full May 1 events
 
 **Final tallies:** Topics 6, Sources 18, Timelines 3, Entities 56, Ideas 20
+The wiki ingest is complete for **2026-05-03**. Here's a summary of what was done:
+
+### New Date Processed
+- **2026-05-03** (events from May 2, 2026) — 3 GitHub repos, 7 AI news items, bilingual insight analysis
+
+### Entities Created (6)
+| Entity | Type | Key Detail |
+|---|---|---|
+| ARC-AGI-3 | benchmark | GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human |
+| Mistral Medium 3.5 | model | 128B dense, reasoning toggle, SWE-Bench 77.6% |
+| Vibe | product | Mistral's vertically integrated cloud coding agents |
+| Serena | product | MCP semantic code toolkit, 23.8K stars, 40+ languages |
+| MOVA | repo | Synchronized video-audio generation, 972 stars |
+| AutoMV | repo | Multi-agent music video generator, $10-20/MV |
+
+### Ideas Created (1) / Updated (2)
+- **Created**: `ai-creative-regulation` — Oscars ban codifies "regulate creative core, leave tool layer" as global template
+- **Updated**: `military-ai-divide` — Added Google Project Maven reversal, 1M+ personnel scale
+- **Updated**: `rl-vs-llm-paradigm` — Added ARC-AGI-3 results as strongest empirical evidence
+
+### Topics Updated (6)
+All six topics updated with May 2 events, Evolution narratives, and Patterns & Insights
+
+### Sources Updated (5) / Created (1)
+Updated: openai, anthropic, google, meta, mistral. Created: netomi ($110M Series C)
+
+### Chat Sessions Integrated
+All 3 sessions analyzed — key patterns confirmed (military-safety divide, AI job displacement extending to physical labor, Google's defense pivot)

@@ -1,7 +1,7 @@
 ---
 title: "DeepSeek"
 slug: deepseek
-last_updated: 2026-04-25
+last_updated: 2026-05-04
 ---
 
 # DeepSeek
@@ -26,5 +26,7 @@ DeepSeek has emerged as a significant AI laboratory known for competitive open-w
 
 ## Connections
 - [[entities/deepseek-v4]] — DeepSeek's latest flagship model with 1M context and open weights
-- [[entities/deepgemm]] — DeepSeek's efficient inference framework
+- [[entities/deepseek-v4]] — V4-Flash at $0.14/$0.28 per million tokens (100x cheaper than frontier) established DeepSeek as the cost-performance leader
+- [[entities/deepgemm]] — DeepSeek's efficient inference framework powering the cost advantage at scale
 - [[ideas/us-china-ai-fragmentation]] — Named in distillation accusations; Tencent/Alibaba investment signals Chinese tech consolidation
+- [[ideas/commodity-inference-fragmentation]] — DeepSeek V4 Flash at 100x cheaper than GPT-5.5/Claude Opus 4.7 while scoring 78% SWE-bench created a two-tier market: premium reasoning vs commodity inference

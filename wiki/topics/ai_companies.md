@@ -1,13 +1,13 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-02
+last_updated: 2026-05-03
 ---
 
 # AI Companies
 
 ## Overview
-May 1, 2026 crystallizes the AI industry's contradictions: Meta cuts 8,000 jobs while spending $125-145B on AI infrastructure — Zuckerberg's admission that "50-100 person tasks now need 10" is the most explicit corporate statement that AI is replacing headcount, not augmenting it. Microsoft responds with E7 at $99/user/month — a pricing architecture designed to make AI governance inseparable from Microsoft's identity and security stack. Anthropic and OpenAI race to build defensive moats around their most dangerous capabilities. The Senate GUARD Act advancing unanimously signals Washington has found its bipartisan AI issue: child safety with criminal penalties for model conduct. The throughline: the AI industry is in "build it, regulate it, fire the builders, and pray the infrastructure holds" phase.
+May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. The Pentagon expands its "AI-first" military contracts with 8 companies (Google, OpenAI, Amazon, Microsoft, SpaceX, Oracle, Nvidia, Reflection) — with Anthropic conspicuously absent as it sues the government over "any lawful use" language. Sam Altman articulates OpenAI's three-pillar strategy (science, productivity, "personal AGI") as a defensive vision while competitors ship on overlapping territory. Meta officially joins the humanoid robotics race with the ARI acquisition — all three major consumer AI labs now have humanoid programs. Mistral pivots from API provider to integrated platform with Vibe coding agents bundled with Medium 3.5. The Oscars ban AI-generated actors and scripts, codifying the "regulate the creative core, leave the tool layer alone" framework. There is no middle ground anymore: every AI company must now pick a side on defense, on platform strategy, and on creative regulation.
 
 ## Evolution
 
@@ -87,6 +87,11 @@ May 1, 2026 crystallizes the AI industry's contradictions: Meta cuts 8,000 jobs 
 | 2026-05-01 | Senate GUARD Act passes Judiciary Committee unanimously | Criminal penalties for AI chatbot-minor harmful conduct; age verification requirements |
 | 2026-05-01 | Google Gemini rolls out to ~4M GM vehicles | Replacing Google Assistant in cars with vehicle-specific AI concierge |
 | 2026-05-01 | Pentagon signs AI deals with 8 tech giants — Anthropic excluded | OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX/xAI, Oracle, Reflection AI deploy on classified networks; Anthropic labeled "supply chain risk" for refusing to drop safety guardrails |
+| 2026-05-02 | Pentagon expands AI contracts with "any lawful operational use" clause | 1M+ defense personnel on GenAI.mil platform; Google's inclusion is complete reversal from 2018 Project Maven protests |
+| 2026-05-02 | Sam Altman lays out OpenAI's three pillars | Science acceleration, economic productivity via "one-person companies," and "personal AGI" — pivot from corporate AGI narrative to individual empowerment |
+| 2026-05-02 | Meta acquires ARI, joins humanoid robotics race | All three major consumer AI labs (OpenAI/1X+Figure, Google/Gemini Robotics, Meta/ARI) now have humanoid programs; Meta's "Android for robots" licensing strategy mirrors Oculus/Quest playbook |
+| 2026-05-02 | Mistral releases Medium 3.5 + Vibe coding agents | Pivot from API provider to vertically integrated model + agent platform; reasoning toggle design pattern |
+| 2026-05-02 | Oscars ban AI-generated actors and scripts | Codifies "regulate creative core, leave tool layer alone" framework; mirrors 2023 strike settlement now institutionalized |
 | 2026-05-01 | Anthropic targets ~$900B valuation in $50B raise | Amazon up to $25B, Google up to $40B committed; revenue run rate surpasses $30B; valuation nearly 2.4x February's $380B |
 | 2026-05-01 | Meta acquires humanoid robotics startup ARI | Team led by Xiaolong Wang and Lerrel Pinto joins Superintelligence Labs under Yann LeCun; embodied AI bet alongside digital surveillance |
 | 2026-05-01 | Five Eyes issues first joint guidance on AI agent security | US, UK, Canada, Australia, NZ warn on excessive privileges, cascading failures, accountability gaps — same day as Pentagon deployment |
@@ -109,6 +114,8 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 
 **The old guard pivots to survival**: April 30 reveals a pattern — Google pivots to defense revenue (Pentagon deal), Apple pivots to outsourcing model development (Gemini-powered Siri). Neither company can afford to build frontier models from scratch anymore, and both are making explicit strategic choices that reject self-reliance. This is different from "partnership" — it's acknowledgment that the model race has passed them by.
 
+**May 2: The industry's fault lines become operational**: The Pentagon's expanded "any lawful operational use" contracts and Anthropic's continued exclusion formalize the military-safety split as a permanent market structure. Google's presence in the coalition — a complete reversal from the 2018 Project Maven protests — shows the arc of industry capitulation to defense revenue. Sam Altman's "personal AGI" framing is a strategic pivot away from corporate AGI toward individual empowerment, reframing every OpenAI product as a "personal AGI" feature. Meta's ARI acquisition completes the trio of major labs betting on humanoid robotics as the next compute sink after LLMs, with a licensing strategy ("Android for robots") that's fundamentally different from OpenAI's investment approach. Mistral's Vibe launch signals the European lab is following Anthropic's Claude Code playbook: use coding agents to drive enterprise model adoption. The Oscars ban institutionalizes the creative regulation framework that will likely spread globally.
+
 **May 1: The governance moment arrives**: The GUARD Act's unanimous committee passage signals AI child safety is the one bipartisan issue that can move in a polarized Senate. The bill's criminal penalty provision — holding companies liable for chatbot conduct — is a structural shift from Section 230 that shielded social media. If it passes, it creates a template for broader AI liability: companies become responsible for what their models do, not just what users do with them. Meta's MCI employee surveillance initiative (tracking keystrokes/mouse to train AI that replaces the workers being tracked) compounds the dystopian framing: simultaneously firing workers and harvesting their behavioral data to train the AI systems replacing them.
 
 **Microsoft's enterprise AI lock-in**: The E7 bundle at $99/month is not a product launch — it's a pricing architecture designed to make AI governance inseparable from Microsoft's identity and security stack. By bundling Agent 365 ($15/month separately) with E7, Microsoft ensures any enterprise wanting structured AI agent governance must buy the full ecosystem. Copilot Cowork research preview (built with Anthropic/Claude) reveals Microsoft is partnering with its biggest AI rival for background workflow orchestration — even Microsoft recognizes it can't win the agentic coding war alone.
@@ -127,3 +134,6 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[entities/claude-security]] — Anthropic's defensive pivot: if Mythos finds vulnerabilities, Claude Security patches them
 - [[entities/gb300]] — NVIDIA Blackwell Ultra enables 35x cost reduction for agentic AI; directly addresses GitHub commit economics
 - [[entities/guard-act]] — Senate GUARD Act creates criminal liability for AI chatbot conduct; shifts from Section 230 framework
+- [[entities/ari]] — Meta's humanoid robotics acquisition; "Android for robots" licensing strategy; all three major labs now in humanoid race
+- [[entities/vibe]] — Mistral's vertically integrated coding agents; signals European lab following Claude Code growth strategy
+- [[ideas/ai-creative-regulation]] — Oscars ban codifies "regulate creative core, leave tool layer" framework that is becoming global regulatory template

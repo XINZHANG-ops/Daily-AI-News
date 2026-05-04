@@ -1,5 +1,58 @@
 # Wiki Log
 
+## [2026-05-04] wiki lint | comprehensive health check
+
+**Pass 1 — Structural fixes:**
+- Verified all 117 pages listed in index.md have corresponding .md files (6 topics, 19 sources, 3 timelines, 68 entities, 21 ideas)
+- Verified no unlisted .md files exist in any section
+- Verified all 803 wikilinks across content pages resolve correctly (broken links only in WIKI.md templates and log.md historical fix records)
+- Verified no orphan pages: all 117 content pages have at least one inbound link
+- Verified no companies or people in entities/: all 68 entity types are valid (model, product, protocol, framework, repo, benchmark, legislation)
+
+**Pass 2 — Wrong & duplicate information fixed:**
+- Fixed `timelines/2026-03.md`: Removed bare wikilinks at paragraph ends (now annotated in narrative); corrected "Gemini 3.1 Flash Live" → "Gemini 3.1 Flash TTS" in Connections; updated last_updated from 2026-04-16 → 2026-05-04
+- Updated `entities/gpt-5.5.md`: Added ARC-AGI-3 0.43% score, Pentagon IL6/IL7 deployment, GPT-5.5 Cyber May 1 restrictions, and Symphony orchestration connections; last_updated 2026-04-27 → 2026-05-04
+- Updated `entities/mimo-v2-pro.md`: Noted Opus 4.6 superseded by Opus 4.7; last_updated 2026-04-16 → 2026-05-04
+- Updated `entities/muse-spark.md`: Enhanced significance with workforce restructuring context; last_updated 2026-04-16 → 2026-05-04
+- Updated `entities/spud-model.md`: last_updated 2026-04-27 → 2026-05-04
+- Updated `sources/spacex.md`: last_updated 2026-04-23 → 2026-05-04
+- Updated `sources/alibaba.md`: Added Qwen 3.6 SWE-Bench benchmark context; last_updated 2026-04-25 → 2026-05-04
+- Updated `sources/deepseek.md`: Added V4 Flash 100x pricing context and commodity inference fragmentation; last_updated 2026-04-25 → 2026-05-04
+- Bumped last_updated dates for entities with no content changes but verified as current: deepgemm (2026-04-23→2026-05-04), mercury-agent (2026-04-23→2026-05-04), cc-design (2026-04-23→2026-05-04), web-design-skill (2026-04-23→2026-05-04)
+
+**Pass 3 — Connection quality:**
+- Rewrote bare wikilinks in `timelines/2026-03.md` as annotated narrative connections (Vera Rubin, MiMo-V2-Pro, DeepSeek, Gemini 3.1 Flash TTS)
+- Enhanced connections in `entities/mimo-v2-pro.md`: Added china-efficiency-advantage link and "stealth launch" pattern annotation
+- Enhanced connections in `entities/muse-spark.md`: Added ai-job-displacement link and proprietary pivot context
+- Added connections to `sources/xai.md`: Now links to spacex (parent company), grok-voice-think-fast-1-0 (product), openai (distillation source)
+- Updated `ideas/safety-restricted-releases.md`: Added ARC-AGI-3 context, May 1 OpenAI Cyber restriction convergence; last_updated 2026-04-27 → 2026-05-04
+- Updated `ideas/ai-governance-urgency.md`: Added GUARD Act passage, Five Eyes guidance, Pentagon deployment contrast; last_updated 2026-04-27 → 2026-05-04
+- Updated `ideas/agent-economics.md`: Added Netomi $110M, agent infrastructure funding wave, and Symphony orchestration; last_updated 2026-04-29 → 2026-05-04
+- All 6 topic pages verified: each has ## Evolution and ## Patterns & Insights sections
+- No bare "Related:" or "See also:" connections found in any content page
+- All entity pages verified: each has annotated connections explaining WHY
+
+**Index rebuilt:**
+- Topics: 6 (unchanged)
+- Sources: 19 (unchanged)
+- Timelines: 3 (unchanged)
+- Entities: 68 (unchanged)
+- Ideas: 21 (unchanged)
+- Total content pages: 117 (6+19+3+68+21)
+
+## [2026-05-03] ingest | 1 date
+
+Dates processed: 2026-05-03
+Topics updated: llm_models (ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle design pattern, May 2 reasoning ceiling evolution section), ai_companies (May 2 fault lines: Pentagon expanded contracts with "any lawful operational use," Sam Altman's three pillars/"personal AGI," Meta "Android for robots" strategy, Mistral Vibe vertical integration, Oscars AI ban), ai_funding (Netomi $110M agentic CX, agent infrastructure funding wave: Standard Intelligence $75M + Actively $45M + Parallel $100M at $2B), github_trends (Serena 23.8K semantic code MCP, MOVA 972 video+audio, AutoMV 104 multi-agent music videos), ai_safety (dual crisis: dangerously capable Mythos + incapable of reasoning per ARC-AGI-3; "any lawful use" at scale with 1M+ personnel; EU tightening vs Pentagon expansion), agentic_ai (Serena semantic infrastructure, Netomi 40K req/s enterprise CX, Mistral Vibe integration, agent stack funded layer by layer)
+Sources updated: openai (three pillars strategy, ARC-AGI-3 0.43%, Pentagon expanded contracts), anthropic (Pentagon conspicuous absence, ARC-AGI-3 0.18%, "any lawful use" lawsuit continues), google (Pentagon expansion — complete Project Maven reversal, 1M+ defense personnel), meta (ARI "Android for robots" licensing strategy, $25B bonds), mistral (Medium 3.5 + Vibe launch, reasoning toggle, vertical integration strategy)
+Sources created: netomi (agentic CX platform, $110M Series C led by Accenture Ventures, 40K req/s)
+Timelines updated: 2026-05 (Week 1 — May 2: ARC-AGI-3 bombshell, Pentagon "AI-first" formalized, Mistral Medium 3.5 + Vibe, Meta robotics platform strategy, Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave, GitHub trending repos)
+Entities created: arc-agi-3 (benchmark: GPT-5.5 0.43%, Opus 4.7 0.18%; exposed LLMs don't reason — they retrieve), mistral-medium-3-5 (128B dense model with reasoning-effort toggle; SWE-Bench 77.6%, AIME25 86.3%), vibe (Mistral's vertically integrated cloud coding agents), serena (MCP semantic code toolkit across 40+ languages; 23.8K stars; symbol-level editing via LSP), mova (synchronized video-audio generation foundation model; 972 stars), automv (multi-agent music video generator; $10-20 per MV; 104 stars)
+Ideas created: ai-creative-regulation (Oscars ban codifies "regulate creative core, leave tool layer alone" as global regulatory template)
+Ideas updated: military-ai-divide (added Google Project Maven reversal evidence, Meta absence from coalition, "any lawful use" at 1M+ personnel scale), rl-vs-llm-paradigm (added ARC-AGI-3 results as strongest empirical evidence for Silver's thesis)
+
+Chat session insights applied: Session 28c7d4fb (Apr 23) noted ai_safety topic needed Qihoo 360 and Bank of England updates — both already present from prior ingests. Session 2fe64ce0 (Apr 25-26) discussed AI employment structural changes — ARI "Android for robots" extends displacement to physical labor, now reflected in ai_job_displacement idea. Session d1cce567 asked about Google Cloud Next — Google's inclusion in Pentagon coalition with "any lawful use" clause and the 2018 Project Maven reversal provides the defense context that complements the Cloud Next product announcements. All three sessions confirm the military-safety divide as the defining structural tension of this period.
+
 ## [2026-05-03] wiki lint | comprehensive health check
 
 **Pass 1 — Structural fixes:**

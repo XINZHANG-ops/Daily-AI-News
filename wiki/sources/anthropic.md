@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-02
+last_updated: 2026-05-03
 ---
 
 # Anthropic
@@ -43,6 +43,8 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-01 | Claude Security launches in public beta | Powered by Opus 4.7; native security scanner in Claude Code; CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security partnerships |
 | 2026-05-01 | Pentagon excludes Anthropic from AI coalition | Labeled "supply chain risk" by Defense Secretary Hegseth after refusing to accept "any lawful use" language and insisting on guardrails against autonomous weapons and mass surveillance; designation normally reserved for foreign adversaries |
 | 2026-05-01 | Closing ~$50B round at $900B+ valuation | Would surpass OpenAI's $852B (March 2026); revenue run rate surpasses $30B (~$40B per some sources); Amazon up to $25B, Google up to $40B committed; investors given 48-hour allocation window |
+| 2026-05-02 | Conspicuously absent from expanded Pentagon AI contracts | "Any lawful operational use" clause expanded to cover 1M+ defense personnel; Anthropic continues lawsuit against government over this exact language; labeled "supply chain risk" designation solidified |
+| 2026-05-02 | Claude Opus 4.7 scores 0.18% on ARC-AGI-3 | Despite 87.6% on SWE-bench — the gap between coding pattern-matching and genuine reasoning exposed; systemic errors show model doesn't form coherent world models |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.

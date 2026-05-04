@@ -1,13 +1,13 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-02
+last_updated: 2026-05-03
 ---
 
 # Agentic AI
 
 ## Overview
-May 1, 2026 reveals the economics of agentic AI are approaching inflection point. NVIDIA GB300 Blackwell Ultra (35x lower cost/token) combined with Microsoft's E7 bundle at $99/user/month and Agent 365 at $15/user/month signal that the agentic era is no longer theoretical — it's priced and packaged for enterprise deployment. The question is shifting from "can agents code?" to "who controls the agent governance stack?"
+May 2, 2026 shows the agent ecosystem maturing on three fronts simultaneously. Serena (23.8K stars) provides semantic code infrastructure at the symbol level — not just tools for agents, but the IDE layer agents need to operate reliably. Netomi's $110M raise for agentic customer experience (40,000 req/s for Delta, NBA, MetLife) proves agents are processing enterprise workloads at scale. Mistral's Vibe launch signals the industry is converging on vertically integrated model + agent stacks. The agent stack is being funded, built, and deployed layer by layer — from semantic infrastructure to customer-facing automation to orchestration frameworks.
 
 ## Evolution
 
@@ -54,8 +54,18 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-02 | OpenAI open-sources Symphony orchestration spec | 15K+ stars; "every task gets an agent, agents run continuously, humans review"; 500% PR increase at OpenAI |
 | 2026-05-02 | Five Eyes issues joint agent security guidance | First international framework for AI agent deployment; zero-trust, cryptographic identities, human sign-off |
 | 2026-05-02 | context-mode MCP server trends (11.9K stars) | 98% context reduction enables agents to run longer and handle more complex tasks without context pollution |
+| 2026-05-02 | Serena MCP toolkit released (23.8K stars) | Semantic code operations at symbol level across 40+ languages; "IDE for your coding agent" — agent infrastructure maturing beyond raw model capabilities |
+| 2026-05-02 | Netomi raises $110M for agentic CX | 40K req/s throughput for enterprise clients; Accenture Ventures leads round — the SI that will deploy this across Fortune 500 |
+| 2026-05-02 | Mistral launches Vibe cloud coding agents | Bundled with Medium 3.5; vertically integrated model + agent stack following Anthropic's Claude Code growth playbook |
+| 2026-05-02 | Agent funding wave: Standard Intelligence $75M, Actively $45M, Parallel $100M | Computer-use models, AI sales agents, agent web infrastructure — every layer of the agent stack attracting dedicated capital |
 
 ## Patterns & Insights
+
+**Semantic agent infrastructure maturing**: Serena's approach — symbol-level code operations via LSP servers rather than line numbers — represents a maturity leap for coding agents. Line-level editing is fragile across edits; symbol-level understanding makes refactoring reliable. As an MCP server, Serena is composable — any MCP-compatible agent gains semantic code understanding without building it from scratch.
+
+**Agent infrastructure funded layer by layer**: The May 2 funding wave (Netomi $110M CX, Standard Intelligence $75M computer-use, Actively $45M sales, Parallel $100M web infra) reveals a systematic pattern: investors are funding every horizontal layer of the autonomous agent stack simultaneously. This is different from the model funding wave — it's about the plumbing that makes agents reliable at enterprise scale.
+
+**Vertical integration emerging as competitive strategy**: Mistral's Vibe (model + agent bundled) follows Anthropic's Claude Code playbook. The implication: standalone model APIs become commodities, and the value shifts to the integrated experience. If this pattern holds, the agent stack becomes the primary competitive moat, and model quality becomes a necessary but insufficient condition for winning enterprise contracts.
 
 The coding agent market has become the primary driver of AI company revenue. Anthropic's ARR growth from $9B to $30B in under a year was primarily driven by Claude Code. This has made developer adoption critical ahead of IPO timelines.
 
@@ -75,15 +85,17 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 
 ## Connections
 - [[entities/claude-code]] — Primary driver of Anthropic's ARR growth
+- [[entities/serena]] — Semantic code infrastructure at symbol level; MCP toolkit that makes any coding agent smarter; 23.8K stars
+- [[entities/vibe]] — Mistral's vertically integrated model + agent offering; competes with Claude Code and Codex
 - [[entities/claw-code]] — Clean-room rewrite, 100K stars in hours
 - [[entities/openclaw]] — 302K stars, fastest-growing open-source project
-- [[entities/mcp-protocol]] — 150M+ installs, dominant agent protocol; context-mode built on MCP
+- [[entities/mcp-protocol]] — 150M+ installs, dominant agent protocol; context-mode and Serena built on MCP
 - [[entities/openhands-sdk]] — Modular SDK for coding agents, 3.2K stars
 - [[entities/nemo-claw]] — NVIDIA's hardened stack for secure OpenClaw deployment
 - [[entities/scientific-agent-skills]] — 133 scientific skills for agents, 2.4K stars
 - [[entities/symphony]] — OpenAI's orchestration spec formalizes agent-as-employee model at fleet scale
 - [[entities/context-mode]] — 98% context reduction enabling continuous agent operation without context pollution
 - [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI
-- [[ideas/agent-economics]] — GitHub $49/agent/month + Symphony's continuous agent model = agent economics entering operational phase
+- [[ideas/agent-economics]] — GitHub $49/agent/month + Symphony's continuous agent model + Netomi $110M for agentic CX = agent economics entering operational phase
 - [[sources/anthropic]] — Claude Code success driving $30B ARR
 - [[sources/cognition]] — Devin creator, $25B valuation talks, AI coding competition with Claude Code

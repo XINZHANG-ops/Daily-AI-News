@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-01
+last_updated: 2026-05-03
 ---
 
 # OpenAI
@@ -47,6 +47,9 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-01 | OpenAI restricts GPT-5.5 Cyber to verified defenders | After mocking Anthropic's Mythos restrictions as "fear-based marketing"; liability now overrides competitive posturing |
 | 2026-05-01 | Pentagon includes OpenAI in 8-company classified AI coalition | GPT-5.5 deployed on IL6/IL7 classified networks for "lawful operational use"; 1.3M+ DoD personnel on GenAI.mil platform |
 | 2026-05-01 | OpenAI open-sources Symphony orchestration spec | 15K+ stars; language-agnostic with TypeScript, Go, Rust, Java, Python reference implementations; formalizes agent-as-employee model with 500% PR increase on internal teams |
+| 2026-05-02 | Sam Altman lays out three-pillar strategy | Science acceleration (math, physics, Alzheimer's), economic productivity ("one-person companies"), and "personal AGI" — pivot from corporate AGI to individual empowerment; reframes every product as a "personal AGI" feature |
+| 2026-05-02 | GPT-5.5 scores 0.43% on ARC-AGI-3 | Despite 82.7% on Terminal-Bench 2.0; systemic errors show model routes unfamiliar situations to memorized templates rather than reasoning |
+| 2026-05-02 | Pentagon expands AI contracts with "any lawful operational use" | OpenAI included in 8-company coalition; 1M+ defense personnel on GenAI.mil platform; timing overlaps with Altman's "personal AGI" vision |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -64,6 +67,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[entities/gpt-5.4-cyber]] — Defensive cybersecurity variant
 - [[entities/gpt-rosalind]] — Life sciences domain model
 - [[ideas/safety-restricted-releases]] — Not releasing GPT-4.5 as last non-reasoning model signals awareness of capability thresholds
-- [[ideas/military-ai-divide]] — OpenAI's split-brain approach: joined Pentagon coalition while restricting GPT-5.5 Cyber; military vs civilian deployment governed by different rules
+- [[ideas/military-ai-divide]] — OpenAI's split-brain approach: joined Pentagon coalition while restricting GPT-5.5 Cyber; "any lawful operational use" contracts now cover 1M+ defense personnel
+- [[ideas/rl-vs-llm-paradigm]] — ARC-AGI-3 0.43% score supports Silver's thesis that LLMs are "fossil fuel" remixing existing knowledge rather than reasoning
 - [[sources/anthropic]] — Rivalry intensifying over compute and enterprise contracts
 - [[sources/deepseek]] — Both competing for AI coding market; DeepSeek V4 challenges GPT-5.5 on benchmarks

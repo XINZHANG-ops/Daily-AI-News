@@ -97,3 +97,34 @@ Wiki lint complete. Here's the summary:
  create mode 100644 wiki/entities/terminal-bench-2.md
  create mode 100644 wiki/ideas/military-ai-divide.md
  create mode 100644 wiki/ideas/rl-vs-llm-paradigm.md
+[2026-05-04 01:00:02] Starting wiki lint using model: deepseek-v4-pro:cloud
+Already up to date.
+Lint complete. Here's a summary of what was done:
+
+## Pass 1 — Structural Integrity
+- **All 117 content pages verified**: 6 topics, 19 sources, 3 timelines, 68 entities, 21 ideas
+- Index matches disk exactly — no missing or unlisted files
+- All 803 wikilinks resolve correctly (broken links only in WIKI.md templates and log.md historical records)
+- Zero orphan pages
+- Zero companies or people in entities/
+
+## Pass 2 — Wrong & Duplicate Information
+**Content fixes:**
+- **`timelines/2026-03.md`**: Removed bare wikilinks (now annotated in narrative); fixed "Gemini 3.1 Flash Live" → "Gemini 3.1 Flash TTS"
+- **`entities/gpt-5.5.md`**: Added ARC-AGI-3 0.43%, Pentagon deployment, Cyber restrictions, Symphony connections
+- **`entities/mimo-v2-pro.md`**: Updated Opus 4.6 reference to note Opus 4.7 supersession
+- **`entities/muse-spark.md`**: Enhanced significance with workforce restructuring context
+
+**Date bumps** (verified current, no content changes needed): 10 entity/source pages updated from April to May 2026
+
+## Pass 3 — Connection Quality
+- Rewrote 4 bare wikilinks in `timelines/2026-03.md` as annotated narrative
+- Enhanced thin connections in `mimo-v2-pro.md`, `muse-spark.md`, `xai.md` (now links to 5 pages vs 2)
+- Updated 3 idea pages with May context: `safety-restricted-releases`, `ai-governance-urgency`, `agent-economics`
+- All 6 topic pages confirmed: `## Evolution` and `## Patterns & Insights` present
+- Zero bare "Related:" or "See also:" patterns in content pages
+
+## Pass 4 — Index & Log
+- `index.md`: Updated to 2026-05-04 with accurate counts (unchanged: 6/19/3/68/21)
+- `log.md`: Appended detailed lint entry
+[2026-05-04 01:05:31] Wiki lint complete (exit code 0).

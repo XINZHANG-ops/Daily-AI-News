@@ -29,3 +29,6 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 ## Connections
 - [[ideas/distillation-hypocrisy]] — Musk's simultaneous suing of OpenAI, distilling from OpenAI, and joining Pentagon contracts with OpenAI collapses the ethical architecture of all positions
 - [[ideas/military-ai-divide]] — xAI's inclusion exemplifies the "no principles" track: join the coalition, distill from competitors, sue the industry
+- [[sources/spacex]] — Acquired by SpaceX for $250B in April 2026, creating a $1.25T combined entity; Grok now operates under SpaceX ownership
+- [[entities/grok-voice-think-fast-1-0]] — xAI's voice model scoring 67.3% on τ-voice Bench; outperforming in retail/airline/telecom verticals
+- [[sources/openai]] — Musk admitted under oath to distilling from OpenAI models while simultaneously suing the company; IP chain of title now questionable for SpaceX-xAI merger

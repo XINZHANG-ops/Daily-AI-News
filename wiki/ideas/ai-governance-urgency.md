@@ -1,7 +1,7 @@
 ---
 title: "AI Governance Urgency"
 slug: ai-governance-urgency
-last_updated: 2026-04-27
+last_updated: 2026-05-04
 ---
 
 # AI Governance Urgency
@@ -25,9 +25,13 @@ The governance gap creates three compounding risks:
 
 India's AIGEG panel (April 21) represents the first government body explicitly focusing on labor market impact, but international coordination remains absent. Hinton's UN intervention suggests the governance conversation is moving from national to international levels.
 
+**May 2026 governance acceleration**: The Senate GUARD Act passed the Judiciary Committee unanimously on May 1, creating criminal penalties for AI chatbot-minor harmful conduct — Washington's first bipartisan AI issue. The Five Eyes Alliance issued its first joint AI agent security guidance the same day. However, these frameworks are published for technology already deployed: the Pentagon's "AI-first" contracts with "any lawful operational use" pushed frontier models to 1M+ defense personnel without corresponding governance guardrails. Governance is catching up, but on a timeline measured in months while capability deploys in days.
+
 ## Connections
-- [[topics/ai_safety]] — Hinton's UN warning directly addresses safety governance gaps
+- [[topics/ai_safety]] — Hinton's UN warning and the GUARD Act address safety governance gaps from different angles
 - [[topics/ai_companies]] — Big Tech layoffs and $650B infrastructure spending reflect the governance mismatch
 - [[topics/ai_funding]] — $4.8T market projection makes governance increasingly urgent
 - [[ideas/safety-restricted-releases]] — Claude Mythos represents the capability edge that governance frameworks can't yet handle
 - [[ideas/ai-job-displacement]] — Labor displacement is accelerating without corresponding governance response
+- [[entities/guard-act]] — Senate GUARD Act with criminal penalties passed unanimously; first bipartisan AI legislation with teeth
+- [[ideas/military-ai-divide]] — Pentagon deploys frontier models at scale while governance frameworks are still being drafted

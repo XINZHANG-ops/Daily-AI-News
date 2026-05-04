@@ -1,7 +1,7 @@
 ---
 title: "Mistral"
 slug: mistral
-last_updated: 2026-04-29
+last_updated: 2026-05-03
 ---
 
 # Mistral
@@ -14,6 +14,7 @@ Mistral AI is a French AI lab positioning itself as the geopolitically neutral, 
 | Date | Event | Details |
 |------|-------|---------|
 | 2026-04-29 | Mistral Ultra 2 released | 78.4% SWE-bench, €2/M tokens, 1M context, native MCP support, EU data residency |
+| 2026-05-02 | Mistral Medium 3.5 + Vibe released | First "merged" flagship: 128B dense transformer (not MoE), 256K context, configurable reasoning-effort toggle per request, SWE-Bench Verified 77.6%, AIME25 86.3%; self-hostable on 4 GPUs at FP8; Vibe cloud coding agents bundled — vertically integrated model + agent stack |
 
 ## Key Relationships
 - **Azure AI Foundry**: Mistral Ultra 2 available on Azure, giving Microsoft a European-aligned model to counter Google-Anthropic and OpenAI dominance
@@ -21,6 +22,8 @@ Mistral AI is a French AI lab positioning itself as the geopolitically neutral, 
 - **EU AI Act**: Mistral's EU data residency directly addresses compliance requirements the EU AI Act fine on Meta just amplified
 
 ## Connections
-- [[entities/mistral-ultra-2]] — The flagship model released April 29; EU-compliant alternative to US models in enterprise coding race
+- [[entities/mistral-ultra-2]] — The flagship model released April 29; EU-compliant alternative for enterprise coding
+- [[entities/mistral-medium-3-5]] — 128B dense model with reasoning toggle; one-model-for-all design pattern
+- [[entities/vibe]] — Vertically integrated cloud coding agents; Mistral following Anthropic's Claude Code growth strategy
 - [[topics/llm_models]] — Competing in the cost-performance frontier alongside DeepSeek V4-Pro-Max and Claude Opus 4.7
-- [[ideas/institutional-gap]] — Mistral's EU data residency positioning exploits the regulatory-reputational siege on US tech created by OpenAI court case, Meta's €800M fine, and Google antitrust concerns
+- [[ideas/institutional-gap]] — Mistral's EU data residency positioning exploits the regulatory-reputational siege on US tech

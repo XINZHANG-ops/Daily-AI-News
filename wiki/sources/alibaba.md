@@ -1,7 +1,7 @@
 ---
 title: "Alibaba"
 slug: alibaba
-last_updated: 2026-04-25
+last_updated: 2026-05-04
 ---
 
 # Alibaba
@@ -9,7 +9,7 @@ last_updated: 2026-04-25
 ## Overview
 Alibaba is a Chinese tech giant and the creator of the Qwen model family. In April 2026, Alibaba is in talks (alongside Tencent) to invest in DeepSeek's first funding round, with Tencent proposing up to a 20% stake. This represents a significant shift as Chinese tech giants signal their backing of the AI startup that disrupted Silicon Valley.
 
-Alibaba also released Qwen 3.6-35B-A3B — an efficient 3B active parameter coding model runnable on consumer hardware.
+Alibaba also released Qwen 3.6-35B-A3B — an efficient 3B active parameter coding model runnable on consumer hardware, scoring 73.4% on SWE-Bench on an RTX 4090. Together with Qwen3.6-Plus topping global usage charts (April 2), Alibaba demonstrates that frontier-grade coding is achievable at consumer-hardware scale.
 
 ## Timeline
 
