@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-05-03
+last_updated: 2026-05-04
 ---
 
 # AI Funding
@@ -58,6 +58,7 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-05-01 | Pentagon AI contracts worth billions | 8-company coalition on classified networks; explicit multi-vendor strategy to prevent lock-in |
 | 2026-05-02 | Netomi raises $110M Series C for agentic CX | Led by Accenture Ventures with Adobe Ventures and Silver Lake; processes 40K req/s for Delta, DraftKings, NBA, MetLife; total raised $160M+ |
 | 2026-05-02 | Agent infrastructure funding wave | Netomi $110M (CX), Standard Intelligence $75M (computer-use models), Actively $45M (AI sales agents), Parallel $100M at $2B valuation (agent web infra) — the agent stack being funded layer by layer |
+| 2026-05-03 | Anthropic $1.5B Wall Street JV | Joint venture with Blackstone (~$300M), Goldman Sachs (~$150M), H&F (~$300M), and Anthropic (~$300M); targets PE portfolio companies; functions as pre-IPO enterprise distribution strategy with IPO rumored for October 2026 at $60B+ |
 
 ## Patterns & Insights
 
@@ -97,3 +98,4 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[sources/microsoft]] — $10B Japan infrastructure, $10B+ Nebius Finland commitment
 - [[sources/deepseek]] — Tencent/Alibaba investment talks, V4 release with open weights
 - [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
+- [[sources/ibm]] — IBM Bob's enterprise SDLC play funded by existing IBM infrastructure rather than external capital; different funding model from VC-backed startups

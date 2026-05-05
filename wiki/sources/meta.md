@@ -1,7 +1,7 @@
 ---
 title: "Meta"
 slug: meta
-last_updated: 2026-05-03
+last_updated: 2026-05-04
 ---
 
 # Meta
@@ -27,6 +27,7 @@ last_updated: 2026-05-03
 | 2026-05-01 | Meta raises capex guidance to $125-145B | Up from $115-135B; CFO Susan Li admits she "doesn't really know" ideal headcount |
 | 2026-05-01 | Meta acquires humanoid robotics startup ARI | Assured Robot Intelligence team (led by Xiaolong Wang and Lerrel Pinto) joins Superintelligence Labs under Yann LeCun; embodied AI bet alongside digital MCI surveillance |
 | 2026-05-02 | Meta's robotics strategy detailed: "Android for robots" | Licensing model for robot software (not hardware); mirrors Oculus/Quest playbook — own the software stack, let others build hardware; $25B bond issuance for AI infrastructure funds both LLM training and robotics as next compute sink |
+| 2026-05-03 | ARI acquisition details: talent and platform strategy | ARI co-founders Xiaolong Wang (ex-Nvidia/UCSD) and Lerrel Pinto (ex-NYU, prior startup Fauna Robotics acquired by Amazon March 2026) join Superintelligence Labs; CTO Bosworth envisions "Android for robots" — Meta builds AI foundation, third-party makers build hardware; humanoid talent pool increasingly incestuous between Amazon, Nvidia, Meta |
 
 ## Key Relationships
 - **OpenAI**: Competition in AI assistant market and coding agents.
@@ -39,3 +40,5 @@ last_updated: 2026-05-03
 - [[entities/ari]] — Humanoid robotics acquisition extending AI displacement to physical labor
 - [[ideas/ai-job-displacement]] — 8,000 cuts + MCI surveillance + $125-145B capex + ARI robotics acquisition = AI replacing physical AND digital labor simultaneously
 - [[ideas/institutional-gap]] — EU AI Act fine and workforce cuts show governance/capital converging faster than consensus
+- [[sources/ibm]] — IBM Bob and Meta's AI strategy share the organizational automation thesis but from different angles: IBM sells SDLC automation to enterprises, Meta automates its own workforce
+- [[entities/ari]] — ARI acquisition brings Pinto (Fauna→Amazon→Meta trajectory) into Meta's Superintelligence Labs; "Android for robots" platform strategy mirrors failed phone OS play but with no existing competitor in humanoid OS market

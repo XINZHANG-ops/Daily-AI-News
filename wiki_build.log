@@ -454,3 +454,21 @@ Updated: openai, anthropic, google, meta, mistral. Created: netomi ($110M Series
 
 ### Chat Sessions Integrated
 All 3 sessions analyzed — key patterns confirmed (military-safety divide, AI job displacement extending to physical labor, Google's defense pivot)
+Ingest complete for **2026-05-04**. Here's a summary of what was done:
+
+### New Pages Created (6)
+- **Entities**: `ruflo` (39.9K stars, Claude Code agent fleet orchestration), `gitnexus` (35.4K stars, MCP knowledge graphs for codebases), `ibm-bob` (enterprise SDLC automation), `microsoft-legal-agent` (profession-specific Copilot for contract review)
+- **Ideas**: `agent-verticalization` — agent layer consolidating into profession-specific platforms rather than general-purpose assistants
+- **Sources**: `ibm` — IBM's entry into enterprise AI development with Bob
+
+### Pages Updated (14)
+- **Topics** (6): `agentic_ai`, `ai_companies`, `ai_funding`, `ai_safety`, `llm_models`, `github_trends`
+- **Sources** (4): `anthropic`, `openai`, `meta`, `microsoft`
+- **Timeline**: `2026-05` — added full May 3-4 narrative covering the Anthropic $1.5B JV, Pentagon split quantified, Musk trial emails, agent verticalization evidence, Copilot 20M seats, AI music platforms, and IBM Bob
+- **Index**: 20 sources, 72 entities, 22 ideas, 6 topics
+
+### Key Themes Synthesized
+1. **Military-safety divide now quantified**: $200M lost Pentagon contracts vs $1.5B Wall Street JV in the same week
+2. **Agent verticalization**: IBM Bob, Legal Agent, Ruflo, and GitNexus all landed in one week — the agent layer moving from horizontal to vertical
+3. **Musk trial origin story**: 2015-2018 emails show the nonprofit/for-profit tension was baked into OpenAI from day one; Musk advocated what he now sues to undo
+4. **AI content market bifurcation**: Music platforms splitting into AI-native (WXLI, StarSinger) vs human-first (Arena Radio) — mirrors text/image pattern

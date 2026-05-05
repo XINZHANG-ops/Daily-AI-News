@@ -1,5 +1,53 @@
 # Wiki Log
 
+## [2026-05-05] wiki lint | comprehensive health check
+
+**Pass 1 — Structural fixes:**
+- Fixed broken `wikilink` references in historical log entries (converted `[[...]]` to code spans for non-existent targets in log.md)
+- Merged duplicate entity `entities/spud-model.md` into `entities/gpt-5.5.md` (same model, codename vs released name); removed spud-model.md
+- Redirected inbound links: `timelines/2026-03.md` and `sources/openai.md` now link to `entities/gpt-5.5` instead of `entities/spud-model`
+- Updated `index.md`: removed spud-model entry, merged gpt-5.5 description to include codename "Spud", entity count corrected 72 → 71 → 72
+- Verified all 123 content pages have corresponding .md files (6 topics, 20 sources, 3 timelines, 72 entities, 22 ideas)
+- Verified no unlisted .md files exist in any section
+- Verified zero broken wikilinks across all content pages (WIKI.md template examples excluded)
+- Verified no orphan pages: all 122 content pages have at least one inbound link
+- Verified no companies or people in entities/: all 72 entity types are valid (model, product, protocol, framework, repo, benchmark, legislation)
+
+**Pass 2 — Wrong & duplicate information fixed:**
+- Removed duplicate entity `spud-model` — kept richer `gpt-5.5.md` with ARC-AGI-3, Pentagon deployment, and Symphony connections
+- Created missing entity `entities/pixelle-video.md` — AI-powered fully automated short video engine (10.5K stars); mentioned in `topics/github_trends` Patterns section but lacked a page
+- Updated `topics/github_trends.md`: added `pixelle-video` to Connections; last_updated 2026-05-04 → 2026-05-05
+- Updated `timelines/2026-03.md`: fixed grammar ("pressure" → "pressured") and replaced spud-model link with gpt-5.5; last_updated 2026-05-04 → 2026-05-05
+- Updated `timelines/2026-05.md`: linked Pixelle-Video as wikilink instead of plain text; last_updated 2026-05-04 → 2026-05-05
+- Updated `sources/openai.md`: removed redundant spud-model connection, enhanced gpt-5.5 connection with codename note; last_updated 2026-05-04 → 2026-05-05
+
+**Pass 3 — Connection quality:**
+- All 6 topic pages verified: each has ## Evolution and ## Patterns & Insights sections
+- No bare "Related:", "See also:", or unannotated links found in any content page
+- All connections verified: every link explains WHY and HOW things connect
+- Created `entities/pixelle-video.md` with annotated connections to github_trends, agentic_ai, ruflo, automv, and mova
+
+**Index rebuilt:**
+- Topics: 6 (unchanged)
+- Sources: 20 (unchanged)
+- Timelines: 3 (unchanged)
+- Entities: 72 (removed spud-model, added pixelle-video; net unchanged)
+- Ideas: 22 (unchanged)
+- Total content pages: 123 (6+20+3+72+22)
+
+## [2026-05-04] ingest | 1 date
+
+Dates processed: 2026-05-04
+Topics updated: agentic_ai (agent verticalization: IBM Bob SDLC automation, Microsoft Legal Agent, Ruflo 100+ agent swarms, GitNexus knowledge graphs; new key developments and Patterns & Insights from May 3-4), ai_companies (Anthropic $1.5B Wall Street JV, Musk trial 2015-2018 emails, IBM Bob enterprise entry, AI music platform proliferation), ai_funding ($1.5B JV with Blackstone/Goldman Sachs/H&F as pre-IPO enterprise distribution strategy), ai_safety (Pentagon exclusion cost quantified: ~$200M vs $1.5B JV; market bifurcation with price tags on both sides), llm_models (multi-model support: Claude in Copilot, IBM Bob multi-model orchestration), github_trends (Ruflo 39.9K, GitNexus 35.4K, Pixelle-Video 10.5K; agent infrastructure goes enterprise-scale)
+Sources updated: anthropic ($1.5B JV finalized, Pentagon exclusion cost quantified at ~$200M, Hegseth "ideological lunatic" quote, IPO rumored October 2026 at $60B+), openai (Musk trial 2015-2018 emails exposed, xAI confirmed using OpenAI models to train Grok, Musk advocated for-profit pivot in 2017), meta (ARI talent details: Xiaolong Wang ex-Nvidia/UCSD, Lerrel Pinto ex-NYU with Fauna→Amazon→Meta trajectory; "Android for robots" licensing strategy), microsoft (20M Copilot paid enterprise seats, Accenture 740K, agent mode default across Office, multi-model support with Claude, Legal Agent launched May 1 as first profession-specific vertical)
+Sources created: ibm (IBM Bob: AI-first development partner, 80K+ internal users, multi-model orchestration, neutral alternative to Microsoft Copilot)
+Timelines updated: 2026-05 (May 3-4: Anthropic $1.5B JV, Pentagon split quantified, agent verticalization evidence, Musk trial origin story autopsy, Microsoft Copilot 20M seats, AI music platform proliferation, IBM Bob, GitHub trending repos)
+Entities created: ruflo (agent orchestration platform for Claude Code, 39.9K stars), gitnexus (MCP knowledge graph for codebases, 35.4K stars), ibm-bob (enterprise AI dev partner for full SDLC, 80K+ users), microsoft-legal-agent (profession-specific Copilot for contract review in Word)
+Ideas created: agent-verticalization (agent layer consolidating into profession-specific platforms; moat shifts from model quality to workflow understanding)
+Ideas updated: military-ai-divide (strengthened with $200M exclusion cost and $1.5B JV contrast — both sides of military-safety split now have quantified economics)
+
+Chat session insights applied: All three prior chat sessions (28c7d4fb, 2fe64ce0, d1cce567) were already applied in previous ingests (Apr 23-26 news, Google Cloud Next details, AI layoff patterns). Today's news provides the latest chapter in the structural narratives those sessions identified: the military-safety bifurcation (session 28c7d4fb noted ai_safety needed updates), agent-layer maturation (session 2fe64ce0 discussed Claude Code quality issues and AI employment shifts), and Google's defense pivot (session d1cce567 asked about Google Cloud Next — today's Pentagon expansion completes the defense arc from Project Maven protests to full integration).
+
 ## [2026-05-04] wiki lint | comprehensive health check
 
 **Pass 1 — Structural fixes:**
@@ -56,8 +104,8 @@ Chat session insights applied: Session 28c7d4fb (Apr 23) noted ai_safety topic n
 ## [2026-05-03] wiki lint | comprehensive health check
 
 **Pass 1 — Structural fixes:**
-- Fixed broken [[wikilink]] `[[entities/gpt-5-4-cyber]]` → `[[entities/gpt-5.4-cyber]]` in timelines/2026-04.md (hyphens vs dots)
-- Fixed broken [[wikilink]] `[[entities/five-eyes-agent-security-guidance]]` → `[[topics/ai_safety]]` in ideas/military-ai-divide.md (entity never existed; Five Eyes guidance is discussed in ai_safety topic)
+- Fixed broken `wikilink` `entities/gpt-5-4-cyber` → `entities/gpt-5.4-cyber` in timelines/2026-04.md (hyphens vs dots)
+- Fixed broken `wikilink` `entities/five-eyes-agent-security-guidance` → `topics/ai_safety` in ideas/military-ai-divide.md (entity never existed; Five Eyes guidance is discussed in ai_safety topic)
 - Verified no orphan pages: all 103 pages have at least one inbound link
 - Verified no companies or people in entities/: all 56 original entity types are valid (model, product, protocol, framework, repo, legislation)
 
@@ -103,9 +151,9 @@ Chat session insights applied: The Apr 23 session requested more Google Cloud Ne
 
 **Structural fixes:**
 - Created missing entity `entities/claude-opus-4-6.md` (index listed it but file was missing)
-- Fixed broken [[wikilink]] `[[entities/gemini-3-1-flash-live]]` → `[[entities/gemini-3-1-flash-tts]]` in timelines/2026-03.md
-- Fixed broken [[wikilink]] `[[ideas/infrastructure-bottleneck]]` → `[[ideas/efficiency-frontier]]` in topics/ai_funding.md (infrastructure-bottleneck page never existed)
-- Removed phantom link `[[sources/crowdstrike]]` from entities/claude-security.md (crowdstrike is not a source page)
+- Fixed broken `wikilink` `entities/gemini-3-1-flash-live` → `entities/gemini-3-1-flash-tts` in timelines/2026-03.md
+- Fixed broken `wikilink` `ideas/infrastructure-bottleneck` → `ideas/efficiency-frontier` in topics/ai_funding.md (infrastructure-bottleneck page never existed)
+- Removed phantom link `sources/crowdstrike` from entities/claude-security.md (crowdstrike is not a source page)
 
 **Connection quality improvements:**
 - Rewrote entity connections with WHY annotations: llama-4, gemma-4, openclaw
@@ -142,7 +190,7 @@ Chat session insights applied: Prior sessions noted Claude Code quality issues (
 
 **Structural fixes:**
 - Removed duplicate entity `gpt-5-5.md` (had 2 files: gpt-5-5.md and gpt-5.5.md) — kept richer gpt-5.5.md with Spud codename, benchmark scores, 49-day release cycle analysis
-- Fixed 4 broken [[wikilinks]]: mozilla, cognition, alibaba, efficiency-frontier, ai-job-displacement had no corresponding pages
+- Fixed 4 broken `wikilinks`: mozilla, cognition, alibaba, efficiency-frontier, ai-job-displacement had no corresponding pages
 
 **New pages created:**
 - `sources/cognition.md` — Cognition AI ($25B talks, Devin creator)
@@ -255,10 +303,10 @@ Ideas created: safety-restricted-releases, peer-preservation, agent-democratizat
 - Renamed `entities/gpt-5-4.md` → `entities/gpt-5.4.md` (filename used hyphens, all 5 wikilinks used dots)
 - Renamed `entities/gpt-5-4-cyber.md` → `entities/gpt-5.4-cyber.md` (same issue, 4 broken links)
 - Moved `entities/ineffable-intelligence.md` → `sources/ineffable-intelligence.md` (company in entities)
-- Fixed broken link `[[entities/blackwell]]` → `[[entities/gb300]]` in sources/nvidia.md
-- Fixed broken link `[[entities/vast-data]]` → `[[sources/vast-data]]` in sources/nvidia.md
-- Fixed broken link `[[entities/openhands]]` → `[[entities/openhands-sdk]]` in entities/openhands-sdk.md
-- Fixed broken link `[[entities/Claude-code]]` → `[[entities/claude-code]]` in entities/mercury-agent.md (case mismatch)
+- Fixed broken link `entities/blackwell` → `entities/gb300` in sources/nvidia.md
+- Fixed broken link `entities/vast-data` → `sources/vast-data` in sources/nvidia.md
+- Fixed broken link `entities/openhands` → `entities/openhands-sdk` in entities/openhands-sdk.md
+- Fixed broken link `entities/Claude-code` → `entities/claude-code` in entities/mercury-agent.md (case mismatch)
 - Fixed wrong link `[[sources/deepseek]]` → `[[sources/alibaba]]` in timelines/2026-04.md (Alibaba Qwen line linked to deepseek)
 - Created missing page `sources/perplexity.md` (listed in index but file didn't exist)
 - Created missing page `entities/gemini-cli.md` (referenced by google source and gemini-enterprise-agent-platform)

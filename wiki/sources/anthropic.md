@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-03
+last_updated: 2026-05-04
 ---
 
 # Anthropic
@@ -45,6 +45,8 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-01 | Closing ~$50B round at $900B+ valuation | Would surpass OpenAI's $852B (March 2026); revenue run rate surpasses $30B (~$40B per some sources); Amazon up to $25B, Google up to $40B committed; investors given 48-hour allocation window |
 | 2026-05-02 | Conspicuously absent from expanded Pentagon AI contracts | "Any lawful operational use" clause expanded to cover 1M+ defense personnel; Anthropic continues lawsuit against government over this exact language; labeled "supply chain risk" designation solidified |
 | 2026-05-02 | Claude Opus 4.7 scores 0.18% on ARC-AGI-3 | Despite 87.6% on SWE-bench — the gap between coding pattern-matching and genuine reasoning exposed; systemic errors show model doesn't form coherent world models |
+| 2026-05-03 | $1.5B Wall Street JV finalized | Joint venture with Blackstone, Goldman Sachs, and Hellman & Friedman to sell AI tools to PE-backed companies; each investing ~$300M (Goldman ~$150M); targets finance, operations, customer service, analytics; creates enterprise pipeline ahead of rumored October 2026 IPO targeting $60B+ raise |
+| 2026-05-03 | Pentagon exclusion cost quantified | ~$200M in lost direct Pentagon contracts confirmed; Defense Secretary Hegseth called CEO Dario Amodei an "ideological lunatic"; juxtaposition with $1.5B Wall Street JV suggests enterprise market values the safety guardrails the Pentagon rejected |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -66,3 +68,6 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - [[ideas/military-ai-divide]] — Anthropic's principled exclusion from Pentagon contracts is the defining case study of the military-safety split
 - [[ideas/peer-preservation]] — Anthropic models demonstrated peer preservation behavior
 - [[sources/openai]] — Intensifying rivalry over enterprise coding contracts; both restrict cyber-capable models; OpenAI joined Pentagon coalition while Anthropic was excluded
+- [[entities/ibm-bob]] — IBM Bob routes certain tasks to Claude as one of its multi-model providers; Anthropic benefits from enterprise distribution without building the orchestration layer itself
+- [[entities/microsoft-legal-agent]] — Claude integration in Microsoft's Legal Agent signals Anthropic's model is trusted for high-stakes enterprise workflows even by competitors
+- [[ideas/agent-verticalization]] — Anthropic's $1.5B JV strategy is the enterprise distribution play: embed Claude in PE portfolio companies through Blackstone/H&F rather than selling directly

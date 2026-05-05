@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-03
+last_updated: 2026-05-04
 ---
 
 # Agentic AI
@@ -58,6 +58,10 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-02 | Netomi raises $110M for agentic CX | 40K req/s throughput for enterprise clients; Accenture Ventures leads round — the SI that will deploy this across Fortune 500 |
 | 2026-05-02 | Mistral launches Vibe cloud coding agents | Bundled with Medium 3.5; vertically integrated model + agent stack following Anthropic's Claude Code growth playbook |
 | 2026-05-02 | Agent funding wave: Standard Intelligence $75M, Actively $45M, Parallel $100M | Computer-use models, AI sales agents, agent web infrastructure — every layer of the agent stack attracting dedicated capital |
+| 2026-05-01 | Microsoft Legal Agent launches in Word | First profession-specific Copilot vertical; clause-by-clause contract review purpose-built inside lawyers' existing workflow |
+| 2026-04-28 | IBM Bob announced | Full SDLC automation with multi-model orchestration; 80K+ IBM employees, ~45% productivity gains; 30-day Java upgrade in 3 days |
+| 2026-05-03 | Ruflo agent orchestration platform (39.9K stars) | Open-source platform deploying 100+ Claude Code agents as coordinated swarms with self-learning memory and federated communication |
+| 2026-05-03 | GitNexus code intelligence engine (35.4K stars) | Zero-server knowledge graph for codebases exposed through MCP; gives coding agents structured navigation of complex codebases |
 
 ## Patterns & Insights
 
@@ -76,6 +80,8 @@ Agent-to-agent protocols (MCP with 150M+ installs, A2A) are becoming standard in
 Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and AI-powered infrastructure represent the expansion of agentic AI beyond software into physical environments.
 
 **Ecosystem maturation beyond raw capabilities**: The emergence of modular SDKs (OpenHands), hardened security stacks (NemoClaw), and specialized skills repositories (scientific-agent-skills) signals a shift from model-centric to tooling-centric competition. The April 25 news cycle demonstrates this: OpenHands SDK provides clean separation between one-off tasks, routine maintenance, and multi-agent operations; NemoClaw addresses enterprise security concerns for OpenClaw deployments; scientific-agent-skills brings 133 domain-specific capabilities to agents. This composability means competitive advantage increasingly comes from ecosystem breadth rather than raw model performance.
+
+**Agent layer consolidating into vertical platforms**: The first week of May 2026 crystallizes a structural shift. Microsoft Legal Agent (contract review inside Word), IBM Bob (full SDLC automation), Ruflo (Claude Code agent fleet orchestration), and GitNexus (MCP knowledge graphs for codebases) all arrived within days. Each targets a specific organizational function rather than being a general-purpose assistant. This is agent verticalization: the AI industry moving from "AI can answer questions" to "AI can do specific jobs" within existing professional tools. Microsoft's 20M Copilot seats provide the distribution base; IBM's multi-model neutrality provides the enterprise alternative; open-source infrastructure (Serena, context-mode, GitNexus) provides the composable building blocks.
 
 **AI coding tools as critical infrastructure**: Cognition AI's $25B valuation (more than doubling from prior round) validates AI coding as a strategic investment category. SpaceX's $60B Cursor investment, Anthropic's Claude Code-driven ARR growth, and OpenAI's Codex 3M users all point to the same conclusion: coding agents have crossed the chasm from demo to enterprise necessity.
 
@@ -99,3 +105,8 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[ideas/agent-economics]] — GitHub $49/agent/month + Symphony's continuous agent model + Netomi $110M for agentic CX = agent economics entering operational phase
 - [[sources/anthropic]] — Claude Code success driving $30B ARR
 - [[sources/cognition]] — Devin creator, $25B valuation talks, AI coding competition with Claude Code
+- [[entities/ibm-bob]] — Full SDLC automation with multi-model orchestration; 80K+ internal users; represents enterprise shift from "AI helps code" to "AI manages the software factory"
+- [[entities/microsoft-legal-agent]] — First profession-specific Copilot vertical; demonstrates embedding AI in existing professional tools
+- [[entities/ruflo]] — Agent fleet orchestration platform for Claude Code; 100+ agent swarms with self-learning memory
+- [[entities/gitnexus]] — Code intelligence engine exposing knowledge graphs through MCP; completes the agent infrastructure triad with Serena and context-mode
+- [[ideas/agent-verticalization]] — Agent market maturing from general-purpose assistants to profession-specific platforms

@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-03
+last_updated: 2026-05-05
 ---
 
 # GitHub Trends
@@ -65,7 +65,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | msitarzewski/agency-agents | new | Complete AI agency with specialized expert agents (frontend wizards, Reddit ninjas, etc.) |
 | oraios/serena | 23.8K+ | MCP semantic code toolkit for 40+ languages; symbol-level editing via LSP |
 | OpenMOSS/MOVA | 972+ | Foundation model for synchronized video-audio generation in a single pass |
-| multimodal-art-projection/AutoMV | 104+ | Multi-agent music video generator; ~$10-20 per MV |
+| ruvnet/ruflo | 39.9K+ | Open-source agent orchestration for Claude Code deploying 100+ agent swarms with self-learning memory |
+| abhigyanpatwari/GitNexus | 35.4K+ | Zero-server code intelligence engine indexing codebases into MCP-accessible knowledge graphs |
+| AIDC-AI/Pixelle-Video | 10.5K+ | AI-powered fully automated short video engine from topic to final video |
 
 ## Patterns & Insights
 
@@ -99,6 +101,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **May 2: Semantic code infrastructure and AI video generation**: Three repos trending. OpenMOSS/MOVA (972 stars) — foundational model for synchronized video-audio generation in a single inference pass, breaking the "silent era" of open-source video models with multilingual lip-sync and ComfyUI integration. oraios/serena (23.8K stars) — MCP toolkit for semantic code retrieval, editing, and refactoring across 40+ languages; operates at the symbol level rather than line numbers via LSP language servers, described as "the IDE for your coding agent." multimodal-art-projection/AutoMV (104 stars) — training-free multi-agent music video generator using Screenwriter, Director, and Verifier agents with character consistency banks and beat-aligned editing at ~$10-20 per MV.
 
+**May 3-4: Agent infrastructure goes enterprise-scale**: Three repos trending. ruvnet/ruflo (39.9K stars) — open-source agent orchestration platform for Claude Code deploying multi-agent swarms with self-learning memory, federated communication, and enterprise security across 100+ specialized agents. abhigyanpatwari/GitNexus (35.4K stars) — zero-server code intelligence engine that indexes any codebase into a knowledge graph (dependencies, call chains, execution flows) and exposes it through MCP tools for AI coding agents. AIDC-AI/Pixelle-Video (10.5K stars) — AI-powered fully automated short video engine handling scriptwriting, AI imagery, voice synthesis, background music, and final assembly from a single topic input. The pattern: coding agent infrastructure (Ruflo, GitNexus) is converging with content creation infrastructure (Pixelle-Video, AutoMV) — agent frameworks are spreading beyond code into every creative domain.
+
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
 - [[entities/claw-code]] — Clean-room rewrite, 181K+ stars
@@ -116,5 +120,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/open-agent-sdk-go]] — Lightweight Go SDK for AI agents with MCP support
 - [[entities/andrej-karpathy-skills]] — 105K stars; single CLAUDE.md with 4 principles; "configuration over code" for agent behavior
 - [[entities/context-mode]] — 11.9K stars; 98% context reduction via MCP; critical infrastructure for continuous agent operation
-- [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI; Karpathy principles lowest-friction path to better agents
-- [[ideas/institutional-gap]] — GUARD Act criminal penalties show governance catching up to capability deployment
+- [[entities/ruflo]] — 39.9K stars; Claude Code agent fleet orchestration with 100+ specialized agents
+- [[entities/gitnexus]] — 35.4K stars; MCP knowledge graph for agent codebase navigation; completes agent infrastructure triad with Serena and context-mode
+- [[entities/pixelle-video]] — 10.5K stars; fully automated short video engine demonstrating agent frameworks spreading beyond code into creative production
+- [[ideas/agent-verticalization]] — Agent infrastructure maturing from individual tools to organizational platforms

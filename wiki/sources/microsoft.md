@@ -1,7 +1,7 @@
 ---
 title: "Microsoft"
 slug: microsoft
-last_updated: 2026-05-01
+last_updated: 2026-05-04
 ---
 
 # Microsoft
@@ -21,6 +21,8 @@ last_updated: 2026-05-01
 | 2026-04-24 | Geoffrey Hinton UN warning | "Car with no brake going down a hill" — AI needs governance |
 | 2026-05-01 | M365 E7 and Agent 365 GA | $99/user/month and $15/user/month; first new enterprise license in a decade; E5+Copilot+Agent 365+Entra Suite |
 | 2026-05-01 | Pentagon includes Microsoft in 8-company classified AI coalition | Azure AI deployed on IL6/IL7 classified networks; Agent Governance Toolkit open-sourced addressing OWASP Agentic Top 10 |
+| 2026-04-29 | Copilot surpasses 20M paid enterprise seats | Weekly engagement reportedly matching Outlook usage; Accenture alone accounts for 740K seats; Agent mode now default across Word, Excel, PowerPoint; multi-model support includes Anthropic's Claude alongside OpenAI models |
+| 2026-05-01 | Legal Agent launched for contract review in Word | First profession-specific Copilot vertical; clause-by-clause contract review purpose-built inside Word; signals Microsoft's verticalization strategy: carve enterprise into profession-specific AI surfaces |
 
 ## Key Relationships
 - **Anthropic**: Paradoxical — Claude integration in Copilot but competing in enterprise.
@@ -34,3 +36,6 @@ last_updated: 2026-05-01
 - [[entities/agent-365]] — $15/user/month AI agent product launched alongside E7; first new enterprise license in a decade
 - [[entities/m365-e7]] — $99/user/month bundle (E5+Copilot+Agent 365+Entra Suite); AI governance inseparable from identity stack
 - [[ideas/enterprise-ai-lock-in]] — E7 bundle designed to make AI governance inseparable from Microsoft's ecosystem
+- [[entities/microsoft-legal-agent]] — First profession-specific Copilot vertical; demonstrates the strategy of embedding AI in existing professional tools rather than building standalone AI products
+- [[entities/ibm-bob]] — IBM Bob competes with Microsoft's Copilot ecosystem at the organizational SDLC layer but from a neutral multi-model position vs Copilot's Microsoft-stack integration
+- [[ideas/agent-verticalization]] — Legal Agent is the case study for the agent verticalization thesis: 20M Copilot seats provide distribution, profession-specific tools provide depth

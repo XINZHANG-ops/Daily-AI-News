@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-03
+last_updated: 2026-05-05
 ---
 
 # OpenAI
@@ -50,6 +50,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-02 | Sam Altman lays out three-pillar strategy | Science acceleration (math, physics, Alzheimer's), economic productivity ("one-person companies"), and "personal AGI" — pivot from corporate AGI to individual empowerment; reframes every product as a "personal AGI" feature |
 | 2026-05-02 | GPT-5.5 scores 0.43% on ARC-AGI-3 | Despite 82.7% on Terminal-Bench 2.0; systemic errors show model routes unfamiliar situations to memorized templates rather than reasoning |
 | 2026-05-02 | Pentagon expands AI contracts with "any lawful operational use" | OpenAI included in 8-company coalition; 1M+ defense personnel on GenAI.mil platform; timing overlaps with Altman's "personal AGI" vision |
+| 2026-05-03 | Musk trial: 2015-2018 internal emails exposed | Court exhibits show early power struggles between Musk, Altman, Brockman, Sutskever over nonprofit vs for-profit direction; Musk advocated for-profit pivot in 2017; Musk confirms xAI used OpenAI models to train Grok |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -60,8 +61,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 
 ## Connections
 - [[entities/gpt-5.4]] — Flagship model family; Thinking, Mini, Nano, Cyber variants
-- [[entities/gpt-5.5]] — Latest model with "super app" integration vision; 49-day release cycle for enterprise procurement lock-in; deployed on Pentagon classified networks
-- [[entities/spud-model]] — Next flagship model completing pretraining
+- [[entities/gpt-5.5]] — Latest model (codename "Spud") with "super app" integration vision; 49-day release cycle for enterprise procurement lock-in; deployed on Pentagon classified networks
 - [[entities/codex]] — 3M weekly users, primary coding agent product
 - [[entities/symphony]] — Open-source orchestration spec for Codex at fleet scale; 15K+ stars
 - [[entities/gpt-5.4-cyber]] — Defensive cybersecurity variant
@@ -71,3 +71,4 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[ideas/rl-vs-llm-paradigm]] — ARC-AGI-3 0.43% score supports Silver's thesis that LLMs are "fossil fuel" remixing existing knowledge rather than reasoning
 - [[sources/anthropic]] — Rivalry intensifying over compute and enterprise contracts
 - [[sources/deepseek]] — Both competing for AI coding market; DeepSeek V4 challenges GPT-5.5 on benchmarks
+- [[entities/microsoft-legal-agent]] — OpenAI models power Copilot alongside Claude; multi-model strategy means OpenAI's revenue benefits from Microsoft's verticalization even as it competes with Microsoft's own MAI models

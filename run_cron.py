@@ -6,7 +6,7 @@ from zoneinfo import ZoneInfo
 
 BASE_DIR = "/Users/xinzhang/Daily-AI-News"
 os.environ["PATH"] = "/usr/local/bin:/Users/xinzhang/.local/bin:/opt/homebrew/bin:" + os.environ.get("PATH", "")
-CLAUDE_CMD = ["/usr/local/bin/ollama", "launch", "claude", "--model", "deepseek-v4-pro:cloud", "--"]
+CLAUDE_CMD = ["/usr/local/bin/ollama", "launch", "claude", "--model", "kimi-k2.6:cloud", "--"]
 
 toronto = ZoneInfo("America/Toronto")
 now_toronto = datetime.now(toronto)

@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-03
+last_updated: 2026-05-04
 ---
 
 # AI Companies
@@ -97,6 +97,10 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-01 | Five Eyes issues first joint guidance on AI agent security | US, UK, Canada, Australia, NZ warn on excessive privileges, cascading failures, accountability gaps — same day as Pentagon deployment |
 | 2026-05-01 | Ineffable Intelligence valued at $5.1B (Silver RL bet) | David Silver's "LLMs are fossil fuel" thesis; largest pure-research AI bet of 2026; Nvidia, Google, UK sovereign fund participate |
 | 2026-05-01 | OpenAI open-sources Symphony orchestration spec | 15K+ stars; language-agnostic with 5 reference implementations; formalizes agent-as-employee model |
+| 2026-05-03 | Anthropic finalizes $1.5B Wall Street JV | Joint venture with Blackstone, Goldman Sachs, H&F to embed AI in PE-backed companies; pre-IPO enterprise distribution strategy |
+| 2026-05-03 | Musk trial exposes 2015-2018 OpenAI emails | Early power struggles over nonprofit vs for-profit; Musk advocated for-profit pivot in 2017; xAI confirmed using OpenAI models to train Grok |
+| 2026-05-03 | IBM Bob enters enterprise AI dev market | 80K+ internal users; multi-model orchestration (Claude, Mistral, Granite); positions as neutral alternative to Microsoft Copilot |
+| 2026-05-03 | AI music platforms proliferate | WXLI (AI-curated radio), StarSinger (voice cloning + MCP server), Arena Radio (human-only wall) — content market bifurcation mirrors text/image split |
 
 ## Patterns & Insights
 
@@ -137,3 +141,6 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[entities/ari]] — Meta's humanoid robotics acquisition; "Android for robots" licensing strategy; all three major labs now in humanoid race
 - [[entities/vibe]] — Mistral's vertically integrated coding agents; signals European lab following Claude Code growth strategy
 - [[ideas/ai-creative-regulation]] — Oscars ban codifies "regulate creative core, leave tool layer" framework that is becoming global regulatory template
+- [[entities/ibm-bob]] — IBM's enterprise SDLC automation play; multi-model neutrality positions against Microsoft's Copilot lock-in
+- [[entities/microsoft-legal-agent]] — First profession-specific Copilot vertical; case study for Microsoft's post-Copilot strategy
+- [[ideas/agent-verticalization]] — Industry consolidating around profession-specific platforms rather than general-purpose assistants

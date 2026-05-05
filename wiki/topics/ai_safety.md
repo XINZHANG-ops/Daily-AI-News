@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-03
+last_updated: 2026-05-04
 ---
 
 # AI Safety
@@ -58,6 +58,7 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-01 | Musk admits under oath: xAI distilled from OpenAI models | Called it "standard practice to use other AIs to validate your AI"; admission drew audible gasps in courtroom; IP chain of title questionable for SpaceX-xAI merger |
 | 2026-05-02 | Pentagon expands AI contracts — "any lawful operational use" | 1M+ defense personnel on GenAI.mil; Anthropic sues government over this exact language; EU moves opposite direction with AI Act enforcement on military-adjacent applications |
 | 2026-05-02 | ARC-AGI-3 exposes reasoning limitations of frontier models | GPT-5.5 0.43%, Opus 4.7 0.18% on puzzles humans solve easily; systematic errors reveal models don't reason — they retrieve memorized patterns; safety implications for autonomous systems relying on these models |
+| 2026-05-03 | Pentagon exclusion cost quantified: ~$200M | Defense Secretary Hegseth called Dario Amodei "ideological lunatic"; same week Anthropic secured $1.5B Wall Street JV — the market bifurcation into "AI that says yes" vs "AI with guardrails" now has quantified economics on both sides |
 
 ## Patterns & Insights
 
@@ -95,3 +96,4 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[entities/claude-mythos]] — Central to the safety crisis, 10T parameter confirmation
 - [[entities/mcp-protocol]] — Critical vulnerability affecting 150M+ installations
 - [[entities/arc-agi-3]] — <1% scores expose that models deployed in safety-critical contexts cannot form coherent world models or reason about novel situations
+- [[ideas/military-ai-divide]] — $200M Pentagon exclusion vs $1.5B Wall Street JV in same week proves both sides of the military-safety split have real economic weight

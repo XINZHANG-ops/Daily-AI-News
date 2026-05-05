@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-03
+last_updated: 2026-05-04
 ---
 
 # LLM Models
@@ -93,6 +93,8 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-01 | NVIDIA GB300 Blackwell Ultra enters mass production | 288GB HBM3e, 10 TB/s, NVLink 6; 50x throughput/megawatt, 35x lower cost/token for agentic AI |
 | 2026-05-01 | Anthropic launches Claude Security (public beta) | Powered by Opus 4.7; integrated with CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security |
 | 2026-05-01 | Microsoft M365 E7 and Agent 365 GA at $99/$15 per user/month | First new enterprise license in a decade; bundles E5, Copilot, Agent 365, Entra Suite |
+| 2026-05-01 | Microsoft Copilot adds multi-model support | Claude joins OpenAI models in Copilot; 20M paid enterprise seats; Accenture 740K seats; Legal Agent launched as first profession-specific vertical |
+| 2026-04-28 | IBM Bob: multi-model orchestration for SDLC | Routes tasks to Claude, Mistral, IBM Granite based on fit; represents shift from "best single model" to "best model per task" architecture |
 
 ## Patterns & Insights
 
@@ -156,3 +158,5 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[ideas/safety-restricted-releases]] — Claude Mythos established the precedent; GPT-5.5 Cyber follows same pattern
 - [[ideas/us-china-ai-fragmentation]] — Stanford HAI confirms gap has collapsed
 - [[ideas/institutional-gap]] — May 1 exemplifies GUARD Act criminal penalties and liability exceeding Section 230 frameworks
+- [[entities/ibm-bob]] — Multi-model orchestration routing tasks to best-fit model challenges the "one best model" assumption; Claude, Mistral, and Granite each win different task categories
+- [[entities/microsoft-legal-agent]] — Claude integration in Copilot proves no single model provider wins enterprise AI alone; multi-model support is becoming table stakes
