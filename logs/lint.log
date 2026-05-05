@@ -160,3 +160,13 @@ Wiki lint complete. Here's what was fixed:
 - `index.md` updated: entity count 72, added `pixelle-video`, merged `spud-model` description into `gpt-5.5`, `last_updated` bumped to 2026-05-05
 - Appended lint entry to `wiki/log.md` with full counts: 6 topics, 20 sources, 3 timelines, 72 entities, 22 ideas = 123 total
 [2026-05-05 01:15:14] Wiki lint complete (exit code 0).
+[main 7f2f955] wiki: lint 2026-05-05
+ 31 files changed, 596 insertions(+), 78 deletions(-)
+ create mode 100644 wiki/entities/gitnexus.md
+ create mode 100644 wiki/entities/ibm-bob.md
+ create mode 100644 wiki/entities/microsoft-legal-agent.md
+ create mode 100644 wiki/entities/pixelle-video.md
+ create mode 100644 wiki/entities/ruflo.md
+ delete mode 100644 wiki/entities/spud-model.md
+ create mode 100644 wiki/ideas/agent-verticalization.md
+ create mode 100644 wiki/sources/ibm.md
