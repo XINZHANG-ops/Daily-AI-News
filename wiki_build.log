@@ -472,3 +472,22 @@ Ingest complete for **2026-05-04**. Here's a summary of what was done:
 2. **Agent verticalization**: IBM Bob, Legal Agent, Ruflo, and GitNexus all landed in one week — the agent layer moving from horizontal to vertical
 3. **Musk trial origin story**: 2015-2018 emails show the nonprofit/for-profit tension was baked into OpenAI from day one; Musk advocated what he now sues to undo
 4. **AI content market bifurcation**: Music platforms splitting into AI-native (WXLI, StarSinger) vs human-first (Arena Radio) — mirrors text/image pattern
+Wiki ingest for **2026-05-05** is complete.
+
+**What was processed:**
+- 1 new data file: `data/2026-05-05.json`
+- 3 news articles and 3 GitHub repos extracted
+
+**New pages created (9):**
+- **Entities (6):** `nanobot` (repo, 41.7K stars), `agent-squad` (framework, 7.6K), `stripe-agentic-commerce` (product, 288 launches), `ibm-sovereign-core` (product), `the-deployment-company` (product, $10B), `gemini-robotics-er-1-6` (model)
+- **Ideas (2):** `agent-economy-infrastructure` (Stripe + IBM + OpenAI convergence), `indirect-prompt-injection-threat` (32% growth, 10 payloads)
+- **Sources (1):** `stripe` (Stripe Sessions 2026)
+
+**Existing pages updated (14):**
+- **Topics:** `agentic_ai`, `ai_safety`, `ai_companies`, `ai_funding`, `github_trends`
+- **Sources:** `openai`, `google`, `ibm`, `nvidia`
+- **Timeline:** `timelines/2026-05`
+- **Index:** `index.md` (21 sources, 78 entities, 24 ideas, 6 topics, 3 timelines)
+- **Tracking:** `processed.json` and `log.md`
+
+**Key cross-cutting insight:** May 5, 2026 reveals the AI industry simultaneously building infrastructure for autonomous agents (Stripe payments, IBM governance, OpenAI deployment) while discovering that the security frameworks for that world do not yet exist (IPI as the "SQL injection moment").

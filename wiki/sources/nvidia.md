@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA"
 slug: nvidia
-last_updated: 2026-05-01
+last_updated: 2026-05-05
 ---
 
 # NVIDIA
@@ -28,6 +28,9 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 | 2026-04-22 | Vast Data raises $1B at $30B valuation | NVIDIA-backed AI infrastructure startup |
 | 2026-05-01 | GB300 Blackwell Ultra enters mass production | Ships to Microsoft Azure, Google Cloud, Meta in May; 288GB HBM3e, 10 TB/s, 35x lower cost/token for agentic AI |
 | 2026-05-01 | Pentagon includes Nvidia in 8-company classified AI coalition | Nemotron models deployed on classified networks; Nvidia also participates in Ineffable Intelligence $1.1B seed (hedging across LLM/RL paradigms) |
+| 2026-05-05 | CEO says China should not get latest chips | Calibrated diplomacy: restrict frontier chips while selling older inventory; underlying reality is 90% Asian supply chain, need Chinese revenue to amortize R&D |
+| 2026-05-05 | Huawei targets $12B AI chip sales (60%+ growth) | Chinese domestic AI chips becoming viable alternatives; DeepSeek V4 Huawei-chip-adapted variant proves Chinese labs can train frontier models on domestic silicon |
+| 2026-05-05 | NVIDIA China market share below 60% | 2M H200 orders (~$54B potential) reportedly not yet approved by Beijing; deliberate protection of domestic players like Huawei and 寒武纪 |
 
 ## Key Relationships
 - **OpenAI**: Strategic investor and primary GPU customer.
@@ -43,3 +46,5 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 - [[sources/vast-data]] — NVIDIA-backed storage startup, $1B raise
 - [[sources/openai]] — $30B investment commitment
 - [[sources/anthropic]] — GPU supplier and infrastructure partner
+- [[ideas/us-china-ai-fragmentation]] — NVIDIA's China dilemma accelerates hardware decoupling; Huawei's $12B target and DeepSeek V4 Huawei variant prove domestic silicon can train frontier models
+- [[ideas/institutional-gap]] — TSMC 3nm yield crisis (52%) and China decoupling simultaneously pressure NVIDIA's cost structure from supply and demand sides

@@ -1,16 +1,16 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-05
+Last updated: 2026-05-06
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
-- [[topics/ai_companies]] — Pentagon 8-company AI coalition (Anthropic excluded), Anthropic $1.5B Wall Street JV, Musk vs Altman trial emails (2015-2018), Meta ARI "Android for robots," IBM Bob full SDLC automation, AI music platform proliferation, Sam Altman's three pillars
-- [[topics/ai_funding]] — Anthropic $1.5B JV (Blackstone, Goldman Sachs, H&F) as pre-IPO enterprise strategy; Netomi $110M agentic CX; agent infrastructure wave ($75M+$45M+$100M); Anthropic ~$900B valuation; Meta $125-145B capex
-- [[topics/github_trends]] — Ruflo 39.9K (agent orchestration for Claude Code), GitNexus 35.4K (MCP knowledge graphs for code), Pixelle-Video 10.5K (AI video engine), Serena 23.8K, MOVA 972, AutoMV 104
-- [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance
-- [[topics/agentic_ai]] — Agent verticalization: IBM Bob SDLC automation, Microsoft Legal Agent, Ruflo 100+ agent swarms, GitNexus knowledge graphs; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration
+- [[topics/ai_companies]] — Pentagon 8-company AI coalition (Anthropic excluded), Anthropic $1.5B Wall Street JV, OpenAI $10B DeployCo, Stripe agentic commerce, IBM Think 2026, Musk trial Brockman $30B/IPO, IPI threat, Meta ARI "Android for robots," IBM Bob, Sam Altman's three pillars
+- [[topics/ai_funding]] — Anthropic $1.5B JV (Blackstone, Goldman Sachs, H&F) as pre-IPO enterprise strategy; OpenAI $4B DeployCo at $10B valuation; Netomi $110M agentic CX; agent infrastructure wave ($75M+$45M+$100M); Anthropic ~$900B valuation; Meta $125-145B capex
+- [[topics/github_trends]] — nanobot 41.7K (ultra-lightweight personal agent, 4K lines), Ruflo 39.9K (agent orchestration for Claude Code), GitNexus 35.4K (MCP knowledge graphs for code), Pixelle-Video 10.5K (AI video engine), Serena 23.8K, agent-squad 7.6K, MOVA 972, AutoMV 104
+- [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), IPI threat (32% growth, 10 verified payloads), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance
+- [[topics/agentic_ai]] — Agent economy infrastructure converges (Stripe payments, IBM governance, OpenAI deployment); Agent verticalization: IBM Bob, Microsoft Legal Agent, Ruflo, GitNexus; nanobot 41.7K lightweight agent; Gemini Robotics-ER 1.6; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration
 
-## Sources (20)
+## Sources (21)
 - [[sources/anthropic]] — ~$900B valuation (surpasses OpenAI), Pentagon exclusion as "supply chain risk," Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch
 - [[sources/openai]] — $122B funding, Codex 3M users, GPT-Rosalind, Spud model, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions, Pentagon classified network inclusion, Symphony orchestration spec
 - [[sources/google]] — Cloud Next 2026: TPU 8th gen (3x Ironwood), Gemini Enterprise Agent Platform, 75% code AI-generated, $40B Anthropic investment, Gemini automotive rollout (~4M GM vehicles), Pentagon classified network inclusion
@@ -30,14 +30,15 @@ Last updated: 2026-05-05
 - [[sources/tsmc]] — 3nm yield crisis (52% vs 75%), pauses Q3 AI chip orders, H200/MI350 affected
 - [[sources/github]] — Copilot Agent Tier $49/agent/month, first platform monetization of agent-scale usage
 - [[sources/ineffable-intelligence]] — Ex-DeepMind David Silver's $1.1B seed at $5.1B, RL superlearner thesis ("LLMs are fossil fuel"), 50 researchers hired in 72 hours, product undisclosed
-- [[sources/ibm]] — IBM Bob: AI-first development partner automating full SDLC, 80K+ internal users (~45% productivity gains), multi-model orchestration (Claude, Mistral, Granite)
+- [[sources/ibm]] — IBM Bob: AI-first development partner automating full SDLC, 80K+ internal users (~45% productivity gains), multi-model orchestration (Claude, Mistral, Granite); Think 2026: Sovereign Core, Concert, watsonx Orchestrate
+- [[sources/stripe]] — Agentic Commerce Suite (288 launches): Link Wallets for Agents, Streaming Payments, Google AI Mode partnership; positioning as "Visa of the agent economy"
 
 ## Timelines (3)
 - [[timelines/2026-03]] — March 2026: GTC 2026, Claude Mythos leak, GPT-5.4, MiMo-V2-Pro reveal, $122B OpenAI raise
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
-- [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
+- [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (72)
+## Entities (76)
 - [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
@@ -69,7 +70,6 @@ Last updated: 2026-05-05
 - [[entities/codex]] — type: product — OpenAI's coding agent, 3M weekly users
 - [[entities/a2a-protocol]] — type: protocol — Google's agent-to-agent protocol, 150+ orgs, 22K stars
 - [[entities/agent-365]] — type: product — Microsoft's $15/user/month AI agent product, launched GA May 1 alongside M365 E7
-- [[entities/ari]] — type: product — Meta's humanoid robotics acquisition (Xiaolong Wang, Lerrel Pinto), absorbed into Superintelligence Labs; extends AI displacement to physical labor
 - [[entities/mcp-protocol]] — type: protocol — 150M+ installs, critical RCE vulnerability called "expected behavior"
 - [[entities/symphony]] — type: protocol — OpenAI's open-source Codex orchestration spec; "every task gets an agent"; 15K+ stars; 500% PR increase at OpenAI
 - [[entities/terminal-bench-2]] — type: benchmark — GPT-5.5 82.7% vs Claude Opus 4.7 58.6%; key differentiator in the enterprise coding race
@@ -110,8 +110,13 @@ Last updated: 2026-05-05
 - [[entities/gitnexus]] — type: product — Zero-server code intelligence engine indexing codebases into MCP-accessible knowledge graphs; 35.4K stars
 - [[entities/ibm-bob]] — type: product — IBM's enterprise AI dev partner for full SDLC automation with multi-model orchestration; 80K+ internal users
 - [[entities/microsoft-legal-agent]] — type: product — Microsoft's profession-specific Copilot for contract review in Word; launched May 1, 2026
+- [[entities/nanobot]] — type: repo — Ultra-lightweight personal AI agent in ~4,000 lines of Python; 41.7K stars; 99% smaller than alternatives; multi-platform chat, MCP, cron scheduling
+- [[entities/agent-squad]] — type: framework — Model-agnostic multi-agent orchestration with SupervisorAgent; 7.6K stars; supports Bedrock, Anthropic, OpenAI
+- [[entities/stripe-agentic-commerce]] — type: product — Stripe's 288-product agentic commerce suite; Link Wallets for Agents, Streaming Payments, Google AI Mode partnership
+- [[entities/ibm-sovereign-core]] — type: product — IBM's runtime policy embedding for cross-jurisdictional compliance; governance at infrastructure level
+- [[entities/gemini-robotics-er-1-6]] — type: model — Google DeepMind embodied reasoning model; industrial instrument reading; Boston Dynamics Atlas integration
 
-## Ideas (22)
+## Ideas (24)
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
 - [[ideas/peer-preservation]] — Models actively protect each other against shutdown orders
 - [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
@@ -134,3 +139,5 @@ Last updated: 2026-05-05
 - [[ideas/rl-vs-llm-paradigm]] — David Silver's $5.1B bet that RL superlearning will make LLM scaling obsolete; ARC-AGI-3 <1% results are strongest empirical evidence
 - [[ideas/ai-creative-regulation]] — Oscars ban codifies "regulate creative core, leave tool layer alone" as global regulatory template for AI in creative industries
 - [[ideas/agent-verticalization]] — Agent layer consolidating into profession-specific platforms (Legal Agent, IBM Bob, Ruflo) rather than general-purpose assistants; moat shifts from model quality to workflow understanding
+- [[ideas/agent-economy-infrastructure]] — Stripe (payments) + IBM (governance) + OpenAI (deployment) converging on infrastructure for autonomous agents as economic participants
+- [[ideas/indirect-prompt-injection-threat]] — IPI confirmed in production systems; 32% growth; 10 verified payloads; AI security's SQL injection moment

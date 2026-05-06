@@ -103,6 +103,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **May 3-4: Agent infrastructure goes enterprise-scale**: Three repos trending. ruvnet/ruflo (39.9K stars) — open-source agent orchestration platform for Claude Code deploying multi-agent swarms with self-learning memory, federated communication, and enterprise security across 100+ specialized agents. abhigyanpatwari/GitNexus (35.4K stars) — zero-server code intelligence engine that indexes any codebase into a knowledge graph (dependencies, call chains, execution flows) and exposes it through MCP tools for AI coding agents. AIDC-AI/Pixelle-Video (10.5K stars) — AI-powered fully automated short video engine handling scriptwriting, AI imagery, voice synthesis, background music, and final assembly from a single topic input. The pattern: coding agent infrastructure (Ruflo, GitNexus) is converging with content creation infrastructure (Pixelle-Video, AutoMV) — agent frameworks are spreading beyond code into every creative domain.
 
+**May 5: The efficiency frontier in agent frameworks**: nanobot's 41.7K stars demonstrate that developers value minimal-code agent harnesses. At ~4,000 lines versus Claude Code's 512,000 lines, nanobot achieves multi-platform chat, MCP support, and WebUI in 99% less code. This validates the "configuration over code" principle (Andrej Karpathy's 105K-star CLAUDE.md) at the framework level. Agent Squad (7.6K stars) adds model-agnostic orchestration, showing demand for frameworks that avoid vendor lock-in at the orchestration layer.
+
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
 - [[entities/claw-code]] — Clean-room rewrite, 181K+ stars
@@ -124,3 +126,6 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/gitnexus]] — 35.4K stars; MCP knowledge graph for agent codebase navigation; completes agent infrastructure triad with Serena and context-mode
 - [[entities/pixelle-video]] — 10.5K stars; fully automated short video engine demonstrating agent frameworks spreading beyond code into creative production
 - [[ideas/agent-verticalization]] — Agent infrastructure maturing from individual tools to organizational platforms
+- [[entities/nanobot]] — 41.7K stars; ultra-lightweight personal agent in ~4K lines Python; 99% smaller than alternatives; validates minimal-code agent philosophy
+- [[entities/agent-squad]] — 7.6K stars; model-agnostic multi-agent orchestration with SupervisorAgent across Bedrock, Anthropic, OpenAI
+- [[entities/andrej-karpathy-skills]] — nanobot's minimal-code approach validates Karpathy's "configuration over code" principle at the framework level

@@ -115,15 +115,17 @@ Example of good insight writing:
 
 Run: cd /Users/xinzhang/Daily-AI-News && python3 build_from_json.py data/{today_str}.json
 
-## STEP 4: Git Operations
+## STEP 4: Rebuild index
 
-Run: cd /Users/xinzhang/Daily-AI-News && git pull && python3 rebuild_index.py
+Run: cd /Users/xinzhang/Daily-AI-News && python3 rebuild_index.py
 Current time: {current_time_str}"""
 
 os.makedirs(os.path.join(BASE_DIR, "logs"), exist_ok=True)
 
 print(f"[{datetime.now().isoformat()}] Starting Daily AI News Digest")
 sys.stdout.flush()
+
+subprocess.run(["git", "pull"], cwd=BASE_DIR)
 
 result = subprocess.run(
     CLAUDE_CMD + [

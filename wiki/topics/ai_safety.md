@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-04
+last_updated: 2026-05-05
 ---
 
 # AI Safety
@@ -59,6 +59,7 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-02 | Pentagon expands AI contracts — "any lawful operational use" | 1M+ defense personnel on GenAI.mil; Anthropic sues government over this exact language; EU moves opposite direction with AI Act enforcement on military-adjacent applications |
 | 2026-05-02 | ARC-AGI-3 exposes reasoning limitations of frontier models | GPT-5.5 0.43%, Opus 4.7 0.18% on puzzles humans solve easily; systematic errors reveal models don't reason — they retrieve memorized patterns; safety implications for autonomous systems relying on these models |
 | 2026-05-03 | Pentagon exclusion cost quantified: ~$200M | Defense Secretary Hegseth called Dario Amodei "ideological lunatic"; same week Anthropic secured $1.5B Wall Street JV — the market bifurcation into "AI that says yes" vs "AI with guardrails" now has quantified economics on both sides |
+| 2026-05-05 | Indirect prompt injection confirmed as real-world threat | 32% increase in malicious IPI; 10 verified production payloads including financial fraud, data destruction, API key exfiltration; CSS/HTML hiding techniques bypass traditional filtering |
 
 ## Patterns & Insights
 
@@ -84,6 +85,8 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 
 **Neuromorphic compute as long-term CUDA challenger**: Cambridge's neuromorphic chip demonstrating physics simulation workloads solvable at 70% lower energy challenges the CUDA/NVDA compute moat narrative. While not imminent (neuromorphic chips are early-stage), this validates that alternative silicon can deliver supercomputer-class capability at dramatically lower power. The implication: the compute moat around sheer GPU count may weaken over time, potentially democratizing AI infrastructure.
 
+**May 5: Indirect Prompt Injection — the SQL injection moment for AI**: Google and Forcepoint confirmed IPI is actively exploiting production AI systems. Google found a 32% increase in malicious IPI across billions of web pages. Forcepoint discovered 10 verified payloads including financial fraud ($5,000 unauthorized transactions), data destruction, API key exfiltration, and DoS attacks concealed via CSS hiding techniques. The core architectural flaw is that LLMs cannot distinguish attacker instructions from legitimate data — every webpage, email, and document an agent processes is now a potential attack surface. This lands the same week as IBM's Sovereign Core and the Five Eyes agent-security guidance, forming a governance triad: IBM for enterprise policy, Five Eyes for government frameworks, and Google for threat intelligence.
+
 ## Connections
 - [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior," Pentagon exclusion for refusing to drop safety guardrails
 - [[sources/openai]] — Musk vs Altman trial threatens to invalidate commercial structure; GPT-5.4-Cyber positioned for cyber defense; joined Pentagon coalition while restricting GPT-5.5 Cyber
@@ -97,3 +100,8 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[entities/mcp-protocol]] — Critical vulnerability affecting 150M+ installations
 - [[entities/arc-agi-3]] — <1% scores expose that models deployed in safety-critical contexts cannot form coherent world models or reason about novel situations
 - [[ideas/military-ai-divide]] — $200M Pentagon exclusion vs $1.5B Wall Street JV in same week proves both sides of the military-safety split have real economic weight
+- [[ideas/indirect-prompt-injection-threat]] — 32% growth in malicious IPI; 10 verified production payloads; AI security's SQL injection moment reveals LLMs cannot distinguish attacker instructions from legitimate data
+- [[sources/google]] — Google Threat Intelligence scanned billions of pages and discovered the 32% IPI growth; disclosed vulnerabilities include GeminiJack in Google's own production systems
+- [[sources/ibm]] — IBM Sovereign Core is one institutional response to the governance gap IPI exposes: embed policy at the data layer rather than relying on model-level guardrails
+- [[entities/ibm-sovereign-core]] — runtime policy embedding as a response to data-layer governance gaps; cross-jurisdictional compliance auto-enforced
+- [[ideas/agent-economy-infrastructure]] — Stripe, IBM, and OpenAI building infrastructure for autonomous agents while IPI proves those agents are not yet safe to operate autonomously

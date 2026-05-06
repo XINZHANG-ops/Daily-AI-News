@@ -170,3 +170,30 @@ Wiki lint complete. Here's what was fixed:
  delete mode 100644 wiki/entities/spud-model.md
  create mode 100644 wiki/ideas/agent-verticalization.md
  create mode 100644 wiki/sources/ibm.md
+[2026-05-06 01:00:00] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+Wiki lint complete. All four passes finished.
+
+**Pass 1 — Structural Integrity**
+- Verified all 130 content pages exist and are listed in `index.md`
+- Confirmed zero broken wikilinks across all content pages
+- Only expected orphans are `index.md` and `log.md`
+
+**Pass 2 — Wrong & Duplicate Information**
+- Removed `entities/ari.md` (Meta's robotics acquisition — a company, not a technical entity) and redirected its 4 inbound links to plain text/`sources/meta`
+- Removed `entities/the-deployment-company.md` (OpenAI's joint venture — a company) and redirected its 7 inbound links to plain text/`sources/openai`
+- Updated `index.md` entity count: 78 → 76
+- Verified frontmatter types match index annotations for all 76 entities
+- No duplicate paragraphs or stale claims detected
+
+**Pass 3 — Connection Quality**
+- All 6 topic pages have `## Evolution` and `## Patterns & Insights` sections
+- No bare "Related:", "See also:", or unannotated links found
+- No missing entity pages for significant named concepts
+
+**Pass 4 — Index & Log**
+- Rebuilt `index.md` with accurate counts and updated date to 2026-05-06
+- Appended comprehensive lint entry to `wiki/log.md`
+
+Final counts: 6 topics, 21 sources, 3 timelines, 76 entities, 24 ideas = 130 pages.
+[2026-05-06 01:39:33] Wiki lint complete (exit code 0).

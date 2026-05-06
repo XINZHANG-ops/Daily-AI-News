@@ -1,7 +1,7 @@
 ---
 title: "IBM"
 slug: ibm
-last_updated: 2026-05-04
+last_updated: 2026-05-05
 ---
 
 # IBM
@@ -14,6 +14,7 @@ IBM entered the AI development platform race with Bob, an AI-first development p
 | Date | Event | Details |
 |------|-------|---------|
 | 2026-04-28 | IBM Bob announced | AI-first development partner automating full SDLC; multi-model orchestration routing to Claude, Mistral, Granite; 80K+ internal IBM users reporting ~45% productivity gains; Blue Pearl completed 30-day Java upgrade in 3 days |
+| 2026-05-05 | Think 2026: watsonx Orchestrate, Concert, Sovereign Core | Agentic control plane for thousands of multi-agent systems; AI ops platform for autonomous infrastructure response; runtime policy embedding for cross-jurisdictional compliance |
 
 ## Key Relationships
 - **Anthropic**: Claude is one of the models Bob routes tasks to; IBM benefits from Claude's coding strengths without being dependent on Anthropic
@@ -26,3 +27,5 @@ IBM entered the AI development platform race with Bob, an AI-first development p
 - [[sources/microsoft]] — IBM positions Bob as the neutral alternative to Microsoft's Copilot ecosystem; multi-model routing vs Copilot's OpenAI-first default
 - [[topics/agentic_ai]] — IBM Bob represents the enterprise SDLC automation thesis: move beyond individual developer tools to organizational software factories
 - [[ideas/agent-verticalization]] — IBM Bob is a case study in verticalization: one AI platform optimized for the entire software engineering profession rather than a general-purpose assistant
+- [[entities/ibm-sovereign-core]] — most strategically significant piece of IBM's governance stack; embeds regulatory policy at runtime as response to EU AI Act fines and Five Eyes guidance
+- [[ideas/agent-economy-infrastructure]] — IBM provides the governance pillar alongside Stripe's payments and OpenAI's deployment

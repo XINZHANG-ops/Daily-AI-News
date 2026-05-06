@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-04
+last_updated: 2026-05-05
 ---
 
 # AI Companies
@@ -98,6 +98,12 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-01 | Ineffable Intelligence valued at $5.1B (Silver RL bet) | David Silver's "LLMs are fossil fuel" thesis; largest pure-research AI bet of 2026; Nvidia, Google, UK sovereign fund participate |
 | 2026-05-01 | OpenAI open-sources Symphony orchestration spec | 15K+ stars; language-agnostic with 5 reference implementations; formalizes agent-as-employee model |
 | 2026-05-03 | Anthropic finalizes $1.5B Wall Street JV | Joint venture with Blackstone, Goldman Sachs, H&F to embed AI in PE-backed companies; pre-IPO enterprise distribution strategy |
+| 2026-05-05 | Stripe Agentic Commerce Suite | 288 launches; Link Wallets for Agents; Streaming Payments; positioning as "Visa of the agent economy" |
+| 2026-05-05 | IBM Think 2026: watsonx Orchestrate, Concert, Sovereign Core | Enterprise AI operating system with governance baked into infrastructure layer; cross-jurisdictional compliance auto-enforced |
+| 2026-05-05 | OpenAI's The Deployment Company | $4B from 19 investors at $10B valuation; forward-deployed engineers in 2,000 portfolio companies; 17.5% guaranteed PE returns |
+| 2026-05-05 | Indirect prompt injection as real threat | 32% growth in malicious IPI; 10 verified production payloads; CSS/HTML hiding techniques |
+| 2026-05-05 | Musk v Altman trial: Brockman $30B stake | IPO exploration confirmed; xAI distillation admission; Zuckerberg texts about stopping OpenAI restructuring |
+| 2026-05-05 | NVIDIA CEO on China chips | Huang says China should not get latest chips; Huawei targets $12B AI chip sales (60%+ growth); 2M H200 orders pending |
 | 2026-05-03 | Musk trial exposes 2015-2018 OpenAI emails | Early power struggles over nonprofit vs for-profit; Musk advocated for-profit pivot in 2017; xAI confirmed using OpenAI models to train Grok |
 | 2026-05-03 | IBM Bob enters enterprise AI dev market | 80K+ internal users; multi-model orchestration (Claude, Mistral, Granite); positions as neutral alternative to Microsoft Copilot |
 | 2026-05-03 | AI music platforms proliferate | WXLI (AI-curated radio), StarSinger (voice cloning + MCP server), Arena Radio (human-only wall) — content market bifurcation mirrors text/image split |
@@ -124,6 +130,8 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 
 **Microsoft's enterprise AI lock-in**: The E7 bundle at $99/month is not a product launch — it's a pricing architecture designed to make AI governance inseparable from Microsoft's identity and security stack. By bundling Agent 365 ($15/month separately) with E7, Microsoft ensures any enterprise wanting structured AI agent governance must buy the full ecosystem. Copilot Cowork research preview (built with Anthropic/Claude) reveals Microsoft is partnering with its biggest AI rival for background workflow orchestration — even Microsoft recognizes it can't win the agentic coding war alone.
 
+**May 5: The deployment layer becomes the battleground**: OpenAI's Deployment Company ($10B valuation, $4B from 19 PE investors) and Anthropic's $1.5B Wall Street JV (announced days earlier) reveal both labs have concluded API sales alone won't justify their valuations. The "forward-deployed engineer" model — embedding engineers in client organizations to ensure adoption — is borrowed from Palantir's playbook and signals a shift from "sell models" to "own the deployment layer." Stripe's agentic commerce (288 launches) and IBM's governance stack (Sovereign Core, Concert, watsonx Orchestrate) complete the picture: the agent economy needs infrastructure, not just capabilities. Meanwhile, the Musk v Altman trial excavated OpenAI's origin story with Brockman's $30B stake and IPO exploration, while NVIDIA's China dilemma (90% Asian supply chain, <60% market share) and Huawei's $12B target accelerate the hardware decoupling narrative.
+
 ## Connections
 - [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users, GPT-Rosalind, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions, Pentagon classified network deals, Symphony orchestration spec
 - [[sources/anthropic]] — $30B ARR, ~$1T valuation, Mythos controversy, Claude Security launch, Claude Opus 4.7, Claude Code fixes, Pentagon exclusion as "supply chain risk," $900B valuation raise
@@ -138,9 +146,16 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[entities/claude-security]] — Anthropic's defensive pivot: if Mythos finds vulnerabilities, Claude Security patches them
 - [[entities/gb300]] — NVIDIA Blackwell Ultra enables 35x cost reduction for agentic AI; directly addresses GitHub commit economics
 - [[entities/guard-act]] — Senate GUARD Act creates criminal liability for AI chatbot conduct; shifts from Section 230 framework
-- [[entities/ari]] — Meta's humanoid robotics acquisition; "Android for robots" licensing strategy; all three major labs now in humanoid race
+- Meta's humanoid robotics acquisition; "Android for robots" licensing strategy; all three major labs now in humanoid race
 - [[entities/vibe]] — Mistral's vertically integrated coding agents; signals European lab following Claude Code growth strategy
 - [[ideas/ai-creative-regulation]] — Oscars ban codifies "regulate creative core, leave tool layer" framework that is becoming global regulatory template
 - [[entities/ibm-bob]] — IBM's enterprise SDLC automation play; multi-model neutrality positions against Microsoft's Copilot lock-in
 - [[entities/microsoft-legal-agent]] — First profession-specific Copilot vertical; case study for Microsoft's post-Copilot strategy
 - [[ideas/agent-verticalization]] — Industry consolidating around profession-specific platforms rather than general-purpose assistants
+- [[entities/stripe-agentic-commerce]] — Stripe positioning as "Visa of the agent economy" with 288 product launches; Link Wallets for Agents solve payment authentication blocking agent commerce
+- OpenAI's $10B Deployment Company venture; forward-deployed engineers inside 2,000 PE portfolio companies; Palantir playbook for AI adoption
+- [[entities/ibm-sovereign-core]] — IBM's governance-first AI strategy; embeds regulatory policy at runtime; competes with Microsoft's E7 bundle on compliance
+- [[sources/stripe]] — Stripe Sessions 2026; agentic commerce as new revenue vertical beyond payments infrastructure
+- [[sources/nvidia]] — NVIDIA's China dilemma: 90% Asian supply chain, falling below 60% market share, Huawei's $12B target threatens CUDA moat
+- [[ideas/agent-economy-infrastructure]] — Stripe + IBM + OpenAI converging on infrastructure for autonomous agents as economic participants
+- [[ideas/indirect-prompt-injection-threat]] — IPI confirmed in production systems; 32% growth; threatens every agent processing external data

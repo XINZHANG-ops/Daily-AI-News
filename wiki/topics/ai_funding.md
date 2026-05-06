@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-05-04
+last_updated: 2026-05-05
 ---
 
 # AI Funding
@@ -59,6 +59,7 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-05-02 | Netomi raises $110M Series C for agentic CX | Led by Accenture Ventures with Adobe Ventures and Silver Lake; processes 40K req/s for Delta, DraftKings, NBA, MetLife; total raised $160M+ |
 | 2026-05-02 | Agent infrastructure funding wave | Netomi $110M (CX), Standard Intelligence $75M (computer-use models), Actively $45M (AI sales agents), Parallel $100M at $2B valuation (agent web infra) — the agent stack being funded layer by layer |
 | 2026-05-03 | Anthropic $1.5B Wall Street JV | Joint venture with Blackstone (~$300M), Goldman Sachs (~$150M), H&F (~$300M), and Anthropic (~$300M); targets PE portfolio companies; functions as pre-IPO enterprise distribution strategy with IPO rumored for October 2026 at $60B+ |
+| 2026-05-05 | OpenAI's The Deployment Company | $4B from 19 investors at $10B valuation; 17.5% guaranteed annual return to PE backers over 5 years; financial engineering as much as distribution strategy |
 
 ## Patterns & Insights
 
@@ -90,6 +91,8 @@ The investment pattern has shifted from model racing to infrastructure and appli
 
 **May 2: The agent stack being funded layer by layer**: Netomi's $110M Series C (led by Accenture Ventures) for agentic customer experience — processing 40,000 req/s for Delta, DraftKings, NBA, and MetLife — is part of a broader agent-infrastructure funding wave. Simultaneously: Standard Intelligence raised $75M for computer-use models, Actively raised $45M for AI sales agents, and Parallel raised $100M at a $2B valuation for agent web infrastructure. The pattern: post-model gold rush is systematically funding every layer of the autonomous agent stack — from computer interaction to sales to web infrastructure to customer service. The Accenture lead on Netomi is strategic — the systems integrator that will actually deploy this across Fortune 500 companies.
 
+**Deployment layer as financial instrument**: OpenAI's Deployment Company guarantees PE backers 17.5% annual returns over five years, making it as much a financial engineering vehicle as a distribution strategy. This mirrors the broader pattern: frontier AI companies are packaging their technology into financial instruments (JVs, guaranteed returns, preferred access) to lock in enterprise distribution before IPO. The $10B valuation is defensive — both OpenAI and Anthropic have concluded API sales alone won't justify $900B+ valuations; they need to own the deployment layer.
+
 ## Connections
 - [[sources/openai]] — $122B raise, $852B valuation, IPO preparation
 - [[sources/anthropic]] — $30B Series G, ~$1T valuation, multi-gigawatt TPU deal, Google $40B investment
@@ -99,3 +102,5 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[sources/deepseek]] — Tencent/Alibaba investment talks, V4 release with open weights
 - [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
 - [[sources/ibm]] — IBM Bob's enterprise SDLC play funded by existing IBM infrastructure rather than external capital; different funding model from VC-backed startups
+- OpenAI's $10B Deployment Company venture — $4B at $10B valuation with 17.5% guaranteed PE returns; financial engineering as much as technology distribution
+- [[ideas/agent-economy-infrastructure]] — Stripe, IBM, and OpenAI building infrastructure for agent economy; funding is shifting from model training to operational layers

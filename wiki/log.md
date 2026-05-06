@@ -1,5 +1,47 @@
 # Wiki Log
 
+## [2026-05-06] wiki lint | comprehensive health check
+
+**Pass 1 — Structural fixes:**
+- Verified all 130 content pages have corresponding .md files (6 topics, 21 sources, 3 timelines, 76 entities, 24 ideas)
+- Verified no unlisted .md files exist in any section
+- Verified zero broken wikilinks across all content pages (WIKI.md template examples excluded)
+- Verified no orphan pages: all 130 content pages have at least one inbound link
+- Removed 2 company pages from entities/ that violated the "entities are for technical things only" rule
+
+**Pass 2 — Wrong & duplicate information fixed:**
+- Removed `entities/ari.md` — Meta's humanoid robotics acquisition is a company, not a technical thing; redirected all 4 inbound links to plain text or [[sources/meta]]
+- Removed `entities/the-deployment-company.md` — OpenAI's joint venture is a company/organizational entity, not a technical thing; redirected all 7 inbound links to plain text or [[sources/openai]]
+- Updated `index.md`: removed ari and the-deployment-company entries, corrected entity count 78 → 76
+- Verified frontmatter types match index annotations for all 76 entities
+- Verified no duplicate paragraphs across any content pages
+- Verified no stale or factually inconsistent claims detected
+
+**Pass 3 — Connection quality:**
+- All 6 topic pages verified: each has ## Evolution and ## Patterns & Insights sections
+- No bare "Related:", "See also:", or unannotated links found in any content page
+- All connections verified: every link explains WHY and HOW things connect
+- No missing entity pages for significant named technical concepts referenced across multiple pages
+
+**Index rebuilt:**
+- Topics: 6 (unchanged)
+- Sources: 21 (unchanged)
+- Timelines: 3 (unchanged)
+- Entities: 76 (removed ari, the-deployment-company)
+- Ideas: 24 (unchanged)
+- Total content pages: 130 (6+21+3+76+24)
+
+## [2026-05-05] ingest | 1 date
+
+Dates processed: 2026-05-05
+Topics updated: agentic_ai (agent economy infrastructure converges: Stripe 288 launches, IBM Think 2026 Sovereign Core/Concert/watsonx Orchestrate, OpenAI $10B DeployCo, nanobot 41.7K stars, agent-squad 7.6K stars, Gemini Robotics-ER 1.6), ai_companies (OpenAI DeployCo, Stripe Sessions, IBM Think, NVIDIA China dilemma, Huawei $12B, Musk trial Brockman $30B/IPO/distillation), ai_funding (OpenAI $4B DeployCo at $10B with 17.5% guaranteed PE returns), ai_safety (IPI confirmed as real-world threat: 32% growth, 10 verified payloads, CSS/HTML hiding), github_trends (nanobot 41.7K ultra-lightweight agent, agent-squad 7.6K multi-agent orchestration)
+Sources updated: openai (The Deployment Company $10B, Brockman $30B stake and IPO exploration, xAI distillation admission, Zuckerberg texts), google (IPI threat findings 32%, Gemini Robotics-ER 1.6 Boston Dynamics), ibm (Think 2026: watsonx Orchestrate, Concert, Sovereign Core), nvidia (CEO China stance, Huawei $12B competition)
+Sources created: stripe (Stripe Sessions 2026: 288 launches, Link Wallets for Agents, Streaming Payments, Google AI Mode partnership)
+Timelines updated: 2026-05 (May 5: agent infrastructure converges, security crisis deepens, trial revelations)
+Entities created: nanobot (41.7K stars, ultra-lightweight personal agent in 4K lines Python), agent-squad (7.6K stars, model-agnostic multi-agent orchestration), stripe-agentic-commerce (288-product suite, Link Wallets for Agents), ibm-sovereign-core (runtime policy embedding for cross-jurisdictional compliance), the-deployment-company ($10B OpenAI venture, forward-deployed engineers), gemini-robotics-er-1-6 (industrial instrument reading, Boston Dynamics Atlas)
+Ideas created: agent-economy-infrastructure (Stripe payments + IBM governance + OpenAI deployment converging on agents as economic participants), indirect-prompt-injection-threat (32% IPI growth, 10 verified payloads, AI security's SQL injection moment)
+Chat session insights applied: No new gaps identified from wiki_sessions/ files; Apr 23 session requested Google Cloud Next details — Gemini Robotics-ER 1.6 and IPI threat findings add depth to Google's defense and security positioning. Apr 25-26 sessions discussed AI employment and Claude Code — nanobot validates minimal-code agent philosophy. Apr 28 session asked about Google news — IPI findings and Gemini Robotics extend Google's coverage.
+
 ## [2026-05-05] wiki lint | comprehensive health check
 
 **Pass 1 — Structural fixes:**

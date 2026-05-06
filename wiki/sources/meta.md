@@ -37,8 +37,8 @@ last_updated: 2026-05-04
 ## Connections
 - [[entities/llama-4]] — Open-weight models with 10M context windows
 - [[entities/muse-spark]] — Meta's first proprietary model, ranks 4th
-- [[entities/ari]] — Humanoid robotics acquisition extending AI displacement to physical labor
+- ARI humanoid robotics acquisition extending AI displacement to physical labor
 - [[ideas/ai-job-displacement]] — 8,000 cuts + MCI surveillance + $125-145B capex + ARI robotics acquisition = AI replacing physical AND digital labor simultaneously
 - [[ideas/institutional-gap]] — EU AI Act fine and workforce cuts show governance/capital converging faster than consensus
 - [[sources/ibm]] — IBM Bob and Meta's AI strategy share the organizational automation thesis but from different angles: IBM sells SDLC automation to enterprises, Meta automates its own workforce
-- [[entities/ari]] — ARI acquisition brings Pinto (Fauna→Amazon→Meta trajectory) into Meta's Superintelligence Labs; "Android for robots" platform strategy mirrors failed phone OS play but with no existing competitor in humanoid OS market
+- ARI acquisition brings Pinto (Fauna→Amazon→Meta trajectory) into Meta's Superintelligence Labs; "Android for robots" platform strategy mirrors failed phone OS play but with no existing competitor in humanoid OS market

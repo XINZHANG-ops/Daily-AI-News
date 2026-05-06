@@ -51,6 +51,10 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-02 | GPT-5.5 scores 0.43% on ARC-AGI-3 | Despite 82.7% on Terminal-Bench 2.0; systemic errors show model routes unfamiliar situations to memorized templates rather than reasoning |
 | 2026-05-02 | Pentagon expands AI contracts with "any lawful operational use" | OpenAI included in 8-company coalition; 1M+ defense personnel on GenAI.mil platform; timing overlaps with Altman's "personal AGI" vision |
 | 2026-05-03 | Musk trial: 2015-2018 internal emails exposed | Court exhibits show early power struggles between Musk, Altman, Brockman, Sutskever over nonprofit vs for-profit direction; Musk advocated for-profit pivot in 2017; Musk confirms xAI used OpenAI models to train Grok |
+| 2026-05-04 | The Deployment Company announced | $4B from 19 investors at $10B valuation; forward-deployed engineers inside 2,000 PE portfolio companies; 17.5% guaranteed annual returns; Palantir playbook for AI adoption |
+| 2026-05-04 | Brockman confirms $30B stake and IPO exploration | Under oath in Musk trial; validates "capped profit" structure Musk is suing to unwind; Goldman Sachs and Morgan Stanley reportedly nervous |
+| 2026-05-04 | xAI distillation admission under oath | Musk admits xAI distilled from OpenAI models; calls it "standard practice"; draws audible gasps in courtroom; undermines moral argument in lawsuit |
+| 2026-05-04 | Zuckerberg texts revealed | Texts with Musk discussing teaming up to stop OpenAI restructuring; adds surreal layer to billionaires' legal battle |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -72,3 +76,5 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[sources/anthropic]] — Rivalry intensifying over compute and enterprise contracts
 - [[sources/deepseek]] — Both competing for AI coding market; DeepSeek V4 challenges GPT-5.5 on benchmarks
 - [[entities/microsoft-legal-agent]] — OpenAI models power Copilot alongside Claude; multi-model strategy means OpenAI's revenue benefits from Microsoft's verticalization even as it competes with Microsoft's own MAI models
+- OpenAI's $10B forward-deployed engineer venture (The Deployment Company); 2,000 PE portfolio companies; 17.5% guaranteed returns make it a financial engineering vehicle as much as distribution strategy
+- [[ideas/agent-economy-infrastructure]] — OpenAI provides the deployment pillar alongside Stripe's payments and IBM's governance
