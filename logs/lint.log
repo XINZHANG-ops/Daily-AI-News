@@ -197,3 +197,14 @@ Wiki lint complete. All four passes finished.
 
 Final counts: 6 topics, 21 sources, 3 timelines, 76 entities, 24 ideas = 130 pages.
 [2026-05-06 01:39:33] Wiki lint complete (exit code 0).
+[main 1ab8ef6] wiki: lint 2026-05-06
+ 29 files changed, 646 insertions(+), 60 deletions(-)
+ create mode 100644 wiki/entities/agent-squad.md
+ delete mode 100644 wiki/entities/ari.md
+ create mode 100644 wiki/entities/gemini-robotics-er-1-6.md
+ create mode 100644 wiki/entities/ibm-sovereign-core.md
+ create mode 100644 wiki/entities/nanobot.md
+ create mode 100644 wiki/entities/stripe-agentic-commerce.md
+ create mode 100644 wiki/ideas/agent-economy-infrastructure.md
+ create mode 100644 wiki/ideas/indirect-prompt-injection-threat.md
+ create mode 100644 wiki/sources/stripe.md
