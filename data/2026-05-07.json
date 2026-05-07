@@ -1,0 +1,177 @@
+{
+  "date": "2026-05-07",
+  "github_repos": [
+    {
+      "name": "OpenMOSS/MOSS-TTS",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "description": {
+        "en": "A family of open-source text-to-speech models supporting 20+ languages with voice cloning from 3-second audio, real-time streaming (180ms TTFB), and voice design from text descriptions. Features 8B, 1.7B, and 0.1B parameter variants for edge to cloud deployment.",
+        "zh": "开源文本转语音模型家族，支持20+语言，可从3秒音频克隆声音，实时流式合成（180毫秒首字节时间），并支持从文本描述设计声音。提供80亿、17亿和1亿参数变体，适用于边缘到云端部署。"
+      },
+      "stars": "1,765",
+      "forks": "189"
+    },
+    {
+      "name": "k2-fsa/OmniVoice",
+      "url": "https://github.com/k2-fsa/OmniVoice",
+      "description": {
+        "en": "Open-source multilingual voice synthesis supporting 600+ languages with diffusion language model architecture. Features voice cloning, voice design via speaker attributes (gender, age, pitch, accent), and ultra-fast inference (RTF as low as 0.025 - 40x faster than real-time).",
+        "zh": "开源多语言语音合成模型，支持600+语言，采用扩散语言模型架构。具备语音克隆、通过说话人属性（性别、年龄、音调、口音）设计声音的功能，以及超快推理速度（实时因子低至0.025，比实时快40倍）。"
+      },
+      "stars": "4,359",
+      "forks": "412"
+    },
+    {
+      "name": "Cortiqaai/Cordenex",
+      "url": "https://github.com/Cortiqaai/Cordenex",
+      "description": {
+        "en": "New autonomous AI software engineer for the terminal, inspired by Claude Code with multi-agent workflows. Features collaborative coding, project planning, and automated code review. Early-stage but actively developed with focus on team-based development scenarios.",
+        "zh": "受Claude Code启发的新终端自主AI软件工程师，具备多智能体工作流。支持协作编码、项目规划和自动代码审查。早期阶段但活跃开发中，专注于团队协作开发场景。"
+      },
+      "stars": "247",
+      "forks": "31"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic and SpaceX Announce Compute Partnership, xAI to Become SpaceXAI",
+        "zh": "Anthropic与SpaceX宣布算力合作，xAI将更名为SpaceXAI"
+      },
+      "url": "https://www.cnbc.com/2026/05/06/anthropic-spacex-data-center-capacity.html",
+      "source": "CNBC / Bloomberg",
+      "time": "2026-05-06",
+      "description": {
+        "en": "Anthropic signed a deal with SpaceX to access 300+ megawatts of compute capacity at SpaceX's Colossus 1 data center in Memphis, boosting Claude Pro and Max subscriber resources. As part of the restructuring, xAI will be dissolved and rebranded as SpaceXAI, with Musk noting he was impressed by Anthropic's team after previously criticizing the company.",
+        "zh": "Anthropic与SpaceX签署协议，获得SpaceX位于孟菲斯的Colossus 1数据中心超过300兆瓦的算力容量，将显著提升Claude Pro和Max订阅用户的资源。作为重组的一部分，xAI将被解散并更名为SpaceXAI。马斯克此前曾批评Anthropic，但此后对其团队印象深刻。"
+      },
+      "insight": {
+        "en": "01 *Anthropic's SpaceX Pivot* : This deal is a masterclass in unexpected alliances — Musk, who previously accused Anthropic of 'hating Western civilization,' now provides them critical compute infrastructure while dissolving his own xAI to fold it into SpaceX. The 300MW capacity addresses Anthropic's acute compute shortage that had been causing service reliability issues. For SpaceX, this diversifies revenue while keeping a toehold in AI. The xAI-to-SpaceXAI rebrand suggests Musk is consolidating his bets: rockets, satellites, and AI under one roof. The timing is strategic — with Anthropic pursuing a $900B valuation, guaranteed compute access from SpaceX strengthens their infrastructure story for investors.",
+        "zh": "01 *Anthropic的SpaceX转向* : 这笔交易是意外联盟的典范——马斯克此前曾指责Anthropic'憎恨西方文明'，现在却为其提供关键算力基础设施，同时解散自己的xAI并将其并入SpaceX。300兆瓦容量解决了Anthropic一直导致服务可靠性问题的严重算力短缺。对SpaceX而言，这实现了收入多元化，同时在AI领域保持立足点。xAI更名为SpaceXAI表明马斯克正在整合赌注：火箭、卫星和AI集中在一个屋檐下。时机具有战略性——Anthropic正追求9000亿美元估值，来自SpaceX的有保障算力访问增强了他们对投资者的基础设施叙事。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google DeepMind Acquires Minority Stake in EVE Online Developer CCP Games for AI Research",
+        "zh": "Google DeepMind收购EVE Online开发商CCP Games少数股权用于AI研究"
+      },
+      "url": "https://www.bloomberg.com/news/articles/2026-05-06/google-deepmind-takes-minority-stake-in-maker-of-eve-online",
+      "source": "Bloomberg",
+      "time": "2026-05-06",
+      "description": {
+        "en": "Google DeepMind announced a partnership with CCP Games, taking a minority stake in the developer of EVE Online, the space-based MMORPG known for its complex player-driven economy and massive scale battles. DeepMind will use EVE's sandbox environment to train AI agents in complex economic and strategic decision-making scenarios.",
+        "zh": "Google DeepMind宣布与CCP Games建立合作伙伴关系，收购这家以复杂玩家驱动经济和超大规模战斗闻名的太空题材MMORPG《EVE Online》开发商的少数股权。DeepMind将利用EVE的沙盒环境训练AI智能体在复杂经济和战略决策场景中的能力。"
+      },
+      "insight": {
+        "en": "02 *DeepMind's Game Training Strategy* : EVE Online is arguably the most complex MMO ever created — its player-driven economy involves hundreds of thousands of participants managing supply chains, corporate espionage, and massive alliance warfare. This is not just another game-training play like AlphaStar; it's DeepMind seeking training grounds for multi-agent economic and strategic AI that mirrors real-world complexity. The minority stake suggests this is a long-term research partnership, not an acquisition. For CCP, the validation and funding help justify server costs. The competitive angle: OpenAI trained on DOTA 2, DeepMind now has EVE — the sandbox wars for AI training environments are heating up.",
+        "zh": "02 *DeepMind的游戏训练策略* : 《EVE Online》可以说是有史以来最复杂的MMO——其玩家驱动的经济涉及数十万参与者管理供应链、企业间谍活动和大型联盟战争。这不仅仅是像AlphaStar那样的另一个游戏训练策略；而是DeepMind寻求训练场来训练反映真实世界复杂性的多智能体经济和战略AI。少数股权表明这是一项长期研究合作伙伴关系，而非收购。对CCP而言，这种验证和资金有助于证明服务器成本的合理性。竞争角度：OpenAI曾在DOTA 2上训练，DeepMind现在拥有EVE——AI训练环境的沙盒战争正在升温。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI Agent Startup Sierra Raises $950M at $15B Valuation",
+        "zh": "AI智能体初创公司Sierra融资9.5亿美元，估值达150亿美元"
+      },
+      "url": "https://siliconangle.com/2026/05/04/ai-agent-startup-sierra-valued-15b-new-950m-funding-round/",
+      "source": "SiliconANGLE / The Economic Times",
+      "time": "2026-05-04",
+      "description": {
+        "en": "Sierra, which builds AI agents for customer service, raised $950 million led by GV and Tiger Global at a $15 billion valuation — just eight months after a previous $350M round. The company serves over 40% of Fortune 50 companies with $150M in annual recurring revenue, demonstrating enterprise AI adoption at massive scale.",
+        "zh": "Sierra是一家为客服构建AI智能体的公司，在GV和Tiger Global领投下融资9.5亿美元，估值达150亿美元——这距离上一轮3.5亿美元融资仅八个月。该公司服务超过40%的财富50强公司，年化经常性收入达1.5亿美元，展示了企业级AI的大规模采用。"
+      },
+      "insight": {
+        "en": "03 *Sierra's $15B Validation* : From $350M to $950M in eight months with a $15B valuation represents a 4x valuation jump — the market is pricing enterprise AI agents as the fastest-growing B2B category since cloud computing. The 40% Fortune 50 penetration is the critical metric: this isn't pilot projects, it's production infrastructure for the world's largest companies. The revenue multiple (~100x ARR) suggests investors believe Sierra will capture significant share of the customer service automation market currently dominated by legacy vendors like Salesforce and Zendesk. The catch: with $150M ARR and $950M raised, Sierra has substantial capital but must scale revenue 5-10x to justify the valuation before the next downturn.",
+        "zh": "03 *Sierra 150亿美元估值的验证* : 八个月内从3.5亿美元到9.5亿美元，估值达150亿美元，意味着估值跃升4倍——市场将企业级AI智能体定价为自云计算以来增长最快的B2B类别。40%的财富50强渗透率是关键指标：这不是试点项目，而是全球最大公司的生产基础设施。收入倍数（约100倍ARR）表明投资者相信Sierra将从目前由Salesforce和Zendesk等传统供应商主导的客服自动化市场中夺取可观份额。问题在于：凭借1.5亿美元ARR和9.5亿美元融资，Sierra拥有大量资本，但必须在下一轮经济低迷前将收入扩大5-10倍以证明估值合理。"
+      }
+    },
+    {
+      "title": {
+        "en": "AWS MCP Server Reaches General Availability with 15,000+ API Operations",
+        "zh": "AWS MCP服务器正式可用，支持15000+ API操作"
+      },
+      "url": "https://aws.amazon.com/blogs/aws/the-aws-mcp-server-is-now-generally-available/",
+      "source": "AWS Blog",
+      "time": "2026-05-06",
+      "description": {
+        "en": "AWS announced general availability of the AWS MCP Server, a managed remote Model Context Protocol server providing AI agents secure access to 15,000+ AWS API operations. Features include IAM integration with context keys, sandboxed script execution, and a new 'Skills' feature replacing Agent SOPs with curated best practices.",
+        "zh": "AWS宣布AWS MCP服务器正式可用，这是一个托管的远程模型上下文协议服务器，为AI智能体提供对15000多个AWS API操作的安全访问。功能包括带上下文密钥的IAM集成、沙盒脚本执行，以及取代智能体标准操作程序的新'技能'功能，提供精选最佳实践。"
+      },
+      "insight": {
+        "en": "04 *AWS MCP Goes GA* : AWS joining the MCP ecosystem with a first-class server validates Anthropic's protocol as the industry standard for AI-tool integration. The 15,000 API operations coverage is comprehensive — this isn't a subset, it's the full AWS surface. The 'Skills' feature replacing SOPs is the subtle but important innovation: instead of agents learning how to use AWS, AWS is packaging its tribal knowledge as reusable primitives. This lands the same week as HuggingFace Transformers 5.8.0 added DeepSeek-V4 and IBM launched Watsonx Orchestrate — MCP is becoming the connective tissue of the AI infrastructure stack.",
+        "zh": "04 *AWS MCP正式可用* : AWS以一流服务器加入MCP生态系统，验证了Anthropic的协议作为AI工具集成行业标准的地位。15000个API操作覆盖范围全面——这不是子集，而是完整的AWS接口。取代标准操作程序的'技能'功能是微妙但重要的创新：不是让智能体学习如何使用AWS，而是AWS将其内部知识打包为可重用的原语。这与HuggingFace Transformers 5.8.0添加DeepSeek-V4以及IBM推出Watsonx Orchestrate同周发布——MCP正在成为AI基础设施栈的连接组织。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Rolls Out GPT-5.5 Instant as New ChatGPT Default with 52.5% Fewer Hallucinations",
+        "zh": "OpenAI推出GPT-5.5 Instant作为ChatGPT新默认模型，幻觉减少52.5%"
+      },
+      "url": "https://www.theverge.com/ai-artificial-intelligence/924225/openai-chatgpt-default-model-gpt-5-5-instant",
+      "source": "The Verge",
+      "time": "2026-05-05",
+      "description": {
+        "en": "OpenAI launched GPT-5.5 Instant as the new default ChatGPT model, claiming 52.5% fewer hallucinations on high-stakes prompts (medicine, law, finance) and 37.3% fewer inaccurate claims on challenging conversations. New features include memory sources showing what context informed each response and enhanced personalization using Gmail and previous chat context.",
+        "zh": "OpenAI推出GPT-5.5 Instant作为ChatGPT的新默认模型，声称在高风险提示（医学、法律、金融）上幻觉减少52.5%，挑战性对话中的不准确声明减少37.3%。新功能包括记忆来源显示哪些上下文为每次回复提供了依据，以及利用Gmail和历史聊天记录增强个性化。"
+      },
+      "insight": {
+        "en": "05 *GPT-5.5's Defensive Play* : The 52.5% hallucination reduction is a direct response to Perplexity and Anthropic gaining ground on factual reliability. OpenAI's 'memory sources' feature copies Perplexity's citation model, shifting liability to users ('verify the source, not blame the model'). The timing — same day as Musk trial revelations about Brockman's $30B stake — is not coincidental. This is product noise to drown out governance concerns. The real test: whether these improvements hold under independent evaluation or are benchmark-specific claims like Gemini 2.5's 'best in class' marketing that crumbled under real-world use.",
+        "zh": "05 *GPT-5.5的防御性举措* : 52.5%的幻觉减少是对Perplexity和Anthropic在事实可靠性方面抢占市场份额的直接回应。OpenAI的'记忆来源'功能抄袭了Perplexity的引用模型，将责任转移给用户（'验证来源，而非责怪模型'）。时机——与马斯克审判揭示Brockman 300亿美元持股同日——并非巧合。这是产品噪音，用来淹没治理关切。真正的考验在于：这些改进是否经得起独立评估，还是像Gemini 2.5'同类最佳'营销那样在实际使用中不堪一击的基准特定声明。"
+      }
+    },
+    {
+      "title": {
+        "en": "Coinbase Cuts 14% Workforce (~700 Jobs), CEO Cites AI Acceleration",
+        "zh": "Coinbase裁员14%（约700人），CEO称AI加速发展"
+      },
+      "url": "https://www.cnbc.com/2026/05/05/coinbase-cuts-headcount-by-14percent-citing-ai-acceleration-the-shares-are-gaining.html",
+      "source": "CNBC / CoinDesk",
+      "time": "2026-05-05",
+      "description": {
+        "en": "Coinbase announced 14% workforce cuts (~660-700 employees) with CEO Brian Armstrong stating engineers now 'ship in days what used to take weeks' using AI. The restructuring includes flattening management layers and experimenting with 'one-person teams' where individuals manage AI agents rather than traditional reports.",
+        "zh": "Coinbase宣布裁员约14%（约660-700名员工），CEO Brian Armstrong表示工程师现在使用AI'几天就能完成过去需要几周的工作'。重组包括扁平化管理层次，并试验'一人团队'，个人管理AI智能体而非传统下属。"
+      },
+      "insight": {
+        "en": "06 *Coinbase's AI Restructuring Template* : Armstrong's 'one-person teams' are the first explicit articulation of how AI reshapes labor: not elimination but restructuring. The $50-60M restructuring cost nearly offsets salary savings — this isn't about cost, it's about velocity. When an engineer with AI can spec, code, test, and deploy solo, the three-layer approval chain becomes dead weight. The 'managing AI agents' role is the canary: some jobs convert to 'AI wranglers' rather than disappearing. This is the template Meta, Microsoft, and others will follow. The risk for Coinbase specifically: crypto's cyclical downturn means AI productivity must offset both market shrinkage and headcount reduction.",
+        "zh": "06 *Coinbase的AI重组模板* : Armstrong的'一人团队'是对AI如何重塑劳动力的首次明确阐述：不是消除而是重组。5000-6000万美元的重组成本几乎抵消了薪资节省——这不是成本问题，而是速度问题。当配备AI的工程师可以独自完成规格、编码、测试和部署时，三层审批链就变成了累赘。'管理AI智能体'的角色是金丝雀：一些工作被转化为'AI管理员'而非消失。这是Meta、微软和其他公司将遵循的模板。对Coinbase的具体风险：加密货币的周期性低迷意味着AI生产力提升必须同时抵消市场萎缩和裁员的双重影响。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mistral Ships Medium 3.5 with 77.6% SWE-Bench and On-Device 'Work Mode'",
+        "zh": "Mistral发布Medium 3.5，SWE-Bench达77.6%，支持本地'工作模式'"
+      },
+      "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+      "source": "Mistral AI",
+      "time": "2026-05-05",
+      "description": {
+        "en": "Mistral launched Medium 3.5, a 128B dense model merging instruction-following, reasoning, and coding with configurable effort. Scores 77.6% on SWE-Bench Verified at $1.5/$7.5 per million tokens — 70% cheaper than Claude Opus 4.7. Features 'Work Mode' for agentic tasks and 'Remote Agents in Vibe' for asynchronous cloud execution. Self-hostable on just 4 GPUs.",
+        "zh": "Mistral发布Medium 3.5，这是一个128B稠密模型，融合指令遵循、推理和编码能力，支持可配置力度。在SWE-Bench Verified上得分77.6%，定价每百万token 1.5/7.5美元——比Claude Opus 4.7便宜70%。具备用于智能体任务的'工作模式'和用于异步云执行的'Vibe远程智能体'。仅需4张GPU即可自托管。"
+      },
+      "insight": {
+        "en": "07 *Mistral's Sovereignty Play* : At $1.5/M input, Medium 3.5 undercuts Claude Opus 4.7 by 70% while scoring within 10 points on SWE-bench. The four-GPU self-hosting requirement is deliberate: European enterprises, already spooked by US CLOUD Act data access, will pay compute premiums for sovereignty. This follows the EU AI Act's €11.2M provisional penalty on Mistral days ago — they're positioning as the 'compliant alternative' to US labs. The pattern: geopolitical fragmentation is creating a multi-polar AI world where Mistral serves Europe, DeepSeek serves China, and OpenAI/Anthropic serve the US.",
+        "zh": "07 *Mistral的主权策略* : Medium 3.5以每百万输入token 1.5美元的价格比Claude Opus 4.7低70%，同时SWE-bench得分仅差10个百分点。四GPU自托管要求是刻意的：欧洲企业已经因美国CLOUD法案数据访问而受惊，愿意为数据主权支付计算溢价。这发生在几天前欧盟AI法案对Mistral处以1120万欧元临时罚款之后——他们将自己定位为美国实验室的'合规替代方案'。模式：地缘政治分裂正在创造一个多极AI世界，Mistral服务欧洲，DeepSeek服务中国，OpenAI/Anthropic服务美国。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft, Google, xAI Agree to Government Pre-Testing of AI Models Before Release",
+        "zh": "微软、谷歌、xAI同意政府在AI模型发布前进行预审"
+      },
+      "url": "https://www.cnn.com/2026/05/05/tech/microsoft-google-xai-government-test-ai-models",
+      "source": "CNN Business",
+      "time": "2026-05-05",
+      "description": {
+        "en": "Google (DeepMind), Microsoft, and xAI signed agreements with the US Commerce Department's CAISI to allow government testing of unreleased AI models for safety evaluation. Over 40 evaluations have been completed, with some state-of-the-art models blocked from release. OpenAI and Anthropic also participate, having renegotiated Biden-era agreements to align with Trump's AI Action Plan.",
+        "zh": "谷歌（DeepMind）、微软和xAI与美国商务部CAISI签署协议，允许政府对其未发布的AI模型进行安全评估测试。已完成40多项评估，其中一些最先进的模型被阻止发布。OpenAI和Anthropic也参与其中，重新谈判了拜登时代的协议以与特朗普的AI行动计划保持一致。"
+      },
+      "insight": {
+        "en": "08 *Government Pre-Testing Goes Voluntary-Mandatory* : The shift from hands-off deregulation to structured pre-release evaluation is the most consequential AI policy development of 2026. CAISI's 40+ completed evaluations — with some models already blocked — proves this is not theater. The critical design is 'voluntary with teeth': companies joined because the alternative was likely an executive order making it mandatory. Anthropic's Mythos model was the catalyst — when a company voluntarily refuses release for safety reasons, regulators must act. The parallel with FDA drug trials is intentional.",
+        "zh": "08 *政府预审走向'自愿-强制'* : 从放任式去监管转向结构化预发布评估是2026年最具影响力的AI政策进展。CAISI已完成40多项评估，其中一些模型已被阻止发布，这证明这不是走过场。关键设计是'带牙齿的自愿'：公司加入是因为替代方案很可能是行政命令使其成为强制性。Anthropic的Mythos模型是催化剂——当一家公司出于安全原因自愿拒绝发布时，监管者必须采取行动。与美国FDA药物审批的类比是有意为之。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "May 7, 2026 is defined by three converging themes: unexpected corporate alliances, government stepping into AI oversight, and the organizational restructuring that AI makes necessary. The Anthropic-SpaceX deal is the most surprising — Elon Musk, who accused Anthropic of hating Western civilization months ago, now provides them critical infrastructure while dissolving his own xAI. This suggests the compute shortage is so severe that even competitors must cooperate. Meanwhile, the CAISI pre-testing agreements signal that voluntary safety frameworks have failed; government is now the approval gate for frontier models. This is a structural shift from 'move fast and break things' to 'get permission before shipping.'\n\nOn the labor front, Coinbase's 14% cuts provide the template for how AI reshapes work: not mass unemployment, but mass restructuring. The 'one-person team' managing AI agents is the new model. Sierra's $15B valuation and $150M ARR prove enterprise AI agents are not experimental but production infrastructure for Fortune 50 companies.\n\nThe open-source ecosystem continues to democratize capabilities: MOSS-TTS (20 languages, voice cloning), OmniVoice (600+ languages), and Cordenex (multi-agent coding) all launched recently, showing AI tooling is becoming a commodity faster than closed labs can differentiate. The geopolitical fragmentation is also accelerating — Mistral's EU positioning, DeepSeek's China focus, and the US labs' government partnerships are creating distinct AI spheres of influence.\n\nThe big question for the week ahead: can the governance frameworks (CAISI, EU AI Act) scale faster than model development? The gap between what AI can do and what institutions can safely allow has never been wider.",
+    "zh": "2026年5月7日的主题由三个趋同趋势定义：意外的企业联盟、政府介入AI监管，以及AI使必要的组织重组。Anthropic-SpaceX交易最令人惊讶——几个月前曾指责Anthropic憎恨西方文明的埃隆·马斯克，现在却为其提供关键基础设施，同时解散自己的xAI。这表明算力短缺如此严重，即使是竞争对手也必须合作。与此同时，CAISI预审协议信号表明自愿安全框架已失败；政府现在成为前沿模型的审批关口。这是从'快速行动、打破常规'到'发布前获得许可'的结构性转变。\n\n在劳动力方面，Coinbase的14%裁员提供了AI如何重塑工作的模板：不是大规模失业，而是大规模重组。管理AI智能体的'一人团队'是新模式。Sierra的150亿美元估值和1.5亿美元ARR证明企业级AI智能体不是实验性的，而是财富50强公司的生产基础设施。\n\n开源生态系统继续使能力民主化：MOSS-TTS（20种语言、语音克隆）、OmniVoice（600+语言）和Cordenex（多智能体编码）最近都发布了，表明AI工具比封闭实验室能够差异化的速度更快地成为商品。地缘政治分裂也在加速——Mistral的欧盟定位、DeepSeek的中国重点，以及美国实验室的政府合作伙伴关系，正在形成不同的AI势力范围。\n\n本周的最大问题：治理框架（CAISI、欧盟AI法案）能否比模型开发更快地扩展？AI能做什么与机构能安全允许什么之间的差距从未如此之宽。"
+  }
+}
