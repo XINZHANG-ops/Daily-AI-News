@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 ---
 
 # OpenAI
@@ -55,6 +55,8 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-04 | Brockman confirms $30B stake and IPO exploration | Under oath in Musk trial; validates "capped profit" structure Musk is suing to unwind; Goldman Sachs and Morgan Stanley reportedly nervous |
 | 2026-05-04 | xAI distillation admission under oath | Musk admits xAI distilled from OpenAI models; calls it "standard practice"; draws audible gasps in courtroom; undermines moral argument in lawsuit |
 | 2026-05-04 | Zuckerberg texts revealed | Texts with Musk discussing teaming up to stop OpenAI restructuring; adds surreal layer to billionaires' legal battle |
+| 2026-05-05 | GPT-5.5 Instant becomes ChatGPT default | 52.5% fewer hallucinations on high-stakes prompts vs GPT-5.3 Instant; 37.3% reduction in inaccurate claims on challenging conversations; "memory sources" feature shows context for each response |
+| 2026-05-05 | Agrees to CAISI pre-testing | OpenAI renegotiated Biden-era agreements to align with Trump's AI Action Plan; participation alongside Google, Microsoft, xAI, Anthropic |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -78,3 +80,8 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[entities/microsoft-legal-agent]] — OpenAI models power Copilot alongside Claude; multi-model strategy means OpenAI's revenue benefits from Microsoft's verticalization even as it competes with Microsoft's own MAI models
 - OpenAI's $10B forward-deployed engineer venture (The Deployment Company); 2,000 PE portfolio companies; 17.5% guaranteed returns make it a financial engineering vehicle as much as distribution strategy
 - [[ideas/agent-economy-infrastructure]] — OpenAI provides the deployment pillar alongside Stripe's payments and IBM's governance
+- [[entities/gpt-5.5]] — GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" feature is a Perplexity clone that shifts liability to users
+- [[entities/caisi]] — OpenAI renegotiated Biden-era agreements to align with Trump's AI Action Plan; participation is defensive — better to shape the framework than be shaped by it
+- [[entities/perplexity-finance]] — Perplexity Finance launched same day as GPT-5.5 Instant with similar citation features; Perplexity has the data partnerships and finance-specific workflows that OpenAI lacks
+- [[ideas/government-pre-testing]] — OpenAI's participation in CAISI follows the same pattern as GPT-5.5 Cyber restrictions — liability-driven compliance rather than principle-driven safety
+- [[ideas/boring-infrastructure-shift]] — GPT-5.5 Instant's hallucination reduction is table stakes, not a breakthrough; the shift from "cool demo" to "boring infrastructure" means OpenAI competes on reliability and compliance, not just benchmarks

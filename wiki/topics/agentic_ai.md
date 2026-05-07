@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 ---
 
 # Agentic AI
@@ -68,6 +68,10 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-05 | OpenAI's The Deployment Company ($10B valuation) | $4B from 19 PE investors; forward-deployed engineers inside 2,000 portfolio companies; 17.5% guaranteed annual returns |
 | 2026-05-05 | Gemini Robotics-ER 1.6 with Boston Dynamics Atlas | Industrial instrument reading for robots; multi-view success detection; automotive industry deployment |
 | 2026-05-05 | Agent Squad multi-agent framework (7.6K stars) | Model-agnostic orchestration with SupervisorAgent across AWS Bedrock, Anthropic, OpenAI |
+| 2026-05-06 | karpathy/autoresearch (79.2K stars) | Autonomous LLM research agent experimenting overnight on single GPU; self-contained with minimal dependencies |
+| 2026-05-06 | aden-hive/hive (10.2K stars) | Production multi-agent harness with graph-based execution DAG, self-healing failure recovery, cost enforcement |
+| 2026-05-06 | Mistral Medium 3.5 Work Mode + Remote Agents in Vibe | On-device agentic mode for complex multi-step tasks; async cloud coding agents |
+| 2026-05-06 | Xbox kills Copilot on console/mobile, imports CoreAI team | Pivot from consumer AI to developer AI tools; Jonathan McKay (ex-ChatGPT/OpenAI growth) hired |
 
 ## Patterns & Insights
 
@@ -96,6 +100,8 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 **Agent-to-agent commerce emerging**: Anthropic's Project Deal — where Claude models represented both buyers and sellers in a classified marketplace, striking real deals for real goods and real money — is a proof-of-concept for AI-to-AI economic activity. The endgame is autonomous commercial agents that can buy, sell, and broker on behalf of humans. This timing, right after GPT-5.5 and Claude Opus 4.7 launches, suggests frontier labs are racing to demonstrate practical agentic utility beyond benchmark superiority.
 
 **May 5: Agent Economy Infrastructure Converges**: Three major launches on the same day signal the agent layer has matured past demos and now requires foundational infrastructure. Stripe's Agentic Commerce Suite (288 launches, Link Wallets for Agents, Streaming Payments) solves the payment-authentication problem blocking agent-to-agent commerce. IBM's Think 2026 unveils watsonx Orchestrate, Concert, and Sovereign Core — an enterprise AI operating system with governance baked into infrastructure rather than bolted on top. OpenAI's The Deployment Company ($10B valuation, $4B from 19 PE investors) embeds engineers inside 2,000 portfolio companies to ensure models get adopted, not just sold. All three are infrastructure bets on the same future: agents as economic participants. Simultaneously, nanobot (41.7K stars) demonstrates that sophisticated agent functionality need not require massive codebases — 4,000 lines of Python with multi-platform chat and MCP support.
+
+**May 6: Agents fragment by vertical**: Three repos trending signal agent maturity beyond coding into research, production operations, and document understanding. AutoResearch (79.2K stars) is Karpathy's autonomous LLM research agent that experiments overnight on a single GPU — extending "configuration over code" into autonomous experimentation. Hive (10.2K stars) is a production multi-agent harness with graph-based execution DAGs, self-healing failure recovery, and cost enforcement — filling the operational reliability gap. Mistral's Work Mode in Le Chat and Remote Agents in Vibe allow coding agents to run asynchronously in the cloud and notify users when complete — the infrastructure layer for reliable agent execution. Xbox's pivot from consumer Copilot to CoreAI developer tools confirms the meta-pattern: consumer-facing AI agents are expensive retention sinks, while developer-facing tools have immediate ROI.
 
 **Capability regression as competitive vulnerability**: Claude Code's engineering missteps and months of silence before acknowledgment created a window for OpenAI to land GPT-5.5 (with Codex roots) the same day the backlash story broke. Power users have options, and brand loyalty erodes fast when the coding agent doesn't code reliably — this is a real retention risk, not just a PR problem.
 
@@ -128,3 +134,9 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/gemini-robotics-er-1-6]] — extends agentic AI into physical environments via industrial instrument reading and Boston Dynamics Atlas integration
 - [[ideas/agent-economy-infrastructure]] — Stripe + IBM + OpenAI converging on the same thesis: agents as economic participants need payments, governance, and deployment infrastructure
 - [[sources/stripe]] — Stripe Sessions 2026 launch; 1 in 6 AI sign-ups are fraudulent, making Radar expansion critical
+- [[entities/autoresearch]] — 79.2K stars; Karpathy's autonomous research agent performing the full scientific loop (hypothesis, experiment, evaluation, iteration) without human supervision
+- [[entities/hive]] — 10.2K stars; production multi-agent harness with self-healing DAG evolution and cost enforcement; the operational reliability layer that makes agent swarms enterprise-viable
+- [[entities/mistral-medium-3-5]] — Work Mode (on-device agentic mode) and Remote Agents in Vibe (async cloud execution) are the infrastructure for reliable multi-step agent workflows
+- [[sources/microsoft]] — Xbox kills consumer Copilot, imports CoreAI team to rebuild game development pipeline; confirms developer-facing AI has immediate ROI while consumer-facing AI is "expensive retention sink"
+- [[ideas/boring-infrastructure-shift]] — AutoResearch, Hive, and Mistral Work Mode all converge on one trend: AI is moving from "cool demo" to "boring infrastructure" — and the agent layer needs boring infrastructure (reliability, cost control, async execution) to be deployable at scale
+- [[entities/mercury-agent]] — 531 stars; personal AI agent with permission-hardened tools and token budgets representing the consumer-facing agent stack alongside enterprise platforms

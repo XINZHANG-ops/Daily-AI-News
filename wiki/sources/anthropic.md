@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-04
+last_updated: 2026-05-06
 ---
 
 # Anthropic
@@ -47,6 +47,8 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-02 | Claude Opus 4.7 scores 0.18% on ARC-AGI-3 | Despite 87.6% on SWE-bench — the gap between coding pattern-matching and genuine reasoning exposed; systemic errors show model doesn't form coherent world models |
 | 2026-05-03 | $1.5B Wall Street JV finalized | Joint venture with Blackstone, Goldman Sachs, and Hellman & Friedman to sell AI tools to PE-backed companies; each investing ~$300M (Goldman ~$150M); targets finance, operations, customer service, analytics; creates enterprise pipeline ahead of rumored October 2026 IPO targeting $60B+ raise |
 | 2026-05-03 | Pentagon exclusion cost quantified | ~$200M in lost direct Pentagon contracts confirmed; Defense Secretary Hegseth called CEO Dario Amodei an "ideological lunatic"; juxtaposition with $1.5B Wall Street JV suggests enterprise market values the safety guardrails the Pentagon rejected |
+| 2026-05-05 | Commits $200B to Google Cloud over 5 years | Largest cloud commitment in corporate history; 40%+ of Google's disclosed cloud backlog; multi-gigawatt TPU deal with Broadcom from 2027 |
+| 2026-05-05 | Agrees to CAISI pre-testing | Anthropic renegotiated Biden-era agreements; Mythos was the catalyst for CAISI — when a company voluntarily refuses to release a model for safety, it forces regulators to act |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -71,3 +73,7 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - [[entities/ibm-bob]] — IBM Bob routes certain tasks to Claude as one of its multi-model providers; Anthropic benefits from enterprise distribution without building the orchestration layer itself
 - [[entities/microsoft-legal-agent]] — Claude integration in Microsoft's Legal Agent signals Anthropic's model is trusted for high-stakes enterprise workflows even by competitors
 - [[ideas/agent-verticalization]] — Anthropic's $1.5B JV strategy is the enterprise distribution play: embed Claude in PE portfolio companies through Blackstone/H&F rather than selling directly
+- [[entities/caisi]] — Anthropic's Mythos model was the catalyst for CAISI; when a company voluntarily refuses to release a model for safety reasons, it forces regulators to act — Anthropic's principled stance created the framework that now governs all frontier labs
+- [[sources/google]] — $200B Google Cloud commitment is the largest in corporate history; 40% of Google's cloud backlog; defensive lock-in at a time when GPU/TPU supply is the critical bottleneck
+- [[ideas/government-pre-testing]] — Anthropic's Mythos was the catalyst for CAISI; the precedent that some models may be too capable for public release is now institutionalized across the industry
+- [[ideas/boring-infrastructure-shift]] — Anthropic's $200B commitment and Claude Security launch both treat AI as infrastructure: the former as compute infrastructure, the latter as security infrastructure — neither is exciting, both are essential

@@ -208,3 +208,30 @@ Final counts: 6 topics, 21 sources, 3 timelines, 76 entities, 24 ideas = 130 pag
  create mode 100644 wiki/ideas/agent-economy-infrastructure.md
  create mode 100644 wiki/ideas/indirect-prompt-injection-threat.md
  create mode 100644 wiki/sources/stripe.md
+[2026-05-07 01:00:01] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+Wiki lint complete for 2026-05-07.
+
+**Pass 1 — Structural fixes:**
+- Verified 137 content pages (6 topics, 22 sources, 3 timelines, 79 entities, 27 ideas) all have matching files and index entries
+- Zero broken wikilinks across all content pages
+- Fixed 7 orphan entity pages by adding inbound links from relevant topics/sources:
+  - `web-design-skill`, `future-agi`, `mercury-agent`, `gemini-3-deep-think`, `cambridge-neuromorphic-chip`
+- Removed 2 fully orphaned entity pages with negligible traction: `agentswift` (39 stars) and `agent-context` (2 stars)
+- Updated index: entity count corrected 81 → 79
+- No companies or people found in entities/
+
+**Pass 2 — Wrong & duplicate information:**
+- Merged duplicate Meta ARI acquisition rows in `topics/ai_companies.md`
+- Fixed stale claim in `entities/gpt-5.4.md`: now notes it was superseded by GPT-5.5 as flagship
+- Verified no duplicate paragraphs or additional stale claims
+
+**Pass 3 — Connection quality:**
+- All 6 topic pages have `## Evolution` and `## Patterns & Insights`
+- No bare "Related:", "See also:", or unannotated links found
+- Recent daily insights (May 2–6) all map to existing idea pages
+
+**Pass 4 — Index & Log:**
+- Updated `index.md` last_updated to 2026-05-07
+- Appended comprehensive lint entry to `wiki/log.md`
+[2026-05-07 01:08:58] Wiki lint complete (exit code 0).

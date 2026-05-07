@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-04
+last_updated: 2026-05-06
 ---
 
 # LLM Models
@@ -33,7 +33,7 @@ NVIDIA's Ising emerges as a genuinely new category — open quantum AI models fo
 
 **April 21-23: Security Concerns and Reasoning Advances**
 
-The final days of the period see security concerns intensify. A critical MCP vulnerability (affecting 150M+ installations) enables arbitrary command execution across 7,000+ servers — Anthropic calls it "expected behavior." Meanwhile, Claude Mythos 5 is confirmed at 10 trillion parameters, with the Bank of England warning it could "crack the whole cyber-risk world open." Google reveals Gemini 3 Deep Think can identify logical flaws in peer-reviewed math papers that cleared human review. China's Qihoo 360 finds 1,000 software vulnerabilities using AI-powered agents.
+The final days of the period see security concerns intensify. A critical MCP vulnerability (affecting 150M+ installations) enables arbitrary command execution across 7,000+ servers — Anthropic calls it "expected behavior." Meanwhile, Claude Mythos 5 is confirmed at 10 trillion parameters, with the Bank of England warning it could "crack the whole cyber-risk world open." Google reveals [[entities/gemini-3-deep-think]] can identify logical flaws in peer-reviewed math papers that cleared human review — a concrete demonstration of AI reasoning surpassing human expert review in specialized domains. China's Qihoo 360 finds 1,000 software vulnerabilities using AI-powered agents.
 
 **April 24: DeepSeek V4 and the China Challenge**
 
@@ -53,6 +53,9 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-02 | OpenAI open-sources Symphony for Codex orchestration | "Every task gets an agent" model formalized; 15K+ stars in days; 500% PR increase at OpenAI internal teams |
 | 2026-05-02 | context-mode MCP server trends (11.9K stars) | 98% context reduction across 12+ platforms; context optimization becomes critical agent infrastructure |
 | 2026-05-02 | andrej-karpathy-skills hits 105K stars | Single CLAUDE.md file with 4 principles for agent behavior; "configuration over code" approach to agent quality |
+| 2026-05-05 | GPT-5.5 Instant becomes ChatGPT default | 52.5% fewer hallucinations on high-stakes prompts; "memory sources" feature shows which Gmail threads and previous chats informed each response |
+| 2026-05-05 | Mistral Medium 3.5 official launch with Work Mode | 128B dense, SWE-Bench 77.6%, on-device agentic "Work Mode" in Le Chat; "Remote Agents in Vibe" for async cloud execution; $1.5/$7.5 per million tokens |
+| 2026-05-05 | EU AI Act Phase 2 fines Mistral €11.2M, Stability AI €8.4M | Training-data transparency failures; Europe taking harder line than US, creating balkanized regulatory landscape |
 | 2026-03-19 | Xiaomi MiMo-V2-Pro revealed as "Hunter Alpha" | Chinese AI "stealth launch" strategy demonstrated |
 | 2026-03-26 | Claude Mythos documents leaked | 3,000 internal docs exposed unprecedented cybersecurity risks |
 | 2026-04-02 | Google Gemma 4 (Apache 2.0) | First fully permissive Gemma release, 31B ranks #3 on Arena |
@@ -159,4 +162,7 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[ideas/us-china-ai-fragmentation]] — Stanford HAI confirms gap has collapsed
 - [[ideas/institutional-gap]] — May 1 exemplifies GUARD Act criminal penalties and liability exceeding Section 230 frameworks
 - [[entities/ibm-bob]] — Multi-model orchestration routing tasks to best-fit model challenges the "one best model" assumption; Claude, Mistral, and Granite each win different task categories
+- [[entities/gpt-5.5]] — GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" is a Perplexity clone that shifts liability to users
+- [[entities/mistral-medium-3-5]] — Official May 5 launch adds Work Mode (on-device agentic mode) and Remote Agents in Vibe (async cloud execution); EU AI Act €11.2M fine same week makes privacy-first positioning more urgent
+- [[entities/perplexity-finance]] — Perplexity's citation-first finance platform directly attacks Bloomberg Terminal's social-proof moat; GPT-5.5's "memory sources" launched same day as defensive response
 - [[entities/microsoft-legal-agent]] — Claude integration in Copilot proves no single model provider wins enterprise AI alone; multi-model support is becoming table stakes

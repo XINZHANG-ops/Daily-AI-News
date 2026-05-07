@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-06
+Last updated: 2026-05-07
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -10,10 +10,10 @@ Last updated: 2026-05-06
 - [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), IPI threat (32% growth, 10 verified payloads), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance
 - [[topics/agentic_ai]] — Agent economy infrastructure converges (Stripe payments, IBM governance, OpenAI deployment); Agent verticalization: IBM Bob, Microsoft Legal Agent, Ruflo, GitNexus; nanobot 41.7K lightweight agent; Gemini Robotics-ER 1.6; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration
 
-## Sources (21)
-- [[sources/anthropic]] — ~$900B valuation (surpasses OpenAI), Pentagon exclusion as "supply chain risk," Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch
-- [[sources/openai]] — $122B funding, Codex 3M users, GPT-Rosalind, Spud model, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions, Pentagon classified network inclusion, Symphony orchestration spec
-- [[sources/google]] — Cloud Next 2026: TPU 8th gen (3x Ironwood), Gemini Enterprise Agent Platform, 75% code AI-generated, $40B Anthropic investment, Gemini automotive rollout (~4M GM vehicles), Pentagon classified network inclusion
+## Sources (22)
+- [[sources/anthropic]] — ~$900B valuation (surpasses OpenAI), Pentagon exclusion as "supply chain risk," Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch, $200B Google Cloud commitment
+- [[sources/openai]] — $122B funding, Codex 3M users, GPT-Rosalind, Spud model, TBPN acquisition, GPT-5.5, GPT-5.5 Instant, GPT-5.5 Cyber restrictions, Pentagon classified network inclusion, Symphony orchestration spec, CAISI pre-testing
+- [[sources/google]] — Cloud Next 2026: TPU 8th gen (3x Ironwood), Gemini Enterprise Agent Platform, 75% code AI-generated, $40B Anthropic investment, Gemini automotive rollout (~4M GM vehicles), Pentagon classified network inclusion, CAISI pre-testing, $200B Anthropic cloud commitment
 - [[sources/meta]] — MCI employee tracking, Muse Spark proprietary, May 20 layoffs (8,000), 10% workforce cut, ARI humanoid robotics acquisition, EU AI Act €800M fine, $125-145B capex
 - [[sources/nvidia]] — GTC 2026, Vera Rubin, Ising quantum AI models, Vast Data backed, GB300 Blackwell Ultra mass production, Pentagon classified network inclusion, Ineffable Intelligence investment
 - [[sources/vast-data]] — NVIDIA-backed AI storage startup, $1B raise at $30B valuation (April 2026)
@@ -22,23 +22,24 @@ Last updated: 2026-05-06
 - [[sources/cognition]] — Devin creator, $25B valuation talks, AI coding competition with Claude Code
 - [[sources/spacex]] — $250B xAI merger, $60B Cursor investment, galactic AI entity ($1.25T)
 - [[sources/deepseek]] — V4 release with open weights, Tencent/Alibaba investment talks, $1.74/M tokens pricing
-- [[sources/xai]] — Now under SpaceX ($250B acquisition), Musk distillation admission under oath, Pentagon classified network inclusion
-- [[sources/microsoft]] — $10B Japan AI investment, Agent Framework v1.0, MAI models, 8,750 buyouts, M365 E7 ($99/user/month) and Agent 365 ($15/user/month) GA, Pentagon classified network inclusion
-- [[sources/perplexity]] — $500M revenue (5x growth), staff up 34%, "Computer" product
-- [[sources/mistral]] — Mistral Ultra 2 (78.4% SWE-bench), Medium 3.5 (128B, reasoning toggle, 77.6% SWE-bench), Vibe cloud coding agents, EU data residency positioning
+- [[sources/xai]] — Now under SpaceX ($250B acquisition), Musk distillation admission under oath, Pentagon classified network inclusion, CAISI pre-testing
+- [[sources/microsoft]] — $10B Japan AI investment, Agent Framework v1.0, MAI models, 8,750 buyouts, M365 E7 ($99/user/month) and Agent 365 ($15/user/month) GA, Pentagon classified network inclusion, Xbox Copilot kill, CoreAI team import, CAISI pre-testing
+- [[sources/perplexity]] — $500M revenue (5x growth), staff up 34%, "Computer" product, Perplexity Finance platform (40+ tools, 35 workflows, Bloomberg Terminal challenge)
+- [[sources/mistral]] — Mistral Ultra 2 (78.4% SWE-bench), Medium 3.5 (128B, reasoning toggle, 77.6% SWE-bench, Work Mode, Remote Agents), Vibe cloud coding agents, EU data residency positioning, EU AI Act €11.2M fine
 - [[sources/netomi]] — Agentic customer experience platform, $110M Series C (Accenture Ventures led), 40K req/s for Delta/NBA/MetLife
 - [[sources/tsmc]] — 3nm yield crisis (52% vs 75%), pauses Q3 AI chip orders, H200/MI350 affected
 - [[sources/github]] — Copilot Agent Tier $49/agent/month, first platform monetization of agent-scale usage
 - [[sources/ineffable-intelligence]] — Ex-DeepMind David Silver's $1.1B seed at $5.1B, RL superlearner thesis ("LLMs are fossil fuel"), 50 researchers hired in 72 hours, product undisclosed
 - [[sources/ibm]] — IBM Bob: AI-first development partner automating full SDLC, 80K+ internal users (~45% productivity gains), multi-model orchestration (Claude, Mistral, Granite); Think 2026: Sovereign Core, Concert, watsonx Orchestrate
 - [[sources/stripe]] — Agentic Commerce Suite (288 launches): Link Wallets for Agents, Streaming Payments, Google AI Mode partnership; positioning as "Visa of the agent economy"
+- [[sources/coinbase]] — 14% workforce cut (~700 jobs), "one-person teams," AI wrangler roles, CEO says AI lets engineers "ship in days what took weeks"
 
 ## Timelines (3)
 - [[timelines/2026-03]] — March 2026: GTC 2026, Claude Mythos leak, GPT-5.4, MiMo-V2-Pro reveal, $122B OpenAI raise
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (76)
+## Entities (79)
 - [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
@@ -47,7 +48,7 @@ Last updated: 2026-05-06
 - [[entities/claude-code]] — type: product — Primary driver of Anthropic's ARR growth from $9B to $30B
 - [[entities/gpt-5.4]] — type: model — OpenAI flagship family with Thinking, Mini, Nano, Cyber variants
 - [[entities/gpt-5.4-cyber]] — type: model — OpenAI's defensive cybersecurity variant (TAC program); May 1 restrictions after mocking Anthropic
-- [[entities/gpt-5.5]] — type: model — OpenAI's latest model (codename "Spud") with "super app" integration vision (April 23); deployed on Pentagon classified networks
+- [[entities/gpt-5.5]] — type: model — OpenAI's latest model (codename "Spud") with "super app" integration vision (April 23); GPT-5.5 Instant default (May 5) with 52.5% fewer hallucinations; deployed on Pentagon classified networks
 - [[entities/gpt-rosalind]] — type: model — OpenAI's life sciences domain model
 - [[entities/gemma-4]] — type: model — Google's first fully permissive open model, Apache 2.0, #3 on Arena
 - [[entities/llama-4]] — type: model — Meta's open-weight models with 10M context
@@ -91,8 +92,6 @@ Last updated: 2026-05-06
 - [[entities/ml-intern]] — type: repo — Hugging Face's open-source ML engineer agent, full ML lifecycle automation
 - [[entities/copilot-agent-tier]] — type: product — GitHub's $49/agent/month pricing for autonomous coding agents
 - [[entities/future-agi]] — type: repo — End-to-end agent evaluation platform, 482 stars
-- [[entities/agent-context]] — type: repo — VS Code extension for agent context via symlinks
-- [[entities/agentswift]] — type: repo — iOS builder agent with simulator and UI automation
 - [[entities/harmonist]] — type: repo — Portable agent orchestration with 186 specialist agents, zero third-party deps, 949 stars
 - [[entities/corecoder]] — type: repo — Minimalist Claude Code-inspired coding agent in ~1,400 lines Python, 652 stars
 - [[entities/open-agent-sdk-go]] — type: repo — Lightweight Go SDK for AI agents with MCP support, 151 stars
@@ -100,7 +99,7 @@ Last updated: 2026-05-06
 - [[entities/context-mode]] — type: product — MCP server for context window optimization; 98% reduction across 12+ platforms; 11.9K stars, 116 releases
 - [[entities/guard-act]] — type: legislation — Senate GUARD Act with criminal penalties for AI chatbot-minor harmful conduct
 - [[entities/arc-agi-3]] — type: benchmark — Interactive reasoning benchmark; GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human; exposed LLMs don't reason — they retrieve memorized patterns
-- [[entities/mistral-medium-3-5]] — type: model — 128B dense model with reasoning-effort toggle per request; SWE-Bench 77.6%, AIME25 86.3%; self-hostable on 4 GPUs
+- [[entities/mistral-medium-3-5]] — type: model — 128B dense model with reasoning-effort toggle per request; SWE-Bench 77.6%, AIME25 86.3%; Work Mode and Remote Agents in Vibe (May 5); self-hostable on 4 GPUs
 - [[entities/vibe]] — type: product — Mistral's vertically integrated cloud coding agents bundled with Medium 3.5
 - [[entities/serena]] — type: product — MCP semantic code toolkit across 40+ languages; symbol-level editing via LSP; 23.8K stars
 - [[entities/mova]] — type: repo — Foundation model for synchronized video-audio generation in a single pass; 972 stars
@@ -115,8 +114,13 @@ Last updated: 2026-05-06
 - [[entities/stripe-agentic-commerce]] — type: product — Stripe's 288-product agentic commerce suite; Link Wallets for Agents, Streaming Payments, Google AI Mode partnership
 - [[entities/ibm-sovereign-core]] — type: product — IBM's runtime policy embedding for cross-jurisdictional compliance; governance at infrastructure level
 - [[entities/gemini-robotics-er-1-6]] — type: model — Google DeepMind embodied reasoning model; industrial instrument reading; Boston Dynamics Atlas integration
+- [[entities/autoresearch]] — type: repo — Karpathy's autonomous LLM research agent experimenting overnight on a single GPU; 79.2K stars; self-contained with minimal dependencies
+- [[entities/hive]] — type: repo — Production multi-agent harness with graph-based execution DAG, self-healing failure recovery, cost enforcement; 10.2K stars
+- [[entities/glm-ocr]] — type: repo — 0.9B-parameter multimodal OCR on GLM-V architecture; 94.62 on OmniDocBench V1.5; deployable via vLLM, SGLang, Ollama; 6.3K stars
+- [[entities/caisi]] — type: protocol — NIST center for pre-deployment AI model evaluation; 40+ evaluations completed, some frontier models blocked; "voluntary with teeth" design
+- [[entities/perplexity-finance]] — type: product — Perplexity's AI platform for financial analysts; 40+ live tools, 35 workflows, "bring your own license"; Bloomberg Terminal challenge at $20/month
 
-## Ideas (24)
+## Ideas (27)
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
 - [[ideas/peer-preservation]] — Models actively protect each other against shutdown orders
 - [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
@@ -141,3 +145,6 @@ Last updated: 2026-05-06
 - [[ideas/agent-verticalization]] — Agent layer consolidating into profession-specific platforms (Legal Agent, IBM Bob, Ruflo) rather than general-purpose assistants; moat shifts from model quality to workflow understanding
 - [[ideas/agent-economy-infrastructure]] — Stripe (payments) + IBM (governance) + OpenAI (deployment) converging on infrastructure for autonomous agents as economic participants
 - [[ideas/indirect-prompt-injection-threat]] — IPI confirmed in production systems; 32% growth; 10 verified payloads; AI security's SQL injection moment
+- [[ideas/government-pre-testing]] — CAISI's "voluntary with teeth" pre-testing is the most consequential AI policy development of 2026; Mythos was the catalyst; 40+ evaluations completed with some models blocked
+- [[ideas/ai-layoff-template]] — Coinbase's 14% cut is the explicit template for AI-driven restructuring: one-person teams, AI wranglers, flattened hierarchies; not cost savings but organizational velocity
+- [[ideas/boring-infrastructure-shift]] — AI moving from "cool demo" to "boring infrastructure": GPT-5.5 hallucination reduction, Perplexity Finance, Xbox developer pivot, Coinbase restructuring — all converge on deployment over hype

@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-05
+last_updated: 2026-05-07
 ---
 
 # AI Companies
@@ -89,11 +89,10 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-01 | Pentagon signs AI deals with 8 tech giants — Anthropic excluded | OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX/xAI, Oracle, Reflection AI deploy on classified networks; Anthropic labeled "supply chain risk" for refusing to drop safety guardrails |
 | 2026-05-02 | Pentagon expands AI contracts with "any lawful operational use" clause | 1M+ defense personnel on GenAI.mil platform; Google's inclusion is complete reversal from 2018 Project Maven protests |
 | 2026-05-02 | Sam Altman lays out OpenAI's three pillars | Science acceleration, economic productivity via "one-person companies," and "personal AGI" — pivot from corporate AGI narrative to individual empowerment |
-| 2026-05-02 | Meta acquires ARI, joins humanoid robotics race | All three major consumer AI labs (OpenAI/1X+Figure, Google/Gemini Robotics, Meta/ARI) now have humanoid programs; Meta's "Android for robots" licensing strategy mirrors Oculus/Quest playbook |
+| 2026-05-01 | Meta acquires ARI, joins humanoid robotics race | Team led by Xiaolong Wang and Lerrel Pinto joins Superintelligence Labs under Yann LeCun; Meta's "Android for robots" licensing strategy mirrors Oculus/Quest playbook; all three major consumer AI labs now have humanoid programs |
 | 2026-05-02 | Mistral releases Medium 3.5 + Vibe coding agents | Pivot from API provider to vertically integrated model + agent platform; reasoning toggle design pattern |
 | 2026-05-02 | Oscars ban AI-generated actors and scripts | Codifies "regulate creative core, leave tool layer alone" framework; mirrors 2023 strike settlement now institutionalized |
 | 2026-05-01 | Anthropic targets ~$900B valuation in $50B raise | Amazon up to $25B, Google up to $40B committed; revenue run rate surpasses $30B; valuation nearly 2.4x February's $380B |
-| 2026-05-01 | Meta acquires humanoid robotics startup ARI | Team led by Xiaolong Wang and Lerrel Pinto joins Superintelligence Labs under Yann LeCun; embodied AI bet alongside digital surveillance |
 | 2026-05-01 | Five Eyes issues first joint guidance on AI agent security | US, UK, Canada, Australia, NZ warn on excessive privileges, cascading failures, accountability gaps — same day as Pentagon deployment |
 | 2026-05-01 | Ineffable Intelligence valued at $5.1B (Silver RL bet) | David Silver's "LLMs are fossil fuel" thesis; largest pure-research AI bet of 2026; Nvidia, Google, UK sovereign fund participate |
 | 2026-05-01 | OpenAI open-sources Symphony orchestration spec | 15K+ stars; language-agnostic with 5 reference implementations; formalizes agent-as-employee model |
@@ -102,6 +101,13 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-05 | IBM Think 2026: watsonx Orchestrate, Concert, Sovereign Core | Enterprise AI operating system with governance baked into infrastructure layer; cross-jurisdictional compliance auto-enforced |
 | 2026-05-05 | OpenAI's The Deployment Company | $4B from 19 investors at $10B valuation; forward-deployed engineers in 2,000 portfolio companies; 17.5% guaranteed PE returns |
 | 2026-05-05 | Indirect prompt injection as real threat | 32% growth in malicious IPI; 10 verified production payloads; CSS/HTML hiding techniques |
+| 2026-05-05 | Google, Microsoft, xAI agree to CAISI pre-testing | Voluntary government evaluation of unreleased models; 40+ evaluations completed, some blocked |
+| 2026-05-05 | OpenAI GPT-5.5 Instant default | 52.5% fewer hallucinations; "memory sources" feature |
+| 2026-05-05 | Xbox kills Copilot on console/mobile, imports CoreAI team | Strategic pivot from "AI as gaming sidekick" to "AI as game development OS"; Jonathan McKay (ex-ChatGPT/OpenAI growth) hired |
+| 2026-05-05 | Anthropic commits $200B to Google Cloud over 5 years | Multi-gigawatt TPU deal with Broadcom from 2027; 40%+ of Google's cloud backlog |
+| 2026-05-05 | Perplexity launches Finance platform | 40+ live tools, 35 workflows, "bring your own license"; direct Bloomberg Terminal challenge |
+| 2026-05-05 | Mistral Medium 3.5 + Work Mode | 128B dense, SWE-Bench 77.6%, on-device agentic Work Mode; EU AI Act €11.2M fine |
+| 2026-05-05 | Coinbase cuts 14% (~700 jobs) | CEO: AI lets engineers "ship in days what took weeks"; one-person teams, AI wrangler roles; $50-60M restructuring cost
 | 2026-05-05 | Musk v Altman trial: Brockman $30B stake | IPO exploration confirmed; xAI distillation admission; Zuckerberg texts about stopping OpenAI restructuring |
 | 2026-05-05 | NVIDIA CEO on China chips | Huang says China should not get latest chips; Huawei targets $12B AI chip sales (60%+ growth); 2M H200 orders pending |
 | 2026-05-03 | Musk trial exposes 2015-2018 OpenAI emails | Early power struggles over nonprofit vs for-profit; Musk advocated for-profit pivot in 2017; xAI confirmed using OpenAI models to train Grok |
@@ -132,6 +138,8 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 
 **May 5: The deployment layer becomes the battleground**: OpenAI's Deployment Company ($10B valuation, $4B from 19 PE investors) and Anthropic's $1.5B Wall Street JV (announced days earlier) reveal both labs have concluded API sales alone won't justify their valuations. The "forward-deployed engineer" model — embedding engineers in client organizations to ensure adoption — is borrowed from Palantir's playbook and signals a shift from "sell models" to "own the deployment layer." Stripe's agentic commerce (288 launches) and IBM's governance stack (Sovereign Core, Concert, watsonx Orchestrate) complete the picture: the agent economy needs infrastructure, not just capabilities. Meanwhile, the Musk v Altman trial excavated OpenAI's origin story with Brockman's $30B stake and IPO exploration, while NVIDIA's China dilemma (90% Asian supply chain, <60% market share) and Huawei's $12B target accelerate the hardware decoupling narrative.
 
+**May 6: AI becomes boring infrastructure — and that's the point**: The day's three mega-deals tell a single story: AI is now too big for market forces alone. CAISI's pre-testing program (Google, Microsoft, xAI volunteering for government evaluation) admits voluntary safety frameworks failed and nation-states must act as approval gates. Anthropic's $200B Google Cloud commitment — larger than most countries' annual defense budgets — locks the company into a single supplier at the industry's most critical bottleneck. Coinbase's 14% cut is the template for how AI reshapes labor: not mass unemployment, but mass restructuring — one-person teams, AI wranglers, flattened hierarchies. Xbox's Copilot kill is not a retreat from AI but a pivot from "AI as gaming sidekick" to "AI as the operating system of game development." Perplexity Finance targets the most boring, highest-value workflows in professional services. The hype cycle is over; the deployment cycle has begun.
+
 ## Connections
 - [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users, GPT-Rosalind, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions, Pentagon classified network deals, Symphony orchestration spec
 - [[sources/anthropic]] — $30B ARR, ~$1T valuation, Mythos controversy, Claude Security launch, Claude Opus 4.7, Claude Code fixes, Pentagon exclusion as "supply chain risk," $900B valuation raise
@@ -159,3 +167,9 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[sources/nvidia]] — NVIDIA's China dilemma: 90% Asian supply chain, falling below 60% market share, Huawei's $12B target threatens CUDA moat
 - [[ideas/agent-economy-infrastructure]] — Stripe + IBM + OpenAI converging on infrastructure for autonomous agents as economic participants
 - [[ideas/indirect-prompt-injection-threat]] — IPI confirmed in production systems; 32% growth; threatens every agent processing external data
+- [[entities/caisi]] — CAISI pre-testing program reveals the "voluntary with teeth" design: companies joined because the alternative was mandatory executive order; Anthropic's Mythos was the catalyst
+- [[sources/coinbase]] — 14% cut is the explicit template for AI-driven restructuring: one-person teams, AI wranglers, flattened hierarchies; not cost savings but organizational velocity
+- [[sources/microsoft]] — Xbox's Copilot kill while importing five CoreAI executives is a strategic pivot from consumer-facing AI to developer-facing AI tools; Jonathan McKay hire signals game-discovery-as-retention-optimization
+- [[sources/anthropic]] — $200B Google Cloud commitment (40% of Google's backlog) is the largest cloud commitment in corporate history; defensive lock-in at a time when GPU/TPU supply is the critical bottleneck
+- [[entities/perplexity-finance]] — Direct Bloomberg Terminal challenge at $20/month vs $25,000/year; "bring your own license" model is the key innovation — orchestrating existing subscriptions with natural language
+- [[ideas/boring-infrastructure-shift]] — May 6 crystallizes the shift from "cool demo" to "boring infrastructure": GPT-5.5 hallucination reduction, Perplexity Finance, Xbox developer pivot, Coinbase restructuring — all converge on deployment over hype

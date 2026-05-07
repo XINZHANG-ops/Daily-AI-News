@@ -1,7 +1,7 @@
 ---
 title: "Microsoft"
 slug: microsoft
-last_updated: 2026-05-04
+last_updated: 2026-05-06
 ---
 
 # Microsoft
@@ -23,6 +23,9 @@ last_updated: 2026-05-04
 | 2026-05-01 | Pentagon includes Microsoft in 8-company classified AI coalition | Azure AI deployed on IL6/IL7 classified networks; Agent Governance Toolkit open-sourced addressing OWASP Agentic Top 10 |
 | 2026-04-29 | Copilot surpasses 20M paid enterprise seats | Weekly engagement reportedly matching Outlook usage; Accenture alone accounts for 740K seats; Agent mode now default across Word, Excel, PowerPoint; multi-model support includes Anthropic's Claude alongside OpenAI models |
 | 2026-05-01 | Legal Agent launched for contract review in Word | First profession-specific Copilot vertical; clause-by-clause contract review purpose-built inside Word; signals Microsoft's verticalization strategy: carve enterprise into profession-specific AI surfaces |
+| 2026-05-05 | Agrees to CAISI pre-testing | Google, Microsoft, xAI volunteer for government evaluation of unreleased models; "voluntary with teeth" design |
+| 2026-05-05 | Xbox kills Copilot on console/mobile, imports CoreAI team | New CEO Asha Sharma winds down consumer Copilot, stops console development; imports Jared Palmer (VP Engineering), Tim Allen (Head of Xbox Design), Jonathan McKay (Head of Growth, ex-ChatGPT/OpenAI), Evan Chaki, David Schloss |
+| 2026-05-05 | CoreAI leadership team joins Xbox | Strategic pivot from "AI as gaming sidekick" to "AI as the operating system of game development"; Jonathan McKay hire signals game-discovery-as-retention-optimization |
 
 ## Key Relationships
 - **Anthropic**: Paradoxical — Claude integration in Copilot but competing in enterprise.

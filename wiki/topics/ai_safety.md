@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 ---
 
 # AI Safety
@@ -27,7 +27,7 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 
 **Enterprise Security Response**: Microsoft launched an Agent Governance Toolkit targeting OWASP Agentic Top 10. Oasis Security raised $120M for enterprise AI agent security. CSA called for shifting from static patching to continuous exposure management.
 
-**AI Governance and Hardware Efficiency (April 23-24)**: Geoffrey Hinton warned at a UN conference that rapid AI advances must be guided more carefully. His "car with no brake" metaphor highlights the urgency of AI governance. The global AI market is projected to grow from $189B in 2023 to $4.8 trillion by 2033, making governance increasingly critical. Meanwhile, Cambridge scientists developed a neuromorphic computing chip using hafnium-based memristors that could cut AI energy consumption by up to 70% — a potential breakthrough for sustainable AI that addresses the energy scalability concern underlying many safety debates.
+**AI Governance and Hardware Efficiency (April 23-24)**: Geoffrey Hinton warned at a UN conference that rapid AI advances must be guided more carefully. His "car with no brake" metaphor highlights the urgency of AI governance. The global AI market is projected to grow from $189B in 2023 to $4.8 trillion by 2033, making governance increasingly critical. Meanwhile, Cambridge scientists developed a neuromorphic computing chip — [[entities/cambridge-neuromorphic-chip]] — using hafnium-based memristors that could cut AI energy consumption by up to 70%, a potential breakthrough for sustainable AI that addresses the energy scalability concern underlying many safety debates.
 
 ## Key Developments
 
@@ -60,6 +60,13 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-02 | ARC-AGI-3 exposes reasoning limitations of frontier models | GPT-5.5 0.43%, Opus 4.7 0.18% on puzzles humans solve easily; systematic errors reveal models don't reason — they retrieve memorized patterns; safety implications for autonomous systems relying on these models |
 | 2026-05-03 | Pentagon exclusion cost quantified: ~$200M | Defense Secretary Hegseth called Dario Amodei "ideological lunatic"; same week Anthropic secured $1.5B Wall Street JV — the market bifurcation into "AI that says yes" vs "AI with guardrails" now has quantified economics on both sides |
 | 2026-05-05 | Indirect prompt injection confirmed as real-world threat | 32% increase in malicious IPI; 10 verified production payloads including financial fraud, data destruction, API key exfiltration; CSS/HTML hiding techniques bypass traditional filtering |
+| 2026-05-05 | CAISI pre-testing program launched | Google, Microsoft, xAI volunteer for government evaluation; 40+ evaluations completed, some frontier models blocked; "voluntary with teeth" design |
+| 2026-05-05 | EU AI Act Phase 2 fines | Mistral €11.2M, Stability AI €8.4M for training-data transparency failures; Europe taking harder line than US |
+| 2026-05-05 | Anthropic $200B Google Cloud commitment | Multi-gigawatt TPU deal from 2027; largest cloud commitment in corporate history |
+| 2026-05-05 | Xbox kills Copilot on console/mobile | Strategic pivot from consumer AI to developer AI tools; CoreAI leadership team imported |
+| 2026-05-05 | Coinbase cuts 14% (~700 jobs) | "One-person teams," AI wrangler roles; restructuring cost nearly offsets salary savings |
+| 2026-05-05 | Perplexity Finance launches | 40+ live finance tools, 35 prebuilt workflows; traceable outputs with citations to SEC filings |
+| 2026-05-05 | Mistral Medium 3.5 + Work Mode | On-device agentic "Work Mode" and "Remote Agents in Vibe" for async cloud execution |
 
 ## Patterns & Insights
 
@@ -87,6 +94,8 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 
 **May 5: Indirect Prompt Injection — the SQL injection moment for AI**: Google and Forcepoint confirmed IPI is actively exploiting production AI systems. Google found a 32% increase in malicious IPI across billions of web pages. Forcepoint discovered 10 verified payloads including financial fraud ($5,000 unauthorized transactions), data destruction, API key exfiltration, and DoS attacks concealed via CSS hiding techniques. The core architectural flaw is that LLMs cannot distinguish attacker instructions from legitimate data — every webpage, email, and document an agent processes is now a potential attack surface. This lands the same week as IBM's Sovereign Core and the Five Eyes agent-security guidance, forming a governance triad: IBM for enterprise policy, Five Eyes for government frameworks, and Google for threat intelligence.
 
+**May 6: Government pre-testing and the balkanization of safety**: CAISI's launch marks the most consequential AI policy development of 2026 — the shift from voluntary frameworks to structured government pre-release evaluation. The "voluntary with teeth" design (companies joined because the alternative was a mandatory executive order) proves this is not theater. Anthropic's Mythos was the catalyst: when a company voluntarily refuses to release a model for safety reasons, it forces regulators to act. The parallel with FDA drug trials is intentional — CAISI is positioning itself as the approval gate for AI "therapeutics." But the governance gap is enormous: 200 staff evaluating 500+ model versions per year. Simultaneously, EU AI Act Phase 2 fines on Mistral (€11.2M) and Stability AI (€8.4M) prove Europe is taking a harder line, creating a balkanized regulatory landscape where models need different disclosures and evaluations for each jurisdiction. The compliance cost alone will favor incumbents.
+
 ## Connections
 - [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior," Pentagon exclusion for refusing to drop safety guardrails
 - [[sources/openai]] — Musk vs Altman trial threatens to invalidate commercial structure; GPT-5.4-Cyber positioned for cyber defense; joined Pentagon coalition while restricting GPT-5.5 Cyber
@@ -105,3 +114,9 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[sources/ibm]] — IBM Sovereign Core is one institutional response to the governance gap IPI exposes: embed policy at the data layer rather than relying on model-level guardrails
 - [[entities/ibm-sovereign-core]] — runtime policy embedding as a response to data-layer governance gaps; cross-jurisdictional compliance auto-enforced
 - [[ideas/agent-economy-infrastructure]] — Stripe, IBM, and OpenAI building infrastructure for autonomous agents while IPI proves those agents are not yet safe to operate autonomously
+- [[entities/caisi]] — 40+ evaluations completed with some frontier models blocked; ~200 staff vs 500+ model versions per year; "voluntary with teeth" design may become global template for AI regulation
+- [[ideas/government-pre-testing]] — CAISI institutionalizes the Mythos precedent: government as approval gate for frontier models; the balkanized regulatory landscape (US voluntary, EU punitive) creates compliance moats for incumbents
+- [[sources/coinbase]] — "One-person teams" and "AI wrangler" roles are the labor-market face of the safety challenge: as AI takes over coordination, humans become safety monitors
+- [[entities/perplexity-finance]] — Traceable outputs with citations to SEC filings and licensed databases make Perplexity Finance auditable in a way that GPT-5.5's "memory sources" are not — citation-first design as safety feature
+- [[sources/mistral]] — EU AI Act €11.2M fine for training-data transparency failures; Mistral's Work Mode running on user-controlled environments is a direct response to regulatory exposure
+- [[ideas/boring-infrastructure-shift]] — AI is moving from "cool demo" to "boring infrastructure" — and safety is the dullest, most important part: CAISI pre-testing, EU fines, and Coinbase restructuring all treat AI as infrastructure that must be regulated like any other critical system

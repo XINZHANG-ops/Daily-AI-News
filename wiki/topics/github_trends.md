@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 ---
 
 # GitHub Trends
@@ -64,6 +64,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | aaif-goose/goose | new | Open-source extensible AI agent — install, execute, edit, test with any LLM |
 | msitarzewski/agency-agents | new | Complete AI agency with specialized expert agents (frontend wizards, Reddit ninjas, etc.) |
 | oraios/serena | 23.8K+ | MCP semantic code toolkit for 40+ languages; symbol-level editing via LSP |
+| karpathy/autoresearch | 79.2K+ | Autonomous LLM research agent that experiments overnight on a single GPU; self-contained with minimal dependencies |
+| aden-hive/hive | 10.2K+ | Multi-agent harness for production AI workloads; graph-based execution DAG, self-healing graph evolution, cost enforcement |
+| zai-org/GLM-OCR | 6.3K+ | Multimodal OCR on GLM-V architecture; 0.9B parameters, 94.62 on OmniDocBench V1.5; deployable via vLLM, SGLang, Ollama |
 | OpenMOSS/MOVA | 972+ | Foundation model for synchronized video-audio generation in a single pass |
 | ruvnet/ruflo | 39.9K+ | Open-source agent orchestration for Claude Code deploying 100+ agent swarms with self-learning memory |
 | abhigyanpatwari/GitNexus | 35.4K+ | Zero-server code intelligence engine indexing codebases into MCP-accessible knowledge graphs |
@@ -105,6 +108,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **May 5: The efficiency frontier in agent frameworks**: nanobot's 41.7K stars demonstrate that developers value minimal-code agent harnesses. At ~4,000 lines versus Claude Code's 512,000 lines, nanobot achieves multi-platform chat, MCP support, and WebUI in 99% less code. This validates the "configuration over code" principle (Andrej Karpathy's 105K-star CLAUDE.md) at the framework level. Agent Squad (7.6K stars) adds model-agnostic orchestration, showing demand for frameworks that avoid vendor lock-in at the orchestration layer.
 
+**May 6: Autonomous research and production harnesses**: Three repos trending signal agent maturity beyond coding. AutoResearch (79.2K stars) is Karpathy's autonomous LLM research agent that experiments overnight on a single GPU — the highest-starred new repo of the day, validating demand for end-to-end scientific automation. Hive (10.2K stars) is a production multi-agent harness with graph-based execution DAGs, self-healing failure recovery, and cost enforcement — addressing the operational reliability gap that most agent frameworks ignore. GLM-OCR (6.3K stars) achieves 94.62 on OmniDocBench with only 0.9B parameters, proving sub-1B models can dominate narrow multimodal tasks. The pattern: agents are fragmenting by vertical (research, production ops, document understanding) just as the broader ecosystem fragments by profession.
+
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
 - [[entities/claw-code]] — Clean-room rewrite, 181K+ stars
@@ -126,6 +131,12 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/gitnexus]] — 35.4K stars; MCP knowledge graph for agent codebase navigation; completes agent infrastructure triad with Serena and context-mode
 - [[entities/pixelle-video]] — 10.5K stars; fully automated short video engine demonstrating agent frameworks spreading beyond code into creative production
 - [[ideas/agent-verticalization]] — Agent infrastructure maturing from individual tools to organizational platforms
+- [[entities/autoresearch]] — 79.2K stars; Karpathy's autonomous research agent that experiments overnight on a single GPU; extends "configuration over code" into autonomous experimentation
+- [[entities/hive]] — 10.2K stars; production multi-agent harness with self-healing DAG evolution and cost enforcement; fills the operational reliability gap in agent orchestration
+- [[entities/glm-ocr]] — 6.3K stars; 0.9B-parameter multimodal OCR beating frontier models on OmniDocBench; validates efficiency frontier for narrow domains
 - [[entities/nanobot]] — 41.7K stars; ultra-lightweight personal agent in ~4K lines Python; 99% smaller than alternatives; validates minimal-code agent philosophy
 - [[entities/agent-squad]] — 7.6K stars; model-agnostic multi-agent orchestration with SupervisorAgent across Bedrock, Anthropic, OpenAI
 - [[entities/andrej-karpathy-skills]] — nanobot's minimal-code approach validates Karpathy's "configuration over code" principle at the framework level
+- [[entities/web-design-skill]] — 533 stars; transforms AI-generated pages from functional to stunning alongside cc-design in the emerging design-skills category
+- [[entities/future-agi]] — 482 stars; end-to-end agent evaluation platform reflecting maturation of agent observability infrastructure
+- [[entities/mercury-agent]] — 531 stars; soul-driven personal AI agent with permission-hardened tools and CLI/Telegram multi-channel access

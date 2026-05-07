@@ -491,3 +491,27 @@ Wiki ingest for **2026-05-05** is complete.
 - **Tracking:** `processed.json` and `log.md`
 
 **Key cross-cutting insight:** May 5, 2026 reveals the AI industry simultaneously building infrastructure for autonomous agents (Stripe payments, IBM governance, OpenAI deployment) while discovering that the security frameworks for that world do not yet exist (IPI as the "SQL injection moment").
+The 2026-05-06 ingest is complete. Here's a summary of what was updated:
+
+**New pages created (9)**
+- **Entities**: `autoresearch`, `hive`, `glm-ocr`, `caisi`, `perplexity-finance`
+- **Sources**: `coinbase`
+- **Ideas**: `government-pre-testing`, `ai-layoff-template`, `boring-infrastructure-shift`
+
+**Updated pages (22)**
+- **Topics**: `llm_models`, `ai_companies`, `ai_funding`, `github_trends`, `ai_safety`, `agentic_ai`
+- **Sources**: `google`, `microsoft`, `xai`, `openai`, `anthropic`, `mistral`, `perplexity`
+- **Entities**: `gpt-5.5`, `mistral-medium-3-5`
+- **Timeline**: `2026-05`
+
+**Key narratives captured**
+1. **CAISI pre-testing** — Google, Microsoft, xAI volunteer for government evaluation; Anthropic's Mythos was the catalyst
+2. **Anthropic's $200B Google Cloud commitment** — Largest cloud commitment in corporate history; 40% of Google's backlog
+3. **GPT-5.5 Instant** — 52.5% fewer hallucinations, "memory sources" feature; defensive response to Perplexity/Anthropic
+4. **Perplexity Finance** — Direct Bloomberg Terminal challenge with "bring your own license" model
+5. **Coinbase's 14% cut** — First explicit "AI layoff template": one-person teams, AI wranglers, flattened hierarchies
+6. **Xbox AI pivot** — Kills consumer Copilot, imports CoreAI team; bets on developer-facing AI
+7. **Mistral Medium 3.5** — Work Mode and Remote Agents in Vibe; EU AI Act €11.2M fine
+8. **GitHub repos**: AutoResearch (79.2K), Hive (10.2K), GLM-OCR (6.3K)
+
+**Files updated**: `index.md` (130 → 139 pages), `log.md`, `processed.json` (now includes 2026-05-06).

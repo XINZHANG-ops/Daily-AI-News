@@ -1,7 +1,7 @@
 ---
 title: "xAI"
 slug: xai
-last_updated: 2026-05-01
+last_updated: 2026-05-06
 ---
 
 # xAI
@@ -21,6 +21,7 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 | 2026-04-25 | grok-voice-think-fast-1.0 launches | 67.3% on τ-voice Bench; outperforms Gemini, GPT Realtime in retail/airline/telecom |
 | 2026-04-30 | Musk admits xAI distilled from OpenAI | Under oath in court; "partly used OpenAI's models" to improve Grok; IP chain questionable for SpaceX IPO |
 | 2026-05-01 | Pentagon includes xAI in 8-company classified AI coalition | Grok deployed on classified networks; Musk simultaneously suing OpenAI, distilling from OpenAI, and joining military contracts with OpenAI |
+| 2026-05-05 | Agrees to CAISI pre-testing | Google, Microsoft, xAI volunteer for government evaluation of unreleased models; "voluntary with teeth" design |
 
 ## Key Relationships
 - **SpaceX**: Parent company following acquisition.
@@ -32,3 +33,5 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 - [[sources/spacex]] — Acquired by SpaceX for $250B in April 2026, creating a $1.25T combined entity; Grok now operates under SpaceX ownership
 - [[entities/grok-voice-think-fast-1-0]] — xAI's voice model scoring 67.3% on τ-voice Bench; outperforming in retail/airline/telecom verticals
 - [[sources/openai]] — Musk admitted under oath to distilling from OpenAI models while simultaneously suing the company; IP chain of title now questionable for SpaceX-xAI merger
+- [[entities/caisi]] — xAI joined CAISI pre-testing alongside Google and Microsoft; the "voluntary with teeth" design means even Musk's anti-regulation posture bends to the threat of mandatory executive orders
+- [[ideas/government-pre-testing]] — xAI's participation in CAISI contradicts Musk's public anti-regulation rhetoric; "voluntary with teeth" reveals that even the most deregulation-friendly labs prefer self-regulation to mandatory oversight

@@ -2,13 +2,13 @@
 title: "GPT-5.4"
 slug: gpt-5.4
 type: model
-last_updated: 2026-04-20
+last_updated: 2026-05-07
 ---
 
 # GPT-5.4
 
 ## What It Is
-GPT-5.4 is OpenAI's flagship model family released in March 2026, available in multiple variants optimized for different use cases: Thinking (reasoning), Mini/Nano (cost efficiency), and Cyber (cybersecurity).
+GPT-5.4 is OpenAI's model family released in March 2026, available in multiple variants optimized for different use cases: Thinking (reasoning), Mini/Nano (cost efficiency), and Cyber (cybersecurity). Superseded by [[entities/gpt-5.5]] as OpenAI's flagship in April 2026.
 
 ## Key Facts
 

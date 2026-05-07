@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 ---
 
 # Google
@@ -26,7 +26,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-04-10 | LiteRT-LM released | Production-ready edge LLM inference framework |
 | 2026-04-16 | Claude Opus 4.6 near-tie on SWE-bench | 80.8% vs Gemini 3.1 Pro 80.6% |
 | 2026-04-20 | Gemini 3.1 Flash TTS released | Granular voice control via natural language prompting |
-| 2026-04-21 | Gemini 3 Deep Think finds math errors | Identifies logical flaws in peer-reviewed papers |
+| 2026-04-21 | [[entities/gemini-3-deep-think]] finds math errors | Identifies logical flaws in peer-reviewed papers |
 | 2026-04-23 | Cloud Next 2026 announcements | Gemini Enterprise Agent Platform, TPU 8th gen (3x Ironwood), 75% code AI-generated |
 | 2026-04-25 | Google to invest up to $40B in Anthropic | $10B minimum, $30B contingent on performance targets — deepening partnership |
 | 2026-04-26 | Epoch AI: Google controls ~25% global AI compute | 3.8M TPUs + 1.3M GPUs; $40B deal will face EU/UK regulatory scrutiny |
@@ -37,6 +37,8 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-05-01 | Pentagon includes Google in 8-company classified AI coalition | Gemini deployed on IL6/IL7 classified networks; Google crosses "Don't Be Evil" era rubicon with military AI deployment |
 | 2026-05-02 | Pentagon expands contracts with "any lawful operational use" clause | 1M+ defense personnel now on GenAI.mil platform; Google's inclusion represents complete reversal from 2018 internal Project Maven protests — a decade-long arc from resistance to full integration with defense AI |
 | 2026-05-04 | IPI threat confirmed in production | Google Threat Intelligence found 32% increase in malicious indirect prompt injection across billions of web pages; payloads hidden in CSS/HTML |
+| 2026-05-05 | Agrees to CAISI pre-testing | Google, Microsoft, xAI volunteer for government evaluation of unreleased models; "voluntary with teeth" design — alternative was mandatory executive order |
+| 2026-05-05 | Anthropic commits $200B to Google Cloud | 40%+ of Google's disclosed cloud revenue backlog; multi-gigawatt TPU deal with Broadcom from 2027 |
 | 2026-04-14 | Gemini Robotics-ER 1.6 released | Industrial instrument reading for robots; multi-view success detection; Boston Dynamics Atlas integration for automotive tasks |
 
 ## Key Relationships
@@ -54,3 +56,6 @@ Google has deepened its role as an AI infrastructure provider and model competit
 - [[ideas/safety-restricted-releases]] — Not directly restricting models but participating in coalition discussions
 - [[entities/gemini-robotics-er-1-6]] — embodied reasoning model with industrial instrument reading; Boston Dynamics partnership signals "Android of robotics" software licensing strategy
 - [[ideas/indirect-prompt-injection-threat]] — Google Threat Intelligence discovered 32% IPI growth; disclosed GeminiJack vulnerability in Google's own production systems
+- [[entities/caisi]] — Google volunteered for CAISI pre-testing alongside Microsoft and xAI; the alternative was reportedly a mandatory executive order the White House is drafting
+- [[sources/anthropic]] — $200B Google Cloud commitment is the largest in corporate history; 40% of Google's cloud backlog; if Anthropic fails, Google's cloud growth narrative collapses
+- [[ideas/government-pre-testing]] — Google's participation in CAISI reveals the "voluntary with teeth" dynamic: even the largest labs prefer self-regulation to mandatory government oversight

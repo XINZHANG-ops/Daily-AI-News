@@ -1,5 +1,58 @@
 # Wiki Log
 
+## [2026-05-07] wiki lint | comprehensive health check
+
+**Pass 1 — Structural fixes:**
+- Verified all 137 content pages have corresponding .md files (6 topics, 22 sources, 3 timelines, 79 entities, 27 ideas)
+- Verified no unlisted .md files exist in any section
+- Verified zero broken wikilinks across all content pages
+- Fixed 7 orphan entity pages by adding inbound links from relevant topic/source pages:
+  - `entities/web-design-skill` — linked from `topics/github_trends`
+  - `entities/future-agi` — linked from `topics/github_trends`
+  - `entities/mercury-agent` — linked from `topics/github_trends` and `topics/agentic_ai`
+  - `entities/gemini-3-deep-think` — linked from `topics/llm_models`, `sources/google`, `timelines/2026-04`
+  - `entities/cambridge-neuromorphic-chip` — linked from `topics/ai_safety`
+- Removed 2 entity pages that were fully orphaned with negligible traction and no mentions in any content page:
+  - `entities/agentswift` — 39 stars, not referenced in any topic/source/timeline/entity/idea page
+  - `entities/agent-context` — 2 stars, not referenced in any content page
+- Updated `index.md`: removed agentswift and agent-context entries, corrected entity count 81 → 79
+- Verified no companies or people in entities/: all 79 entity types are valid (model, product, protocol, framework, repo, benchmark, legislation)
+
+**Pass 2 — Wrong & duplicate information fixed:**
+- Removed duplicate table row in `topics/ai_companies.md`: merged two Meta ARI acquisition entries (2026-05-01 and 2026-05-02) into a single richer row with combined details
+- Updated `entities/gpt-5.4.md`: corrected "OpenAI's flagship model family" → "OpenAI's model family... superseded by GPT-5.5 as the flagship in April 2026"; last_updated 2026-04-20 → 2026-05-07
+- Verified frontmatter types match index annotations for all 79 entities
+- Verified no duplicate paragraphs across any content pages
+- Verified no additional stale or factually inconsistent claims detected
+
+**Pass 3 — Connection quality:**
+- All 6 topic pages verified: each has ## Evolution and ## Patterns & Insights sections
+- No bare "Related:", "See also:", or unannotated links found in any content page
+- All connections verified: every link explains WHY and HOW things connect
+- Recent daily insight_analysis patterns (May 2-6) are all represented by existing idea pages: military-ai-divide, institutional-gap, agent-verticalization, agent-economy-infrastructure, indirect-prompt-injection-threat, government-pre-testing, boring-infrastructure-shift
+- No missing entity pages identified for significant named technical concepts referenced across multiple pages
+
+**Index rebuilt:**
+- Topics: 6 (unchanged)
+- Sources: 22 (unchanged)
+- Timelines: 3 (unchanged)
+- Entities: 79 (removed agentswift, agent-context)
+- Ideas: 27 (unchanged)
+- Total content pages: 137 (6+22+3+79+27)
+- Last updated: 2026-05-07
+
+## [2026-05-06] ingest | 1 date
+
+Dates processed: 2026-05-06
+Topics updated: llm_models (GPT-5.5 Instant 52.5% fewer hallucinations, Mistral Medium 3.5 Work Mode + Remote Agents, EU AI Act fines), ai_companies (CAISI pre-testing, Xbox CoreAI pivot, Anthropic $200B Google Cloud, Perplexity Finance, Coinbase 14% cut, Mistral EU fine), ai_funding (Anthropic $200B commitment, Coinbase $50-60M restructuring), github_trends (AutoResearch 79.2K, Hive 10.2K, GLM-OCR 6.3K), ai_safety (CAISI launch, EU AI Act Phase 2 fines on Mistral/Stability AI, government pre-testing), agentic_ai (Xbox developer pivot, Mistral Work Mode, AutoResearch, Hive)
+Sources updated: google (CAISI agreement, Anthropic $200B), microsoft (CAISI, Xbox pivot), xai (CAISI), openai (GPT-5.5 Instant, CAISI), anthropic ($200B Google Cloud, CAISI), mistral (Work Mode, EU AI Act €11.2M fine), perplexity (Perplexity Finance)
+Sources created: coinbase (14% cut, one-person teams, AI wrangler roles)
+Timelines updated: 2026-05 (May 6: CAISI, GPT-5.5 Instant, Xbox pivot, Anthropic $200B, Perplexity Finance, Mistral Work Mode, Coinbase layoffs, AutoResearch, Hive, GLM-OCR)
+Entities created: autoresearch (79.2K stars, Karpathy's autonomous research agent), hive (10.2K stars, production multi-agent harness), glm-ocr (6.3K stars, 0.9B-parameter multimodal OCR), caisi (NIST pre-testing center, 40+ evaluations), perplexity-finance (40+ tools, 35 workflows, Bloomberg Terminal challenge)
+Entities updated: gpt-5.5 (GPT-5.5 Instant default, 52.5% fewer hallucinations, memory sources), mistral-medium-3-5 (Work Mode, Remote Agents in Vibe, EU fine context)
+Ideas created: government-pre-testing (CAISI's "voluntary with teeth" design; Mythos as catalyst; 40+ evaluations), ai-layoff-template (Coinbase's one-person teams and AI wranglers as explicit restructuring playbook), boring-infrastructure-shift (AI moving from demos to infrastructure: GPT-5.5 Instant, Perplexity Finance, Xbox pivot, Coinbase restructuring)
+Chat session insights applied: Apr 23 session noted ai_safety may need updating with Bank of England/Qihoo 360 — both already present from prior ingests. No new gaps identified from May 6 data in chat sessions.
+
 ## [2026-05-06] wiki lint | comprehensive health check
 
 **Pass 1 — Structural fixes:**
