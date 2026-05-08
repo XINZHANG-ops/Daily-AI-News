@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 08, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 08, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/cocoindex-io/cocoindex" class="card-title" target="_blank">cocoindex-io/cocoindex</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 9,018 stars</div>
+                                <div class="meta-item"><span>🍴</span> 670 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Incremental engine for long horizon agents. A framework for building persistent, stateful AI agents that can maintain context and execute tasks over extended time periods with automatic state management and recovery.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">长时程智能体的增量引擎。用于构建持久化、有状态的AI智能体的框架，能够在延长时间段内保持上下文并执行任务，具备自动状态管理和恢复能力。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Q00/ouroboros" class="card-title" target="_blank">Q00/ouroboros</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3,677 stars</div>
+                                <div class="meta-item"><span>🍴</span> 358 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Agent OS: Stop prompting. Start specifying. A declarative operating system for AI agents that shifts the paradigm from prompt engineering to specification-driven agent behavior with built-in planning and execution loops.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">智能体操作系统：停止提示，开始规范。面向AI智能体的声明式操作系统，将范式从提示工程转变为规范驱动的智能体行为，内置规划和执行循环。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/hugohe3/ppt-master" class="card-title" target="_blank">hugohe3/ppt-master</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 13,205 stars</div>
+                                <div class="meta-item"><span>🍴</span> 1,346 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">AI generates natively editable PPTX from any document — real PowerPoint shapes with native animations, not images. Converts PDFs, Word docs, markdown, and web pages into professional presentations with proper layering and formatting.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI从任何文档生成原生可编辑的PPTX——真正的PowerPoint形状和原生动画，而非图片。将PDF、Word文档、Markdown和网页转换为具有正确分层和格式的专业演示文稿。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-05-07</div>
+                    <a href="https://techcrunch.com/2026/05/07/perplexitys-personal-computer-is-now-available-everyone-on-mac/" class="card-title" target="_blank" data-lang="en">Perplexity's Personal Computer Launches Publicly on macOS</a>
+                    <a href="https://techcrunch.com/2026/05/07/perplexitys-personal-computer-is-now-available-everyone-on-mac/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Perplexity个人电脑应用在macOS公开发布</a>
+                    <p class="card-description" data-lang="en">Perplexity released its Personal Computer application for macOS, making the AI-powered search and productivity tool generally available to all Mac users after a period of limited beta testing. The app integrates local file search with web search and conversational AI.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Perplexity发布了适用于macOS的个人电脑应用，在有限Beta测试期后向所有Mac用户开放。该应用将本地文件搜索与网络搜索和对话式AI集成在一起。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-05-07</div>
+                    <a href="https://techcrunch.com/2026/05/07/openai-introduces-new-trusted-contact-safeguard-for-cases-of-possible-self-harm/" class="card-title" target="_blank" data-lang="en">OpenAI Introduces 'Trusted Contact' Safeguard for Self-Harm Prevention</a>
+                    <a href="https://techcrunch.com/2026/05/07/openai-introduces-new-trusted-contact-safeguard-for-cases-of-possible-self-harm/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI推出'可信联系人'功能以防止自伤</a>
+                    <p class="card-description" data-lang="en">OpenAI implemented a new safety feature called 'Trusted Contact' designed to intervene and provide support when users may be at risk of self-harm. The system can suggest reaching out to pre-designated contacts and provide crisis resources.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI实施了一项名为'可信联系人'的新安全功能，旨在当用户可能有自伤风险时进行干预并提供支持。该系统可以建议联系预先指定的联系人并提供危机资源。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Google DeepMind</span>
+                    <div class="news-time">2026-05-07</div>
+                    <a href="https://deepmind.google/blog/alphaevolve-impact/" class="card-title" target="_blank" data-lang="en">DeepMind's AlphaEvolve: Gemini-Powered Coding Agent Scales Impact Across Mathematics and Engineering</a>
+                    <a href="https://deepmind.google/blog/alphaevolve-impact/" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepMind推出AlphaEvolve：Gemini驱动的编码智能体在数学和工程领域扩展影响力</a>
+                    <p class="card-description" data-lang="en">Google DeepMind introduced AlphaEvolve, a Gemini-powered coding agent that leverages evolutionary computation to discover novel algorithms and optimizations. The system has already solved open problems in matrix multiplication, improved data center scheduling, and generated new mathematical proofs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google DeepMind推出AlphaEvolve，这是一个由Gemini驱动的编码智能体，利用进化计算来发现新算法和优化方案。该系统已经解决了矩阵乘法中的开放性问题，改进了数据中心调度，并生成了新的数学证明。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-05-07</div>
+                    <a href="https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/" class="card-title" target="_blank" data-lang="en">Voi Founders' New AI Startup Pit Emerges as Stockholm's Rising Star</a>
+                    <a href="https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Voi创始人新AI初创公司Pit成为斯德哥尔摩新星</a>
+                    <p class="card-description" data-lang="en">Pit, a new AI startup founded by the creators of electric scooter company Voi, is gaining significant traction in Stockholm's tech ecosystem. The company is reportedly building AI infrastructure tools for logistics and urban mobility optimization.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Pit是由电动滑板车公司Voi创始人创建的新AI初创公司，正在斯德哥尔摩科技生态系统中获得显著关注。据报道，该公司正在构建用于物流和城市出行优化的AI基础设施工具。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI News</span>
+                    <div class="news-time">2026-05-06</div>
+                    <a href="https://www.artificialintelligence-news.com/news/google-remy-ai-agent-gemini-user-control/" class="card-title" target="_blank" data-lang="en">Google Tests 'Remy' AI Agent for Gemini with Focus on User Control</a>
+                    <a href="https://www.artificialintelligence-news.com/news/google-remy-ai-agent-gemini-user-control/" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌测试Gemini的'Remy'AI智能体，注重用户控制</a>
+                    <p class="card-description" data-lang="en">Google is developing a new agentic AI system codenamed 'Remy' for its Gemini platform, emphasizing enhanced user oversight and control mechanisms. The system reportedly allows users to review and approve each step of multi-step agent workflows.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌正在为其Gemini平台开发一个代号为'Remy'的新智能体AI系统，强调增强的用户监督和控制系统。据报道，该系统允许用户审查和批准多步智能体工作流的每一步。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Mozilla Hacks</span>
+                    <div class="news-time">2026-05-06</div>
+                    <a href="https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/" class="card-title" target="_blank" data-lang="en">Mozilla Hardens Firefox Security with Claude Mythos Preview</a>
+                    <a href="https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Mozilla使用Claude Mythos Preview强化Firefox安全</a>
+                    <p class="card-description" data-lang="en">Mozilla detailed how they used Anthropic's Claude Mythos Preview to identify and patch security vulnerabilities in the Firefox browser codebase. The AI system analyzed C++ and Rust code to find memory safety issues and logic bugs that escaped human review.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Mozilla详细介绍了他们如何使用Anthropic的Claude Mythos Preview来识别和修补Firefox浏览器代码库中的安全漏洞。该AI系统分析C++和Rust代码，发现了逃过人工审查的内存安全问题和逻辑错误。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI News</span>
+                    <div class="news-time">2026-05-06</div>
+                    <a href="https://www.artificialintelligence-news.com/news/us-government-increases-ai-in-defence-suppliers-roster-and-rethinks-anthropics-role/" class="card-title" target="_blank" data-lang="en">US Government Expands AI Defense Suppliers and Rethinks Anthropic Partnership</a>
+                    <a href="https://www.artificialintelligence-news.com/news/us-government-increases-ai-in-defence-suppliers-roster-and-rethinks-anthropics-role/" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国政府扩大AI防务供应商并重新考虑与Anthropic的合作</a>
+                    <p class="card-description" data-lang="en">US defense and public sector agencies are expanding approved vendor lists for AI procurement while reassessing partnerships with specific frontier labs. The move comes amid broader scrutiny of AI vendor relationships in national security contexts.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">美国国防和公共部门机构正在扩大AI采购的批准供应商名单，同时重新评估与特定前沿实验室的合作伙伴关系。此举是在国家安全背景下对AI供应商关系进行更广泛审查之际采取的。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Today's AI landscape reveals a market maturing from raw capability demonstrations to trust and control infrastructure. Perplexity's desktop play and Google's Remy agent both signal a shift: the winning AI products won't just be the most capable, but those that users feel safe delegating to. Mozilla's use of Claude Mythos for security auditing marks AI becoming the solution to AI-adjacent risks — a recursive self-improvement loop where models audit code that will eventually run other models.
+
+The deeper pattern is fragmentation along use-case lines. OpenAI optimizes for consumer ubiquity (voice features, trusted contacts), DeepMind pursues fundamental research automation (AlphaEvolve's algorithm discovery), while Google builds enterprise guardrails (Remy's approval gates). Anthropic's absence from today's headlines is notable — the SpaceX deal news cycle has passed, leaving them to execute quietly on their infrastructure advantages.
+
+The emerging story is control: who gets it, how it's exercised, and what users will tolerate. European founders (Voi → Pit) are betting on vertical-specific AI rather than horizontal platforms, while governments diversify vendor relationships to manage concentration risk. The next 12 months will likely be defined by which trust frameworks — technical, regulatory, or contractual — become industry standards.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">今天的AI格局揭示了一个正从原始能力展示走向信任和控制基础设施的市场。Perplexity的桌面战略和谷歌的Remy智能体都预示着转变：获胜的AI产品不仅将是最有能力的，而是那些用户感到安全委托的产品。Mozilla使用Claude Mythos进行安全审计标志着AI正在成为AI相关风险的解决方案——一个递归的自我改进循环，模型审计最终将运行其他模型的代码。
+
+更深层次的模式是按用例线碎片化。OpenAI优化消费者普及（语音功能、可信联系人），DeepMind追求基础研究自动化（AlphaEvolve的算法发现），而谷歌构建企业护栏（Remy的审批关卡）。Anthropic今天缺席头条值得关注——SpaceX交易新闻周期已经过去，让他们在其基础设施优势上安静执行。
+
+正在浮现的故事是控制：谁获得它、如何行使它、用户将容忍什么。欧洲创始人（Voi → Pit）押注于垂直特定AI而非横向平台，而政府多元化供应商关系以管理集中度风险。未来12个月可能由哪些信任框架——技术、监管或合同——成为行业标准来定义。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

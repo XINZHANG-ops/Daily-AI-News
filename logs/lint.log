@@ -271,3 +271,11 @@ Yes — the wiki lint is complete. Here's what was fixed:
 - `wiki/index.md` last updated bumped to 2026-05-08.
 - `wiki/log.md` appended with full lint entry documenting the fixes.
 [2026-05-08 01:16:08] Wiki lint complete (exit code 0).
+[main fe4d1c0] wiki: lint 2026-05-08
+ 33 files changed, 611 insertions(+), 62 deletions(-)
+ create mode 100644 wiki/entities/aws-mcp-server.md
+ create mode 100644 wiki/entities/cordenex.md
+ create mode 100644 wiki/entities/moss-tts.md
+ create mode 100644 wiki/entities/omnivoice.md
+ create mode 100644 wiki/ideas/compute-shortage-forces-cooperation.md
+ create mode 100644 wiki/sources/sierra.md

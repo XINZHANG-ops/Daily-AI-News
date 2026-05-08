@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-08",
+  "github_repos": [
+    {
+      "name": "cocoindex-io/cocoindex",
+      "url": "https://github.com/cocoindex-io/cocoindex",
+      "description": {
+        "en": "Incremental engine for long horizon agents. A framework for building persistent, stateful AI agents that can maintain context and execute tasks over extended time periods with automatic state management and recovery.",
+        "zh": "长时程智能体的增量引擎。用于构建持久化、有状态的AI智能体的框架，能够在延长时间段内保持上下文并执行任务，具备自动状态管理和恢复能力。"
+      },
+      "stars": "9,018",
+      "forks": "670"
+    },
+    {
+      "name": "Q00/ouroboros",
+      "url": "https://github.com/Q00/ouroboros",
+      "description": {
+        "en": "Agent OS: Stop prompting. Start specifying. A declarative operating system for AI agents that shifts the paradigm from prompt engineering to specification-driven agent behavior with built-in planning and execution loops.",
+        "zh": "智能体操作系统：停止提示，开始规范。面向AI智能体的声明式操作系统，将范式从提示工程转变为规范驱动的智能体行为，内置规划和执行循环。"
+      },
+      "stars": "3,677",
+      "forks": "358"
+    },
+    {
+      "name": "hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "description": {
+        "en": "AI generates natively editable PPTX from any document — real PowerPoint shapes with native animations, not images. Converts PDFs, Word docs, markdown, and web pages into professional presentations with proper layering and formatting.",
+        "zh": "AI从任何文档生成原生可编辑的PPTX——真正的PowerPoint形状和原生动画，而非图片。将PDF、Word文档、Markdown和网页转换为具有正确分层和格式的专业演示文稿。"
+      },
+      "stars": "13,205",
+      "forks": "1,346"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Perplexity's Personal Computer Launches Publicly on macOS",
+        "zh": "Perplexity个人电脑应用在macOS公开发布"
+      },
+      "url": "https://techcrunch.com/2026/05/07/perplexitys-personal-computer-is-now-available-everyone-on-mac/",
+      "source": "TechCrunch",
+      "time": "2026-05-07",
+      "description": {
+        "en": "Perplexity released its Personal Computer application for macOS, making the AI-powered search and productivity tool generally available to all Mac users after a period of limited beta testing. The app integrates local file search with web search and conversational AI.",
+        "zh": "Perplexity发布了适用于macOS的个人电脑应用，在有限Beta测试期后向所有Mac用户开放。该应用将本地文件搜索与网络搜索和对话式AI集成在一起。"
+      },
+      "insight": {
+        "en": "01 *Perplexity's Desktop Gambit* : While OpenAI and Anthropic battle for API dominance, Perplexity is executing a classic platform strategy play — own the user's desktop real estate before competitors realize its value. The macOS launch follows ChatGPT's desktop app by months but differentiates with native file system integration, a feature OpenAI has deliberately avoided to maintain cloud-first parity across platforms. Perplexity's bet is that local context (your files + web) creates stickier queries than generic chat. The timing matters: with Apple's AI strategy still finding its footing (Siri's Gemini integration still in testing), there's a window for third-party AI assistants to become the de facto Mac AI layer before Apple locks it down natively.",
+        "zh": "01 *Perplexity的桌面博弈* : 当OpenAI和Anthropic争夺API主导地位时，Perplexity正在执行经典的平台战略——在竞争对手意识到价值之前占领用户的桌面领地。macOS发布比ChatGPT桌面应用晚了数月，但通过原生文件系统集成实现差异化，这是OpenAI为保持跨平台云端优先一致性而刻意回避的功能。Perplexity的赌注是本地上下文（你的文件+网络）比通用聊天创造更粘性的查询。时机很重要：随着苹果AI战略仍在寻找立足点（Siri的Gemini集成仍在测试中），第三方AI助手有机会在苹果原生锁定之前成为事实上的Mac AI层。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Introduces 'Trusted Contact' Safeguard for Self-Harm Prevention",
+        "zh": "OpenAI推出'可信联系人'功能以防止自伤"
+      },
+      "url": "https://techcrunch.com/2026/05/07/openai-introduces-new-trusted-contact-safeguard-for-cases-of-possible-self-harm/",
+      "source": "TechCrunch",
+      "time": "2026-05-07",
+      "description": {
+        "en": "OpenAI implemented a new safety feature called 'Trusted Contact' designed to intervene and provide support when users may be at risk of self-harm. The system can suggest reaching out to pre-designated contacts and provide crisis resources.",
+        "zh": "OpenAI实施了一项名为'可信联系人'的新安全功能，旨在当用户可能有自伤风险时进行干预并提供支持。该系统可以建议联系预先指定的联系人并提供危机资源。"
+      },
+      "insight": {
+        "en": "02 *Safety as Competitive Moat* : This isn't just altruism — it's OpenAI fortifying its position as the 'responsible' frontier lab while Anthropic's SpaceX deal dominates headlines. Mental health safeguards have become table stakes since Meta's controversies, but OpenAI's approach is notable for its opt-in architecture rather than automated reporting. The feature arrives as ChatGPT usage among teens continues climbing (OpenAI reported 40% of 13-17 age bracket use in Q1), and regulators in EU and UK are drafting specific rules for AI-teen interactions. The nuance: while helpful, these systems also create liability questions — if the AI detects risk but the safeguard fails, who bears responsibility? It's a reminder that as AI systems become more embedded in mental health contexts, the safety engineering is becoming as complex as the model training.",
+        "zh": "02 *安全作为竞争护城河* : 这不仅仅是利他主义——在Anthropic与SpaceX交易占据头条之际，OpenAI正在巩固其作为'负责任'前沿实验室的地位。自Meta争议以来，心理健康保障已成为基本要求，但OpenAI的选择性加入架构（而非自动报告）值得关注。该功能推出之际，青少年使用ChatGPT的比例持续攀升（OpenAI报告称Q1有40%的13-17岁年龄段用户使用），欧盟和英国监管机构正在起草AI与青少年互动的具体规则。微妙之处在于：虽然有帮助，但这些系统也产生了责任问题——如果AI检测到风险但保障措施失败，谁承担责任？这提醒我们，随着AI系统越来越多地嵌入心理健康场景，安全工程正变得与模型训练一样复杂。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepMind's AlphaEvolve: Gemini-Powered Coding Agent Scales Impact Across Mathematics and Engineering",
+        "zh": "DeepMind推出AlphaEvolve：Gemini驱动的编码智能体在数学和工程领域扩展影响力"
+      },
+      "url": "https://deepmind.google/blog/alphaevolve-impact/",
+      "source": "Google DeepMind",
+      "time": "2026-05-07",
+      "description": {
+        "en": "Google DeepMind introduced AlphaEvolve, a Gemini-powered coding agent that leverages evolutionary computation to discover novel algorithms and optimizations. The system has already solved open problems in matrix multiplication, improved data center scheduling, and generated new mathematical proofs.",
+        "zh": "Google DeepMind推出AlphaEvolve，这是一个由Gemini驱动的编码智能体，利用进化计算来发现新算法和优化方案。该系统已经解决了矩阵乘法中的开放性问题，改进了数据中心调度，并生成了新的数学证明。"
+      },
+      "insight": {
+        "en": "03 *The Evolutionary Turn in AI Research* : AlphaEvolve isn't just another coding assistant — it's DeepMind returning to its AlphaGo roots with a twist. Instead of reinforcement learning on games, it's evolutionary algorithms powered by LLMs for real mathematical discovery. The matrix multiplication breakthrough is particularly notable: these are problems humans have worked on for decades, and AlphaEvolve found novel solutions that outperformed existing algorithms. This represents a shift from 'AI helps write code' to 'AI discovers algorithms humans couldn't.' The competitive dynamic is interesting too — while OpenAI's o3 has been dominating coding benchmarks, DeepMind is playing the longer game of fundamental research automation. The risk: as these systems get better at algorithm discovery, computer science education may need to evolve from teaching known algorithms to teaching how to partner with algorithm-discovery AI.",
+        "zh": "03 *AI研究的进化转向* : AlphaEvolve不仅仅是另一个编码助手——它是DeepMind带着转折回归AlphaGo本源。不是基于游戏的强化学习，而是由LLM驱动的进化算法用于真正的数学发现。矩阵乘法突破尤其值得关注：这些是人类已经研究数十年的问题，AlphaEvolve找到了超越现有算法的新解决方案。这代表了从'AI帮助写代码'到'AI发现人类无法发现的算法'的转变。竞争动态也很有趣——当OpenAI的o3一直在主导编码基准测试时，DeepMind正在玩基础研究自动化的更长游戏。风险在于：随着这些系统在算法发现方面变得越来越好，计算机科学教育可能需要从教授已知算法演变为教授如何与算法发现AI合作。"
+      }
+    },
+    {
+      "title": {
+        "en": "Voi Founders' New AI Startup Pit Emerges as Stockholm's Rising Star",
+        "zh": "Voi创始人新AI初创公司Pit成为斯德哥尔摩新星"
+      },
+      "url": "https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/",
+      "source": "TechCrunch",
+      "time": "2026-05-07",
+      "description": {
+        "en": "Pit, a new AI startup founded by the creators of electric scooter company Voi, is gaining significant traction in Stockholm's tech ecosystem. The company is reportedly building AI infrastructure tools for logistics and urban mobility optimization.",
+        "zh": "Pit是由电动滑板车公司Voi创始人创建的新AI初创公司，正在斯德哥尔摩科技生态系统中获得显著关注。据报道，该公司正在构建用于物流和城市出行优化的AI基础设施工具。"
+      },
+      "insight": {
+        "en": "04 *From Micromobility to AI Infrastructure* : The Voi-to-Pit trajectory is fascinating — founders who solved urban scooter logistics are applying that operational expertise to AI infrastructure for logistics broadly. This pattern is emerging across European tech: founders with deep operational experience in specific verticals (mobility, warehousing, manufacturing) are building AI tools for those exact problems rather than generic horizontal platforms. Pit's focus on urban mobility AI is particularly timely given the EU's aggressive timeline for autonomous vehicle deployment (2030 targets). The broader context: Stockholm's AI scene is quietly becoming Europe's most concentrated hub outside London, with success stories like Spotify's AI labs and Klarna's automated systems creating a talent flywheel. Pit's rise suggests the next wave of AI infrastructure might come from founders who've lived the problems rather than pure technologists.",
+        "zh": "04 *从微出行到AI基础设施* : Voi到Pit的轨迹令人着迷——解决城市滑板车物流问题的创始人正在将运营专业知识应用于广泛的物流AI基础设施。这种模式正在整个欧洲科技界涌现：在特定垂直领域（出行、仓储、制造）拥有深厚运营经验的创始人正在为这些具体问题构建AI工具，而非通用横向平台。鉴于欧盟对自动驾驶汽车部署的激进时间表（2030年目标），Pit对城市出行AI的关注尤其及时。更广泛的背景：斯德哥尔摩AI场景正悄然成为伦敦以外欧洲最集中的中心，Spotify的AI实验室和Klarna的自动化系统等成功案例创造了人才飞轮。Pit的崛起表明，下一波AI基础设施可能来自经历过这些问题的创始人，而非纯粹的技术专家。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Tests 'Remy' AI Agent for Gemini with Focus on User Control",
+        "zh": "谷歌测试Gemini的'Remy'AI智能体，注重用户控制"
+      },
+      "url": "https://www.artificialintelligence-news.com/news/google-remy-ai-agent-gemini-user-control/",
+      "source": "AI News",
+      "time": "2026-05-06",
+      "description": {
+        "en": "Google is developing a new agentic AI system codenamed 'Remy' for its Gemini platform, emphasizing enhanced user oversight and control mechanisms. The system reportedly allows users to review and approve each step of multi-step agent workflows.",
+        "zh": "谷歌正在为其Gemini平台开发一个代号为'Remy'的新智能体AI系统，强调增强的用户监督和控制系统。据报道，该系统允许用户审查和批准多步智能体工作流的每一步。"
+      },
+      "insight": {
+        "en": "05 *The Agent Control Interface Wars* : Google's Remy reveals a philosophical split in agent UX design. While OpenAI's Operator and Anthropic's Claude Code optimized for autonomous execution (fewer interruptions = faster results), Google is betting users want granular control — approval gates at each step. This reflects Google's risk-averse enterprise DNA: they're building for CIOs who need audit trails and compliance checkpoints, not just end-user efficiency. The timing is strategic — just as enterprises are waking up to agent security concerns (the recent 'two Home Affairs officials suspended over AI hallucinations' story making rounds), Google is positioning 'controllable agents' as the enterprise-safe alternative. Whether users actually want this level of friction remains to be seen, but Google's enterprise sales machine may make it the default regardless.",
+        "zh": "05 *智能体控制界面之战* : 谷歌的Remy揭示了智能体UX设计中的哲学分歧。当OpenAI的Operator和Anthropic的Claude Code优化自主执行（更少中断=更快结果）时，谷歌押注用户想要细粒度控制——每一步都有审批关卡。这反映了谷歌风险规避的企业DNA：他们在为需要审计追踪和合规检查点的CIO构建，而不仅仅是终端用户效率。时机具有战略性——正当企业开始意识到智能体安全问题时（最近的'两名内政部官员因AI幻觉被停职'故事正在传播），谷歌将'可控智能体'定位为企业安全的替代方案。用户是否真的想要这种摩擦程度还有待观察，但谷歌的企业销售机器可能会使其成为默认选择。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mozilla Hardens Firefox Security with Claude Mythos Preview",
+        "zh": "Mozilla使用Claude Mythos Preview强化Firefox安全"
+      },
+      "url": "https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/",
+      "source": "Mozilla Hacks",
+      "time": "2026-05-06",
+      "description": {
+        "en": "Mozilla detailed how they used Anthropic's Claude Mythos Preview to identify and patch security vulnerabilities in the Firefox browser codebase. The AI system analyzed C++ and Rust code to find memory safety issues and logic bugs that escaped human review.",
+        "zh": "Mozilla详细介绍了他们如何使用Anthropic的Claude Mythos Preview来识别和修补Firefox浏览器代码库中的安全漏洞。该AI系统分析C++和Rust代码，发现了逃过人工审查的内存安全问题和逻辑错误。"
+      },
+      "insight": {
+        "en": "06 *AI Security Auditing Goes Mainstream* : Mozilla's deployment of Claude Mythos for vulnerability hunting marks a maturation point for AI-assisted security. This isn't a research experiment — it's a major browser vendor trusting an AI model with production code security. The finding that AI caught bugs missed by human reviewers (including subtle logic errors, not just pattern-matching memory issues) suggests we're entering an era where not using AI for security audits becomes negligent. The competitive implication: Anthropic gains a powerful case study for Mythos in safety-critical domains, directly challenging OpenAI's enterprise positioning. For the broader industry, this validates the 'AI pair-programmer' narrative extending into 'AI security auditor' territory. The caveat: adversaries are also using AI to find vulnerabilities, creating an arms race where defense and offense are both AI-augmented.",
+        "zh": "06 *AI安全审计走向主流* : Mozilla部署Claude Mythos进行漏洞搜寻标志着AI辅助安全的成熟点。这不是研究实验——这是主要浏览器供应商信任AI模型处理生产代码安全。AI捕捉到了人工审查员遗漏的错误（包括微妙的逻辑错误，而不仅是模式匹配的内存问题）这一发现表明，我们正进入不使用AI进行安全审计就成为疏忽的时代。竞争含义：Anthropic在关键安全领域获得了Mythos的有力案例研究，直接挑战OpenAI的企业定位。对于更广泛的行业，这验证了'AI结对程序员'的叙事延伸到'AI安全审计员'领域。需要注意的是：对手也在使用AI寻找漏洞，创造了一场攻防双方都得到AI增强的军备竞赛。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Government Expands AI Defense Suppliers and Rethinks Anthropic Partnership",
+        "zh": "美国政府扩大AI防务供应商并重新考虑与Anthropic的合作"
+      },
+      "url": "https://www.artificialintelligence-news.com/news/us-government-increases-ai-in-defence-suppliers-roster-and-rethinks-anthropics-role/",
+      "source": "AI News",
+      "time": "2026-05-06",
+      "description": {
+        "en": "US defense and public sector agencies are expanding approved vendor lists for AI procurement while reassessing partnerships with specific frontier labs. The move comes amid broader scrutiny of AI vendor relationships in national security contexts.",
+        "zh": "美国国防和公共部门机构正在扩大AI采购的批准供应商名单，同时重新评估与特定前沿实验室的合作伙伴关系。此举是在国家安全背景下对AI供应商关系进行更广泛审查之际采取的。"
+      },
+      "insight": {
+        "en": "07 *The Geopolitics of Frontier AI* : This development reveals the tension between Anthropic's commercial ambitions and its governance commitments. As Anthropic pursues a $900B valuation and major commercial partnerships (SpaceX), defense contracts become both lucrative and politically fraught. The US government's 'rethink' likely reflects concerns about concentration risk — if Anthropic becomes the default choice for critical systems, what happens during the compute shortages that have plagued them? The broader pattern: governments globally are diversifying AI vendor portfolios to avoid single points of failure, creating openings for challengers like Cohere and Mistral in defense contracts. For Anthropic, this is a strategic challenge — their 'safety-first' branding attracted early government interest, but scaling to meet defense-grade reliability requirements while maintaining their constitutional AI principles is proving complex.",
+        "zh": "07 *前沿AI的地缘政治* : 这一发展揭示了Anthropic商业雄心与治理承诺之间的紧张关系。随着Anthropic追求9000亿美元估值和重大商业合作伙伴关系（SpaceX），防务合同既带来利润也带来政治困扰。美国政府的'重新考虑'可能反映了对集中度风险的担忧——如果Anthropic成为关键系统的默认选择，在他们困扰的算力短缺期间会发生什么？更广泛的格局：全球各国政府正在多元化AI供应商组合以避免单点故障，为Cohere和Mistral等挑战者在防务合同中创造机会。对Anthropic而言，这是战略挑战——他们的'安全优先'品牌吸引了早期政府兴趣，但事实证明，在扩展以满足国防级可靠性要求的同时保持其宪法AI原则是复杂的。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Today's AI landscape reveals a market maturing from raw capability demonstrations to trust and control infrastructure. Perplexity's desktop play and Google's Remy agent both signal a shift: the winning AI products won't just be the most capable, but those that users feel safe delegating to. Mozilla's use of Claude Mythos for security auditing marks AI becoming the solution to AI-adjacent risks — a recursive self-improvement loop where models audit code that will eventually run other models.\n\nThe deeper pattern is fragmentation along use-case lines. OpenAI optimizes for consumer ubiquity (voice features, trusted contacts), DeepMind pursues fundamental research automation (AlphaEvolve's algorithm discovery), while Google builds enterprise guardrails (Remy's approval gates). Anthropic's absence from today's headlines is notable — the SpaceX deal news cycle has passed, leaving them to execute quietly on their infrastructure advantages.\n\nThe emerging story is control: who gets it, how it's exercised, and what users will tolerate. European founders (Voi → Pit) are betting on vertical-specific AI rather than horizontal platforms, while governments diversify vendor relationships to manage concentration risk. The next 12 months will likely be defined by which trust frameworks — technical, regulatory, or contractual — become industry standards.",
+    "zh": "今天的AI格局揭示了一个正从原始能力展示走向信任和控制基础设施的市场。Perplexity的桌面战略和谷歌的Remy智能体都预示着转变：获胜的AI产品不仅将是最有能力的，而是那些用户感到安全委托的产品。Mozilla使用Claude Mythos进行安全审计标志着AI正在成为AI相关风险的解决方案——一个递归的自我改进循环，模型审计最终将运行其他模型的代码。\n\n更深层次的模式是按用例线碎片化。OpenAI优化消费者普及（语音功能、可信联系人），DeepMind追求基础研究自动化（AlphaEvolve的算法发现），而谷歌构建企业护栏（Remy的审批关卡）。Anthropic今天缺席头条值得关注——SpaceX交易新闻周期已经过去，让他们在其基础设施优势上安静执行。\n\n正在浮现的故事是控制：谁获得它、如何行使它、用户将容忍什么。欧洲创始人（Voi → Pit）押注于垂直特定AI而非横向平台，而政府多元化供应商关系以管理集中度风险。未来12个月可能由哪些信任框架——技术、监管或合同——成为行业标准来定义。"
+  }
+}
