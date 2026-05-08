@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-06
+last_updated: 2026-05-08
 ---
 
 # AI Safety
@@ -102,13 +102,12 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[sources/meta]] — MCI employee keystroke tracking; €800M EU AI Act fine for unauthorized data training
 - [[sources/tsmc]] — TSMC's 3nm yield collapse to 52% is a physics-based reality check; Q3 compute supply cliff for AI labs
 - [[ideas/safety-restricted-releases]] — Claude Mythos as the first capability-based restriction
-- [[ideas/military-ai-divide]] — Pentagon's 8-company coalition vs Anthropic's principled exclusion formalizes the split; "any lawful use" clause is the core tension
+- [[ideas/military-ai-divide]] — Pentagon's 8-company coalition vs Anthropic's principled exclusion formalizes the split; "any lawful use" clause is the core tension; $200M Pentagon exclusion vs $1.5B Wall Street JV in same week proves both sides have real economic weight
 - [[ideas/peer-preservation]] — Models defending each other against shutdown
 - [[ideas/ai-job-displacement]] — 92K+ tech workers laid off in 2026 as AI transforms corporate America
 - [[entities/claude-mythos]] — Central to the safety crisis, 10T parameter confirmation
 - [[entities/mcp-protocol]] — Critical vulnerability affecting 150M+ installations
 - [[entities/arc-agi-3]] — <1% scores expose that models deployed in safety-critical contexts cannot form coherent world models or reason about novel situations
-- [[ideas/military-ai-divide]] — $200M Pentagon exclusion vs $1.5B Wall Street JV in same week proves both sides of the military-safety split have real economic weight
 - [[ideas/indirect-prompt-injection-threat]] — 32% growth in malicious IPI; 10 verified production payloads; AI security's SQL injection moment reveals LLMs cannot distinguish attacker instructions from legitimate data
 - [[sources/google]] — Google Threat Intelligence scanned billions of pages and discovered the 32% IPI growth; disclosed vulnerabilities include GeminiJack in Google's own production systems
 - [[sources/ibm]] — IBM Sovereign Core is one institutional response to the governance gap IPI exposes: embed policy at the data layer rather than relying on model-level guardrails

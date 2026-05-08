@@ -1,13 +1,13 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-06
+last_updated: 2026-05-07
 ---
 
 # Google
 
 ## Overview
-Google has deepened its role as an AI infrastructure provider and model competitor simultaneously. The company is investing up to $40 billion in Anthropic ($10B minimum, $30B contingent on performance targets) and has signed a multi-gigawatt TPU agreement with Anthropic and Broadcom. On April 22, Google released a new suite of AI agents to challenge OpenAI and Anthropic in the burgeoning agentic AI market. At Cloud Next 2026, Google revealed that 75% of its new code is now AI-generated and approved by engineers, and announced the Gemini Enterprise Agent Platform for managing thousands of AI agents alongside 8th generation TPUs (TPU 8t and 8i) offering 3x the processing power of Ironwood. On May 1, Google rolls out Gemini to ~4M GM vehicles, replacing Google Assistant with a vehicle-specific AI concierge — the largest automotive AI deployment to date.
+Google has deepened its role as an AI infrastructure provider and model competitor simultaneously. The company is investing up to $40 billion in Anthropic ($10B minimum, $30B contingent on performance targets) and has signed a multi-gigawatt TPU agreement with Anthropic and Broadcom. On April 22, Google released a new suite of AI agents to challenge OpenAI and Anthropic in the burgeoning agentic AI market. At Cloud Next 2026, Google revealed that 75% of its new code is now AI-generated and approved by engineers, and announced the Gemini Enterprise Agent Platform for managing thousands of AI agents alongside 8th generation TPUs (TPU 8t and 8i) offering 3x the processing power of Ironwood. On May 1, Google rolls out Gemini to ~4M GM vehicles, replacing Google Assistant with a vehicle-specific AI concierge — the largest automotive AI deployment to date. On May 6, Google DeepMind announced a minority stake in CCP Games, developer of EVE Online, using the game's complex player-driven economy as a training ground for multi-agent economic and strategic AI.
 
 ## Timeline
 
@@ -39,6 +39,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-05-04 | IPI threat confirmed in production | Google Threat Intelligence found 32% increase in malicious indirect prompt injection across billions of web pages; payloads hidden in CSS/HTML |
 | 2026-05-05 | Agrees to CAISI pre-testing | Google, Microsoft, xAI volunteer for government evaluation of unreleased models; "voluntary with teeth" design — alternative was mandatory executive order |
 | 2026-05-05 | Anthropic commits $200B to Google Cloud | 40%+ of Google's disclosed cloud revenue backlog; multi-gigawatt TPU deal with Broadcom from 2027 |
+| 2026-05-06 | DeepMind acquires minority stake in CCP Games | EVE Online sandbox for training multi-agent economic and strategic AI; long-term research partnership |
 | 2026-04-14 | Gemini Robotics-ER 1.6 released | Industrial instrument reading for robots; multi-view success detection; Boston Dynamics Atlas integration for automotive tasks |
 
 ## Key Relationships
@@ -59,3 +60,4 @@ Google has deepened its role as an AI infrastructure provider and model competit
 - [[entities/caisi]] — Google volunteered for CAISI pre-testing alongside Microsoft and xAI; the alternative was reportedly a mandatory executive order the White House is drafting
 - [[sources/anthropic]] — $200B Google Cloud commitment is the largest in corporate history; 40% of Google's cloud backlog; if Anthropic fails, Google's cloud growth narrative collapses
 - [[ideas/government-pre-testing]] — Google's participation in CAISI reveals the "voluntary with teeth" dynamic: even the largest labs prefer self-regulation to mandatory government oversight
+- [[topics/llm_models]] — DeepMind's EVE Online partnership uses interactive game simulation for multi-agent economic training; potentially a response to the ARC-AGI-3 reasoning ceiling by learning through environment interaction rather than static data

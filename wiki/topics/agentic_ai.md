@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-06
+last_updated: 2026-05-08
 ---
 
 # Agentic AI
@@ -72,6 +72,10 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-06 | aden-hive/hive (10.2K stars) | Production multi-agent harness with graph-based execution DAG, self-healing failure recovery, cost enforcement |
 | 2026-05-06 | Mistral Medium 3.5 Work Mode + Remote Agents in Vibe | On-device agentic mode for complex multi-step tasks; async cloud coding agents |
 | 2026-05-06 | Xbox kills Copilot on console/mobile, imports CoreAI team | Pivot from consumer AI to developer AI tools; Jonathan McKay (ex-ChatGPT/OpenAI growth) hired |
+| 2026-05-07 | Sierra $950M at $15B valuation | AI agents for customer service; 40%+ Fortune 50; $150M ARR; enterprise AI agents as production infrastructure |
+| 2026-05-07 | AWS MCP Server GA | 15,000+ API operations; managed remote MCP server with IAM integration; "Skills" feature replaces Agent SOPs |
+| 2026-05-07 | Cortiqaai/Cordenex (247 stars) | Multi-agent autonomous software engineer for terminal; collaborative coding, project planning, automated code review |
+| 2026-05-07 | Google DeepMind-CCP Games partnership | EVE Online sandbox for training multi-agent economic and strategic AI |
 
 ## Patterns & Insights
 
@@ -101,6 +105,8 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 
 **May 5: Agent Economy Infrastructure Converges**: Three major launches on the same day signal the agent layer has matured past demos and now requires foundational infrastructure. Stripe's Agentic Commerce Suite (288 launches, Link Wallets for Agents, Streaming Payments) solves the payment-authentication problem blocking agent-to-agent commerce. IBM's Think 2026 unveils watsonx Orchestrate, Concert, and Sovereign Core — an enterprise AI operating system with governance baked into infrastructure rather than bolted on top. OpenAI's The Deployment Company ($10B valuation, $4B from 19 PE investors) embeds engineers inside 2,000 portfolio companies to ensure models get adopted, not just sold. All three are infrastructure bets on the same future: agents as economic participants. Simultaneously, nanobot (41.7K stars) demonstrates that sophisticated agent functionality need not require massive codebases — 4,000 lines of Python with multi-platform chat and MCP support.
 
+**May 7: Enterprise agents validated and infrastructure consolidated**: Sierra's $950M raise at $15B valuation with $150M ARR and 40% Fortune 50 penetration is the strongest validation yet that enterprise AI agents are production infrastructure, not pilot projects. This isn't a coding agent or a research tool — it's customer service automation at the world's largest companies, operating at scale with real revenue. Simultaneously, AWS MCP Server reaching GA with 15,000 API operations validates MCP as the connective tissue of enterprise AI infrastructure; the "Skills" feature packaging AWS tribal knowledge as reusable primitives shifts the burden from agent developers to service providers. Cordenex (247 stars) brings multi-agent collaborative coding to the open-source ecosystem, extending the agent architecture from individual tools to team workflows.
+
 **May 6: Agents fragment by vertical**: Three repos trending signal agent maturity beyond coding into research, production operations, and document understanding. AutoResearch (79.2K stars) is Karpathy's autonomous LLM research agent that experiments overnight on a single GPU — extending "configuration over code" into autonomous experimentation. Hive (10.2K stars) is a production multi-agent harness with graph-based execution DAGs, self-healing failure recovery, and cost enforcement — filling the operational reliability gap. Mistral's Work Mode in Le Chat and Remote Agents in Vibe allow coding agents to run asynchronously in the cloud and notify users when complete — the infrastructure layer for reliable agent execution. Xbox's pivot from consumer Copilot to CoreAI developer tools confirms the meta-pattern: consumer-facing AI agents are expensive retention sinks, while developer-facing tools have immediate ROI.
 
 **Capability regression as competitive vulnerability**: Claude Code's engineering missteps and months of silence before acknowledgment created a window for OpenAI to land GPT-5.5 (with Codex roots) the same day the backlash story broke. Power users have options, and brand loyalty erodes fast when the coding agent doesn't code reliably — this is a real retention risk, not just a PR problem.
@@ -119,6 +125,7 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/context-mode]] — 98% context reduction enabling continuous agent operation without context pollution
 - [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI
 - [[ideas/agent-economics]] — GitHub $49/agent/month + Symphony's continuous agent model + Netomi $110M for agentic CX = agent economics entering operational phase
+- [[sources/openai]] — Codex 3M weekly users, Symphony orchestration spec open-sourced, GPT-5.5 with super-app integration; $10B Deployment Company venture embedding engineers inside 2,000 PE portfolio companies
 - [[sources/anthropic]] — Claude Code success driving $30B ARR
 - [[sources/cognition]] — Devin creator, $25B valuation talks, AI coding competition with Claude Code
 - [[entities/ibm-bob]] — Full SDLC automation with multi-model orchestration; 80K+ internal users; represents enterprise shift from "AI helps code" to "AI manages the software factory"
@@ -130,7 +137,6 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/agent-squad]] — 7.6K stars, model-agnostic multi-agent orchestration with SupervisorAgent; part of the maturing orchestration layer avoiding vendor lock-in
 - [[entities/stripe-agentic-commerce]] — 288-product launch solving payment-authentication for agent-to-agent commerce; Stripe positioning as "Visa of the agent economy"
 - [[entities/ibm-sovereign-core]] — runtime policy embedding for cross-jurisdictional compliance; governance infrastructure that makes enterprise agent deployment legally viable
-- OpenAI's $10B Deployment Company venture ensuring models get adopted inside 2,000 PE portfolio companies
 - [[entities/gemini-robotics-er-1-6]] — extends agentic AI into physical environments via industrial instrument reading and Boston Dynamics Atlas integration
 - [[ideas/agent-economy-infrastructure]] — Stripe + IBM + OpenAI converging on the same thesis: agents as economic participants need payments, governance, and deployment infrastructure
 - [[sources/stripe]] — Stripe Sessions 2026 launch; 1 in 6 AI sign-ups are fraudulent, making Radar expansion critical
@@ -140,3 +146,7 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[sources/microsoft]] — Xbox kills consumer Copilot, imports CoreAI team to rebuild game development pipeline; confirms developer-facing AI has immediate ROI while consumer-facing AI is "expensive retention sink"
 - [[ideas/boring-infrastructure-shift]] — AutoResearch, Hive, and Mistral Work Mode all converge on one trend: AI is moving from "cool demo" to "boring infrastructure" — and the agent layer needs boring infrastructure (reliability, cost control, async execution) to be deployable at scale
 - [[entities/mercury-agent]] — 531 stars; personal AI agent with permission-hardened tools and token budgets representing the consumer-facing agent stack alongside enterprise platforms
+- [[sources/sierra]] — $15B valuation and $150M ARR prove enterprise AI agents are production infrastructure for Fortune 50; not pilot projects but scaled deployments replacing legacy customer service stacks
+- [[entities/aws-mcp-server]] — 15,000 AWS API operations accessible through MCP means agents can now manage cloud infrastructure at scale; "Skills" feature packages provider knowledge as reusable primitives
+- [[entities/cordenex]] — Multi-agent collaborative coding extends the architecture from individual assistance to team workflows; the team-based focus distinguishes it from personal agents (nanobot) and swarm orchestration (Ruflo)
+- [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX deal means agent infrastructure providers must secure compute partnerships to survive; the agent layer's maturity depends on the infrastructure layer's stability

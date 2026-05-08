@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-07] ingest | 1 date
+
+Dates processed: 2026-05-07
+Topics updated: ai_companies (Anthropic-SpaceX compute partnership, DeepMind-CCP Games, Sierra $15B), ai_funding (Sierra $950M, Anthropic-SpaceX infrastructure barter), agentic_ai (Sierra enterprise validation, AWS MCP Server GA, Cordenex multi-agent coding), llm_models (MOSS-TTS and OmniVoice voice commoditization), github_trends (MOSS-TTS 1,765 stars, OmniVoice 4,359 stars, Cordenex 247 stars)
+Sources updated: anthropic (SpaceX 300+ MW deal), spacex (Anthropic partnership, xAI→SpaceXAI rebrand), google (DeepMind-CCP Games minority stake), xai (dissolved and rebranded as SpaceXAI)
+Sources created: sierra ($950M at $15B, $150M ARR, 40% Fortune 50)
+Entities created: moss-tts (20+ languages, voice cloning, real-time streaming), omnivoice (600+ languages, diffusion architecture, 40x real-time), cordenex (multi-agent coding, team-based development), aws-mcp-server (15,000+ AWS API operations, managed remote MCP, Skills feature)
+Ideas created: compute-shortage-forces-cooperation (Anthropic-SpaceX deal proves compute scarcity overrides rivalries; structural imperative, not friendship)
+Chat session insights applied: Apr 23-26 sessions were already applied in previous ingests; no new gaps identified from May 7 data in chat sessions.
+
 ## [2026-05-07] wiki lint | comprehensive health check
 
 **Pass 1 — Structural fixes:**
@@ -429,3 +439,31 @@ Ideas created: safety-restricted-releases, peer-preservation, agent-democratizat
 - Timelines: 3 (unchanged)
 - Topics: 6 (unchanged)
 - Total files: 98 (6+18+3+53+18 + WIKI.md + index.md + log.md)
+
+---
+
+## Lint: 2026-05-08
+
+**Pass 1 — Structural integrity:**
+- Verified 143 content pages: 6 topics, 23 sources, 3 timelines, 83 entities, 28 ideas
+- All pages in index.md exist; no broken references
+- No orphan pages found (all have at least one inbound link)
+- No duplicate pages covering the same concept
+- `entities/andrej-karpathy-skills.md` reviewed: named after a person but is a GitHub repo; valid entity per schema
+
+**Pass 2 — Wrong & duplicate information fixed:**
+- Fixed frontmatter on `timelines/2026-03.md` and `timelines/2026-04.md`: `slug` → `month` per WIKI.md schema
+- Added missing `## Overview` to `topics/ai_funding.md` (was the only topic without one)
+- Merged duplicate annotated connection lines in 6 files
+- Updated `last_updated: 2026-05-08` on 13 files modified during lint
+
+**Pass 3 — Connection quality:**
+- Removed 11 raw-text lines from `## Connections` sections across 9 files (ai_companies, ai_funding, llm_models, ai_safety, github_trends, agentic_ai, timelines/2026-05, sources/openai, sources/meta, entities/glm-ocr, entities/gemini-robotics-er-1-6)
+- Merged duplicate `[[entities/gpt-5.5]]`, `[[entities/mistral-medium-3-5]]`, `[[entities/andrej-karpathy-skills]]`, `[[ideas/military-ai-divide]]`, `[[sources/anthropic]]` connection lines
+- Added missing `[[sources/openai]]` to `topics/agentic_ai.md` Connections
+- All connections now annotated with WHY; no bare links or "Related:/See also:" patterns found
+- All topic pages have required sections: Overview, Evolution, Patterns & Insights, Connections
+
+**Index rebuilt:**
+- Counts unchanged: 6 topics, 23 sources, 3 timelines, 83 entities, 28 ideas
+- `Last updated` updated to 2026-05-08

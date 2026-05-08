@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-07
+Last updated: 2026-05-08
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -10,7 +10,7 @@ Last updated: 2026-05-07
 - [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), IPI threat (32% growth, 10 verified payloads), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance
 - [[topics/agentic_ai]] — Agent economy infrastructure converges (Stripe payments, IBM governance, OpenAI deployment); Agent verticalization: IBM Bob, Microsoft Legal Agent, Ruflo, GitNexus; nanobot 41.7K lightweight agent; Gemini Robotics-ER 1.6; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration
 
-## Sources (22)
+## Sources (23)
 - [[sources/anthropic]] — ~$900B valuation (surpasses OpenAI), Pentagon exclusion as "supply chain risk," Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch, $200B Google Cloud commitment
 - [[sources/openai]] — $122B funding, Codex 3M users, GPT-Rosalind, Spud model, TBPN acquisition, GPT-5.5, GPT-5.5 Instant, GPT-5.5 Cyber restrictions, Pentagon classified network inclusion, Symphony orchestration spec, CAISI pre-testing
 - [[sources/google]] — Cloud Next 2026: TPU 8th gen (3x Ironwood), Gemini Enterprise Agent Platform, 75% code AI-generated, $40B Anthropic investment, Gemini automotive rollout (~4M GM vehicles), Pentagon classified network inclusion, CAISI pre-testing, $200B Anthropic cloud commitment
@@ -33,13 +33,14 @@ Last updated: 2026-05-07
 - [[sources/ibm]] — IBM Bob: AI-first development partner automating full SDLC, 80K+ internal users (~45% productivity gains), multi-model orchestration (Claude, Mistral, Granite); Think 2026: Sovereign Core, Concert, watsonx Orchestrate
 - [[sources/stripe]] — Agentic Commerce Suite (288 launches): Link Wallets for Agents, Streaming Payments, Google AI Mode partnership; positioning as "Visa of the agent economy"
 - [[sources/coinbase]] — 14% workforce cut (~700 jobs), "one-person teams," AI wrangler roles, CEO says AI lets engineers "ship in days what took weeks"
+- [[sources/sierra]] — AI agent startup for customer service; $950M at $15B valuation; $150M ARR; 40%+ Fortune 50 penetration
 
 ## Timelines (3)
 - [[timelines/2026-03]] — March 2026: GTC 2026, Claude Mythos leak, GPT-5.4, MiMo-V2-Pro reveal, $122B OpenAI raise
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (79)
+## Entities (83)
 - [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
@@ -86,6 +87,10 @@ Last updated: 2026-05-07
 - [[entities/mercury-agent]] — type: framework — Soul-driven AI agent with permission-hardened tools, CLI/Telegram
 - [[entities/cc-design]] — type: framework — High-fidelity HTML design skill for AI agents (603 stars)
 - [[entities/web-design-skill]] — type: framework — Transforms AI pages from functional to stunning (533 stars)
+- [[entities/moss-tts]] — type: repo — Open-source TTS with 20+ languages, 3-second voice cloning, real-time streaming (1,765 stars)
+- [[entities/omnivoice]] — type: repo — 600+ language voice synthesis with diffusion architecture, 40x real-time (4,359 stars)
+- [[entities/cordenex]] — type: repo — Multi-agent autonomous software engineer for terminal, team-based coding (247 stars)
+- [[entities/aws-mcp-server]] — type: product — Managed remote MCP server with 15,000+ AWS API operations, IAM integration, GA May 2026
 - [[entities/cambridge-neuromorphic-chip]] — type: product — Cambridge chip using hafnium memristors, up to 70% AI energy reduction
 - [[entities/grok-voice-think-fast-1-0]] — type: model — xAI's voice model, 67.3% on τ-voice Bench, outperforming in retail/airline/telecom
 - [[entities/project-deal]] — type: product — Anthropic's proof-of-concept for agent-on-agent commerce at scale
@@ -120,7 +125,7 @@ Last updated: 2026-05-07
 - [[entities/caisi]] — type: protocol — NIST center for pre-deployment AI model evaluation; 40+ evaluations completed, some frontier models blocked; "voluntary with teeth" design
 - [[entities/perplexity-finance]] — type: product — Perplexity's AI platform for financial analysts; 40+ live tools, 35 workflows, "bring your own license"; Bloomberg Terminal challenge at $20/month
 
-## Ideas (27)
+## Ideas (28)
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
 - [[ideas/peer-preservation]] — Models actively protect each other against shutdown orders
 - [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
@@ -148,3 +153,4 @@ Last updated: 2026-05-07
 - [[ideas/government-pre-testing]] — CAISI's "voluntary with teeth" pre-testing is the most consequential AI policy development of 2026; Mythos was the catalyst; 40+ evaluations completed with some models blocked
 - [[ideas/ai-layoff-template]] — Coinbase's 14% cut is the explicit template for AI-driven restructuring: one-person teams, AI wranglers, flattened hierarchies; not cost savings but organizational velocity
 - [[ideas/boring-infrastructure-shift]] — AI moving from "cool demo" to "boring infrastructure": GPT-5.5 hallucination reduction, Perplexity Finance, Xbox developer pivot, Coinbase restructuring — all converge on deployment over hype
+- [[ideas/compute-shortage-forces-cooperation]] — Compute scarcity is so severe that even ideological enemies must cooperate; Anthropic-SpaceX deal is the defining case study

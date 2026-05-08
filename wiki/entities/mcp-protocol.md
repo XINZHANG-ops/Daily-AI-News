@@ -30,3 +30,5 @@ On April 21, 2026, security researchers discovered a critical "by design" flaw i
 - [[topics/ai_safety]] — Critical supply chain vulnerability affecting 150M+ installations
 - [[topics/github_trends]] — 97M installs, foundational infrastructure for agents
 - [[ideas/safety-restricted-releases]] — Anthropic's "expected behavior" stance represents a new approach to security vulnerabilities
+- [[entities/aws-mcp-server]] — AWS MCP Server with 15,000 API operations is the most comprehensive MCP implementation to date; validates the protocol as enterprise-grade infrastructure and addresses the supply chain security concerns the April 21 vulnerability exposed
+- [[ideas/agent-economy-infrastructure]] — AWS MCP Server provides the cloud resource access layer that agents need to manage enterprise infrastructure at scale; "Skills" feature packages AWS tribal knowledge as reusable primitives

@@ -1,13 +1,13 @@
 ---
 title: "xAI"
 slug: xai
-last_updated: 2026-05-06
+last_updated: 2026-05-07
 ---
 
 # xAI
 
 ## Overview
-xAI has been consolidated into SpaceX following the $250 billion all-stock acquisition, creating a $1.25 trillion "galactic AI entity." On April 30, Musk admitted under oath in federal court that xAI "partly" used OpenAI's models to train Grok via model distillation — potentinally a terms-of-service violation and certainly a hypocrisy problem for his legal narrative against Altman. The SpaceX-xAI merger ($125B xAI valuation) as part of a $1T+ combined entity makes this a material disclosure risk for the impending SpaceX IPO: if xAI's Grok was trained on OpenAI outputs, the IP chain of title becomes questionable.
+xAI has been consolidated into SpaceX following the $250 billion all-stock acquisition, creating a $1.25 trillion "galactic AI entity." On May 6, 2026, xAI was dissolved and rebranded as SpaceXAI as part of the restructuring around SpaceX's compute partnership with Anthropic. On April 30, Musk admitted under oath in federal court that xAI "partly" used OpenAI's models to train Grok via model distillation — potentially a terms-of-service violation and certainly a hypocrisy problem for his legal narrative against Altman. The SpaceX-xAI merger ($125B xAI valuation) as part of a $1T+ combined entity makes this a material disclosure risk for the impending SpaceX IPO: if xAI's Grok was trained on OpenAI outputs, the IP chain of title becomes questionable.
 
 ## Timeline
 
@@ -22,6 +22,7 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 | 2026-04-30 | Musk admits xAI distilled from OpenAI | Under oath in court; "partly used OpenAI's models" to improve Grok; IP chain questionable for SpaceX IPO |
 | 2026-05-01 | Pentagon includes xAI in 8-company classified AI coalition | Grok deployed on classified networks; Musk simultaneously suing OpenAI, distilling from OpenAI, and joining military contracts with OpenAI |
 | 2026-05-05 | Agrees to CAISI pre-testing | Google, Microsoft, xAI volunteer for government evaluation of unreleased models; "voluntary with teeth" design |
+| 2026-05-06 | Dissolved and rebranded as SpaceXAI | xAI folded into SpaceX as part of Anthropic compute partnership restructuring; Musk impressed by Anthropic team after prior criticism |
 
 ## Key Relationships
 - **SpaceX**: Parent company following acquisition.
@@ -35,3 +36,5 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 - [[sources/openai]] — Musk admitted under oath to distilling from OpenAI models while simultaneously suing the company; IP chain of title now questionable for SpaceX-xAI merger
 - [[entities/caisi]] — xAI joined CAISI pre-testing alongside Google and Microsoft; the "voluntary with teeth" design means even Musk's anti-regulation posture bends to the threat of mandatory executive orders
 - [[ideas/government-pre-testing]] — xAI's participation in CAISI contradicts Musk's public anti-regulation rhetoric; "voluntary with teeth" reveals that even the most deregulation-friendly labs prefer self-regulation to mandatory oversight
+- [[sources/spacex]] — xAI dissolved and rebranded as SpaceXAI in May 2026; Musk's standalone AI lab ambition ends as he pivots to owning infrastructure that model companies need
+- [[ideas/compute-shortage-forces-cooperation]] — xAI's dissolution and rebrand as SpaceXAI reveals Musk's strategic pivot from "build a model company" to "own the infrastructure that model companies need"; Anthropic-SpaceX deal validates infrastructure over models as the strategic asset

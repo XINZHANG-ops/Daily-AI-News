@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-06
+last_updated: 2026-05-08
 ---
 
 # LLM Models
@@ -98,6 +98,8 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-01 | Microsoft M365 E7 and Agent 365 GA at $99/$15 per user/month | First new enterprise license in a decade; bundles E5, Copilot, Agent 365, Entra Suite |
 | 2026-05-01 | Microsoft Copilot adds multi-model support | Claude joins OpenAI models in Copilot; 20M paid enterprise seats; Accenture 740K seats; Legal Agent launched as first profession-specific vertical |
 | 2026-04-28 | IBM Bob: multi-model orchestration for SDLC | Routes tasks to Claude, Mistral, IBM Granite based on fit; represents shift from "best single model" to "best model per task" architecture |
+| 2026-05-07 | MOSS-TTS open-source TTS family | 20+ languages, voice cloning from 3-second audio, real-time streaming (180ms TTFB); 8B/1.7B/0.1B variants for edge to cloud |
+| 2026-05-07 | OmniVoice open-source voice synthesis | 600+ languages, diffusion language model, voice design via speaker attributes; RTF 0.025 (40x faster than real-time) |
 
 ## Patterns & Insights
 
@@ -137,21 +139,22 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 
 **May 1: The Defensive Pivot and Governance Reality**: Anthropic launches Claude Security (powered by Opus 4.7) as a native security scanning capability inside Claude Code — if you build AI that finds vulnerabilities, you must build one that fixes them. Partnering with CrowdStrike, Palo Alto, and Wiz shows Anthropic is becoming the intelligence layer inside existing security stacks rather than replacing them. OpenAI's GPT-5.5 Cyber restrictions (after mocking Anthropic for the same with Mythos) reveal that liability now overrides competitive posturing — once the White House opposed Mythos expansion and NSA probed Microsoft with it, every frontier lab realized unrestricted cyber-AI is a legal grenade. NVIDIA's GB300 Blackwell Ultra (35x lower cost/token) directly addresses the economics exposed by GitHub's 275M commits/week — if agent-scale coding is 1/35th the cost, the $49/agent/month GitHub Copilot pricing starts looking expensive.
 
+**May 7: Voice AI commoditization accelerates**: MOSS-TTS (20+ languages, voice cloning, real-time streaming) and OmniVoice (600+ languages, 40x real-time inference) trending on GitHub the same week signals that open-source voice synthesis is outpacing proprietary differentiation. Unlike text LLMs where frontier labs maintain benchmark leads, voice models appear to be converging on "good enough" faster — the marginal utility of proprietary voice over open alternatives is shrinking. The 0.1B parameter edge variant of MOSS-TTS enables on-device voice output without cloud dependency, addressing privacy and latency concerns that enterprise users increasingly prioritize. Meanwhile, Google DeepMind's EVE Online partnership uses game environments to train multi-agent economic AI, suggesting models may learn reasoning through interactive simulation rather than static training data — a potential response to the ARC-AGI-3 ceiling.
+
 **May 2: The Reasoning Ceiling Exposed and Design Patterns Evolve**: ARC-AGI-3 results deliver the most damning empirical critique of the LLM paradigm to date. GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18%) — models that dominate SWE-bench — score below 1% on interactive reasoning puzzles humans solve effortlessly. The three systematic errors identified (failure to form world models, incorrect environment mapping to known games, carrying false theories forward) reveal LLMs don't reason about novel situations — they pattern-match to the nearest memorized template. This lands the same week David Silver's RL-native startup raised $1.1B, and the market is already pricing in a post-LLM paradigm. Meanwhile, Mistral Medium 3.5 introduces a design pattern worth watching: one 128B dense model with a reasoning-effort toggle per request, eliminating the need for separate chat/reasoning model variants. The 77.6% SWE-bench score is solid but not category-defining; the real bet is on the vertically integrated Vibe cloud coding agents bundled with the release.
 
 ## Connections
 - [[entities/arc-agi-3]] — The benchmark that exposed the LLM reasoning ceiling: GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human performance
-- [[entities/mistral-medium-3-5]] — 128B dense model with reasoning-effort toggle; one-model-for-all design pattern challenges the multi-model approach
+- [[entities/mistral-medium-3-5]] — 128B dense model with reasoning-effort toggle; one-model-for-all design pattern challenges the multi-model approach; Work Mode (on-device agentic) and Remote Agents in Vibe (async cloud execution) expand the agentic surface; EU AI Act €11.2M fine same week makes privacy-first positioning more urgent
 - [[entities/symphony]] — OpenAI's Codex orchestration spec formalizes "agent-as-employee" model; 15K+ stars signals industry convergence
 - [[entities/context-mode]] — 98% context reduction MCP server; solves the noise problem that continuous agent execution creates
 - [[sources/anthropic]] — Claude Mythos developed and leaked by Anthropic; Opus 4.7 release; Project Glasswing
-- [[sources/openai]] — GPT-5.4 family, GPT-5.5 release, Spud completion, GPT-5.4-Cyber, GPT-Rosalind
+- [[sources/openai]] — GPT-5.4 family, GPT-5.5 release, Spud completion, GPT-5.4-Cyber, GPT-Rosalind; GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" shifts liability to users
 - [[sources/google]] — Gemma 4 Apache 2.0 release, Gemini 3.1 Pro near-tie with Claude Opus 4.6, TPU 8th gen
 - [[entities/claude-mythos]] — Central to this period; too dangerous to release publicly
 - [[entities/claude-opus-4-7]] — Anthropic's latest flagship with 87.6% SWE-bench; powers Claude Security
 - [[entities/claude-design]] — Anthropic's direct challenge to Figma's design workflow
 - [[entities/gpt-5.4]] — OpenAI's flagship model family with Thinking, Mini, Nano, Cyber variants
-- [[entities/gpt-5.5]] — OpenAI's latest model with "super app" integration vision
 - [[entities/gpt-rosalind]] — OpenAI's life sciences domain model
 - [[entities/gemma-4]] — Google's first fully permissive open model, ranked #3 on Arena
 - [[entities/deepseek-v4]] — DeepSeek's latest with 1M context and open weights, Tencent/Alibaba investment talks
@@ -162,7 +165,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[ideas/us-china-ai-fragmentation]] — Stanford HAI confirms gap has collapsed
 - [[ideas/institutional-gap]] — May 1 exemplifies GUARD Act criminal penalties and liability exceeding Section 230 frameworks
 - [[entities/ibm-bob]] — Multi-model orchestration routing tasks to best-fit model challenges the "one best model" assumption; Claude, Mistral, and Granite each win different task categories
-- [[entities/gpt-5.5]] — GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" is a Perplexity clone that shifts liability to users
-- [[entities/mistral-medium-3-5]] — Official May 5 launch adds Work Mode (on-device agentic mode) and Remote Agents in Vibe (async cloud execution); EU AI Act €11.2M fine same week makes privacy-first positioning more urgent
 - [[entities/perplexity-finance]] — Perplexity's citation-first finance platform directly attacks Bloomberg Terminal's social-proof moat; GPT-5.5's "memory sources" launched same day as defensive response
 - [[entities/microsoft-legal-agent]] — Claude integration in Copilot proves no single model provider wins enterprise AI alone; multi-model support is becoming table stakes
+- [[entities/moss-tts]] — Open-source TTS with 20+ languages and 3-second voice cloning commoditizes capabilities that were proprietary differentiators months ago; the 0.1B edge variant challenges cloud-dependent voice models
+- [[entities/omnivoice]] — 600+ language coverage dwarfs proprietary offerings (50-100 languages); validates that voice synthesis is becoming a commodity faster than text LLMs
+- [[sources/google]] — DeepMind's EVE Online partnership uses interactive game simulation for multi-agent economic training; potentially a response to the ARC-AGI-3 reasoning ceiling by learning through environment interaction rather than static data

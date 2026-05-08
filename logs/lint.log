@@ -248,3 +248,26 @@ Wiki lint complete for 2026-05-07.
  create mode 100644 wiki/ideas/boring-infrastructure-shift.md
  create mode 100644 wiki/ideas/government-pre-testing.md
  create mode 100644 wiki/sources/coinbase.md
+[2026-05-08 01:00:01] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+Yes — the wiki lint is complete. Here's what was fixed:
+
+**Pass 1 — Structural Integrity**
+- Verified all 143 pages match index.md entries. No broken wikilinks, no orphan pages, no duplicate pages.
+
+**Pass 2 — Wrong & Duplicate Information**
+- Fixed frontmatter on `timelines/2026-03.md` and `timelines/2026-04.md`: `slug` → `month` per WIKI.md schema.
+- Added missing `## Overview` to `topics/ai_funding.md` (the only topic without one).
+- Merged duplicate annotated connection lines across 6 files.
+- Updated `last_updated` to 2026-05-08 on all 13 files modified during lint.
+
+**Pass 3 — Connection Quality**
+- Removed 11 raw-text lines from `## Connections` sections across 9 files.
+- Merged duplicate wikilinks in Connections (`gpt-5.5`, `mistral-medium-3-5`, `andrej-karpathy-skills`, `military-ai-divide`, `sources/anthropic`).
+- Added missing `[[sources/openai]]` to `topics/agentic_ai.md` Connections.
+- All topic pages confirmed to have required sections.
+
+**Pass 4 — Index & Log**
+- `wiki/index.md` last updated bumped to 2026-05-08.
+- `wiki/log.md` appended with full lint entry documenting the fixes.
+[2026-05-08 01:16:08] Wiki lint complete (exit code 0).

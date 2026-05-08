@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-06
+last_updated: 2026-05-08
 ---
 
 # OpenAI
@@ -67,7 +67,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 
 ## Connections
 - [[entities/gpt-5.4]] — Flagship model family; Thinking, Mini, Nano, Cyber variants
-- [[entities/gpt-5.5]] — Latest model (codename "Spud") with "super app" integration vision; 49-day release cycle for enterprise procurement lock-in; deployed on Pentagon classified networks
+- [[entities/gpt-5.5]] — Latest model (codename "Spud") with "super app" integration vision; 49-day release cycle for enterprise procurement lock-in; deployed on Pentagon classified networks; GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" feature shifts liability to users
 - [[entities/codex]] — 3M weekly users, primary coding agent product
 - [[entities/symphony]] — Open-source orchestration spec for Codex at fleet scale; 15K+ stars
 - [[entities/gpt-5.4-cyber]] — Defensive cybersecurity variant
@@ -78,9 +78,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[sources/anthropic]] — Rivalry intensifying over compute and enterprise contracts
 - [[sources/deepseek]] — Both competing for AI coding market; DeepSeek V4 challenges GPT-5.5 on benchmarks
 - [[entities/microsoft-legal-agent]] — OpenAI models power Copilot alongside Claude; multi-model strategy means OpenAI's revenue benefits from Microsoft's verticalization even as it competes with Microsoft's own MAI models
-- OpenAI's $10B forward-deployed engineer venture (The Deployment Company); 2,000 PE portfolio companies; 17.5% guaranteed returns make it a financial engineering vehicle as much as distribution strategy
-- [[ideas/agent-economy-infrastructure]] — OpenAI provides the deployment pillar alongside Stripe's payments and IBM's governance
-- [[entities/gpt-5.5]] — GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" feature is a Perplexity clone that shifts liability to users
+- [[ideas/agent-economy-infrastructure]] — OpenAI provides the deployment pillar alongside Stripe's payments and IBM's governance; $10B Deployment Company venture embedding engineers in 2,000 PE portfolio companies
 - [[entities/caisi]] — OpenAI renegotiated Biden-era agreements to align with Trump's AI Action Plan; participation is defensive — better to shape the framework than be shaped by it
 - [[entities/perplexity-finance]] — Perplexity Finance launched same day as GPT-5.5 Instant with similar citation features; Perplexity has the data partnerships and finance-specific workflows that OpenAI lacks
 - [[ideas/government-pre-testing]] — OpenAI's participation in CAISI follows the same pattern as GPT-5.5 Cyber restrictions — liability-driven compliance rather than principle-driven safety

@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-06
+last_updated: 2026-05-07
 ---
 
 # Anthropic
@@ -49,6 +49,7 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-03 | Pentagon exclusion cost quantified | ~$200M in lost direct Pentagon contracts confirmed; Defense Secretary Hegseth called CEO Dario Amodei an "ideological lunatic"; juxtaposition with $1.5B Wall Street JV suggests enterprise market values the safety guardrails the Pentagon rejected |
 | 2026-05-05 | Commits $200B to Google Cloud over 5 years | Largest cloud commitment in corporate history; 40%+ of Google's disclosed cloud backlog; multi-gigawatt TPU deal with Broadcom from 2027 |
 | 2026-05-05 | Agrees to CAISI pre-testing | Anthropic renegotiated Biden-era agreements; Mythos was the catalyst for CAISI — when a company voluntarily refuses to release a model for safety, it forces regulators to act |
+| 2026-05-06 | SpaceX compute partnership | 300+ MW at Colossus 1 Memphis; addresses acute compute shortage causing service reliability issues; Musk impressed by Anthropic team after prior criticism |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -77,3 +78,5 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - [[sources/google]] — $200B Google Cloud commitment is the largest in corporate history; 40% of Google's cloud backlog; defensive lock-in at a time when GPU/TPU supply is the critical bottleneck
 - [[ideas/government-pre-testing]] — Anthropic's Mythos was the catalyst for CAISI; the precedent that some models may be too capable for public release is now institutionalized across the industry
 - [[ideas/boring-infrastructure-shift]] — Anthropic's $200B commitment and Claude Security launch both treat AI as infrastructure: the former as compute infrastructure, the latter as security infrastructure — neither is exciting, both are essential
+- [[sources/spacex]] — 300+ MW compute deal at Colossus 1 reveals compute scarcity overrides rivalries; Anthropic now has three independent compute pipelines (Google TPUs, SpaceX Colossus 1, Amazon AWS)
+- [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX is the defining case study: when GPU/TPU supply is the binding constraint, even ideological enemies must cooperate

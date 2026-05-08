@@ -2,7 +2,7 @@
 title: "GLM-OCR"
 slug: glm-ocr
 type: repo
-last_updated: 2026-05-06
+last_updated: 2026-05-08
 ---
 
 # GLM-OCR
@@ -28,6 +28,5 @@ GLM-OCR demonstrates that sub-1B parameter models can achieve state-of-the-art r
 ## Connections
 - [[topics/llm_models]] — GLM-OCR validates the efficiency frontier: 0.9B parameters beating frontier models on document OCR proves that task-specific small models can outperform general-purpose giants on narrow domains
 - [[topics/github_trends]] — Part of the May 6 repo batch alongside AutoResearch and Hive; signals continued diversification of the agent ecosystem beyond coding into document understanding and multimodal perception
-- `microsoft/markitdown` (112K stars) — Document conversion tool handles markdown extraction; GLM-OCR handles the visual/layout layer — together they represent the full document-ingestion pipeline for LLM agents
 - [[sources/google]] — GLM-V architecture shares lineage with Google's multimodal research; the encoder-decoder approach for OCR mirrors Google's own document-AI work
 - [[ideas/efficiency-frontier]] — 0.9B parameters achieving 94.62 on OmniDocBench is another data point that efficient models can dominate narrow domains with dramatically less compute than frontier LLMs

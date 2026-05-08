@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-06
+last_updated: 2026-05-08
 ---
 
 # GitHub Trends
@@ -71,6 +71,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | ruvnet/ruflo | 39.9K+ | Open-source agent orchestration for Claude Code deploying 100+ agent swarms with self-learning memory |
 | abhigyanpatwari/GitNexus | 35.4K+ | Zero-server code intelligence engine indexing codebases into MCP-accessible knowledge graphs |
 | AIDC-AI/Pixelle-Video | 10.5K+ | AI-powered fully automated short video engine from topic to final video |
+| OpenMOSS/MOSS-TTS | 1,765+ | 20+ language TTS with 3-second voice cloning and real-time streaming; edge-to-cloud variants |
+| k2-fsa/OmniVoice | 4,359+ | 600+ language voice synthesis with diffusion architecture; 40x faster than real-time |
+| Cortiqaai/Cordenex | 247+ | Multi-agent autonomous software engineer for terminal; collaborative coding and project planning |
 
 ## Patterns & Insights
 
@@ -108,6 +111,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **May 5: The efficiency frontier in agent frameworks**: nanobot's 41.7K stars demonstrate that developers value minimal-code agent harnesses. At ~4,000 lines versus Claude Code's 512,000 lines, nanobot achieves multi-platform chat, MCP support, and WebUI in 99% less code. This validates the "configuration over code" principle (Andrej Karpathy's 105K-star CLAUDE.md) at the framework level. Agent Squad (7.6K stars) adds model-agnostic orchestration, showing demand for frameworks that avoid vendor lock-in at the orchestration layer.
 
+**May 7: Open-source voice AI wave and multi-agent coding**: Three repos trending span voice synthesis and collaborative agent coding. MOSS-TTS (1,765 stars) is an open-source TTS family supporting 20+ languages with voice cloning from 3-second audio and real-time streaming at 180ms TTFB — features that were proprietary differentiators for closed labs just months ago. OmniVoice (4,359 stars) pushes language coverage to 600+ with a diffusion language model architecture and 40x real-time inference speed, dwarfing the 50-100 language support typical of proprietary offerings. Cordenex (247 stars) is a multi-agent autonomous software engineer explicitly targeting team-based development with collaborative coding, project planning, and automated code review — extending the coding agent paradigm from individual assistance to organizational workflows.
+
 **May 6: Autonomous research and production harnesses**: Three repos trending signal agent maturity beyond coding. AutoResearch (79.2K stars) is Karpathy's autonomous LLM research agent that experiments overnight on a single GPU — the highest-starred new repo of the day, validating demand for end-to-end scientific automation. Hive (10.2K stars) is a production multi-agent harness with graph-based execution DAGs, self-healing failure recovery, and cost enforcement — addressing the operational reliability gap that most agent frameworks ignore. GLM-OCR (6.3K stars) achieves 94.62 on OmniDocBench with only 0.9B parameters, proving sub-1B models can dominate narrow multimodal tasks. The pattern: agents are fragmenting by vertical (research, production ops, document understanding) just as the broader ecosystem fragments by profession.
 
 ## Connections
@@ -125,7 +130,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/harmonist]] — Portable agent orchestration with 186 specialist agents; zero third-party deps
 - [[entities/corecoder]] — Minimalist Claude Code-inspired coding agent in ~1,400 lines Python
 - [[entities/open-agent-sdk-go]] — Lightweight Go SDK for AI agents with MCP support
-- [[entities/andrej-karpathy-skills]] — 105K stars; single CLAUDE.md with 4 principles; "configuration over code" for agent behavior
+- [[entities/andrej-karpathy-skills]] — 105K stars; single CLAUDE.md with 4 principles; "configuration over code" for agent behavior; nanobot's minimal-code approach validates this principle at the framework level
 - [[entities/context-mode]] — 11.9K stars; 98% context reduction via MCP; critical infrastructure for continuous agent operation
 - [[entities/ruflo]] — 39.9K stars; Claude Code agent fleet orchestration with 100+ specialized agents
 - [[entities/gitnexus]] — 35.4K stars; MCP knowledge graph for agent codebase navigation; completes agent infrastructure triad with Serena and context-mode
@@ -136,7 +141,10 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/glm-ocr]] — 6.3K stars; 0.9B-parameter multimodal OCR beating frontier models on OmniDocBench; validates efficiency frontier for narrow domains
 - [[entities/nanobot]] — 41.7K stars; ultra-lightweight personal agent in ~4K lines Python; 99% smaller than alternatives; validates minimal-code agent philosophy
 - [[entities/agent-squad]] — 7.6K stars; model-agnostic multi-agent orchestration with SupervisorAgent across Bedrock, Anthropic, OpenAI
-- [[entities/andrej-karpathy-skills]] — nanobot's minimal-code approach validates Karpathy's "configuration over code" principle at the framework level
 - [[entities/web-design-skill]] — 533 stars; transforms AI-generated pages from functional to stunning alongside cc-design in the emerging design-skills category
 - [[entities/future-agi]] — 482 stars; end-to-end agent evaluation platform reflecting maturation of agent observability infrastructure
 - [[entities/mercury-agent]] — 531 stars; soul-driven personal AI agent with permission-hardened tools and CLI/Telegram multi-channel access
+- [[entities/moss-tts]] — 1,765 stars; open-source TTS with 20+ languages, 3-second voice cloning, and 180ms real-time streaming; 0.1B edge variant challenges cloud-dependent proprietary voice models
+- [[entities/omnivoice]] — 4,359 stars; 600+ language diffusion voice synthesis at 40x real-time; open-source voice AI is outpacing proprietary language coverage
+- [[entities/cordenex]] — 247 stars; multi-agent team coding with collaborative workflows and automated code review; extends coding agents from individual to organizational use
+- [[ideas/compute-shortage-forces-cooperation]] — Open-source voice models (MOSS-TTS 0.1B variant, OmniVoice) enable on-device agent voice output without cloud dependency — reducing reliance on the compute partnerships that define the closed-source ecosystem

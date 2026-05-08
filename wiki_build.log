@@ -515,3 +515,34 @@ The 2026-05-06 ingest is complete. Here's a summary of what was updated:
 8. **GitHub repos**: AutoResearch (79.2K), Hive (10.2K), GLM-OCR (6.3K)
 
 **Files updated**: `index.md` (130 → 139 pages), `log.md`, `processed.json` (now includes 2026-05-06).
+May 7, 2026 ingest complete. Here's what was processed:
+
+**New data ingested:** `data/2026-05-07.json`
+
+**New pages created (6):**
+- `sources/sierra.md` — AI agent startup; $950M at $15B valuation, $150M ARR, 40%+ Fortune 50
+- `entities/moss-tts.md` — Open-source TTS family (20+ languages, 3-second voice cloning)
+- `entities/omnivoice.md` — 600+ language voice synthesis with diffusion architecture
+- `entities/cordenex.md` — Multi-agent autonomous software engineer for terminal
+- `entities/aws-mcp-server.md` — AWS MCP Server GA with 15,000+ API operations
+- `ideas/compute-shortage-forces-cooperation.md` — Compute scarcity forcing even ideological enemies to cooperate
+
+**Key updates to existing pages:**
+- `topics/ai_companies` — Added Anthropic-SpaceX partnership, DeepMind-CCP Games, Sierra
+- `topics/ai_funding` — Added Sierra $950M and Anthropic-SpaceX infrastructure barter
+- `topics/agentic_ai` — Added Sierra validation, AWS MCP GA, Cordenex
+- `topics/llm_models` — Added voice AI commoditization (MOSS-TTS, OmniVoice)
+- `topics/github_trends` — Added May 7 open-source voice wave
+- `sources/anthropic` — Added SpaceX 300+ MW compute deal
+- `sources/spacex` — Added Anthropic partnership and xAI→SpaceXAI rebrand
+- `sources/google` — Added DeepMind-CCP Games minority stake
+- `sources/xai` — Added dissolution and rebrand as SpaceXAI
+- `timelines/2026-05` — Added May 7 section covering all new events
+- `ideas/agent-economy-infrastructure` — Updated with Sierra and AWS MCP Server
+- `entities/mcp-protocol` — Updated with AWS MCP Server connection
+
+**Final wiki state:**
+- Topics: 6 | Sources: 23 | Timelines: 3 | Entities: 83 | Ideas: 28
+- Total content pages: 143
+- `processed.json` updated with `2026-05-07`
+- `log.md` appended with ingest record
