@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 09, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 09, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/finnsutton1/OpenSwarm" class="card-title" target="_blank">finnsutton1/OpenSwarm</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 892 stars</div>
+                                <div class="meta-item"><span>🍴</span> 134 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open-source multi-agent system for non-coding work that Claude Code cannot handle. Features 8 specialized agents including Orchestrator, Deep Research, Data Analyst, Slides Agent, Docs Agent, and Image/Video Generation Agents. Generates presentations, documents, research reports, and visual assets from single prompts.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Code无法处理的非编码工作的开源多智能体系统。包含8个专业智能体：编排器、深度研究、数据分析师、幻灯片智能体、文档智能体以及图像/视频生成智能体。可从单一提示生成演示文稿、文档、研究报告和视觉资产。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/virattt/dexter" class="card-title" target="_blank">virattt/dexter</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 25.4k stars</div>
+                                <div class="meta-item"><span>🍴</span> 3.1k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Autonomous AI agent for deep financial research. Self-validating research workflow with real-time SEC filings and market data integration. Features loop detection, scratchpad memory, and WhatsApp gateway. Described as 'Claude Code, but for finance.'</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">用于深度金融研究的自主AI智能体。具备自验证研究工作流，集成实时SEC文件和市场数据。具备循环检测、草稿记忆和WhatsApp网关功能。被称为'金融版的Claude Code'。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Eliezer-app/eliezer" class="card-title" target="_blank">Eliezer-app/eliezer</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 412 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Tiny (~6K LOC) self-hosted AI agent in TypeScript. Features self-editing protocol (modifies its own code), PWA with push notifications, task scheduling, persistent SQLite memory with auto context compaction. Bring your own LLM API key (Kimi/Claude/Grok compatible).</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">约6000行代码的自托管AI智能体，使用TypeScript编写。具备自编辑协议（可修改自身代码）、带推送通知的PWA、任务调度、持久化SQLite记忆和自动上下文压缩。自带LLM API密钥（兼容Kimi/Claude/Grok）。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/inclusionAI/DR-Venus" class="card-title" target="_blank">inclusionAI/DR-Venus</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 247 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">4B-parameter deep research agent trained entirely on open data (10K samples). Establishes new small-model frontier on deep research benchmarks like BrowseComp and GAIA. Self-contained with minimal dependencies, designed for autonomous research workflows.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">40亿参数的深度研究智能体，完全基于开源数据（1万个样本）训练。在BrowseComp和GAIA等深度研究基准测试中建立新的小模型前沿。自包含且依赖极少，专为自主研究工作流设计。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Moneycontrol / Anthropic</span>
+                    <div class="news-time">2026-05-09</div>
+                    <a href="https://www.moneycontrol.com/news/trends/anthropic-s-new-ai-tool-can-read-what-chatbots-are-thinking-13913696.html" class="card-title" target="_blank" data-lang="en">Anthropic Unveils Natural Language Autoencoders That Can 'Read' AI Thought Processes</a>
+                    <a href="https://www.moneycontrol.com/news/trends/anthropic-s-new-ai-tool-can-read-what-chatbots-are-thinking-13913696.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic发布自然语言自动编码器，可'读取'AI思维过程</a>
+                    <p class="card-description" data-lang="en">Anthropic introduced Natural Language Autoencoders, a breakthrough interpretability tool that translates Claude's internal activations into human-readable text. The two-stage process converts numerical signals into explanations and back, enabling researchers to examine how models reach conclusions and detect harmful behaviors.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic推出自然语言自动编码器，这一突破性的可解释性工具可将Claude的内部激活状态转换为人类可读的文本。两阶段过程将数字信号转换为解释再还原，使研究人员能够检视模型如何得出结论并检测有害行为。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">WinBuzzer / Perplexity</span>
+                    <div class="news-time">2026-05-07</div>
+                    <a href="https://winbuzzer.com/2026/05/08/perplexity-opens-personal-computer-to-all-mac-users-xcxwbn/" class="card-title" target="_blank" data-lang="en">Perplexity Opens 'Personal Computer' Desktop Agent to All Mac Users</a>
+                    <a href="https://winbuzzer.com/2026/05/08/perplexity-opens-personal-computer-to-all-mac-users-xcxwbn/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Perplexity向所有Mac用户开放'个人电脑'桌面智能体</a>
+                    <p class="card-description" data-lang="en">Perplexity released its Personal Computer desktop AI agent for all Mac users, expanding beyond the initial limited beta. The agent can access local files and applications, run multi-step workflows across local machines and web services, and integrates with 400+ connectors. A new Mac app (distributed outside App Store) replaces the older client.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Perplexity向所有Mac用户发布了Personal Computer桌面AI智能体，从最初有限的Beta版本扩展而来。该智能体可以访问本地文件和应用程序，在本地机器和Web服务上运行多步骤工作流，并集成400多个连接器。一款新的Mac应用（在App Store外分发）取代了旧版客户端。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-05-07</div>
+                    <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" class="card-title" target="_blank" data-lang="en">OpenAI Launches GPT-Realtime-2 and Voice Translation Models in API</a>
+                    <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI在API中推出GPT-Realtime-2和语音翻译模型</a>
+                    <p class="card-description" data-lang="en">OpenAI released three new voice models: GPT-Realtime-2 (first voice model with GPT-5-class reasoning, 128K context), GPT-Realtime-Translate (70+ input languages to 13 output languages, live translation), and GPT-Realtime-Whisper (low-latency streaming transcription). Zillow and Priceline are early adopters building voice assistants.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI发布了三个新的语音模型：GPT-Realtime-2（首个具备GPT-5级推理能力的语音模型，128K上下文）、GPT-Realtime-Translate（70多种输入语言翻译为13种输出语言，实时翻译）和GPT-Realtime-Whisper（低延迟流式转录）。Zillow和Priceline是早期采用者，正在构建语音助手。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">POLITICO / The Register</span>
+                    <div class="news-time">2026-05-08</div>
+                    <a href="https://www.politico.eu/article/eu-clinches-deal-to-roll-back-ai-restrictions/" class="card-title" target="_blank" data-lang="en">EU Delays AI Act Implementation by 16 Months, Exempts Industrial AI</a>
+                    <a href="https://www.politico.eu/article/eu-clinches-deal-to-roll-back-ai-restrictions/" class="card-title" target="_blank" data-lang="zh" style="display: none;">欧盟将AI法案实施推迟16个月，工业AI获豁免</a>
+                    <p class="card-description" data-lang="en">The EU reached a deal to delay key AI Act provisions from August 2026 to December 2027. Industrial AI applications in manufacturing and machinery are largely exempt after pressure from Germany and companies like Siemens and Bosch. New bans were added on AI-generated sexualized deepfakes and CSAM.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">欧盟达成协议，将关键AI法案条款从2026年8月推迟至2027年12月。在来自德国以及西门子和博世等公司的压力后，制造业和机械领域的工业AI应用基本获得豁免。新增了对AI生成性深度伪造和儿童性虐待材料的禁令。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">NASA</span>
+                    <div class="news-time">2026-05-08</div>
+                    <a href="https://science.nasa.gov/science-research/ai-foundation-model-in-orbit/" class="card-title" target="_blank" data-lang="en">NASA Deploys Prithvi as First AI Geospatial Foundation Model in Orbit</a>
+                    <a href="https://science.nasa.gov/science-research/ai-foundation-model-in-orbit/" class="card-title" target="_blank" data-lang="zh" style="display: none;">NASA部署Prithvi作为首个在轨AI地理空间基础模型</a>
+                    <p class="card-description" data-lang="en">NASA's Prithvi became the first geospatial AI foundation model deployed in space, uploaded to the Kanyini satellite and ISS (IMAGIN-e payload). Trained on 13 years of Landsat and Sentinel-2 data, it processes Earth observation data in orbit for flood detection, disaster monitoring, and crop prediction—saving bandwidth by transmitting insights instead of raw data.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">NASA的Prithvi成为首个部署在太空中的地理空间AI基础模型，被上传至Kanyini卫星和国际空间站（IMAGIN-e载荷）。基于13年的Landsat和Sentinel-2数据训练，它在轨道上处理地球观测数据，用于洪水检测、灾害监测和作物预测——通过传输洞察而非原始数据来节省带宽。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Moneycontrol</span>
+                    <div class="news-time">2026-05-09</div>
+                    <a href="https://www.moneycontrol.com/europe/?url=https%3A%2F%2Fwww.moneycontrol.com%2Fnews%2Ftrends%2Fanthropic-s-new-ai-tool-can-read-what-chatbots-are-thinking-13913696.html" class="card-title" target="_blank" data-lang="en">Anthropic Launches 10 New Finance-Focused AI Agents for Enterprise</a>
+                    <a href="https://www.moneycontrol.com/europe/?url=https%3A%2F%2Fwww.moneycontrol.com%2Fnews%2Ftrends%2Fanthropic-s-new-ai-tool-can-read-what-chatbots-are-thinking-13913696.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic面向企业推出10个新的金融聚焦AI智能体</a>
+                    <p class="card-description" data-lang="en">Anthropic unveiled 10 specialized AI agents for financial services, complementing its Natural Language Autoencoders release. These agents target specific enterprise finance workflows including risk assessment, compliance monitoring, portfolio analysis, and regulatory reporting—designed to integrate with existing banking systems.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic发布了10个面向金融服务的专业AI智能体，作为其自然语言自动编码器发布的补充。这些智能体针对特定的企业金融工作流，包括风险评估、合规监控、投资组合分析和监管报告——设计用于与现有银行系统集成。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">May 9, 2026 reveals an AI industry undergoing a strategic pivot from horizontal capabilities to vertical solutions—and from 'trust us' to 'verify for yourself.' Anthropic's dual launch (Natural Language Autoencoders + 10 finance agents) exemplifies this shift: they're not just selling models anymore, they're selling interpretability and industry-specific workflows. This is a direct response to the market maturation—enterprise buyers are no longer impressed by benchmark scores, they want audit trails and compliance guarantees. The regulatory landscape is simultaneously fragmenting and softening. The EU's AI Act delay creates a 16-month window where European AI development is less constrained, but also less certain. This contrasts sharply with the US, where CAISI oversight is tightening and the Pentagon's classified AI deals have created a de facto military-industrial AI complex. The global AI market is bifurcating into 'military-aligned' (US) and 'commercial-first' (EU, post-delay) spheres. Perplexity's Personal Computer going public and OpenAI's voice API expansion show the interface wars are heating up. Voice is emerging as the next battleground—OpenAI's full pipeline (transcription/reasoning/synthesis) challenges Apple's Siri-Gemini integration and Amazon's Alexa. The deeper play here is about becoming the default interface for complex transactions; whoever owns voice owns the path to purchase. NASA's Prithvi deployment hints at the next frontier: AI as orbital infrastructure. While terrestrial AI saturates, space-based edge computing opens new capabilities—real-time disaster response without bandwidth constraints, autonomous satellite operations, and eventually, 'AI constellations' that could become as strategically significant as GPS. The throughline: AI is transitioning from experimental technology to regulated infrastructure. The winners of this phase won't be the labs with the best models, but those with the best governance frameworks, vertical integrations, and regulatory relationships. Anthropic's interpretability push and OpenAI's government partnerships are both bets on this infrastructure layer—one technical, one political.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年5月9日揭示了一个AI行业正从横向能力向垂直解决方案、从'相信我们'向'自己验证'进行战略转向。Anthropic的双重发布（自然语言自动编码器+10个金融智能体）体现了这一转变：他们不再只是销售模型，而是在销售可解释性和行业特定工作流。这是对市场成熟的直接回应——企业买家不再对基准分数印象深刻，他们想要审计追踪和合规保证。监管格局同时在碎片化和软化。欧盟AI法案的推迟创造了一个16个月的窗口期，欧洲AI发展约束减少，但也更加不确定。这与美国形成鲜明对比，在美国CAISI监督正在收紧，五角大楼的机密AI交易创造了一个事实上的军事工业AI复合体。全球AI市场正分叉为'军事联盟'（美国）和'商业优先'（欧盟，推迟后）两个领域。Perplexity的Personal Computer公开和OpenAI的语音API扩展表明界面战争正在升温。语音正在成为下一个战场——OpenAI的完整管道（转录/推理/合成）挑战苹果的Siri-Gemini集成和亚马逊的Alexa。这里更深层次的战略是关于成为复杂交易的默认界面；谁拥有语音，谁就拥有购买路径。NASA的Prithvi部署暗示了下一个前沿：AI作为轨道基础设施。随着地面AI饱和，天基边缘计算开辟了新的能力——无带宽限制的实时灾害响应、自主卫星操作，以及最终可能变得与GPS同等战略重要的'AI星座'。贯穿始终的主题：AI正从实验技术过渡到受监管的基础设施。这一阶段的赢家不会是拥有最佳模型的实验室，而是那些拥有最佳治理框架、垂直整合和监管关系的实验室。Anthropic的可解释性推动和OpenAI的政府合作伙伴关系都是对这一基础设施层的押注——一个技术性的，一个政治性的。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

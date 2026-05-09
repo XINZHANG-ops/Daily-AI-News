@@ -1,0 +1,153 @@
+{
+  "date": "2026-05-09",
+  "github_repos": [
+    {
+      "name": "finnsutton1/OpenSwarm",
+      "url": "https://github.com/finnsutton1/OpenSwarm",
+      "description": {
+        "en": "Open-source multi-agent system for non-coding work that Claude Code cannot handle. Features 8 specialized agents including Orchestrator, Deep Research, Data Analyst, Slides Agent, Docs Agent, and Image/Video Generation Agents. Generates presentations, documents, research reports, and visual assets from single prompts.",
+        "zh": "Claude Code无法处理的非编码工作的开源多智能体系统。包含8个专业智能体：编排器、深度研究、数据分析师、幻灯片智能体、文档智能体以及图像/视频生成智能体。可从单一提示生成演示文稿、文档、研究报告和视觉资产。"
+      },
+      "stars": "892",
+      "forks": "134"
+    },
+    {
+      "name": "virattt/dexter",
+      "url": "https://github.com/virattt/dexter",
+      "description": {
+        "en": "Autonomous AI agent for deep financial research. Self-validating research workflow with real-time SEC filings and market data integration. Features loop detection, scratchpad memory, and WhatsApp gateway. Described as 'Claude Code, but for finance.'",
+        "zh": "用于深度金融研究的自主AI智能体。具备自验证研究工作流，集成实时SEC文件和市场数据。具备循环检测、草稿记忆和WhatsApp网关功能。被称为'金融版的Claude Code'。"
+      },
+      "stars": "25.4k",
+      "forks": "3.1k"
+    },
+    {
+      "name": "Eliezer-app/eliezer",
+      "url": "https://github.com/Eliezer-app/eliezer",
+      "description": {
+        "en": "Tiny (~6K LOC) self-hosted AI agent in TypeScript. Features self-editing protocol (modifies its own code), PWA with push notifications, task scheduling, persistent SQLite memory with auto context compaction. Bring your own LLM API key (Kimi/Claude/Grok compatible).",
+        "zh": "约6000行代码的自托管AI智能体，使用TypeScript编写。具备自编辑协议（可修改自身代码）、带推送通知的PWA、任务调度、持久化SQLite记忆和自动上下文压缩。自带LLM API密钥（兼容Kimi/Claude/Grok）。"
+      },
+      "stars": "3.2k",
+      "forks": "412"
+    },
+    {
+      "name": "inclusionAI/DR-Venus",
+      "url": "https://github.com/inclusionAI/DR-Venus",
+      "description": {
+        "en": "4B-parameter deep research agent trained entirely on open data (10K samples). Establishes new small-model frontier on deep research benchmarks like BrowseComp and GAIA. Self-contained with minimal dependencies, designed for autonomous research workflows.",
+        "zh": "40亿参数的深度研究智能体，完全基于开源数据（1万个样本）训练。在BrowseComp和GAIA等深度研究基准测试中建立新的小模型前沿。自包含且依赖极少，专为自主研究工作流设计。"
+      },
+      "stars": "1.8k",
+      "forks": "247"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Unveils Natural Language Autoencoders That Can 'Read' AI Thought Processes",
+        "zh": "Anthropic发布自然语言自动编码器，可'读取'AI思维过程"
+      },
+      "url": "https://www.moneycontrol.com/news/trends/anthropic-s-new-ai-tool-can-read-what-chatbots-are-thinking-13913696.html",
+      "source": "Moneycontrol / Anthropic",
+      "time": "2026-05-09",
+      "description": {
+        "en": "Anthropic introduced Natural Language Autoencoders, a breakthrough interpretability tool that translates Claude's internal activations into human-readable text. The two-stage process converts numerical signals into explanations and back, enabling researchers to examine how models reach conclusions and detect harmful behaviors.",
+        "zh": "Anthropic推出自然语言自动编码器，这一突破性的可解释性工具可将Claude的内部激活状态转换为人类可读的文本。两阶段过程将数字信号转换为解释再还原，使研究人员能够检视模型如何得出结论并检测有害行为。"
+      },
+      "insight": {
+        "en": "01 *The Mechanistic Interpretability Breakthrough* : Anthropic's Natural Language Autoencoders represent a genuine paradigm shift in AI safety—moving from 'black box' to 'glass box' by translating internal model activations into human-comprehensible language. This isn't just feature visualization; it's a bidirectional translation layer that could become the Rosetta Stone for understanding how frontier models actually think. The timing is strategic: with Mythos and Claude Opus 4.7 raising alarms about AI capabilities outpacing oversight, Anthropic is positioning itself as the lab that builds 'explainable AI' before regulators mandate it. Compare to OpenAI's approach with GPT-5.5's 'memory sources'—which shows citations but not reasoning chains—Anthropic is betting that enterprises and governments will pay a premium for models whose decision-making is auditable. The risk: if the autoencoder itself becomes a target (adversarial attacks on interpretability tools), we may need interpreters for the interpreters.",
+        "zh": "01 *机械可解释性的突破* : Anthropic的自然语言自动编码器代表了AI安全领域的真正范式转变——通过将模型内部激活转换为人类可理解的语言，从'黑盒'转向'玻璃盒'。这不仅仅是特征可视化；它是一个双向翻译层，可能成为理解前沿模型实际如何思考的罗塞塔石碑。时机具有战略性：随着Mythos和Claude Opus 4.7引发关于AI能力超越监督的警报，Anthropic正将自己定位为在监管者强制要求之前构建'可解释AI'的实验室。对比OpenAI在GPT-5.5'记忆来源'上的方法——它显示引用但不显示推理链——Anthropic押注企业和政府愿意为决策过程可审计的模型支付溢价。风险在于：如果自动编码器本身成为目标（对可解释性工具的对抗攻击），我们可能需要为解释器再建解释器。"
+      }
+    },
+    {
+      "title": {
+        "en": "Perplexity Opens 'Personal Computer' Desktop Agent to All Mac Users",
+        "zh": "Perplexity向所有Mac用户开放'个人电脑'桌面智能体"
+      },
+      "url": "https://winbuzzer.com/2026/05/08/perplexity-opens-personal-computer-to-all-mac-users-xcxwbn/",
+      "source": "WinBuzzer / Perplexity",
+      "time": "2026-05-07",
+      "description": {
+        "en": "Perplexity released its Personal Computer desktop AI agent for all Mac users, expanding beyond the initial limited beta. The agent can access local files and applications, run multi-step workflows across local machines and web services, and integrates with 400+ connectors. A new Mac app (distributed outside App Store) replaces the older client.",
+        "zh": "Perplexity向所有Mac用户发布了Personal Computer桌面AI智能体，从最初有限的Beta版本扩展而来。该智能体可以访问本地文件和应用程序，在本地机器和Web服务上运行多步骤工作流，并集成400多个连接器。一款新的Mac应用（在App Store外分发）取代了旧版客户端。"
+      },
+      "insight": {
+        "en": "02 *The Desktop Agent Wars Heat Up* : Perplexity's Personal Computer going public marks the moment when AI agents officially moved from chat interfaces to operating system layers. While OpenAI and Anthropic have teased 'computer use' capabilities, Perplexity actually shipped—and to all Mac users, not just paying subscribers. The 400+ connectors and local file access represent a direct assault on Apple's own AI strategy (Siri's Gemini integration is still in testing) and Microsoft's Copilot desktop integration. The strategic play is clear: Perplexity is betting that users want an AI layer that works *across* apps, not *inside* them. At $17-20/month for Pro (full automation) vs $200/month for Max (Model Council), the pricing is calibrated to undercut enterprise alternatives while still capturing power users. The remote control feature (Mac mini + iPhone) is the sleeper hit here—it's the first viable 'cloud personal assistant' that doesn't require constant phone tethering.",
+        "zh": "02 *桌面智能体战争升温* : Perplexity的Personal Computer公开标志着AI智能体正式从聊天界面转向操作系统层的时刻。虽然OpenAI和Anthropic一直在暗示'计算机使用'能力，但Perplexity真正实现了交付——而且是向所有Mac用户，不仅仅是付费订阅者。400多个连接器和本地文件访问直接冲击了苹果自己的AI战略（Siri的Gemini集成仍在测试中）和微软的Copilot桌面集成。战略玩法很明确：Perplexity押注用户想要一个在应用之间工作而非应用内部的AI层。Pro版每月17-20美元（完整自动化）vs Max版每月200美元（模型委员会），定价经过校准以低于企业替代品，同时仍捕获高级用户。远程控制功能（Mac mini + iPhone）是这里的隐藏亮点——它是第一个可行的'云个人助手'，不需要持续的手机绑定。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches GPT-Realtime-2 and Voice Translation Models in API",
+        "zh": "OpenAI在API中推出GPT-Realtime-2和语音翻译模型"
+      },
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "source": "OpenAI",
+      "time": "2026-05-07",
+      "description": {
+        "en": "OpenAI released three new voice models: GPT-Realtime-2 (first voice model with GPT-5-class reasoning, 128K context), GPT-Realtime-Translate (70+ input languages to 13 output languages, live translation), and GPT-Realtime-Whisper (low-latency streaming transcription). Zillow and Priceline are early adopters building voice assistants.",
+        "zh": "OpenAI发布了三个新的语音模型：GPT-Realtime-2（首个具备GPT-5级推理能力的语音模型，128K上下文）、GPT-Realtime-Translate（70多种输入语言翻译为13种输出语言，实时翻译）和GPT-Realtime-Whisper（低延迟流式转录）。Zillow和Priceline是早期采用者，正在构建语音助手。"
+      },
+      "insight": {
+        "en": "03 *Voice as the New API Interface* : GPT-Realtime-2's 128K context window in a voice model is the technical detail that matters—previous voice models were limited to short utterances; this can handle entire documents in conversation. The translation model (70+ to 13 languages) is a direct shot at Google Translate and Zoom's real-time translation, but with GPT-5 reasoning quality. The Whisper streaming transcription completes the trifecta: OpenAI now owns the full voice pipeline—input (transcription), processing (reasoning), and output (translation/synthesis). The Zillow/Priceline partnerships reveal the vertical strategy: real estate and travel booking are high-friction workflows where voice agents can actually save time vs. form-filling. This follows Anthropic's finance agent launch by days, suggesting both labs are racing to verticalize before the horizontal 'chatbot' market commoditizes. The real disruption: if voice agents become the default interface for complex transactions, the UI/UX of every app above them becomes irrelevant.",
+        "zh": "03 *语音作为新的API界面* : GPT-Realtime-2在语音模型中实现128K上下文窗口是重要的技术细节——以前的语音模型仅限于短语句；这可以处理对话中的整个文档。翻译模型（70多种到13种语言）直接瞄准谷歌翻译和Zoom的实时翻译，但具备GPT-5级推理质量。Whisper流式转录完成了三连胜：OpenAI现在拥有完整的语音管道——输入（转录）、处理（推理）和输出（翻译/合成）。Zillow/Priceline合作伙伴关系揭示了垂直策略：房地产和旅行预订是高摩擦工作流，语音智能体实际上可以比填表节省时间的领域。这紧随Anthropic的金融智能体发布几天之后，表明两个实验室都在'聊天机器人'横向市场商品化之前竞相垂直化。真正的颠覆：如果语音智能体成为复杂交易的默认界面，其上方每个应用的UI/UX都变得无关紧要。"
+      }
+    },
+    {
+      "title": {
+        "en": "EU Delays AI Act Implementation by 16 Months, Exempts Industrial AI",
+        "zh": "欧盟将AI法案实施推迟16个月，工业AI获豁免"
+      },
+      "url": "https://www.politico.eu/article/eu-clinches-deal-to-roll-back-ai-restrictions/",
+      "source": "POLITICO / The Register",
+      "time": "2026-05-08",
+      "description": {
+        "en": "The EU reached a deal to delay key AI Act provisions from August 2026 to December 2027. Industrial AI applications in manufacturing and machinery are largely exempt after pressure from Germany and companies like Siemens and Bosch. New bans were added on AI-generated sexualized deepfakes and CSAM.",
+        "zh": "欧盟达成协议，将关键AI法案条款从2026年8月推迟至2027年12月。在来自德国以及西门子和博世等公司的压力后，制造业和机械领域的工业AI应用基本获得豁免。新增了对AI生成性深度伪造和儿童性虐待材料的禁令。"
+      },
+      "insight": {
+        "en": "04 *Regulatory Chill Sets In* : The EU's AI Act rollback is the first major reversal of AI safety regulation globally—and it won't be the last. The 16-month delay and industrial exemption represent a victory for German manufacturing (Siemens, Bosch) who threatened to move R&D outside Europe. The political calculus is clear: Ursula von der Leyen chose competitiveness over precaution, framing the rollback as 'innovation-friendly' while adding new deepfake/CSAM bans as a fig leaf. But the deeper pattern is fragmentation—the EU is now diverging from the US (which is tightening CAISI oversight) and China (which is accelerating its own AI Act Phase 2). For AI companies, this creates a compliance nightmare: different rules for different markets, with the strictest jurisdiction (EU) now uncertain. The winners: frontier labs with legal teams that can navigate fragmentation (OpenAI, Anthropic, Google). The losers: startups who built for EU compliance and now face changed rules.",
+        "zh": "04 *监管寒意降临* : 欧盟AI法案的推迟是全球AI安全监管的首次重大逆转——而且不会是最后一次。16个月的推迟和工业豁免代表着德国制造业（西门子、博世）的胜利，他们曾威胁将研发迁出欧洲。政治考量很明确：Ursula von der Leyen选择了竞争力而非预防原则，将回滚定性为'创新友好'，同时新增深度伪造/CSAM禁令作为遮羞布。但更深层次的模式是碎片化——欧盟现在正与美国（正在收紧CAISI监督）和中国（正在加速自己的AI法案第二阶段）分道扬镳。对AI公司来说，这造成了合规噩梦：不同市场有不同规则，而最严格的司法管辖区（欧盟）现在不确定。赢家：能够驾驭碎片化的前沿实验室（OpenAI、Anthropic、谷歌）。输家：为欧盟合规而建立的初创公司，现在面临规则变化。"
+      }
+    },
+    {
+      "title": {
+        "en": "NASA Deploys Prithvi as First AI Geospatial Foundation Model in Orbit",
+        "zh": "NASA部署Prithvi作为首个在轨AI地理空间基础模型"
+      },
+      "url": "https://science.nasa.gov/science-research/ai-foundation-model-in-orbit/",
+      "source": "NASA",
+      "time": "2026-05-08",
+      "description": {
+        "en": "NASA's Prithvi became the first geospatial AI foundation model deployed in space, uploaded to the Kanyini satellite and ISS (IMAGIN-e payload). Trained on 13 years of Landsat and Sentinel-2 data, it processes Earth observation data in orbit for flood detection, disaster monitoring, and crop prediction—saving bandwidth by transmitting insights instead of raw data.",
+        "zh": "NASA的Prithvi成为首个部署在太空中的地理空间AI基础模型，被上传至Kanyini卫星和国际空间站（IMAGIN-e载荷）。基于13年的Landsat和Sentinel-2数据训练，它在轨道上处理地球观测数据，用于洪水检测、灾害监测和作物预测——通过传输洞察而非原始数据来节省带宽。"
+      },
+      "insight": {
+        "en": "05 *Edge AI Goes to Space* : Prithvi in orbit represents a category shift: AI models are now infrastructure, not just software. By processing satellite imagery in space before transmitting to ground, NASA solves the 'bandwidth bottleneck' that has constrained Earth observation for decades. The 13-year training dataset (Landsat + Sentinel-2) gives Prithvi temporal depth that no commercial model can match—NASA is leveraging its unique data moat. The dual deployment (Kanyini satellite + ISS) is strategic: Kanyini tests standalone orbital AI, while ISS allows human-in-the-loop experimentation. The implication for the broader AI industry: if models can run on space-grade hardware (radiation-hardened, power-constrained), terrestrial edge deployment becomes trivial. This also previews a new geopolitical battleground—'AI in orbit' could become as strategically significant as GPS or satellite comms. SpaceX's Starshield military constellation will almost certainly carry similar models.",
+        "zh": "05 *边缘AI进入太空* : 轨道上的Prithvi代表了一个类别转变：AI模型现在成为基础设施，而不仅仅是软件。通过在传输到地面之前在太空中处理卫星图像，NASA解决了几十年来制约地球观测的'带宽瓶颈'。13年的训练数据集（Landsat + Sentinel-2）赋予Prithvi任何商业模型都无法匹敌的时间深度——NASA正在利用其独特的数据护城河。双重部署（Kanyini卫星+国际空间站）具有战略意义：Kanyini测试独立的轨道AI，而国际空间站允许人在回路中的实验。对更广泛AI行业的影响：如果模型可以在太空级硬件（抗辐射、功率受限）上运行，地面边缘部署就变得微不足道。这也预示着一个新的地缘政治战场——'轨道AI'可能变得与GPS或卫星通信同等战略重要。SpaceX的Starshield军事星座几乎肯定会携带类似的模型。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Launches 10 New Finance-Focused AI Agents for Enterprise",
+        "zh": "Anthropic面向企业推出10个新的金融聚焦AI智能体"
+      },
+      "url": "https://www.moneycontrol.com/europe/?url=https%3A%2F%2Fwww.moneycontrol.com%2Fnews%2Ftrends%2Fanthropic-s-new-ai-tool-can-read-what-chatbots-are-thinking-13913696.html",
+      "source": "Moneycontrol",
+      "time": "2026-05-09",
+      "description": {
+        "en": "Anthropic unveiled 10 specialized AI agents for financial services, complementing its Natural Language Autoencoders release. These agents target specific enterprise finance workflows including risk assessment, compliance monitoring, portfolio analysis, and regulatory reporting—designed to integrate with existing banking systems.",
+        "zh": "Anthropic发布了10个面向金融服务的专业AI智能体，作为其自然语言自动编码器发布的补充。这些智能体针对特定的企业金融工作流，包括风险评估、合规监控、投资组合分析和监管报告——设计用于与现有银行系统集成。"
+      },
+      "insight": {
+        "en": "06 *Finance as the Agent Beachhead* : The 10 new finance agents are Anthropic's verticalization play—moving from 'here's an API, build something' to 'here's a complete solution for your industry.' Finance is the right beachhead: high-value transactions, regulatory complexity that justifies premium pricing, and incumbents (Bloomberg, Reuters) ripe for disruption. Perplexity's finance platform (launched days ago) and these Anthropic agents are squeezing the market from both ends—Perplexity from the analyst workstation, Anthropic from the enterprise backend. The timing with Natural Language Autoencoders is not coincidental: finance regulators will demand explainability, and Anthropic is now the only lab that can offer both capable agents AND auditable reasoning. The competitive question: will OpenAI respond with their own vertical agents, or continue betting that GPT-5.5's general capabilities are sufficient?",
+        "zh": "06 *金融作为智能体滩头堡* : 这10个新金融智能体是Anthropic的垂直化策略——从'这是API，自己造点东西'转向'这是针对您行业的完整解决方案'。金融是正确的滩头堡：高价值交易、证明溢价定价合理的监管复杂性，以及成熟的现有企业（彭博、路透）等待颠覆。Perplexity的金融平台（几天前推出）和这些Anthropic智能体正从两端挤压市场——Perplexity来自分析师工作站，Anthropic来自企业后端。与自然语言自动编码器的发布时间并非巧合：金融监管者将要求可解释性，而Anthropic现在是唯一一家既能提供有能力智能体又能提供可审计推理的实验室。竞争问题：OpenAI会用自己的垂直智能体回应，还是继续押注GPT-5.5的通用能力足够？"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "May 9, 2026 reveals an AI industry undergoing a strategic pivot from horizontal capabilities to vertical solutions—and from 'trust us' to 'verify for yourself.' Anthropic's dual launch (Natural Language Autoencoders + 10 finance agents) exemplifies this shift: they're not just selling models anymore, they're selling interpretability and industry-specific workflows. This is a direct response to the market maturation—enterprise buyers are no longer impressed by benchmark scores, they want audit trails and compliance guarantees. The regulatory landscape is simultaneously fragmenting and softening. The EU's AI Act delay creates a 16-month window where European AI development is less constrained, but also less certain. This contrasts sharply with the US, where CAISI oversight is tightening and the Pentagon's classified AI deals have created a de facto military-industrial AI complex. The global AI market is bifurcating into 'military-aligned' (US) and 'commercial-first' (EU, post-delay) spheres. Perplexity's Personal Computer going public and OpenAI's voice API expansion show the interface wars are heating up. Voice is emerging as the next battleground—OpenAI's full pipeline (transcription/reasoning/synthesis) challenges Apple's Siri-Gemini integration and Amazon's Alexa. The deeper play here is about becoming the default interface for complex transactions; whoever owns voice owns the path to purchase. NASA's Prithvi deployment hints at the next frontier: AI as orbital infrastructure. While terrestrial AI saturates, space-based edge computing opens new capabilities—real-time disaster response without bandwidth constraints, autonomous satellite operations, and eventually, 'AI constellations' that could become as strategically significant as GPS. The throughline: AI is transitioning from experimental technology to regulated infrastructure. The winners of this phase won't be the labs with the best models, but those with the best governance frameworks, vertical integrations, and regulatory relationships. Anthropic's interpretability push and OpenAI's government partnerships are both bets on this infrastructure layer—one technical, one political.",
+    "zh": "2026年5月9日揭示了一个AI行业正从横向能力向垂直解决方案、从'相信我们'向'自己验证'进行战略转向。Anthropic的双重发布（自然语言自动编码器+10个金融智能体）体现了这一转变：他们不再只是销售模型，而是在销售可解释性和行业特定工作流。这是对市场成熟的直接回应——企业买家不再对基准分数印象深刻，他们想要审计追踪和合规保证。监管格局同时在碎片化和软化。欧盟AI法案的推迟创造了一个16个月的窗口期，欧洲AI发展约束减少，但也更加不确定。这与美国形成鲜明对比，在美国CAISI监督正在收紧，五角大楼的机密AI交易创造了一个事实上的军事工业AI复合体。全球AI市场正分叉为'军事联盟'（美国）和'商业优先'（欧盟，推迟后）两个领域。Perplexity的Personal Computer公开和OpenAI的语音API扩展表明界面战争正在升温。语音正在成为下一个战场——OpenAI的完整管道（转录/推理/合成）挑战苹果的Siri-Gemini集成和亚马逊的Alexa。这里更深层次的战略是关于成为复杂交易的默认界面；谁拥有语音，谁就拥有购买路径。NASA的Prithvi部署暗示了下一个前沿：AI作为轨道基础设施。随着地面AI饱和，天基边缘计算开辟了新的能力——无带宽限制的实时灾害响应、自主卫星操作，以及最终可能变得与GPS同等战略重要的'AI星座'。贯穿始终的主题：AI正从实验技术过渡到受监管的基础设施。这一阶段的赢家不会是拥有最佳模型的实验室，而是那些拥有最佳治理框架、垂直整合和监管关系的实验室。Anthropic的可解释性推动和OpenAI的政府合作伙伴关系都是对这一基础设施层的押注——一个技术性的，一个政治性的。"
+  }
+}

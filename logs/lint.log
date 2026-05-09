@@ -298,3 +298,12 @@ Wiki lint completed successfully. Here's what was fixed:
 
 All passes complete. What would you like to work on next?
 [2026-05-09 01:09:30] Wiki lint complete (exit code 0).
+[main 9eb6f08] wiki: lint 2026-05-09
+ 34 files changed, 644 insertions(+), 57 deletions(-)
+ create mode 100644 wiki/entities/alphaevolve.md
+ create mode 100644 wiki/entities/cocoindex.md
+ create mode 100644 wiki/entities/ouroboros.md
+ create mode 100644 wiki/entities/ppt-master.md
+ create mode 100644 wiki/entities/remy.md
+ create mode 100644 wiki/ideas/agent-control-interface-wars.md
+ create mode 100644 wiki/ideas/ai-security-auditing-mainstream.md
