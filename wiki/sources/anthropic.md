@@ -50,6 +50,8 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-05 | Commits $200B to Google Cloud over 5 years | Largest cloud commitment in corporate history; 40%+ of Google's disclosed cloud backlog; multi-gigawatt TPU deal with Broadcom from 2027 |
 | 2026-05-05 | Agrees to CAISI pre-testing | Anthropic renegotiated Biden-era agreements; Mythos was the catalyst for CAISI — when a company voluntarily refuses to release a model for safety, it forces regulators to act |
 | 2026-05-06 | SpaceX compute partnership | 300+ MW at Colossus 1 Memphis; addresses acute compute shortage causing service reliability issues; Musk impressed by Anthropic team after prior criticism |
+| 2026-05-07 | Mozilla deploys Claude Mythos Preview for Firefox security | AI analyzed C++ and Rust code to find memory safety issues and logic bugs missed by human review; first major browser vendor trusting AI with production code security
+| 2026-05-07 | US government rethinks Anthropic defense partnership | Defense and public sector agencies expanding approved vendor lists while reassessing partnerships with specific frontier labs; tension between Anthropic's commercial ambitions and governance commitments |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -80,3 +82,6 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - [[ideas/boring-infrastructure-shift]] — Anthropic's $200B commitment and Claude Security launch both treat AI as infrastructure: the former as compute infrastructure, the latter as security infrastructure — neither is exciting, both are essential
 - [[sources/spacex]] — 300+ MW compute deal at Colossus 1 reveals compute scarcity overrides rivalries; Anthropic now has three independent compute pipelines (Google TPUs, SpaceX Colossus 1, Amazon AWS)
 - [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX is the defining case study: when GPU/TPU supply is the binding constraint, even ideological enemies must cooperate
+- [[sources/mozilla]] — Mozilla's Firefox security audit using Mythos Preview is the first major non-Glasswing production deployment, proving Mythos's defensive value and giving Anthropic a concrete case study for safety-critical domains
+- [[ideas/ai-security-auditing-mainstream]] — Mozilla's deployment marks the moment AI security auditing becomes mainstream; Anthropic gains a powerful defensive use case for Mythos that counters the "too dangerous to release" narrative
+- [[ideas/agent-control-interface-wars]] — Anthropic's Claude Code minimizes friction with native IDE integration; Remy's explicit approval gates represent a fundamentally different trust model, creating multiple viable enterprise agent philosophies

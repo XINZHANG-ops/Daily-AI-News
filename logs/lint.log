@@ -279,3 +279,22 @@ Yes — the wiki lint is complete. Here's what was fixed:
  create mode 100644 wiki/entities/omnivoice.md
  create mode 100644 wiki/ideas/compute-shortage-forces-cooperation.md
  create mode 100644 wiki/sources/sierra.md
+[2026-05-09 01:00:01] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+Wiki lint completed successfully. Here's what was fixed:
+
+**Structural & Data Issues**
+- Removed 3 duplicate table rows from `topics/agentic_ai.md`
+- Merged 15 duplicate `## Connections` wikilinks across 10 files
+- Verified zero broken outbound wikilinks across all 150 pages
+
+**Cross-References**
+- Added `[[timelines/2026-05]]` connections to all 6 topic pages for discoverability
+
+**Metadata**
+- Updated `last_updated: 2026-05-09` on all 12 modified files
+- Updated `wiki/index.md` catalog counts: 6 topics, 23 sources, 3 timelines, 88 entities, 30 ideas
+- Appended lint entry to `wiki/log.md`
+
+All passes complete. What would you like to work on next?
+[2026-05-09 01:09:30] Wiki lint complete (exit code 0).

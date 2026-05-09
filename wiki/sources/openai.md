@@ -57,6 +57,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-04 | Zuckerberg texts revealed | Texts with Musk discussing teaming up to stop OpenAI restructuring; adds surreal layer to billionaires' legal battle |
 | 2026-05-05 | GPT-5.5 Instant becomes ChatGPT default | 52.5% fewer hallucinations on high-stakes prompts vs GPT-5.3 Instant; 37.3% reduction in inaccurate claims on challenging conversations; "memory sources" feature shows context for each response |
 | 2026-05-05 | Agrees to CAISI pre-testing | OpenAI renegotiated Biden-era agreements to align with Trump's AI Action Plan; participation alongside Google, Microsoft, xAI, Anthropic |
+| 2026-05-07 | OpenAI introduces Trusted Contact safeguard | New safety feature for self-harm prevention; opt-in architecture suggesting pre-designated contacts and crisis resources; launched as teen ChatGPT usage climbs (40% of 13-17 age bracket in Q1) |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -83,3 +84,5 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[entities/perplexity-finance]] — Perplexity Finance launched same day as GPT-5.5 Instant with similar citation features; Perplexity has the data partnerships and finance-specific workflows that OpenAI lacks
 - [[ideas/government-pre-testing]] — OpenAI's participation in CAISI follows the same pattern as GPT-5.5 Cyber restrictions — liability-driven compliance rather than principle-driven safety
 - [[ideas/boring-infrastructure-shift]] — GPT-5.5 Instant's hallucination reduction is table stakes, not a breakthrough; the shift from "cool demo" to "boring infrastructure" means OpenAI competes on reliability and compliance, not just benchmarks
+- [[ideas/ai-security-auditing-mainstream]] — OpenAI's Trusted Contact safeguard frames safety as competitive moat, matching Anthropic's defensive security positioning; both labs are racing to own the "responsible AI" narrative
+- [[ideas/agent-control-interface-wars]] — OpenAI's Operator and Codex optimize for autonomous execution with minimal human interruption; Remy's approval-gate model is a direct philosophical counter-position that could split the enterprise market

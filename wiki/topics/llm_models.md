@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-08
+last_updated: 2026-05-09
 ---
 
 # LLM Models
@@ -99,6 +99,8 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-01 | Microsoft Copilot adds multi-model support | Claude joins OpenAI models in Copilot; 20M paid enterprise seats; Accenture 740K seats; Legal Agent launched as first profession-specific vertical |
 | 2026-04-28 | IBM Bob: multi-model orchestration for SDLC | Routes tasks to Claude, Mistral, IBM Granite based on fit; represents shift from "best single model" to "best model per task" architecture |
 | 2026-05-07 | MOSS-TTS open-source TTS family | 20+ languages, voice cloning from 3-second audio, real-time streaming (180ms TTFB); 8B/1.7B/0.1B variants for edge to cloud |
+| 2026-05-07 | DeepMind AlphaEvolve introduced | Gemini-powered coding agent using evolutionary computation; solved open matrix multiplication problems humans worked on for decades; generated new mathematical proofs |
+| 2026-05-08 | Google tests Remy AI agent for Gemini | New agentic system with user oversight and approval gates at each step; enterprise-focused control philosophy |
 | 2026-05-07 | OmniVoice open-source voice synthesis | 600+ languages, diffusion language model, voice design via speaker attributes; RTF 0.025 (40x faster than real-time) |
 
 ## Patterns & Insights
@@ -150,7 +152,7 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/context-mode]] — 98% context reduction MCP server; solves the noise problem that continuous agent execution creates
 - [[sources/anthropic]] — Claude Mythos developed and leaked by Anthropic; Opus 4.7 release; Project Glasswing
 - [[sources/openai]] — GPT-5.4 family, GPT-5.5 release, Spud completion, GPT-5.4-Cyber, GPT-Rosalind; GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" shifts liability to users
-- [[sources/google]] — Gemma 4 Apache 2.0 release, Gemini 3.1 Pro near-tie with Claude Opus 4.6, TPU 8th gen
+- [[sources/google]] — Gemma 4 Apache 2.0 release, Gemini 3.1 Pro near-tie with Claude Opus 4.6, TPU 8th gen; DeepMind's EVE Online partnership uses interactive game simulation for multi-agent economic training; potentially a response to the ARC-AGI-3 reasoning ceiling by learning through environment interaction rather than static data
 - [[entities/claude-mythos]] — Central to this period; too dangerous to release publicly
 - [[entities/claude-opus-4-7]] — Anthropic's latest flagship with 87.6% SWE-bench; powers Claude Security
 - [[entities/claude-design]] — Anthropic's direct challenge to Figma's design workflow
@@ -169,4 +171,7 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/microsoft-legal-agent]] — Claude integration in Copilot proves no single model provider wins enterprise AI alone; multi-model support is becoming table stakes
 - [[entities/moss-tts]] — Open-source TTS with 20+ languages and 3-second voice cloning commoditizes capabilities that were proprietary differentiators months ago; the 0.1B edge variant challenges cloud-dependent voice models
 - [[entities/omnivoice]] — 600+ language coverage dwarfs proprietary offerings (50-100 languages); validates that voice synthesis is becoming a commodity faster than text LLMs
-- [[sources/google]] — DeepMind's EVE Online partnership uses interactive game simulation for multi-agent economic training; potentially a response to the ARC-AGI-3 reasoning ceiling by learning through environment interaction rather than static data
+- [[entities/alphaevolve]] — AlphaEvolve represents a shift from "AI helps write code" to "AI discovers algorithms humans couldn't"; the matrix multiplication breakthrough shows evolutionary methods can transcend decades of human research in fundamental mathematics
+- [[entities/remy]] — Remy is not a new model but a new control interface for Gemini; it signals that model differentiation is increasingly about how humans interact with capabilities, not just raw benchmark scores
+- [[ideas/agent-control-interface-wars]] — Remy's approval-gate model vs OpenAI's autonomous execution represents a market split: enterprises may prefer controllable agents while consumers prefer fast autonomy
+- [[timelines/2026-05]] — May 2 ARC-AGI-3 reasoning ceiling, Mistral Medium 3.5 reasoning toggle, GB300 mass production, and May 7 AlphaEvolve/Remy launches are the month's defining model events

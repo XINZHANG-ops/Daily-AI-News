@@ -546,3 +546,29 @@ May 7, 2026 ingest complete. Here's what was processed:
 - Total content pages: 143
 - `processed.json` updated with `2026-05-07`
 - `log.md` appended with ingest record
+The wiki ingest for **2026-05-08** is complete. Here's what was done:
+
+**New entity pages created (5):**
+- `entities/cocoindex.md` — Incremental engine for long-horizon agents (9,018 stars)
+- `entities/ouroboros.md` — Declarative Agent OS shifting from prompts to specifications (3,677 stars)
+- `entities/ppt-master.md` — Native editable PPTX generation from any document (13,205 stars)
+- `entities/alphaevolve.md` — Gemini-powered evolutionary computation agent for algorithm discovery
+- `entities/remy.md` — Google's approval-gate agentic AI system for Gemini
+
+**New idea pages created (2):**
+- `ideas/ai-security-auditing-mainstream.md` — Mozilla using Claude Mythos for Firefox marks AI security auditing going mainstream
+- `ideas/agent-control-interface-wars.md` — Google's Remy approval gates vs OpenAI autonomy vs Anthropic IDE integration
+
+**Updated existing pages:**
+- `entities/claude-mythos.md` — Added Mozilla Firefox security audit details
+- `entities/perplexity-computer.md` — Added macOS public launch context
+- `sources/perplexity.md`, `openai.md`, `google.md`, `anthropic.md`, `mozilla.md` — Added May 8 timeline entries and annotated connections
+- `topics/agentic_ai.md`, `ai_safety.md`, `llm_models.md`, `github_trends.md`, `ai_companies.md` — Added key developments and synthesized patterns
+- `timelines/2026-05.md` — Added Week 2 May 8 narrative section
+
+**Finalized records:**
+- `index.md` — Updated to 88 entities and 30 ideas
+- `processed.json` — Appended `2026-05-08`
+- `log.md` — Appended ingest entry
+
+All connections use annotated `[[wikilinks]]` explaining WHY items relate, per the schema requirements.

@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-05-08
+last_updated: 2026-05-09
 ---
 
 # AI Funding
@@ -105,11 +105,10 @@ The investment pattern has shifted from model racing to infrastructure and appli
 **May 6: Capital allocation as defining constraint**: Anthropic's $200B Google Cloud commitment reveals the AI race is now a capital-allocation contest. Anthropic and OpenAI together account for >50% of cloud provider backlogs, meaning the entire industry's compute capacity is being cornered by two companies. This is not healthy competition; it's a duopoly that prices out everyone else. The multi-gigawatt TPU capacity starting in 2027 suggests Anthropic is betting Google's next-gen TPUs will outpace NVIDIA's Blackwell successor — a bet that looked risky before TSMC's 3nm yield crisis dropped to 52%. For Google, this is a masterstroke: it not only secures a captive customer but gets equity upside ($40B investment) and forces Anthropic to optimize for TPUs rather than CUDA, eroding NVIDIA's ecosystem lock-in.
 
 ## Connections
-- [[sources/openai]] — $122B raise, $852B valuation, IPO preparation
 - [[sources/openai]] — $122B raise, $852B valuation, IPO preparation; $10B Deployment Company venture ($4B at $10B valuation, 17.5% guaranteed PE returns) embeds engineers inside 2,000 PE portfolio companies
 - [[sources/anthropic]] — $30B Series G, ~$1T valuation, multi-gigawatt TPU deal, Google $40B investment; $200B Google Cloud commitment (40% of Google's backlog) is the largest cloud commitment in corporate history
 - [[sources/nvidia]] — Blackwell $11B Q4 revenue, Vera Rubin platform
-- [[sources/spacex]] — $250B xAI acquisition, $60B Cursor investment
+- [[sources/spacex]] — $250B xAI acquisition, $60B Cursor investment; Anthropic-SpaceX compute deal represents a new financing pattern: infrastructure barter between trillion-dollar entities when capital can't buy compute fast enough
 - [[sources/microsoft]] — $10B Japan infrastructure, $10B+ Nebius Finland commitment
 - [[sources/deepseek]] — Tencent/Alibaba investment talks, V4 release with open weights
 - [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
@@ -118,5 +117,5 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[sources/coinbase]] — $50-60M restructuring cost nearly offsets salary savings from 14% cut — proves the layoffs are about velocity, not cost reduction; AI productivity dividend must offset market shrinkage and headcount reduction
 - [[entities/caisi]] — Government pre-testing creates compliance costs that favor incumbents with legal teams over startups; regulatory fragmentation adds another capital barrier for entrants
 - [[sources/sierra]] — $950M at $15B with ~100x ARR multiple shows investors pricing enterprise AI agents as fastest-growing B2B category since cloud computing; the 8-month cycle from $350M to $950M is capital acceleration matching revenue acceleration
-- [[sources/spacex]] — Anthropic-SpaceX compute deal represents a new financing pattern: infrastructure barter between trillion-dollar entities when capital can't buy compute fast enough
 - [[ideas/compute-shortage-forces-cooperation]] — Compute scarcity is creating a barter economy among AI giants; partnerships, equity trades, and strategic concessions replace pure financial transactions when power is the binding constraint
+- [[timelines/2026-05]] — May 2 agent infrastructure funding wave (Netomi $110M, Standard Intelligence $75M, Actively $45M, Parallel $100M) and May 3-7 deals (Anthropic $1.5B JV, Sierra $950M, Anthropic-SpaceX compute partnership) show capital shifting from model training to operational layers

@@ -442,6 +442,16 @@ Ideas created: safety-restricted-releases, peer-preservation, agent-democratizat
 
 ---
 
+## [2026-05-08] ingest | 1 date
+
+Dates processed: 2026-05-08
+Topics updated: agentic_ai (cocoindex, ouroboros, Remy, AlphaEvolve), ai_safety (Mozilla Mythos audit, OpenAI Trusted Contact, US gov defense suppliers), llm_models (AlphaEvolve algorithm discovery, Remy control interface), github_trends (cocoindex 9K, ouroboros 3.6K, ppt-master 13.2K), ai_companies (Perplexity desktop, Pit, DeepMind AlphaEvolve, US gov Anthropic rethink)
+Sources updated: perplexity (macOS public launch), openai (Trusted Contact safeguard), google (AlphaEvolve, Remy), anthropic (US gov rethink, Mozilla Mythos partnership), mozilla (Firefox security hardening with Mythos)
+Entities created: cocoindex (9,018 stars, long-horizon agent engine), ouroboros (3,677 stars, declarative Agent OS), ppt-master (13,205 stars, native editable PPTX), alphaevolve (Gemini-powered evolutionary computation agent), remy (Google's approval-gate agent for Gemini)
+Entities updated: claude-mythos (Mozilla Firefox security audit), perplexity-computer (macOS public launch)
+Ideas created: ai-security-auditing-mainstream (Mozilla Mythos for Firefox marks mainstream AI security auditing), agent-control-interface-wars (Google Remy approval gates vs OpenAI autonomy vs Anthropic native IDE)
+Chat session insights applied: Apr 23 session noted ai_safety may need Bank of England/Qihoo 360 updates — both already present from prior ingests. No new gaps identified from May 8 data in chat sessions.
+
 ## Lint: 2026-05-08
 
 **Pass 1 — Structural integrity:**
@@ -467,3 +477,36 @@ Ideas created: safety-restricted-releases, peer-preservation, agent-democratizat
 **Index rebuilt:**
 - Counts unchanged: 6 topics, 23 sources, 3 timelines, 83 entities, 28 ideas
 - `Last updated` updated to 2026-05-08
+
+## Lint: 2026-05-09
+
+**Pass 1 — Structural integrity:**
+- Verified 150 content pages: 6 topics, 23 sources, 3 timelines, 88 entities, 30 ideas
+- All pages in index.md have corresponding .md files; no broken wikilinks across content pages
+- Timeline pages now have cross-references from all 6 topic pages (previously only linked from index.md)
+
+**Pass 2 — Wrong & duplicate information fixed:**
+- Removed 3 duplicate rows from `topics/agentic_ai.md` Key Developments table (Sierra $950M, AWS MCP Server GA, Cordenex repeated on lines 75-81)
+- Merged 15 duplicate connection lines across 10 files:
+  - `topics/ai_companies.md`: merged duplicate `[[sources/openai]]`, `[[sources/nvidia]]`, `[[sources/microsoft]]`, `[[sources/spacex]]`
+  - `topics/llm_models.md`: merged duplicate `[[sources/google]]`
+  - `topics/ai_funding.md`: merged duplicate `[[sources/openai]]`, `[[sources/spacex]]`
+  - `topics/ai_safety.md`: merged duplicate `[[sources/openai]]`, `[[sources/anthropic]]`
+  - `sources/deepseek.md`: merged duplicate `[[entities/deepseek-v4]]`
+  - `sources/xai.md`: merged duplicate `[[sources/spacex]]`
+  - `sources/mistral.md`: merged duplicate `[[entities/mistral-medium-3-5]]`
+  - `entities/mistral-medium-3-5.md`: merged duplicate `[[sources/mistral]]`
+  - `ideas/institutional-gap.md`: merged duplicate `[[topics/ai_safety]]`
+  - `timelines/2026-05.md`: merged duplicate `[[ideas/military-ai-divide]]`
+- Updated `last_updated` to 2026-05-09 on 12 files modified during lint
+
+**Pass 3 — Connection quality:**
+- Added timeline cross-references to all 6 topic pages, improving discoverability of monthly event narratives
+- Verified zero bare "Related:", "See also:", or unannotated links remain in any content page
+- All topic pages have required sections: Overview, Evolution, Patterns & Insights, Connections
+- No companies or people in entities/: all 88 entity types are valid (model, product, protocol, framework, repo, benchmark, legislation)
+
+**Index rebuilt:**
+- Counts unchanged: 6 topics, 23 sources, 3 timelines, 88 entities, 30 ideas
+- Total content pages: 150
+- `Last updated` updated to 2026-05-09

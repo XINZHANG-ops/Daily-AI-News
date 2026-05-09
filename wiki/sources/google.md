@@ -40,6 +40,8 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-05-05 | Agrees to CAISI pre-testing | Google, Microsoft, xAI volunteer for government evaluation of unreleased models; "voluntary with teeth" design — alternative was mandatory executive order |
 | 2026-05-05 | Anthropic commits $200B to Google Cloud | 40%+ of Google's disclosed cloud revenue backlog; multi-gigawatt TPU deal with Broadcom from 2027 |
 | 2026-05-06 | DeepMind acquires minority stake in CCP Games | EVE Online sandbox for training multi-agent economic and strategic AI; long-term research partnership |
+| 2026-05-06 | Google tests Remy AI agent for Gemini | New agentic system codenamed "Remy" emphasizing user oversight; allows review and approval of each step in multi-step workflows; enterprise-focused control philosophy |
+| 2026-05-07 | DeepMind introduces AlphaEvolve | Gemini-powered coding agent using evolutionary computation; solved open matrix multiplication problems, improved data center scheduling, generated new mathematical proofs |
 | 2026-04-14 | Gemini Robotics-ER 1.6 released | Industrial instrument reading for robots; multi-view success detection; Boston Dynamics Atlas integration for automotive tasks |
 
 ## Key Relationships
@@ -61,3 +63,6 @@ Google has deepened its role as an AI infrastructure provider and model competit
 - [[sources/anthropic]] — $200B Google Cloud commitment is the largest in corporate history; 40% of Google's cloud backlog; if Anthropic fails, Google's cloud growth narrative collapses
 - [[ideas/government-pre-testing]] — Google's participation in CAISI reveals the "voluntary with teeth" dynamic: even the largest labs prefer self-regulation to mandatory government oversight
 - [[topics/llm_models]] — DeepMind's EVE Online partnership uses interactive game simulation for multi-agent economic training; potentially a response to the ARC-AGI-3 reasoning ceiling by learning through environment interaction rather than static data
+- [[entities/alphaevolve]] — AlphaEvolve extends the Gemini paradigm into algorithmic discovery; it is Google's counter-positioning to OpenAI's benchmark dominance, targeting fundamental mathematical discovery rather than coding assistance
+- [[entities/remy]] — Remy reflects Google's risk-averse enterprise DNA; building for CIOs who need audit trails rather than individual developer productivity
+- [[ideas/agent-control-interface-wars]] — Remy is the flagship example of Google's controllable-agent philosophy; approval gates at each step vs competitors' continuous execution models

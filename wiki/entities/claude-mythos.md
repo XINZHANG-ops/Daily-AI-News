@@ -31,9 +31,14 @@ By April 20, the NSA confirmed partnership with Anthropic through Project Glassw
 
 By April 22, central banks worldwide responded. The Bank of England governor warned that Anthropic may have found a way to "crack the whole cyber-risk world open." Intelligence agencies globally scrambled to understand Mythos implications — marking the first time an AI model triggered emergency responses from central banks and intelligence agencies simultaneously.
 
+By May 8, Mozilla detailed using Claude Mythos Preview to identify and patch security vulnerabilities in the Firefox browser codebase. The AI analyzed C++ and Rust code to find memory safety issues and logic bugs that escaped human review. This marked a maturation point for AI-assisted security: a major browser vendor trusting an AI model with production code security.
+
 ## Connections
 - [[sources/anthropic]] — Developed and withheld by Anthropic
 - [[topics/ai_safety]] — Central to the safety-restricted release debate
 - [[ideas/safety-restricted-releases]] — Established the precedent for capability-based restrictions
 - [[entities/project-glasswing]] — The consortium enabling restricted Mythos access
 - [[entities/claude-opus-4-7]] — Cyber safeguards from Mythos work embedded in Opus 4.7
+- [[sources/mozilla]] — Mozilla's Firefox security audit using Mythos Preview is the first major non-Glasswing production deployment, proving the model's defensive value outside the restricted consortium
+- [[ideas/ai-security-auditing-mainstream]] — Mozilla's deployment marks the moment AI security auditing becomes mainstream; not using AI for security audits is becoming negligent
+- [[sources/openai]] — OpenAI's GPT-5.4-Cyber lacks a comparable production deployment at a major software vendor; Mozilla's Mythos use gives Anthropic a concrete advantage in the security market

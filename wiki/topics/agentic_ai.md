@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-08
+last_updated: 2026-05-09
 ---
 
 # Agentic AI
@@ -76,6 +76,10 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-07 | AWS MCP Server GA | 15,000+ API operations; managed remote MCP server with IAM integration; "Skills" feature replaces Agent SOPs |
 | 2026-05-07 | Cortiqaai/Cordenex (247 stars) | Multi-agent autonomous software engineer for terminal; collaborative coding, project planning, automated code review |
 | 2026-05-07 | Google DeepMind-CCP Games partnership | EVE Online sandbox for training multi-agent economic and strategic AI |
+| 2026-05-08 | cocoindex trending (9,018 stars) | Incremental engine for long-horizon agents; persistent stateful agents with automatic state management and recovery |
+| 2026-05-08 | ouroboros trending (3,677 stars) | Agent OS: declarative operating system shifting paradigm from prompt engineering to specification-driven behavior |
+| 2026-05-08 | Google tests Remy AI agent for Gemini | Emphasizes user oversight and approval gates at each step; enterprise-focused control philosophy vs autonomous execution |
+| 2026-05-08 | DeepMind AlphaEvolve introduced | Gemini-powered coding agent using evolutionary computation; solved open matrix multiplication problems and improved data center scheduling |
 
 ## Patterns & Insights
 
@@ -150,3 +154,10 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/aws-mcp-server]] — 15,000 AWS API operations accessible through MCP means agents can now manage cloud infrastructure at scale; "Skills" feature packages provider knowledge as reusable primitives
 - [[entities/cordenex]] — Multi-agent collaborative coding extends the architecture from individual assistance to team workflows; the team-based focus distinguishes it from personal agents (nanobot) and swarm orchestration (Ruflo)
 - [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX deal means agent infrastructure providers must secure compute partnerships to survive; the agent layer's maturity depends on the infrastructure layer's stability
+- [[entities/cocoindex]] — Incremental engine for long-horizon agents; solves the state-persistence gap that prevents most agents from handling multi-day or multi-week workflows reliably
+- [[entities/ouroboros]] — Declarative agent OS that shifts from prompt engineering to specification-driven behavior; "Stop prompting. Start specifying." captures the maturation of agent development from artisanal to engineering discipline
+- [[entities/remy]] — Google's approval-gate agent model introduces a new UX philosophy: human-in-the-loop by default rather than autonomy by default; challenges the "agent-as-employee" model
+- [[entities/alphaevolve]] — DeepMind's evolutionary computation agent discovers algorithms humans couldn't; extends agentic AI from code generation to fundamental research automation
+- [[ideas/agent-control-interface-wars]] — Remy's controllable agents vs Symphony's continuous execution vs Claude Code's native IDE integration — three competing philosophies for how humans interact with autonomous systems
+- [[ideas/ai-security-auditing-mainstream]] — Mozilla using Mythos for Firefox security auditing extends the agent paradigm into code security; agents are becoming the auditors of the infrastructure they run on
+- [[timelines/2026-05]] — May 2-8 is the agent infrastructure week: Serena semantic code, Netomi $110M, Ruflo/GitNexus enterprise-scale, Stripe/IBM/OpenAI convergence, nanobot minimalism, and May 8's cocoindex/ouroboros/Remy trifecta

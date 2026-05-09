@@ -2,7 +2,7 @@
 title: "Mistral Medium 3.5"
 slug: mistral-medium-3-5
 type: model
-last_updated: 2026-05-06
+last_updated: 2026-05-09
 ---
 
 # Mistral Medium 3.5
@@ -30,10 +30,9 @@ On May 5, Mistral officially launched Medium 3.5 with "Work Mode" in Le Chat —
 
 ## Connections
 - [[entities/vibe]] — Mistral bundled Vibe cloud coding agents with Medium 3.5; the model + agent stack strategy competes with standalone coding agents like Claude Code and Codex
-- [[sources/mistral]] — Medium 3.5 is Mistral's first "merged" flagship, complementing the enterprise-focused Ultra 2
+- [[sources/mistral]] — Medium 3.5 is Mistral's first "merged" flagship, complementing the enterprise-focused Ultra 2; official May 5 launch adds Work Mode and Remote Agents in Vibe; EU AI Act €11.2M fine makes privacy-first positioning more urgent
 - [[entities/mistral-ultra-2]] — Ultra 2 scored 78.4% SWE-bench at €2/M; Medium 3.5 at 77.6% is nearly equivalent but adds the reasoning toggle and Vibe agent integration
 - [[entities/claude-opus-4-7]] — Medium 3.5's 77.6% SWE-bench lags Opus 4.7's 87.6% but the reasoning toggle and lower price point target a different market segment
 - [[topics/llm_models]] — The unified chat+reasoning model with per-request toggle represents a design pattern alternative to the multi-model approach of OpenAI and Anthropic
-- [[sources/mistral]] — Official May 5 launch adds Work Mode and Remote Agents in Vibe; EU AI Act €11.2M fine makes privacy-first positioning more urgent
 - [[ideas/boring-infrastructure-shift]] — Work Mode and Remote Agents are the boring infrastructure for reliable agent execution — not exciting capabilities but the plumbing that makes agents deployable at scale
 - [[ideas/government-pre-testing]] — EU AI Act Phase 2 fines (€11.2M on Mistral, €8.4M on Stability AI) prove Europe is taking a harder line than the US, creating a balkanized regulatory landscape

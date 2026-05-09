@@ -1,7 +1,7 @@
 ---
 title: "Institutional Gap"
 slug: institutional-gap
-last_updated: 2026-05-02
+last_updated: 2026-05-09
 ---
 
 # Institutional Gap
@@ -34,8 +34,7 @@ The most important test: the Musk vs Altman case. If OpenAI must revert to non-p
 ## Connections
 - [[ideas/safety-restricted-releases]] — Claude Mythos withheld not because of regulatory requirement but because Anthropic chose to build facts on the ground; the regulatory accommodation came after
 - [[ideas/ai-governance-urgency]] — Geoffrey Hinton's "car with no brake" warning reflects the governance gap; the car is accelerating faster than brakes can be installed
-- [[topics/ai_safety]] — The institutional gap is a safety issue: governance frameworks cannot keep pace with capability deployment
+- [[topics/ai_safety]] — The institutional gap is a safety issue: governance frameworks cannot keep pace with capability deployment; the Five Eyes guidance's five risk categories map directly onto every use case the military contracts enable — the institutions writing the warnings are deploying the technology
 - [[topics/ai_funding]] — GitHub's platform economics crisis is an institutional gap problem: the business model was built for a different scale and type of usage
 - [[sources/openai]] — The Musk vs Altman trial is the first major test of whether the institutional framework can reverse what has been built
 - [[ideas/military-ai-divide]] — The Five Eyes/Pentagon split on May 1 is the institutional gap's most visible example: governance frameworks published for technology deployed yesterday
-- [[topics/ai_safety]] — The Five Eyes guidance's five risk categories map directly onto every use case the military contracts enable; the institutions writing the warnings are deploying the technology

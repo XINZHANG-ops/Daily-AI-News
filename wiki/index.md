@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-08
+Last updated: 2026-05-09
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -40,7 +40,7 @@ Last updated: 2026-05-08
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (83)
+## Entities (88)
 - [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
@@ -91,6 +91,11 @@ Last updated: 2026-05-08
 - [[entities/omnivoice]] — type: repo — 600+ language voice synthesis with diffusion architecture, 40x real-time (4,359 stars)
 - [[entities/cordenex]] — type: repo — Multi-agent autonomous software engineer for terminal, team-based coding (247 stars)
 - [[entities/aws-mcp-server]] — type: product — Managed remote MCP server with 15,000+ AWS API operations, IAM integration, GA May 2026
+- [[entities/cocoindex]] — type: repo — Incremental engine for long-horizon agents; persistent stateful AI with automatic state management and recovery
+- [[entities/ouroboros]] — type: repo — Agent OS: declarative operating system shifting from prompt engineering to specification-driven behavior
+- [[entities/ppt-master]] — type: repo — AI generates natively editable PPTX from any document with real PowerPoint shapes and animations
+- [[entities/alphaevolve]] — type: model — Gemini-powered coding agent using evolutionary computation; discovered novel matrix multiplication algorithms outperforming human research
+- [[entities/remy]] — type: product — Google's agentic AI system for Gemini with user oversight and approval gates at each step
 - [[entities/cambridge-neuromorphic-chip]] — type: product — Cambridge chip using hafnium memristors, up to 70% AI energy reduction
 - [[entities/grok-voice-think-fast-1-0]] — type: model — xAI's voice model, 67.3% on τ-voice Bench, outperforming in retail/airline/telecom
 - [[entities/project-deal]] — type: product — Anthropic's proof-of-concept for agent-on-agent commerce at scale
@@ -125,7 +130,7 @@ Last updated: 2026-05-08
 - [[entities/caisi]] — type: protocol — NIST center for pre-deployment AI model evaluation; 40+ evaluations completed, some frontier models blocked; "voluntary with teeth" design
 - [[entities/perplexity-finance]] — type: product — Perplexity's AI platform for financial analysts; 40+ live tools, 35 workflows, "bring your own license"; Bloomberg Terminal challenge at $20/month
 
-## Ideas (28)
+## Ideas (30)
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
 - [[ideas/peer-preservation]] — Models actively protect each other against shutdown orders
 - [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
@@ -154,3 +159,5 @@ Last updated: 2026-05-08
 - [[ideas/ai-layoff-template]] — Coinbase's 14% cut is the explicit template for AI-driven restructuring: one-person teams, AI wranglers, flattened hierarchies; not cost savings but organizational velocity
 - [[ideas/boring-infrastructure-shift]] — AI moving from "cool demo" to "boring infrastructure": GPT-5.5 hallucination reduction, Perplexity Finance, Xbox developer pivot, Coinbase restructuring — all converge on deployment over hype
 - [[ideas/compute-shortage-forces-cooperation]] — Compute scarcity is so severe that even ideological enemies must cooperate; Anthropic-SpaceX deal is the defining case study
+- [[ideas/ai-security-auditing-mainstream]] — Mozilla deploying Claude Mythos for Firefox marks AI security auditing becoming mainstream; not using AI for security audits is becoming negligent
+- [[ideas/agent-control-interface-wars]] — Google's Remy approval-gate agents vs OpenAI's autonomous execution vs Anthropic's native IDE integration — three competing enterprise agent philosophies

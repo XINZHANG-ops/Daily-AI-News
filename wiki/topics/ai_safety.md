@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-08
+last_updated: 2026-05-09
 ---
 
 # AI Safety
@@ -67,6 +67,9 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-05 | Coinbase cuts 14% (~700 jobs) | "One-person teams," AI wrangler roles; restructuring cost nearly offsets salary savings |
 | 2026-05-05 | Perplexity Finance launches | 40+ live finance tools, 35 prebuilt workflows; traceable outputs with citations to SEC filings |
 | 2026-05-05 | Mistral Medium 3.5 + Work Mode | On-device agentic "Work Mode" and "Remote Agents in Vibe" for async cloud execution |
+| 2026-05-07 | Mozilla deploys Claude Mythos Preview for Firefox security | AI caught bugs missed by human reviewers including subtle logic errors; first major browser vendor trusting AI with production code security |
+| 2026-05-07 | OpenAI introduces Trusted Contact safeguard | New self-harm prevention feature with opt-in architecture; launched as teen ChatGPT usage climbs to 40% of 13-17 age bracket |
+| 2026-05-07 | US government expands AI defense suppliers | Reassessing partnerships with frontier labs; reflects concerns about concentration risk and Anthropic's commercial ambitions vs governance commitments |
 
 ## Patterns & Insights
 
@@ -97,8 +100,8 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 **May 6: Government pre-testing and the balkanization of safety**: CAISI's launch marks the most consequential AI policy development of 2026 — the shift from voluntary frameworks to structured government pre-release evaluation. The "voluntary with teeth" design (companies joined because the alternative was a mandatory executive order) proves this is not theater. Anthropic's Mythos was the catalyst: when a company voluntarily refuses to release a model for safety reasons, it forces regulators to act. The parallel with FDA drug trials is intentional — CAISI is positioning itself as the approval gate for AI "therapeutics." But the governance gap is enormous: 200 staff evaluating 500+ model versions per year. Simultaneously, EU AI Act Phase 2 fines on Mistral (€11.2M) and Stability AI (€8.4M) prove Europe is taking a harder line, creating a balkanized regulatory landscape where models need different disclosures and evaluations for each jurisdiction. The compliance cost alone will favor incumbents.
 
 ## Connections
-- [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior," Pentagon exclusion for refusing to drop safety guardrails
-- [[sources/openai]] — Musk vs Altman trial threatens to invalidate commercial structure; GPT-5.4-Cyber positioned for cyber defense; joined Pentagon coalition while restricting GPT-5.5 Cyber
+- [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior," Pentagon exclusion for refusing to drop safety guardrails; US government's "rethink" of Anthropic partnerships reflects the tension between commercial ambitions and governance commitments; Anthropic's safety-first branding attracted government interest but scaling to defense-grade reliability while maintaining constitutional AI principles is proving complex
+- [[sources/openai]] — Musk vs Altman trial threatens to invalidate commercial structure; GPT-5.4-Cyber positioned for cyber defense; joined Pentagon coalition while restricting GPT-5.5 Cyber; Trusted Contact safeguard frames safety as competitive moat; both OpenAI and Anthropic are racing to own the "responsible AI" positioning as regulators draft rules for AI-teen interactions
 - [[sources/meta]] — MCI employee keystroke tracking; €800M EU AI Act fine for unauthorized data training
 - [[sources/tsmc]] — TSMC's 3nm yield collapse to 52% is a physics-based reality check; Q3 compute supply cliff for AI labs
 - [[ideas/safety-restricted-releases]] — Claude Mythos as the first capability-based restriction
@@ -119,3 +122,7 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[entities/perplexity-finance]] — Traceable outputs with citations to SEC filings and licensed databases make Perplexity Finance auditable in a way that GPT-5.5's "memory sources" are not — citation-first design as safety feature
 - [[sources/mistral]] — EU AI Act €11.2M fine for training-data transparency failures; Mistral's Work Mode running on user-controlled environments is a direct response to regulatory exposure
 - [[ideas/boring-infrastructure-shift]] — AI is moving from "cool demo" to "boring infrastructure" — and safety is the dullest, most important part: CAISI pre-testing, EU fines, and Coinbase restructuring all treat AI as infrastructure that must be regulated like any other critical system
+- [[ideas/ai-security-auditing-mainstream]] — Mozilla's Firefox audit using Claude Mythos Preview marks the moment AI security auditing becomes mainstream; not using AI for security audits is becoming negligent
+- [[sources/mozilla]] — Mozilla's deployment of Mythos for Firefox is the first major production use of Mythos outside Glasswing, proving the model's defensive value and creating a recursive safety loop where AI audits code that runs future AI systems
+- [[ideas/agent-control-interface-wars]] — Remy's approval-gate model is a safety architecture: if every agent action requires human approval, malicious prompt injection has fewer opportunities for autonomous exploitation
+- [[timelines/2026-05]] — May 1-5 concentrates the safety crisis: GUARD Act, Pentagon "any lawful use," IPI confirmation, CAISI pre-testing, and Mozilla Mythos audit all arrive within one week

@@ -1,7 +1,7 @@
 ---
 title: "Mistral"
 slug: mistral
-last_updated: 2026-05-06
+last_updated: 2026-05-09
 ---
 
 # Mistral
@@ -25,11 +25,10 @@ Mistral AI is a French AI lab positioning itself as the geopolitically neutral, 
 
 ## Connections
 - [[entities/mistral-ultra-2]] — The flagship model released April 29; EU-compliant alternative for enterprise coding
-- [[entities/mistral-medium-3-5]] — 128B dense model with reasoning toggle; one-model-for-all design pattern
+- [[entities/mistral-medium-3-5]] — 128B dense model with reasoning toggle; one-model-for-all design pattern; official May 5 launch adds Work Mode (on-device agentic mode) and Remote Agents in Vibe (async cloud execution); EU AI Act €11.2M fine makes privacy-first positioning more urgent
 - [[entities/vibe]] — Vertically integrated cloud coding agents; Mistral following Anthropic's Claude Code growth strategy
 - [[topics/llm_models]] — Competing in the cost-performance frontier alongside DeepSeek V4-Pro-Max and Claude Opus 4.7
 - [[ideas/institutional-gap]] — Mistral's EU data residency positioning exploits the regulatory-reputational siege on US tech
-- [[entities/mistral-medium-3-5]] — Official May 5 launch adds Work Mode (on-device agentic mode) and Remote Agents in Vibe (async cloud execution); EU AI Act €11.2M fine makes privacy-first positioning more urgent
 - [[ideas/boring-infrastructure-shift]] — Work Mode and Remote Agents are the boring infrastructure for reliable agent execution — not exciting capabilities but the plumbing that makes agents deployable at scale
 - [[ideas/government-pre-testing]] — EU AI Act Phase 2 fines (€11.2M on Mistral, €8.4M on Stability AI) prove Europe is taking a harder line than the US, creating a balkanized regulatory landscape
 - [[topics/ai_safety]] — EU fines and Work Mode's user-controlled execution are two sides of the same coin: regulatory pressure driving technical architecture toward user sovereignty
