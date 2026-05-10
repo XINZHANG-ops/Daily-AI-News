@@ -79,6 +79,10 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-08 | cocoindex trending (9,018 stars) | Incremental engine for long-horizon agents; persistent stateful agents with automatic state management and recovery |
 | 2026-05-08 | ouroboros trending (3,677 stars) | Agent OS: declarative operating system shifting paradigm from prompt engineering to specification-driven behavior |
 | 2026-05-08 | Google tests Remy AI agent for Gemini | Emphasizes user oversight and approval gates at each step; enterprise-focused control philosophy vs autonomous execution |
+| 2026-05-09 | OpenSwarm (892 stars) | Multi-agent system for non-coding work (presentations, documents, research, visual assets); 8 specialized agents including Orchestrator and Deep Research
+| 2026-05-09 | dexter trending (25.4K stars) | "Claude Code for finance" — autonomous financial research with SEC filings, loop detection, WhatsApp gateway
+| 2026-05-09 | eliezer trending (3.2K stars) | Self-hosted AI agent with self-editing protocol, PWA push notifications, SQLite memory with auto compaction
+| 2026-05-09 | DR-Venus trending (1.8K stars) | 4B-parameter deep research agent on open data; establishes small-model frontier on BrowseComp and GAIA
 | 2026-05-08 | DeepMind AlphaEvolve introduced | Gemini-powered coding agent using evolutionary computation; solved open matrix multiplication problems and improved data center scheduling |
 
 ## Patterns & Insights
@@ -114,6 +118,8 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 **May 6: Agents fragment by vertical**: Three repos trending signal agent maturity beyond coding into research, production operations, and document understanding. AutoResearch (79.2K stars) is Karpathy's autonomous LLM research agent that experiments overnight on a single GPU — extending "configuration over code" into autonomous experimentation. Hive (10.2K stars) is a production multi-agent harness with graph-based execution DAGs, self-healing failure recovery, and cost enforcement — filling the operational reliability gap. Mistral's Work Mode in Le Chat and Remote Agents in Vibe allow coding agents to run asynchronously in the cloud and notify users when complete — the infrastructure layer for reliable agent execution. Xbox's pivot from consumer Copilot to CoreAI developer tools confirms the meta-pattern: consumer-facing AI agents are expensive retention sinks, while developer-facing tools have immediate ROI.
 
 **Capability regression as competitive vulnerability**: Claude Code's engineering missteps and months of silence before acknowledgment created a window for OpenAI to land GPT-5.5 (with Codex roots) the same day the backlash story broke. Power users have options, and brand loyalty erodes fast when the coding agent doesn't code reliably — this is a real retention risk, not just a PR problem.
+
+**May 9: Agent Verticalization Confirmed by Open Source**: Four repos trending on May 9 all target specific professional workflows rather than general-purpose assistance. Dexter (25.4K stars) is "Claude Code for finance" — self-validating research with SEC filings and WhatsApp alerts. OpenSwarm (892 stars) handles non-coding work (presentations, documents, visual assets) that Claude Code cannot. Eliezer (3.2K stars) is a self-editing personal agent with PWA push notifications. DR-Venus (1.8K stars) proves 4B parameters can compete on research benchmarks. The pattern is unmistakable: the open-source ecosystem is replicating Anthropic's verticalization strategy at scale, and each vertical is attracting dedicated stars and forks.
 
 ## Connections
 - [[entities/claude-code]] — Primary driver of Anthropic's ARR growth
@@ -158,6 +164,9 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/ouroboros]] — Declarative agent OS that shifts from prompt engineering to specification-driven behavior; "Stop prompting. Start specifying." captures the maturation of agent development from artisanal to engineering discipline
 - [[entities/remy]] — Google's approval-gate agent model introduces a new UX philosophy: human-in-the-loop by default rather than autonomy by default; challenges the "agent-as-employee" model
 - [[entities/alphaevolve]] — DeepMind's evolutionary computation agent discovers algorithms humans couldn't; extends agentic AI from code generation to fundamental research automation
+- [[entities/dexter]] — 25.4K stars for "Claude Code for finance" validates that vertical agents can attract significant open-source attention; self-validating research with SEC integration shows the workflow-depth moat
+- [[entities/eliezer]] — Self-editing protocol in 6K lines of TypeScript represents a genuine self-modification loop; auditable codebase makes it safe where Claude Code's 512K lines are not
+- [[entities/dr-venus]] — 4B-parameter research specialist proves narrow tasks don't need frontier scale; the open-source layer of the research-agent vertical is maturing
 - [[ideas/agent-control-interface-wars]] — Remy's controllable agents vs Symphony's continuous execution vs Claude Code's native IDE integration — three competing philosophies for how humans interact with autonomous systems
 - [[ideas/ai-security-auditing-mainstream]] — Mozilla using Mythos for Firefox security auditing extends the agent paradigm into code security; agents are becoming the auditors of the infrastructure they run on
 - [[timelines/2026-05]] — May 2-8 is the agent infrastructure week: Serena semantic code, Netomi $110M, Ruflo/GitNexus enterprise-scale, Stripe/IBM/OpenAI convergence, nanobot minimalism, and May 8's cocoindex/ouroboros/Remy trifecta

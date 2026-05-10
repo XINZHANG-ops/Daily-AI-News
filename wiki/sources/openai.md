@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-08
+last_updated: 2026-05-10
 ---
 
 # OpenAI
@@ -58,6 +58,10 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-05 | GPT-5.5 Instant becomes ChatGPT default | 52.5% fewer hallucinations on high-stakes prompts vs GPT-5.3 Instant; 37.3% reduction in inaccurate claims on challenging conversations; "memory sources" feature shows context for each response |
 | 2026-05-05 | Agrees to CAISI pre-testing | OpenAI renegotiated Biden-era agreements to align with Trump's AI Action Plan; participation alongside Google, Microsoft, xAI, Anthropic |
 | 2026-05-07 | OpenAI introduces Trusted Contact safeguard | New safety feature for self-harm prevention; opt-in architecture suggesting pre-designated contacts and crisis resources; launched as teen ChatGPT usage climbs (40% of 13-17 age bracket in Q1) |
+| 2026-05-09 | GPT-Realtime-2 API launched | First voice model with GPT-5-class reasoning; 128K context in voice model; full pipeline of transcription, reasoning, and synthesis
+| 2026-05-09 | GPT-Realtime-Translate API | 70+ input languages to 13 output languages; live translation targeting Google Translate and Zoom
+| 2026-05-09 | GPT-Realtime-Whisper API | Low-latency streaming transcription; completes the full voice stack
+| 2026-05-09 | Zillow and Priceline partnerships | Early adopters building voice assistants for real estate and travel booking — vertical strategy for high-friction workflows
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -67,7 +71,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 - **Amazon**: Largest investor in latest round ($50B). AWS integration for enterprise customers.
 
 ## Connections
-- [[entities/gpt-5.4]] — Flagship model family; Thinking, Mini, Nano, Cyber variants
+- [[entities/gpt-5.4]] — Model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026
 - [[entities/gpt-5.5]] — Latest model (codename "Spud") with "super app" integration vision; 49-day release cycle for enterprise procurement lock-in; deployed on Pentagon classified networks; GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" feature shifts liability to users
 - [[entities/codex]] — 3M weekly users, primary coding agent product
 - [[entities/symphony]] — Open-source orchestration spec for Codex at fleet scale; 15K+ stars

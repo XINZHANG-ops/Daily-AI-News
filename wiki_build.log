@@ -572,3 +572,28 @@ The wiki ingest for **2026-05-08** is complete. Here's what was done:
 - `log.md` — Appended ingest entry
 
 All connections use annotated `[[wikilinks]]` explaining WHY items relate, per the schema requirements.
+The wiki ingest workflow for 2026-05-09 is now complete. Here's what was done:
+
+**New entity pages created (6):**
+- `entities/natural-language-autoencoders.md` — Anthropic's interpretability breakthrough
+- `entities/gpt-realtime-2.md` — OpenAI's 128K-context voice pipeline
+- `entities/prithvi.md` — NASA orbital geospatial AI on Kanyini/ISS
+- `entities/dexter.md` — "Claude Code for finance" (25.4K stars)
+- `entities/eliezer.md` — Self-editing agent in ~6K lines TypeScript (3.2K stars)
+- `entities/dr-venus.md` — 4B-parameter deep research agent
+
+**New idea pages created (2):**
+- `ideas/interpretability-economics.md` — Interpretability as competitive moat
+- `ideas/ai-orbital-infrastructure.md` — AI as orbital infrastructure
+
+**Updated pages:**
+- 6 topic pages (llm_models, agentic_ai, ai_safety, github_trends, ai_companies, ai_funding)
+- 3 source pages (anthropic, openai, perplexity)
+- 1 timeline (timelines/2026-05.md)
+
+**Index/registry updates:**
+- `wiki/index.md` — Added 6 entities and 2 ideas, updated counts (94 entities, 32 ideas)
+- `wiki/processed.json` — Appended "2026-05-09"
+- `wiki/log.md` — Added ingest entry for 2026-05-09
+
+Chat sessions from wiki_sessions/ were reviewed with no new structural gaps identified.

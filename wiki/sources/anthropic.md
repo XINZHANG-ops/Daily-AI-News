@@ -52,6 +52,9 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-06 | SpaceX compute partnership | 300+ MW at Colossus 1 Memphis; addresses acute compute shortage causing service reliability issues; Musk impressed by Anthropic team after prior criticism |
 | 2026-05-07 | Mozilla deploys Claude Mythos Preview for Firefox security | AI analyzed C++ and Rust code to find memory safety issues and logic bugs missed by human review; first major browser vendor trusting AI with production code security
 | 2026-05-07 | US government rethinks Anthropic defense partnership | Defense and public sector agencies expanding approved vendor lists while reassessing partnerships with specific frontier labs; tension between Anthropic's commercial ambitions and governance commitments |
+| 2026-05-09 | Natural Language Autoencoders released | First interpretability tool translating model activations into human-readable text; "glass box" paradigm for understanding frontier model reasoning
+| 2026-05-09 | 10 finance-focused AI agents unveiled | Specialized agents for risk assessment, compliance monitoring, portfolio analysis, regulatory reporting; designed to integrate with existing banking systems
+| 2026-05-09 | Dual launch strategy: interpretability + verticalization | Autoencoders provide auditable reasoning for finance regulators; 10 finance agents provide the workflows; Anthropic is the only lab offering both capability and explainability
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.

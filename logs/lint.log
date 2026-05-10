@@ -307,3 +307,26 @@ All passes complete. What would you like to work on next?
  create mode 100644 wiki/entities/remy.md
  create mode 100644 wiki/ideas/agent-control-interface-wars.md
  create mode 100644 wiki/ideas/ai-security-auditing-mainstream.md
+[2026-05-10 01:00:01] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+Wiki lint complete. Here's what was fixed:
+
+**Structural fixes (2)**
+- Removed broken `[[entities/openswarm]]` in `timelines/2026-05.md` (target doesn't exist)
+- Removed self-reference `[[entities/openhands-sdk]]` in `entities/openhands-sdk.md`
+
+**Stale claims (3)**
+- Updated `entities/gemini-3-1-pro.md`: noted the Opus 4.6 near-tie was later broken by Opus 4.7 (87.6%); added connection to Opus 4.7
+- Updated `topics/llm_models.md`: corrected gpt-5.4 from "flagship" to note superseded by GPT-5.5
+- Updated `sources/openai.md`: same gpt-5.4 correction
+
+**Index update (1)**
+- Updated `index.md`: corrected gpt-5.4 entity description and bumped `Last updated` to 2026-05-10
+
+**Verification results**
+- 160 total pages, 0 broken links, 0 orphan pages
+- 94 entities: all valid types, no companies or people
+- 0 duplicate pages, 0 weak/unannotated connections
+- All 6 topic pages have required sections (Overview, Evolution, Patterns & Insights, Connections)
+- Lint entry appended to `wiki/log.md`
+[2026-05-10 01:12:52] Wiki lint complete (exit code 0).

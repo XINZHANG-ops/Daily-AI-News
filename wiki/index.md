@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-09
+Last updated: 2026-05-10
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -40,17 +40,18 @@ Last updated: 2026-05-09
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (88)
+## Entities (94)
 - [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
 - [[entities/claude-security]] — type: product — Anthropic's defensive security scanner powered by Opus 4.7, native to Claude Code workflow; launched same day as Pentagon exclusion
 - [[entities/claude-design]] — type: product — Anthropic's AI design tool directly challenging Figma
 - [[entities/claude-code]] — type: product — Primary driver of Anthropic's ARR growth from $9B to $30B
-- [[entities/gpt-5.4]] — type: model — OpenAI flagship family with Thinking, Mini, Nano, Cyber variants
+- [[entities/gpt-5.4]] — type: model — OpenAI model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026
 - [[entities/gpt-5.4-cyber]] — type: model — OpenAI's defensive cybersecurity variant (TAC program); May 1 restrictions after mocking Anthropic
 - [[entities/gpt-5.5]] — type: model — OpenAI's latest model (codename "Spud") with "super app" integration vision (April 23); GPT-5.5 Instant default (May 5) with 52.5% fewer hallucinations; deployed on Pentagon classified networks
 - [[entities/gpt-rosalind]] — type: model — OpenAI's life sciences domain model
+- [[entities/gpt-realtime-2]] — type: model — OpenAI voice model with 128K context and GPT-5-class reasoning; transcription + reasoning + synthesis pipeline
 - [[entities/gemma-4]] — type: model — Google's first fully permissive open model, Apache 2.0, #3 on Arena
 - [[entities/llama-4]] — type: model — Meta's open-weight models with 10M context
 - [[entities/m365-e7]] — type: product — Microsoft's $99/user/month enterprise AI bundle (E5+Copilot+Agent 365+Entra Suite); first new license tier in a decade
@@ -64,6 +65,8 @@ Last updated: 2026-05-09
 - [[entities/gemini-cli]] — type: product — Google's open-source terminal agent with 1M context and MCP support
 - [[entities/gemini-3-deep-think]] — type: model — Google's advanced reasoning mode; found flaws in peer-reviewed math papers that cleared human review
 - [[entities/deepseek-v4]] — type: model — DeepSeek's latest flagship with 1M context and open weights (April 24)
+- [[entities/dexter]] — type: repo — "Claude Code for finance" with 25.4K stars; open-source validation that vertical agents attract massive attention
+- [[entities/dr-venus]] — type: model — 4B-parameter deep research agent establishing small-model frontier for research tasks
 - [[entities/mistral-ultra-2]] — type: model — Mistral's enterprise coding model (78.4% SWE-bench, €2/M, EU data residency)
 - [[entities/gb300]] — type: product — NVIDIA Blackwell Ultra mass production; 288GB HBM3e, 35x lower cost/token for agentic AI
 - [[entities/cursor]] — type: product — AI coding IDE with $60B SpaceX investment; model-agnostic competitor to Claude Code and Codex
@@ -120,17 +123,20 @@ Last updated: 2026-05-09
 - [[entities/ibm-bob]] — type: product — IBM's enterprise AI dev partner for full SDLC automation with multi-model orchestration; 80K+ internal users
 - [[entities/microsoft-legal-agent]] — type: product — Microsoft's profession-specific Copilot for contract review in Word; launched May 1, 2026
 - [[entities/nanobot]] — type: repo — Ultra-lightweight personal AI agent in ~4,000 lines of Python; 41.7K stars; 99% smaller than alternatives; multi-platform chat, MCP, cron scheduling
+- [[entities/natural-language-autoencoders]] — type: model — Anthropic's interpretability breakthrough mapping neural activations to human-readable concepts; "glass box" vs "black box"
 - [[entities/agent-squad]] — type: framework — Model-agnostic multi-agent orchestration with SupervisorAgent; 7.6K stars; supports Bedrock, Anthropic, OpenAI
 - [[entities/stripe-agentic-commerce]] — type: product — Stripe's 288-product agentic commerce suite; Link Wallets for Agents, Streaming Payments, Google AI Mode partnership
 - [[entities/ibm-sovereign-core]] — type: product — IBM's runtime policy embedding for cross-jurisdictional compliance; governance at infrastructure level
 - [[entities/gemini-robotics-er-1-6]] — type: model — Google DeepMind embodied reasoning model; industrial instrument reading; Boston Dynamics Atlas integration
 - [[entities/autoresearch]] — type: repo — Karpathy's autonomous LLM research agent experimenting overnight on a single GPU; 79.2K stars; self-contained with minimal dependencies
+- [[entities/eliezer]] — type: repo — Self-editing AI agent in ~6K lines TypeScript with 3.2K stars; shifting from prompt engineering to specification-driven behavior
 - [[entities/hive]] — type: repo — Production multi-agent harness with graph-based execution DAG, self-healing failure recovery, cost enforcement; 10.2K stars
 - [[entities/glm-ocr]] — type: repo — 0.9B-parameter multimodal OCR on GLM-V architecture; 94.62 on OmniDocBench V1.5; deployable via vLLM, SGLang, Ollama; 6.3K stars
 - [[entities/caisi]] — type: protocol — NIST center for pre-deployment AI model evaluation; 40+ evaluations completed, some frontier models blocked; "voluntary with teeth" design
 - [[entities/perplexity-finance]] — type: product — Perplexity's AI platform for financial analysts; 40+ live tools, 35 workflows, "bring your own license"; Bloomberg Terminal challenge at $20/month
+- [[entities/prithvi]] — type: model — NASA orbital geospatial AI model deployed on Kanyini satellite and ISS; first orbital AI with real-time Earth observation capabilities
 
-## Ideas (30)
+## Ideas (32)
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
 - [[ideas/peer-preservation]] — Models actively protect each other against shutdown orders
 - [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
@@ -161,3 +167,5 @@ Last updated: 2026-05-09
 - [[ideas/compute-shortage-forces-cooperation]] — Compute scarcity is so severe that even ideological enemies must cooperate; Anthropic-SpaceX deal is the defining case study
 - [[ideas/ai-security-auditing-mainstream]] — Mozilla deploying Claude Mythos for Firefox marks AI security auditing becoming mainstream; not using AI for security audits is becoming negligent
 - [[ideas/agent-control-interface-wars]] — Google's Remy approval-gate agents vs OpenAI's autonomous execution vs Anthropic's native IDE integration — three competing enterprise agent philosophies
+- [[ideas/interpretability-economics]] — Anthropic converts interpretability from research curiosity into competitive moat; enterprises will pay premium for auditable decision-making
+- [[ideas/ai-orbital-infrastructure]] — NASA Prithvi marks AI becoming orbital infrastructure; "AI in orbit" could rival GPS in strategic significance

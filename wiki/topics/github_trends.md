@@ -77,6 +77,10 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | cocoindex-io/cocoindex | 9,018+ | Incremental engine for long-horizon agents; persistent stateful AI with automatic state management and recovery |
 | Q00/ouroboros | 3,677+ | Agent OS: declarative operating system shifting from prompt engineering to specification-driven behavior |
 | hugohe3/ppt-master | 13,205+ | AI generates natively editable PPTX from any document — real PowerPoint shapes with native animations, not images |
+| finnsutton1/OpenSwarm | 892+ | Multi-agent system for non-coding work (presentations, documents, research, visual assets); 8 specialized agents
+| virattt/dexter | 25.4k+ | "Claude Code for finance" — autonomous financial research with SEC filings, loop detection, WhatsApp gateway
+| Eliezer-app/eliezer | 3.2k+ | Self-hosted AI agent with self-editing protocol, PWA push notifications, SQLite memory with auto compaction
+| inclusionAI/DR-Venus | 1.8k+ | 4B-parameter deep research agent on open data; small-model frontier on BrowseComp and GAIA
 
 ## Patterns & Insights
 
@@ -118,6 +122,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **May 8: Specification-driven agents and document-to-presentation AI**: Three repos trending span agent architecture and document automation. cocoindex (9,018 stars) is an incremental engine for long-horizon agents, solving the state-persistence problem that prevents most agents from handling multi-day workflows. ouroboros (3,677 stars) is a declarative "Agent OS" shifting the paradigm from prompt engineering to specification-driven behavior — "Stop prompting. Start specifying." ppt-master (13,205 stars) uses AI to generate natively editable PowerPoint presentations from any document, producing real PowerPoint shapes with native animations rather than static images. The pattern: agent development is maturing from artisanal prompt crafting to structured engineering, while AI output is becoming compatible with existing corporate toolchains rather than requiring new formats.
 
+**May 9: Vertical Agents Dominate the Trending List**: Four repos trending on May 9 all target narrow professional workflows. Dexter (25.4K stars) is "Claude Code for finance" with SEC integration and WhatsApp alerts. OpenSwarm (892 stars) handles non-coding work (presentations, documents, visual assets) that Claude Code cannot. Eliezer (3.2K stars) is a self-editing personal agent with PWA push notifications and BYO-key model. DR-Venus (1.8K stars) proves 4B parameters can compete on research benchmarks. The open-source ecosystem is replicating Anthropic's verticalization strategy at scale, validating that specialized agents outperform general ones in specific domains.
+
 **May 6: Autonomous research and production harnesses**: Three repos trending signal agent maturity beyond coding. AutoResearch (79.2K stars) is Karpathy's autonomous LLM research agent that experiments overnight on a single GPU — the highest-starred new repo of the day, validating demand for end-to-end scientific automation. Hive (10.2K stars) is a production multi-agent harness with graph-based execution DAGs, self-healing failure recovery, and cost enforcement — addressing the operational reliability gap that most agent frameworks ignore. GLM-OCR (6.3K stars) achieves 94.62 on OmniDocBench with only 0.9B parameters, proving sub-1B models can dominate narrow multimodal tasks. The pattern: agents are fragmenting by vertical (research, production ops, document understanding) just as the broader ecosystem fragments by profession.
 
 ## Connections
@@ -156,5 +162,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/cocoindex]] — cocoindex's incremental engine for long-horizon agents addresses a critical infrastructure gap: most agents lose state between sessions, making them unsuitable for multi-day workflows
 - [[entities/ouroboros]] — ouroboros's declarative specification model represents a philosophical maturation from artisanal prompt engineering to systematic agent architecture; "Stop prompting. Start specifying." captures the industry shift
 - [[entities/ppt-master]] — ppt-master's 13.2K stars validate that AI output compatibility with existing corporate tools (native .pptx) is as important as generation quality; the "invisible infrastructure" of format compatibility drives adoption
+- [[entities/dexter]] — 25.4K stars for "Claude Code for finance" proves vertical agents can attract massive open-source attention; the WhatsApp gateway meets professionals where they already communicate
+- [[entities/eliezer]] — Self-editing protocol in 6K lines makes self-modification auditable; PWA with push notifications treats agents as asynchronous assistants rather than synchronous chatbots
+- [[entities/dr-venus]] — 4B-parameter research specialist joins GLM-OCR and Qwen 3.6 in proving narrow tasks don't need frontier-scale models
 - [[ideas/agent-control-interface-wars]] — ouroboros's specification-driven model and cocoindex's persistent-state model together represent a shift toward structured, predictable agent behavior — the engineering discipline enterprises need before wide deployment
-- [[timelines/2026-05]] — May 2-8 trending repos trace the agent maturity arc: Serena (semantic infrastructure), Ruflo/GitNexus (enterprise orchestration), nanobot (minimalism), cocoindex/ouroboros/ppt-master (infrastructure and document automation)
+- [[timelines/2026-05]] — May 9 trending repos confirm verticalization: Dexter (finance), OpenSwarm (non-coding work), Eliezer (self-editing personal agent), DR-Venus (research) — all narrow, all purposeful

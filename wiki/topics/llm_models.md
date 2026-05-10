@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-09
+last_updated: 2026-05-10
 ---
 
 # LLM Models
@@ -101,6 +101,9 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-07 | MOSS-TTS open-source TTS family | 20+ languages, voice cloning from 3-second audio, real-time streaming (180ms TTFB); 8B/1.7B/0.1B variants for edge to cloud |
 | 2026-05-07 | DeepMind AlphaEvolve introduced | Gemini-powered coding agent using evolutionary computation; solved open matrix multiplication problems humans worked on for decades; generated new mathematical proofs |
 | 2026-05-08 | Google tests Remy AI agent for Gemini | New agentic system with user oversight and approval gates at each step; enterprise-focused control philosophy |
+| 2026-05-09 | Anthropic Natural Language Autoencoders | First interpretability tool translating model activations into human-readable text; "glass box" vs "black box" paradigm |
+| 2026-05-09 | OpenAI GPT-Realtime-2 API launch | First voice model with GPT-5-class reasoning and 128K context; full voice pipeline (transcription/reasoning/translation) |
+| 2026-05-09 | NASA Prithvi deployed in orbit | First geospatial AI foundation model in space; processes Earth observation on Kanyini satellite and ISS |
 | 2026-05-07 | OmniVoice open-source voice synthesis | 600+ languages, diffusion language model, voice design via speaker attributes; RTF 0.025 (40x faster than real-time) |
 
 ## Patterns & Insights
@@ -143,6 +146,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 
 **May 7: Voice AI commoditization accelerates**: MOSS-TTS (20+ languages, voice cloning, real-time streaming) and OmniVoice (600+ languages, 40x real-time inference) trending on GitHub the same week signals that open-source voice synthesis is outpacing proprietary differentiation. Unlike text LLMs where frontier labs maintain benchmark leads, voice models appear to be converging on "good enough" faster — the marginal utility of proprietary voice over open alternatives is shrinking. The 0.1B parameter edge variant of MOSS-TTS enables on-device voice output without cloud dependency, addressing privacy and latency concerns that enterprise users increasingly prioritize. Meanwhile, Google DeepMind's EVE Online partnership uses game environments to train multi-agent economic AI, suggesting models may learn reasoning through interactive simulation rather than static training data — a potential response to the ARC-AGI-3 ceiling.
 
+**May 9: The Interpretability and Voice Frontiers**: Anthropic's Natural Language Autoencoders and OpenAI's GPT-Realtime-2 represent two different bets on what comes after the benchmark-saturated model race. Anthropic is betting on interpretability — making models auditable before regulators mandate it. OpenAI is betting on voice as the next primary interface — a full pipeline of transcription, reasoning, and synthesis that could make traditional app UI irrelevant. NASA's Prithvi deployment hints at a third frontier: AI as orbital infrastructure. While terrestrial AI saturates, space-based edge computing opens new capabilities with strategic geopolitical significance.
+
 **May 2: The Reasoning Ceiling Exposed and Design Patterns Evolve**: ARC-AGI-3 results deliver the most damning empirical critique of the LLM paradigm to date. GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18%) — models that dominate SWE-bench — score below 1% on interactive reasoning puzzles humans solve effortlessly. The three systematic errors identified (failure to form world models, incorrect environment mapping to known games, carrying false theories forward) reveal LLMs don't reason about novel situations — they pattern-match to the nearest memorized template. This lands the same week David Silver's RL-native startup raised $1.1B, and the market is already pricing in a post-LLM paradigm. Meanwhile, Mistral Medium 3.5 introduces a design pattern worth watching: one 128B dense model with a reasoning-effort toggle per request, eliminating the need for separate chat/reasoning model variants. The 77.6% SWE-bench score is solid but not category-defining; the real bet is on the vertically integrated Vibe cloud coding agents bundled with the release.
 
 ## Connections
@@ -156,7 +161,7 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/claude-mythos]] — Central to this period; too dangerous to release publicly
 - [[entities/claude-opus-4-7]] — Anthropic's latest flagship with 87.6% SWE-bench; powers Claude Security
 - [[entities/claude-design]] — Anthropic's direct challenge to Figma's design workflow
-- [[entities/gpt-5.4]] — OpenAI's flagship model family with Thinking, Mini, Nano, Cyber variants
+- [[entities/gpt-5.4]] — OpenAI's model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026
 - [[entities/gpt-rosalind]] — OpenAI's life sciences domain model
 - [[entities/gemma-4]] — Google's first fully permissive open model, ranked #3 on Arena
 - [[entities/deepseek-v4]] — DeepSeek's latest with 1M context and open weights, Tencent/Alibaba investment talks
@@ -173,5 +178,9 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/omnivoice]] — 600+ language coverage dwarfs proprietary offerings (50-100 languages); validates that voice synthesis is becoming a commodity faster than text LLMs
 - [[entities/alphaevolve]] — AlphaEvolve represents a shift from "AI helps write code" to "AI discovers algorithms humans couldn't"; the matrix multiplication breakthrough shows evolutionary methods can transcend decades of human research in fundamental mathematics
 - [[entities/remy]] — Remy is not a new model but a new control interface for Gemini; it signals that model differentiation is increasingly about how humans interact with capabilities, not just raw benchmark scores
+- [[entities/natural-language-autoencoders]] — Anthropic's bidirectional translation layer between model activations and human language; the Rosetta Stone for frontier model reasoning and a potential enterprise differentiator as regulators demand explainability
+- [[entities/gpt-realtime-2]] — OpenAI's full voice pipeline with 128K context and GPT-5-class reasoning; challenges the assumption that voice models are limited to short utterances
+- [[entities/prithvi]] — NASA's orbital geospatial model proves AI can run on space-grade hardware; if models work in orbit, terrestrial edge deployment becomes trivial
+- [[entities/dr-venus]] — 4B-parameter research agent trained on 10K open samples; joins GLM-OCR and Qwen 3.6 as evidence that narrow tasks can be dominated by small specialized models
 - [[ideas/agent-control-interface-wars]] — Remy's approval-gate model vs OpenAI's autonomous execution represents a market split: enterprises may prefer controllable agents while consumers prefer fast autonomy
-- [[timelines/2026-05]] — May 2 ARC-AGI-3 reasoning ceiling, Mistral Medium 3.5 reasoning toggle, GB300 mass production, and May 7 AlphaEvolve/Remy launches are the month's defining model events
+- [[timelines/2026-05]] — May 9 adds interpretability (Autoencoders), voice (GPT-Realtime-2), and orbital AI (Prithvi) as the month's defining frontier events

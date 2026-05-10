@@ -17,6 +17,9 @@ Perplexity has grown from an AI search engine to a full-stack AI platform. April
 | 2026-04-17 | Revenue growth reported | 5x growth to $500M; headcount up only 34% |
 | 2026-05-05 | Perplexity Finance launched | AI platform for financial analysts; 40+ live tools, 35 prebuilt workflows; licensed data from Morningstar, PitchBook, Daloopa, Carbon Arc; "bring your own license" model; $20/month Pro vs Bloomberg $25,000/year |
 | 2026-05-07 | Perplexity Personal Computer macOS public launch | AI-powered search and productivity app generally available to all Mac users after limited beta; integrates local file search with web search and conversational AI; differentiates from ChatGPT desktop with native file system integration |
+| 2026-05-09 | Personal Computer expanded to all Mac users | 400+ connectors, local file access, multi-step workflows across local machines and web services; new Mac app distributed outside App Store
+| 2026-05-09 | Pro tier pricing clarified | $17-20/month for full automation vs $200/month for Max (Model Council); undercuts enterprise alternatives while capturing power users
+| 2026-05-09 | Remote control feature (Mac mini + iPhone) | First viable "cloud personal assistant" without constant phone tethering; sleeper hit of the launch
 
 ## Key Relationships
 - **OpenAI**: Competitor in AI search and agentic AI

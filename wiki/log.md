@@ -1,5 +1,48 @@
 # Wiki Log
 
+## [2026-05-10] wiki lint | comprehensive health check
+
+**Pass 1 — Structural integrity:**
+- Verified 158 content pages match index.md exactly: 6 topics, 23 sources, 3 timelines, 94 entities, 32 ideas
+- Fixed broken wikilink `[[entities/openswarm]]` in `timelines/2026-05.md` (target does not exist; removed link, kept plain text)
+- Fixed self-referencing link `[[entities/openhands-sdk]]` in `entities/openhands-sdk.md`
+- Verified zero orphan pages (all pages have inbound links including from index.md)
+- Verified no companies or people in entities/: all 94 entity types valid (model, product, protocol, framework, repo, benchmark, legislation)
+
+**Pass 2 — Wrong & duplicate information fixed:**
+- Updated `entities/gemini-3-1-pro.md`: noted that the near-tie with Opus 4.6 was later broken by Opus 4.7 (87.6%); added connection to Opus 4.7; last_updated 2026-04-20 → 2026-05-10
+- Updated `topics/llm_models.md`: corrected stale gpt-5.4 description from "OpenAI's flagship model family" to note superseded by GPT-5.5
+- Updated `sources/openai.md`: corrected stale gpt-5.4 description from "Flagship model family" to note superseded by GPT-5.5
+- Updated `index.md`: corrected gpt-5.4 entity description to match updated pages
+- Verified zero duplicate pages covering the same concept
+- Verified zero duplicate paragraphs across content pages
+- Verified zero frontmatter issues (all non-timeline pages have title, slug, last_updated; timelines have month, last_updated)
+
+**Pass 3 — Connection quality:**
+- Verified zero bare "Related:", "See also:", or unannotated links in any content page
+- Verified all 6 topic pages have required sections: Overview, Evolution, Patterns & Insights, Connections
+- Verified all connections explain WHY things connect
+- Verified zero empty sections across all content pages
+
+**Index rebuilt:**
+- Topics: 6 (unchanged)
+- Sources: 23 (unchanged)
+- Timelines: 3 (unchanged)
+- Entities: 94 (unchanged)
+- Ideas: 32 (unchanged)
+- Total content pages: 158
+- Last updated: 2026-05-10
+
+## [2026-05-09] ingest | 1 date
+
+Dates processed: 2026-05-09
+Topics updated: llm_models (Natural Language Autoencoders interpretability breakthrough, GPT-Realtime-2 128K voice pipeline, Prithvi orbital AI, DR-Venus 4B research agent), agentic_ai (dexter 25.4K finance vertical, eliezer 3.2K self-editing agent, DR-Venus deep research, OpenSwarm trending), ai_safety (EU regulatory chill delaying AI Act enforcement, Anthropic autoencoders as safety tool), github_trends (dexter 25.4K, eliezer 3.2K, DR-Venus 4B model, OpenSwarm), ai_companies (Anthropic 10 finance agents verticalization, Perplexity PC expansion, OpenAI voice pipeline with Zillow/Priceline), ai_funding (vertical solutions as valuation justification: Anthropic finance agents, Perplexity launch, OpenAI voice)
+Sources updated: anthropic (Natural Language Autoencoders, 10 finance agents, dual launch strategy), openai (GPT-Realtime-2, GPT-Realtime-Translate, GPT-Realtime-Whisper, Zillow/Priceline partnerships), perplexity (Personal Computer expansion, Pro pricing, remote control feature)
+Timelines updated: 2026-05 (Week 2 — May 9: Anthropic dual launch, Perplexity desktop gambit, OpenAI voice pipeline, EU regulatory chill, NASA Prithvi in orbit, GitHub trending repos)
+Entities created: natural-language-autoencoders (Anthropic's interpretability breakthrough, glass box vs black box), gpt-realtime-2 (OpenAI voice model with 128K context and GPT-5-class reasoning), prithvi (NASA orbital geospatial AI on Kanyini satellite and ISS), dexter (25.4K stars, Claude Code for finance), eliezer (3.2K stars, self-editing agent in ~6K lines TypeScript), dr-venus (4B-parameter deep research agent, small-model frontier)
+Ideas created: interpretability-economics (interpretability as competitive moat and revenue feature; auditable decision-making premium), ai-orbital-infrastructure (AI as orbital infrastructure with geopolitical significance; jurisdiction questions for satellite AI)
+Chat session insights applied: 3 chat sessions reviewed from wiki_sessions/ (Apr 23, Apr 25-26, Apr 28). No new structural gaps identified; sessions confirm ongoing trends (military-safety divide, agent verticalization, Claude Code quality) already covered in wiki.
+
 ## [2026-05-07] ingest | 1 date
 
 Dates processed: 2026-05-07

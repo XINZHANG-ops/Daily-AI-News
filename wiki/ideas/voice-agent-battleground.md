@@ -22,5 +22,9 @@ The timing is significant: grok-voice launched right after GPT-5.5 week when all
 
 ## Connections
 - [[entities/grok-voice-think-fast-1-0]] — xAI's flagship voice model with specific workflow superiority
-- [[topics/llm_models]] — General performance benchmarks saturating; specialization the new frontier
+- [[entities/gpt-realtime-2]] — OpenAI's full voice pipeline with 128K context and GPT-5-class reasoning transforms voice from short-command to document-processing interface; completes the trifecta of transcription, reasoning, and synthesis
+- [[topics/llm_models]] — General performance benchmarks saturating; specialization the new frontier; voice is now a three-way race (OpenAI full pipeline, xAI vertical workflow superiority, Google Gemini voice)
 - [[sources/xai]] — Voice as part of SpaceX's competitive positioning
+- [[sources/openai]] — GPT-Realtime-2's Zillow/Priceline partnerships reveal voice verticalization strategy: real estate and travel booking are high-friction workflows where voice agents can replace form-filling
+- [[sources/google]] — Google's Gemini 3.1 Flash TTS and Siri integration are direct competitors; OpenAI's 128K context and 70+ language translation outflank Google's current voice offerings
+- [[ideas/agent-verticalization]] — Voice is following the same verticalization pattern as coding and finance: Zillow (real estate) and Priceline (travel) are the first voice-specific professional workflows

@@ -25,3 +25,7 @@ Verticalization changes the competitive dynamics of enterprise AI. The moat shif
 - [[entities/claude-code]] — Claude Code drove Anthropic's ARR from $9B to $30B as a horizontal developer tool; verticalization asks: what's the Claude Code for lawyers? For accountants? For doctors?
 - [[ideas/enterprise-ai-lock-in]] — Verticalization is the mechanism: profession-specific AI tools (Legal Agent) make switching costs higher than horizontal AI assistants ever could
 - [[ideas/application-layer-shift]] — Verticalization is the logical next step after the application-layer shift: first compete on apps, then compete on profession-specific apps
+- [[entities/dexter]] — 25.4K stars for "Claude Code for finance" is the open-source validation that vertical agents can attract massive attention; the WhatsApp gateway meets professionals where they already communicate
+- [[sources/anthropic]] — Anthropic's 10 finance agents are the closed-source counterpart to Dexter's open-source finance research agent; both bet on finance as the right beachhead: high-value transactions, regulatory complexity, and incumbents ripe for disruption
+- [[entities/natural-language-autoencoders]] — Vertical agents in regulated industries require interpretability by default; Anthropic's autoencoders are the infrastructure layer that makes finance verticalization legally viable
+- [[ideas/interpretability-economics]] — Verticalization and interpretability are two sides of the same coin: you can't sell vertical AI to regulated industries unless the reasoning is auditable

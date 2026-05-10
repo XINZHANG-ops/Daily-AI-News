@@ -35,3 +35,6 @@ India's AIGEG panel (April 21) represents the first government body explicitly f
 - [[ideas/ai-job-displacement]] — Labor displacement is accelerating without corresponding governance response
 - [[entities/guard-act]] — Senate GUARD Act with criminal penalties passed unanimously; first bipartisan AI legislation with teeth
 - [[ideas/military-ai-divide]] — Pentagon deploys frontier models at scale while governance frameworks are still being drafted
+- [[ideas/ai-orbital-infrastructure]] — Prithvi in orbit raises governance questions about jurisdiction: which nation's laws apply to AI running on satellites?
+- [[ideas/interpretability-economics]] — Regulatory mandates for explainability are the governance driver behind Anthropic's autoencoders; governance urgency creates market demand for interpretability tools
+- [[entities/natural-language-autoencoders]] — The autoencoders are a technical pre-emption of regulatory requirements; if governance frameworks mandate explainability, labs without interpretability tools face market exclusion
