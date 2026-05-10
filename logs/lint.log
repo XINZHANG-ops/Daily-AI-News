@@ -330,3 +330,13 @@ Wiki lint complete. Here's what was fixed:
 - All 6 topic pages have required sections (Overview, Evolution, Patterns & Insights, Connections)
 - Lint entry appended to `wiki/log.md`
 [2026-05-10 01:12:52] Wiki lint complete (exit code 0).
+[main 4453965] wiki: lint 2026-05-10
+ 31 files changed, 655 insertions(+), 21 deletions(-)
+ create mode 100644 wiki/entities/dexter.md
+ create mode 100644 wiki/entities/dr-venus.md
+ create mode 100644 wiki/entities/eliezer.md
+ create mode 100644 wiki/entities/gpt-realtime-2.md
+ create mode 100644 wiki/entities/natural-language-autoencoders.md
+ create mode 100644 wiki/entities/prithvi.md
+ create mode 100644 wiki/ideas/ai-orbital-infrastructure.md
+ create mode 100644 wiki/ideas/interpretability-economics.md
