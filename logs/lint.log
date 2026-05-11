@@ -367,3 +367,13 @@ Wiki lint complete. Here's what was fixed:
 - All frontmatter valid
 - Index matches disk exactly: 6 topics, 24 sources, 3 timelines, 98 entities, 34 ideas
 [2026-05-11 01:12:34] Wiki lint complete (exit code 0).
+[main 2010373] wiki: lint 2026-05-11
+ 28 files changed, 617 insertions(+), 36 deletions(-)
+ create mode 100644 wiki/entities/ernie-5-1.md
+ create mode 100644 wiki/entities/multica.md
+ create mode 100644 wiki/entities/openswarm.md
+ create mode 100644 wiki/entities/trymeka-agent.md
+ create mode 100644 wiki/ideas/alignment-reality-check.md
+ create mode 100644 wiki/ideas/regulatory-fragmentation.md
+ create mode 100644 wiki/sources/baidu.md
+ create mode 100644 wiki/wiki_lint.py
