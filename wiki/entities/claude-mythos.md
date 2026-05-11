@@ -2,7 +2,7 @@
 title: "Claude Mythos"
 slug: claude-mythos
 type: model
-last_updated: 2026-05-01
+last_updated: 2026-05-10
 ---
 
 # Claude Mythos
@@ -32,6 +32,8 @@ By April 20, the NSA confirmed partnership with Anthropic through Project Glassw
 By April 22, central banks worldwide responded. The Bank of England governor warned that Anthropic may have found a way to "crack the whole cyber-risk world open." Intelligence agencies globally scrambled to understand Mythos implications — marking the first time an AI model triggered emergency responses from central banks and intelligence agencies simultaneously.
 
 By May 8, Mozilla detailed using Claude Mythos Preview to identify and patch security vulnerabilities in the Firefox browser codebase. The AI analyzed C++ and Rust code to find memory safety issues and logic bugs that escaped human review. This marked a maturation point for AI-assisted security: a major browser vendor trusting an AI model with production code security.
+
+By May 10, Claude Mythos Preview discovered thousands of additional zero-day vulnerabilities including a 27-year-old bug in OpenBSD and a 17-year-old remote code execution flaw in FreeBSD. The findings prompted Federal Reserve Chairman Jerome Powell and Treasury Secretary Scott Bessent to convene emergency meetings with major US bank CEOs. The IMF flagged AI-powered cyber threats to global banking. The controlled rollout via Project Glasswing (~40 companies get early access to patch) represents a new model: responsible disclosure at scale. But the 6-12 month window before adversaries replicate Mythos's capabilities means the security landscape is about to shift dramatically — organizations without AI-assisted security teams will be defending against AI-assisted attackers.
 
 ## Connections
 - [[sources/anthropic]] — Developed and withheld by Anthropic

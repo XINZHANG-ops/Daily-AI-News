@@ -597,3 +597,13 @@ The wiki ingest workflow for 2026-05-09 is now complete. Here's what was done:
 - `wiki/log.md` — Added ingest entry for 2026-05-09
 
 Chat sessions from wiki_sessions/ were reviewed with no new structural gaps identified.
+Ingest workflow for 2026-05-10 is complete. All wiki artifacts updated:
+
+- **Topics updated (5):** `llm_models`, `ai_companies`, `ai_safety`, `agentic_ai`, `github_trends`
+- **Sources updated (5):** `anthropic`, `google`, `microsoft`, `xai`, `baidu` (new)
+- **Entities created (3):** `multica`, `trymeka-agent`, `ernie-5-1`
+- **Ideas created (2):** `alignment-reality-check`, `regulatory-fragmentation`
+- **Timelines updated:** `2026-05.md`
+- **Index:** Entities count 94 → 97, Sources 23 → 24, Ideas 32 → 34
+- **Processed:** `2026-05-10` appended to `wiki/processed.json`
+- **Log:** Ingest entry added to `wiki/log.md`

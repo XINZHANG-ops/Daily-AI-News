@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-07
+last_updated: 2026-05-10
 ---
 
 # Google
@@ -43,6 +43,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-05-06 | Google tests Remy AI agent for Gemini | New agentic system codenamed "Remy" emphasizing user oversight; allows review and approval of each step in multi-step workflows; enterprise-focused control philosophy |
 | 2026-05-07 | DeepMind introduces AlphaEvolve | Gemini-powered coding agent using evolutionary computation; solved open matrix multiplication problems, improved data center scheduling, generated new mathematical proofs |
 | 2026-04-14 | Gemini Robotics-ER 1.6 released | Industrial instrument reading for robots; multi-view success detection; Boston Dynamics Atlas integration for automotive tasks |
+| 2026-05-10 | Signs binding NIST safety agreement | Mandatory pre-deployment testing for frontier models (cyber, bio, autonomous); gains regulatory legitimacy while Anthropic, Meta, OpenAI notably absent from initial agreement |
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.

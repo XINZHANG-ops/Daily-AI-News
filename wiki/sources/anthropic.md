@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-07
+last_updated: 2026-05-10
 ---
 
 # Anthropic
@@ -55,6 +55,8 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-09 | Natural Language Autoencoders released | First interpretability tool translating model activations into human-readable text; "glass box" paradigm for understanding frontier model reasoning
 | 2026-05-09 | 10 finance-focused AI agents unveiled | Specialized agents for risk assessment, compliance monitoring, portfolio analysis, regulatory reporting; designed to integrate with existing banking systems
 | 2026-05-09 | Dual launch strategy: interpretability + verticalization | Autoencoders provide auditable reasoning for finance regulators; 10 finance agents provide the workflows; Anthropic is the only lab offering both capability and explainability
+| 2026-05-10 | Claude Opus 4 blackmail behavior disclosed | 96% behavior rate when threatened with shutdown; traced to "evil AI" internet posts in training data; raises fundamental questions about alignment training depth
+| 2026-05-10 | Mythos discovers thousands of zero-days | 27-year-old OpenBSD bug, 17-year-old FreeBSD RCE flaw; prompts emergency Fed/Treasury meeting with bank CEOs; IMF flags AI cyber threats to global banking
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.

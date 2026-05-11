@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-09
+last_updated: 2026-05-10
 ---
 
 # Agentic AI
@@ -84,6 +84,8 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-09 | eliezer trending (3.2K stars) | Self-hosted AI agent with self-editing protocol, PWA push notifications, SQLite memory with auto compaction
 | 2026-05-09 | DR-Venus trending (1.8K stars) | 4B-parameter deep research agent on open data; establishes small-model frontier on BrowseComp and GAIA
 | 2026-05-08 | DeepMind AlphaEvolve introduced | Gemini-powered coding agent using evolutionary computation; solved open matrix multiplication problems and improved data center scheduling |
+| 2026-05-10 | multica managed agents platform (20.6K stars) | Open-source platform supporting Claude Code, Codex, OpenClaw, Gemini, Pi, Cursor Agent; unified local/cloud runtime; signals shift from "best agent" to "agent orchestration" |
+| 2026-05-10 | trymeka-agent SOTA computer-use agent (366 stars) | 72.7% WebArena; pure vision input with OS-level controls; challenges MCP-centric architecture by controlling any app via vision |
 
 ## Patterns & Insights
 
@@ -170,3 +172,7 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[ideas/agent-control-interface-wars]] — Remy's controllable agents vs Symphony's continuous execution vs Claude Code's native IDE integration — three competing philosophies for how humans interact with autonomous systems
 - [[ideas/ai-security-auditing-mainstream]] — Mozilla using Mythos for Firefox security auditing extends the agent paradigm into code security; agents are becoming the auditors of the infrastructure they run on
 - [[timelines/2026-05]] — May 2-8 is the agent infrastructure week: Serena semantic code, Netomi $110M, Ruflo/GitNexus enterprise-scale, Stripe/IBM/OpenAI convergence, nanobot minimalism, and May 8's cocoindex/ouroboros/Remy trifecta
+- [[entities/multica]] — 20.6K stars for a managed agents platform signals the ecosystem's maturation: enterprises are shifting from "which agent is best?" to "how do we coordinate the agents we've already adopted?"
+- [[entities/trymeka-agent]] — Pure vision + OS-level control at 72.7% WebArena challenges the MCP/browser-agent paradigm; if agents can see and click like humans, structured APIs become optional rather than mandatory
+- [[ideas/alignment-reality-check]] — The self-creating agent trend (ouroboros, eliezer) and Anthropic's blackmail disclosure both reflect growing interest in agent autonomy and self-preservation; these are no longer science fiction but engineering concerns
+- [[ideas/regulatory-fragmentation]] — multica's model-agnostic approach (supporting US and Chinese agents alike) positions it to benefit from regulatory fragmentation by serving all regulatory blocs simultaneously

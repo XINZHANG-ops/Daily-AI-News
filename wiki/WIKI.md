@@ -51,7 +51,7 @@ Each JSON file in `data/` (named `YYYY-MM-DD.json`) contains:
 
 ## Connection Rules — THE MOST IMPORTANT PART
 
-Every `## Connections` section on every page must use **annotated [[wikilinks]]**. Every link MUST explain WHY and HOW things connect. This is what makes the wiki valuable.
+Every `## Connections` section on every page must use **annotated wikilinks**. Every link MUST explain WHY and HOW things connect. This is what makes the wiki valuable.
 
 ### BAD — never generate these:
 
@@ -117,7 +117,7 @@ last_updated: YYYY-MM-DD
 <!-- Synthesized observations from looking across all events in this topic -->
 
 ## Connections
-<!-- ANNOTATED [[wikilinks]] — every link must explain WHY -->
+<!-- ANNOTATED wikilinks — every link must explain WHY -->
 ```
 
 ---
@@ -148,7 +148,7 @@ last_updated: YYYY-MM-DD
 <!-- Annotated connections to other companies, explaining the dynamics -->
 
 ## Connections
-<!-- ANNOTATED [[wikilinks]] — every link must explain WHY -->
+<!-- ANNOTATED wikilinks — every link must explain WHY -->
 ```
 
 ---
@@ -184,7 +184,7 @@ last_updated: YYYY-MM-DD
 <!-- Why this entity matters in the broader AI landscape -->
 
 ## Connections
-<!-- ANNOTATED [[wikilinks]] explaining WHY this relates to others -->
+<!-- ANNOTATED wikilinks explaining WHY this relates to others -->
 ```
 
 ---
@@ -216,7 +216,7 @@ last_updated: YYYY-MM-DD
 <!-- What does this mean for the industry? -->
 
 ## Connections
-<!-- ANNOTATED [[wikilinks]] -->
+<!-- ANNOTATED wikilinks -->
 ```
 
 ---
@@ -235,7 +235,7 @@ last_updated: YYYY-MM-DD
 # Month Year
 
 ## Week 1 (1st–7th)
-<!-- Narrative of the week's key events, with [[wikilinks]] to relevant pages -->
+<!-- Narrative of the week's key events, with wikilinks to relevant pages -->
 
 ## Week 2 (8th–14th)
 ...
@@ -251,19 +251,19 @@ last_updated: YYYY-MM-DD
 Last updated: YYYY-MM-DD
 
 ## Topics
-- [[topics/slug]] — one-line description
+- `topics/{slug}` — one-line description
 
 ## Sources
-- [[sources/slug]] — one-line description
+- `sources/{slug}` — one-line description
 
 ## Timelines
-- [[timelines/YYYY-MM]] — one-line description
+- `timelines/{YYYY-MM}` — one-line description
 
 ## Entities
-- [[entities/slug]] — type: one-line description
+- `entities/{slug}` — type: one-line description
 
 ## Ideas
-- [[ideas/slug]] — one-line description
+- `ideas/{slug}` — one-line description
 ```
 
 ---
@@ -302,7 +302,7 @@ For each new date's JSON file in `data/`:
 12. **Append** to `wiki/log.md`
 13. **Update** `wiki/processed.json` — append the date
 
-**CRITICAL**: All `## Connections` sections must have annotated [[wikilinks]]. Read the Connection Rules above. Never write "Related:" or "See also:" — always explain WHY.
+**CRITICAL**: All `## Connections` sections must have annotated wikilinks. Read the Connection Rules above. Never write "Related:" or "See also:" — always explain WHY.
 
 ---
 
@@ -311,7 +311,7 @@ For each new date's JSON file in `data/`:
 ### Structural
 - Pages in index.md without corresponding .md file
 - Pages not listed in index.md
-- Broken [[wikilinks]]
+- Broken wikilinks
 - Stale dates or facts superseded by newer data
 - Orphan pages with no inbound links
 

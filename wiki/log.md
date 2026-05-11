@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-10] ingest | 1 date
+
+**Dates processed:** 2026-05-10
+**Topics updated:** llm_models, ai_companies, ai_safety, agentic_ai, github_trends
+**Sources updated:** anthropic, google, microsoft, xai, baidu (new)
+**Entities created (3):** multica, trymeka-agent, ernie-5-1
+**Ideas created (2):** alignment-reality-check, regulatory-fragmentation
+
+---
+
 ## [2026-05-10] wiki lint | comprehensive health check
 
 **Pass 1 — Structural integrity:**
@@ -553,3 +563,33 @@ Chat session insights applied: Apr 23 session noted ai_safety may need Bank of E
 - Counts unchanged: 6 topics, 23 sources, 3 timelines, 88 entities, 30 ideas
 - Total content pages: 150
 - `Last updated` updated to 2026-05-09
+
+---
+
+## [2026-05-11] lint
+
+**Pass 1 — Structural integrity:**
+- Fixed template wikilinks in `WIKI.md`: converted `[[topics/slug]]`, `[[sources/slug]]`, `[[timelines/YYYY-MM]]`, `[[entities/slug]]`, `[[ideas/slug]]`, and bare `[[wikilinks]]` to backticks/plain text to prevent false-positive broken-link detection in future lints
+- Verified `index.md` matches disk exactly: 6 topics, 24 sources, 3 timelines, 98 entities, 34 ideas
+- Verified zero broken wikilinks in any content page (all broken links were in `WIKI.md` templates or historical `log.md` entries already fixed)
+- Verified zero orphan content pages (only infrastructure pages `WIKI.md`, `index.md`, `log.md` have no inbound links, which is expected)
+- Verified no companies or people improperly placed in `entities/`
+
+**Pass 2 — Wrong & duplicate information:**
+- No duplicate pages covering the same concept
+- No duplicate paragraphs within pages
+- No factually inconsistent dates or claims detected across pages (Claude Mythos 10T params consistently April 22; Anthropic valuation progression consistent: $380B → ~$1T secondary → $900B raise)
+- Frontmatter valid on all content pages (type field present for all entities, no missing frontmatter)
+- No stale claims requiring update with newer data
+
+**Pass 3 — Connection quality:**
+- Created `entities/openswarm.md` for the 892-star multi-agent non-coding repo (trending May 9, mentioned in `topics/github_trends.md` and `timelines/2026-05.md` but lacked an entity page)
+- Added annotated wikilinks to `[[entities/openswarm]]` from `topics/github_trends.md` and `timelines/2026-05.md`
+- Fixed star count for nanobot in `topics/github_trends.md` table (39K+ → 41.7K+)
+- Verified all 6 topic pages have substantive `## Evolution` and `## Patterns & Insights` sections
+- Verified zero bare "Related:", "See also:", or unannotated links remain in any content page
+
+**Pass 4 — Index & log:**
+- Rebuilt `index.md`: entity count updated 97 → 98, added `openswarm`, `Last updated` set to 2026-05-11
+- Total content pages: 164 (6 topics + 24 sources + 3 timelines + 98 entities + 34 ideas + 1 WIKI.md + 1 index.md + 1 log.md)
+- Appended this lint entry

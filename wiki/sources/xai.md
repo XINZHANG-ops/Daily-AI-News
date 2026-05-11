@@ -1,7 +1,7 @@
 ---
 title: "xAI"
 slug: xai
-last_updated: 2026-05-09
+last_updated: 2026-05-10
 ---
 
 # xAI
@@ -23,6 +23,7 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 | 2026-05-01 | Pentagon includes xAI in 8-company classified AI coalition | Grok deployed on classified networks; Musk simultaneously suing OpenAI, distilling from OpenAI, and joining military contracts with OpenAI |
 | 2026-05-05 | Agrees to CAISI pre-testing | Google, Microsoft, xAI volunteer for government evaluation of unreleased models; "voluntary with teeth" design |
 | 2026-05-06 | Dissolved and rebranded as SpaceXAI | xAI folded into SpaceX as part of Anthropic compute partnership restructuring; Musk impressed by Anthropic team after prior criticism |
+| 2026-05-10 | Signs binding NIST safety agreement | Mandatory pre-deployment testing for frontier models; gains government legitimacy as SpaceXAI despite Musk's distillation admission; Anthropic, Meta, OpenAI notably absent from initial agreement |
 
 ## Key Relationships
 - **SpaceX**: Parent company following acquisition.

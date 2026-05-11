@@ -340,3 +340,30 @@ Wiki lint complete. Here's what was fixed:
  create mode 100644 wiki/entities/prithvi.md
  create mode 100644 wiki/ideas/ai-orbital-infrastructure.md
  create mode 100644 wiki/ideas/interpretability-economics.md
+[2026-05-11 01:00:00] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+Wiki lint complete. Here's what was fixed:
+
+**Structural fixes**
+- `WIKI.md`: Converted 8 template-style `[[wikilink]]` placeholders (`[[topics/slug]]`, `[[entities/slug]]`, `[[wikilinks]]`, etc.) to backticks/plain text so they stop triggering false-positive broken-link detection in future lints.
+
+**New entity page**
+- Created `entities/openswarm.md` for the 892-star multi-agent repo (non-coding work: presentations, documents, research, visual assets). It was listed in `topics/github_trends.md` and `timelines/2026-05.md` but had no page.
+
+**Connection & data fixes**
+- Added `[[entities/openswarm]]` links from `topics/github_trends.md` (table + text) and `timelines/2026-05.md`.
+- Fixed nanobot star count in `topics/github_trends.md`: `39K+` → `41.7K+`.
+
+**Index & log**
+- `index.md`: Entity count updated 97 → 98, added `openswarm`, `Last updated` set to 2026-05-11.
+- `log.md`: Appended lint entry documenting all four passes.
+
+**Verification results**
+- Zero broken wikilinks in content pages
+- Zero orphan content pages
+- No duplicate pages or content
+- No companies/people improperly in `entities/`
+- All 6 topic pages have substantive `## Evolution` and `## Patterns & Insights`
+- All frontmatter valid
+- Index matches disk exactly: 6 topics, 24 sources, 3 timelines, 98 entities, 34 ideas
+[2026-05-11 01:12:34] Wiki lint complete (exit code 0).

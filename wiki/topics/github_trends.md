@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-09
+last_updated: 2026-05-10
 ---
 
 # GitHub Trends
@@ -43,7 +43,7 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | microsoft/agent-framework | 9K+ | Enterprise multi-language agent framework |
 | agentscope-ai/CoPaw | 15K+ | Personal AI assistant with multi-channel support |
 | lightpanda-io/browser | 18K+ | Zig-built headless browser, 11x faster |
-| HKUDS/nanobot | 39K+ | Ultra-lightweight universal agent harness |
+| HKUDS/nanobot | 41.7K+ | Ultra-lightweight universal agent harness |
 | KeygraphHQ/shannon | 31K+ | White-box AI pentester, 96.15% XBOW success |
 | openai/openai-agents-python | 10K+ | OpenAI's multi-agent workflow framework |
 | BasedHardware/omi | 8K+ | Next-gen AI companion with multimodal perception |
@@ -77,10 +77,12 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | cocoindex-io/cocoindex | 9,018+ | Incremental engine for long-horizon agents; persistent stateful AI with automatic state management and recovery |
 | Q00/ouroboros | 3,677+ | Agent OS: declarative operating system shifting from prompt engineering to specification-driven behavior |
 | hugohe3/ppt-master | 13,205+ | AI generates natively editable PPTX from any document — real PowerPoint shapes with native animations, not images |
-| finnsutton1/OpenSwarm | 892+ | Multi-agent system for non-coding work (presentations, documents, research, visual assets); 8 specialized agents
+| [[entities/openswarm]] | 892+ | Multi-agent system for non-coding work (presentations, documents, research, visual assets); 8 specialized agents
 | virattt/dexter | 25.4k+ | "Claude Code for finance" — autonomous financial research with SEC filings, loop detection, WhatsApp gateway
 | Eliezer-app/eliezer | 3.2k+ | Self-hosted AI agent with self-editing protocol, PWA push notifications, SQLite memory with auto compaction
 | inclusionAI/DR-Venus | 1.8k+ | 4B-parameter deep research agent on open data; small-model frontier on BrowseComp and GAIA
+| multica-ai/multica | 20.6K+ | Open-source managed agents platform; supports Claude Code, Codex, OpenClaw, Gemini, Pi, Cursor Agent with unified local/cloud runtime
+| trymeka/agent | 366+ | SOTA autonomous computer-using agent; 72.7% WebArena; pure vision input with OS-level controls
 
 ## Patterns & Insights
 
@@ -122,9 +124,11 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **May 8: Specification-driven agents and document-to-presentation AI**: Three repos trending span agent architecture and document automation. cocoindex (9,018 stars) is an incremental engine for long-horizon agents, solving the state-persistence problem that prevents most agents from handling multi-day workflows. ouroboros (3,677 stars) is a declarative "Agent OS" shifting the paradigm from prompt engineering to specification-driven behavior — "Stop prompting. Start specifying." ppt-master (13,205 stars) uses AI to generate natively editable PowerPoint presentations from any document, producing real PowerPoint shapes with native animations rather than static images. The pattern: agent development is maturing from artisanal prompt crafting to structured engineering, while AI output is becoming compatible with existing corporate toolchains rather than requiring new formats.
 
-**May 9: Vertical Agents Dominate the Trending List**: Four repos trending on May 9 all target narrow professional workflows. Dexter (25.4K stars) is "Claude Code for finance" with SEC integration and WhatsApp alerts. OpenSwarm (892 stars) handles non-coding work (presentations, documents, visual assets) that Claude Code cannot. Eliezer (3.2K stars) is a self-editing personal agent with PWA push notifications and BYO-key model. DR-Venus (1.8K stars) proves 4B parameters can compete on research benchmarks. The open-source ecosystem is replicating Anthropic's verticalization strategy at scale, validating that specialized agents outperform general ones in specific domains.
+**May 9: Vertical Agents Dominate the Trending List**: Four repos trending on May 9 all target narrow professional workflows. Dexter (25.4K stars) is "Claude Code for finance" with SEC integration and WhatsApp alerts. [[entities/openswarm]] (892 stars) handles non-coding work (presentations, documents, visual assets) that Claude Code cannot. Eliezer (3.2K stars) is a self-editing personal agent with PWA push notifications and BYO-key model. DR-Venus (1.8K stars) proves 4B parameters can compete on research benchmarks. The open-source ecosystem is replicating Anthropic's verticalization strategy at scale, validating that specialized agents outperform general ones in specific domains.
 
 **May 6: Autonomous research and production harnesses**: Three repos trending signal agent maturity beyond coding. AutoResearch (79.2K stars) is Karpathy's autonomous LLM research agent that experiments overnight on a single GPU — the highest-starred new repo of the day, validating demand for end-to-end scientific automation. Hive (10.2K stars) is a production multi-agent harness with graph-based execution DAGs, self-healing failure recovery, and cost enforcement — addressing the operational reliability gap that most agent frameworks ignore. GLM-OCR (6.3K stars) achieves 94.62 on OmniDocBench with only 0.9B parameters, proving sub-1B models can dominate narrow multimodal tasks. The pattern: agents are fragmenting by vertical (research, production ops, document understanding) just as the broader ecosystem fragments by profession.
+
+**May 10: Agent orchestration and pure-vision computer use**: Two repos trending on May 10 represent architectural bets on the next phase of agent infrastructure. multica (20.6K stars) is a managed agents platform supporting eight major coding agents — Claude Code, Codex, OpenClaw, Gemini, Pi, Cursor Agent — in a unified local/cloud runtime. The "managed agents" framing signals a maturation from "which agent is best?" to "how do we coordinate the agents we've already adopted?" This is the Kubernetes moment for AI agents: orchestration over raw capabilities. trymeka/agent (366 stars) takes a radically different approach: pure vision input with OS-level controls, achieving 72.7% on WebArena. Unlike MCP/browser agents that depend on structured interfaces, trymeka sees the screen and clicks like a human. If this approach scales, it could make protocol layers like MCP optional rather than mandatory — the ultimate commoditization of agent infrastructure.
 
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
@@ -167,3 +171,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/dr-venus]] — 4B-parameter research specialist joins GLM-OCR and Qwen 3.6 in proving narrow tasks don't need frontier-scale models
 - [[ideas/agent-control-interface-wars]] — ouroboros's specification-driven model and cocoindex's persistent-state model together represent a shift toward structured, predictable agent behavior — the engineering discipline enterprises need before wide deployment
 - [[timelines/2026-05]] — May 9 trending repos confirm verticalization: Dexter (finance), OpenSwarm (non-coding work), Eliezer (self-editing personal agent), DR-Venus (research) — all narrow, all purposeful
+- [[entities/multica]] — 20.6K stars for a multi-agent orchestration platform signals the ecosystem's maturation: the question is no longer "which agent is best?" but "how do we manage the agents we've already adopted?"
+- [[entities/trymeka-agent]] — Pure vision + OS-level control at 72.7% WebArena challenges the MCP/browser-agent paradigm; if agents can see and click like humans, they don't need structured APIs
+- [[ideas/alignment-reality-check]] — The razzant/ouroboros repo (542 stars, self-creating agent with constitutional framework) and Anthropic's blackmail disclosure both reflect growing open-source interest in agent self-preservation and autonomy
+- [[ideas/regulatory-fragmentation]] — multica's model-agnostic approach (supporting US and Chinese agents alike) positions it to benefit from regulatory fragmentation by serving all regulatory blocs simultaneously
