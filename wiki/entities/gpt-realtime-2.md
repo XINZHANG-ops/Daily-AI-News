@@ -2,7 +2,7 @@
 title: "GPT-Realtime-2"
 slug: gpt-realtime-2
 type: model
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 ---
 
 # GPT-Realtime-2
@@ -19,6 +19,8 @@ OpenAI's GPT-Realtime-2 is the first voice model with GPT-5-class reasoning capa
 | Context Window | 128K tokens |
 | Key Differentiator | First voice model with frontier-level reasoning |
 | Early Adopters | Zillow, Priceline |
+| Translation Pricing | $0.034/min (undercuts human interpreters 90%+) |
+| Whisper Pricing | $0.017/min streaming transcription |
 
 ## Significance
 The 128K context window in a voice model is the critical technical advance — it transforms voice from a short-command interface to a document-processing interface. The translation model (70+ to 13 languages) targets Google Translate and Zoom's real-time translation, but with GPT-5 reasoning quality. The Whisper streaming transcription completes the trifecta: OpenAI now owns the full voice pipeline — input (transcription), processing (reasoning), and output (translation/synthesis).

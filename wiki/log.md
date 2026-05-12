@@ -1,5 +1,41 @@
 # Wiki Log
 
+## [2026-05-12] wiki lint | comprehensive health check
+
+**Pass 1 — Structural integrity:**
+- Verified 173 content pages match index.md exactly: 6 topics, 24 sources, 3 timelines, 102 entities, 38 ideas
+- Verified zero broken wikilinks in any content page (log.md historical entries excluded)
+- Verified zero orphan pages (all pages have inbound links including from index.md)
+- Verified no companies or people in entities/: all 102 entity types valid (model, product, protocol, framework, repo, benchmark, legislation)
+- Verified all new untracked files (cc-sdd, gaai-framework, hatch, spec-kit, agent-governance-layer-wars, agentic-catch-up-game, revenue-reality-check, spec-driven-development-movement) are properly listed in index.md
+
+**Pass 2 — Wrong & duplicate information fixed:**
+- Fixed star count inconsistencies between entity pages and topic pages:
+  - `entities/spec-kit`: 3.4K stars (correct) vs topic pages showing 95.5K → fixed `topics/agentic_ai.md` and `topics/github_trends.md`
+  - `entities/cc-sdd`: 1.3K stars (correct) vs topic pages showing 3.2K/3.8K → fixed both topic pages; removed duplicate cc-sdd entry from `topics/github_trends.md` Notable Repositories table
+  - `entities/gaai-framework`: 2.8K stars (correct) vs topic pages showing 1.2K → fixed both topic pages
+- Updated `last_updated` on 13 files containing May 11 content but showing stale dates: topics/agentic_ai, topics/llm_models, topics/ai_companies, topics/ai_funding, topics/ai_safety, topics/github_trends, sources/anthropic, sources/google, sources/meta, sources/microsoft, sources/openai, sources/perplexity, entities/muse-spark
+- Verified zero duplicate pages covering the same concept
+- Verified zero duplicate paragraphs across content pages
+- Verified no factually inconsistent dates or claims beyond star counts (Claude Mythos 10T params consistently April 22; Anthropic valuation progression consistent)
+
+**Pass 3 — Connection quality:**
+- Verified zero bare "Related:", "See also:", or unannotated links in any content page
+- Verified all 6 topic pages have required sections: Overview, Evolution, Patterns & Insights, Connections
+- Verified all connections explain WHY things connect
+- No missing entity pages identified for significant named technical concepts
+
+**Index rebuilt:**
+- Topics: 6 (unchanged)
+- Sources: 24 (unchanged)
+- Timelines: 3 (unchanged)
+- Entities: 102 (unchanged)
+- Ideas: 38 (unchanged)
+- Total content pages: 173
+- `Last updated` updated to 2026-05-12
+
+---
+
 ## [2026-05-10] ingest | 1 date
 
 **Dates processed:** 2026-05-10
@@ -563,6 +599,19 @@ Chat session insights applied: Apr 23 session noted ai_safety may need Bank of E
 - Counts unchanged: 6 topics, 23 sources, 3 timelines, 88 entities, 30 ideas
 - Total content pages: 150
 - `Last updated` updated to 2026-05-09
+
+---
+
+## [2026-05-11] ingest | 1 date
+
+**Dates processed:** 2026-05-11
+**Topics updated:** llm_models (GPT-Realtime-2 pricing commoditizes voice, Alphabet 160% YoY rally, Meta Hatch model switch), ai_companies (Agent 365 GA as "toll booth," Remy personal agent, Hatch agentic shopping, Steinberger/OpenClaw at OpenAI), ai_funding (Anthropic $30B ARR, Alphabet rally validates full-stack thesis, Meta capex as catch-up spending), github_trends (spec-kit 3.4K, cc-sdd 1.3K, GAAI-framework 2.8K; spec-driven development movement), ai_safety (Claude Opus 4 blackmail behavior 96% rate, traced to "evil AI" training data), agentic_ai (Agent 365 expanded capabilities, Remy 24/7 personal agent, Hatch Instagram shopping, spec-driven development toolchain)
+**Sources updated:** openai (GPT-Realtime-2 pricing, Steinberger/OpenClaw hire), anthropic ($30B ARR, blackmail behavior details), google (Alphabet 160% rally, Remy personal agent), meta (Hatch agent, Steinberger hiring failure, capex contextualized), microsoft (Agent 365 GA, "toll booth" positioning)
+**Timelines updated:** 2026-05 (May 11: Revenue reality check, agent governance layer wars, spec-driven development movement, agentic catch-up game)
+**Entities created (4):** spec-kit (JSON-based agent spec framework, 3.4K stars), cc-sdd (spec-first coding enforcement for Claude Code, 1.3K stars), gaai-framework (LLM-driven spec generation, 2.8K stars), hatch (Meta's Instagram shopping agent, started with Claude switching to Muse Spark)
+**Entities updated (5):** gpt-realtime-2 (pricing revealed: $0.034/min translation, $0.017/min Whisper), agent-365 (GA with expanded capabilities, Shadow AI Discovery, Windows 365 for Agents, "toll booth" positioning), remy (24/7 personal agent testing, proactive monitoring after Project Mariner shutdown), openclaw (Steinberger joined OpenAI in February after Meta failed to hire him), muse-spark (Hatch plans switch from Claude to Muse Spark at launch — first test of agentic capability)
+**Ideas created (4):** agent-governance-layer-wars (Agent 365 toll booth taxes entire ecosystem), revenue-reality-check ($30B ARR and 160% rally prove revenue > benchmarks), spec-driven-development-movement (Spec-Kit + cc-sdd + GAAI-framework shift from artisanal to systematic), agentic-catch-up-game (Remy and Hatch are late, struggling to differentiate)
+**Ideas updated (2):** voice-agent-battleground (GPT-Realtime-2 pricing commoditizes voice, undercuts human interpreters 90%+), agent-control-interface-wars (Remy personal agent and Hatch implicit integration expand wars to consumer context)
 
 ---
 

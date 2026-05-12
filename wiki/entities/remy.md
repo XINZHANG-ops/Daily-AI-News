@@ -2,7 +2,7 @@
 title: "Remy"
 slug: remy
 type: product
-last_updated: 2026-05-08
+last_updated: 2026-05-11
 ---
 
 # Remy
@@ -22,6 +22,8 @@ Remy is a new agentic AI system codenamed "Remy" that Google is developing for i
 
 ## Significance
 Remy reveals a philosophical split in agent UX design. While OpenAI's Operator and Anthropic's Claude Code optimize for autonomous execution (fewer interruptions = faster results), Google is betting users want granular control — approval gates at each step. This reflects Google's risk-averse enterprise DNA: they're building for CIOs who need audit trails and compliance checkpoints, not just end-user efficiency. The timing is strategic — just as enterprises are waking up to agent security concerns, Google is positioning "controllable agents" as the enterprise-safe alternative.
+
+On May 11, 2026, Google revealed it is testing Remy as a 24/7 personal agent for work, school, and daily life — proactively monitoring activity and learning preferences. This expands Remy from an enterprise approval-gate tool to a personal agent platform, positioning it as Google's answer to OpenAI's Operator and Anthropic's Claude Computer Use. The personal agent version comes after Project Mariner shutdown on May 4, suggesting Google is consolidating its scattered agent experiments under the Remy brand. The 24/7 monitoring and proactive learning capabilities signal Google's belief that the winning personal agent is the one that knows you best — a data advantage Google has spent decades building.
 
 ## Connections
 - [[topics/agentic_ai]] — Remy introduces a new UX philosophy to the agent market: human-in-the-loop by default rather than autonomy by default; this challenges the "agent-as-employee" model that Symphony and Claude Code promote

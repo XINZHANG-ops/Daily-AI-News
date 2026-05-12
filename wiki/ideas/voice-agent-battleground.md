@@ -1,7 +1,7 @@
 ---
 title: "Voice Agent Battleground"
 slug: voice-agent-battleground
-last_updated: 2026-04-26
+last_updated: 2026-05-11
 ---
 
 # Voice Agent Battleground
@@ -20,6 +20,8 @@ This mirrors the pattern in coding: once general capability saturated, specializ
 
 The timing is significant: grok-voice launched right after GPT-5.5 week when all major labs released models. The voice agent market is heating up as a distinct competitive dimension exactly when the text model market is getting crowded.
 
+On May 11, 2026, OpenAI revealed GPT-Realtime-2 pricing: $0.034/min for translation (undercutting human interpreters by 90%+) and $0.017/min for Whisper streaming transcription. This pricing strategy transforms voice from a premium feature to a commodity layer. OpenAI is explicitly pricing to replace human interpreters at scale — a move that could commoditize the translation industry before competitors can establish premium positions. The Zillow and Priceline partnerships demonstrate that voice is becoming the default computing interface for complex transactions, not just a convenience feature.
+
 ## Connections
 - [[entities/grok-voice-think-fast-1-0]] — xAI's flagship voice model with specific workflow superiority
 - [[entities/gpt-realtime-2]] — OpenAI's full voice pipeline with 128K context and GPT-5-class reasoning transforms voice from short-command to document-processing interface; completes the trifecta of transcription, reasoning, and synthesis
@@ -28,3 +30,6 @@ The timing is significant: grok-voice launched right after GPT-5.5 week when all
 - [[sources/openai]] — GPT-Realtime-2's Zillow/Priceline partnerships reveal voice verticalization strategy: real estate and travel booking are high-friction workflows where voice agents can replace form-filling
 - [[sources/google]] — Google's Gemini 3.1 Flash TTS and Siri integration are direct competitors; OpenAI's 128K context and 70+ language translation outflank Google's current voice offerings
 - [[ideas/agent-verticalization]] — Voice is following the same verticalization pattern as coding and finance: Zillow (real estate) and Priceline (travel) are the first voice-specific professional workflows
+- [[entities/gpt-realtime-2]] — Pricing reveal on May 11 ($0.034/min translation, $0.017/min Whisper) commoditizes voice; undercuts human interpreters 90%+ and targets replacement at scale
+- [[ideas/revenue-reality-check]] — Voice pricing strategy shows OpenAI converting model capability into revenue by undercutting human services; the revenue reality check applies to voice verticals
+- [[sources/openai]] — GPT-Realtime-2 pricing reveals OpenAI's voice strategy: replace human interpreters, become the default voice infrastructure layer

@@ -377,3 +377,30 @@ Wiki lint complete. Here's what was fixed:
  create mode 100644 wiki/ideas/regulatory-fragmentation.md
  create mode 100644 wiki/sources/baidu.md
  create mode 100644 wiki/wiki_lint.py
+[2026-05-12 01:00:05] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+Wiki lint complete. Here's what was found and fixed across all four passes:
+
+**Pass 1 — Structural Integrity**
+- Verified 173 content pages match `index.md` exactly (6 topics, 24 sources, 3 timelines, 102 entities, 38 ideas)
+- Zero broken wikilinks in content pages
+- Zero orphan pages
+- No companies or people in `entities/`
+
+**Pass 2 — Wrong & Duplicate Information**
+- Fixed star count inconsistencies between entity pages and topic pages:
+  - `spec-kit`: 3.4K stars (was 95.5K in topics)
+  - `cc-sdd`: 1.3K stars (was 3.2K/3.8K in topics)
+  - `gaai-framework`: 2.8K stars (was 1.2K in topics)
+- Removed duplicate `cc-sdd` entry from `topics/github_trends.md` table
+- Updated stale `last_updated` dates on 13 files that contained May 11 content
+
+**Pass 3 — Connection Quality**
+- Verified zero bare "Related:", "See also:", or unannotated links
+- Verified all 6 topic pages have Overview, Evolution, Patterns & Insights, and Connections sections
+- All connections explain WHY things connect
+
+**Pass 4 — Index & Log**
+- Updated `wiki/index.md` date to 2026-05-12
+- Appended lint entry to `wiki/log.md` with counts of what was fixed
+[2026-05-12 01:24:35] Wiki lint complete (exit code 0).

@@ -607,3 +607,28 @@ Ingest workflow for 2026-05-10 is complete. All wiki artifacts updated:
 - **Index:** Entities count 94 → 97, Sources 23 → 24, Ideas 32 → 34
 - **Processed:** `2026-05-10` appended to `wiki/processed.json`
 - **Log:** Ingest entry added to `wiki/log.md`
+The ingest workflow for `data/2026-05-11.json` is now complete. Here's a summary of what was done:
+
+**Topics updated (6):** `llm_models`, `agentic_ai`, `ai_companies`, `ai_funding`, `github_trends`, `ai_safety` — all updated with May 11 data including Agent 365 GA, Anthropic $30B ARR, GPT-Realtime-2 pricing, and the spec-driven development movement.
+
+**Sources updated (5):** `openai`, `anthropic`, `google`, `meta`, `microsoft` — timeline entries added for May 11 events.
+
+**Timeline updated:** `timelines/2026-05.md` — new **May 11: Revenue Reality, Agent Governance, and the Spec-Driven Development Movement** section added with full narrative and connections.
+
+**Entities created (4):**
+- `spec-kit` — JSON-based agent spec framework (3.4K stars)
+- `cc-sdd` — Spec-first coding enforcement for Claude Code (1.3K stars)
+- `gaai-framework` — LLM-driven spec generation (2.8K stars)
+- `hatch` — Meta's Instagram shopping agent
+
+**Entities updated (5):** `gpt-realtime-2`, `agent-365`, `remy`, `openclaw`, `muse-spark`
+
+**Ideas created (4):**
+- `agent-governance-layer-wars`
+- `revenue-reality-check`
+- `spec-driven-development-movement`
+- `agentic-catch-up-game`
+
+**Ideas updated (2):** `voice-agent-battleground`, `agent-control-interface-wars`
+
+**Index, log, and processed.json** all updated — `processed.json` now includes `2026-05-11`.

@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 ---
 
 # AI Funding
@@ -70,6 +70,9 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-05-09 | Anthropic 10 finance agents + Autoencoders | Dual launch signals verticalization strategy: selling interpretability and industry workflows, not just API access
 | 2026-05-09 | Perplexity Personal Computer public Mac launch | $17-20/month Pro tier for full automation; undercuts enterprise alternatives while capturing power users
 | 2026-05-09 | OpenAI GPT-Realtime-2 API | Full voice pipeline (transcription/reasoning/translation); Zillow/Priceline partnerships reveal vertical voice strategy
+| 2026-05-11 | Anthropic $30B ARR with 80x annualized growth | Revenue run rate reached in Q1 2026; $200B Google Cloud commitment (40% of Google's cloud backlog); xAI/SpaceX merger reveals brutal compute economics
+| 2026-05-11 | Alphabet 160% stock rally | Briefly surpasses Nvidia by market cap; $190B capex guidance — more than double 2025 levels; spending to maintain position
+| 2026-05-11 | Meta $125-145B capex and Google $190B capex | Both companies spending to catch up in agentic AI, not building from strength; late entrants buying compute to compete
 
 ## Patterns & Insights
 
@@ -108,6 +111,10 @@ The investment pattern has shifted from model racing to infrastructure and appli
 **May 9: Vertical solutions as valuation justification**: The industry's pivot from horizontal to vertical is not just a product strategy — it's a valuation strategy. API sales alone won't justify $900B+ valuations; both OpenAI and Anthropic need to own the deployment layer and the vertical workflows. Anthropic's 10 finance agents + Natural Language Autoencoders is a bundled offering: capable agents plus auditable reasoning. Perplexity's $17-20/month Pro tier for desktop automation is calibrated to undercut enterprise alternatives while still capturing power users. The common thread: the winners of this phase won't be the labs with the best models, but those with the best governance frameworks, vertical integrations, and regulatory relationships.
 
 **May 6: Capital allocation as defining constraint**: Anthropic's $200B Google Cloud commitment reveals the AI race is now a capital-allocation contest. Anthropic and OpenAI together account for >50% of cloud provider backlogs, meaning the entire industry's compute capacity is being cornered by two companies. This is not healthy competition; it's a duopoly that prices out everyone else. The multi-gigawatt TPU capacity starting in 2027 suggests Anthropic is betting Google's next-gen TPUs will outpace NVIDIA's Blackwell successor — a bet that looked risky before TSMC's 3nm yield crisis dropped to 52%. For Google, this is a masterstroke: it not only secures a captive customer but gets equity upside ($40B investment) and forces Anthropic to optimize for TPUs rather than CUDA, eroding NVIDIA's ecosystem lock-in.
+
+**May 11: The Revenue Reality Check**: Anthropic's $30B ARR (80x annualized growth) and Alphabet's 160% rally are cautionary tales dressed as triumphs. Anthropic's 80x figure reveals more about the denominator than the numerator — AI enterprise spending was so small a year ago that even modest absolute growth looks astronomical. The xAI/SpaceX merger proves even Musk couldn't sustain an independent lab without hyperscaler partnerships; he folded xAI into SpaceX, essentially admitting defeat in the lab business. Alphabet's 160% rally prices in full-stack ownership, but at these gains, any Q2 cloud disappointment could trigger violent correction. The $190B Google capex and $145B Meta capex are spending to catch up, not to maintain leadership.
+
+**May 11: Governance Infrastructure as New Funding Category**: Microsoft's Agent 365 at $15/user/month represents a new kind of AI monetization: taxing the agent ecosystem at the governance layer rather than the model layer. The Shadow AI Discovery capability means Microsoft will monetize visibility into agent usage across enterprises. GitHub's Spec-Kit (95.5K stars) and the SDD movement show developer tooling becoming a funded category in its own right — not model training, not inference, but the specification layer that makes agents reliable. The market is bifurcating between "vibe coding" (unstructured, cheap, risky) and "spec-driven development" (structured, auditable, governable) — and both sides attract capital.
 
 ## Connections
 - [[sources/openai]] — $122B raise, $852B valuation, IPO preparation; $10B Deployment Company venture ($4B at $10B valuation, 17.5% guaranteed PE returns) embeds engineers inside 2,000 PE portfolio companies

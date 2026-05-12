@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-10
+last_updated: 2026-05-11
 ---
 
 # Google
@@ -44,6 +44,8 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-05-07 | DeepMind introduces AlphaEvolve | Gemini-powered coding agent using evolutionary computation; solved open matrix multiplication problems, improved data center scheduling, generated new mathematical proofs |
 | 2026-04-14 | Gemini Robotics-ER 1.6 released | Industrial instrument reading for robots; multi-view success detection; Boston Dynamics Atlas integration for automotive tasks |
 | 2026-05-10 | Signs binding NIST safety agreement | Mandatory pre-deployment testing for frontier models (cyber, bio, autonomous); gains regulatory legitimacy while Anthropic, Meta, OpenAI notably absent from initial agreement |
+| 2026-05-11 | Alphabet stock rallies 160% YoY | Briefly surpasses Nvidia by market cap; full-stack ownership (TPU → Gemini → Cloud → Distribution) priced in; $190B capex guidance — more than double 2025 levels
+| 2026-05-11 | Remy personal AI agent in testing | 24/7 personal agent for work, school, daily life; proactively monitors activity and learns preferences; comes after Project Mariner shutdown on May 4
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.

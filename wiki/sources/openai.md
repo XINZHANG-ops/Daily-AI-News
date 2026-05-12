@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-10
+last_updated: 2026-05-11
 ---
 
 # OpenAI
@@ -62,6 +62,8 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-09 | GPT-Realtime-Translate API | 70+ input languages to 13 output languages; live translation targeting Google Translate and Zoom
 | 2026-05-09 | GPT-Realtime-Whisper API | Low-latency streaming transcription; completes the full voice stack
 | 2026-05-09 | Zillow and Priceline partnerships | Early adopters building voice assistants for real estate and travel booking — vertical strategy for high-friction workflows
+| 2026-05-11 | GPT-Realtime-2 pricing revealed | $0.034/min for translation undercuts human interpreters 90%+; $0.017/min for Whisper streaming transcription; full voice stack now priced competitively
+| 2026-05-11 | OpenClaw creator Peter Steinberger now at OpenAI | Meta failed to hire him in February; Steinberger's OpenClaw (302K stars) sparked "agentic wars"; Jensen Huang called it "the next ChatGPT"
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.

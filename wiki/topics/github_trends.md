@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-10
+last_updated: 2026-05-11
 ---
 
 # GitHub Trends
@@ -59,7 +59,6 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | NVIDIA/NemoClaw | 1.1K+ | Hardened reference stack for secure OpenClaw deployment |
 | K-Dense-AI/scientific-agent-skills | 2.4K+ | 133 scientific skills for AI agents |
 | backnotprop/plannotator | 4.8K+ | Visual coding agent plan/review tool with team collaboration and one-click feedback |
-| gotalab/cc-sdd | 3.2K+ | Autonomous implementation with native subagent dispatch and adversarial review |
 | MervinPraison/PraisonAI | 7K+ | 24/7 AI workforce in 5 lines of code; memory, RAG, 100+ LLMs |
 | aaif-goose/goose | new | Open-source extensible AI agent — install, execute, edit, test with any LLM |
 | msitarzewski/agency-agents | new | Complete AI agency with specialized expert agents (frontend wizards, Reddit ninjas, etc.) |
@@ -83,6 +82,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | inclusionAI/DR-Venus | 1.8k+ | 4B-parameter deep research agent on open data; small-model frontier on BrowseComp and GAIA
 | multica-ai/multica | 20.6K+ | Open-source managed agents platform; supports Claude Code, Codex, OpenClaw, Gemini, Pi, Cursor Agent with unified local/cloud runtime
 | trymeka/agent | 366+ | SOTA autonomous computer-using agent; 72.7% WebArena; pure vision input with OS-level controls
+| github/spec-kit | 3.4K+ | JSON-based agent specification and testing framework with deterministic validation and cost tracking; treats agent behavior as spec'd software |
+| gotalab/cc-sdd | 1.3K+ | Spec-first coding enforcement inside Claude Code; rejects code that doesn't match specification |
+| Fr-e-d/GAAI-framework | 2.8K+ | LLM-driven spec generation with deterministic validation; formalizes systematic agent engineering over artisanal prompt crafting |
 
 ## Patterns & Insights
 
@@ -110,7 +112,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **April 29: TradingAgents and Codex skills trending**: TradingAgents (54.6K stars) is a multi-agent LLM financial trading framework with autonomous research, analysis, risk management, and trading roles. awesome-codex-skills (4.5K stars) is a curated list of practical Codex skills for automating workflows. [[topics/ai_companies]]
 
-**April 30: Workforce-in-a-box pattern emerging**: Three repos trending — plannotator (4.8K stars) for visual code review collaboration, cc-sdd (3.2K) for autonomous implementation with adversarial review, and PraisonAI (7K stars) for "24/7 AI workforce in 5 lines of code" with RAG and 100+ LLM support. The pattern emerging: agent frameworks are no longer just for developers — they're becoming plug-and-play workforce replacements that enterprises can deploy without engineering teams. The democratization is shifting from "anyone can build agents" to "anyone can hire an AI workforce."
+**April 30: Workforce-in-a-box pattern emerging**: Three repos trending — plannotator (4.8K stars) for visual code review collaboration, cc-sdd (1.3K) for spec-first coding enforcement inside Claude Code, and PraisonAI (7K stars) for "24/7 AI workforce in 5 lines of code" with RAG and 100+ LLM support. The pattern emerging: agent frameworks are no longer just for developers — they're becoming plug-and-play workforce replacements that enterprises can deploy without engineering teams. The democratization is shifting from "anyone can build agents" to "anyone can hire an AI workforce."
 
 **May 1: Agent orchestration frameworks with zero third-party dependencies**: Three new repos trending — harmonist (186 specialist agents across 16 categories, mechanical protocol enforcement, zero third-party deps, 949 stars), CoreCoder (~1,400 lines Python inspired by Claude Code, parallel tool execution, 3-layer context compression, 652 stars), and open-agent-sdk-go (lightweight Go SDK, 32 built-in tools, MCP support, session management, in-process agent loop, 151 stars). The "zero third-party dependencies" philosophy signals teams are seeking to minimize supply chain risk after the MCP vulnerability and npm compromises.
 
@@ -129,6 +131,10 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 **May 6: Autonomous research and production harnesses**: Three repos trending signal agent maturity beyond coding. AutoResearch (79.2K stars) is Karpathy's autonomous LLM research agent that experiments overnight on a single GPU — the highest-starred new repo of the day, validating demand for end-to-end scientific automation. Hive (10.2K stars) is a production multi-agent harness with graph-based execution DAGs, self-healing failure recovery, and cost enforcement — addressing the operational reliability gap that most agent frameworks ignore. GLM-OCR (6.3K stars) achieves 94.62 on OmniDocBench with only 0.9B parameters, proving sub-1B models can dominate narrow multimodal tasks. The pattern: agents are fragmenting by vertical (research, production ops, document understanding) just as the broader ecosystem fragments by profession.
 
 **May 10: Agent orchestration and pure-vision computer use**: Two repos trending on May 10 represent architectural bets on the next phase of agent infrastructure. multica (20.6K stars) is a managed agents platform supporting eight major coding agents — Claude Code, Codex, OpenClaw, Gemini, Pi, Cursor Agent — in a unified local/cloud runtime. The "managed agents" framing signals a maturation from "which agent is best?" to "how do we coordinate the agents we've already adopted?" This is the Kubernetes moment for AI agents: orchestration over raw capabilities. trymeka/agent (366 stars) takes a radically different approach: pure vision input with OS-level controls, achieving 72.7% on WebArena. Unlike MCP/browser agents that depend on structured interfaces, trymeka sees the screen and clicks like a human. If this approach scales, it could make protocol layers like MCP optional rather than mandatory — the ultimate commoditization of agent infrastructure.
+
+**May 11: The Spec-Driven Development Movement**: Spec-Kit (3.4K stars) represents a developer backlash against the chaos of "vibe coding" — where AI agents produce code that works until it doesn't. The SDD movement (Spec-Kit, cc-sdd, GAAI-framework) brings software engineering discipline back to AI-assisted development: define what you're building (/spec), plan how (/plan), break into tasks (/tasks), then implement (/implement). GitHub — owned by Microsoft — championing this while also selling Copilot is strategic hedging: if "vibe coding" wins, Copilot captures that market; if SDD wins, Spec-Kit becomes the standard. The 70+ community extensions suggest an ecosystem is forming around governance approaches that treat AI agents as compilers for human intent, not replacements for human judgment.
+
+**May 11: From Vibe Coding to Specification-First**: Three repos trending on May 11 span the emerging spec-driven development stack. Spec-Kit (3.4K stars) provides JSON-based agent specification with deterministic validation. cc-sdd (1.3K stars) enforces spec compliance during code generation inside Claude Code. GAAI-framework (2.8K stars) generates specs from natural language requirements with deterministic validation — no SDK, just Markdown + YAML + bash. The pattern: developers are realizing that AI agents without specifications produce technical debt at machine speed, and the open-source ecosystem is responding with governance-first frameworks.
 
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues

@@ -1,7 +1,7 @@
 ---
 title: "Meta"
 slug: meta
-last_updated: 2026-05-08
+last_updated: 2026-05-11
 ---
 
 # Meta
@@ -28,6 +28,9 @@ last_updated: 2026-05-08
 | 2026-05-01 | Meta acquires humanoid robotics startup ARI | Assured Robot Intelligence team (led by Xiaolong Wang and Lerrel Pinto) joins Superintelligence Labs under Yann LeCun; embodied AI bet alongside digital MCI surveillance |
 | 2026-05-02 | Meta's robotics strategy detailed: "Android for robots" | Licensing model for robot software (not hardware); mirrors Oculus/Quest playbook — own the software stack, let others build hardware; $25B bond issuance for AI infrastructure funds both LLM training and robotics as next compute sink |
 | 2026-05-03 | ARI acquisition details: talent and platform strategy | ARI co-founders Xiaolong Wang (ex-Nvidia/UCSD) and Lerrel Pinto (ex-NYU, prior startup Fauna Robotics acquired by Amazon March 2026) join Superintelligence Labs; CTO Bosworth envisions "Android for robots" — Meta builds AI foundation, third-party makers build hardware; humanoid talent pool increasingly incestuous between Amazon, Nvidia, Meta |
+| 2026-05-11 | Hatch agent in development for June internal launch | Agentic shopping tool for Instagram; reportedly started with Claude models before planning switch to Muse Spark at launch — admission that Meta's own models aren't yet competitive for agentic tasks
+| 2026-05-11 | Failed to hire OpenClaw creator Peter Steinberger | Steinberger joined OpenAI in February; his OpenClaw (302K stars) sparked current "agentic wars"; Meta had to switch plans after losing hiring battle
+| 2026-05-11 | Capex guidance contextualized | $125-145B capex is spending to catch up in agentic AI, not building from strength; chasing OpenAI and Anthropic who have agent products in market
 
 ## Key Relationships
 - **OpenAI**: Competition in AI assistant market and coding agents.

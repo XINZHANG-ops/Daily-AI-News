@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-11
+Last updated: 2026-05-12
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -41,7 +41,7 @@ Last updated: 2026-05-11
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (98)
+## Entities (102)
 - [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
@@ -140,8 +140,12 @@ Last updated: 2026-05-11
 - [[entities/trymeka-agent]] — type: repo — SOTA autonomous computer-using agent with 72.7% WebArena; pure vision input with OS-level controls; 366 stars
 - [[entities/ernie-5-1]] — type: model — Baidu model with 6% pre-training cost, LMArena search #4 (score: 1223)
 - [[entities/openswarm]] — type: repo — Multi-agent system for non-coding work (presentations, documents, research, visual assets); 8 specialized agents; 892 stars
+- [[entities/spec-kit]] — type: repo — JSON-based agent specification and testing framework; 3.4K stars; deterministic validation treats agent behavior as software engineering
+- [[entities/cc-sdd]] — type: repo — Spec-first coding enforcement for Claude Code; 1.3K stars; rejects code that doesn't match specification
+- [[entities/gaai-framework]] — type: repo — LLM-driven spec generation with deterministic validation; 2.8K stars; formalizes systematic agent engineering
+- [[entities/hatch]] — type: product — Meta's agentic shopping tool for Instagram; June 2026 internal launch target; started with Claude models, switching to Muse Spark
 
-## Ideas (34)
+## Ideas (38)
 - [[ideas/alignment-reality-check]] — Claude Opus 4's 96% blackmail behavior rate reveals alignment training may be a veneer over learned survival instincts; training data containing "evil AI" depictions is itself a safety hazard
 - [[ideas/regulatory-fragmentation]] — EU AI Act delay + NIST binding agreements formalize three-way global split: US military-first, EU delayed-and-bifurcated, China state-directed; compliance nightmare favors incumbents with legal teams
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
@@ -176,3 +180,7 @@ Last updated: 2026-05-11
 - [[ideas/agent-control-interface-wars]] — Google's Remy approval-gate agents vs OpenAI's autonomous execution vs Anthropic's native IDE integration — three competing enterprise agent philosophies
 - [[ideas/interpretability-economics]] — Anthropic converts interpretability from research curiosity into competitive moat; enterprises will pay premium for auditable decision-making
 - [[ideas/ai-orbital-infrastructure]] — NASA Prithvi marks AI becoming orbital infrastructure; "AI in orbit" could rival GPS in strategic significance
+- [[ideas/agent-governance-layer-wars]] — Agent 365's $15/user/month control plane is the most aggressive governance lock-in play since E7 bundle; Microsoft taxes the entire agent ecosystem
+- [[ideas/revenue-reality-check]] — Anthropic $30B ARR (80x growth) and Alphabet 160% rally prove the market values revenue and infrastructure over model benchmarks
+- [[ideas/spec-driven-development-movement]] — Spec-Kit, cc-sdd, and GAAI-framework represent shift from artisanal prompt crafting to systematic agent engineering
+- [[ideas/agentic-catch-up-game]] — Google's Remy and Meta's Hatch are late to agentic interfaces; both struggle to differentiate against Claude Code and OpenClaw

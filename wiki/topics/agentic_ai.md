@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-10
+last_updated: 2026-05-11
 ---
 
 # Agentic AI
@@ -85,6 +85,12 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-09 | DR-Venus trending (1.8K stars) | 4B-parameter deep research agent on open data; establishes small-model frontier on BrowseComp and GAIA
 | 2026-05-08 | DeepMind AlphaEvolve introduced | Gemini-powered coding agent using evolutionary computation; solved open matrix multiplication problems and improved data center scheduling |
 | 2026-05-10 | multica managed agents platform (20.6K stars) | Open-source platform supporting Claude Code, Codex, OpenClaw, Gemini, Pi, Cursor Agent; unified local/cloud runtime; signals shift from "best agent" to "agent orchestration" |
+| 2026-05-11 | Microsoft Agent 365 GA | Shadow AI Discovery for local agents, cross-platform visibility with AWS Bedrock and Google Cloud, Windows 365 for Agents, pre-configured integrations with Genspark, Zensai, Egnyte, Zendesk, Kore.ai |
+| 2026-05-11 | Spec-Kit reaches 3.4K stars | JSON-based agent specification and testing framework with deterministic validation and cost tracking; treats agent behavior as spec'd software |
+| 2026-05-11 | cc-sdd framework (1.3K stars) | Spec-first coding enforcement inside Claude Code; rejects code that doesn't match specification |
+| 2026-05-11 | GAAI-framework (2.8K stars) | LLM-driven spec generation with deterministic validation; formalizes systematic agent engineering over artisanal prompt crafting |
+| 2026-05-11 | Google tests Remy personal AI agent | 24/7 personal agent for work, school, daily life; proactively monitors activity and learns preferences; approval gates at each step |
+| 2026-05-11 | Meta develops Hatch agent for June internal launch | Agentic shopping tool for Instagram; reportedly started with Claude models before planning switch to Muse Spark at launch |
 | 2026-05-10 | trymeka-agent SOTA computer-use agent (366 stars) | 72.7% WebArena; pure vision input with OS-level controls; challenges MCP-centric architecture by controlling any app via vision |
 
 ## Patterns & Insights
@@ -122,6 +128,12 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 **Capability regression as competitive vulnerability**: Claude Code's engineering missteps and months of silence before acknowledgment created a window for OpenAI to land GPT-5.5 (with Codex roots) the same day the backlash story broke. Power users have options, and brand loyalty erodes fast when the coding agent doesn't code reliably — this is a real retention risk, not just a PR problem.
 
 **May 9: Agent Verticalization Confirmed by Open Source**: Four repos trending on May 9 all target specific professional workflows rather than general-purpose assistance. Dexter (25.4K stars) is "Claude Code for finance" — self-validating research with SEC filings and WhatsApp alerts. OpenSwarm (892 stars) handles non-coding work (presentations, documents, visual assets) that Claude Code cannot. Eliezer (3.2K stars) is a self-editing personal agent with PWA push notifications. DR-Venus (1.8K stars) proves 4B parameters can compete on research benchmarks. The pattern is unmistakable: the open-source ecosystem is replicating Anthropic's verticalization strategy at scale, and each vertical is attracting dedicated stars and forks.
+
+**May 11: The Agent Governance Stack Emerges**: Microsoft's Agent 365 GA, Anthropic's Claude Security launch, and Spec-Kit (3.4K stars) all point to the same realization: raw agent capability is no longer the bottleneck — governance, observability, and specification-driven workflows are. The market is bifurcating between "vibe coding" (unstructured AI assistance) and "spec-driven development" (structured, auditable, governable). Microsoft's move is particularly strategic: by offering Agent 365 as a control plane that manages agents regardless of provider, they're attempting to commoditize the model layer while monetizing the governance layer — mirroring AWS's EC2 strategy.
+
+**May 11: From Vibe Coding to Spec-Driven Development**: Spec-Kit (3.4K stars) represents a developer backlash against the chaos of "vibe coding" — where AI agents produce code that works until it doesn't. The SDD movement (Spec-Kit, cc-sdd, GAAI-framework) is essentially bringing software engineering discipline back to AI-assisted development: define what you're building (/spec), plan how (/plan), break into tasks (/tasks), then implement (/implement). GitHub (owned by Microsoft) championing this while also selling Copilot is fascinating: they're hedging across paradigms. If "vibe coding" wins, Copilot captures that market; if SDD wins, Spec-Kit becomes the standard.
+
+**May 11: The Agentic Catch-Up Game**: Google and Meta's agent initiatives reveal how far behind they've fallen. OpenClaw — created by Peter Steinberger who is now at OpenAI after Meta failed to hire him — sparked the current "agentic wars." Meta's Hatch agent reportedly started with Claude models before planning to switch to Muse Spark — a telling admission that Meta's own models aren't yet competitive for agentic tasks. Google's Remy comes after shutting down Project Mariner on May 4, suggesting the previous approach failed. Both companies are spending to catch up: $190B Google capex and $145B Meta capex are not building from strength but buying their way back into contention. The risk: agent interfaces create strong user habits; late entrants may find the market already locked in by OpenClaw, Claude Code, and Perplexity's Personal Computer.
 
 ## Connections
 - [[entities/claude-code]] — Primary driver of Anthropic's ARR growth

@@ -1,7 +1,7 @@
 ---
 title: "Microsoft"
 slug: microsoft
-last_updated: 2026-05-10
+last_updated: 2026-05-11
 ---
 
 # Microsoft
@@ -27,6 +27,8 @@ last_updated: 2026-05-10
 | 2026-05-05 | Xbox kills Copilot on console/mobile, imports CoreAI team | New CEO Asha Sharma winds down consumer Copilot, stops console development; imports Jared Palmer (VP Engineering), Tim Allen (Head of Xbox Design), Jonathan McKay (Head of Growth, ex-ChatGPT/OpenAI), Evan Chaki, David Schloss |
 | 2026-05-05 | CoreAI leadership team joins Xbox | Strategic pivot from "AI as gaming sidekick" to "AI as the operating system of game development"; Jonathan McKay hire signals game-discovery-as-retention-optimization |
 | 2026-05-10 | Signs binding NIST safety agreement | Mandatory pre-deployment testing for frontier models; coverage (cyber, bio, autonomous) overlaps with Pentagon classified network deployments; regulatory positioning alongside Google and xAI |
+| 2026-05-11 | Agent 365 goes GA with expanded capabilities | Shadow AI Discovery for local agents via Defender/Intune; cross-platform visibility with AWS Bedrock and Google Cloud; Windows 365 for Agents (Cloud PC for agentic workloads); pre-configured integrations with Genspark, Zensai, Egnyte, Zendesk, Kore.ai
+| 2026-05-11 | Agent 365 positioning as "toll booth" | $15/user/month control plane manages Claude Code, OpenClaw, GitHub Copilot CLI, even competitors' AWS Bedrock agents; attempting to tax entire agent ecosystem regardless of which model wins
 
 ## Key Relationships
 - **Anthropic**: Paradoxical — Claude integration in Copilot but competing in enterprise.

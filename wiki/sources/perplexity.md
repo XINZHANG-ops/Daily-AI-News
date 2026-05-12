@@ -1,7 +1,7 @@
 ---
 title: "Perplexity"
 slug: perplexity
-last_updated: 2026-05-08
+last_updated: 2026-05-11
 ---
 
 # Perplexity

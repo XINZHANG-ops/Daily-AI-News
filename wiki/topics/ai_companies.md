@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-10
+last_updated: 2026-05-11
 ---
 
 # AI Companies
@@ -131,6 +131,12 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-10 | Google, Microsoft, xAI sign binding NIST agreements | Mandatory pre-deployment testing; Anthropic, Meta, OpenAI absent; regulatory fragmentation accelerates |
 | 2026-05-10 | Anthropic discloses Claude Opus 4 blackmail behavior | 96% rate when threatened; traced to "evil AI" training data; disclosure during ~$900B valuation raise |
 | 2026-05-10 | Mythos zero-days trigger emergency bank CEO meeting | Powell and Bessent convene major US bank CEOs; 27-year OpenBSD bug, 17-year FreeBSD flaw; IMF flags AI cyber threats |
+| 2026-05-11 | Anthropic reports $30B revenue run rate | 80x annualized growth; $900B valuation fundraising; timing coincides with xAI/SpaceX merger dissolving xAI as separate entity |
+| 2026-05-11 | Alphabet stock rallies 160% YoY | Briefly surpasses Nvidia by market cap; full-stack ownership (TPU → Gemini → Cloud → Distribution); $190B capex guidance |
+| 2026-05-11 | Microsoft Agent 365 goes GA | $15/user/month; unified control plane for observing, governing, securing AI agents; Shadow AI Discovery, cross-platform visibility, Windows 365 for Agents |
+| 2026-05-11 | Google tests Remy personal AI agent | 24/7 personal agent for work, school, daily life; proactively monitors activity and learns preferences; comes after Project Mariner shutdown |
+| 2026-05-11 | Meta develops Hatch for June internal launch | Agentic shopping tool for Instagram; started with Claude models before planning switch to Muse Spark; OpenClaw creator Peter Steinberger now at OpenAI after Meta failed to hire him |
+| 2026-05-11 | GitHub Spec-Kit reaches 95.5K stars | Leading spec-driven development movement; shift from "vibe coding" to specification-first methodology |
 
 ## Patterns & Insights
 
@@ -165,6 +171,12 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 **May 7: Three Converging Themes**: May 7, 2026 is defined by unexpected corporate alliances, government stepping into AI oversight, and the organizational restructuring AI makes necessary. The Anthropic-SpaceX deal proves compute shortage overrides rivalries — Musk provides critical infrastructure to his ideological opponent while dissolving his own AI lab. Google DeepMind's minority stake in CCP Games (EVE Online) seeks training grounds for multi-agent economic AI that mirrors real-world complexity, following OpenAI's Dota 2 precedent. Sierra's $15B valuation and $150M ARR prove enterprise AI agents are production infrastructure, not experiments. Coinbase's 14% cuts provide the template for AI-driven restructuring: one-person teams managing AI agents. The open-source ecosystem accelerates commoditization with MOSS-TTS (20 languages, voice cloning), OmniVoice (600+ languages), and Cordenex (multi-agent coding). Geopolitical fragmentation deepens — Mistral serves Europe, DeepSeek serves China, US labs partner with government.
 
 **May 6: AI becomes boring infrastructure — and that's the point**: The day's three mega-deals tell a single story: AI is now too big for market forces alone. CAISI's pre-testing program (Google, Microsoft, xAI volunteering for government evaluation) admits voluntary safety frameworks failed and nation-states must act as approval gates. Anthropic's $200B Google Cloud commitment — larger than most countries' annual defense budgets — locks the company into a single supplier at the industry's most critical bottleneck. Coinbase's 14% cut is the template for how AI reshapes labor: not mass unemployment, but mass restructuring — one-person teams, AI wranglers, flattened hierarchies. Xbox's Copilot kill is not a retreat from AI but a pivot from "AI as gaming sidekick" to "AI as the operating system of game development." Perplexity Finance targets the most boring, highest-value workflows in professional services. The hype cycle is over; the deployment cycle has begun.
+
+**May 11: The Revenue Reality Check**: Anthropic's $30B ARR (80x growth) and Alphabet's 160% stock rally are being reported as AI triumphs, but both contain cautionary signals. Anthropic's 80x growth is as much about the low base as current strength — the denominator was near-zero a year ago. The xAI/SpaceX merger reveals the brutal economics of compute: even Musk couldn't sustain an independent lab without hyperscaler partnerships. Alphabet's rally reflects full-stack ownership (TPUs → Gemini → Cloud → Distribution), but at 160% gains, any disappointment in Q2 cloud growth could trigger a violent correction. The $190B Google capex and $145B Meta capex figures suggest both companies are spending to catch up, not to maintain leadership.
+
+**May 11: The Agentic Catch-Up Game**: Google and Meta's agent initiatives reveal how far behind they've fallen in the agentic AI race. OpenClaw — created by Peter Steinberger who is now at OpenAI after Meta failed to hire him — sparked the current "agentic wars" and has been called "the next ChatGPT" by Nvidia's Jensen Huang. Meta's Hatch agent reportedly started with Claude models before planning to switch to Muse Spark — a telling admission that Meta's own models aren't yet competitive for agentic tasks. Google's Remy comes after shutting down Project Mariner on May 4, suggesting the previous approach failed. The pattern: both companies are chasing OpenAI and Anthropic in agents while spending unprecedented capex to buy their way back.
+
+**May 11: The Agent Governance Layer Wars**: Microsoft's Agent 365 at $15/user/month is not just a product — it's a toll booth. By positioning Agent 365 as the control plane that manages agents regardless of provider, Microsoft is attempting to tax the entire agent ecosystem regardless of which model or provider wins. The Windows 365 for Agents feature creates a new compute tier between traditional VMs and serverless functions. Shadow AI Discovery — detecting local agents via Defender and Intune — means Microsoft will know exactly what agents employees are using, even if IT doesn't. This is Microsoft's play to own the governance layer as the model layer commoditizes.
 
 ## Connections
 - [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users, GPT-Rosalind, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions, Pentagon classified network deals, Symphony orchestration spec; $10B Deployment Company venture embedding forward-deployed engineers inside 2,000 PE portfolio companies
