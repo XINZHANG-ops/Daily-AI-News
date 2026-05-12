@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 12, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 12, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/strukto-ai/mirage" class="card-title" target="_blank">strukto-ai/mirage</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 129 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A Unified Virtual Filesystem For AI Agents. Mount services like S3, Google Drive, Slack, Gmail, Redis, GitHub into a single filesystem that agents can navigate with familiar bash commands. Supports OpenAI Agents SDK, Vercel AI SDK, LangChain, Pydantic AI, and OpenHands.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">面向AI代理的统一虚拟文件系统。将S3、Google Drive、Slack、Gmail、Redis、GitHub等服务挂载到单一文件系统中，代理可以使用熟悉的bash命令导航。支持OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI和OpenHands。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/opensquilla/opensquilla" class="card-title" target="_blank">opensquilla/opensquilla</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 232 stars</div>
+                                <div class="meta-item"><span>🍴</span> 20 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Token-Efficient AI Agent with same budget, higher intelligence density. Features four-tier cognitive memory system (working → episodic → semantic → raw) and layered security sandbox. Supports 20+ LLM providers including OpenRouter, OpenAI, Anthropic, Ollama, DeepSeek, and Gemini.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">令牌高效型AI代理，相同预算下实现更高的智能密度。具备四层认知记忆系统（工作记忆→情景记忆→语义记忆→原始记忆）和分层安全沙箱。支持20多个LLM提供商，包括OpenRouter、OpenAI、Anthropic、Ollama、DeepSeek和Gemini。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/HiDream-ai/HiDream-O1-Image" class="card-title" target="_blank">HiDream-ai/HiDream-O1-Image</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 293 stars</div>
+                                <div class="meta-item"><span>🍴</span> 11 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Natively unified image generative foundation model built on Pixel-level Unified Transformer (UiT). Supports text-to-image, instruction editing, and subject-driven personalization up to 2,048 × 2,048 without external VAEs. Ranked #8 in Artificial Analysis Text to Image Arena as of May 2026.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">基于像素级统一Transformer(UiT)的原生统一图像生成基础模型。支持文生图、指令编辑和主体驱动个性化，最高可达2048×2048分辨率，无需外部VAE。截至2026年5月，在Artificial Analysis文生图竞技场排名第8。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">CNBC / Politico</span>
+                    <div class="news-time">2026-05-11</div>
+                    <a href="https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html" class="card-title" target="_blank" data-lang="en">OpenAI Offers EU Access to GPT-5.5-Cyber, Anthropic Withholds Mythos</a>
+                    <a href="https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI向欧盟开放GPT-5.5-Cyber访问，Anthropic拒绝开放Mythos</a>
+                    <p class="card-description" data-lang="en">OpenAI announced its 'Trusted Access for Cyber' program granting EU institutions access to GPT-5.5-Cyber for defensive security workflows. Meanwhile Anthropic has restricted Mythos to ~12 US tech firms, denying EU regulators preview access despite 4-5 meetings. Germany's Bundesbank publicly demanded access, warning European banks cannot test defenses against AI-powered threats they cannot evaluate.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI宣布'可信网络访问'计划，向欧盟机构开放GPT-5.5-Cyber用于防御性安全工作流。与此同时，Anthropic将Mythos限制在约12家美国科技公司，尽管经过4-5次会议仍拒绝欧盟监管机构预览访问。德国联邦银行公开要求获得访问权限，警告欧洲银行无法测试他们无法评估的AI驱动威胁的防御能力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Verge / Google Cloud</span>
+                    <div class="news-time">2026-05-11</div>
+                    <a href="https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped" class="card-title" target="_blank" data-lang="en">Google Stops First Confirmed AI-Developed Zero-Day Exploit</a>
+                    <a href="https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌阻止首个经确认的AI开发零日漏洞利用</a>
+                    <p class="card-description" data-lang="en">Google's Threat Intelligence Group identified and blocked a zero-day exploit targeting a web admin tool's 2FA bypass, with 'high confidence' it was AI-developed based on hallucinated CVSS scores and textbook Python formatting. The planned 'mass exploitation event' by financially-motivated criminals marks the first confirmed case of AI-assisted vulnerability weaponization.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌威胁情报组识别并阻止了一个针对Web管理工具2FA绕过的零日漏洞利用，基于幻觉化的CVSS评分和教科书式Python格式，'高度确信'其为AI开发。这场由经济利益驱动的犯罪分子计划的'大规模利用事件'标志着首个经确认的AI辅助漏洞武器化案例。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Claude API Blog</span>
+                    <div class="news-time">2026-05-06</div>
+                    <a href="https://claudeapi.com/en/blog/news/anthropic-spacex-compute-higher-limits-claude-code-api/" class="card-title" target="_blank" data-lang="en">Anthropic Doubles Claude Code Rate Limits via SpaceX Compute Partnership</a>
+                    <a href="https://claudeapi.com/en/blog/news/anthropic-spacex-compute-higher-limits-claude-code-api/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic通过与SpaceX计算合作将Claude Code速率限制翻倍</a>
+                    <p class="card-description" data-lang="en">At 'Code with Claude SF 2026,' Anthropic announced immediate doubling of 5-hour rolling rate limits across all paid tiers (Pro, Max, Team, Enterprise) and removed peak-hour throttling. The boost is backed by SpaceX's Colossus 1 data center in Memphis—300+ megawatts with 220,000+ NVIDIA GPUs coming online by end of May.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在'Code with Claude SF 2026'大会上，Anthropic宣布立即将所有付费层级（Pro、Max、Team、Enterprise）的5小时滚动速率限制翻倍，并取消峰值时段限制。此次提升由SpaceX位于孟菲斯的Colossus 1数据中心支持——拥有300多兆瓦电力和22万多块NVIDIA GPU，将于5月底上线。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">VentureBeat</span>
+                    <div class="news-time">2026-05-06</div>
+                    <a href="https://venturebeat.com/technology/xai-launches-grok-4-3-at-an-aggressively-low-price-and-a-new-fast-powerful-voice-cloning-suite/" class="card-title" target="_blank" data-lang="en">xAI Deprecates Grok 3, Launches Grok 4.3 with 83% Price Cut</a>
+                    <a href="https://venturebeat.com/technology/xai-launches-grok-4-3-at-an-aggressively-low-price-and-a-new-fast-powerful-voice-cloning-suite/" class="card-title" target="_blank" data-lang="zh" style="display: none;">xAI弃用Grok 3，推出Grok 4.3并降价83%</a>
+                    <p class="card-description" data-lang="en">xAI deprecated Grok 3 (effective May 15) and opened Grok 4.3 to all API developers at $1.25/1M input tokens—down from Grok 3's $3 pricing. Grok 4.3 adds video input (up to 5 minutes), document output (PDF/XLSX/PPTX), and always-on reasoning. Also announced: voice cloning from 120-second samples and connectors for iOS/Android.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">xAI弃用Grok 3（5月15日生效），向所有API开发者开放Grok 4.3，输入令牌定价1.25美元/百万——较Grok 3的3美元降价。Grok 4.3新增视频输入（最长5分钟）、文档输出（PDF/XLSX/PPTX）和始终开启的推理能力。同时宣布：支持120秒样本语音克隆和iOS/Android连接器。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">SiliconANGLE / Economic Times</span>
+                    <div class="news-time">2026-05-05</div>
+                    <a href="https://siliconangle.com/2026/05/05/elevenlabs-adds-high-profile-investors-annualized-revenue-tops-500m/" class="card-title" target="_blank" data-lang="en">ElevenLabs Hits $500M ARR, Raises Series D at $11B Valuation</a>
+                    <a href="https://siliconangle.com/2026/05/05/elevenlabs-adds-high-profile-investors-annualized-revenue-tops-500m/" class="card-title" target="_blank" data-lang="zh" style="display: none;">ElevenLabs年化经常性收入达5亿美元，以110亿美元估值完成D轮融资</a>
+                    <p class="card-description" data-lang="en">Voice AI leader ElevenLabs announced $500M ARR (up from $350M at start of 2026) with new investors including BlackRock, Nvidia NVentures, Salesforce Ventures, and celebrities Jamie Foxx and Squid Game creator Hwang Dong-hyuk. Opened Sydney HQ for ANZ region with 750K+ users and opened regional headquarters in Sydney for ANZ expansion.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">语音AI领导者ElevenLabs宣布年化经常性收入达5亿美元（年初为3.5亿美元），新投资者包括BlackRock、Nvidia NVentures、Salesforce Ventures，以及名人Jamie Foxx和《鱿鱼游戏》创作者黄东赫。在悉尼设立亚太区总部，该地区已有75万+用户。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Taipei Times / FDD</span>
+                    <div class="news-time">2026-04-30</div>
+                    <a href="https://www.taipeitimes.com/News/biz/archives/2026/04/30/2003856470" class="card-title" target="_blank" data-lang="en">US Commerce Department Blocks Chip Equipment Sales to China's Hua Hong</a>
+                    <a href="https://www.taipeitimes.com/News/biz/archives/2026/04/30/2003856470" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国商务部阻止向中国华虹出售芯片设备</a>
+                    <p class="card-description" data-lang="en">US Commerce Department issued 'as-informed' letters immediately blocking Lam Research, Applied Materials, and KLA Corporation from selling equipment to Hua Hong Semiconductor's Fab 6 and Fab 8a facilities. The action targets Hua Hong's development of 7nm technology that could produce AI chips for Huawei, escalating the chip war beyond just end-device controls.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">美国商务部发出'知会性'信函，立即阻止Lam Research、Applied Materials和KLA Corporation向华虹半导体Fab 6和Fab 8a设施出售设备。该行动针对华虹开发可用于为华为生产AI芯片的7纳米技术，将芯片战争升级超越仅终端设备控制的范畴。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">tbench.ai / arXiv</span>
+                    <div class="news-time">2026-05-10</div>
+                    <a href="https://www.tbench.ai/leaderboard/terminal-bench/2.0" class="card-title" target="_blank" data-lang="en">TerminalBench 2.0 Shows AI Agents Still Fail 18-35% of CLI Tasks</a>
+                    <a href="https://www.tbench.ai/leaderboard/terminal-bench/2.0" class="card-title" target="_blank" data-lang="zh" style="display: none;">TerminalBench 2.0显示AI代理仍有18-35%的CLI任务失败率</a>
+                    <p class="card-description" data-lang="en">ICLR 2026 paper shows frontier models (GPT-5.5 ~73%, Claude Opus 4.6 ~69%) still fail on 18-35% of CLI tasks that experienced developers complete routinely. TerminalBench 2.0 tests 89 tasks across 15 domains (system admin, data science, security) with binary scoring—no partial credit. Agent scaffolding shows 17%+ improvement over raw models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">ICLR 2026论文显示前沿模型（GPT-5.5约73%，Claude Opus 4.6约69%）在有经验的开发者日常完成的CLI任务上仍有18-35%的失败率。TerminalBench 2.0测试15个领域的89个任务（系统管理、数据科学、安全），采用二进制评分——无部分得分。代理脚手架比原始模型提升17%以上。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub Trending</span>
+                    <div class="news-time">2026-05-12</div>
+                    <a href="https://github.com/trending" class="card-title" target="_blank" data-lang="en">Trending GitHub: Agent Tooling and Unified Abstractions</a>
+                    <a href="https://github.com/trending" class="card-title" target="_blank" data-lang="zh" style="display: none;">GitHub趋势：代理工具和统一抽象</a>
+                    <p class="card-description" data-lang="en">This week's trending repos reflect the TerminalBench finding that agents need better infrastructure: strukto-ai/mirage (2k stars) unifies cloud services into a virtual filesystem for agents; opensquilla/opensquilla (232 stars) focuses on token-efficient memory systems; HiDream-ai/HiDream-O1-Image (293 stars) offers unified image generation without VAEs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">本周热门仓库反映了TerminalBench的发现——代理需要更好的基础设施：strukto-ai/mirage（2k星）将云服务统一为代理的虚拟文件系统；opensquilla/opensquilla（232星）专注于令牌高效的记忆系统；HiDream-ai/HiDream-O1-Image（293星）提供无需VAE的统一图像生成。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">May 12, 2026 marks a pivot point where AI competition shifts from model capabilities to infrastructure control. OpenAI's EU cyber model access and Anthropic's compute partnership with SpaceX reveal the new battleground: who can reliably deliver compute at scale while navigating geopolitical friction. The simultaneous announcements—xAI's 83% price cut, Anthropic's doubled rate limits, ElevenLabs' $500M ARR—show the market bifurcating into compute-rich giants and specialized vertical players.
+
+The security dimension intensified dramatically: Google's confirmation of AI-developed zero-days in the wild validates worst-case scenarios from policy papers. With attackers already weaponizing frontier models (hallucinated CVSS scores and all), the EU's exclusion from Mythos becomes an active security liability, not just a regulatory annoyance.
+
+Most telling is the GitHub trending data: developers are voting with their stars for agent infrastructure over raw model access. TerminalBench's unsaturated scores prove models alone won't close the deployment gap—tools like Mirage's unified filesystem abstraction represent where the ecosystem is actually investing energy. The real story of May 12 isn't any single product launch; it's the recognition that AI's bottleneck has moved from 'can the model do it?' to 'can we reliably deploy it at scale without breaking the bank or getting hacked?'</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年5月12日标志着一个转折点：AI竞争从模型能力转向基础设施控制。OpenAI向欧盟开放网络模型访问，Anthropic与SpaceX的计算合作，揭示了新的战场：谁能在应对地缘政治摩擦的同时大规模可靠地交付计算能力。同时发布的消息——xAI降价83%、Anthropic翻倍速率限制、ElevenLabs 5亿美元年化收入——显示市场正在分化为算力丰富的巨头和专业化垂直玩家。
+
+安全维度急剧加剧：谷歌确认AI开发的零日漏洞已在野外出现，验证了政策文件中的最坏情况。随着攻击者已经开始武器化前沿模型（包括幻觉化的CVSS评分），欧盟被排除在Mythos之外成为一个活跃的安全负债，而不仅仅是监管烦恼。
+
+最有说服力的是GitHub趋势数据：开发者用star投票支持代理基础设施而非原始模型访问。TerminalBench的未饱和分数证明仅靠模型无法弥合部署鸿沟——像Mirage的统一文件系统抽象这样的工具代表了生态系统实际投入能量的方向。5月12日的真正故事不是任何单一产品发布；而是人们认识到AI的瓶颈已经从'模型能做到吗？'转变为'我们能否在不破产或被黑客攻击的情况下大规模可靠地部署它？'</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

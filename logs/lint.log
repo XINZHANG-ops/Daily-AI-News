@@ -404,3 +404,13 @@ Wiki lint complete. Here's what was found and fixed across all four passes:
 - Updated `wiki/index.md` date to 2026-05-12
 - Appended lint entry to `wiki/log.md` with counts of what was fixed
 [2026-05-12 01:24:35] Wiki lint complete (exit code 0).
+[main f48f7a9] wiki: lint 2026-05-12
+ 36 files changed, 710 insertions(+), 28 deletions(-)
+ create mode 100644 wiki/entities/cc-sdd.md
+ create mode 100644 wiki/entities/gaai-framework.md
+ create mode 100644 wiki/entities/hatch.md
+ create mode 100644 wiki/entities/spec-kit.md
+ create mode 100644 wiki/ideas/agent-governance-layer-wars.md
+ create mode 100644 wiki/ideas/agentic-catch-up-game.md
+ create mode 100644 wiki/ideas/revenue-reality-check.md
+ create mode 100644 wiki/ideas/spec-driven-development-movement.md

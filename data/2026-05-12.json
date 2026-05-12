@@ -1,0 +1,177 @@
+{
+  "date": "2026-05-12",
+  "github_repos": [
+    {
+      "name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "description": {
+        "en": "A Unified Virtual Filesystem For AI Agents. Mount services like S3, Google Drive, Slack, Gmail, Redis, GitHub into a single filesystem that agents can navigate with familiar bash commands. Supports OpenAI Agents SDK, Vercel AI SDK, LangChain, Pydantic AI, and OpenHands.",
+        "zh": "面向AI代理的统一虚拟文件系统。将S3、Google Drive、Slack、Gmail、Redis、GitHub等服务挂载到单一文件系统中，代理可以使用熟悉的bash命令导航。支持OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI和OpenHands。"
+      },
+      "stars": "2k",
+      "forks": "129"
+    },
+    {
+      "name": "opensquilla/opensquilla",
+      "url": "https://github.com/opensquilla/opensquilla",
+      "description": {
+        "en": "Token-Efficient AI Agent with same budget, higher intelligence density. Features four-tier cognitive memory system (working → episodic → semantic → raw) and layered security sandbox. Supports 20+ LLM providers including OpenRouter, OpenAI, Anthropic, Ollama, DeepSeek, and Gemini.",
+        "zh": "令牌高效型AI代理，相同预算下实现更高的智能密度。具备四层认知记忆系统（工作记忆→情景记忆→语义记忆→原始记忆）和分层安全沙箱。支持20多个LLM提供商，包括OpenRouter、OpenAI、Anthropic、Ollama、DeepSeek和Gemini。"
+      },
+      "stars": "232",
+      "forks": "20"
+    },
+    {
+      "name": "HiDream-ai/HiDream-O1-Image",
+      "url": "https://github.com/HiDream-ai/HiDream-O1-Image",
+      "description": {
+        "en": "Natively unified image generative foundation model built on Pixel-level Unified Transformer (UiT). Supports text-to-image, instruction editing, and subject-driven personalization up to 2,048 × 2,048 without external VAEs. Ranked #8 in Artificial Analysis Text to Image Arena as of May 2026.",
+        "zh": "基于像素级统一Transformer(UiT)的原生统一图像生成基础模型。支持文生图、指令编辑和主体驱动个性化，最高可达2048×2048分辨率，无需外部VAE。截至2026年5月，在Artificial Analysis文生图竞技场排名第8。"
+      },
+      "stars": "293",
+      "forks": "11"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Offers EU Access to GPT-5.5-Cyber, Anthropic Withholds Mythos",
+        "zh": "OpenAI向欧盟开放GPT-5.5-Cyber访问，Anthropic拒绝开放Mythos"
+      },
+      "url": "https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html",
+      "source": "CNBC / Politico",
+      "time": "2026-05-11",
+      "description": {
+        "en": "OpenAI announced its 'Trusted Access for Cyber' program granting EU institutions access to GPT-5.5-Cyber for defensive security workflows. Meanwhile Anthropic has restricted Mythos to ~12 US tech firms, denying EU regulators preview access despite 4-5 meetings. Germany's Bundesbank publicly demanded access, warning European banks cannot test defenses against AI-powered threats they cannot evaluate.",
+        "zh": "OpenAI宣布'可信网络访问'计划，向欧盟机构开放GPT-5.5-Cyber用于防御性安全工作流。与此同时，Anthropic将Mythos限制在约12家美国科技公司，尽管经过4-5次会议仍拒绝欧盟监管机构预览访问。德国联邦银行公开要求获得访问权限，警告欧洲银行无法测试他们无法评估的AI驱动威胁的防御能力。"
+      },
+      "insight": {
+        "en": "01 *The EU Access Gap*: OpenAI's George Osborne (former UK Chancellor) positioned this as a geopolitical win—'Europe's many defenders, not just the few'—while Anthropic's delay creates a structural disadvantage for EU financial institutions. This divergence comes just as Google's Threat Intelligence Group reported AI-developed zero-days in the wild (see below), making Mythos's vulnerability-hunting capabilities more urgent than theoretical.",
+        "zh": "01 *欧盟访问鸿沟*：OpenAI的George Osborne（前英国财政大臣）将此定位为地缘政治胜利——'欧洲众多防御者，而非少数'——而Anthropic的延迟为欧盟金融机构创造了结构性劣势。这一分歧恰逢谷歌威胁情报组报告AI开发的零日漏洞已在野外出现（见下文），使得Mythos的漏洞搜寻能力比理论更为紧迫。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Stops First Confirmed AI-Developed Zero-Day Exploit",
+        "zh": "谷歌阻止首个经确认的AI开发零日漏洞利用"
+      },
+      "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+      "source": "The Verge / Google Cloud",
+      "time": "2026-05-11",
+      "description": {
+        "en": "Google's Threat Intelligence Group identified and blocked a zero-day exploit targeting a web admin tool's 2FA bypass, with 'high confidence' it was AI-developed based on hallucinated CVSS scores and textbook Python formatting. The planned 'mass exploitation event' by financially-motivated criminals marks the first confirmed case of AI-assisted vulnerability weaponization.",
+        "zh": "谷歌威胁情报组识别并阻止了一个针对Web管理工具2FA绕过的零日漏洞利用，基于幻觉化的CVSS评分和教科书式Python格式，'高度确信'其为AI开发。这场由经济利益驱动的犯罪分子计划的'大规模利用事件'标志着首个经确认的AI辅助漏洞武器化案例。"
+      },
+      "insight": {
+        "en": "02 *AI vs AI on the Attack Surface*: The exploit targeted a semantic logic flaw—not memory corruption—which is exactly where frontier LLMs excel over traditional fuzzers. Google noted they 'do not believe Gemini was used,' suggesting OpenClaw or other uncensored models. This validates why EU banks desperately want Mythos access: attackers already have AI-powered tools, defenders are structurally blind without equivalent capabilities.",
+        "zh": "02 *攻击面上的AI对AI*：该漏洞利用针对的是语义逻辑缺陷——而非内存损坏——这正是前沿LLM优于传统模糊测试工具的领域。谷歌指出他们'不认为使用了Gemini'，暗示可能是OpenClaw或其他无审查模型。这验证了为什么欧盟银行迫切需要Mythos访问权限：攻击者已经拥有AI驱动的工具，没有同等能力的防御者处于结构性盲区。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Doubles Claude Code Rate Limits via SpaceX Compute Partnership",
+        "zh": "Anthropic通过与SpaceX计算合作将Claude Code速率限制翻倍"
+      },
+      "url": "https://claudeapi.com/en/blog/news/anthropic-spacex-compute-higher-limits-claude-code-api/",
+      "source": "Claude API Blog",
+      "time": "2026-05-06",
+      "description": {
+        "en": "At 'Code with Claude SF 2026,' Anthropic announced immediate doubling of 5-hour rolling rate limits across all paid tiers (Pro, Max, Team, Enterprise) and removed peak-hour throttling. The boost is backed by SpaceX's Colossus 1 data center in Memphis—300+ megawatts with 220,000+ NVIDIA GPUs coming online by end of May.",
+        "zh": "在'Code with Claude SF 2026'大会上，Anthropic宣布立即将所有付费层级（Pro、Max、Team、Enterprise）的5小时滚动速率限制翻倍，并取消峰值时段限制。此次提升由SpaceX位于孟菲斯的Colossus 1数据中心支持——拥有300多兆瓦电力和22万多块NVIDIA GPU，将于5月底上线。"
+      },
+      "insight": {
+        "en": "03 *The Infrastructure Wars*: The SpaceX partnership (formally SpaceXAI after acquisition) gives Anthropic dedicated capacity that OpenAI lacks, explaining how they could eliminate peak-hour throttling that has plagued both platforms. With 220K GPUs in a single facility, Anthropic may have solved the reliability issues that sent developers to alternatives like Cursor—just as TerminalBench 2.0 showed agent scaffolding matters more than raw model capability.",
+        "zh": "03 *基础设施战争*：与SpaceX的合作（收购后正式称为SpaceXAI）为Anthropic提供了OpenAI缺乏的专用容量，这解释了他们如何能够消除困扰两个平台的峰值时段限制。单一设施拥有22万块GPU，Anthropic可能解决了导致开发者转向Cursor等替代品的可靠性问题——恰逢TerminalBench 2.0显示代理脚手架比原始模型能力更重要之际。"
+      }
+    },
+    {
+      "title": {
+        "en": "xAI Deprecates Grok 3, Launches Grok 4.3 with 83% Price Cut",
+        "zh": "xAI弃用Grok 3，推出Grok 4.3并降价83%"
+      },
+      "url": "https://venturebeat.com/technology/xai-launches-grok-4-3-at-an-aggressively-low-price-and-a-new-fast-powerful-voice-cloning-suite/",
+      "source": "VentureBeat",
+      "time": "2026-05-06",
+      "description": {
+        "en": "xAI deprecated Grok 3 (effective May 15) and opened Grok 4.3 to all API developers at $1.25/1M input tokens—down from Grok 3's $3 pricing. Grok 4.3 adds video input (up to 5 minutes), document output (PDF/XLSX/PPTX), and always-on reasoning. Also announced: voice cloning from 120-second samples and connectors for iOS/Android.",
+        "zh": "xAI弃用Grok 3（5月15日生效），向所有API开发者开放Grok 4.3，输入令牌定价1.25美元/百万——较Grok 3的3美元降价。Grok 4.3新增视频输入（最长5分钟）、文档输出（PDF/XLSX/PPTX）和始终开启的推理能力。同时宣布：支持120秒样本语音克隆和iOS/Android连接器。"
+      },
+      "insight": {
+        "en": "04 *The Price Floor Collapses*: At $1.25/1M input and $2.50/1M output, Grok 4.3 undercuts GPT-4.5 by roughly 60% while offering 1M token context and video understanding. This follows the pattern of ElevenLabs' aggressive pricing (see below). The AI API market is entering a race-to-the-bottom phase where only compute-rich providers survive—explaining Anthropic's desperate need for the SpaceX deal and why xAI's pricing is Musk's classic market-entry strategy.",
+        "zh": "04 *价格底线崩塌*：以1.25美元/百万输入和2.50美元/百万输出的价格，Grok 4.3比GPT-4.5低约60%，同时提供100万令牌上下文和视频理解。这遵循了ElevenLabs激进定价的模式（见下文）。AI API市场正进入一场逐底竞争，只有算力丰富的提供商才能生存——这解释了Anthropic对SpaceX交易的迫切需求，以及为什么xAI的定价是马斯克经典的市场进入策略。"
+      }
+    },
+    {
+      "title": {
+        "en": "ElevenLabs Hits $500M ARR, Raises Series D at $11B Valuation",
+        "zh": "ElevenLabs年化经常性收入达5亿美元，以110亿美元估值完成D轮融资"
+      },
+      "url": "https://siliconangle.com/2026/05/05/elevenlabs-adds-high-profile-investors-annualized-revenue-tops-500m/",
+      "source": "SiliconANGLE / Economic Times",
+      "time": "2026-05-05",
+      "description": {
+        "en": "Voice AI leader ElevenLabs announced $500M ARR (up from $350M at start of 2026) with new investors including BlackRock, Nvidia NVentures, Salesforce Ventures, and celebrities Jamie Foxx and Squid Game creator Hwang Dong-hyuk. Opened Sydney HQ for ANZ region with 750K+ users and opened regional headquarters in Sydney for ANZ expansion.",
+        "zh": "语音AI领导者ElevenLabs宣布年化经常性收入达5亿美元（年初为3.5亿美元），新投资者包括BlackRock、Nvidia NVentures、Salesforce Ventures，以及名人Jamie Foxx和《鱿鱼游戏》创作者黄东赫。在悉尼设立亚太区总部，该地区已有75万+用户。"
+      },
+      "insight": {
+        "en": "05 *Voice as Infrastructure*: The $11B valuation for a voice-only AI company (no text/chat models) signals that enterprise voice agents are being recognized as mission-critical infrastructure. With CEO Mati Staniszewski adding engineers to every non-technical team and Eleven v3 launching conversational multi-speaker features, they're betting voice becomes the primary enterprise AI interface—positioning against xAI's new voice cloning suite announced the same week.",
+        "zh": "05 *语音作为基础设施*：一家纯语音AI公司（无文本/聊天模型）获得110亿美元估值，表明企业语音代理正被认可为关键任务基础设施。CEO Mati Staniszewski为每个非技术团队增加工程师，Eleven v3推出对话多说话人功能，他们押注语音将成为主要的企业AI界面——与xAI同周宣布的新语音克隆套件形成竞争态势。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Commerce Department Blocks Chip Equipment Sales to China's Hua Hong",
+        "zh": "美国商务部阻止向中国华虹出售芯片设备"
+      },
+      "url": "https://www.taipeitimes.com/News/biz/archives/2026/04/30/2003856470",
+      "source": "Taipei Times / FDD",
+      "time": "2026-04-30",
+      "description": {
+        "en": "US Commerce Department issued 'as-informed' letters immediately blocking Lam Research, Applied Materials, and KLA Corporation from selling equipment to Hua Hong Semiconductor's Fab 6 and Fab 8a facilities. The action targets Hua Hong's development of 7nm technology that could produce AI chips for Huawei, escalating the chip war beyond just end-device controls.",
+        "zh": "美国商务部发出'知会性'信函，立即阻止Lam Research、Applied Materials和KLA Corporation向华虹半导体Fab 6和Fab 8a设施出售设备。该行动针对华虹开发可用于为华为生产AI芯片的7纳米技术，将芯片战争升级超越仅终端设备控制的范畴。"
+      },
+      "insight": {
+        "en": "06 *Targeting the Supply Chain*: Unlike previous export controls that blocked end chips (A100, H100), this targets the equipment needed to make any advanced chips—hitting Hua Hong's 7nm R&D before production capability matures. With Hua Hong potentially supplanting SMIC in producing advanced AI chips for Huawei, Washington is trying to choke off China's domestic AI chip fabrication at the equipment layer, not just the design layer.",
+        "zh": "06 *瞄准供应链*：与之前阻止终端芯片（A100、H100）的出口管制不同，这次针对制造任何先进芯片所需的设备——在华虹7纳米研发的生产能力成熟之前打击它。随着华虹可能取代中芯国际为华为生产先进AI芯片，华盛顿正试图在设备层而非仅设计层扼杀中国国内AI芯片制造。"
+      }
+    },
+    {
+      "title": {
+        "en": "TerminalBench 2.0 Shows AI Agents Still Fail 18-35% of CLI Tasks",
+        "zh": "TerminalBench 2.0显示AI代理仍有18-35%的CLI任务失败率"
+      },
+      "url": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
+      "source": "tbench.ai / arXiv",
+      "time": "2026-05-10",
+      "description": {
+        "en": "ICLR 2026 paper shows frontier models (GPT-5.5 ~73%, Claude Opus 4.6 ~69%) still fail on 18-35% of CLI tasks that experienced developers complete routinely. TerminalBench 2.0 tests 89 tasks across 15 domains (system admin, data science, security) with binary scoring—no partial credit. Agent scaffolding shows 17%+ improvement over raw models.",
+        "zh": "ICLR 2026论文显示前沿模型（GPT-5.5约73%，Claude Opus 4.6约69%）在有经验的开发者日常完成的CLI任务上仍有18-35%的失败率。TerminalBench 2.0测试15个领域的89个任务（系统管理、数据科学、安全），采用二进制评分——无部分得分。代理脚手架比原始模型提升17%以上。"
+      },
+      "insight": {
+        "en": "07 *The Real-World Gap*: While SWE-bench approaches 80% on code patches, TerminalBench's unsaturated scores (~82% with agents, ~73% raw) reveal the operational reliability gap. This explains why tools like Mirage (trending on GitHub this week) focus on filesystem abstraction—agents need better tooling, not just better models. The 37% gap between lab benchmarks and deployment reality is where the next generation of agent infrastructure will be built.",
+        "zh": "07 *现实世界鸿沟*：虽然SWE-bench在代码补丁上接近80%，但TerminalBench的未饱和分数（代理约82%，原始约73%）揭示了运营可靠性差距。这解释了为什么像Mirage（本周GitHub热门）这样的工具专注于文件系统抽象——代理需要更好的工具，而不仅仅是更好的模型。实验室基准与部署现实之间37%的差距正是下一代代理基础设施将建设的地方。"
+      }
+    },
+    {
+      "title": {
+        "en": "Trending GitHub: Agent Tooling and Unified Abstractions",
+        "zh": "GitHub趋势：代理工具和统一抽象"
+      },
+      "url": "https://github.com/trending",
+      "source": "GitHub Trending",
+      "time": "2026-05-12",
+      "description": {
+        "en": "This week's trending repos reflect the TerminalBench finding that agents need better infrastructure: strukto-ai/mirage (2k stars) unifies cloud services into a virtual filesystem for agents; opensquilla/opensquilla (232 stars) focuses on token-efficient memory systems; HiDream-ai/HiDream-O1-Image (293 stars) offers unified image generation without VAEs.",
+        "zh": "本周热门仓库反映了TerminalBench的发现——代理需要更好的基础设施：strukto-ai/mirage（2k星）将云服务统一为代理的虚拟文件系统；opensquilla/opensquilla（232星）专注于令牌高效的记忆系统；HiDream-ai/HiDream-O1-Image（293星）提供无需VAE的统一图像生成。"
+      },
+      "insight": {
+        "en": "08 *The Agent Infrastructure Layer*: All three trending repos solve the same problem from different angles—unified abstractions that hide complexity from agents. Mirage abstracts storage, OpenSquilla abstracts memory management, HiDream abstracts multimodal generation. This convergent evolution suggests developers are tired of wiring agents to 20 different APIs and want opinionated infrastructure that 'just works'—a signal the ecosystem is maturing beyond the 'vibe coding' phase.",
+        "zh": "08 *代理基础设施层*：三个热门仓库从不同角度解决同一个问题——向代理隐藏复杂性的统一抽象。Mirage抽象存储，OpenSquilla抽象内存管理，HiDream抽象多模态生成。这种趋同进化表明开发者厌倦了将代理连接到20个不同API，希望有'开箱即用'的 opinionated 基础设施——这是生态系统超越'氛围编码'阶段走向成熟的信号。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "May 12, 2026 marks a pivot point where AI competition shifts from model capabilities to infrastructure control. OpenAI's EU cyber model access and Anthropic's compute partnership with SpaceX reveal the new battleground: who can reliably deliver compute at scale while navigating geopolitical friction. The simultaneous announcements—xAI's 83% price cut, Anthropic's doubled rate limits, ElevenLabs' $500M ARR—show the market bifurcating into compute-rich giants and specialized vertical players.\n\nThe security dimension intensified dramatically: Google's confirmation of AI-developed zero-days in the wild validates worst-case scenarios from policy papers. With attackers already weaponizing frontier models (hallucinated CVSS scores and all), the EU's exclusion from Mythos becomes an active security liability, not just a regulatory annoyance.\n\nMost telling is the GitHub trending data: developers are voting with their stars for agent infrastructure over raw model access. TerminalBench's unsaturated scores prove models alone won't close the deployment gap—tools like Mirage's unified filesystem abstraction represent where the ecosystem is actually investing energy. The real story of May 12 isn't any single product launch; it's the recognition that AI's bottleneck has moved from 'can the model do it?' to 'can we reliably deploy it at scale without breaking the bank or getting hacked?'",
+    "zh": "2026年5月12日标志着一个转折点：AI竞争从模型能力转向基础设施控制。OpenAI向欧盟开放网络模型访问，Anthropic与SpaceX的计算合作，揭示了新的战场：谁能在应对地缘政治摩擦的同时大规模可靠地交付计算能力。同时发布的消息——xAI降价83%、Anthropic翻倍速率限制、ElevenLabs 5亿美元年化收入——显示市场正在分化为算力丰富的巨头和专业化垂直玩家。\n\n安全维度急剧加剧：谷歌确认AI开发的零日漏洞已在野外出现，验证了政策文件中的最坏情况。随着攻击者已经开始武器化前沿模型（包括幻觉化的CVSS评分），欧盟被排除在Mythos之外成为一个活跃的安全负债，而不仅仅是监管烦恼。\n\n最有说服力的是GitHub趋势数据：开发者用star投票支持代理基础设施而非原始模型访问。TerminalBench的未饱和分数证明仅靠模型无法弥合部署鸿沟——像Mirage的统一文件系统抽象这样的工具代表了生态系统实际投入能量的方向。5月12日的真正故事不是任何单一产品发布；而是人们认识到AI的瓶颈已经从'模型能做到吗？'转变为'我们能否在不破产或被黑客攻击的情况下大规模可靠地部署它？'"
+  }
+}
