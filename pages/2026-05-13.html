@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 13, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 13, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/fronalabs/frona" class="card-title" target="_blank">fronalabs/frona</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 132 stars</div>
+                                <div class="meta-item"><span>🍴</span> 28 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A self-hosted personal AI assistant platform for creating autonomous agents. Features per-principal sandboxing with policy-driven syscall filtering, MCP support with bridge mode, browser automation, and credential vault integration. Supports 15+ LLM providers including Anthropic, OpenAI, Gemini, and DeepSeek.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">用于创建自主代理的自托管个人AI助手平台。具有基于主体的沙箱隔离和策略驱动的系统调用过滤、带桥接模式的MCP支持、浏览器自动化和凭证库集成。支持15+ LLM提供商，包括Anthropic、OpenAI、Gemini和DeepSeek。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/agenvoy/Agenvoy" class="card-title" target="_blank">agenvoy/Agenvoy</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 101 stars</div>
+                                <div class="meta-item"><span>🍴</span> 15 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Agentic runtime written in Go with multi-provider concurrent dispatch, self-improving error memory via ToriiDB, and OS-native sandboxing. Features 7 LLM providers, MCP client adapter, in-process subagents, and semantic search with OpenAI embeddings.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">用Go编写的代理运行时，具有多提供商并发调度、通过ToriiDB的自我改进错误记忆和操作系统原生沙箱。具有7个LLM提供商、MCP客户端适配器、进程内子代理和带有OpenAI嵌入的语义搜索。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/microsoft/webwright" class="card-title" target="_blank">microsoft/Webwright</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.4k stars</div>
+                                <div class="meta-item"><span>🍴</span> 312 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A terminal-based web agent harness achieving SOTA results: 86.7% on Online-Mind2Web and 60.1% on Odysseys long-horizon tasks. Uses code-as-action paradigm with workspace-as-state architecture. Minimal design at ~450 lines core agent loop.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">基于终端的网络代理工具，达到SOTA结果：在Online-Mind2Web上达到86.7%，在Odyssey长程任务上达到60.1%。使用代码即行动范式和工作空间即状态架构。核心代理循环仅约450行，设计极简。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Yahoo Finance</span>
+                    <div class="news-time">2026-05-12</div>
+                    <a href="https://finance.yahoo.com/sectors/technology/articles/perceptron-ai-launches-physical-ai-153000413.html" class="card-title" target="_blank" data-lang="en">Perceptron AI Launches Mk1 Physical AI Model for Embodied Reasoning</a>
+                    <a href="https://finance.yahoo.com/sectors/technology/articles/perceptron-ai-launches-physical-ai-153000413.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Perceptron AI推出Mk1物理AI模型用于具身推理</a>
+                    <p class="card-description" data-lang="en">Perceptron AI launched Mk1 ('Mark One'), a physical AI model for video understanding and embodied reasoning. Founded by former FAIR scientists, it matches frontier labs at a fraction of the cost. Targets manufacturing, robotics, geospatial, and security use cases.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Perceptron AI推出了Mk1('Mark One')，这是一款用于视频理解和具身推理的物理AI模型。由前FAIR科学家创立，以一小部分成本匹敌前沿实验室。目标用例包括制造、机器人、地理空间和安防。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Unite.AI</span>
+                    <div class="news-time">2026-05-11</div>
+                    <a href="https://www.unite.ai/thinking-machines-lab-ships-first-model-with-200ms-real-time-interaction/" class="card-title" target="_blank" data-lang="en">Thinking Machines Lab Ships First Model with 200ms Real-Time Multimodal Interaction</a>
+                    <a href="https://www.unite.ai/thinking-machines-lab-ships-first-model-with-200ms-real-time-interaction/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Thinking Machines Lab推出首个200毫秒实时多模态交互模型</a>
+                    <p class="card-description" data-lang="en">Mira Murati's Thinking Machines Lab released TML-Interaction-Small, a 276B-parameter MoE model with 12B active parameters. Processes audio, video, and text in 200ms chunks using time-aligned micro-turns for real-time exchanges with interruption support.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Mira Murati的Thinking Machines Lab发布了TML-Interaction-Small，这是一个2760亿参数的MoE模型，具有120亿活跃参数。使用200毫秒的块处理音频、视频和文本，通过时间对齐的微轮次实现支持打断的实时交换。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Krea</span>
+                    <div class="news-time">2026-05-12</div>
+                    <a href="https://www.krea.ai/blog/krea-2-image-model" class="card-title" target="_blank" data-lang="en">Krea Launches Krea 2 Foundation Image Model Built from Scratch</a>
+                    <a href="https://www.krea.ai/blog/krea-2-image-model" class="card-title" target="_blank" data-lang="zh" style="display: none;">Krea推出从头构建的Krea 2基础图像模型</a>
+                    <p class="card-description" data-lang="en">Krea announced Krea 2, their first foundation image model built completely from scratch. Features advanced style transfer with ability to guide, mix, strengthen, and push visual styles. Supports diverse aesthetics from film photography to cinematic stills and digital paintings.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Krea宣布了Krea 2，这是他们完全从头构建的第一个基础图像模型。具有高级风格迁移功能，能够引导、混合、增强和推动视觉风格。支持从胶片摄影到电影剧照和数字绘画的多样化美学。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Next Web</span>
+                    <div class="news-time">2026-05-12</div>
+                    <a href="https://thenextweb.com/news/openai-daybreak-anthropic-mythos-cyber-defence" class="card-title" target="_blank" data-lang="en">OpenAI Launches Daybreak Cybersecurity Platform to Challenge Anthropic Mythos</a>
+                    <a href="https://thenextweb.com/news/openai-daybreak-anthropic-mythos-cyber-defence" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI推出Daybreak网络安全平台挑战Anthropic Mythos</a>
+                    <p class="card-description" data-lang="en">OpenAI launched Daybreak, a cybersecurity platform built on GPT-5.5 variants targeting Anthropic's Mythos dominance. Three model variants: standard, Trusted Access for verified defenders, and permissive GPT-5.5-Cyber for authorized red teaming. Partners include CrowdStrike, Palo Alto Networks, Cloudflare.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI推出了Daybreak，这是一个基于GPT-5.5变体的网络安全平台，目标直指Anthropic Mythos的主导地位。三种模型变体：标准版、用于经验证防御者的可信访问版，以及用于授权红队测试的宽松版GPT-5.5-Cyber。合作伙伴包括CrowdStrike、Palo Alto Networks、Cloudflare。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Google Blog</span>
+                    <div class="news-time">2026-05-12</div>
+                    <a href="https://blog.google/products-and-platforms/platforms/android/meet-googlebook/" class="card-title" target="_blank" data-lang="en">Google Unveils Googlebook: Laptops Designed for Gemini Intelligence</a>
+                    <a href="https://blog.google/products-and-platforms/platforms/android/meet-googlebook/" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌发布Googlebook：专为Gemini智能设计的笔记本电脑</a>
+                    <p class="card-description" data-lang="en">Google introduced Googlebook, a new laptop category built on Android with ChromeOS integration. Features 'Magic Pointer' for contextual AI suggestions and 'Create your Widget' for custom widgets via prompts. Partners: Acer, ASUS, Dell, HP, Lenovo. Launches Fall 2026.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌推出了Googlebook，这是一个基于Android构建并集成ChromeOS的新笔记本电脑类别。具有用于上下文AI建议的'Magic Pointer'和通过提示创建自定义小部件的'Create your Widget'功能。合作伙伴：Acer、ASUS、Dell、HP、Lenovo。2026年秋季推出。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Anthropic</span>
+                    <div class="news-time">2026-05-11</div>
+                    <a href="https://www.anthropic.com/news/claude-code-may-2026" class="card-title" target="_blank" data-lang="en">Anthropic Releases Claude Code v2.1.139 with Agent View and /goal Command</a>
+                    <a href="https://www.anthropic.com/news/claude-code-may-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic发布Claude Code v2.1.139，带有代理视图和/goal命令</a>
+                    <p class="card-description" data-lang="en">Claude Code update introduces Agent View for unified session management, /goal command for autonomous completion conditions, native Git worktree support, /loop for recurring tasks, and MCP improvements. Agent View is a Research Preview for Pro/Team/Enterprise plans.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Code更新引入了用于统一会话管理的代理视图、用于自主完成条件的/goal命令、原生Git工作区支持、用于定期任务的/loop和MCP改进。代理视图是Pro/Team/Enterprise计划的研究预览功能。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AWS</span>
+                    <div class="news-time">2026-05-06</div>
+                    <a href="https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/" class="card-title" target="_blank" data-lang="en">AWS MCP Server Goes Generally Available with Sandboxed Python Execution</a>
+                    <a href="https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/" class="card-title" target="_blank" data-lang="zh" style="display: none;">AWS MCP服务器正式发布，支持沙盒化Python执行</a>
+                    <p class="card-description" data-lang="en">AWS launched its managed MCP server giving AI agents secure access to AWS services. Features single-tool API access, sandboxed Python script execution, IAM-based guardrails, CloudWatch metrics, and CloudTrail logging. Available in US East and Frankfurt regions.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AWS推出了其托管MCP服务器，为AI代理提供对AWS服务的安全访问。具有单一工具API访问、沙盒化Python脚本执行、基于IAM的防护栏、CloudWatch指标和CloudTrail日志记录。在美国东部和法兰克福地区可用。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub Blog</span>
+                    <div class="news-time">2026-05-05</div>
+                    <a href="https://github.blog/changelog/2026-05-05-secret-scanning-with-github-mcp-server/" class="card-title" target="_blank" data-lang="en">GitHub MCP Server Secret Scanning Reaches General Availability</a>
+                    <a href="https://github.blog/changelog/2026-05-05-secret-scanning-with-github-mcp-server/" class="card-title" target="_blank" data-lang="zh" style="display: none;">GitHub MCP服务器密钥扫描功能正式发布</a>
+                    <p class="card-description" data-lang="en">GitHub MCP Server's secret scanning capability is now generally available after public preview since March. Allows AI coding agents and IDEs to scan code for exposed secrets before committing or opening pull requests. Honors existing push protection customization settings.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GitHub MCP服务器的密钥扫描功能自3月公开预览后正式发布。允许AI编码代理和IDE在提交或打开拉取请求之前扫描代码中暴露的密钥。遵守现有的推送保护自定义设置。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">May 12-13, 2026 reveals a sector consolidating around three converging themes: real-time latency, agent infrastructure, and vertical integration. Perceptron Mk1 and Thinking Machines Lab's TML-Interaction-Small both shipped targeting the 200ms threshold—but while Perceptron bets on physical embodiment for manufacturing and robotics, TML is optimizing for conversational flow. The real story is that 'real-time AI' is fragmenting into use-case-specific architectures rather than converging on a single model. Meanwhile, MCP (Model Context Protocol) went from niche experiment to infrastructure battleground in a single week: AWS GA'd their server, GitHub shipped secret scanning, and Sentry-for-AI went live. Cloud providers are treating MCP as the new API gateway for AI agents. The third pattern is vertical integration: Krea building proprietary foundation models, Google betting the laptop category on Gemini, and OpenAI launching Daybreak as a bundled security platform. The 'wrapper vs. foundation' debate is resolving—survivors are building full stacks. The broader narrative: the AI infrastructure layer is maturing faster than most expected, with enterprise security and real-time interaction becoming the two primary battlegrounds for differentiation.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年5月12-13日展现了一个行业围绕三个融合主题进行整合：实时延迟、代理基础设施和垂直整合。Perceptron Mk1和Thinking Machines Lab的TML-Interaction-Small都针对200毫秒阈值推出——但Perceptron押注于制造业和机器人的物理具身，而TML则优化对话流畅性。真正的故事是'实时AI'正在根据用例特定架构分裂，而非收敛于单一模型。与此同时，MCP（模型上下文协议）在一周内从小众实验变成基础设施战场：AWS正式发布其服务器，GitHub推出密钥扫描，Sentry-for-AI上线。云提供商将MCP视为AI代理的新API网关。第三个模式是垂直整合：Krea构建专有基础模型，谷歌将笔记本类别押注于Gemini，OpenAI将Daybreak作为捆绑安全平台推出。'包装器vs基础'的争论正在解决——幸存者正在构建全栈。更广泛的叙述是：AI基础设施层比大多数人预期的成熟得更快，企业安全和实时交互成为差异化的两个主要战场。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

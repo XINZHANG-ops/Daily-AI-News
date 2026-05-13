@@ -432,3 +432,14 @@ Wiki lint complete. Here's what was fixed:
 
 Lint entry appended to `wiki/log.md`.
 [2026-05-13 01:09:09] Wiki lint complete (exit code 0).
+[main af80d4e] wiki: lint 2026-05-13
+ 38 files changed, 676 insertions(+), 40 deletions(-)
+ create mode 100644 .check_tables.py
+ create mode 100644 wiki/entities/colossus-1.md
+ create mode 100644 wiki/entities/grok-4-3.md
+ create mode 100644 wiki/entities/hidream-o1-image.md
+ create mode 100644 wiki/entities/mirage.md
+ create mode 100644 wiki/entities/opensquilla.md
+ create mode 100644 wiki/ideas/agent-infrastructure-layer.md
+ create mode 100644 wiki/ideas/eu-cyber-access-gap.md
+ create mode 100644 wiki/sources/elevenlabs.md

@@ -1,0 +1,177 @@
+{
+  "date": "2026-05-13",
+  "github_repos": [
+    {
+      "name": "fronalabs/frona",
+      "url": "https://github.com/fronalabs/frona",
+      "description": {
+        "en": "A self-hosted personal AI assistant platform for creating autonomous agents. Features per-principal sandboxing with policy-driven syscall filtering, MCP support with bridge mode, browser automation, and credential vault integration. Supports 15+ LLM providers including Anthropic, OpenAI, Gemini, and DeepSeek.",
+        "zh": "用于创建自主代理的自托管个人AI助手平台。具有基于主体的沙箱隔离和策略驱动的系统调用过滤、带桥接模式的MCP支持、浏览器自动化和凭证库集成。支持15+ LLM提供商，包括Anthropic、OpenAI、Gemini和DeepSeek。"
+      },
+      "stars": "132",
+      "forks": "28"
+    },
+    {
+      "name": "agenvoy/Agenvoy",
+      "url": "https://github.com/agenvoy/Agenvoy",
+      "description": {
+        "en": "Agentic runtime written in Go with multi-provider concurrent dispatch, self-improving error memory via ToriiDB, and OS-native sandboxing. Features 7 LLM providers, MCP client adapter, in-process subagents, and semantic search with OpenAI embeddings.",
+        "zh": "用Go编写的代理运行时，具有多提供商并发调度、通过ToriiDB的自我改进错误记忆和操作系统原生沙箱。具有7个LLM提供商、MCP客户端适配器、进程内子代理和带有OpenAI嵌入的语义搜索。"
+      },
+      "stars": "101",
+      "forks": "15"
+    },
+    {
+      "name": "microsoft/Webwright",
+      "url": "https://github.com/microsoft/webwright",
+      "description": {
+        "en": "A terminal-based web agent harness achieving SOTA results: 86.7% on Online-Mind2Web and 60.1% on Odysseys long-horizon tasks. Uses code-as-action paradigm with workspace-as-state architecture. Minimal design at ~450 lines core agent loop.",
+        "zh": "基于终端的网络代理工具，达到SOTA结果：在Online-Mind2Web上达到86.7%，在Odyssey长程任务上达到60.1%。使用代码即行动范式和工作空间即状态架构。核心代理循环仅约450行，设计极简。"
+      },
+      "stars": "2.4k",
+      "forks": "312"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Perceptron AI Launches Mk1 Physical AI Model for Embodied Reasoning",
+        "zh": "Perceptron AI推出Mk1物理AI模型用于具身推理"
+      },
+      "url": "https://finance.yahoo.com/sectors/technology/articles/perceptron-ai-launches-physical-ai-153000413.html",
+      "source": "Yahoo Finance",
+      "time": "2026-05-12",
+      "description": {
+        "en": "Perceptron AI launched Mk1 ('Mark One'), a physical AI model for video understanding and embodied reasoning. Founded by former FAIR scientists, it matches frontier labs at a fraction of the cost. Targets manufacturing, robotics, geospatial, and security use cases.",
+        "zh": "Perceptron AI推出了Mk1('Mark One')，这是一款用于视频理解和具身推理的物理AI模型。由前FAIR科学家创立，以一小部分成本匹敌前沿实验室。目标用例包括制造、机器人、地理空间和安防。"
+      },
+      "insight": {
+        "en": "The same day Perceptron launched, Thinking Machines Lab released their interaction model—both targeting real-time AI but from opposite directions: one for physical embodiment, one for conversational latency. Meanwhile, OpenAI's Daybreak announcement shows the battle for AI-powered cybersecurity is now a three-way race between OpenAI, Anthropic's Mythos, and Perceptron's embodied agents. The pattern: everyone is racing to ship 'agentic' systems before the category definition solidifies.",
+        "zh": "Perceptron发布当天，Thinking Machines Lab也发布了他们的交互模型——两者都瞄准实时AI，但方向相反：一个用于物理具身，一个用于对话延迟。与此同时，OpenAI的Daybreak公告显示，AI驱动的网络安全之争现在已成为OpenAI、Anthropic Mythos和Perceptron具身代理之间的三方竞赛。模式是：每个人都在'代理'类别定义固化之前竞相推出'代理'系统。"
+      }
+    },
+    {
+      "title": {
+        "en": "Thinking Machines Lab Ships First Model with 200ms Real-Time Multimodal Interaction",
+        "zh": "Thinking Machines Lab推出首个200毫秒实时多模态交互模型"
+      },
+      "url": "https://www.unite.ai/thinking-machines-lab-ships-first-model-with-200ms-real-time-interaction/",
+      "source": "Unite.AI",
+      "time": "2026-05-11",
+      "description": {
+        "en": "Mira Murati's Thinking Machines Lab released TML-Interaction-Small, a 276B-parameter MoE model with 12B active parameters. Processes audio, video, and text in 200ms chunks using time-aligned micro-turns for real-time exchanges with interruption support.",
+        "zh": "Mira Murati的Thinking Machines Lab发布了TML-Interaction-Small，这是一个2760亿参数的MoE模型，具有120亿活跃参数。使用200毫秒的块处理音频、视频和文本，通过时间对齐的微轮次实现支持打断的实时交换。"
+      },
+      "insight": {
+        "en": "200ms is the magic number for human-like conversational flow—the latency threshold where interruptions feel natural. This isn't just a model release; it's a claim on the 'real-time AI' category. OpenAI shipped GPT-Realtime-2 last week ($32/M tokens), and now TML hits similar latency with a MoE architecture that's cheaper to run. The subtext: Murati's team is betting that cost efficiency at scale beats raw capability, at least for voice-first applications.",
+        "zh": "200毫秒是类人对话流畅的神奇数字——是打断感觉自然的延迟阈值。这不仅仅是模型发布；而是对'实时AI'类别的抢占。OpenAI上周发布了GPT-Realtime-2（3200美元/百万token），现在TML以MoE架构达到类似延迟，运行成本更低。言下之意：Murati的团队押注规模化时的成本效率胜过原始能力，至少对于语音优先的应用是如此。"
+      }
+    },
+    {
+      "title": {
+        "en": "Krea Launches Krea 2 Foundation Image Model Built from Scratch",
+        "zh": "Krea推出从头构建的Krea 2基础图像模型"
+      },
+      "url": "https://www.krea.ai/blog/krea-2-image-model",
+      "source": "Krea",
+      "time": "2026-05-12",
+      "description": {
+        "en": "Krea announced Krea 2, their first foundation image model built completely from scratch. Features advanced style transfer with ability to guide, mix, strengthen, and push visual styles. Supports diverse aesthetics from film photography to cinematic stills and digital paintings.",
+        "zh": "Krea宣布了Krea 2，这是他们完全从头构建的第一个基础图像模型。具有高级风格迁移功能，能够引导、混合、增强和推动视觉风格。支持从胶片摄影到电影剧照和数字绘画的多样化美学。"
+      },
+      "insight": {
+        "en": "Krea's move to a proprietary foundation model signals that the 'wrapper' phase is ending. Midjourney and Stability AI proved there's value in owning the stack; Krea is betting that fine-grained style control is the differentiator that generic models can't match. This follows the pattern we saw with video: first everyone uses public APIs, then the survivors build their own models. Krea's survival bet is that creative professionals care more about controllable aesthetics than raw generation quality.",
+        "zh": "Krea转向专有基础模型表明'包装器'阶段正在结束。Midjourney和Stability AI证明了拥有全栈的价值；Krea押注精细的风格控制是通用模型无法匹敌的差异化因素。这遵循了我们在视频中看到的模式：首先每个人都使用公共API，然后幸存者构建自己的模型。Krea的生存赌注是，创意专业人士更关心可控的美学而非原始生成质量。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches Daybreak Cybersecurity Platform to Challenge Anthropic Mythos",
+        "zh": "OpenAI推出Daybreak网络安全平台挑战Anthropic Mythos"
+      },
+      "url": "https://thenextweb.com/news/openai-daybreak-anthropic-mythos-cyber-defence",
+      "source": "The Next Web",
+      "time": "2026-05-12",
+      "description": {
+        "en": "OpenAI launched Daybreak, a cybersecurity platform built on GPT-5.5 variants targeting Anthropic's Mythos dominance. Three model variants: standard, Trusted Access for verified defenders, and permissive GPT-5.5-Cyber for authorized red teaming. Partners include CrowdStrike, Palo Alto Networks, Cloudflare.",
+        "zh": "OpenAI推出了Daybreak，这是一个基于GPT-5.5变体的网络安全平台，目标直指Anthropic Mythos的主导地位。三种模型变体：标准版、用于经验证防御者的可信访问版，以及用于授权红队测试的宽松版GPT-5.5-Cyber。合作伙伴包括CrowdStrike、Palo Alto Networks、Cloudflare。"
+      },
+      "insight": {
+        "en": "The 'three-tier' model approach—standard, verified, red-team—is becoming the new safety playbook. Anthropic pioneered this with Mythos's controlled rollout (~12 partners), and now OpenAI is copying the structure while expanding distribution to 8+ security vendors simultaneously. The deeper story: AI security is becoming a bundling game. CrowdStrike and Palo Alto aren't just customers; they're distribution channels. OpenAI's bet is that GPT-5.5's terminal-bench performance (82.7%) outweighs Mythos's first-mover trust advantage.",
+        "zh": "'三层'模型方法——标准版、验证版、红队版——正在成为新的安全操作手册。Anthropic率先在Mythos的受控推广中采用(~12个合作伙伴)，现在OpenAI复制了这一结构，同时向8+安全供应商扩展分发。更深层次的故事是：AI安全正在成为捆绑游戏。CrowdStrike和Palo Alto不仅仅是客户；他们是分销渠道。OpenAI的赌注是GPT-5.5的终端基准性能(82.7%)胜过Mythos的先发信任优势。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Unveils Googlebook: Laptops Designed for Gemini Intelligence",
+        "zh": "谷歌发布Googlebook：专为Gemini智能设计的笔记本电脑"
+      },
+      "url": "https://blog.google/products-and-platforms/platforms/android/meet-googlebook/",
+      "source": "Google Blog",
+      "time": "2026-05-12",
+      "description": {
+        "en": "Google introduced Googlebook, a new laptop category built on Android with ChromeOS integration. Features 'Magic Pointer' for contextual AI suggestions and 'Create your Widget' for custom widgets via prompts. Partners: Acer, ASUS, Dell, HP, Lenovo. Launches Fall 2026.",
+        "zh": "谷歌推出了Googlebook，这是一个基于Android构建并集成ChromeOS的新笔记本电脑类别。具有用于上下文AI建议的'Magic Pointer'和通过提示创建自定义小部件的'Create your Widget'功能。合作伙伴：Acer、ASUS、Dell、HP、Lenovo。2026年秋季推出。"
+      },
+      "insight": {
+        "en": "The timing is strategic: Apple's AI reboot (rumored for WWDC next month) is coming, and Google is trying to define the 'AI-native laptop' category first. The Android-on-laptops play is a reversal—Google tried this with ChromeOS tablets and failed. Now they're betting that Gemini integration is the hook that ChromeOS never had. The 'Magic Pointer' concept directly competes with what Apple will likely ship as 'Apple Intelligence' on macOS. The subtext: the OS battle is shifting from app ecosystems to AI integration depth.",
+        "zh": "时机具有战略意义：苹果的AI重启(据传在下个月的WWDC)即将到来，谷歌正试图率先定义'AI原生笔记本'类别。在笔记本上运行Android是一个逆转——谷歌曾尝试在ChromeOS平板上这样做但失败了。现在他们押注Gemini集成是ChromeOS从未有过的钩子。'Magic Pointer'概念直接与苹果可能在macOS上推出的'Apple Intelligence'竞争。言下之意：操作系统之战正从应用生态系统转向AI集成深度。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Releases Claude Code v2.1.139 with Agent View and /goal Command",
+        "zh": "Anthropic发布Claude Code v2.1.139，带有代理视图和/goal命令"
+      },
+      "url": "https://www.anthropic.com/news/claude-code-may-2026",
+      "source": "Anthropic",
+      "time": "2026-05-11",
+      "description": {
+        "en": "Claude Code update introduces Agent View for unified session management, /goal command for autonomous completion conditions, native Git worktree support, /loop for recurring tasks, and MCP improvements. Agent View is a Research Preview for Pro/Team/Enterprise plans.",
+        "zh": "Claude Code更新引入了用于统一会话管理的代理视图、用于自主完成条件的/goal命令、原生Git工作区支持、用于定期任务的/loop和MCP改进。代理视图是Pro/Team/Enterprise计划的研究预览功能。"
+      },
+      "insight": {
+        "en": "The '/goal' command is the stealth feature here—it's Anthropic's answer to OpenAI's Codex 'agent mode.' Both are converging on 'set a goal, walk away' autonomy. The Agent View is a UX recognition that power users are running dozens of Claude sessions simultaneously and need a dashboard. Meanwhile, native Git worktree support shows they're listening to the 'Claude Code as IDE' crowd. The pattern: Claude Code is becoming an operating system for AI-assisted development, not just a chat interface.",
+        "zh": "'/goal'命令是这里的隐形功能——它是Anthropic对OpenAI Codex'代理模式'的回应。两者都在趋同于'设定目标，走开'的自主性。代理视图是对高级用户同时运行数十个Claude会话并需要仪表盘的UX认可。同时，原生Git工作区支持表明他们在倾听'将Claude Code作为IDE'的用户群体。模式是：Claude Code正在成为AI辅助开发的操作系统，而不仅仅是聊天界面。"
+      }
+    },
+    {
+      "title": {
+        "en": "AWS MCP Server Goes Generally Available with Sandboxed Python Execution",
+        "zh": "AWS MCP服务器正式发布，支持沙盒化Python执行"
+      },
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+      "source": "AWS",
+      "time": "2026-05-06",
+      "description": {
+        "en": "AWS launched its managed MCP server giving AI agents secure access to AWS services. Features single-tool API access, sandboxed Python script execution, IAM-based guardrails, CloudWatch metrics, and CloudTrail logging. Available in US East and Frankfurt regions.",
+        "zh": "AWS推出了其托管MCP服务器，为AI代理提供对AWS服务的安全访问。具有单一工具API访问、沙盒化Python脚本执行、基于IAM的防护栏、CloudWatch指标和CloudTrail日志记录。在美国东部和法兰克福地区可用。"
+      },
+      "insight": {
+        "en": "This is infrastructure-as-MCP: AWS is treating the Model Context Protocol as a first-class integration surface, not just an experiment. The sandboxed Python execution is the killer feature—most MCP servers just query APIs, but AWS is letting agents actually run code in their environment. This competes directly with the GitHub MCP Server's approach, but with enterprise-grade security controls. The implication: cloud providers are now racing to become the 'default backend' for AI agents, betting that agent workflows will drive compute consumption.",
+        "zh": "这是MCP即基础设施：AWS将模型上下文协议视为一级集成表面，而不仅仅是实验。沙盒化Python执行是杀手级功能——大多数MCP服务器只是查询API，但AWS允许代理在其环境中实际运行代码。这直接与GitHub MCP服务器的方法竞争，但具有企业级安全控制。言下之意：云提供商现在正在竞相成为AI代理的'默认后端'，押注代理工作流将推动计算消费。"
+      }
+    },
+    {
+      "title": {
+        "en": "GitHub MCP Server Secret Scanning Reaches General Availability",
+        "zh": "GitHub MCP服务器密钥扫描功能正式发布"
+      },
+      "url": "https://github.blog/changelog/2026-05-05-secret-scanning-with-github-mcp-server/",
+      "source": "GitHub Blog",
+      "time": "2026-05-05",
+      "description": {
+        "en": "GitHub MCP Server's secret scanning capability is now generally available after public preview since March. Allows AI coding agents and IDEs to scan code for exposed secrets before committing or opening pull requests. Honors existing push protection customization settings.",
+        "zh": "GitHub MCP服务器的密钥扫描功能自3月公开预览后正式发布。允许AI编码代理和IDE在提交或打开拉取请求之前扫描代码中暴露的密钥。遵守现有的推送保护自定义设置。"
+      },
+      "insight": {
+        "en": "Security-as-MCP is becoming a category: GitHub ships secret scanning, Sentry shipped their MCP server last month, and now AWS has joined. The pattern is that security vendors are realizing AI agents need structured access to security tools, not just docs. GitHub's move is defensive—they want to be the default MCP for code operations before competitors like Sourcegraph or Linear capture that integration point. The secret scanning GA also signals that MCP is moving from 'experimental toy' to 'production dependency' for AI coding workflows.",
+        "zh": "安全即MCP正在成为一个类别：GitHub推出密钥扫描，Sentry上个月推出了他们的MCP服务器，现在AWS也加入了。模式是，安全供应商意识到AI代理需要结构化访问安全工具，而不仅仅是文档。GitHub的举动是防御性的——他们希望在Sourcegraph或Linear等竞争对手占据该集成点之前成为代码操作的默认MCP。密钥扫描正式发布也表明MCP正从'实验玩具'转向AI编码工作流的'生产依赖'。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "May 12-13, 2026 reveals a sector consolidating around three converging themes: real-time latency, agent infrastructure, and vertical integration. Perceptron Mk1 and Thinking Machines Lab's TML-Interaction-Small both shipped targeting the 200ms threshold—but while Perceptron bets on physical embodiment for manufacturing and robotics, TML is optimizing for conversational flow. The real story is that 'real-time AI' is fragmenting into use-case-specific architectures rather than converging on a single model. Meanwhile, MCP (Model Context Protocol) went from niche experiment to infrastructure battleground in a single week: AWS GA'd their server, GitHub shipped secret scanning, and Sentry-for-AI went live. Cloud providers are treating MCP as the new API gateway for AI agents. The third pattern is vertical integration: Krea building proprietary foundation models, Google betting the laptop category on Gemini, and OpenAI launching Daybreak as a bundled security platform. The 'wrapper vs. foundation' debate is resolving—survivors are building full stacks. The broader narrative: the AI infrastructure layer is maturing faster than most expected, with enterprise security and real-time interaction becoming the two primary battlegrounds for differentiation.",
+    "zh": "2026年5月12-13日展现了一个行业围绕三个融合主题进行整合：实时延迟、代理基础设施和垂直整合。Perceptron Mk1和Thinking Machines Lab的TML-Interaction-Small都针对200毫秒阈值推出——但Perceptron押注于制造业和机器人的物理具身，而TML则优化对话流畅性。真正的故事是'实时AI'正在根据用例特定架构分裂，而非收敛于单一模型。与此同时，MCP（模型上下文协议）在一周内从小众实验变成基础设施战场：AWS正式发布其服务器，GitHub推出密钥扫描，Sentry-for-AI上线。云提供商将MCP视为AI代理的新API网关。第三个模式是垂直整合：Krea构建专有基础模型，谷歌将笔记本类别押注于Gemini，OpenAI将Daybreak作为捆绑安全平台推出。'包装器vs基础'的争论正在解决——幸存者正在构建全栈。更广泛的叙述是：AI基础设施层比大多数人预期的成熟得更快，企业安全和实时交互成为差异化的两个主要战场。"
+  }
+}
