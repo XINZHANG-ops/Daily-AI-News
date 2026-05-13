@@ -414,3 +414,21 @@ Wiki lint complete. Here's what was found and fixed across all four passes:
  create mode 100644 wiki/ideas/agentic-catch-up-game.md
  create mode 100644 wiki/ideas/revenue-reality-check.md
  create mode 100644 wiki/ideas/spec-driven-development-movement.md
+[2026-05-13 01:00:03] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+Wiki lint complete. Here's what was fixed:
+
+**Fixed:**
+- Added missing `## Overview` sections to `sources/meta.md` and `sources/microsoft.md` (the only two source pages lacking them)
+- Updated `last_updated` to 2026-05-13 on both modified source pages
+- Updated `index.md` last updated date to 2026-05-13
+
+**Verified (no fixes needed):**
+- **Structural integrity:** All 181 content pages listed in `index.md` exist on disk. Zero orphan pages. Zero broken wikilinks in rendered content. No companies or people in `entities/`.
+- **Wrong/duplicate info:** No duplicate pages. No duplicate paragraphs. No factually inconsistent dates. All 107 entities have consistent `type:` fields. No stale claims requiring updates.
+- **Connection quality:** All pages have substantive `## Connections` sections with annotated wikilinks. No bare "Related:" or "See also:" links remain. All 6 topic pages have `## Evolution` and `## Patterns & Insights` sections. All 7 new untracked pages are properly linked and indexed.
+
+**Counts:** 6 topics + 25 sources + 3 timelines + 107 entities + 40 ideas = 181 content pages.
+
+Lint entry appended to `wiki/log.md`.
+[2026-05-13 01:09:09] Wiki lint complete (exit code 0).

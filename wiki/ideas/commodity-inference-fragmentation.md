@@ -1,7 +1,7 @@
 ---
 title: "Commodity Inference Fragmentation"
 slug: commodity-inference-fragmentation
-last_updated: 2026-04-30
+last_updated: 2026-05-12
 ---
 
 # Commodity Inference Fragmentation
@@ -23,6 +23,8 @@ For AI labs, the implication is strategic: premium reasoning requires massive co
 
 The moats are evaporating: DeepSeek V4 Flash scoring 78% SWE-bench at $0.28/M means the commodity track is no longer "worse" — it's "different enough for most tasks at a fraction of the cost." The closed labs' pricing power is eroding faster than their benchmark leads can justify.
 
+On May 12, 2026, xAI launched Grok 4.3 at $1.25/1M input tokens — an 83% price cut from Grok 3's $3/M, undercutting GPT-4.5 by roughly 60%. This is not a niche product launch but a strategic price war. xAI's pricing follows the pattern of aggressive undercutting and signals that the AI API market is entering an accelerated race-to-bottom phase where only compute-rich providers survive. The Grok 4.3 price point is the latest data point in the commodity inference collapse: even US-based closed labs are now slashing prices to gain share, not just Chinese open-weight alternatives. At $1.25/M input with 1M token context and video understanding, Grok 4.3 redefines the cost-performance frontier for premium models, not just commodity ones.
+
 ## Connections
 - [[ideas/efficiency-frontier]] — Qwen 3.6-35B-A3B and DeepSeek V4 Flash prove efficiency breakthroughs can achieve domain dominance with dramatically less compute
 - [[topics/llm_models]] — The premium-commodity bifurcation is the defining structural split of late April 2026
@@ -30,3 +32,5 @@ The moats are evaporating: DeepSeek V4 Flash scoring 78% SWE-bench at $0.28/M me
 - [[sources/deepseek]] — V4 Flash represents the commodity tier's efficiency-first approach
 - [[topics/ai_funding]] — Compute scarcity is driving the bifurcation; energy access determines which tier a company can compete in
 - [[ideas/china-efficiency-advantage]] — Stanford HAI data confirms China achieved 2.7% Arena gap with 23x less investment, validating the efficiency-first approach
+- [[entities/grok-4-3]] — Grok 4.3 at $1.25/M input is the latest data point in the API price collapse; the race-to-bottom is accelerating and now affecting US-based closed labs, not just Chinese open-weight alternatives
+- [[sources/xai]] — xAI's 83% price cut is classic Musk market-entry strategy: undercut incumbents to gain share, then monetize through vertical integration; signals compute-rich providers can survive price wars that smaller labs cannot

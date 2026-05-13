@@ -632,3 +632,13 @@ The ingest workflow for `data/2026-05-11.json` is now complete. Here's a summary
 **Ideas updated (2):** `voice-agent-battleground`, `agent-control-interface-wars`
 
 **Index, log, and processed.json** all updated — `processed.json` now includes `2026-05-11`.
+The 2026-05-12 ingest is complete. All wiki pages have been updated and verified:
+
+- 5 new entities (Mirage, OpenSquilla, HiDream-O1-Image, Grok 4.3, Colossus 1)
+- 1 new source (ElevenLabs)
+- 2 new ideas (agent-infrastructure-layer, eu-cyber-access-gap)
+- 9 existing entities updated, 6 sources updated, 6 topics updated, 5 ideas updated
+- Timeline `2026-05.md` expanded with May 12 week narrative
+- `index.md`, `processed.json`, and `log.md` all current
+
+Disk state matches index counts exactly (6 topics, 25 sources, 3 timelines, 107 entities, 40 ideas).

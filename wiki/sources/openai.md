@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 
 # OpenAI
@@ -64,6 +64,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-09 | Zillow and Priceline partnerships | Early adopters building voice assistants for real estate and travel booking — vertical strategy for high-friction workflows
 | 2026-05-11 | GPT-Realtime-2 pricing revealed | $0.034/min for translation undercuts human interpreters 90%+; $0.017/min for Whisper streaming transcription; full voice stack now priced competitively
 | 2026-05-11 | OpenClaw creator Peter Steinberger now at OpenAI | Meta failed to hire him in February; Steinberger's OpenClaw (302K stars) sparked "agentic wars"; Jensen Huang called it "the next ChatGPT"
+| 2026-05-12 | Trusted Access for Cyber expanded to EU | GPT-5.5-Cyber granted to EU institutions; George Osborne frames as "Europe's many defenders, not just the few"; direct geopolitical counter to Anthropic's EU Mythos denial
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -92,3 +93,5 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[ideas/boring-infrastructure-shift]] — GPT-5.5 Instant's hallucination reduction is table stakes, not a breakthrough; the shift from "cool demo" to "boring infrastructure" means OpenAI competes on reliability and compliance, not just benchmarks
 - [[ideas/ai-security-auditing-mainstream]] — OpenAI's Trusted Contact safeguard frames safety as competitive moat, matching Anthropic's defensive security positioning; both labs are racing to own the "responsible AI" narrative
 - [[ideas/agent-control-interface-wars]] — OpenAI's Operator and Codex optimize for autonomous execution with minimal human interruption; Remy's approval-gate model is a direct philosophical counter-position that could split the enterprise market
+- [[ideas/eu-cyber-access-gap]] — OpenAI's EU cyber access expansion builds geopolitical relationships through model access, contrasting with Anthropic's safety-first restriction that alienates a major economic bloc
+- [[entities/gpt-5.4-cyber]] — May 12 EU Trusted Access for Cyber program grants EU institutions GPT-5.5-Cyber access, creating a structural defensive advantage for European defenders

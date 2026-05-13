@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 
 # AI Funding
@@ -73,6 +73,7 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-05-11 | Anthropic $30B ARR with 80x annualized growth | Revenue run rate reached in Q1 2026; $200B Google Cloud commitment (40% of Google's cloud backlog); xAI/SpaceX merger reveals brutal compute economics
 | 2026-05-11 | Alphabet 160% stock rally | Briefly surpasses Nvidia by market cap; $190B capex guidance — more than double 2025 levels; spending to maintain position
 | 2026-05-11 | Meta $125-145B capex and Google $190B capex | Both companies spending to catch up in agentic AI, not building from strength; late entrants buying compute to compete
+| 2026-05-12 | ElevenLabs $11B Series D at $500M ARR | BlackRock, Nvidia NVentures, Salesforce Ventures, celebrities; validates voice AI as standalone investment category, not just a feature of text models
 
 ## Patterns & Insights
 
@@ -131,3 +132,5 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[sources/sierra]] — $950M at $15B with ~100x ARR multiple shows investors pricing enterprise AI agents as fastest-growing B2B category since cloud computing; the 8-month cycle from $350M to $950M is capital acceleration matching revenue acceleration
 - [[ideas/compute-shortage-forces-cooperation]] — Compute scarcity is creating a barter economy among AI giants; partnerships, equity trades, and strategic concessions replace pure financial transactions when power is the binding constraint
 - [[timelines/2026-05]] — May 2 agent infrastructure funding wave (Netomi $110M, Standard Intelligence $75M, Actively $45M, Parallel $100M) and May 3-7 deals (Anthropic $1.5B JV, Sierra $950M, Anthropic-SpaceX compute partnership) show capital shifting from model training to operational layers
+- [[sources/elevenlabs]] — $11B valuation for voice-only AI company proves vertical-specific AI can command standalone valuations comparable to general-purpose labs; voice AI is not a feature but an investment category
+- [[ideas/voice-agent-battleground]] — ElevenLabs' $11B valuation signals enterprise voice agents are mission-critical infrastructure attracting dedicated capital, not just a modality bolt-on

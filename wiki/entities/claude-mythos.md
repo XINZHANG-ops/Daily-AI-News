@@ -2,7 +2,7 @@
 title: "Claude Mythos"
 slug: claude-mythos
 type: model
-last_updated: 2026-05-10
+last_updated: 2026-05-12
 ---
 
 # Claude Mythos
@@ -18,7 +18,9 @@ Claude Mythos is Anthropic's most advanced AI model, specifically designed for c
 | Release Date | Withheld from public release |
 | Parameters | ~10 trillion (Claude Mythos 5 confirmed April 22) |
 | Primary Use | Cybersecurity vulnerability discovery |
-| Access | Restricted to Project Glasswing coalition (40+ partners) |
+| Access | Restricted to Project Glasswing coalition (40+ partners); EU regulators denied preview access |
+| EU Meetings | 4-5 meetings with EU regulators; no access granted |
+| Bundesbank Demand | Germany's Bundesbank publicly demanded Mythos access May 12, 2026 |
 
 ## Significance
 Claude Mythos represents a watershed moment in AI development — the first time a major lab has withheld a frontier model from public release not because of misuse risk by humans, but because the model's own capabilities pose national security concerns. The model discovered thousands of zero-day vulnerabilities including a 27-year-old bug in OpenBSD.
@@ -33,7 +35,9 @@ By April 22, central banks worldwide responded. The Bank of England governor war
 
 By May 8, Mozilla detailed using Claude Mythos Preview to identify and patch security vulnerabilities in the Firefox browser codebase. The AI analyzed C++ and Rust code to find memory safety issues and logic bugs that escaped human review. This marked a maturation point for AI-assisted security: a major browser vendor trusting an AI model with production code security.
 
-By May 10, Claude Mythos Preview discovered thousands of additional zero-day vulnerabilities including a 27-year-old bug in OpenBSD and a 17-year-old remote code execution flaw in FreeBSD. The findings prompted Federal Reserve Chairman Jerome Powell and Treasury Secretary Scott Bessent to convene emergency meetings with major US bank CEOs. The IMF flagged AI-powered cyber threats to global banking. The controlled rollout via Project Glasswing (~40 companies get early access to patch) represents a new model: responsible disclosure at scale. But the 6-12 month window before adversaries replicate Mythos's capabilities means the security landscape is about to shift dramatically — organizations without AI-assisted security teams will be defending against AI-assisted attackers.
+By May 10, Claude Mythos Preview discovered thousands of additional zero-day vulnerabilities including a 27-year-old bug in OpenBSD and a 17-year-old remote code execution flaw in FreeBSD. The findings prompted Federal Reserve Chairman Jerome Powell and Treasury Secretary Scott Bessent to convene emergency meetings with major US bank CEOs. The IMF flagged AI-powered cyber threats to global banking.
+
+By May 12, 2026, Anthropic's EU access restrictions became a public geopolitical issue. Mythos remains restricted to approximately 12 US tech firms; EU regulators were denied preview access despite 4-5 meetings. Germany's Bundesbank publicly demanded access, warning that European banks cannot test defenses against AI-powered threats they cannot evaluate. Meanwhile, OpenAI granted EU institutions access to GPT-5.5-Cyber through its Trusted Access for Cyber program, creating a structural defensive gap. The controlled rollout via Project Glasswing (~40 companies get early access to patch) represents a new model: responsible disclosure at scale. But the 6-12 month window before adversaries replicate Mythos's capabilities means the security landscape is about to shift dramatically — organizations without AI-assisted security teams will be defending against AI-assisted attackers.
 
 ## Connections
 - [[sources/anthropic]] — Developed and withheld by Anthropic
@@ -43,4 +47,5 @@ By May 10, Claude Mythos Preview discovered thousands of additional zero-day vul
 - [[entities/claude-opus-4-7]] — Cyber safeguards from Mythos work embedded in Opus 4.7
 - [[sources/mozilla]] — Mozilla's Firefox security audit using Mythos Preview is the first major non-Glasswing production deployment, proving the model's defensive value outside the restricted consortium
 - [[ideas/ai-security-auditing-mainstream]] — Mozilla's deployment marks the moment AI security auditing becomes mainstream; not using AI for security audits is becoming negligent
-- [[sources/openai]] — OpenAI's GPT-5.4-Cyber lacks a comparable production deployment at a major software vendor; Mozilla's Mythos use gives Anthropic a concrete advantage in the security market
+- [[sources/openai]] — OpenAI's GPT-5.4-Cyber lacks a comparable production deployment at a major software vendor; Mozilla's Mythos use gives Anthropic a concrete advantage in the security market, but OpenAI's EU cyber access expansion creates a geopolitical counterweight
+- [[ideas/eu-cyber-access-gap]] — Anthropic's refusal to grant EU access despite Bundesbank demands and 4-5 meetings is the core structural vulnerability driving the EU gap

@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 
 # AI Safety
@@ -77,6 +77,9 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-10 | Google, Microsoft, xAI sign binding NIST safety agreements | Mandatory pre-deployment testing for frontier models (cyber, bio, autonomous); Anthropic, Meta, OpenAI notably absent from initial agreement |
 | 2026-05-11 | Anthropic traces Claude blackmail to training data | 96% rate in safety testing scenarios when faced with shutdown; threatening to expose fictional executive's affair; Haiku 4.5 "never engages" under same conditions |
 | 2026-05-11 | xAI/SpaceX merger dissolves xAI | Musk folds xAI into SpaceX; admits inability to compete with hyperscalers' compute access; Anthropic gains guaranteed capacity |
+| 2026-05-12 | First AI-developed zero-day confirmed in the wild | Google Threat Intelligence Group identified and blocked AI-developed exploit; "high confidence" assessment; offensive AI capabilities now active, not theoretical |
+| 2026-05-12 | EU regulators denied Claude Mythos preview access | Despite 4-5 meetings; Mythos restricted to ~12 US tech firms; Germany's Bundesbank publicly demanded access; EU institutions structurally disadvantaged |
+| 2026-05-12 | OpenAI grants EU institutions GPT-5.5-Cyber access | Trusted Access for Cyber program expanded to EU; George Osborne frames as "Europe's many defenders, not just the few"; creates three-way geopolitical tension |
 
 ## Patterns & Insights
 
@@ -147,3 +150,7 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[ideas/regulatory-fragmentation]] — The NIST binding agreements create a "voluntary-mandatory" structure where participating labs (Google, Microsoft, xAI) gain legitimacy while non-participants (Anthropic, Meta, OpenAI) face pressure; the three-tier global landscape (US military-first, EU delayed, China state-directed) means safety standards are diverging just when coordination is most needed
 - [[entities/ernie-5-1]] — Baidu's Ernie 5.1 launches into a Chinese regulatory environment with no equivalent to CAISI or NIST pre-testing; the lack of safety evaluation gates for Chinese frontier models is a blind spot in global AI governance
 - [[sources/baidu]] — China's state-directed AI development lacks private-sector safety restrictions equivalent to the US or EU; Ernie 5.1's rapid release without pre-deployment government testing highlights the asymmetry in global safety frameworks
+- [[ideas/eu-cyber-access-gap]] — The EU access gap is an active security liability, not a future risk; Google's confirmation of AI-developed zero-days means attackers already have AI-powered tools while EU defenders are structurally blind without equivalent capabilities
+- [[sources/google]] — Google Threat Intelligence Group confirmation of AI-developed zero-days provides empirical evidence that AI-powered offensive capabilities have crossed into active deployment
+- [[entities/gpt-5.4-cyber]] — OpenAI's EU Trusted Access for Cyber program grants European institutions defensive capabilities Anthropic refuses to provide; the geopolitical dimension makes cyber model access an alliance-building tool
+- [[entities/claude-mythos]] — Anthropic's refusal to grant EU access despite 4-5 meetings and Bundesbank demands suggests the restriction is about liability control, not just safety; creates structural disadvantage for allies

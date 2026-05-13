@@ -1,10 +1,13 @@
 ---
 title: "Meta"
 slug: meta
-last_updated: 2026-05-11
+last_updated: 2026-05-13
 ---
 
 # Meta
+
+## Overview
+Meta is executing the most aggressive workforce transformation in Big Tech, cutting 10% of employees (~8,000) while simultaneously raising capex guidance to $125-145B. The company is pivoting from its open-source tradition to proprietary models with Muse Spark, launching its first non-open model family. Simultaneously, Meta is betting on embodied AI through the ARI humanoid robotics acquisition and pursuing "Android for robots" strategy. The Model Capability Initiative (MCI) uses employee keystroke and mouse tracking to train AI, drawing an €800M EU AI Act fine. Meta's agentic shopping tool Hatch, planned for June 2026, started development with Claude models before planning a switch to Muse Spark — an implicit admission that Meta's own models lag in agentic capability.
 
 ## Timeline
 

@@ -1,7 +1,7 @@
 ---
 title: "Safety-Restricted Releases"
 slug: safety-restricted-releases
-last_updated: 2026-05-04
+last_updated: 2026-05-12
 ---
 
 # Safety-Restricted Releases
@@ -25,9 +25,15 @@ The Bank of England's explicit warning that Claude Mythos could "crack the whole
 
 The April 27 institutional stress test (Musk vs Altman court case) adds another dimension: OpenAI's "capped profit" restructuring — which the AI industry has treated as a model for responsible development — is now being challenged in court. The outcome will either validate or invalidate the entire framework under which most commercial AI companies have raised capital and structured enterprise contracts. Companies are now building facts on the ground (shipping fast, locking in procurement deals) and hoping legal/regulatory systems will accommodate rather than reverse what they've built.
 
+By May 12, 2026, the safety-restricted release model had acquired a geopolitical dimension. Anthropic's Claude Mythos remains restricted to approximately 12 US tech firms via Project Glasswing; EU regulators were denied preview access despite 4-5 meetings. Germany's Bundesbank publicly demanded Mythos access, warning that European banks cannot test defenses against AI-powered threats they cannot evaluate. Meanwhile, OpenAI expanded its Trusted Access for Cyber program to EU institutions, granting them access to GPT-5.5-Cyber. This divergence reveals that capability-based restrictions are not just safety measures — they create structural geopolitical dependencies. The EU access gap is the geopolitical cost of Anthropic's safety-first stance: allies are disadvantaged while adversaries may eventually replicate the capabilities through independent development. The 6-12 month window before adversaries replicate Mythos's vulnerability-hunting capabilities makes the dependency particularly acute.
+
 ## Connections
 - [[sources/anthropic]] — Established the precedent with Claude Mythos
 - [[topics/ai_safety]] — Central to the safety debate; Musk vs Altman trial adds legal dimension
 - [[entities/claude-mythos]] — The model that triggered the first capability-based restriction
 - [[sources/openai]] — GPT-5.5's procurement lock-in strategy vs Anthropic's model restriction — two approaches that converged on May 1 when OpenAI imposed identical Cyber restrictions
 - [[ideas/institutional-gap]] — AI capability outpaces governance frameworks
+- [[ideas/eu-cyber-access-gap]] — The EU gap is the geopolitical cost of capability-based restrictions; Anthropic's safety-first stance creates structural disadvantage for allies who cannot evaluate AI-powered threats
+- [[entities/claude-mythos]] — Mythos restricted to ~12 US tech firms; EU regulators denied preview access despite 4-5 meetings and Bundesbank demands; the restriction appears driven by liability control as much as safety
+- [[entities/gpt-5.4-cyber]] — OpenAI's EU cyber access expansion builds geopolitical relationships through model access, contrasting with Anthropic's restriction that alienates a major economic bloc
+- [[sources/google]] — Google's confirmation of AI-developed zero-days in the wild makes the EU access gap an immediate security concern; attackers already have AI-powered offensive capabilities while EU defenders lack equivalent tools

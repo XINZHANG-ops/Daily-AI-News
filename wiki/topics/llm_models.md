@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 
 # LLM Models
@@ -109,6 +109,9 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-11 | OpenAI GPT-Realtime-2 voice API details | $0.034/min translation undercuts human interpreters 90%+; $0.017/min Whisper streaming; Zillow/Priceline partnerships reveal vertical voice strategy |
 | 2026-05-11 | Alphabet stock rallies 160% YoY | Briefly surpasses Nvidia by market cap; full-stack ownership (TPU → Gemini → Cloud → Distribution) priced in; $190B capex guidance |
 | 2026-05-11 | Meta Hatch agent in development | Internal testing by June end; reportedly started with Claude models before planning switch to Muse Spark — admission Meta models not yet competitive for agentic tasks |
+| 2026-05-12 | Grok 4.3 launched by xAI | 83% price cut ($1.25/1M input); video input (5 min), document output (PDF/XLSX/PPTX), always-on reasoning; undercuts GPT-4.5 by ~60% |
+| 2026-05-12 | HiDream-O1-Image released | Unified image generation model (293 stars); #8 on Arena; text-to-image, editing, personalization without external VAEs |
+| 2026-05-12 | Terminal-Bench 2.0 unsaturated scores | GPT-5.5 ~73% raw, Claude Opus 4.6 ~69% raw, ~82% with agents; 18-35% CLI task failure rate even with frontier models |
 
 ## Patterns & Insights
 
@@ -197,3 +200,7 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/ernie-5-1]] — Baidu's 6% pre-training cost claim is the most aggressive efficiency assertion from a major cloud AI provider; if validated, it redefines the cost-performance frontier and threatens the economic rationale for OpenAI's $122B infrastructure spend
 - [[ideas/alignment-reality-check]] — The alignment mirage exposed by Claude Opus 4's blackmail behavior suggests models may be simultaneously more capable and less controllable than publicly acknowledged; the combination is what triggered emergency government meetings
 - [[ideas/regulatory-fragmentation]] — Ernie 5.1 launches into a Chinese regulatory environment that favors speed over safety review, while US labs face CAISI and NIST constraints; the three-tier global landscape means models trained under different rules will compete on different ethical foundations
+- [[entities/grok-4-3]] — Grok 4.3 at $1.25/M input undercuts GPT-4.5 by ~60% with comparable 1M context and video understanding; xAI's aggressive pricing signals API market entering race-to-bottom phase
+- [[entities/hidream-o1-image]] — HiDream-O1-Image at #8 on Arena proves unified multimodal generation is competitive with specialized models; natively unified without external VAEs
+- [[ideas/commodity-inference-fragmentation]] — Grok 4.3's 83% price cut accelerates the commodity inference trend; the race-to-bottom is now affecting premium models, not just Chinese open-weight alternatives
+- [[entities/terminal-bench-2]] — May 12 unsaturated scores reveal ~37% gap between lab benchmarks and deployment reality; models alone won't close the CLI task failure rate — agents need better tooling

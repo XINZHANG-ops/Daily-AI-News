@@ -1,10 +1,13 @@
 ---
 title: "Microsoft"
 slug: microsoft
-last_updated: 2026-05-11
+last_updated: 2026-05-13
 ---
 
 # Microsoft
+
+## Overview
+Microsoft is consolidating its position as the enterprise AI infrastructure gatekeeper through aggressive bundling and verticalization. The M365 E7 ($99/user/month) and Agent 365 ($15/user/month) launches represent the first new enterprise license tier in a decade, embedding AI governance directly into Microsoft's identity and security stack. With 20M paid Copilot seats and profession-specific agents like Legal Agent, Microsoft is carving the enterprise into vertical AI surfaces. The company has also joined the Pentagon's 8-company classified AI coalition, signed binding NIST safety agreements, and volunteered for CAISI pre-testing — positioning itself as the compliant, government-friendly AI provider. Behind the product launches, Microsoft is cutting ~8,750 jobs (7% of workforce) while pivoting Xbox from consumer Copilot to CoreAI game-development infrastructure.
 
 ## Timeline
 

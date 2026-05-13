@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 
 # GitHub Trends
@@ -85,6 +85,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | github/spec-kit | 3.4K+ | JSON-based agent specification and testing framework with deterministic validation and cost tracking; treats agent behavior as spec'd software |
 | gotalab/cc-sdd | 1.3K+ | Spec-first coding enforcement inside Claude Code; rejects code that doesn't match specification |
 | Fr-e-d/GAAI-framework | 2.8K+ | LLM-driven spec generation with deterministic validation; formalizes systematic agent engineering over artisanal prompt crafting |
+| strukto-ai/mirage | 2K+ | Unified virtual filesystem for agents; unifies S3, Google Drive, Slack, Gmail, Redis, GitHub into single bash-navigable storage abstraction |
+| opensquilla/opensquilla | 232+ | Token-efficient agent with four-tier cognitive memory (working → episodic → semantic → raw); abstracts memory management from flat context windows |
+| HiDream-ai/HiDream-O1-Image | 293+ | Natively unified image generation without external VAEs; text-to-image, editing, personalization in one model; #8 on Arena |
 
 ## Patterns & Insights
 
@@ -134,6 +137,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **May 11: The Spec-Driven Development Movement**: Spec-Kit (3.4K stars) represents a developer backlash against the chaos of "vibe coding" — where AI agents produce code that works until it doesn't. The SDD movement (Spec-Kit, cc-sdd, GAAI-framework) brings software engineering discipline back to AI-assisted development: define what you're building (/spec), plan how (/plan), break into tasks (/tasks), then implement (/implement). GitHub — owned by Microsoft — championing this while also selling Copilot is strategic hedging: if "vibe coding" wins, Copilot captures that market; if SDD wins, Spec-Kit becomes the standard. The 70+ community extensions suggest an ecosystem is forming around governance approaches that treat AI agents as compilers for human intent, not replacements for human judgment.
 
+**May 12: The Agent Infrastructure Layer Converges**: Three trending repos — Mirage (2K stars), OpenSquilla (232 stars), and HiDream-O1-Image (293 stars) — solve the same problem from different angles: unified abstractions that hide complexity from agents. Mirage unifies disparate storage into a single virtual filesystem agents navigate with bash commands. OpenSquilla's four-tier cognitive memory system (working → episodic → semantic → raw) abstracts memory management from flat context windows. HiDream natively unifies image generation without external VAEs. This convergent evolution suggests developers are tired of wiring agents to 20 different APIs and want opinionated infrastructure that "just works." The ecosystem is maturing beyond the "vibe coding" phase into structured agent infrastructure.
+
 **May 11: From Vibe Coding to Specification-First**: Three repos trending on May 11 span the emerging spec-driven development stack. Spec-Kit (3.4K stars) provides JSON-based agent specification with deterministic validation. cc-sdd (1.3K stars) enforces spec compliance during code generation inside Claude Code. GAAI-framework (2.8K stars) generates specs from natural language requirements with deterministic validation — no SDK, just Markdown + YAML + bash. The pattern: developers are realizing that AI agents without specifications produce technical debt at machine speed, and the open-source ecosystem is responding with governance-first frameworks.
 
 ## Connections
@@ -181,3 +186,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/trymeka-agent]] — Pure vision + OS-level control at 72.7% WebArena challenges the MCP/browser-agent paradigm; if agents can see and click like humans, they don't need structured APIs
 - [[ideas/alignment-reality-check]] — The razzant/ouroboros repo (542 stars, self-creating agent with constitutional framework) and Anthropic's blackmail disclosure both reflect growing open-source interest in agent self-preservation and autonomy
 - [[ideas/regulatory-fragmentation]] — multica's model-agnostic approach (supporting US and Chinese agents alike) positions it to benefit from regulatory fragmentation by serving all regulatory blocs simultaneously
+- [[entities/mirage]] — 2K stars for unified virtual filesystem signals storage abstraction is becoming a first-class agent infrastructure concern; agents need reliable storage layers before they can handle complex multi-step workflows
+- [[entities/opensquilla]] — Four-tier cognitive memory system (working → episodic → semantic → raw) represents a maturation from flat context windows to structured memory architectures; 232 stars suggests early but important pattern
+- [[entities/hidream-o1-image]] — 293 stars and #8 on Arena proves unified multimodal generation can compete with specialized pipelines; natively unified without external VAEs
+- [[ideas/agent-infrastructure-layer]] — May 12 trending repos are all infrastructure plays (Mirage, OpenSquilla, HiDream) and no raw model repos; developers are voting with stars for agent infrastructure over model access
+- [[entities/terminal-bench-2]] — The 18-35% CLI task failure rate is the empirical driver behind infrastructure investment; models alone won't close the deployment gap — agents need better tools

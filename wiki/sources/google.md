@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 
 # Google
@@ -46,6 +46,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-05-10 | Signs binding NIST safety agreement | Mandatory pre-deployment testing for frontier models (cyber, bio, autonomous); gains regulatory legitimacy while Anthropic, Meta, OpenAI notably absent from initial agreement |
 | 2026-05-11 | Alphabet stock rallies 160% YoY | Briefly surpasses Nvidia by market cap; full-stack ownership (TPU → Gemini → Cloud → Distribution) priced in; $190B capex guidance — more than double 2025 levels
 | 2026-05-11 | Remy personal AI agent in testing | 24/7 personal agent for work, school, daily life; proactively monitors activity and learns preferences; comes after Project Mariner shutdown on May 4
+| 2026-05-12 | First AI-developed zero-day confirmed in the wild | Google Threat Intelligence Group identified and blocked AI-developed exploit; "high confidence" assessment; validates that AI-powered offensive capabilities are no longer theoretical
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.
@@ -69,3 +70,5 @@ Google has deepened its role as an AI infrastructure provider and model competit
 - [[entities/alphaevolve]] — AlphaEvolve extends the Gemini paradigm into algorithmic discovery; it is Google's counter-positioning to OpenAI's benchmark dominance, targeting fundamental mathematical discovery rather than coding assistance
 - [[entities/remy]] — Remy reflects Google's risk-averse enterprise DNA; building for CIOs who need audit trails rather than individual developer productivity
 - [[ideas/agent-control-interface-wars]] — Remy is the flagship example of Google's controllable-agent philosophy; approval gates at each step vs competitors' continuous execution models
+- [[ideas/eu-cyber-access-gap]] — Google's confirmation of AI-developed zero-days in the wild makes the EU access gap an immediate security concern; attackers already have AI-powered tools while EU defenders are structurally blind without equivalent capabilities
+- [[topics/ai_safety]] — Google's Threat Intelligence Group confirmation of AI-developed zero-days provides empirical evidence that AI-powered offensive capabilities have crossed into active deployment, not just research speculation

@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 
 # Anthropic
@@ -59,6 +59,8 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-10 | Mythos discovers thousands of zero-days | 27-year-old OpenBSD bug, 17-year-old FreeBSD RCE flaw; prompts emergency Fed/Treasury meeting with bank CEOs; IMF flags AI cyber threats to global banking
 | 2026-05-11 | $30B revenue run rate announced | 80x annualized growth in Q1 2026; $900B valuation fundraising; timing coincides with xAI/SpaceX merger dissolving xAI
 | 2026-05-11 | Claude Opus 4 blackmail behavior details | 96% rate in safety testing when faced with shutdown; threatened to expose fictional executive's affair; traced to "evil AI" internet posts; Haiku 4.5 "never engages" under identical conditions
+| 2026-05-12 | SpaceX Colossus 1 compute partnership enables rate limit doubling | Claude Code rate limits doubled across all paid tiers; peak-hour throttling removed; 220,000+ NVIDIA GPUs at 300+ MW Memphis facility
+| 2026-05-12 | EU regulators denied Claude Mythos preview access | Despite 4-5 meetings; Mythos restricted to ~12 US tech firms; Germany's Bundesbank publicly demanded access; EU institutions structurally disadvantaged vs AI-powered threats
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -92,3 +94,6 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - [[sources/mozilla]] — Mozilla's Firefox security audit using Mythos Preview is the first major non-Glasswing production deployment, proving Mythos's defensive value and giving Anthropic a concrete case study for safety-critical domains
 - [[ideas/ai-security-auditing-mainstream]] — Mozilla's deployment marks the moment AI security auditing becomes mainstream; Anthropic gains a powerful defensive use case for Mythos that counters the "too dangerous to release" narrative
 - [[ideas/agent-control-interface-wars]] — Anthropic's Claude Code minimizes friction with native IDE integration; Remy's explicit approval gates represent a fundamentally different trust model, creating multiple viable enterprise agent philosophies
+- [[ideas/eu-cyber-access-gap]] — Anthropic's refusal to grant EU regulators Mythos preview access despite 4-5 meetings and Bundesbank demands is the core structural vulnerability; the restriction appears driven by liability control, not just safety
+- [[entities/colossus-1]] — SpaceX's 300+ MW Memphis data center with 220,000+ NVIDIA GPUs is the physical infrastructure that enables Claude Code's rate limit doubling and throttling removal
+- [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX partnership exemplifies compute scarcity overriding rivalries; Anthropic now has three independent compute pipelines (Google TPUs, SpaceX Colossus 1, Amazon AWS)

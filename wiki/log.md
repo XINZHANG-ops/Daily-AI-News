@@ -615,6 +615,20 @@ Chat session insights applied: Apr 23 session noted ai_safety may need Bank of E
 
 ---
 
+## [2026-05-12] ingest | 1 date
+
+**Dates processed:** 2026-05-12
+**Topics updated:** llm_models (Grok 4.3 launch, HiDream-O1-Image #8 Arena, TerminalBench 2.0 unsaturated scores), ai_companies (ElevenLabs $11B Series D, SpaceX Colossus 1 details, EU cyber access gap), ai_funding (ElevenLabs $11B validates voice AI as standalone category), github_trends (Mirage 2K, OpenSquilla 232, HiDream 293; agent infrastructure layer converges), ai_safety (AI-developed zero-day confirmed in wild, EU regulators denied Mythos access, Bundesbank demand), agentic_ai (Mirage storage abstraction, OpenSquilla memory architecture, HiDream multimodal unified generation, TerminalBench deployment gap)
+**Sources updated:** openai (EU Trusted Access for Cyber expansion to GPT-5.5-Cyber), anthropic (SpaceX Colossus 1 enables rate limit doubling, EU regulators denied Mythos preview, Bundesbank demand), google (AI-developed zero-day confirmed by Threat Intelligence Group), xai (Grok 4.3 launched with 83% price cut, voice cloning), spacex (Colossus 1 details: 220K+ GPUs, 300+ MW Memphis, online end of May)
+**Sources created:** elevenlabs ($500M ARR, $11B Series D; BlackRock, Nvidia NVentures, Salesforce Ventures, celebrity investors; Sydney HQ for ANZ)
+**Timelines updated:** 2026-05 (May 12: Agent infrastructure convergence, EU security gap, ElevenLabs voice validation, Colossus 1 compute, Grok 4.3 price war)
+**Entities created (5):** mirage (2K stars, unified virtual filesystem for agents), opensquilla (232 stars, four-tier cognitive memory system), hidream-o1-image (293 stars, unified image generation #8 Arena), grok-4-3 (xAI successor to Grok 3, 83% price cut, video input, document output), colossus-1 (SpaceX 300+ MW Memphis data center, 220K+ NVIDIA GPUs)
+**Entities updated (4):** gpt-5.4-cyber (EU Trusted Access for Cyber program expansion May 12), claude-mythos (EU restriction details, Bundesbank demand), claude-code (rate limit doubling via SpaceX Colossus 1), terminal-bench-2 (May 12 unsaturated scores: ~73% GPT-5.5 raw, ~69% Claude Opus 4.6 raw, ~82% with agents)
+**Ideas created (2):** agent-infrastructure-layer (convergent evolution of Mirage, OpenSquilla, HiDream as unified abstractions; developers voting with stars for infrastructure over raw model access), eu-cyber-access-gap (OpenAI grants EU GPT-5.5-Cyber while Anthropic denies Mythos; Germany's Bundesbank demands access; AI-developed zero-days make gap immediate security liability)
+**Ideas updated (3):** voice-agent-battleground (ElevenLabs $11B validates voice as standalone category; xAI Grok 4.3 voice cloning extends competition), commodity-inference-fragmentation (Grok 4.3 at $1.25/M accelerates race-to-bottom; now affecting US closed labs), safety-restricted-releases (EU access gap reveals geopolitical cost of capability-based restrictions; allies disadvantaged while adversaries may replicate)
+
+---
+
 ## [2026-05-11] lint
 
 **Pass 1 — Structural integrity:**
@@ -641,4 +655,36 @@ Chat session insights applied: Apr 23 session noted ai_safety may need Bank of E
 **Pass 4 — Index & log:**
 - Rebuilt `index.md`: entity count updated 97 → 98, added `openswarm`, `Last updated` set to 2026-05-11
 - Total content pages: 164 (6 topics + 24 sources + 3 timelines + 98 entities + 34 ideas + 1 WIKI.md + 1 index.md + 1 log.md)
+- Appended this lint entry
+
+
+---
+
+## [2026-05-13] lint
+
+**Pass 1 — Structural integrity:**
+- Added missing `## Overview` sections to `sources/meta.md` and `sources/microsoft.md` (were the only two source pages lacking Overview)
+- Updated `last_updated` to 2026-05-13 on `sources/meta.md` and `sources/microsoft.md`
+- Verified `index.md` matches disk exactly: 6 topics, 25 sources, 3 timelines, 107 entities, 40 ideas
+- Verified zero broken wikilinks in any content page (template placeholders in `WIKI.md` already escaped; `log.md` historical entries use backticks)
+- Verified zero orphan content pages (all 181 content pages have at least one inbound wikilink)
+- Verified no companies or people improperly placed in `entities/`
+- Verified all 181 content pages have valid YAML frontmatter (`title`, `slug`, `last_updated`); timeline pages use `month:` instead of `slug:` which is acceptable per schema convention
+
+**Pass 2 — Wrong & duplicate information:**
+- No duplicate pages covering the same concept (GPT-5.4 / GPT-5.4-Cyber / GPT-5.5 are distinct models; Claude Opus 4.6 / 4.7 are distinct releases)
+- No duplicate paragraphs within or across pages
+- No factually inconsistent dates or claims detected across pages
+- Entity `type:` fields consistent across all 107 entity pages
+- No stale claims requiring update with newer data (all "planned" references are to future dates relative to May 13)
+
+**Pass 3 — Connection quality:**
+- Verified all 181 content pages have substantive `## Connections` sections with annotated wikilinks
+- Verified zero bare "Related:", "See also:", or unannotated links remain in any content page
+- Verified all 6 topic pages have `## Evolution` and `## Patterns & Insights` sections
+- Verified new untracked pages (`colossus-1`, `grok-4-3`, `hidream-o1-image`, `mirage`, `opensquilla`, `agent-infrastructure-layer`, `eu-cyber-access-gap`) are properly linked and indexed
+
+**Pass 4 — Index & log:**
+- Updated `index.md` `Last updated` to 2026-05-13
+- Total content pages: 181 (6 topics + 25 sources + 3 timelines + 107 entities + 40 ideas)
 - Appended this lint entry

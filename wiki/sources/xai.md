@@ -1,7 +1,7 @@
 ---
 title: "xAI"
 slug: xai
-last_updated: 2026-05-10
+last_updated: 2026-05-12
 ---
 
 # xAI
@@ -24,6 +24,7 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 | 2026-05-05 | Agrees to CAISI pre-testing | Google, Microsoft, xAI volunteer for government evaluation of unreleased models; "voluntary with teeth" design |
 | 2026-05-06 | Dissolved and rebranded as SpaceXAI | xAI folded into SpaceX as part of Anthropic compute partnership restructuring; Musk impressed by Anthropic team after prior criticism |
 | 2026-05-10 | Signs binding NIST safety agreement | Mandatory pre-deployment testing for frontier models; gains government legitimacy as SpaceXAI despite Musk's distillation admission; Anthropic, Meta, OpenAI notably absent from initial agreement |
+| 2026-05-12 | Grok 4.3 launched | 83% price cut ($1.25/1M input vs Grok 3's $3); video input up to 5 min; document output (PDF/XLSX/PPTX); always-on reasoning; voice cloning from 120-second samples; undercuts GPT-4.5 by ~60% |
 
 ## Key Relationships
 - **SpaceX**: Parent company following acquisition.
@@ -38,3 +39,6 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 - [[entities/caisi]] — xAI joined CAISI pre-testing alongside Google and Microsoft; the "voluntary with teeth" design means even Musk's anti-regulation posture bends to the threat of mandatory executive orders
 - [[ideas/government-pre-testing]] — xAI's participation in CAISI contradicts Musk's public anti-regulation rhetoric; "voluntary with teeth" reveals that even the most deregulation-friendly labs prefer self-regulation to mandatory oversight
 - [[ideas/compute-shortage-forces-cooperation]] — xAI's dissolution and rebrand as SpaceXAI reveals Musk's strategic pivot from "build a model company" to "own the infrastructure that model companies need"; Anthropic-SpaceX deal validates infrastructure over models as the strategic asset
+- [[ideas/commodity-inference-fragmentation]] — Grok 4.3 at $1.25/M input tokens is the latest data point in the API price collapse; xAI's 83% price cut signals a race-to-bottom where only compute-rich providers survive
+- [[ideas/voice-agent-battleground]] — Voice cloning from 120-second samples extends xAI's voice capabilities alongside grok-voice-think-fast-1.0; competes with ElevenLabs' enterprise voice strategy and OpenAI's GPT-Realtime-2
+- [[entities/grok-4-3]] — Grok 4.3 undercuts GPT-4.5 by ~60% with comparable 1M context and video understanding; classic Musk market-entry strategy of undercutting incumbents to gain share

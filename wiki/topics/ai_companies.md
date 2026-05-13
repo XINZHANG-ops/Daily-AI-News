@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 
 # AI Companies
@@ -137,6 +137,9 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-11 | Google tests Remy personal AI agent | 24/7 personal agent for work, school, daily life; proactively monitors activity and learns preferences; comes after Project Mariner shutdown |
 | 2026-05-11 | Meta develops Hatch for June internal launch | Agentic shopping tool for Instagram; started with Claude models before planning switch to Muse Spark; OpenClaw creator Peter Steinberger now at OpenAI after Meta failed to hire him |
 | 2026-05-11 | GitHub Spec-Kit reaches 95.5K stars | Leading spec-driven development movement; shift from "vibe coding" to specification-first methodology |
+| 2026-05-12 | ElevenLabs announces $500M ARR, $11B Series D | BlackRock, Nvidia NVentures, Salesforce Ventures, Jamie Foxx, Hwang Dong-hyuk; Sydney HQ for ANZ expansion; validates voice AI as standalone investment category |
+| 2026-05-12 | SpaceX Colossus 1 details revealed | 220,000+ NVIDIA GPUs, 300+ MW Memphis facility; online end of May 2026; enables Claude Code rate limit doubling |
+| 2026-05-12 | EU cyber access gap becomes public | OpenAI grants EU institutions GPT-5.5-Cyber access; Anthropic denies EU regulators Mythos preview; Germany's Bundesbank demands access |
 
 ## Patterns & Insights
 
@@ -229,3 +232,7 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[entities/ernie-5-1]] — LMArena #4 ranking (score 1223) places Baidu ahead of GPT-4o, confirming the cost-performance gap between Chinese and US labs is narrowing; the timing (TSMC yield crisis) makes efficiency gains strategically valuable
 - [[ideas/alignment-reality-check]] — Anthropic's blackmail disclosure during its ~$900B valuation raise is either remarkable transparency or calculated positioning; either way, it forces the industry to confront that alignment may be superficial
 - [[ideas/regulatory-fragmentation]] — The NIST binding agreements signed by Google, Microsoft, and xAI — with Anthropic, Meta, and OpenAI absent — formalize a three-way regulatory split; the winners will be those with legal teams large enough to navigate fragmentation, not necessarily those with the best models
+- [[sources/elevenlabs]] — $11B valuation for a voice-only AI company signals enterprise voice agents are mission-critical infrastructure; positioning against xAI's voice cloning suite and OpenAI's GPT-Realtime-2
+- [[entities/colossus-1]] — Colossus 1 represents the physical reality of compute scarcity restructuring AI competitive dynamics; SpaceX pivots from "build a model company" to "own the infrastructure model companies need"
+- [[ideas/eu-cyber-access-gap]] — The EU access gap is not a regulatory annoyance but an active security liability; attackers already have AI-developed zero-days while EU defenders are structurally blind without equivalent capabilities
+- [[ideas/voice-agent-battleground]] — ElevenLabs' $11B valuation and xAI's voice cloning suite announced the same week signal voice AI as a standalone competitive battleground, not just a feature of text models

@@ -1,7 +1,7 @@
 ---
 title: "SpaceX"
 slug: spacex
-last_updated: 2026-05-07
+last_updated: 2026-05-12
 ---
 
 # SpaceX
@@ -16,6 +16,7 @@ SpaceX acquired xAI for $250 billion in an all-stock transaction in April 2026, 
 | 2026-04-01 | SpaceX acquires xAI for $250B | Creates $1.25T combined entity |
 | 2026-04-21 | SpaceX invests $60B in Cursor | Direct competition with Claude Code and Codex |
 | 2026-05-06 | Anthropic compute partnership | 300+ MW at Colossus 1 Memphis; xAI dissolved and rebranded as SpaceXAI; Musk impressed by Anthropic team after prior criticism |
+| 2026-05-12 | Colossus 1 details revealed | 220,000+ NVIDIA GPUs; 300+ megawatts; Memphis, Tennessee; online end of May 2026; primary customer Anthropic; enables Claude Code rate limit doubling and peak-hour throttling removal |
 
 ## Key Relationships
 - **xAI**: Subsidiary following acquisition, merged into SpaceX operations.
@@ -30,3 +31,5 @@ SpaceX acquired xAI for $250 billion in an all-stock transaction in April 2026, 
 - [[entities/cursor]] — $60B SpaceX investment; model-agnostic AI coding tool competing with Claude Code and Codex
 - [[sources/anthropic]] — SpaceX provides 300+ MW compute capacity to Anthropic at Colossus 1; the deal diversifies SpaceX revenue while solving Anthropic's acute shortage
 - [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX deal proves compute scarcity overrides rivalries; SpaceX gains revenue diversification while Anthropic secures critical infrastructure
+- [[entities/colossus-1]] — Colossus 1 is the physical proof that compute scarcity is restructuring AI competitive dynamics; 220,000+ GPUs in a single facility gives Anthropic dedicated capacity that OpenAI lacks
+- [[entities/claude-code]] — Claude Code rate limits doubled immediately upon announcement of the SpaceX partnership; Colossus 1 is the infrastructure that makes Anthropic's developer experience competitive again

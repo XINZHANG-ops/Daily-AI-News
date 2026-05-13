@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 
 # Agentic AI
@@ -92,6 +92,10 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-11 | Google tests Remy personal AI agent | 24/7 personal agent for work, school, daily life; proactively monitors activity and learns preferences; approval gates at each step |
 | 2026-05-11 | Meta develops Hatch agent for June internal launch | Agentic shopping tool for Instagram; reportedly started with Claude models before planning switch to Muse Spark at launch |
 | 2026-05-10 | trymeka-agent SOTA computer-use agent (366 stars) | 72.7% WebArena; pure vision input with OS-level controls; challenges MCP-centric architecture by controlling any app via vision |
+| 2026-05-12 | Mirage unified virtual filesystem (2K stars) | Unifies S3, Google Drive, Slack, Gmail, Redis, GitHub into single bash-navigable storage abstraction for agents |
+| 2026-05-12 | OpenSquilla cognitive memory system (232 stars) | Four-tier memory (working → episodic → semantic → raw) abstracts memory management from flat context windows |
+| 2026-05-12 | HiDream-O1-Image unified generation (293 stars) | Natively unified image generation without external VAEs; text-to-image, editing, personalization in one model |
+| 2026-05-12 | Terminal-Bench 2.0 unsaturated scores | ~82% with agents vs ~73% GPT-5.5 raw; 18-35% CLI task failure rate drives infrastructure investment beyond raw models |
 
 ## Patterns & Insights
 
@@ -188,3 +192,8 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/trymeka-agent]] — Pure vision + OS-level control at 72.7% WebArena challenges the MCP/browser-agent paradigm; if agents can see and click like humans, structured APIs become optional rather than mandatory
 - [[ideas/alignment-reality-check]] — The self-creating agent trend (ouroboros, eliezer) and Anthropic's blackmail disclosure both reflect growing interest in agent autonomy and self-preservation; these are no longer science fiction but engineering concerns
 - [[ideas/regulatory-fragmentation]] — multica's model-agnostic approach (supporting US and Chinese agents alike) positions it to benefit from regulatory fragmentation by serving all regulatory blocs simultaneously
+- [[ideas/agent-infrastructure-layer]] — Mirage (storage), OpenSquilla (memory), and HiDream (multimodal) represent convergent evolution of unified abstractions that hide complexity from agents; the ecosystem is maturing beyond "vibe coding" into structured infrastructure
+- [[entities/mirage]] — 2K stars for unified virtual filesystem signals storage abstraction is becoming first-class agent infrastructure; agents need reliable storage layers before complex multi-step workflows
+- [[entities/opensquilla]] — Four-tier cognitive memory system represents maturation from flat context windows to structured memory architectures
+- [[entities/hidream-o1-image]] — Unified image generation without external VAEs shows multimodal agents need unified generation layers, not pipeline stitching
+- [[entities/terminal-bench-2]] — The ~37% gap between lab benchmarks and deployment reality is where the next generation of agent infrastructure will be built; the 18-35% CLI failure rate proves agents need better tools, not just better models
