@@ -470,3 +470,19 @@ Wiki lint complete. Here's what was fixed across all four passes:
 - Updated `last_updated` on 14 modified pages
 - Appended lint entry to `wiki/log.md`
 [2026-05-14 01:11:37] Wiki lint complete (exit code 0).
+[main f92aec6] wiki: lint 2026-05-14
+ 46 files changed, 963 insertions(+), 35 deletions(-)
+ create mode 100644 wiki/entities/agenvoy.md
+ create mode 100644 wiki/entities/frona.md
+ create mode 100644 wiki/entities/github-mcp-server.md
+ create mode 100644 wiki/entities/googlebook.md
+ create mode 100644 wiki/entities/krea-2.md
+ create mode 100644 wiki/entities/openai-daybreak.md
+ create mode 100644 wiki/entities/perceptron-mk1.md
+ create mode 100644 wiki/entities/tml-interaction-small.md
+ create mode 100644 wiki/entities/webwright.md
+ create mode 100644 wiki/ideas/mcp-infrastructure-battleground.md
+ create mode 100644 wiki/ideas/real-time-ai-fragmentation.md
+ create mode 100644 wiki/ideas/three-tier-safety-playbook.md
+ create mode 100644 wiki/ideas/vertical-integration-resolving.md
+ create mode 100644 wiki/sources/thinking-machines-lab.md
