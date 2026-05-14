@@ -642,3 +642,52 @@ The 2026-05-12 ingest is complete. All wiki pages have been updated and verified
 - `index.md`, `processed.json`, and `log.md` all current
 
 Disk state matches index counts exactly (6 topics, 25 sources, 3 timelines, 107 entities, 40 ideas).
+Wiki ingest complete for **2026-05-13**.
+
+**Processed:** 1 new date (`2026-05-13`)
+
+**Sources updated (5):**
+- `sources/openai.md` — Added Daybreak cybersecurity platform entry
+- `sources/anthropic.md` — Added Claude Code v2.1.139 entry
+- `sources/google.md` — Added Googlebook laptop category entry
+- `sources/microsoft.md` — Added Webwright open-source entry
+- `sources/github.md` — Added MCP Server secret scanning GA entry
+
+**Source created (1):**
+- `sources/thinking-machines-lab.md` — Mira Murati's lab timeline
+
+**Topics updated (5):**
+- `topics/llm_models.md` — TML-Interaction-Small, Perceptron Mk1, Krea 2
+- `topics/agentic_ai.md` — Claude Code v2.1.139, AWS MCP Server GA, GitHub MCP Server GA, frona, Agenvoy, Webwright
+- `topics/ai_companies.md` — Daybreak, Googlebook, Perceptron AI, Thinking Machines Lab
+- `topics/ai_safety.md` — Three-tier safety playbook, AI cybersecurity three-way race
+- `topics/github_trends.md` — frona (132★), Agenvoy (101★), Webwright (2.4K★)
+
+**Entities created (9):**
+- `entities/perceptron-mk1.md` — Physical AI for embodied reasoning
+- `entities/tml-interaction-small.md` — 276B MoE real-time multimodal model
+- `entities/krea-2.md` — Proprietary foundation image model
+- `entities/openai-daybreak.md` — Cybersecurity platform (3 GPT-5.5 variants)
+- `entities/googlebook.md` — AI-native Android laptop category
+- `entities/github-mcp-server.md` — Secret scanning GA
+- `entities/frona.md` — Self-hosted personal AI assistant
+- `entities/agenvoy.md` — Go agent runtime
+- `entities/webwright.md` — SOTA web agent harness (~450 lines)
+
+**Entities updated (2):**
+- `entities/aws-mcp-server.md` — Updated with GA context and May 13 ecosystem signals
+- `entities/claude-code.md` — Added v2.1.139 features (/goal, Agent View, Git worktree, /loop)
+
+**Ideas created (4):**
+- `ideas/real-time-ai-fragmentation.md` — Real-time AI splitting into specialized architectures
+- `ideas/mcp-infrastructure-battleground.md` — MCP as new API gateway for agents
+- `ideas/vertical-integration-resolving.md` — Wrapper vs foundation debate resolving to full stacks
+- `ideas/three-tier-safety-playbook.md` — Standard/verified/red-team as emerging safety template
+
+**Timeline updated:**
+- `timelines/2026-05.md` — Added Week 2 (8th–14th) narrative
+
+**Index, processed, log updated:**
+- `wiki/index.md` — All new pages catalogued
+- `wiki/processed.json` — Appended `2026-05-13`
+- `wiki/log.md` — Append-only ingest entry recorded

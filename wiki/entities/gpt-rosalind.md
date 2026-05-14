@@ -23,7 +23,7 @@ GPT-Rosalind is OpenAI's reasoning model built specifically for life sciences �
 GPT-Rosalind extends OpenAI's pattern of domain-specific models (Cyber for security, Life Sciences for medicine) over general-purpose ones. This specialization strategy allows targeted capabilities for professional domains while maintaining safety boundaries.
 
 ## Connections
-- [[sources/openai]] — Created by OpenAI
+- [[sources/openai]] — Rosalind is OpenAI's life sciences domain specialization, part of the vertical-model strategy targeting specific industries rather than general-purpose benchmarks
 - [[entities/gpt-5.4]] — Part of the broader GPT-5.4 family structure
 - [[entities/gpt-5.4-cyber]] — Sister domain-specific model for cybersecurity
 - [[topics/llm_models]] — Domain-specific model trend

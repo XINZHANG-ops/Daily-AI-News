@@ -688,3 +688,46 @@ Chat session insights applied: Apr 23 session noted ai_safety may need Bank of E
 - Updated `index.md` `Last updated` to 2026-05-13
 - Total content pages: 181 (6 topics + 25 sources + 3 timelines + 107 entities + 40 ideas)
 - Appended this lint entry
+
+## [2026-05-13] ingest | 1 date
+
+Dates processed: 2026-05-13
+Topics updated: llm_models, agentic_ai, ai_companies, github_trends, ai_safety
+Sources updated: openai, anthropic, google, microsoft, github
+Sources created: thinking-machines-lab
+Entities created: perceptron-mk1, tml-interaction-small, krea-2, openai-daybreak, googlebook, github-mcp-server, frona, agenvoy, webwright
+Entities updated: aws-mcp-server, claude-code
+Ideas created: real-time-ai-fragmentation, mcp-infrastructure-battleground, vertical-integration-resolving, three-tier-safety-playbook
+
+---
+
+## [2026-05-14] lint
+
+**Pass 1 — Structural integrity:**
+- Removed broken wikilink `[[sources/aws]]` from `ideas/mcp-infrastructure-battleground.md` (AWS does not have a source page)
+- Added 11 annotated inbound wikilinks to fix 5 orphan timeline pages: `timelines/2026-03` linked from `topics/llm_models`, `topics/ai_companies`, `topics/ai_funding`, `topics/agentic_ai`; `timelines/2026-04` linked from `topics/llm_models`, `topics/ai_companies`, `topics/ai_funding`, `topics/agentic_ai`, `topics/github_trends`, `topics/ai_safety`
+- Verified zero broken wikilinks remain across all 181 content pages
+- Verified zero orphan pages remain (all content pages have at least one inbound wikilink)
+- Verified no companies or people improperly placed in `entities/` (all 116 entities are technical artifacts: models, products, repos, protocols, benchmarks, frameworks, legislation)
+- Fixed weak connection in `entities/ml-intern.md`: rewrote "Related modular coding agent SDKs" to substantive WHY annotation
+
+**Pass 2 — Wrong & duplicate information:**
+- No duplicate pages covering the same concept (verified 116 entity names for near-matches; GPT-5.4 / GPT-5.4-Cyber / GPT-5.5 are distinct models; cc-design / web-design-skill / claude-design are distinct products/repos)
+- No duplicate paragraphs within or across pages (checked all ~6,000 paragraphs)
+- No factually inconsistent dates or claims detected across pages (verified Opus 4.7 SWE-bench 87.6%, GPT-5.5 Terminal-Bench 82.7%, Anthropic valuation chronology $380B → ~$1T secondary → $900B raise)
+- All 181 content pages have valid YAML frontmatter; entity `type:` fields consistent across all 116 entity pages
+- No stale claims requiring update with newer data
+
+**Pass 3 — Connection quality:**
+- Improved 9 bare "Created by X" connection annotations to substantive WHY explanations in `entities/a2a-protocol.md`, `entities/codex.md`, `entities/gemini-3-1-flash-tts.md`, `entities/gemini-3-1-pro.md`, `entities/gpt-5.4.md`, `entities/gpt-rosalind.md`, `entities/ising.md`, `entities/vera-rubin.md`, `ideas/quantum-ai-emergence.md`
+- Verified all 6 topic pages have substantive `## Evolution` and `## Patterns & Insights` sections
+- Verified zero bare "Related:", "See also:", or unannotated links remain in any content page
+- Verified recent daily insights (May 11-13) map to existing idea pages: `real-time-ai-fragmentation`, `mcp-infrastructure-battleground`, `vertical-integration-resolving`, `boring-infrastructure-shift`, `compute-shortage-forces-cooperation`, `agent-infrastructure-layer`, `eu-cyber-access-gap`
+- No new entities from recent data require standalone pages (Sentry-for-AI is a minor MCP reference covered within `entities/github-mcp-server`)
+
+**Pass 4 — Index & log:**
+- Updated `index.md` section counts: Sources (25 → 26), Entities (107 → 116), Ideas (40 → 44)
+- Updated `index.md` `Last updated` to 2026-05-14
+- Updated `last_updated` to 2026-05-14 on 14 modified pages
+- Total content pages: 195 (6 topics + 26 sources + 3 timelines + 116 entities + 44 ideas)
+- Appended this lint entry

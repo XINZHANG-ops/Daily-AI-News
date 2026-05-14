@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 ---
 
 # Google
@@ -47,6 +47,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-05-11 | Alphabet stock rallies 160% YoY | Briefly surpasses Nvidia by market cap; full-stack ownership (TPU → Gemini → Cloud → Distribution) priced in; $190B capex guidance — more than double 2025 levels
 | 2026-05-11 | Remy personal AI agent in testing | 24/7 personal agent for work, school, daily life; proactively monitors activity and learns preferences; comes after Project Mariner shutdown on May 4
 | 2026-05-12 | First AI-developed zero-day confirmed in the wild | Google Threat Intelligence Group identified and blocked AI-developed exploit; "high confidence" assessment; validates that AI-powered offensive capabilities are no longer theoretical
+| 2026-05-12 | Googlebook laptop category announced | Android-based laptops with ChromeOS integration, "Magic Pointer" for contextual AI suggestions, "Create your Widget" via prompts; partners: Acer, ASUS, Dell, HP, Lenovo; launches Fall 2026; strategic move to define "AI-native laptop" before Apple's rumored WWDC AI reboot
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.

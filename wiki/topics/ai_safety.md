@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-12
+last_updated: 2026-05-14
 ---
 
 # AI Safety
@@ -80,6 +80,8 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-12 | First AI-developed zero-day confirmed in the wild | Google Threat Intelligence Group identified and blocked AI-developed exploit; "high confidence" assessment; offensive AI capabilities now active, not theoretical |
 | 2026-05-12 | EU regulators denied Claude Mythos preview access | Despite 4-5 meetings; Mythos restricted to ~12 US tech firms; Germany's Bundesbank publicly demanded access; EU institutions structurally disadvantaged |
 | 2026-05-12 | OpenAI grants EU institutions GPT-5.5-Cyber access | Trusted Access for Cyber program expanded to EU; George Osborne frames as "Europe's many defenders, not just the few"; creates three-way geopolitical tension |
+| 2026-05-13 | OpenAI Daybreak three-tier safety model | Standard, Trusted Access, permissive red-team variants becoming the new cybersecurity safety playbook; 8+ security vendor distribution |
+| 2026-05-13 | AI cybersecurity three-way race | OpenAI Daybreak vs Anthropic Mythos vs Perceptron embodied agents; "agentic" category definition still fluid |
 
 ## Patterns & Insights
 
@@ -154,3 +156,7 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[sources/google]] — Google Threat Intelligence Group confirmation of AI-developed zero-days provides empirical evidence that AI-powered offensive capabilities have crossed into active deployment
 - [[entities/gpt-5.4-cyber]] — OpenAI's EU Trusted Access for Cyber program grants European institutions defensive capabilities Anthropic refuses to provide; the geopolitical dimension makes cyber model access an alliance-building tool
 - [[entities/claude-mythos]] — Anthropic's refusal to grant EU access despite 4-5 meetings and Bundesbank demands suggests the restriction is about liability control, not just safety; creates structural disadvantage for allies
+- [[entities/openai-daybreak]] — The three-tier model approach (standard, verified, red-team) is becoming the industry safety playbook; Anthropic pioneered it with Mythos's ~12 partners, and OpenAI is copying the structure while expanding to 8+ vendors simultaneously
+- [[entities/perceptron-mk1]] — Perceptron's embodied agents add a third competitor to the AI cybersecurity race alongside OpenAI Daybreak and Anthropic Mythos; the battle for AI-powered security is now a three-way contest
+- [[ideas/three-tier-safety-playbook]] — The standard/verified/red-team tier structure pioneered by Mythos and adopted by Daybreak represents a new safety architecture for capability-restricted models; it may become the template for all future frontier cybersecurity releases
+- [[timelines/2026-04]] — April concentrated the safety crisis: Claude Mythos restricted access, Hinton's UN warning, and the first government emergency CEO calls over model capabilities

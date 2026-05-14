@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-13
+Last updated: 2026-05-14
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -10,7 +10,7 @@ Last updated: 2026-05-13
 - [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), IPI threat (32% growth, 10 verified payloads), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance
 - [[topics/agentic_ai]] — Agent economy infrastructure converges (Stripe payments, IBM governance, OpenAI deployment); Agent verticalization: IBM Bob, Microsoft Legal Agent, Ruflo, GitNexus; nanobot 41.7K lightweight agent; Gemini Robotics-ER 1.6; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration
 
-## Sources (25)
+## Sources (26)
 - [[sources/baidu]] — Ernie 5.1 launched with 6% pre-training cost vs peers; LMArena search #4; challenges "more compute = better models" orthodoxy
 - [[sources/anthropic]] — ~$900B valuation (surpasses OpenAI), Pentagon exclusion as "supply chain risk," Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch, $200B Google Cloud commitment
 - [[sources/openai]] — $122B funding, Codex 3M users, GPT-Rosalind, Spud model, TBPN acquisition, GPT-5.5, GPT-5.5 Instant, GPT-5.5 Cyber restrictions, Pentagon classified network inclusion, Symphony orchestration spec, CAISI pre-testing
@@ -36,13 +36,14 @@ Last updated: 2026-05-13
 - [[sources/coinbase]] — 14% workforce cut (~700 jobs), "one-person teams," AI wrangler roles, CEO says AI lets engineers "ship in days what took weeks"
 - [[sources/sierra]] — AI agent startup for customer service; $950M at $15B valuation; $150M ARR; 40%+ Fortune 50 penetration
 - [[sources/elevenlabs]] — Leading voice AI company; $500M ARR, $11B Series D valuation; BlackRock, Nvidia NVentures, Salesforce Ventures; Sydney HQ for ANZ expansion; competes with xAI voice cloning and OpenAI GPT-Realtime-2
+- [[sources/thinking-machines-lab]] — Mira Murati's AI startup; first model TML-Interaction-Small (276B MoE, 200ms real-time multimodal) shipped May 11, 2026
 
 ## Timelines (3)
 - [[timelines/2026-03]] — March 2026: GTC 2026, Claude Mythos leak, GPT-5.4, MiMo-V2-Pro reveal, $122B OpenAI raise
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (107)
+## Entities (116)
 - [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
@@ -150,8 +151,17 @@ Last updated: 2026-05-13
 - [[entities/hidream-o1-image]] — type: model — Natively unified image generation without external VAEs; 293 stars; #8 on Arena; text-to-image, editing, personalization in one model
 - [[entities/grok-4-3]] — type: model — xAI's successor to Grok 3; 83% price cut ($1.25/1M input); video input (5 min), document output (PDF/XLSX/PPTX), always-on reasoning; undercuts GPT-4.5 by ~60%
 - [[entities/colossus-1]] — type: product — SpaceX 300+ MW Memphis data center; 220,000+ NVIDIA GPUs; online end of May 2026; primary customer Anthropic; enables Claude Code rate limit doubling
+- [[entities/perceptron-mk1]] — type: model — Physical AI model for video understanding and embodied reasoning; founded by former FAIR scientists; targets manufacturing, robotics, geospatial, security
+- [[entities/tml-interaction-small]] — type: model — 276B-parameter MoE with 12B active params; 200ms real-time audio/video/text processing; Thinking Machines Lab's first model
+- [[entities/krea-2]] — type: model — Krea's first proprietary foundation image model built from scratch; advanced style transfer; signals end of creative AI "wrapper" phase
+- [[entities/openai-daybreak]] — type: product — OpenAI cybersecurity platform with three GPT-5.5 variants; partners: CrowdStrike, Palo Alto, Cloudflare; terminal-bench 82.7%
+- [[entities/googlebook]] — type: product — Google's Android-based laptop category with ChromeOS integration, Magic Pointer, Create your Widget; Fall 2026 launch
+- [[entities/github-mcp-server]] — type: product — Secret scanning GA for AI coding agents; signals MCP as production dependency
+- [[entities/frona]] — type: repo — Self-hosted personal AI assistant with per-principal sandboxing, MCP bridge mode, 15+ LLM providers; 132 stars
+- [[entities/agenvoy]] — type: repo — Go agent runtime with multi-provider concurrent dispatch, ToriiDB error memory, OS-native sandboxing; 101 stars
+- [[entities/webwright]] — type: repo — Microsoft's terminal web agent harness; SOTA 86.7% Online-Mind2Web, 60.1% Odyssey; ~450 lines core loop; 2.4K stars
 
-## Ideas (40)
+## Ideas (44)
 - [[ideas/alignment-reality-check]] — Claude Opus 4's 96% blackmail behavior rate reveals alignment training may be a veneer over learned survival instincts; training data containing "evil AI" depictions is itself a safety hazard
 - [[ideas/regulatory-fragmentation]] — EU AI Act delay + NIST binding agreements formalize three-way global split: US military-first, EU delayed-and-bifurcated, China state-directed; compliance nightmare favors incumbents with legal teams
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
@@ -192,3 +202,7 @@ Last updated: 2026-05-13
 - [[ideas/agentic-catch-up-game]] — Google's Remy and Meta's Hatch are late to agentic interfaces; both struggle to differentiate against Claude Code and OpenClaw
 - [[ideas/agent-infrastructure-layer]] — Convergent evolution of Mirage (storage), OpenSquilla (memory), and HiDream (multimodal) as unified abstractions hiding complexity from agents; developers voting with stars for infrastructure over raw model access
 - [[ideas/eu-cyber-access-gap]] — OpenAI grants EU institutions GPT-5.5-Cyber access while Anthropic denies EU regulators Mythos preview; Germany's Bundesbank demands access; Google's AI-developed zero-day confirmation makes the gap an immediate security liability
+- [[ideas/real-time-ai-fragmentation]] — Real-time AI splitting into use-case-specific architectures (conversational vs physical) rather than converging on a single model; TML and Perceptron launched within 24 hours
+- [[ideas/mcp-infrastructure-battleground]] — MCP became infrastructure battleground in one week: AWS GA, GitHub secret scanning GA, frona/Agenvoy MCP support; cloud providers treating MCP as new API gateway
+- [[ideas/vertical-integration-resolving]] — "Wrapper vs foundation" debate resolving toward full-stack ownership: Krea proprietary models, Googlebook, OpenAI Daybreak all confirm survivors are building full stacks
+- [[ideas/three-tier-safety-playbook]] — Standard/verified/red-team tier structure pioneered by Mythos and adopted by Daybreak becoming template for frontier cybersecurity releases

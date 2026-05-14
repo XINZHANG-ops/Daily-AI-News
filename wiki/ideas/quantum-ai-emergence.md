@@ -23,5 +23,5 @@ If Ising delivers on its promises:
 
 ## Connections
 - [[entities/ising]] — First quantum AI model family
-- [[sources/nvidia]] — Creator of Ising
+- [[sources/nvidia]] — NVIDIA's Ising launch marks the first major quantum-AI convergence from a hyperscaler, validating that quantum-enhanced AI is moving from research curiosity to production architecture
 - [[entities/vera-rubin]] — Next-gen platform that may integrate quantum capabilities

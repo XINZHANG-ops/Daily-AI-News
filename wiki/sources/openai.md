@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 ---
 
 # OpenAI
@@ -65,6 +65,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-11 | GPT-Realtime-2 pricing revealed | $0.034/min for translation undercuts human interpreters 90%+; $0.017/min for Whisper streaming transcription; full voice stack now priced competitively
 | 2026-05-11 | OpenClaw creator Peter Steinberger now at OpenAI | Meta failed to hire him in February; Steinberger's OpenClaw (302K stars) sparked "agentic wars"; Jensen Huang called it "the next ChatGPT"
 | 2026-05-12 | Trusted Access for Cyber expanded to EU | GPT-5.5-Cyber granted to EU institutions; George Osborne frames as "Europe's many defenders, not just the few"; direct geopolitical counter to Anthropic's EU Mythos denial
+| 2026-05-12 | Daybreak cybersecurity platform launched | Three GPT-5.5 variants: standard, Trusted Access for verified defenders, and permissive GPT-5.5-Cyber for red teaming; partners include CrowdStrike, Palo Alto Networks, Cloudflare; targets Anthropic Mythos dominance with terminal-bench 82.7% performance
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.

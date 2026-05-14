@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-12
+last_updated: 2026-05-14
 ---
 
 # GitHub Trends
@@ -58,6 +58,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | OpenHands/software-agent-sdk | 3.2K+ | Modular SDK for building coding agents |
 | NVIDIA/NemoClaw | 1.1K+ | Hardened reference stack for secure OpenClaw deployment |
 | K-Dense-AI/scientific-agent-skills | 2.4K+ | 133 scientific skills for AI agents |
+| fronalabs/frona | 132 | Self-hosted personal AI assistant with per-principal sandboxing, MCP bridge mode, 15+ LLM providers |
+| agenvoy/Agenvoy | 101 | Go agent runtime with multi-provider dispatch, ToriiDB error memory, OS-native sandboxing |
+| microsoft/Webwright | 2.4K | Terminal web agent harness: 86.7% Online-Mind2Web, 60.1% Odyssey; code-as-action, ~450 lines |
 | backnotprop/plannotator | 4.8K+ | Visual coding agent plan/review tool with team collaboration and one-click feedback |
 | MervinPraison/PraisonAI | 7K+ | 24/7 AI workforce in 5 lines of code; memory, RAG, 100+ LLMs |
 | aaif-goose/goose | new | Open-source extensible AI agent — install, execute, edit, test with any LLM |
@@ -190,4 +193,10 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/opensquilla]] — Four-tier cognitive memory system (working → episodic → semantic → raw) represents a maturation from flat context windows to structured memory architectures; 232 stars suggests early but important pattern
 - [[entities/hidream-o1-image]] — 293 stars and #8 on Arena proves unified multimodal generation can compete with specialized pipelines; natively unified without external VAEs
 - [[ideas/agent-infrastructure-layer]] — May 12 trending repos are all infrastructure plays (Mirage, OpenSquilla, HiDream) and no raw model repos; developers are voting with stars for agent infrastructure over model access
+- [[entities/frona]] — Self-hosted personal AI assistant platform with per-principal sandboxing signals privacy-first agent infrastructure gaining traction; 15+ LLM provider support avoids single-vendor dependency
+- [[entities/agenvoy]] — Go-based agent runtime brings systems-language performance to agent orchestration; ToriiDB self-improving error memory is a novel approach to agent learning from failures
+- [[entities/webwright]] — Microsoft's ~450-line SOTA web agent proves minimal architectures can outperform complex systems; the code-as-action paradigm with workspace-as-state design challenges the browser-automation approach of most web agents
+- [[ideas/mcp-infrastructure-battleground]] — frona's MCP bridge mode and Agenvoy's MCP client adapter show the protocol has become table stakes for new agent infrastructure projects
 - [[entities/terminal-bench-2]] — The 18-35% CLI task failure rate is the empirical driver behind infrastructure investment; models alone won't close the deployment gap — agents need better tools
+- [[timelines/2026-03]] — March trending repos included claw-code (DMCA-proof Claude Code rewrite reaching 100K stars) and ByteDance DeerFlow v2.0, showing agent replication speed
+- [[timelines/2026-04]] — April's 275M commits/week exposed the platform economics crisis; GitHub trending repos shifted toward infrastructure as agents became primary code producers

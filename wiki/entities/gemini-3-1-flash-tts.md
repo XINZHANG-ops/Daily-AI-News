@@ -23,6 +23,6 @@ Gemini 3.1 Flash TTS is Google's text-to-speech release from April 2026 (approxi
 The granular natural language control over voice synthesis represents a significant advancement in TTS usability. Developers can now specify voice characteristics in plain language rather than through technical parameters.
 
 ## Connections
-- [[sources/google]] — Created by Google
+- [[sources/google]] — Google's granular voice control TTS extends the Gemini ecosystem into voice modality with sub-300ms latency
 - [[entities/gemini-3-1-pro]] — Part of the Gemini 3.1 family
 - [[topics/llm_models]] — TTS capability within LLM ecosystem

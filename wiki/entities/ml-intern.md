@@ -25,4 +25,4 @@ ml-intern represents the maturation of AI coding agents beyond software engineer
 ## Connections
 - [[topics/agentic_ai]] — Autonomous ML engineering agent expanding scope of AI coding tools
 - [[topics/github_trends]] — Open-source ML agent representing ecosystem maturation
-- [[entities/openhands-sdk]] — Related modular coding agent SDKs
+- [[entities/openhands-sdk]] — Both provide modular building blocks for coding agents; ml-intern automates the full ML lifecycle while OpenHands SDK focuses on general agent construction primitives

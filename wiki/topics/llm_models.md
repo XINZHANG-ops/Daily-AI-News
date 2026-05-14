@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-12
+last_updated: 2026-05-14
 ---
 
 # LLM Models
@@ -112,6 +112,9 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-12 | Grok 4.3 launched by xAI | 83% price cut ($1.25/1M input); video input (5 min), document output (PDF/XLSX/PPTX), always-on reasoning; undercuts GPT-4.5 by ~60% |
 | 2026-05-12 | HiDream-O1-Image released | Unified image generation model (293 stars); #8 on Arena; text-to-image, editing, personalization without external VAEs |
 | 2026-05-12 | Terminal-Bench 2.0 unsaturated scores | GPT-5.5 ~73% raw, Claude Opus 4.6 ~69% raw, ~82% with agents; 18-35% CLI task failure rate even with frontier models |
+| 2026-05-13 | TML-Interaction-Small released | 276B-parameter MoE with 12B active params; 200ms real-time audio/video/text processing; time-aligned micro-turns with interruption support; Thinking Machines Lab's first model |
+| 2026-05-13 | Perceptron Mk1 launched | Physical AI model for video understanding and embodied reasoning; founded by former FAIR scientists; targets manufacturing, robotics, geospatial, security |
+| 2026-05-13 | Krea 2 foundation image model | Built from scratch with advanced style transfer; signals end of "wrapper" phase for creative AI tools; vertical integration bet |
 
 ## Patterns & Insights
 
@@ -204,3 +207,9 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/hidream-o1-image]] — HiDream-O1-Image at #8 on Arena proves unified multimodal generation is competitive with specialized models; natively unified without external VAEs
 - [[ideas/commodity-inference-fragmentation]] — Grok 4.3's 83% price cut accelerates the commodity inference trend; the race-to-bottom is now affecting premium models, not just Chinese open-weight alternatives
 - [[entities/terminal-bench-2]] — May 12 unsaturated scores reveal ~37% gap between lab benchmarks and deployment reality; models alone won't close the CLI task failure rate — agents need better tooling
+- [[entities/tml-interaction-small]] — 276B MoE achieving 200ms latency proves cost-efficient architectures can compete with OpenAI's premium voice pipeline; the efficiency-frontier thesis extends to real-time multimodal
+- [[entities/perceptron-mk1]] — Physical AI model launches the same day as TML-Interaction-Small, showing real-time AI is fragmenting into use-case-specific architectures rather than converging on a single model
+- [[entities/krea-2]] — Proprietary foundation model signals the "wrapper" phase is ending for creative AI; survivors are building full stacks, not relying on public APIs
+- [[ideas/real-time-ai-fragmentation]] — TML and Perceptron both target 200ms but from opposite directions (conversational vs physical), proving real-time AI is splitting into specialized architectures
+- [[timelines/2026-03]] — March concentrated hardware announcements (Vera Rubin), the Claude Mythos leak, and GPT-5.4 family release — the month that established the capability-safety tension defining the rest of 2026
+- [[timelines/2026-04]] — April delivered Opus 4.7, the Claude Mythos restriction decision, and Cloud Next 2026 — the month when labs began capability-based model restrictions as standard practice

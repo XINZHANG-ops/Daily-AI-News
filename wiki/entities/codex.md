@@ -22,5 +22,5 @@ Codex is OpenAI's coding agent, the primary product in their enterprise AI strat
 Codex's growth to 3M weekly active users (from 2M weeks earlier) made it a critical component of OpenAI's IPO positioning. The company launched a $100 ChatGPT Pro tier with 5x Codex access to compete with Claude Max.
 
 ## Connections
-- [[sources/openai]] — Created by OpenAI
+- [[sources/openai]] — Codex is central to OpenAI's enterprise strategy and "AI super app" vision; 3M weekly users make it the most deployed coding agent
 - [[topics/agentic_ai]] — Central to coding agent competition

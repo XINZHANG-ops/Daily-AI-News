@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-12
+last_updated: 2026-05-14
 ---
 
 # AI Companies
@@ -140,6 +140,10 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-12 | ElevenLabs announces $500M ARR, $11B Series D | BlackRock, Nvidia NVentures, Salesforce Ventures, Jamie Foxx, Hwang Dong-hyuk; Sydney HQ for ANZ expansion; validates voice AI as standalone investment category |
 | 2026-05-12 | SpaceX Colossus 1 details revealed | 220,000+ NVIDIA GPUs, 300+ MW Memphis facility; online end of May 2026; enables Claude Code rate limit doubling |
 | 2026-05-12 | EU cyber access gap becomes public | OpenAI grants EU institutions GPT-5.5-Cyber access; Anthropic denies EU regulators Mythos preview; Germany's Bundesbank demands access |
+| 2026-05-13 | OpenAI Daybreak cybersecurity platform | Three GPT-5.5 variants targeting Anthropic Mythos; partners: CrowdStrike, Palo Alto, Cloudflare; terminal-bench 82.7% |
+| 2026-05-13 | Googlebook AI-native laptops | Android + ChromeOS, Magic Pointer, Create your Widget; Acer/ASUS/Dell/HP/Lenovo; Fall 2026 launch |
+| 2026-05-13 | Perceptron AI launches Mk1 | Former FAIR scientists; physical AI for embodied reasoning; manufacturing/robotics targets |
+| 2026-05-13 | Thinking Machines Lab ships first model | Mira Murati's lab; 200ms real-time multimodal; competing with OpenAI GPT-Realtime-2 on cost efficiency |
 
 ## Patterns & Insights
 
@@ -236,3 +240,5 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[entities/colossus-1]] — Colossus 1 represents the physical reality of compute scarcity restructuring AI competitive dynamics; SpaceX pivots from "build a model company" to "own the infrastructure model companies need"
 - [[ideas/eu-cyber-access-gap]] — The EU access gap is not a regulatory annoyance but an active security liability; attackers already have AI-developed zero-days while EU defenders are structurally blind without equivalent capabilities
 - [[ideas/voice-agent-battleground]] — ElevenLabs' $11B valuation and xAI's voice cloning suite announced the same week signal voice AI as a standalone competitive battleground, not just a feature of text models
+- [[timelines/2026-03]] — March set the competitive stage: NVIDIA GTC, Anthropic's Pentagon designation as unacceptable risk, and OpenAI's record B funding round
+- [[timelines/2026-04]] — April consolidated the industry: SpaceX-xAI merger, Anthropic's B ARR, workforce cuts across Big Tech, and the institutional gap widening between AI capability and governance

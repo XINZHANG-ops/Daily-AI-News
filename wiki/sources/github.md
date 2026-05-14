@@ -1,7 +1,7 @@
 ---
 title: "GitHub"
 slug: github
-last_updated: 2026-04-29
+last_updated: 2026-05-13
 ---
 
 # GitHub
@@ -15,6 +15,7 @@ GitHub is the dominant platform for AI-assisted coding, having crossed 275 milli
 |------|-------|---------|
 | 2026-04-29 | Copilot Agent Tier announced | $49/agent/month; free tier capped at 500 commits/month |
 | 2026-04-27 | 275M commits/week, 17M AI PRs in March | Platform strain from agent-scale usage made the paywall economics necessary |
+| 2026-05-13 | MCP Server secret scanning reaches GA | Allows AI coding agents and IDEs to scan code for exposed secrets before committing or opening PRs; honors existing push protection settings; signals MCP moving from experimental to production dependency |
 
 ## Key Relationships
 - **Microsoft**: GitHub parent company; Azure AI Foundry integration

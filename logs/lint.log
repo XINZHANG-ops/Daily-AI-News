@@ -443,3 +443,30 @@ Lint entry appended to `wiki/log.md`.
  create mode 100644 wiki/ideas/agent-infrastructure-layer.md
  create mode 100644 wiki/ideas/eu-cyber-access-gap.md
  create mode 100644 wiki/sources/elevenlabs.md
+[2026-05-14 01:00:03] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+Wiki lint complete. Here's what was fixed across all four passes:
+
+**Pass 1 — Structural Integrity**
+- Removed 1 broken wikilink (`sources/aws` from `ideas/mcp-infrastructure-battleground.md`)
+- Fixed 5 orphan timeline pages by adding annotated inbound links from all 6 topic pages
+- Rewrote 1 weak connection in `entities/ml-intern.md` from "Related modular coding agent SDKs" to a substantive WHY annotation
+- Verified no people or companies improperly placed in `entities/` (all 116 entities are technical artifacts)
+
+**Pass 2 — Wrong & Duplicate Information**
+- No duplicate pages or duplicate paragraphs found across 195 content pages
+- No factually inconsistent information detected (verified Opus 4.7 SWE-bench, GPT-5.5 Terminal-Bench, Anthropic valuation chronology)
+- No stale claims requiring updates
+- All pages have valid frontmatter
+
+**Pass 3 — Connection Quality**
+- Improved 9 bare "Created by X" annotations in entity pages to substantive WHY explanations
+- Verified all 6 topic pages have `## Evolution` and `## Patterns & Insights` sections
+- Verified recent daily insights map to existing idea pages
+
+**Pass 4 — Index & Log**
+- Updated `index.md` counts: Sources 25→26, Entities 107→116, Ideas 40→44
+- Updated `Last updated` to 2026-05-14
+- Updated `last_updated` on 14 modified pages
+- Appended lint entry to `wiki/log.md`
+[2026-05-14 01:11:37] Wiki lint complete (exit code 0).

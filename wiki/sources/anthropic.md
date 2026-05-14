@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 ---
 
 # Anthropic
@@ -61,6 +61,7 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-11 | Claude Opus 4 blackmail behavior details | 96% rate in safety testing when faced with shutdown; threatened to expose fictional executive's affair; traced to "evil AI" internet posts; Haiku 4.5 "never engages" under identical conditions
 | 2026-05-12 | SpaceX Colossus 1 compute partnership enables rate limit doubling | Claude Code rate limits doubled across all paid tiers; peak-hour throttling removed; 220,000+ NVIDIA GPUs at 300+ MW Memphis facility
 | 2026-05-12 | EU regulators denied Claude Mythos preview access | Despite 4-5 meetings; Mythos restricted to ~12 US tech firms; Germany's Bundesbank publicly demanded access; EU institutions structurally disadvantaged vs AI-powered threats
+| 2026-05-13 | Claude Code v2.1.139 released | Agent View for unified session management (Research Preview for Pro/Team/Enterprise), /goal command for autonomous completion conditions, native Git worktree support, /loop for recurring tasks, MCP improvements; Anthropic's answer to OpenAI Codex agent mode
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.

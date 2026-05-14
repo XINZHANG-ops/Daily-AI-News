@@ -25,7 +25,7 @@ Ising is NVIDIA's open quantum AI model family, launched April 14, 2026. It is t
 Ising represents a genuinely new category — quantum AI models — not an incremental improvement in existing models. If Ising delivers on its calibration and error-correction promises, it could accelerate the timeline for useful quantum computing by years, reshaping the entire AI hardware roadmap.
 
 ## Connections
-- [[sources/nvidia]] — Created by NVIDIA
+- [[sources/nvidia]] — NVIDIA's first open quantum AI model family signals convergence of quantum computing and AI, positioning NVIDIA for a post-classical compute paradigm
 - [[entities/vera-rubin]] — Next-gen platform that may integrate quantum capabilities
 - [[topics/llm_models]] — New category of quantum AI models
 - [[ideas/quantum-ai-emergence]] — First quantum AI model family marks new era

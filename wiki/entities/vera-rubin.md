@@ -22,5 +22,5 @@ Vera Rubin is NVIDIA's next-generation AI platform announced at GTC 2026, offeri
 Vera Rubin represents NVIDIA's continued leadership in AI hardware. Azure was first hyperscale cloud to power up Vera Rubin NVL72 systems.
 
 ## Connections
-- [[sources/nvidia]] — Created by NVIDIA
+- [[sources/nvidia]] — Vera Rubin is NVIDIA's next-generation platform with 10x performance per watt, anchoring the hardware roadmap for agentic AI workloads through 2027
 - [[topics/ai_funding]] — $1T in orders signals massive infrastructure buildout

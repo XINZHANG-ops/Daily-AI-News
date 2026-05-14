@@ -24,7 +24,7 @@ The Agent-to-Agent (A2A) Protocol is Google's protocol for inter-agent communica
 A2A has emerged as a key standard for agent interoperability, with cross-vendor support from Microsoft, AWS, Salesforce, SAP, and ServiceNow. The cryptographically signed Agent Cards provide security for agent verification in production systems.
 
 ## Connections
-- [[sources/google]] — Created by Google
+- [[sources/google]] — Google created A2A to standardize agent-to-agent communication; 150+ organizations and 22K stars make it a strategic bet on protocol-level ecosystem control
 - [[entities/mcp-protocol]] — Complementary protocol for agent-tool interaction
 - [[topics/agentic_ai]] — Foundation for multi-agent orchestration
 - [[topics/github_trends]] — 22K stars demonstrates adoption

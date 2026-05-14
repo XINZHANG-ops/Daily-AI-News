@@ -2,7 +2,7 @@
 title: "AWS MCP Server"
 slug: aws-mcp-server
 type: product
-last_updated: 2026-05-07
+last_updated: 2026-05-13
 ---
 
 # AWS MCP Server
@@ -27,6 +27,8 @@ AWS joining the MCP ecosystem with a first-class managed server validates Anthro
 The "Skills" feature is the subtle but important innovation: instead of agents learning how to use AWS through trial and error, AWS packages its tribal knowledge as reusable primitives. This shifts the burden from the agent developer to the service provider — AWS knows how AWS should be used, and now encodes that knowledge as structured capabilities agents can invoke.
 
 The timing is strategically significant: the same week as HuggingFace Transformers 5.8.0 added DeepSeek-V4 support and IBM launched Watsonx Orchestrate, MCP is becoming the connective tissue of the AI infrastructure stack. When the largest cloud provider, the largest model hub, and the oldest enterprise AI platform all converge on the same protocol, it signals protocol consolidation rather than fragmentation.
+
+On May 13, 2026, the AWS MCP Server's general availability with sandboxed Python execution was contextualized alongside GitHub MCP Server's secret scanning GA and new open-source agent projects (frona, Agenvoy) launching with MCP support. Cloud providers are now racing to become the "default backend" for AI agents, betting that agent workflows will drive compute consumption. The sandboxed Python execution is the killer feature — most MCP servers just query APIs, but AWS lets agents actually run code in their environment.
 
 ## Connections
 - [[entities/mcp-protocol]] — AWS MCP Server validates MCP as enterprise-grade infrastructure; 15,000 API operations is the most comprehensive MCP implementation to date and addresses the supply chain security concerns that the April 21 vulnerability exposed

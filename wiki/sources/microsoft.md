@@ -32,6 +32,7 @@ Microsoft is consolidating its position as the enterprise AI infrastructure gate
 | 2026-05-10 | Signs binding NIST safety agreement | Mandatory pre-deployment testing for frontier models; coverage (cyber, bio, autonomous) overlaps with Pentagon classified network deployments; regulatory positioning alongside Google and xAI |
 | 2026-05-11 | Agent 365 goes GA with expanded capabilities | Shadow AI Discovery for local agents via Defender/Intune; cross-platform visibility with AWS Bedrock and Google Cloud; Windows 365 for Agents (Cloud PC for agentic workloads); pre-configured integrations with Genspark, Zensai, Egnyte, Zendesk, Kore.ai
 | 2026-05-11 | Agent 365 positioning as "toll booth" | $15/user/month control plane manages Claude Code, OpenClaw, GitHub Copilot CLI, even competitors' AWS Bedrock agents; attempting to tax entire agent ecosystem regardless of which model wins
+| 2026-05-13 | Webwright open-sourced | Terminal-based web agent harness achieving SOTA: 86.7% on Online-Mind2Web and 60.1% on Odyssey long-horizon tasks; code-as-action paradigm with workspace-as-state architecture; core agent loop ~450 lines
 
 ## Key Relationships
 - **Anthropic**: Paradoxical — Claude integration in Copilot but competing in enterprise.

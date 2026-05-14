@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-12
+last_updated: 2026-05-14
 ---
 
 # Agentic AI
@@ -96,6 +96,12 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-12 | OpenSquilla cognitive memory system (232 stars) | Four-tier memory (working → episodic → semantic → raw) abstracts memory management from flat context windows |
 | 2026-05-12 | HiDream-O1-Image unified generation (293 stars) | Natively unified image generation without external VAEs; text-to-image, editing, personalization in one model |
 | 2026-05-12 | Terminal-Bench 2.0 unsaturated scores | ~82% with agents vs ~73% GPT-5.5 raw; 18-35% CLI task failure rate drives infrastructure investment beyond raw models |
+| 2026-05-13 | Claude Code v2.1.139 | Agent View, /goal command, Git worktree, /loop, MCP improvements; becoming an OS for AI-assisted development |
+| 2026-05-13 | AWS MCP Server GA | 15,000+ API operations with sandboxed Python execution; IAM guardrails; "infrastructure-as-MCP" |
+| 2026-05-13 | GitHub MCP Server secret scanning GA | Security-as-MCP category maturing; production dependency signal |
+| 2026-05-13 | frona self-hosted agent platform | Per-principal sandboxing, MCP bridge mode, 15+ LLM providers; 132 stars |
+| 2026-05-13 | Agenvoy Go agent runtime | Multi-provider concurrent dispatch, ToriiDB error memory, OS-native sandboxing; 101 stars |
+| 2026-05-13 | Microsoft Webwright | SOTA web agent: 86.7% Online-Mind2Web, 60.1% Odyssey; code-as-action, ~450 lines core loop; 2.4K stars |
 
 ## Patterns & Insights
 
@@ -197,3 +203,12 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/opensquilla]] — Four-tier cognitive memory system represents maturation from flat context windows to structured memory architectures
 - [[entities/hidream-o1-image]] — Unified image generation without external VAEs shows multimodal agents need unified generation layers, not pipeline stitching
 - [[entities/terminal-bench-2]] — The ~37% gap between lab benchmarks and deployment reality is where the next generation of agent infrastructure will be built; the 18-35% CLI failure rate proves agents need better tools, not just better models
+- [[entities/claude-code]] — v2.1.139's /goal command and Agent View confirm Anthropic is building Claude Code into an operating system for AI-assisted development, not just a chat interface; native Git worktree support shows deep IDE integration
+- [[entities/aws-mcp-server]] — GA with sandboxed Python execution makes AWS the first cloud provider to let agents run code in their environment, not just query APIs; "infrastructure-as-MCP" validates the protocol as enterprise-grade
+- [[entities/github-mcp-server]] — Secret scanning GA signals MCP is transitioning from experimental toy to production dependency for AI coding workflows; security vendors are realizing agents need structured tool access
+- [[entities/frona]] — Self-hosted personal AI assistant with per-principal sandboxing and MCP bridge mode represents the privacy-first agent stack; 15+ LLM provider support avoids vendor lock-in
+- [[entities/agenvoy]] — Go-based agent runtime with multi-provider concurrent dispatch and ToriiDB self-improving error memory shows systems-language performance entering the agent infrastructure layer
+- [[entities/webwright]] — Microsoft's ~450-line web agent achieving SOTA on Online-Mind2Web (86.7%) proves minimal code-as-action architectures can outperform complex systems; the workspace-as-state design is a paradigm shift
+- [[ideas/mcp-infrastructure-battleground]] — AWS GA, GitHub secret scanning GA, and frona/agenvoy MCP support all in one week confirm MCP has become the infrastructure battleground for AI agents
+- [[timelines/2026-03]] — March showed agent infrastructure strain: Claude Code source leak triggered claw-code's 100K-star rewrite, and Claude Computer Use went viral
+- [[timelines/2026-04]] — April delivered the agent-scale economics crisis: GitHub's 275M commits/week revealed platforms built for humans cannot handle agent traffic without business model reinvention

@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-05-12
+last_updated: 2026-05-14
 ---
 
 # AI Funding
@@ -134,3 +134,5 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[timelines/2026-05]] — May 2 agent infrastructure funding wave (Netomi $110M, Standard Intelligence $75M, Actively $45M, Parallel $100M) and May 3-7 deals (Anthropic $1.5B JV, Sierra $950M, Anthropic-SpaceX compute partnership) show capital shifting from model training to operational layers
 - [[sources/elevenlabs]] — $11B valuation for voice-only AI company proves vertical-specific AI can command standalone valuations comparable to general-purpose labs; voice AI is not a feature but an investment category
 - [[ideas/voice-agent-battleground]] — ElevenLabs' $11B valuation signals enterprise voice agents are mission-critical infrastructure attracting dedicated capital, not just a modality bolt-on
+- [[timelines/2026-03]] — March saw Q1 VC funding hit a B record with 80% flowing to AI, and NVIDIA forecasting $1T in orders through 2027
+- [[timelines/2026-04]] — April revealed the funding logic shift: Big Tech committed up to $65B to Anthropic alone, and OpenAI's Deployment Company pioneered guaranteed-return PE structures
