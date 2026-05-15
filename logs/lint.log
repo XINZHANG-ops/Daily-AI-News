@@ -518,3 +518,16 @@ All four passes of the wiki lint are complete. Here's the final summary:
 - Updated `last_updated` on 55+ modified pages
 - Appended comprehensive lint entry to `wiki/log.md`
 [2026-05-15 01:21:12] Wiki lint complete (exit code 0).
+[main 726d0b9] wiki: lint 2026-05-15
+ 137 files changed, 908 insertions(+), 288 deletions(-)
+ create mode 100644 wiki/entities/atomr-infer.md
+ create mode 100644 wiki/entities/gemini-magic-pointer.md
+ create mode 100644 wiki/entities/gemtts.md
+ create mode 100644 wiki/entities/gpt-5.5-cyber.md
+ create mode 100644 wiki/entities/incognito-chat.md
+ create mode 100644 wiki/entities/scenema-audio.md
+ create mode 100644 wiki/entities/siri.md
+ create mode 100644 wiki/entities/spud.md
+ create mode 100644 wiki/entities/tradingagents.md
+ create mode 100644 wiki/ideas/privacy-as-ai-differentiator.md
+ create mode 100644 wiki/ideas/system-competition-shift.md

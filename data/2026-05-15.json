@@ -1,0 +1,177 @@
+{
+  "date": "2026-05-15",
+  "github_repos": [
+    {
+      "name": "VRSEN/OpenSwarm",
+      "url": "https://github.com/VRSEN/OpenSwarm",
+      "description": {
+        "en": "A fully open-source multi-agent system built on Agency Swarm. Creates polished deliverables (slide decks, reports, visualizations, documents, videos) from a single prompt using 8 specialized agents with 10,000+ integrations via Composio.",
+        "zh": "基于 Agency Swarm 构建的完全开源多智能体系统。通过单一提示词，利用 8 个专业智能体和 Composio 提供的 10,000 多个集成，创建精美的交付物（幻灯片、报告、可视化、文档、视频）。"
+      },
+      "stars": "2.3k",
+      "forks": "189"
+    },
+    {
+      "name": "opencmit/alphora",
+      "url": "https://github.com/opencmit/alphora",
+      "description": {
+        "en": "A production-ready, full-stack framework for building composable AI agents. Features built-in secure code sandbox, typed streaming with SSE, skills ecosystem, and one-line deploy as OpenAI-compatible API with ReAct & Plan-Execute patterns.",
+        "zh": "用于构建可组合 AI 智能体的生产级全栈框架。具有内置安全代码沙箱、SSE 类型化流、技能生态系统，支持一键部署为 OpenAI 兼容 API，支持 ReAct 和 Plan-Execute 模式。"
+      },
+      "stars": "347",
+      "forks": "28"
+    },
+    {
+      "name": "Kohaku-Lab/KohakuTerrarium",
+      "url": "https://github.com/Kohaku-Lab/KohakuTerrarium",
+      "description": {
+        "en": "A general-purpose AI agent framework with 'Creature' abstraction (6-module agent model), built-in session persistence, TUI and Web UI out of the box, MCP support, and composition algebra for Python pipelines.",
+        "zh": "通用 AI 智能体框架，具有 'Creature' 抽象（6 模块智能体模型）、内置会话持久化、开箱即用的 TUI 和 Web UI、MCP 支持，以及用于 Python 管道的组合代数。"
+      },
+      "stars": "320",
+      "forks": "24"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Surpasses OpenAI in Business Adoption with 34.4% Market Share",
+        "zh": "Anthropic 以 34.4% 市场份额超越 OpenAI 成为企业首选"
+      },
+      "url": "https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/",
+      "source": "TechCrunch / Ramp",
+      "time": "May 13, 2026",
+      "description": {
+        "en": "According to Ramp's AI Index analyzing 50,000+ companies, Anthropic now leads with 34.4% of businesses paying for AI services versus OpenAI's 32.3%. This marks the first time Anthropic has overtaken OpenAI, up from just 9% in May 2025.",
+        "zh": "根据 Ramp AI 指数对 50,000 多家公司的分析，Anthropic 目前以 34.4% 的企业付费用户比例领先，而 OpenAI 为 32.3%。这是 Anthropic 首次超越 OpenAI，而 2025 年 5 月这一比例仅为 9%。"
+      },
+      "insight": {
+        "en": "This shift reflects enterprise preference for Claude's reliability and safety credentials over raw capability. The timing aligns with Anthropic's aggressive PwC expansion announced two days later—suggesting enterprise traction is accelerating. For developers, this validates the 'safer AI' thesis: enterprises increasingly favor predictability over benchmark bragging rights, a trend that may reshape how AI companies compete.",
+        "zh": "这一转变反映了企业更青睐 Claude 的可靠性和安全性，而非单纯的性能指标。时间上与两天后宣布的 PwC 扩张相呼应——表明企业市场正在加速增长。对开发者而言，这验证了 '更安全的 AI' 论点：企业越来越重视可预测性而非基准测试得分，这一趋势可能重塑 AI 公司的竞争方式。"
+      }
+    },
+    {
+      "title": {
+        "en": "PwC Expands Claude Deployment to 30,000 Professionals with New 'Office of the CFO'",
+        "zh": "PwC 将 Claude 部署扩展至 3 万名专业人士，推出全新 'CFO 办公室'"
+      },
+      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
+      "source": "Anthropic",
+      "time": "May 15, 2026",
+      "description": {
+        "en": "PwC announced major expansion of its Anthropic partnership, deploying Claude Code and Claude Cowork to hundreds of thousands of professionals globally. A new 'Office of the CFO' business group is being built entirely on Claude technology, with training for 30,000 professionals.",
+        "zh": "PwC 宣布大幅扩展与 Anthropic 的合作，向全球数十万专业人士部署 Claude Code 和 Claude Cowork。一个全新的 'CFO 办公室' 业务团队将完全基于 Claude 技术构建，并计划培训 3 万名专业人士。"
+      },
+      "insight": {
+        "en": "The 70% delivery time reduction cited (insurance underwriting: 10 weeks → 10 days; cybersecurity response: hours → minutes) signals AI's move from experimentation to core business infrastructure. Creating an entire business unit 'built entirely on Claude' is different from 'using Claude'—it's a structural bet. Meanwhile, this comes as Anthropic just overtook OpenAI in business adoption, suggesting the PwC deal is part of a broader enterprise momentum, not an isolated win.",
+        "zh": "所引用的 70% 交付时间缩短（保险承保：10 周→10 天；网络安全响应：小时→分钟）标志着 AI 从实验走向核心业务基础设施。创建一个 '完全基于 Claude' 的业务部门不同于 '使用 Claude'——这是一种结构性押注。与此同时，这发生在 Anthropic 刚刚超越 OpenAI 的企业采用率之际，表明 PwC 交易是更广泛企业势头的一部分，而非孤立的成功。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Partners with Gates Foundation on $200M Global Health Initiative",
+        "zh": "Anthropic 与盖茨基金会合作 2 亿美元全球健康计划"
+      },
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "source": "Anthropic",
+      "time": "May 14, 2026",
+      "description": {
+        "en": "Anthropic announced a $200 million, 4-year partnership with the Gates Foundation to develop AI-powered tools for global health, life sciences, education, and economic mobility. Focus is on improving health outcomes in low and middle-income countries where 4.6 billion people lack essential health services.",
+        "zh": "Anthropic 宣布与盖茨基金会建立为期 4 年、2 亿美元的合作伙伴关系，开发用于全球健康、生命科学、教育和经济流动性的 AI 工具。重点是改善中低收入国家的健康结果，那里有 46 亿人缺乏基本医疗服务。"
+      },
+      "insight": {
+        "en": "This partnership signals a strategic pivot toward high-impact domains where AI can address real human needs. The $200M commitment rivals OpenAI's non-profit roots but with concrete targets: disease forecasting, vaccine screening, agricultural productivity. For the AI industry, it establishes a precedent that frontier labs can align commercial success with humanitarian impact—a model that may attract talent and differentiate Anthropic from pure-capability competitors.",
+        "zh": "这一合作伙伴关系标志着向高影响力领域的战略转向，AI 可以在这些领域解决真实的人类需求。2 亿美元的承诺可与 OpenAI 的非营利根源相媲美，但有具体目标：疾病预测、疫苗筛选、农业生产力。对于 AI 行业，它树立了一个先例：前沿实验室可以将商业成功与人道主义影响结合起来——这种模式可能吸引人才并使 Anthropic 有别于纯粹追求能力的竞争对手。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches Daybreak Cybersecurity Platform to Challenge Anthropic's Mythos",
+        "zh": "OpenAI 推出 Daybreak 网络安全平台挑战 Anthropic Mythos"
+      },
+      "url": "https://thenextweb.com/news/openai-daybreak-anthropic-mythos-cyber-defence",
+      "source": "The Next Web",
+      "time": "May 14, 2026",
+      "description": {
+        "en": "OpenAI unveiled Daybreak, a cybersecurity initiative using GPT-5.5 variants with specialized versions for defenders (Trusted Access for Cyber) and red teaming (GPT-5.5-Cyber). Launch partners include Akamai, Cisco, Cloudflare, CrowdStrike, Fortinet, Oracle, Palo Alto Networks, and Zscaler.",
+        "zh": "OpenAI 推出了 Daybreak 网络安全计划，使用 GPT-5.5 变体，包括为防御者（Trusted Access for Cyber）和红队（GPT-5.5-Cyber）提供的专门版本。启动合作伙伴包括 Akamai、Cisco、Cloudflare、CrowdStrike、Fortinet、Oracle、Palo Alto Networks 和 Zscaler。"
+      },
+      "insight": {
+        "en": "The cybersecurity space is becoming a defining battleground: OpenAI's Daybreak launched the same day as Anthropic's Gates announcement, and both compete for enterprise security budgets. The heavyweight partner list (every major security vendor) shows this isn't experimental—it's infrastructure. For security teams, the pattern is clear: AI-native security operations are becoming table stakes, and the question is becoming which ecosystem (OpenAI's breadth vs Anthropic's safety focus) wins the CISO's trust.",
+        "zh": "网络安全领域正在成为决定性的战场：OpenAI 的 Daybreak 与 Anthropic 的盖茨公告同一天发布，双方都在争夺企业安全预算。重量级合作伙伴名单（每个主要安全厂商）表明这不是实验性的——这是基础设施。对于安全团队来说，模式很明确：AI 原生安全运营正在成为基本要求，而问题正在变成哪个生态系统（OpenAI 的广度 vs Anthropic 的安全重点）能赢得 CISO 的信任。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Brings Codex to ChatGPT Mobile for iPhone, iPad, and Android",
+        "zh": "OpenAI 将 Codex 引入 ChatGPT 移动端，支持 iPhone、iPad 和 Android"
+      },
+      "url": "https://9to5mac.com/2026/05/14/openai-brings-codex-control-to-chatgpt-for-iphone-and-android/",
+      "source": "9to5Mac",
+      "time": "May 14, 2026",
+      "description": {
+        "en": "Codex control is now available inside the ChatGPT mobile app, allowing users to remotely monitor, approve tasks, and start new prompts from their phones while Codex works on their machines. Windows support is coming soon.",
+        "zh": "Codex 控制功能现已在 ChatGPT 移动应用内提供，允许用户在 Codex 在其机器上工作时，通过手机远程监控、批准任务并开始新的提示词。Windows 支持即将推出。"
+      },
+      "insight": {
+        "en": "Mobile Codex control removes the 'tethered to desk' constraint that limited adoption. For developers, this means being able to kick off complex coding tasks during a commute and review results before sitting down—reducing the feedback loop from hours to minutes. The timing (same week as Daybreak and GPT-5.5 Instant) shows OpenAI's strategy: make agents accessible everywhere, then compete on ecosystem lock-in.",
+        "zh": "移动版 Codex 控制消除了限制采用的'束缚在桌前'的约束。对于开发者来说，这意味着可以在通勤期间启动复杂的编码任务，并在坐下之前查看结果——将反馈循环从几小时缩短到几分钟。时机（与 Daybreak 和 GPT-5.5 Instant 同一周）显示了 OpenAI 的策略：让智能体无处不在，然后在生态系统锁定上竞争。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepMind Unveils AI-Enabled 'Magic Pointer' Redefining Human-Computer Interaction",
+        "zh": "DeepMind 推出支持 AI 的'魔法指针'重新定义人机交互"
+      },
+      "url": "https://deepmind.google/blog/ai-pointer/",
+      "source": "Google DeepMind",
+      "time": "May 12, 2026",
+      "description": {
+        "en": "DeepMind outlined research on reimagining the mouse pointer for the AI era—a Gemini-powered pointer that understands both what you're pointing at AND why it matters. Rolling out to Gemini in Chrome and Googlebook laptops, with demos available in Google AI Studio.",
+        "zh": "DeepMind 概述了针对 AI 时代重新构想鼠标指针的研究——一个由 Gemini 驱动的指针，既能理解你指向什么，又能理解为什么重要。正在向 Chrome 中的 Gemini 和 Googlebook 笔记本推出，Google AI Studio 中提供了演示。"
+      },
+      "insight": {
+        "en": "This isn't just a smarter cursor—it's a bet that the GUI itself evolves. The 'understand why it matters' capability suggests intent-aware interfaces where clicking becomes conversational. Coming days after OpenAI's Codex mobile push and alongside Anthropic's enterprise expansion, all three labs are converging on the same insight: the next interface battleground isn't voice or text, but context-aware action across modalities.",
+        "zh": "这不仅仅是一个更智能的光标——而是对 GUI 本身演变的押注。'理解为什么重要'的能力表明意图感知界面正在出现，点击变得具有对话性。在 OpenAI 推出 Codex 移动端和 Anthropic 扩展企业业务的几天后，这三家实验室都汇聚在同一个洞察上：下一个界面战场不是语音或文本，而是跨模态的上下文感知行动。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepMind AlphaEvolve Shows Real-World Impact: 30% Better Genomics, 10x Lower Quantum Errors",
+        "zh": "DeepMind AlphaEvolve 展现真实世界影响：基因组学提升 30%，量子错误降低 10 倍"
+      },
+      "url": "https://deepmind.google/blog/alphaevolve-impact/",
+      "source": "Google DeepMind",
+      "time": "May 7, 2026",
+      "description": {
+        "en": "Google shared significant real-world applications of AlphaEvolve: 30% reduction in DNA sequencing variant detection errors with PacBio, 10x lower error rates on Willow quantum processor simulations, and AlphaEvolve-designed circuits being integrated into next-generation TPU silicon.",
+        "zh": "谷歌分享了 AlphaEvolve 的重大实际应用：与 PacBio 合作 DNA 测序变异检测错误减少 30%，Willow 量子处理器模拟错误率降低 10 倍，AlphaEvolve 设计的电路正在集成到下一代 TPU 硅片中。"
+      },
+      "insight": {
+        "en": "Unlike research demos, these are production deployments with measurable outcomes. The TPU integration is particularly significant: AI-designed hardware running AI. This creates a self-improvement loop that could accelerate compute efficiency gains beyond traditional Moore's Law trajectories. For the industry, it raises the stakes on 'AI for science'—the labs that can deliver verifiable results (not just papers) will capture the high-value contracts.",
+        "zh": "与研究演示不同，这些是具有一系列可衡量成果的生产部署。TPU 集成尤其重要：AI 设计的硬件运行 AI。这创造了一个自我改进循环，可能以超越传统摩尔定律轨迹的速度加速计算效率提升。对于行业来说，它提高了'AI for Science'的赌注——能够交付可验证结果（而不仅仅是论文）的实验室将捕获高价值合同。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mistral Releases Medium 3.5: Unified 128B Model Merging Chat, Reasoning, and Code",
+        "zh": "Mistral 发布 Medium 3.5：统一 128B 模型融合聊天、推理和代码"
+      },
+      "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+      "source": "Mistral AI",
+      "time": "May 5, 2026",
+      "description": {
+        "en": "Mistral Medium 3.5 is a 128B dense model with 256k context window that combines instruction-following, reasoning, and coding into a single checkpoint. Replaces three previous models (Medium 3.1, Magistral, Devstral 2) with configurable reasoning effort per request.",
+        "zh": "Mistral Medium 3.5 是一个 128B 密集模型，具有 256k 上下文窗口，将指令遵循、推理和编码结合到单一检查点中。通过每个请求可配置的推理工作量，取代了之前的三个模型（Medium 3.1、Magistral、Devstral 2）。"
+      },
+      "insight": {
+        "en": "The 'merged model' approach—one checkpoint handling everything from quick chat to complex coding—is the emerging consensus. OpenAI's GPT-5.5 does this, Anthropic's Opus 4.7 does this, and now Mistral. For developers, it simplifies deployment: one model, one API, one set of quirks to learn. The race is now about who can make the unified model cheapest—Mistral's $1.50/M input pricing undercuts GPT-5.4 by 40%.",
+        "zh": "'融合模型'方法——一个检查点处理从快速聊天到复杂编码的所有内容——正在成为共识。OpenAI 的 GPT-5.5 这样做，Anthropic 的 Opus 4.7 这样做，现在 Mistral 也这样做。对于开发者来说，它简化了部署：一个模型，一个 API，一组需要学习的特性。现在的竞争在于谁能让统一模型最便宜——Mistral 的每百万输入 1.50 美元定价比 GPT-5.4 低 40%。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week revealed the AI industry's strategic fault lines crystallizing. Anthropic's overtaking of OpenAI in enterprise adoption—coupled with the PwC expansion and Gates Foundation partnership—demonstrates that 'safe AI' is winning the enterprise narrative over raw capability. Meanwhile, OpenAI's triple play (Daybreak cybersecurity, mobile Codex, GPT-5.5 Instant) shows they're fighting back on accessibility and ecosystem breadth. The deeper pattern: AI is transitioning from 'tool you use' to 'infrastructure you build on'—PwC's entire CFO office 'built entirely on Claude' is the canary in the coal mine. For developers, three converging trends matter: (1) Unified models are now table stakes—Mistral Medium 3.5 joins the pack at aggressive pricing, (2) Agent frameworks are exploding (OpenSwarm, Alphora, KohakuTerrarium all shipping production-ready code), and (3) The interface wars are heating up—DeepMind's Magic Pointer, OpenAI's mobile Codex, and Anthropic's Cowork all point to the same destination: AI that understands context across modalities. The week's real story? Enterprise AI has crossed the chasm from experimentation to infrastructure, and the winners will be determined by trust, not just benchmarks.",
+    "zh": "本周揭示了 AI 行业战略分歧线的结晶。Anthropic 在企业采用率上超越 OpenAI——加上 PwC 扩张和盖茨基金会合作伙伴关系——表明'安全 AI'正在赢得企业叙事，而非单纯追求能力。与此同时，OpenAI 的三重举措（Daybreak 网络安全、移动 Codex、GPT-5.5 Instant）显示他们正在通过可访问性和生态系统广度进行反击。更深的模式：AI 正从'你使用的工具'转变为'你构建的基础设施'——PwC 整个 CFO 办公室'完全基于 Claude 构建'是煤矿中的金丝雀。对于开发者来说，三个趋同的趋势很重要：(1) 统一模型现在成为基本要求——Mistral Medium 3.5 以激进定价加入该阵营，(2) 智能体框架正在爆炸式增长（OpenSwarm、Alphora、KohakuTerrarium 都在交付生产就绪代码），(3) 界面之战正在升温——DeepMind 的 Magic Pointer、OpenAI 的移动 Codex 和 Anthropic 的 Cowork 都指向同一个目标：跨模态理解上下文的 AI。本周的真正故事？企业 AI 已经跨越从实验到基础设施的鸿沟，赢家将由信任而非基准测试决定。"
+  }
+}

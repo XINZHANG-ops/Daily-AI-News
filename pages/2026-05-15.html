@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 15, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 15, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/VRSEN/OpenSwarm" class="card-title" target="_blank">VRSEN/OpenSwarm</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.3k stars</div>
+                                <div class="meta-item"><span>🍴</span> 189 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A fully open-source multi-agent system built on Agency Swarm. Creates polished deliverables (slide decks, reports, visualizations, documents, videos) from a single prompt using 8 specialized agents with 10,000+ integrations via Composio.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">基于 Agency Swarm 构建的完全开源多智能体系统。通过单一提示词，利用 8 个专业智能体和 Composio 提供的 10,000 多个集成，创建精美的交付物（幻灯片、报告、可视化、文档、视频）。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/opencmit/alphora" class="card-title" target="_blank">opencmit/alphora</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 347 stars</div>
+                                <div class="meta-item"><span>🍴</span> 28 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A production-ready, full-stack framework for building composable AI agents. Features built-in secure code sandbox, typed streaming with SSE, skills ecosystem, and one-line deploy as OpenAI-compatible API with ReAct & Plan-Execute patterns.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">用于构建可组合 AI 智能体的生产级全栈框架。具有内置安全代码沙箱、SSE 类型化流、技能生态系统，支持一键部署为 OpenAI 兼容 API，支持 ReAct 和 Plan-Execute 模式。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Kohaku-Lab/KohakuTerrarium" class="card-title" target="_blank">Kohaku-Lab/KohakuTerrarium</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 320 stars</div>
+                                <div class="meta-item"><span>🍴</span> 24 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A general-purpose AI agent framework with 'Creature' abstraction (6-module agent model), built-in session persistence, TUI and Web UI out of the box, MCP support, and composition algebra for Python pipelines.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">通用 AI 智能体框架，具有 'Creature' 抽象（6 模块智能体模型）、内置会话持久化、开箱即用的 TUI 和 Web UI、MCP 支持，以及用于 Python 管道的组合代数。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch / Ramp</span>
+                    <div class="news-time">May 13, 2026</div>
+                    <a href="https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/" class="card-title" target="_blank" data-lang="en">Anthropic Surpasses OpenAI in Business Adoption with 34.4% Market Share</a>
+                    <a href="https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 以 34.4% 市场份额超越 OpenAI 成为企业首选</a>
+                    <p class="card-description" data-lang="en">According to Ramp's AI Index analyzing 50,000+ companies, Anthropic now leads with 34.4% of businesses paying for AI services versus OpenAI's 32.3%. This marks the first time Anthropic has overtaken OpenAI, up from just 9% in May 2025.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">根据 Ramp AI 指数对 50,000 多家公司的分析，Anthropic 目前以 34.4% 的企业付费用户比例领先，而 OpenAI 为 32.3%。这是 Anthropic 首次超越 OpenAI，而 2025 年 5 月这一比例仅为 9%。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Anthropic</span>
+                    <div class="news-time">May 15, 2026</div>
+                    <a href="https://www.anthropic.com/news/pwc-expanded-partnership" class="card-title" target="_blank" data-lang="en">PwC Expands Claude Deployment to 30,000 Professionals with New 'Office of the CFO'</a>
+                    <a href="https://www.anthropic.com/news/pwc-expanded-partnership" class="card-title" target="_blank" data-lang="zh" style="display: none;">PwC 将 Claude 部署扩展至 3 万名专业人士，推出全新 'CFO 办公室'</a>
+                    <p class="card-description" data-lang="en">PwC announced major expansion of its Anthropic partnership, deploying Claude Code and Claude Cowork to hundreds of thousands of professionals globally. A new 'Office of the CFO' business group is being built entirely on Claude technology, with training for 30,000 professionals.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">PwC 宣布大幅扩展与 Anthropic 的合作，向全球数十万专业人士部署 Claude Code 和 Claude Cowork。一个全新的 'CFO 办公室' 业务团队将完全基于 Claude 技术构建，并计划培训 3 万名专业人士。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Anthropic</span>
+                    <div class="news-time">May 14, 2026</div>
+                    <a href="https://www.anthropic.com/news/gates-foundation-partnership" class="card-title" target="_blank" data-lang="en">Anthropic Partners with Gates Foundation on $200M Global Health Initiative</a>
+                    <a href="https://www.anthropic.com/news/gates-foundation-partnership" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 与盖茨基金会合作 2 亿美元全球健康计划</a>
+                    <p class="card-description" data-lang="en">Anthropic announced a $200 million, 4-year partnership with the Gates Foundation to develop AI-powered tools for global health, life sciences, education, and economic mobility. Focus is on improving health outcomes in low and middle-income countries where 4.6 billion people lack essential health services.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic 宣布与盖茨基金会建立为期 4 年、2 亿美元的合作伙伴关系，开发用于全球健康、生命科学、教育和经济流动性的 AI 工具。重点是改善中低收入国家的健康结果，那里有 46 亿人缺乏基本医疗服务。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Next Web</span>
+                    <div class="news-time">May 14, 2026</div>
+                    <a href="https://thenextweb.com/news/openai-daybreak-anthropic-mythos-cyber-defence" class="card-title" target="_blank" data-lang="en">OpenAI Launches Daybreak Cybersecurity Platform to Challenge Anthropic's Mythos</a>
+                    <a href="https://thenextweb.com/news/openai-daybreak-anthropic-mythos-cyber-defence" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 推出 Daybreak 网络安全平台挑战 Anthropic Mythos</a>
+                    <p class="card-description" data-lang="en">OpenAI unveiled Daybreak, a cybersecurity initiative using GPT-5.5 variants with specialized versions for defenders (Trusted Access for Cyber) and red teaming (GPT-5.5-Cyber). Launch partners include Akamai, Cisco, Cloudflare, CrowdStrike, Fortinet, Oracle, Palo Alto Networks, and Zscaler.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 推出了 Daybreak 网络安全计划，使用 GPT-5.5 变体，包括为防御者（Trusted Access for Cyber）和红队（GPT-5.5-Cyber）提供的专门版本。启动合作伙伴包括 Akamai、Cisco、Cloudflare、CrowdStrike、Fortinet、Oracle、Palo Alto Networks 和 Zscaler。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">9to5Mac</span>
+                    <div class="news-time">May 14, 2026</div>
+                    <a href="https://9to5mac.com/2026/05/14/openai-brings-codex-control-to-chatgpt-for-iphone-and-android/" class="card-title" target="_blank" data-lang="en">OpenAI Brings Codex to ChatGPT Mobile for iPhone, iPad, and Android</a>
+                    <a href="https://9to5mac.com/2026/05/14/openai-brings-codex-control-to-chatgpt-for-iphone-and-android/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 将 Codex 引入 ChatGPT 移动端，支持 iPhone、iPad 和 Android</a>
+                    <p class="card-description" data-lang="en">Codex control is now available inside the ChatGPT mobile app, allowing users to remotely monitor, approve tasks, and start new prompts from their phones while Codex works on their machines. Windows support is coming soon.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Codex 控制功能现已在 ChatGPT 移动应用内提供，允许用户在 Codex 在其机器上工作时，通过手机远程监控、批准任务并开始新的提示词。Windows 支持即将推出。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Google DeepMind</span>
+                    <div class="news-time">May 12, 2026</div>
+                    <a href="https://deepmind.google/blog/ai-pointer/" class="card-title" target="_blank" data-lang="en">DeepMind Unveils AI-Enabled 'Magic Pointer' Redefining Human-Computer Interaction</a>
+                    <a href="https://deepmind.google/blog/ai-pointer/" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepMind 推出支持 AI 的'魔法指针'重新定义人机交互</a>
+                    <p class="card-description" data-lang="en">DeepMind outlined research on reimagining the mouse pointer for the AI era—a Gemini-powered pointer that understands both what you're pointing at AND why it matters. Rolling out to Gemini in Chrome and Googlebook laptops, with demos available in Google AI Studio.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepMind 概述了针对 AI 时代重新构想鼠标指针的研究——一个由 Gemini 驱动的指针，既能理解你指向什么，又能理解为什么重要。正在向 Chrome 中的 Gemini 和 Googlebook 笔记本推出，Google AI Studio 中提供了演示。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Google DeepMind</span>
+                    <div class="news-time">May 7, 2026</div>
+                    <a href="https://deepmind.google/blog/alphaevolve-impact/" class="card-title" target="_blank" data-lang="en">DeepMind AlphaEvolve Shows Real-World Impact: 30% Better Genomics, 10x Lower Quantum Errors</a>
+                    <a href="https://deepmind.google/blog/alphaevolve-impact/" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepMind AlphaEvolve 展现真实世界影响：基因组学提升 30%，量子错误降低 10 倍</a>
+                    <p class="card-description" data-lang="en">Google shared significant real-world applications of AlphaEvolve: 30% reduction in DNA sequencing variant detection errors with PacBio, 10x lower error rates on Willow quantum processor simulations, and AlphaEvolve-designed circuits being integrated into next-generation TPU silicon.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌分享了 AlphaEvolve 的重大实际应用：与 PacBio 合作 DNA 测序变异检测错误减少 30%，Willow 量子处理器模拟错误率降低 10 倍，AlphaEvolve 设计的电路正在集成到下一代 TPU 硅片中。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Mistral AI</span>
+                    <div class="news-time">May 5, 2026</div>
+                    <a href="https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5" class="card-title" target="_blank" data-lang="en">Mistral Releases Medium 3.5: Unified 128B Model Merging Chat, Reasoning, and Code</a>
+                    <a href="https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5" class="card-title" target="_blank" data-lang="zh" style="display: none;">Mistral 发布 Medium 3.5：统一 128B 模型融合聊天、推理和代码</a>
+                    <p class="card-description" data-lang="en">Mistral Medium 3.5 is a 128B dense model with 256k context window that combines instruction-following, reasoning, and coding into a single checkpoint. Replaces three previous models (Medium 3.1, Magistral, Devstral 2) with configurable reasoning effort per request.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Mistral Medium 3.5 是一个 128B 密集模型，具有 256k 上下文窗口，将指令遵循、推理和编码结合到单一检查点中。通过每个请求可配置的推理工作量，取代了之前的三个模型（Medium 3.1、Magistral、Devstral 2）。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week revealed the AI industry's strategic fault lines crystallizing. Anthropic's overtaking of OpenAI in enterprise adoption—coupled with the PwC expansion and Gates Foundation partnership—demonstrates that 'safe AI' is winning the enterprise narrative over raw capability. Meanwhile, OpenAI's triple play (Daybreak cybersecurity, mobile Codex, GPT-5.5 Instant) shows they're fighting back on accessibility and ecosystem breadth. The deeper pattern: AI is transitioning from 'tool you use' to 'infrastructure you build on'—PwC's entire CFO office 'built entirely on Claude' is the canary in the coal mine. For developers, three converging trends matter: (1) Unified models are now table stakes—Mistral Medium 3.5 joins the pack at aggressive pricing, (2) Agent frameworks are exploding (OpenSwarm, Alphora, KohakuTerrarium all shipping production-ready code), and (3) The interface wars are heating up—DeepMind's Magic Pointer, OpenAI's mobile Codex, and Anthropic's Cowork all point to the same destination: AI that understands context across modalities. The week's real story? Enterprise AI has crossed the chasm from experimentation to infrastructure, and the winners will be determined by trust, not just benchmarks.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周揭示了 AI 行业战略分歧线的结晶。Anthropic 在企业采用率上超越 OpenAI——加上 PwC 扩张和盖茨基金会合作伙伴关系——表明'安全 AI'正在赢得企业叙事，而非单纯追求能力。与此同时，OpenAI 的三重举措（Daybreak 网络安全、移动 Codex、GPT-5.5 Instant）显示他们正在通过可访问性和生态系统广度进行反击。更深的模式：AI 正从'你使用的工具'转变为'你构建的基础设施'——PwC 整个 CFO 办公室'完全基于 Claude 构建'是煤矿中的金丝雀。对于开发者来说，三个趋同的趋势很重要：(1) 统一模型现在成为基本要求——Mistral Medium 3.5 以激进定价加入该阵营，(2) 智能体框架正在爆炸式增长（OpenSwarm、Alphora、KohakuTerrarium 都在交付生产就绪代码），(3) 界面之战正在升温——DeepMind 的 Magic Pointer、OpenAI 的移动 Codex 和 Anthropic 的 Cowork 都指向同一个目标：跨模态理解上下文的 AI。本周的真正故事？企业 AI 已经跨越从实验到基础设施的鸿沟，赢家将由信任而非基准测试决定。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
