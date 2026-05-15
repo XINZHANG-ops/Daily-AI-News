@@ -25,4 +25,4 @@ The ability for an AI to reconstruct a competitor's architecture in hours using 
 
 ## Connections
 - [[entities/claude-code]] — The original implementation that was leaked
-- [[topics/github_trends]] — Fastest-growing repo in history
+- [[topics/github_trends]] — Claw Code's status as fastest-growing repository in history signals that the developer market rewards terminal-native agent experiences with integrated file system, shell, and browser access over web-based chat interfaces

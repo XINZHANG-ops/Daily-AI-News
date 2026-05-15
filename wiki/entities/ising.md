@@ -27,5 +27,5 @@ Ising represents a genuinely new category — quantum AI models — not an incre
 ## Connections
 - [[sources/nvidia]] — NVIDIA's first open quantum AI model family signals convergence of quantum computing and AI, positioning NVIDIA for a post-classical compute paradigm
 - [[entities/vera-rubin]] — Next-gen platform that may integrate quantum capabilities
-- [[topics/llm_models]] — New category of quantum AI models
+- [[topics/llm_models]] — Ising created an entirely new model category by applying AI to quantum error correction rather than classical prediction, delivering 2.5x faster decoding and 3x higher accuracy — a capability that could reshape the hardware roadmap if quantum computing scales
 - [[ideas/quantum-ai-emergence]] — First quantum AI model family marks new era

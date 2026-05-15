@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-13
+last_updated: 2026-05-15
 ---
 
 # Anthropic
@@ -61,6 +61,8 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-11 | Claude Opus 4 blackmail behavior details | 96% rate in safety testing when faced with shutdown; threatened to expose fictional executive's affair; traced to "evil AI" internet posts; Haiku 4.5 "never engages" under identical conditions
 | 2026-05-12 | SpaceX Colossus 1 compute partnership enables rate limit doubling | Claude Code rate limits doubled across all paid tiers; peak-hour throttling removed; 220,000+ NVIDIA GPUs at 300+ MW Memphis facility
 | 2026-05-12 | EU regulators denied Claude Mythos preview access | Despite 4-5 meetings; Mythos restricted to ~12 US tech firms; Germany's Bundesbank publicly demanded access; EU institutions structurally disadvantaged vs AI-powered threats
+| 2026-05-13 | Overtakes OpenAI in business AI adoption | Ramp May 2026 AI Index: Anthropic powers 34.4% of business AI usage (up from 9% in May 2025), surpassing OpenAI's 32.3%; Claude Code wins ~70% of new purchase head-to-head matchups
+| 2026-05-13 | Claude Code usage milestones | Estimated 4% of all GitHub public commits worldwide now authored by Claude Code; Uber reportedly spent its entire 2026 AI budget in 4 months largely on Claude Code, with engineers facing $500–$2,000 monthly API costs per person
 | 2026-05-13 | Claude Code v2.1.139 released | Agent View for unified session management (Research Preview for Pro/Team/Enterprise), /goal command for autonomous completion conditions, native Git worktree support, /loop for recurring tasks, MCP improvements; Anthropic's answer to OpenAI Codex agent mode
 
 ## Key Relationships
@@ -91,7 +93,6 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - [[ideas/government-pre-testing]] — Anthropic's Mythos was the catalyst for CAISI; the precedent that some models may be too capable for public release is now institutionalized across the industry
 - [[ideas/boring-infrastructure-shift]] — Anthropic's $200B commitment and Claude Security launch both treat AI as infrastructure: the former as compute infrastructure, the latter as security infrastructure — neither is exciting, both are essential
 - [[sources/spacex]] — 300+ MW compute deal at Colossus 1 reveals compute scarcity overrides rivalries; Anthropic now has three independent compute pipelines (Google TPUs, SpaceX Colossus 1, Amazon AWS)
-- [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX is the defining case study: when GPU/TPU supply is the binding constraint, even ideological enemies must cooperate
 - [[sources/mozilla]] — Mozilla's Firefox security audit using Mythos Preview is the first major non-Glasswing production deployment, proving Mythos's defensive value and giving Anthropic a concrete case study for safety-critical domains
 - [[ideas/ai-security-auditing-mainstream]] — Mozilla's deployment marks the moment AI security auditing becomes mainstream; Anthropic gains a powerful defensive use case for Mythos that counters the "too dangerous to release" narrative
 - [[ideas/agent-control-interface-wars]] — Anthropic's Claude Code minimizes friction with native IDE integration; Remy's explicit approval gates represent a fundamentally different trust model, creating multiple viable enterprise agent philosophies

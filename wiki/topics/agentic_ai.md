@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 ---
 
 # Agentic AI
@@ -145,8 +145,11 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 
 **May 11: The Agentic Catch-Up Game**: Google and Meta's agent initiatives reveal how far behind they've fallen. OpenClaw — created by Peter Steinberger who is now at OpenAI after Meta failed to hire him — sparked the current "agentic wars." Meta's Hatch agent reportedly started with Claude models before planning to switch to Muse Spark — a telling admission that Meta's own models aren't yet competitive for agentic tasks. Google's Remy comes after shutting down Project Mariner on May 4, suggesting the previous approach failed. Both companies are spending to catch up: $190B Google capex and $145B Meta capex are not building from strength but buying their way back into contention. The risk: agent interfaces create strong user habits; late entrants may find the market already locked in by OpenClaw, Claude Code, and Perplexity's Personal Computer.
 
+**May 14: Agentic AI's Enterprise Reality Check**: Anthropic overtaking OpenAI in business AI adoption (34.4% vs 32.3%, per Ramp) validates that agentic coding tools like Claude Code deliver measurable productivity gains worth the cost — but Uber's budget-busting $500–$2,000/month per engineer reveals the tension. Simultaneously, OpenAI's Codex (GPT-5.5 on NVIDIA GB200 infrastructure) launched the same week, positioning both companies in direct competition for the developer agent market. The deeper question: can compute supply keep pace with demand while maintaining the price-performance ratio that attracted enterprises in the first place?
+
+**May 14: Privacy Enters the Agent Architecture**: Meta's Incognito Chat with true end-to-end encryption directly addresses the compliance concerns that have stalled enterprise AI adoption. While Claude Code and Codex retain conversation data for model improvement, Meta can credibly claim "even we can't read it" — turning a historical liability into a competitive advantage against AI-native competitors. This positions privacy as a new axis of agent competition alongside capability and cost. [[ideas/privacy-as-ai-differentiator]] — privacy engineering is becoming a procurement differentiator: enterprises in regulated industries must now weigh capability against compliance, and E2E encryption changes what agents can remember across sessions
+
 ## Connections
-- [[entities/claude-code]] — Primary driver of Anthropic's ARR growth
 - [[entities/serena]] — Semantic code infrastructure at symbol level; MCP toolkit that makes any coding agent smarter; 23.8K stars
 - [[entities/vibe]] — Mistral's vertically integrated model + agent offering; competes with Claude Code and Codex
 - [[entities/claw-code]] — Clean-room rewrite, 100K stars in hours
@@ -181,7 +184,6 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[ideas/boring-infrastructure-shift]] — AutoResearch, Hive, and Mistral Work Mode all converge on one trend: AI is moving from "cool demo" to "boring infrastructure" — and the agent layer needs boring infrastructure (reliability, cost control, async execution) to be deployable at scale
 - [[entities/mercury-agent]] — 531 stars; personal AI agent with permission-hardened tools and token budgets representing the consumer-facing agent stack alongside enterprise platforms
 - [[sources/sierra]] — $15B valuation and $150M ARR prove enterprise AI agents are production infrastructure for Fortune 50; not pilot projects but scaled deployments replacing legacy customer service stacks
-- [[entities/aws-mcp-server]] — 15,000 AWS API operations accessible through MCP means agents can now manage cloud infrastructure at scale; "Skills" feature packages provider knowledge as reusable primitives
 - [[entities/cordenex]] — Multi-agent collaborative coding extends the architecture from individual assistance to team workflows; the team-based focus distinguishes it from personal agents (nanobot) and swarm orchestration (Ruflo)
 - [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX deal means agent infrastructure providers must secure compute partnerships to survive; the agent layer's maturity depends on the infrastructure layer's stability
 - [[entities/cocoindex]] — Incremental engine for long-horizon agents; solves the state-persistence gap that prevents most agents from handling multi-day or multi-week workflows reliably

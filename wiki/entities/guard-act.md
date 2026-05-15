@@ -33,5 +33,5 @@ The timing — advancing the same day as Meta's layoff announcement and OpenAI's
 ## Connections
 - [[sources/openai]] — Subject to requirements; GPT-5.5 Cyber restrictions may partly anticipate this regulatory environment
 - [[sources/meta]] — Subject to requirements; AI personas would be restricted
-- [[ideas/institutional-gap]] — Criminal penalties for model conduct shows governance catching up to capability deployment
+- [[ideas/institutional-gap]] — The GUARD Act's criminal penalties for model-generated conduct represent governance finally catching up to deployment: for the first time, AI system behavior can trigger individual liability, closing the accountability gap between capability and control
 - [[ideas/ai-governance-urgency]] — First major AI legislation with teeth signals governance is no longer theoretical

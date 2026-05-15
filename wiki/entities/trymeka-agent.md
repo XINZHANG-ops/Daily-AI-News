@@ -29,6 +29,6 @@ trymeka/agent represents a leap in autonomous agent architecture: OS-level contr
 - [[topics/agentic_ai]] — trymeka/agent's OS-level vision approach challenges the dominant MCP/browser-agent paradigm; if agents can control any app via vision, the protocol layer becomes optional rather than mandatory
 - [[entities/agent-squad]] — Agent Squad orchestrates multiple agents via SupervisorAgent; trymeka demonstrates that a single vision-based agent can handle complex multi-app workflows without orchestration overhead
 - [[ideas/agent-verticalization]] — Pure vision + OS control makes trymeka immediately applicable to any vertical workflow (finance, legal, design) without building custom connectors for each tool
-- [[sources/openai]] — o3 integration shows OpenAI's latest reasoning model applied to visual computer control; this is a different deployment paradigm from Codex's code-focused approach
+- [[sources/openai]] — Trymeka Agent deploys OpenAI's o3 reasoning model for visual computer control rather than code generation, revealing OpenAI's dual-deployment strategy: Codex owns the developer workflow while o3-powered agents own the general-purpose computer-use layer
 - [[sources/anthropic]] — Claude Sonnet 4 and Opus 4 integration validates Anthropic's vision capabilities for agentic use cases beyond coding
 - [[sources/google]] — Gemini support positions trymeka as model-agnostic, but the pure-vision architecture is particularly complementary to Gemini's multimodal strengths

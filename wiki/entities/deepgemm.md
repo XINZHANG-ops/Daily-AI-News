@@ -26,7 +26,7 @@ DeepGEMM represents DeepSeek's contribution to efficient inference infrastructur
 The library's focus on FP8 aligns with industry trends toward lower-precision inference to reduce costs and improve throughput. With 6.9k stars, it represents significant community interest in efficient inference tooling.
 
 ## Connections
-- [[sources/deepseek]] — Created by DeepSeek, highlighting China's AI infrastructure capabilities
+- [[sources/deepseek]] — DeepGEMM is DeepSeek's open-source GPU kernel library that delivers 135 TFLOPS on Hopper architecture, proving that Chinese labs now contribute foundational AI infrastructure software — not just models — to the global ecosystem
 - [[topics/ai_funding]] — DeepSeek's ability to produce efficient open-source infrastructure reflects efficiency advantages
 - [[entities/ising]] — Both represent efficient approaches to AI hardware/software
 - [[topics/github_trends]] — 6.9k stars reflects developer interest in efficient inference tooling

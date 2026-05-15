@@ -26,7 +26,7 @@ Krea's move to a proprietary foundation model signals that the "wrapper" phase i
 Krea's survival bet is that creative professionals care more about controllable aesthetics than raw generation quality. The strategic implication is that vertical integration — owning the full stack from model to interface — is becoming the defining competitive dimension in creative AI.
 
 ## Connections
-- [[topics/llm_models]] — Krea 2 signals the end of the "wrapper" era for creative AI; proprietary foundation models become table stakes for differentiated creative tools
+- [[topics/llm_models]] — Krea 2's proprietary image-generation model signals the end of the creative-AI "wrapper" era: when every design tool can call the same API, differentiation shifts to owning the foundation model itself, making in-house training a competitive necessity rather than a vanity project
 - [[ideas/vertical-integration-resolving]] — Krea building proprietary models from scratch is evidence that the "wrapper vs foundation" debate is resolving toward full-stack ownership
 - [[sources/google]] — Google's AI-generated code and creative tools represent Big Tech's parallel vertical integration; Krea shows startups can pursue the same strategy
 - [[sources/openai]] — OpenAI's Sora shutdown ($1B Disney deal terminated) contrasts with Krea's foundation-model bet; OpenAI retreated from creative verticals while Krea doubled down

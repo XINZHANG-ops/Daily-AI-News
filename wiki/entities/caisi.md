@@ -26,8 +26,8 @@ CAISI represents the most consequential AI policy development of 2026: the shift
 
 ## Connections
 - [[topics/ai_safety]] — CAISI is the operationalization of the safety-restricted-releases idea: government as approval gate for frontier models; 40+ evaluations with some models blocked proves real enforcement
-- [[sources/google]] — Google volunteered for CAISI pre-testing alongside Microsoft and xAI; the alternative was reportedly a mandatory executive order the White House is drafting
-- [[sources/microsoft]] — Microsoft's participation in CAISI contrasts with its Pentagon "any lawful operational use" contracts — the same company volunteers for safety evaluation while deploying AI on classified military networks
+- [[sources/google]] — Google's voluntary CAISI participation alongside Microsoft and xAI represents calculated regulatory diplomacy: by cooperating with pre-testing, the companies avoid a mandatory executive order while positioning themselves as responsible actors who self-regulate before government compulsion
+- [[sources/microsoft]] — Microsoft's dual posture (CAISI volunteer on one hand, Pentagon "any lawful operational use" contracts on the other) reveals the structural contradiction of military AI: the same safety standards demanded domestantly are waived for national security deployments, creating a two-tier accountability system
 - [[sources/anthropic]] — Anthropic's Mythos model was the catalyst for CAISI; when a company voluntarily refuses to release a model for safety reasons, it forces regulators to act
 - [[sources/openai]] — OpenAI renegotiated Biden-era agreements to align with Trump's AI Action Plan; participation in CAISI follows the same pattern as GPT-5.5 Cyber restrictions — liability-driven compliance
 - [[ideas/safety-restricted-releases]] — CAISI institutionalizes the precedent Claude Mythos established: some models may be too capable for public release, and government must act as gatekeeper

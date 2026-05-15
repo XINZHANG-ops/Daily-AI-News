@@ -1,7 +1,7 @@
 ---
 title: "The Agent Control Interface Wars"
 slug: agent-control-interface-wars
-last_updated: 2026-05-11
+last_updated: 2026-05-15
 ---
 
 # The Agent Control Interface Wars
@@ -10,12 +10,6 @@ last_updated: 2026-05-11
 Google's Remy reveals a philosophical split in agent UX design that will define how enterprises adopt autonomous AI. While OpenAI's Operator and Anthropic's Claude Code optimize for autonomous execution (fewer interruptions = faster results), Google is betting users want granular control — approval gates at each step. This reflects a deeper tension: enterprises need audit trails and compliance checkpoints, but end users want speed. The winning interface philosophy may be determined by who buys agents (CIOs) rather than who uses them (employees).
 
 ## Evidence
-- [[entities/remy]] — Google's Remy allows users to review and approve each step of multi-step agent workflows; built for enterprise compliance and audit requirements rather than individual productivity
-- [[sources/google]] — Remy reflects Google's risk-averse enterprise DNA; they're building for CIOs who need audit trails, not just end-user efficiency; the enterprise sales machine may make controllable agents the default regardless of user preference
-- [[sources/openai]] — OpenAI's Operator and Codex optimize for autonomous execution with minimal human interruption; the "every task gets an agent, agents run continuously" Symphony model treats human review as a bottleneck
-- [[sources/anthropic]] — Claude Code integrates directly into the IDE with minimal friction; the philosophy is that security scanning should be native to the coding workflow, not a separate approval process
-- [[entities/symphony]] — OpenAI's orchestration spec formalizes "agent-as-employee" with continuous execution and human review only of results; this is the autonomy end of the spectrum
-- [[ideas/enterprise-ai-lock-in]] — Microsoft's E7 bundle and Google's Remy both target CIOs; the control interface war is really a battle for who becomes the default enterprise agent platform, with control features as the differentiator
 - [[ideas/indirect-prompt-injection-threat]] — The IPI threat makes approval gates more attractive: if every agent action requires explicit approval, malicious prompt injection has fewer opportunities for autonomous exploitation
 
 ## Implications
@@ -24,7 +18,6 @@ Whether users actually want this level of friction remains to be seen, but Googl
 On May 11, 2026, the interface wars expanded to personal agents. Google's Remy is now being tested as a 24/7 personal agent for work, school, and daily life — proactively monitoring activity and learning preferences. This expands the control philosophy from enterprise to consumer: Google believes users want a personal agent that asks permission before acting. Meta's Hatch agent (agentic shopping for Instagram) represents a different approach: agentic execution inside an existing consumer platform where the interface is implicit in the app experience. The control wars are now playing out across both enterprise and consumer contexts, with Google betting on explicit control and Meta betting on implicit integration.
 
 ## Connections
-- [[entities/remy]] — The flagship product embodying the controllable-agent philosophy; approval gates at each step vs competitors' continuous execution models
 - [[entities/symphony]] — The polar opposite approach: "every task gets an agent, agents run continuously, humans review results"; OpenAI's open-source spec has 15K+ stars suggesting market interest in autonomy
 - [[sources/google]] — Google's enterprise relationships and compliance focus make it the natural champion of controllable agents; this is the same strategy that made Gmail and Workspace dominant in enterprise email
 - [[sources/openai]] — OpenAI's consumer roots favor autonomy; ChatGPT's 900M weekly users expect instant responses, not approval dialogs; the enterprise tension is whether OpenAI can add control features without destroying the UX that made it popular

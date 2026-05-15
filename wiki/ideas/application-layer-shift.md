@@ -1,7 +1,7 @@
 ---
 title: "Application-Layer Shift"
 slug: application-layer-shift
-last_updated: 2026-04-20
+last_updated: 2026-05-15
 ---
 
 # Application-Layer Shift
@@ -13,9 +13,8 @@ The AI competition has fundamentally shifted from model racing (who has the best
 - [[entities/claude-design]] — Anthropic directly targets Figma/Canva workflow with conversational design generation
 - [[entities/gpt-rosalind]] — OpenAI's domain-specific model for life sciences with pharmaceutical partnerships
 - [[entities/perplexity-computer]] — Always-on local AI agent managing files, apps, web with dedicated hardware
-- [[topics/ai_companies]] — "The era of 'one model to rule them all' is ending; specialized models with genuine domain expertise are winning"
 - [[sources/anthropic]] — Revenue growth driven by Claude Code product, not raw model capabilities
-- [[sources/openai]] — Business revenue 40% of sales (up from 20%), Spud targeting "high-value professional work"
+- [[sources/openai]] — OpenAI's business revenue reaching 40% of sales (up from 20%) and the Spud model targeting "high-value professional work" both confirm the same pivot: from consumer chatbot to vertical professional tools — the application-layer shift is not theoretical, it is financial
 
 ## Implications
 This shift has profound implications for AI company strategy and valuation. Model capabilities matter less than distribution and workflow integration. Companies that can embed AI into professional workflows (design, coding, life sciences, finance) will capture more value than those competing on benchmark leadership.

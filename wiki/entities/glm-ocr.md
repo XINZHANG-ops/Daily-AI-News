@@ -27,6 +27,6 @@ GLM-OCR demonstrates that sub-1B parameter models can achieve state-of-the-art r
 
 ## Connections
 - [[topics/llm_models]] — GLM-OCR validates the efficiency frontier: 0.9B parameters beating frontier models on document OCR proves that task-specific small models can outperform general-purpose giants on narrow domains
-- [[topics/github_trends]] — Part of the May 6 repo batch alongside AutoResearch and Hive; signals continued diversification of the agent ecosystem beyond coding into document understanding and multimodal perception
+- [[topics/github_trends]] — GLM-OCR's May 6 debut alongside AutoResearch and Hive confirms the agent ecosystem's diversification beyond software engineering into document understanding and multimodal perception — the open-source frontier is widening faster than any single lab can cover
 - [[sources/google]] — GLM-V architecture shares lineage with Google's multimodal research; the encoder-decoder approach for OCR mirrors Google's own document-AI work
 - [[ideas/efficiency-frontier]] — 0.9B parameters achieving 94.62 on OmniDocBench is another data point that efficient models can dominate narrow domains with dramatically less compute than frontier LLMs

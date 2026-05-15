@@ -1,7 +1,7 @@
 ---
 title: "Spec-Driven Development Movement"
 slug: spec-driven-development-movement
-last_updated: 2026-05-11
+last_updated: 2026-05-15
 ---
 
 # Spec-Driven Development Movement
@@ -10,9 +10,6 @@ last_updated: 2026-05-11
 A new movement is emerging in agent engineering that treats agent behavior as software to be specified, validated, and enforced — rather than as emergent properties of prompt engineering. Three GitHub repositories released in close succession (Spec-Kit, cc-sdd, GAAI-Framework) represent the leading edge of this spec-driven development (SDD) paradigm, which could solve the reliability and predictability problems that have limited production agent adoption.
 
 ## Evidence
-- [[entities/spec-kit]] — 3.4K stars, JSON-based agent specification and testing with deterministic validation and cost tracking; treats agent behavior as spec'd, tested, and validated software
-- [[entities/cc-sdd]] — 1.3K stars, spec-first coding enforcement inside Claude Code; rejects code that doesn't match specification
-- [[entities/gaai-framework]] — 2.8K stars, LLM-driven spec generation with deterministic validation; formalizes systematic agent engineering
 - [[topics/github_trends]] — All three repos trending simultaneously suggests coordinated developer demand for systematic agent engineering over artisanal prompt crafting
 
 ## Implications

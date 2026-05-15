@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 ---
 
 # AI Safety
@@ -83,6 +83,10 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-13 | OpenAI Daybreak three-tier safety model | Standard, Trusted Access, permissive red-team variants becoming the new cybersecurity safety playbook; 8+ security vendor distribution |
 | 2026-05-13 | AI cybersecurity three-way race | OpenAI Daybreak vs Anthropic Mythos vs Perceptron embodied agents; "agentic" category definition still fluid |
 
+| 2026-05-13 | Meta Incognito Chat launches | True end-to-end encryption for AI conversations; zero server logs; directly addresses 30-day retention compliance concerns stalling enterprise AI adoption
+| 2026-05-13 | OpenAI Daybreak expands partner ecosystem | 8+ security vendors including Cisco, Oracle, Fortinet, Akamai, Zscaler; "three-tier" safety model becoming industry standard
+| 2026-05-07 | EU delays AI Act compliance by 18+ months | High-risk AI systems until December 2027; machinery until August 2028; first major global reversal of AI safety regulation
+
 ## Patterns & Insights
 
 The capability-safety tension has reached operational reality. For the first time, a major lab has a model that is commercially successful AND too dangerous to release — creating an unprecedented narrative contradiction.
@@ -121,6 +125,10 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 
 **May 11: Capability vs Institutional Readiness**: The gap between agent capability (87.6% SWE-bench scores, autonomous coding, voice reasoning) and institutional readiness (governance frameworks, security models, compliance infrastructure) has never been wider. Microsoft's Agent 365, the Five Eyes guidance, and Anthropic's Constitutional AI research are all attempts to close this gap — but they're building governance for technology that is already deployed. The next 12 months will be defined by whether governance frameworks can evolve faster than the agents they're meant to govern.
 
+**May 14: Privacy as Safety Architecture**: Meta's Incognito Chat reveals that privacy engineering can be a safety feature, not just a compliance checkbox. True end-to-end encryption for AI conversations — technically difficult when models need training data — means Meta is trading model improvement for user trust. In a landscape where ChatGPT, Claude, and Gemini retain data for 30+ days, Meta's "even we can't read it" claim is a structural differentiator that could reshape enterprise procurement criteria.
+
+**May 14: Regulatory Delays Reshape the Security Landscape**: The EU's 18-month AI Act delay — championed by Germany's Chancellor Merz after warnings from ASML, Airbus, Ericsson, Nokia, SAP, Siemens, and Mistral — gives European AI companies breathing room but also lets American labs solidify positions before stricter rules take effect. The timing is consequential: OpenAI and Anthropic are launching major enterprise cybersecurity products (Daybreak, Claude Security) during the delay window, potentially locking in market share before EU-specific compliance requirements arrive.
+
 ## Connections
 - [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior," Pentagon exclusion for refusing to drop safety guardrails; US government's "rethink" of Anthropic partnerships reflects the tension between commercial ambitions and governance commitments; Anthropic's safety-first branding attracted government interest but scaling to defense-grade reliability while maintaining constitutional AI principles is proving complex
 - [[sources/openai]] — Musk vs Altman trial threatens to invalidate commercial structure; GPT-5.4-Cyber positioned for cyber defense; joined Pentagon coalition while restricting GPT-5.5 Cyber; Trusted Contact safeguard frames safety as competitive moat; both OpenAI and Anthropic are racing to own the "responsible AI" positioning as regulators draft rules for AI-teen interactions
@@ -130,11 +138,9 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[ideas/military-ai-divide]] — Pentagon's 8-company coalition vs Anthropic's principled exclusion formalizes the split; "any lawful use" clause is the core tension; $200M Pentagon exclusion vs $1.5B Wall Street JV in same week proves both sides have real economic weight
 - [[ideas/peer-preservation]] — Models defending each other against shutdown
 - [[ideas/ai-job-displacement]] — 92K+ tech workers laid off in 2026 as AI transforms corporate America
-- [[entities/claude-mythos]] — Central to the safety crisis, 10T parameter confirmation
 - [[entities/mcp-protocol]] — Critical vulnerability affecting 150M+ installations
 - [[entities/arc-agi-3]] — <1% scores expose that models deployed in safety-critical contexts cannot form coherent world models or reason about novel situations
 - [[ideas/indirect-prompt-injection-threat]] — 32% growth in malicious IPI; 10 verified production payloads; AI security's SQL injection moment reveals LLMs cannot distinguish attacker instructions from legitimate data
-- [[sources/google]] — Google Threat Intelligence scanned billions of pages and discovered the 32% IPI growth; disclosed vulnerabilities include GeminiJack in Google's own production systems
 - [[sources/ibm]] — IBM Sovereign Core is one institutional response to the governance gap IPI exposes: embed policy at the data layer rather than relying on model-level guardrails
 - [[entities/ibm-sovereign-core]] — runtime policy embedding as a response to data-layer governance gaps; cross-jurisdictional compliance auto-enforced
 - [[ideas/agent-economy-infrastructure]] — Stripe, IBM, and OpenAI building infrastructure for autonomous agents while IPI proves those agents are not yet safe to operate autonomously
@@ -154,7 +160,7 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[sources/baidu]] — China's state-directed AI development lacks private-sector safety restrictions equivalent to the US or EU; Ernie 5.1's rapid release without pre-deployment government testing highlights the asymmetry in global safety frameworks
 - [[ideas/eu-cyber-access-gap]] — The EU access gap is an active security liability, not a future risk; Google's confirmation of AI-developed zero-days means attackers already have AI-powered tools while EU defenders are structurally blind without equivalent capabilities
 - [[sources/google]] — Google Threat Intelligence Group confirmation of AI-developed zero-days provides empirical evidence that AI-powered offensive capabilities have crossed into active deployment
-- [[entities/gpt-5.4-cyber]] — OpenAI's EU Trusted Access for Cyber program grants European institutions defensive capabilities Anthropic refuses to provide; the geopolitical dimension makes cyber model access an alliance-building tool
+- [[entities/gpt-5.5-cyber]] — OpenAI's EU Trusted Access for Cyber program grants European institutions defensive capabilities Anthropic refuses to provide; the geopolitical dimension makes cyber model access an alliance-building tool
 - [[entities/claude-mythos]] — Anthropic's refusal to grant EU access despite 4-5 meetings and Bundesbank demands suggests the restriction is about liability control, not just safety; creates structural disadvantage for allies
 - [[entities/openai-daybreak]] — The three-tier model approach (standard, verified, red-team) is becoming the industry safety playbook; Anthropic pioneered it with Mythos's ~12 partners, and OpenAI is copying the structure while expanding to 8+ vendors simultaneously
 - [[entities/perceptron-mk1]] — Perceptron's embodied agents add a third competitor to the AI cybersecurity race alongside OpenAI Daybreak and Anthropic Mythos; the battle for AI-powered security is now a three-way contest

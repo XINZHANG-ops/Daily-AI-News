@@ -28,7 +28,7 @@ On May 11, 2026, Agent 365 went GA with expanded capabilities: Shadow AI Discove
 ## Connections
 - [[entities/m365-e7]] — Bundled into E7 alongside Copilot and Entra Suite; the governance inseparable from the license
 - [[entities/copilot-agent-tier]] — GitHub's $49/agent/month pricing is the developer counterpart to Agent 365's enterprise-user pricing
-- [[sources/microsoft]] — Created by Microsoft; part of the first new enterprise license architecture in a decade
+- [[sources/microsoft]] — Agent 365 is the culmination of Microsoft's decade-long identity-stack strategy: by embedding agent governance into Entra ID and M365 E7, Microsoft taxes every agent deployment in the enterprise at $15/user/month — a toll booth on the agent economy
 - [[topics/agentic_ai]] — Agent 365 normalizes per-user AI agent pricing as a standard enterprise line item
 - [[ideas/enterprise-ai-lock-in]] — Bundling agents with identity management makes switching costs structural, not just financial
 - [[ideas/agent-governance-layer-wars]] — Agent 365's "toll booth" positioning is the most aggressive governance lock-in play since E7; Microsoft taxes the entire agent ecosystem regardless of which model wins

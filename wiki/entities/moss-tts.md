@@ -29,7 +29,7 @@ The model's appearance alongside OmniVoice (600+ languages) in the same week's G
 
 ## Connections
 - [[entities/omnivoice]] — OmniVoice's 600+ language coverage and 40x real-time inference speed represent the same open-source voice democratization trend; together they prove voice AI is becoming a commodity faster than text LLMs
-- [[topics/github_trends]] — Part of the May 7 open-source voice wave alongside OmniVoice and Cordenex, showing AI tooling commoditization accelerating across modalities
+- [[topics/github_trends]] — MOSS-TTS's May 7 launch alongside OmniVoice and Cordenex confirms that open-source voice AI is commoditizing faster than closed labs can differentiate, with three independent projects achieving production-quality synthesis within days of each other
 - [[topics/agentic_ai]] — Real-time streaming TTS (180ms) and voice cloning enable agent-to-human voice interaction at production quality; agents can now synthesize personalized voices for notifications, calls, and alerts without cloud latency
 - [[entities/gemini-3-1-flash-tts]] — Google's proprietary granular voice control TTS competes in the same space but MOSS-TTS's open-source edge deployment and 20+ language support challenge Google's licensing model
 - [[ideas/voice-agent-battleground]] — MOSS-TTS and OmniVoice validate that voice is fragmenting into a distinct battleground where open-source alternatives match proprietary quality, unlike text where frontier labs still lead

@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 ---
 
 # LLM Models
@@ -33,7 +33,7 @@ NVIDIA's Ising emerges as a genuinely new category — open quantum AI models fo
 
 **April 21-23: Security Concerns and Reasoning Advances**
 
-The final days of the period see security concerns intensify. A critical MCP vulnerability (affecting 150M+ installations) enables arbitrary command execution across 7,000+ servers — Anthropic calls it "expected behavior." Meanwhile, Claude Mythos 5 is confirmed at 10 trillion parameters, with the Bank of England warning it could "crack the whole cyber-risk world open." Google reveals [[entities/gemini-3-deep-think]] can identify logical flaws in peer-reviewed math papers that cleared human review — a concrete demonstration of AI reasoning surpassing human expert review in specialized domains. China's Qihoo 360 finds 1,000 software vulnerabilities using AI-powered agents.
+The final days of the period see security concerns intensify. A critical MCP vulnerability (affecting 150M+ installations) enables arbitrary command execution across 7,000+ servers — Anthropic calls it "expected behavior." Meanwhile, Claude Mythos 5 is confirmed at 10 trillion parameters, with the Bank of England warning it could "crack the whole cyber-risk world open." Google reveals [[entities/gemini-3-deep-think]] — DeepMind's math-reasoning specialist — can identify logical flaws in peer-reviewed math papers that cleared human review, demonstrating that specialized reasoning models now surpass human expert review in narrow but critical domains. China's Qihoo 360 finds 1,000 software vulnerabilities using AI-powered agents.
 
 **April 24: DeepSeek V4 and the China Challenge**
 
@@ -92,7 +92,7 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-04-30 | DeepSeek V4 Flash: $0.14/$0.28 per million tokens | 100x cheaper than GPT-5.5/Claude Opus 4.7; 78% SWE-bench |
 | 2026-04-30 | Google signs Pentagon deal for classified military AI | Crosses "Don't Be Evil" rubicon; carves out defense niche |
 | 2026-04-30 | Qwen 3.6-35B-A3B: 73.4% SWE-bench on RTX 4090 | 3B active params; frontier-grade coding on consumer hardware |
-| 2026-04-30 | Apple confirms Gemini-powered Siri for iOS 27 | Knowledge distillation from large Gemini models to on-device Apple Foundation Models |
+| 2026-04-30 | Apple confirms Gemini-powered [[entities/siri]] for iOS 27 | Knowledge distillation from large Gemini models to on-device Apple Foundation Models |
 | 2026-05-01 | NVIDIA GB300 Blackwell Ultra enters mass production | 288GB HBM3e, 10 TB/s, NVLink 6; 50x throughput/megawatt, 35x lower cost/token for agentic AI |
 | 2026-05-01 | Anthropic launches Claude Security (public beta) | Powered by Opus 4.7; integrated with CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security |
 | 2026-05-01 | Microsoft M365 E7 and Agent 365 GA at $99/$15 per user/month | First new enterprise license in a decade; bundles E5, Copilot, Agent 365, Entra Suite |
@@ -115,6 +115,12 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-13 | TML-Interaction-Small released | 276B-parameter MoE with 12B active params; 200ms real-time audio/video/text processing; time-aligned micro-turns with interruption support; Thinking Machines Lab's first model |
 | 2026-05-13 | Perceptron Mk1 launched | Physical AI model for video understanding and embodied reasoning; founded by former FAIR scientists; targets manufacturing, robotics, geospatial, security |
 | 2026-05-13 | Krea 2 foundation image model | Built from scratch with advanced style transfer; signals end of "wrapper" phase for creative AI tools; vertical integration bet |
+
+| 2026-05-12 | Google "Magic Pointer" announced | AI-powered context-aware cursor using Gemini; first major rethink of the computer cursor in 50 years; works with natural language voice commands
+| 2026-05-13 | GemTTS (paperfoot/gemtts) | Agent-friendly Gemini TTS CLI in Rust with expressive tags [whispers], [laughs], [warmly]; 30 prebuilt timbres; JSON output for agent pipelines
+| 2026-05-13 | Scenema Audio (ScenemaAI/scenema-audio) | Zero-shot expressive voice cloning from LTX 2.3's 22B audiovisual model; full-length audiobook generation with emotional delivery and breath control
+| 2026-05-13 | Atomr Infer (rustakka/atomr-infer) | Native Rust multi-runtime inference layer; unified interface for local GPU (vLLM, TensorRT, ONNX, Candle) and remote APIs (OpenAI, Anthropic, Gemini)
+| 2026-05-13 | Mistral cybersecurity model for banks | Developing AI security model for banks lacking Anthropic Mythos access; sovereign AI positioning for regulated European industries
 
 ## Patterns & Insights
 
@@ -166,6 +172,10 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 
 **May 2: The Reasoning Ceiling Exposed and Design Patterns Evolve**: ARC-AGI-3 results deliver the most damning empirical critique of the LLM paradigm to date. GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18%) — models that dominate SWE-bench — score below 1% on interactive reasoning puzzles humans solve effortlessly. The three systematic errors identified (failure to form world models, incorrect environment mapping to known games, carrying false theories forward) reveal LLMs don't reason about novel situations — they pattern-match to the nearest memorized template. This lands the same week David Silver's RL-native startup raised $1.1B, and the market is already pricing in a post-LLM paradigm. Meanwhile, Mistral Medium 3.5 introduces a design pattern worth watching: one 128B dense model with a reasoning-effort toggle per request, eliminating the need for separate chat/reasoning model variants. The 77.6% SWE-bench score is solid but not category-defining; the real bet is on the vertically integrated Vibe cloud coding agents bundled with the release.
 
+**May 14: AI Becomes the Interface, Not Just the Backend**: Google's Magic Pointer represents a paradigm shift — the AI model is not a chatbot you open, but the cursor itself. When the pointing device understands context and responds to natural language, every application becomes AI-augmented without per-app integration. This is the "generative UI" trend: AI moving from "answer questions" to "be the interface."
+
+**May 14: Voice AI Fragmentation Accelerates**: The open-source voice ecosystem is fragmenting by use case faster than text models. Scenema Audio (expressive cloning from 22B multimodal models), GemTTS (agent-native TTS with emotional tags), and the existing MOSS-TTS/OmniVoice wave show voice synthesis becoming a commodity where differentiation comes from integration philosophy, not model size.
+
 ## Connections
 - [[entities/arc-agi-3]] — The benchmark that exposed the LLM reasoning ceiling: GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human performance
 - [[entities/mistral-medium-3-5]] — 128B dense model with reasoning-effort toggle; one-model-for-all design pattern challenges the multi-model approach; Work Mode (on-device agentic) and Remote Agents in Vibe (async cloud execution) expand the agentic surface; EU AI Act €11.2M fine same week makes privacy-first positioning more urgent
@@ -196,6 +206,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/remy]] — Remy is not a new model but a new control interface for Gemini; it signals that model differentiation is increasingly about how humans interact with capabilities, not just raw benchmark scores
 - [[entities/natural-language-autoencoders]] — Anthropic's bidirectional translation layer between model activations and human language; the Rosetta Stone for frontier model reasoning and a potential enterprise differentiator as regulators demand explainability
 - [[entities/gpt-realtime-2]] — OpenAI's full voice pipeline with 128K context and GPT-5-class reasoning; challenges the assumption that voice models are limited to short utterances
+- [[entities/gemtts]] — Agent-native TTS CLI with expressive tags and JSON output; represents the voice-synthesis-commodity trend where differentiation comes from integration philosophy
+- [[entities/scenema-audio]] — Zero-shot expressive voice cloning from LTX 2.3's 22B audiovisual model; demonstrates "mining" audio capabilities from large multimodal foundation models
 - [[entities/prithvi]] — NASA's orbital geospatial model proves AI can run on space-grade hardware; if models work in orbit, terrestrial edge deployment becomes trivial
 - [[entities/dr-venus]] — 4B-parameter research agent trained on 10K open samples; joins GLM-OCR and Qwen 3.6 as evidence that narrow tasks can be dominated by small specialized models
 - [[ideas/agent-control-interface-wars]] — Remy's approval-gate model vs OpenAI's autonomous execution represents a market split: enterprises may prefer controllable agents while consumers prefer fast autonomy

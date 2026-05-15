@@ -29,7 +29,7 @@ The workspace-as-state architecture treats the agent's working directory as its 
 
 ## Connections
 - [[sources/microsoft]] — Webwright is Microsoft's open-source entry into the web-agent category; its minimal design (~450 lines) contrasts with the complexity of proprietary web-agent systems
-- [[topics/github_trends]] — 2.4K stars for a minimal web-agent harness achieving SOTA proves developers value simplicity and inspectability over feature-rich complexity
+- [[topics/github_trends]] — WebWright's 2.4K stars for a minimal web-agent harness achieving SOTA proves that developer preference is shifting from feature-rich black-box agents to simple, inspectable tools where every action is observable and debuggable — a reaction against the opacity of larger frameworks
 - [[topics/agentic_ai]] — Code-as-action paradigm challenges the MCP/browser-agent approach; if agents can generate code to interact with the web, structured APIs become optional
 - [[entities/trymeka-agent]] — Pure vision + OS-level control at 72.7% WebArena represents another minimalist philosophy; Webwright's code-as-action is a third paradigm alongside vision-based and API-based approaches
 - [[ideas/agent-infrastructure-layer]] — Webwright's workspace-as-state design is a convergent evolution with other infrastructure projects: explicit, inspectable state management is becoming preferred over hidden neural state

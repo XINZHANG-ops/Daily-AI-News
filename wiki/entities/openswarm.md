@@ -24,7 +24,7 @@ OpenSwarm occupies a distinct niche in the agent ecosystem: while Claude Code, C
 
 ## Connections
 - [[topics/agentic_ai]] — OpenSwarm validates that agent verticalization extends beyond coding into presentations, documents, and research — the workflows that occupy most knowledge workers
-- [[topics/github_trends]] — Part of the May 9 trending cohort that confirms vertical agents outperform general-purpose assistants in specific domains
+- [[topics/github_trends]] — OpenSwarm's May 9 trending status confirms that vertical agents (8 specialized agents for presentations, documents, research, visual assets) now outperform general-purpose assistants in non-coding knowledge work — a market signal that specialization beats generality outside software engineering
 - [[entities/nanobot]] — Both are lightweight multi-agent harnesses, but nanobot is a minimal 4K-line personal agent while OpenSwarm is a structured 8-agent team system for deliverable production
 - [[ideas/agent-verticalization]] — OpenSwarm is the open-source layer of the verticalization trend: specialized agents for non-coding work that general coding agents cannot handle
 - [[entities/multica]] — multica's managed agents platform could orchestrate OpenSwarm alongside coding agents, giving enterprises a unified layer for both code and document workflows

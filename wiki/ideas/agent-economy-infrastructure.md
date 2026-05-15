@@ -12,7 +12,7 @@ On May 5, 2026, three major product launches from three different companies conv
 This is not a coincidence. It is a structural signal that the agent layer has matured past the demo phase and now requires the same infrastructure that human commerce needed — payments, governance, and distribution — rebuilt for autonomous systems.
 
 ## Evidence
-- [[entities/stripe-agentic-commerce]] — Stripe's Link Wallets for Agents solve the payment-authentication layer that was blocking agent-to-agent commerce; without one-time virtual cards, security teams would never let agents hold real credentials
+- [[entities/stripe-agentic-commerce]] — Stripe's Link Wallets for Agents solved the payment-authentication layer that was the single biggest blocker for agent-to-agent commerce: one-time virtual cards give security teams a controllable mechanism to grant agents purchasing power without exposing real credentials, turning a trust problem into a policy problem
 - [[entities/ibm-sovereign-core]] — embeds regulatory policy at infrastructure runtime, addressing the governance gap that EU AI Act's €800M Meta fine exposed; enterprises can deploy the same agent across EU/US/APAC with different compliance profiles auto-enforced
 - OpenAI's $10B Deployment Company embeds engineers inside 2,000 PE portfolio companies, ensuring models don't just get sold but actually get used; the "forward-deployed engineer" model borrowed from Palantir
 - [[ideas/agent-economics]] — GitHub $49/agent/month + Netomi $110M + agent infrastructure wave proved the agent economy was entering operational phase; May 5 adds the foundational infrastructure (payments, governance, deployment) that makes that operational phase scalable

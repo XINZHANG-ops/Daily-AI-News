@@ -1,7 +1,7 @@
 ---
 title: "Efficiency Frontier"
 slug: efficiency-frontier
-last_updated: 2026-04-28
+last_updated: 2026-05-15
 ---
 
 # Efficiency Frontier
@@ -11,9 +11,7 @@ The AI industry is discovering that raw capability scaling is not the only path 
 
 ## Evidence
 - [[entities/qwen-3-6]] — 3B active parameters, 73.4% SWE-Bench, runnable on consumer hardware (April 20)
-- [[entities/gemma-4]] — 31B dense model ranking #3 on Arena AI's open leaderboard, outperforming models 20x their size
 - [[entities/ising]] — NVIDIA's quantum AI models achieve 2.5x faster and 3x more accurate quantum error correction decoding
-- [[topics/llm_models]] — China's $12.4B achieving 2.7% Arena gap vs America's $285.9B — 23x efficiency advantage
 - [[topics/github_trends]] — Bonsai 8B (PrismML) achieves 40 tokens/sec on iPhone through 1-bit quantization
 
 ## Implications

@@ -24,7 +24,7 @@ Perplexity Computer is an always-on AI assistant that runs locally on Mac, launc
 Perplexity Computer represents a new category of local AI assistant — always-on, device-resident, with control over native applications. The $200/month pricing and dedicated hardware requirement signal a premium positioning for power users who want maximum privacy and capability. The May 8 macOS public launch differentiates from ChatGPT's desktop app with native file system integration, a feature OpenAI deliberately avoided to maintain cloud-first parity across platforms. Perplexity's bet is that local context (your files + web) creates stickier queries than generic chat.
 
 ## Connections
-- [[sources/perplexity]] — Created by Perplexity; macOS public launch follows ChatGPT desktop by months but differentiates with native file system integration
+- [[sources/perplexity]] — Perplexity Computer's macOS public launch differentiates from ChatGPT desktop by offering native file-system integration and local app control — Perplexity's bet that power users value autonomy over conversation, turning the Mac into an agent host rather than a chat terminal
 - [[topics/agentic_ai]] — Always-on local agent paradigm
 - [[ideas/local-ai-computing]] — Device-resident AI as emerging trend
 - [[sources/openai]] — OpenAI deliberately avoided native file system integration in its desktop app to maintain cloud-first parity; Perplexity's local-first approach is a direct differentiation play

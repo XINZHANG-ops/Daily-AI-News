@@ -1,7 +1,7 @@
 ---
 title: "The Agentic Catch-Up Game"
 slug: agentic-catch-up-game
-last_updated: 2026-05-11
+last_updated: 2026-05-15
 ---
 
 # The Agentic Catch-Up Game
@@ -10,10 +10,6 @@ last_updated: 2026-05-11
 Google and Meta are both playing catch-up in the agentic interface layer, racing to ship competitive products against Anthropic's Claude Code and OpenAI's Codex/Operator. But catch-up is harder in agentic AI than in previous technology waves because the leading products (Claude Code, OpenClaw) benefit from massive user data feedback loops and developer ecosystem effects that compound over time. The latecomers face a dilemma: ship inferior products now and risk user rejection, or delay until models are competitive and cede the market entirely.
 
 ## Evidence
-- [[entities/remy]] — Google's Remy personal agent in testing (24/7 monitoring, proactive learning) comes after Project Mariner shutdown on May 4; Google is consolidating scattered agent experiments under one brand but remains months behind Anthropic and OpenAI in market presence
-- [[entities/hatch]] — Meta's agentic shopping tool for Instagram reportedly started with Claude models before planning a switch to Muse Spark at launch; explicit admission that Meta's own models aren't competitive for agentic tasks
-- [[sources/meta]] — Capex guidance contextualized as spending to catch up, not building from strength; chasing OpenAI and Anthropic who have agent products in market
-- [[sources/google]] — Remy reflects Google's risk-averse enterprise DNA; approval-gate philosophy may appeal to CIOs but may be too slow for consumer adoption where OpenAI and Anthropic are already winning
 
 ## Implications
 The agentic interface layer is consolidating faster than previous platform shifts because the leading products have dual moats: model capability (which requires massive compute) and user experience refinement (which requires massive usage data). Anthropic's Claude Code has both: the best coding model (Opus 4.7) and the most enterprise developer usage. OpenAI has distribution (900M weekly ChatGPT users) and compute (10GW secured). Google and Meta have neither at the agentic layer.

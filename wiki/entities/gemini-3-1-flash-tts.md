@@ -24,5 +24,5 @@ The granular natural language control over voice synthesis represents a signific
 
 ## Connections
 - [[sources/google]] — Google's granular voice control TTS extends the Gemini ecosystem into voice modality with sub-300ms latency
-- [[entities/gemini-3-1-pro]] — Part of the Gemini 3.1 family
+- [[entities/gemini-3-1-pro]] — Flash TTS and Pro share the Gemini 3.1 foundation but serve orthogonal needs: Pro competes on coding benchmarks while Flash TTS targets real-time voice interaction with sub-300ms latency
 - [[topics/llm_models]] — TTS capability within LLM ecosystem

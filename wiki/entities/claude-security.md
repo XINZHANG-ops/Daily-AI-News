@@ -32,5 +32,5 @@ The risk: if Claude Security becomes good enough, it creates the same dependency
 - [[entities/claude-code]] — Native integration inside Claude Code workflow; security scanning as a built-in step
 - [[entities/claude-mythos]] — If Mythos finds vulnerabilities, Claude Security patches them; same lab, offensive and defensive
 - [[entities/claude-opus-4-7]] — Powered by Opus 4.7; security capabilities derived from the same model family
-- [[sources/anthropic]] — Created by Anthropic; defensive pivot from Mythos controversy
+- [[sources/anthropic]] — Claude Security is Anthropic's defensive pivot from the Mythos controversy: by packaging vulnerability-scanning capability into a commercially available product with guardrails, Anthropic attempts to monetize the same research that made Mythos too dangerous for general release
 - [[ideas/safety-restricted-releases]] — Claude Security reframes Mythos from "too dangerous to release" to "too dangerous to release publicly, but we'll use it defensively"

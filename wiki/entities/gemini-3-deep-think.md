@@ -24,7 +24,7 @@ Google's advanced reasoning mode for Gemini 3 Ultra, providing extended test-tim
 Gemini 3 Deep Think's ability to find flaws in peer-reviewed mathematics papers is a concrete demonstration of AI reasoning exceeding human expert review — not in generating new knowledge but in auditing existing knowledge. This has implications beyond mathematics: if AI can find errors in the most rigorously reviewed human knowledge (math papers), it raises the question of what it can find in less rigorous domains (legal contracts, regulatory compliance, medical research). The capability also feeds into the AI safety debate: a model that can audit human knowledge for errors can also audit AI systems for errors — or be used to find exploitable flaws in security-critical systems.
 
 ## Connections
-- [[sources/google]] — Created by Google; part of the Gemini 3 family
+- [[sources/google]] — DeepMind built Deep Think as a reasoning-first variant within the Gemini 3 family, explicitly targeting mathematical and scientific domains where standard chatbot performance fails
 - [[topics/llm_models]] — Represents the reasoning frontier; AI auditing human knowledge at expert level
 - [[topics/ai_safety]] — Dual-use capability: same reasoning that finds math errors can find security flaws
-- [[entities/gemini-3-1-pro]] — Part of the Gemini 3 model family alongside the Pro variant
+- [[entities/gemini-3-1-pro]] — Deep Think and Pro share the Gemini 3 architecture but diverge in optimization: Pro targets general-purpose SWE-bench leadership while Deep Think prioritizes mathematical proof verification and peer-review flaw detection

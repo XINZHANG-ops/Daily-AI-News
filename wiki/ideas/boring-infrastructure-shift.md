@@ -14,7 +14,7 @@ May 6, 2026 crystallizes a trend that has been building all year: AI is moving f
 - [[entities/perplexity-finance]] — Targets equity comparison, screening, and report generation — the "boring" tasks junior analysts spend 60+ hours/week on; at $20/month vs Bloomberg's $25,000/year, the value proposition is infrastructure replacement, not innovation
 - [[sources/microsoft]] — Xbox killed Copilot on console/mobile to focus on AI for game developers; consumer-facing AI agents are "expensive retention sinks" while developer-facing tools have immediate ROI
 - [[sources/coinbase]] — Armstrong's restructuring is explicitly about returning to "startup speed" with AI at the core; the 14% cut replaces coordination overhead with automation
-- [[entities/mistral-medium-3-5]] — Medium 3.5's 77.6% SWE-bench is solid but not category-defining; the real play is the bundled Work Mode and Remote Agents in Vibe — infrastructure for reliable agent execution
+- [[entities/mistral-medium-3-5]] — Medium 3.5's 77.6% SWE-bench is solid but not category-defining; the real strategic play is the bundled Work Mode and Remote Agents in Vibe — infrastructure for reliable agent execution that transforms a model release into a platform release
 - [[entities/caisi]] — Government pre-testing is the ultimate "boring infrastructure" — not exciting capability gains but the regulatory plumbing that makes frontier deployment legally viable
 - [[topics/ai_funding]] — Anthropic's $200B Google Cloud commitment and OpenAI's $50B annual compute spend reveal the AI race is now a capital-allocation contest; the technology is mature enough that money, not research, is the differentiator
 

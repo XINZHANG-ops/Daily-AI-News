@@ -1,7 +1,7 @@
 ---
 title: "Revenue Reality Check"
 slug: revenue-reality-check
-last_updated: 2026-05-11
+last_updated: 2026-05-15
 ---
 
 # Revenue Reality Check
@@ -10,10 +10,6 @@ last_updated: 2026-05-11
 The AI market is entering a phase where revenue and infrastructure ownership matter more than model benchmarks. Anthropic's announcement of an $30B annualized revenue run rate (80x growth in Q1 2026) and Alphabet's 160% year-over-year stock rally (briefly surpassing Nvidia by market cap) signal that investors are pricing commercial execution and full-stack ownership above raw model capability. The revenue reality check means the winners will be labs that convert model capability into enterprise dollars fastest — not necessarily those with the best benchmarks.
 
 ## Evidence
-- [[sources/anthropic]] — $30B revenue run rate announced May 11, 2026; 80x annualized growth in Q1; $900B valuation fundraising; driven by 1,000+ enterprise customers spending $1M+ annually, with Claude Code as primary engine
-- [[sources/google]] — Alphabet stock rallied 160% YoY, briefly surpassing Nvidia by market cap; market pricing in full-stack ownership (TPU → Gemini → Cloud → Distribution) with $190B capex guidance — more than double 2025 levels
-- [[sources/openai]] — OpenAI missed multiple Q1 monthly revenue targets and lost ground to Anthropic in coding and enterprise markets; GPT-5.5's commercial performance critical for IPO timing
-- [[sources/meta]] — Meta's $125-145B capex is spending to catch up in agentic AI, not building from strength; chasing OpenAI and Anthropic who have agent products in market
 
 ## Implications
 Anthropic's $30B ARR validates that Claude Code's enterprise coding dominance is convertible to revenue at scale. The 80x growth rate suggests we're still in the early innings of enterprise AI adoption — but also that the window for competitors to catch up is narrowing. If Anthropic maintains this trajectory, it could reach $100B+ ARR before OpenAI's IPO, making Anthropic the revenue leader even if OpenAI retains the consumer user base.

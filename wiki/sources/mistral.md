@@ -1,7 +1,7 @@
 ---
 title: "Mistral"
 slug: mistral
-last_updated: 2026-05-09
+last_updated: 2026-05-14
 ---
 
 # Mistral
@@ -16,6 +16,7 @@ Mistral AI is a French AI lab positioning itself as the geopolitically neutral, 
 | 2026-04-29 | Mistral Ultra 2 released | 78.4% SWE-bench, €2/M tokens, 1M context, native MCP support, EU data residency |
 | 2026-05-02 | Mistral Medium 3.5 + Vibe released | First "merged" flagship: 128B dense transformer (not MoE), 256K context, configurable reasoning-effort toggle per request, SWE-Bench Verified 77.6%, AIME25 86.3%; self-hostable on 4 GPUs at FP8; Vibe cloud coding agents bundled — vertically integrated model + agent stack |
 | 2026-05-05 | EU AI Act Phase 2 fine | €11.2M provisional penalty for training-data transparency failures; privacy-first positioning calculated to reduce regulatory exposure |
+| 2026-05-13 | Cybersecurity AI model for banks announced | Developing a new cybersecurity-focused AI model specifically for banks lacking Anthropic Mythos access; positioned as off-the-shelf sovereign AI product for European financial institutions
 | 2026-05-05 | Work Mode and Remote Agents in Vibe | On-device agentic "Work Mode" for complex multi-step tasks in Le Chat; "Remote Agents in Vibe" for async cloud execution; API pricing $1.5/$7.5 per million tokens |
 
 ## Key Relationships

@@ -1,7 +1,7 @@
 ---
 title: "Voice Agent Battleground"
 slug: voice-agent-battleground
-last_updated: 2026-05-12
+last_updated: 2026-05-15
 ---
 
 # Voice Agent Battleground
@@ -10,8 +10,6 @@ last_updated: 2026-05-12
 Voice models are becoming a distinct competitive battleground separate from text-based models. xAI's grok-voice-think-fast-1.0 scoring 67.3% on τ-voice Bench — specifically outperforming in retail, airline, and telecom workflows — demonstrates that voice is not just a modality but a vertical specialization with its own benchmark, its own competitive dynamics, and its own enterprise use cases.
 
 ## Evidence
-- [[entities/grok-voice-think-fast-1-0]] — 67.3% on τ-voice Bench; outperforming Gemini, GPT Realtime in specific verticals
-- [[sources/xai]] — Voice model as part of SpaceX's "AI-first" IPO narrative; targeting retail, airline, telecom workflows
 
 ## Implications
 The specialization trend — every major model release targeting a vertical capability (cyber, voice, coding) rather than general performance — has now extended to voice. The battle for voice agents is separate from the battle for text models. Enterprises are buying voice AI for specific workflows, not general capability.
@@ -26,10 +24,8 @@ On May 12, 2026, ElevenLabs announced $500M ARR and an $11 billion Series D valu
 
 ## Connections
 - [[entities/grok-voice-think-fast-1-0]] — xAI's flagship voice model with specific workflow superiority
-- [[entities/gpt-realtime-2]] — OpenAI's full voice pipeline with 128K context and GPT-5-class reasoning transforms voice from short-command to document-processing interface; completes the trifecta of transcription, reasoning, and synthesis
 - [[topics/llm_models]] — General performance benchmarks saturating; specialization the new frontier; voice is now a three-way race (OpenAI full pipeline, xAI vertical workflow superiority, Google Gemini voice)
 - [[sources/xai]] — Voice as part of SpaceX's competitive positioning
-- [[sources/openai]] — GPT-Realtime-2's Zillow/Priceline partnerships reveal voice verticalization strategy: real estate and travel booking are high-friction workflows where voice agents can replace form-filling
 - [[sources/google]] — Google's Gemini 3.1 Flash TTS and Siri integration are direct competitors; OpenAI's 128K context and 70+ language translation outflank Google's current voice offerings
 - [[ideas/agent-verticalization]] — Voice is following the same verticalization pattern as coding and finance: Zillow (real estate) and Priceline (travel) are the first voice-specific professional workflows
 - [[entities/gpt-realtime-2]] — Pricing reveal on May 11 ($0.034/min translation, $0.017/min Whisper) commoditizes voice; undercuts human interpreters 90%+ and targets replacement at scale

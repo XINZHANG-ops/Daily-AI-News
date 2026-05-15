@@ -25,5 +25,5 @@ NemoClaw represents NVIDIA's investment in securing the OpenClaw ecosystem. With
 
 ## Connections
 - [[entities/openclaw]] — NemoClaw is NVIDIA's reference stack for running OpenClaw securely
-- [[sources/nvidia]] — Created by NVIDIA as part of their AI infrastructure ecosystem
+- [[sources/nvidia]] — NVIDIA built Nemo Claw to anchor its AI infrastructure stack with a retrieval-augmented reasoning layer, making enterprise deployments stickier by coupling model inference with structured knowledge access
 - [[topics/github_trends]] — 1.1k stars reflects growing interest in secure agent infrastructure

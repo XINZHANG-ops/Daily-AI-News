@@ -27,4 +27,4 @@ Vibe signals a strategic shift for Mistral: from a pure model API provider to a 
 - [[entities/claude-code]] — Vibe competes directly with Claude Code in the cloud coding agent market; Mistral is replicating Anthropic's successful model-to-agent growth strategy
 - [[entities/codex]] — OpenAI's coding agent with 3M weekly users; Vibe enters a market where Claude Code and Codex already have established developer mindshare
 - [[sources/mistral]] — Vibe is Mistral's strategic pivot from API provider to integrated platform, mirroring the industry-wide shift from model competition to workflow capture
-- [[topics/agentic_ai]] — Part of the agent ecosystem maturing from standalone tools to integrated model + agent stacks
+- [[topics/agentic_ai]] — Vibe bundles Mistral Medium 3.5, Work Mode, and Remote Agents into a single integrated stack, signaling the agent ecosystem's maturation from standalone tools to unified model-plus-agent platforms where the boundary between inference and orchestration disappears

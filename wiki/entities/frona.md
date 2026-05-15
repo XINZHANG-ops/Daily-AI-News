@@ -29,6 +29,6 @@ Supporting 15+ LLM providers signals a bet against vendor lock-in at the model l
 ## Connections
 - [[topics/github_trends]] — frona's 132 stars signal privacy-first agent infrastructure gaining developer attention
 - [[entities/mcp-protocol]] — MCP bridge mode shows the protocol has become table stakes for new agent infrastructure projects
-- [[ideas/mcp-infrastructure-battleground]] — frona's MCP support is part of the broader pattern of new agent projects treating MCP as foundational infrastructure
+- [[ideas/mcp-infrastructure-battleground]] — frona's decision to build MCP support into its core architecture rather than as a plugin reflects the emerging consensus among new agent frameworks that MCP is becoming as fundamental as HTTP — the protocol layer on which the agent economy runs
 - [[ideas/agent-democratization]] — Self-hosted, model-agnostic agent platforms democratize access to agentic AI outside the walled gardens of major labs
 - [[entities/agenvoy]] — Both frona and Agenvoy launched the same week with MCP support and multi-provider architectures; the open-source agent stack is converging on interoperability standards

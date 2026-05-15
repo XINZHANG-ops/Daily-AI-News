@@ -26,6 +26,6 @@ GitNexus addresses one of the hardest problems in AI coding: context. Current co
 ## Connections
 - [[entities/mcp-protocol]] — GitNexus exposes its code knowledge graph through MCP, making it composable with any MCP-compatible coding agent (Claude Code, Codex, Cursor)
 - [[entities/serena]] — Serena provides symbol-level code understanding; GitNexus provides dependency-level code understanding — together they give agents both micro and macro codebase awareness
-- [[entities/context-mode]] — GitNexus reduces the need for agents to hold entire codebases in context by providing structured navigation; context-mode reduces context pollution — complementary approaches to the agent context problem
+- [[entities/context-mode]] — GitNexus and context-mode solve the agent context crisis from opposite angles: GitNexus provides structured codebase navigation so agents need less raw context, while context-mode filters context pollution so the remaining context is higher signal — together they make enterprise-scale coding agents economically viable
 - [[entities/ruflo]] — Multi-agent swarms orchestrated by Ruflo benefit from GitNexus' knowledge graph to avoid conflict: different agents can navigate different parts of the codebase without colliding
-- [[topics/agentic_ai]] — GitNexus represents the infrastructure layer of the agent stack — the "IDE for agents" alongside Serena and context-mode — that makes coding agents reliable at enterprise scale
+- [[topics/agentic_ai]] — GitNexus, Serena, and context-mode form an emerging "IDE for agents" infrastructure layer that sits between raw model capability and enterprise deployment; this layer is becoming the critical bottleneck for reliable agentic coding at scale

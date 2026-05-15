@@ -1,7 +1,7 @@
 ---
 title: "US-China AI Fragmentation"
 slug: us-china-ai-fragmentation
-last_updated: 2026-04-16
+last_updated: 2026-05-15
 ---
 
 # US-China AI Fragmentation
@@ -10,8 +10,6 @@ last_updated: 2026-04-16
 The US-China AI competition has evolved from trade rhetoric to technical countermeasures. OpenAI, Anthropic, and Google formed an unprecedented coalition through the Frontier Model Forum to combat "Chinese model distillation" — accusing DeepSeek, Moonshot, and MiniMax of extracting capabilities from American AI models via adversarial techniques. Anthropic blocked Chinese-controlled companies from using Claude.
 
 ## Evidence
-- [[sources/anthropic]] — Blocked Chinese companies from Claude access
-- [[sources/openai]] — Memo to Congress accusing DeepSeek of "free-riding"
 - [[sources/deepseek]] — Named in distillation accusations
 
 ## Implications

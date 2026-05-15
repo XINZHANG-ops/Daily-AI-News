@@ -1,7 +1,7 @@
 ---
 title: "SpaceX"
 slug: spacex
-last_updated: 2026-05-12
+last_updated: 2026-05-15
 ---
 
 # SpaceX
@@ -27,7 +27,6 @@ SpaceX acquired xAI for $250 billion in an all-stock transaction in April 2026, 
 ## Connections
 - [[sources/xai]] — Now consolidated under SpaceX; dissolved and rebranded as SpaceXAI in May 2026
 - [[entities/codex]] — OpenAI's coding agent, competing with SpaceX's Cursor investment
-- [[entities/claude-code]] — Anthropic's coding agent, primary competition for Cursor
 - [[entities/cursor]] — $60B SpaceX investment; model-agnostic AI coding tool competing with Claude Code and Codex
 - [[sources/anthropic]] — SpaceX provides 300+ MW compute capacity to Anthropic at Colossus 1; the deal diversifies SpaceX revenue while solving Anthropic's acute shortage
 - [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX deal proves compute scarcity overrides rivalries; SpaceX gains revenue diversification while Anthropic secures critical infrastructure

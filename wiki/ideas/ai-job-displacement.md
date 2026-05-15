@@ -1,7 +1,7 @@
 ---
 title: "AI Job Displacement"
 slug: ai-job-displacement
-last_updated: 2026-04-28
+last_updated: 2026-05-15
 ---
 
 # AI Job Displacement
@@ -10,12 +10,9 @@ last_updated: 2026-04-28
 The AI boom is creating a structural contradiction: companies collectively spending $650B on AI infrastructure while simultaneously eliminating the workforce that generates the value they're automating. Over 92,000 tech workers were laid off in 2026 as AI transforms corporate America. The jobs being eliminated aren't being replaced at equivalent rates — the AI is replacing knowledge workers faster than reskilling programs can respond.
 
 ## Evidence
-- [[sources/meta]] — 10% workforce cut (~8,000 people) while investing billions in AI; Meta's 65/75 AI code adoption mandate (65% engineers must use AI for 75% of code by mid-2026)
 - [[sources/microsoft]] — 8,750 voluntary retirement buyouts amid AI transformation
 - [[sources/openai]] — Musk vs Altman trial outcome could accelerate restructure and further workforce displacement
-- [[topics/ai_companies]] — Wall Street banks cut 15,000 jobs while posting $47B profits; attrition-driven AI replacement
 - [[topics/ai_funding]] — $4.8T market projection signals continued investment in AI automation over human augmentation
-- [[ideas/ai-governance-urgency]] — India AIGEG panel represents first government body explicitly focusing on labor market impact
 
 ## Implications
 The speed of AI capability advancement is creating a structural unemployment problem faster than institutions can respond. Three compounding dynamics:

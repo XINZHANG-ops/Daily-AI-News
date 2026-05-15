@@ -1,7 +1,7 @@
 ---
 title: "Distillation Hypocrisy"
 slug: distillation-hypocrisy
-last_updated: 2026-05-01
+last_updated: 2026-05-15
 ---
 
 # Distillation Hypocrisy
@@ -10,9 +10,6 @@ last_updated: 2026-05-01
 On April 30, Elon Musk admitted under oath in federal court that xAI "partly" used OpenAI's models to train Grok via model distillation — the same practice he has publicly criticized when applied to DeepSeek. This creates a specific legal and narrative contradiction: Musk is simultaneously suing OpenAI for "betraying its open mission" while his own company required OpenAI's outputs to build a competitive product. The irony is exquisite, and the implications extend beyond Musk to the entire "open vs closed" framing in AI.
 
 ## Evidence
-- [[sources/xai]] — Musk testified on April 30 that xAI "partly" used OpenAI's models via distillation. He initially deflected by saying "generally all the AI companies do this," then confirmed it was true for xAI when pressed
-- [[sources/openai]] — OpenAI's Frontier Model Forum coalition with Anthropic and Google was explicitly formed to combat "Chinese model distillation" — accusing DeepSeek, Moonshot, and MiniMax of extracting capabilities from American models
-- [[ideas/us-china-ai-fragmentation]] — The anti-distillation coalition was the key policy outcome of April's US-China AI tensions, with OpenAI memo to Congress accusing DeepSeek of "free-riding"
 
 ## Implications
 Model distillation (using a larger model's outputs to train a smaller one) is the industry's dirty secret: everyone does it, no one admits it. Musk's testimony breaks that omerta under oath.

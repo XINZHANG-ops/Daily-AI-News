@@ -30,6 +30,6 @@ This is the agentic catch-up game in miniature: Meta sees OpenAI and Anthropic s
 - [[entities/muse-spark]] — Muse Spark's planned substitution for Claude in Hatch is the first real test of whether Meta's proprietary model can power production agentic workflows
 - [[sources/anthropic]] — Claude models were Hatch's initial engine; Anthropic benefits from Meta's dependency even as Meta tries to escape it
 - [[topics/agentic_ai]] — Hatch represents the latecomer's dilemma in agentic AI: Meta has distribution (Instagram's 2B+ users) but lacks model capability to leverage it
-- [[ideas/agentic-catch-up-game]] — Hatch is the clearest example of the catch-up dynamic: Meta has distribution and capex but not agentic model capability
+- [[ideas/agentic-catch-up-game]] — Hatch exemplifies the agentic catch-up dynamic: Meta owns Instagram's distribution and $145B in capex, yet reportedly built its agentic shopping tool with Claude models before planning a switch to Muse Spark — an explicit admission that its own models lack the agentic capability required for competitive products
 - [[ideas/agent-verticalization]] — Shopping is a natural vertical for Instagram; if Hatch succeeds, it validates that social commerce is the first mass-market agentic use case
 - [[entities/openclaw]] — OpenClaw's open-source agent framework (302K stars) is the alternative Meta could adopt instead of building proprietary; Meta's choice to build Hatch internally suggests it believes vertical integration beats open-source adoption

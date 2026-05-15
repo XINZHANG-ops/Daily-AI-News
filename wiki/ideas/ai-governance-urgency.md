@@ -1,7 +1,7 @@
 ---
 title: "AI Governance Urgency"
 slug: ai-governance-urgency
-last_updated: 2026-05-04
+last_updated: 2026-05-15
 ---
 
 # AI Governance Urgency
@@ -13,8 +13,6 @@ AI capability is outpacing governance at an accelerating rate. Nobel laureate Ge
 - [[sources/microsoft]] — 8,750 voluntary retirement buyouts amid AI transformation
 - [[sources/meta]] — 10% workforce cut (~8,000 people) while investing billions in AI; 65/75 mandate published April 27
 - [[sources/anthropic]] — Claude Code quality issues fixed on April 24 after user reports
-- [[topics/ai_safety]] — Geoffrey Hinton warns at UN conference about runaway AI
-- [[topics/ai_companies]] — $650B combined Big Tech AI infrastructure spending in 2026
 - [[sources/openai]] — Musk vs Altman court proceedings begin April 27; outcome could force OpenAI to revert to non-profit, invalidating Microsoft investments and enterprise contracts
 
 ## Implications
@@ -36,5 +34,5 @@ India's AIGEG panel (April 21) represents the first government body explicitly f
 - [[entities/guard-act]] — Senate GUARD Act with criminal penalties passed unanimously; first bipartisan AI legislation with teeth
 - [[ideas/military-ai-divide]] — Pentagon deploys frontier models at scale while governance frameworks are still being drafted
 - [[ideas/ai-orbital-infrastructure]] — Prithvi in orbit raises governance questions about jurisdiction: which nation's laws apply to AI running on satellites?
-- [[ideas/interpretability-economics]] — Regulatory mandates for explainability are the governance driver behind Anthropic's autoencoders; governance urgency creates market demand for interpretability tools
+- [[ideas/interpretability-economics]] — Regulatory mandates for explainability are creating market demand for interpretability tools: Anthropic's Natural Language Autoencoders exist because governance urgency (GUARD Act, EU AI Act) makes unexplainable AI a liability, not just an ethical concern — governance creates the market that justifies the R&D
 - [[entities/natural-language-autoencoders]] — The autoencoders are a technical pre-emption of regulatory requirements; if governance frameworks mandate explainability, labs without interpretability tools face market exclusion

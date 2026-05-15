@@ -28,5 +28,5 @@ The 3-layer context compression is particularly interesting: it suggests a struc
 
 ## Connections
 - [[topics/github_trends]] — Trending May 1 with 652 stars
-- [[entities/claude-code]] — Inspired by Claude Code's architecture
+- [[entities/claude-code]] — CoreCoder explicitly mimics Claude Code's terminal-native architecture (file system integration, shell access, browser control) while adding local-model support, validating that Claude Code's interaction model has become the de facto standard for coding agents
 - [[ideas/agent-democratization]] — Minimal implementation makes AI coding accessible without expensive proprietary solutions

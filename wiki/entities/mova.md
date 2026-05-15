@@ -25,5 +25,5 @@ MOVA represents a step toward closing the gap between open-source and proprietar
 
 ## Connections
 - [[entities/automv]] — AutoMV generates full music videos using multi-agent orchestration; MOVA provides the synchronized video-audio foundation model that could serve as a component in such pipelines
-- [[topics/github_trends]] — Part of the open-source video generation category emerging alongside multimodal AI tools
-- [[entities/qwen-3-6]] — Qwen-Wan 2.2 used by AutoMV for lip-sync; MOVA competes in the same video-audio synchronization space with a different architectural approach
+- [[topics/github_trends]] — MOVA anchors the emerging open-source video-generation category, demonstrating that multimodal AI tooling now extends beyond text and images into motion — a segment previously dominated by closed labs like Runway and Pika
+- [[entities/qwen-3-6]] — MOVA and AutoMV (built on Qwen-Wan 2.2) both target video-audio synchronization but from different architectures: MOVA optimizes for real-time streaming while AutoMV prioritizes lip-sync fidelity — the vertical is large enough to support multiple technical approaches

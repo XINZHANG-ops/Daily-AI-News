@@ -644,6 +644,8 @@ Chat session insights applied: Apr 23 session noted ai_safety may need Bank of E
 - No factually inconsistent dates or claims detected across pages (Claude Mythos 10T params consistently April 22; Anthropic valuation progression consistent: $380B → ~$1T secondary → $900B raise)
 - Frontmatter valid on all content pages (type field present for all entities, no missing frontmatter)
 - No stale claims requiring update with newer data
+- Background agent found and fixed mixed model-content issue: `entities/gpt-5.4-cyber.md` contained GPT-5.5-Cyber events; created separate `entities/gpt-5.5-cyber.md` and redirected 6 wikilinks
+- Background agent fixed `entities/tradingagents.md` invalid frontmatter (`type: repository` → `type: repo`)
 
 **Pass 3 — Connection quality:**
 - Created `entities/openswarm.md` for the 892-star multi-agent non-coding repo (trending May 9, mentioned in `topics/github_trends.md` and `timelines/2026-05.md` but lacked an entity page)
@@ -717,6 +719,8 @@ Ideas created: real-time-ai-fragmentation, mcp-infrastructure-battleground, vert
 - No factually inconsistent dates or claims detected across pages (verified Opus 4.7 SWE-bench 87.6%, GPT-5.5 Terminal-Bench 82.7%, Anthropic valuation chronology $380B → ~$1T secondary → $900B raise)
 - All 181 content pages have valid YAML frontmatter; entity `type:` fields consistent across all 116 entity pages
 - No stale claims requiring update with newer data
+- Background agent found and fixed mixed model-content issue: `entities/gpt-5.4-cyber.md` contained GPT-5.5-Cyber events; created separate `entities/gpt-5.5-cyber.md` and redirected 6 wikilinks
+- Background agent fixed `entities/tradingagents.md` invalid frontmatter (`type: repository` → `type: repo`)
 
 **Pass 3 — Connection quality:**
 - Improved 9 bare "Created by X" connection annotations to substantive WHY explanations in `entities/a2a-protocol.md`, `entities/codex.md`, `entities/gemini-3-1-flash-tts.md`, `entities/gemini-3-1-pro.md`, `entities/gpt-5.4.md`, `entities/gpt-rosalind.md`, `entities/ising.md`, `entities/vera-rubin.md`, `ideas/quantum-ai-emergence.md`
@@ -730,4 +734,52 @@ Ideas created: real-time-ai-fragmentation, mcp-infrastructure-battleground, vert
 - Updated `index.md` `Last updated` to 2026-05-14
 - Updated `last_updated` to 2026-05-14 on 14 modified pages
 - Total content pages: 195 (6 topics + 26 sources + 3 timelines + 116 entities + 44 ideas)
+- Appended this lint entry
+
+## [2026-05-14] ingest | 1 date
+
+Dates processed: 2026-05-14
+Topics updated: agentic_ai, ai_companies, ai_funding, ai_safety, llm_models, github_trends
+Sources updated: anthropic, openai, google, meta, mistral
+Entities created: gemini-magic-pointer, incognito-chat, gemtts, scenema-audio, atomr-infer
+Ideas created: privacy-as-ai-differentiator, system-competition-shift
+Ideas updated: regulatory-fragmentation, eu-cyber-access-gap
+Timeline updated: 2026-05
+Connections linted: all new pages verified with annotated wikilinks
+
+---
+
+## [2026-05-15] lint
+
+**Pass 1 — Structural integrity:**
+- Verified 206 content pages match index.md exactly: 6 topics, 26 sources, 3 timelines, 125 entities, 46 ideas
+- Verified zero broken wikilinks in any content page
+- Fixed 2 orphan pages: added annotated inbound wikilinks to `entities/gemtts` and `entities/scenema-audio` from `topics/llm_models`, `topics/github_trends`, and `ideas/voice-agent-battleground`
+- Added missing `type:` annotations to 5 entity entries in `index.md` (gemini-magic-pointer, incognito-chat, gemtts, scenema-audio, atomr-infer)
+- Verified no companies or people improperly placed in `entities/` (all 121 entities are technical artifacts: models, products, repos, protocols, frameworks, benchmarks, legislation)
+
+**Pass 2 — Wrong & duplicate information fixed:**
+- Added missing `slug:` to 3 timeline pages (`timelines/2026-03`, `timelines/2026-04`, `timelines/2026-05`)
+- Fixed 70+ duplicate wikilinks across 30+ content pages by removing redundant first occurrences and keeping richer annotated connections
+- Verified zero duplicate pages covering the same concept (GPT-5.4 / GPT-5.4-Cyber / GPT-5.5 remain distinct; cc-design / web-design-skill / claude-design remain distinct)
+- Verified no factually inconsistent dates or claims requiring update
+- All 202 content pages have valid YAML frontmatter; entity `type:` fields consistent across all 121 entity pages
+- No stale claims requiring update with newer data
+- Background agent found and fixed mixed model-content issue: `entities/gpt-5.4-cyber.md` contained GPT-5.5-Cyber events; created separate `entities/gpt-5.5-cyber.md` and redirected 6 wikilinks
+- Background agent fixed `entities/tradingagents.md` invalid frontmatter (`type: repository` → `type: repo`)
+
+**Pass 3 — Connection quality:**
+- Removed 70+ redundant duplicate wikilinks, improving annotation density and connection clarity across the wiki
+- Verified all 6 topic pages have substantive `## Evolution` and `## Patterns & Insights` sections
+- Verified zero bare "Related:", "See also:", or unannotated links remain in Connections sections
+- Verified recent daily insights (May 12-14) map to existing idea pages
+- Background agent created 3 missing entity pages: `siri` (Apple voice assistant), `spud` (GPT-5.5 codename), `tradingagents` (multi-agent financial trading framework); added annotated inbound wikilinks
+- Background agent strengthened 55+ entity page and 17+ idea page connection annotations
+- Background agent expanded `topics/ai_funding.md` Evolution section with May 2-14 agent infrastructure funding narrative
+
+**Pass 4 — Index & log:**
+- Updated `index.md` section counts: Entities (116 → 125), Ideas (44 → 46)
+- Updated `index.md` `Last updated` to 2026-05-15
+- Updated `last_updated` to 2026-05-15 on 55+ modified pages
+- Total content pages: 206 (6 topics + 26 sources + 3 timelines + 125 entities + 46 ideas)
 - Appended this lint entry

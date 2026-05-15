@@ -1,7 +1,7 @@
 ---
 title: "The Agent Infrastructure Layer"
 slug: agent-infrastructure-layer
-last_updated: 2026-05-12
+last_updated: 2026-05-15
 ---
 
 # The Agent Infrastructure Layer
@@ -13,8 +13,6 @@ The three trending GitHub repos on May 12, 2026 — Mirage (storage abstraction)
 - [[entities/mirage]] — 2k stars; unifies S3, Google Drive, Slack, Gmail, Redis, GitHub into a single virtual filesystem agents navigate with bash commands
 - [[entities/opensquilla]] — 232 stars; four-tier cognitive memory system (working → episodic → semantic → raw) abstracts memory management from flat context windows
 - [[entities/hidream-o1-image]] — 293 stars; natively unified image generation without external VAEs; text-to-image, editing, and personalization in one model
-- [[entities/terminal-bench-2]] — Unsaturated scores (~82% with agents, ~73% raw) prove the operational reliability gap; models alone won't close the deployment gap
-- [[topics/github_trends]] — Developers voting with stars for agent infrastructure over raw model access
 
 ## Implications
 The real story of May 12 isn't any single product launch; it's the recognition that AI's bottleneck has moved from "can the model do it?" to "can we reliably deploy it at scale without breaking the bank or getting hacked?" The 37% gap between lab benchmarks and deployment reality (TerminalBench 2.0) is where the next generation of agent infrastructure will be built.

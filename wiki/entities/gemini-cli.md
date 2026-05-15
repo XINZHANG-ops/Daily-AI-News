@@ -24,7 +24,7 @@ Gemini CLI is Google's open-source terminal agent released on April 7, 2026. It 
 Gemini CLI is Google's answer to Anthropic's Claude Code in the terminal-based coding agent market. By making it open-source with 1M context and MCP support, Google is positioning Gemini CLI as the open alternative to proprietary coding agents. The CLI serves as both a developer tool and an on-ramp to Google's broader enterprise agent ecosystem.
 
 ## Connections
-- [[sources/google]] — Created by Google as part of Gemini ecosystem
+- [[sources/google]] — Google open-sourced Gemini CLI to counter Anthropic's Claude Code dominance in the terminal-agent category, leveraging its 1M context window and built-in MCP support as differentiators
 - [[entities/gemini-enterprise-agent-platform]] — Open-source terminal agent complementing the enterprise platform
-- [[entities/mcp-protocol]] — Includes MCP support for tool integration
-- [[topics/github_trends]] — Part of the open-source coding agent ecosystem competing with Claude Code and Codex
+- [[entities/mcp-protocol]] — Gemini CLI treats MCP not as an add-on but as core infrastructure, enabling the agent to call any MCP-compatible tool without custom adapters — a bet on protocol standardization winning over proprietary integrations
+- [[topics/github_trends]] — Gemini CLI enters a crowded open-source coding-agent landscape where Claude Code leads on enterprise adoption and Codex leads on weekly users; Google's play is distribution through Gemini ecosystem integration rather than raw capability differentiation

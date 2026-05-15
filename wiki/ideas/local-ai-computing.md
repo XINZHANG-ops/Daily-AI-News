@@ -1,7 +1,7 @@
 ---
 title: "Local AI Computing"
 slug: local-ai-computing
-last_updated: 2026-04-20
+last_updated: 2026-05-15
 ---
 
 # Local AI Computing
@@ -10,9 +10,7 @@ last_updated: 2026-04-20
 The week of April 15-20, 2026 sees the emergence of device-resident, always-on AI assistants as a distinct category. Perplexity's "Computer" runs locally on Mac mini, managing files, controlling native apps, and browsing autonomously. This represents a shift from cloud-based AI to local AI computing — with implications for privacy, latency, and the AI business model.
 
 ## Evidence
-- [[entities/perplexity-computer]] — Always-on local AI on Mac mini, $200/month, controls iMessage/Calendar
 - [[topics/llm_models]] — Qwen 3.6-35B-A3B with 3B active params runs on consumer hardware
-- [[entities/thunderbolt]] — Mozilla's enterprise self-hosted AI client enables local deployment
 
 ## Implications
 Local AI computing has several advantages:

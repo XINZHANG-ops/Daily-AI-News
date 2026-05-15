@@ -27,7 +27,7 @@ HiDream-O1-Image is significant for two reasons. First, it achieves "native unif
 In the broader AI landscape, HiDream represents China's continued competitiveness in generative AI. Ranking #8 in text-to-image arena while being fully open-source signals that Chinese labs are maintaining parity with Western counterparts in multimodal generation.
 
 ## Connections
-- [[topics/github_trends]] — Trending at 293 stars as part of the agent infrastructure convergence
+- [[topics/github_trends]] — HiDream-O1-Image's 293-star debut signals that image-generation agents are converging with infrastructure tooling: it is not just a better diffusion model but an image-generation agent that plans, executes, and refines visual outputs autonomously
 - [[topics/llm_models]] — HiDream's native unification (no external VAEs) is the multimodal equivalent of the agent infrastructure trend: fewer moving parts, more reliable deployment
 - [[ideas/agent-infrastructure-layer]] — HiDream abstracts multimodal generation the same way Mirage abstracts storage and OpenSquilla abstracts memory; convergent evolution toward unified agent abstractions
 - [[ideas/china-efficiency-advantage]] — HiDream ranking #8 in global text-to-image arena while open-source continues the pattern of Chinese labs achieving frontier parity with efficient architectures

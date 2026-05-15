@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-13
+last_updated: 2026-05-15
 ---
 
 # OpenAI
@@ -17,7 +17,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-03-19 | OpenAI acquires Python toolmaker | Push to compete with Anthropic's Claude Code |
 | 2026-03-21 | Workforce to double to 8,000 | Aggressive hiring amid intensifying competition |
 | 2026-03-24 | Sora video generation shutdown | $1M/day burn rate, 500K users, Disney $1B deal terminated |
-| 2026-03-30 | GPT-4.5 "last non-reasoning model" | Spud model completing pretraining |
+| 2026-03-30 | GPT-4.5 "last non-reasoning model" | [[entities/spud]] model completing pretraining |
 | 2026-03-31 | Claude Code source leaked | Anthropic's npm .map misconfiguration exposed 512K lines |
 | 2026-03-31 | $122B funding at $852B valuation | Amazon $50B, NVIDIA/SoftBank $30B each |
 | 2026-04-02 | Cursor 3 launches | Agent-first interface competing with Claude Code |
@@ -29,7 +29,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-04-14 | GPT-5.4-Cyber released | Defensive cybersecurity variant |
 | 2026-04-16 | $25B annualized revenue | Approaches IPO readiness |
 | 2026-04-17 | GPT-Rosalind launched | Life sciences model with Amgen, Moderna, Novo Nordisk partnership |
-| 2026-04-17 | Spud model targeting "high-value professional work" | Enterprise pivot in response to Anthropic's Claude gains |
+| 2026-04-17 | [[entities/spud]] model targeting "high-value professional work" | Enterprise pivot in response to Anthropic's Claude gains |
 | 2026-04-20 | GPT-5.4-Cyber expanded TAC program | Hundreds of organizations, thousands of vetted defenders |
 | 2026-04-21 | GPT-5.4-Cyber for cybersecurity research | Lowered safety guards for defensive purposes |
 | 2026-04-22 | TBPN acquisition | First media platform acquisition — tech business programming network |
@@ -65,7 +65,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-11 | GPT-Realtime-2 pricing revealed | $0.034/min for translation undercuts human interpreters 90%+; $0.017/min for Whisper streaming transcription; full voice stack now priced competitively
 | 2026-05-11 | OpenClaw creator Peter Steinberger now at OpenAI | Meta failed to hire him in February; Steinberger's OpenClaw (302K stars) sparked "agentic wars"; Jensen Huang called it "the next ChatGPT"
 | 2026-05-12 | Trusted Access for Cyber expanded to EU | GPT-5.5-Cyber granted to EU institutions; George Osborne frames as "Europe's many defenders, not just the few"; direct geopolitical counter to Anthropic's EU Mythos denial
-| 2026-05-12 | Daybreak cybersecurity platform launched | Three GPT-5.5 variants: standard, Trusted Access for verified defenders, and permissive GPT-5.5-Cyber for red teaming; partners include CrowdStrike, Palo Alto Networks, Cloudflare; targets Anthropic Mythos dominance with terminal-bench 82.7% performance
+| 2026-05-12 | Daybreak cybersecurity platform launched | Three GPT-5.5 variants: standard, Trusted Access for verified defenders, and permissive GPT-5.5-Cyber for red teaming; partners include CrowdStrike, Palo Alto Networks, Cloudflare, Cisco, Oracle, Fortinet, Akamai, Zscaler; targets Anthropic Mythos dominance with terminal-bench 82.7% performance
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -79,7 +79,6 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[entities/gpt-5.5]] — Latest model (codename "Spud") with "super app" integration vision; 49-day release cycle for enterprise procurement lock-in; deployed on Pentagon classified networks; GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" feature shifts liability to users
 - [[entities/codex]] — 3M weekly users, primary coding agent product
 - [[entities/symphony]] — Open-source orchestration spec for Codex at fleet scale; 15K+ stars
-- [[entities/gpt-5.4-cyber]] — Defensive cybersecurity variant
 - [[entities/gpt-rosalind]] — Life sciences domain model
 - [[ideas/safety-restricted-releases]] — Not releasing GPT-4.5 as last non-reasoning model signals awareness of capability thresholds
 - [[ideas/military-ai-divide]] — OpenAI's split-brain approach: joined Pentagon coalition while restricting GPT-5.5 Cyber; "any lawful operational use" contracts now cover 1M+ defense personnel
@@ -95,4 +94,4 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[ideas/ai-security-auditing-mainstream]] — OpenAI's Trusted Contact safeguard frames safety as competitive moat, matching Anthropic's defensive security positioning; both labs are racing to own the "responsible AI" narrative
 - [[ideas/agent-control-interface-wars]] — OpenAI's Operator and Codex optimize for autonomous execution with minimal human interruption; Remy's approval-gate model is a direct philosophical counter-position that could split the enterprise market
 - [[ideas/eu-cyber-access-gap]] — OpenAI's EU cyber access expansion builds geopolitical relationships through model access, contrasting with Anthropic's safety-first restriction that alienates a major economic bloc
-- [[entities/gpt-5.4-cyber]] — May 12 EU Trusted Access for Cyber program grants EU institutions GPT-5.5-Cyber access, creating a structural defensive advantage for European defenders
+- [[entities/gpt-5.5-cyber]] — May 12 EU Trusted Access for Cyber program grants EU institutions GPT-5.5-Cyber access, creating a structural defensive advantage for European defenders

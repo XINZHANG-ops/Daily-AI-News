@@ -1,7 +1,7 @@
 ---
 title: "Indirect Prompt Injection Threat"
 slug: indirect-prompt-injection-threat
-last_updated: 2026-05-05
+last_updated: 2026-05-15
 ---
 
 # Indirect Prompt Injection Threat
@@ -12,10 +12,8 @@ Indirect prompt injection (IPI) has crossed from theoretical vulnerability to ac
 The core architectural flaw is that LLMs cannot distinguish attacker instructions from legitimate data. The attack surface is every webpage, email, and document an AI agent processes. This is uniquely dangerous because it exploits the fundamental design of LLMs rather than a bug that can be patched.
 
 ## Evidence
-- [[sources/google]] — Google Threat Intelligence scanned billions of web pages and found 32% growth in malicious IPI; payloads hidden in CSS (`display:none`, 1px fonts) and HTML meta tags are invisible to humans but fully visible to LLMs
 - [[entities/mcp-protocol]] — the MCP vulnerability (150M+ installs, arbitrary command execution called "expected behavior") reveals the same pattern: architectural flaws treated as features rather than security bugs; IPI and MCP RCE are twin symptoms of agent infrastructure built without security as a first-class concern
 - [[entities/ibm-sovereign-core]] — IBM's response to the governance gap; Google's recommendation to shift from model-level guardrails to data-layer governance with cryptographic access controls is the long-term answer, but requires rebuilding the entire agent-data interface
-- [[topics/ai_safety]] — IPI joins the dual safety crisis: models are dangerously capable (Mythos) and fundamentally insecure (IPI); autonomous systems deployed in critical contexts cannot distinguish attacker instructions from legitimate data
 - [[ideas/institutional-gap]] — IPI reveals that the gap between what AI can do and what institutions can safely allow it to do includes security architecture, not just policy frameworks
 
 ## Implications

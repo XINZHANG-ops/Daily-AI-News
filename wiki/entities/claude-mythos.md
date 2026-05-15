@@ -40,9 +40,9 @@ By May 10, Claude Mythos Preview discovered thousands of additional zero-day vul
 By May 12, 2026, Anthropic's EU access restrictions became a public geopolitical issue. Mythos remains restricted to approximately 12 US tech firms; EU regulators were denied preview access despite 4-5 meetings. Germany's Bundesbank publicly demanded access, warning that European banks cannot test defenses against AI-powered threats they cannot evaluate. Meanwhile, OpenAI granted EU institutions access to GPT-5.5-Cyber through its Trusted Access for Cyber program, creating a structural defensive gap. The controlled rollout via Project Glasswing (~40 companies get early access to patch) represents a new model: responsible disclosure at scale. But the 6-12 month window before adversaries replicate Mythos's capabilities means the security landscape is about to shift dramatically — organizations without AI-assisted security teams will be defending against AI-assisted attackers.
 
 ## Connections
-- [[sources/anthropic]] — Developed and withheld by Anthropic
+- [[sources/anthropic]] — Anthropic developed Mythos as a cybersecurity-specialized model so capable it triggered emergency government meetings; the decision to withhold rather than release reflects a judgment that frontier defensive capability carries offensive risk if broadly available
 - [[topics/ai_safety]] — Central to the safety-restricted release debate
-- [[ideas/safety-restricted-releases]] — Established the precedent for capability-based restrictions
+- [[ideas/safety-restricted-releases]] — Mythos established the precedent that raw capability alone can justify restriction, creating a new category of "too capable to release" models that governments now reference when drafting AI governance frameworks
 - [[entities/project-glasswing]] — The consortium enabling restricted Mythos access
 - [[entities/claude-opus-4-7]] — Cyber safeguards from Mythos work embedded in Opus 4.7
 - [[sources/mozilla]] — Mozilla's Firefox security audit using Mythos Preview is the first major non-Glasswing production deployment, proving the model's defensive value outside the restricted consortium

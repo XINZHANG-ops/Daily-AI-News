@@ -1,7 +1,7 @@
 ---
 title: "Quantum AI Emergence"
 slug: quantum-ai-emergence
-last_updated: 2026-04-20
+last_updated: 2026-05-15
 ---
 
 # Quantum AI Emergence
@@ -10,8 +10,6 @@ last_updated: 2026-04-20
 NVIDIA's Ising launch on April 14, 2026 marks the emergence of a genuinely new category: quantum AI models. This is not an incremental improvement in existing AI capabilities — it's a new computational paradigm. Ising's 2.5x faster and 3x more accurate quantum error correction could reshape the AI hardware roadmap entirely.
 
 ## Evidence
-- [[entities/ising]] — World's first open quantum AI model family, delivers 2.5x faster and 3x more accurate error correction
-- [[sources/nvidia]] — Launched Ising April 14, 2026
 - Automation of quantum processor calibration from days to hours
 
 ## Implications

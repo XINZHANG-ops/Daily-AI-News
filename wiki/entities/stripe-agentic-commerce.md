@@ -26,7 +26,7 @@ This is the infrastructural moment that makes autonomous AI commerce viable. Bef
 
 ## Connections
 - [[ideas/agent-economy-infrastructure]] — Stripe solved the payment-authentication layer; without it, agent-to-agent commerce was blocked by security teams refusing to let agents hold real credentials
-- [[ideas/agent-e-commerce]] — Link Wallets for Agents is the specific infrastructural breakthrough that makes autonomous commercial agents buying and selling on behalf of humans technically viable
+- [[ideas/agent-e-commerce]] — Stripe's Link Wallets for Agents solved the payment-authentication bottleneck that was blocking agent-to-agent commerce: by issuing one-time virtual cards, Stripe gives security teams a mechanism to let agents hold purchasing power without exposing real credentials, making autonomous commercial transactions technically and organizationally viable
 - [[sources/stripe]] — Stripe Sessions 2026 launch; reported 1 in 6 AI sign-ups are fraudulent and free-trial abuse has doubled in six months
 - [[sources/google]] — Google AI Mode and Gemini partnership means Stripe checkout is now embedded in Google's AI assistant ecosystem
 - [[sources/openai]] — OpenAI is an existing Stripe integration partner; the agentic commerce suite extends that relationship into autonomous transactions

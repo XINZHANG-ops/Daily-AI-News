@@ -28,7 +28,7 @@ The model is available in Amazon Bedrock and Anthropic's API, with a major UK ex
 
 ## Connections
 - [[sources/anthropic]] — Released by Anthropic, builds on Mythos safety research
-- [[entities/claude-mythos]] — Cyber safeguards derived from Mythos safety work
+- [[entities/claude-mythos]] — Opus 4.7's cyber safeguards directly inherit from Mythos safety research, showing that Anthropic channels its most restricted model's learnings into its most accessible flagship — a knowledge-transfer pipeline from classified research to consumer deployment
 - [[entities/claude-security]] — Powers Claude Security; the same model that finds zero-days also drives the defensive scanner
 - [[topics/llm_models]] — Latest in the Claude Opus family
 - [[ideas/safety-restricted-releases]] — Continues the safety-aware release pattern

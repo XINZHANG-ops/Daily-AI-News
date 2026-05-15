@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 ---
 
 # GitHub Trends
@@ -79,7 +79,6 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | cocoindex-io/cocoindex | 9,018+ | Incremental engine for long-horizon agents; persistent stateful AI with automatic state management and recovery |
 | Q00/ouroboros | 3,677+ | Agent OS: declarative operating system shifting from prompt engineering to specification-driven behavior |
 | hugohe3/ppt-master | 13,205+ | AI generates natively editable PPTX from any document — real PowerPoint shapes with native animations, not images |
-| [[entities/openswarm]] | 892+ | Multi-agent system for non-coding work (presentations, documents, research, visual assets); 8 specialized agents
 | virattt/dexter | 25.4k+ | "Claude Code for finance" — autonomous financial research with SEC filings, loop detection, WhatsApp gateway
 | Eliezer-app/eliezer | 3.2k+ | Self-hosted AI agent with self-editing protocol, PWA push notifications, SQLite memory with auto compaction
 | inclusionAI/DR-Venus | 1.8k+ | 4B-parameter deep research agent on open data; small-model frontier on BrowseComp and GAIA
@@ -114,9 +113,9 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **April 27: GitHub's agent-scale economics crisis**: GitHub is now processing 275 million commits per week — a 14x explosion from 2025's 1 billion milestone. AI agents opened 17 million PRs in March 2026 vs 4 million in September 2025. GitHub Actions compute hit 2.1 billion minutes in a single week, causing visible outages. The real story is economics: GitHub's free tier was designed for human developers and occasional CI bots, not autonomous agent fleets that generate more code per hour than entire engineering teams. The platform is caught between its open-source heritage (which discourages paywalls) and the reality that agent traffic is destroying economics built for human-scale usage.
 
-**April 29: GitHub Copilot Agent Tier — first platform monetization of agent-scale usage**: GitHub announces Copilot Agent Tier at $49/agent/month with free tier capped at 500 commits/month. This is the direct response to the unsustainable infrastructure economics exposed on April 27. Smaller agent frameworks that relied on GitHub's free tier now face a $49/month per agent tax, favoring well-funded players like Cursor, Claude Code, and Codex. GitHub is essentially becoming a tollbooth on the agent economy it helped create. [[entities/copilot-agent-tier]] — [[sources/github]]
+**April 29: GitHub Copilot Agent Tier — first platform monetization of agent-scale usage**: GitHub announces Copilot Agent Tier at $49/agent/month with free tier capped at 500 commits/month. This is the direct response to the unsustainable infrastructure economics exposed on April 27. Smaller agent frameworks that relied on GitHub's free tier now face a $49/month per agent tax, favoring well-funded players like Cursor, Claude Code, and Codex. GitHub is essentially becoming a tollbooth on the agent economy it helped create. [[entities/copilot-agent-tier]] — monetization response to agent-scale infrastructure strain | [[sources/github]] — the platform whose free-tier economics were destroyed by autonomous agent traffic
 
-**April 29: TradingAgents and Codex skills trending**: TradingAgents (54.6K stars) is a multi-agent LLM financial trading framework with autonomous research, analysis, risk management, and trading roles. awesome-codex-skills (4.5K stars) is a curated list of practical Codex skills for automating workflows. [[topics/ai_companies]]
+**April 29: TradingAgents and Codex skills trending**: [[entities/tradingagents]] (54.6K stars) is a multi-agent LLM financial trading framework with autonomous research, analysis, risk management, and trading roles. awesome-codex-skills (4.5K stars) is a curated list of practical Codex skills for automating workflows. [[topics/ai_companies]] — platform companies racing to build multi-agent financial tools and agent-driven workforce replacements
 
 **April 30: Workforce-in-a-box pattern emerging**: Three repos trending — plannotator (4.8K stars) for visual code review collaboration, cc-sdd (1.3K) for spec-first coding enforcement inside Claude Code, and PraisonAI (7K stars) for "24/7 AI workforce in 5 lines of code" with RAG and 100+ LLM support. The pattern emerging: agent frameworks are no longer just for developers — they're becoming plug-and-play workforce replacements that enterprises can deploy without engineering teams. The democratization is shifting from "anyone can build agents" to "anyone can hire an AI workforce."
 
@@ -143,6 +142,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 **May 12: The Agent Infrastructure Layer Converges**: Three trending repos — Mirage (2K stars), OpenSquilla (232 stars), and HiDream-O1-Image (293 stars) — solve the same problem from different angles: unified abstractions that hide complexity from agents. Mirage unifies disparate storage into a single virtual filesystem agents navigate with bash commands. OpenSquilla's four-tier cognitive memory system (working → episodic → semantic → raw) abstracts memory management from flat context windows. HiDream natively unifies image generation without external VAEs. This convergent evolution suggests developers are tired of wiring agents to 20 different APIs and want opinionated infrastructure that "just works." The ecosystem is maturing beyond the "vibe coding" phase into structured agent infrastructure.
 
 **May 11: From Vibe Coding to Specification-First**: Three repos trending on May 11 span the emerging spec-driven development stack. Spec-Kit (3.4K stars) provides JSON-based agent specification with deterministic validation. cc-sdd (1.3K stars) enforces spec compliance during code generation inside Claude Code. GAAI-framework (2.8K stars) generates specs from natural language requirements with deterministic validation — no SDK, just Markdown + YAML + bash. The pattern: developers are realizing that AI agents without specifications produce technical debt at machine speed, and the open-source ecosystem is responding with governance-first frameworks.
+
+**May 14: Agent-Native Audio and Inference Tooling**: Three repos trending span voice synthesis and inference infrastructure. Scenema Audio (6 stars) extracts an audio diffusion transformer from LTX 2.3's 22B audiovisual model for zero-shot expressive voice cloning — a trend of "mining" capabilities from large multimodal foundation models. GemTTS (28 stars) is an agent-friendly Gemini TTS CLI in Rust supporting expressive tags ([whispers], [laughs], [warmly]) and JSON output, signaling the emergence of "agent-native" tooling built for machine consumption rather than human interfaces. Atomr Infer (142 stars) is a production-grade Rust multi-runtime inference layer with circuit breakers and distributed rate limiting, addressing the real infrastructure pain of mixing local GPU and remote API inference in agent pipelines.
 
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
@@ -171,6 +172,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/nanobot]] — 41.7K stars; ultra-lightweight personal agent in ~4K lines Python; 99% smaller than alternatives; validates minimal-code agent philosophy
 - [[entities/agent-squad]] — 7.6K stars; model-agnostic multi-agent orchestration with SupervisorAgent across Bedrock, Anthropic, OpenAI
 - [[entities/web-design-skill]] — 533 stars; transforms AI-generated pages from functional to stunning alongside cc-design in the emerging design-skills category
+- [[entities/gemtts]] — 28 stars; agent-friendly Gemini TTS CLI with expressive tags and JSON output; part of the May 14 agent-native audio tooling wave
+- [[entities/scenema-audio]] — 6 stars; zero-shot expressive voice cloning from LTX 2.3's 22B audiovisual model; represents "mining" capabilities from large multimodal models
 - [[entities/future-agi]] — 482 stars; end-to-end agent evaluation platform reflecting maturation of agent observability infrastructure
 - [[entities/mercury-agent]] — 531 stars; soul-driven personal AI agent with permission-hardened tools and CLI/Telegram multi-channel access
 - [[entities/moss-tts]] — 1,765 stars; open-source TTS with 20+ languages, 3-second voice cloning, and 180ms real-time streaming; 0.1B edge variant challenges cloud-dependent proprietary voice models

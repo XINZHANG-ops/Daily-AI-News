@@ -30,4 +30,4 @@ Mistral Ultra 2 is not trying to win benchmarks — it's trying to win procureme
 - [[sources/mistral]] — Released by Mistral AI on April 29; EU-compliant positioning vs US labs
 - [[entities/deepseek-v4]] — DeepSeek V4-Pro-Max at $1.74/M is the direct price competitor; Mistral undercuts by ~20% adjusted for quality
 - [[entities/mcp-protocol]] — Native MCP support is a differentiating feature given the recent MCP vulnerability disclosure
-- [[topics/llm_models]] — Part of the cost-performance frontier race in enterprise coding models
+- [[topics/llm_models]] — Mistral Ultra 2's 78.4% SWE-bench at €2/M tokens places it at the cost-performance frontier of enterprise coding models, proving that EU-based labs can compete on benchmark efficiency while meeting data-residency requirements that US models cannot

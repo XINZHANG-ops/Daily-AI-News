@@ -486,3 +486,35 @@ Wiki lint complete. Here's what was fixed across all four passes:
  create mode 100644 wiki/ideas/three-tier-safety-playbook.md
  create mode 100644 wiki/ideas/vertical-integration-resolving.md
  create mode 100644 wiki/sources/thinking-machines-lab.md
+[2026-05-15 01:00:01] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+All four passes of the wiki lint are complete. Here's the final summary:
+
+**Wiki state: 206 content pages** (6 topics + 26 sources + 3 timelines + 125 entities + 46 ideas)
+
+**Pass 1 — Structural Integrity**
+- Verified perfect index-file alignment: 206 files ↔ 206 index entries
+- Fixed 2 orphan pages (`gemtts`, `scenema-audio`) by adding inbound wikilinks
+- Added missing `type:` annotations to 5 entity entries in `index.md`
+- Zero broken wikilinks across all pages
+
+**Pass 2 — Wrong & Duplicate Information**
+- Added missing `slug:` to 3 timeline pages
+- Removed 70+ duplicate wikilinks across 30+ pages (keeping richer annotated connections)
+- Fixed `entities/gpt-5.4-cyber.md` which contained mixed GPT-5.5-Cyber content; created separate `entities/gpt-5.5-cyber.md` and redirected 6 wikilinks
+- Fixed `entities/tradingagents.md` invalid frontmatter (`type: repository` → `type: repo`)
+- Fixed title mismatch in `timelines/2026-05.md`
+- All 206 pages have valid YAML frontmatter with complete fields
+
+**Pass 3 — Connection Quality**
+- Strengthened annotations across 55+ entity pages and 17+ idea pages
+- Created 3 missing entity pages: `siri` (Apple voice assistant), `spud` (GPT-5.5 codename), `tradingagents` (multi-agent financial trading)
+- Expanded `topics/ai_funding.md` Evolution section with May funding wave narrative
+- All 6 topic pages have substantive `## Evolution` and `## Patterns & Insights` sections
+
+**Pass 4 — Index & Log**
+- Updated `index.md` counts: Entities 116 → 125, Ideas 44 → 46
+- Updated `Last updated` to 2026-05-15
+- Updated `last_updated` on 55+ modified pages
+- Appended comprehensive lint entry to `wiki/log.md`
+[2026-05-15 01:21:12] Wiki lint complete (exit code 0).

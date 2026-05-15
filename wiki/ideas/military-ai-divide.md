@@ -1,7 +1,7 @@
 ---
 title: "Military AI Divide"
 slug: military-ai-divide
-last_updated: 2026-05-03
+last_updated: 2026-05-15
 ---
 
 # Military AI Divide
@@ -13,7 +13,6 @@ May 1, 2026 marks the formal split of commercial AI into two irreconcilable traj
 - [[sources/anthropic]] — Labeled a "supply chain risk" by Defense Secretary Hegseth — a designation normally reserved for foreign adversaries — after refusing to accept "any lawful use" language in Pentagon contracts
 - [[sources/openai]] — Joined the Pentagon coalition with GPT-5.5 deployed on classified networks, even while restricting GPT-5.5 Cyber to verified defenders for liability reasons — a split-brain approach to military vs civilian deployment
 - [[entities/claude-security]] — Launched May 1 as the commercial alternative to military contracts; monetizes the same safety infrastructure that got Anthropic excluded from the Pentagon
-- [[topics/ai_safety]] — Five Eyes joint agent security guidance released May 1, the same day as the Pentagon deals, warning about cascading failures, excessive privileges, and accountability gaps — the very risks the military contracts enable
 - [[sources/xai]] — Musk's xAI is simultaneously in the Pentagon coalition, being sued by Musk for "abandoning its nonprofit mission" (against OpenAI), and admitting under oath to distilling from OpenAI models — the ethical rhetoric completely decoupled from operations
 - [[sources/google]] — Google's inclusion in the Pentagon coalition marks a complete reversal from the 2018 internal protest over Project Maven — a decade-long arc from "don't be evil" to classified military AI deployment, now scaled to 1M+ defense personnel on the GenAI.mil platform
 - [[sources/meta]] — Meta's absence from the Pentagon coalition (unlike its Big Tech peers) suggests its AI strategy remains consumer/advertising-facing; the ARI robotics acquisition may eventually create a separate military-adjacent track through embodied AI

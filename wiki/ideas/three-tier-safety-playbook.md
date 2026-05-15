@@ -12,7 +12,7 @@ The "three-tier" model approach — standard access for general users, verified 
 ## Evidence
 - [[entities/claude-mythos]] — Withheld from public release; restricted to ~12 US tech firms via Project Glasswing; standard/verified/permissive access tiers established the precedent
 - [[entities/openai-daybreak]] — Three GPT-5.5 variants (standard, Trusted Access, permissive red-team) targeting Anthropic Mythos; 8+ security vendor distribution partners
-- [[entities/gpt-5.4-cyber]] — OpenAI's Trusted Access for Cyber (TAC) program expanded to hundreds of organizations and EU institutions; the verified-defender tier predates Daybreak
+- [[entities/gpt-5.5-cyber]] — OpenAI's Trusted Access for Cyber (TAC) program expanded to hundreds of organizations and EU institutions; the verified-defender tier predates Daybreak
 - [[sources/anthropic]] — Anthropic's principled exclusion from Pentagon contracts is the commercial consequence of maintaining strict tiered access; EU regulators denied preview access
 - [[sources/openai]] — OpenAI imposed identical Cyber restrictions on May 1 after mocking Anthropic's Mythos restrictions as "fear-based marketing"; liability now overrides competitive posturing
 

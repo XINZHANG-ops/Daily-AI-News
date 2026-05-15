@@ -25,7 +25,7 @@ The Gemini Enterprise Agent Platform positions Google as a major player in the e
 The platform's ability to manage "thousands of agents" signals a shift from single-agent to fleet-level agent management — a necessary capability as enterprises deploy increasingly complex multi-agent systems.
 
 ## Connections
-- [[sources/google]] — Created by Google, announced at Cloud Next 2026
+- [[sources/google]] — Google launched the Enterprise Agent Platform at Cloud Next 2026 as a direct response to Microsoft's Agent 365, positioning Gemini as the orchestration layer for thousands of enterprise agents rather than a single assistant
 - [[topics/agentic_ai]] — Enterprise-scale agent management platform
 - [[entities/gemini-cli]] — Open-source terminal agent complementing the enterprise platform
 - [[topics/github_trends]] — Agent infrastructure becoming a major competitive battleground

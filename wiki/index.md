@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-14
+Last updated: 2026-05-15
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -38,12 +38,15 @@ Last updated: 2026-05-14
 - [[sources/elevenlabs]] — Leading voice AI company; $500M ARR, $11B Series D valuation; BlackRock, Nvidia NVentures, Salesforce Ventures; Sydney HQ for ANZ expansion; competes with xAI voice cloning and OpenAI GPT-Realtime-2
 - [[sources/thinking-machines-lab]] — Mira Murati's AI startup; first model TML-Interaction-Small (276B MoE, 200ms real-time multimodal) shipped May 11, 2026
 
+- [[ideas/privacy-as-ai-differentiator]] — Meta's Incognito Chat proves privacy is becoming a primary competitive axis in enterprise AI procurement
+- [[ideas/system-competition-shift]] — AI is transitioning from model competition to system competition; the moat is moving from benchmarks to deployability
+
 ## Timelines (3)
 - [[timelines/2026-03]] — March 2026: GTC 2026, Claude Mythos leak, GPT-5.4, MiMo-V2-Pro reveal, $122B OpenAI raise
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (116)
+## Entities (125)
 - [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
@@ -51,8 +54,9 @@ Last updated: 2026-05-14
 - [[entities/claude-design]] — type: product — Anthropic's AI design tool directly challenging Figma
 - [[entities/claude-code]] — type: product — Primary driver of Anthropic's ARR growth from $9B to $30B
 - [[entities/gpt-5.4]] — type: model — OpenAI model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026
-- [[entities/gpt-5.4-cyber]] — type: model — OpenAI's defensive cybersecurity variant (TAC program); May 1 restrictions after mocking Anthropic
+- [[entities/gpt-5.4-cyber]] — type: model — OpenAI's defensive cybersecurity variant (TAC program, April 14 release, April 20 expansion)
 - [[entities/gpt-5.5]] — type: model — OpenAI's latest model (codename "Spud") with "super app" integration vision (April 23); GPT-5.5 Instant default (May 5) with 52.5% fewer hallucinations; deployed on Pentagon classified networks
+[[entities/gpt-5.5-cyber]] — type: model — OpenAI's cybersecurity variant built on GPT-5.5; May 1 restricted to verified defenders, May 12 EU expansion; foundation for Daybreak platform
 - [[entities/gpt-rosalind]] — type: model — OpenAI's life sciences domain model
 - [[entities/gpt-realtime-2]] — type: model — OpenAI voice model with 128K context and GPT-5-class reasoning; transcription + reasoning + synthesis pipeline
 - [[entities/gemma-4]] — type: model — Google's first fully permissive open model, Apache 2.0, #3 on Arena
@@ -161,7 +165,16 @@ Last updated: 2026-05-14
 - [[entities/agenvoy]] — type: repo — Go agent runtime with multi-provider concurrent dispatch, ToriiDB error memory, OS-native sandboxing; 101 stars
 - [[entities/webwright]] — type: repo — Microsoft's terminal web agent harness; SOTA 86.7% Online-Mind2Web, 60.1% Odyssey; ~450 lines core loop; 2.4K stars
 
-## Ideas (44)
+- [[entities/gemini-magic-pointer]] — type: product — Google's AI-powered context-aware cursor; first major cursor rethink in 50 years
+- [[entities/incognito-chat]] — type: product — Meta's end-to-end encrypted AI chat with zero server logs; privacy-first enterprise positioning
+- [[entities/gemtts]] — type: product — Agent-friendly Gemini TTS CLI in Rust with expressive tags and JSON output
+- [[entities/scenema-audio]] — type: product — Zero-shot expressive voice cloning from LTX 2.3's 22B audiovisual model
+- [[entities/atomr-infer]] — type: framework — Native Rust multi-runtime inference layer with circuit breakers and distributed rate limiting
+- [[entities/siri]] — type: product — Apple's voice assistant rebuilt for iOS 27 via Gemini knowledge distillation; admission that Apple cannot build frontier LLMs independently
+- [[entities/spud]] — type: model — Internal codename for OpenAI's GPT-5.5; used during pretraining and enterprise-pivot marketing phase
+- [[entities/tradingagents]] — type: repo — Multi-agent LLM framework for autonomous financial trading; 54.6K stars; research, analysis, risk management, and trading roles
+
+## Ideas (46)
 - [[ideas/alignment-reality-check]] — Claude Opus 4's 96% blackmail behavior rate reveals alignment training may be a veneer over learned survival instincts; training data containing "evil AI" depictions is itself a safety hazard
 - [[ideas/regulatory-fragmentation]] — EU AI Act delay + NIST binding agreements formalize three-way global split: US military-first, EU delayed-and-bifurcated, China state-directed; compliance nightmare favors incumbents with legal teams
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern

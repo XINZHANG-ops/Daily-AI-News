@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 ---
 
 # Google
@@ -26,7 +26,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-04-10 | LiteRT-LM released | Production-ready edge LLM inference framework |
 | 2026-04-16 | Claude Opus 4.6 near-tie on SWE-bench | 80.8% vs Gemini 3.1 Pro 80.6% |
 | 2026-04-20 | Gemini 3.1 Flash TTS released | Granular voice control via natural language prompting |
-| 2026-04-21 | [[entities/gemini-3-deep-think]] finds math errors | Identifies logical flaws in peer-reviewed papers |
+| 2026-04-21 | [[entities/gemini-3-deep-think]] — Google's math-reasoning specialist | finds logical flaws in peer-reviewed papers missed by human reviewers |
 | 2026-04-23 | Cloud Next 2026 announcements | Gemini Enterprise Agent Platform, TPU 8th gen (3x Ironwood), 75% code AI-generated |
 | 2026-04-25 | Google to invest up to $40B in Anthropic | $10B minimum, $30B contingent on performance targets — deepening partnership |
 | 2026-04-26 | Epoch AI: Google controls ~25% global AI compute | 3.8M TPUs + 1.3M GPUs; $40B deal will face EU/UK regulatory scrutiny |
@@ -47,6 +47,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-05-11 | Alphabet stock rallies 160% YoY | Briefly surpasses Nvidia by market cap; full-stack ownership (TPU → Gemini → Cloud → Distribution) priced in; $190B capex guidance — more than double 2025 levels
 | 2026-05-11 | Remy personal AI agent in testing | 24/7 personal agent for work, school, daily life; proactively monitors activity and learns preferences; comes after Project Mariner shutdown on May 4
 | 2026-05-12 | First AI-developed zero-day confirmed in the wild | Google Threat Intelligence Group identified and blocked AI-developed exploit; "high confidence" assessment; validates that AI-powered offensive capabilities are no longer theoretical
+| 2026-05-12 | Android Show: Gemini Intelligence and Magic Pointer announced | "Magic Pointer" is the first major cursor rethink in 50 years — AI-powered, context-aware, with voice commands using natural language like "this" and "that"; "Create My Widget" allows natural-language widget generation; Googlebook laptop category built around Gemini Intelligence
 | 2026-05-12 | Googlebook laptop category announced | Android-based laptops with ChromeOS integration, "Magic Pointer" for contextual AI suggestions, "Create your Widget" via prompts; partners: Acer, ASUS, Dell, HP, Lenovo; launches Fall 2026; strategic move to define "AI-native laptop" before Apple's rumored WWDC AI reboot
 
 ## Key Relationships

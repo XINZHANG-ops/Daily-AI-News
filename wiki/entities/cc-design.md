@@ -24,6 +24,6 @@ cc-design is a high-fidelity HTML design and prototype guidance skill for AI age
 cc-design represents the emerging category of "design skills" for AI coding agents. Inspired by Claude Design (Anthropic's tool targeting Figma workflows), it enables AI agents to produce higher quality HTML/CSS beyond basic functionality. This reflects a broader trend where AI coding tools are expanding from code correctness to design excellence — bridging the gap between "it works" and "it looks professional."
 
 ## Connections
-- [[entities/claude-design]] — cc-design is inspired by Claude Design's approach to high-fidelity prototyping
+- [[entities/claude-design]] — cc-design explicitly forked Claude Design's high-fidelity prototyping philosophy into an open-source implementation, proving that proprietary AI design tools catalyze open-source alternatives rather than preventing them
 - [[topics/github_trends]] — 603 stars reflects growing interest in design skills for AI agents
 - [[topics/agentic_ai]] — Design skills extending agent capabilities beyond code to visual output

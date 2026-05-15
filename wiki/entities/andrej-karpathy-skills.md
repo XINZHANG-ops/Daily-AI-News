@@ -26,5 +26,5 @@ This repo represents a new category: "prompt engineering as configuration." Inst
 - [[entities/claude-code]] — The repo specifically targets Claude Code behavior improvement; directly addresses the quality regression issues Anthropic acknowledged in April 2026
 - [[entities/symphony]] — Complements Symphony's fleet-level orchestration with individual agent behavior optimization; Symphony manages agents at scale, Karpathy principles make each agent more reliable
 - [[entities/context-mode]] — Both address agent quality from different angles: Karpathy principles improve agent decision-making, context-mode reduces noise so agents make better decisions
-- [[ideas/agent-democratization]] — 105K stars for a single config file shows that agent improvement doesn't require complex infrastructure; the lowest-friction path wins
+- [[ideas/agent-democratization]] — 105K stars for a single YAML config file demonstrates that the agent improvement frontier belongs to simplicity, not complexity; when developers can enhance agents by editing human-readable skills rather than training models, the barrier to entry collapses
 - [[topics/github_trends]] — Represents the "configuration over code" trend in agent optimization; one file, four principles, massive adoption

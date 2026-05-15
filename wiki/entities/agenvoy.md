@@ -30,6 +30,6 @@ The MCP client adapter and 7-provider support show that interoperability and mod
 ## Connections
 - [[topics/github_trends]] — Agenvoy's 101 stars show Go-based agent runtimes gaining traction in the infrastructure layer
 - [[entities/mcp-protocol]] — MCP client adapter shows the protocol has become a default integration target for new agent projects
-- [[ideas/mcp-infrastructure-battleground]] — Agenvoy's MCP support is part of the broader pattern confirming MCP as the new API gateway for AI agents
+- [[ideas/mcp-infrastructure-battleground]] — Agenvoy's native MCP support confirms that new agent infrastructure projects now treat MCP as the default integration layer, not an optional add-on — the protocol has crossed from experimental to foundational
 - [[entities/frona]] — Both launched the same week with MCP support and multi-provider architectures; the open-source agent stack converges on interoperability
 - [[topics/agentic_ai]] — ToriiDB's self-improving error memory represents a maturation in agent state management: agents that learn from their own failures without human intervention

@@ -28,4 +28,4 @@ Serena advances the coding agent ecosystem by providing semantic understanding r
 - [[entities/mcp-protocol]] — Built on the MCP protocol with 150M+ installs; Serena is a showcase of MCP's evolution from simple tool servers to semantic code infrastructure
 - [[entities/claude-code]] — Serena provides the semantic code understanding layer that coding agents like Claude Code need for reliable refactoring across large codebases
 - [[entities/codex]] — Competing coding agents benefit from Serena's language-agnostic semantic analysis; lowers the barrier for any agent to perform sophisticated code operations
-- [[topics/agentic_ai]] — Part of the agent infrastructure layer maturing beyond raw model capabilities to domain-specific tooling
+- [[topics/agentic_ai]] — Serena represents the maturation of agent infrastructure from raw model access to domain-specific semantic tooling: rather than exposing a general-purpose LLM, it provides structured memory and reasoning primitives that make agents reliable in enterprise settings where hallucination is a liability

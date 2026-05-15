@@ -28,5 +28,5 @@ The MCP support positions it within the dominant agent protocol ecosystem, while
 
 ## Connections
 - [[topics/github_trends]] — Trending May 1 with 151 stars
-- [[entities/mcp-protocol]] — Built-in MCP support
-- [[ideas/agent-democratization]] — Lightweight Go SDK lowers bar for building production agents
+- [[entities/mcp-protocol]] — The Open Agent SDK's built-in MCP support signals that Go developers building production agents now expect protocol-native tooling rather than adapter-based integration, accelerating MCP's transition from experimental standard to infrastructure default
+- [[ideas/agent-democratization]] — A lightweight Go SDK specifically for production agents lowers the infrastructure barrier for developers who prefer compiled languages and static binaries, expanding agent democratization beyond the Python-centric AI community

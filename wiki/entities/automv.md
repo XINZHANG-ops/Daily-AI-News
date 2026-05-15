@@ -26,6 +26,6 @@ AutoMV demonstrates the maturation of multi-agent architectures for creative pro
 
 ## Connections
 - [[entities/mova]] — Both tackle AI video generation; MOVA provides synchronized audio-video generation as a foundation model while AutoMV orchestrates multiple components into complete music videos
-- [[entities/qwen-3-6]] — Uses Qwen-Wan 2.2 for lip-sync, demonstrating how Chinese open-source models are becoming components in global AI creative pipelines
+- [[entities/qwen-3-6]] — AutoMV's use of Qwen-Wan 2.2 for lip-sync reveals a supply-chain shift: Chinese open-source models are no longer just domestic alternatives but foundational components in global creative AI pipelines, integrated by international developers who value cost efficiency over brand recognition
 - [[topics/agentic_ai]] — Exemplifies the multi-agent orchestration pattern where specialized agents (Writer, Director, Verifier) collaborate on complex creative tasks
 - [[ideas/application-layer-shift]] — AutoMV is an application-layer composition of existing models rather than a new foundation model; the value is in the orchestration, not the raw capability

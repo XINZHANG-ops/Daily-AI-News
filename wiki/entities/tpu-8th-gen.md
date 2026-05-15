@@ -25,7 +25,7 @@ TPU 8th generation represents Google's continued investment in AI-specific infra
 Google's TPU strategy is multifaceted: serving as infrastructure for Google's own AI products, offering as a cloud service through Google Cloud, and providing as a foundation for partnerships (like Anthropic's multi-gigawatt TPU deal). The TPU 8t and 8i variants likely address different market segments (training vs. inference).
 
 ## Connections
-- [[sources/google]] — Created by Google, powering Google's AI infrastructure
+- [[sources/google]] — TPU 8th generation (3x Ironwood performance) is the compute substrate powering Google's AI infrastructure and the Anthropic multi-gigawatt partnership — Google's bet that its custom silicon will outpace NVIDIA's Blackwell successor in the agentic AI era
 - [[sources/anthropic]] — Anthropic's multi-gigawatt TPU deal with Google/Broadcom for 2027+ infrastructure
 - [[sources/nvidia]] — Competition in AI chip market; NVIDIA GPUs vs. Google TPUs
 - [[topics/ai_funding]] — AI infrastructure investment driving capital allocation

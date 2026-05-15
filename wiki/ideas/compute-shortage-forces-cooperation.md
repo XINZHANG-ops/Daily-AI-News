@@ -1,7 +1,7 @@
 ---
 title: "Compute Shortage Forces Cooperation"
 slug: compute-shortage-forces-cooperation
-last_updated: 2026-05-07
+last_updated: 2026-05-15
 ---
 
 # Compute Shortage Forces Cooperation
@@ -12,10 +12,6 @@ The compute shortage in frontier AI has become so severe that even ideological e
 This is not a friendship. It is a structural imperative: when GPU/TPU supply is the binding constraint on trillion-dollar valuations, even the fiercest rivals become interdependent.
 
 ## Evidence
-- [[sources/anthropic]] — Anthropic's multi-gigawatt TPU deal with Google/Broadcom (from 2027) wasn't enough to address immediate capacity constraints; the SpaceX deal provides 300+ MW now, addressing the service reliability issues that had been causing outages
-- [[sources/spacex]] — SpaceX gains diversified revenue from its Colossus 1 data center while keeping a strategic toehold in AI; the xAI-to-SpaceXAI rebrand consolidates Musk's bets under one roof
-- [[sources/xai]] — xAI is dissolved and rebranded as SpaceXAI, ending its standalone identity; Musk impressed by Anthropic's team after previously criticizing the company represents a reversal driven by operational reality, not sentiment
-- [[topics/ai_funding]] — Anthropic's $200B Google Cloud commitment + $50B raise at $900B + SpaceX compute deal reveals the company is locking in every available watt of power; compute access is now a survival strategy, not a growth strategy
 - [[topics/ai_companies]] — The Anthropic-SpaceX deal proves that compute shortage overrides competitive rivalries; OpenAI's 10GW commitment and Anthropic's multi-gigawatt TPU deal show all frontier labs are scrambling for power
 
 ## Implications

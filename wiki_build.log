@@ -691,3 +691,24 @@ Wiki ingest complete for **2026-05-13**.
 - `wiki/index.md` — All new pages catalogued
 - `wiki/processed.json` — Appended `2026-05-13`
 - `wiki/log.md` — Append-only ingest entry recorded
+Ingest of 2026-05-14 is complete. Here's what was done:
+
+**New entities created (5):**
+- `entities/gemini-magic-pointer.md` — Google's AI-powered context-aware cursor
+- `entities/incognito-chat.md` — Meta's E2E-encrypted AI chat with zero server logs
+- `entities/gemtts.md` — Agent-friendly Gemini TTS CLI in Rust
+- `entities/scenema-audio.md` — Zero-shot expressive voice cloning from LTX 2.3
+- `entities/atomr-infer.md` — Rust multi-runtime inference layer with circuit breakers
+
+**New ideas created (2):**
+- `ideas/privacy-as-ai-differentiator.md` — Meta's Incognito Chat as privacy-first competitive play
+- `ideas/system-competition-shift.md` — AI moving from model competition to system competition
+
+**Existing pages updated:**
+- **Topics:** agentic_ai, ai_companies, ai_funding, ai_safety, llm_models, github_trends
+- **Sources:** anthropic (overtakes OpenAI in adoption, Uber cost story), openai (Daybreak partners expanded), google (Magic Pointer, Android Show), meta (Incognito Chat), mistral (cyber model for banks)
+- **Entities:** claude-code (4% GitHub commits, Uber costs), openai-daybreak (8+ partners), googlebook (Magic Pointer + Create My Widget)
+- **Ideas:** regulatory-fragmentation, eu-cyber-access-gap
+- **Timeline:** 2026-05.md Week 2 extended with May 14 narrative
+
+**Index & metadata:** `index.md`, `processed.json`, and `log.md` all updated.

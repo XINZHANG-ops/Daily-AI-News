@@ -27,4 +27,4 @@ Agent Squad sits in the growing "agent orchestration" layer between raw model AP
 - [[entities/symphony]] — both address agent orchestration, but Symphony is OpenAI-centric while Agent Squad is model-agnostic across Bedrock, Anthropic, and OpenAI
 - [[entities/ruflo]] — Ruflo orchestrates 100+ Claude Code swarms at enterprise scale; Agent Squad is a general-purpose framework for smaller teams across any model provider
 - [[sources/openai]] — supports OpenAI models alongside Anthropic and Bedrock, reflecting demand for multi-provider orchestration
-- [[sources/anthropic]] — Claude is one of the models Agent Squad can route to; framework-agnostic design avoids Claude-only lock-in
+- [[sources/anthropic]] — Agent Squad's framework-agnostic routing treats Claude as one option among many, reflecting the market reality that enterprise buyers refuse single-vendor lock-in even for best-in-class models

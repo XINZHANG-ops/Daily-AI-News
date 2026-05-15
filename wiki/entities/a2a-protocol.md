@@ -25,6 +25,6 @@ A2A has emerged as a key standard for agent interoperability, with cross-vendor 
 
 ## Connections
 - [[sources/google]] — Google created A2A to standardize agent-to-agent communication; 150+ organizations and 22K stars make it a strategic bet on protocol-level ecosystem control
-- [[entities/mcp-protocol]] — Complementary protocol for agent-tool interaction
-- [[topics/agentic_ai]] — Foundation for multi-agent orchestration
+- [[entities/mcp-protocol]] — A2A handles agent-to-agent communication while MCP handles agent-to-tool integration; together they form the two-protocol foundation of the emerging agent internet, with A2A addressing orchestration and MCP addressing execution
+- [[topics/agentic_ai]] — A2A's one-year anniversary milestone (150+ organizations, 22K GitHub stars, Azure and Bedrock deployment) proves multi-agent orchestration has moved from research curiosity to production infrastructure
 - [[topics/github_trends]] — 22K stars demonstrates adoption

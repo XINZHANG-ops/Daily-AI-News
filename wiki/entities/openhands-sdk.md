@@ -25,4 +25,4 @@ OpenHands SDK represents the trend toward modular, production-grade agent framew
 
 ## Connections
 - [[topics/github_trends]] — 3.2k stars in initial release reflects strong developer interest in modular agent frameworks
-- [[entities/claude-code]] — Both are agent frameworks for coding tasks; OpenHands SDK provides an open alternative
+- [[entities/claude-code]] — OpenHands SDK and Claude Code both target the terminal-native coding-agent workflow, but OpenHands pursues an open-source, model-agnostic architecture while Claude Code optimizes for Anthropic's proprietary model stack — the split reflects the broader market tension between open infrastructure and integrated performance

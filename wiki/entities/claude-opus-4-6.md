@@ -23,7 +23,7 @@ Claude Opus 4.6 is Anthropic's flagship model released in early April 2026, achi
 Claude Opus 4.6's near-tie with Gemini 3.1 Pro on SWE-bench demonstrated frontier coding convergence. The 0.2 percentage point gap signaled that benchmark ceilings were being reached — pushing further required fundamentally different approaches. Opus 4.7 addressed this with cyber safeguards derived from Claude Mythos safety research.
 
 ## Connections
-- [[sources/anthropic]] — Created by Anthropic; achieved SWE-bench leadership before being surpassed by Opus 4.7
+- [[sources/anthropic]] — Claude Opus 4.6 briefly achieved SWE-bench leadership (80.8%) before Opus 4.7 surpassed it (87.6%), demonstrating Anthropic's aggressive internal model iteration cycle — the same lab releases competing models against itself within weeks
 - [[entities/gemini-3-1-pro]] — Near-tie on SWE-bench; both models competing for enterprise coding market
 - [[entities/claude-opus-4-7]] — Direct successor with 87.6% SWE-bench, adding cyber safeguards from Claude Mythos research
 - [[topics/llm_models]] — Claude Opus family flagship before Opus 4.7 release

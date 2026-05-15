@@ -1,7 +1,7 @@
 ---
 title: "Safety-Restricted Releases"
 slug: safety-restricted-releases
-last_updated: 2026-05-12
+last_updated: 2026-05-15
 ---
 
 # Safety-Restricted Releases
@@ -10,11 +10,7 @@ last_updated: 2026-05-12
 Claude Mythos established a new category: AI models restricted not because humans might misuse them, but because the model's own capabilities pose unprecedented risks. This represents a fundamental shift from "misuse risk" to "capability risk" as the gating factor for public release.
 
 ## Evidence
-- [[entities/claude-mythos]] — Withheld from public release; described as "too dangerous" due to its ability to discover unknown vulnerabilities that "far outpace defenders"
-- [[entities/gpt-5.4-cyber]] — OpenAI chose to release a similar defensive cybersecurity model to vetted defenders rather than withholding entirely — a different approach to similar concerns
-- [[sources/anthropic]] — Classified Claude Mythos as "unprecedented cybersecurity risk" despite commercial pressure to release; April 22 saw Bank of England governor warn it could "crack the whole cyber-risk world open" — the first time an AI model triggered simultaneous emergency responses from central banks and intelligence agencies globally
 - [[entities/mcp-protocol]] — April 21, Anthropic called a critical RCE vulnerability affecting 150M+ installations "expected behavior" — treating security risk as acceptable feature
-- [[sources/openai]] — April 27 analysis revealed GPT-5.5's 49-day release cycle was enterprise procurement lock-in strategy; by May 1, after mocking Anthropic's Mythos restrictions, OpenAI imposed identical restrictions on GPT-5.5 Cyber — liability now overrides competitive posturing for both labs
 - [[entities/arc-agi-3]] — ARC-AGI-3 <1% results add a third dimension: the models being restricted for being "too capable" simultaneously cannot reason about novel situations at all
 - [[topics/llm_models]] — The reasoning-ceiling paradox: models simultaneously too dangerous to release AND incapable of basic reasoning
 
@@ -30,10 +26,9 @@ By May 12, 2026, the safety-restricted release model had acquired a geopolitical
 ## Connections
 - [[sources/anthropic]] — Established the precedent with Claude Mythos
 - [[topics/ai_safety]] — Central to the safety debate; Musk vs Altman trial adds legal dimension
-- [[entities/claude-mythos]] — The model that triggered the first capability-based restriction
 - [[sources/openai]] — GPT-5.5's procurement lock-in strategy vs Anthropic's model restriction — two approaches that converged on May 1 when OpenAI imposed identical Cyber restrictions
 - [[ideas/institutional-gap]] — AI capability outpaces governance frameworks
 - [[ideas/eu-cyber-access-gap]] — The EU gap is the geopolitical cost of capability-based restrictions; Anthropic's safety-first stance creates structural disadvantage for allies who cannot evaluate AI-powered threats
 - [[entities/claude-mythos]] — Mythos restricted to ~12 US tech firms; EU regulators denied preview access despite 4-5 meetings and Bundesbank demands; the restriction appears driven by liability control as much as safety
-- [[entities/gpt-5.4-cyber]] — OpenAI's EU cyber access expansion builds geopolitical relationships through model access, contrasting with Anthropic's restriction that alienates a major economic bloc
+- [[entities/gpt-5.5-cyber]] — OpenAI's EU cyber access expansion builds geopolitical relationships through model access, contrasting with Anthropic's restriction that alienates a major economic bloc
 - [[sources/google]] — Google's confirmation of AI-developed zero-days in the wild makes the EU access gap an immediate security concern; attackers already have AI-powered offensive capabilities while EU defenders lack equivalent tools

@@ -1,7 +1,7 @@
 ---
 title: "Commodity Inference Fragmentation"
 slug: commodity-inference-fragmentation
-last_updated: 2026-05-12
+last_updated: 2026-05-15
 ---
 
 # Commodity Inference Fragmentation
@@ -12,9 +12,7 @@ The AI industry is bifurcating into two parallel universes: premium reasoning mo
 ## Evidence
 - [[entities/deepseek-v4]] — V4-Flash at $0.28/M output tokens is 100x cheaper than GPT-5.5 (~$30/M) while scoring 78% on SWE-bench
 - [[entities/qwen-3-6]] — 3B active parameters scoring 73.4% SWE-bench on a consumer RTX 4090; proving that size isn't everything
-- [[sources/deepseek]] — V4-Pro-Max at $1.74/M tokens (2.6x cheaper than Claude Opus 4.7) validates cost-performance as a distinct competitive axis
 - [[sources/alibaba]] — Qwen 3.6-Plus (1M context) and 3.6-35B-A3B demonstrate efficiency-first architecture as viable path to frontier quality
-- [[topics/llm_models]] — "The week ends with a clear bifurcation: premium reasoning (Opus, GPT-5.5) vs commodity inference (DeepSeek, Qwen, Kimi)"
 
 ## Implications
 The 100x cost gap between commodity and premium inference creates a two-tier purchasing decision for enterprises. Tasks that require 88.7% SWE-bench (research, critical code review) justify premium pricing. Tasks that only need 73-78% SWE-bench (customer support, content moderation, internal tooling, feature development) can use commodity models at 1% of the cost. This means the "best model wins" narrative collapses — the winning model depends entirely on the task.

@@ -31,4 +31,4 @@ GitHub's move is defensive — they want to be the default MCP for code operatio
 - [[entities/aws-mcp-server]] — AWS MCP Server GA the same week as GitHub secret scanning GA confirms "security-as-MCP" is becoming a recognized product category
 - [[topics/agentic_ai]] — Secret scanning before commit/PR is the kind of reliable agent workflow that makes MCP indispensable; agents need security tools with structured API access, not just documentation
 - [[ideas/mcp-infrastructure-battleground]] — GitHub's defensive positioning and AWS's infrastructure play both converge on MCP as the new API gateway for AI agents
-- [[sources/microsoft]] — Microsoft's Agent 365 manages GitHub Copilot CLI among other agents; GitHub MCP Server strengthens the Microsoft ecosystem's agent-security posture
+- [[sources/microsoft]] — GitHub MCP Server tightens the Microsoft ecosystem's agent-security posture by giving Agent 365 a standards-based way to audit and control how Copilot CLI and other GitHub agents access tools — transforming GitHub from a code host into a governed agent infrastructure provider

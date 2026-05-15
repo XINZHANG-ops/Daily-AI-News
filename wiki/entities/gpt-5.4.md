@@ -8,7 +8,7 @@ last_updated: 2026-05-14
 # GPT-5.4
 
 ## What It Is
-GPT-5.4 is OpenAI's model family released in March 2026, available in multiple variants optimized for different use cases: Thinking (reasoning), Mini/Nano (cost efficiency), and Cyber (cybersecurity). Superseded by [[entities/gpt-5.5]] as OpenAI's flagship in April 2026.
+GPT-5.4 is OpenAI's model family released in March 2026, available in multiple variants optimized for different use cases: Thinking (reasoning), Mini/Nano (cost efficiency), and Cyber (cybersecurity). Superseded by [[entities/gpt-5.5]] — replaced as OpenAI's flagship in April 2026 with improved reasoning and system integration, shifting the model family from GPT-5.4's multi-variant strategy to a unified flagship approach.
 
 ## Key Facts
 
@@ -31,5 +31,5 @@ GPT-5.4 Cyber represents OpenAI's response to Anthropic's Claude Mythos in the c
 
 ## Connections
 - [[sources/openai]] — GPT-5.4 was OpenAI's fastest family release cycle, establishing the multi-variant strategy (Thinking, Mini, Nano, Cyber) before GPT-5.5 replaced it as flagship
-- [[entities/claude-mythos]] — Competing cybersecurity model from Anthropic
+- [[entities/claude-mythos]] — GPT-5.4 Cyber and Claude Mythos created the defensive-cybersecurity frontier-model category: both are too capable for general release, both require vetting, and both signal that cybersecurity is becoming a specialized model domain distinct from general chatbot competition
 - [[entities/gpt-5.4-cyber]] — The cybersecurity variant
