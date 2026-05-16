@@ -557,3 +557,9 @@ Wiki lint complete. Here's what was fixed:
 **Log appended**
 - Added `[2026-05-16] wiki lint | comprehensive health check` entry to `wiki/log.md`
 [2026-05-16 01:06:28] Wiki lint complete (exit code 0).
+[main 19c57f1] wiki: lint 2026-05-16
+ 26 files changed, 528 insertions(+), 22 deletions(-)
+ create mode 100644 wiki/entities/alphora.md
+ create mode 100644 wiki/entities/claude-cowork.md
+ create mode 100644 wiki/entities/kohakuterrarium.md
+ create mode 100644 wiki/ideas/safe-ai-enterprise-narrative.md

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 16, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 16, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/KevRojo/Dulus" class="card-title" target="_blank">KevRojo/Dulus</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 215 stars</div>
+                                <div class="meta-item"><span>🍴</span> 28 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Lightweight autonomous AI agent inspired by Claude Code. Multi-provider support (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP integration, voice input, Telegram bridge, and sub-agents. A Python reimplementation that works with any model.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">受Claude Code启发的轻量级自主AI智能体。支持多提供商（Claude、GPT、Gemini、DeepSeek、Qwen），内置27种工具，MCP集成，语音输入，Telegram桥接和子智能体。可与任何模型配合使用的Python重新实现。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/anvie/evonic" class="card-title" target="_blank">anvie/evonic</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 97 stars</div>
+                                <div class="meta-item"><span>🍴</span> 12 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open agentic AI platform for designing, deploying, and orchestrating intelligent agents. Features multi-agent swarms, workplace execution (local/remote/cloud), agent-to-agent communication, heuristic safety detection, and channels (Telegram, WhatsApp, Discord, Slack).</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">用于设计、部署和编排智能智能体的开放式智能体AI平台。特性包括多智能体集群、工作场所执行（本地/远程/云端）、智能体间通信、启发式安全检测和渠道支持（Telegram、WhatsApp、Discord、Slack）。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Negai-ai/AgentClaw" class="card-title" target="_blank">Negai-ai/AgentClaw</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 92 stars</div>
+                                <div class="meta-item"><span>🍴</span> 9 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Declarative agent workflow framework that turns one-sentence ideas into reusable capabilities. Features computer/browser control, code/file operations, MCP integration, knowledge bases, memory, tracing, scheduling, and API/MCP publishing.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">声明式智能体工作流框架，将一句话的想法转化为可复用的能力。特性包括计算机/浏览器控制、代码/文件操作、MCP集成、知识库、记忆、追踪、调度以及API/MCP发布。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">GeekWire</span>
+                    <div class="news-time">2026-05-16</div>
+                    <a href="https://www.geekwire.com/2026/microsoft-adds-more-former-ai2-researchers-to-its-superintelligence-team/" class="card-title" target="_blank" data-lang="en">Microsoft Hires Core OLMo Team from Allen Institute for Superintelligence Push</a>
+                    <a href="https://www.geekwire.com/2026/microsoft-adds-more-former-ai2-researchers-to-its-superintelligence-team/" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软从艾伦研究所挖走OLMo核心团队，加速超级智能布局</a>
+                    <p class="card-description" data-lang="en">Microsoft hired at least 10 researchers from Ai2 including former CEO Ali Farhadi, COO Sophie Lebrecht, and research leaders Hanna Hajishirzi and Ranjay Krishna. They join Mustafa Suleyman's Superintelligence team to develop humanist superintelligence systems.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软从Ai2雇佣了至少10名研究人员，包括前CEO Ali Farhadi、COO Sophie Lebrecht以及研究负责人Hanna Hajishirzi和Ranjay Krishna。他们将加入Mustafa Suleyman的超级智能团队，开发人本主义超级智能系统。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Blaze Trends</span>
+                    <div class="news-time">2026-05-16</div>
+                    <a href="https://blazetrends.com/youtube-opens-ai-deepfake-detection-to-all-adults-as-uk-regulations-tighten/" class="card-title" target="_blank" data-lang="en">YouTube Expands AI Deepfake Detection to All Adult Users</a>
+                    <a href="https://blazetrends.com/youtube-opens-ai-deepfake-detection-to-all-adults-as-uk-regulations-tighten/" class="card-title" target="_blank" data-lang="zh" style="display: none;">YouTube将AI深度伪造检测扩展至所有成年用户</a>
+                    <p class="card-description" data-lang="en">YouTube expanded its AI deepfake detection tool to all users 18+. The system scans for synthetic media mimicking biometric signatures and automates matches using existing likeness data. Previously limited to YouTube Partner Program creators.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">YouTube将其AI深度伪造检测工具扩展至所有18岁以上用户。该系统扫描模仿生物特征签名的合成媒体，并使用现有肖像数据自动匹配。此前仅限于YouTube合作伙伴计划创作者。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">PublicTechnology</span>
+                    <div class="news-time">2026-05-15</div>
+                    <a href="https://www.publictechnology.net/2026/05/15/society-and-welfare/government-ai-chatbot-goes-live-across-gov-uk-app/" class="card-title" target="_blank" data-lang="en">UK Government's Claude-Powered Chatbot Goes Live on GOV.UK App</a>
+                    <a href="https://www.publictechnology.net/2026/05/15/society-and-welfare/government-ai-chatbot-goes-live-across-gov-uk-app/" class="card-title" target="_blank" data-lang="zh" style="display: none;">英国政府基于Claude的智能聊天机器人在GOV.UK应用上线</a>
+                    <p class="card-description" data-lang="en">After 2.5 years of development, the UK government's AI chatbot integrated into the GOV.UK App (563K users). Built on Anthropic's Claude LLM, it provides instant answers from 80,000 pages of official guidance with 90% accuracy. Top queries: tax, driving, transport, benefits.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">经过2.5年开发，英国政府的AI聊天机器人已集成到GOV.UK应用（56.3万用户）。基于Anthropic的Claude大语言模型构建，可从8万页官方指南提供即时解答，准确率达90%。热门查询：税务、驾驶、交通、福利。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">VentureBeat</span>
+                    <div class="news-time">2026-05-02</div>
+                    <a href="https://venturebeat.com/2026/05/02/mistral-medium-3-5-unified-flagship-chat-reasoning-code-xcxwbn/" class="card-title" target="_blank" data-lang="en">Mistral Medium 3.5 Consolidates Chat, Reasoning, and Code in Single 128B Model</a>
+                    <a href="https://venturebeat.com/2026/05/02/mistral-medium-3-5-unified-flagship-chat-reasoning-code-xcxwbn/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Mistral Medium 3.5将聊天、推理和代码整合到单一128B模型中</a>
+                    <p class="card-description" data-lang="en">Mistral released Medium 3.5, a 128B dense model replacing three previous products (Medium 3.1, Magistral, Devstral 2). Features 256K context window, configurable reasoning_effort toggle, runs on 4 GPUs, scores 77.6% on SWE-Bench Verified. Pricing: $1.50/$7.50 per million tokens.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Mistral发布Medium 3.5，一个128B密集模型，取代三个先前产品（Medium 3.1、Magistral、Devstral 2）。特性包括256K上下文窗口、可配置推理强度开关、可在4个GPU上运行，SWE-Bench Verified得分77.6%。定价：每百万token输入$1.50，输出$7.50。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-05-11</div>
+                    <a href="https://openai.com/index/openai-launches-the-deployment-company/" class="card-title" target="_blank" data-lang="en">OpenAI Launches Deployment Company with $4B+ Investment</a>
+                    <a href="https://openai.com/index/openai-launches-the-deployment-company/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI以超40亿美元投资成立部署公司</a>
+                    <p class="card-description" data-lang="en">OpenAI launched the OpenAI Deployment Company to help businesses build around intelligence. Acquired Tomoro (150 Forward Deployed Engineers), led by TPG with partners including SoftBank, Goldman Sachs, Bain Capital. Initial investment over $4 billion.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI成立OpenAI部署公司，帮助企业围绕智能构建。收购Tomoro（150名前线部署工程师），由TPG领投，合作伙伴包括软银、高盛、贝恩资本。初始投资超40亿美元。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Anthropic</span>
+                    <div class="news-time">2026-05-11</div>
+                    <a href="https://code.claude.com/docs/en/whats-new/2026-w19" class="card-title" target="_blank" data-lang="en">Claude Code v2.1.139 Introduces Agent View and Goal Command</a>
+                    <a href="https://code.claude.com/docs/en/whats-new/2026-w19" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude Code v2.1.139推出智能体视图和目标命令</a>
+                    <p class="card-description" data-lang="en">Claude Code released Agent View for managing multiple sessions, `/goal` command for completion conditions, and v2.1.142 adds plugin root-level SKILL.md support. Fast mode now uses Opus 4.7 by default. Agent View available for Pro, Max, Team, Enterprise.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Code发布智能体视图用于管理多个会话，`/goal`命令用于设定完成条件，v2.1.142增加插件根级SKILL.md支持。快速模式现在默认使用Opus 4.7。智能体视图面向Pro、Max、Team和企业用户。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CBS Colorado</span>
+                    <div class="news-time">2026-05-14</div>
+                    <a href="https://www.cbsnews.com/colorado/news/ai-regulation-colorado-governor-signs-law/" class="card-title" target="_blank" data-lang="en">Colorado Governor Signs New AI Regulation Bill Replacing 2024 Law</a>
+                    <a href="https://www.cbsnews.com/colorado/news/ai-regulation-colorado-governor-signs-law/" class="card-title" target="_blank" data-lang="zh" style="display: none;">科罗拉多州州长签署新AI监管法案取代2024年法律</a>
+                    <p class="card-description" data-lang="en">Colorado Governor Jared Polis signed SB-26-189, the 'AI Act', replacing the state's 2024 AI law. Mandates notifying individuals when AI is used in consequential decisions (employment, healthcare, housing). Takes effect August 12, 2026.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">科罗拉多州州长Jared Polis签署SB-26-189'AI法案'，取代该州2024年AI法律。强制要求在就业、医疗、住房等 consequential 决策中使用AI时通知个人。将于2026年8月12日生效。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Anthropic</span>
+                    <div class="news-time">2026-05-06</div>
+                    <a href="https://www.anthropic.com/news/higher-limits-spacex" class="card-title" target="_blank" data-lang="en">Anthropic Announces Higher Claude Limits and SpaceX Compute Partnership</a>
+                    <a href="https://www.anthropic.com/news/higher-limits-spacex" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic宣布提高Claude使用限制并与SpaceX达成计算合作</a>
+                    <p class="card-description" data-lang="en">Anthropic doubled Claude Code's five-hour rate limits, removed peak hours reductions, and raised API rate limits. SpaceX partnership provides 300+ megawatts (220K+ NVIDIA GPUs) at Colossus 1 data center. Also announced 5 GW deals with Amazon and Google.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic将Claude Code的五小时速率限制翻倍，取消高峰时段削减，并提高API速率限制。与SpaceX的合作在Colossus 1数据中心提供300+兆瓦（22万+英伟达GPU）。还宣布与亚马逊和谷歌达成5吉瓦协议。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">May 16, 2026 marks a consolidation phase in the AI industry—companies are moving from model releases to infrastructure wars and regulatory positioning. Microsoft absorbing the Ai2 team signals the end of the 'partnership era' with OpenAI; every major player is now building owned IP. The compute arms race escalated with Anthropic's SpaceX deal and multi-gigawatt commitments from Amazon/Google, suggesting these companies are betting on sustained demand through 2027-2028. Meanwhile, the regulatory landscape is fragmenting: Colorado's AI Act, UK's government chatbot deployment, and YouTube's deepfake expansion show jurisdictions racing ahead of federal standards. In the product space, 'agentic' is the new default—Claude Code's Agent View, Mistral's Work Mode, and the three trending repos (Dulus, AgentClaw, evonic) all point to the same shift: from chat interfaces to autonomous systems that persist across sessions. The real narrative isn't any single announcement—it's the industry-wide recognition that AI infrastructure, regulation, and product architecture are converging faster than expected, and the window for establishing market position is narrowing.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年5月16日标志着AI行业的整合阶段——企业正从模型发布转向基础设施战争和监管定位。微软吸收Ai2团队预示着与OpenAI'合作伙伴时代'的结束；每个主要参与者现在都在构建自有IP。随着Anthropic与SpaceX的交易以及亚马逊/谷歌的多吉瓦承诺，计算军备竞赛升级，表明这些公司押注2027-2028年的持续需求。与此同时，监管格局正在分裂：科罗拉多州的AI法案、英国政府聊天机器人的部署以及YouTube的深度伪造扩展显示各司法管辖区正在超越联邦标准。在产品领域，'智能体'成为新默认值——Claude Code的智能体视图、Mistral的工作模式以及三个热门仓库（Dulus、AgentClaw、evonic）都指向相同的转变：从聊天界面到跨会话持久存在的自主系统。真正的叙事不是任何单一公告——而是整个行业认识到AI基础设施、监管和产品架构的融合速度比预期更快，建立市场地位的窗口正在收窄。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+{
+  "date": "2026-05-16",
+  "github_repos": [
+    {
+      "name": "KevRojo/Dulus",
+      "url": "https://github.com/KevRojo/Dulus",
+      "description": {
+        "en": "Lightweight autonomous AI agent inspired by Claude Code. Multi-provider support (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP integration, voice input, Telegram bridge, and sub-agents. A Python reimplementation that works with any model.",
+        "zh": "受Claude Code启发的轻量级自主AI智能体。支持多提供商（Claude、GPT、Gemini、DeepSeek、Qwen），内置27种工具，MCP集成，语音输入，Telegram桥接和子智能体。可与任何模型配合使用的Python重新实现。"
+      },
+      "stars": "215",
+      "forks": "28"
+    },
+    {
+      "name": "anvie/evonic",
+      "url": "https://github.com/anvie/evonic",
+      "description": {
+        "en": "Open agentic AI platform for designing, deploying, and orchestrating intelligent agents. Features multi-agent swarms, workplace execution (local/remote/cloud), agent-to-agent communication, heuristic safety detection, and channels (Telegram, WhatsApp, Discord, Slack).",
+        "zh": "用于设计、部署和编排智能智能体的开放式智能体AI平台。特性包括多智能体集群、工作场所执行（本地/远程/云端）、智能体间通信、启发式安全检测和渠道支持（Telegram、WhatsApp、Discord、Slack）。"
+      },
+      "stars": "97",
+      "forks": "12"
+    },
+    {
+      "name": "Negai-ai/AgentClaw",
+      "url": "https://github.com/Negai-ai/AgentClaw",
+      "description": {
+        "en": "Declarative agent workflow framework that turns one-sentence ideas into reusable capabilities. Features computer/browser control, code/file operations, MCP integration, knowledge bases, memory, tracing, scheduling, and API/MCP publishing.",
+        "zh": "声明式智能体工作流框架，将一句话的想法转化为可复用的能力。特性包括计算机/浏览器控制、代码/文件操作、MCP集成、知识库、记忆、追踪、调度以及API/MCP发布。"
+      },
+      "stars": "92",
+      "forks": "9"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Microsoft Hires Core OLMo Team from Allen Institute for Superintelligence Push",
+        "zh": "微软从艾伦研究所挖走OLMo核心团队，加速超级智能布局"
+      },
+      "url": "https://www.geekwire.com/2026/microsoft-adds-more-former-ai2-researchers-to-its-superintelligence-team/",
+      "source": "GeekWire",
+      "time": "2026-05-16",
+      "description": {
+        "en": "Microsoft hired at least 10 researchers from Ai2 including former CEO Ali Farhadi, COO Sophie Lebrecht, and research leaders Hanna Hajishirzi and Ranjay Krishna. They join Mustafa Suleyman's Superintelligence team to develop humanist superintelligence systems.",
+        "zh": "微软从Ai2雇佣了至少10名研究人员，包括前CEO Ali Farhadi、COO Sophie Lebrecht以及研究负责人Hanna Hajishirzi和Ranjay Krishna。他们将加入Mustafa Suleyman的超级智能团队，开发人本主义超级智能系统。"
+      },
+      "insight": {
+        "en": "01 *Microsoft's Ai2 acquisition* : This isn't just talent poaching—it's a strategic hedge against OpenAI dependency. By absorbing the team behind the fully open-source OLMo model, Microsoft gains expertise in efficient, transparent model development while reducing reliance on its $13B OpenAI partnership. The timing is notable: just days after Anthropic announced its SpaceX compute deal and OpenAI launched its Deployment Company, Microsoft is signaling it wants owned IP, not just API access. The ex-Ai2 researchers' focus on 'smaller, efficient models' aligns with Microsoft's need to control costs across its Copilot stack.",
+        "zh": "01 *微软收购Ai2团队*：这不仅仅是挖角——这是对OpenAI依赖性的战略对冲。通过吸收完全开源OLMo模型背后的团队，微软获得了高效、透明模型开发的专业知识，同时减少了对130亿美元OpenAI合作伙伴关系的依赖。时机值得关注：就在Anthropic宣布与SpaceX的计算交易、OpenAI推出其部署公司的几天后，微软发出了它想要自有IP而非仅API访问的信号。前Ai2研究人员对\"更小、更高效的模型\"的关注与微软控制Copilot全栈成本的需求相契合。"
+      }
+    },
+    {
+      "title": {
+        "en": "YouTube Expands AI Deepfake Detection to All Adult Users",
+        "zh": "YouTube将AI深度伪造检测扩展至所有成年用户"
+      },
+      "url": "https://blazetrends.com/youtube-opens-ai-deepfake-detection-to-all-adults-as-uk-regulations-tighten/",
+      "source": "Blaze Trends",
+      "time": "2026-05-16",
+      "description": {
+        "en": "YouTube expanded its AI deepfake detection tool to all users 18+. The system scans for synthetic media mimicking biometric signatures and automates matches using existing likeness data. Previously limited to YouTube Partner Program creators.",
+        "zh": "YouTube将其AI深度伪造检测工具扩展至所有18岁以上用户。该系统扫描模仿生物特征签名的合成媒体，并使用现有肖像数据自动匹配。此前仅限于YouTube合作伙伴计划创作者。"
+      },
+      "insight": {
+        "en": "02 *YouTube's deepfake rollout* : The expansion from Partner Program exclusivity to universal adult access reflects regulatory pressure, not just corporate goodwill. With Colorado's new AI Act taking effect August 2026 and UK regulations tightening, platforms are pre-empting compliance requirements. The timing—same week as Colorado's governor signed SB-26-189—suggests coordinated industry response to the fragmented US regulatory landscape. Unlike watermarking proposals, YouTube's biometric detection targets the symptom (fake content) rather than the source (generative models). This is damage control: deepfake incidents rose 900% in 2025, and platforms face liability exposure.",
+        "zh": "02 *YouTube的深度伪造推出*：从合作伙伴计划专享扩展到所有成年用户访问，反映的是监管压力，而非企业善意。随着科罗拉多州新AI法案将于2026年8月生效，以及英国法规收紧，平台正在提前应对合规要求。时机——与科罗拉多州州长签署SB-26-189同一周——表明行业对美国分散监管格局的协调回应。与水印提案不同，YouTube的生物特征检测针对的是症状（虚假内容）而非源头（生成模型）。这是损害控制：2025年深度伪造事件增长了900%，平台面临责任风险。"
+      }
+    },
+    {
+      "title": {
+        "en": "UK Government's Claude-Powered Chatbot Goes Live on GOV.UK App",
+        "zh": "英国政府基于Claude的智能聊天机器人在GOV.UK应用上线"
+      },
+      "url": "https://www.publictechnology.net/2026/05/15/society-and-welfare/government-ai-chatbot-goes-live-across-gov-uk-app/",
+      "source": "PublicTechnology",
+      "time": "2026-05-15",
+      "description": {
+        "en": "After 2.5 years of development, the UK government's AI chatbot integrated into the GOV.UK App (563K users). Built on Anthropic's Claude LLM, it provides instant answers from 80,000 pages of official guidance with 90% accuracy. Top queries: tax, driving, transport, benefits.",
+        "zh": "经过2.5年开发，英国政府的AI聊天机器人已集成到GOV.UK应用（56.3万用户）。基于Anthropic的Claude大语言模型构建，可从8万页官方指南提供即时解答，准确率达90%。热门查询：税务、驾驶、交通、福利。"
+      },
+      "insight": {
+        "en": "03 *UK gov's Claude deployment* : 90% accuracy sounds impressive until you realize some call centers handle 100K calls/day—meaning 10,000 potential failures daily at scale. The 2.5-year development timeline suggests either extreme caution or internal friction. Built on Claude rather than open-source alternatives, this creates a dependency on Anthropic's infrastructure for critical government services. The choice signals confidence in Claude's safety guardrails for high-stakes citizen interactions. Compare to the US, where federal AI adoption remains fragmented—this gives the UK a narrative win on 'AI-powered governance' despite the implementation risks.",
+        "zh": "03 *英国政府的Claude部署*：90%的准确率听起来令人印象深刻，但要知道一些呼叫中心每天处理10万通电话——这意味着在大规模应用时每天可能有1万次潜在失败。2.5年的开发时间线表明要么是极度谨慎，要么是内部存在阻力。基于Claude而非开源替代方案构建，这为关键政府服务创造了对Anthropic基础设施的依赖。这一选择表明对Claude安全护栏在高风险公民交互中的信心。与美国相比，联邦AI采用仍然分散——尽管存在实施风险，这使英国在'AI驱动治理'方面获得了叙事上的胜利。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mistral Medium 3.5 Consolidates Chat, Reasoning, and Code in Single 128B Model",
+        "zh": "Mistral Medium 3.5将聊天、推理和代码整合到单一128B模型中"
+      },
+      "url": "https://venturebeat.com/2026/05/02/mistral-medium-3-5-unified-flagship-chat-reasoning-code-xcxwbn/",
+      "source": "VentureBeat",
+      "time": "2026-05-02",
+      "description": {
+        "en": "Mistral released Medium 3.5, a 128B dense model replacing three previous products (Medium 3.1, Magistral, Devstral 2). Features 256K context window, configurable reasoning_effort toggle, runs on 4 GPUs, scores 77.6% on SWE-Bench Verified. Pricing: $1.50/$7.50 per million tokens.",
+        "zh": "Mistral发布Medium 3.5，一个128B密集模型，取代三个先前产品（Medium 3.1、Magistral、Devstral 2）。特性包括256K上下文窗口、可配置推理强度开关、可在4个GPU上运行，SWE-Bench Verified得分77.6%。定价：每百万token输入$1.50，输出$7.50。"
+      },
+      "insight": {
+        "en": "04 *Mistral's consolidation play* : Medium 3.5's 'one model to replace three' strategy is a bet against the fragmented-model future OpenAI and Google are pushing. The 77.6% SWE-Bench score edges past Claude Sonnet 4.5 (77.2%) but trails Sonnet 4.6 (79.6%)—positioning it as 'good enough' for cost-conscious enterprises. The modified MIT License with revenue carve-outs is a departure from Mistral's Apache 2.0 roots, suggesting pressure to monetize as their $400M ARR (up from $20M) still doesn't justify the $14B valuation. The 'Work Mode' launch with default-on connectors puts them in direct competition with Claude's agent view and OpenAI's Deployment Company.",
+        "zh": "04 *Mistral的整合策略*：Medium 3.5的'一模型替代三模型'策略是对OpenAI和谷歌推动的分裂模型未来的押注。77.6%的SWE-Bench得分略超Claude Sonnet 4.5（77.2%），但落后于Sonnet 4.6（79.6%）——将其定位为对成本敏感企业的'足够好'选择。带有收入分成的修改版MIT许可证背离了Mistral的Apache 2.0根基，表明在4000万美元ARR（从200万美元增长）仍无法证明140亿美元估值的情况下，面临盈利压力。'工作模式'的推出及默认开启的连接器使其直接与Claude的智能体视图和OpenAI的部署公司竞争。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches Deployment Company with $4B+ Investment",
+        "zh": "OpenAI以超40亿美元投资成立部署公司"
+      },
+      "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+      "source": "OpenAI",
+      "time": "2026-05-11",
+      "description": {
+        "en": "OpenAI launched the OpenAI Deployment Company to help businesses build around intelligence. Acquired Tomoro (150 Forward Deployed Engineers), led by TPG with partners including SoftBank, Goldman Sachs, Bain Capital. Initial investment over $4 billion.",
+        "zh": "OpenAI成立OpenAI部署公司，帮助企业围绕智能构建。收购Tomoro（150名前线部署工程师），由TPG领投，合作伙伴包括软银、高盛、贝恩资本。初始投资超40亿美元。"
+      },
+      "insight": {
+        "en": "05 *OpenAI's services pivot* : The Deployment Company signals OpenAI's recognition that API access isn't enough—enterprises need hand-holding. The Tomoro acquisition brings 150 'Forward Deployed Engineers' (FDEs), a model borrowed from Palantir's playbook. With consulting partners Bain, Capgemini, and McKinsey, OpenAI is building a full-stack consulting arm to compete with Accenture and Big Tech services. The $4B+ commitment from TPG, SoftBank, and Goldman suggests institutional confidence that AI transformation services will be a multi-billion dollar market. This mirrors AWS's evolution from infrastructure (S3/EC2) to higher-margin services—OpenAI wants the margin, not just the tokens.",
+        "zh": "05 *OpenAI的服务转型*：部署公司标志着OpenAI认识到仅API访问是不够的——企业需要手把手指导。收购Tomoro带来150名'前线部署工程师'（FDE），这是借鉴自Palantir剧本的模式。与咨询合作伙伴贝恩、凯捷和麦肯锡一起，OpenAI正在建立完整的咨询部门，与埃森哲和大科技服务竞争。来自TPG、软银和高盛的40亿美元以上承诺表明机构对AI转型服务将成为数十亿美元市场的信心。这反映了AWS从基础设施（S3/EC2）向高利润服务的演变——OpenAI想要的是利润，而不仅是token。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Code v2.1.139 Introduces Agent View and Goal Command",
+        "zh": "Claude Code v2.1.139推出智能体视图和目标命令"
+      },
+      "url": "https://code.claude.com/docs/en/whats-new/2026-w19",
+      "source": "Anthropic",
+      "time": "2026-05-11",
+      "description": {
+        "en": "Claude Code released Agent View for managing multiple sessions, `/goal` command for completion conditions, and v2.1.142 adds plugin root-level SKILL.md support. Fast mode now uses Opus 4.7 by default. Agent View available for Pro, Max, Team, Enterprise.",
+        "zh": "Claude Code发布智能体视图用于管理多个会话，`/goal`命令用于设定完成条件，v2.1.142增加插件根级SKILL.md支持。快速模式现在默认使用Opus 4.7。智能体视图面向Pro、Max、Team和企业用户。"
+      },
+      "insight": {
+        "en": "06 *Claude Code's agent evolution* : The Agent View and `/goal` command transform Claude Code from a single-session tool into an orchestration layer—acknowledging that real development work spans multiple contexts. The parallel to the UK's Claude-powered government chatbot (same week release) shows Anthropic pushing Claude into 'mission-critical' use cases on both consumer and enterprise fronts. Opus 4.7 as the default for fast mode signals confidence in its latency/quality trade-off. Meanwhile, the plugin system's SKILL.md integration suggests Anthropic is building an ecosystem play to compete with OpenAI's burgeoning marketplace. The overlay panel showing live elapsed time, turns, and tokens addresses the 'black box' critique of AI agents.",
+        "zh": "06 *Claude Code的智能体演进*：智能体视图和`/goal`命令将Claude Code从单会话工具转变为编排层——承认真正的开发工作跨越多个上下文。与英国基于Claude的政府聊天机器人（同一周发布）的并行显示，Anthropic正在推动Claude进入消费端和企业端的'关键任务'用例。Opus 4.7作为快速模式默认选项表明对其延迟/质量权衡的信心。同时，插件系统的SKILL.md集成表明Anthropic正在构建生态系统策略，以与OpenAI蓬勃发展的市场竞争。显示实时运行时间、轮次和token的覆盖面板回应了对AI智能体'黑箱'的批评。"
+      }
+    },
+    {
+      "title": {
+        "en": "Colorado Governor Signs New AI Regulation Bill Replacing 2024 Law",
+        "zh": "科罗拉多州州长签署新AI监管法案取代2024年法律"
+      },
+      "url": "https://www.cbsnews.com/colorado/news/ai-regulation-colorado-governor-signs-law/",
+      "source": "CBS Colorado",
+      "time": "2026-05-14",
+      "description": {
+        "en": "Colorado Governor Jared Polis signed SB-26-189, the 'AI Act', replacing the state's 2024 AI law. Mandates notifying individuals when AI is used in consequential decisions (employment, healthcare, housing). Takes effect August 12, 2026.",
+        "zh": "科罗拉多州州长Jared Polis签署SB-26-189'AI法案'，取代该州2024年AI法律。强制要求在就业、医疗、住房等 consequential 决策中使用AI时通知个人。将于2026年8月12日生效。"
+      },
+      "insight": {
+        "en": "07 *Colorado's AI Act evolution* : SB-26-189 replacing the 2024 law just two years later shows how quickly AI regulation is iterating. The bipartisan support signals that AI oversight isn't partisan—it's about covering legislative gaps as harms become visible. The notification requirement for consequential decisions mirrors GDPR's transparency principles but adds teeth with August 2026 enforcement. Compare to the federal stalemate: while Washington debates which agency should oversee AI (Intelligence vs Commerce), states are writing actual rules. Colorado's approach—disclosure over prohibition—gives businesses flexibility while protecting consumers. Expect copycat legislation in blue states and preemption battles if federal standards emerge.",
+        "zh": "07 *科罗拉多州AI法案的演进*：SB-26-189在两年后取代2024年法律，显示了AI监管的迭代速度之快。两党支持表明AI监督不是党派问题——而是随着危害显现而填补立法空白。对consequential决策的通知要求反映了GDPR的透明原则，但增加了2026年8月执行的力度。与联邦僵局相比：当华盛顿争论哪个机构应监督AI（情报部门vs商务部）时，各州正在制定实际规则。科罗拉多的方法——披露而非禁止——在保护消费者的同时给予企业灵活性。如果联邦标准出现，预计蓝州会效仿立法并出现优先权之争。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Announces Higher Claude Limits and SpaceX Compute Partnership",
+        "zh": "Anthropic宣布提高Claude使用限制并与SpaceX达成计算合作"
+      },
+      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "source": "Anthropic",
+      "time": "2026-05-06",
+      "description": {
+        "en": "Anthropic doubled Claude Code's five-hour rate limits, removed peak hours reductions, and raised API rate limits. SpaceX partnership provides 300+ megawatts (220K+ NVIDIA GPUs) at Colossus 1 data center. Also announced 5 GW deals with Amazon and Google.",
+        "zh": "Anthropic将Claude Code的五小时速率限制翻倍，取消高峰时段削减，并提高API速率限制。与SpaceX的合作在Colossus 1数据中心提供300+兆瓦（22万+英伟达GPU）。还宣布与亚马逊和谷歌达成5吉瓦协议。"
+      },
+      "insight": {
+        "en": "08 *Anthropic's compute surge* : The SpaceX deal (300MW, 220K GPUs) is a capacity play that puts Anthropic in the same league as Microsoft's $30B Azure commitment. The 5 GW agreements with Amazon and Google (coming 2027) reveal long-term planning that assumes sustained AI demand growth. Removing peak hours limits signals confidence in their infrastructure scaling—most providers still throttle during high-demand windows. The commitment to cover consumer electricity price increases caused by data centers is preemptive reputation management as AI's energy consumption faces scrutiny. With $50B in total infrastructure commitments (including Fluidstack), Anthropic is positioning for a potential OpenAI IPO disruption—if the market cap gap narrows, compute access becomes a moat.",
+        "zh": "08 *Anthropic的计算激增*：与SpaceX的交易（300兆瓦，22万GPU）是一项容量投入，使Anthropic与微软300亿美元Azure承诺处于同一水平。与亚马逊和谷歌的5吉瓦协议（2027年上线）显示了对AI需求持续增长的长期规划信心。取消高峰时段限制表明对其基础设施扩展的信心——大多数提供商仍在高需求窗口期进行节流。承诺承担数据中心导致消费者电价上涨的承诺是预防性声誉管理，因为AI的能源消耗正面临审查。凭借500亿美元的基础设施总承诺（包括Fluidstack），Anthropic正在为潜在的OpenAI IPO中断做准备——如果市值差距缩小，计算访问将成为护城河。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "May 16, 2026 marks a consolidation phase in the AI industry—companies are moving from model releases to infrastructure wars and regulatory positioning. Microsoft absorbing the Ai2 team signals the end of the 'partnership era' with OpenAI; every major player is now building owned IP. The compute arms race escalated with Anthropic's SpaceX deal and multi-gigawatt commitments from Amazon/Google, suggesting these companies are betting on sustained demand through 2027-2028. Meanwhile, the regulatory landscape is fragmenting: Colorado's AI Act, UK's government chatbot deployment, and YouTube's deepfake expansion show jurisdictions racing ahead of federal standards. In the product space, 'agentic' is the new default—Claude Code's Agent View, Mistral's Work Mode, and the three trending repos (Dulus, AgentClaw, evonic) all point to the same shift: from chat interfaces to autonomous systems that persist across sessions. The real narrative isn't any single announcement—it's the industry-wide recognition that AI infrastructure, regulation, and product architecture are converging faster than expected, and the window for establishing market position is narrowing.",
+    "zh": "2026年5月16日标志着AI行业的整合阶段——企业正从模型发布转向基础设施战争和监管定位。微软吸收Ai2团队预示着与OpenAI'合作伙伴时代'的结束；每个主要参与者现在都在构建自有IP。随着Anthropic与SpaceX的交易以及亚马逊/谷歌的多吉瓦承诺，计算军备竞赛升级，表明这些公司押注2027-2028年的持续需求。与此同时，监管格局正在分裂：科罗拉多州的AI法案、英国政府聊天机器人的部署以及YouTube的深度伪造扩展显示各司法管辖区正在超越联邦标准。在产品领域，'智能体'成为新默认值——Claude Code的智能体视图、Mistral的工作模式以及三个热门仓库（Dulus、AgentClaw、evonic）都指向相同的转变：从聊天界面到跨会话持久存在的自主系统。真正的叙事不是任何单一公告——而是整个行业认识到AI基础设施、监管和产品架构的融合速度比预期更快，建立市场地位的窗口正在收窄。"
+  }
+}
+
