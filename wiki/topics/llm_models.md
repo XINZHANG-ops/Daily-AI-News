@@ -115,6 +115,9 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-13 | TML-Interaction-Small released | 276B-parameter MoE with 12B active params; 200ms real-time audio/video/text processing; time-aligned micro-turns with interruption support; Thinking Machines Lab's first model |
 | 2026-05-13 | Perceptron Mk1 launched | Physical AI model for video understanding and embodied reasoning; founded by former FAIR scientists; targets manufacturing, robotics, geospatial, security |
 | 2026-05-13 | Krea 2 foundation image model | Built from scratch with advanced style transfer; signals end of "wrapper" phase for creative AI tools; vertical integration bet |
+| 2026-05-15 | Mistral Medium 3.5: unified model now table stakes | $1.50/M input undercuts GPT-5.4 by 40%; one checkpoint for chat, reasoning, and code is now the consensus design pattern across OpenAI, Anthropic, and Mistral |
+| 2026-05-15 | AlphaEvolve demonstrates real-world impact | 30% better PacBio genomics, 10x lower Willow quantum errors, TPU circuit integration; AI-designed hardware running AI creates self-improvement loop |
+| 2026-05-15 | "Merged model" approach becomes industry consensus | OpenAI's GPT-5.5, Anthropic's Opus 4.7, and Mistral Medium 3.5 all unify capabilities; race shifts to who makes the unified model cheapest |
 
 | 2026-05-12 | Google "Magic Pointer" announced | AI-powered context-aware cursor using Gemini; first major rethink of the computer cursor in 50 years; works with natural language voice commands
 | 2026-05-13 | GemTTS (paperfoot/gemtts) | Agent-friendly Gemini TTS CLI in Rust with expressive tags [whispers], [laughs], [warmly]; 30 prebuilt timbres; JSON output for agent pipelines
@@ -175,6 +178,10 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 **May 14: AI Becomes the Interface, Not Just the Backend**: Google's Magic Pointer represents a paradigm shift — the AI model is not a chatbot you open, but the cursor itself. When the pointing device understands context and responds to natural language, every application becomes AI-augmented without per-app integration. This is the "generative UI" trend: AI moving from "answer questions" to "be the interface."
 
 **May 14: Voice AI Fragmentation Accelerates**: The open-source voice ecosystem is fragmenting by use case faster than text models. Scenema Audio (expressive cloning from 22B multimodal models), GemTTS (agent-native TTS with emotional tags), and the existing MOSS-TTS/OmniVoice wave show voice synthesis becoming a commodity where differentiation comes from integration philosophy, not model size.
+
+**May 15: The Unified Model Consensus**: The "merged model" approach — one checkpoint handling chat, reasoning, and coding — is now the emerging consensus across all major labs. OpenAI's GPT-5.5 does this, Anthropic's Opus 4.7 does this, and now Mistral Medium 3.5 joins at $1.50/M input (40% below GPT-5.4). For developers, it simplifies deployment: one model, one API, one set of quirks. The race is no longer about separate reasoning models vs chat models — it's about who can make the unified model cheapest and most reliable. This design pattern obsoletes the o-series vs GPT-series distinction that OpenAI pioneered.
+
+**May 15: AlphaEvolve and the Self-Improving Hardware Loop**: AlphaEvolve's integration into next-generation TPU silicon is the most significant hardware-AI convergence since Google began using AI to design chips. AI-designed circuits running AI creates a potential self-improvement loop that could accelerate compute efficiency gains beyond traditional Moore's Law trajectories. Unlike research demos, these are production deployments with measurable outcomes — 30% better genomics, 10x lower quantum errors. The labs that can deliver verifiable results (not just papers) will capture the high-value science and infrastructure contracts.
 
 ## Connections
 - [[entities/arc-agi-3]] — The benchmark that exposed the LLM reasoning ceiling: GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human performance

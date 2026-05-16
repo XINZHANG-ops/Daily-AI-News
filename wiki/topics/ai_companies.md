@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 ---
 
 # AI Companies
@@ -94,6 +94,14 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-02 | Oscars ban AI-generated actors and scripts | Codifies "regulate creative core, leave tool layer alone" framework; mirrors 2023 strike settlement now institutionalized |
 | 2026-05-01 | Anthropic targets ~$900B valuation in $50B raise | Amazon up to $25B, Google up to $40B committed; revenue run rate surpasses $30B; valuation nearly 2.4x February's $380B |
 | 2026-05-01 | Five Eyes issues first joint guidance on AI agent security | US, UK, Canada, Australia, NZ warn on excessive privileges, cascading failures, accountability gaps — same day as Pentagon deployment |
+| 2026-05-05 | Mistral Medium 3.5 launches | 128B unified model at $1.50/M input; EU data residency; vertically integrated with Vibe coding agents |
+| 2026-05-07 | DeepMind AlphaEvolve shows real-world impact | 30% better genomics with PacBio, 10x lower quantum errors on Willow, TPU circuit integration; production deployments with measurable outcomes |
+| 2026-05-12 | DeepMind unveils AI-enabled "Magic Pointer" | First major cursor rethink in 50 years; Gemini-powered, context-aware, with natural language voice commands; rolling out to Chrome and Googlebook laptops |
+| 2026-05-12 | OpenAI launches Daybreak cybersecurity platform | Three GPT-5.5 variants for defenders, verified access, and red teaming; partners with CrowdStrike, Palo Alto, Cloudflare, Cisco, Oracle, Fortinet, Akamai, Zscaler |
+| 2026-05-13 | Anthropic surpasses OpenAI in business adoption | Ramp AI Index: 34.4% of businesses pay for Anthropic vs 32.3% for OpenAI; up from 9% in May 2025; Claude's reliability and safety credentials winning over raw capability |
+| 2026-05-14 | Anthropic partners with Gates Foundation on $200M global health initiative | 4-year commitment for disease forecasting, vaccine screening, agricultural productivity; frontier labs aligning commercial success with humanitarian impact |
+| 2026-05-14 | OpenAI brings Codex to ChatGPT mobile | iPhone, iPad, Android; remote monitoring and task approval from phones; Windows support coming soon |
+| 2026-05-15 | PwC expands Claude deployment to 30,000 professionals | New "Office of the CFO" built entirely on Claude technology; 70% delivery time reduction; AI moves from experimentation to core business infrastructure |
 | 2026-05-01 | Ineffable Intelligence valued at $5.1B (Silver RL bet) | David Silver's "LLMs are fossil fuel" thesis; largest pure-research AI bet of 2026; Nvidia, Google, UK sovereign fund participate |
 | 2026-05-01 | OpenAI open-sources Symphony orchestration spec | 15K+ stars; language-agnostic with 5 reference implementations; formalizes agent-as-employee model |
 | 2026-05-03 | Anthropic finalizes $1.5B Wall Street JV | Joint venture with Blackstone, Goldman Sachs, H&F to embed AI in PE-backed companies; pre-IPO enterprise distribution strategy |
@@ -190,6 +198,10 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 **May 11: The Agentic Catch-Up Game**: Google and Meta's agent initiatives reveal how far behind they've fallen in the agentic AI race. OpenClaw — created by Peter Steinberger who is now at OpenAI after Meta failed to hire him — sparked the current "agentic wars" and has been called "the next ChatGPT" by Nvidia's Jensen Huang. Meta's Hatch agent reportedly started with Claude models before planning to switch to Muse Spark — a telling admission that Meta's own models aren't yet competitive for agentic tasks. Google's Remy comes after shutting down Project Mariner on May 4, suggesting the previous approach failed. The pattern: both companies are chasing OpenAI and Anthropic in agents while spending unprecedented capex to buy their way back.
 
 **May 11: The Agent Governance Layer Wars**: Microsoft's Agent 365 at $15/user/month is not just a product — it's a toll booth. By positioning Agent 365 as the control plane that manages agents regardless of provider, Microsoft is attempting to tax the entire agent ecosystem regardless of which model or provider wins. The Windows 365 for Agents feature creates a new compute tier between traditional VMs and serverless functions. Shadow AI Discovery — detecting local agents via Defender and Intune — means Microsoft will know exactly what agents employees are using, even if IT doesn't. This is Microsoft's play to own the governance layer as the model layer commoditizes.
+
+**May 15: "Safe AI" Wins the Enterprise Narrative**: Anthropic's overtaking of OpenAI in business adoption (34.4% vs 32.3%, per Ramp) — coupled with the PwC expansion and Gates Foundation partnership — demonstrates that enterprise buyers favor Claude's reliability and safety credentials over raw benchmark performance. The timing is decisive: Anthropic announced PwC's "Office of the CFO built entirely on Claude" two days after the Ramp data, suggesting enterprise traction is accelerating. For developers, this validates the "safer AI" thesis: enterprises increasingly favor predictability over benchmark bragging rights, a trend that may reshape how AI companies compete.
+
+**May 15: AI Transitions from Tool to Infrastructure**: PwC building an entire "Office of the CFO" business unit "entirely on Claude" is the canary in the coal mine. This is different from "using Claude" — it's a structural bet on AI as foundational business infrastructure. The 70% delivery time reduction (insurance underwriting: 10 weeks to 10 days; cybersecurity response: hours to minutes) signals AI's move from experimentation to core operations. Combined with Mistral's unified model, the agent framework explosion, and the interface wars, the deeper pattern is clear: AI is no longer a tool humans use — it's the infrastructure organizations build on. The winners will be determined by trust and operational reliability, not just benchmarks.
 
 ## Connections
 - [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users, GPT-Rosalind, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions, Pentagon classified network deals, Symphony orchestration spec; $10B Deployment Company venture embedding forward-deployed engineers inside 2,000 PE portfolio companies

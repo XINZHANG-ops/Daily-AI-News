@@ -712,3 +712,42 @@ Ingest of 2026-05-14 is complete. Here's what was done:
 - **Timeline:** 2026-05.md Week 2 extended with May 14 narrative
 
 **Index & metadata:** `index.md`, `processed.json`, and `log.md` all updated.
+Done. Ingested 2026-05-15 into the wiki.
+
+**What was processed:**
+- 3 GitHub repos: OpenSwarm (2.3k stars), Alphora (347 stars), KohakuTerrarium (320 stars)
+- 8 AI news items spanning Anthropic, OpenAI, Google DeepMind, and Mistral
+
+**Entities created (3):**
+- `entities/alphora.md` — production-ready composable agent framework
+- `entities/kohakuterrarium.md` — Creature-abstraction agent framework with built-in UIs
+- `entities/claude-cowork.md` — Anthropic's enterprise agent for non-coding workflows
+
+**Entities updated (4):**
+- `openswarm.md` — corrected star count, creator, and integration details
+- `codex.md` — added mobile control launch (iPhone, iPad, Android)
+- `alphaevolve.md` — added real-world impact (genomics, quantum, TPU circuits)
+- `mistral-medium-3-5.md` — added aggressive pricing context
+
+**Idea created (1):**
+- `ideas/safe-ai-enterprise-narrative.md` — Anthropic overtaking OpenAI in enterprise adoption validates that trust and safety credentials matter more than raw benchmarks
+
+**Topics updated:**
+- `llm_models` — unified models becoming table stakes; AlphaEvolve self-improvement loop
+- `agentic_ai` — production-ready frameworks exploding; interface wars converging on context-aware action
+- `ai_companies` — "safe AI" winning enterprise; AI transitioning from tool to infrastructure
+- `github_trends` — added May 15 production framework explosion narrative and repo table entries
+
+**Sources updated:**
+- `anthropic` — Gates Foundation $200M partnership, PwC 30,000-professional deployment
+- `openai` — Codex mobile control
+- `google` — AlphaEvolve real-world impact
+- `mistral` — updated last_updated
+
+**Timeline updated:**
+- `timelines/2026-05.md` — added Week 3 (May 15) section
+
+**Index/log updated:**
+- `index.md` — 128 entities (+3), 47 ideas (+1)
+- `processed.json` — added 2026-05-15
+- `log.md` — appended ingest entry

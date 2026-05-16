@@ -2,7 +2,7 @@
 title: "Mistral Medium 3.5"
 slug: mistral-medium-3-5
 type: model
-last_updated: 2026-05-09
+last_updated: 2026-05-15
 ---
 
 # Mistral Medium 3.5
@@ -20,7 +20,7 @@ Mistral Medium 3.5 is a 128B dense transformer (not MoE) that unifies chat, reas
 | Context Window | 256K tokens |
 | SWE-Bench Verified | 77.6% |
 | AIME25 | 86.3% |
-| Pricing | $1.50/$7.50 per million tokens |
+| Pricing | $1.50/$7.50 per million tokens (undercuts GPT-5.4 by 40%) |
 | Self-hosting | 4 GPUs at FP8 |
 
 ## Significance

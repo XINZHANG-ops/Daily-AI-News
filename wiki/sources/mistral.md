@@ -1,7 +1,7 @@
 ---
 title: "Mistral"
 slug: mistral
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 ---
 
 # Mistral

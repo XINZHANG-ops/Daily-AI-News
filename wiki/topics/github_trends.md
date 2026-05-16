@@ -78,6 +78,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | Cortiqaai/Cordenex | 247+ | Multi-agent autonomous software engineer for terminal; collaborative coding and project planning |
 | cocoindex-io/cocoindex | 9,018+ | Incremental engine for long-horizon agents; persistent stateful AI with automatic state management and recovery |
 | Q00/ouroboros | 3,677+ | Agent OS: declarative operating system shifting from prompt engineering to specification-driven behavior |
+| VRSEN/OpenSwarm | 2.3K+ | Multi-agent system for deliverables; 8 agents, 10,000+ Composio integrations |
+| opencmit/alphora | 347+ | Production-ready full-stack composable agent framework; secure sandbox, SSE streaming |
+| Kohaku-Lab/KohakuTerrarium | 320+ | General-purpose agent framework with Creature abstraction; session persistence, TUI/Web UI |
 | hugohe3/ppt-master | 13,205+ | AI generates natively editable PPTX from any document — real PowerPoint shapes with native animations, not images |
 | virattt/dexter | 25.4k+ | "Claude Code for finance" — autonomous financial research with SEC filings, loop detection, WhatsApp gateway
 | Eliezer-app/eliezer | 3.2k+ | Self-hosted AI agent with self-editing protocol, PWA push notifications, SQLite memory with auto compaction
@@ -145,6 +148,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **May 14: Agent-Native Audio and Inference Tooling**: Three repos trending span voice synthesis and inference infrastructure. Scenema Audio (6 stars) extracts an audio diffusion transformer from LTX 2.3's 22B audiovisual model for zero-shot expressive voice cloning — a trend of "mining" capabilities from large multimodal foundation models. GemTTS (28 stars) is an agent-friendly Gemini TTS CLI in Rust supporting expressive tags ([whispers], [laughs], [warmly]) and JSON output, signaling the emergence of "agent-native" tooling built for machine consumption rather than human interfaces. Atomr Infer (142 stars) is a production-grade Rust multi-runtime inference layer with circuit breakers and distributed rate limiting, addressing the real infrastructure pain of mixing local GPU and remote API inference in agent pipelines.
 
+**May 15: Production-Ready Agent Frameworks Explode**: Three frameworks trend simultaneously, signaling the ecosystem maturing past prototypes. OpenSwarm (2.3k stars) is a fully open-source multi-agent system built on Agency Swarm, creating polished deliverables via 8 specialized agents with 10,000+ Composio integrations. Alphora (347 stars) is a production-ready full-stack framework with built-in secure code sandbox, typed SSE streaming, and one-line deploy as an OpenAI-compatible API. KohakuTerrarium (320 stars) introduces a "Creature" abstraction with 6-module agent model, built-in session persistence, and TUI/Web UI out of the box. All three ship with enterprise-grade features (sandboxing, persistence, typed streaming) rather than demo-quality code — the agent framework layer has crossed from "possible" to "production."
+
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
 - [[entities/claw-code]] — Clean-room rewrite, 181K+ stars
@@ -182,6 +187,9 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[ideas/compute-shortage-forces-cooperation]] — Open-source voice models (MOSS-TTS 0.1B variant, OmniVoice) enable on-device agent voice output without cloud dependency — reducing reliance on the compute partnerships that define the closed-source ecosystem
 - [[entities/cocoindex]] — cocoindex's incremental engine for long-horizon agents addresses a critical infrastructure gap: most agents lose state between sessions, making them unsuitable for multi-day workflows
 - [[entities/ouroboros]] — ouroboros's declarative specification model represents a philosophical maturation from artisanal prompt engineering to systematic agent architecture; "Stop prompting. Start specifying." captures the industry shift
+- [[entities/openswarm]] — 2.3K stars; fully open-source multi-agent system built on Agency Swarm with 10,000+ Composio integrations; signals agent frameworks maturing from demos to production deliverable systems
+- [[entities/alphora]] — 347 stars; production-ready full-stack framework with secure code sandbox and typed SSE streaming; one-line OpenAI-compatible deploy removes adoption friction
+- [[entities/kohakuterrarium]] — 320 stars; Creature abstraction (6-module agent model) with built-in session persistence and TUI/Web UI out of the box; agents as persistent entities rather than stateless functions
 - [[entities/ppt-master]] — ppt-master's 13.2K stars validate that AI output compatibility with existing corporate tools (native .pptx) is as important as generation quality; the "invisible infrastructure" of format compatibility drives adoption
 - [[entities/dexter]] — 25.4K stars for "Claude Code for finance" proves vertical agents can attract massive open-source attention; the WhatsApp gateway meets professionals where they already communicate
 - [[entities/eliezer]] — Self-editing protocol in 6K lines makes self-modification auditable; PWA with push notifications treats agents as asynchronous assistants rather than synchronous chatbots

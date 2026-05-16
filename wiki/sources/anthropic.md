@@ -64,6 +64,8 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-13 | Overtakes OpenAI in business AI adoption | Ramp May 2026 AI Index: Anthropic powers 34.4% of business AI usage (up from 9% in May 2025), surpassing OpenAI's 32.3%; Claude Code wins ~70% of new purchase head-to-head matchups
 | 2026-05-13 | Claude Code usage milestones | Estimated 4% of all GitHub public commits worldwide now authored by Claude Code; Uber reportedly spent its entire 2026 AI budget in 4 months largely on Claude Code, with engineers facing $500–$2,000 monthly API costs per person
 | 2026-05-13 | Claude Code v2.1.139 released | Agent View for unified session management (Research Preview for Pro/Team/Enterprise), /goal command for autonomous completion conditions, native Git worktree support, /loop for recurring tasks, MCP improvements; Anthropic's answer to OpenAI Codex agent mode
+| 2026-05-14 | Gates Foundation partnership announced | $200M, 4-year commitment for AI-powered global health, life sciences, education, and economic mobility; disease forecasting, vaccine screening, agricultural productivity for low and middle-income countries
+| 2026-05-15 | PwC expands Claude deployment to 30,000 professionals | New "Office of the CFO" built entirely on Claude technology; Claude Code and Claude Cowork deployed globally; 70% delivery time reduction (insurance underwriting: 10 weeks to 10 days; cybersecurity: hours to minutes)
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -99,3 +101,5 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - [[ideas/eu-cyber-access-gap]] — Anthropic's refusal to grant EU regulators Mythos preview access despite 4-5 meetings and Bundesbank demands is the core structural vulnerability; the restriction appears driven by liability control, not just safety
 - [[entities/colossus-1]] — SpaceX's 300+ MW Memphis data center with 220,000+ NVIDIA GPUs is the physical infrastructure that enables Claude Code's rate limit doubling and throttling removal
 - [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX partnership exemplifies compute scarcity overriding rivalries; Anthropic now has three independent compute pipelines (Google TPUs, SpaceX Colossus 1, Amazon AWS)
+- [[entities/claude-cowork]] — Claude Cowork is Anthropic's expansion into non-coding enterprise workflows; PwC's "Office of the CFO built entirely on Claude" validates safe AI as infrastructure, not just a tool
+- [[ideas/safe-ai-enterprise-narrative]] — Anthropic overtaking OpenAI in business adoption (34.4% vs 32.3%) proves enterprise buyers prioritize trust and safety credentials over raw benchmark scores

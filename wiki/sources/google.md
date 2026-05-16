@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 ---
 
 # Google
@@ -49,6 +49,7 @@ Google has deepened its role as an AI infrastructure provider and model competit
 | 2026-05-12 | First AI-developed zero-day confirmed in the wild | Google Threat Intelligence Group identified and blocked AI-developed exploit; "high confidence" assessment; validates that AI-powered offensive capabilities are no longer theoretical
 | 2026-05-12 | Android Show: Gemini Intelligence and Magic Pointer announced | "Magic Pointer" is the first major cursor rethink in 50 years — AI-powered, context-aware, with voice commands using natural language like "this" and "that"; "Create My Widget" allows natural-language widget generation; Googlebook laptop category built around Gemini Intelligence
 | 2026-05-12 | Googlebook laptop category announced | Android-based laptops with ChromeOS integration, "Magic Pointer" for contextual AI suggestions, "Create your Widget" via prompts; partners: Acer, ASUS, Dell, HP, Lenovo; launches Fall 2026; strategic move to define "AI-native laptop" before Apple's rumored WWDC AI reboot
+| 2026-05-07 | AlphaEvolve real-world impact reported | 30% reduction in DNA sequencing variant detection errors with PacBio; 10x lower error rates on Willow quantum processor simulations; AlphaEvolve-designed circuits integrated into next-generation TPU silicon — AI-designed hardware running AI
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.
@@ -73,4 +74,5 @@ Google has deepened its role as an AI infrastructure provider and model competit
 - [[entities/remy]] — Remy reflects Google's risk-averse enterprise DNA; building for CIOs who need audit trails rather than individual developer productivity
 - [[ideas/agent-control-interface-wars]] — Remy is the flagship example of Google's controllable-agent philosophy; approval gates at each step vs competitors' continuous execution models
 - [[ideas/eu-cyber-access-gap]] — Google's confirmation of AI-developed zero-days in the wild makes the EU access gap an immediate security concern; attackers already have AI-powered tools while EU defenders are structurally blind without equivalent capabilities
+- [[entities/alphaevolve]] — AlphaEvolve's TPU circuit integration creates a self-improvement loop where AI-designed hardware runs AI; production deployments with measurable outcomes (30% better genomics, 10x lower quantum errors) validate "AI for science" beyond research demos
 - [[topics/ai_safety]] — Google's Threat Intelligence Group confirmation of AI-developed zero-days provides empirical evidence that AI-powered offensive capabilities have crossed into active deployment, not just research speculation

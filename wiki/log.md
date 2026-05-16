@@ -783,3 +783,44 @@ Connections linted: all new pages verified with annotated wikilinks
 - Updated `last_updated` to 2026-05-15 on 55+ modified pages
 - Total content pages: 206 (6 topics + 26 sources + 3 timelines + 125 entities + 46 ideas)
 - Appended this lint entry
+
+## [2026-05-15] ingest | 1 date
+
+Dates processed: 2026-05-15
+Topics updated: llm_models, ai_companies, agentic_ai, github_trends
+Sources updated: anthropic, openai, google, mistral
+Entities created: alphora, kohakuterrarium, claude-cowork
+Entities updated: openswarm, codex, alphaevolve, mistral-medium-3-5
+Ideas created: safe-ai-enterprise-narrative
+Timelines updated: 2026-05
+
+---
+
+## [2026-05-16] wiki lint | comprehensive health check
+
+**Pass 1 — Structural integrity:**
+- Verified 210 content pages match index.md exactly: 6 topics, 26 sources, 3 timelines, 128 entities, 47 ideas
+- Verified zero broken wikilinks in any content page (8 template-style links in WIKI.md and log.md excluded)
+- Verified zero orphan pages (all pages have inbound links from other content pages)
+- Fixed 1 type mismatch in index.md: entities/natural-language-autoencoders (index said model, frontmatter says product)
+- Verified no companies or people in entities/ (all 128 entities have valid types: model, product, repo, protocol, framework, benchmark, legislation)
+
+**Pass 2 — Wrong & duplicate information:**
+- Verified zero duplicate pages covering the same concept
+- Verified zero duplicate paragraphs across content pages
+- Verified no factually inconsistent dates or claims (GPT-5.5 April 23, Claude Opus 4.7 April 17, ARC-AGI-3 May 2 consistent across pages)
+- All 210 content pages have valid YAML frontmatter; entity type fields consistent across all 128 entity pages
+- Updated last_updated on 3 stale entity pages: alphaevolve (2026-05-08 → 2026-05-15), codex (2026-04-16 → 2026-05-15), mistral-medium-3-5 (2026-05-09 → 2026-05-15)
+- No stale claims requiring update with newer data
+
+**Pass 3 — Connection quality:**
+- Verified zero bare "Related:", "See also:", or unannotated links in any content page
+- Verified all 6 topic pages have substantive ## Evolution and ## Patterns & Insights sections
+- Verified all 128 entity pages and 47 idea pages have ## Connections sections with annotated wikilinks
+- Verified new entity pages (alphora, claude-cowork, kohakuterrarium, openswarm) and new idea page (safe-ai-enterprise-narrative) have annotated inbound links from multiple pages
+- No new entities from recent data require standalone pages beyond those already created
+
+**Pass 4 — Index & log:**
+- Verified index.md counts accurate: 6 topics, 26 sources, 3 timelines, 128 entities, 47 ideas = 210 total
+- Updated index.md Last updated to 2026-05-16
+- Appended this lint entry

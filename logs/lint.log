@@ -531,3 +531,29 @@ All four passes of the wiki lint are complete. Here's the final summary:
  create mode 100644 wiki/entities/tradingagents.md
  create mode 100644 wiki/ideas/privacy-as-ai-differentiator.md
  create mode 100644 wiki/ideas/system-competition-shift.md
+[2026-05-16 01:00:03] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.
+Wiki lint complete. Here's what was fixed:
+
+**Structural fixes**
+- Fixed `index.md` type mismatch: `entities/natural-language-autoencoders` was labeled `model` but its frontmatter says `product`
+
+**Stale dates updated**
+- `entities/alphaevolve.md`: `2026-05-08` → `2026-05-15`
+- `entities/codex.md`: `2026-04-16` → `2026-05-15`
+- `entities/mistral-medium-3-5.md`: `2026-05-09` → `2026-05-15`
+- `index.md`: `Last updated` → `2026-05-16`
+
+**Verified clean**
+- 210 content pages exactly match `index.md` (6 topics, 26 sources, 3 timelines, 128 entities, 47 ideas)
+- Zero broken wikilinks in content pages
+- Zero orphan pages
+- No duplicate pages or paragraphs
+- No factually inconsistent dates
+- No bare "Related:" / "See also:" links
+- All topics have `## Evolution` and `## Patterns & Insights`
+- All entities/ideas have `## Connections`
+
+**Log appended**
+- Added `[2026-05-16] wiki lint | comprehensive health check` entry to `wiki/log.md`
+[2026-05-16 01:06:28] Wiki lint complete (exit code 0).

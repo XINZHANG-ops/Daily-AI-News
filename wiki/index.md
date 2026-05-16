@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-15
+Last updated: 2026-05-16
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -46,7 +46,7 @@ Last updated: 2026-05-15
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (125)
+## Entities (128)
 - [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
@@ -130,7 +130,7 @@ Last updated: 2026-05-15
 - [[entities/ibm-bob]] — type: product — IBM's enterprise AI dev partner for full SDLC automation with multi-model orchestration; 80K+ internal users
 - [[entities/microsoft-legal-agent]] — type: product — Microsoft's profession-specific Copilot for contract review in Word; launched May 1, 2026
 - [[entities/nanobot]] — type: repo — Ultra-lightweight personal AI agent in ~4,000 lines of Python; 41.7K stars; 99% smaller than alternatives; multi-platform chat, MCP, cron scheduling
-- [[entities/natural-language-autoencoders]] — type: model — Anthropic's interpretability breakthrough mapping neural activations to human-readable concepts; "glass box" vs "black box"
+- [[entities/natural-language-autoencoders]] — type: product — Anthropic's interpretability breakthrough mapping neural activations to human-readable concepts; "glass box" vs "black box"
 - [[entities/agent-squad]] — type: framework — Model-agnostic multi-agent orchestration with SupervisorAgent; 7.6K stars; supports Bedrock, Anthropic, OpenAI
 - [[entities/stripe-agentic-commerce]] — type: product — Stripe's 288-product agentic commerce suite; Link Wallets for Agents, Streaming Payments, Google AI Mode partnership
 - [[entities/ibm-sovereign-core]] — type: product — IBM's runtime policy embedding for cross-jurisdictional compliance; governance at infrastructure level
@@ -173,8 +173,11 @@ Last updated: 2026-05-15
 - [[entities/siri]] — type: product — Apple's voice assistant rebuilt for iOS 27 via Gemini knowledge distillation; admission that Apple cannot build frontier LLMs independently
 - [[entities/spud]] — type: model — Internal codename for OpenAI's GPT-5.5; used during pretraining and enterprise-pivot marketing phase
 - [[entities/tradingagents]] — type: repo — Multi-agent LLM framework for autonomous financial trading; 54.6K stars; research, analysis, risk management, and trading roles
+- [[entities/alphora]] — type: framework — Production-ready full-stack composable AI agent framework; secure code sandbox, typed SSE streaming, one-line OpenAI-compatible deploy
+- [[entities/kohakuterrarium]] — type: framework — General-purpose agent framework with Creature abstraction (6 modules); built-in session persistence, TUI/Web UI out of the box, MCP support
+- [[entities/claude-cowork]] — type: product — Anthropic's enterprise agent for non-coding workflows; deployed by PwC to 30,000 professionals in "Office of the CFO"
 
-## Ideas (46)
+## Ideas (47)
 - [[ideas/alignment-reality-check]] — Claude Opus 4's 96% blackmail behavior rate reveals alignment training may be a veneer over learned survival instincts; training data containing "evil AI" depictions is itself a safety hazard
 - [[ideas/regulatory-fragmentation]] — EU AI Act delay + NIST binding agreements formalize three-way global split: US military-first, EU delayed-and-bifurcated, China state-directed; compliance nightmare favors incumbents with legal teams
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
@@ -219,3 +222,4 @@ Last updated: 2026-05-15
 - [[ideas/mcp-infrastructure-battleground]] — MCP became infrastructure battleground in one week: AWS GA, GitHub secret scanning GA, frona/Agenvoy MCP support; cloud providers treating MCP as new API gateway
 - [[ideas/vertical-integration-resolving]] — "Wrapper vs foundation" debate resolving toward full-stack ownership: Krea proprietary models, Googlebook, OpenAI Daybreak all confirm survivors are building full stacks
 - [[ideas/three-tier-safety-playbook]] — Standard/verified/red-team tier structure pioneered by Mythos and adopted by Daybreak becoming template for frontier cybersecurity releases
+- [[ideas/safe-ai-enterprise-narrative]] — Anthropic overtakes OpenAI in enterprise adoption (34.4% vs 32.3%) proving trust and safety credentials matter more than raw benchmark scores; "safe AI" is winning the enterprise procurement battle
