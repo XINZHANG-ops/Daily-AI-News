@@ -563,3 +563,5 @@ Wiki lint complete. Here's what was fixed:
  create mode 100644 wiki/entities/claude-cowork.md
  create mode 100644 wiki/entities/kohakuterrarium.md
  create mode 100644 wiki/ideas/safe-ai-enterprise-narrative.md
+[2026-05-17 01:00:01] Starting wiki lint using model: kimi-k2.6:cloud
+Already up to date.

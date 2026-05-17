@@ -751,3 +751,32 @@ Done. Ingested 2026-05-15 into the wiki.
 - `index.md` — 128 entities (+3), 47 ideas (+1)
 - `processed.json` — added 2026-05-15
 - `log.md` — appended ingest entry
+The May 16, 2026 ingest is complete. Here's a summary of what was added:
+
+**New entities (6):**
+- `entities/olmo.md` — Open-source model from Ai2; Microsoft hired the core team
+- `entities/dulus.md` — 215-star multi-provider agent inspired by Claude Code
+- `entities/evonic.md` — 97-star open agentic AI platform with multi-agent swarms
+- `entities/agentclaw.md` — 92-star declarative workflow framework
+- `entities/uk-govuk-chatbot.md` — UK government's Claude-powered chatbot (563K users)
+- `entities/colorado-sb-26-189.md` — Colorado AI Act legislation
+
+**New source (1):**
+- `sources/ai2.md` — Allen Institute for AI timeline
+
+**New idea (1):**
+- `ideas/agentic-is-default.md` — The shift from chat interfaces to autonomous persistent systems
+
+**Updated pages:**
+- `sources/microsoft.md` — Added Ai2/OLMo team hiring
+- `sources/google.md` — Added YouTube deepfake detection expansion
+- `sources/anthropic.md` — Added UK GOV.UK chatbot deployment
+- `topics/ai_companies.md` — Added May 14-16 key developments and insights
+- `topics/ai_safety.md` — Added Colorado AI Act and YouTube deepfake
+- `topics/agentic_ai.md` — Added three trending repos and agentic-is-default insight
+- `topics/github_trends.md` — Added Dulus, evonic, AgentClaw to Notable Repositories
+- `timelines/2026-05.md` — Added Week 3 May 15-16 events
+- `ideas/regulatory-fragmentation.md` — Added Colorado, UK, YouTube evidence
+- `index.md` — Updated counts and added all new pages
+- `processed.json` — Appended 2026-05-16
+- `log.md` — Appended ingest entry

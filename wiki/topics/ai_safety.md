@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-15
+last_updated: 2026-05-16
 ---
 
 # AI Safety
@@ -86,6 +86,8 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-13 | Meta Incognito Chat launches | True end-to-end encryption for AI conversations; zero server logs; directly addresses 30-day retention compliance concerns stalling enterprise AI adoption
 | 2026-05-13 | OpenAI Daybreak expands partner ecosystem | 8+ security vendors including Cisco, Oracle, Fortinet, Akamai, Zscaler; "three-tier" safety model becoming industry standard
 | 2026-05-07 | EU delays AI Act compliance by 18+ months | High-risk AI systems until December 2027; machinery until August 2028; first major global reversal of AI safety regulation
+| 2026-05-14 | Colorado SB-26-189 AI Act | Mandates disclosure when AI used in consequential decisions; bipartisan support; states writing actual rules while federal government debates which agency should oversee AI
+| 2026-05-16 | YouTube expands deepfake detection to all adults | Biometric signature scanning for synthetic media; reflects regulatory pressure (Colorado AI Act, UK tightening), not corporate goodwill; 900% deepfake incident growth in 2025
 
 ## Patterns & Insights
 
@@ -129,6 +131,8 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 
 **May 14: Regulatory Delays Reshape the Security Landscape**: The EU's 18-month AI Act delay — championed by Germany's Chancellor Merz after warnings from ASML, Airbus, Ericsson, Nokia, SAP, Siemens, and Mistral — gives European AI companies breathing room but also lets American labs solidify positions before stricter rules take effect. The timing is consequential: OpenAI and Anthropic are launching major enterprise cybersecurity products (Daybreak, Claude Security) during the delay window, potentially locking in market share before EU-specific compliance requirements arrive.
 
+**May 16: Regulatory Fragmentation Accelerates Across Multiple Fronts**: Colorado's SB-26-189 (replacing its 2024 law just two years later) and YouTube's deepfake detection expansion arrive the same week, revealing two complementary trends. States are writing actual AI rules while the federal government debates which agency should oversee the technology — Colorado's disclosure-over-prohibition approach gives businesses flexibility while protecting consumers. Platforms are pre-empting compliance by expanding synthetic media detection before laws multiply. The UK government's Claude-powered chatbot adds a third dimension: sovereign AI deployment with vendor dependency. The deeper pattern is that AI safety governance is fragmenting not just internationally (US/EU/China) but domestically — creating a compliance landscape where companies need legal teams larger than their safety research departments.
+
 ## Connections
 - [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior," Pentagon exclusion for refusing to drop safety guardrails; US government's "rethink" of Anthropic partnerships reflects the tension between commercial ambitions and governance commitments; Anthropic's safety-first branding attracted government interest but scaling to defense-grade reliability while maintaining constitutional AI principles is proving complex
 - [[sources/openai]] — Musk vs Altman trial threatens to invalidate commercial structure; GPT-5.4-Cyber positioned for cyber defense; joined Pentagon coalition while restricting GPT-5.5 Cyber; Trusted Contact safeguard frames safety as competitive moat; both OpenAI and Anthropic are racing to own the "responsible AI" positioning as regulators draft rules for AI-teen interactions
@@ -165,4 +169,8 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[entities/openai-daybreak]] — The three-tier model approach (standard, verified, red-team) is becoming the industry safety playbook; Anthropic pioneered it with Mythos's ~12 partners, and OpenAI is copying the structure while expanding to 8+ vendors simultaneously
 - [[entities/perceptron-mk1]] — Perceptron's embodied agents add a third competitor to the AI cybersecurity race alongside OpenAI Daybreak and Anthropic Mythos; the battle for AI-powered security is now a three-way contest
 - [[ideas/three-tier-safety-playbook]] — The standard/verified/red-team tier structure pioneered by Mythos and adopted by Daybreak represents a new safety architecture for capability-restricted models; it may become the template for all future frontier cybersecurity releases
-- [[timelines/2026-04]] — April concentrated the safety crisis: Claude Mythos restricted access, Hinton's UN warning, and the first government emergency CEO calls over model capabilities
+- [[entities/colorado-sb-26-189]] — Colorado's disclosure requirement for consequential decisions adds a US state-level compliance layer to the fragmented regulatory landscape; the bipartisan support signals AI oversight is transcending partisanship
+- [[entities/uk-govuk-chatbot]] — 90% accuracy for government services means ~10,000 potential daily failures at scale; the 2.5-year development timeline suggests extreme caution in deploying AI for high-stakes citizen interactions
+- [[entities/olmo]] — Microsoft's acquisition of OLMo expertise for "humanist superintelligence" raises safety questions about what happens when open-source safety research is absorbed into corporate product development
+- [[sources/ai2]] — The loss of Ai2's open-source leadership team to Microsoft reduces independent research capacity for transparent, auditable model development
+- [[timelines/2026-05]] — May 14-16 adds Colorado AI Act, UK chatbot, and YouTube deepfake expansion to the month's safety narrative alongside alignment reality checks and regulatory fragmentation

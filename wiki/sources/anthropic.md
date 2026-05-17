@@ -1,13 +1,15 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-15
+last_updated: 2026-05-16
 ---
 
 # Anthropic
 
 ## Overview
 Anthropic has emerged as the defining AI company of this period, driven by the unprecedented success of Claude Code which propelled annualized revenue from $9 billion at end-2025 to $30 billion in under a year. By late April, the company's valuation on secondary markets surged to approximately $1 trillion, surpassing OpenAI's $880 billion. On April 25, Google announced plans to invest up to $40 billion in Anthropic ($10B minimum, $30B contingent on performance targets) — the largest single investment in Anthropic to date, deepening the partnership as competition intensifies. The company serves 1,000+ enterprise customers spending over $1M annually. However, the Claude Mythos controversy — a model classified as too dangerous to release — has created a unique narrative tension between commercial success and safety concerns. The company closed a $30 billion Series G at $380 billion valuation (now ~$1T secondary) and signed its largest infrastructure deal: a multi-gigawatt TPU agreement with Google and Broadcom.
+
+On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.UK App (563K users), providing instant answers from 80,000 pages of official guidance with 90% accuracy. Built on Claude rather than open-source alternatives, the deployment signals confidence in Anthropic's safety guardrails for high-stakes citizen interactions and gives the UK a narrative win on "AI-powered governance."
 
 ## Timeline
 
@@ -66,6 +68,7 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 | 2026-05-13 | Claude Code v2.1.139 released | Agent View for unified session management (Research Preview for Pro/Team/Enterprise), /goal command for autonomous completion conditions, native Git worktree support, /loop for recurring tasks, MCP improvements; Anthropic's answer to OpenAI Codex agent mode
 | 2026-05-14 | Gates Foundation partnership announced | $200M, 4-year commitment for AI-powered global health, life sciences, education, and economic mobility; disease forecasting, vaccine screening, agricultural productivity for low and middle-income countries
 | 2026-05-15 | PwC expands Claude deployment to 30,000 professionals | New "Office of the CFO" built entirely on Claude technology; Claude Code and Claude Cowork deployed globally; 70% delivery time reduction (insurance underwriting: 10 weeks to 10 days; cybersecurity: hours to minutes)
+| 2026-05-15 | UK GOV.UK chatbot goes live | Built on Claude; 563K users; 90% accuracy from 80,000 pages of official guidance; top queries: tax, driving, transport, benefits; 2.5-year development timeline
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -103,3 +106,5 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 - [[ideas/compute-shortage-forces-cooperation]] — Anthropic-SpaceX partnership exemplifies compute scarcity overriding rivalries; Anthropic now has three independent compute pipelines (Google TPUs, SpaceX Colossus 1, Amazon AWS)
 - [[entities/claude-cowork]] — Claude Cowork is Anthropic's expansion into non-coding enterprise workflows; PwC's "Office of the CFO built entirely on Claude" validates safe AI as infrastructure, not just a tool
 - [[ideas/safe-ai-enterprise-narrative]] — Anthropic overtaking OpenAI in business adoption (34.4% vs 32.3%) proves enterprise buyers prioritize trust and safety credentials over raw benchmark scores
+- [[entities/uk-govuk-chatbot]] — The UK government's Claude-powered chatbot validates Anthropic's safety positioning in the highest-stakes deployment context; 2.5-year procurement timeline and 90% accuracy create a case study for "safe AI" winning sovereign contracts over raw capability
+- [[entities/colorado-sb-26-189]] — Colorado's disclosure requirements for AI in consequential decisions favor labs with transparent safety practices; Anthropic's Constitutional AI and interpretability tools (Natural Language Autoencoders) position it ahead of competitors on auditability

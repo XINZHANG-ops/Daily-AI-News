@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-15
+last_updated: 2026-05-16
 ---
 
 # AI Companies
@@ -158,6 +158,9 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-13 | Meta launches Incognito Chat | End-to-end encrypted AI conversations with zero server logs; built on WhatsApp Private Processing; positions Meta as privacy-first alternative
 | 2026-05-07 | EU agrees to delay AI Act compliance deadlines | High-risk AI systems deadline postponed to December 2027; machinery AI exempted until August 2028; German manufacturing pressured for exemption
 | 2026-05-13 | Mistral developing cybersecurity model for banks | Targeting banks without Anthropic Mythos access; off-the-shelf sovereign AI product for European financial institutions
+| 2026-05-14 | Colorado signs new AI Act (SB-26-189) | Replaces 2024 law; mandates notification for AI in consequential decisions (employment, healthcare, housing); takes effect August 2026; bipartisan support signals AI oversight transcends partisanship
+| 2026-05-15 | UK launches Claude-powered GOV.UK chatbot | 563K users, 90% accuracy, 80,000 pages of guidance; built on Claude for safety guardrails in high-stakes citizen interactions; 2.5-year development timeline
+| 2026-05-16 | Microsoft hires core OLMo team from Ai2 | 10+ researchers including former CEO Ali Farhadi; joins Mustafa Suleyman's Superintelligence team; strategic hedge against OpenAI dependency; signals end of "partnership era"
 
 ## Patterns & Insights
 
@@ -202,6 +205,8 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 **May 15: "Safe AI" Wins the Enterprise Narrative**: Anthropic's overtaking of OpenAI in business adoption (34.4% vs 32.3%, per Ramp) — coupled with the PwC expansion and Gates Foundation partnership — demonstrates that enterprise buyers favor Claude's reliability and safety credentials over raw benchmark performance. The timing is decisive: Anthropic announced PwC's "Office of the CFO built entirely on Claude" two days after the Ramp data, suggesting enterprise traction is accelerating. For developers, this validates the "safer AI" thesis: enterprises increasingly favor predictability over benchmark bragging rights, a trend that may reshape how AI companies compete.
 
 **May 15: AI Transitions from Tool to Infrastructure**: PwC building an entire "Office of the CFO" business unit "entirely on Claude" is the canary in the coal mine. This is different from "using Claude" — it's a structural bet on AI as foundational business infrastructure. The 70% delivery time reduction (insurance underwriting: 10 weeks to 10 days; cybersecurity response: hours to minutes) signals AI's move from experimentation to core operations. Combined with Mistral's unified model, the agent framework explosion, and the interface wars, the deeper pattern is clear: AI is no longer a tool humans use — it's the infrastructure organizations build on. The winners will be determined by trust and operational reliability, not just benchmarks.
+
+**May 16: The End of the Partnership Era and the Agentic Consolidation**: Microsoft's hiring of the core OLMo team from Ai2 — including former CEO Ali Farhadi — signals the end of the "partnership era" between Big Tech and independent AI labs. Every major platform is now building owned IP: Google (Gemma, Gemini), Microsoft (OLMo team, MAI models), Meta (Llama), Amazon (Olympus). The $13B OpenAI-Microsoft partnership is not ending, but Microsoft is clearly hedging. Simultaneously, three agent frameworks (Dulus, evonic, AgentClaw) trending on GitHub confirm the agentic shift is now the default assumption across the open-source ecosystem. The UK government's Claude-powered chatbot and Colorado's new AI Act show that regulation and deployment are converging faster than the federal government can respond — states and nations are writing their own rules while Washington stalemates.
 
 ## Connections
 - [[sources/openai]] — $122B funding, IPO preparation, Sora shutdown, Codex 3M users, GPT-Rosalind, TBPN acquisition, GPT-5.5, GPT-5.5 Cyber restrictions, Pentagon classified network deals, Symphony orchestration spec; $10B Deployment Company venture embedding forward-deployed engineers inside 2,000 PE portfolio companies
@@ -258,5 +263,13 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[entities/colossus-1]] — Colossus 1 represents the physical reality of compute scarcity restructuring AI competitive dynamics; SpaceX pivots from "build a model company" to "own the infrastructure model companies need"
 - [[ideas/eu-cyber-access-gap]] — The EU access gap is not a regulatory annoyance but an active security liability; attackers already have AI-developed zero-days while EU defenders are structurally blind without equivalent capabilities
 - [[ideas/voice-agent-battleground]] — ElevenLabs' $11B valuation and xAI's voice cloning suite announced the same week signal voice AI as a standalone competitive battleground, not just a feature of text models
-- [[timelines/2026-03]] — March set the competitive stage: NVIDIA GTC, Anthropic's Pentagon designation as unacceptable risk, and OpenAI's record B funding round
-- [[timelines/2026-04]] — April consolidated the industry: SpaceX-xAI merger, Anthropic's B ARR, workforce cuts across Big Tech, and the institutional gap widening between AI capability and governance
+- [[ideas/regulatory-fragmentation]] — Colorado's AI Act, YouTube's deepfake expansion, and the UK chatbot deployment show jurisdictions racing ahead of federal standards; fragmentation favors incumbents with legal teams
+- [[entities/colorado-sb-26-189]] — Colorado's disclosure-over-prohibition approach is becoming the template for US state-level AI regulation; the patchwork creates compliance moats for incumbents
+- [[entities/uk-govuk-chatbot]] — The UK government's Claude deployment validates "safe AI" winning sovereign procurement over raw capability; creates long-term vendor dependency on Anthropic
+- [[entities/olmo]] — Microsoft's OLMo team acquisition is a direct hedge against OpenAI; if Microsoft builds competitive models in-house, the $13B partnership's economic rationale weakens
+- [[sources/ai2]] — Ai2 losing its core OLMo team to Microsoft raises questions about whether independent open-source research labs can survive corporate absorption
+- [[ideas/agentic-is-default]] — The agentic shift is the underlying driver of Microsoft's OLMo hiring (smaller efficient models for agentic workloads), the UK chatbot (multi-step citizen requests), and the three trending repos
+- [[entities/dulus]] — Multi-provider agent framework treating Claude Code patterns as the open-source default
+- [[entities/evonic]] — Multi-agent swarm platform with cross-platform channel integration
+- [[entities/agentclaw]] — Declarative workflow framework turning one-sentence ideas into reusable capabilities
+- [[timelines/2026-05]] — May 16 crystallizes the end of the partnership era, the agentic default, and regulatory fragmentation as defining themes

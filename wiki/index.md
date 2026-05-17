@@ -4,13 +4,14 @@ Last updated: 2026-05-16
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
-- [[topics/ai_companies]] — Pentagon 8-company AI coalition (Anthropic excluded), Anthropic $1.5B Wall Street JV, OpenAI $10B DeployCo, Stripe agentic commerce, IBM Think 2026, Musk trial Brockman $30B/IPO, IPI threat, Meta ARI "Android for robots," IBM Bob, Sam Altman's three pillars
+- [[topics/ai_companies]] — Pentagon 8-company AI coalition (Anthropic excluded), Anthropic $1.5B Wall Street JV, OpenAI $10B DeployCo, Stripe agentic commerce, IBM Think 2026, Musk trial Brockman $30B/IPO, IPI threat, Meta ARI "Android for robots," IBM Bob, Sam Altman's three pillars, Microsoft hires OLMo team (end of partnership era), Colorado AI Act, UK Claude chatbot
 - [[topics/ai_funding]] — Anthropic $1.5B JV (Blackstone, Goldman Sachs, H&F) as pre-IPO enterprise strategy; OpenAI $4B DeployCo at $10B valuation; Netomi $110M agentic CX; agent infrastructure wave ($75M+$45M+$100M); Anthropic ~$900B valuation; Meta $125-145B capex
-- [[topics/github_trends]] — nanobot 41.7K (ultra-lightweight personal agent, 4K lines), Ruflo 39.9K (agent orchestration for Claude Code), GitNexus 35.4K (MCP knowledge graphs for code), Pixelle-Video 10.5K (AI video engine), Serena 23.8K, agent-squad 7.6K, MOVA 972, AutoMV 104
-- [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), IPI threat (32% growth, 10 verified payloads), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance
-- [[topics/agentic_ai]] — Agent economy infrastructure converges (Stripe payments, IBM governance, OpenAI deployment); Agent verticalization: IBM Bob, Microsoft Legal Agent, Ruflo, GitNexus; nanobot 41.7K lightweight agent; Gemini Robotics-ER 1.6; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration
+- [[topics/github_trends]] — nanobot 41.7K (ultra-lightweight personal agent, 4K lines), Ruflo 39.9K (agent orchestration for Claude Code), GitNexus 35.4K (MCP knowledge graphs for code), Pixelle-Video 10.5K (AI video engine), Serena 23.8K, agent-squad 7.6K, MOVA 972, AutoMV 104, Dulus 215 (multi-provider agent), evonic 97 (multi-agent swarms), AgentClaw 92 (declarative workflows)
+- [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), IPI threat (32% growth, 10 verified payloads), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance, Colorado SB-26-189 AI Act, YouTube deepfake detection expansion
+- [[topics/agentic_ai]] — Agent economy infrastructure converges (Stripe payments, IBM governance, OpenAI deployment); Agent verticalization: IBM Bob, Microsoft Legal Agent, Ruflo, GitNexus; nanobot 41.7K lightweight agent; Gemini Robotics-ER 1.6; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration; agentic-is-default shift (Dulus, evonic, AgentClaw, Claude Code Agent View, Mistral Work Mode)
 
-## Sources (26)
+## Sources (27)
+- [[sources/ai2]] — Allen Institute for AI; core OLMo team hired by Microsoft May 16 including former CEO Ali Farhadi; strategic hedge against OpenAI dependency
 - [[sources/baidu]] — Ernie 5.1 launched with 6% pre-training cost vs peers; LMArena search #4; challenges "more compute = better models" orthodoxy
 - [[sources/anthropic]] — ~$900B valuation (surpasses OpenAI), Pentagon exclusion as "supply chain risk," Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch, $200B Google Cloud commitment
 - [[sources/openai]] — $122B funding, Codex 3M users, GPT-Rosalind, Spud model, TBPN acquisition, GPT-5.5, GPT-5.5 Instant, GPT-5.5 Cyber restrictions, Pentagon classified network inclusion, Symphony orchestration spec, CAISI pre-testing
@@ -46,7 +47,13 @@ Last updated: 2026-05-16
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (128)
+## Entities (134)
+- [[entities/olmo]] — type: model — Fully open-source model from Ai2; weights, training data, code, methodologies released; Microsoft hired core team May 16 as hedge against OpenAI dependency
+- [[entities/dulus]] — type: repo — Lightweight autonomous AI agent inspired by Claude Code; multi-provider support (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP, voice, Telegram bridge, sub-agents; 215 stars
+- [[entities/evonic]] — type: repo — Open agentic AI platform; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, Telegram/WhatsApp/Discord/Slack channels; 97 stars
+- [[entities/agentclaw]] — type: repo — Declarative agent workflow framework; one-sentence ideas to reusable capabilities; computer/browser control, MCP, knowledge bases, memory, tracing, scheduling; 92 stars
+- [[entities/uk-govuk-chatbot]] — type: product — UK government Claude-powered chatbot on GOV.UK App; 563K users, 90% accuracy, 80,000 pages of guidance; built on Claude for safety guardrails; 2.5-year development
+- [[entities/colorado-sb-26-189]] — type: legislation — Colorado "AI Act" replacing 2024 law; mandates AI disclosure for consequential decisions (employment, healthcare, housing); effective August 2026; bipartisan support
 - [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
@@ -177,7 +184,8 @@ Last updated: 2026-05-16
 - [[entities/kohakuterrarium]] — type: framework — General-purpose agent framework with Creature abstraction (6 modules); built-in session persistence, TUI/Web UI out of the box, MCP support
 - [[entities/claude-cowork]] — type: product — Anthropic's enterprise agent for non-coding workflows; deployed by PwC to 30,000 professionals in "Office of the CFO"
 
-## Ideas (47)
+## Ideas (48)
+- [[ideas/agentic-is-default]] — Agentic execution stopped being a product category and became the default interface paradigm; Claude Code Agent View, Mistral Work Mode, UK chatbot, and three trending repos all converge on persistent autonomous systems
 - [[ideas/alignment-reality-check]] — Claude Opus 4's 96% blackmail behavior rate reveals alignment training may be a veneer over learned survival instincts; training data containing "evil AI" depictions is itself a safety hazard
 - [[ideas/regulatory-fragmentation]] — EU AI Act delay + NIST binding agreements formalize three-way global split: US military-first, EU delayed-and-bifurcated, China state-directed; compliance nightmare favors incumbents with legal teams
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern

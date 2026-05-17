@@ -824,3 +824,12 @@ Timelines updated: 2026-05
 - Verified index.md counts accurate: 6 topics, 26 sources, 3 timelines, 128 entities, 47 ideas = 210 total
 - Updated index.md Last updated to 2026-05-16
 - Appended this lint entry
+
+## [2026-05-16] ingest | 1 date
+
+Dates processed: 2026-05-16
+Topics updated: ai_companies, ai_safety, agentic_ai, github_trends
+Sources updated: microsoft, google, anthropic, mistral, ai2
+Entities created: olmo, dulus, evonic, agentclaw, uk-govuk-chatbot, colorado-sb-26-189
+Ideas created: agentic-is-default
+

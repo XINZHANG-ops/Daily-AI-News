@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-15
+last_updated: 2026-05-16
 ---
 
 # GitHub Trends
@@ -93,6 +93,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | strukto-ai/mirage | 2K+ | Unified virtual filesystem for agents; unifies S3, Google Drive, Slack, Gmail, Redis, GitHub into single bash-navigable storage abstraction |
 | opensquilla/opensquilla | 232+ | Token-efficient agent with four-tier cognitive memory (working → episodic → semantic → raw); abstracts memory management from flat context windows |
 | HiDream-ai/HiDream-O1-Image | 293+ | Natively unified image generation without external VAEs; text-to-image, editing, personalization in one model; #8 on Arena |
+| KevRojo/Dulus | 215 | Lightweight autonomous AI agent inspired by Claude Code; multi-provider support, 27 built-in tools, MCP integration, voice input, Telegram bridge, sub-agents
+| anvie/evonic | 97 | Open agentic AI platform; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, cross-platform channels
+| Negai-ai/AgentClaw | 92 | Declarative agent workflow framework; one-sentence ideas to reusable capabilities; computer/browser control, MCP, knowledge bases, memory, tracing, scheduling
 
 ## Patterns & Insights
 
@@ -149,6 +152,8 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 **May 14: Agent-Native Audio and Inference Tooling**: Three repos trending span voice synthesis and inference infrastructure. Scenema Audio (6 stars) extracts an audio diffusion transformer from LTX 2.3's 22B audiovisual model for zero-shot expressive voice cloning — a trend of "mining" capabilities from large multimodal foundation models. GemTTS (28 stars) is an agent-friendly Gemini TTS CLI in Rust supporting expressive tags ([whispers], [laughs], [warmly]) and JSON output, signaling the emergence of "agent-native" tooling built for machine consumption rather than human interfaces. Atomr Infer (142 stars) is a production-grade Rust multi-runtime inference layer with circuit breakers and distributed rate limiting, addressing the real infrastructure pain of mixing local GPU and remote API inference in agent pipelines.
 
 **May 15: Production-Ready Agent Frameworks Explode**: Three frameworks trend simultaneously, signaling the ecosystem maturing past prototypes. OpenSwarm (2.3k stars) is a fully open-source multi-agent system built on Agency Swarm, creating polished deliverables via 8 specialized agents with 10,000+ Composio integrations. Alphora (347 stars) is a production-ready full-stack framework with built-in secure code sandbox, typed SSE streaming, and one-line deploy as an OpenAI-compatible API. KohakuTerrarium (320 stars) introduces a "Creature" abstraction with 6-module agent model, built-in session persistence, and TUI/Web UI out of the box. All three ship with enterprise-grade features (sandboxing, persistence, typed streaming) rather than demo-quality code — the agent framework layer has crossed from "possible" to "production."
+
+**May 16: The Agentic Framework Trio**: Three repos trending — Dulus (215 stars, multi-provider "Claude Code for any model"), evonic (97 stars, multi-agent swarms with cross-platform channels), and AgentClaw (92 stars, declarative workflow specification) — all converge on the same thesis: agentic execution is the new default. Unlike earlier trending repos that replicated Claude Code's design, these frameworks treat multi-provider support, persistent state, and declarative specification as baseline assumptions. The pattern signals the open-source ecosystem has absorbed the agentic shift and is now building the infrastructure layer above it.
 
 ## Connections
 - [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
@@ -209,5 +214,9 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/webwright]] — Microsoft's ~450-line SOTA web agent proves minimal architectures can outperform complex systems; the code-as-action paradigm with workspace-as-state design challenges the browser-automation approach of most web agents
 - [[ideas/mcp-infrastructure-battleground]] — frona's MCP bridge mode and Agenvoy's MCP client adapter show the protocol has become table stakes for new agent infrastructure projects
 - [[entities/terminal-bench-2]] — The 18-35% CLI task failure rate is the empirical driver behind infrastructure investment; models alone won't close the deployment gap — agents need better tools
-- [[timelines/2026-03]] — March trending repos included claw-code (DMCA-proof Claude Code rewrite reaching 100K stars) and ByteDance DeerFlow v2.0, showing agent replication speed
-- [[timelines/2026-04]] — April's 275M commits/week exposed the platform economics crisis; GitHub trending repos shifted toward infrastructure as agents became primary code producers
+- [[entities/dulus]] — 215 stars; multi-provider autonomous agent explicitly inspired by Claude Code; validates that agent design patterns are replicable across models
+- [[entities/evonic]] — 97 stars; open agentic platform with multi-agent swarms and cross-platform channel integration; enterprise orchestration layer for agent deployment
+- [[entities/agentclaw]] — 92 stars; declarative workflow framework turning one-sentence ideas into reusable capabilities; "Stop prompting. Start specifying."
+- [[ideas/agentic-is-default]] — All three May 16 repos treat autonomous multi-session execution as baseline, confirming the agentic shift has reached the open-source mainstream
+- [[entities/olmo]] — Microsoft's OLMo team acquisition may produce new open-source models from a corporate lab, potentially changing where open-source agent frameworks get their underlying capabilities
+- [[timelines/2026-05]] — May 16 trending repos (Dulus, evonic, AgentClaw) confirm the agentic shift is the default assumption in open-source development

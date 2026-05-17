@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-15
+last_updated: 2026-05-16
 ---
 
 # Agentic AI
@@ -104,7 +104,10 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-13 | GitHub MCP Server secret scanning GA | Security-as-MCP category maturing; production dependency signal |
 | 2026-05-13 | frona self-hosted agent platform | Per-principal sandboxing, MCP bridge mode, 15+ LLM providers; 132 stars |
 | 2026-05-13 | Agenvoy Go agent runtime | Multi-provider concurrent dispatch, ToriiDB error memory, OS-native sandboxing; 101 stars |
-| 2026-05-13 | Microsoft Webwright | SOTA web agent: 86.7% Online-Mind2Web, 60.1% Odyssey; code-as-action, ~450 lines core loop; 2.4K stars |
+| 2026-05-13 | Microsoft Webwright | SOTA web agent: 86.7% Online-Mind2Web, 60.1% Odyssey; code-as-action, ~450 lines core loop; 2.4K stars
+| 2026-05-16 | Dulus lightweight autonomous agent | 215 stars; multi-provider (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP, voice, Telegram, sub-agents; "Claude Code for any model"
+| 2026-05-16 | evonic open agentic AI platform | 97 stars; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, Telegram/WhatsApp/Discord/Slack channels
+| 2026-05-16 | AgentClaw declarative workflow framework | 92 stars; one-sentence ideas to reusable capabilities; computer/browser control, MCP, knowledge bases, memory, tracing, scheduling |
 
 ## Patterns & Insights
 
@@ -155,6 +158,8 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 **May 15: Agent Frameworks Cross from Prototype to Production**: Three frameworks trending on the same day — OpenSwarm, Alphora, and KohakuTerrarium — all ship enterprise-grade features rather than demo code. OpenSwarm has 10,000+ Composio integrations. Alphora has a secure code sandbox and typed SSE streaming. KohakuTerrarium has built-in session persistence and TUI/Web UI out of the box. The pattern: the open-source agent ecosystem is no longer building toys — it's building the infrastructure that enterprises will actually deploy. This is the "boring infrastructure" phase of agentic AI, where reliability and security matter more than viral demos.
 
 **May 15: The Interface Wars Converge on Context-Aware Action**: DeepMind's Magic Pointer, OpenAI's mobile Codex, and Anthropic's Claude Cowork all point to the same destination: AI that understands context across modalities. The Magic Pointer understands what you're pointing at and why it matters. Mobile Codex lets developers kick off tasks from anywhere. Claude Cowork brings agentic AI to non-coding professionals. The next interface battleground isn't voice or text — it's context-aware action across the entire computing surface, from cursors to phones to business workflows.
+
+**May 16: Agentic Becomes the Default Assumption**: Three trending repos — Dulus, evonic, and AgentClaw — all treat autonomous, multi-step, multi-session execution as the baseline, not a premium feature. This converges with Claude Code's Agent View (orchestration layer for multiple sessions), Mistral's Work Mode (on-device agentic default), and the UK government's chatbot (multi-step citizen requests) to signal a paradigm shift: users no longer open an AI to ask a question; they delegate a task and expect the system to persist, coordinate, and complete across sessions. The difference between "searching for a flight" and "book my trip to Tokyo, handle visas, add to calendar" is the difference between chat and agentic — and the industry has crossed that line.
 
 ## Connections
 - [[entities/serena]] — Semantic code infrastructure at symbol level; MCP toolkit that makes any coding agent smarter; 23.8K stars
@@ -219,5 +224,10 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/agenvoy]] — Go-based agent runtime with multi-provider concurrent dispatch and ToriiDB self-improving error memory shows systems-language performance entering the agent infrastructure layer
 - [[entities/webwright]] — Microsoft's ~450-line web agent achieving SOTA on Online-Mind2Web (86.7%) proves minimal code-as-action architectures can outperform complex systems; the workspace-as-state design is a paradigm shift
 - [[ideas/mcp-infrastructure-battleground]] — AWS GA, GitHub secret scanning GA, and frona/agenvoy MCP support all in one week confirm MCP has become the infrastructure battleground for AI agents
-- [[timelines/2026-03]] — March showed agent infrastructure strain: Claude Code source leak triggered claw-code's 100K-star rewrite, and Claude Computer Use went viral
-- [[timelines/2026-04]] — April delivered the agent-scale economics crisis: GitHub's 275M commits/week revealed platforms built for humans cannot handle agent traffic without business model reinvention
+- [[entities/dulus]] — 215 stars; multi-provider "Claude Code for any model" validates that the agentic interface layer is becoming independent of the model layer
+- [[entities/evonic]] — 97 stars; multi-agent swarms with cross-platform channels treat agents as ambient communication participants rather than destination apps
+- [[entities/agentclaw]] — 92 stars; declarative workflow framework represents the shift from prompt engineering to specification-driven agent architecture
+- [[ideas/agentic-is-default]] — The May 16 convergence of Claude Code Agent View, Mistral Work Mode, UK chatbot, and three trending repos marks the moment agentic execution became the default assumption
+- [[entities/uk-govuk-chatbot]] — Government chatbots evolving from FAQ search to agentic multi-step request handling signal the shift reaching public infrastructure
+- [[entities/olmo]] — Microsoft's OLMo team acquisition targets "humanist superintelligence systems" — suggesting agentic AI is moving toward systems with persistent values and goals across sessions
+- [[timelines/2026-05]] — May 16 confirms the agentic shift as the defining product architecture trend of the month
