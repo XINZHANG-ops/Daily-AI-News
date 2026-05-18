@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 18, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 18, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/agentic-in/elephant-agent" class="card-title" target="_blank">agentic-in/elephant-agent</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 287 stars</div>
+                                <div class="meta-item"><span>🍴</span> 42 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Personal-Model First Self Evolving AI Agent. A self-improving agent that evolves based on user interactions and learns from its own experience.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">首个以个人模型为中心的自进化AI代理。一个基于用户交互并从自身经验中学习的自改进代理。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/vuquangminhpe/AgenticMemory" class="card-title" target="_blank">vuquangminhpe/AgenticMemory</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 9 stars</div>
+                                <div class="meta-item"><span>🍴</span> 2 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A project-centric, multi-agent cognitive operating system for software engineering workflows. Turns conversations and code decisions into an evolving knowledge graph.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">以项目为中心的多代理认知操作系统，适用于软件开发工作流。将对话和代码决策转化为不断演进的知识图谱。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/mjgil/opencode" class="card-title" target="_blank">mjgil/opencode</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 12 stars</div>
+                                <div class="meta-item"><span>🍴</span> 3 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open source AI coding agent - a fork of anomalyco/opencode, enabling free AI-powered code editing and automation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源AI编码代理 - anomalyco/opencode的分支，支持免费的AI驱动代码编辑和自动化。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-05-14</div>
+                    <a href="https://openai.com/index/introducing-the-codex-app/" class="card-title" target="_blank" data-lang="en">OpenAI Launches Codex Mobile: AI Coding Agent Now on ChatGPT Mobile App</a>
+                    <a href="https://openai.com/index/introducing-the-codex-app/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI发布Codex移动版：AI编码代理现已登陆ChatGPT移动应用</a>
+                    <p class="card-description" data-lang="en">OpenAI brings Codex to mobile devices, allowing users to monitor and manage AI coding tasks remotely through the ChatGPT app. Users can connect to a Mac running the Codex app to monitor tasks, review outputs, approve commands, and switch models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI将Codex带入移动设备，允许用户通过ChatGPT应用远程监控和管理AI编码任务。用户可以连接到运行Codex应用的Mac，监控任务、审查输出、批准命令并切换模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Google Cloud Blog</span>
+                    <div class="news-time">2026-05-10</div>
+                    <a href="https://cloud.google.com/blog/products/ai-machine-learning/claude-mythos-preview-on-vertex-ai" class="card-title" target="_blank" data-lang="en">Anthropic's Claude Mythos Enters Google Vertex AI Through Project Glasswing</a>
+                    <a href="https://cloud.google.com/blog/products/ai-machine-learning/claude-mythos-preview-on-vertex-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic的Claude Mythos通过Project Glasswing进入Google Vertex AI</a>
+                    <p class="card-description" data-lang="en">Claude Mythos Preview is now available in private preview on Google Cloud's Vertex AI as part of Project Glasswing, a cybersecurity initiative. Around 40 organizations will get access at $25/M input tokens and $125/M output tokens.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Mythos Preview现已在Google Cloud的Vertex AI上以私人预览形式推出，作为Project Glasswing网络安全计划的一部分。约40个组织将获得访问权限，输入令牌价格为每百万25美元，输出令牌价格为每百万125美元。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">WION</span>
+                    <div class="news-time">2026-05-17</div>
+                    <a href="https://www.wionews.com/technology/-ai-strategy-update-greg-brockman-takes-charge-of-product-strategy-at-openai-1779004105602" class="card-title" target="_blank" data-lang="en">Greg Brockman Takes Charge of Product Strategy at OpenAI</a>
+                    <a href="https://www.wionews.com/technology/-ai-strategy-update-greg-brockman-takes-charge-of-product-strategy-at-openai-1779004105602" class="card-title" target="_blank" data-lang="zh" style="display: none;">Greg Brockman执掌OpenAI产品战略</a>
+                    <p class="card-description" data-lang="en">OpenAI co-founder and president Greg Brockman has taken charge of product strategy, marking a shift in how the company plans to develop and manage its AI tools. The company plans to combine ChatGPT, Codex, and developer APIs into a unified platform to support an 'agentic future'.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI联合创始人兼总裁Greg Brockman已接管产品战略，标志着公司规划和管理AI工具方式的转变。公司计划将ChatGPT、Codex和开发者API整合为统一平台，以支持'代理未来'。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">PR Newswire</span>
+                    <div class="news-time">2026-05-12</div>
+                    <a href="https://www.prnewswire.com/news-releases/isomorphic-labs-secures-2-1-billion-funding-to-scale-its-ai-drug-design-engine-302769674.html" class="card-title" target="_blank" data-lang="en">Isomorphic Labs Secures $2.1B to Scale AI Drug Design Engine</a>
+                    <a href="https://www.prnewswire.com/news-releases/isomorphic-labs-secures-2-1-billion-funding-to-scale-its-ai-drug-design-engine-302769674.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Isomorphic Labs获21亿美元扩展AI药物设计引擎</a>
+                    <p class="card-description" data-lang="en">Google's AI drug design subsidiary raised $2.1 billion in Series B funding led by Thrive Capital, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and UK Sovereign AI Fund. The funds will be used to expand the pipeline toward clinic and hire AI/engineering talent.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google旗下的AI药物设计子公司在Thrive Capital领投的B轮融资中筹集了21亿美元，参与方包括Alphabet、GV、MGX、Temasek、CapitalG和英国主权AI基金。资金将用于扩展临床管道和招聘AI/工程人才。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">FinSMEs</span>
+                    <div class="news-time">2026-05-15</div>
+                    <a href="https://www.finsmes.com/2026/05/recursive-superintelligence-raises-650m-in-funding-at-4-65-billion-valuation.html" class="card-title" target="_blank" data-lang="en">Recursive Superintelligence Raises $650M at $4.65B Valuation</a>
+                    <a href="https://www.finsmes.com/2026/05/recursive-superintelligence-raises-650m-in-funding-at-4-65-billion-valuation.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Recursive Superintelligence以46.5亿美元估值融资6.5亿美元</a>
+                    <p class="card-description" data-lang="en">Self-improving AI software company raised $650 million in funding at a $4.65 billion valuation. Investors include GV, Greycroft, AMD Ventures, and NVIDIA. The company plans to use funds for large-scale compute infrastructure and deploy Level 1 autonomous training system.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">自我改进AI软件公司以46.5亿美元估值融资6.5亿美元。投资者包括GV、Greycroft、AMD Ventures和NVIDIA。该公司计划将资金用于大规模计算基础设施并部署一级自主训练系统。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Yahoo Finance</span>
+                    <div class="news-time">2026-05-13</div>
+                    <a href="https://finance.yahoo.com/news/mind-robotics-announces-400m-funding-150000342.html" class="card-title" target="_blank" data-lang="en">Mind Robotics Raises $400M for Industrial Robotics Deployment</a>
+                    <a href="https://finance.yahoo.com/news/mind-robotics-announces-400m-funding-150000342.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Mind Robotics融资4亿美元扩展工业机器人部署</a>
+                    <p class="card-description" data-lang="en">AI-powered industrial robotics platform raised $400 million in new funding led by Kleiner Perkins, with participation from Andreessen Horowitz, Accel, and others. The company has now raised over $1 billion total to deploy AI-powered robots in industrial settings.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI驱动的工业机器人平台在Kleiner Perkins领投的新一轮融资中筹集了4亿美元，a16z、Accel等参与跟投。该公司目前已融资超过10亿美元，用于在工业环境中部署AI驱动的机器人。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub Blog</span>
+                    <div class="news-time">2026-05-08</div>
+                    <a href="https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/" class="card-title" target="_blank" data-lang="en">MCP Joins Linux Foundation as Industry Standard Accelerates</a>
+                    <a href="https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/" class="card-title" target="_blank" data-lang="zh" style="display: none;">MCP加入Linux基金会行业标准加速推进</a>
+                    <p class="card-description" data-lang="en">Anthropic donated the Model Context Protocol (MCP) to the Linux Foundation's Agentic AI Foundation, marking a pivotal moment for the open standard. Microsoft has also integrated MCP support into Windows 11, enabling secure agentic computing.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic将模型上下文协议（MCP）捐赠给Linux基金会的Agentic AI Foundation，标志着开放标准的关键时刻。微软也将MCP支持集成到Windows 11中，实现了安全的代理计算。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The real story of May 17-18 is the convergence of three distinct but interrelated forces: platform consolidation (OpenAI unifying ChatGPT+Codex+APIs under Brockman, Anthropic partnering with Google Vertex), protocol standardization (MCP under Linux Foundation), and massive capital deployment (Isomorphic's $2.1B, Recursive's $650M, Mind Robotics' $400M). The Brockman move is the most strategic signal - OpenAI is no longer just a research lab shipping APIs, it's becoming a product company. Meanwhile, MCP becoming a true open standard removes a key friction point for agent adoption. The funding numbers reveal investor appetite: drug discovery (Isomorphic) feels more credible than 'autonomous training' (Recursive), and robotics (Mind) has top-tier VCs but must prove real-world deployment. The next 6 months will determine whether the agentic future arrives through unified platforms (OpenAI's bet) or open protocols (MCP's bet).</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">5月17-18日的真正故事是三个不同但相互关联的力量的汇聚：平台整合（Brockman统一ChatGPT+Codex+API，Anthropic与Google Vertex合作）、协议标准化（MCP在Linux基金会下），以及大规模资本部署（Isomorphic的21亿、Recursive的6.5亿、Mind Robotics的4亿）。Brockman的举措是最具战略性的信号——OpenAI不再是只发布API的研究实验室，而正在成为一家产品公司。与此同时，MCP成为真正的开放标准消除了代理采用的关键摩擦点。融资数字揭示了投资者的胃口：药物发现（Isomorphic）比'自主训练'（Recursive）更可信，机器人（Mind）有顶级VC支持但必须证明现实世界的部署。未来6个月将决定代理未来是通过统一平台（OpenAI的赌注）还是开放协议（MCP的赌注）到来。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

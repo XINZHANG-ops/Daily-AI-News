@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-18",
+  "github_repos": [
+    {
+      "name": "agentic-in/elephant-agent",
+      "url": "https://github.com/agentic-in/elephant-agent",
+      "description": {
+        "en": "Personal-Model First Self Evolving AI Agent. A self-improving agent that evolves based on user interactions and learns from its own experience.",
+        "zh": "首个以个人模型为中心的自进化AI代理。一个基于用户交互并从自身经验中学习的自改进代理。"
+      },
+      "stars": "287",
+      "forks": "42"
+    },
+    {
+      "name": "vuquangminhpe/AgenticMemory",
+      "url": "https://github.com/vuquangminhpe/AgenticMemory",
+      "description": {
+        "en": "A project-centric, multi-agent cognitive operating system for software engineering workflows. Turns conversations and code decisions into an evolving knowledge graph.",
+        "zh": "以项目为中心的多代理认知操作系统，适用于软件开发工作流。将对话和代码决策转化为不断演进的知识图谱。"
+      },
+      "stars": "9",
+      "forks": "2"
+    },
+    {
+      "name": "mjgil/opencode",
+      "url": "https://github.com/mjgil/opencode",
+      "description": {
+        "en": "Open source AI coding agent - a fork of anomalyco/opencode, enabling free AI-powered code editing and automation.",
+        "zh": "开源AI编码代理 - anomalyco/opencode的分支，支持免费的AI驱动代码编辑和自动化。"
+      },
+      "stars": "12",
+      "forks": "3"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Launches Codex Mobile: AI Coding Agent Now on ChatGPT Mobile App",
+        "zh": "OpenAI发布Codex移动版：AI编码代理现已登陆ChatGPT移动应用"
+      },
+      "url": "https://openai.com/index/introducing-the-codex-app/",
+      "source": "OpenAI",
+      "time": "2026-05-14",
+      "description": {
+        "en": "OpenAI brings Codex to mobile devices, allowing users to monitor and manage AI coding tasks remotely through the ChatGPT app. Users can connect to a Mac running the Codex app to monitor tasks, review outputs, approve commands, and switch models.",
+        "zh": "OpenAI将Codex带入移动设备，允许用户通过ChatGPT应用远程监控和管理AI编码任务。用户可以连接到运行Codex应用的Mac，监控任务、审查输出、批准命令并切换模型。"
+      },
+      "insight": {
+        "en": "This marks a significant expansion of OpenAI's agentic strategy - Codex was previously a command-line tool, but mobile access transforms it into a truly ambient computing experience. Combined with the Chrome extension launched May 7 and the May 5 Enterprise access tokens, OpenAI is executing a multi-platform rollout that directly competes with Cursor and Claude Code. The timing is strategic: this follows GPT-5.5's enterprise rollout and positions Codex as the 'agentic interface' across all devices.",
+        "zh": "这标志着OpenAI代理策略的重大扩展——Codex此前是命令行工具，但移动访问将其转变为真正的环境计算体验。结合5月7日推出的Chrome扩展和5月5日的企业访问令牌，OpenAI正在执行多平台铺开策略，直接与Cursor和Claude Code竞争。时机的选择很有策略：这是在GPT-5.5企业版推出之后，将Codex定位为跨所有设备的'代理界面'。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic's Claude Mythos Enters Google Vertex AI Through Project Glasswing",
+        "zh": "Anthropic的Claude Mythos通过Project Glasswing进入Google Vertex AI"
+      },
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/claude-mythos-preview-on-vertex-ai",
+      "source": "Google Cloud Blog",
+      "time": "2026-05-10",
+      "description": {
+        "en": "Claude Mythos Preview is now available in private preview on Google Cloud's Vertex AI as part of Project Glasswing, a cybersecurity initiative. Around 40 organizations will get access at $25/M input tokens and $125/M output tokens.",
+        "zh": "Claude Mythos Preview现已在Google Cloud的Vertex AI上以私人预览形式推出，作为Project Glasswing网络安全计划的一部分。约40个组织将获得访问权限，输入令牌价格为每百万25美元，输出令牌价格为每百万125美元。"
+      },
+      "insight": {
+        "en": "This partnership signals a deeper Anthropic-Google Cloud tie-up following the $4B investment. The restricted availability (only ~40 orgs) reflects the delicate balance between frontier model power and security concerns - Mythos can detect code vulnerabilities with 'remarkable precision' per reports. This also positions GCP as a premium destination for enterprise AI, directly competing with Microsoft Foundry's GPT-5.5 integration. The timing is notable: Mythos appears on Vertex just as OpenAI is pushing Codex hard.",
+        "zh": "这一合作关系标志着在40亿美元投资之后Anthropic与Google Cloud的更深层次联系。受限的可访问性（约40个组织）反映了前沿模型力量与安全担忧之间的微妙平衡——据报道，Mythos可以'精确地'检测代码漏洞。这也使GCP成为企业AI的优质目的地，直接与微软Foundry的GPT-5.5集成竞争。时机的选择很巧妙：Mythos在Vertex上出现正值OpenAI大力推广Codex之际。"
+      }
+    },
+    {
+      "title": {
+        "en": "Greg Brockman Takes Charge of Product Strategy at OpenAI",
+        "zh": "Greg Brockman执掌OpenAI产品战略"
+      },
+      "url": "https://www.wionews.com/technology/-ai-strategy-update-greg-brockman-takes-charge-of-product-strategy-at-openai-1779004105602",
+      "source": "WION",
+      "time": "2026-05-17",
+      "description": {
+        "en": "OpenAI co-founder and president Greg Brockman has taken charge of product strategy, marking a shift in how the company plans to develop and manage its AI tools. The company plans to combine ChatGPT, Codex, and developer APIs into a unified platform to support an 'agentic future'.",
+        "zh": "OpenAI联合创始人兼总裁Greg Brockman已接管产品战略，标志着公司规划和管理AI工具方式的转变。公司计划将ChatGPT、Codex和开发者API整合为统一平台，以支持'代理未来'。"
+      },
+      "insight": {
+        "en": "This is a significant organizational signal - Brockman was previously more focused on research and infrastructure. His move to product suggests OpenAI is transitioning from 'building powerful models' to 'shipping usable products'. The unified platform strategy (combining ChatGPT + Codex + APIs) mirrors what Anthropic has done with Claude Code + MCP, and what Microsoft is doing with Copilot + Foundry. The agentic future requires seamless integration, not just powerful models.",
+        "zh": "这是一个重要的组织信号——Brockman此前更专注于研究和大容量工作负载。他转向产品表明OpenAI正在从'构建强大模型'转变为'交付可用产品'。统一平台策略（整合ChatGPT + Codex + API）与Anthropic在Claude Code + MCP上的做法以及微软在Copilot + Foundry上的做法如出一辙。代理未来需要无缝集成，而非仅仅是强大的模型。"
+      }
+    },
+    {
+      "title": {
+        "en": "Isomorphic Labs Secures $2.1B to Scale AI Drug Design Engine",
+        "zh": "Isomorphic Labs获21亿美元扩展AI药物设计引擎"
+      },
+      "url": "https://www.prnewswire.com/news-releases/isomorphic-labs-secures-2-1-billion-funding-to-scale-its-ai-drug-design-engine-302769674.html",
+      "source": "PR Newswire",
+      "time": "2026-05-12",
+      "description": {
+        "en": "Google's AI drug design subsidiary raised $2.1 billion in Series B funding led by Thrive Capital, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and UK Sovereign AI Fund. The funds will be used to expand the pipeline toward clinic and hire AI/engineering talent.",
+        "zh": "Google旗下的AI药物设计子公司在Thrive Capital领投的B轮融资中筹集了21亿美元，参与方包括Alphabet、GV、MGX、Temasek、CapitalG和英国主权AI基金。资金将用于扩展临床管道和招聘AI/工程人才。"
+      },
+      "insight": {
+        "en": "This is the largest AI biotech funding round this year - $2.1B in a single round is extraordinary even by 2026 standards. The investor lineup (Thrive, Alphabet itself, Temasek, UK Sovereign Fund) suggests this is as much about strategic positioning as capital. Isomorphic's approach - using AlphaFold-derived models for drug discovery - represents one of the most tangible 'AI solves real problems' narratives. Compare to Recursive Superintelligence's $650M also this month: drug discovery feels more grounded than 'autonomous training systems'.",
+        "zh": "这是今年最大的AI生物技术融资轮——21亿美元的单轮融资即使按2026年的标准也非同寻常。投资者阵容（Thrive、Alphabet本身、Temasek、英国主权基金）表明这既是资本布局，也是战略定位。Isomorphic的方法——使用源自AlphaFold的模型进行药物发现——代表了最切实的'AI解决实际问题'叙事。与本月Recursive Superintelligence的6.5亿美元相比：药物发现比'自主训练系统'更接地气。"
+      }
+    },
+    {
+      "title": {
+        "en": "Recursive Superintelligence Raises $650M at $4.65B Valuation",
+        "zh": "Recursive Superintelligence以46.5亿美元估值融资6.5亿美元"
+      },
+      "url": "https://www.finsmes.com/2026/05/recursive-superintelligence-raises-650m-in-funding-at-4-65-billion-valuation.html",
+      "source": "FinSMEs",
+      "time": "2026-05-15",
+      "description": {
+        "en": "Self-improving AI software company raised $650 million in funding at a $4.65 billion valuation. Investors include GV, Greycroft, AMD Ventures, and NVIDIA. The company plans to use funds for large-scale compute infrastructure and deploy Level 1 autonomous training system.",
+        "zh": "自我改进AI软件公司以46.5亿美元估值融资6.5亿美元。投资者包括GV、Greycroft、AMD Ventures和NVIDIA。该公司计划将资金用于大规模计算基础设施并部署一级自主训练系统。"
+      },
+      "insight": {
+        "en": "The involvement of both AMD Ventures and NVIDIA in the same round is notable - typically these compete for AI compute mindshare. This suggests Recursive is positioning itself as hardware-agnostic, which is smart given the current GPU shortage. The 'Level 1 autonomous training' claim is bold - it implies the system can improve itself without human intervention. This aligns with the broader 'self-improving agents' trend seen in Elephant-agent (also launched this month). But Isomorphic's $2.1B feels more credible - drug discovery has clear metrics, 'autonomous training' is harder to verify.",
+        "zh": "AMD Ventures和NVIDIA同时参与同一轮融资值得关注——通常这两家在AI计算领域相互竞争。这表明Recursive正在将自己定位为硬件无关的平台，这在当前GPU短缺的情况下是明智的。'一级自主训练'的说法很大胆——这意味着系统可以在没有人类干预的情况下自我改进。这与更广泛的'自我改进代理'趋势一致——Elephant-agent也在本月推出。但Isomorphic的21亿美元感觉更可信——药物发现有明确的指标，'自主训练'更难验证。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mind Robotics Raises $400M for Industrial Robotics Deployment",
+        "zh": "Mind Robotics融资4亿美元扩展工业机器人部署"
+      },
+      "url": "https://finance.yahoo.com/news/mind-robotics-announces-400m-funding-150000342.html",
+      "source": "Yahoo Finance",
+      "time": "2026-05-13",
+      "description": {
+        "en": "AI-powered industrial robotics platform raised $400 million in new funding led by Kleiner Perkins, with participation from Andreessen Horowitz, Accel, and others. The company has now raised over $1 billion total to deploy AI-powered robots in industrial settings.",
+        "zh": "AI驱动的工业机器人平台在Kleiner Perkins领投的新一轮融资中筹集了4亿美元，a16z、Accel等参与跟投。该公司目前已融资超过10亿美元，用于在工业环境中部署AI驱动的机器人。"
+      },
+      "insight": {
+        "en": "The investor list reads like a 'who's who' of top VCs (Kleiner, a16z, Accel, Redpoint, Greenoaks, Eclipse, Bain). That level of syndicate suggests confidence in the physical AI thesis. Combined with NVIDIA's DreamDojo (robot world model released Feb 2026), the robotics vertical is seeing serious capital flow. But the gap between funding and deployment is large - industrial robotics faces real-world challenges that software doesn't. The trend to watch: are these robots actually shipping, or is this another 'year of the robot' cycle?",
+        "zh": "投资者名单读起来像是顶级VC的'名人录'（Kleiner、a16z、Accel、Redpoint、Greenoaks、Eclipse、Bain）。这种级别的联合投资表明对物理AI论的信心。结合NVIDIA的DreamDojo（2026年2月发布的机器人世界模型），机器人垂直领域正在看到大量资本流入。但资金与部署之间的差距很大——工业机器人面临的现实世界挑战是软件无法相比的。值得关注的趋势：这些机器人真的在发货吗，还是又是'机器人之年'的循环？"
+      }
+    },
+    {
+      "title": {
+        "en": "MCP Joins Linux Foundation as Industry Standard Accelerates",
+        "zh": "MCP加入Linux基金会行业标准加速推进"
+      },
+      "url": "https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/",
+      "source": "GitHub Blog",
+      "time": "2026-05-08",
+      "description": {
+        "en": "Anthropic donated the Model Context Protocol (MCP) to the Linux Foundation's Agentic AI Foundation, marking a pivotal moment for the open standard. Microsoft has also integrated MCP support into Windows 11, enabling secure agentic computing.",
+        "zh": "Anthropic将模型上下文协议（MCP）捐赠给Linux基金会的Agentic AI Foundation，标志着开放标准的关键时刻。微软也将MCP支持集成到Windows 11中，实现了安全的代理计算。"
+      },
+      "insight": {
+        "en": "MCP going open-source under Linux Foundation is the 'TCP/IP moment' for AI agents - it means any developer can build tools that work with Claude, ChatGPT, Gemini, and others without proprietary lock-in. Microsoft's Windows 11 integration is the practical flip side - they need MCP to make Copilot truly 'agentic'. The timing (May 2026) coincides with OpenAI's agent push (Codex) and Anthropic's Vertex deal. Everyone is racing to own the 'protocol layer' of agentic AI. The winner will define the next decade of human-computer interaction.",
+        "zh": "MCP在Linux基金会下开源是AI代理的'TCP/IP时刻'——这意味着任何开发者都可以构建与Claude、ChatGPT、Gemini等配合使用的工具，无需专有锁定。微软Windows 11的集成是实际的另一面——他们需要MCP让Copilot真正'代理化'。时机（2026年5月）与OpenAI的代理推送（Codex）和Anthropic的Vertex交易相吻合。每个人都在竞相定义代理化AI的'协议层'。赢家将决定未来十年的人机交互方式。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The real story of May 17-18 is the convergence of three distinct but interrelated forces: platform consolidation (OpenAI unifying ChatGPT+Codex+APIs under Brockman, Anthropic partnering with Google Vertex), protocol standardization (MCP under Linux Foundation), and massive capital deployment (Isomorphic's $2.1B, Recursive's $650M, Mind Robotics' $400M). The Brockman move is the most strategic signal - OpenAI is no longer just a research lab shipping APIs, it's becoming a product company. Meanwhile, MCP becoming a true open standard removes a key friction point for agent adoption. The funding numbers reveal investor appetite: drug discovery (Isomorphic) feels more credible than 'autonomous training' (Recursive), and robotics (Mind) has top-tier VCs but must prove real-world deployment. The next 6 months will determine whether the agentic future arrives through unified platforms (OpenAI's bet) or open protocols (MCP's bet).",
+    "zh": "5月17-18日的真正故事是三个不同但相互关联的力量的汇聚：平台整合（Brockman统一ChatGPT+Codex+API，Anthropic与Google Vertex合作）、协议标准化（MCP在Linux基金会下），以及大规模资本部署（Isomorphic的21亿、Recursive的6.5亿、Mind Robotics的4亿）。Brockman的举措是最具战略性的信号——OpenAI不再是只发布API的研究实验室，而正在成为一家产品公司。与此同时，MCP成为真正的开放标准消除了代理采用的关键摩擦点。融资数字揭示了投资者的胃口：药物发现（Isomorphic）比'自主训练'（Recursive）更可信，机器人（Mind）有顶级VC支持但必须证明现实世界的部署。未来6个月将决定代理未来是通过统一平台（OpenAI的赌注）还是开放协议（MCP的赌注）到来。"
+  }
+}

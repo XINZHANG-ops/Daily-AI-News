@@ -593,3 +593,5 @@ The wiki is in excellent health. Here's what was verified:
 
 The wiki is well-maintained — no significant issues found. Previous lints have already addressed the common problems.
 [2026-05-18 01:07:40] Wiki lint complete (exit code 0).
+[main d06ff2d] wiki: lint 2026-05-18
+ 9 files changed, 208 insertions(+), 4 deletions(-)
