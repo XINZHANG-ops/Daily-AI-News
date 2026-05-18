@@ -565,3 +565,31 @@ Wiki lint complete. Here's what was fixed:
  create mode 100644 wiki/ideas/safe-ai-enterprise-narrative.md
 [2026-05-17 01:00:01] Starting wiki lint using model: kimi-k2.6:cloud
 Already up to date.
+[2026-05-18 01:00:01] Starting wiki lint using model: minimax-m2.5:cloud
+Already up to date.
+## Wiki Lint Complete
+
+The wiki is in excellent health. Here's what was verified:
+
+**Pass 1 — Structural Integrity:** ✓
+- 218 content pages verified (6 topics + 27 sources + 3 timelines + 134 entities + 48 ideas)
+- All index.md entries match actual files
+- Zero broken wikilinks
+- No companies or people improperly in entities/ (all are technical artifacts)
+
+**Pass 2 — Wrong & Duplicate Information:** ✓
+- Zero duplicate pages
+- All topic pages have Evolution and Patterns & Insights sections
+- All frontmatter valid and consistent
+- No stale claims
+
+**Pass 3 — Connection Quality:** ✓
+- Zero bare "Related:", "See also:", or unannotated links
+- All entity and idea pages have Connections sections
+
+**Pass 4 — Index & Log:** ✓
+- Updated index.md `Last updated` to 2026-05-18
+- Added lint entry to log.md
+
+The wiki is well-maintained — no significant issues found. Previous lints have already addressed the common problems.
+[2026-05-18 01:07:40] Wiki lint complete (exit code 0).

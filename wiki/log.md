@@ -833,3 +833,27 @@ Sources updated: microsoft, google, anthropic, mistral, ai2
 Entities created: olmo, dulus, evonic, agentclaw, uk-govuk-chatbot, colorado-sb-26-189
 Ideas created: agentic-is-default
 
+
+## [2026-05-18] wiki lint | health check
+
+**Pass 1 — Structural integrity:**
+- Verified 218 content pages: 6 topics, 27 sources, 3 timelines, 134 entities, 48 ideas
+- Verified all index.md entries match actual files (no missing or extra pages)
+- Verified zero broken wikilinks (only template-style links in WIKI.md and log.md)
+- Verified no companies or people improperly in entities/ (all 134 are technical artifacts)
+
+**Pass 2 — Wrong & duplicate information:**
+- Verified zero duplicate pages covering same concept
+- Verified all 6 topic pages have ## Evolution and ## Patterns & Insights sections
+- All 218 pages have valid YAML frontmatter with consistent type fields
+- No stale claims requiring update
+
+**Pass 3 — Connection quality:**
+- Verified zero bare 'Related:', 'See also:', or unannotated links in any content page
+- Verified all 134 entity pages and 48 idea pages have ## Connections sections
+
+**Pass 4 — Index & log:**
+- Verified index.md counts accurate: 6 topics + 27 sources + 3 timelines + 134 entities + 48 ideas = 218 total
+- Updated index.md Last updated to 2026-05-18
+- Appended this lint entry
+

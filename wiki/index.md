@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-16
+Last updated: 2026-05-18
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
