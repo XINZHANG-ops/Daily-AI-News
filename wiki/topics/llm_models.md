@@ -103,6 +103,9 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-08 | Google tests Remy AI agent for Gemini | New agentic system with user oversight and approval gates at each step; enterprise-focused control philosophy |
 | 2026-05-09 | Anthropic Natural Language Autoencoders | First interpretability tool translating model activations into human-readable text; "glass box" vs "black box" paradigm |
 | 2026-05-09 | OpenAI GPT-Realtime-2 API launch | First voice model with GPT-5-class reasoning and 128K context; full voice pipeline (transcription/reasoning/translation) |
+| 2026-05-10 | Claude Mythos on Google Vertex AI | Project Glasswing makes Mythos available to ~40 organizations at $25/$125 per million tokens |
+| 2026-05-14 | Codex Mobile on ChatGPT app | Remote monitoring, task approval, model switching from mobile; removes "tethered to desk" constraint |
+| 2026-05-17 | Greg Brockman takes product strategy | OpenAI transitions from "building powerful models" to "shipping usable products"; unified platform strategy |
 | 2026-05-09 | NASA Prithvi deployed in orbit | First geospatial AI foundation model in space; processes Earth observation on Kanyini satellite and ISS |
 | 2026-05-07 | OmniVoice open-source voice synthesis | 600+ languages, diffusion language model, voice design via speaker attributes; RTF 0.025 (40x faster than real-time) |
 | 2026-05-10 | Baidu Ernie 5.1 released | Multi-dimensional elastic pre-training; 6% pre-training cost vs peers; 1/3 parameters of Ernie 5.0; LMArena search #4 (score: 1223); surpasses DeepSeek-V4-Pro on agent capabilities |

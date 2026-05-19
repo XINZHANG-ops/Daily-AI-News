@@ -1,5 +1,25 @@
 # Wiki Log
 
+## [2026-05-19] wiki lint | structural fixes
+
+**Pass 1 — Structural integrity:**
+- Fixed broken wikilink: removed [[entities/alphafold]] from sources/isomorphic.md (AlphaFold is DeepMind/Google tech, not a tracked entity)
+- Added 4 missing pages to index: entities/elephant-agent, ideas/autonomous-training-race, ideas/platform-consolidation, ideas/protocol-standardization
+- Verified index counts now match actual files: 6 topics, 30 sources, 3 timelines, 135 entities, 51 ideas (note: index shows 54 ideas including 3 newly-added that exist as files)
+
+**Pass 2 — Information quality:**
+- Note: 8 entity pages contain company products that could be integrated into sources/ (googlebook, ibm-bob, ibm-sovereign-core, incognito-chat, microsoft-legal-agent, openai-daybreak, stripe-agentic-commerce) — not a bug, but a structural consideration
+
+**Pass 3 — Connection quality:**
+- All 6 topic pages verified: have both ## Evolution and ## Patterns & Insights sections
+- Verified zero bare "Related:" or "See also:" links in any content page
+
+**Pass 4 — Index & Log:**
+- Updated index.md header with current date (2026-05-18) and accurate counts
+- This lint entry added to log.md
+
+---
+
 ## [2026-05-12] wiki lint | comprehensive health check
 
 **Pass 1 — Structural integrity:**
@@ -857,3 +877,14 @@ Ideas created: agentic-is-default
 - Updated index.md Last updated to 2026-05-18
 - Appended this lint entry
 
+
+
+## [2026-05-18] ingest | 1 date
+
+Dates processed: 2026-05-18
+Topics updated: llm_models, ai_funding, agentic_ai
+Sources updated: openai, anthropic, google
+Sources created: isomorphic, recursive-superintelligence, mind-robotics
+Entities created: elephant-agent
+Ideas created: platform-consolidation, protocol-standardization, autonomous-training-race
+Timelines updated: 2026-05 (Week 4 added)

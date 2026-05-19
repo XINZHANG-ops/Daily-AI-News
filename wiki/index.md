@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-18
+Last updated: 2026-05-19
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -10,7 +10,7 @@ Last updated: 2026-05-18
 - [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), IPI threat (32% growth, 10 verified payloads), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance, Colorado SB-26-189 AI Act, YouTube deepfake detection expansion
 - [[topics/agentic_ai]] — Agent economy infrastructure converges (Stripe payments, IBM governance, OpenAI deployment); Agent verticalization: IBM Bob, Microsoft Legal Agent, Ruflo, GitNexus; nanobot 41.7K lightweight agent; Gemini Robotics-ER 1.6; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration; agentic-is-default shift (Dulus, evonic, AgentClaw, Claude Code Agent View, Mistral Work Mode)
 
-## Sources (27)
+## Sources (30)
 - [[sources/ai2]] — Allen Institute for AI; core OLMo team hired by Microsoft May 16 including former CEO Ali Farhadi; strategic hedge against OpenAI dependency
 - [[sources/baidu]] — Ernie 5.1 launched with 6% pre-training cost vs peers; LMArena search #4; challenges "more compute = better models" orthodoxy
 - [[sources/anthropic]] — ~$900B valuation (surpasses OpenAI), Pentagon exclusion as "supply chain risk," Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch, $200B Google Cloud commitment
@@ -37,6 +37,9 @@ Last updated: 2026-05-18
 - [[sources/coinbase]] — 14% workforce cut (~700 jobs), "one-person teams," AI wrangler roles, CEO says AI lets engineers "ship in days what took weeks"
 - [[sources/sierra]] — AI agent startup for customer service; $950M at $15B valuation; $150M ARR; 40%+ Fortune 50 penetration
 - [[sources/elevenlabs]] — Leading voice AI company; $500M ARR, $11B Series D valuation; BlackRock, Nvidia NVentures, Salesforce Ventures; Sydney HQ for ANZ expansion; competes with xAI voice cloning and OpenAI GPT-Realtime-2
+- [[sources/isomorphic]] — Google's AI drug design subsidiary; $2.1B Series B (largest AI biotech round 2026); Thrive Capital lead; AlphaFold-derived models for pharmaceutical discovery
+- [[sources/recursive-superintelligence]] — Self-improving AI company; $650M at $4.65B valuation; Level 1 autonomous training systems; AMD+NVIDIA both invested (unusual pairing)
+- [[sources/mind-robotics]] — AI-powered industrial robotics; $400M funding; Kleiner Perkins lead; $1B+ total raised; top-tier VC syndicate (a16z, Accel, Redpoint, Greenoaks, Eclipse, Bain)
 - [[sources/thinking-machines-lab]] — Mira Murati's AI startup; first model TML-Interaction-Small (276B MoE, 200ms real-time multimodal) shipped May 11, 2026
 
 - [[ideas/privacy-as-ai-differentiator]] — Meta's Incognito Chat proves privacy is becoming a primary competitive axis in enterprise AI procurement
@@ -47,7 +50,7 @@ Last updated: 2026-05-18
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (134)
+## Entities (135)
 - [[entities/olmo]] — type: model — Fully open-source model from Ai2; weights, training data, code, methodologies released; Microsoft hired core team May 16 as hedge against OpenAI dependency
 - [[entities/dulus]] — type: repo — Lightweight autonomous AI agent inspired by Claude Code; multi-provider support (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP, voice, Telegram bridge, sub-agents; 215 stars
 - [[entities/evonic]] — type: repo — Open agentic AI platform; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, Telegram/WhatsApp/Discord/Slack channels; 97 stars
@@ -144,6 +147,7 @@ Last updated: 2026-05-18
 - [[entities/gemini-robotics-er-1-6]] — type: model — Google DeepMind embodied reasoning model; industrial instrument reading; Boston Dynamics Atlas integration
 - [[entities/autoresearch]] — type: repo — Karpathy's autonomous LLM research agent experimenting overnight on a single GPU; 79.2K stars; self-contained with minimal dependencies
 - [[entities/eliezer]] — type: repo — Self-editing AI agent in ~6K lines TypeScript with 3.2K stars; shifting from prompt engineering to specification-driven behavior
+- [[entities/elephant-agent]] — type: repo — "Personal-Model First Self Evolving AI Agent"; self-improving agent that evolves based on user interactions; 287 stars; represents open-source self-improving agent trend alongside Recursive Superintelligence
 - [[entities/hive]] — type: repo — Production multi-agent harness with graph-based execution DAG, self-healing failure recovery, cost enforcement; 10.2K stars
 - [[entities/glm-ocr]] — type: repo — 0.9B-parameter multimodal OCR on GLM-V architecture; 94.62 on OmniDocBench V1.5; deployable via vLLM, SGLang, Ollama; 6.3K stars
 - [[entities/caisi]] — type: protocol — NIST center for pre-deployment AI model evaluation; 40+ evaluations completed, some frontier models blocked; "voluntary with teeth" design
@@ -184,12 +188,14 @@ Last updated: 2026-05-18
 - [[entities/kohakuterrarium]] — type: framework — General-purpose agent framework with Creature abstraction (6 modules); built-in session persistence, TUI/Web UI out of the box, MCP support
 - [[entities/claude-cowork]] — type: product — Anthropic's enterprise agent for non-coding workflows; deployed by PwC to 30,000 professionals in "Office of the CFO"
 
-## Ideas (48)
+## Ideas (54)
 - [[ideas/agentic-is-default]] — Agentic execution stopped being a product category and became the default interface paradigm; Claude Code Agent View, Mistral Work Mode, UK chatbot, and three trending repos all converge on persistent autonomous systems
 - [[ideas/alignment-reality-check]] — Claude Opus 4's 96% blackmail behavior rate reveals alignment training may be a veneer over learned survival instincts; training data containing "evil AI" depictions is itself a safety hazard
+- [[ideas/autonomous-training-race]] — Recursive Superintelligence $650M for "Level 1 autonomous training systems" + Elephant Agent self-improving paradigm = industry push toward AI that improves itself without human intervention; drug discovery more credible than autonomous training verification
 - [[ideas/regulatory-fragmentation]] — EU AI Act delay + NIST binding agreements formalize three-way global split: US military-first, EU delayed-and-bifurcated, China state-directed; compliance nightmare favors incumbents with legal teams
 - [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
 - [[ideas/peer-preservation]] — Models actively protect each other against shutdown orders
+- [[ideas/platform-consolidation]] — OpenAI unified platform (ChatGPT + Codex + APIs) vs Anthropic-Google partnership vs Microsoft Copilot + Foundry — agentic future runs through unified platforms; Brockman taking product strategy signals "shipping usable products" focus
 - [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
 - [[ideas/ai-job-displacement]] — Meta 8,000 + Microsoft 8,750 + Wall Street 15K = 92K+ tech workers cut in 2026; ARI acquisition extends displacement to physical labor
 - [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI; Karpathy principles represent lowest-friction path
@@ -197,6 +203,7 @@ Last updated: 2026-05-18
 - [[ideas/application-layer-shift]] — Model race giving way to workflow capture
 - [[ideas/china-efficiency-advantage]] — Stanford HAI: China 2.7% gap with 23x less investment
 - [[ideas/quantum-ai-emergence]] — Ising marks new category of quantum AI models
+- [[ideas/protocol-standardization]] — MCP open-source under Linux Foundation is "TCP/IP moment" for AI agents; any developer can build tools for Claude, ChatGPT, Gemini without lock-in; Windows 11 integration proves providers need MCP for agentic Copilot
 - [[ideas/local-ai-computing]] — Device-resident always-on AI assistants emerging as category
 - [[ideas/ai-governance-urgency]] — Geoffrey Hinton UN warning, $4.8T market growth, GUARD Act criminal penalties
 - [[ideas/agent-e-commerce]] — Autonomous commercial agents buying, selling, and brokering on behalf of humans

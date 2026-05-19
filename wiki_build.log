@@ -780,3 +780,23 @@ The May 16, 2026 ingest is complete. Here's a summary of what was added:
 - `index.md` — Updated counts and added all new pages
 - `processed.json` — Appended 2026-05-16
 - `log.md` — Appended ingest entry
+I've successfully ingested the 2026-05-18 data into the wiki. Here's a summary:
+
+**Data Processed:** 2026-05-18
+
+**Key News Events:**
+- **OpenAI**: Greg Brockman takes product strategy, planning unified platform (ChatGPT + Codex + APIs)
+- **Anthropic**: Claude Mythos on Google Vertex AI via Project Glasswing (~40 orgs), MCP donated to Linux Foundation
+- **Google**: Isomorphic Labs $2.1B Series B (largest AI biotech round), Mythos integration on Vertex AI
+- **Funding**: Recursive Superintelligence $650M, Mind Robotics $400M
+- **MCP**: Now open standard under Linux Foundation, Windows 11 integration
+
+**Wiki Updates:**
+- **Topics Updated**: llm_models, ai_funding, agentic_ai
+- **Sources Updated**: openai, anthropic, google
+- **Sources Created**: isomorphic.md, recursive-superintelligence.md, mind-robotics.md
+- **Entities Created**: elephant-agent.md
+- **Ideas Created**: platform-consolidation.md, protocol-standardization.md, autonomous-training-race.md
+- **Timelines Updated**: 2026-05.md (Week 4 added)
+- **Index Updated**: Sources (27→30), Entities (134→135), Ideas (48→51)
+- **Log Updated**: Appended ingest entry

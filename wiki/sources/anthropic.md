@@ -69,6 +69,8 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-05-14 | Gates Foundation partnership announced | $200M, 4-year commitment for AI-powered global health, life sciences, education, and economic mobility; disease forecasting, vaccine screening, agricultural productivity for low and middle-income countries
 | 2026-05-15 | PwC expands Claude deployment to 30,000 professionals | New "Office of the CFO" built entirely on Claude technology; Claude Code and Claude Cowork deployed globally; 70% delivery time reduction (insurance underwriting: 10 weeks to 10 days; cybersecurity: hours to minutes)
 | 2026-05-15 | UK GOV.UK chatbot goes live | Built on Claude; 563K users; 90% accuracy from 80,000 pages of official guidance; top queries: tax, driving, transport, benefits; 2.5-year development timeline
+| 2026-05-08 | MCP donated to Linux Foundation | Anthropic donates Model Context Protocol to Linux Foundation's Agentic AI Foundation; Microsoft integrates MCP into Windows 11 for secure agentic computing; "TCP/IP moment" for AI agents
+| 2026-05-10 | Claude Mythos on Google Vertex AI | Project Glasswing enables ~40 organizations to access Mythos Preview at $25/M input, $125/M output tokens; signals deeper Anthropic-Google Cloud tie-up following $40B investment |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.

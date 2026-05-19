@@ -54,6 +54,8 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 | 2026-05-07 | AlphaEvolve real-world impact reported | 30% reduction in DNA sequencing variant detection errors with PacBio; 10x lower error rates on Willow quantum processor simulations; AlphaEvolve-designed circuits integrated into next-generation TPU silicon — AI-designed hardware running AI
 | 2026-05-16 | YouTube expands AI deepfake detection to all adult users | Scans for synthetic media mimicking biometric signatures; automated matching using existing likeness data; previously limited to YouTube Partner Program creators; reflects regulatory pressure from Colorado AI Act and UK tightening
 | 2026-05-16 | Coordinated industry response to fragmented regulation | YouTube expansion same week as Colorado SB-26-189 and UK AI chatbot deployment signals platforms pre-empting compliance requirements across jurisdictions
+| 2026-05-12 | Isomorphic Labs $2.1B Series B | Google's AI drug design subsidiary raises largest AI biotech round this year; Thrive Capital lead; Alphabet, GV, MGX, Temasek, CapitalG, UK Sovereign AI Fund; funds pipeline expansion toward clinic and AI/engineering talent hiring
+| 2026-05-10 | Claude Mythos on Vertex AI | Project Glasswing makes Anthropic's Mythos available on Vertex AI to ~40 organizations at premium pricing ($25/$125 per million tokens); deeper GCP-Anthropic partnership |
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.
