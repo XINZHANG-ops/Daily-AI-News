@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-19",
+  "github_repos": [
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": {
+        "en": "Skills for Real Engineers - A collection of reusable skills for Claude Code including TDD, guardrails, debugging patterns, and workflow automations",
+        "zh": "为真实工程师打造的技能集 - Claude Code 的可复用技能集合，包含TDD、防护栏、调试模式和工作流自动化"
+      },
+      "stars": "4.2k",
+      "forks": "312"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": {
+        "en": "Open-source autonomous AI agent framework with self-improving memory capabilities. Over 105K total stars",
+        "zh": "具有自我改进记忆能力的开源自主AI代理框架。累计超过10.5万星标"
+      },
+      "stars": "105k",
+      "forks": "8.2k"
+    },
+    {
+      "name": "anthropics/financial-services",
+      "url": "https://github.com/anthropics/financial-services",
+      "description": {
+        "en": "Anthropic's domain-specific agent toolkit for financial services - includes 10 templates and 9 data connectors for enterprise AI deployments",
+        "zh": "Anthropic面向金融服务的领域专用代理工具包 - 包含10个模板和9个企业AI部署数据连接器"
+      },
+      "stars": "3.8k",
+      "forks": "421"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Releases Claude Opus 4.7 with 87.6% SWE-bench",
+        "zh": "Anthropic发布Claude Opus 4.7，SWE-bench达87.6%"
+      },
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "source": "Anthropic",
+      "time": "May 2026",
+      "description": {
+        "en": "Opus 4.7 achieves 87.6% on SWE-bench Verified (+6.8pts over 4.6), 64.3% on SWE-bench Pro, and +13% on internal coding benchmarks. Self-verification capability added.",
+        "zh": "Opus 4.7在SWE-bench Verified上达87.6%（较4.6提升6.8分），SWE-bench Pro上64.3%，内部编码基准提升13%。新增自我验证能力。"
+      },
+      "insight": {
+        "en": "Opus 4.7 pricing unchanged at $5/$25 per million tokens—but new tokenizer causes 1.0-1.35x token drift for same inputs, a hidden cost the announcement omitted. Self-verification (rereading code, mentally running tests before output) is the real differentiator, solving 4 tasks neither 4.6 nor Sonnet 4.6 could crack. Meanwhile, Claude Mythos Preview (93.9% SWE-bench) remains locked to 50 organizations—Anthropic is deliberately rationing its best model to extract maximum enterprise value.",
+        "zh": "Opus 4.7定价维持在每百万输入/输出令牌$5/$25——但新tokenizer导致相同输入的令牌成本增加1.0-1.35倍，这是公告中隐藏的成本。自我验证能力（输出前重新阅读代码、心理运行测试）是真正的差异化因素，解决了4个4.6和Sonnet 4.6都无法处理的任务。与此同时，Claude Mythos Preview（93.9% SWE-bench）仍仅对50个组织开放——Anthropic正在人为限制其最佳模型以获取最大企业价值。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Surpasses OpenAI in Business Customers (Ramp Data)",
+        "zh": "Anthropic企业客户数超越OpenAI（Ramp数据）"
+      },
+      "url": "https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/",
+      "source": "TechCrunch",
+      "time": "May 13, 2026",
+      "description": {
+        "en": "According to Ramp's May 2026 AI Index, Anthropic now has 34.4% verified business customers vs OpenAI's 32.3%—a reversal from a year ago when Anthropic had under 10%.",
+        "zh": "根据Ramp的2026年5月AI指数，Anthropic现拥有34.4%的验证企业客户，而OpenAI为32.3%——与一年前Under 10%的比例形成逆转。"
+      },
+      "insight": {
+        "en": "This isn't just a metric—it's evidence that Claude's 'slower, safer, more controllable' positioning resonates with enterprises wary of OpenAI's erratic release cadence and PR crises. Anthropic's forced labor controversy (March 2025) now appears to have accelerated enterprise adoption by paradoxically increasing trust signals: compliance-focused buyers interpreted the scrutiny as evidence of rigorous AI safety processes.",
+        "zh": "这不仅仅是指标——而是证明Claude「更慢、更安全、更可控」的定位得到了那些警惕OpenAI不稳定发布节奏和公关危机的企业的认可。Anthropic的强迫劳动争议（2025年3月）现看来反而加速了企业采用——讽刺的是，增加的审查被以合规为导向的买家解读为AI安全流程严格的证据。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Targets $900B Valuation in New Funding Round",
+        "zh": "Anthropic新一轮融资目标估值900亿美元"
+      },
+      "url": "https://ca.finance.yahoo.com/news/anthropic-targets-900-billion-valuation-220214044.html",
+      "source": "Bloomberg",
+      "time": "May 2026",
+      "description": {
+        "en": "Anthropic in discussions to raise at least $30B, targeting $900B valuation—potentially surpassing OpenAI's $852B. Also exploring IPO as early as October 2026.",
+        "zh": "Anthropic正洽谈融资至少300亿美元，目标估值900亿美元——可能超越OpenAI的852亿美元估值。亦在探讨2026年10月上市可能性。"
+      },
+      "insight": {
+        "en": "At $900B, Anthropic would be worth more than Goldman Sachs and Morgan Stanley combined. The dual-track strategy (massive private round + potential IPO) reflects frontier AI's capital intensity—if Mythos stays in preview, revenue growth may not justify the valuation without accessing the full模型 capability. The October IPO window is telling: ahead of Anthropic's June 15 retirement of Sonnet 4/Opus 4, betting that the market will price in the next generation.",
+        "zh": "按900亿美元估值，Anthropic将超过高盛和摩根士丹利的总和。双轨策略（大规模私募+潜在IPO）反映了前沿AI的资金密集特性——如果Mythos保持预览状态，收入增长可能无法在未获取完整模型能力的情况下支撑估值。10月IPO窗口很有意味——在Anthropic 6月15日退休Sonnet 4/Opus 4之前，押注市场将为下一代模型定价。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches Daybreak Cybersecurity Platform",
+        "zh": "OpenAI发布Daybreak网络安全平台"
+      },
+      "url": "https://thenextweb.com/news/openai-daybreak-anthropic-mythos-cyber-defence",
+      "source": "The Next Web",
+      "time": "May 2026",
+      "description": {
+        "en": "OpenAI launches Daybreak, a cybersecurity platform for finding vulnerabilities, generating patches, and validating fixes. Directly competes with Anthropic's Mythos platform.",
+        "zh": "OpenAI发布Daybreak网络安全平台，用于发现漏洞、生成补丁和验证修复。直接对标Anthropic的Mythos平台。"
+      },
+      "insight": {
+        "en": "Daybreak uses GPT-5.5 variants and partners with Cisco, CrowdStrike, and Palo Alto Networks—a full-stack security play. This is OpenAI's first explicit product-to-product competition with Anthropic beyond model benchmarks. Mythos (93.9% SWE-bench) beats Opus 4.7 on pure coding, but Daybreak may win on distribution—partnerships with security incumbents give OpenAI's platform immediate enterprise reach that Anthropic's agent hasn't matched.",
+        "zh": "Daybreak使用GPT-5.5变体并与Cisco、CrowdStrike和Palo Alto Networks合作——这是一个全栈安全产品。这是OpenAI首次与Anthropic进行明确的产品对产品竞争，超出模型基准测试范畴。Mythos（93.9% SWE-bench）在纯编码上击败Opus 4.7，但Daybreak可能在分发上获胜——与安全现有企业的合作使OpenAI平台获得Anthropic代理尚未匹配的即时企业覆盖。"
+      }
+    },
+    {
+      "title": {
+        "en": "xAI Closes $12B Round at $250B Valuation",
+        "zh": "xAI完成120亿美元融资，估值2500亿美元"
+      },
+      "url": "https://www.theplatinumcapital.com/article/xai-closes-12bn-round-at-250bn-valuation-amid-memphis-data-centre-build-out",
+      "source": "The Platinum Capital",
+      "time": "May 9, 2026",
+      "description": {
+        "en": "Led by Saudi Arabia's PIF, UAE's MGX, Singapore's Temasek, with Andreessen Horowitz and Sequoia participation. Funds Memphis data center buildout to 500K GPUs by year-end.",
+        "zh": "由沙特PIF、阿联酋MGX、新加坡淡马锡领投，Andreessen Horowitz和红杉参与。资金用于孟菲斯数据中心建设，年末达到50万GPU。"
+      },
+      "insight": {
+        "en": "$250B valuation makes xAI worth more than Toyota, Disney, and Intel combined. The consortium structure (PIF + MGX + Temasek) signals geopolitics—the AI race is increasingly a state-backed affair. Memphis location isn't accidental: access to cheap hydroelectric power and existing infrastructure. With 300+ MW already and 500K GPUs planned, xAI is building compute capacity that rivals national supercomputers.",
+        "zh": "2500亿美元估值使xAI超过丰田、迪士尼和英特尔市值的总和。财团结构（PIF + MGG + 淡马锡）发出信号——AI竞赛日益成为国家支持的事项。孟菲斯选址并非偶然：可获取廉价水电和现有基础设施。300+ MW已运行，计划50万GPU，xAI正在建设可与国家超级计算机竞争的计算能力。"
+      }
+    },
+    {
+      "title": {
+        "en": "Redis Launches Context Engine for Enterprise AI Agents",
+        "zh": "Redis发布企业AI代理上下文引擎"
+      },
+      "url": "https://siliconangle.com/2026/05/18/redis-debuts-much-needed-memory-layer-enterprise-ai-agents/",
+      "source": "SiliconANGLE",
+      "time": "May 18, 2026",
+      "description": {
+        "en": "Redis launches Context Engine with three core tools: Context Retriever, Agent Memory, and Data Integration. Uses Model Context Protocol for automatic tool generation.",
+        "zh": "Redis发布上下文引擎，包含三个核心工具：上下文检索器、代理记忆和数据集成。使用模型上下文协议自动生成工具。"
+      },
+      "insight": {
+        "en": "Redis isn't just caching anymore—it's becoming the memory layer for the agent economy. The 'context problem' (agents hallucinating or stalling due to context window limits) is a real pain point. By embedding MCP directly, Redis positions itself as infrastructure that connects models to enterprise data. This is a direct challenge to vector database incumbents like Pinecone and Weaviate—Redis has distribution they don't.",
+        "zh": "Redis不再只是缓存——它正在成为代理经济的记忆层。「上下文问题」（代理因上下文窗口限制而 hallucinate 或卡住）是真正的痛点。通过直接嵌入MCP，Redis将自己定位为连接模型和企业数据的基础设施。这直接挑战了Pinecone和Weaviate等向量数据库现有企业——Redis拥有他们没有的分发优势。"
+      }
+    },
+    {
+      "title": {
+        "en": "GitHub Copilot Cloud Agent Adds Claude Haiku 4.5",
+        "zh": "GitHub Copilot云代理新增Claude Haiku 4.5"
+      },
+      "url": "https://github.blog/changelog/2026-05-18-copilot-cloud-agent-fast-cost-efficient-models-for-simple-tasks/",
+      "source": "GitHub Changelog",
+      "time": "May 18, 2026",
+      "description": {
+        "en": "GitHub Copilot Cloud Agent expands model options including Claude Haiku 4.5 and GPT-5.4-mini—faster, more cost-efficient models for simple coding tasks.",
+        "zh": "GitHub Copilot云代理扩展模型选项，包括Claude Haiku 4.5和GPT-5.4-mini——针对简单编码任务更快、更具成本效益的模型。"
+      },
+      "insight": {
+        "en": "The addition of Haiku (Anthropic's fast/cheap model) to Copilot is notable—Microsoft is hedging its OpenAI dependency while maintaining the partnership. GPT-5.4-mini signals OpenAI's continued push into the 'good enough' tier for high-volume, low-cost coding assistance. The model tiering reflects the emerging reality: complex reasoning goes to premium models (Opus/Sonnet), simple tasks go toHaiku/GPT-mini—agents increasingly route based on task complexity.",
+        "zh": "将Haiku（Anthropic的快速/廉价模型）加入Copilot值得注意——微软在对冲其OpenAI依赖的同时维持合作关系。GPT-5.4-mini表明OpenAI持续推进「足够好」层级的批量低成本编码辅助。模型层级反映了新兴现实：复杂推理交给高级模型（Opus/Sonnet），简单任务交给Haiku/GPT-mini——代理日益根据任务复杂性进行路由。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The throughline of today's AI landscape: frontier labs are racing to capture enterprise dominance while infrastructure players position for the agent economy. Anthropic's customer win over OpenAI (34.4% vs 32.3%) signals a shift in enterprise sentiment—but the $900B valuation chase and Mythos rationing reveal the underlying tension: capabilities are ahead of commercial maturity. xAI's $250B round and the Memphis buildout underscore compute as the defining moat—every major player is now a de facto infrastructure company. Meanwhile, the 'skills' pattern going viral on GitHub (14.6K stars across top 20 repos in one week) shows the real innovation is moving to the application layer: how we prompt and structure agents, not just model architectures. Redis's Context Engine entry into agent memory signals that the boring infrastructure beneath agents is where real value is accruing.",
+    "zh": "今日AI格局的主线：前沿实验室竞相夺取企业主导权，而基础设施玩家正在为代理经济定位。Anthropic在企业客户上超越OpenAI（34.4% vs 32.3%）标志着企业情绪的转变——但900亿美元估值追逐和Mythos配给揭示了潜在紧张：能力超前于商业成熟度。xAI的2500亿美元融资和孟菲斯建设强调了计算是决定性的护城河——每个主要玩家现在实际上都是基础设施公司。与此同时，GitHub上「技能」模式的病毒式传播（一周内前20个仓库累计1.46万星）表明真正的创新正在转向应用层：如何提示和构建代理，而不仅仅是模型架构。Redis进入代理记忆的上下文引擎标志着代理底层无聊的基础设施才是真正价值累积的地方。"
+  }
+}

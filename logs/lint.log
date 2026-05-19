@@ -624,3 +624,12 @@ Wiki lint completed. Here's a summary of fixes:
 - `wiki/index.md` — added 4 missing entries, updated counts and date
 - `wiki/log.md` — added new lint entry
 [2026-05-19 01:14:03] Wiki lint complete (exit code 0).
+[main 72f6d9d] wiki: lint 2026-05-19
+ 20 files changed, 536 insertions(+), 5 deletions(-)
+ create mode 100644 wiki/entities/elephant-agent.md
+ create mode 100644 wiki/ideas/autonomous-training-race.md
+ create mode 100644 wiki/ideas/platform-consolidation.md
+ create mode 100644 wiki/ideas/protocol-standardization.md
+ create mode 100644 wiki/sources/isomorphic.md
+ create mode 100644 wiki/sources/mind-robotics.md
+ create mode 100644 wiki/sources/recursive-superintelligence.md
