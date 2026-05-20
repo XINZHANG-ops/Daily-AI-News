@@ -643,3 +643,14 @@ Already up to date.
 
 • 更新了index.md：将实体数量从135改为137，日期从2026-05-19改为2026-05-20；向wiki/log.md追加了lint条目记录本次修复
 [2026-05-20 01:04:18] Wiki lint 完成（退出码 0）。
+[main ca88827] wiki: lint 2026-05-20
+ 32 files changed, 1140 insertions(+), 55 deletions(-)
+ create mode 100644 .claude/skills/gitnexus/gitnexus-cli/SKILL.md
+ create mode 100644 .claude/skills/gitnexus/gitnexus-debugging/SKILL.md
+ create mode 100644 .claude/skills/gitnexus/gitnexus-exploring/SKILL.md
+ create mode 100644 .claude/skills/gitnexus/gitnexus-guide/SKILL.md
+ create mode 100644 .claude/skills/gitnexus/gitnexus-impact-analysis/SKILL.md
+ create mode 100644 .claude/skills/gitnexus/gitnexus-refactoring/SKILL.md
+ create mode 100644 AGENTS.md
+ create mode 100644 wiki/entities/claude-haiku-4-5.md
+ create mode 100644 wiki/entities/redis-context-engine.md

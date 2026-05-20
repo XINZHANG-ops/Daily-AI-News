@@ -1,0 +1,136 @@
+{
+  "date": "2026-05-20",
+  "github_repos": [
+    {
+      "name": "NVIDIA/Isaac-GR00T",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "description": {
+        "en": "NVIDIA Isaac GR00T N1.7 - A Foundation Model for Generalist Robots. Vision-language-action (VLA) model for humanoid robotics.",
+        "zh": "NVIDIA Isaac GR00T N1.7 - 通用机器人的基础模型。用于类人机器人的视觉语言动作(VLA)模型。"
+      },
+      "stars": "7.1k",
+      "forks": "1.2k"
+    },
+    {
+      "name": "VITA-MLLM/VITA",
+      "url": "https://github.com/VITA-MLLM/VITA",
+      "description": {
+        "en": "VITA-1.5: Towards GPT-4o Level Real-Time Vision and Speech Interaction. NeurIPS 2025 paper.",
+        "zh": "VITA-1.5: 实现GPT-4o级别的实时视觉和语音交互。NeurIPS 2025论文。"
+      },
+      "stars": "2.5k",
+      "forks": "181"
+    },
+    {
+      "name": "MiniMax-AI/MiniMax-M2",
+      "url": "https://github.com/MiniMax-AI/MiniMax-M2",
+      "description": {
+        "en": "MiniMax-M2, a MoE model built for Max coding & agentic workflows. 230B total parameters, 10B active.",
+        "zh": "MiniMax-M2, 为Max编码和代理工作流构建的MoE模型。总参数230B, 活跃参数10B。"
+      },
+      "stars": "2.6k",
+      "forks": "214"
+    },
+    {
+      "name": "microsoft/Magma",
+      "url": "https://github.com/microsoft/Magma",
+      "description": {
+        "en": "CVPR 2025: Magma - A Foundation Model for Multimodal AI Agents. Handles digital UI navigation and physical robotics.",
+        "zh": "CVPR 2025: Magma - 多模态AI代理的基础模型。处理数字界面导航和物理机器人操作。"
+      },
+      "stars": "1.9k",
+      "forks": "159"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Hires OpenAI Cofounder Andrej Karpathy to Join Pretraining Team",
+        "zh": "Anthropic聘请OpenAI联合创始人Andrej Karpathy加入预训练团队"
+      },
+      "url": "https://www.cnbc.com/2026/05/19/anthropic-hires-openai-cofounder-andrej-karpathy-former-tesla-ai-lead.html",
+      "source": "CNBC",
+      "time": "2026-05-19",
+      "description": {
+        "en": "Anthropic secures major talent acquisition by bringing on Andrej Karpathy, OpenAI cofounder and former Tesla AI director, to accelerate research using Claude.",
+        "zh": "Anthropic成功聘请OpenAI联合创始人、前特斯拉AI总监Andrej Karpathy加入,以加速使用Claude的研究。"
+      },
+      "insight": {
+        "en": "Karpathy cited 'formative' next few years at the LLM frontier as his motivation. This mirrors OpenAI's strategy of AI-assisted research — the same approach that produced o3/o4 reasoning models. Anthropic now has both Karpathy and previously-hired Jan Leike (from OpenAI's safety team), suggesting a two-pronged approach: accelerate frontier capabilities while addressing safety concerns. The hire also comes amid intensifying talent competition — Karpathy's departure from OpenAI is the highest-profile exit yet.",
+        "zh": "Karpathy引用了LLM前沿未来几年\"形成性\"的发展作为加入动机。这与OpenAI的AI辅助研究策略如出一辙——正是这种方法产生了o3/o4推理模型。Anthropic现在同时拥有Karpathy和之前聘请的Jan Leike(来自OpenAI安全团队),表明其采取双管齐下的方法:在应对安全问题的同时加速前沿能力开发。这一聘请也正值人才竞争加剧之际——Karpathy离开OpenAI是迄今为止最高调的离职。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google I/O 2026: Gemini 3.5 Flash, Gemini Spark, and Gemini Omni Announced",
+        "zh": "Google I/O 2026: 发布Gemini 3.5 Flash、Gemini Spark和Gemini Omni"
+      },
+      "url": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+      "source": "Google",
+      "time": "2026-05-19",
+      "description": {
+        "en": "Google unveiled Gemini 3.5 Flash (frontier-level at half price), Gemini Spark (consumer AI agent), and Gemini Omni (world model for physical simulation). Expected capex $180-190B this year.",
+        "zh": "Google发布了Gemini 3.5 Flash(前沿级能力、半价)、Gemini Spark(消费级AI代理)和Gemini Omni(物理模拟的世界模型)。预计今年资本支出1800-1900亿美元。"
+      },
+      "insight": {
+        "en": "The $180-190B capex is 6x Google's 2022 spending — a staggering bet on AI infrastructure. Gemini Spark positions Google directly against Anthropic's Claude Code and OpenAI's operator agents. Gemini Omni's 'world model' capability (generating video outputs) echoes DeepMind's work on GameNGen but extends to general physical simulation — potentially competing with World Labs. TheFlash-as-default strategy signals Google's pivot to API-centric revenue over consumer Search.",
+        "zh": "1800-1900亿美元的资本支出是Google 2022年支出的6倍——对AI基础设施的惊人押注。Gemini Spark将Google直接定位为Anthropic的Claude Code和OpenAI的operator代理的竞争对手。Gemini Omni的\"世界模型\"能力(生成视频输出)呼应了DeepMind在GameNGen上的工作,但扩展到通用物理模拟——可能与World Labs竞争。Flash作为默认策略表明Google正转向以API为中心的收入模式,而非消费者搜索。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Adds C2PA Metadata and SynthID Watermarks to AI-Generated Images",
+        "zh": "OpenAI为AI生成的图像添加C2PA元数据和SynthID水印"
+      },
+      "url": "https://thenextweb.com/news/openai-c2pa-synthid-ai-image-detection-watermark",
+      "source": "The Next Web",
+      "time": "2026-05-19",
+      "description": {
+        "en": "OpenAI joins C2PA standard and partners with Google to embed invisible SynthID watermarks in AI images, previewing a public verification tool for detecting AI-generated content.",
+        "zh": "OpenAI加入C2PA标准并与Google合作在AI图像中嵌入不可见的SynthID水印,预览用于检测AI生成内容的公众验证工具。"
+      },
+      "insight": {
+        "en": "This is OpenAI's answer to mounting regulatory pressure — the EU AI Act mandates content provenance labeling. By partnering with Google (who developed SynthID), OpenAI gains a proven watermarking solution while avoiding the appearance of going it alone. The timing matters: this follows Adobe's Content Authenticity Initiative and EU's AI Act enforcement beginning in August. As image generation reaches photorealistic quality, provenance becomes the next battleground — expect Meta and others to follow suit.",
+        "zh": "这是OpenAI对日益增长的监管压力的回应——欧盟AI法案要求内容来源标注。与开发SynthID的Google合作,OpenAI获得了一个经过验证的水印解决方案,同时避免了单独行动的形象。时机很重要:这紧随Adobe的内容真实性倡议和欧盟AI法案8月开始执行之后。随着图像生成达到照片级真实度,来源标注成为下一个战场——预计Meta和其他公司也会跟进。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Opus 4.7 Released: 87.6% on SWE-bench, +13% Coding Performance",
+        "zh": "Claude Opus 4.7发布: SWE-bench得分87.6%,编码性能提升13%"
+      },
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "source": "Anthropic",
+      "time": "2026-04-16",
+      "description": {
+        "en": "Claude Opus 4.7 achieves 87.6% on SWE-bench Verified (+6.8pts over 4.6), 64.3% on SWE-bench Pro (+10.9pts), and +13% on internal coding benchmark. Unchanged $5/M input pricing.",
+        "zh": "Claude Opus 4.7在SWE-bench Verified上达到87.6%(较4.6提升6.8分),在SWE-bench Pro上达到64.3%(提升10.9分),内部编码基准提升13%。输入价格保持不变,为每百万token 5美元。"
+      },
+      "insight": {
+        "en": "The +6.8pts SWE-bench jump is the largest single-version improvement in Claude's history. More notably, Opus 4.7 beats GPT-5.4 on SWE-bench Pro by 6.6pts (64.3% vs 57.7%) — widening the coding benchmark gap. However, internal 'Claude Mythos' (93.9% SWE-bench) remains unreleased due to safety concerns, suggesting Anthropic is deliberately holding back to avoid capability-race escalation. The unchanged pricing despite 3x vision resolution and improved tokenizer signals no immediate pressure to raise rates — competitors are still catching up.",
+        "zh": "SWE-bench提升6.8分是Claude历史上最大的单版本进步。更值得注意的是,Opus 4.7在SWE-bench Pro上以64.3%比57.7%击败GPT-5.4(领先6.6分)——扩大了编码基准差距。然而,内部\"Claude Mythos\"(93.9% SWE-bench)因安全问题仍未发布,表明Anthropic有意按住以避免能力竞赛升级。尽管3倍视觉分辨率和改进的tokenizer,价格保持不变——这表明没有立即提价的压力——竞争对手仍在追赶。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA Blackwell Architecture: Thermal Efficiency vs Geopolitical Constraints",
+        "zh": "NVIDIA Blackwell架构: 热效率与地缘政治限制"
+      },
+      "url": "https://techolam.com/news/nvidias-blackwell-architecture-a-double-edged-sword-in-ai-and-hpc/",
+      "source": "Techolam",
+      "time": "2026-05-05",
+      "description": {
+        "en": "Blackwell achieves 3.5 GHz clock speeds and 1.8 TB/s memory bandwidth, but advanced cooling required. Excluded from China while NVIDIA continues supplying other markets.",
+        "zh": "Blackwell达到3.5 GHz时钟速度和1.8 TB/s内存带宽,但需要先进冷却解决方案。中国市场被排除,同时NVIDIA继续供应其他市场。"
+      },
+      "insight": {
+        "en": "Jensen Huang's $1T Blackwell/Rubin demand projection (through 2027) just doubled — now rivaling annual GDP of medium countries. The thermal challenges (requiring advanced cooling) are a high-class problem when you're selling everything you make. The China exclusion creates a bifurcated market: NVIDIA dominates everywhere except the largest AI market. This opens opportunities for Huawei Ascend and other domestic chips, but current performance gaps suggest 2-3 year catch-up needed. The $78B quarterly revenue target (up 77% YoY) means Blackwell is already carrying the company's growth story.",
+        "zh": "Jensen Huang对Blackwell/Rubin的需求预测(到2027年)翻倍——现在相当于中等国家全年GDP。热挑战(需要先进冷却)这个\"高阶级烦恼\"出现在你产品供不应求的时候。中国排除创造了一个双轨市场:NVIDIA在除最大AI市场外的所有地方占据主导。这为华为Ascend等国产芯片打开了机会,但当前性能差距表明需要2-3年追赶。780亿美元的季度收入目标(同比增长77%)意味着Blackwell已经承载了公司的增长故事。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The pattern emerging from this week's AI landscape is clear: the frontier is shifting from pure model capability to agentic systems and infrastructure. Karpathy joining Anthropic signals that the next leap won't come from scaling alone — it's about AI-assisted research loops. Google's $180B capex bet confirms infrastructure is the bottleneck, while OpenAI's watermarking push shows the regulatory floor is rising beneath everyone's feet. NVIDIA's Blackwell dominance faces its first real headwind (China restrictions), yet the $1T demand forecast suggests the market is still starving for compute. Meanwhile, the robotics foundation model wave — Isaac GR00T, Magma, VITA — points to physical world interaction as the next frontier, where multimodal understanding meets real-world action. The real story isn't any single announcement; it's the consolidation of three trends: agents replacing users, infrastructure replacing models as the differentiator, and provenance becoming a feature rather than an afterthought.",
+    "zh": "本周AI领域呈现的趋势清晰可见:前沿正在从纯模型能力转向代理系统和基础设施。Karpathy加入Anthropic表明下一次飞跃不会来自单纯的规模化——而是AI辅助研究循环。Google的1800亿美元资本支出押注确认了基础设施是瓶颈,而OpenAI的水印推动表明监管地板正在每个人脚下上升。NVIDIA的Blackwell优势面临首次真正的逆风(中国限制),但1万亿美元的需求预测表明市场仍然渴求算力。与此同时,机器人基础模型浪潮——Isaac GR00T、Magma、VITA——指向物理世界交互作为下一个前沿,在那里多模态理解与现实世界行动相遇。真正的故事不是任何一个公告;而是三个趋势的整合:代理取代用户,基础设施取代模型成为差异化因素,来源标注成为一个功能而非事后考虑。"
+  }
+}
