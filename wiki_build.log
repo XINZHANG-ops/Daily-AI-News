@@ -800,3 +800,27 @@ I've successfully ingested the 2026-05-18 data into the wiki. Here's a summary:
 - **Timelines Updated**: 2026-05.md (Week 4 added)
 - **Index Updated**: Sources (27→30), Entities (134→135), Ideas (48→51)
 - **Log Updated**: Appended ingest entry
+The wiki has been updated with the 2026-05-19 data. Here's what was done:
+
+**Timeline Update:**
+- Added May 19 entry to `wiki/timelines/2026-05.md` (Week 3) covering:
+  - Anthropic's enterprise customer win (34.4% vs 32.3%)
+  - Anthropic's $900B valuation target & IPO exploration
+  - Claude Opus 4.7 self-verification capability
+  - xAI's $12B round at $250B valuation
+  - Redis Context Engine launch
+  - GitHub Copilot adds Claude Haiku 4.5
+  - OpenAI Daybreak expansion
+
+**Ideas Updated:**
+- `agent-economy-infrastructure.md` — Added Redis Context Engine to evidence
+- `application-layer-shift.md` — Added skills pattern viral growth (14.6K stars/week)
+
+**Index Updated:**
+- Added `claude-haiku-4-5` and `redis-context-engine` to Entities section
+
+**Tracked:**
+- `processed.json` — Added 2026-05-19
+- `log.md` — Appended ingest entry
+
+The key entities (claude-opus-4-7, claude-haiku-4-5, redis-context-engine, openai-daybreak) were already created in prior sessions with today's data. The topics (llm_models, ai_funding, github_trends) and sources (anthropic, openai, xai) were also already updated with today's events.

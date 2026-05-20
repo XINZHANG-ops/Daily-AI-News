@@ -1,7 +1,7 @@
 ---
 title: "Application-Layer Shift"
 slug: application-layer-shift
-last_updated: 2026-05-15
+last_updated: 2026-05-19
 ---
 
 # Application-Layer Shift
@@ -12,6 +12,7 @@ The AI competition has fundamentally shifted from model racing (who has the best
 ## Evidence
 - [[entities/claude-design]] — Anthropic directly targets Figma/Canva workflow with conversational design generation
 - [[entities/gpt-rosalind]] — OpenAI's domain-specific model for life sciences with pharmaceutical partnerships
+- [[entities/andrej-karpathy-skills]] — The "skills" pattern goes viral: 14.6K stars across top 20 repos in one week (May 2026); the real innovation is moving to the application layer: how we prompt and structure agents, not just model architectures. Skills like TDD, guardrails, debugging patterns, and workflow automations represent reusable prompting patterns that make agents more reliable and predictable.
 - [[entities/perplexity-computer]] — Always-on local AI agent managing files, apps, web with dedicated hardware
 - [[sources/anthropic]] — Revenue growth driven by Claude Code product, not raw model capabilities
 - [[sources/openai]] — OpenAI's business revenue reaching 40% of sales (up from 20%) and the Spud model targeting "high-value professional work" both confirm the same pivot: from consumer chatbot to vertical professional tools — the application-layer shift is not theoretical, it is financial

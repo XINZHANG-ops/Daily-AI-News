@@ -68,6 +68,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-12 | Daybreak cybersecurity platform launched | Three GPT-5.5 variants: standard, Trusted Access for verified defenders, and permissive GPT-5.5-Cyber for red teaming; partners include CrowdStrike, Palo Alto Networks, Cloudflare, Cisco, Oracle, Fortinet, Akamai, Zscaler; targets Anthropic Mythos dominance with terminal-bench 82.7% performance
 | 2026-05-14 | Codex control comes to ChatGPT mobile | iPhone, iPad, Android support; remote monitoring, task approval, and new prompts from phones while Codex works on machines; Windows support coming soon; removes "tethered to desk" constraint
 | 2026-05-17 | Greg Brockman takes product strategy | OpenAI co-founder moves from research/infrastructure to product; plans unified platform combining ChatGPT, Codex, and developer APIs for "agentic future" |
+| 2026-05-19 | Daybreak cybersecurity platform | Launches with Cisco, CrowdStrike, Palo Alto Networks partnerships; first explicit product-vs-product competition with Anthropic beyond benchmarks |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.

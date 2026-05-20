@@ -1,7 +1,7 @@
 ---
 title: "Agent Economy Infrastructure"
 slug: agent-economy-infrastructure
-last_updated: 2026-05-07
+last_updated: 2026-05-19
 ---
 
 # Agent Economy Infrastructure
@@ -18,7 +18,8 @@ This is not a coincidence. It is a structural signal that the agent layer has ma
 - [[ideas/agent-economics]] — GitHub $49/agent/month + Netomi $110M + agent infrastructure wave proved the agent economy was entering operational phase; May 5 adds the foundational infrastructure (payments, governance, deployment) that makes that operational phase scalable
 - [[ideas/agent-e-commerce]] — autonomous commercial agents buying, selling, and brokering on behalf of humans require payment rails (Stripe), compliance frameworks (IBM), and distribution channels (OpenAI DeployCo)
 - [[sources/sierra]] — Sierra's $15B valuation and $150M ARR with 40% Fortune 50 penetration validates that enterprise AI agents are not experimental but production infrastructure; the customer base that Stripe, IBM, and OpenAI are building infrastructure for actually exists and is paying
-- [[entities/aws-mcp-server]] — AWS MCP Server provides the cloud resource pillar that agent economy infrastructure was missing; 15,000 API operations mean agents can manage enterprise cloud infrastructure at scale
+- [[entities/aws-mcp-server]] — AWS MCP Server provides the cloud resource pillar
+- [[entities/redis-context-engine]] — Redis Context Engine (May 18) launches with Context Retriever, Agent Memory, and Data Integration; MCP-native for automatic tool generation; positions Redis as the memory layer for enterprise AI agents, directly challenging Pinecone and Weaviate with existing customer relationships and distribution advantages that agent economy infrastructure was missing; 15,000 API operations mean agents can manage enterprise cloud infrastructure at scale
 
 ## Implications
 The three launches reveal that the agent economy is moving from "possible" to "infrastructured." Stripe provides the financial rails, IBM provides the governance layer, and OpenAI provides the deployment mechanism. No single company can own all three, which suggests the agent economy will be a multi-vendor ecosystem like human commerce — but one where the vendors are AI-native from the ground up.

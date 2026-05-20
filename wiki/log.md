@@ -888,3 +888,30 @@ Sources created: isomorphic, recursive-superintelligence, mind-robotics
 Entities created: elephant-agent
 Ideas created: platform-consolidation, protocol-standardization, autonomous-training-race
 Timelines updated: 2026-05 (Week 4 added)
+
+## [2026-05-19] ingest | 1 date
+
+Dates processed: 2026-05-19
+Topics updated: llm_models, ai_funding, github_trends, agentic_ai
+Sources updated: anthropic, openai, xai
+Entities updated: claude-opus-4-7, claude-haiku-4-5, redis-context-engine, openai-daybreak
+Ideas updated: agent-economy-infrastructure, application-layer-shift
+Timelines updated: 2026-05 (Week 3 added May 19 entry)
+
+## [2026-05-20] wiki lint | pre-scan fixes + index update
+
+**Pass 1 — Pre-scan fixes (4 issues):**
+- Fixed broken wikilink: entities/claude-haiku-4-5.md had [[entities/github-copilot]] → changed to [[entities/copilot-agent-tier]]
+- Fixed broken wikilink: entities/gpt-5.4.md had [[entities/github-copilot]] → changed to [[entities/copilot-agent-tier]]
+- Fixed broken wikilink: topics/llm_models.md had [[entities/gpt-5-4]] → changed to [[entities/gpt-5.4]] (dot format)
+- Expanded ideas/peer-preservation.md content (was 9 lines, now 15+ lines with Evidence and Implications sections)
+
+**Pass 2 — Structural integrity:**
+- Verified all index.md entries have corresponding files (no orphaned index entries)
+- Entities directory has 137 files (vs 135 in index) — 2 new untracked files: claude-haiku-4-5, redis-context-engine (already in index)
+- No person or company entities incorrectly placed in entities/ (verified)
+
+**Pass 3 — Index update:**
+- Updated index.md: entity count 135 → 137, date 2026-05-19 → 2026-05-20
+
+**This lint entry added to log.md**

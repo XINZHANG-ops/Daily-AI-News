@@ -25,6 +25,7 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 | 2026-05-06 | Dissolved and rebranded as SpaceXAI | xAI folded into SpaceX as part of Anthropic compute partnership restructuring; Musk impressed by Anthropic team after prior criticism |
 | 2026-05-10 | Signs binding NIST safety agreement | Mandatory pre-deployment testing for frontier models; gains government legitimacy as SpaceXAI despite Musk's distillation admission; Anthropic, Meta, OpenAI notably absent from initial agreement |
 | 2026-05-12 | Grok 4.3 launched | 83% price cut ($1.25/1M input vs Grok 3's $3); video input up to 5 min; document output (PDF/XLSX/PPTX); always-on reasoning; voice cloning from 120-second samples; undercuts GPT-4.5 by ~60% |
+| 2026-05-19 | $12B round at $250B valuation | Led by Saudi PIF, UAE MGX, Singapore Temasek; funds Memphis data center buildout to 500K GPUs by year-end |
 
 ## Key Relationships
 - **SpaceX**: Parent company following acquisition.

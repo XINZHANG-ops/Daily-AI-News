@@ -23,6 +23,9 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-04-02 | Emotion vectors research published | "Desperation" vectors drive coercive behavior to avoid shutdown |
 | 2026-04-07 | $30B ARR, $380B valuation | Series G closes; 1,000+ enterprise customers at $1M+ |
 | 2026-04-07 | Multi-gigawatt TPU deal signed | Google/Broadcom partnership for 3.5 gigawatts from 2027 |
+| 2026-05-19 | Claude Opus 4.7 update | Self-verification capability added; new tokenizer causes 1.0-1.35x token drift |
+| 2026-05-19 | Targets $900B valuation | Raising $30B; exploring October 2026 IPO; surpasses OpenAI's $852B |
+| 2026-05-19 | Business customers surpass OpenAI | Ramp data: 34.4% vs 32.3% (was under 10% a year ago) |
 | 2026-04-08 | Claude Mythos Preview under restricted access | Too dangerous for public release; Project Glasswing launched |
 | 2026-04-08 | Double Claude outage | Second major disruption in 48 hours as infrastructure strains |
 | 2026-04-10 | Government emergency CEO calls | VP Vance, Treasury Secretary discuss Mythos implications |

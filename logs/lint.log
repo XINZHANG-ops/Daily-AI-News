@@ -633,3 +633,13 @@ Wiki lint completed. Here's a summary of fixes:
  create mode 100644 wiki/sources/isomorphic.md
  create mode 100644 wiki/sources/mind-robotics.md
  create mode 100644 wiki/sources/recursive-superintelligence.md
+[2026-05-20 01:00:01] 开始 wiki lint，模型: minimax-m2.5:cloud
+Already up to date.
+• 修复了3个断链问题：claude-haiku-4-5.md 和 gpt-5.4.md 中的 `[[entities/github-copilot]]` 改为 `[[entities/copilot-agent-tier]]`；topics/llm_models.md 中的 `[[entities/gpt-5-4]]` 改为 `[[entities/gpt-5.4]]`
+
+• 修复了1个空页问题：ideas/peer-preservation.md 从9行扩展到15+行，补充了Evidence和Implications内容段落
+
+• 验证了结构完整性：index.md中所有135个实体条目均有对应文件；entities/目录有137个文件（比index多2个新增未追踪文件，已在index中）；无人员或公司实体误放在entities/目录
+
+• 更新了index.md：将实体数量从135改为137，日期从2026-05-19改为2026-05-20；向wiki/log.md追加了lint条目记录本次修复
+[2026-05-20 01:04:18] Wiki lint 完成（退出码 0）。

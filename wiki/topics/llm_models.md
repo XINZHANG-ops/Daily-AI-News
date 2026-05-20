@@ -43,6 +43,8 @@ DeepSeek releases V4-Pro (1.6T total/49B active params) and V4-Flash (284B total
 
 Two flagship models shipping within one week of each other (Claude Opus 4.7 on April 17, GPT-5.5 on April 23) both positioned as top agentic coding platforms with 1M-token contexts. OpenAI appears to have accelerated GPT-5.5 specifically to counter Claude Opus 4.7's SWE-bench lead. Meanwhile DeepSeek V4-Pro-Max scores 80.6% on SWE-bench Verified at $1.74/M tokens vs Opus 4.7's ~$10/M — the cost-performance frontier is suddenly crowded. Concurrently, Anthropic acknowledges engineering missteps causing Claude Code's recent performance decline, risking power user defection to OpenAI's Codex. Meanwhile both Anthropic (Claude Mythos 5) and OpenAI (GPT-5.4 Cyber) release models explicitly positioned for cyber offense/defense — the specialization trend accelerating as general performance benchmarks saturate.
 
+**May 19: Enterprise Consolidation and Infrastructure Layer Wars**: Claude Opus 4.7 update adds self-verification capability — the model can reread code and mentally run tests before output, solving 4 tasks neither 4.6 nor Sonnet 4.6 could crack. However, the new tokenizer causes 1.0-1.35x token drift for the same inputs — a hidden cost not mentioned in the announcement. Meanwhile Claude Mythos Preview (93.9% SWE-bench) remains locked to just 50 organizations as Anthropic deliberately rations its best model to extract maximum enterprise value. Redis launches Context Engine for enterprise AI agent memory — positioning as the infrastructure layer for the agent economy. GitHub Copilot Cloud Agent adds both Claude Haiku 4.5 and GPT-5.4-mini for simple coding tasks, reflecting the model tiering trend: complex reasoning goes to premium models, simple tasks go to fast/cheap models.
+
 ## Key Developments
 
 | Date | Event | Significance |
@@ -235,3 +237,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[ideas/real-time-ai-fragmentation]] — TML and Perceptron both target 200ms but from opposite directions (conversational vs physical), proving real-time AI is splitting into specialized architectures
 - [[timelines/2026-03]] — March concentrated hardware announcements (Vera Rubin), the Claude Mythos leak, and GPT-5.4 family release — the month that established the capability-safety tension defining the rest of 2026
 - [[timelines/2026-04]] — April delivered Opus 4.7, the Claude Mythos restriction decision, and Cloud Next 2026 — the month when labs began capability-based model restrictions as standard practice
+- [[entities/claude-opus-4-7]] — May 19 update: self-verification capability, token drift (1.0-1.35x), Mythos Preview still locked at 50 orgs
+- [[entities/redis-context-engine]] — New May 18: agent memory layer for enterprise AI, embeds MCP directly, challenges Pinecone/Weaviate
+- [[entities/claude-haiku-4-5]] — New May 18: added to GitHub Copilot for fast/cheap simple coding tasks
+- [[entities/gpt-5.4]] — May 18: GPT-5.4-mini added to Copilot alongside Haiku for fast/cost-efficient simple tasks
+- [[topics/github_trends]] — The "skills" pattern going viral (14.6K stars across top 20 repos in one week) shows innovation moving to application layer

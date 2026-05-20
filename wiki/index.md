@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-19
+Last updated: 2026-05-20
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -50,7 +50,7 @@ Last updated: 2026-05-19
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (135)
+## Entities (137)
 - [[entities/olmo]] — type: model — Fully open-source model from Ai2; weights, training data, code, methodologies released; Microsoft hired core team May 16 as hedge against OpenAI dependency
 - [[entities/dulus]] — type: repo — Lightweight autonomous AI agent inspired by Claude Code; multi-provider support (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP, voice, Telegram bridge, sub-agents; 215 stars
 - [[entities/evonic]] — type: repo — Open agentic AI platform; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, Telegram/WhatsApp/Discord/Slack channels; 97 stars
@@ -61,6 +61,7 @@ Last updated: 2026-05-19
 - [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
 - [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
 - [[entities/claude-security]] — type: product — Anthropic's defensive security scanner powered by Opus 4.7, native to Claude Code workflow; launched same day as Pentagon exclusion
+- [[entities/claude-haiku-4-5]] — type: model — Anthropic's fast and cost-efficient model; added to GitHub Copilot Cloud Agent May 18 for simple coding tasks; positioned as "good enough" tier for high-volume, low-cost assistance
 - [[entities/claude-design]] — type: product — Anthropic's AI design tool directly challenging Figma
 - [[entities/claude-code]] — type: product — Primary driver of Anthropic's ARR growth from $9B to $30B
 - [[entities/gpt-5.4]] — type: model — OpenAI model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026
@@ -127,6 +128,7 @@ Last updated: 2026-05-19
 - [[entities/open-agent-sdk-go]] — type: repo — Lightweight Go SDK for AI agents with MCP support, 151 stars
 - [[entities/andrej-karpathy-skills]] — type: repo — Single CLAUDE.md with 4 principles for Claude Code behavior; 105K stars in 3 months; "configuration over code"
 - [[entities/context-mode]] — type: product — MCP server for context window optimization; 98% reduction across 12+ platforms; 11.9K stars, 116 releases
+- [[entities/redis-context-engine]] — type: product — Redis memory layer for enterprise AI agents; Context Retriever, Agent Memory, Data Integration; MCP-native; launches May 18
 - [[entities/guard-act]] — type: legislation — Senate GUARD Act with criminal penalties for AI chatbot-minor harmful conduct
 - [[entities/arc-agi-3]] — type: benchmark — Interactive reasoning benchmark; GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human; exposed LLMs don't reason — they retrieve memorized patterns
 - [[entities/mistral-medium-3-5]] — type: model — 128B dense model with reasoning-effort toggle per request; SWE-Bench 77.6%, AIME25 86.3%; Work Mode and Remote Agents in Vibe (May 5); self-hostable on 4 GPUs

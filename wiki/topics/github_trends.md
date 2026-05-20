@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-16
+last_updated: 2026-05-19
 ---
 
 # GitHub Trends
@@ -29,6 +29,8 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 
 **April 24: Free Claude Code Alternatives and Code Search MCP**: Three notable repos trend on April 24. huggingface/ml-intern (4.5K stars) is an open-source ML engineer that reads papers, trains models, and ships ML models autonomously. zilliztech/claude-context (8.7K stars) is a code search MCP for Claude Code — making entire codebases the context for any coding agent. Alishahryar1/free-claude-code (6.3K stars) provides free Claude Code access via terminal, VSCode extension, or Discord, supporting NVIDIA NIM, OpenRouter, DeepSeek, LM Studio, and llama.cpp. This reflects demand for cost-effective AI coding solutions and improved context for coding agents.
 
+**May 19: Skills Pattern Goes Viral, Enterprise Agent Toolkits**: The "skills" pattern continues viral growth — 14.6K stars across top 20 repos in one week shows the real innovation is moving to the application layer: how we prompt and structure agents, not just model architectures. Three new repos trend: mattpocock/skills (4.2K stars) provides reusable skills for Claude Code including TDD, guardrails, debugging patterns, and workflow automations. NousResearch/hermes-agent (105K stars) is an open-source autonomous AI agent framework with self-improving memory capabilities. anthropics/financial-services (3.8K stars) is Anthropic's domain-specific agent toolkit for financial services with 10 templates and 9 data connectors for enterprise AI deployments.
+
 ## Notable Repositories
 
 | Repo | Stars | Description |
@@ -47,6 +49,9 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | KeygraphHQ/shannon | 31K+ | White-box AI pentester, 96.15% XBOW success |
 | openai/openai-agents-python | 10K+ | OpenAI's multi-agent workflow framework |
 | BasedHardware/omi | 8K+ | Next-gen AI companion with multimodal perception |
+| mattpocock/skills | 4.2K+ | Reusable skills for Claude Code: TDD, guardrails, debugging patterns |
+| NousResearch/hermes-agent | 105K+ | Open-source autonomous AI agent with self-improving memory |
+| anthropics/financial-services | 3.8K+ | Anthropic domain-specific agent toolkit for financial services |
 | EvoMap/evolver | 5.8K+ | GEP-powered self-evolution engine for agents |
 | koala73/worldmonitor | 50.7K+ | Global intelligence dashboard, AI news aggregation |
 | kyegomez/OpenMythos | 8.1K+ | Theoretical Claude Mythos architecture reconstruction |
