@@ -147,3 +147,4 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[sources/anthropic]] — May 19: targeting $900B valuation with $30B raise, exploring Oct 2026 IPO; would exceed Goldman Sachs + Morgan Stanley combined
 - [[sources/xai]] — May 19: $12B round at $250B valuation led by state funds (Saudi PIF, UAE MGX, Temasek); Memphis 500K GPU buildout
 - [[entities/redis-context-engine]] — May 18: new funding wave into agent memory/infrastructure layer; Redis positioning as agent economy infrastructure
+- [[sources/google]] — May 19: $180-190B capex for 2026 (6x 2022 spending); Google's infrastructure bet signals that compute capacity is the defining competitive advantage

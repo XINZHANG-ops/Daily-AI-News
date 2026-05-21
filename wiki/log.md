@@ -915,3 +915,43 @@ Timelines updated: 2026-05 (Week 3 added May 19 entry)
 - Updated index.md: entity count 135 → 137, date 2026-05-19 → 2026-05-20
 
 **This lint entry added to log.md**
+
+## [2026-05-20] ingest | 1 date
+
+Dates processed: 2026-05-20
+
+**News highlights:**
+- Andrej Karpathy (OpenAI cofounder, ex-Tesla AI) joins Anthropic as Pretraining Advisor — highest-profile OpenAI departure yet
+- Google I/O 2026: Gemini 3.5 Flash (frontier at half price), Gemini Spark (consumer agent), Gemini Omni (world model), $180-190B capex
+- OpenAI adopts C2PA/SynthID watermarks for AI-generated images — response to EU AI Act
+- Claude Opus 4.7 achieves 87.6% SWE-bench, beats GPT-5.4 on Pro by 6.6pts
+- NVIDIA Blackwell: thermal challenges but $1T demand; China excluded
+
+**GitHub trending:**
+- Isaac GR00T N1.7: NVIDIA's robotics VLA model (7.1K stars)
+- VITA-1.5: VITA-MLLM's real-time vision/speech (2.5K stars)
+- MiniMax-M2: MiniMax's MoE for agentic (2.6K stars)
+- Magma: Microsoft's multimodal agent model (1.9K stars)
+
+**Entities created:** andrej-karpathy, blackwell-architecture, c2pa-protocol, gemini-3-5-flash, gemini-spark, gemini-omni, isaac-gr00t-n1-7, magma, minimax-m2, synthid, vita-1-5
+
+**Ideas created:** provenance-becomes-feature
+
+**Sources updated:** anthropic, google, openai, nvidia, microsoft
+
+**Topics updated:** llm_models, ai_funding, github_trends, agentic_ai
+
+## [2026-05-21] wiki lint | link + index fixes
+
+**Pre-scan fixes:**
+- Fixed 6 broken links to `[[ideas/agentic-shift]]` → replaced with `[[ideas/agentic-is-default]]` in: gemini-spark.md, isaac-gr00t-n1-7.md, magma.md, gemini-omni.md, vita-1-5.md, andrej-karpathy.md
+
+**Index corrections:**
+- Fixed index.md header: Entities (150→148), Ideas (55→52)
+
+**Structural check:**
+- Verified all 148 entity files exist and are linked
+- Verified all 6 topics have Evolution + Patterns sections
+- No orphan pages found
+- No duplicate pages found
+- No weak connection descriptions (no "相关:" or "参见:")

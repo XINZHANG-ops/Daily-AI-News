@@ -824,3 +824,38 @@ The wiki has been updated with the 2026-05-19 data. Here's what was done:
 - `log.md` — Appended ingest entry
 
 The key entities (claude-opus-4-7, claude-haiku-4-5, redis-context-engine, openai-daybreak) were already created in prior sessions with today's data. The topics (llm_models, ai_funding, github_trends) and sources (anthropic, openai, xai) were also already updated with today's events.
+The wiki update for **2026-05-20** is complete. Here's a summary:
+
+**Entities Created (11 new):**
+- `andrej-karpathy` — Person entity for the OpenAI cofounder who joined Anthropic
+- `blackwell-architecture` — NVIDIA's current-gen GPU architecture
+- `c2pa-protocol` — Content provenance standard
+- `gemini-3-5-flash` — Google's half-price frontier model
+- `gemini-spark` — Google's consumer AI agent
+- `gemini-omni` — Google's world model for physical simulation
+- `isaac-gr00t-n1-7` — NVIDIA's robotics VLA model
+- `magma` — Microsoft's multimodal agent foundation model
+- `minimax-m2` — MiniMax's MoE model for agentic workflows
+- `synthid` — Google's watermarking technology
+- `vita-1-5` — VITA-MLLM's real-time vision/speech model
+
+**Idea Created:**
+- `provenance-becomes-feature` — Content provenance transitioning from regulatory burden to competitive feature
+
+**Sources Updated:**
+- anthropic — Added Andrej Karpathy hire
+- google — Added Google I/O 2026 announcements ($180-190B capex, Gemini 3.5 Flash/Spark/Omni)
+- openai — Added C2PA/SynthID watermarking
+- nvidia — Added Blackwell thermal details
+- microsoft — Added Magma release
+
+**Topics Updated:**
+- llm_models — Added May 19/20 developments
+- ai_funding — Added Google capex
+- github_trends — Added new GitHub repos
+- agentic_ai — Added new agent entities
+
+**Files Modified:**
+- `wiki/processed.json` — Added 2026-05-20
+- `wiki/index.md` — Updated entity count and added new pages
+- `wiki/log.md` — Appended ingest entry

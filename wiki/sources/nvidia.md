@@ -31,6 +31,7 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 | 2026-05-05 | CEO says China should not get latest chips | Calibrated diplomacy: restrict frontier chips while selling older inventory; underlying reality is 90% Asian supply chain, need Chinese revenue to amortize R&D |
 | 2026-05-05 | Huawei targets $12B AI chip sales (60%+ growth) | Chinese domestic AI chips becoming viable alternatives; DeepSeek V4 Huawei-chip-adapted variant proves Chinese labs can train frontier models on domestic silicon |
 | 2026-05-05 | NVIDIA China market share below 60% | 2M H200 orders (~$54B potential) reportedly not yet approved by Beijing; deliberate protection of domestic players like Huawei and 寒武纪 |
+| 2026-05-05 | Blackwell architecture: thermal efficiency vs geopolitics | Blackwell achieves 3.5 GHz clock speeds, 1.8 TB/s memory bandwidth but requires advanced cooling; excluded from China while NVIDIA continues supplying other markets; $1T Blackwell/Rubin demand through 2027 |
 
 ## Key Relationships
 - **OpenAI**: Strategic investor and primary GPU customer.
@@ -43,6 +44,7 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 - [[entities/vera-rubin]] — Next-gen platform, 10x perf/watt
 - [[entities/ising]] — World's first open quantum AI model family
 - [[entities/gb300]] — GB300 Blackwell Ultra, mass production May 2026; 35x lower cost/token for agentic AI
+- [[entities/blackwell-architecture]] — Current-generation architecture with 3.5 GHz clocks, 1.8 TB/s bandwidth; thermal challenges but massive demand; China exclusion creates bifurcated market
 - [[sources/vast-data]] — NVIDIA-backed storage startup, $1B raise
 - [[sources/openai]] — $30B investment commitment
 - [[sources/anthropic]] — GPU supplier and infrastructure partner

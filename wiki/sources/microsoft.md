@@ -35,7 +35,8 @@ On May 16, 2026, Microsoft hired at least 10 core OLMo researchers from the Alle
 | 2026-05-11 | Agent 365 goes GA with expanded capabilities | Shadow AI Discovery for local agents via Defender/Intune; cross-platform visibility with AWS Bedrock and Google Cloud; Windows 365 for Agents (Cloud PC for agentic workloads); pre-configured integrations with Genspark, Zensai, Egnyte, Zendesk, Kore.ai
 | 2026-05-11 | Agent 365 positioning as "toll booth" | $15/user/month control plane manages Claude Code, OpenClaw, GitHub Copilot CLI, even competitors' AWS Bedrock agents; attempting to tax entire agent ecosystem regardless of which model wins
 | 2026-05-13 | Webwright open-sourced | Terminal-based web agent harness achieving SOTA: 86.7% on Online-Mind2Web and 60.1% on Odyssey long-horizon tasks; code-as-action paradigm with workspace-as-state architecture; core agent loop ~450 lines
-| 2026-05-16 | Hires core OLMo team from Ai2 | At least 10 researchers including former CEO Ali Farhadi, COO Sophie Lebrecht, Hanna Hajishirzi, Ranjay Krishna; joins Mustafa Suleyman's Superintelligence team; strategic hedge against OpenAI dependency
+| 2026-05-16 | Hires core OLMo team from Ai2 | At least 10 researchers including former CEO Ali Farhadi, COO Sophie Lebrecht, Hanna Hajishirzi, Ranjay Krishna; joins Mustafa Suleyman's Superintelligence team; strategic hedge against OpenAI dependency |
+| 2026-05-20 | Magma foundation model released | CVPR 2025: Magma handles digital UI navigation and physical robotics; multimodal AI agent foundation model for both virtual and real-world tasks |
 
 ## Key Relationships
 - **Anthropic**: Paradoxical — Claude integration in Copilot but competing in enterprise.
@@ -50,6 +51,7 @@ On May 16, 2026, Microsoft hired at least 10 core OLMo researchers from the Alle
 - [[entities/m365-e7]] — $99/user/month bundle (E5+Copilot+Agent 365+Entra Suite); AI governance inseparable from identity stack
 - [[ideas/enterprise-ai-lock-in]] — E7 bundle designed to make AI governance inseparable from Microsoft's ecosystem
 - [[entities/microsoft-legal-agent]] — First profession-specific Copilot vertical; demonstrates the strategy of embedding AI in existing professional tools rather than building standalone AI products
+- [[entities/magma]] — CVPR 2025 foundation model for multimodal AI agents; handles both digital UI navigation and physical robotics; positions Microsoft in the embodied AI race alongside NVIDIA Isaac GR00T
 - [[entities/ibm-bob]] — IBM Bob competes with Microsoft's Copilot ecosystem at the organizational SDLC layer but from a neutral multi-model position vs Copilot's Microsoft-stack integration
 - [[ideas/agent-verticalization]] — Legal Agent is the case study for the agent verticalization thesis: 20M Copilot seats provide distribution, profession-specific tools provide depth
 - [[entities/olmo]] — Hiring the OLMo core team signals the end of Microsoft's exclusive reliance on OpenAI; by building in-house model expertise, Microsoft gains pricing leverage and reduces dependency on its $13B partnership

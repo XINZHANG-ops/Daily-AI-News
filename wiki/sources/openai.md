@@ -69,6 +69,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-14 | Codex control comes to ChatGPT mobile | iPhone, iPad, Android support; remote monitoring, task approval, and new prompts from phones while Codex works on machines; Windows support coming soon; removes "tethered to desk" constraint
 | 2026-05-17 | Greg Brockman takes product strategy | OpenAI co-founder moves from research/infrastructure to product; plans unified platform combining ChatGPT, Codex, and developer APIs for "agentic future" |
 | 2026-05-19 | Daybreak cybersecurity platform | Launches with Cisco, CrowdStrike, Palo Alto Networks partnerships; first explicit product-vs-product competition with Anthropic beyond benchmarks |
+| 2026-05-19 | Adds C2PA metadata and SynthID watermarks to AI images | Joins C2PA standard and partners with Google to embed invisible SynthID watermarks; preview of public verification tool for detecting AI-generated content; response to EU AI Act content provenance requirements |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -98,3 +99,4 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[ideas/agent-control-interface-wars]] — OpenAI's Operator and Codex optimize for autonomous execution with minimal human interruption; Remy's approval-gate model is a direct philosophical counter-position that could split the enterprise market
 - [[ideas/eu-cyber-access-gap]] — OpenAI's EU cyber access expansion builds geopolitical relationships through model access, contrasting with Anthropic's safety-first restriction that alienates a major economic bloc
 - [[entities/gpt-5.5-cyber]] — May 12 EU Trusted Access for Cyber program grants EU institutions GPT-5.5-Cyber access, creating a structural defensive advantage for European defenders
+- [[entities/synthid]] — Watermarking solution developed by Google; OpenAI's adoption signals industry-wide content provenance standards are emerging as regulatory floor; competitive necessity rather than safety-first approach

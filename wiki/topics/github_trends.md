@@ -225,3 +225,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[ideas/agentic-is-default]] — All three May 16 repos treat autonomous multi-session execution as baseline, confirming the agentic shift has reached the open-source mainstream
 - [[entities/olmo]] — Microsoft's OLMo team acquisition may produce new open-source models from a corporate lab, potentially changing where open-source agent frameworks get their underlying capabilities
 - [[timelines/2026-05]] — May 16 trending repos (Dulus, evonic, AgentClaw) confirm the agentic shift is the default assumption in open-source development
+- [[entities/isaac-gr00t-n1-7]] — 7.1K stars; NVIDIA's robotics VLA model for humanoid robots; the robotics foundation model wave signals embodied AI is the next frontier
+- [[entities/vita-1-5]] — 2.5K stars; VITA-MLLM's real-time vision and speech; NeurIPS 2025 paper on GPT-4o-level multimodal interaction
+- [[entities/minimax-m2]] — 2.6K stars; MiniMax's MoE for agentic workflows; 230B total, 10B active; Chinese lab competing in coding/agent space
+- [[entities/magma]] — 1.9K stars; Microsoft's CVPR 2025 foundation model for multimodal AI agents; handles both digital UI and physical robotics

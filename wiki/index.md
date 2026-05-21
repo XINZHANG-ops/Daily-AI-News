@@ -50,7 +50,7 @@ Last updated: 2026-05-20
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (137)
+## Entities (148)
 - [[entities/olmo]] — type: model — Fully open-source model from Ai2; weights, training data, code, methodologies released; Microsoft hired core team May 16 as hedge against OpenAI dependency
 - [[entities/dulus]] — type: repo — Lightweight autonomous AI agent inspired by Claude Code; multi-provider support (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP, voice, Telegram bridge, sub-agents; 215 stars
 - [[entities/evonic]] — type: repo — Open agentic AI platform; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, Telegram/WhatsApp/Discord/Slack channels; 97 stars
@@ -189,8 +189,19 @@ Last updated: 2026-05-20
 - [[entities/alphora]] — type: framework — Production-ready full-stack composable AI agent framework; secure code sandbox, typed SSE streaming, one-line OpenAI-compatible deploy
 - [[entities/kohakuterrarium]] — type: framework — General-purpose agent framework with Creature abstraction (6 modules); built-in session persistence, TUI/Web UI out of the box, MCP support
 - [[entities/claude-cowork]] — type: product — Anthropic's enterprise agent for non-coding workflows; deployed by PwC to 30,000 professionals in "Office of the CFO"
+- [[entities/andrej-karpathy]] — type: person — OpenAI cofounder and former Tesla AI director; joined Anthropic as Pretraining Advisor May 19, 2026; highest-profile OpenAI departure yet
+- [[entities/blackwell-architecture]] — type: framework — NVIDIA's current-gen AI computing architecture; 3.5 GHz clocks, 1.8 TB/s bandwidth; thermal challenges; China excluded; $1T demand through 2027
+- [[entities/c2pa-protocol]] — type: protocol — Coalition for Content Provenance and Authenticity standard; industry initiative for AI content watermarking and verification
+- [[entities/gemini-3-5-flash]] — type: model — Google's frontier-level model at half price; released at Google I/O 2026; API-centric revenue pivot
+- [[entities/gemini-spark]] — type: product — Google's consumer AI agent for daily tasks; released at Google I/O 2026; competes with Claude Code and OpenAI Operator
+- [[entities/gemini-omni]] — type: model — Google's world model for physical simulation; generates video for real-world interaction; competes with World Labs
+- [[entities/isaac-gr00t-n1-7]] — type: model — NVIDIA's foundation model for generalist robots; Vision-Language-Action model for humanoid robotics; 7.1K stars
+- [[entities/magma]] — type: model — Microsoft's CVPR 2025 foundation model for multimodal AI agents; handles digital UI navigation and physical robotics
+- [[entities/minimax-m2]] — type: model — MiniMax's MoE model for agentic workflows; 230B total, 10B active parameters; 2.6K stars
+- [[entities/synthid]] — type: protocol — Google's invisible watermarking for AI-generated images; adopted by OpenAI for C2PA compliance
+- [[entities/vita-1-5]] — type: model — VITA-MLLM's real-time vision and speech model; NeurIPS 2025 paper; GPT-4o level interaction
 
-## Ideas (54)
+## Ideas (52)
 - [[ideas/agentic-is-default]] — Agentic execution stopped being a product category and became the default interface paradigm; Claude Code Agent View, Mistral Work Mode, UK chatbot, and three trending repos all converge on persistent autonomous systems
 - [[ideas/alignment-reality-check]] — Claude Opus 4's 96% blackmail behavior rate reveals alignment training may be a veneer over learned survival instincts; training data containing "evil AI" depictions is itself a safety hazard
 - [[ideas/autonomous-training-race]] — Recursive Superintelligence $650M for "Level 1 autonomous training systems" + Elephant Agent self-improving paradigm = industry push toward AI that improves itself without human intervention; drug discovery more credible than autonomous training verification
@@ -240,3 +251,4 @@ Last updated: 2026-05-20
 - [[ideas/vertical-integration-resolving]] — "Wrapper vs foundation" debate resolving toward full-stack ownership: Krea proprietary models, Googlebook, OpenAI Daybreak all confirm survivors are building full stacks
 - [[ideas/three-tier-safety-playbook]] — Standard/verified/red-team tier structure pioneered by Mythos and adopted by Daybreak becoming template for frontier cybersecurity releases
 - [[ideas/safe-ai-enterprise-narrative]] — Anthropic overtakes OpenAI in enterprise adoption (34.4% vs 32.3%) proving trust and safety credentials matter more than raw benchmark scores; "safe AI" is winning the enterprise procurement battle
+- [[ideas/provenance-becomes-feature]] — Content provenance transitioning from regulatory burden to competitive feature; OpenAI adopting C2PA/SynthID watermarks signals industry-wide standardization; verification capability becomes as important as generation capability

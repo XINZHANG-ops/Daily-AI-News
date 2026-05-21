@@ -74,6 +74,7 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-05-15 | UK GOV.UK chatbot goes live | Built on Claude; 563K users; 90% accuracy from 80,000 pages of official guidance; top queries: tax, driving, transport, benefits; 2.5-year development timeline
 | 2026-05-08 | MCP donated to Linux Foundation | Anthropic donates Model Context Protocol to Linux Foundation's Agentic AI Foundation; Microsoft integrates MCP into Windows 11 for secure agentic computing; "TCP/IP moment" for AI agents
 | 2026-05-10 | Claude Mythos on Google Vertex AI | Project Glasswing enables ~40 organizations to access Mythos Preview at $25/M input, $125/M output tokens; signals deeper Anthropic-Google Cloud tie-up following $40B investment |
+| 2026-05-19 | Andrej Karpathy joins as Pretraining Advisor | OpenAI cofounder and former Tesla AI director Andrej Karpathy hired to accelerate research using Claude; cited "formative" next few years at LLM frontier as motivation; joins previously-hired Jan Leike (OpenAI safety team) for two-pronged capability/safety approach |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -84,6 +85,7 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 - **CrowdStrike**: Security partnership through Project Glasswing. Joint coalition addressing cybersecurity threats.
 
 ## Connections
+- [[entities/andrej-karpathy]] — OpenAI cofounder and former Tesla AI director joins Anthropic; highest-profile departure from OpenAI yet; pairs with Jan Leike for two-pronged frontier capability and safety approach
 - [[entities/claude-mythos]] — Central to Anthropic's period; withheld from public due to security risks; Pentagon exclusion directly tied to Mythos safety policies
 - [[entities/claude-code]] — Primary driver of $9B to $30B ARR growth
 - [[entities/claude-opus-4-6]] — SWE-bench leader at 80.8%

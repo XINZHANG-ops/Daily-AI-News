@@ -654,3 +654,13 @@ Already up to date.
  create mode 100644 AGENTS.md
  create mode 100644 wiki/entities/claude-haiku-4-5.md
  create mode 100644 wiki/entities/redis-context-engine.md
+[2026-05-21 01:00:01] 开始 wiki lint，模型: minimax-m2.5:cloud
+Already up to date.
+• 修复 6 个断链：`[[ideas/agentic-shift]]` 不存在 → 改为 `[[ideas/agentic-is-default]]`（gemini-spark、isaac-gr00t-n1-7、magma、gemini-omni、vita-1-5、andrej-karpathy）
+
+• 修正 index.md 标题数量错误：Entities (150→148)、Ideas (55→52)，与实际文件数匹配
+
+• 验证结构完整性：148 个实体页面全部存在且被索引、6 个 topic 页面均有 Evolution 和 Patterns 章节、无孤儿页面、无重复页面、无弱连接描述（无"相关:"或"参见:"）
+
+• 更新 wiki/log.md 记录本次修复内容
+[2026-05-21 01:07:26] Wiki lint 完成（退出码 0）。

@@ -56,6 +56,7 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 | 2026-05-16 | Coordinated industry response to fragmented regulation | YouTube expansion same week as Colorado SB-26-189 and UK AI chatbot deployment signals platforms pre-empting compliance requirements across jurisdictions
 | 2026-05-12 | Isomorphic Labs $2.1B Series B | Google's AI drug design subsidiary raises largest AI biotech round this year; Thrive Capital lead; Alphabet, GV, MGX, Temasek, CapitalG, UK Sovereign AI Fund; funds pipeline expansion toward clinic and AI/engineering talent hiring
 | 2026-05-10 | Claude Mythos on Vertex AI | Project Glasswing makes Anthropic's Mythos available on Vertex AI to ~40 organizations at premium pricing ($25/$125 per million tokens); deeper GCP-Anthropic partnership |
+| 2026-05-19 | Google I/O 2026: Gemini 3.5 Flash, Spark, Omni | Gemini 3.5 Flash delivers frontier-level performance at half price; Gemini Spark is consumer AI agent for daily tasks; Gemini Omni is world model for physical simulation; expected capex $180-190B this year (6x 2022 spending) |
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.
@@ -68,6 +69,9 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 - [[entities/gemini-3-1-pro]] — Leading on multiple benchmarks
 - [[entities/gemini-3-1-flash-tts]] — Granular voice control for podcast, audiobook, accessibility
 - [[entities/gemini-cli]] — Open-source terminal agent with 1M context
+- [[entities/gemini-3-5-flash]] — Frontier-level at half price; direct competitor to Claude Sonnet and GPT-5.4 in API pricing war
+- [[entities/gemini-spark]] — Consumer AI agent; positions Google against Anthropic's Claude Code and OpenAI's Operator in agent market
+- [[entities/gemini-omni]] — World model for physical simulation; generating video outputs for real-world interaction; competes with World Labs
 - [[entities/mcp-protocol]] — Gemini CLI includes MCP support
 - [[ideas/safety-restricted-releases]] — Not directly restricting models but participating in coalition discussions
 - [[entities/gemini-robotics-er-1-6]] — embodied reasoning model with industrial instrument reading; Boston Dynamics partnership signals "Android of robotics" software licensing strategy

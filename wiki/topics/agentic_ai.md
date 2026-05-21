@@ -231,3 +231,8 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/uk-govuk-chatbot]] — Government chatbots evolving from FAQ search to agentic multi-step request handling signal the shift reaching public infrastructure
 - [[entities/olmo]] — Microsoft's OLMo team acquisition targets "humanist superintelligence systems" — suggesting agentic AI is moving toward systems with persistent values and goals across sessions
 - [[timelines/2026-05]] — May 16 confirms the agentic shift as the defining product architecture trend of the month
+- [[entities/gemini-spark]] — Google's consumer AI agent; competes with Claude Code and OpenAI Operator in the consumer agent market
+- [[entities/gemini-3-5-flash]] — Google's API-centric agent offering; the half-price strategy intensifies the agent pricing war
+- [[entities/gemini-omni]] — Google's world model for physical simulation; agents need world models to plan in realistic physical environments
+- [[entities/isaac-gr00t-n1-7]] — NVIDIA's robotics VLA model expands agentic AI from digital to physical world interaction
+- [[entities/magma]] — Microsoft's unified digital+physical agent model; handles both UI navigation and robotics

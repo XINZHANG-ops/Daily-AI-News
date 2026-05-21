@@ -58,6 +58,10 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-05 | GPT-5.5 Instant becomes ChatGPT default | 52.5% fewer hallucinations on high-stakes prompts; "memory sources" feature shows which Gmail threads and previous chats informed each response |
 | 2026-05-05 | Mistral Medium 3.5 official launch with Work Mode | 128B dense, SWE-Bench 77.6%, on-device agentic "Work Mode" in Le Chat; "Remote Agents in Vibe" for async cloud execution; $1.5/$7.5 per million tokens |
 | 2026-05-05 | EU AI Act Phase 2 fines Mistral €11.2M, Stability AI €8.4M | Training-data transparency failures; Europe taking harder line than US, creating balkanized regulatory landscape |
+| 2026-05-19 | Google I/O 2026: Gemini 3.5 Flash, Spark, Omni | Gemini 3.5 Flash: frontier-level at half price; Gemini Spark: consumer AI agent; Gemini Omni: world model for physical simulation; $180-190B capex (6x 2022) |
+| 2026-05-19 | Andrej Karpathy joins Anthropic | OpenAI cofounder and former Tesla AI director joins as Pretraining Advisor; highest-profile OpenAI departure yet; pairs with Jan Leike for capability+safety approach |
+| 2026-05-19 | OpenAI adds C2PA/SynthID watermarks | Joins C2PA standard with Google SynthID; response to EU AI Act content provenance requirements |
+| 2026-05-20 | Robotics foundation model wave | Isaac GR00T N1.7, VITA-1.5, MiniMax-M2, Magma released; signals shift from pure model capability to embodied AI (physical+digital interaction) |
 | 2026-03-19 | Xiaomi MiMo-V2-Pro revealed as "Hunter Alpha" | Chinese AI "stealth launch" strategy demonstrated |
 | 2026-03-26 | Claude Mythos documents leaked | 3,000 internal docs exposed unprecedented cybersecurity risks |
 | 2026-04-02 | Google Gemma 4 (Apache 2.0) | First fully permissive Gemma release, 31B ranks #3 on Arena |
@@ -235,6 +239,15 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/perceptron-mk1]] — Physical AI model launches the same day as TML-Interaction-Small, showing real-time AI is fragmenting into use-case-specific architectures rather than converging on a single model
 - [[entities/krea-2]] — Proprietary foundation model signals the "wrapper" phase is ending for creative AI; survivors are building full stacks, not relying on public APIs
 - [[ideas/real-time-ai-fragmentation]] — TML and Perceptron both target 200ms but from opposite directions (conversational vs physical), proving real-time AI is splitting into specialized architectures
+- [[entities/gemini-3-5-flash]] — Google's frontier-level model at half price; Flash-as-default signals pivot from consumer search to API-centric revenue
+- [[entities/gemini-spark]] — Google's consumer AI agent; competes with Claude Code and OpenAI Operator for the emerging agent market
+- [[entities/gemini-omni]] — Google's world model for physical simulation; competes with World Labs for physical AI prediction
+- [[entities/andrej-karpathy]] — Highest-profile OpenAI departure; joins Anthropic for frontier pretraining; confirms AI-assisted research loops are the next frontier
+- [[entities/isaac-gr00t-n1-7]] — NVIDIA's robotics VLA model; robotics foundation model wave expands AI from digital to physical
+- [[entities/magma]] — Microsoft's CVPR 2025 model handling digital UI and physical robotics; unified foundation for agentic AI
+- [[entities/vita-1-5]] — VITA-MLLM's real-time vision and speech model; NeurIPS 2025 paper on unified multimodal interaction
+- [[entities/minimax-m2]] — MiniMax's 230B MoE for agentic workflows; Chinese competition in coding/agent market
+- [[entities/synthid]] — Google's watermarking adopted by OpenAI; content provenance becoming regulatory requirement
 - [[timelines/2026-03]] — March concentrated hardware announcements (Vera Rubin), the Claude Mythos leak, and GPT-5.4 family release — the month that established the capability-safety tension defining the rest of 2026
 - [[timelines/2026-04]] — April delivered Opus 4.7, the Claude Mythos restriction decision, and Cloud Next 2026 — the month when labs began capability-based model restrictions as standard practice
 - [[entities/claude-opus-4-7]] — May 19 update: self-verification capability, token drift (1.0-1.35x), Mythos Preview still locked at 50 orgs
