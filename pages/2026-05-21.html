@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 21, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 21, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/OpenNorve/CogniFold" class="card-title" target="_blank">OpenNorve/CogniFold</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4 stars</div>
+                                <div class="meta-item"><span>🍴</span> 0 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Brain-inspired always-on agent memory that folds continuously arriving events into self-emerging cognitive structure</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">受大脑启发的持续在线智能体记忆系统，将持续到达的事件折叠成自涌现的认知结构</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/horizon-llm/RESD" class="card-title" target="_blank">horizon-llm/RESD</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 16 stars</div>
+                                <div class="meta-item"><span>🍴</span> 2 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Reflection-Enhanced Self-Distillation - learning from rare success and rich feedback</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">反思增强自我蒸馏 - 从罕见成功和丰富反馈中学习</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/0c33/Agentic-Ai" class="card-title" target="_blank">0c33/Agentic-Ai</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2 stars</div>
+                                <div class="meta-item"><span>🍴</span> 0 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An agent that builds agents - closed-loop AI system that interviews, designs, tests, and ships standalone Python agents</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">构建智能体的智能体 - 闭环AI系统，通过访谈、设计、测试并发布独立的Python智能体</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Asia Tech Review</span>
+                    <div class="news-time">May 21, 2026</div>
+                    <a href="https://www.asiatechreview.com/p/singapore-lands-openai-google-and" class="card-title" target="_blank" data-lang="en">Singapore Lands OpenAI, Google and Nvidia as It Bids to Be the World's AI Deployment Hub</a>
+                    <a href="https://www.asiatechreview.com/p/singapore-lands-openai-google-and" class="card-title" target="_blank" data-lang="zh" style="display: none;">新加坡引入OpenAI、Google和Nvidia 争夺全球AI部署中心地位</a>
+                    <p class="card-description" data-lang="en">Singapore announced major partnerships with OpenAI ($230M for 'OpenAI for Singapore'), Google (expanded DeepMind activities), and Nvidia (first research hub for embodied AI).</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">新加坡宣布与OpenAI（2300万美元用于'新加坡OpenAI'）、Google（扩展DeepMind活动）、Nvidia（首个具身AI研究中心）建立重大合作伙伴关系。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechRepublic</span>
+                    <div class="news-time">May 21, 2026</div>
+                    <a href="https://www.techrepublic.com/article/news-google-search-ai-agent-overhaul/" class="card-title" target="_blank" data-lang="en">Google Gives Search Its Biggest AI Overhaul in 25 Years</a>
+                    <a href="https://www.techrepublic.com/article/news-google-search-ai-agent-overhaul/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google进行25年来最大规模的AI搜索改革</a>
+                    <p class="card-description" data-lang="en">Google announced redesigned search with conversational AI queries, 'information agents' that track listings and make phone calls, and custom software interface generation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google宣布重新设计搜索，加入对话式AI查询、追踪列表并打电话的'信息智能体'，以及自定义软件界面生成功能。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">May 21, 2026</div>
+                    <a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" class="card-title" target="_blank" data-lang="en">OpenAI Model Disproves Central Conjecture in Discrete Geometry</a>
+                    <a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI模型证明离散几何中的核心猜想为假</a>
+                    <p class="card-description" data-lang="en">An OpenAI model proved false a central conjecture in discrete geometry (the planar unit distance problem), marking the first prominent open problem solved autonomously by AI.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个OpenAI模型证明了离散几何中的一个核心猜想（平面单位距离问题）为假，标志着AI首次自主解决突出的开放问题。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Storyboard18</span>
+                    <div class="news-time">May 21, 2026</div>
+                    <a href="https://www.storyboard18.com/digital/openai-eyes-blockbuster-ipo-as-filing-could-begin-within-days-ws-l-98752.htm" class="card-title" target="_blank" data-lang="en">OpenAI Preparing Blockbuster IPO Filing with Goldman Sachs</a>
+                    <a href="https://www.storyboard18.com/digital/openai-eyes-blockbuster-ipo-as-filing-could-begin-within-days-ws-l-98752.htm" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI准备向高盛提交大规模IPO申请</a>
+                    <p class="card-description" data-lang="en">OpenAI is preparing a confidential IPO filing with Goldman Sachs and Morgan Stanley, potentially one of the largest stock market debuts in history at $850B+ valuation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI正在准备向高盛和摩根士丹利提交机密IPO申请，估值8500亿美元以上，可能是有史以来最大的股票市场首次公开募股之一。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Dataconomy</span>
+                    <div class="news-time">May 8, 2026</div>
+                    <a href="https://dataconomy.com/2026/05/08/meta-builds-openclaw-inspired-assistant-for-instagram/" class="card-title" target="_blank" data-lang="en">Meta Builds OpenClaw-Inspired AI Assistant 'Hatch' for Instagram</a>
+                    <a href="https://dataconomy.com/2026/05/08/meta-builds-openclaw-inspired-assistant-for-instagram/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta为Instagram打造OpenClaw风格的AI助手'Hatch'</a>
+                    <p class="card-description" data-lang="en">Meta is building an OpenClaw-inspired AI assistant called 'Hatch' for Instagram to enable agentic shopping—allowing users to purchase items seen in Reels more easily.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta正在为Instagram打造一款名为'Hatch'的OpenClaw风格AI助手，实现智能体购物——让用户更方便地购买在Reels中看到的商品。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Anthropic</span>
+                    <div class="news-time">April 16, 2026</div>
+                    <a href="https://www.anthropic.com/news/claude-opus-4-7" class="card-title" target="_blank" data-lang="en">Claude Opus 4.7 Achieves 70% on CursorBench, 3x More Production Tasks Resolved</a>
+                    <a href="https://www.anthropic.com/news/claude-opus-4-7" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude Opus 4.7在CursorBench达到70%，解决的生产任务增加3倍</a>
+                    <p class="card-description" data-lang="en">Claude Opus 4.7 shows 13% coding improvement over 4.6, 70% on CursorBench (vs 58% for 4.6), 3x more tasks resolved on Rakuten-SWE-Bench, and 98.5% on visual-acuity (vs 54.5%).</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Opus 4.7在编码方面比4.6提升13%，CursorBench达到70%（4.6为58%），Rakuten-SWE-Bench解决的任务增加3倍，视觉敏锐度达到98.5%（4.6为54.5%）。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Asia Tech Review</span>
+                    <div class="news-time">May 21, 2026</div>
+                    <a href="https://www.asiatechreview.com/p/singapore-lands-openai-google-and" class="card-title" target="_blank" data-lang="en">Nvidia Faces Growing Competition from Alibaba's M890 AI Chip</a>
+                    <a href="https://www.asiatechreview.com/p/singapore-lands-openai-google-and" class="card-title" target="_blank" data-lang="zh" style="display: none;">Nvidia面临来自阿里巴巴M890 AI芯片日益激烈的竞争</a>
+                    <p class="card-description" data-lang="en">Alibaba's new M890 AI chip and South Korea's FuriosaAI are challenging Nvidia's dominance in the AI accelerator market.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">阿里巴巴新的M890 AI芯片和韩国FuriosaAI正在挑战Nvidia在AI加速器市场的主导地位。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The real story of May 21, 2026 isn't any single announcement—it's the acceleration of AI from 'tool' to 'agent' across every vector. Google embedding agents directly into search, Meta building purchase-flow agents into Instagram, OpenAI's mathematical proof, Singapore positioning as the offshore AI hub—these all point to the same shift: AI is no longer answering questions, it's doing things on your behalf. The OpenAI IPO filing at $850B+ crystallizes this moment—it's not just a company going public, it's a validation that the agent economy has arrived. The countertrend to watch: Nvidia's competitive moat is eroding as custom silicon from Alibaba and FuriosaAI targets inference, while the 'skills pattern' (mattpocock/skills at +1,618 stars this week) shows developers building agent capabilities as reusable composable units. The next 6 months will determine whether the big platforms (Google, Meta, Apple) capture agent commerce or if an open ecosystem wins.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">5月21日2026年的真正故事不是任何单一公告——而是AI在各个层面从'工具'加速向'智能体'的转变。Google将智能体直接嵌入搜索，Meta在Instagram中构建购买流程智能体，OpenAI的数学证明，新加坡定位为离岸AI中心——这些都指向同一个转变：AI不再回答问题，而是代表你做事。OpenAI 8500亿美元以上的IPO申请将这一刻具体化——不仅是一家公司上市，更是对智能体经济已经到来的验证。值得关注的逆趋势：Nvidia的竞争护城河正在侵蚀，因为阿里巴巴和FuriosaAI的定制芯片瞄准推理市场，而'skills模式'（本周mattpocock/skills增长1618星）表明开发者正在将智能体功能构建为可组合的可重用单元。未来6个月将决定大型平台（Google、Meta、Apple）是否能够抓住智能体商务，还是开放生态系统获胜。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
