@@ -664,3 +664,17 @@ Already up to date.
 
 • 更新 wiki/log.md 记录本次修复内容
 [2026-05-21 01:07:26] Wiki lint 完成（退出码 0）。
+[main 32369b9] wiki: lint 2026-05-21
+ 29 files changed, 683 insertions(+), 5 deletions(-)
+ create mode 100644 wiki/entities/andrej-karpathy.md
+ create mode 100644 wiki/entities/blackwell-architecture.md
+ create mode 100644 wiki/entities/c2pa-protocol.md
+ create mode 100644 wiki/entities/gemini-3-5-flash.md
+ create mode 100644 wiki/entities/gemini-omni.md
+ create mode 100644 wiki/entities/gemini-spark.md
+ create mode 100644 wiki/entities/isaac-gr00t-n1-7.md
+ create mode 100644 wiki/entities/magma.md
+ create mode 100644 wiki/entities/minimax-m2.md
+ create mode 100644 wiki/entities/synthid.md
+ create mode 100644 wiki/entities/vita-1-5.md
+ create mode 100644 wiki/ideas/provenance-becomes-feature.md
