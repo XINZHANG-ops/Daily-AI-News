@@ -108,6 +108,9 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-16 | Dulus lightweight autonomous agent | 215 stars; multi-provider (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP, voice, Telegram, sub-agents; "Claude Code for any model"
 | 2026-05-16 | evonic open agentic AI platform | 97 stars; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, Telegram/WhatsApp/Discord/Slack channels
 | 2026-05-16 | AgentClaw declarative workflow framework | 92 stars; one-sentence ideas to reusable capabilities; computer/browser control, MCP, knowledge bases, memory, tracing, scheduling |
+| 2026-05-21 | Google Search AI overhaul | Conversational AI queries, "information agents" that track listings and make phone calls, custom software interface generation — embedding autonomous agents directly into search |
+| 2026-05-21 | Meta Hatch for Instagram | OpenClaw-inspired AI assistant for agentic shopping; users tap once, Hatch handles entire purchase flow |
+| 2026-05-21 | Singapore as offshore AI hub | OpenAI Applied AI Lab (200 jobs, first outside US), Google DeepMind expansion, Nvidia embodied AI research hub |
 
 ## Patterns & Insights
 

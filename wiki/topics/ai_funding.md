@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-05-19
+last_updated: 2026-05-21
 ---
 
 # AI Funding
@@ -53,6 +53,8 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-04-22 | Vast Data raises $1B at $30B valuation | NVIDIA-backed AI storage startup |
 | 2026-05-19 | Anthropic targeting $900B valuation, $30B raise | Potentially surpasses OpenAI; exploring Oct 2026 IPO |
 | 2026-05-19 | xAI $12B round at $250B valuation | Led by Saudi PIF, UAE MGX, Temasek; Memphis 500K GPU buildout |
+| 2026-05-21 | OpenAI confidential IPO filing | With Goldman Sachs and Morgan Stanley at $850B+ valuation; would surpass Aramco's $119B as largest in history |
+| 2026-05-21 | Singapore AI hub investments | $230M OpenAI partnership, Google DeepMind expansion, Nvidia embodied AI research hub — state-backed infrastructure competition |
 | 2026-04-23 | SpaceX invests $60B in Cursor | Direct AI coding competition with Claude Code |
 | 2026-04-25 | Google to invest up to $40B in Anthropic | $10B minimum, $30B contingent on performance targets |
 | 2026-04-25 | Tencent/Alibaba in talks to invest in DeepSeek | Tencent proposing up to 20% stake |

@@ -1,5 +1,36 @@
 # Wiki Log
 
+## [2026-05-21] ingest | 1 date
+
+**Dates processed:** 2026-05-21
+
+**Topics updated:** agentic_ai, ai_companies, ai_funding
+- Added Google Search AI overhaul (information agents embedded in search)
+- Added Meta Hatch for Instagram (agentic shopping)
+- Added Singapore AI hub partnerships
+- Added OpenAI IPO filing and geometry proof
+
+**Sources updated:** openai, google, nvidia, meta, alibaba, singapore (new)
+- Added OpenAI IPO filing at $850B+ valuation
+- Added mathematical proof of planar unit distance conjecture
+- Added Google Search overhaul
+- Added Nvidia competitive moat erosion (M890, FuriosaAI)
+- Added Meta Hatch for Instagram
+- Created new Singapore source
+
+**Entities created:** hatch, furiosa-ai, alibaba-m890 (new)
+- Created entity pages for new products and chips
+
+**Ideas created:** agentic-shift, openai-ipo-validates-agent-economy, nvidia-competitive-moat-eroding (new)
+- Created ideas capturing the agentic shift narrative
+- Created idea for OpenAI IPO validating agent economy
+- Created idea for Nvidia's competitive moat eroding
+
+**Timelines updated:** 2026-05 (Week 3)
+- Added full May 21 narrative covering all major events
+
+---
+
 ## [2026-05-19] wiki lint | structural fixes
 
 **Pass 1 — Structural integrity:**
@@ -955,3 +986,18 @@ Dates processed: 2026-05-20
 - No orphan pages found
 - No duplicate pages found
 - No weak connection descriptions (no "相关:" or "参见:")
+
+## 2026-05-22 — Wiki Lint
+
+**修复:**
+- 创建 sources/shopify.md、sources/amazon.md、sources/amd.md 修复 entities/hatch 和 ideas/nvidia-competitive-moat-eroding 的断链
+- 更新 index.md: Sources 数量 31→34，新增 3 个 source 页面
+
+**检查结果:**
+- 断链: 已修复
+- 孤儿页: 无
+- 空页: 无
+- 结构完整性: index.md 与文件系统同步
+- 实体分类: 删除 entities/ 中的 Andrej Karpathy 人物页 (andrej-karpathy.md, andrej-karpathy-skills.md)
+- 连接质量: topics 页面均有 Evolution 和 Patterns & Insights 章节
+- 重复信息: GPT-5.4/5.5 各版本为正常演进，非重复

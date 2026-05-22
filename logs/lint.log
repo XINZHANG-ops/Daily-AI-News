@@ -678,3 +678,15 @@ Already up to date.
  create mode 100644 wiki/entities/synthid.md
  create mode 100644 wiki/entities/vita-1-5.md
  create mode 100644 wiki/ideas/provenance-becomes-feature.md
+[2026-05-22 01:00:01] 开始 wiki lint，模型: minimax-m2.5:cloud
+Already up to date.
+• 创建 sources/shopify.md、amazon.md、amd.md 修复 entities/hatch 和 ideas/nvidia-competitive-moat-eroding 的 3 个断链问题
+
+• 删除 entities/ 中的 Andrej Karpathy 人物页（andrej-karpathy.md、andrej-karpathy-skills.md），按"人物直接删除"规则处理
+
+• 更新 index.md: Sources 31→34、Entities 154→148，添加新 source 描述并移除人物页引用
+
+• 结构完整性检查通过：所有 148 个 entity 文件存在且链接正确，6 个 topics 页面均有 Evolution 和 Patterns & Insights 章节
+
+• 连接质量检查通过：无"相关："或"参见："弱链接，无重复页面，GPT-5.4/5.5 版本差异属正常演进
+[2026-05-22 01:04:21] Wiki lint 完成（退出码 0）。

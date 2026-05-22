@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-16
+last_updated: 2026-05-21
 ---
 
 # AI Companies
@@ -160,7 +160,12 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-13 | Mistral developing cybersecurity model for banks | Targeting banks without Anthropic Mythos access; off-the-shelf sovereign AI product for European financial institutions
 | 2026-05-14 | Colorado signs new AI Act (SB-26-189) | Replaces 2024 law; mandates notification for AI in consequential decisions (employment, healthcare, housing); takes effect August 2026; bipartisan support signals AI oversight transcends partisanship
 | 2026-05-15 | UK launches Claude-powered GOV.UK chatbot | 563K users, 90% accuracy, 80,000 pages of guidance; built on Claude for safety guardrails in high-stakes citizen interactions; 2.5-year development timeline
-| 2026-05-16 | Microsoft hires core OLMo team from Ai2 | 10+ researchers including former CEO Ali Farhadi; joins Mustafa Suleyman's Superintelligence team; strategic hedge against OpenAI dependency; signals end of "partnership era"
+| 2026-05-16 | Microsoft hires core OLMo team from Ai2 | 10+ researchers including former CEO Ali Farhadi; joins Mustafa Suleyman's Superintelligence team; strategic hedge against OpenAI dependency; signals end of "partnership era" |
+| 2026-05-21 | OpenAI IPO filing | Confidential IPO with Goldman Sachs and Morgan Stanley at $850B+ valuation; potentially largest in history (surpassing Aramco's $119B) |
+| 2026-05-21 | OpenAI model solves geometry conjecture | First prominent mathematical open problem (planar unit distance conjecture, 80+ years) solved autonomously by AI |
+| 2026-05-21 | Singapore lands OpenAI, Google, Nvidia | OpenAI $230M "OpenAI for Singapore" (200 jobs, first outside US), Google DeepMind expansion, Nvidia embodied AI research hub |
+| 2026-05-21 | Nvidia faces competition from M890, FuriosaAI | Alibaba M890 and Korean FuriosaAI challenge Nvidia's 80%+ AI chip market share in inference |
+| 2026-05-21 | Meta builds Hatch for Instagram | OpenClaw-inspired AI assistant for agentic shopping; challenges Shopify and Amazon |
 
 ## Patterns & Insights
 

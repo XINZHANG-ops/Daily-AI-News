@@ -2,7 +2,7 @@
 title: "Claude Opus 4.7"
 slug: claude-opus-4-7
 type: model
-last_updated: 2026-05-19
+last_updated: 2026-05-21
 ---
 
 # Claude Opus 4.7
@@ -22,6 +22,9 @@ Claude Opus 4.7 is Anthropic's flagship model released April 16-17, 2026. It rep
 | Vision Resolution | 3.75 megapixels (3x previous) |
 | Cyber Safeguards | Developed from Claude Mythos safety research |
 | Self-Verification | New capability: rereads code, mentally runs tests before output |
+| CursorBench | 70% (vs 58% for Opus 4.6) |
+| Rakuten-SWE-Bench | 3x more tasks resolved |
+| Visual Acuity | 98.5% (vs 54.5% for 4.6) |
 | Pricing | $5/$25 per million tokens (unchanged) |
 | Tokenizer | New — causes 1.0-1.35x token drift for same inputs |
 

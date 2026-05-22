@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA"
 slug: nvidia
-last_updated: 2026-05-05
+last_updated: 2026-05-21
 ---
 
 # NVIDIA
@@ -32,6 +32,7 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 | 2026-05-05 | Huawei targets $12B AI chip sales (60%+ growth) | Chinese domestic AI chips becoming viable alternatives; DeepSeek V4 Huawei-chip-adapted variant proves Chinese labs can train frontier models on domestic silicon |
 | 2026-05-05 | NVIDIA China market share below 60% | 2M H200 orders (~$54B potential) reportedly not yet approved by Beijing; deliberate protection of domestic players like Huawei and 寒武纪 |
 | 2026-05-05 | Blackwell architecture: thermal efficiency vs geopolitics | Blackwell achieves 3.5 GHz clock speeds, 1.8 TB/s memory bandwidth but requires advanced cooling; excluded from China while NVIDIA continues supplying other markets; $1T Blackwell/Rubin demand through 2027 |
+| 2026-05-21 | Nvidia faces competition from Alibaba M890, FuriosaAI | Alibaba's new M890 AI chip and Korean FuriosaAI challenge Nvidia's 80%+ AI chip market share; Singapore partnership for embodied AI research hub is Nvidia's hedge |
 
 ## Key Relationships
 - **OpenAI**: Strategic investor and primary GPU customer.

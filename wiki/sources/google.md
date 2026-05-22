@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-16
+last_updated: 2026-05-21
 ---
 
 # Google
@@ -57,6 +57,7 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 | 2026-05-12 | Isomorphic Labs $2.1B Series B | Google's AI drug design subsidiary raises largest AI biotech round this year; Thrive Capital lead; Alphabet, GV, MGX, Temasek, CapitalG, UK Sovereign AI Fund; funds pipeline expansion toward clinic and AI/engineering talent hiring
 | 2026-05-10 | Claude Mythos on Vertex AI | Project Glasswing makes Anthropic's Mythos available on Vertex AI to ~40 organizations at premium pricing ($25/$125 per million tokens); deeper GCP-Anthropic partnership |
 | 2026-05-19 | Google I/O 2026: Gemini 3.5 Flash, Spark, Omni | Gemini 3.5 Flash delivers frontier-level performance at half price; Gemini Spark is consumer AI agent for daily tasks; Gemini Omni is world model for physical simulation; expected capex $180-190B this year (6x 2022 spending) |
+| 2026-05-21 | Google Search AI overhaul | Redesigned search with conversational AI queries, "information agents" that track listings and make phone calls, custom software interface generation — biggest overhaul in 25 years |
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.

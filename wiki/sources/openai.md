@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-15
+last_updated: 2026-05-21
 ---
 
 # OpenAI
@@ -70,6 +70,8 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-17 | Greg Brockman takes product strategy | OpenAI co-founder moves from research/infrastructure to product; plans unified platform combining ChatGPT, Codex, and developer APIs for "agentic future" |
 | 2026-05-19 | Daybreak cybersecurity platform | Launches with Cisco, CrowdStrike, Palo Alto Networks partnerships; first explicit product-vs-product competition with Anthropic beyond benchmarks |
 | 2026-05-19 | Adds C2PA metadata and SynthID watermarks to AI images | Joins C2PA standard and partners with Google to embed invisible SynthID watermarks; preview of public verification tool for detecting AI-generated content; response to EU AI Act content provenance requirements |
+| 2026-05-21 | Confidential IPO filing with Goldman Sachs, Morgan Stanley | $850B+ valuation; potentially largest stock market debut in history, surpassing Aramco's $119B; structural complexity: non-profit board controlling for-profit entity |
+| 2026-05-21 | Model solves planar unit distance conjecture | First prominent mathematical open problem solved autonomously by AI; 80+ year conjecture proven false using algebraic number theory techniques |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.

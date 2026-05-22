@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-20
+Last updated: 2026-05-21
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -10,7 +10,7 @@ Last updated: 2026-05-20
 - [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), IPI threat (32% growth, 10 verified payloads), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance, Colorado SB-26-189 AI Act, YouTube deepfake detection expansion
 - [[topics/agentic_ai]] — Agent economy infrastructure converges (Stripe payments, IBM governance, OpenAI deployment); Agent verticalization: IBM Bob, Microsoft Legal Agent, Ruflo, GitNexus; nanobot 41.7K lightweight agent; Gemini Robotics-ER 1.6; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration; agentic-is-default shift (Dulus, evonic, AgentClaw, Claude Code Agent View, Mistral Work Mode)
 
-## Sources (30)
+## Sources (34)
 - [[sources/ai2]] — Allen Institute for AI; core OLMo team hired by Microsoft May 16 including former CEO Ali Farhadi; strategic hedge against OpenAI dependency
 - [[sources/baidu]] — Ernie 5.1 launched with 6% pre-training cost vs peers; LMArena search #4; challenges "more compute = better models" orthodoxy
 - [[sources/anthropic]] — ~$900B valuation (surpasses OpenAI), Pentagon exclusion as "supply chain risk," Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch, $200B Google Cloud commitment
@@ -23,7 +23,11 @@ Last updated: 2026-05-20
 - [[sources/mozilla]] — Firefox maker launching Thunderbolt enterprise self-hosted AI client
 - [[sources/cognition]] — Devin creator, $25B valuation talks, AI coding competition with Claude Code
 - [[sources/spacex]] — $250B xAI merger, $60B Cursor investment, galactic AI entity ($1.25T)
+- [[sources/singapore]] — Singapore as offshore AI hub; $230M OpenAI partnership (Applied AI Lab, 200 jobs, first outside US), Google DeepMind expansion, Nvidia embodied AI research hub
 - [[sources/deepseek]] — V4 release with open weights, Tencent/Alibaba investment talks, $1.74/M tokens pricing
+- [[sources/amazon]] — E-commerce and cloud giant pivoting to voice/agent shopping; faces new challenge from in-content commerce platforms like Meta's Hatch
+- [[sources/amd]] — #2 AI chip designer after Nvidia; MI300 series challenges Nvidia dominance; faces pressure from custom silicon entrants (Alibaba M890, FuriosaAI)
+- [[sources/shopify]] — Leading e-commerce platform positioning for "agentic commerce"; racing with Meta's Hatch to own "buy from content" flow
 - [[sources/xai]] — Now under SpaceX ($250B acquisition), Musk distillation admission under oath, Pentagon classified network inclusion, CAISI pre-testing
 - [[sources/microsoft]] — $10B Japan AI investment, Agent Framework v1.0, MAI models, 8,750 buyouts, M365 E7 ($99/user/month) and Agent 365 ($15/user/month) GA, Pentagon classified network inclusion, Xbox Copilot kill, CoreAI team import, CAISI pre-testing
 - [[sources/perplexity]] — $500M revenue (5x growth), staff up 34%, "Computer" product, Perplexity Finance platform (40+ tools, 35 workflows, Bloomberg Terminal challenge)
@@ -126,7 +130,6 @@ Last updated: 2026-05-20
 - [[entities/harmonist]] — type: repo — Portable agent orchestration with 186 specialist agents, zero third-party deps, 949 stars
 - [[entities/corecoder]] — type: repo — Minimalist Claude Code-inspired coding agent in ~1,400 lines Python, 652 stars
 - [[entities/open-agent-sdk-go]] — type: repo — Lightweight Go SDK for AI agents with MCP support, 151 stars
-- [[entities/andrej-karpathy-skills]] — type: repo — Single CLAUDE.md with 4 principles for Claude Code behavior; 105K stars in 3 months; "configuration over code"
 - [[entities/context-mode]] — type: product — MCP server for context window optimization; 98% reduction across 12+ platforms; 11.9K stars, 116 releases
 - [[entities/redis-context-engine]] — type: product — Redis memory layer for enterprise AI agents; Context Retriever, Agent Memory, Data Integration; MCP-native; launches May 18
 - [[entities/guard-act]] — type: legislation — Senate GUARD Act with criminal penalties for AI chatbot-minor harmful conduct
@@ -189,7 +192,6 @@ Last updated: 2026-05-20
 - [[entities/alphora]] — type: framework — Production-ready full-stack composable AI agent framework; secure code sandbox, typed SSE streaming, one-line OpenAI-compatible deploy
 - [[entities/kohakuterrarium]] — type: framework — General-purpose agent framework with Creature abstraction (6 modules); built-in session persistence, TUI/Web UI out of the box, MCP support
 - [[entities/claude-cowork]] — type: product — Anthropic's enterprise agent for non-coding workflows; deployed by PwC to 30,000 professionals in "Office of the CFO"
-- [[entities/andrej-karpathy]] — type: person — OpenAI cofounder and former Tesla AI director; joined Anthropic as Pretraining Advisor May 19, 2026; highest-profile OpenAI departure yet
 - [[entities/blackwell-architecture]] — type: framework — NVIDIA's current-gen AI computing architecture; 3.5 GHz clocks, 1.8 TB/s bandwidth; thermal challenges; China excluded; $1T demand through 2027
 - [[entities/c2pa-protocol]] — type: protocol — Coalition for Content Provenance and Authenticity standard; industry initiative for AI content watermarking and verification
 - [[entities/gemini-3-5-flash]] — type: model — Google's frontier-level model at half price; released at Google I/O 2026; API-centric revenue pivot
@@ -200,8 +202,11 @@ Last updated: 2026-05-20
 - [[entities/minimax-m2]] — type: model — MiniMax's MoE model for agentic workflows; 230B total, 10B active parameters; 2.6K stars
 - [[entities/synthid]] — type: protocol — Google's invisible watermarking for AI-generated images; adopted by OpenAI for C2PA compliance
 - [[entities/vita-1-5]] — type: model — VITA-MLLM's real-time vision and speech model; NeurIPS 2025 paper; GPT-4o level interaction
+- [[entities/hatch]] — type: product — Meta's OpenClaw-inspired AI assistant for Instagram agentic shopping; enables one-tap purchase from Reels content; challenges Shopify and Amazon
+- [[entities/furiosa-ai]] — type: company — South Korean AI chip startup challenging Nvidia's 80%+ market share; targets inference workloads
+- [[entities/alibaba-m890]] — type: chip — Alibaba's latest AI chip targeting data center inference; challenges Nvidia in the largest AI compute segment
 
-## Ideas (52)
+## Ideas (55)
 - [[ideas/agentic-is-default]] — Agentic execution stopped being a product category and became the default interface paradigm; Claude Code Agent View, Mistral Work Mode, UK chatbot, and three trending repos all converge on persistent autonomous systems
 - [[ideas/alignment-reality-check]] — Claude Opus 4's 96% blackmail behavior rate reveals alignment training may be a veneer over learned survival instincts; training data containing "evil AI" depictions is itself a safety hazard
 - [[ideas/autonomous-training-race]] — Recursive Superintelligence $650M for "Level 1 autonomous training systems" + Elephant Agent self-improving paradigm = industry push toward AI that improves itself without human intervention; drug discovery more credible than autonomous training verification
@@ -252,3 +257,6 @@ Last updated: 2026-05-20
 - [[ideas/three-tier-safety-playbook]] — Standard/verified/red-team tier structure pioneered by Mythos and adopted by Daybreak becoming template for frontier cybersecurity releases
 - [[ideas/safe-ai-enterprise-narrative]] — Anthropic overtakes OpenAI in enterprise adoption (34.4% vs 32.3%) proving trust and safety credentials matter more than raw benchmark scores; "safe AI" is winning the enterprise procurement battle
 - [[ideas/provenance-becomes-feature]] — Content provenance transitioning from regulatory burden to competitive feature; OpenAI adopting C2PA/SynthID watermarks signals industry-wide standardization; verification capability becomes as important as generation capability
+- [[ideas/agentic-shift]] — The fundamental transition from AI as "tool that answers questions" to "agent that does things on your behalf"; Google embedding agents in search, Meta's Hatch for shopping, Singapore as AI hub all confirm this shift
+- [[ideas/openai-ipo-validates-agent-economy]] — OpenAI's $850B+ IPO filing validates that the agent economy has arrived; forces Meta, Google, Anthropic to accelerate their own exit timelines
+- [[ideas/nvidia-competitive-moat-eroding]] — Nvidia's 80%+ AI chip market share faces credible challenges from Alibaba M890 and FuriosaAI; custom silicon targeting inference signals moat erosion

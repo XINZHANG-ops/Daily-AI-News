@@ -1,7 +1,7 @@
 ---
 title: "Meta"
 slug: meta
-last_updated: 2026-05-14
+last_updated: 2026-05-21
 ---
 
 # Meta
@@ -34,7 +34,8 @@ Meta is executing the most aggressive workforce transformation in Big Tech, cutt
 | 2026-05-11 | Hatch agent in development for June internal launch | Agentic shopping tool for Instagram; reportedly started with Claude models before planning switch to Muse Spark at launch — admission that Meta's own models aren't yet competitive for agentic tasks
 | 2026-05-11 | Failed to hire OpenClaw creator Peter Steinberger | Steinberger joined OpenAI in February; his OpenClaw (302K stars) sparked current "agentic wars"; Meta had to switch plans after losing hiring battle
 | 2026-05-13 | Incognito Chat launched | End-to-end encrypted AI conversations with zero server logs; messages disappear after session ends; built on WhatsApp Private Processing infrastructure; Meta claims it is the first major AI product with no conversation logs stored on servers
-| 2026-05-11 | Capex guidance contextualized | $125-145B capex is spending to catch up in agentic AI, not building from strength; chasing OpenAI and Anthropic who have agent products in market
+| 2026-05-11 | Capex guidance contextualized | $125-145B capex is spending to catch up in agentic AI, not building from strength; chasing OpenAI and Anthropic who have agent products in market |
+| 2026-05-21 | Hatch AI assistant for Instagram | OpenClaw-inspired AI assistant for agentic shopping; users tap once, Hatch handles entire purchase flow; challenges Shopify and Amazon |
 
 ## Key Relationships
 - **OpenAI**: Competition in AI assistant market and coding agents.
