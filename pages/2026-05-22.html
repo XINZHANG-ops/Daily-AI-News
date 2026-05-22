@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 22, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 22, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/google/adk-python" class="card-title" target="_blank">google/adk-python</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 19.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 3.4k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An open-source, code-first Python framework for building AI agents. Build, evaluate, and deploy sophisticated multi-agent systems with workflow runtime and task delegation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源的代码优先Python框架，用于构建AI代理。构建、评估和部署复杂的多代理系统，包含工作流运行时和任务委托功能。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/pydantic/pydantic-ai" class="card-title" target="_blank">pydantic/pydantic-ai</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 17.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.3k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">AI Agent Framework, the Pydantic way. v2.0 introduces harness-first design with capabilities as core primitive—bundling tools, lifecycle hooks, instructions, and model settings into composable units.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI代理框架，Pydantic方式。v2.0引入harness优先设计，以capabilities为核心原语——将工具、生命周期钩子、指令和模型设置打包成可组合单元。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/vercel-labs/zerolang" class="card-title" target="_blank">vercel-labs/zerolang</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.9k stars</div>
+                                <div class="meta-item"><span>🍴</span> 245 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A programming language designed specifically for AI agents. Features agent-first learnability, standard-library depth, deterministic tooling for debugging and repair, and zero dependencies approach.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">专为AI代理设计的编程语言。特性包括代理优先的可学习性、标准库的深度、用于调试和修复的确定性工具链，以及零依赖方法。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Nikkei Asia</span>
+                    <div class="news-time">May 22, 2026</div>
+                    <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/openai-weighs-letting-japan-access-new-mythos-class-cybersecurity-ai" class="card-title" target="_blank" data-lang="en">OpenAI Considers Providing Japan Access to Mythos-Class Cybersecurity AI</a>
+                    <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/openai-weighs-letting-japan-access-new-mythos-class-cybersecurity-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI考虑向日本提供Mythos级网络安全AI</a>
+                    <p class="card-description" data-lang="en">OpenAI is considering providing its new GPT-5.5-Cyber artificial intelligence model to Japan amid rapid rise of Chinese open-source models and cyberthreats. Board member Paul Nakasone called China the 'most significant' cyberthreat.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI正在考虑向日本提供其新的GPT-5.5-Cyber人工智能模型，此举正值中国开源模型和网络威胁迅速增加之际。董事会成员Paul Nakasone称中国为'最重大'的网络威胁。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">IBM</span>
+                    <div class="news-time">May 22, 2026</div>
+                    <a href="https://www.ibm.com/think/news/ibm-expands-ai-security-cyberattacks-accelerate" class="card-title" target="_blank" data-lang="en">IBM Expands AI Security Push: Vulnerability Exploitation Time Drops from 23 Days to 9 Hours</a>
+                    <a href="https://www.ibm.com/think/news/ibm-expands-ai-security-cyberattacks-accelerate" class="card-title" target="_blank" data-lang="zh" style="display: none;">IBM扩展AI安全努力：漏洞利用时间从23天降至9小时</a>
+                    <p class="card-description" data-lang="en">IBM announced expanded AI cybersecurity initiatives as security executives warned frontier AI models have sharply accelerated attacker capability to identify and exploit vulnerabilities. Joined Project Glasswing with Anthropic and others. AI reduced exploitation time from 23 days (year ago) to just 9 hours.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">IBM宣布扩展AI网络安全举措，安全高管警告前沿AI模型大幅加速了攻击者识别和利用漏洞的能力。与Anthropic等加入Project Glasswing。AI将利用时间从23天（一年前）缩短至仅9小时。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">DEV Community</span>
+                    <div class="news-time">May 22, 2026</div>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05" class="card-title" target="_blank" data-lang="en">Cursor 3.0 Launches with Agents Window for Parallel Multi-Agent Workspaces</a>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05" class="card-title" target="_blank" data-lang="zh" style="display: none;">Cursor 3.0推出Agents Window实现并行多代理工作空间</a>
+                    <p class="card-description" data-lang="en">Cursor 3.0 launched with 'Agents Window'—a full-screen workspace that runs multiple AI agents in parallel across local environments, isolated Git worktrees, SSH remotes, and cloud instances.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Cursor 3.0推出'Agents Window'——一个全屏工作空间，可跨本地环境、隔离的Git工作树、SSH远程和云实例并行运行多个AI代理。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI Tools Recap</span>
+                    <div class="news-time">May 22, 2026</div>
+                    <a href="https://aitoolsrecap.com/Blog/ai-news-may-22-2026" class="card-title" target="_blank" data-lang="en">Anthropic Claude Opus 4.7 Achieves 87.6% on SWE-bench Verified</a>
+                    <a href="https://aitoolsrecap.com/Blog/ai-news-may-22-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic Claude Opus 4.7在SWE-bench Verified达到87.6%</a>
+                    <p class="card-description" data-lang="en">Anthropic's latest Claude Opus 4.7 update achieves 87.6% on SWE-bench Verified, up from 80.8%, crossing the threshold where autonomous code agents can handle multi-file, multi-repo refactoring tasks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic最新的Claude Opus 4.7更新在SWE-bench Verified达到87.6%，高于80.8%，越过了自主代码代理可以处理多文件、多仓库重构任务的阈值。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">DEV Community</span>
+                    <div class="news-time">May 22, 2026</div>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05" class="card-title" target="_blank" data-lang="en">Windsurf 2.0 Introduces Devin Cloud for One-Click Cloud Offload</a>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05" class="card-title" target="_blank" data-lang="zh" style="display: none;">Windsurf 2.0推出Devin Cloud实现一键云卸载</a>
+                    <p class="card-description" data-lang="en">Windsurf 2.0 introduces one-click cloud offload, allowing users to dispatch tasks to Devin's cloud environment where agents continue running even after local devices shut down.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Windsurf 2.0推出一键云卸载，允许用户将任务分发到Devin的云环境，即使本地设备关闭后代理仍可继续运行。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">DEV Community</span>
+                    <div class="news-time">May 22, 2026</div>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05" class="card-title" target="_blank" data-lang="en">Google Gemini 3.5 Flash at I/O 2026: ~4× Faster Than Frontier Models</a>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google I/O 2026发布Gemini 3.5 Flash：比前沿模型快约4倍</a>
+                    <p class="card-description" data-lang="en">Google launched Gemini 3.5 Flash at I/O 2026, which is approximately 4× faster than other frontier models and is now the default for Google Search's AI Mode.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google在I/O 2026推出Gemini 3.5 Flash，比其他前沿模型快约4倍，现在是Google搜索AI模式的默认模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">DEV Community</span>
+                    <div class="news-time">May 22, 2026</div>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05" class="card-title" target="_blank" data-lang="en">Embodied AI Advances: SAE White Paper and Nature Publication on ROS-LLM Framework</a>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05" class="card-title" target="_blank" data-lang="zh" style="display: none;">具身AI进展：SAE白皮书和Nature发表ROS-LLM框架论文</a>
+                    <p class="card-description" data-lang="en">A new SAE white paper and Nature Machine Intelligence publication on ROS-LLM framework signal embodied AI is transitioning from research prototypes to engineered systems with lifecycle safety cases.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">新的SAE白皮书和Nature Machine Intelligence关于ROS-LLM框架的发表表明具身AI正在从研究原型过渡到具有生命周期安全案例的工程系统。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">WIRED</span>
+                    <div class="news-time">May 22, 2026</div>
+                    <a href="https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/" class="card-title" target="_blank" data-lang="en">OpenAI Hires 'Master of Disaster' Chris Lehane for Reputation Management</a>
+                    <a href="https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI聘请'灾难大师'Chris Lehane进行声誉管理</a>
+                    <p class="card-description" data-lang="en">WIRED reported on OpenAI hiring 'Master of Disaster' Chris Lehane to address AI's growing public relations crisis, as polls show increasing negative views of AI despite ChatGPT's popularity.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">WIRED报道OpenAI聘请'灾难大师'Chris Lehane应对AI日益增长的公共关系危机，尽管ChatGPT很受欢迎，但民意调查显示对AI的负面看法越来越多。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The big theme today is the convergence of three trends: security as a differentiator, autonomous agents crossing the operational threshold, and the race for developermindshare intensifying. IBM's 9-hour vulnerability exploitation stat is terrifying but also defines the threat model that's driving security AI adoption. OpenAI offering Mythos-Cyber to Japan is a strategic play to build a US-aligned AI security coalition against Chinese open-source models—and it's happening the same week Anthropic's Claude hit 87.6% on SWE-bench. The agent tooling space is also consolidating: Pydantic AI v2 and Google ADK v2 both launched this week with similar 'capability composition' architectures. Meanwhile, Cursor and Windsurf are fighting for the IDE of the future—parallel multi-agent workspaces vs. always-on cloud execution. The 87.6% SWE-bench threshold is the invisible line: below it, agents need humans; above it, the economics flip. We're now past that line.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">今天的大主题是三个趋势的汇聚：安全作为差异化的驱动力，自主代理跨越运营阈值，以及开发者心智份额的竞争加剧。IBM的9小时漏洞利用统计数据令人恐惧，但也定义了推动安全AI采用的威胁模型。OpenAI向日本提供Mythos-Cyber是一种战略举措，建立一个与美国结盟的AI安全联盟来对抗中国开源模型——而且这与Anthropic的Claude在SWE-bench达到87.6%是同一周。代理工具空间也在整合：Pydantic AI v2和Google ADK v2本周都以类似的'能力组合'架构发布。与此同时，Cursor和Windsurf正在争夺未来IDE——并行多代理工作空间vs永远在线云执行。87.6%的SWE-bench阈值是不可见的线：低于它，代理需要人类；高于它，经济学翻盘。我们现在已经过了这条线。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

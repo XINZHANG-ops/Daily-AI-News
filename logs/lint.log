@@ -690,3 +690,16 @@ Already up to date.
 
 • 连接质量检查通过：无"相关："或"参见："弱链接，无重复页面，GPT-5.4/5.5 版本差异属正常演进
 [2026-05-22 01:04:21] Wiki lint 完成（退出码 0）。
+[main ff238f0] wiki: lint 2026-05-22
+ 29 files changed, 617 insertions(+), 91 deletions(-)
+ create mode 100644 wiki/entities/alibaba-m890.md
+ delete mode 100644 wiki/entities/andrej-karpathy-skills.md
+ delete mode 100644 wiki/entities/andrej-karpathy.md
+ create mode 100644 wiki/entities/furiosa-ai.md
+ create mode 100644 wiki/ideas/agentic-shift.md
+ create mode 100644 wiki/ideas/nvidia-competitive-moat-eroding.md
+ create mode 100644 wiki/ideas/openai-ipo-validates-agent-economy.md
+ create mode 100644 wiki/sources/amazon.md
+ create mode 100644 wiki/sources/amd.md
+ create mode 100644 wiki/sources/shopify.md
+ create mode 100644 wiki/sources/singapore.md

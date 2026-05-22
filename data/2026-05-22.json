@@ -1,0 +1,177 @@
+{
+  "date": "2026-05-22",
+  "github_repos": [
+    {
+      "name": "google/adk-python",
+      "url": "https://github.com/google/adk-python",
+      "description": {
+        "en": "An open-source, code-first Python framework for building AI agents. Build, evaluate, and deploy sophisticated multi-agent systems with workflow runtime and task delegation.",
+        "zh": "开源的代码优先Python框架，用于构建AI代理。构建、评估和部署复杂的多代理系统，包含工作流运行时和任务委托功能。"
+      },
+      "stars": "19.8k",
+      "forks": "3.4k"
+    },
+    {
+      "name": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "description": {
+        "en": "AI Agent Framework, the Pydantic way. v2.0 introduces harness-first design with capabilities as core primitive—bundling tools, lifecycle hooks, instructions, and model settings into composable units.",
+        "zh": "AI代理框架，Pydantic方式。v2.0引入harness优先设计，以capabilities为核心原语——将工具、生命周期钩子、指令和模型设置打包成可组合单元。"
+      },
+      "stars": "17.2k",
+      "forks": "1.3k"
+    },
+    {
+      "name": "vercel-labs/zerolang",
+      "url": "https://github.com/vercel-labs/zerolang",
+      "description": {
+        "en": "A programming language designed specifically for AI agents. Features agent-first learnability, standard-library depth, deterministic tooling for debugging and repair, and zero dependencies approach.",
+        "zh": "专为AI代理设计的编程语言。特性包括代理优先的可学习性、标准库的深度、用于调试和修复的确定性工具链，以及零依赖方法。"
+      },
+      "stars": "3.9k",
+      "forks": "245"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Considers Providing Japan Access to Mythos-Class Cybersecurity AI",
+        "zh": "OpenAI考虑向日本提供Mythos级网络安全AI"
+      },
+      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/openai-weighs-letting-japan-access-new-mythos-class-cybersecurity-ai",
+      "source": "Nikkei Asia",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "OpenAI is considering providing its new GPT-5.5-Cyber artificial intelligence model to Japan amid rapid rise of Chinese open-source models and cyberthreats. Board member Paul Nakasone called China the 'most significant' cyberthreat.",
+        "zh": "OpenAI正在考虑向日本提供其新的GPT-5.5-Cyber人工智能模型，此举正值中国开源模型和网络威胁迅速增加之际。董事会成员Paul Nakasone称中国为'最重大'的网络威胁。"
+      },
+      "insight": {
+        "en": "This marks a strategic pivot for OpenAI—traditionally hesitant to release frontier models internationally, now actively shopping security capabilities to allied nations. The timing coincides with Anthropic's Claude Mythos gaining traction in enterprise security, creating a new axis of US-Japan AI cooperation away from China's rising open-source ecosystem.",
+        "zh": "这标志着OpenAI的战略转变——传统上对国际发布前沿模型持谨慎态度，现在却积极向盟国推销安全能力。时机恰逢Anthropic的Claude Mythos在企业安全领域获得关注，在与中国日益增长的开源生态系统分离的地方形成了新的美日AI合作轴心。"
+      }
+    },
+    {
+      "title": {
+        "en": "IBM Expands AI Security Push: Vulnerability Exploitation Time Drops from 23 Days to 9 Hours",
+        "zh": "IBM扩展AI安全努力：漏洞利用时间从23天降至9小时"
+      },
+      "url": "https://www.ibm.com/think/news/ibm-expands-ai-security-cyberattacks-accelerate",
+      "source": "IBM",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "IBM announced expanded AI cybersecurity initiatives as security executives warned frontier AI models have sharply accelerated attacker capability to identify and exploit vulnerabilities. Joined Project Glasswing with Anthropic and others. AI reduced exploitation time from 23 days (year ago) to just 9 hours.",
+        "zh": "IBM宣布扩展AI网络安全举措，安全高管警告前沿AI模型大幅加速了攻击者识别和利用漏洞的能力。与Anthropic等加入Project Glasswing。AI将利用时间从23天（一年前）缩短至仅9小时。"
+      },
+      "insight": {
+        "en": "The 9-hour figure is terrifying—but it's a floor, not a ceiling. As reasoning models improve, this window will shrink further. IBM joining Project Glasswing alongside Anthropic signals a rare moment of competitor collaboration: the threat model has become existential enough that traditional rivalry takes a back seat. The 23 days→9 hours collapse represents a 60x acceleration in attacker pace, fundamentally breaking old patch Cadence assumptions.",
+        "zh": "9小时的数字令人恐惧——但这是地板，不是天花板。随着推理模型的改进，这个窗口将进一步缩小。IBM与Anthropic一起加入Project Glasswing标志着竞争对手之间罕见的合作时刻：威胁模型已经变得足够存在性，以至于传统竞争退居次要地位。23天→9小时的崩溃代表了攻击者速度的60倍加速从根本上打破了旧的补丁节奏假设。"
+      }
+    },
+    {
+      "title": {
+        "en": "Cursor 3.0 Launches with Agents Window for Parallel Multi-Agent Workspaces",
+        "zh": "Cursor 3.0推出Agents Window实现并行多代理工作空间"
+      },
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05",
+      "source": "DEV Community",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "Cursor 3.0 launched with 'Agents Window'—a full-screen workspace that runs multiple AI agents in parallel across local environments, isolated Git worktrees, SSH remotes, and cloud instances.",
+        "zh": "Cursor 3.0推出'Agents Window'——一个全屏工作空间，可跨本地环境、隔离的Git工作树、SSH远程和云实例并行运行多个AI代理。"
+      },
+      "insight": {
+        "en": "The shift from 'one agent per tab' to 'multi-agent workspace' represents the transition from copilot to autonomous team. By supporting Git worktrees and SSH remotes, Cursor is positioning itself for distributed agent teams—a preview of how development environments will handle 'agents everywhere' rather than 'one agent per developer'.",
+        "zh": "从'每个标签一个代理'到'多代理工作空间'的转变代表了从副驾驶到自主团队的转变。通过支持Git工作树和SSH远程，Cursor将自己定位为分布式代理团队——这是开发环境如何处理'无处不在的代理'而非'每个开发者一个代理'的预览。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Claude Opus 4.7 Achieves 87.6% on SWE-bench Verified",
+        "zh": "Anthropic Claude Opus 4.7在SWE-bench Verified达到87.6%"
+      },
+      "url": "https://aitoolsrecap.com/Blog/ai-news-may-22-2026",
+      "source": "AI Tools Recap",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "Anthropic's latest Claude Opus 4.7 update achieves 87.6% on SWE-bench Verified, up from 80.8%, crossing the threshold where autonomous code agents can handle multi-file, multi-repo refactoring tasks.",
+        "zh": "Anthropic最新的Claude Opus 4.7更新在SWE-bench Verified达到87.6%，高于80.8%，越过了自主代码代理可以处理多文件、多仓库重构任务的阈值。"
+      },
+      "insight": {
+        "en": "87.6% isn't just a number—it's the threshold where 'agentic coding' stops being aspirational and starts being operational. At 80.8%, human oversight was mandatory; at 87.6%, the economics flip. The new tokenizer, however, adds 1.0-1.35x cost to same inputs—a hidden trade-off the press release glossed over. This is the Claude Code moment: enterprises can now plausibly run autonomous agents on complex PRs.",
+        "zh": "87.6%不仅仅是一个数字——这是'代理编程'停止 aspiration 开始 operational 的阈值。在80.8%，人工监督是强制的；在87.6%，经济学翻盘。然而，新的tokenizer对相同输入增加了1.0-1.35倍的成本——这是新闻稿掩盖的隐藏权衡。这是Claude Code时刻：企业现在可以在复杂PR上合理地运行自主代理。"
+      }
+    },
+    {
+      "title": {
+        "en": "Windsurf 2.0 Introduces Devin Cloud for One-Click Cloud Offload",
+        "zh": "Windsurf 2.0推出Devin Cloud实现一键云卸载"
+      },
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05",
+      "source": "DEV Community",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "Windsurf 2.0 introduces one-click cloud offload, allowing users to dispatch tasks to Devin's cloud environment where agents continue running even after local devices shut down.",
+        "zh": "Windsurf 2.0推出一键云卸载，允许用户将任务分发到Devin的云环境，即使本地设备关闭后代理仍可继续运行。"
+      },
+      "insight": {
+        "en": "The 'close your laptop, agent keeps running' capability addresses the biggest friction in autonomous workflows: user availability. This bridges the gap between ephemeral local sessions and persistent cloud agents—the holy grail for truly asynchronous development. It's essentially 'always-on' development for code agents.",
+        "zh": "'关闭笔记本，代理继续运行'能力解决了自主工作流中最大的摩擦：用户可用性。这弥合了临时本地会话和持久云代理之间的差距——这是真正异步开发的圣杯。这本质上是为代码代理提供'永远在线'开发。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Gemini 3.5 Flash at I/O 2026: ~4× Faster Than Frontier Models",
+        "zh": "Google I/O 2026发布Gemini 3.5 Flash：比前沿模型快约4倍"
+      },
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05",
+      "source": "DEV Community",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "Google launched Gemini 3.5 Flash at I/O 2026, which is approximately 4× faster than other frontier models and is now the default for Google Search's AI Mode.",
+        "zh": "Google在I/O 2026推出Gemini 3.5 Flash，比其他前沿模型快约4倍，现在是Google搜索AI模式的默认模型。"
+      },
+      "insight": {
+        "en": "Google's pricing-to-performance ratio play with Flash is aggressive—with 'AI Mode' as the distribution channel, every Google Search user is now a potential Flash user. This creates massive scale effects: more queries = more RL signal = faster iteration. The 4× speed advantage at lower cost could make this the most deployed model in history by Q3.",
+        "zh": "Google用Flash的性价比策略具有攻击性——通过'AI模式'作为分发渠道，每个Google搜索用户现在都可能是Flash用户。这创造了大规模的规模效应：更多查询=更多RL信号=更快迭代。更低成本下的4倍速度优势可能使其成为历史上部署最多的模型，到Q3。"
+      }
+    },
+    {
+      "title": {
+        "en": "Embodied AI Advances: SAE White Paper and Nature Publication on ROS-LLM Framework",
+        "zh": "具身AI进展：SAE白皮书和Nature发表ROS-LLM框架论文"
+      },
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-may-22-2026-agentic-workflows-coding-agents-embodied-ai-i05",
+      "source": "DEV Community",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "A new SAE white paper and Nature Machine Intelligence publication on ROS-LLM framework signal embodied AI is transitioning from research prototypes to engineered systems with lifecycle safety cases.",
+        "zh": "新的SAE白皮书和Nature Machine Intelligence关于ROS-LLM框架的发表表明具身AI正在从研究原型过渡到具有生命周期安全案例的工程系统。"
+      },
+      "insight": {
+        "en": "The Nature publication legitimizes embodied AI as an engineering discipline, not just robotics theater. When safety cases become publishable, insurance and liability frameworks can follow—unlocking commercial deployment at scale. This bridges the last mile between 'cool demo' and 'deployable product' for physical AI.",
+        "zh": "Nature的发表将具身AI合法化为工程学科，而不仅仅是机器人演示。当安全案例可以发表时，保险和责任框架可以随之跟进——大规模解锁商业部署。这弥合了物理AI从'酷演示'到'可部署产品'的最后一英里。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Hires 'Master of Disaster' Chris Lehane for Reputation Management",
+        "zh": "OpenAI聘请'灾难大师'Chris Lehane进行声誉管理"
+      },
+      "url": "https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/",
+      "source": "WIRED",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "WIRED reported on OpenAI hiring 'Master of Disaster' Chris Lehane to address AI's growing public relations crisis, as polls show increasing negative views of AI despite ChatGPT's popularity.",
+        "zh": "WIRED报道OpenAI聘请'灾难大师'Chris Lehane应对AI日益增长的公共关系危机，尽管ChatGPT很受欢迎，但民意调查显示对AI的负面看法越来越多。"
+      },
+      "insight": {
+        "en": "The irony: ChatGPT is the most adopted technology in history, yet AI sentiment is souring. Lehane's hiring signals OpenAI recognizes the gap between adoption and perception is widening—and traditional tech PR won't close it. This is a bellwether: expect other labs to prioritize reputation over capability announcements in H2.",
+        "zh": "讽刺的是：ChatGPT是有史以来采用最多的技术，但AI情绪却在恶化。Lehane的聘请表明OpenAI认识到采用和认知之间的差距正在扩大——传统科技PR无法弥合。这是一个领先指标：预期其他实验室在H2将声誉置于能力公告之上。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The big theme today is the convergence of three trends: security as a differentiator, autonomous agents crossing the operational threshold, and the race for developermindshare intensifying. IBM's 9-hour vulnerability exploitation stat is terrifying but also defines the threat model that's driving security AI adoption. OpenAI offering Mythos-Cyber to Japan is a strategic play to build a US-aligned AI security coalition against Chinese open-source models—and it's happening the same week Anthropic's Claude hit 87.6% on SWE-bench. The agent tooling space is also consolidating: Pydantic AI v2 and Google ADK v2 both launched this week with similar 'capability composition' architectures. Meanwhile, Cursor and Windsurf are fighting for the IDE of the future—parallel multi-agent workspaces vs. always-on cloud execution. The 87.6% SWE-bench threshold is the invisible line: below it, agents need humans; above it, the economics flip. We're now past that line.",
+    "zh": "今天的大主题是三个趋势的汇聚：安全作为差异化的驱动力，自主代理跨越运营阈值，以及开发者心智份额的竞争加剧。IBM的9小时漏洞利用统计数据令人恐惧，但也定义了推动安全AI采用的威胁模型。OpenAI向日本提供Mythos-Cyber是一种战略举措，建立一个与美国结盟的AI安全联盟来对抗中国开源模型——而且这与Anthropic的Claude在SWE-bench达到87.6%是同一周。代理工具空间也在整合：Pydantic AI v2和Google ADK v2本周都以类似的'能力组合'架构发布。与此同时，Cursor和Windsurf正在争夺未来IDE——并行多代理工作空间vs永远在线云执行。87.6%的SWE-bench阈值是不可见的线：低于它，代理需要人类；高于它，经济学翻盘。我们现在已经过了这条线。"
+  }
+}
