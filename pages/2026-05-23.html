@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 23, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 23, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/lillian039/ELF" class="card-title" target="_blank">lillian039/ELF</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 711 stars</div>
+                                <div class="meta-item"><span>🍴</span> 43 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Embedded Language Flows - continuous diffusion language models based on continuous-time Flow Matching, implemented in JAX</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">嵌入式语言流 - 基于连续时间流匹配（Flow Matching）的连续扩散语言模型，JAX实现</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/facebookresearch/ProgramBench" class="card-title" target="_blank">facebookresearch/ProgramBench</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 637 stars</div>
+                                <div class="meta-item"><span>🍴</span> 52 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Can Language Models Rebuild Programs From Scratch? - benchmarks whether AI agents can architect and implement complete codebases from compiled binaries and documentation</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">语言模型能否从零重建程序？- 基准测试AI智能体是否能从编译后的二进制文件和文档重构完整代码库</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/agent-substrate/substrate" class="card-title" target="_blank">agent-substrate/substrate</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 219 stars</div>
+                                <div class="meta-item"><span>🍴</span> 45 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Kubernetes-based system for managing agent-like workloads - multiplexes actors onto workers to achieve high scale with lower latency</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">基于Kubernetes的智能体工作负载管理系统 - 将执行者多路复用到工作节点上以实现更高扩展性和更低延迟</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Straits Times</span>
+                    <div class="news-time">May 21, 2026</div>
+                    <a href="https://www.straitstimes.com/world/united-states/who-killed-trumps-ai-order-musk-says-it-wasnt-him" class="card-title" target="_blank" data-lang="en">Trump's AI Executive Order Abruptly Withdrawn After Silicon Valley Pushback</a>
+                    <a href="https://www.straitstimes.com/world/united-states/who-killed-trumps-ai-order-musk-says-it-wasnt-him" class="card-title" target="_blank" data-lang="zh" style="display: none;">特朗普AI行政令遭硅谷反对后突然撤回</a>
+                    <p class="card-description" data-lang="en">President Trump's planned executive order requiring 90-day federal access to powerful AI models was pulled after opposition from Silicon Valley VCs and tech CEOs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">特朗普总统要求政府可提前90天访问最强AI模型的行政令在硅谷风险投资公司和科技CEO反对后被撤回。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Financial Express</span>
+                    <div class="news-time">May 23, 2026</div>
+                    <a href="https://www.financialexpress.com/life/technology-anthropic-says-unreleased-ai-model-helped-companies-find-over-10000-cybersecurity-vulnerabilities-in-one-month-4249030/" class="card-title" target="_blank" data-lang="en">Anthropic's Claude Mythos Uncovers 10,000+ Security Flaws in One Month</a>
+                    <a href="https://www.financialexpress.com/life/technology-anthropic-says-unreleased-ai-model-helped-companies-find-over-10000-cybersecurity-vulnerabilities-in-one-month-4249030/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic的Claude Mythos一个月发现逾万个安全漏洞</a>
+                    <p class="card-description" data-lang="en">Anthropic's unreleased Claude Mythos model helped partner companies discover over 10,000 cybersecurity vulnerabilities in one month, including nearly 400 high/critical risks found by Cloudflare alone.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic未发布的Claude Mythos模型帮助合作公司一个月内发现超过10,000个网络安全漏洞，仅Cloudflare就发现近400个高危/严重漏洞。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Neuron</span>
+                    <div class="news-time">May 22, 2026</div>
+                    <a href="https://www.theneuron.ai/newsletter/openai-solved-an-80-year-math-problem-by-disproving-it/" class="card-title" target="_blank" data-lang="en">OpenAI Reasoning Model Solves 80-Year-Old Erdős Conjecture</a>
+                    <a href="https://www.theneuron.ai/newsletter/openai-solved-an-80-year-math-problem-by-disproving-it/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI推理模型解决80年历史的埃尔德什猜想</a>
+                    <p class="card-description" data-lang="en">OpenAI's reasoning model solved the Erdős unit distance conjecture by finding a counterexample, marking a potential breakthrough in AI-driven mathematical discovery.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI的推理模型通过找到反例解决了埃尔德什单位距离猜想，标志着AI驱动数学发现的潜在突破。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Crypto Briefing</span>
+                    <div class="news-time">May 22, 2026</div>
+                    <a href="https://cryptobriefing.com/deepmind-alphaproof-nexus-erdos-problems/" class="card-title" target="_blank" data-lang="en">Google DeepMind's AlphaProof Nexus Attacks Open Mathematical Problems</a>
+                    <a href="https://cryptobriefing.com/deepmind-alphaproof-nexus-erdos-problems/" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌DeepMind的AlphaProof Nexus攻击开放数学问题</a>
+                    <p class="card-description" data-lang="en">AlphaProof Nexus solved 9 out of 353 open Erdős problems and proved 44 out of 492 OEIS sequence conjectures at a cost of just a few hundred dollars per problem.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AlphaProof Nexus解决了353个开放埃尔德什问题中的9个，并证明了492个OEIS序列猜想中的44个，每个问题仅需几百美元。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Startup Fortune</span>
+                    <div class="news-time">May 23, 2026</div>
+                    <a href="https://startupfortune.com/tencents-l2p-makes-pixel-space-image-generation-practical-again/" class="card-title" target="_blank" data-lang="en">Tencent's L2P Unlocks Pixel-Space Image Generation</a>
+                    <a href="https://startupfortune.com/tencents-l2p-makes-pixel-space-image-generation-practical-again/" class="card-title" target="_blank" data-lang="zh" style="display: none;">腾讯L2P解锁像素空间图像生成</a>
+                    <p class="card-description" data-lang="en">Tencent's L2P method transfers latent diffusion models into pixel-space generation, removing the VAE bottleneck while keeping training costs low.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">腾讯的L2P方法将潜在扩散模型转移到像素空间生成，消除VAE瓶颈同时保持低训练成本。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Qbitz</span>
+                    <div class="news-time">May 23, 2026</div>
+                    <a href="https://qbitznews.com/articles/9597-google-exposes-ai-search-vulnerability-with-basic-definition-failures" class="card-title" target="_blank" data-lang="en">Google AI Search Fails at Basic Definitions</a>
+                    <a href="https://qbitznews.com/articles/9597-google-exposes-ai-search-vulnerability-with-basic-definition-failures" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌AI搜索基础定义功能失效</a>
+                    <p class="card-description" data-lang="en">Google's AI-powered search is failing to provide simple definitions for common words like 'disregard,' 'stop,' and 'ignore,' exposing fundamental challenges in the transition from directory to conversational assistant.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌AI搜索无法为'disregard'、'stop'、'ignore'等常见词汇提供简单定义，暴露了从目录向对话助手转型的基础挑战。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Archynewsy</span>
+                    <div class="news-time">May 23, 2026</div>
+                    <a href="https://www.archynewsy.com/claude-opus-4-7-now-available-in-amazon-bedrock/" class="card-title" target="_blank" data-lang="en">Claude Opus 4.7 Now Available on Amazon Bedrock</a>
+                    <a href="https://www.archynewsy.com/claude-opus-4-7-now-available-in-amazon-bedrock/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude Opus 4.7现已在Amazon Bedrock可用</a>
+                    <p class="card-description" data-lang="en">Anthropic's Claude Opus 4.7 is now generally available in Amazon Bedrock with improved coding, visual understanding, and multi-step reasoning, plus zero operator data access.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic的Claude Opus 4.7现已在Amazon Bedrock全面可用，提升了编码、视觉理解和多步推理能力，并提供零运营数据访问。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The real story of May 23, 2026 is the collision between AI's expanding frontier and its crumbling foundations. On one hand, OpenAI and Google demonstrated that AI reasoning can now solve unsolved mathematical problems—genuine original research at a fraction of human cost. On the other, Google's AI search can't define 'ignore,' and Trump's AI executive order collapsed under industry pressure. These aren't contradictions but complementary truths: AI capability is advancing faster than AI reliability, and the regulatory and infrastructure foundations haven't caught up. The week saw +14,600 stars on top 20 GitHub AI repos, yet the skills pattern driving that growth exists precisely because AI agents remain unreliable in production. Meanwhile, Anthropic's Claude Mythos is too dangerous to release—capable of finding 10,000 vulnerabilities but locked away. The pattern is consistent: the gap between what AI can do and what we trust it to do is widening, not narrowing.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年5月23日的真正故事是AI扩展的前沿与其崩塌的基础之间的碰撞。一方面，OpenAI和谷歌证明AI推理现在可以解决未解决的数学问题——以极低成本进行真正的原创研究。另一方面，谷歌AI搜索无法定义'ignore'，特朗普的AI行政令在行业压力下崩塌。这些不是矛盾而是互补的真相：AI能力的发展速度快于AI可靠性，监管和基础设施基础尚未跟上。本周GitHub前20个AI仓库共获得+14,600星，但推动这一增长的技能模式之所以存在正是因为AI智能体在生产环境中仍然不可靠。同时，Anthropic的Claude Mythos太危险而无法发布——能发现10,000个漏洞却被锁起来。模式是一致的：AI能做什么和我们信任它做什么之间的差距正在扩大，而非缩小。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

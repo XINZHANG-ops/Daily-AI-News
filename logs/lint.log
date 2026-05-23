@@ -715,3 +715,12 @@ Already up to date.
 
 • **记录日志** - 已向 wiki/log.md 追加 2026-05-23 lint 条目，详细记录修复内容
 [2026-05-23 01:08:40] Wiki lint 完成（退出码 0）。
+[main 30fc357] wiki: lint 2026-05-23
+ 33 files changed, 579 insertions(+), 37 deletions(-)
+ create mode 100644 wiki/entities/google-adk-python.md
+ create mode 100644 wiki/entities/pydantic-ai.md
+ create mode 100644 wiki/entities/ros-llm.md
+ create mode 100644 wiki/entities/windsurf-2.md
+ create mode 100644 wiki/entities/zerolang.md
+ create mode 100644 wiki/sources/codeium.md
+ create mode 100644 wiki/sources/vercel.md

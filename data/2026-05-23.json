@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-23",
+  "github_repos": [
+    {
+      "name": "lillian039/ELF",
+      "url": "https://github.com/lillian039/ELF",
+      "description": {
+        "en": "Embedded Language Flows - continuous diffusion language models based on continuous-time Flow Matching, implemented in JAX",
+        "zh": "嵌入式语言流 - 基于连续时间流匹配（Flow Matching）的连续扩散语言模型，JAX实现"
+      },
+      "stars": "711",
+      "forks": "43"
+    },
+    {
+      "name": "facebookresearch/ProgramBench",
+      "url": "https://github.com/facebookresearch/ProgramBench",
+      "description": {
+        "en": "Can Language Models Rebuild Programs From Scratch? - benchmarks whether AI agents can architect and implement complete codebases from compiled binaries and documentation",
+        "zh": "语言模型能否从零重建程序？- 基准测试AI智能体是否能从编译后的二进制文件和文档重构完整代码库"
+      },
+      "stars": "637",
+      "forks": "52"
+    },
+    {
+      "name": "agent-substrate/substrate",
+      "url": "https://github.com/agent-substrate/substrate",
+      "description": {
+        "en": "Kubernetes-based system for managing agent-like workloads - multiplexes actors onto workers to achieve high scale with lower latency",
+        "zh": "基于Kubernetes的智能体工作负载管理系统 - 将执行者多路复用到工作节点上以实现更高扩展性和更低延迟"
+      },
+      "stars": "219",
+      "forks": "45"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Trump's AI Executive Order Abruptly Withdrawn After Silicon Valley Pushback",
+        "zh": "特朗普AI行政令遭硅谷反对后突然撤回"
+      },
+      "url": "https://www.straitstimes.com/world/united-states/who-killed-trumps-ai-order-musk-says-it-wasnt-him",
+      "source": "The Straits Times",
+      "time": "May 21, 2026",
+      "description": {
+        "en": "President Trump's planned executive order requiring 90-day federal access to powerful AI models was pulled after opposition from Silicon Valley VCs and tech CEOs.",
+        "zh": "特朗普总统要求政府可提前90天访问最强AI模型的行政令在硅谷风险投资公司和科技CEO反对后被撤回。"
+      },
+      "insight": {
+        "en": "The order's collapse signals AI policy remains hostage to industry lobbying. David Sacks, Trump's AI czar, reportedly called the president warning the measure would hurt US competitiveness against China. Both Elon Musk and Mark Zuckerberg reportedly lobbied against it—though Musk denied involvement. This sets a troubling precedent: the most consequential AI regulation attempt of 2026 died not from technical merit but from industry pressure.",
+        "zh": "该命令的流产表明AI政策仍被人质劫持为行业游说的对象。据报道，特朗普的AI顾问大卫·萨克斯致电总统警告该措施会损害美国对华竞争力。埃隆·马斯克和马克·扎克伯格都游说反对——尽管马斯克否认。这开创了一个令人担忧的先例：2026年最具影响力的AI监管尝试不是因技术优劣而失败，而是死于行业压力。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic's Claude Mythos Uncovers 10,000+ Security Flaws in One Month",
+        "zh": "Anthropic的Claude Mythos一个月发现逾万个安全漏洞"
+      },
+      "url": "https://www.financialexpress.com/life/technology-anthropic-says-unreleased-ai-model-helped-companies-find-over-10000-cybersecurity-vulnerabilities-in-one-month-4249030/",
+      "source": "Financial Express",
+      "time": "May 23, 2026",
+      "description": {
+        "en": "Anthropic's unreleased Claude Mythos model helped partner companies discover over 10,000 cybersecurity vulnerabilities in one month, including nearly 400 high/critical risks found by Cloudflare alone.",
+        "zh": "Anthropic未发布的Claude Mythos模型帮助合作公司一个月内发现超过10,000个网络安全漏洞，仅Cloudflare就发现近400个高危/严重漏洞。"
+      },
+      "insight": {
+        "en": "This is the first AI model to complete both of the UK AI Security Institute's full cyberattack simulation environments—yet Anthropic has no plans to release it publicly because safeguards aren't strong enough. The irony: the most capable security AI ever built is too dangerous to release. Meanwhile, the same capability race that drives Claude Mythos development is why companies like Google are rushing Gemini upgrades. The security implications of withholding vs. releasing frontier AI models just got concrete data points.",
+        "zh": "这是第一个完成英国AI安全研究所两个完整网络攻击模拟环境的AI模型——然而Anthropic因安全防护不够强而无意公开。讽刺的是：有史以来最强大的安全AI太危险而无法发布。与此同时，推动Claude Mythos开发的能力竞赛正是谷歌仓促升级Gemini的原因。扣留vs发布前沿AI模型的安全含义如今有了具体数据支撑。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Reasoning Model Solves 80-Year-Old Erdős Conjecture",
+        "zh": "OpenAI推理模型解决80年历史的埃尔德什猜想"
+      },
+      "url": "https://www.theneuron.ai/newsletter/openai-solved-an-80-year-math-problem-by-disproving-it/",
+      "source": "The Neuron",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "OpenAI's reasoning model solved the Erdős unit distance conjecture by finding a counterexample, marking a potential breakthrough in AI-driven mathematical discovery.",
+        "zh": "OpenAI的推理模型通过找到反例解决了埃尔德什单位距离猜想，标志着AI驱动数学发现的潜在突破。"
+      },
+      "insight": {
+        "en": "External mathematicians verified the proof—this may be the most meaningful contribution generative AI has made to mathematics. On the same day, Google DeepMind's AlphaProof Nexus solved 9 of 353 open Erdős problems and proved 44 sequence conjectures at just hundreds of dollars per problem. The race to automate mathematical discovery is no longer theoretical: two major labs demonstrated concrete results on the same day.",
+        "zh": "外部数学家验证了证明——这可能是生成式AI对数学最重要的贡献。同一天，谷歌DeepMind的AlphaProof Nexus解决了353个开放埃尔德什问题中的9个，并证明了44个序列猜想，每个问题仅需几百美元。自动数学发现的竞赛不再是理论性的：同一天两个主要实验室都展示了具体成果。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google DeepMind's AlphaProof Nexus Attacks Open Mathematical Problems",
+        "zh": "谷歌DeepMind的AlphaProof Nexus攻击开放数学问题"
+      },
+      "url": "https://cryptobriefing.com/deepmind-alphaproof-nexus-erdos-problems/",
+      "source": "Crypto Briefing",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "AlphaProof Nexus solved 9 out of 353 open Erdős problems and proved 44 out of 492 OEIS sequence conjectures at a cost of just a few hundred dollars per problem.",
+        "zh": "AlphaProof Nexus解决了353个开放埃尔德什问题中的9个，并证明了492个OEIS序列猜想中的44个，每个问题仅需几百美元。"
+      },
+      "insight": {
+        "en": "Compare $100-200/problem to traditional mathematician costs—this is orders of magnitude cheaper. Combined with OpenAI's Erdős breakthrough on the same day, the implication is clear: AI reasoning systems are now capable of original mathematical research. The question shifts from 'can AI do math?' to 'what happens to human mathematicians?'",
+        "zh": "与传统数学家成本相比，每个问题100-200美元便宜了几个数量级。结合同一天OpenAI的埃尔德什突破，含义很清楚：AI推理系统现在能够进行原创数学研究。问题从'AI能做数学吗？'转变为'人类数学家会怎样？'"
+      }
+    },
+    {
+      "title": {
+        "en": "Tencent's L2P Unlocks Pixel-Space Image Generation",
+        "zh": "腾讯L2P解锁像素空间图像生成"
+      },
+      "url": "https://startupfortune.com/tencents-l2p-makes-pixel-space-image-generation-practical-again/",
+      "source": "Startup Fortune",
+      "time": "May 23, 2026",
+      "description": {
+        "en": "Tencent's L2P method transfers latent diffusion models into pixel-space generation, removing the VAE bottleneck while keeping training costs low.",
+        "zh": "腾讯的L2P方法将潜在扩散模型转移到像素空间生成，消除VAE瓶颈同时保持低训练成本。"
+      },
+      "insight": {
+        "en": "The key insight: latent diffusion's VAE encoder/decoder was the bottleneck, not the UNet. By transferring to pixel-space, Tencent achieves high-resolution output without the quality loss of traditional pixel diffusion or the computational cost of pure latent models. The accompanying T2I-L2P GitHub repo (80 stars in 24 hours) shows the community's appetite for practical image generation tools. This directly connects to the broader trend of making AI generation more accessible.",
+        "zh": "关键洞见：潜在扩散的VAE编码器/解码器才是瓶颈，而非UNet。通过转移到像素空间，腾讯实现了高分辨率输出，没有传统像素扩散的质量损失，也没有纯潜在模型的计算成本。配套的T2I-L2P GitHub仓库（24小时内80星）表明社区对实用图像生成工具的渴望。这直接连接到让AI生成更易获取的更广泛趋势。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google AI Search Fails at Basic Definitions",
+        "zh": "谷歌AI搜索基础定义功能失效"
+      },
+      "url": "https://qbitznews.com/articles/9597-google-exposes-ai-search-vulnerability-with-basic-definition-failures",
+      "source": "Qbitz",
+      "time": "May 23, 2026",
+      "description": {
+        "en": "Google's AI-powered search is failing to provide simple definitions for common words like 'disregard,' 'stop,' and 'ignore,' exposing fundamental challenges in the transition from directory to conversational assistant.",
+        "zh": "谷歌AI搜索无法为'disregard'、'stop'、'ignore'等常见词汇提供简单定义，暴露了从目录向对话助手转型的基础挑战。"
+      },
+      "insight": {
+        "en": "This isn't just a bug—it's a symptom of the fundamental tension between search-as-directory and search-as-conversational-AI. Google's AI Mode now has 1B+ monthly users (per Google I/O), but basic competence gaps reveal how far we are from reliable AI-native search. Compare to OpenAI's and Google's reasoning model竞赛: the frontier pushes forward while foundations crumble.",
+        "zh": "这不只是bug——是搜索即目录vs搜索即对话AI之间根本张力的症状。谷歌AI Mode现在有超过10亿月活用户（据谷歌I/O），但基础能力差距揭示了可靠的AI原生搜索还有多远。对比OpenAI和谷歌的推理模型竞赛：前沿推进的同时基础正在崩塌。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Opus 4.7 Now Available on Amazon Bedrock",
+        "zh": "Claude Opus 4.7现已在Amazon Bedrock可用"
+      },
+      "url": "https://www.archynewsy.com/claude-opus-4-7-now-available-in-amazon-bedrock/",
+      "source": "Archynewsy",
+      "time": "May 23, 2026",
+      "description": {
+        "en": "Anthropic's Claude Opus 4.7 is now generally available in Amazon Bedrock with improved coding, visual understanding, and multi-step reasoning, plus zero operator data access.",
+        "zh": "Anthropic的Claude Opus 4.7现已在Amazon Bedrock全面可用，提升了编码、视觉理解和多步推理能力，并提供零运营数据访问。"
+      },
+      "insight": {
+        "en": "The Bedrock release adds to Claude's expanding distribution. Combined with the just-announced Claude Code 1.0 and the Skills ecosystem explosion (+1,618 stars for mattpocock/skills alone), Anthropic is building a full-stack developer ecosystem. The question is whether this distribution advantage translates to frontier model leadership as OpenAI and Google push reasoning capabilities.",
+        "zh": "Bedrock发布扩展了Claude的分发渠道。结合刚宣布的Claude Code 1.0和技能生态系统爆发（仅mattpocock/skills就获得+1,618星），Anthropic正在构建全栈开发者生态系统。问题是随着OpenAI和谷歌推进推理能力，这种分发优势能否转化为前沿模型领先地位。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The real story of May 23, 2026 is the collision between AI's expanding frontier and its crumbling foundations. On one hand, OpenAI and Google demonstrated that AI reasoning can now solve unsolved mathematical problems—genuine original research at a fraction of human cost. On the other, Google's AI search can't define 'ignore,' and Trump's AI executive order collapsed under industry pressure. These aren't contradictions but complementary truths: AI capability is advancing faster than AI reliability, and the regulatory and infrastructure foundations haven't caught up. The week saw +14,600 stars on top 20 GitHub AI repos, yet the skills pattern driving that growth exists precisely because AI agents remain unreliable in production. Meanwhile, Anthropic's Claude Mythos is too dangerous to release—capable of finding 10,000 vulnerabilities but locked away. The pattern is consistent: the gap between what AI can do and what we trust it to do is widening, not narrowing.",
+    "zh": "2026年5月23日的真正故事是AI扩展的前沿与其崩塌的基础之间的碰撞。一方面，OpenAI和谷歌证明AI推理现在可以解决未解决的数学问题——以极低成本进行真正的原创研究。另一方面，谷歌AI搜索无法定义'ignore'，特朗普的AI行政令在行业压力下崩塌。这些不是矛盾而是互补的真相：AI能力的发展速度快于AI可靠性，监管和基础设施基础尚未跟上。本周GitHub前20个AI仓库共获得+14,600星，但推动这一增长的技能模式之所以存在正是因为AI智能体在生产环境中仍然不可靠。同时，Anthropic的Claude Mythos太危险而无法发布——能发现10,000个漏洞却被锁起来。模式是一致的：AI能做什么和我们信任它做什么之间的差距正在扩大，而非缩小。"
+  }
+}
