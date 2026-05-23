@@ -1,7 +1,7 @@
 ---
 title: "IBM"
 slug: ibm
-last_updated: 2026-05-05
+last_updated: 2026-05-22
 ---
 
 # IBM
@@ -15,6 +15,7 @@ IBM entered the AI development platform race with Bob, an AI-first development p
 |------|-------|---------|
 | 2026-04-28 | IBM Bob announced | AI-first development partner automating full SDLC; multi-model orchestration routing to Claude, Mistral, Granite; 80K+ internal IBM users reporting ~45% productivity gains; Blue Pearl completed 30-day Java upgrade in 3 days |
 | 2026-05-05 | Think 2026: watsonx Orchestrate, Concert, Sovereign Core | Agentic control plane for thousands of multi-agent systems; AI ops platform for autonomous infrastructure response; runtime policy embedding for cross-jurisdictional compliance |
+| 2026-05-22 | IBM joins Project Glasswing | Announced expanded AI cybersecurity initiatives alongside Anthropic and others; revealed AI reduced vulnerability exploitation time from 23 days (year ago) to just 9 hours — 60x acceleration fundamentally breaking old patch cadence assumptions |
 
 ## Key Relationships
 - **Anthropic**: Claude is one of the models Bob routes tasks to; IBM benefits from Claude's coding strengths without being dependent on Anthropic
@@ -29,3 +30,4 @@ IBM entered the AI development platform race with Bob, an AI-first development p
 - [[ideas/agent-verticalization]] — IBM Bob is a case study in verticalization: one AI platform optimized for the entire software engineering profession rather than a general-purpose assistant
 - [[entities/ibm-sovereign-core]] — most strategically significant piece of IBM's governance stack; embeds regulatory policy at runtime as response to EU AI Act fines and Five Eyes guidance
 - [[ideas/agent-economy-infrastructure]] — IBM provides the governance pillar alongside Stripe's payments and OpenAI's deployment
+- [[entities/project-glasswing]] — IBM joined Project Glasswing alongside Anthropic, signaling a rare moment of competitor collaboration; the existential threat model from 9-hour vulnerability exploitation has made traditional rivalry secondary to collective defense

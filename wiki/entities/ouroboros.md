@@ -26,7 +26,7 @@ ouroboros attacks one of the most painful aspects of current agent development: 
 ## Connections
 - [[topics/agentic_ai]] — ouroboros challenges the prompt-centric development model that dominates current agent frameworks; its declarative approach could make agent engineering as systematic as traditional software engineering
 - [[entities/cocoindex]] — Both trending May 8 represent a shift from ad-hoc agent scripting to structured agent architecture; cocoindex provides persistence while ouroboros provides declarative behavior specification
-- [[entities/andrej-karpathy-skills]] — Karpathy's 105K-star CLAUDE.md popularized "configuration over code" for Claude Code; ouroboros extends this philosophy to the entire agent stack with "specification over prompting"
+- karpathy's 105K-star CLAUDE.md popularized "configuration over code" for Claude Code; ouroboros extends this philosophy to the entire agent stack with "specification over prompting"
 - [[ideas/agent-democratization]] — Declarative agent specification lowers the skill barrier from "prompt engineer" to "software engineer," potentially broadening who can build reliable agents
 - [[ideas/boring-infrastructure-shift]] — Specification-driven agents are "boring infrastructure" in the best sense: reproducible, testable, and maintainable rather than artisanal prompt crafting
 - [[entities/harmonist]] — Harmonist's 186 specialist agents with mechanical protocol enforcement shares ouroboros's philosophy of structured agent behavior over free-form prompting

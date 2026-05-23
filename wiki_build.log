@@ -898,3 +898,30 @@ I've completed processing the 2026-05-21 data into the wiki. Here's a summary of
 - **Metadata:**
   - `processed.json` — Added 2026-05-21
   - `log.md` — Added ingest entry
+Wiki ingest complete for 2026-05-22. Here's the summary:
+
+**Data processed**: 2026-05-22
+
+**Sources updated**:
+- IBM: Added Project Glasswing membership, 9-hour vulnerability exploitation stat
+- OpenAI: Added Japan Mythos-Cyber consideration, Chris Lehane hire
+- Google: Added Gemini 3.5 Flash details (4× faster, AI Mode default)
+
+**Sources created**:
+- codeium (for Windsurf 2.0 connection)
+- vercel (for ZeroLang connection)
+
+**Topics updated**:
+- agentic_ai: Added Cursor 3.0 Agents Window, Windsurf 2.0, ADK Python, Pydantic AI v2, Claude Opus 4.7 87.6% threshold
+- ai_safety: Added IBM 9-hour stat, Project Glasswing expansion, OpenAI Japan offer
+- llm_models: Added Claude Opus 4.7 87.6% SWE-bench
+- github_trends: Added Google ADK Python, Pydantic AI, ZeroLang
+
+**Timeline**: Added May 22 section covering all key events
+
+**Entities updated**:
+- cursor: Added Agents Window for parallel multi-agent workspaces
+- gemini-3-5-flash: Added 4× speed, AI Mode default
+- claude-opus-4-7: Added 87.6% SWE-bench threshold
+
+**Index/log**: Updated index.md, processed.json (36 sources now), and log.md with the ingest entry.

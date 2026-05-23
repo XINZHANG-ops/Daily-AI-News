@@ -28,6 +28,6 @@ Context window management is becoming the critical infrastructure problem for ag
 - [[entities/mcp-protocol]] — Built on MCP, Context Mode demonstrates the protocol's utility as infrastructure plumbing; also highlights the irony that MCP both creates (150M installs vulnerability) and solves (context optimization) problems
 - [[entities/symphony]] — Symphony's "every task gets an agent" model generates massive context pressure that Context Mode is designed to relieve; they're complementary infrastructure layers
 - [[entities/claude-code]] — Primary target platform; Claude Code's context window management has been a pain point driving power users to seek optimization tools
-- [[entities/andrej-karpathy-skills]] — Both address agent quality: Karpathy principles improve what the agent does, Context Mode improves what the agent sees
+- karpathy's CLAUDE.md skills approach — Both address agent quality: behavioral principles improve what the agent does, Context Mode improves what the agent sees
 - [[topics/agentic_ai]] — Context optimization is becoming a prerequisite for agent reliability at scale; 98% reduction means agents can run longer and handle more complex tasks
 - [[ideas/agent-economics]] — Context reduction directly lowers cost-per-task by reducing token consumption; 98% compression is a massive economic lever for agent-scale deployment

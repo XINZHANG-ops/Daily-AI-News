@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-23] wiki lint | broken link fixes
+
+**Pass 1 — Broken link fixes:**
+- Fixed 13 broken wikilinks targeting non-existent entities
+- Replaced [[entities/andrej-karpathy-skills]] with descriptive text (12 occurrences across claude-code, context-mode, nanobot, ouroboros, autoresearch, symphony, application-layer-shift, github_trends, timelines/2026-05)
+- Replaced [[entities/andrej-karpathy]] with text (2 occurrences in llm_models, anthropic)
+- Fixed ros-llm: replaced [[topics/embodied-ai]] with [[topics/agentic_ai]], removed [[entities/swe-bench]]
+
+---
+
+# Wiki Log
+
 ## [2026-05-21] ingest | 1 date
 
 **Dates processed:** 2026-05-21
@@ -973,6 +985,15 @@ Dates processed: 2026-05-20
 **Topics updated:** llm_models, ai_funding, github_trends, agentic_ai
 
 ## [2026-05-21] wiki lint | link + index fixes
+## [2026-05-22] ingest | 1 date
+
+Dates processed: 2026-05-22
+Topics updated: agentic_ai (Cursor 3.0, Windsurf 2.0, ADK Python, Pydantic AI v2, 87.6% SWE-bench), ai_safety (IBM 9-hour stat, Project Glasswing, Japan Mythos-Cyber), llm_models (Claude Opus 4.7 87.6%), github_trends (ADK Python, Pydantic AI, ZeroLang)
+Sources updated: IBM (Project Glasswing), OpenAI (Japan access, Chris Lehane), Google (Gemini 3.5 Flash 4×)
+Entities created: google-adk-python, pydantic-ai, zerolang, windsurf-2 (all existed), ros-llm (existed)
+Entities updated: cursor (3.0 Agents Window), gemini-3-5-flash (4× faster, AI Mode default), claude-opus-4-7 (87.6% SWE-bench)
+Ideas: N/A (existing ideas sufficient)
+
 
 **Pre-scan fixes:**
 - Fixed 6 broken links to `[[ideas/agentic-shift]]` → replaced with `[[ideas/agentic-is-default]]` in: gemini-spark.md, isaac-gr00t-n1-7.md, magma.md, gemini-omni.md, vita-1-5.md, andrej-karpathy.md

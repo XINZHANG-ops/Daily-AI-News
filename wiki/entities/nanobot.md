@@ -29,4 +29,4 @@ nanobot demonstrates that sophisticated agent functionality does not require mas
 - [[entities/mcp-protocol]] — MCP support enables nanobot to integrate with any MCP-compatible tool ecosystem without building custom adapters
 - [[entities/claude-code]] — Claude Code is the 512K-line enterprise standard; nanobot proves 99% smaller implementations can deliver comparable multi-platform agent functionality for personal use
 - [[entities/corecoder]] — both represent the minimal-code agent philosophy, but nanobot adds multi-platform chat and MCP while CoreCoder focuses purely on terminal coding
-- [[entities/andrej-karpathy-skills]] — Karpathy's "configuration over code" principle (105K stars) resonates with nanobot's minimal-implementation approach
+- karpathy's "configuration over code" principle (105K stars via CLAUDE.md) — resonates with nanobot's minimal-implementation approach

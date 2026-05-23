@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-16
+last_updated: 2026-05-22
 ---
 
 # LLM Models
@@ -62,6 +62,7 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-19 | Andrej Karpathy joins Anthropic | OpenAI cofounder and former Tesla AI director joins as Pretraining Advisor; highest-profile OpenAI departure yet; pairs with Jan Leike for capability+safety approach |
 | 2026-05-19 | OpenAI adds C2PA/SynthID watermarks | Joins C2PA standard with Google SynthID; response to EU AI Act content provenance requirements |
 | 2026-05-20 | Robotics foundation model wave | Isaac GR00T N1.7, VITA-1.5, MiniMax-M2, Magma released; signals shift from pure model capability to embodied AI (physical+digital interaction) |
+| 2026-05-22 | Claude Opus 4.7 achieves 87.6% on SWE-bench Verified | Up from 80.8%; crosses threshold where autonomous code agents can handle multi-file, multi-repo refactoring economically; new tokenizer adds 1.0-1.35x cost to same inputs (hidden trade-off) — the "Claude Code moment" for enterprise autonomous deployment |
 | 2026-03-19 | Xiaomi MiMo-V2-Pro revealed as "Hunter Alpha" | Chinese AI "stealth launch" strategy demonstrated |
 | 2026-03-26 | Claude Mythos documents leaked | 3,000 internal docs exposed unprecedented cybersecurity risks |
 | 2026-04-02 | Google Gemma 4 (Apache 2.0) | First fully permissive Gemma release, 31B ranks #3 on Arena |
@@ -242,7 +243,7 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/gemini-3-5-flash]] — Google's frontier-level model at half price; Flash-as-default signals pivot from consumer search to API-centric revenue
 - [[entities/gemini-spark]] — Google's consumer AI agent; competes with Claude Code and OpenAI Operator for the emerging agent market
 - [[entities/gemini-omni]] — Google's world model for physical simulation; competes with World Labs for physical AI prediction
-- [[entities/andrej-karpathy]] — Highest-profile OpenAI departure; joins Anthropic for frontier pretraining; confirms AI-assisted research loops are the next frontier
+- Andrej Karpathy — Highest-profile OpenAI departure; joins Anthropic for frontier pretraining; confirms AI-assisted research loops are the next frontier
 - [[entities/isaac-gr00t-n1-7]] — NVIDIA's robotics VLA model; robotics foundation model wave expands AI from digital to physical
 - [[entities/magma]] — Microsoft's CVPR 2025 model handling digital UI and physical robotics; unified foundation for agentic AI
 - [[entities/vita-1-5]] — VITA-MLLM's real-time vision and speech model; NeurIPS 2025 paper on unified multimodal interaction

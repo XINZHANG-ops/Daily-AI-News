@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-21
+last_updated: 2026-05-22
 ---
 
 # OpenAI
@@ -72,6 +72,8 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-19 | Adds C2PA metadata and SynthID watermarks to AI images | Joins C2PA standard and partners with Google to embed invisible SynthID watermarks; preview of public verification tool for detecting AI-generated content; response to EU AI Act content provenance requirements |
 | 2026-05-21 | Confidential IPO filing with Goldman Sachs, Morgan Stanley | $850B+ valuation; potentially largest stock market debut in history, surpassing Aramco's $119B; structural complexity: non-profit board controlling for-profit entity |
 | 2026-05-21 | Model solves planar unit distance conjecture | First prominent mathematical open problem solved autonomously by AI; 80+ year conjecture proven false using algebraic number theory techniques |
+| 2026-05-22 | Considering Japan access to Mythos-class cybersecurity AI | OpenAI evaluating providing GPT-5.5-Cyber to Japan amid rise of Chinese open-source models and cyberthreats; Board member Paul Nakasone called China the "most significant" cyberthreat; strategic pivot from traditionally hesitant international frontier model release to actively shopping security capabilities to allied nations |
+| 2026-05-22 | Hires Chris Lehane for reputation management | Known as "Master of Disaster"; hired to address AI's growing PR crisis as polls show increasing negative views of AI despite ChatGPT's 900M weekly users; signals OpenAI recognizes adoption-perception gap widening — traditional tech PR won't close it |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
@@ -102,3 +104,5 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[ideas/eu-cyber-access-gap]] — OpenAI's EU cyber access expansion builds geopolitical relationships through model access, contrasting with Anthropic's safety-first restriction that alienates a major economic bloc
 - [[entities/gpt-5.5-cyber]] — May 12 EU Trusted Access for Cyber program grants EU institutions GPT-5.5-Cyber access, creating a structural defensive advantage for European defenders
 - [[entities/synthid]] — Watermarking solution developed by Google; OpenAI's adoption signals industry-wide content provenance standards are emerging as regulatory floor; competitive necessity rather than safety-first approach
+- [[sources/google]] — Both expanding cybersecurity model access to allied nations; Japan offer parallels Google's own AI defense partnerships; Google Gemini 3.5 Flash powering Search AI Mode creates competitive pressure on OpenAI's consumer dominance
+- [[sources/ibm]] — IBM joining Project Glasswing alongside Anthropic creates a third pole in the security AI coalition; OpenAI's Japan offer is a strategic response to build US-aligned AI security coalition against Chinese open-source models

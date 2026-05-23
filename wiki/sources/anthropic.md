@@ -85,7 +85,7 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 - **CrowdStrike**: Security partnership through Project Glasswing. Joint coalition addressing cybersecurity threats.
 
 ## Connections
-- [[entities/andrej-karpathy]] — OpenAI cofounder and former Tesla AI director joins Anthropic; highest-profile departure from OpenAI yet; pairs with Jan Leike for two-pronged frontier capability and safety approach
+- Andrej Karpathy — OpenAI cofounder and former Tesla AI director joins Anthropic; highest-profile departure from OpenAI yet; pairs with Jan Leike for two-pronged frontier capability and safety approach
 - [[entities/claude-mythos]] — Central to Anthropic's period; withheld from public due to security risks; Pentagon exclusion directly tied to Mythos safety policies
 - [[entities/claude-code]] — Primary driver of $9B to $30B ARR growth
 - [[entities/claude-opus-4-6]] — SWE-bench leader at 80.8%

@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-16
+last_updated: 2026-05-22
 ---
 
 # AI Safety
@@ -87,7 +87,9 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-13 | OpenAI Daybreak expands partner ecosystem | 8+ security vendors including Cisco, Oracle, Fortinet, Akamai, Zscaler; "three-tier" safety model becoming industry standard
 | 2026-05-07 | EU delays AI Act compliance by 18+ months | High-risk AI systems until December 2027; machinery until August 2028; first major global reversal of AI safety regulation
 | 2026-05-14 | Colorado SB-26-189 AI Act | Mandates disclosure when AI used in consequential decisions; bipartisan support; states writing actual rules while federal government debates which agency should oversee AI
-| 2026-05-16 | YouTube expands deepfake detection to all adults | Biometric signature scanning for synthetic media; reflects regulatory pressure (Colorado AI Act, UK tightening), not corporate goodwill; 900% deepfake incident growth in 2025
+| 2026-05-16 | YouTube expands deepfake detection to all adults | Biometric signature scanning for synthetic media; reflects regulatory pressure (Colorado AI Act, UK tightening), not corporate goodwill; 900% deepfake incident growth in 2025 |
+| 2026-05-22 | IBM joins Project Glasswing | Announced alongside Anthropic; IBM reveals AI reduced vulnerability exploitation time from 23 days to just 9 hours — 60x acceleration fundamentally breaking old patch cadence assumptions; signals existential threat model has made competitor collaboration necessary |
+| 2026-05-22 | OpenAI considers Japan Mythos-class AI access | OpenAI evaluating providing GPT-5.5-Cyber to Japan amid Chinese open-source model rise; Board member Paul Nakasone calls China "most significant" cyberthreat; strategic pivot from international hesitation to actively building US-aligned AI security coalition |
 
 ## Patterns & Insights
 
@@ -173,4 +175,6 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[entities/uk-govuk-chatbot]] — 90% accuracy for government services means ~10,000 potential daily failures at scale; the 2.5-year development timeline suggests extreme caution in deploying AI for high-stakes citizen interactions
 - [[entities/olmo]] — Microsoft's acquisition of OLMo expertise for "humanist superintelligence" raises safety questions about what happens when open-source safety research is absorbed into corporate product development
 - [[sources/ai2]] — The loss of Ai2's open-source leadership team to Microsoft reduces independent research capacity for transparent, auditable model development
+- [[entities/project-glasswing]] — IBM joining alongside Anthropic signals rare competitor collaboration driven by existential threat model; 9-hour vulnerability exploitation window has made traditional rivalry secondary to collective defense
+- [[entities/ibm-bob]] — IBM's Project Glasswing membership extends Bob's multi-model orchestration to include security-specific routing; governance infrastructure now includes cybersecurity coalition participation
 - [[timelines/2026-05]] — May 14-16 adds Colorado AI Act, UK chatbot, and YouTube deepfake expansion to the month's safety narrative alongside alignment reality checks and regulatory fragmentation

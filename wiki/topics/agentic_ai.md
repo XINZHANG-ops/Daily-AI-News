@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-16
+last_updated: 2026-05-22
 ---
 
 # Agentic AI
@@ -98,6 +98,11 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-15 | OpenSwarm (2.3k stars), Alphora (347 stars), KohakuTerrarium (320 stars) | Three production-ready agent frameworks trend simultaneously; all ship enterprise features (sandboxing, SSE streaming, session persistence) signaling ecosystem maturation past prototypes |
 | 2026-05-15 | PwC deploys Claude Code and Claude Cowork to 30,000 professionals | New "Office of the CFO" built entirely on Claude; 70% delivery time reduction; AI transitions from tool to core business infrastructure |
 | 2026-05-12 | HiDream-O1-Image unified generation (293 stars) | Natively unified image generation without external VAEs; text-to-image, editing, personalization in one model |
+| 2026-05-22 | Cursor 3.0 launches Agents Window | Full-screen parallel multi-agent workspace across local environments, isolated Git worktrees, SSH remotes, and cloud instances; shift from "one agent per tab" to "multi-agent workspace" |
+| 2026-05-22 | Windsurf 2.0 introduces Devin Cloud | One-click cloud offload allows tasks to continue running even after local devices shut down; "close your laptop, agent keeps running" addresses biggest autonomous workflow friction |
+| 2026-05-22 | Google ADK Python (19.8k stars) and Pydantic AI v2 (17.2k stars) launch | Both v2 frameworks introduce "capability composition" architecture; tools, hooks, instructions bundled into composable units; industry consolidating around modular agent design |
+| 2026-05-22 | ZeroLang by Vercel Labs (3.9k stars) | Programming language designed specifically for AI agents; zero dependencies, deterministic tooling, agent-first learnability; radical shift from "tools for agents" to "language for agents" |
+| 2026-05-22 | Claude Opus 4.7 crosses 87.6% SWE-bench threshold | Autonomous code agents can now handle multi-file, multi-repo refactoring economically; at 80.8% human oversight was mandatory, at 87.6% economics flip — the "Claude Code moment" for enterprise deployment |
 | 2026-05-12 | Terminal-Bench 2.0 unsaturated scores | ~82% with agents vs ~73% GPT-5.5 raw; 18-35% CLI task failure rate drives infrastructure investment beyond raw models |
 | 2026-05-13 | Claude Code v2.1.139 | Agent View, /goal command, Git worktree, /loop, MCP improvements; becoming an OS for AI-assisted development |
 | 2026-05-13 | AWS MCP Server GA | 15,000+ API operations with sandboxed Python execution; IAM guardrails; "infrastructure-as-MCP" |
@@ -239,3 +244,10 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/gemini-omni]] — Google's world model for physical simulation; agents need world models to plan in realistic physical environments
 - [[entities/isaac-gr00t-n1-7]] — NVIDIA's robotics VLA model expands agentic AI from digital to physical world interaction
 - [[entities/magma]] — Microsoft's unified digital+physical agent model; handles both UI navigation and robotics
+- [[entities/cursor]] — Cursor 3.0's Agents Window represents the "multi-agent workspace" paradigm vs Windsurf's "always-on cloud execution"; the IDE of the future is either parallel workspaces or persistent execution
+- [[entities/windsurf-2]] — One-click cloud offload removes the user-availability barrier; agents outlive the developer's session — the "always-on" capability is the holy grail for asynchronous development
+- [[entities/google-adk-python]] — Google's code-first agent framework; 19.8k stars signals strong developer interest in a Google-backed alternative to LangChain/Pydantic AI; part of Google's agent stack (model → framework → deployment)
+- [[entities/pydantic-ai]] — Pydantic AI v2's capability composition mirrors ADK v2; both represent industry consolidation around modular agent design similar to React components for UI
+- [[entities/zerolang]] — Vercel Labs' radical experiment in agent-native programming; zero dependencies simplifies the agent's world model; deterministic tooling enables reliable debugging by agents
+- [[entities/claude-opus-4-7]] — 87.6% SWE-bench is the economic threshold where autonomous coding agents become viable at enterprise scale; below 80% requires human oversight, above it the cost-benefit flips
+- [[entities/gemini-3-5-flash]] — Powers Google Search AI Mode; aggressive pricing-to-performance ratio with distribution channel leverage — every Google Search user becomes a potential Flash user

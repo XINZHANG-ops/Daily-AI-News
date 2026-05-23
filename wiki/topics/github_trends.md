@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-19
+last_updated: 2026-05-22
 ---
 
 # GitHub Trends
@@ -175,7 +175,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/harmonist]] — Portable agent orchestration with 186 specialist agents; zero third-party deps
 - [[entities/corecoder]] — Minimalist Claude Code-inspired coding agent in ~1,400 lines Python
 - [[entities/open-agent-sdk-go]] — Lightweight Go SDK for AI agents with MCP support
-- [[entities/andrej-karpathy-skills]] — 105K stars; single CLAUDE.md with 4 principles; "configuration over code" for agent behavior; nanobot's minimal-code approach validates this principle at the framework level
+- karpathy's CLAUDE.md skills (105K stars) — single file with 4 principles; "configuration over code" for agent behavior; nanobot's minimal-code approach validates this principle at the framework level
 - [[entities/context-mode]] — 11.9K stars; 98% context reduction via MCP; critical infrastructure for continuous agent operation
 - [[entities/ruflo]] — 39.9K stars; Claude Code agent fleet orchestration with 100+ specialized agents
 - [[entities/gitnexus]] — 35.4K stars; MCP knowledge graph for agent codebase navigation; completes agent infrastructure triad with Serena and context-mode
@@ -229,3 +229,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/vita-1-5]] — 2.5K stars; VITA-MLLM's real-time vision and speech; NeurIPS 2025 paper on GPT-4o-level multimodal interaction
 - [[entities/minimax-m2]] — 2.6K stars; MiniMax's MoE for agentic workflows; 230B total, 10B active; Chinese lab competing in coding/agent space
 - [[entities/magma]] — 1.9K stars; Microsoft's CVPR 2025 foundation model for multimodal AI agents; handles both digital UI and physical robotics
+- [[entities/google-adk-python]] — 19.8k stars; Google's code-first Python framework for building AI agents; workflow runtime and task delegation; direct competitor to Pydantic AI
+- [[entities/pydantic-ai]] — 17.2k stars; Pydantic AI v2 introduces "harness-first design" with capability composition; tools, hooks, instructions bundled into composable units
+- [[entities/zerolang]] — 3.9k stars; Vercel Labs' programming language designed specifically for AI agents; zero dependencies, deterministic tooling, agent-first learnability
+- [[topics/agentic_ai]] — The May 22 repo wave (ADK Python, Pydantic AI v2, ZeroLang) shows the agent framework space consolidating around similar architectural patterns

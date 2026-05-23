@@ -25,7 +25,7 @@ AutoResearch is an autonomous LLM research agent built by Andrej Karpathy that e
 AutoResearch represents a new category of autonomous scientific agent — one that doesn't just write code but runs experiments, evaluates results, and iterates without human supervision. At 79.2K stars, it signals strong demand for AI agents that can perform end-to-end research workflows. The minimal-dependency, self-contained design aligns with the post-MCP-vulnerability trend toward reducing supply chain risk. By operating on a single GPU, it makes autonomous research accessible to individual researchers and small labs, not just hyperscalers.
 
 ## Connections
-- [[entities/andrej-karpathy-skills]] — AutoResearch extends Karpathy's "configuration over code" philosophy into autonomous experimentation; both projects emphasize minimal, self-contained systems
+- karpathy's CLAUDE.md skills approach (105K stars) — AutoResearch extends "configuration over code" philosophy into autonomous experimentation; both projects emphasize minimal, self-contained systems
 - [[topics/agentic_ai]] — AutoResearch is a scientific-agent archetype: an AI that performs the full research loop (hypothesis, experiment, evaluation, iteration) without human-in-the-loop
 - [[topics/github_trends]] — 79.2K stars makes it the highest-starred new repo of May 6; validates demand for autonomous research agents
 - [[entities/ml-intern]] — Hugging Face's ML engineer agent focuses on paper reading and model deployment; AutoResearch focuses on training-code iteration — complementary approaches to automating ML research
