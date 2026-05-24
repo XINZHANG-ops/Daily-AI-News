@@ -741,3 +741,12 @@ Already up to date.
 
 • 连接质量检查：全 wiki 扫描未发现"相关："或"参见："等无说明链接，连接规范良好
 [2026-05-24 01:05:29] Wiki lint 完成（退出码 0）。
+[main 76e76e3] wiki: lint 2026-05-24
+ 24 files changed, 557 insertions(+), 13 deletions(-)
+ create mode 100644 wiki/entities/alpha-proof-nexus.md
+ create mode 100644 wiki/entities/elf.md
+ create mode 100644 wiki/entities/program-bench.md
+ create mode 100644 wiki/entities/substrate.md
+ create mode 100644 wiki/entities/t2i-l2p.md
+ create mode 100644 wiki/ideas/ai-mathematical-discovery.md
+ create mode 100644 wiki/sources/tencent.md

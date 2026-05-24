@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 24, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 24, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/antoinezambelli/forge" class="card-title" target="_blank">antoinezambelli/forge</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> new stars</div>
+                                <div class="meta-item"><span>🍴</span> new forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open-source reliability layer for self-hosted LLM tool-calling. Takes an 8B model from 53% to 99% on agentic tasks through guardrails including retry nudges, step enforcement, and error recovery.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源的自托管LLM工具调用可靠性增强层。通过重试提示、步骤执行强制和错误恢复等防护机制，将8B模型在代理任务上的表现从53%提升至99%。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/yehor04/sentinel" class="card-title" target="_blank">yehor04/sentinel</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> new stars</div>
+                                <div class="meta-item"><span>🍴</span> new forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Phantom tool-call detector with self-correction for autonomous LLM agents. Detects when agents hallucinate non-existent tools using layered detection: registry exact match, embedding similarity, and Gemini Flash verification.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">自主LLM代理的幻影工具调用检测器。使用分层检测（注册表精确匹配、嵌入相似度、 Gemini Flash验证器）检测代理何时产生幻觉出不存在的工具。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/openclaw/openclaw" class="card-title" target="_blank">openclaw/openclaw</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 374k stars</div>
+                                <div class="meta-item"><span>🍴</span> new forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Personal AI assistant that works across any OS and platform. Released v2026.5.24 with 374K stars, featuring cross-platform agent capabilities.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">跨任何操作系统和平台的个人AI助手。发布v2026.5.24版本，拥有374K星标，具备跨平台代理能力。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Editorial</span>
+                    <div class="news-time">May 20, 2026</div>
+                    <a href="https://theeditorial.news/tech-news/google-gemini-3-ships-28-speed-47-lower-price-openai-gpt-5-still-unreleased-mpib513c" class="card-title" target="_blank" data-lang="en">Google Gemini 3 Ships with 2.8x Speed, 47% Lower Price vs GPT-5</a>
+                    <a href="https://theeditorial.news/tech-news/google-gemini-3-ships-28-speed-47-lower-price-openai-gpt-5-still-unreleased-mpib513c" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌Gemini 3发布：速度提升2.8倍，价格比GPT-5低47%</a>
+                    <p class="card-description" data-lang="en">Google releases Gemini 3 with 47% price cut vs Gemini 2.5, 2.8x faster inference. Input pricing at $0.53/M tokens undercuts OpenAI on both speed and price.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌发布Gemini 3，相比Gemini 2.5价格降低47%，推理速度提升2.8倍。输入定价为每百万token 0.53美元，在速度和价格上都压过OpenAI。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">RawPickAI</span>
+                    <div class="news-time">May 19, 2026</div>
+                    <a href="https://rawpickai.com/news/karpathy-joins-anthropic-gemini-flash-ga-may-23-2026" class="card-title" target="_blank" data-lang="en">Andrej Karpathy Joins Anthropic's Pre-Training Team</a>
+                    <a href="https://rawpickai.com/news/karpathy-joins-anthropic-gemini-flash-ga-may-23-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">Andrej Karpathy加入Anthropic预训练团队</a>
+                    <p class="card-description" data-lang="en">OpenAI co-founder Andrej Karpathy joined Anthropic's pre-training team on May 19 to work on using Claude to build better Claude models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI联合创始人Andrej Karpathy于5月19日加入Anthropic预训练团队，致力于使用Claude构建更好的Claude模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">THE D[AI]LY BRIEF</span>
+                    <div class="news-time">May 23, 2026</div>
+                    <a href="https://www.beri.net/article/2026-05-23-anthropic-mcp-tunnels-self-hosted-sandboxes-670k-shadow-ai-tax" class="card-title" target="_blank" data-lang="en">Anthropic MCP Tunnels Kill $670K Shadow AI Tax</a>
+                    <a href="https://www.beri.net/article/2026-05-23-anthropic-mcp-tunnels-self-hosted-sandboxes-670k-shadow-ai-tax" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic MCP隧道消除67万美元的影子AI税</a>
+                    <p class="card-description" data-lang="en">Anthropic launched self-hosted sandboxes for Claude Managed Agents and MCP tunnels, allowing enterprises to run AI agents against private internal systems without exposing MCP servers to the public internet.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic为Claude托管代理和MCP隧道推出自托管沙盒，允许企业在不将MCP服务器暴露于公共互联网的情况下对私有内部系统运行AI代理。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI2Work</span>
+                    <div class="news-time">May 15, 2026</div>
+                    <a href="https://ai2.work/blog/microsoft-and-openai-end-exclusivity-in-landmark-partnership-reset" class="card-title" target="_blank" data-lang="en">Microsoft and OpenAI End Exclusivity in Landmark Partnership Reset</a>
+                    <a href="https://ai2.work/blog/microsoft-and-openai-end-exclusivity-in-landmark-partnership-reset" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软和OpenAI结束独家合作标志性协议重置</a>
+                    <p class="card-description" data-lang="en">Microsoft and OpenAI ended their exclusive partnership. Microsoft's IP license becomes non-exclusive but extends royalty-free through 2032. OpenAI can now serve across any cloud provider including AWS and Google Cloud.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软和OpenAI结束独家合作。微软的IP许可变为非独家，但延长至2032年免版税。OpenAI现在可以通过任何云提供商（包括AWS和Google Cloud）提供服务。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Next Web</span>
+                    <div class="news-time">May 2026</div>
+                    <a href="https://thenextweb.com/news/anthropic-glasswing-claude-mythos-10000-vulnerabilities" class="card-title" target="_blank" data-lang="en">Claude Mythos Found 10,000 Critical Vulnerabilities in One Month</a>
+                    <a href="https://thenextweb.com/news/anthropic-glasswing-claude-mythos-10000-vulnerabilities" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude Mythos一个月发现10000个关键漏洞</a>
+                    <p class="card-description" data-lang="en">Anthropic's Claude Mythos Preview found over 10,000 critical vulnerabilities in one month, but only 97 were patched—highlighting the gap between AI-powered bug discovery and human patching capacity.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic的Claude Mythos Preview一个月内发现超过10000个关键漏洞，但仅修复97个——突显出AI驱动的bug发现与人类修复能力之间的差距。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Microsoft DevBlogs</span>
+                    <div class="news-time">May 18, 2026</div>
+                    <a href="https://devblogs.microsoft.com/dotnet/announcing-agent-governance-toolkit-mcp-extensions-for-dotnet/" class="card-title" target="_blank" data-lang="en">Microsoft Adds Agent Governance Toolkit MCP Extensions for .NET</a>
+                    <a href="https://devblogs.microsoft.com/dotnet/announcing-agent-governance-toolkit-mcp-extensions-for-dotnet/" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软为.NET添加代理治理工具包MCP扩展</a>
+                    <p class="card-description" data-lang="en">Microsoft announced Microsoft.AgentGovernance.Extensions.ModelContextProtocol—a .NET package adding governance capabilities to MCP servers including startup scanning, policy enforcement, response sanitization, and audit logging.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软宣布推出Microsoft.AgentGovernance.Extensions.ModelContextProtocol——一个为MCP服务器添加治理能力的.NET包，包括启动扫描、策略执行、响应清理和审计日志。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Memeburn</span>
+                    <div class="news-time">May 2026</div>
+                    <a href="https://memeburn.com/openai-legal-options-against-apple-the-2026-ai-fallout/" class="card-title" target="_blank" data-lang="en">OpenAI Considering Legal Action Against Apple Over Siri Integration</a>
+                    <a href="https://memeburn.com/openai-legal-options-against-apple-the-2026-ai-fallout/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI考虑对苹果Siri整合采取法律行动</a>
+                    <p class="card-description" data-lang="en">OpenAI is considering legal action against Apple, claiming Apple failed to make an 'honest effort' in Siri integration. Apple moving to multi-model support in iOS 27, bringing in Google Gemini and Anthropic Claude.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI正在考虑对苹果采取法律行动，声称苹果在Siri整合中未做出「诚实的努力」。苹果将在iOS 27中转向多模型支持，引入Google Gemini和Anthropic Claude。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Meta News</span>
+                    <div class="news-time">May 20, 2026</div>
+                    <a href="https://metanews.com/meta-releases-llama-4-405b-open-weight" class="card-title" target="_blank" data-lang="en">Meta Llama 4 405B Released as Open-Weight Alternative</a>
+                    <a href="https://metanews.com/meta-releases-llama-4-405b-open-weight" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta Llama 4 405B作为开源权重替代方案发布</a>
+                    <p class="card-description" data-lang="en">Meta released Llama 4 405B as open-weight, scoring 85.9% on MMLU-Pro as a competitive alternative to closed frontier models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta发布Llama 4 405B作为开源权重版本，在MMLU-Pro上得分85.9%，作为封闭前沿模型的竞争替代方案。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The real story of May 24 is the consolidation of AI infrastructure layers. Three shifts converge: (1) Protocol victory—MCP (97M installs) now has enterprise governance (Microsoft .NET), security (Anthropic Tunnels), and infrastructure (Oracle) layered on top, with Linux Foundation stewardship. (2) Price war ignition—Google's Gemini 3 at $0.53/M input tokens undercuts everyone (OpenAI, Anthropic), forcing a race to the bottom on frontier model pricing. (3) Platform dependency unraveling—Microsoft-OpenAI exclusivity ends, Apple goes multi-model, and Meta positions Llama 4 as the open alternative. The net effect: AI is becoming a utility layer where differentiation moves from model performance to infrastructure, governance, and pricing. The next battleground isn't the model—it's the stack around it.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">5月24日真正的主题是AI基础设施层的整合。三重转变汇聚：(1)协议胜利——MCP（9700万安装量）现在有了企业治理（微软.NET）、安全（Anthropic隧道）和基础设施（Oracle）的分层，由Linux基金会管理。(2)价格战点燃——谷歌Gemini 3每百万输入token 0.53美元的价格压过所有人（OpenAI、Anthropic），迫使前沿模型定价走向价格战。(3)平台依赖瓦解——微软-OpenAI独家合作结束，苹果转向多模型，Meta将Llama 4定位为开源替代方案。净效果：AI正在成为一个实用层，差异化从模型性能转向基础设施、治理和定价。下一个战场不是模型——而是围绕它的堆栈。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
