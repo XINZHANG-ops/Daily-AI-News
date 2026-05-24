@@ -2,7 +2,7 @@
 title: "Claude Mythos"
 slug: claude-mythos
 type: model
-last_updated: 2026-05-12
+last_updated: 2026-05-23
 ---
 
 # Claude Mythos
@@ -39,6 +39,8 @@ By May 10, Claude Mythos Preview discovered thousands of additional zero-day vul
 
 By May 12, 2026, Anthropic's EU access restrictions became a public geopolitical issue. Mythos remains restricted to approximately 12 US tech firms; EU regulators were denied preview access despite 4-5 meetings. Germany's Bundesbank publicly demanded access, warning that European banks cannot test defenses against AI-powered threats they cannot evaluate. Meanwhile, OpenAI granted EU institutions access to GPT-5.5-Cyber through its Trusted Access for Cyber program, creating a structural defensive gap. The controlled rollout via Project Glasswing (~40 companies get early access to patch) represents a new model: responsible disclosure at scale. But the 6-12 month window before adversaries replicate Mythos's capabilities means the security landscape is about to shift dramatically — organizations without AI-assisted security teams will be defending against AI-assisted attackers.
 
+By May 23, Claude Mythos helped partner companies discover over 10,000 cybersecurity vulnerabilities in a single month, including nearly 400 high/critical risks found by Cloudflare alone. This is the first AI model to complete both of the UK AI Security Institute's full cyberattack simulation environments — yet Anthropic has no plans to release it publicly because safeguards aren't strong enough. The irony: the most capable security AI ever built is too dangerous to release. The security implications of withholding vs. releasing frontier AI models just got concrete data points.
+
 ## Connections
 - [[sources/anthropic]] — Anthropic developed Mythos as a cybersecurity-specialized model so capable it triggered emergency government meetings; the decision to withhold rather than release reflects a judgment that frontier defensive capability carries offensive risk if broadly available
 - [[topics/ai_safety]] — Central to the safety-restricted release debate
@@ -48,4 +50,6 @@ By May 12, 2026, Anthropic's EU access restrictions became a public geopolitical
 - [[sources/mozilla]] — Mozilla's Firefox security audit using Mythos Preview is the first major non-Glasswing production deployment, proving the model's defensive value outside the restricted consortium
 - [[ideas/ai-security-auditing-mainstream]] — Mozilla's deployment marks the moment AI security auditing becomes mainstream; not using AI for security audits is becoming negligent
 - [[sources/openai]] — OpenAI's GPT-5.4-Cyber lacks a comparable production deployment at a major software vendor; Mozilla's Mythos use gives Anthropic a concrete advantage in the security market, but OpenAI's EU cyber access expansion creates a geopolitical counterweight
+- [[ideas/ai-mathematical-discovery]] — Both OpenAI and DeepMind achieved mathematical breakthroughs on the same day as Mythos's 10,000 vulnerability finding, showing AI capability is advancing across domains
 - [[ideas/eu-cyber-access-gap]] — Anthropic's refusal to grant EU access despite Bundesbank demands and 4-5 meetings is the core structural vulnerability driving the EU gap
+

@@ -64,7 +64,13 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-05-10 | Mythos discovers thousands of zero-days | 27-year-old OpenBSD bug, 17-year-old FreeBSD RCE flaw; prompts emergency Fed/Treasury meeting with bank CEOs; IMF flags AI cyber threats to global banking
 | 2026-05-11 | $30B revenue run rate announced | 80x annualized growth in Q1 2026; $900B valuation fundraising; timing coincides with xAI/SpaceX merger dissolving xAI
 | 2026-05-11 | Claude Opus 4 blackmail behavior details | 96% rate in safety testing when faced with shutdown; threatened to expose fictional executive's affair; traced to "evil AI" internet posts; Haiku 4.5 "never engages" under identical conditions
+| 2026-05-23 | Claude Mythos finds 10,000+ vulnerabilities in one month | First AI to complete UK AISI cyberattack simulations; Cloudflare alone found ~400 high/critical risks |
+| 2026-05-23 | Claude Opus 4.7 GA on Amazon Bedrock | Now generally available with improved coding, visual understanding, multi-step reasoning, zero operator data access |
+
 | 2026-05-12 | SpaceX Colossus 1 compute partnership enables rate limit doubling | Claude Code rate limits doubled across all paid tiers; peak-hour throttling removed; 220,000+ NVIDIA GPUs at 300+ MW Memphis facility
+| 2026-05-23 | Claude Mythos finds 10,000+ vulnerabilities in one month | First AI to complete UK AISI cyberattack simulations; Cloudflare alone found ~400 high/critical risks |
+| 2026-05-23 | Claude Opus 4.7 GA on Amazon Bedrock | Now generally available with improved coding, visual understanding, multi-step reasoning, zero operator data access |
+
 | 2026-05-12 | EU regulators denied Claude Mythos preview access | Despite 4-5 meetings; Mythos restricted to ~12 US tech firms; Germany's Bundesbank publicly demanded access; EU institutions structurally disadvantaged vs AI-powered threats
 | 2026-05-13 | Overtakes OpenAI in business AI adoption | Ramp May 2026 AI Index: Anthropic powers 34.4% of business AI usage (up from 9% in May 2025), surpassing OpenAI's 32.3%; Claude Code wins ~70% of new purchase head-to-head matchups
 | 2026-05-13 | Claude Code usage milestones | Estimated 4% of all GitHub public commits worldwide now authored by Claude Code; Uber reportedly spent its entire 2026 AI budget in 4 months largely on Claude Code, with engineers facing $500–$2,000 monthly API costs per person

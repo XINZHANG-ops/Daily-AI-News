@@ -724,3 +724,20 @@ Already up to date.
  create mode 100644 wiki/entities/zerolang.md
  create mode 100644 wiki/sources/codeium.md
  create mode 100644 wiki/sources/vercel.md
+[2026-05-24 01:00:01] 开始 wiki lint，模型: minimax-m2.5:cloud
+Already up to date.
+完成 Wiki Lint 检查和修复。修改了以下文件：
+- wiki/topics/llm_models.md - 添加 program-bench 和 elf 链接
+- wiki/topics/agentic_ai.md - 添加 substrate 链接  
+- wiki/topics/github_trends.md - 添加 program-bench、substrate、elf 链接
+- wiki/index.md - 添加 5 个缺失的 entity，修正统计数字
+- wiki/log.md - 添加 2026-05-24 lint 条目
+
+• 修复孤儿页问题：program-bench、substrate、elf 三个 entity 页面原本无其他页面链接，已从 llm_models、agentic_ai、github_trends 主题页添加有意义的 wikilink 连接
+
+• 修复索引完整性：index.md 中补充了 5 个遗漏的 entity 页面（google-adk-python、pydantic-ai、ros-llm、windsurf-2、zerolang），并更新统计：Sources 36→37，Entities 153→158，Ideas 55→56
+
+• 检查结构一致性：验证 topics/sources/timelines/entities/ideas 目录文件与 index.md 对齐，无遗漏
+
+• 连接质量检查：全 wiki 扫描未发现"相关："或"参见："等无说明链接，连接规范良好
+[2026-05-24 01:05:29] Wiki lint 完成（退出码 0）。

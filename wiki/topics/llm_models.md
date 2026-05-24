@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-22
+last_updated: 2026-05-23
 ---
 
 # LLM Models
@@ -236,6 +236,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/hidream-o1-image]] — HiDream-O1-Image at #8 on Arena proves unified multimodal generation is competitive with specialized models; natively unified without external VAEs
 - [[ideas/commodity-inference-fragmentation]] — Grok 4.3's 83% price cut accelerates the commodity inference trend; the race-to-bottom is now affecting premium models, not just Chinese open-weight alternatives
 - [[entities/terminal-bench-2]] — May 12 unsaturated scores reveal ~37% gap between lab benchmarks and deployment reality; models alone won't close the CLI task failure rate — agents need better tooling
+- [[entities/program-bench]] — Meta benchmark for code reconstruction from binaries; tests whether models can rebuild programs from compiled artifacts, addressing reverse engineering capabilities with implications for security and software archaeology
+- [[entities/elf]] — JAX-based continuous diffusion language model using Flow Matching; represents paradigm shift from discrete token diffusion to continuous embedding space generation
 - [[entities/tml-interaction-small]] — 276B MoE achieving 200ms latency proves cost-efficient architectures can compete with OpenAI's premium voice pipeline; the efficiency-frontier thesis extends to real-time multimodal
 - [[entities/perceptron-mk1]] — Physical AI model launches the same day as TML-Interaction-Small, showing real-time AI is fragmenting into use-case-specific architectures rather than converging on a single model
 - [[entities/krea-2]] — Proprietary foundation model signals the "wrapper" phase is ending for creative AI; survivors are building full stacks, not relying on public APIs

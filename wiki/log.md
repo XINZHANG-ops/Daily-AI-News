@@ -10,7 +10,59 @@
 
 ---
 
+## [2026-05-24] wiki lint | orphan pages + structural fixes
+
+**Fixed orphan pages (added missing wikilinks):**
+- [[entities/program-bench]] — added links from llm_models, github_trends
+- [[entities/substrate]] — added links from agentic_ai, github_trends
+- [[entities/elf]] — added links from llm_models, github_trends
+
+**Fixed structural completeness:**
+- Added 5 missing entities to index.md: google-adk-python, pydantic-ai, ros-llm, windsurf-2, zerolang
+- Updated index counts: Sources 36→37, Entities 153→158, Ideas 55→56
+
+---
+
 # Wiki Log
+
+## [2026-05-23] ingest | 1 date
+
+**Dates processed:** 2026-05-23
+
+**Topics updated:** llm_models, ai_safety, github_trends
+- Added Trump's AI executive order withdrawal (industry lobbying)
+- Added Claude Mythos 10,000+ vulnerabilities in one month finding
+- Added OpenAI Erdős conjecture proof
+- Added AlphaProof Nexus mathematical reasoning
+- Added Tencent L2P pixel-space image generation
+- Added Google AI Search basic definition failures
+- Added Claude Opus 4.7 on Amazon Bedrock
+
+**Sources updated:** anthropic, openai, google, tencent (new)
+- Added Claude Mythos 10,000+ vulnerability discovery (May 23)
+- Added OpenAI Erdős conjecture solution
+- Added AlphaProof Nexus $100-200/problem mathematical reasoning
+- Added Tencent L2P breakthrough (80 stars in 24 hours)
+- Added Claude Opus 4.7 Bedrock GA
+
+**Entities created:** alpha-proof-nexus, elf, program-bench, substrate, t2i-l2p
+- AlphaProof Nexus: DeepMind math reasoning model
+- ELF: JAX continuous diffusion model
+- ProgramBench: Meta code reconstruction benchmark
+- Substrate: Kubernetes agent workload management
+- L2P: Tencent pixel-space image generation
+
+**Entities updated:** claude-mythos, claude-opus-4-7
+- Claude Mythos: Added May 23 10,000+ vulnerability finding
+- Claude Opus 4.7: Added Bedrock GA availability
+
+**Ideas created:** ai-mathematical-discovery
+- OpenAI + DeepMind both achieved mathematical breakthroughs on same day
+
+**Ideas updated:** safety-restricted-releases
+- Added new evidence from 10,000 vulnerability discovery
+
+---
 
 ## [2026-05-21] ingest | 1 date
 

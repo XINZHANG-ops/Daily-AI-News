@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-22
+last_updated: 2026-05-23
 ---
 
 # GitHub Trends
@@ -233,3 +233,6 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/pydantic-ai]] — 17.2k stars; Pydantic AI v2 introduces "harness-first design" with capability composition; tools, hooks, instructions bundled into composable units
 - [[entities/zerolang]] — 3.9k stars; Vercel Labs' programming language designed specifically for AI agents; zero dependencies, deterministic tooling, agent-first learnability
 - [[topics/agentic_ai]] — The May 22 repo wave (ADK Python, Pydantic AI v2, ZeroLang) shows the agent framework space consolidating around similar architectural patterns
+- [[entities/program-bench]] — Meta benchmark for code reconstruction from binaries; tests reverse engineering capabilities, 637 stars shows interest in code understanding
+- [[entities/substrate]] — Kubernetes-based agent workload management; multiplexes actors onto workers for high scale, 219 stars signals enterprise agent infrastructure interest
+- [[entities/elf]] — JAX-based continuous diffusion language model using Flow Matching; 711 stars shows developer interest in non-standard LLM architectures beyond transformers

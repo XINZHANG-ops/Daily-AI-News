@@ -199,6 +199,7 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[sources/stripe]] — Stripe Sessions 2026 launch; 1 in 6 AI sign-ups are fraudulent, making Radar expansion critical
 - [[entities/autoresearch]] — 79.2K stars; Karpathy's autonomous research agent performing the full scientific loop (hypothesis, experiment, evaluation, iteration) without human supervision
 - [[entities/hive]] — 10.2K stars; production multi-agent harness with self-healing DAG evolution and cost enforcement; the operational reliability layer that makes agent swarms enterprise-viable
+- [[entities/substrate]] — Kubernetes-based agent workload management system; multiplexes actors onto workers for high scale with lower latency, addressing the infrastructure challenge of deploying AI agents at scale
 - [[entities/mistral-medium-3-5]] — Work Mode (on-device agentic mode) and Remote Agents in Vibe (async cloud execution) are the infrastructure for reliable multi-step agent workflows
 - [[sources/microsoft]] — Xbox kills consumer Copilot, imports CoreAI team to rebuild game development pipeline; confirms developer-facing AI has immediate ROI while consumer-facing AI is "expensive retention sink"
 - [[ideas/boring-infrastructure-shift]] — AutoResearch, Hive, and Mistral Work Mode all converge on one trend: AI is moving from "cool demo" to "boring infrastructure" — and the agent layer needs boring infrastructure (reliability, cost control, async execution) to be deployable at scale

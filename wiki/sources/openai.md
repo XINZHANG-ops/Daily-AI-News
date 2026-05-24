@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-22
+last_updated: 2026-05-23
 ---
 
 # OpenAI
@@ -70,7 +70,11 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-17 | Greg Brockman takes product strategy | OpenAI co-founder moves from research/infrastructure to product; plans unified platform combining ChatGPT, Codex, and developer APIs for "agentic future" |
 | 2026-05-19 | Daybreak cybersecurity platform | Launches with Cisco, CrowdStrike, Palo Alto Networks partnerships; first explicit product-vs-product competition with Anthropic beyond benchmarks |
 | 2026-05-19 | Adds C2PA metadata and SynthID watermarks to AI images | Joins C2PA standard and partners with Google to embed invisible SynthID watermarks; preview of public verification tool for detecting AI-generated content; response to EU AI Act content provenance requirements |
+| 2026-05-22 | Solves 80-year-old Erdős conjecture | Reasoning model found counterexample to unit distance conjecture; verified by external mathematicians |
+
 | 2026-05-21 | Confidential IPO filing with Goldman Sachs, Morgan Stanley | $850B+ valuation; potentially largest stock market debut in history, surpassing Aramco's $119B; structural complexity: non-profit board controlling for-profit entity |
+| 2026-05-22 | Solves 80-year-old Erdős conjecture | Reasoning model found counterexample to unit distance conjecture; verified by external mathematicians |
+
 | 2026-05-21 | Model solves planar unit distance conjecture | First prominent mathematical open problem solved autonomously by AI; 80+ year conjecture proven false using algebraic number theory techniques |
 | 2026-05-22 | Considering Japan access to Mythos-class cybersecurity AI | OpenAI evaluating providing GPT-5.5-Cyber to Japan amid rise of Chinese open-source models and cyberthreats; Board member Paul Nakasone called China the "most significant" cyberthreat; strategic pivot from traditionally hesitant international frontier model release to actively shopping security capabilities to allied nations |
 | 2026-05-22 | Hires Chris Lehane for reputation management | Known as "Master of Disaster"; hired to address AI's growing PR crisis as polls show increasing negative views of AI despite ChatGPT's 900M weekly users; signals OpenAI recognizes adoption-perception gap widening — traditional tech PR won't close it |

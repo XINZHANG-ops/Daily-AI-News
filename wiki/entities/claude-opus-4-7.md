@@ -2,7 +2,7 @@
 title: "Claude Opus 4.7"
 slug: claude-opus-4-7
 type: model
-last_updated: 2026-05-21
+last_updated: 2026-05-23
 ---
 
 # Claude Opus 4.7
@@ -33,7 +33,7 @@ Claude Opus 4.7 raises the bar for coding benchmarks, surpassing Opus 4.6 by nea
 
 The self-verification capability is the real differentiator — it solves 4 tasks that neither Opus 4.6 nor Sonnet 4.6 could crack. However, the new tokenizer causes 1.0-1.35x token drift for the same inputs, a hidden cost not mentioned in the announcement. Meanwhile, Claude Mythos Preview (93.9% SWE-bench) remains locked to just 50 organizations — Anthropic is deliberately rationing its best model to extract maximum enterprise value.
 
-The model is available in Amazon Bedrock and Anthropic's API, with a major UK expansion announced including a new London office.
+The model is available in Amazon Bedrock and Anthropic's API, with a major UK expansion announced including a new London office. By May 23, 2026, Claude Opus 4.7 became generally available on Amazon Bedrock with improved coding, visual understanding, and multi-step reasoning, plus zero operator data access — expanding Anthropic's distribution through AWS渠道.
 
 ## Connections
 - [[sources/anthropic]] — Released by Anthropic, builds on Mythos safety research

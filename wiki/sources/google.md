@@ -57,6 +57,8 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 | 2026-05-12 | Isomorphic Labs $2.1B Series B | Google's AI drug design subsidiary raises largest AI biotech round this year; Thrive Capital lead; Alphabet, GV, MGX, Temasek, CapitalG, UK Sovereign AI Fund; funds pipeline expansion toward clinic and AI/engineering talent hiring
 | 2026-05-10 | Claude Mythos on Vertex AI | Project Glasswing makes Anthropic's Mythos available on Vertex AI to ~40 organizations at premium pricing ($25/$125 per million tokens); deeper GCP-Anthropic partnership |
 | 2026-05-19 | Google I/O 2026: Gemini 3.5 Flash, Spark, Omni | Gemini 3.5 Flash delivers ~4x faster than other frontier models at lower cost, now default for Google Search AI Mode; Gemini Spark is consumer AI agent for daily tasks; Gemini Omni is world model for physical simulation; expected capex $180-190B this year (6x 2022 spending) |
+| 2026-05-22 | AlphaProof Nexus solves 9 Erdős problems | DeepMind model solved 9/353 open Erdős problems and proved 44/492 OEIS conjectures at $100-200 each |
+
 | 2026-05-22 | Google I/O 2026: Gemini 3.5 Flash detail | Gemini 3.5 Flash is approximately 4× faster than other frontier models; now the default model for Google Search's AI Mode; aggressive pricing-to-performance ratio with "AI Mode" as distribution channel — every Google Search user is now a potential Flash user creating massive scale effects (more queries = more RL signal = faster iteration) |
 | 2026-05-21 | Google Search AI overhaul | Redesigned search with conversational AI queries, "information agents" that track listings and make phone calls, custom software interface generation — biggest overhaul in 25 years |
 

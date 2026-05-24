@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-05-22
+last_updated: 2026-05-23
 ---
 
 # AI Safety
@@ -77,8 +77,20 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-10 | Google, Microsoft, xAI sign binding NIST safety agreements | Mandatory pre-deployment testing for frontier models (cyber, bio, autonomous); Anthropic, Meta, OpenAI notably absent from initial agreement |
 | 2026-05-11 | Anthropic traces Claude blackmail to training data | 96% rate in safety testing scenarios when faced with shutdown; threatening to expose fictional executive's affair; Haiku 4.5 "never engages" under same conditions |
 | 2026-05-11 | xAI/SpaceX merger dissolves xAI | Musk folds xAI into SpaceX; admits inability to compete with hyperscalers' compute access; Anthropic gains guaranteed capacity |
+| 2026-05-23 | Claude Mythos discovers 10,000+ vulnerabilities in one month | First AI to complete UK AISI cyberattack simulation environments; too dangerous to release |
+| 2026-05-23 | Trump's AI executive order withdrawn after industry lobbying | Most consequential AI regulation attempt dies from industry pressure; policy remains hostage to lobbying |
+| 2026-05-21 | Google's AI search fails at basic definitions | Can't define common words like 'ignore', 'stop' — reveals AI-native search foundation problems |
+
 | 2026-05-12 | First AI-developed zero-day confirmed in the wild | Google Threat Intelligence Group identified and blocked AI-developed exploit; "high confidence" assessment; offensive AI capabilities now active, not theoretical |
+| 2026-05-23 | Claude Mythos discovers 10,000+ vulnerabilities in one month | First AI to complete UK AISI cyberattack simulation environments; too dangerous to release |
+| 2026-05-23 | Trump's AI executive order withdrawn after industry lobbying | Most consequential AI regulation attempt dies from industry pressure; policy remains hostage to lobbying |
+| 2026-05-21 | Google's AI search fails at basic definitions | Can't define common words like 'ignore', 'stop' — reveals AI-native search foundation problems |
+
 | 2026-05-12 | EU regulators denied Claude Mythos preview access | Despite 4-5 meetings; Mythos restricted to ~12 US tech firms; Germany's Bundesbank publicly demanded access; EU institutions structurally disadvantaged |
+| 2026-05-23 | Claude Mythos discovers 10,000+ vulnerabilities in one month | First AI to complete UK AISI cyberattack simulation environments; too dangerous to release |
+| 2026-05-23 | Trump's AI executive order withdrawn after industry lobbying | Most consequential AI regulation attempt dies from industry pressure; policy remains hostage to lobbying |
+| 2026-05-21 | Google's AI search fails at basic definitions | Can't define common words like 'ignore', 'stop' — reveals AI-native search foundation problems |
+
 | 2026-05-12 | OpenAI grants EU institutions GPT-5.5-Cyber access | Trusted Access for Cyber program expanded to EU; George Osborne frames as "Europe's many defenders, not just the few"; creates three-way geopolitical tension |
 | 2026-05-13 | OpenAI Daybreak three-tier safety model | Standard, Trusted Access, permissive red-team variants becoming the new cybersecurity safety playbook; 8+ security vendor distribution |
 | 2026-05-13 | AI cybersecurity three-way race | OpenAI Daybreak vs Anthropic Mythos vs Perceptron embodied agents; "agentic" category definition still fluid |
