@@ -750,3 +750,6 @@ Already up to date.
  create mode 100644 wiki/entities/t2i-l2p.md
  create mode 100644 wiki/ideas/ai-mathematical-discovery.md
  create mode 100644 wiki/sources/tencent.md
+[2026-05-25 01:00:02] 开始 wiki lint，模型: minimax-m2.5:cloud
+Already up to date.
+[2026-05-25 01:00:03] 预扫描通过，无断链/孤儿页/空页，跳过 LLM。

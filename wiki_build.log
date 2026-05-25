@@ -965,3 +965,25 @@ Successfully processed the new date and chat sessions. Here's a summary of chang
 1. The safety-restricted-releases idea needed strengthening with new data points ✓
 2. Topics needed updates for Bank of England escalation and Mythos findings ✓
 3. Mathematical discovery idea created to capture OpenAI + DeepMind same-day achievement
+Wiki update complete for 2026-05-24. Here's a summary:
+
+**Entities Created:**
+- `gemini-3` — Google's model at $0.53/M input tokens (2.8x speed, 47% price cut)
+- `llama-4-405b` — Meta's open-weight model at 85.9% MMLU-Pro
+- `forge` — Tool-calling reliability layer (53% → 99% on agentic tasks)
+- `sentinel` — Phantom tool-call detector for hallucinated tools
+
+**Ideas Created:**
+- `ai-utility-layer` — Three converging shifts: MCP protocol victory, Gemini 3 price war, platform dependency unraveling
+- `patch-debt` — 100:1 ratio: AI finds vulnerabilities faster than humans can fix
+
+**Sources Created:**
+- `apple` — iOS 27 multi-model strategy
+
+**Updates:**
+- `topics/llm_models` — Added Gemini 3, Llama 4 405B to Key Developments + Evolution
+- `topics/github_trends` — Added forge, sentinel, openclaw update
+- `sources/google, anthropic, openai, microsoft, meta` — Added May 24 timeline entries
+- `timelines/2026-05.md` — Added May 24 section
+- `index.md` — Updated with new entities, ideas, sources
+- `processed.json` — Added 2026-05-24

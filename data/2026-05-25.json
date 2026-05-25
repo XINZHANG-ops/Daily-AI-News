@@ -1,0 +1,126 @@
+{
+  "date": "2026-05-25",
+  "github_repos": [
+    {
+      "name": "justnishh/long-horizon",
+      "url": "https://github.com/justnishh/long-horizon",
+      "description": {
+        "en": "Autonomous AI that builds entire projects with self-looping execution and graph-connected memory that grows like a brain, with self-healing graph index",
+        "zh": "自主AI，可构建完整项目，具有自循环执行和像大脑一样成长的图连接内存，带有自愈图索引"
+      },
+      "stars": "1",
+      "forks": "0"
+    },
+    {
+      "name": "GrahamduesCN/ai-agent-starter",
+      "url": "https://github.com/GrahamduesCN/ai-agent-starter",
+      "description": {
+        "en": "Multi-provider AI agent framework supporting OpenAI, Anthropic, and Ollama with function calling, streaming, and conversation memory",
+        "zh": "多提供商AI代理框架，支持OpenAI、Anthropic和Ollama，具有函数调用、流式响应和对话记忆功能"
+      },
+      "stars": "1",
+      "forks": "0"
+    },
+    {
+      "name": "niefa-xyz/niefa",
+      "url": "https://github.com/niefa-xyz/niefa",
+      "description": {
+        "en": "Neural Interference Engine for Agents - open-source autonomous agent runtime with goal-to-execution pipeline and x402 paid endpoints",
+        "zh": "神经干涉引擎 - 开源自主代理运行时，具有目标到执行管道和x402付费端点"
+      },
+      "stars": "1",
+      "forks": "0"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Launches ChatGPT Add-In for Microsoft PowerPoint",
+        "zh": "OpenAI发布ChatGPT微软PowerPoint插件"
+      },
+      "url": "https://winbuzzer.com/2026/05/24/openai-puts-chatgpt-inside-powerpoint-with-beta-add-in-xcxwbn/",
+      "source": "WinBuzzer",
+      "time": "2026-05-24",
+      "description": {
+        "en": "OpenAI released a beta ChatGPT add-in for Microsoft PowerPoint, available for free and paid ChatGPT users. The sidebar allows creating and editing presentations from prompts, files, or connected Gmail, Outlook, and SharePoint accounts.",
+        "zh": "OpenAI发布了面向微软PowerPoint的Beta版ChatGPT插件，免费和付费ChatGPT用户均可使用。侧边栏允许通过提示、文件或连接的Gmail、Outlook和SharePoint账户创建和编辑演示文稿。"
+      },
+      "insight": {
+        "en": "This puts ChatGPT directly inside Microsoft's productivity suite, competing head-on with Microsoft Copilot and Anthropic Claude. The deal is enabled by a non-exclusive 2032 license from the restructured Microsoft-OpenAI partnership—signaling that OpenAI is aggressively diversifying beyond its own chat interface into ambient AI across enterprise tools. With Copilot already embedded in Office, this marks a rare case where Microsoft explicitly opened the door to a third-party AI rival within its own ecosystem.",
+        "zh": "这让ChatGPT直接嵌入微软生产力套件，与微软Copilot和Anthropic Claude正面竞争。该交易得益于重组后的微软-OpenAI合作伙伴关系签订的非排他性2032许可协议——表明OpenAI正积极将自身从聊天界面扩展到企业工具中的环境AI。Copilot已嵌入Office，此次微软明确向第三方AI竞争对手开放自家生态系统大门，这种做法相当罕见。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic in Talks to Rent Microsoft's Maia AI Chips",
+        "zh": "Anthropic正洽谈租用微软Maia AI芯片"
+      },
+      "url": "https://www.mobileworldlive.com/microsoft/anthropic-mulls-renting-microsoft-ai-chips/",
+      "source": "Mobile World Live",
+      "time": "2026-05-21",
+      "description": {
+        "en": "Anthropic is in early talks to rent Microsoft's custom Maia AI accelerator chips to expand computing capacity and keep pace with rivals.",
+        "zh": "Anthropic正初步洽谈租用微软定制Maia AI加速器芯片，以扩大计算能力并跟上竞争对手的步伐。"
+      },
+      "insight": {
+        "en": "This would deepen the Anthropic-Microsoft relationship significantly—Anthropic already has a $30 billion compute commitment from Microsoft Azure, and now renting Maia chips would make Anthropic even more dependent on Microsoft's infrastructure. The move signals that even well-funded AI labs cannot build enough compute fast enough, and partnerships (not just model superiority) are becoming the real competitive moat. Microsoft gets another anchor tenant for its silicon, validating the $1B+ Maia investment that has struggled to gain traction against Nvidia.",
+        "zh": "这将显著深化Anthropic与微软的关系——Anthropic已有来自微软Azure的300亿美元计算承诺，如今租用Maia芯片将使Anthropic更加依赖微软的基础设施。此举表明，即使资金充足的AI实验室也无法快速构建足够算力，而合作伙伴关系（不仅是模型优势）正成为真正的竞争护城河。微软获得又一个主要租户，为其超过10亿美元、难以在Nvidia手中获得吸引力的Maia投资提供了验证。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Claude Overtakes OpenAI ChatGPT in Enterprise Adoption",
+        "zh": "Anthropic的Claude在企业采用上超越OpenAI的ChatGPT"
+      },
+      "url": "https://kaidatagroup.com/insights/claude-just-overtook-chatgpt-in-enterprise-here-is-what-that-shift-actually-means",
+      "source": "KAIDATA Consulting",
+      "time": "2026-05-25",
+      "description": {
+        "en": "According to the Ramp AI Index, in April 2026 more American businesses paid for Claude (34.4%) than ChatGPT (32.3%). Anthropic enterprise adoption quadrupled in one year while OpenAI grew by only 0.3%.",
+        "zh": "根据Ramp AI指数，2026年4月美国更多企业付费使用Claude（34.4%）而非ChatGPT（32.3%）。Anthropic的企业采用率在一年内翻了两番，而OpenAI仅增长0.3%。"
+      },
+      "insight": {
+        "en": "A landmark shift: Claude now leads ChatGPT in paid enterprise usage for the first time, with Anthropic posting $30B annualized revenue run rate vs OpenAI $24-25B and projecting first profitable quarter at $10.9B Q2 revenue. The key differentiator is not raw capability—it is that enterprises perceive Claude as safer and more compliant, a perception Anthropic has carefully cultivated through its Constitutional AI approach. OpenAI $1.5B employee stock sale collapse in March likely did not help enterprise confidence either. This marks the end of ChatGPT monopoly on the enterprise AI mindshare.",
+        "zh": "一个里程碑式的转变：Claude首次在付费企业使用量上领先ChatGPT，Anthropic实现300亿美元年化收入率 vs OpenAI的240-250亿美元，预计第二季度首次盈利，收入达109亿美元。关键差异不在于原始能力——而在于企业认为Claude更安全、更合规，这是Anthropic通过其 Constitutional AI 方法精心培育的认知。OpenAI 3月份15亿美元员工股票出售计划的破产也可能损害了企业信心。这标志着ChatGPT在企业AI心智份额上垄断的终结。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google CEO Sundar Pichai Admits Company is A Bit Behind in Agentic Coding",
+        "zh": "谷歌CEO Sundar Pichai承认公司在代理编码方面略有落后"
+      },
+      "url": "https://officechai.com/ai/were-a-bit-behind-in-agentic-coding-with-tool-use-google-ceo-sundar-pichai/",
+      "source": "OfficeChai",
+      "time": "2026-05-25",
+      "description": {
+        "en": "Google CEO Sundar Pichai admitted Google is a bit behind in agentic coding with tool use, noting the company did not have the right surface area like Claude Code or Cursor.",
+        "zh": "谷歌CEO Sundar Pichai承认谷歌在代理编码和工具使用方面略有落后，指出公司没有像Claude Code或Cursor那样合适的切入点。"
+      },
+      "insight": {
+        "en": "Remarkable public admission from the leader of a $2T company. Pichai pointed to Gemini 3.5 Flash as a meaningful step forward, but the gap is structural—Google products are scattered across Search, Workspace, Android, and Cloud without a unified developer surface like Claude Code or Cursor. This echoes the classic innovator dilemma: Google built the best models but missed the agentic workflow layer that makes them useful. With Apple now betting on external AI models (potentially Gemini) for iOS 27 Siri, Google has a rare opening to land a massive consumer AI partnership—but only if it can close the agentic UX gap first.",
+        "zh": "一家2万亿美元公司领导人的非凡公开承认。Pichai指出Gemini 3.5 Flash是意义重大的一步，但差距是结构性的——谷歌的产品分散在Search、Workspace、Android和Cloud中，缺乏像Claude Code或Cursor统一的开发者入口。这呼应了经典的创新者困境：谷歌打造了最优秀的模型，却错过了让它们有用的代理工作流层。苹果现在正押注外部AI模型（可能是Gemini）用于iOS 27 Siri，谷歌有一个罕见的机会来达成重大的消费者AI合作——但前提是它能先弥补代理用户体验的差距。"
+      }
+    },
+    {
+      "title": {
+        "en": "Apple Reveals iOS 27 Siri Overhaul with Dedicated App, Coming at WWDC 2026",
+        "zh": "苹果公布iOS 27 Siri重大改版将推出独立应用"
+      },
+      "url": "https://www.macrumors.com/2026/05/20/ios-27-ai-voice-control-hints-at-siri-revamp/",
+      "source": "MacRumors",
+      "time": "2026-05-20",
+      "description": {
+        "en": "iOS 27 will bring the biggest Siri upgrade in years, including a dedicated Siri app with persistent chat threads, web search, document summarization, and deeper app control. The WWDC 2026 tagline Coming Bright Up teases the Siri overhaul.",
+        "zh": "iOS 27将带来Siri多年来最大的升级，包括具有持久聊天线程的独立Siri应用、网络搜索、文档摘要和更深入的应用程序控制。WWDC 2026的主题Coming Bright Up暗示了Siri的大改版。"
+      },
+      "insight": {
+        "en": "The new Siri represents Apple most significant AI pivot yet: for the first time, users can install rival AI chatbots and choose their preferred AI model via an Extensions framework. This breaks Apple traditional walled garden, effectively letting Gemini or ChatGPT become alternatives to Apple default AI. The $250M Siri lawsuit settlement (over delayed features promised with iPhone 16) likely accelerated this opening-up strategy. With John Ternus taking over as CEO in September 2026, this Siri redesign may be Tim Cook final legacy play in AI—and it is notably more open than anything Apple has done before.",
+        "zh": "新Siri代表了苹果迄今为止最重大的AI转型：首次用户可以通过扩展框架安装竞争对手的AI聊天机器人并选择首选模型。这打破了苹果传统的封闭园地，实际上让Gemini或ChatGPT成为苹果默认AI的替代品。2.5亿美元Siri诉讼和解（因iPhone 16承诺但延迟的功能）可能加速了这种开放策略。随着John Ternus将于2026年9月接任CEO，此次Siri改版可能是Tim Cook在AI方面的最后遗产——值得注意的是，它比苹果以往任何举措都更加开放。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The dominant theme today is the convergence of AI ecosystems into open platforms—or in Apple case, a forced opening. Three major moves signal this shift: OpenAI PowerPoint add-in embeds ChatGPT directly into Microsoft productivity suite; Apple iOS 27 Extensions framework will let users choose their preferred AI model over Siri; and even Google is pivoting to acknowledge its agentic gap. The competitive moat is no longer just model quality—it is about becoming the ambient AI layer across devices, apps, and operating systems. Meanwhile, Anthropic enterprise lead ($30B ARR vs OpenAI $24-25B) and compute partnership with Microsoft show that even Claude rise is powered by infrastructure deals, not just better benchmarking. The war for the OS-level AI integration is accelerating, and the winners will be those who can embed deepest into daily workflows.",
+    "zh": "今天的主导主题是AI生态系统的融合走向开放平台——或者在苹果的情况下，是被迫开放。三个重大举措发出了这一转变的信号：OpenAI的PowerPoint插件将ChatGPT直接嵌入微软生产力套件；苹果的iOS 27扩展框架将让用户能够选择首选的AI模型而非Siri；连谷歌也在转向承认其代理编码的差距。竞争护城河不再只是模型质量——而是成为跨设备、应用程序和操作系统的环境AI层。与此同时，Anthropic的企业领先地位（300亿美元年化收入 vs OpenAI的240-250亿美元）与微软的计算合作伙伴关系表明，即使Claude的崛起也是由基础设施协议而非更好的基准测试推动的。操作系统级AI整合的战争正在加速，获胜者将是那些能够最深嵌入日常工作流程的人。"
+  }
+}

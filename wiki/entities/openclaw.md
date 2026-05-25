@@ -14,9 +14,10 @@ OpenClaw is an open-source autonomous agent framework that reached 302,000 stars
 
 | Attribute | Value |
 |-----------|-------|
-| GitHub Stars | 302K+ |
+| GitHub Stars | 374K (as of May 24, 2026) |
+| Latest Version | v2026.5.24 |
 | Models Supported | 75+ (Anthropic, OpenAI, Google, xAI, DeepSeek, Mistral, Ollama) |
-| Key Feature | Zero subscription, API costs only |
+| Key Feature | Zero subscription, API costs only; cross-platform agent capabilities |
 
 ## Significance
 OpenClaw's explosive growth and Jensen Huang's designation as "the new computer" at GTC 2026 positioned it as a major open-source agent platform. NemoClaw was introduced as the enterprise stack for safe OpenClaw deployment.

@@ -81,6 +81,8 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-05-08 | MCP donated to Linux Foundation | Anthropic donates Model Context Protocol to Linux Foundation's Agentic AI Foundation; Microsoft integrates MCP into Windows 11 for secure agentic computing; "TCP/IP moment" for AI agents
 | 2026-05-10 | Claude Mythos on Google Vertex AI | Project Glasswing enables ~40 organizations to access Mythos Preview at $25/M input, $125/M output tokens; signals deeper Anthropic-Google Cloud tie-up following $40B investment |
 | 2026-05-19 | Andrej Karpathy joins as Pretraining Advisor | OpenAI cofounder and former Tesla AI director Andrej Karpathy hired to accelerate research using Claude; cited "formative" next few years at LLM frontier as motivation; joins previously-hired Jan Leike (OpenAI safety team) for two-pronged capability/safety approach |
+| 2026-05-23 | MCP Tunnels and self-hosted sandboxes | Enables enterprises to run AI agents against private internal systems without exposing MCP servers to public internet; eliminates $670K "shadow AI tax" in hidden security costs; partners: Cloudflare, Daytona, Modal, Vercel |
+| 2026-05-24 | Claude Mythos finds 10K critical vulnerabilities | One month: 10,000 critical vulnerabilities found, only 97 patched; 100:1 ratio reveals AI discovers vulnerabilities faster than humans can fix them; creates "patch debt" that compounds daily |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.

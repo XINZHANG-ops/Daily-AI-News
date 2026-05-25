@@ -36,6 +36,7 @@ Meta is executing the most aggressive workforce transformation in Big Tech, cutt
 | 2026-05-13 | Incognito Chat launched | End-to-end encrypted AI conversations with zero server logs; messages disappear after session ends; built on WhatsApp Private Processing infrastructure; Meta claims it is the first major AI product with no conversation logs stored on servers
 | 2026-05-11 | Capex guidance contextualized | $125-145B capex is spending to catch up in agentic AI, not building from strength; chasing OpenAI and Anthropic who have agent products in market |
 | 2026-05-21 | Hatch AI assistant for Instagram | OpenClaw-inspired AI assistant for agentic shopping; users tap once, Hatch handles entire purchase flow; challenges Shopify and Amazon |
+| 2026-05-24 | Llama 4 405B released as open-weight | 85.9% on MMLU-Pro; positions Meta as "open source champion" against Google's proprietary Gemini 3 and OpenAI's delayed GPT-5; fills gap left by Mag 7 closing off open strategies |
 
 ## Key Relationships
 - **OpenAI**: Competition in AI assistant market and coding agents.

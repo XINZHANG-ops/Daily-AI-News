@@ -78,6 +78,8 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-21 | Model solves planar unit distance conjecture | First prominent mathematical open problem solved autonomously by AI; 80+ year conjecture proven false using algebraic number theory techniques |
 | 2026-05-22 | Considering Japan access to Mythos-class cybersecurity AI | OpenAI evaluating providing GPT-5.5-Cyber to Japan amid rise of Chinese open-source models and cyberthreats; Board member Paul Nakasone called China the "most significant" cyberthreat; strategic pivot from traditionally hesitant international frontier model release to actively shopping security capabilities to allied nations |
 | 2026-05-22 | Hires Chris Lehane for reputation management | Known as "Master of Disaster"; hired to address AI's growing PR crisis as polls show increasing negative views of AI despite ChatGPT's 900M weekly users; signals OpenAI recognizes adoption-perception gap widening — traditional tech PR won't close it |
+| 2026-05-15 | Microsoft ends exclusivity | Microsoft IP license becomes non-exclusive but extends royalty-free through 2032; OpenAI can now serve across any cloud provider including AWS and Google Cloud; clears path for $50B Amazon partnership |
+| 2026-05-24 | Considering legal action against Apple | Claims Apple failed to make "honest effort" in Siri integration; Apple moving to multi-model support in iOS 27, bringing in Google Gemini and Anthropic Claude; legal threat may be negotiating leverage |
 
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.

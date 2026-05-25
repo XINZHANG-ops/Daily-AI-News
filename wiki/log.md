@@ -1074,3 +1074,12 @@ Ideas: N/A (existing ideas sufficient)
 - 实体分类: 删除 entities/ 中的 Andrej Karpathy 人物页 (andrej-karpathy.md, andrej-karpathy-skills.md)
 - 连接质量: topics 页面均有 Evolution 和 Patterns & Insights 章节
 - 重复信息: GPT-5.4/5.5 各版本为正常演进，非重复
+
+## [2026-05-24] ingest | 1 date
+
+Dates processed: 2026-05-24
+Topics updated: llm_models, github_trends
+Sources updated: google, anthropic, openai, microsoft, meta
+Entities created: gemini-3, llama-4-405b, forge, sentinel
+Ideas created: ai-utility-layer, patch-debt
+Sources created: apple

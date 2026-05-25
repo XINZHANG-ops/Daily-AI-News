@@ -45,8 +45,6 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 
 **May 19: Enterprise Consolidation and Infrastructure Layer Wars**: Claude Opus 4.7 update adds self-verification capability — the model can reread code and mentally run tests before output, solving 4 tasks neither 4.6 nor Sonnet 4.6 could crack. However, the new tokenizer causes 1.0-1.35x token drift for the same inputs — a hidden cost not mentioned in the announcement. Meanwhile Claude Mythos Preview (93.9% SWE-bench) remains locked to just 50 organizations as Anthropic deliberately rations its best model to extract maximum enterprise value. Redis launches Context Engine for enterprise AI agent memory — positioning as the infrastructure layer for the agent economy. GitHub Copilot Cloud Agent adds both Claude Haiku 4.5 and GPT-5.4-mini for simple coding tasks, reflecting the model tiering trend: complex reasoning goes to premium models, simple tasks go to fast/cheap models.
 
-**May 24: Price War Ignition and Open-Source Resurgence**: Google Gemini 3 drops with 2.8x inference speed and 47% price cut to $0.53/M input tokens — directly undercutting both OpenAI and Anthropic's Claude 4 Opus ($15/M). This aggressive pricing signals the start of a frontier model price war. Meta responds with Llama 4 405B open-weight at 85.9% MMLU-Pro, positioning as the open alternative as Google goes proprietary and OpenAI's GPT-5 remains delayed. The net effect: differentiation shifts from raw model performance to infrastructure, governance, and pricing.
-
 ## Key Developments
 
 | Date | Event | Significance |
@@ -65,8 +63,6 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-19 | OpenAI adds C2PA/SynthID watermarks | Joins C2PA standard with Google SynthID; response to EU AI Act content provenance requirements |
 | 2026-05-20 | Robotics foundation model wave | Isaac GR00T N1.7, VITA-1.5, MiniMax-M2, Magma released; signals shift from pure model capability to embodied AI (physical+digital interaction) |
 | 2026-05-22 | Claude Opus 4.7 achieves 87.6% on SWE-bench Verified | Up from 80.8%; crosses threshold where autonomous code agents can handle multi-file, multi-repo refactoring economically; new tokenizer adds 1.0-1.35x cost to same inputs (hidden trade-off) — the "Claude Code moment" for enterprise autonomous deployment |
-| 2026-05-24 | Google Gemini 3 released | 2.8x speed, 47% lower price vs GPT-5; $0.53/M input tokens undercuts both OpenAI and Anthropic (Claude 4 Opus at $15/M); occupies price-performance sweet spot GPT-5 was meant to claim |
-| 2026-05-24 | Meta Llama 4 405B released | Open-weight at 85.9% MMLU-Pro; positions as open alternative to closed frontier models; fills gap left by Google proprietary and OpenAI delayed releases |
 | 2026-03-19 | Xiaomi MiMo-V2-Pro revealed as "Hunter Alpha" | Chinese AI "stealth launch" strategy demonstrated |
 | 2026-03-26 | Claude Mythos documents leaked | 3,000 internal docs exposed unprecedented cybersecurity risks |
 | 2026-04-02 | Google Gemma 4 (Apache 2.0) | First fully permissive Gemma release, 31B ranks #3 on Arena |
@@ -262,7 +258,3 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/claude-haiku-4-5]] — New May 18: added to GitHub Copilot for fast/cheap simple coding tasks
 - [[entities/gpt-5.4]] — May 18: GPT-5.4-mini added to Copilot alongside Haiku for fast/cost-efficient simple tasks
 - [[topics/github_trends]] — The "skills" pattern going viral (14.6K stars across top 20 repos in one week) shows innovation moving to application layer
-- [[entities/gemini-3]] — Google's May 24 release at $0.53/M input undercuts OpenAI and Anthropic; 2.8x speed and 47% price cut vs Gemini 2.5 launches the frontier model price war that Grok 4.3 only hinted at
-- [[entities/llama-4-405b]] — Meta's May 24 open-weight release at 85.9% MMLU-Pro fills the gap as Google goes proprietary and OpenAI delays GPT-5; positions Meta as the "open source champion" against closed alternatives
-- [[sources/anthropic]] — Andrej Karpathy joined May 19 to work on using Claude to build better Claude models; the irony of "AI improving AI" validates Karpathy's teacher-building philosophy
-- [[ideas/ai-utility-layer]] — The May 24 convergence of MCP protocol victory, Gemini 3's price war, and platform dependency unraveling signals AI is becoming a utility layer where differentiation moves from model performance to infrastructure, governance, and pricing

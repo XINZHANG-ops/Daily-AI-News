@@ -37,6 +37,7 @@ On May 16, 2026, Microsoft hired at least 10 core OLMo researchers from the Alle
 | 2026-05-13 | Webwright open-sourced | Terminal-based web agent harness achieving SOTA: 86.7% on Online-Mind2Web and 60.1% on Odyssey long-horizon tasks; code-as-action paradigm with workspace-as-state architecture; core agent loop ~450 lines
 | 2026-05-16 | Hires core OLMo team from Ai2 | At least 10 researchers including former CEO Ali Farhadi, COO Sophie Lebrecht, Hanna Hajishirzi, Ranjay Krishna; joins Mustafa Suleyman's Superintelligence team; strategic hedge against OpenAI dependency |
 | 2026-05-20 | Magma foundation model released | CVPR 2025: Magma handles digital UI navigation and physical robotics; multimodal AI agent foundation model for both virtual and real-world tasks |
+| 2026-05-18 | MCP .NET extensions for agent governance | Microsoft.AgentGovernance.Extensions.ModelContextProtocol adds governance to MCP servers: startup scanning, policy enforcement, response sanitization, audit logging; complements Anthropic's MCP Tunnels for security |
 
 ## Key Relationships
 - **Anthropic**: Paradoxical — Claude integration in Copilot but competing in enterprise.

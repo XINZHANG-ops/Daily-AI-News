@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-23
+Last updated: 2026-05-24
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -48,7 +48,10 @@ Last updated: 2026-05-23
 - [[sources/thinking-machines-lab]] — Mira Murati's AI startup; first model TML-Interaction-Small (276B MoE, 200ms real-time multimodal) shipped May 11, 2026
 - [[sources/codeium]] — Company behind Windsurf IDE; Devin Cloud integration enables "always-on" agent execution beyond local sessions
 - [[sources/vercel]] — Next.js creator; ZeroLang programming language for AI agents released May 22, 2026
+- [[sources/apple]] — iOS 27 multi-model strategy; Siri taps GPT, Gemini, Claude — ends single-provider dependency
 
+- [[ideas/ai-utility-layer]] — May 24 convergence: MCP protocol victory + Gemini 3 price war + platform dependency unraveling = AI becomes utility layer
+- [[ideas/patch-debt]] — 100:1 ratio (10K vulnerabilities found vs 97 patched) reveals AI discovers vulnerabilities faster than humans can fix
 - [[ideas/privacy-as-ai-differentiator]] — Meta's Incognito Chat proves privacy is becoming a primary competitive axis in enterprise AI procurement
 - [[ideas/system-competition-shift]] — AI is transitioning from model competition to system competition; the moat is moving from benchmarks to deployability
 
@@ -207,6 +210,7 @@ Last updated: 2026-05-23
 - [[entities/blackwell-architecture]] — type: framework — NVIDIA's current-gen AI computing architecture; 3.5 GHz clocks, 1.8 TB/s bandwidth; thermal challenges; China excluded; $1T demand through 2027
 - [[entities/c2pa-protocol]] — type: protocol — Coalition for Content Provenance and Authenticity standard; industry initiative for AI content watermarking and verification
 - [[entities/gemini-3-5-flash]] — type: model — Google's frontier-level model at half price; released at Google I/O 2026; API-centric revenue pivot
+- [[entities/gemini-3]] — type: model — Google's May 24 release at $0.53/M input tokens undercuts OpenAI and Anthropic; 2.8x speed launches frontier model price war
 - [[entities/gemini-spark]] — type: product — Google's consumer AI agent for daily tasks; released at Google I/O 2026; competes with Claude Code and OpenAI Operator
 - [[entities/gemini-omni]] — type: model — Google's world model for physical simulation; generates video for real-world interaction; competes with World Labs
 - [[entities/isaac-gr00t-n1-7]] — type: model — NVIDIA's foundation model for generalist robots; Vision-Language-Action model for humanoid robotics; 7.1K stars

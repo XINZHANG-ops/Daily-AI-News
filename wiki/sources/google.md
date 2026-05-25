@@ -61,6 +61,7 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 
 | 2026-05-22 | Google I/O 2026: Gemini 3.5 Flash detail | Gemini 3.5 Flash is approximately 4× faster than other frontier models; now the default model for Google Search's AI Mode; aggressive pricing-to-performance ratio with "AI Mode" as distribution channel — every Google Search user is now a potential Flash user creating massive scale effects (more queries = more RL signal = faster iteration) |
 | 2026-05-21 | Google Search AI overhaul | Redesigned search with conversational AI queries, "information agents" that track listings and make phone calls, custom software interface generation — biggest overhaul in 25 years |
+| 2026-05-24 | Gemini 3 released | 2.8x speed, 47% lower price vs Gemini 2.5; $0.53/M input tokens undercuts OpenAI and Anthropic; occupies the price-performance sweet spot that GPT-5 was meant to claim |
 
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.

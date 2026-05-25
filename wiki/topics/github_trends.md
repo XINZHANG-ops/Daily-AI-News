@@ -236,3 +236,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/program-bench]] — Meta benchmark for code reconstruction from binaries; tests reverse engineering capabilities, 637 stars shows interest in code understanding
 - [[entities/substrate]] — Kubernetes-based agent workload management; multiplexes actors onto workers for high scale, 219 stars signals enterprise agent infrastructure interest
 - [[entities/elf]] — JAX-based continuous diffusion language model using Flow Matching; 711 stars shows developer interest in non-standard LLM architectures beyond transformers
+
+- [[entities/forge]] — Open-source reliability layer for self-hosted LLM tool-calling; takes 8B model from 53% to 99% on agentic tasks through guardrails (retry nudges, step enforcement, error recovery); addresses critical gap in self-hosted deployments
+- [[entities/sentinel]] — Phantom tool-call detector for autonomous LLM agents; layered detection (registry exact match, embedding similarity, Gemini Flash verification) detects when agents hallucinate non-existent tools; complements Forge for complete tool-calling reliability
+- [[entities/openclaw]] — v2026.5.24 released with 374K stars; cross-platform agent capabilities; remains fastest-growing open-source project
