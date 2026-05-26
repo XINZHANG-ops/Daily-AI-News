@@ -987,3 +987,35 @@ Wiki update complete for 2026-05-24. Here's a summary:
 - `timelines/2026-05.md` — Added May 24 section
 - `index.md` — Updated with new entities, ideas, sources
 - `processed.json` — Added 2026-05-24
+Ingest for 2026-05-25 is complete. Here's a summary:
+
+## Timeline Entry Added
+- **May 25**: Platform openness and Claude enterprise lead (34.4% vs 32.3%)
+
+## Source Pages Updated
+- **OpenAI**: ChatGPT PowerPoint add-in
+- **Anthropic**: Enterprise lead, Maia chip talks
+- **Microsoft**: Non-exclusive license, Maia chip rental
+- **Google**: CEO admits agentic gap
+- **Apple**: iOS 27 Siri overhaul
+
+## Entities Created (6)
+- `maia-ai-chips` — Microsoft custom AI accelerator
+- `chatgpt-powerpoint-addin` — Office embedding
+- `ios-27-siri` — Major Siri overhaul with third-party AI support
+- `long-horizon` — Self-looping autonomous project builder
+- `ai-agent-starter` — Multi-provider agent framework
+- `niefa` — Agent commerce with x402 payments
+
+## Ideas Created (2)
+- `open-platform-ai` — Walled gardens giving way to platform choice
+- `ambient-ai-layer` — Competitive moat shifting to OS-level integration
+
+## Topic Pages Updated
+- `ai_companies`, `agentic_ai`, `github_trends` — Added May 25 content
+
+## Files Modified
+- `wiki/index.md`, `wiki/log.md`, `wiki/processed.json`
+- 5 source pages, 3 topic pages, 1 timeline
+
+The wiki now reflects the key theme: **the convergence of AI ecosystems into open platforms**, with OpenAI embedding in Office, Apple opening to rival AIs, and Google acknowledging its agentic gap.

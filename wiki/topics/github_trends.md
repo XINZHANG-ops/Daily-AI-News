@@ -240,3 +240,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/forge]] — Open-source reliability layer for self-hosted LLM tool-calling; takes 8B model from 53% to 99% on agentic tasks through guardrails (retry nudges, step enforcement, error recovery); addresses critical gap in self-hosted deployments
 - [[entities/sentinel]] — Phantom tool-call detector for autonomous LLM agents; layered detection (registry exact match, embedding similarity, Gemini Flash verification) detects when agents hallucinate non-existent tools; complements Forge for complete tool-calling reliability
 - [[entities/openclaw]] — v2026.5.24 released with 374K stars; cross-platform agent capabilities; remains fastest-growing open-source project
+- [[entities/long-horizon]] — Self-looping autonomous AI that builds entire projects; graph-connected memory grows like a brain with self-healing graph index; 1 star signals early-stage but unique architecture
+- [[entities/ai-agent-starter]] — Multi-provider agent framework supporting OpenAI, Anthropic, Ollama; function calling, streaming, conversation memory; 1 star signals early-stage
+- [[entities/niefa]] — Neural Interference Engine for Agents; goal-to-execution pipeline, x402 paid endpoints for autonomous agent commerce; 1 star signals early-stage
+- [[ideas/agent-economy-infrastructure]] — niefa's x402 paid endpoints preview the agent-to-agent commerce layer; autonomous agents paying each other for services is the next infrastructure frontier

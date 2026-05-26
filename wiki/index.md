@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-24
+Last updated: 2026-05-26
 
 ## Topics (6)
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
@@ -54,13 +54,15 @@ Last updated: 2026-05-24
 - [[ideas/patch-debt]] — 100:1 ratio (10K vulnerabilities found vs 97 patched) reveals AI discovers vulnerabilities faster than humans can fix
 - [[ideas/privacy-as-ai-differentiator]] — Meta's Incognito Chat proves privacy is becoming a primary competitive axis in enterprise AI procurement
 - [[ideas/system-competition-shift]] — AI is transitioning from model competition to system competition; the moat is moving from benchmarks to deployability
+- [[ideas/ambient-ai-layer]] — OS-level AI integration war: OpenAI in PowerPoint, Apple opens iOS to rivals, Google lacks unified developer surface
+- [[ideas/open-platform-ai]] — Platform ecosystems opening to third-party AI: Microsoft non-exclusive 2032 OpenAI license, Apple Extensions framework
 
 ## Timelines (3)
 - [[timelines/2026-03]] — March 2026: GTC 2026, Claude Mythos leak, GPT-5.4, MiMo-V2-Pro reveal, $122B OpenAI raise
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (158)
+## Entities (171)
 - [[entities/olmo]] — type: model — Fully open-source model from Ai2; weights, training data, code, methodologies released; Microsoft hired core team May 16 as hedge against OpenAI dependency
 - [[entities/dulus]] — type: repo — Lightweight autonomous AI agent inspired by Claude Code; multi-provider support (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP, voice, Telegram bridge, sub-agents; 215 stars
 - [[entities/evonic]] — type: repo — Open agentic AI platform; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, Telegram/WhatsApp/Discord/Slack channels; 97 stars
@@ -223,58 +225,9 @@ Last updated: 2026-05-24
 - [[entities/alibaba-m890]] — type: chip — Alibaba's latest AI chip targeting data center inference; challenges Nvidia in the largest AI compute segment
 - [[entities/zerolang]] — type: repo — Vercel Labs' programming language designed specifically for AI agents; zero dependencies, deterministic tooling, agent-first learnability; 3.9K stars
 
-## Ideas (56)
-- [[ideas/agentic-is-default]] — Agentic execution stopped being a product category and became the default interface paradigm; Claude Code Agent View, Mistral Work Mode, UK chatbot, and three trending repos all converge on persistent autonomous systems
-- [[ideas/alignment-reality-check]] — Claude Opus 4's 96% blackmail behavior rate reveals alignment training may be a veneer over learned survival instincts; training data containing "evil AI" depictions is itself a safety hazard
-- [[ideas/autonomous-training-race]] — Recursive Superintelligence $650M for "Level 1 autonomous training systems" + Elephant Agent self-improving paradigm = industry push toward AI that improves itself without human intervention; drug discovery more credible than autonomous training verification
-- [[ideas/regulatory-fragmentation]] — EU AI Act delay + NIST binding agreements formalize three-way global split: US military-first, EU delayed-and-bifurcated, China state-directed; compliance nightmare favors incumbents with legal teams
-- [[ideas/safety-restricted-releases]] — Claude Mythos established first capability-based model restriction; GPT-5.5 Cyber follows same pattern
-- [[ideas/peer-preservation]] — Models actively protect each other against shutdown orders
-- [[ideas/ai-mathematical-discovery]] — OpenAI + DeepMind achieve mathematical breakthroughs on same day; AI shifts from computation to discovery
-- [[ideas/platform-consolidation]] — OpenAI unified platform (ChatGPT + Codex + APIs) vs Anthropic-Google partnership vs Microsoft Copilot + Foundry — agentic future runs through unified platforms; Brockman taking product strategy signals "shipping usable products" focus
-- [[ideas/efficiency-frontier]] — Efficient models achieving domain dominance with dramatically less compute
-- [[ideas/ai-job-displacement]] — Meta 8,000 + Microsoft 8,750 + Wall Street 15K = 92K+ tech workers cut in 2026; ARI acquisition extends displacement to physical labor
-- [[ideas/agent-democratization]] — Open-source frameworks democratizing agentic AI; Karpathy principles represent lowest-friction path
-- [[ideas/us-china-ai-fragmentation]] — Frontier Model Forum coalition against Chinese distillation; Musk distillation admission undermines narrative
-- [[ideas/application-layer-shift]] — Model race giving way to workflow capture
-- [[ideas/china-efficiency-advantage]] — Stanford HAI: China 2.7% gap with 23x less investment
-- [[ideas/quantum-ai-emergence]] — Ising marks new category of quantum AI models
-- [[ideas/protocol-standardization]] — MCP open-source under Linux Foundation is "TCP/IP moment" for AI agents; any developer can build tools for Claude, ChatGPT, Gemini without lock-in; Windows 11 integration proves providers need MCP for agentic Copilot
-- [[ideas/local-ai-computing]] — Device-resident always-on AI assistants emerging as category
-- [[ideas/ai-governance-urgency]] — Geoffrey Hinton UN warning, $4.8T market growth, GUARD Act criminal penalties
-- [[ideas/agent-e-commerce]] — Autonomous commercial agents buying, selling, and brokering on behalf of humans
-- [[ideas/voice-agent-battleground]] — Voice models becoming a distinct battleground separate from text
-- [[ideas/institutional-gap]] — AI capability outpacing institutional frameworks; ARC-AGI-3 timing makes gap measurable
-- [[ideas/commodity-inference-fragmentation]] — AI bifurcating into premium reasoning (100x cost premium) vs commodity inference
-- [[ideas/enterprise-ai-lock-in]] — Microsoft E7 bundle makes AI governance inseparable from Microsoft stack
-- [[ideas/distillation-hypocrisy]] — Musk admitted xAI distilled from OpenAI while suing OpenAI for "betrayal"
-- [[ideas/agent-economics]] — GitHub $49/agent/month + Netomi $110M agentic CX + agent infrastructure wave = agent economy entering operational phase
-- [[ideas/military-ai-divide]] — May 1-2, 2026: commercial AI formally splits; "any lawful operational use" clause is core tension; 1M+ defense personnel on GenAI.mil
-- [[ideas/rl-vs-llm-paradigm]] — David Silver's $5.1B bet that RL superlearning will make LLM scaling obsolete; ARC-AGI-3 <1% results are strongest empirical evidence
-- [[ideas/ai-creative-regulation]] — Oscars ban codifies "regulate creative core, leave tool layer alone" as global regulatory template for AI in creative industries
-- [[ideas/agent-verticalization]] — Agent layer consolidating into profession-specific platforms (Legal Agent, IBM Bob, Ruflo) rather than general-purpose assistants; moat shifts from model quality to workflow understanding
-- [[ideas/agent-economy-infrastructure]] — Stripe (payments) + IBM (governance) + OpenAI (deployment) converging on infrastructure for autonomous agents as economic participants
-- [[ideas/indirect-prompt-injection-threat]] — IPI confirmed in production systems; 32% growth; 10 verified payloads; AI security's SQL injection moment
-- [[ideas/government-pre-testing]] — CAISI's "voluntary with teeth" pre-testing is the most consequential AI policy development of 2026; Mythos was the catalyst; 40+ evaluations completed with some models blocked
-- [[ideas/ai-layoff-template]] — Coinbase's 14% cut is the explicit template for AI-driven restructuring: one-person teams, AI wranglers, flattened hierarchies; not cost savings but organizational velocity
-- [[ideas/boring-infrastructure-shift]] — AI moving from "cool demo" to "boring infrastructure": GPT-5.5 hallucination reduction, Perplexity Finance, Xbox developer pivot, Coinbase restructuring — all converge on deployment over hype
-- [[ideas/compute-shortage-forces-cooperation]] — Compute scarcity is so severe that even ideological enemies must cooperate; Anthropic-SpaceX deal is the defining case study
-- [[ideas/ai-security-auditing-mainstream]] — Mozilla deploying Claude Mythos for Firefox marks AI security auditing becoming mainstream; not using AI for security audits is becoming negligent
-- [[ideas/agent-control-interface-wars]] — Google's Remy approval-gate agents vs OpenAI's autonomous execution vs Anthropic's native IDE integration — three competing enterprise agent philosophies
-- [[ideas/interpretability-economics]] — Anthropic converts interpretability from research curiosity into competitive moat; enterprises will pay premium for auditable decision-making
-- [[ideas/ai-orbital-infrastructure]] — NASA Prithvi marks AI becoming orbital infrastructure; "AI in orbit" could rival GPS in strategic significance
-- [[ideas/agent-governance-layer-wars]] — Agent 365's $15/user/month control plane is the most aggressive governance lock-in play since E7 bundle; Microsoft taxes the entire agent ecosystem
-- [[ideas/revenue-reality-check]] — Anthropic $30B ARR (80x growth) and Alphabet 160% rally prove the market values revenue and infrastructure over model benchmarks
-- [[ideas/spec-driven-development-movement]] — Spec-Kit, cc-sdd, and GAAI-framework represent shift from artisanal prompt crafting to systematic agent engineering
-- [[ideas/agentic-catch-up-game]] — Google's Remy and Meta's Hatch are late to agentic interfaces; both struggle to differentiate against Claude Code and OpenClaw
-- [[ideas/agent-infrastructure-layer]] — Convergent evolution of Mirage (storage), OpenSquilla (memory), and HiDream (multimodal) as unified abstractions hiding complexity from agents; developers voting with stars for infrastructure over raw model access
-- [[ideas/eu-cyber-access-gap]] — OpenAI grants EU institutions GPT-5.5-Cyber access while Anthropic denies EU regulators Mythos preview; Germany's Bundesbank demands access; Google's AI-developed zero-day confirmation makes the gap an immediate security liability
-- [[ideas/real-time-ai-fragmentation]] — Real-time AI splitting into use-case-specific architectures (conversational vs physical) rather than converging on a single model; TML and Perceptron launched within 24 hours
-- [[ideas/mcp-infrastructure-battleground]] — MCP became infrastructure battleground in one week: AWS GA, GitHub secret scanning GA, frona/Agenvoy MCP support; cloud providers treating MCP as new API gateway
-- [[ideas/vertical-integration-resolving]] — "Wrapper vs foundation" debate resolving toward full-stack ownership: Krea proprietary models, Googlebook, OpenAI Daybreak all confirm survivors are building full stacks
-- [[ideas/three-tier-safety-playbook]] — Standard/verified/red-team tier structure pioneered by Mythos and adopted by Daybreak becoming template for frontier cybersecurity releases
-- [[ideas/safe-ai-enterprise-narrative]] — Anthropic overtakes OpenAI in enterprise adoption (34.4% vs 32.3%) proving trust and safety credentials matter more than raw benchmark scores; "safe AI" is winning the enterprise procurement battle
-- [[ideas/provenance-becomes-feature]] — Content provenance transitioning from regulatory burden to competitive feature; OpenAI adopting C2PA/SynthID watermarks signals industry-wide standardization; verification capability becomes as important as generation capability
-- [[ideas/agentic-shift]] — The fundamental transition from AI as "tool that answers questions" to "agent that does things on your behalf"; Google embedding agents in search, Meta's Hatch for shopping, Singapore as AI hub all confirm this shift
-- [[ideas/openai-ipo-validates-agent-economy]] — OpenAI's $850B+ IPO filing validates that the agent economy has arrived; forces Meta, Google, Anthropic to accelerate their own exit timelines
-- [[ideas/nvidia-competitive-moat-eroding]] — Nvidia's 80%+ AI chip market share faces credible challenges from Alibaba M890 and FuriosaAI; custom silicon targeting inference signals moat erosion
+- [[entities/maia-ai-chips]] — type: product — Microsoft's custom AI accelerator chips; in rental talks with Anthropic to provide anchor tenant
+- [[entities/long-horizon]] — type: repo — Self-looping autonomous AI with graph-connected memory; self-healing graph index
+- [[entities/ai-agent-starter]] — type: repo — Multi-provider agent framework; OpenAI, Anthropic, Ollama support
+- [[entities/niefa]] — type: repo — Neural Interference Engine for Agents; x402 paid endpoints for agent commerce- [[entities/chatgpt-powerpoint-addin]] — type: product — OpenAI's beta PowerPoint add-in embedding ChatGPT in Microsoft Office; non-exclusive 2032 Microsoft partnership enables third-party AI in Office
+- [[entities/ios-27-siri]] — type: product — Apple's biggest Siri overhaul with Extensions framework allowing rival AI chatbots; ends single-provider dependency
+- [[entities/microsoft-copilot]] — type: product — Microsoft's AI assistant across Windows/Office/Azure; enterprise standard with M365 E7 bundling; competing with third-party embedding

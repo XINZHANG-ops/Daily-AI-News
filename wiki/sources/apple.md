@@ -14,6 +14,7 @@ Apple's multi-model strategy for iOS 27 marks a significant shift from exclusive
 | Date | Event | Details |
 |------|-------|---------|
 | 2026-05-24 | iOS 27 multi-model support | Siri now taps GPT, Gemini, and Claude—not just OpenAI; Apple hedges platform dependency |
+| 2026-05-25 | iOS 27 Siri major overhaul | iOS 27 brings biggest Siri upgrade in years: dedicated app with persistent chat threads, web search, document summarization; first time users can install rival AI via Extensions framework; breaks walled garden |
 
 ## Key Relationships
 - [[sources/openai]] — OpenAI considering legal action over Siri integration; claims Apple failed to make "honest effort"

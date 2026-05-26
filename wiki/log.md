@@ -1083,3 +1083,58 @@ Sources updated: google, anthropic, openai, microsoft, meta
 Entities created: gemini-3, llama-4-405b, forge, sentinel
 Ideas created: ai-utility-layer, patch-debt
 Sources created: apple
+
+## [2026-05-25] lint | Daily health check
+
+**Structural:**
+- Orphan pages: WIKI, index, log (system files, expected)
+- Broken links: All in log.md are historical lint records (e.g., "Fixed [[topics/embodied-ai]] → [[topics/agentic_ai]]"), not active broken links
+- No orphan content pages across topics/, sources/, timelines/, entities/, ideas/
+
+**Connection Quality:**
+- Zero bare "Related:" or "See also:" connections in any content page
+- All 6 topic pages have ## Evolution and ## Patterns & Insights sections
+- All connections annotated with WHY — no bare wikilinks found
+- 162 entity pages, 58 idea pages, 38 source pages, 6 topic pages, 3 timeline pages — all properly connected
+
+**Entity Validation:**
+- dr-venus: Valid model entity (4B deep research agent), not a person
+- eliezer: Valid repo entity (self-hosted AI agent), not a person
+
+**Session Learnings (from wiki_sessions/):**
+- Apr 23 session: Bank of England Mythos warning → already captured in ai_safety topic
+- Apr 25 session: DeepSeek V4, Google $40B Anthropic investment → already captured
+- May 2 session: ARC-AGI-3 <1% reasoning ceiling → captured in llm_models and ai_safety
+- Session questions revealed user interest in: Google Cloud Next details, Claude Code vs Codex comparison, enterprise AI adoption trends
+- No new entity pages needed from session Q&A — existing pages cover all queries
+
+**Data Freshness:**
+- Last processed: 2026-05-24
+- Today's data (2026-05-25) available: 3 repos, 5 news items, insight analysis
+- News highlights: Apple iOS 27 Siri overhaul (multi-model), Anthropic overtaking OpenAI in enterprise, Google CEO admits agentic gap
+- No new standalone entities required — existing pages (apple, google, anthropic, openai) cover all items
+
+**Wiki Health: GOOD**
+- All structural checks passed
+- No broken wikilinks in content pages
+- Connection quality high — all annotated
+- No companies or people in entities/ (all 162 entity types valid)
+- Index.md synchronized with filesystem
+
+## [2026-05-25] ingest | 1 date
+
+Dates processed: 2026-05-25
+Topics updated: llm_models, ai_companies, agentic_ai
+Sources updated: anthropic, openai, microsoft, google, apple
+Entities created: maia-ai-chips, chatgpt-powerpoint-addin, ios-27-siri, long-horizon, ai-agent-starter, niefa
+Ideas created: open-platform-ai, ambient-ai-layer
+## 2026-05-26
+
+### Fixed
+
+- Created [[entities/microsoft-copilot]] entity (linked from chatgpt-powerpoint-addin and ios-27-siri)
+- Fixed broken link: [[entities/gemini-3.5-flash]] → [[entities/gemini-3-5-flash]] in timelines/2026-05.md
+- Added 3 new entities to index: chatgpt-powerpoint-addin, ios-27-siri, microsoft-copilot
+- Added 2 new ideas to index: ambient-ai-layer, open-platform-ai
+- Updated entity count: 158 → 171
+

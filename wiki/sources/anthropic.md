@@ -83,6 +83,8 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-05-19 | Andrej Karpathy joins as Pretraining Advisor | OpenAI cofounder and former Tesla AI director Andrej Karpathy hired to accelerate research using Claude; cited "formative" next few years at LLM frontier as motivation; joins previously-hired Jan Leike (OpenAI safety team) for two-pronged capability/safety approach |
 | 2026-05-23 | MCP Tunnels and self-hosted sandboxes | Enables enterprises to run AI agents against private internal systems without exposing MCP servers to public internet; eliminates $670K "shadow AI tax" in hidden security costs; partners: Cloudflare, Daytona, Modal, Vercel |
 | 2026-05-24 | Claude Mythos finds 10K critical vulnerabilities | One month: 10,000 critical vulnerabilities found, only 97 patched; 100:1 ratio reveals AI discovers vulnerabilities faster than humans can fix them; creates "patch debt" that compounds daily |
+| 2026-05-25 | Enterprise lead: Claude 34.4% vs ChatGPT 32.3% | Ramp AI Index shows Anthropic enterprise adoption quadrupled in one year; $30B ARR vs OpenAI $24-25B; first profitable quarter projected at $10.9B Q2 |
+| 2026-05-25 | Maia AI chip talks with Microsoft | Early talks to rent Microsoft custom Maia AI accelerator chips to expand computing capacity; builds on existing $30B Azure compute commitment |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
