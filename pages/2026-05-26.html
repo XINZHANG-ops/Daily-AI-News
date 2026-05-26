@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - May 26, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 May 26, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/garyqlin/gbase" class="card-title" target="_blank">garyqlin/gbase</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1 stars</div>
+                                <div class="meta-item"><span>🍴</span> 0 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Recursive Self-Improvement Agent Framework with mirror memory, quality gates, identity system, and 40+ auto-registered tools</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">递归自我改进智能体框架，包含镜像内存、质量门禁、身份系统和40多个自动注册工具</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/qmx888/meta-context-engineering" class="card-title" target="_blank">qmx888/meta-context-engineering</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 0 stars</div>
+                                <div class="meta-item"><span>🍴</span> 0 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Meta Context Engineering via Agentic Skill Evolution - associated with ICML 2026 paper on learnable skills for AI agents</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">通过智能体技能演进实现元上下文工程 - 与ICML 2026论文相关，聚焦AI智能体的可学习技能</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/ad3002/gram" class="card-title" target="_blank">ad3002/gram</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1 stars</div>
+                                <div class="meta-item"><span>🍴</span> 0 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Community reimplementation of GRAM (Generative Recursive Reasoning Models) - paper from May 2026 focusing on reproducibility</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GRAM(生成式递归推理模型)的社区复现 - 2026年5月论文，聚焦可复现性</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">RawPickAI</span>
+                    <div class="news-time">2026-05-23</div>
+                    <a href="https://rawpickai.com/news/karpathy-joins-anthropic-gemini-flash-ga-may-23-2026" class="card-title" target="_blank" data-lang="en">Andrej Karpathy Joins Anthropic's Pre-Training Team</a>
+                    <a href="https://rawpickai.com/news/karpathy-joins-anthropic-gemini-flash-ga-may-23-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">Andrej Karpathy 加入 Anthropic 预训练团队</a>
+                    <p class="card-description" data-lang="en">OpenAI co-founder Andrej Karpathy announced he's joining Anthropic's pre-training team to build a team focused on using Claude to accelerate pre-training research</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI联合创始人Andrej Karpathy宣布加入Anthropic预训练团队，将组建一个专注于利用Claude加速预训练研究的团队</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Google</span>
+                    <div class="news-time">2026-05-22</div>
+                    <a href="https://rawpickai.com/news/karpathy-joins-anthropic-gemini-flash-ga-may-23-2026" class="card-title" target="_blank" data-lang="en">Google Gemini 3.5 Flash API Goes General Available</a>
+                    <a href="https://rawpickai.com/news/karpathy-joins-anthropic-gemini-flash-ga-may-23-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google Gemini 3.5 Flash API 正式发布</a>
+                    <p class="card-description" data-lang="en">Gemini 3.5 Flash API goes GA with $1.50/M input tokens, $9.00/M output tokens, 1M token context window, and 76.2% on Terminal-Bench 2.1</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Gemini 3.5 Flash API正式发布，输入$1.50/百万tokens，输出$9.00/百万tokens，100万token上下文窗口，Terminal-Bench 2.1得分76.2%</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Bridge Chronicle</span>
+                    <div class="news-time">2026-05-20</div>
+                    <a href="https://www.thebridgechronicle.com/tech/google-gemini-omni-world-model-ai-video-generation-openai-anthropic-mp99" class="card-title" target="_blank" data-lang="en">Google Unveils Gemini Omni World Model for Video Generation</a>
+                    <a href="https://www.thebridgechronicle.com/tech/google-gemini-omni-world-model-ai-video-generation-openai-anthropic-mp99" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google 推出 Gemini Omni 世界模型用于视频生成</a>
+                    <p class="card-description" data-lang="en">Google introduces Gemini Omni, a new world model designed to simulate physical world behavior, processing text, audio, images, and video together with conversational video editing</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google推出Gemini Omni，一款旨在模拟物理世界行为的新型世界模型，可同时处理文本、音频、图像和视频，支持对话式视频编辑</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Idlen</span>
+                    <div class="news-time">2026-05-01</div>
+                    <a href="https://www.idlen.io/news/pentagon-8-classified-ai-contracts-openai-google-spacex-anthropic-excluded-may-2026/" class="card-title" target="_blank" data-lang="en">Pentagon Excludes Anthropic, Awards Classified AI Contracts to OpenAI & Google</a>
+                    <a href="https://www.idlen.io/news/pentagon-8-classified-ai-contracts-openai-google-spacex-anthropic-excluded-may-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">五角大楼排除 Anthropic，向 OpenAI 和 Google 授予机密AI合同</a>
+                    <p class="card-description" data-lang="en">Pentagon finalized AI agreements with 8 tech giants: OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX, Oracle, and Reflection AI. Anthropic was permanently excluded from classified IL6/IL7 networks</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">五角大楼与8家科技巨头达成AI协议：OpenAI、Google、Microsoft、AWS、Nvidia、SpaceX、Oracle和Reflection AI。Anthropic被永久排除在机密IL6/IL7网络之外</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The New Stack</span>
+                    <div class="news-time">2026-05-23</div>
+                    <a href="https://thenewstack.io/anthropic-stainless-sdk-acquisition/" class="card-title" target="_blank" data-lang="en">Anthropic Acquires Stainless SDK for $300M</a>
+                    <a href="https://thenewstack.io/anthropic-stainless-sdk-acquisition/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 以 3 亿美元收购 Stainless SDK</a>
+                    <p class="card-description" data-lang="en">Anthropic acquires Stainless SDK, the popular TypeScript SDK for building Claude-powered applications, in a $300M deal</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic收购了流行的用于构建Claude应用的TypeScript SDK——Stainless SDK，交易金额3亿美元</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-05-05</div>
+                    <a href="https://openai.com/index/gpt-5-5-instant/" class="card-title" target="_blank" data-lang="en">OpenAI Releases GPT-5.5 Instant with Improved Factuality</a>
+                    <a href="https://openai.com/index/gpt-5-5-instant/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 发布 GPT-5.5 Instant，事实性显著提升</a>
+                    <p class="card-description" data-lang="en">GPT-5.5 Instant makes ChatGPT 'smarter, clearer, and more personalized' with 52.5% fewer hallucinated claims than previous versions on high-stakes prompts</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GPT-5.5 Instant让ChatGPT「更聪明、更清晰、更个性化」，在高风险提示上比前一版本减少52.5%的幻觉回答</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Anthropic</span>
+                    <div class="news-time">2026-05-13</div>
+                    <a href="https://www.anthropic.com/news/claude-for-small-business" class="card-title" target="_blank" data-lang="en">Claude for Small Business Launched by Anthropic</a>
+                    <a href="https://www.anthropic.com/news/claude-for-small-business" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 推出 Claude for Small Business</a>
+                    <p class="card-description" data-lang="en">Anthropic launches Claude for Small Business, a new product tier targeting small teams with simplified pricing and business-specific features</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic推出Claude for Small Business，这是面向小团队的新产品层，具有简化的定价和商业特定功能</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Three converging themes define this week's AI landscape: (1) The Pentagon's exclusion of Anthropic cements a bifurcated ecosystem where model alignment with defense priorities becomes a competitive moat—Anthropic's ethical stance now has a $4B+ annual price tag. (2) Google is executing an aggressive Flash-first strategy, letting the lower-tier model beat Pro on benchmarks and undercutting pricing while expanding context 5-8x—a clear signal they're prioritizing developer adoption over margin protection. (3) The Karpathy hire and Stainless acquisition both represent Anthropic's platform pivot: bringing in top talent to accelerate pre-training and controlling the tooling layer to prevent competitive erosion. The real story isn't any single announcement but the crystallization of a two-track AI future—one built on defense partnerships and developer tooling, the other on safety-first positioning and researcher-led innovation.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">三个趋同主题定义了本周AI格局：(1)五角大楼排除Anthropic巩固了一个双生生态系统，在该系统中，与国防优先事项的对齐成为竞争护城河——Anthropic的道德立场现在有每年40亿+美元的标价。(2)Google正在执行激进的Flash优先策略，让低端型号在基准测试中击败Pro并压低定价，同时将上下文扩展5-8倍——明确表明他们在优先考虑开发者采用而非保护利润率。(3)Karpathy招聘和Stainless收购都代表了Anthropic的平台转型：引进顶尖人才加速预训练，控制工具层以防止竞争侵蚀。真正的故事不是任何单一公告，而是两个轨道AI未来的结晶——一个建立在国防合作伙伴关系和开发者工具之上，另一个建立在安全优先定位和研究人员主导的创新之上。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

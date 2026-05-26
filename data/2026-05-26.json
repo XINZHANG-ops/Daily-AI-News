@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-26",
+  "github_repos": [
+    {
+      "name": "garyqlin/gbase",
+      "url": "https://github.com/garyqlin/gbase",
+      "description": {
+        "en": "Recursive Self-Improvement Agent Framework with mirror memory, quality gates, identity system, and 40+ auto-registered tools",
+        "zh": "递归自我改进智能体框架，包含镜像内存、质量门禁、身份系统和40多个自动注册工具"
+      },
+      "stars": "1",
+      "forks": "0"
+    },
+    {
+      "name": "qmx888/meta-context-engineering",
+      "url": "https://github.com/qmx888/meta-context-engineering",
+      "description": {
+        "en": "Meta Context Engineering via Agentic Skill Evolution - associated with ICML 2026 paper on learnable skills for AI agents",
+        "zh": "通过智能体技能演进实现元上下文工程 - 与ICML 2026论文相关，聚焦AI智能体的可学习技能"
+      },
+      "stars": "0",
+      "forks": "0"
+    },
+    {
+      "name": "ad3002/gram",
+      "url": "https://github.com/ad3002/gram",
+      "description": {
+        "en": "Community reimplementation of GRAM (Generative Recursive Reasoning Models) - paper from May 2026 focusing on reproducibility",
+        "zh": "GRAM(生成式递归推理模型)的社区复现 - 2026年5月论文，聚焦可复现性"
+      },
+      "stars": "1",
+      "forks": "0"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Andrej Karpathy Joins Anthropic's Pre-Training Team",
+        "zh": "Andrej Karpathy 加入 Anthropic 预训练团队"
+      },
+      "url": "https://rawpickai.com/news/karpathy-joins-anthropic-gemini-flash-ga-may-23-2026",
+      "source": "RawPickAI",
+      "time": "2026-05-23",
+      "description": {
+        "en": "OpenAI co-founder Andrej Karpathy announced he's joining Anthropic's pre-training team to build a team focused on using Claude to accelerate pre-training research",
+        "zh": "OpenAI联合创始人Andrej Karpathy宣布加入Anthropic预训练团队，将组建一个专注于利用Claude加速预训练研究的团队"
+      },
+      "insight": {
+        "en": "Karpathy's move to Anthropic signals a strategic bet on AI-assisted research as the path to model improvement—a 'CLaude helping train the next Claude' recursive loop. This follows OpenAI's o1 reasoning model pivot and represents a talent arbitrage: Anthropic gains deep LLM expertise while Karpathy gets compute and compute-specific infrastructure that was reportedly constrained at OpenAI. The irony: the researcher who built AI education tools now trains AI to build better AI.",
+        "zh": "Karpathy加入Anthropic标志着在AI辅助研究作为模型改进路径上的战略押注——「用Claude训练下一个Claude」的递归循环。这紧随OpenAI的o1推理模型转向，代表了人才套利：Anthropic获得深度LLM专业知识，而Karpathy获得了据报在OpenAI受限的计算资源。讽刺的是：这位构建AI教育工具的研究者如今训练AI来构建更好的AI。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Gemini 3.5 Flash API Goes General Available",
+        "zh": "Google Gemini 3.5 Flash API 正式发布"
+      },
+      "url": "https://rawpickai.com/news/karpathy-joins-anthropic-gemini-flash-ga-may-23-2026",
+      "source": "Google",
+      "time": "2026-05-22",
+      "description": {
+        "en": "Gemini 3.5 Flash API goes GA with $1.50/M input tokens, $9.00/M output tokens, 1M token context window, and 76.2% on Terminal-Bench 2.1",
+        "zh": "Gemini 3.5 Flash API正式发布，输入$1.50/百万tokens，输出$9.00/百万tokens，100万token上下文窗口，Terminal-Bench 2.1得分76.2%"
+      },
+      "insight": {
+        "en": "Google's Flash-tier pricing undercuts Claude Haiku ($1.25/M input, $5/M output) while delivering 5-8x context window and superior coding performance. At 76.2% on Terminal-Bench 2.1, it beats Gemini 3.1 Pro—the first time a Flash model outperforms its Pro sibling. This challenges Anthropic's model hierarchy strategy: if Flash beats Pro, what's Sonnet's moat? Google's aggressive positioning suggests they're optimizing for developer adoption over margin.",
+        "zh": "Google的Flash层定价同时击穿了Claude Haiku($1.25/M输入，$5/M输出)，同时提供5-8倍上下文窗口和 superior coding性能。Terminal-Bench 2.1得分76.2%击败了Gemini 3.1 Pro——这是Flash首次超越其Pro版本。这挑战了Anthropic的模型层级策略：如果Flash击败Pro，那Sonnet的护城河是什么？Google的激进定位表明他们在为开发者采用优化而非利润率。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Unveils Gemini Omni World Model for Video Generation",
+        "zh": "Google 推出 Gemini Omni 世界模型用于视频生成"
+      },
+      "url": "https://www.thebridgechronicle.com/tech/google-gemini-omni-world-model-ai-video-generation-openai-anthropic-mp99",
+      "source": "The Bridge Chronicle",
+      "time": "2026-05-20",
+      "description": {
+        "en": "Google introduces Gemini Omni, a new world model designed to simulate physical world behavior, processing text, audio, images, and video together with conversational video editing",
+        "zh": "Google推出Gemini Omni，一款旨在模拟物理世界行为的新型世界模型，可同时处理文本、音频、图像和视频，支持对话式视频编辑"
+      },
+      "insight": {
+        "en": "Gemini Omni positions Google against OpenAI's Sora and potential GPT-5 video capabilities. The 'world model' framing is significant: it's not just generating video, but simulating physics. This connects to the broader trend of foundation models moving from 'understanding' to 'simulating'—a paradigm shift where AI builds internal models of reality rather than just predicting tokens. The conversational video editing feature suggests Google is targeting creative workflows, not just video generation.",
+        "zh": "Gemini Omni将Google定位为对抗OpenAI的Sora和潜在GPT-5视频能力的竞争者。「世界模型」的表述很重要：不仅仅是生成视频，而是模拟物理。这与基础模型从「理解」转向「模拟」的大趋势相连——一种范式转变，AI构建现实的内部模型而不仅仅是预测tokens。会话式视频编辑功能表明Google瞄准的是创意工作流，而不仅仅是视频生成。"
+      }
+    },
+    {
+      "title": {
+        "en": "Pentagon Excludes Anthropic, Awards Classified AI Contracts to OpenAI & Google",
+        "zh": "五角大楼排除 Anthropic，向 OpenAI 和 Google 授予机密AI合同"
+      },
+      "url": "https://www.idlen.io/news/pentagon-8-classified-ai-contracts-openai-google-spacex-anthropic-excluded-may-2026/",
+      "source": "Idlen",
+      "time": "2026-05-01",
+      "description": {
+        "en": "Pentagon finalized AI agreements with 8 tech giants: OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX, Oracle, and Reflection AI. Anthropic was permanently excluded from classified IL6/IL7 networks",
+        "zh": "五角大楼与8家科技巨头达成AI协议：OpenAI、Google、Microsoft、AWS、Nvidia、SpaceX、Oracle和Reflection AI。Anthropic被永久排除在机密IL6/IL7网络之外"
+      },
+      "insight": {
+        "en": "The exclusion centers on Anthropic's refusal to allow military use for autonomous weapons and mass surveillance—a stance that's now cost them billions in defense contracts. The 8-company lineup (notably missing Anthropic, Meta, and Mistral) reveals Pentagon's preferred vendors: Microsoft and AWS for cloud, Nvidia for compute, SpaceX for satellite communication, and OpenAI/Google for model capabilities. This cements a two-tier AI ecosystem: aligned vendors get classified access, others are locked out of federal markets worth $4B+ annually.",
+        "zh": "排除的核心是Anthropic拒绝允许军事用途的自主武器和大规模监控——这一立场让他们损失了数十亿美元的国防合同。8家公司名单(值得注意的是缺少Anthropic、Meta和Mistral)揭示了五角大楼的首选供应商：Microsoft和AWS用于云，Nvidia用于计算，SpaceX用于卫星通信，OpenAI和Google用于模型能力。这巩固了一个双层AI生态系统：对齐的供应商获得机密访问，其他人被每年价值40亿+的联邦市场锁在门外。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Acquires Stainless SDK for $300M",
+        "zh": "Anthropic 以 3 亿美元收购 Stainless SDK"
+      },
+      "url": "https://thenewstack.io/anthropic-stainless-sdk-acquisition/",
+      "source": "The New Stack",
+      "time": "2026-05-23",
+      "description": {
+        "en": "Anthropic acquires Stainless SDK, the popular TypeScript SDK for building Claude-powered applications, in a $300M deal",
+        "zh": "Anthropic收购了流行的用于构建Claude应用的TypeScript SDK——Stainless SDK，交易金额3亿美元"
+      },
+      "insight": {
+        "en": "The Stainless acquisition gives Anthropic the most popular TypeScript SDK in the AI ecosystem—used by thousands of developers building Claude integrations. At $300M, it's 6% of Anthropic's $5B valuation, a strategic premium to control the developer tooling layer. This mirrors OpenAI's acquisition pattern (e.g., Rockset, Evalian) but with a crucial difference: Stainless is already deeply integrated with Claude, making it more of a 'defensive' acquisition to prevent competitor adoption. The move signals Anthropic's shift from model-only to platform strategy.",
+        "zh": "Stainless收购让Anthropic获得了AI生态系统中最大的TypeScript SDK——被数千名开发者用于构建Claude集成。以3亿美元计算，这是Anthropic 50亿美元估值的6%，是控制开发者工具层的战略溢价。这模仿了OpenAI的收购模式(如Rockset、Evalian)，但有一个关键区别：Stainless已经深度集成Claude，使其更像是防止竞争对手采用的「防御性」收购。此举标志着Anthropic从纯模型到平台战略的转变。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Releases GPT-5.5 Instant with Improved Factuality",
+        "zh": "OpenAI 发布 GPT-5.5 Instant，事实性显著提升"
+      },
+      "url": "https://openai.com/index/gpt-5-5-instant/",
+      "source": "OpenAI",
+      "time": "2026-05-05",
+      "description": {
+        "en": "GPT-5.5 Instant makes ChatGPT 'smarter, clearer, and more personalized' with 52.5% fewer hallucinated claims than previous versions on high-stakes prompts",
+        "zh": "GPT-5.5 Instant让ChatGPT「更聪明、更清晰、更个性化」，在高风险提示上比前一版本减少52.5%的幻觉回答"
+      },
+      "insight": {
+        "en": "The 52.5% hallucination reduction on 'high-stakes prompts' is the headline—but the real story is OpenAI's iterative model strategy. Rather than waiting for GPT-6, they're shipping rapid updates to the default model (now on GPT-5.5 Instant), creating a moving target for competitors. The 'Instant' branding suggests a fast-response tier, possibly testing a freemium model where the base is free but premium reasoning costs more. This challenges Anthropic's stable model releases: Claude gets updates every 6 months, while OpenAI updates weekly.",
+        "zh": "「高风险提示」上52.5%的幻觉减少是标题——但真正故事是OpenAI的迭代模型策略。与其等待GPT-6，他们向默认模型(现在是GPT-5.5 Instant)快速推送更新，为竞争对手创造移动靶。「Instant」品牌暗示快速响应层，可能在测试免费增值模式，其中基础版免费但高级推理收费更多。这挑战了Anthropic的稳定模型发布：Claude每6个月更新一次，而OpenAI每周更新。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude for Small Business Launched by Anthropic",
+        "zh": "Anthropic 推出 Claude for Small Business"
+      },
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "source": "Anthropic",
+      "time": "2026-05-13",
+      "description": {
+        "en": "Anthropic launches Claude for Small Business, a new product tier targeting small teams with simplified pricing and business-specific features",
+        "zh": "Anthropic推出Claude for Small Business，这是面向小团队的新产品层，具有简化的定价和商业特定功能"
+      },
+      "insight": {
+        "en": "Claude for Small Business marks Anthropic's first explicit move into the SMB market—a segment OpenAI dominates with ChatGPT Teams. The timing is strategic: with the Pentagon exclusion and Stainless acquisition, Anthropic needs revenue diversification beyond enterprise AI. This is likely a response to OpenAI's Teams pricing ($25/user/month) and Google's new AI Premium plan. SMB is a volume play: lower ARPU but massive TAM. The question is whether Claude's safety-focused positioning resonates with SMBs who just want productivity gains.",
+        "zh": "Claude for Small Business标志着Anthropic首次明确进入SMB市场——这是OpenAI用ChatGPT Teams主导的细分领域。时机具有战略意义：在五角大楼排除和Stainless收购之后，Anthropic需要超越企业AI的收入多元化。这可能是对OpenAI Teams定价($25/人/月)和Google新AI Premium计划的回应。SMB是规模化游戏：更低的ARPU但巨大的TAM。问题是Claude以安全为中心的定位是否与只想提高生产力的SMB产生共鸣。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Three converging themes define this week's AI landscape: (1) The Pentagon's exclusion of Anthropic cements a bifurcated ecosystem where model alignment with defense priorities becomes a competitive moat—Anthropic's ethical stance now has a $4B+ annual price tag. (2) Google is executing an aggressive Flash-first strategy, letting the lower-tier model beat Pro on benchmarks and undercutting pricing while expanding context 5-8x—a clear signal they're prioritizing developer adoption over margin protection. (3) The Karpathy hire and Stainless acquisition both represent Anthropic's platform pivot: bringing in top talent to accelerate pre-training and controlling the tooling layer to prevent competitive erosion. The real story isn't any single announcement but the crystallization of a two-track AI future—one built on defense partnerships and developer tooling, the other on safety-first positioning and researcher-led innovation.",
+    "zh": "三个趋同主题定义了本周AI格局：(1)五角大楼排除Anthropic巩固了一个双生生态系统，在该系统中，与国防优先事项的对齐成为竞争护城河——Anthropic的道德立场现在有每年40亿+美元的标价。(2)Google正在执行激进的Flash优先策略，让低端型号在基准测试中击败Pro并压低定价，同时将上下文扩展5-8倍——明确表明他们在优先考虑开发者采用而非保护利润率。(3)Karpathy招聘和Stainless收购都代表了Anthropic的平台转型：引进顶尖人才加速预训练，控制工具层以防止竞争侵蚀。真正的故事不是任何单一公告，而是两个轨道AI未来的结晶——一个建立在国防合作伙伴关系和开发者工具之上，另一个建立在安全优先定位和研究人员主导的创新之上。"
+  }
+}

@@ -767,3 +767,14 @@ Already up to date.
 
 • 日志记录：向 wiki/log.md 追加了本次 lint 修复条目
 [2026-05-26 01:06:50] Wiki lint 完成（退出码 0）。
+[main 3ce9c8d] wiki: lint 2026-05-26
+ 25 files changed, 638 insertions(+), 61 deletions(-)
+ create mode 100644 wiki/entities/ai-agent-starter.md
+ create mode 100644 wiki/entities/chatgpt-powerpoint-addin.md
+ create mode 100644 wiki/entities/ios-27-siri.md
+ create mode 100644 wiki/entities/long-horizon.md
+ create mode 100644 wiki/entities/maia-ai-chips.md
+ create mode 100644 wiki/entities/microsoft-copilot.md
+ create mode 100644 wiki/entities/niefa.md
+ create mode 100644 wiki/ideas/ambient-ai-layer.md
+ create mode 100644 wiki/ideas/open-platform-ai.md
