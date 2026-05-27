@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-16
+last_updated: 2026-05-26
 ---
 
 # Anthropic
@@ -82,6 +82,8 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-05-10 | Claude Mythos on Google Vertex AI | Project Glasswing enables ~40 organizations to access Mythos Preview at $25/M input, $125/M output tokens; signals deeper Anthropic-Google Cloud tie-up following $40B investment |
 | 2026-05-19 | Andrej Karpathy joins as Pretraining Advisor | OpenAI cofounder and former Tesla AI director Andrej Karpathy hired to accelerate research using Claude; cited "formative" next few years at LLM frontier as motivation; joins previously-hired Jan Leike (OpenAI safety team) for two-pronged capability/safety approach |
 | 2026-05-23 | MCP Tunnels and self-hosted sandboxes | Enables enterprises to run AI agents against private internal systems without exposing MCP servers to public internet; eliminates $670K "shadow AI tax" in hidden security costs; partners: Cloudflare, Daytona, Modal, Vercel |
+| 2026-05-13 | Claude for Small Business launches | New product tier targeting small teams with simplified pricing and business-specific features; explicit move into SMB market previously dominated by OpenAI's ChatGPT Teams; strategic timing with Pentagon exclusion and Stainless acquisition to diversify revenue beyond enterprise |
+| 2026-05-23 | Acquires Stainless SDK for $300M | Popular TypeScript SDK for building Claude applications; used by thousands of developers; 6% of Anthropic's $5B valuation; strategic premium to control developer tooling layer; defensive acquisition to prevent competitor adoption; signals platform strategy shift from model-only |
 | 2026-05-24 | Claude Mythos finds 10K critical vulnerabilities | One month: 10,000 critical vulnerabilities found, only 97 patched; 100:1 ratio reveals AI discovers vulnerabilities faster than humans can fix them; creates "patch debt" that compounds daily |
 | 2026-05-25 | Enterprise lead: Claude 34.4% vs ChatGPT 32.3% | Ramp AI Index shows Anthropic enterprise adoption quadrupled in one year; $30B ARR vs OpenAI $24-25B; first profitable quarter projected at $10.9B Q2 |
 | 2026-05-25 | Maia AI chip talks with Microsoft | Early talks to rent Microsoft custom Maia AI accelerator chips to expand computing capacity; builds on existing $30B Azure compute commitment |
@@ -125,3 +127,4 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 - [[ideas/safe-ai-enterprise-narrative]] — Anthropic overtaking OpenAI in business adoption (34.4% vs 32.3%) proves enterprise buyers prioritize trust and safety credentials over raw benchmark scores
 - [[entities/uk-govuk-chatbot]] — The UK government's Claude-powered chatbot validates Anthropic's safety positioning in the highest-stakes deployment context; 2.5-year procurement timeline and 90% accuracy create a case study for "safe AI" winning sovereign contracts over raw capability
 - [[entities/colorado-sb-26-189]] — Colorado's disclosure requirements for AI in consequential decisions favor labs with transparent safety practices; Anthropic's Constitutional AI and interpretability tools (Natural Language Autoencoders) position it ahead of competitors on auditability
+- [[ideas/two-track-ai-future]] — Pentagon exclusion crystallized the defense vs safety-first tracks; Anthropic's $4B+ annual market loss is the structural cost of safety-first positioning

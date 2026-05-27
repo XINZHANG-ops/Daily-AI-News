@@ -1019,3 +1019,37 @@ Ingest for 2026-05-25 is complete. Here's a summary:
 - 5 source pages, 3 topic pages, 1 timeline
 
 The wiki now reflects the key theme: **the convergence of AI ecosystems into open platforms**, with OpenAI embedding in Office, Apple opening to rival AIs, and Google acknowledging its agentic gap.
+I've completed the wiki ingest for 2026-05-26. Here's a summary of all changes:
+
+## Summary of Wiki Updates for 2026-05-26
+
+### Entities Updated (4)
+- **terminal-bench-2.md** — Updated to Terminal-Bench 2.1, added Gemini 3.5 Flash score (76.2%)
+- **gemini-3-5-flash.md** — Added GA pricing ($1.50/M input, $9.00/M output), 1M context, Terminal-Bench 2.1 score
+- **gemini-omni.md** — Added conversational video editing feature
+- **stainless-sdk.md** — Created new entity for Anthropic's $300M acquisition
+
+### Entities Created (1)
+- **stainless-sdk** — TypeScript SDK for building Claude applications
+
+### Ideas Created (3)
+- **two-track-ai-future** — Defense partnership vs safety-first positioning, $4B+ market bifurcation
+- **flash-first-strategy** — Google's Flash-tier beating Pro on benchmarks at half price
+- **anthropic-platform-pivot** — Response to Pentagon exclusion via SDK acquisition + SMB strategy
+
+### Sources Updated (1)
+- **anthropic.md** — Added Claude for Small Business (May 13), Stainless SDK acquisition (May 23)
+
+### Topics Updated (1)
+- **llm_models.md** — Added key developments for May 22 (Gemini 3.5 Flash GA), May 13 (Claude for SMB), May 23 (Stainless acquisition)
+
+### Timelines Updated (1)
+- **2026-05.md** — Added May 26 section with two-track future analysis
+
+### Index Updated
+- Added 4 new entities and 3 new ideas to index.md
+
+### Meta Updates
+- Updated processed.json with 2026-05-26
+- Updated log.md with ingest entry
+- Updated last_updated dates across affected files

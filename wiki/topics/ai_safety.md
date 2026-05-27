@@ -190,3 +190,4 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[entities/project-glasswing]] — IBM joining alongside Anthropic signals rare competitor collaboration driven by existential threat model; 9-hour vulnerability exploitation window has made traditional rivalry secondary to collective defense
 - [[entities/ibm-bob]] — IBM's Project Glasswing membership extends Bob's multi-model orchestration to include security-specific routing; governance infrastructure now includes cybersecurity coalition participation
 - [[timelines/2026-05]] — May 14-16 adds Colorado AI Act, UK chatbot, and YouTube deepfake expansion to the month's safety narrative alongside alignment reality checks and regulatory fragmentation
+- [[ideas/two-track-ai-future]] — The two-track AI future institutionalizes safety vs deployment tension; companies must choose their foundational track

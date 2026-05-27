@@ -57,6 +57,10 @@ Last updated: 2026-05-26
 - [[ideas/ambient-ai-layer]] — OS-level AI integration war: OpenAI in PowerPoint, Apple opens iOS to rivals, Google lacks unified developer surface
 - [[ideas/open-platform-ai]] — Platform ecosystems opening to third-party AI: Microsoft non-exclusive 2032 OpenAI license, Apple Extensions framework
 
+
+- [[ideas/two-track-ai-future]] — Pentagon excludes Anthropic ($4B+ market); cements defense-first vs safety-first tracks; structurally permanent bifurcation
+- [[ideas/flash-first-strategy]] — Google's 76.2% Terminal-Bench score at half price; Flash-tier as primary growth driver not loss leader; challenges model hierarchy
+- [[ideas/anthropic-platform-pivot]] — $300M Stainless acquisition + Karpathy hire; response to Pentagon exclusion; model-only to platform strategy shift
 ## Timelines (3)
 - [[timelines/2026-03]] — March 2026: GTC 2026, Claude Mythos leak, GPT-5.4, MiMo-V2-Pro reveal, $122B OpenAI raise
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
@@ -231,3 +235,8 @@ Last updated: 2026-05-26
 - [[entities/niefa]] — type: repo — Neural Interference Engine for Agents; x402 paid endpoints for agent commerce- [[entities/chatgpt-powerpoint-addin]] — type: product — OpenAI's beta PowerPoint add-in embedding ChatGPT in Microsoft Office; non-exclusive 2032 Microsoft partnership enables third-party AI in Office
 - [[entities/ios-27-siri]] — type: product — Apple's biggest Siri overhaul with Extensions framework allowing rival AI chatbots; ends single-provider dependency
 - [[entities/microsoft-copilot]] — type: product — Microsoft's AI assistant across Windows/Office/Azure; enterprise standard with M365 E7 bundling; competing with third-party embedding
+
+- [[entities/stainless-sdk]] — type: product — Anthropic's $300M acquisition; popular TypeScript SDK for building Claude applications; controls developer tooling layer
+- [[entities/gemini-3-5-flash]] — type: model — Google's frontier-level model at half price; 76.2% Terminal-Bench 2.1; GA May 22 with $1.50/M input, 1M context
+- [[entities/gemini-omni]] — type: model — Google's world model for physical simulation; conversational video editing; I/O 2026 release
+- [[entities/terminal-bench-2]] — type: benchmark — Terminal/CLI benchmark; GPT-5.5 82.7%, Gemini 3.5 Flash 76.2%, Claude Opus 4.7 58.6%; first Flash beats Pro sibling

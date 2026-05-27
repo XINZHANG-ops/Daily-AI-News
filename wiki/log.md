@@ -1138,3 +1138,26 @@ Ideas created: open-platform-ai, ambient-ai-layer
 - Added 2 new ideas to index: ambient-ai-layer, open-platform-ai
 - Updated entity count: 158 → 171
 
+## [2026-05-26] ingest | 1 date
+
+Dates processed: 2026-05-26
+Topics updated: llm_models, ai_companies, ai_funding, ai_safety
+Sources updated: anthropic, google
+Entities created: stainless-sdk
+Ideas created: two-track-ai-future, flash-first-strategy, anthropic-platform-pivot
+
+---
+
+## 2026-05-27
+
+### Lint Results
+- Fixed 9 broken links: corrected target slugs (gpt-5.5, military-ai-divide, two-track-ai-future) and removed invalid links (claude-for-small-business, andrej-karpathy)
+- Added inbound links to orphan page ideas/two-track-ai-future from sources/anthropic and topics/ai_safety
+- Fixed frontmatter slug: two-track-ai_future → two-track-ai-future
+- Cleaned up empty [[]] links left after removing invalid references
+
+Dates processed: none (lint only)
+Topics updated: none
+Sources updated: anthropic, google
+Entities created: none
+Ideas created: none

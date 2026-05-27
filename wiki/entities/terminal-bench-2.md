@@ -1,8 +1,8 @@
 ---
-title: "Terminal-Bench 2.0"
+title: "Terminal-Bench 2.1"
 slug: terminal-bench-2
 type: benchmark
-last_updated: 2026-05-15
+last_updated: 2026-05-26
 ---
 
 # Terminal-Bench 2.0
@@ -14,9 +14,11 @@ A benchmark for evaluating AI model performance on terminal/command-line tasks, 
 
 | Attribute | Value |
 |-----------|-------|
+| Version | 2.1 (May 2026) |
 | GPT-5.5 Score | 82.7% |
 | Claude Opus 4.6 Score | ~69% (raw, May 12 unsaturated benchmark) |
 | Claude Opus 4.7 Score | 58.6% |
+| Gemini 3.5 Flash Score | 76.2% |
 | With-Agent Score | ~82% (May 12) |
 | Failure Rate | 18-35% of CLI tasks still fail even with frontier models |
 | Gap | 24.1 percentage points |
@@ -27,9 +29,12 @@ The 24-point gap between GPT-5.5 and Claude Opus 4.7 on Terminal-Bench 2.0 revea
 
 On May 12, 2026, unsaturated benchmark scores revealed that even frontier models leave an 18-35% CLI task failure rate. GPT-5.5 scored ~73% raw and ~82% with agents; Claude Opus 4.6 scored ~69% raw. This ~37% gap between lab benchmarks and deployment reality (the difference between ~82% with agents and ~73% raw, plus the remaining failure rate) is the empirical driver behind the agent infrastructure investment wave. Models alone won't close the deployment gap — agents need better tooling, not just better models.
 
+**May 22, 2026 — Terminal-Bench 2.1 Release**: Gemini 3.5 Flash scored 76.2% on Terminal-Bench 2.1 — beating Gemini 3.1 Pro (the first time a Flash model outperformed its Pro sibling). This is significant because Google's Flash-tier pricing ($1.50/M input, $9.00/M output) undercuts Claude Haiku ($1.25/M input, $5/M output) while delivering superior coding performance. The 76.2% score demonstrates that Flash isn't just a "cheap" alternative but a genuinely competitive model for terminal tasks, challenging Anthropic's model hierarchy strategy.
+
 ## Connections
-- [[topics/llm_models]] — Terminal Bench 2 and SWE-bench now jointly define the coding-model competition frontier: SWE-bench measures software engineering depth while Terminal Bench 2 measures command-line automation breadth — together they capture the full spectrum of developer-facing model capability
+- [[topics/llm_models]] — Terminal Bench 2.1 and SWE-bench now jointly define the coding-model competition frontier: SWE-bench measures software engineering depth while Terminal Bench 2.1 measures command-line automation breadth — together they capture the full spectrum of developer-facing model capability
 - [[sources/openai]] — Terminal-Bench gap supports OpenAI's "super app" positioning of GPT-5.5; May 12 unsaturated scores show even GPT-5.5 leaves ~18% of CLI tasks unsolved without agent tooling
 - [[ideas/agent-infrastructure-layer]] — The 18-35% CLI failure rate is the empirical evidence that drives infrastructure investment; Mirage, OpenSquilla, and HiDream represent convergent evolution to solve this deployment gap
 - [[entities/gpt-5.5]] — Scored ~73% raw and ~82% with agents on May 12 unsaturated Terminal-Bench 2.0, confirming the ~37% deployment-reality gap
 - [[entities/claude-opus-4-7]] — Scored 58.6% on Terminal-Bench 2.0; Claude Opus 4.6 raw score ~69% on May 12 unsaturated benchmark shows the gap is not static
+- [[entities/gemini-3-5-flash]] — Scored 76.2% on Terminal-Bench 2.1 (May 22, 2026), becoming the first Flash model to outperform its Pro sibling and demonstrating that Google's Flash tier delivers genuine coding capability at aggressive pricing

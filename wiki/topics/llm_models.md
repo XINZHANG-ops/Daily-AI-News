@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-23
+last_updated: 2026-05-26
 ---
 
 # LLM Models
@@ -67,6 +67,10 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-22 | Claude Opus 4.7 achieves 87.6% on SWE-bench Verified | Up from 80.8%; crosses threshold where autonomous code agents can handle multi-file, multi-repo refactoring economically; new tokenizer adds 1.0-1.35x cost to same inputs (hidden trade-off) — the "Claude Code moment" for enterprise autonomous deployment |
 | 2026-05-24 | Google Gemini 3 released | 2.8x speed, 47% lower price vs GPT-5; $0.53/M input tokens undercuts both OpenAI and Anthropic (Claude 4 Opus at $15/M); occupies price-performance sweet spot GPT-5 was meant to claim |
 | 2026-05-24 | Meta Llama 4 405B released | Open-weight at 85.9% MMLU-Pro; positions as open alternative to closed frontier models; fills gap left by Google proprietary and OpenAI delayed releases |
+| 2026-05-22 | Gemini 3.5 Flash API goes GA | $1.50/M input, $9.00/M output, 1M token context, 76.2% on Terminal-Bench 2.1 — first Flash model to outperform Pro sibling; Google's aggressive pricing undercuts Claude Haiku while delivering superior coding performance |
+| 2026-05-13 | Claude for Small Business launches | New product tier targeting small teams with simplified pricing and business-specific features; explicit move into SMB market dominated by OpenAI's ChatGPT Teams; strategic diversification post-Pentagon exclusion |
+| 2026-05-23 | Anthropic acquires Stainless SDK for $300M | Popular TypeScript SDK for building Claude applications; 6% of Anthropic's $5B valuation; defensive acquisition to control developer tooling layer; signals platform strategy shift from model-only |
+| 2026-05-05 | GPT-5.5 Instant becomes ChatGPT default | 52.5% fewer hallucinations on high-stakes prompts; "memory sources" shows which Gmail threads and previous chats informed each response; shifts liability to source verification |
 | 2026-03-19 | Xiaomi MiMo-V2-Pro revealed as "Hunter Alpha" | Chinese AI "stealth launch" strategy demonstrated |
 | 2026-03-26 | Claude Mythos documents leaked | 3,000 internal docs exposed unprecedented cybersecurity risks |
 | 2026-04-02 | Google Gemma 4 (Apache 2.0) | First fully permissive Gemma release, 31B ranks #3 on Arena |
