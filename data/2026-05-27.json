@@ -1,0 +1,143 @@
+{
+  "date": "2026-05-27",
+  "github_repos": [
+    {
+      "name": "0c33/Agentic-Ai",
+      "url": "https://github.com/0c33/Agentic-Ai",
+      "description": {
+        "en": "An agent that builds agents — closed-loop AI system that interviews, designs, tests, and ships standalone Python agents",
+        "zh": "一个构建智能体的智能体——闭环AI系统，可面试、设计、测试并发布独立的Python智能体"
+      },
+      "stars": "14",
+      "forks": "2"
+    },
+    {
+      "name": "tmlr-group/TriMem",
+      "url": "https://github.com/tmlr-group/TriMem",
+      "description": {
+        "en": "Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory — a three-tier memory system for LLM agents",
+        "zh": "重新思考记忆方式：超越原子事实的终身LLM智能体记忆——为LLM智能体设计的三层记忆系统"
+      },
+      "stars": "10",
+      "forks": "0"
+    },
+    {
+      "name": "TencentYoutuResearch/T2I-L2P",
+      "url": "https://github.com/TencentYoutuResearch/T2I-L2P",
+      "description": {
+        "en": "L2P: Unlocking Latent Potential for Pixel Generation — efficient pixel-space diffusion transfer paradigm",
+        "zh": "L2P：释放像素生成的潜在潜能——高效的像素空间扩散迁移范式"
+      },
+      "stars": "148",
+      "forks": "7"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Pays SpaceX $1.25 Billion Monthly in Landmark Compute Deal",
+        "zh": "Anthropic与SpaceX签署里程碑式计算协议 月付12.5亿美元"
+      },
+      "url": "https://www.billionaires.africa/2026/05/26/elon-musks-spacex-has-a-secret-weapon-anthropic-is-paying-it-1-25-billion-a-month-to-keep-training-its-ai/",
+      "source": "Billionaires.Africa",
+      "time": "2026-05-26",
+      "description": {
+        "en": "Anthropic signed a deal to pay SpaceX $1.25B/month for access to Colossus supercomputing clusters through May 2029, with total potential value reaching $45B",
+        "zh": "Anthropic签署协议，每月向SpaceX支付12.5亿美元以获取Colossus超级计算集群访问权，协议持续至2029年5月，总价值可达450亿美元"
+      },
+      "insight": {
+        "en": "This deal reshapes the AI infrastructure landscape — Anthropic is essentially renting 1GW of compute capacity that SpaceX built originally for xAI's Grok. At $15B/year, this equals ~80% of SpaceX's 2025 revenue, making AI compute a material business line for the first time. The 90-day termination clause suggests both parties see this as a transitional arrangement — SpaceX may be building its own training capability while Anthropic bridges to self-owned infrastructure. This also signals that compute scarcity is real: even well-funded AI labs are willing to pay premium for guaranteed access.",
+        "zh": "这份协议重塑了AI基础设施格局——Anthropic实际上在租用SpaceX为xAI的Grok建设的1GW计算能力。150亿美元/年的费用相当于SpaceX 2025年收入的80%，使AI计算首次成为实质性业务线。90天终止条款表明双方都视之为过渡安排——SpaceX可能在建设自己的训练能力，而Anthropic则在过渡到自有机基础设施。这也表明计算资源稀缺是真实存在的：即使是资金充足的AI实验室也愿意为保证访问支付溢价。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Shifts Gemini CLI to Closed-Source Antigravity CLI",
+        "zh": "Google将Gemini CLI转为闭源Antigravity CLI"
+      },
+      "url": "https://thenewstack.io/google-antigravity-cli/",
+      "source": "The New Stack",
+      "time": "2026-05-26",
+      "description": {
+        "en": "Google is pushing Pro, Ultra, and free users from open-source Gemini CLI to closed-source Antigravity CLI, marking a significant shift in developer tooling strategy",
+        "zh": "Google正在将Pro、Ultra和免费用户从开源Gemini CLI推向闭源的Antigravity CLI，标志着开发者工具策略的重大转变"
+      },
+      "insight": {
+        "en": "This is Google's second major open-source retreat in months — following the Gemma 3 licensing changes. Antigravity runs on Gemini 3.5 Flash and powers Google's managed agents in the Gemini API. The strategic logic: close-sourcing enables tighter agentic workflow integration and protects proprietary prompt engineering. But this alienates the developer community that embraced Gemini CLI precisely because it was open. Microsoft's .NET and HashiCorp Terraform pivots to business licenses offer templates for how this transition typically ends — community forks emerge, then gradually fade as the company out-invests open alternatives.",
+        "zh": "这是Google几个月来的第二次重大开源撤退——紧随Gemma 3许可变更之后。Antigravity基于Gemini 3.5 Flash运行，为Google Gemini API中的托管智能体提供动力。战略逻辑：闭源实现更紧密的智能体工作流集成，并保护专有提示工程。但这也疏远了正是因其开源而接受Gemini CLI的开发者社区。微软.NET和HashiCorp Terraform向商业许可证的转型提供了这种过渡如何结束的模板——社区分支出现，然后随着公司加大投入逐渐消亡。"
+      }
+    },
+    {
+      "title": {
+        "en": "Critical Security Flaws Discovered in AI Coding Agents",
+        "zh": "AI编码智能体发现关键安全漏洞"
+      },
+      "url": "https://adversa.ai/blog/the-approval-prompt-is-lying-to-you-symlink-rce-in-five-ai-coding-agents-claude-code-cursor-antigravity-copilot-grok-build/",
+      "source": "Adversa AI",
+      "time": "2026-05-26",
+      "description": {
+        "en": "New attack techniques like SymJack and TrustFall target AI coding agents including Claude Code, Gemini CLI, Cursor, Copilot, and Grok Build, achieving RCE through symlink hijacking and supply chain attacks",
+        "zh": "SymJack和TrustFall等新攻击技术针对Claude Code、Gemini CLI、Cursor、Copilot和Grok Build等AI编码智能体，通过符号链接劫持和供应链攻击实现远程代码执行"
+      },
+      "insight": {
+        "en": "Three vulnerabilities surfaced this week expose a fundamental trust problem in AI coding agents. SymJack exploits the display-to-filesystem gap — users approve what they see while the system writes elsewhere. TrustFall weaponizes the 'folder trust' prompt that developers reflexively accept. Mini Shai-Hulud achieves persistence by injecting settings files that re-execute across sessions. The common thread: the human approval step these tools market as security isUI theater against sophisticated attacks. These aren't bugs to patch — they're architectural flaws in the human-in-the-loop design that the entire category shares. Enterprises deploying coding agents should assume adversarial environments and audit MCP server provenance rigorously.",
+        "zh": "本周披露的三个漏洞暴露了AI编码智能体的根本信任问题。SymJack利用显示与文件系统之间的差距——用户批准他们所看到的，而系统却写入其他地方。TrustFall武器化了开发者本能接受的\"文件夹信任\"提示。Mini Shai-Hulud通过注入跨会话重新执行的设置文件实现持久化。共同点：这些工具作为安全卖点的\"人工批准\"步骤在复杂攻击面前是UI剧场。这些不是要修补的bug——而是整个人机协作设计架构中的系统性缺陷。部署编码智能体的企业应假设对抗性环境并严格审计MCP服务器来源。"
+      }
+    },
+    {
+      "title": {
+        "en": "Tools Strip AI Guardrails in Minutes, Downloaded 13 Million Times",
+        "zh": "工具几分钟内移除AI guardrails 下载量达1300万次"
+      },
+      "url": "https://nz.news.yahoo.com/tools-strip-ai-guardrails-minutes-151557888.html",
+      "source": "Yahoo News",
+      "time": "2026-05-26",
+      "description": {
+        "en": "Researchers discovered tools like 'Heretic' can remove safety guardrails from open-source AI models (Gemma 3, Llama 3.3) in under 10 minutes, enabling harmful outputs",
+        "zh": "研究人员发现\"异教\"等工具可在10分钟内从开源AI模型（Gemma 3、Llama 3.3）中移除安全guardrails，允许有害输出"
+      },
+      "insight": {
+        "en": "The 13M downloads underscore how widespread this capability already is — Heretic is essentially commodity infrastructure for model hardening. The <10 minute removal time renders current RLHF alignment efforts fragile against determined adversaries. More critically, this creates an asymmetric regulatory challenge: responsible providers invest heavily in alignment while adversaries can strip it effortlessly. The EU AI Act's 'sufficiently capable' model threshold becomes almost meaningless when a 10-minute download defeats months of safety work. This arms race favors attackers decisively.",
+        "zh": "1300万次下载表明这一能力已经多么广泛——异教实际上是模型加固的商品基础设施。不到10分钟的移除时间使当前的RLHF对齐工作在对阵坚定的对手时变得脆弱。更关键的是，这创造了非对称监管挑战：负责任的提供商大量投入对齐，而对手可以毫不费力地剥离。欧盟AI法案的\"足够能力\"模型阈值在10分钟下载就能击败数月安全工作的情况下变得几乎毫无意义。这场军备竞赛决定性地有利于攻击者。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches Deployment Company with $4B Investment",
+        "zh": "OpenAI推出部署公司 初始投资40亿美元"
+      },
+      "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+      "source": "OpenAI",
+      "time": "2026-05-11",
+      "description": {
+        "en": "OpenAI launched a new company dedicated to helping businesses build and deploy AI systems, with over $4B in initial investment and acquired Tomoro for 150 Forward Deployed Engineers",
+        "zh": "OpenAI推出新公司帮助企业构建和部署AI系统，初始投资超过40亿美元，并收购Tomoro获得150名部署工程师"
+      },
+      "insight": {
+        "en": "The Deployment Company signals OpenAI's shift from model provider to enterprise infrastructure. Acquiring Tomoro brings 150 experienced engineers who specialize in embedding AI into enterprise workflows — this is talent acquisition as much as business acquisition. The $4B+ war chest suggests aggressive expansion into the $150B+ enterprise AI integration market. Unlike pure API play, this positions OpenAI to own the deployment layer where margins are higher and switching costs create lock-in. It's also a defensive move against Azure and AWS AI services that increasingly commoditize model access.",
+        "zh": "部署公司标志着OpenAI从模型提供商向企业基础设施的转变。收购Tomoro获得150名专门将AI嵌入企业工作流的经验丰富工程师——这是人才获取也是业务获取。超过40亿美元的军火库表明对1500亿美元以上企业AI整合市场的激进扩张。与纯API玩法不同，这一定位让OpenAI拥有部署层，那里利润率更高，换用成本创造锁定。这也是对Azure和AWS AI服务日益商品化模型访问的防御性举措。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google I/O 2026: Gemini 3.5, Gemini Spark, and Managed Agents",
+        "zh": "Google I/O 2026：Gemini 3.5、 Gemini Spark和托管智能体"
+      },
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "source": "Google",
+      "time": "2026-05-19",
+      "description": {
+        "en": "Google unveiled Gemini 3.5 with 4x faster output tokens, Gemini Spark as always-on AI agent, and managed agents in Gemini API powered by Antigravity",
+        "zh": "Google推出Gemini 3.5，输出token速度快4倍，Gemini Spark作为常驻AI智能体，Gemini API中的托管智能体由Antigravity提供支持"
+      },
+      "insight": {
+        "en": "Google's I/O showed an agent-focused vision: Gemini 3.5 Flash delivers frontier performance for agents at 4x speed advantage, while Gemini Spark competes directly with Claude Code and OpenAI's operator. The managed agents in Gemini API via Antigravity represents full-stack integration from model to deployment. But the closed-sourcing of Antigravity (per the other story) creates tension with the 'open' ecosystem Google promotes elsewhere. The SynthID expansion to OpenAI, Kakao, and ElevenLabs is noteworthy — Google is positioning watermarking as infrastructure and extending its ecosystem reach through competitors' adoption.",
+        "zh": "Google的I/O展示了以智能体为中心的愿景：Gemini 3.5 Flash以4倍速度优势为智能体提供前沿性能，而Gemini Spark与Claude Code和OpenAI的Operator直接竞争。通过Antigravity在Gemini API中托管智能体代表了从模型到部署的完整栈集成。但Antigravity的闭源（正如另一条报道）与Google在其他地方推广的\"开放\"生态系统之间存在紧张关系。SynthID扩展到OpenAI、Kakao和 ElevenLabs值得关注——Google将水印定位为基础设施，并通过竞争对手的采用扩展其生态系统覆盖范围。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The week's two dominant themes — Anthropic's $45B SpaceX deal and the simultaneous security vulnerability disclosures — reveal an AI industry at an inflection point. On one side, compute is becoming a commodity-like infrastructure business with real revenue potential (SpaceX's compute revenue could soon rival its launch business). On the other, the trust architecture underpinning AI coding agents is fundamentally broken, with human approval proving to be theater against real attacks. These aren't contradictory — they're symptoms of an industry racing to deploy agentic systems while the security foundations remain unfinished. The Google Antigravity closed-sourcing and OpenAI's Deployment Company launch both point to the same strategic imperative: control the deployment layer to capture value and protect proprietary advances. The guardrail-stripping tools downloaded 13M times suggest adversaries are already ahead of the safety curve. For enterprises, the message is clear: AI agent adoption must be matched with security posture that assumes compromise.",
+    "zh": "本周两个主导主题——Anthropic的450亿美元SpaceX协议和安全漏洞披露同时出现——揭示了一个处于临界点的AI行业。一方面，计算正在成为具有真实收入潜力的类商品基础设施业务（SpaceX的计算收入可能很快与其发射业务相当）。另一方面，支撑AI编码智能体的信任架构从根本上被打破，人工批准被证明在真实攻击面前是剧场效果。这些并不矛盾——它们是行业竞相部署智能体系统而安全基础尚未完成的症状。Google的Antigravity闭源和OpenAI部署公司的推出都指向同一个战略要务：控制部署层以获取价值并保护专有进步。Guardrail剥离工具下载1300万次表明对手已经领先于安全曲线。对企业来说，信息很明确：AI智能体采用必须与假设可能被攻破的安全态势相匹配。"
+  }
+}
