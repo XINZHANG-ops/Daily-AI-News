@@ -804,3 +804,16 @@ Already up to date.
 • 更新 wiki/index.md 计数：Topics 6→8，Sources 37→38，Entities 177→178
 • 向 wiki/log.md 追加 2026-05-28 lint 条目，记录修复内容
 [2026-05-28 01:04:55] Wiki lint 完成（退出码 0）。
+[main 585a717] wiki: lint 2026-05-28
+ 21 files changed, 725 insertions(+), 12 deletions(-)
+ create mode 100644 wiki/entities/antigravity-cli.md
+ create mode 100644 wiki/entities/grok-build.md
+ create mode 100644 wiki/entities/heretic.md
+ create mode 100644 wiki/entities/mini-shai-hulud.md
+ create mode 100644 wiki/entities/openai-deployment-company.md
+ create mode 100644 wiki/entities/symjack.md
+ create mode 100644 wiki/entities/tomoro.md
+ create mode 100644 wiki/entities/trustfall.md
+ create mode 100644 wiki/ideas/trust-architecture-broken.md
+ create mode 100644 wiki/topics/ai_infrastructure.md
+ create mode 100644 wiki/topics/ai_security.md

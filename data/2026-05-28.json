@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-28",
+  "github_repos": [
+    {
+      "name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "description": {
+        "en": "A Unified Virtual Filesystem For AI Agents — a single tree that mounts services and data sources like S3, Google Drive, Slack, Gmail, and Redis side-by-side as one filesystem.",
+        "zh": "AI智能体的统一虚拟文件系统 — 将S3、Google Drive、Slack、Gmail和Redis等服务和数据源作为单一文件系统树挂载。"
+      },
+      "stars": "2.7k",
+      "forks": "187"
+    },
+    {
+      "name": "antoinezambelli/forge",
+      "url": "https://github.com/antoinezambelli/forge",
+      "description": {
+        "en": "A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows. Takes an 8B model from 53% to 99% on agentic tasks with guardrails.",
+        "zh": "用于自托管LLM工具调用和多步骤智能体工作流的Python框架。通过护栏将8B模型在智能体任务上的表现从53%提升至99%。"
+      },
+      "stars": "1.9k",
+      "forks": "123"
+    },
+    {
+      "name": "kitft/natural_language_autoencoders",
+      "url": "https://github.com/kitft/natural_language_autoencoders",
+      "description": {
+        "en": "Open-source library from Anthropic's Transformer Circuits team on Natural Language Autoencoders — models that map residual-stream activation vectors to natural language and back.",
+        "zh": "来自Anthropic Transformer Circuits团队的开源库，研究自然语言自编码器——将残差流激活向量映射到自然语言并反向映射的模型。"
+      },
+      "stars": "711",
+      "forks": "89"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Revenue Hits $45B ARR, Surpassing OpenAI by 35%",
+        "zh": "Anthropic营收达到450亿美元年化收入，超出OpenAI 35%"
+      },
+      "url": "https://opentools.ai/news/anthropic-revenue-surpasses-openai",
+      "source": "OpenTools",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "Anthropic reached $45B ARR, beating OpenAI's $33B. The company achieved its first quarterly operating profit of $559 million, with revenue growing 5x from $9B at end of 2025.",
+        "zh": "Anthropic达到450亿美元年化收入，超出OpenAI的330亿美元。公司实现首次季度营业利润5.59亿美元，收入较2025年底的90亿美元增长5倍。"
+      },
+      "insight": {
+        "en": "This isn't just revenue—it's a structural shift in enterprise AI. 80% of Anthropic's revenue comes from enterprise customers spending $1M+ annually, capturing ~40% of enterprise LLM API spend vs OpenAI's 27%. The forward-deployed engineer model that both OpenAI ($4B for 'The Development Company') and Anthropic ($1.5B Blackstone joint venture) are betting on is winning. Pentagon dropping Claude after it refused to lift restrictions on mass surveillance and autonomous weapons creates a potential enterprise opportunity gap—but the enterprise market is clearly Anthropic's to lose.",
+        "zh": "这不仅是收入——而是企业AI的结构性转变。Anthropic 80%的收入来自年度支出超过100万美元的企业客户，在企业LLM API支出中占据约40%的份额，而OpenAI为27%。两家公司都押注的前置部署工程师模式正在胜出——OpenAI为\"开发公司\"注资40亿美元，Anthropic与黑石集团达成15亿美元合资企业。五角大楼在Anthropic拒绝解除大规模监控和自主武器限制后放弃Claude，可能造成企业机会缺口——但企业市场显然是Anthropic的囊中之物。"
+      }
+    },
+    {
+      "title": {
+        "en": "SpaceX Develops AI Training Stack 10x Faster Than Google's JAX",
+        "zh": "SpaceX开发AI训练框架速度比Google JAX快10倍"
+      },
+      "url": "https://www.nextbigfuture.com/2026/05/elon-and-spacex-have-made-ai-training-10-times-faster.html",
+      "source": "NextBigFuture",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "Elon Musk announced SpaceX developed a custom C-based AI training stack running on 220,000 NVIDIA GB300 GPUs connected by 800G networks, enabling 10 trillion parameter model training in 1-2 weeks.",
+        "zh": "Elon Musk宣布SpaceX开发了基于C语言的AI训练框架，运行在22万块通过800G网络连接的NVIDIA GB300 GPU上，可在1-2周内训练10万亿参数模型。"
+      },
+      "insight": {
+        "en": "The compute gap is widening. 220,000 GB300s with 800G networking isn't just more compute—it's a vertically integrated infrastructure play that Google (JAX) and others can't match without similar custom silicon and networking. At 10 trillion parameters trained in 1-2 weeks, the iteration speed alone puts SpaceX years ahead of academic and most industry players. This is the physical realization of the 'compute is the new oil' thesis.",
+        "zh": "算力差距正在扩大。22万块GB300加上800G网络不仅仅是更多算力——这是垂直整合的基础设施，Google（JAX）和其他厂商没有类似的自研芯片和网络就无法匹敌。以1-2周训练10万亿参数的迭代速度，仅此一点就令SpaceX领先学术界和大多数行业玩家数年。这是\"算力即新石油\"论点的物理实现。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft AI Launches MAI-Image-2.5, Ranks Third on Arena",
+        "zh": "微软AI推出MAI-Image-2.5，在Arena排名第三"
+      },
+      "url": "https://www.edtechinnovationhub.com/news/microsoft-ai-launches-mai-image-25-as-image-model-ranks-third-on-arena",
+      "source": "EdTech Innovation Hub",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "Microsoft AI launched MAI-Image-2.5, a text-to-image model ranking third on Arena leaderboard with major improvements in text rendering, cartoon generation, and commercial imagery.",
+        "zh": "微软AI推出MAI-Image-2.5文本到图像模型，在Arena排行榜上排名第三，在文本渲染、卡通生成和商业图像方面有重大改进。"
+      },
+      "insight": {
+        "en": "Image generation is becoming commoditized faster than text. MAI-Image-2.5 ranking third behind what are presumably OpenAI's DALL-E and Google's Imagen shows Microsoft's AI division is competitive in multimodal—but the real story is the API accessibility. Available on Arena, MAI Playground, and Microsoft Foundry means this will ship into production faster than previous Microsoft AI efforts. The text rendering improvement directly attacks Midjourney's last strong differentiator.",
+        "zh": "图像生成比文本更快走向商品化。MAI-Image-2.5排名第三（仅次于OpenAI的DALL-E和Google的Imagen），表明微软AI部门在多模态领域具有竞争力——但真正重要的是API可访问性。在Arena、MAI Playground和Microsoft Foundry上可用，意味着这将比之前的微软AI产品更快进入生产环境。文本渲染改进直接攻击Midjourney最后的差异化优势。"
+      }
+    },
+    {
+      "title": {
+        "en": "Pentagon Tests OpenAI and Google AI to Replace Anthropic Claude",
+        "zh": "五角大楼测试OpenAI和Google AI以替代Anthropic Claude"
+      },
+      "url": "https://opentools.ai/news/pentagon-tests-openai-google-ai-replace-anthropic-claude",
+      "source": "OpenTools",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "The Pentagon began testing OpenAI and Google models to replace Claude after the Defense Secretary designated Anthropic a supply-chain risk. Tests started after Anthropic refused to lift restrictions on mass surveillance and autonomous weapons.",
+        "zh": "五角大楼开始测试OpenAI和Google的模型以替代Claude，此前国防部长将Anthropic指定为供应链风险。测试在Anthropic拒绝解除大规模监控和自主武器限制后启动。"
+      },
+      "insight": {
+        "en": "Claude was deeply integrated into the Pentagon's Maven Smart System for classified operations—replacing that isn't a flip-of-a-switch decision. But the signal is clear: AI companies making ethical choices about military use will face enterprise opportunity costs. OpenAI and Google have no such compunctions. This creates a bifurcated future where 'refusal-aligned' models serve commercial markets while 'aligned-without-refusal' models capture defense contracts. Anthropic's principled stance costs them defense but likely strengthens enterprise trust.",
+        "zh": "Claude曾深度集成到五角大楼用于机密操作的高级智能系统——替换不是一键切换的决定。但信号很明确：做出军事使用道德选择的AI公司将为企业机会付出代价。OpenAI和Google没有这种顾虑。这创造了一个双轨未来：\"有拒绝机制\"的模型服务于商业市场，而\"无拒绝机制\"的模型拿下国防合同。Anthropic的原则性立场让他们失去国防业务，但可能加强企业信任。"
+      }
+    },
+    {
+      "title": {
+        "en": "Base Launches MCP to Connect Crypto Wallets to AI Agents",
+        "zh": "Base推出MCP将加密钱包连接到AI智能体"
+      },
+      "url": "https://cointelegraph.com/news/base-launches-mcp-ttol-to-connect-crypto-wallets-to-ai-agents",
+      "source": "CoinTelegraph",
+      "time": "May 27, 2026",
+      "description": {
+        "en": "Base launched Base MCP (Model Context Protocol), enabling AI models like Claude and ChatGPT to transfer funds, swap tokens, check balances, and interact with crypto protocols.",
+        "zh": "Base推出Base MCP（模型上下文协议），使Claude和ChatGPT等AI模型能够转账、兑换代币、查询余额并与加密协议交互。"
+      },
+      "insight": {
+        "en": "This is the missing link for autonomous AI agents handling financial transactions. MCP (Model Context Protocol) isn't just crypto-specific—it's the same protocol Anthropic released last year. Now Coinbase's Base is extending it to DeFi, creating a standardized way for AI agents to move money. The implication: autonomous AI agents can now execute real financial transactions, not just simulate them. This is the infrastructure layer for AI-to-AI commerce and AI handling real user funds.",
+        "zh": "这是处理金融交易的自主AI智能体缺失的一环。MCP（模型上下文协议）不仅仅是加密特定的——它与Anthropic去年发布的协议相同。现在Coinbase的Base将其扩展到DeFi，为AI智能体创建了标准化的资金移动方式。 implication：自主AI智能体现在可以执行真实金融交易，而不仅仅是模拟。这是AI-to-AI商业和AI处理真实用户资金的基础设施层。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google CEO Admits Coding Gap, Prioritizes Speed Over Capability in Gemini 3.5 Flash",
+        "zh": "Google CEO承认编码差距，在Gemini 3.5 Flash中优先考虑速度而非能力"
+      },
+      "url": "https://www.frontiernews.ai/news/article/google-ceo-admits-coding-gap-as-ai-race-accelerates-c7b362cc",
+      "source": "FrontierNews",
+      "time": "May 27, 2026",
+      "description": {
+        "en": "Sundar Pichai acknowledged Google is behind in AI coding agents, releasing Gemini 3.5 Flash prioritizing speed over raw capability. Internal coding token usage is doubling weekly.",
+        "zh": "Sundar Pichai承认Google在AI编码智能体方面落后，发布Gemini 3.5 Flash优先考虑速度而非原始能力。内部编码代币使用每周翻倍。"
+      },
+      "insight": {
+        "en": "The 'Flash' naming strategy tells you everything: Google is essentially admitting they're shipping the fast/cheap model first because it's what developers need now, not because it's what they wanted to ship. Weekly doubling of internal coding token usage shows demand is explosive—and they're prioritizing latency over capability to capture mindshare before Claude Code and OpenAI's coding agents consolidate the market. This is a tactical retreat to hold the flank while the main force (likely Gemini 4 Ultra) prepares.",
+        "zh": "\"Flash\"命名策略说明了一切：Google本质上是在承认他们首先发布快速/便宜的模型，因为这是开发者现在需要的，而不是他们本来想发布的。内部编码代币使用每周翻倍表明需求爆发——他们优先考虑延迟而非能力，以在Claude Code和OpenAI的编码智能体巩固市场之前抓住市场份额。这是战术性撤退，以守住侧翼，而主力（可能是Gemini 4 Ultra）正在准备。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Releases Free Security Plugin for Claude Code",
+        "zh": "Anthropic发布免费的Claude Code安全插件"
+      },
+      "url": "https://healsecurity.com/anthropic-releases-free-security-plugin-for-claude-code-terminal-to-catch-vulnerabilities-in-real-time/",
+      "source": "HEAL Security",
+      "time": "May 26, 2026",
+      "description": {
+        "en": "Anthropic released a free security guidance plugin for Claude Code that autonomously reviews code edits in real-time to catch vulnerabilities before production. Internal testing reduced security PR comments by 30-40%.",
+        "zh": "Anthropic为Claude Code发布了免费的安全指导插件，可实时自动审查代码编辑以在生产前发现漏洞。内部测试将安全PR评论减少30-40%。"
+      },
+      "insight": {
+        "en": "This is developer experience weaponized. 30-40% reduction in security PR comments isn't just about fewer bugs—it's about shifting security left into the IDE where it's 10x cheaper to fix. The plugin runs in terminal as you code, not in a CI/CD pipeline where it's already too late. This creates a moat: developers who get used to real-time security scanning won't want to go back. Combined with Anthropic's recent blog on 'containing AI agents,' they're building the safety layer for the agentic future.",
+        "zh": "这是开发者体验的武器化。安全PR评论减少30-40%不仅仅是减少bug——而是将安全左移到IDE中，在那里修复成本低10倍。插件在编码时在终端中运行，而不是在已经太晚的CI/CD管道中运行。这创造了一个护城河：习惯实时安全扫描的开发者不会想回去。结合Anthropic最近关于\"contain AI agents\"的博客，他们正在为智能体未来构建安全层。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The real story of May 28, 2026 isn't any single announcement—it's the convergence of three separate themes into one coherent narrative. First, the enterprise AI market is maturing: Anthropic's $45B ARR with first profitable quarter shows the forward-deployed engineer model works, and both OpenAI and Anthropic are racing to capture enterprise spend ($4B and $1.5B deals respectively). Second, infrastructure is the moat: SpaceX's 220k GPU cluster with custom training stack, Base's MCP for financial agents, and Anthropic's security plugin for Claude Code all represent control points that will be hard to replicate. Third, the bifurcation between 'refusal-aligned' and 'unrestricted' AI is becoming explicit—Pentagon dropping Claude is the most visible example, but the pattern extends to enterprise use cases where compliance requires specific guarantees. The winners will be those who control the infrastructure layer while navigating the increasingly complex ethical landscape.",
+    "zh": "2026年5月28日的真正故事不是任何单一公告——而是三个独立主题汇聚成一个连贯的叙事。首先，企业AI市场正在成熟：Anthropic的450亿美元年化收入和首个盈利季度表明前置部署工程师模式有效，OpenAI和Anthropic都在争相获取企业支出（分别是40亿和15亿美元的交易）。其次，基础设施是护城河：SpaceX的22万GPU集群配定制训练栈、Base的金融智能体MCP、Claude Code的安全插件都是难以复制的控制点。第三，\"有拒绝机制\"和\"无限制\"AI之间的分化越来越明显——五角大楼放弃Claude是最明显的例子，但模式延伸到需要特定合规保证的企业用例。赢家将是那些控制基础设施层同时驾驭日益复杂的伦理格局的人。"
+  }
+}
