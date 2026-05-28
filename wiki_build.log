@@ -1053,3 +1053,36 @@ I've completed the wiki ingest for 2026-05-26. Here's a summary of all changes:
 - Updated processed.json with 2026-05-26
 - Updated log.md with ingest entry
 - Updated last_updated dates across affected files
+The 2026-05-27 data has been processed into the wiki. Here's what was done:
+
+**Entities Created (6):**
+- `antigravity-cli` — Google's closed-source successor to Gemini CLI
+- `symjack` — Critical RCE vulnerability via symlink hijacking in AI coding agents
+- `trustfall` — Vulnerability weaponizing folder trust prompts
+- `mini-shai-hulud` — Persistence vulnerability via settings injection
+- `heretic` — Guardrail-stripping tool (13M+ downloads)
+- `tomoro` — Company acquired by OpenAI for Deployment Company
+
+**Entities Updated (2):**
+- `colossus-1` — Added $45B SpaceX deal details ($1.25B/month through 2029)
+- `gemini-spark` — Updated with I/O 2026 details
+
+**Idea Created (1):**
+- `trust-architecture-broken` — Explains the three vulnerabilities revealing systemic flaws in AI coding agent security architecture
+
+**Timeline Updated:**
+- Added Week 4 (May 25-31) entries to `2026-05.md`
+
+**Index Updated:**
+- Updated date to 2026-05-27
+- Added 6 new entities (count now 177)
+
+**Log Updated:**
+- Added ingest entry for 2026-05-27
+
+**Key Insights from 2026-05-27:**
+1. Compute becomes real business: SpaceX's $45B deal = ~80% of 2025 revenue
+2. Trust architecture in AI coding agents is fundamentally broken (3 vulnerabilities)
+3. Guardrail stripping is commodity (13M downloads)
+4. Google closed-sources Antigravity (second open-source retreat)
+5. OpenAI launches $4B Deployment Company to own deployment layer

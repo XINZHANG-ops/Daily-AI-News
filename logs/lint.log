@@ -796,3 +796,11 @@ Already up to date.
  create mode 100644 wiki/ideas/anthropic-platform-pivot.md
  create mode 100644 wiki/ideas/flash-first-strategy.md
  create mode 100644 wiki/ideas/two-track-ai-future.md
+[2026-05-28 01:00:01] 开始 wiki lint，模型: minimax-m2.5:cloud
+Already up to date.
+• 创建 topics/ai_security.md 和 topics/ai_infrastructure.md 两个缺失主题，解决 8 处断链（SymJack、TrustFall、Mini Shai-Hulud、Colossus 1 等页面引用）
+• 创建 entities/grok-build.md 和 entities/openai-deployment-company.md，解决 3 处断链（xAI 编码工具和 OpenAI 部署公司实体）
+• 修复 entities/heretic.md：将 gemma-3 改为 gemma-4，llama-3-3 改为 llama-4（目标模型在 wiki 中不存在，改用最接近的现有版本）
+• 更新 wiki/index.md 计数：Topics 6→8，Sources 37→38，Entities 177→178
+• 向 wiki/log.md 追加 2026-05-28 lint 条目，记录修复内容
+[2026-05-28 01:04:55] Wiki lint 完成（退出码 0）。

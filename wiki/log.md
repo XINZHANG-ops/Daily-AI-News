@@ -1161,3 +1161,31 @@ Topics updated: none
 Sources updated: anthropic, google
 Entities created: none
 Ideas created: none
+
+## [2026-05-27] ingest | 1 date
+
+Dates processed: 2026-05-27
+Topics updated: ai_funding (SpaceX $45B deal), ai_security (SymJack, TrustFall, Mini Shai-Hulud, Heretic vulnerabilities), ai_companies (Google closed-source Antigravity, OpenAI Deployment Company), agentic_ai (Google managed agents, OpenAI deployment layer)
+Sources updated: anthropic, spacex, google, openai
+Entities created: antigravity-cli, symjack, trustfall, mini-shai-hulud, heretic, tomoro
+Entities updated: colossus-1 ($45B deal), gemini-spark (I/O 2026)
+Ideas created: trust-architecture-broken
+Timelines updated: 2026-05 (Week 4)
+
+## 2026-05-28
+
+**Lint run**
+
+### Fixed
+- Created topics/ai_security.md and topics/ai_infrastructure.md to resolve 8 broken topic links
+- Created entities/grok-build.md and entities/openai-deployment-company.md to resolve 3 broken entity links
+- Fixed entities/heretic.md: changed gemma-3→gemma-4, llama-3-3→llama-4 links
+
+### Index updates
+- Topics count: 6→8, Sources: 37→38, Entities: 177→178
+- Added new topics and entities to index (ai_security, ai_infrastructure, grok-build, openai-deployment-company)
+
+### Notes
+- 12 broken links resolved
+- Topics now include ai_security and ai_infrastructure
+- Entity files increased by 2

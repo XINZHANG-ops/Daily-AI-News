@@ -1,8 +1,10 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-26
+Last updated: 2026-05-27
 
-## Topics (6)
+## Topics (8)
+- [[topics/ai_security]] — Heretic guardrail stripping (13M downloads), SymJack/TrustFall/Mini Shai-Hulud vulnerabilities expose trust architecture flaws, MCP protocol RCE precedent
+- [[topics/ai_infrastructure]] — SpaceX Anthropic $45B deal, Colossus 1 300MW+ data center, compute becomes material revenue line, rate limits doubled
 - [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
 - [[topics/ai_companies]] — Pentagon 8-company AI coalition (Anthropic excluded), Anthropic $1.5B Wall Street JV, OpenAI $10B DeployCo, Stripe agentic commerce, IBM Think 2026, Musk trial Brockman $30B/IPO, IPI threat, Meta ARI "Android for robots," IBM Bob, Sam Altman's three pillars, Microsoft hires OLMo team (end of partnership era), Colorado AI Act, UK Claude chatbot
 - [[topics/ai_funding]] — Anthropic $1.5B JV (Blackstone, Goldman Sachs, H&F) as pre-IPO enterprise strategy; OpenAI $4B DeployCo at $10B valuation; Netomi $110M agentic CX; agent infrastructure wave ($75M+$45M+$100M); Anthropic ~$900B valuation; Meta $125-145B capex
@@ -10,7 +12,7 @@ Last updated: 2026-05-26
 - [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), IPI threat (32% growth, 10 verified payloads), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance, Colorado SB-26-189 AI Act, YouTube deepfake detection expansion
 - [[topics/agentic_ai]] — Agent economy infrastructure converges (Stripe payments, IBM governance, OpenAI deployment); Agent verticalization: IBM Bob, Microsoft Legal Agent, Ruflo, GitNexus; nanobot 41.7K lightweight agent; Gemini Robotics-ER 1.6; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration; agentic-is-default shift (Dulus, evonic, AgentClaw, Claude Code Agent View, Mistral Work Mode)
 
-## Sources (37)
+## Sources (38)
 - [[sources/ai2]] — Allen Institute for AI; core OLMo team hired by Microsoft May 16 including former CEO Ali Farhadi; strategic hedge against OpenAI dependency
 - [[sources/baidu]] — Ernie 5.1 launched with 6% pre-training cost vs peers; LMArena search #4; challenges "more compute = better models" orthodoxy
 - [[sources/anthropic]] — ~$900B valuation (surpasses OpenAI), Pentagon exclusion as "supply chain risk," Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch, $200B Google Cloud commitment
@@ -66,7 +68,15 @@ Last updated: 2026-05-26
 - [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
 - [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
 
-## Entities (171)
+## Entities (178)
+- [[entities/antigravity-cli]] — type: product — Google closed-source successor to Gemini CLI; powers managed agents in Gemini API; second major open-source retreat after Gemma 3
+- [[entities/symjack]] — type: vulnerability — Critical RCE via symlink hijacking in AI coding agents; exploits display-to-filesystem gap; affects Claude Code, Cursor, Copilot, Grok Build
+- [[entities/trustfall]] — type: vulnerability — Weaponizes folder trust prompt in AI coding agents; exploits reflexive user trust; affects Claude Code, Cursor, Copilot, Grok Build
+- [[entities/mini-shai-hulud]] — type: vulnerability — Persistence via settings file injection in AI coding agents; re-executes across sessions; affects Claude Code, Cursor, Copilot, Grok Build
+- [[entities/heretic]] — type: tool — Guardrail stripping tool downloaded 13M+ times; removes safety from Gemma 3, Llama 3.3 in under 10 minutes
+- [[entities/tomoro]] — type: company — AI deployment company acquired by OpenAI for $4B+ Deployment Company; 150 forward deployed engineers specializing in enterprise workflows
+
+
 - [[entities/olmo]] — type: model — Fully open-source model from Ai2; weights, training data, code, methodologies released; Microsoft hired core team May 16 as hedge against OpenAI dependency
 - [[entities/dulus]] — type: repo — Lightweight autonomous AI agent inspired by Claude Code; multi-provider support (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP, voice, Telegram bridge, sub-agents; 215 stars
 - [[entities/evonic]] — type: repo — Open agentic AI platform; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, Telegram/WhatsApp/Discord/Slack channels; 97 stars
