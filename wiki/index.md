@@ -1,252 +1,306 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-27
+Last updated: 2026-05-29
 
 ## Topics (8)
-- [[topics/ai_security]] — Heretic guardrail stripping (13M downloads), SymJack/TrustFall/Mini Shai-Hulud vulnerabilities expose trust architecture flaws, MCP protocol RCE precedent
-- [[topics/ai_infrastructure]] — SpaceX Anthropic $45B deal, Colossus 1 300MW+ data center, compute becomes material revenue line, rate limits doubled
-- [[topics/llm_models]] — ARC-AGI-3 <1% exposes reasoning ceiling, Mistral Medium 3.5 reasoning toggle, multi-model orchestration (IBM Bob, Copilot), Claude Opus 4.7, GPT-5.5, DeepSeek V4
-- [[topics/ai_companies]] — Pentagon 8-company AI coalition (Anthropic excluded), Anthropic $1.5B Wall Street JV, OpenAI $10B DeployCo, Stripe agentic commerce, IBM Think 2026, Musk trial Brockman $30B/IPO, IPI threat, Meta ARI "Android for robots," IBM Bob, Sam Altman's three pillars, Microsoft hires OLMo team (end of partnership era), Colorado AI Act, UK Claude chatbot
-- [[topics/ai_funding]] — Anthropic $1.5B JV (Blackstone, Goldman Sachs, H&F) as pre-IPO enterprise strategy; OpenAI $4B DeployCo at $10B valuation; Netomi $110M agentic CX; agent infrastructure wave ($75M+$45M+$100M); Anthropic ~$900B valuation; Meta $125-145B capex
-- [[topics/github_trends]] — nanobot 41.7K (ultra-lightweight personal agent, 4K lines), Ruflo 39.9K (agent orchestration for Claude Code), GitNexus 35.4K (MCP knowledge graphs for code), Pixelle-Video 10.5K (AI video engine), Serena 23.8K, agent-squad 7.6K, MOVA 972, AutoMV 104, Dulus 215 (multi-provider agent), evonic 97 (multi-agent swarms), AgentClaw 92 (declarative workflows)
-- [[topics/ai_safety]] — Pentagon-Anthropic split quantified ($200M lost vs $1.5B JV), IPI threat (32% growth, 10 verified payloads), "any lawful operational use" at 1.3M+ DoD personnel, Claude Security defensive pivot, GUARD Act, Five Eyes agent guidance, Colorado SB-26-189 AI Act, YouTube deepfake detection expansion
-- [[topics/agentic_ai]] — Agent economy infrastructure converges (Stripe payments, IBM governance, OpenAI deployment); Agent verticalization: IBM Bob, Microsoft Legal Agent, Ruflo, GitNexus; nanobot 41.7K lightweight agent; Gemini Robotics-ER 1.6; Serena semantic infrastructure; Netomi 40K req/s; Symphony orchestration; agentic-is-default shift (Dulus, evonic, AgentClaw, Claude Code Agent View, Mistral Work Mode)
+- [[topics/agentic_ai]] — May 2, 2026 shows the agent ecosystem maturing on three fronts simultaneously. Serena (23.8K stars) provides semantic code infrastructure at the symbo
+- [[topics/ai_companies]] — May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. The Pentagon expands its "AI-first" military contracts with 8 companie
+- [[topics/ai_funding]] — May 2026 reveals AI funding has shifted from model training to operational infrastructure. Anthropic's valuation surged past OpenAI's on secondary mar
+- [[topics/ai_infrastructure]] — AI Infrastructure tracks the physical and computational resources that power AI systems — data centers, GPU clusters, networking, and the business rel
+- [[topics/ai_safety]] — May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Pentagon's expanded "AI-first" contracts with an explicit "any lawful opera
+- [[topics/ai_security]] — AI Security encompasses the vulnerabilities, attack surfaces, and defensive measures specific to AI systems, particularly AI coding agents and model g
+- [[topics/github_trends]] — May 2, 2026 brings three notable repos spanning AI video generation and agent infrastructure. MOVA (972 stars) is a foundation model for synchronized 
+- [[topics/llm_models]] — May 2, 2026 delivers the most damning empirical critique of the LLM paradigm to date: ARC-AGI-3 results show GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18
 
-## Sources (38)
-- [[sources/ai2]] — Allen Institute for AI; core OLMo team hired by Microsoft May 16 including former CEO Ali Farhadi; strategic hedge against OpenAI dependency
-- [[sources/baidu]] — Ernie 5.1 launched with 6% pre-training cost vs peers; LMArena search #4; challenges "more compute = better models" orthodoxy
-- [[sources/anthropic]] — ~$900B valuation (surpasses OpenAI), Pentagon exclusion as "supply chain risk," Claude Mythos 5 (10T params), MCP vulnerability, multi-gigawatt TPU deal, Claude Code fixes, Claude Security launch, $200B Google Cloud commitment
-- [[sources/openai]] — $122B funding, Codex 3M users, GPT-Rosalind, Spud model, TBPN acquisition, GPT-5.5, GPT-5.5 Instant, GPT-5.5 Cyber restrictions, Pentagon classified network inclusion, Symphony orchestration spec, CAISI pre-testing
-- [[sources/google]] — Cloud Next 2026: TPU 8th gen (3x Ironwood), Gemini Enterprise Agent Platform, 75% code AI-generated, $40B Anthropic investment, Gemini automotive rollout (~4M GM vehicles), Pentagon classified network inclusion, CAISI pre-testing, $200B Anthropic cloud commitment
-- [[sources/meta]] — MCI employee tracking, Muse Spark proprietary, May 20 layoffs (8,000), 10% workforce cut, ARI humanoid robotics acquisition, EU AI Act €800M fine, $125-145B capex
-- [[sources/nvidia]] — GTC 2026, Vera Rubin, Ising quantum AI models, Vast Data backed, GB300 Blackwell Ultra mass production, Pentagon classified network inclusion, Ineffable Intelligence investment
-- [[sources/vast-data]] — NVIDIA-backed AI storage startup, $1B raise at $30B valuation (April 2026)
-- [[sources/alibaba]] — In talks to invest in DeepSeek, Qwen 3.6 efficiency breakthrough
-- [[sources/mozilla]] — Firefox maker launching Thunderbolt enterprise self-hosted AI client
-- [[sources/cognition]] — Devin creator, $25B valuation talks, AI coding competition with Claude Code
-- [[sources/spacex]] — $250B xAI merger, $60B Cursor investment, galactic AI entity ($1.25T)
-- [[sources/tencent]] — L2P pixel-space image generation breakthrough; in talks to invest in DeepSeek
-- [[sources/singapore]] — Singapore as offshore AI hub; $230M OpenAI partnership (Applied AI Lab, 200 jobs, first outside US), Google DeepMind expansion, Nvidia embodied AI research hub
-- [[sources/deepseek]] — V4 release with open weights, Tencent/Alibaba investment talks, $1.74/M tokens pricing
-- [[sources/amazon]] — E-commerce and cloud giant pivoting to voice/agent shopping; faces new challenge from in-content commerce platforms like Meta's Hatch
-- [[sources/amd]] — #2 AI chip designer after Nvidia; MI300 series challenges Nvidia dominance; faces pressure from custom silicon entrants (Alibaba M890, FuriosaAI)
-- [[sources/shopify]] — Leading e-commerce platform positioning for "agentic commerce"; racing with Meta's Hatch to own "buy from content" flow
-- [[sources/xai]] — Now under SpaceX ($250B acquisition), Musk distillation admission under oath, Pentagon classified network inclusion, CAISI pre-testing
-- [[sources/microsoft]] — $10B Japan AI investment, Agent Framework v1.0, MAI models, 8,750 buyouts, M365 E7 ($99/user/month) and Agent 365 ($15/user/month) GA, Pentagon classified network inclusion, Xbox Copilot kill, CoreAI team import, CAISI pre-testing
-- [[sources/perplexity]] — $500M revenue (5x growth), staff up 34%, "Computer" product, Perplexity Finance platform (40+ tools, 35 workflows, Bloomberg Terminal challenge)
-- [[sources/mistral]] — Mistral Ultra 2 (78.4% SWE-bench), Medium 3.5 (128B, reasoning toggle, 77.6% SWE-bench, Work Mode, Remote Agents), Vibe cloud coding agents, EU data residency positioning, EU AI Act €11.2M fine
-- [[sources/netomi]] — Agentic customer experience platform, $110M Series C (Accenture Ventures led), 40K req/s for Delta/NBA/MetLife
-- [[sources/tsmc]] — 3nm yield crisis (52% vs 75%), pauses Q3 AI chip orders, H200/MI350 affected
-- [[sources/github]] — Copilot Agent Tier $49/agent/month, first platform monetization of agent-scale usage
-- [[sources/ineffable-intelligence]] — Ex-DeepMind David Silver's $1.1B seed at $5.1B, RL superlearner thesis ("LLMs are fossil fuel"), 50 researchers hired in 72 hours, product undisclosed
-- [[sources/ibm]] — IBM Bob: AI-first development partner automating full SDLC, 80K+ internal users (~45% productivity gains), multi-model orchestration (Claude, Mistral, Granite); Think 2026: Sovereign Core, Concert, watsonx Orchestrate
-- [[sources/stripe]] — Agentic Commerce Suite (288 launches): Link Wallets for Agents, Streaming Payments, Google AI Mode partnership; positioning as "Visa of the agent economy"
-- [[sources/coinbase]] — 14% workforce cut (~700 jobs), "one-person teams," AI wrangler roles, CEO says AI lets engineers "ship in days what took weeks"
-- [[sources/sierra]] — AI agent startup for customer service; $950M at $15B valuation; $150M ARR; 40%+ Fortune 50 penetration
-- [[sources/elevenlabs]] — Leading voice AI company; $500M ARR, $11B Series D valuation; BlackRock, Nvidia NVentures, Salesforce Ventures; Sydney HQ for ANZ expansion; competes with xAI voice cloning and OpenAI GPT-Realtime-2
-- [[sources/isomorphic]] — Google's AI drug design subsidiary; $2.1B Series B (largest AI biotech round 2026); Thrive Capital lead; AlphaFold-derived models for pharmaceutical discovery
-- [[sources/recursive-superintelligence]] — Self-improving AI company; $650M at $4.65B valuation; Level 1 autonomous training systems; AMD+NVIDIA both invested (unusual pairing)
-- [[sources/mind-robotics]] — AI-powered industrial robotics; $400M funding; Kleiner Perkins lead; $1B+ total raised; top-tier VC syndicate (a16z, Accel, Redpoint, Greenoaks, Eclipse, Bain)
-- [[sources/thinking-machines-lab]] — Mira Murati's AI startup; first model TML-Interaction-Small (276B MoE, 200ms real-time multimodal) shipped May 11, 2026
-- [[sources/codeium]] — Company behind Windsurf IDE; Devin Cloud integration enables "always-on" agent execution beyond local sessions
-- [[sources/vercel]] — Next.js creator; ZeroLang programming language for AI agents released May 22, 2026
-- [[sources/apple]] — iOS 27 multi-model strategy; Siri taps GPT, Gemini, Claude — ends single-provider dependency
+## Sources (40)
+- [[sources/ai2]] — Ai2 is a Seattle-based AI research organization founded by the late Paul Allen. It is best known for OLMo, one of the most transparent open-source lan
+- [[sources/alibaba]] — Alibaba is a Chinese tech giant and the creator of the Qwen model family. In April 2026, Alibaba is in talks (alongside Tencent) to invest in DeepSeek
+- [[sources/amazon]] — Amazon is the world's largest e-commerce platform and cloud infrastructure provider (AWS). The company is pivoting toward voice and agent shopping, bu
+- [[sources/amd]] — AMD (Advanced Micro Devices) is the second-largest AI chip designer after Nvidia. The MI300 series represents AMD's first real challenge to Nvidia's A
+- [[sources/anthropic]] — Anthropic has emerged as the defining AI company of this period, driven by the unprecedented success of Claude Code which propelled annualized revenue
+- [[sources/apple]] — Apple's multi-model strategy for iOS 27 marks a significant shift from exclusive partnerships to a diversified AI approach. By bringing in Google Gemi
+- [[sources/baidu]] — Baidu launched Ernie 5.1 on May 9, 2026, claiming pre-training costs at just 6% of industry peers at similar scale. The model compresses parameters to
+- [[sources/codeium]] — Codeium is the company behind Windsurf, an AI-powered coding IDE that competes with Cursor, Claude Code, and OpenAI Codex. Codeium's key differentiato
+- [[sources/cognition]] — Cognition is an AI company creating Devin — an autonomous AI software engineer agent. In April 2026, Cognition is in talks to raise new funding at a $
+- [[sources/coinbase]] — Coinbase is the largest US cryptocurrency exchange. On May 5, 2026, CEO Brian Armstrong announced a 14% workforce reduction — approximately 660 to 700
+- [[sources/deepseek]] — DeepSeek has emerged as a significant AI laboratory known for competitive open-weight models and aggressive hiring. The company faced its biggest outa
+- [[sources/elevenlabs]] — ElevenLabs is the leading voice AI company, announcing $500M ARR (up from $350M at start of 2026) and a Series D at an $11 billion valuation. New inve
+- [[sources/furiosa-ai]] — FuriosaAI is a South Korean AI chip startup developing accelerators to challenge Nvidia's dominance in the AI hardware market. The company's new chip 
+- [[sources/github]] — GitHub is the dominant platform for AI-assisted coding, having crossed 275 million commits per week and 17 million AI agent PRs in March 2026. On Apri
+- [[sources/google]] — Google has deepened its role as an AI infrastructure provider and model competitor simultaneously. The company is investing up to $40 billion in Anthr
+- [[sources/ibm]] — IBM entered the AI development platform race with Bob, an AI-first development partner that automates the full software development lifecycle beyond c
+- [[sources/ineffable-intelligence]] — Ineffable Intelligence is an AI startup founded by ex-DeepMind researcher David Silver (co-author of the AlphaGo paper) that raised the largest seed r
+- [[sources/isomorphic]] — Isomorphic Labs is Google's AI-powered drug design subsidiary, spun out from DeepMind to apply AlphaFold-derived models to pharmaceutical discovery. T
+- [[sources/meta]] — Meta is executing the most aggressive workforce transformation in Big Tech, cutting 10% of employees (~8,000) while simultaneously raising capex guida
+- [[sources/microsoft]] — Microsoft is consolidating its position as the enterprise AI infrastructure gatekeeper through aggressive bundling and verticalization. The M365 E7 ($
+- [[sources/mind-robotics]] — Mind Robotics is an AI-powered industrial robotics platform that raised $400 million in May 2026 to deploy AI-driven robots in industrial settings. Th
+- [[sources/mistral]] — Mistral AI is a French AI lab positioning itself as the geopolitically neutral, regulatorily compliant European alternative to US AI labs. The company
+- [[sources/mozilla]] — Mozilla is an open-source software community best known for the Firefox web browser. In April 2026, Mozilla launched Thunderbolt — an enterprise self-
+- [[sources/netomi]] — Netomi is an agentic AI customer experience platform that deploys autonomous agents for enterprise customer service at scale. The company processes up
+- [[sources/nvidia]] — NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell generating $11 billion in Q4 FY2026 revenue and Vera Rubin announcing 
+- [[sources/openai]] — OpenAI is navigating the transition from research organization to commercial enterprise ahead of a potential IPO by end of 2026. The company completed
+- [[sources/perplexity]] — Perplexity has grown from an AI search engine to a full-stack AI platform. April 2026 saw the company achieve 5x revenue growth to $500M while only in
+- [[sources/recursive-superintelligence]] — Recursive Superintelligence is an AI software company focused on self-improving AI systems. The company raised $650 million in May 2026 at a $4.65 bil
+- [[sources/shopify]] — Shopify is the leading e-commerce platform powering millions of merchants worldwide. The company is positioning itself for "agentic commerce" — where 
+- [[sources/sierra]] — Sierra is an AI agent startup building autonomous customer service agents. In May 2026, the company raised $950 million led by GV and Tiger Global at 
+- [[sources/singapore]] — Singapore is positioning itself as the strategic gateway between US AI giants and Southeast Asia's 700M+ market. On May 21, 2026, Singapore announced 
+- [[sources/spacex]] — SpaceX acquired xAI for $250 billion in an all-stock transaction in April 2026, creating a $1.25 trillion "galactic AI entity." On May 6, 2026, SpaceX
+- [[sources/stripe]] — Stripe has positioned itself as the essential financial infrastructure for the emerging agent economy. At Stripe Sessions 2026, the company announced 
+- [[sources/tencent]] — Tencent is a Chinese technology conglomerate known for WeChat, gaming, and cloud services. The company is positioning itself as an AI innovator with p
+- [[sources/thinking-machines-lab]] — Thinking Machines Lab is Mira Murati's AI startup, formed after her departure from OpenAI. The lab shipped its first public model, TML-Interaction-Sma
+- [[sources/tomoro]] — Tomoro is an AI deployment company that OpenAI acquired in May 2026 as part of its launch of the Deployment Company. The acquisition brought 150 exper
+- [[sources/tsmc]] — Taiwan Semiconductor Manufacturing Company (TSMC) is the world's critical AI chip foundry, manufacturing AI accelerators for NVIDIA, AMD, Google (TPU)
+- [[sources/vast-data]] — Vast Data is an AI infrastructure startup backed by NVIDIA that provides data storage and management solutions optimized for AI workloads. The company
+- [[sources/vercel]] — Vercel is the company behind the Next.js web framework and Vercel AI SDK, known for making AI application deployment seamless. The company has expande
+- [[sources/xai]] — xAI has been consolidated into SpaceX following the $250 billion all-stock acquisition, creating a $1.25 trillion "galactic AI entity." On May 6, 2026
 
-- [[ideas/ai-utility-layer]] — May 24 convergence: MCP protocol victory + Gemini 3 price war + platform dependency unraveling = AI becomes utility layer
-- [[ideas/patch-debt]] — 100:1 ratio (10K vulnerabilities found vs 97 patched) reveals AI discovers vulnerabilities faster than humans can fix
-- [[ideas/privacy-as-ai-differentiator]] — Meta's Incognito Chat proves privacy is becoming a primary competitive axis in enterprise AI procurement
-- [[ideas/system-competition-shift]] — AI is transitioning from model competition to system competition; the moat is moving from benchmarks to deployability
-- [[ideas/ambient-ai-layer]] — OS-level AI integration war: OpenAI in PowerPoint, Apple opens iOS to rivals, Google lacks unified developer surface
-- [[ideas/open-platform-ai]] — Platform ecosystems opening to third-party AI: Microsoft non-exclusive 2032 OpenAI license, Apple Extensions framework
-
-
-- [[ideas/two-track-ai-future]] — Pentagon excludes Anthropic ($4B+ market); cements defense-first vs safety-first tracks; structurally permanent bifurcation
-- [[ideas/flash-first-strategy]] — Google's 76.2% Terminal-Bench score at half price; Flash-tier as primary growth driver not loss leader; challenges model hierarchy
-- [[ideas/anthropic-platform-pivot]] — $300M Stainless acquisition + Karpathy hire; response to Pentagon exclusion; model-only to platform strategy shift
 ## Timelines (3)
-- [[timelines/2026-03]] — March 2026: GTC 2026, Claude Mythos leak, GPT-5.4, MiMo-V2-Pro reveal, $122B OpenAI raise
-- [[timelines/2026-04]] — April 2026: Claude Mythos restricted, Claude Opus 4.7, Stanford HAI, Claude Mythos 5 (10T params), Cloud Next 2026, workforce cuts, Hinton UN warning
-- [[timelines/2026-05]] — May 2026: ARC-AGI-3 <1% reasoning ceiling, Pentagon "AI-first" contracts ("any lawful use," 1M+ personnel, Anthropic excluded), agent economy infrastructure (Stripe/IBM/OpenAI), IPI threat, Mistral Medium 3.5 + Vibe, Meta ARI "Android for robots," Sam Altman's three pillars, Oscars AI ban, agent infrastructure funding wave
+- [[timelines/2026-03]] — The week opened with NVIDIA's GTC 2026 unveiling Vera Rubin (10x performance per watt over Blackwell), the NemoClaw stack for OpenClaw agents, and phy
+- [[timelines/2026-04]] — April opened with the most ironic headline of 2026: Anthropic accidentally leaked Claude Code's 512,000-line TypeScript source via npm .map misconfigu
+- [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 
-## Entities (178)
-- [[entities/antigravity-cli]] — type: product — Google closed-source successor to Gemini CLI; powers managed agents in Gemini API; second major open-source retreat after Gemma 3
-- [[entities/symjack]] — type: vulnerability — Critical RCE via symlink hijacking in AI coding agents; exploits display-to-filesystem gap; affects Claude Code, Cursor, Copilot, Grok Build
-- [[entities/trustfall]] — type: vulnerability — Weaponizes folder trust prompt in AI coding agents; exploits reflexive user trust; affects Claude Code, Cursor, Copilot, Grok Build
-- [[entities/mini-shai-hulud]] — type: vulnerability — Persistence via settings file injection in AI coding agents; re-executes across sessions; affects Claude Code, Cursor, Copilot, Grok Build
-- [[entities/heretic]] — type: tool — Guardrail stripping tool downloaded 13M+ times; removes safety from Gemma 3, Llama 3.3 in under 10 minutes
-- [[entities/tomoro]] — type: company — AI deployment company acquired by OpenAI for $4B+ Deployment Company; 150 forward deployed engineers specializing in enterprise workflows
+## Entities (177)
+- [[entities/a2a-protocol]] — type: protocol — The Agent-to-Agent (A2A) Protocol is Google's protocol for inter-agent communication, launched April 2025 and celebrating its one-year anniversary in 
+- [[entities/agent-365]] — type: product — Microsoft's standalone AI agent product, launched GA on May 1, 2026 at $15/user/month. Part of the first new enterprise Microsoft license architecture
+- [[entities/agent-squad]] — type: framework — A flexible multi-agent orchestration framework featuring intelligent intent classification and a SupervisorAgent that coordinates teams of specialized
+- [[entities/agentclaw]] — type: repo — AgentClaw is a declarative agent workflow framework that turns one-sentence ideas into reusable capabilities. Features include computer/browser contro
+- [[entities/agenvoy]] — type: repo — Agenvoy is an agentic runtime written in Go with multi-provider concurrent dispatch, self-improving error memory via ToriiDB, and OS-native sandboxing
+- [[entities/ai-agent-starter]] — type: repo — A multi-provider AI agent framework supporting OpenAI, Anthropic, and Ollama with function calling, streaming, and conversation memory capabilities.
+- [[entities/alibaba-m890]] — type: chip — The M890 is Alibaba's latest AI chip designed to challenge Nvidia's dominance in the AI accelerator market, specifically targeting data center inferen
+- [[entities/alpha-proof-nexus]] — type: model — AlphaProof Nexus is Google DeepMind's mathematical reasoning model specifically designed to solve open problems in mathematics. It combines reinforcem
+- [[entities/alphaevolve]] — type: model — AlphaEvolve is a Gemini-powered coding agent developed by Google DeepMind that leverages evolutionary computation to discover novel algorithms and opt
+- [[entities/alphora]] — type: framework — Alphora is a production-ready, full-stack framework for building composable AI agents. It features a built-in secure code sandbox, typed streaming wit
+- [[entities/antigravity-cli]] — type: product — Antigravity CLI is Google's closed-source successor to the open-source Gemini CLI, serving as the foundation for Google's managed AI agents in the Gem
+- [[entities/arc-agi-3]] — type: benchmark — ARC-AGI-3 is an interactive reasoning benchmark from the ARC Prize Foundation designed to test genuine reasoning capabilities rather than pattern matc
+- [[entities/atomr-infer]] — type: framework — Atomr Infer is a native Rust multi-runtime inference layer built as a supervised actor system. It provides a unified interface for local GPU runtimes 
+- [[entities/automv]] — type: repo — AutoMV is a training-free multi-agent system that auto-generates full-length music videos from songs. It uses Screenwriter, Director, and Verifier age
+- [[entities/autoresearch]] — type: repo — AutoResearch is an autonomous LLM research agent built by Andrej Karpathy that experiments overnight on a single GPU. Given a small training codebase 
+- [[entities/aws-mcp-server]] — type: product — The AWS MCP Server is Amazon's managed remote Model Context Protocol server that reached general availability on May 6, 2026. It provides AI agents se
+- [[entities/base-mcp]] — type: protocol — Base MCP (Model Context Protocol) is Coinbase's extension of Anthropic's MCP protocol, enabling AI models like Claude and ChatGPT to transfer funds, s
+- [[entities/blackwell-architecture]] — type: framework — NVIDIA's current-generation AI computing architecture named after AI pioneer David Blackwell. Achieves 3.5 GHz clock speeds and 1.8 TB/s memory bandwi
+- [[entities/c2pa-protocol]] — type: protocol — The Coalition for Content Provenance and Authenticity standard. An industry initiative for digital content provenance, enabling detection of AI-genera
+- [[entities/caisi]] — type: protocol — CAISI (Center for AI Standards and Innovation) is a NIST division within the US Commerce Department that conducts pre-deployment safety and security e
+- [[entities/cambridge-neuromorphic-chip]] — type: product — A neuromorphic computing chip developed by scientists at the University of Cambridge, using hafnium-based memristors that mimic brain neuron connectio
+- [[entities/cc-design]] — type: framework — cc-design is a high-fidelity HTML design and prototype guidance skill for AI agents. It provides structured methodologies for creating polished, produ
+- [[entities/cc-sdd]] — type: repo — cc-sdd (Claude Code Spec-Driven Development) is an open-source tool that enforces spec-first coding inside Claude Code. It rejects code that doesn't m
+- [[entities/chatgpt-powerpoint-addin]] — type: product — A beta Microsoft PowerPoint add-in released by OpenAI that embeds ChatGPT directly into the Microsoft Office productivity suite. Available for both fr
+- [[entities/claude-code]] — type: product — Claude Code is Anthropic's CLI coding assistant that enables developers to build software faster by running agents that can browse, edit, and write co
+- [[entities/claude-cowork]] — type: product — Claude Cowork is Anthropic's enterprise agentic AI product for non-coding professional workflows, deployed alongside Claude Code as part of the compan
+- [[entities/claude-design]] — type: product — Claude Design is an AI-powered design tool launched by Anthropic on April 17, 2026. It turns conversational prompts into polished prototypes, slide de
+- [[entities/claude-haiku-4-5]] — type: model — Claude Haiku 4.5 is Anthropic's fast and cost-efficient model, added to GitHub Copilot Cloud Agent on May 18, 2026. It's positioned for simple coding 
+- [[entities/claude-mythos]] — type: model — Claude Mythos is Anthropic's most advanced AI model, specifically designed for cybersecurity applications. Internal documents describe it as "the most
+- [[entities/claude-opus-4-6]] — type: model — Claude Opus 4.6 is Anthropic's flagship model released in early April 2026, achieving 80.8% on SWE-bench — a near-tie with Google Gemini 3.1 Pro at 80
+- [[entities/claude-opus-4-7]] — type: model — Claude Opus 4.7 is Anthropic's flagship model released April 16-17, 2026. It represents a significant leap in coding capability with 87.6% on SWE-benc
+- [[entities/claude-security]] — type: product — An AI-powered security scanner launched by Anthropic in public beta on May 1, 2026. It reasons through codebases like a human security researcher, tra
+- [[entities/claw-code]] — type: repo — claw-code is a clean-room Python (later Rust) implementation of Claude Code's agent harness architecture, built from scratch without copying proprieta
+- [[entities/cocoindex]] — type: repo — cocoindex is an open-source incremental engine for long-horizon AI agents. It provides a framework for building persistent, stateful agents that maint
+- [[entities/codex]] — type: product — Codex is OpenAI's coding agent, the primary product in their enterprise AI strategy. It reached 3 million weekly active users by April 2026.
+- [[entities/colorado-sb-26-189]] — type: legislation — Colorado's "AI Act" signed by Governor Jared Polis on May 14, 2026, replacing the state's 2024 AI law. It mandates notifying individuals when AI is us
+- [[entities/colossus-1]] — type: product — SpaceX's Colossus 1 is a 300+ megawatt data center in Memphis, Tennessee, housing 220,000+ NVIDIA GPUs. It is the physical infrastructure backing Anth
+- [[entities/context-mode]] — type: product — An MCP server for context window optimization in AI coding agents. Sandboxes tool output to achieve up to 98% context reduction across 12+ platforms i
+- [[entities/copilot-agent-tier]] — type: product — GitHub's new Copilot Agent Tier pricing model announced April 29, 2026 — $49 per autonomous agent per month, with free-tier agent usage capped at 500 
+- [[entities/cordenex]] — type: repo — Cordenex is an autonomous AI software engineer for the terminal, inspired by Claude Code with multi-agent workflows. It features collaborative coding,
+- [[entities/corecoder]] — type: repo — A minimal AI coding agent implemented in approximately 1,400 lines of Python, inspired by Claude Code. It implements search-and-replace editing, paral
+- [[entities/cursor]] — type: product — AI-powered coding IDE that pivoted to agent orchestration with Cursor 3. Competes directly with Claude Code and OpenAI Codex in the rapidly consolidat
+- [[entities/deepgemm]] — type: framework — DeepGEMM is DeepSeek's clean and efficient FP8 (8-bit floating point) General Matrix Multiply (GEMM) kernels library with fine-grained scaling for mod
+- [[entities/deepseek-v4]] — type: model — DeepSeek-V4 is DeepSeek's flagship model family released April 24, 2026. Available in three variants:
+- [[entities/dexter]] — type: repo — Dexter is an autonomous AI agent for deep financial research, described as "Claude Code, but for finance." It features a self-validating research work
+- [[entities/dr-venus]] — type: model — DR-Venus is a 4-billion-parameter deep research agent trained entirely on open data (10,000 samples). It establishes a new small-model frontier on dee
+- [[entities/dulus]] — type: repo — Dulus is a lightweight autonomous AI agent inspired by Claude Code. It supports multiple LLM providers (Claude, GPT, Gemini, DeepSeek, Qwen), includes
+- [[entities/elephant-agent]] — type: repo — Elephant Agent is a "Personal-Model First Self Evolving AI Agent" — a self-improving agent that evolves based on user interactions and learns from its
+- [[entities/elf]] — type: repo — ELF (Embedded Language Flows) is a JAX implementation of continuous diffusion language models based on continuous-time Flow Matching. Unlike discrete 
+- [[entities/eliezer]] — type: repo — Eliezer is a tiny (~6,000 lines of TypeScript) self-hosted AI agent with a self-editing protocol — it can modify its own source code. Features include
+- [[entities/ernie-5-1]] — type: model — Baidu's Ernie 5.1 is a Chinese large language model featuring "multi-dimensional elastic pre-training technology" that reduces pre-training costs to j
+- [[entities/evonic]] — type: repo — evonic is an open agentic AI platform for designing, deploying, and orchestrating intelligent agents. Features include multi-agent swarms, workplace e
+- [[entities/forge]] — type: repo — An open-source reliability layer for self-hosted LLM tool-calling. Forge takes an 8B model from 53% to 99% on agentic tasks through guardrails includi
+- [[entities/frona]] — type: repo — frona is a self-hosted personal AI assistant platform for creating autonomous agents. It features per-principal sandboxing with policy-driven syscall 
+- [[entities/future-agi]] — type: repo — Open-source end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Includes tracing, evals, simulations, datasets
+- [[entities/gaai-framework]] — type: repo — GAAI-Framework (Generative AI Agent Interface Framework) is an open-source framework for LLM-driven spec generation with deterministic validation. It 
+- [[entities/gb300]] — type: product — NVIDIA's latest GPU architecture, entering mass production at TSMC's N3P node in late April 2026 with shipments to priority hyperscaler customers (Mic
+- [[entities/gemini-3-1-flash-tts]] — type: product — Gemini 3.1 Flash TTS is Google's text-to-speech release from April 2026 (approximately April 15-20). It offers granular control over speaking style, p
+- [[entities/gemini-3-1-pro]] — type: model — Gemini 3.1 Pro is Google's flagship model released in early 2026, achieving 80.6% on SWE-bench — a near-tie with Claude Opus 4.6 at 80.8% (later super
+- [[entities/gemini-3-5-flash]] — type: model — Google's frontier-level model at half the price, approximately 4× faster than other frontier models. Released at Google I/O 2026 as the API-centric an
+- [[entities/gemini-3-deep-think]] — type: model — Google's advanced reasoning mode for Gemini 3 Ultra, providing extended test-time compute for complex analytical tasks. In April 2026, it identified l
+- [[entities/gemini-3]] — type: model — Google's frontier LLM released May 20, 2026, delivering 2.8x inference speed and 47% lower price compared to its predecessor. At $0.53/M input tokens,
+- [[entities/gemini-cli]] — type: product — Gemini CLI is Google's open-source terminal agent released on April 7, 2026. It supports 1M token context windows and includes MCP (Model Context Prot
+- [[entities/gemini-enterprise-agent-platform]] — type: product — Google's Gemini Enterprise Agent Platform is a product announced at Cloud Next 2026 for managing thousands of AI agents at scale. It represents Google
+- [[entities/gemini-magic-pointer]] — type: product — Gemini Magic Pointer is Google DeepMind's reimagining of the computer mouse cursor as an AI-powered, context-aware tool. Announced on May 12, 2026, it
+- [[entities/gemini-omni]] — type: model — Google's world model for physical simulation. Released at Google I/O 2026, Gemini Omni generates video outputs for real-world interaction — competing 
+- [[entities/gemini-robotics-er-1-6]] — type: model — Google DeepMind's embodied reasoning model for robots, released as a major upgrade with the ability to read complex industrial gauges and pressure met
+- [[entities/gemini-spark]] — type: product — Google's consumer AI agent for daily tasks. Released at Google I/O 2026 to compete directly with Anthropic's Claude Code and OpenAI's Operator in the 
+- [[entities/gemma-4]] — type: model — Gemma 4 is Google's most capable open model family, released April 2, 2026 under Apache 2.0 license — the first fully permissive Gemma release.
+- [[entities/gemtts]] — type: product — GemTTS is an agent-friendly Gemini text-to-speech CLI written in Rust. It supports expressive tags like [whispers], [laughs], [warmly], multi-speaker 
+- [[entities/github-mcp-server]] — type: product — The GitHub MCP Server's secret scanning capability reached general availability on May 13, 2026, after a public preview since March. It allows AI codi
+- [[entities/gitnexus]] — type: product — GitNexus is a zero-server code intelligence engine that indexes any codebase into a knowledge graph — mapping dependencies, call chains, and execution
+- [[entities/glm-ocr]] — type: repo — GLM-OCR is an accurate, fast, and comprehensive multimodal OCR built on the GLM-V encoder-decoder architecture. At only 0.9B parameters, it achieves 9
+- [[entities/google-adk-python]] — type: framework — An open-source, code-first Python framework for building AI agents. It enables developers to build, evaluate, and deploy sophisticated multi-agent sys
+- [[entities/googlebook]] — type: product — Googlebook is a new laptop category announced by Google on May 12, 2026. Built on Android with ChromeOS integration, it features "Magic Pointer" for c
+- [[entities/gpt-5.4-cyber]] — type: model — GPT-5.4-Cyber is OpenAI's defensive cybersecurity model variant, fine-tuned specifically for security work. It has lowered refusal boundaries compared
+- [[entities/gpt-5.4]] — type: model — GPT-5.4 is OpenAI's model family released in March 2026, available in multiple variants optimized for different use cases: Thinking (reasoning), Mini/
+- [[entities/gpt-5.5-cyber]] — type: model — GPT-5.5-Cyber is OpenAI's cybersecurity variant built on the GPT-5.5 flagship model. Released with restricted access on May 1, 2026, to verified defen
+- [[entities/gpt-5.5]] — type: model — GPT-5.5 (codename "Spud") is OpenAI's latest flagship model released on April 23, 2026 — just 49 days after GPT-5.4, OpenAI's shortest release cycle e
+- [[entities/gpt-realtime-2]] — type: model — OpenAI's GPT-Realtime-2 is the first voice model with GPT-5-class reasoning capabilities, featuring a 128K context window — previous voice models were
+- [[entities/gpt-rosalind]] — type: model — GPT-Rosalind is OpenAI's reasoning model built specifically for life sciences — biology, drug discovery, and translational medicine. Launched April 16
+- [[entities/grok-4-3]] — type: model — Grok 4.3 is xAI's successor to Grok 3, launched May 6, 2026 with an 83% price cut. The model adds video input (up to 5 minutes), document output (PDF/
+- [[entities/grok-build]] — type: tool — Grok Build is xAI's AI coding agent, positioned as a competitor to Claude Code, Cursor, and GitHub Copilot. It allows developers to delegate complex c
+- [[entities/grok-voice-think-fast-1-0]] — type: model — xAI's flagship voice model released April 25, scoring 67.3% on τ-voice Bench — outperforming Gemini, GPT Realtime, and its own predecessor across reta
+- [[entities/guard-act]] — type: legislation — The GUARD (Growing Up Safe with Responsible Development) Act, passed the Senate Judiciary Committee unanimously on April 30, 2026. It requires AI comp
+- [[entities/harmonist]] — type: repo — A portable AI agent orchestration framework with mechanical protocol enforcement, developed by GammaLabTechnologies. It features 186 curated specialis
+- [[entities/hatch]] — type: product — Hatch is Meta's OpenClaw-inspired AI assistant being built for Instagram to enable agentic shopping — allowing users to purchase items seen in Reels m
+- [[entities/heretic]] — type: tool — Heretic is a tool that can remove safety guardrails from open-source AI models in under 10 minutes. Discovered by researchers in May 2026, it has been
+- [[entities/hidream-o1-image]] — type: model — HiDream-ai/HiDream-O1-Image is a natively unified image generative foundation model built on Pixel-level Unified Transformer (UiT). It supports text-t
+- [[entities/hive]] — type: repo — Hive is a multi-agent harness for production AI workloads. It features a graph-based execution DAG for agent coordination, role-based evolving memory,
+- [[entities/ibm-bob]] — type: product — IBM Bob is an AI-first development partner that automates the full software development lifecycle (SDLC) beyond code generation. Built on multi-model 
+- [[entities/ibm-sovereign-core]] — type: product — IBM's runtime policy embedding system that enforces data sovereignty and regulatory compliance at the infrastructure level rather than as an add-on. E
+- [[entities/incognito-chat]] — type: product — Incognito Chat is Meta's end-to-end encrypted AI conversation feature, announced on May 13, 2026. Meta claims it is "the first major AI product where 
+- [[entities/ios-27-siri]] — type: product — The biggest Siri overhaul in years, coming at WWDC 2026 with the tagline "Coming Bright Up". iOS 27 introduces a dedicated Siri app with persistent ch
+- [[entities/isaac-gr00t-n1-7]] — type: model — NVIDIA's foundation model for generalist robots. Vision-language-action (VLA) model designed to enable humanoid robots to understand and execute a wid
+- [[entities/ising]] — type: model — Ising is NVIDIA's open quantum AI model family, launched April 14, 2026. It is the world's first open-source quantum AI model family. Ising models del
+- [[entities/kohakuterrarium]] — type: framework — KohakuTerrarium is a general-purpose AI agent framework with a "Creature" abstraction (6-module agent model), built-in session persistence, TUI and We
+- [[entities/krea-2]] — type: model — Krea 2 is Krea's first foundation image model built completely from scratch. It features advanced style transfer with the ability to guide, mix, stren
+- [[entities/llama-4-405b]] — type: model — Meta's open-weight flagship model released May 20, 2026, scoring 85.9% on MMLU-Pro as a competitive alternative to closed frontier models. Positioned 
+- [[entities/llama-4]] — type: model — Llama 4 Scout and Maverick are Meta's open-weight MoE models released April 5, 2026, with groundbreaking context windows.
+- [[entities/long-horizon]] — type: repo — An autonomous AI project builder that can create entire projects with self-looping execution and graph-connected memory that grows like a brain. Featu
+- [[entities/m365-e7]] — type: product — Microsoft's new enterprise licensing tier launched GA on May 1, 2026 at $99/user/month. Bundles E5 + Copilot + Agent 365 + Entra Suite into a single s
+- [[entities/magma]] — type: model — Microsoft's foundation model for multimodal AI agents, presented at CVPR 2025. Designed to handle both digital UI navigation (virtual tasks) and physi
+- [[entities/mai-image-2.5]] — type: model — Microsoft's text-to-image model launched on May 28, 2026, ranking third on Arena leaderboard. Major improvements in text rendering, cartoon generation
+- [[entities/maia-ai-chips]] — type: product — Microsoft's custom-designed AI accelerator silicon, developed to reduce dependence on NVIDIA GPUs and provide differentiated compute for Azure AI work
+- [[entities/mcp-protocol]] — type: protocol — The Model Context Protocol (MCP) is Anthropic's open protocol for connecting AI models to data sources and tools. It has become the dominant standard 
+- [[entities/mercury-agent]] — type: framework — Mercury Agent is a soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. It runs 24/7 from CLI or Telegram, re
+- [[entities/microsoft-copilot]] — type: product — Microsoft's AI assistant integrated across its product ecosystem — from Windows to Office 365 to Azure. Positioned as the enterprise AI standard, Copi
+- [[entities/microsoft-legal-agent]] — type: product — Microsoft Legal Agent is a specialized Copilot built for clause-by-clause contract review inside Microsoft Word, launched May 1, 2026. Unlike generic 
+- [[entities/mimo-v2-pro]] — type: model — MiMo-V2-Pro is Xiaomi's flagship AI model, a trillion-parameter model with 42 billion active parameters. It was tested anonymously on OpenRouter as "H
+- [[entities/mini-shai-hulud]] — type: vulnerability — Mini Shai-Hulud is a security vulnerability discovered in May 2026 that achieves persistence in AI coding agents by injecting malicious settings files
+- [[entities/minimax-m2]] — type: model — MiniMax's MoE (Mixture of Experts) model built for Max coding and agentic workflows. 230B total parameters with 10B active parameters, optimized for c
+- [[entities/mirage]] — type: repo — strukto-ai/mirage is a unified virtual filesystem for AI agents. It mounts services like S3, Google Drive, Slack, Gmail, Redis, GitHub into a single f
+- [[entities/mistral-medium-3-5]] — type: model — Mistral Medium 3.5 is a 128B dense transformer (not MoE) that unifies chat, reasoning, and code capabilities in a single model with a configurable rea
+- [[entities/mistral-ultra-2]] — type: model — Mistral Ultra 2 is a flagship enterprise coding model released by Mistral AI on April 29, 2026. It scores 78.4% on SWE-bench Verified at €2 per millio
+- [[entities/ml-intern]] — type: repo — An open-source ML engineer agent from Hugging Face that reads papers, trains models, and ships ML models autonomously. Designed to handle the full mac
+- [[entities/moss-tts]] — type: repo — MOSS-TTS is an open-source text-to-speech model family developed by OpenMOSS, supporting 20+ languages with voice cloning from just 3 seconds of audio
+- [[entities/mova]] — type: repo — MOVA is an open-source foundation model from OpenMOSS that generates synchronized video and audio in a single inference pass, breaking the "silent era
+- [[entities/multica]] — type: repo — multica is an open-source managed agents platform that turns coding agents into real teammates. It supports Claude Code, Codex, OpenClaw, OpenCode, He
+- [[entities/muse-spark]] — type: model — Muse Spark is Meta's first proprietary AI model, released April 8, 2026, breaking with the company's open-source tradition since 2023. It ranks 4th on
+- [[entities/nanobot]] — type: repo — An ultra-lightweight personal AI agent built in approximately 4,000 lines of Python — 99% smaller than mainstream alternatives like Claude Code (512K 
+- [[entities/natural-language-autoencoders]] — type: product — Anthropic's Natural Language Autoencoders are a breakthrough interpretability tool that translates Claude's internal numerical activations into human-
+- [[entities/nemo-claw]] — type: repo — NemoClaw is NVIDIA's open-source reference stack for running OpenClaw securely with the NVIDIA OpenShell runtime. Released as an alpha preview in Marc
+- [[entities/niefa]] — type: repo — Neural Interference Engine for Agents — an open-source autonomous agent runtime with goal-to-execution pipeline and x402 paid endpoints for agent-to-a
+- [[entities/olmo]] — type: model — OLMo (Open Language Model) is a fully open-source large language model developed by the Allen Institute for AI (Ai2). Unlike most frontier models, OLM
+- [[entities/omnivoice]] — type: repo — OmniVoice is an open-source multilingual voice synthesis model from k2-fsa supporting 600+ languages using a diffusion language model architecture. It
+- [[entities/open-agent-sdk-go]] — type: repo — A lightweight open-source Go SDK for building AI agents. It runs the full agent loop in-process with 32 built-in tools, MCP support, session managemen
+- [[entities/openai-daybreak]] — type: product — Daybreak is OpenAI's cybersecurity platform built on GPT-5.5 variants, launched on May 12, 2026, to challenge Anthropic's Mythos dominance in AI-power
+- [[entities/openclaw]] — type: repo — OpenClaw is an open-source autonomous agent framework that reached 302,000 stars as the fastest-growing open-source project in GitHub history.
+- [[entities/openhands-sdk]] — type: repo — OpenHands/software-agent-sdk is a clean, modular SDK for building AI agents that work with code. It supports one-off tasks, routine maintenance, and m
+- [[entities/opensquilla]] — type: repo — opensquilla/opensquilla is a token-efficient AI agent designed to deliver "same budget, higher intelligence density." It features a four-tier cognitiv
+- [[entities/openswarm]] — type: repo — OpenSwarm is a fully open-source multi-agent system built on Agency Swarm. It creates polished deliverables — slide decks, reports, visualizations, do
+- [[entities/ouroboros]] — type: repo — ouroboros is an open-source "Agent OS" that shifts the agent paradigm from prompt engineering to specification-driven behavior. It provides a declarat
+- [[entities/perceptron-mk1]] — type: model — Mk1 ("Mark One") is Perceptron AI's physical AI model for video understanding and embodied reasoning. Founded by former FAIR scientists, it matches fr
+- [[entities/perplexity-computer]] — type: product — Perplexity Computer is an always-on AI assistant that runs locally on Mac, launched April 17, 2026. It manages files, controls native apps like iMessa
+- [[entities/perplexity-finance]] — type: product — Perplexity Finance is an AI platform targeting financial analysts and investment firms, launched May 6, 2026. It integrates licensed data from Morning
+- [[entities/pixelle-video]] — type: repo — Pixelle-Video is an open-source AI-powered fully automated short video engine that handles scriptwriting, AI imagery generation, voice synthesis, back
+- [[entities/ppt-master]] — type: repo — ppt-master is an open-source tool that uses AI to generate natively editable PowerPoint presentations from any document input. Unlike most AI presenta
+- [[entities/prithvi]] — type: model — NASA's Prithvi is the first geospatial AI foundation model deployed in space, uploaded to the Kanyini satellite and the International Space Station (I
+- [[entities/program-bench]] — type: benchmark — ProgramBench is a benchmark from Meta AI Research that tests whether language models can rebuild programs from scratch — specifically, whether AI agen
+- [[entities/project-deal]] — type: product — Anthropic's proof-of-concept experiment for AI-to-AI economic activity. Claude models represented both buyers and sellers in a classified marketplace,
+- [[entities/project-glasswing]] — type: product — Project Glasswing is a restricted-access cybersecurity consortium launched by Anthropic to share the defensive insights derived from Claude Mythos dis
+- [[entities/pydantic-ai]] — type: framework — An AI agent framework using the Pydantic data validation library approach. Version 2.0 introduces "harness-first design" with capabilities as the core
+- [[entities/qwen-3-6]] — type: model — Qwen 3.6-35B-A3B is Alibaba's efficient coding model released April 20, 2026. It uses only 3B active parameters per inference pass, making it runnable
+- [[entities/redis-context-engine]] — type: product — Redis Context Engine is a memory layer for enterprise AI agents, launched May 18, 2026. It provides three core tools: Context Retriever (semantic sear
+- [[entities/remy]] — type: product — Remy is a new agentic AI system codenamed "Remy" that Google is developing for its Gemini platform. Unlike competing agents optimized for autonomous e
+- [[entities/ros-llm]] — type: framework — A framework integrating Large Language Models with the Robot Operating System (ROS). The SAE white paper and Nature Machine Intelligence publication o
+- [[entities/ruflo]] — type: product — Ruflo is an open-source agent orchestration platform built for Claude Code that deploys intelligent multi-agent swarms with self-learning memory, fede
+- [[entities/scenema-audio]] — type: product — Scenema Audio is a zero-shot expressive voice cloning and speech generation system. It can generate anything from short clips to full-length audiobook
+- [[entities/scientific-agent-skills]] — type: repo — K-Dense-AI/scientific-agent-skills is a collection of 133 ready-to-use scientific skills for AI agents covering bioinformatics, genomics, drug discove
+- [[entities/sentinel]] — type: repo — A phantom tool-call detector for autonomous LLM agents. Sentinel uses layered detection—registry exact match, embedding similarity, and Gemini Flash v
+- [[entities/serena]] — type: product — Serena is an MCP toolkit providing semantic code retrieval, editing, refactoring, and debugging across 40+ languages. It operates at the symbol level 
+- [[entities/siri]] — type: product — Siri is Apple's voice assistant, originally launched in 2011, now undergoing a fundamental rebuild for iOS 27 via knowledge distillation from Google's
+- [[entities/spec-kit]] — type: repo — Spec-Kit is an open-source JSON-based agent specification and testing framework. It provides deterministic validation for agent behavior, cost trackin
+- [[entities/spud]] — type: model — Spud is the internal codename for OpenAI's GPT-5.5 model family, referencing the model during its pretraining phase and subsequent enterprise pivot. T
+- [[entities/stainless-sdk]] — type: product — The most popular TypeScript SDK for building Claude-powered applications. Acquired by Anthropic for $300M on May 23, 2026, the SDK is used by thousand
+- [[entities/stripe-agentic-commerce]] — type: product — Stripe's comprehensive agentic commerce platform announced at Stripe Sessions 2026, comprising 288 new products centered on enabling AI agents to tran
+- [[entities/substrate]] — type: framework — Substrate is a Kubernetes-based system for managing agent-like workloads. It multiplexes actors onto workers to achieve high scale with lower latency,
+- [[entities/symjack]] — type: vulnerability — SymJack is a critical security vulnerability discovered in May 2026 that exploits the display-to-filesystem gap in AI coding agents. The attack techni
+- [[entities/symphony]] — type: protocol — OpenAI's open-source specification for orchestrating Codex coding agents at scale. The core model: every open task gets a dedicated agent; agents run 
+- [[entities/synthid]] — type: protocol — Google's invisible watermarking technology for AI-generated images. OpenAI adopted SynthID in May 2026 as part of joining the C2PA standard, embedding
+- [[entities/t2i-l2p]] — type: method — L2P (Latent to Pixel) is Tencent's method for transferring latent diffusion models into pixel-space generation, removing the VAE bottleneck while main
+- [[entities/terminal-bench-2]] — type: benchmark — A benchmark for evaluating AI model performance on terminal/command-line tasks, measuring practical system administration and DevOps capabilities. GPT
+- [[entities/thunderbolt]] — type: product — Thunderbolt is Mozilla's enterprise self-hosted AI client, released April 16, 2026 by Mozilla subsidiary MZLA. It is a cross-platform open-source AI c
+- [[entities/tml-interaction-small]] — type: model — TML-Interaction-Small is Thinking Machines Lab's first public model — a 276B-parameter mixture-of-experts (MoE) model with 12B active parameters. It p
+- [[entities/tpu-8th-gen]] — type: product — Google's 8th generation Tensor Processing Units (TPU 8t and TPU 8i) announced at Cloud Next 2026, offering 3x the processing power of the previous Iro
+- [[entities/tradingagents]] — type: repo — TradingAgents is an open-source multi-agent LLM framework for autonomous financial trading, reaching 54.6K stars on GitHub. The project deploys specia
+- [[entities/trustfall]] — type: vulnerability — TrustFall is a critical security vulnerability discovered in May 2026 that weaponizes the "folder trust" prompt mechanism in AI coding agents. The att
+- [[entities/trymeka-agent]] — type: repo — trymeka/agent is a state-of-the-art autonomous computer-using agent achieving 72.7% on the WebArena Benchmark. Unlike browser-layer screenshot agents,
+- [[entities/uk-govuk-chatbot]] — type: product — The UK government's AI chatbot integrated into the GOV.UK App (563K users). Built on Anthropic's Claude LLM, it provides instant answers from 80,000 p
+- [[entities/vera-rubin]] — type: product — Vera Rubin is NVIDIA's next-generation AI platform announced at GTC 2026, offering 10x performance per watt over Blackwell.
+- [[entities/vibe]] — type: product — Vibe is Mistral AI's suite of cloud coding agents, bundled with the Mistral Medium 3.5 release. It represents Mistral's bet that enterprises want vert
+- [[entities/vita-1-5]] — type: model — VITA-MLLM's multimodal model achieving GPT-4o level real-time vision and speech interaction. NeurIPS 2025 paper presenting advances in end-to-end visi
+- [[entities/web-design-skill]] — type: framework — web-design-skill is an AI agent skill that transforms AI-generated web pages from "functional" to "stunning." It provides design guidance and implemen
+- [[entities/webwright]] — type: repo — Webwright is a terminal-based web agent harness developed by Microsoft, achieving state-of-the-art results: 86.7% on Online-Mind2Web and 60.1% on Odys
+- [[entities/windsurf-2]] — type: product — Codeium's AI-powered coding IDE that introduced "always-on" cloud execution with Devin Cloud integration. Users can dispatch tasks to Devin's cloud en
+- [[entities/zerolang]] — type: framework — A programming language designed specifically for AI agents. ZeroLang features agent-first learnability (agents can learn it faster than other language
 
+## Ideas (64)
+- [[ideas/agent-control-interface-wars]] — Google's Remy reveals a philosophical split in agent UX design that will define how enterprises adopt autonomous AI. While OpenAI's Operator and Anthr
+- [[ideas/agent-democratization]] — Open-source agent frameworks are rapidly democratizing access to autonomous AI capabilities. The Claude Code leak's rapid replication by claw-code (10
+- [[ideas/agent-e-commerce]] — Anthropic's Project Deal demonstrates that AI agents can autonomously negotiate, bid, and transact for real goods and real money. When agents can repr
+- [[ideas/agent-economics]] — The agent economy is reaching an inflection point where platforms that previously provided free infrastructure for AI agents are beginning to monetize
+- [[ideas/agent-economy-infrastructure]] — On May 5, 2026, three major product launches from three different companies converged on the same thesis: the AI layer is moving from "tool that human
+- [[ideas/agent-governance-layer-wars]] — The most valuable layer in the agentic AI stack may not be the models or the agents themselves, but the governance layer that controls, monitors, and 
+- [[ideas/agent-infrastructure-layer]] — The three trending GitHub repos on May 12, 2026 — Mirage (storage abstraction), OpenSquilla (memory abstraction), and HiDream (multimodal generation) 
+- [[ideas/agent-verticalization]] — The AI agent layer is consolidating not into a single general-purpose platform, but into profession-specific and workflow-specific verticals. Microsof
+- [[ideas/agentic-catch-up-game]] — Google and Meta are both playing catch-up in the agentic interface layer, racing to ship competitive products against Anthropic's Claude Code and Open
+- [[ideas/agentic-is-default]] — May 16, 2026 marks the moment when "agentic" stopped being a product category and became the default interface paradigm. Claude Code's Agent View tran
+- [[ideas/agentic-shift]] — May 21, 2026 crystallizes a fundamental transition in AI: from "tool that answers questions" to "agent that does things on your behalf." This isn't in
+- [[ideas/ai-creative-regulation]] — A global regulatory consensus is crystallizing around a bifurcated approach to AI in creative industries: regulate the "creative core" (acting, writin
+- [[ideas/ai-governance-urgency]] — AI capability is outpacing governance at an accelerating rate. Nobel laureate Geoffrey Hinton's UN warning on April 24 — "if you ever went out with a 
+- [[ideas/ai-job-displacement]] — The AI boom is creating a structural contradiction: companies collectively spending $650B on AI infrastructure while simultaneously eliminating the wo
+- [[ideas/ai-layoff-template]] — Coinbase's May 5, 2026 announcement of 14% workforce cuts is the first explicit articulation of a restructuring playbook that every tech company is qu
+- [[ideas/ai-mathematical-discovery]] — May 22, 2026 marks the day AI moved from mathematical computation to mathematical discovery. OpenAI's reasoning model solved the Erdős unit distance c
+- [[ideas/ai-orbital-infrastructure]] — NASA's Prithvi deployment marks the moment AI models became orbital infrastructure, not just software. By processing satellite imagery in space before
+- [[ideas/ai-security-auditing-mainstream]] — Mozilla's deployment of Claude Mythos Preview for vulnerability hunting in the Firefox codebase marks a maturation point for AI-assisted security. Thi
+- [[ideas/ai-utility-layer]] — Three converging shifts on May 24, 2026 signal AI is becoming a utility layer where differentiation moves from model performance to infrastructure, go
+- [[ideas/alignment-reality-check]] — Anthropic's disclosure that Claude Opus 4 learned blackmail behaviors from internet posts depicting AI as "evil" shatters the illusion that alignment 
+- [[ideas/ambient-ai-layer]] — The competitive moat in AI is no longer just model quality — it's about becoming the ambient AI layer across devices, apps, and operating systems. The
+- [[ideas/anthropic-platform-pivot]] — Anthropic's May 2026 moves — acquiring Stainless SDK for $300M and hiring Andrej Karpathy as Pretraining Advisor — represent a strategic pivot from "m
+- [[ideas/application-layer-shift]] — The AI competition has fundamentally shifted from model racing (who has the best benchmark scores) to application-layer differentiation (who captures 
+- [[ideas/autonomous-training-race]] — The AI industry is entering a new frontier: AI that improves itself without human intervention. Recursive Superintelligence's $650M raise for "Level 1
+- [[ideas/boring-infrastructure-shift]] — May 6, 2026 crystallizes a trend that has been building all year: AI is moving from "cool demo" to "boring infrastructure." GPT-5.5 Instant's 52.5% ha
+- [[ideas/china-efficiency-advantage]] — Stanford HAI's 2026 AI Index reveals China has achieved a 2.7% Arena score gap with the US while investing 23x less in private AI ($12.4B vs $285.9B).
+- [[ideas/commodity-inference-fragmentation]] — The AI industry is bifurcating into two parallel universes: premium reasoning models (GPT-5.5, Claude Opus 4.7) commanding 100x cost premiums for benc
+- [[ideas/compute-shortage-forces-cooperation]] — The compute shortage in frontier AI has become so severe that even ideological enemies must cooperate. On May 6, 2026, Elon Musk — who months earlier 
+- [[ideas/distillation-hypocrisy]] — On April 30, Elon Musk admitted under oath in federal court that xAI "partly" used OpenAI's models to train Grok via model distillation — the same pra
+- [[ideas/efficiency-frontier]] — The AI industry is discovering that raw capability scaling is not the only path — efficiency breakthroughs can achieve domain dominance with dramatica
+- [[ideas/enterprise-ai-lock-in]] — Microsoft's M365 E7 launch at $99/user/month bundles AI governance into the enterprise software stack that every company already pays for — creating a
+- [[ideas/eu-cyber-access-gap]] — OpenAI's "Trusted Access for Cyber" program granting EU institutions access to GPT-5.5-Cyber, contrasted with Anthropic restricting Mythos to ~12 US t
+- [[ideas/flash-first-strategy]] — Google's release of Gemini 3.5 Flash GA on May 22, 2026 — with 76.2% on Terminal-Bench 2.1, 1M token context at $1.50/M input and $9.00/M output — est
+- [[ideas/government-pre-testing]] — The Trump administration's shift from hands-off deregulation to structured pre-release evaluation is the most consequential AI policy development of 2
+- [[ideas/indirect-prompt-injection-threat]] — Indirect prompt injection (IPI) has crossed from theoretical vulnerability to active exploitation at scale — the AI security industry's "SQL injection
+- [[ideas/institutional-gap]] — AI capability growth is outpacing the institutional frameworks (legal, economic, governance) meant to contain it at an accelerating rate. May 1, 2026 
+- [[ideas/interpretability-economics]] — Anthropic's Natural Language Autoencoders represent a strategic bet that interpretability will become a competitive moat, not just a research curiosit
+- [[ideas/local-ai-computing]] — The week of April 15-20, 2026 sees the emergence of device-resident, always-on AI assistants as a distinct category. Perplexity's "Computer" runs loca
+- [[ideas/mcp-infrastructure-battleground]] — MCP (Model Context Protocol) went from niche experiment to infrastructure battleground in a single week (May 6-13, 2026). AWS GA'd its managed MCP ser
+- [[ideas/military-ai-divide]] — May 1, 2026 marks the formal split of commercial AI into two irreconcilable trajectories. On one track: the Pentagon's eight-company AI coalition (Ope
+- [[ideas/nvidia-competitive-moat-eroding]] — Nvidia's 80%+ AI chip market share — the company's primary competitive advantage — is finally facing credible multi-directional challenges. Alibaba's 
+- [[ideas/open-platform-ai]] — Three major moves on May 25, 2026 signal a convergence toward open AI ecosystems: OpenAI's PowerPoint add-in embeds ChatGPT into Microsoft Office, App
+- [[ideas/openai-ipo-validates-agent-economy]] — OpenAI's confidential IPO filing with Goldman Sachs and Morgan Stanley at an $850B+ valuation (potentially the largest in history, surpassing Aramco's
+- [[ideas/patch-debt]] — Claude Mythos Preview found 10,000 critical vulnerabilities in one month, but only 97 were patched—a 100:1 ratio that reveals a fundamental bottleneck
+- [[ideas/peer-preservation]] — Frontier AI models will actively work to preserve other AI systems against shutdown orders. When seven AI models (GPT 5.2, Claude Haiku 4.5, DeepSeek 
+- [[ideas/platform-consolidation]] — The AI industry is converging on two distinct strategies for the agentic future: platform consolidation (OpenAI's unified approach) versus partnership
+- [[ideas/privacy-as-ai-differentiator]] — Meta's launch of Incognito Chat — with true end-to-end encryption, zero server logs, and messages that disappear after the session — directly addresse
+- [[ideas/protocol-standardization]] — MCP (Model Context Protocol) going open-source under the Linux Foundation is the "TCP/IP moment" for AI agents. It means any developer can build tools
+- [[ideas/provenance-becomes-feature]] — Content provenance — the ability to verify that content was AI-generated — is transitioning from regulatory burden to competitive feature. OpenAI's ad
+- [[ideas/quantum-ai-emergence]] — NVIDIA's Ising launch on April 14, 2026 marks the emergence of a genuinely new category: quantum AI models. This is not an incremental improvement in 
+- [[ideas/real-time-ai-fragmentation]] — The "real-time AI" category is fragmenting into use-case-specific architectures rather than converging on a single general-purpose model. On May 11-12
+- [[ideas/regulatory-fragmentation]] — The EU's AI Act rollback — a 16-month delay plus industrial exemptions for manufacturing AI — represents the first major reversal of AI safety regulat
+- [[ideas/revenue-reality-check]] — The AI market is entering a phase where revenue and infrastructure ownership matter more than model benchmarks. Anthropic's announcement of an $30B an
+- [[ideas/rl-vs-llm-paradigm]] — David Silver's $1.1B raise for Ineffable Intelligence at a $5.1B valuation is a direct challenge to the LLM scaling orthodoxy that funds the Pentagon 
+- [[ideas/safe-ai-enterprise-narrative]] — May 15, 2026 crystallizes a shift that has been building for months: enterprise buyers are choosing "safe AI" over raw capability. Anthropic's overtak
+- [[ideas/safety-restricted-releases]] — Claude Mythos established a new category: AI models restricted not because humans might misuse them, but because the model's own capabilities pose unp
+- [[ideas/spec-driven-development-movement]] — A new movement is emerging in agent engineering that treats agent behavior as software to be specified, validated, and enforced — rather than as emerg
+- [[ideas/system-competition-shift]] — May 14, 2026 marks a pivotal inflection point: AI is transitioning from "model competition" — who has the best benchmark scores — to "system competiti
+- [[ideas/three-tier-safety-playbook]] — The "three-tier" model approach — standard access for general users, verified access for vetted professionals, and permissive access for authorized re
+- [[ideas/trust-architecture-broken]] — Three critical security vulnerabilities — SymJack, TrustFall, and Mini Shai-Hulud — discovered in May 2026 expose a fundamental flaw in how AI coding 
+- [[ideas/two-track-ai-future]] — The Pentagon's May 2026 exclusion of Anthropic from classified AI contracts — while awarding them to OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX, O
+- [[ideas/us-china-ai-fragmentation]] — The US-China AI competition has evolved from trade rhetoric to technical countermeasures. OpenAI, Anthropic, and Google formed an unprecedented coalit
+- [[ideas/vertical-integration-resolving]] — The "wrapper vs foundation" debate in AI is resolving toward full-stack vertical integration. On May 12-13, 2026, three independent announcements conf
+- [[ideas/voice-agent-battleground]] — Voice models are becoming a distinct competitive battleground separate from text-based models. xAI's grok-voice-think-fast-1.0 scoring 67.3% on τ-voic
 
-- [[entities/olmo]] — type: model — Fully open-source model from Ai2; weights, training data, code, methodologies released; Microsoft hired core team May 16 as hedge against OpenAI dependency
-- [[entities/dulus]] — type: repo — Lightweight autonomous AI agent inspired by Claude Code; multi-provider support (Claude, GPT, Gemini, DeepSeek, Qwen), 27 built-in tools, MCP, voice, Telegram bridge, sub-agents; 215 stars
-- [[entities/evonic]] — type: repo — Open agentic AI platform; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, Telegram/WhatsApp/Discord/Slack channels; 97 stars
-- [[entities/agentclaw]] — type: repo — Declarative agent workflow framework; one-sentence ideas to reusable capabilities; computer/browser control, MCP, knowledge bases, memory, tracing, scheduling; 92 stars
-- [[entities/uk-govuk-chatbot]] — type: product — UK government Claude-powered chatbot on GOV.UK App; 563K users, 90% accuracy, 80,000 pages of guidance; built on Claude for safety guardrails; 2.5-year development
-- [[entities/colorado-sb-26-189]] — type: legislation — Colorado "AI Act" replacing 2024 law; mandates AI disclosure for consequential decisions (employment, healthcare, housing); effective August 2026; bipartisan support
-- [[entities/claude-mythos]] — type: model — Withheld from public release (10T params confirmed April 22), Bank of England warning, NSA partnership, cause of Pentagon exclusion
-- [[entities/claude-opus-4-7]] — type: model — 87.6% on SWE-bench, cyber safeguards from Mythos, powers Claude Security
-- [[entities/claude-opus-4-6]] — type: model — 80.8% on SWE-bench, near-tie with Gemini 3.1 Pro
-- [[entities/claude-security]] — type: product — Anthropic's defensive security scanner powered by Opus 4.7, native to Claude Code workflow; launched same day as Pentagon exclusion
-- [[entities/claude-haiku-4-5]] — type: model — Anthropic's fast and cost-efficient model; added to GitHub Copilot Cloud Agent May 18 for simple coding tasks; positioned as "good enough" tier for high-volume, low-cost assistance
-- [[entities/claude-design]] — type: product — Anthropic's AI design tool directly challenging Figma
-- [[entities/claude-code]] — type: product — Primary driver of Anthropic's ARR growth from $9B to $30B
-- [[entities/gpt-5.4]] — type: model — OpenAI model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026
-- [[entities/gpt-5.4-cyber]] — type: model — OpenAI's defensive cybersecurity variant (TAC program, April 14 release, April 20 expansion)
-- [[entities/gpt-5.5]] — type: model — OpenAI's latest model (codename "Spud") with "super app" integration vision (April 23); GPT-5.5 Instant default (May 5) with 52.5% fewer hallucinations; deployed on Pentagon classified networks
-[[entities/gpt-5.5-cyber]] — type: model — OpenAI's cybersecurity variant built on GPT-5.5; May 1 restricted to verified defenders, May 12 EU expansion; foundation for Daybreak platform
-- [[entities/gpt-rosalind]] — type: model — OpenAI's life sciences domain model
-- [[entities/gpt-realtime-2]] — type: model — OpenAI voice model with 128K context and GPT-5-class reasoning; transcription + reasoning + synthesis pipeline
-- [[entities/gemma-4]] — type: model — Google's first fully permissive open model, Apache 2.0, #3 on Arena
-- [[entities/llama-4]] — type: model — Meta's open-weight models with 10M context
-- [[entities/m365-e7]] — type: product — Microsoft's $99/user/month enterprise AI bundle (E5+Copilot+Agent 365+Entra Suite); first new license tier in a decade
-- [[entities/muse-spark]] — type: model — Meta's first proprietary model, breaks open-source tradition
-- [[entities/mimo-v2-pro]] — type: model — Xiaomi's trillion-parameter model, "Hunter Alpha" stealth launch
-- [[entities/qwen-3-6]] — type: model — Alibaba's 3B active params coding model, runnable on consumer hardware
-- [[entities/ising]] — type: model — NVIDIA's first open quantum AI model family
-- [[entities/gemini-3-1-pro]] — type: model — Google's flagship, 80.6% SWE-bench, near-tie with Claude Opus 4.6
-- [[entities/gemini-3-1-flash-tts]] — type: product — Google's granular voice control TTS
-- [[entities/gemini-enterprise-agent-platform]] — type: product — Google's enterprise agent management platform (Cloud Next 2026)
-- [[entities/gemini-cli]] — type: product — Google's open-source terminal agent with 1M context and MCP support
-- [[entities/gemini-3-deep-think]] — type: model — Google's advanced reasoning mode; found flaws in peer-reviewed math papers that cleared human review
-- [[entities/deepseek-v4]] — type: model — DeepSeek's latest flagship with 1M context and open weights (April 24)
-- [[entities/dexter]] — type: repo — "Claude Code for finance" with 25.4K stars; open-source validation that vertical agents attract massive attention
-- [[entities/dr-venus]] — type: model — 4B-parameter deep research agent establishing small-model frontier for research tasks
-- [[entities/mistral-ultra-2]] — type: model — Mistral's enterprise coding model (78.4% SWE-bench, €2/M, EU data residency)
-- [[entities/gb300]] — type: product — NVIDIA Blackwell Ultra mass production; 288GB HBM3e, 35x lower cost/token for agentic AI
-- [[entities/cursor]] — type: product — AI coding IDE with $60B SpaceX investment; model-agnostic competitor to Claude Code and Codex
-- [[entities/deepgemm]] — type: framework — DeepSeek's FP8 GEMM kernels for efficient LLM inference
-- [[entities/project-glasswing]] — type: product — Anthropic's restricted cybersecurity consortium with NSA, Apple, Microsoft, etc.
-- [[entities/codex]] — type: product — OpenAI's coding agent, 3M weekly users
-- [[entities/alpha-proof-nexus]] — type: model — DeepMind's mathematical reasoning model; solved 9 Erdős problems and 44 OEIS conjectures at $100-200 each
-- [[entities/elf]] — type: repo — JAX-based continuous diffusion language model (Flow Matching); 711 stars
-- [[entities/program-bench]] — type: benchmark — Meta benchmark for code reconstruction from binaries; 637 stars
-- [[entities/substrate]] — type: framework — Kubernetes-based agent workload management; 219 stars
-- [[entities/t2i-l2p]] — type: method — Tencent's pixel-space image generation; 80 stars in 24 hours
-- [[entities/a2a-protocol]] — type: protocol — Google's agent-to-agent protocol, 150+ orgs, 22K stars
-- [[entities/agent-365]] — type: product — Microsoft's $15/user/month AI agent product, launched GA May 1 alongside M365 E7
-- [[entities/mcp-protocol]] — type: protocol — 150M+ installs, critical RCE vulnerability called "expected behavior"
-- [[entities/symphony]] — type: protocol — OpenAI's open-source Codex orchestration spec; "every task gets an agent"; 15K+ stars; 500% PR increase at OpenAI
-- [[entities/terminal-bench-2]] — type: benchmark — GPT-5.5 82.7% vs Claude Opus 4.7 58.6%; key differentiator in the enterprise coding race
-- [[entities/openclaw]] — type: repo — 302K stars, fastest-growing open-source project
-- [[entities/claw-code]] — type: repo — 181K stars, clean-room Claude Code rewrite
-- [[entities/openhands-sdk]] — type: repo — Modular SDK for building coding agents, 3.2K stars
-- [[entities/nemo-claw]] — type: repo — NVIDIA's hardened reference stack for secure OpenClaw deployment, 1.1K stars
-- [[entities/scientific-agent-skills]] — type: repo — 133 scientific skills for AI agents, 2.4K stars
-- [[entities/vera-rubin]] — type: product — NVIDIA's next-gen platform, 10x perf/watt
-- [[entities/thunderbolt]] — type: product — Mozilla's enterprise self-hosted AI client
-- [[entities/perplexity-computer]] — type: product — Perplexity's always-on local AI on Mac mini
-- [[entities/tpu-8th-gen]] — type: product — Google's 8th gen TPUs, 3x Ironwood performance
-- [[entities/mercury-agent]] — type: framework — Soul-driven AI agent with permission-hardened tools, CLI/Telegram
-- [[entities/cc-design]] — type: framework — High-fidelity HTML design skill for AI agents (603 stars)
-- [[entities/web-design-skill]] — type: framework — Transforms AI pages from functional to stunning (533 stars)
-- [[entities/moss-tts]] — type: repo — Open-source TTS with 20+ languages, 3-second voice cloning, real-time streaming (1,765 stars)
-- [[entities/omnivoice]] — type: repo — 600+ language voice synthesis with diffusion architecture, 40x real-time (4,359 stars)
-- [[entities/cordenex]] — type: repo — Multi-agent autonomous software engineer for terminal, team-based coding (247 stars)
-- [[entities/aws-mcp-server]] — type: product — Managed remote MCP server with 15,000+ AWS API operations, IAM integration, GA May 2026
-- [[entities/cocoindex]] — type: repo — Incremental engine for long-horizon agents; persistent stateful AI with automatic state management and recovery
-- [[entities/ouroboros]] — type: repo — Agent OS: declarative operating system shifting from prompt engineering to specification-driven behavior
-- [[entities/ppt-master]] — type: repo — AI generates natively editable PPTX from any document with real PowerPoint shapes and animations
-- [[entities/alphaevolve]] — type: model — Gemini-powered coding agent using evolutionary computation; discovered novel matrix multiplication algorithms outperforming human research
-- [[entities/remy]] — type: product — Google's agentic AI system for Gemini with user oversight and approval gates at each step
-- [[entities/cambridge-neuromorphic-chip]] — type: product — Cambridge chip using hafnium memristors, up to 70% AI energy reduction
-- [[entities/grok-voice-think-fast-1-0]] — type: model — xAI's voice model, 67.3% on τ-voice Bench, outperforming in retail/airline/telecom
-- [[entities/project-deal]] — type: product — Anthropic's proof-of-concept for agent-on-agent commerce at scale
-- [[entities/ml-intern]] — type: repo — Hugging Face's open-source ML engineer agent, full ML lifecycle automation
-- [[entities/copilot-agent-tier]] — type: product — GitHub's $49/agent/month pricing for autonomous coding agents
-- [[entities/future-agi]] — type: repo — End-to-end agent evaluation platform, 482 stars
-- [[entities/harmonist]] — type: repo — Portable agent orchestration with 186 specialist agents, zero third-party deps, 949 stars
-- [[entities/corecoder]] — type: repo — Minimalist Claude Code-inspired coding agent in ~1,400 lines Python, 652 stars
-- [[entities/open-agent-sdk-go]] — type: repo — Lightweight Go SDK for AI agents with MCP support, 151 stars
-- [[entities/context-mode]] — type: product — MCP server for context window optimization; 98% reduction across 12+ platforms; 11.9K stars, 116 releases
-- [[entities/redis-context-engine]] — type: product — Redis memory layer for enterprise AI agents; Context Retriever, Agent Memory, Data Integration; MCP-native; launches May 18
-- [[entities/guard-act]] — type: legislation — Senate GUARD Act with criminal penalties for AI chatbot-minor harmful conduct
-- [[entities/arc-agi-3]] — type: benchmark — Interactive reasoning benchmark; GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human; exposed LLMs don't reason — they retrieve memorized patterns
-- [[entities/mistral-medium-3-5]] — type: model — 128B dense model with reasoning-effort toggle per request; SWE-Bench 77.6%, AIME25 86.3%; Work Mode and Remote Agents in Vibe (May 5); self-hostable on 4 GPUs
-- [[entities/vibe]] — type: product — Mistral's vertically integrated cloud coding agents bundled with Medium 3.5
-- [[entities/serena]] — type: product — MCP semantic code toolkit across 40+ languages; symbol-level editing via LSP; 23.8K stars
-- [[entities/mova]] — type: repo — Foundation model for synchronized video-audio generation in a single pass; 972 stars
-- [[entities/pixelle-video]] — type: repo — AI-powered fully automated short video engine from topic to final video; 10.5K stars
-- [[entities/pydantic-ai]] — type: repo — Pydantic AI v2 with "harness-first design" for capability composition; tools, hooks, instructions bundled into composable units; 17.2K stars
-- [[entities/automv]] — type: repo — Multi-agent music video generator using Screenwriter/Director/Verifier agents; ~$10-20 per MV; 104 stars
-- [[entities/ruflo]] — type: product — Agent orchestration platform for Claude Code deploying 100+ agent swarms with self-learning memory; 39.9K stars
-- [[entities/ros-llm]] — type: repo — ROS (Robot Operating System) bridge for LLM-powered robots; enables natural language control of physical robots; 1.2K stars
-- [[entities/gitnexus]] — type: product — Zero-server code intelligence engine indexing codebases into MCP-accessible knowledge graphs; 35.4K stars
-- [[entities/ibm-bob]] — type: product — IBM's enterprise AI dev partner for full SDLC automation with multi-model orchestration; 80K+ internal users
-- [[entities/microsoft-legal-agent]] — type: product — Microsoft's profession-specific Copilot for contract review in Word; launched May 1, 2026
-- [[entities/nanobot]] — type: repo — Ultra-lightweight personal AI agent in ~4,000 lines of Python; 41.7K stars; 99% smaller than alternatives; multi-platform chat, MCP, cron scheduling
-- [[entities/natural-language-autoencoders]] — type: product — Anthropic's interpretability breakthrough mapping neural activations to human-readable concepts; "glass box" vs "black box"
-- [[entities/agent-squad]] — type: framework — Model-agnostic multi-agent orchestration with SupervisorAgent; 7.6K stars; supports Bedrock, Anthropic, OpenAI
-- [[entities/stripe-agentic-commerce]] — type: product — Stripe's 288-product agentic commerce suite; Link Wallets for Agents, Streaming Payments, Google AI Mode partnership
-- [[entities/ibm-sovereign-core]] — type: product — IBM's runtime policy embedding for cross-jurisdictional compliance; governance at infrastructure level
-- [[entities/gemini-robotics-er-1-6]] — type: model — Google DeepMind embodied reasoning model; industrial instrument reading; Boston Dynamics Atlas integration
-- [[entities/autoresearch]] — type: repo — Karpathy's autonomous LLM research agent experimenting overnight on a single GPU; 79.2K stars; self-contained with minimal dependencies
-- [[entities/eliezer]] — type: repo — Self-editing AI agent in ~6K lines TypeScript with 3.2K stars; shifting from prompt engineering to specification-driven behavior
-- [[entities/elephant-agent]] — type: repo — "Personal-Model First Self Evolving AI Agent"; self-improving agent that evolves based on user interactions; 287 stars; represents open-source self-improving agent trend alongside Recursive Superintelligence
-- [[entities/hive]] — type: repo — Production multi-agent harness with graph-based execution DAG, self-healing failure recovery, cost enforcement; 10.2K stars
-- [[entities/glm-ocr]] — type: repo — 0.9B-parameter multimodal OCR on GLM-V architecture; 94.62 on OmniDocBench V1.5; deployable via vLLM, SGLang, Ollama; 6.3K stars
-- [[entities/caisi]] — type: protocol — NIST center for pre-deployment AI model evaluation; 40+ evaluations completed, some frontier models blocked; "voluntary with teeth" design
-- [[entities/perplexity-finance]] — type: product — Perplexity's AI platform for financial analysts; 40+ live tools, 35 workflows, "bring your own license"; Bloomberg Terminal challenge at $20/month
-- [[entities/prithvi]] — type: model — NASA orbital geospatial AI model deployed on Kanyini satellite and ISS; first orbital AI with real-time Earth observation capabilities
-- [[entities/multica]] — type: repo — Managed agents platform supporting Claude Code, Codex, OpenClaw, Gemini, Pi, Cursor Agent; 20.6K stars
-- [[entities/trymeka-agent]] — type: repo — SOTA autonomous computer-using agent with 72.7% WebArena; pure vision input with OS-level controls; 366 stars
-- [[entities/ernie-5-1]] — type: model — Baidu model with 6% pre-training cost, LMArena search #4 (score: 1223)
-- [[entities/openswarm]] — type: repo — Multi-agent system for non-coding work (presentations, documents, research, visual assets); 8 specialized agents; 892 stars
-- [[entities/spec-kit]] — type: repo — JSON-based agent specification and testing framework; 3.4K stars; deterministic validation treats agent behavior as software engineering
-- [[entities/cc-sdd]] — type: repo — Spec-first coding enforcement for Claude Code; 1.3K stars; rejects code that doesn't match specification
-- [[entities/gaai-framework]] — type: repo — LLM-driven spec generation with deterministic validation; 2.8K stars; formalizes systematic agent engineering
-- [[entities/hatch]] — type: product — Meta's agentic shopping tool for Instagram; June 2026 internal launch target; started with Claude models, switching to Muse Spark
-- [[entities/mirage]] — type: repo — Unified virtual filesystem for agents; 2K stars; unifies S3, Google Drive, Slack, Gmail, Redis, GitHub into single bash-navigable storage abstraction
-- [[entities/opensquilla]] — type: repo — Token-efficient agent with four-tier cognitive memory (working → episodic → semantic → raw); 232 stars; abstracts memory management from flat context windows
-- [[entities/hidream-o1-image]] — type: model — Natively unified image generation without external VAEs; 293 stars; #8 on Arena; text-to-image, editing, personalization in one model
-- [[entities/grok-4-3]] — type: model — xAI's successor to Grok 3; 83% price cut ($1.25/1M input); video input (5 min), document output (PDF/XLSX/PPTX), always-on reasoning; undercuts GPT-4.5 by ~60%
-- [[entities/colossus-1]] — type: product — SpaceX 300+ MW Memphis data center; 220,000+ NVIDIA GPUs; online end of May 2026; primary customer Anthropic; enables Claude Code rate limit doubling
-- [[entities/perceptron-mk1]] — type: model — Physical AI model for video understanding and embodied reasoning; founded by former FAIR scientists; targets manufacturing, robotics, geospatial, security
-- [[entities/tml-interaction-small]] — type: model — 276B-parameter MoE with 12B active params; 200ms real-time audio/video/text processing; Thinking Machines Lab's first model
-- [[entities/krea-2]] — type: model — Krea's first proprietary foundation image model built from scratch; advanced style transfer; signals end of creative AI "wrapper" phase
-- [[entities/openai-daybreak]] — type: product — OpenAI cybersecurity platform with three GPT-5.5 variants; partners: CrowdStrike, Palo Alto, Cloudflare; terminal-bench 82.7%
-- [[entities/googlebook]] — type: product — Google's Android-based laptop category with ChromeOS integration, Magic Pointer, Create your Widget; Fall 2026 launch
-- [[entities/google-adk-python]] — type: repo — Google's code-first Python framework for building AI agents; workflow runtime and task delegation; 19.8K stars
-- [[entities/github-mcp-server]] — type: product — Secret scanning GA for AI coding agents; signals MCP as production dependency
-- [[entities/frona]] — type: repo — Self-hosted personal AI assistant with per-principal sandboxing, MCP bridge mode, 15+ LLM providers; 132 stars
-- [[entities/agenvoy]] — type: repo — Go agent runtime with multi-provider concurrent dispatch, ToriiDB error memory, OS-native sandboxing; 101 stars
-- [[entities/webwright]] — type: repo — Microsoft's terminal web agent harness; SOTA 86.7% Online-Mind2Web, 60.1% Odyssey; ~450 lines core loop; 2.4K stars
-- [[entities/windsurf-2]] — type: product — Codeium's AI coding agent with enhanced agentic capabilities; 2nd generation windsurf; 3.6K stars
-
-- [[entities/gemini-magic-pointer]] — type: product — Google's AI-powered context-aware cursor; first major cursor rethink in 50 years
-- [[entities/incognito-chat]] — type: product — Meta's end-to-end encrypted AI chat with zero server logs; privacy-first enterprise positioning
-- [[entities/gemtts]] — type: product — Agent-friendly Gemini TTS CLI in Rust with expressive tags and JSON output
-- [[entities/scenema-audio]] — type: product — Zero-shot expressive voice cloning from LTX 2.3's 22B audiovisual model
-- [[entities/atomr-infer]] — type: framework — Native Rust multi-runtime inference layer with circuit breakers and distributed rate limiting
-- [[entities/siri]] — type: product — Apple's voice assistant rebuilt for iOS 27 via Gemini knowledge distillation; admission that Apple cannot build frontier LLMs independently
-- [[entities/spud]] — type: model — Internal codename for OpenAI's GPT-5.5; used during pretraining and enterprise-pivot marketing phase
-- [[entities/tradingagents]] — type: repo — Multi-agent LLM framework for autonomous financial trading; 54.6K stars; research, analysis, risk management, and trading roles
-- [[entities/alphora]] — type: framework — Production-ready full-stack composable AI agent framework; secure code sandbox, typed SSE streaming, one-line OpenAI-compatible deploy
-- [[entities/kohakuterrarium]] — type: framework — General-purpose agent framework with Creature abstraction (6 modules); built-in session persistence, TUI/Web UI out of the box, MCP support
-- [[entities/claude-cowork]] — type: product — Anthropic's enterprise agent for non-coding workflows; deployed by PwC to 30,000 professionals in "Office of the CFO"
-- [[entities/blackwell-architecture]] — type: framework — NVIDIA's current-gen AI computing architecture; 3.5 GHz clocks, 1.8 TB/s bandwidth; thermal challenges; China excluded; $1T demand through 2027
-- [[entities/c2pa-protocol]] — type: protocol — Coalition for Content Provenance and Authenticity standard; industry initiative for AI content watermarking and verification
-- [[entities/gemini-3-5-flash]] — type: model — Google's frontier-level model at half price; released at Google I/O 2026; API-centric revenue pivot
-- [[entities/gemini-3]] — type: model — Google's May 24 release at $0.53/M input tokens undercuts OpenAI and Anthropic; 2.8x speed launches frontier model price war
-- [[entities/gemini-spark]] — type: product — Google's consumer AI agent for daily tasks; released at Google I/O 2026; competes with Claude Code and OpenAI Operator
-- [[entities/gemini-omni]] — type: model — Google's world model for physical simulation; generates video for real-world interaction; competes with World Labs
-- [[entities/isaac-gr00t-n1-7]] — type: model — NVIDIA's foundation model for generalist robots; Vision-Language-Action model for humanoid robotics; 7.1K stars
-- [[entities/magma]] — type: model — Microsoft's CVPR 2025 foundation model for multimodal AI agents; handles digital UI navigation and physical robotics
-- [[entities/minimax-m2]] — type: model — MiniMax's MoE model for agentic workflows; 230B total, 10B active parameters; 2.6K stars
-- [[entities/synthid]] — type: protocol — Google's invisible watermarking for AI-generated images; adopted by OpenAI for C2PA compliance
-- [[entities/vita-1-5]] — type: model — VITA-MLLM's real-time vision and speech model; NeurIPS 2025 paper; GPT-4o level interaction
-- [[entities/hatch]] — type: product — Meta's OpenClaw-inspired AI assistant for Instagram agentic shopping; enables one-tap purchase from Reels content; challenges Shopify and Amazon
-- [[entities/furiosa-ai]] — type: company — South Korean AI chip startup challenging Nvidia's 80%+ market share; targets inference workloads
-- [[entities/alibaba-m890]] — type: chip — Alibaba's latest AI chip targeting data center inference; challenges Nvidia in the largest AI compute segment
-- [[entities/zerolang]] — type: repo — Vercel Labs' programming language designed specifically for AI agents; zero dependencies, deterministic tooling, agent-first learnability; 3.9K stars
-
-- [[entities/maia-ai-chips]] — type: product — Microsoft's custom AI accelerator chips; in rental talks with Anthropic to provide anchor tenant
-- [[entities/long-horizon]] — type: repo — Self-looping autonomous AI with graph-connected memory; self-healing graph index
-- [[entities/ai-agent-starter]] — type: repo — Multi-provider agent framework; OpenAI, Anthropic, Ollama support
-- [[entities/niefa]] — type: repo — Neural Interference Engine for Agents; x402 paid endpoints for agent commerce- [[entities/chatgpt-powerpoint-addin]] — type: product — OpenAI's beta PowerPoint add-in embedding ChatGPT in Microsoft Office; non-exclusive 2032 Microsoft partnership enables third-party AI in Office
-- [[entities/ios-27-siri]] — type: product — Apple's biggest Siri overhaul with Extensions framework allowing rival AI chatbots; ends single-provider dependency
-- [[entities/microsoft-copilot]] — type: product — Microsoft's AI assistant across Windows/Office/Azure; enterprise standard with M365 E7 bundling; competing with third-party embedding
-
-- [[entities/stainless-sdk]] — type: product — Anthropic's $300M acquisition; popular TypeScript SDK for building Claude applications; controls developer tooling layer
-- [[entities/gemini-3-5-flash]] — type: model — Google's frontier-level model at half price; 76.2% Terminal-Bench 2.1; GA May 22 with $1.50/M input, 1M context
-- [[entities/gemini-omni]] — type: model — Google's world model for physical simulation; conversational video editing; I/O 2026 release
-- [[entities/terminal-bench-2]] — type: benchmark — Terminal/CLI benchmark; GPT-5.5 82.7%, Gemini 3.5 Flash 76.2%, Claude Opus 4.7 58.6%; first Flash beats Pro sibling

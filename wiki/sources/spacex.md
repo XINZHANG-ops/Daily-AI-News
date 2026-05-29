@@ -24,6 +24,9 @@ SpaceX acquired xAI for $250 billion in an all-stock transaction in April 2026, 
 - **Cursor**: $60B investment target, competing in AI coding tools.
 - **Grok**: SpaceX-owned AI assistant.
 
+
+| 2026-05-28 | 220k GPU cluster with custom training stack | Announced custom C-based AI training stack on 220,000 NVIDIA GB300 GPUs with 800G networking; enables 10 trillion parameter model training in 1-2 weeks; 10x faster than Google JAX; physical realization of compute-is-new-oil thesis |
+
 ## Connections
 - [[sources/xai]] — Now consolidated under SpaceX; dissolved and rebranded as SpaceXAI in May 2026
 - [[entities/codex]] — OpenAI's coding agent, competing with SpaceX's Cursor investment

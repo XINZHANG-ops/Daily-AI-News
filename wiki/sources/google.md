@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-21
+last_updated: 2026-05-28
 ---
 
 # Google
@@ -70,6 +70,10 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 - **Apple**: Deeper AI partnership than previously known. Apple has "complete access" to Gemini in Google's data centers for on-device AI.
 - **Microsoft**: Rivalry in both AI products and cloud infrastructure.
 - **NVIDIA**: Strategic partnership for TPU and GPU technology.
+
+
+| 2026-05-28 | Gemini 3.5 Flash prioritizes speed | CEO Sundar Pichai acknowledged Google is behind in AI coding agents; releasing Gemini 3.5 Flash prioritizing speed over raw capability; internal coding token usage doubling weekly; tactical retreat to hold flank while main force (Gemini 4 Ultra) prepares |
+| 2026-05-28 | Pentagon tests to replace Claude | DoD began testing Google models to replace Claude after designating Anthropic supply-chain risk |
 
 ## Connections
 - [[entities/gemma-4]] — Google's first fully permissive open model under Apache 2.0

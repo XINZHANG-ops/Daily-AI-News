@@ -2,7 +2,7 @@
 title: "Claude Code"
 slug: claude-code
 type: product
-last_updated: 2026-05-14
+last_updated: 2026-05-28
 ---
 
 # Claude Code
@@ -30,6 +30,8 @@ On May 12, 2026, Anthropic announced the immediate doubling of Claude Code rate 
 By May 13, 2026, Claude Code had become Anthropic's fastest-growing product, with an estimated 4% of all GitHub public commits worldwide now authored by it. However, the productivity gains come with steep costs — Uber reportedly spent its entire 2026 AI budget in just 4 months largely on Claude Code, with engineers facing monthly API costs of $500–$2,000 per person. On May 13, Anthropic released Claude Code v2.1.139 with Agent View for unified session management (Research Preview for Pro/Team/Enterprise), the /goal command for autonomous completion conditions, native Git worktree support, /loop for recurring tasks, and MCP improvements. The /goal command is Anthropic's answer to OpenAI's Codex "agent mode" — both are converging on "set a goal, walk away" autonomy. Agent View is a UX recognition that power users are running dozens of Claude sessions simultaneously and need a dashboard. Native Git worktree support shows Anthropic is listening to the "Claude Code as IDE" crowd. The pattern: Claude Code is becoming an operating system for AI-assisted development, not just a chat interface.
 
 The 105K-star success of karpathy's CLAUDE.md skills repo — a single file enforcing behavioral principles — emerged partly in response to documented Claude Code quality regressions (reduced reasoning, verbosity, caching bugs), validating the thesis that many LLM coding pitfalls are behavioral rather than capability problems.
+
+On May 26, 2026, Anthropic released a free security guidance plugin for Claude Code that autonomously reviews code edits in real-time to catch vulnerabilities before production. Internal testing reduced security PR comments by 30-40%. This shifts security left into the IDE where it is 10x cheaper to fix — the plugin runs in terminal as you code, not in a CI/CD pipeline where it is already too late. This creates a moat: developers who get used to real-time security scanning will not want to go back. Combined with Anthropic recent blog on "containing AI agents," they are building the safety layer for the agentic future.
 
 ## Connections
 - [[sources/anthropic]] — Claude Code is the single largest driver of Anthropic's ARR growth from $9B to $30B, proving that terminal-native agent experiences can generate more enterprise revenue than API access alone

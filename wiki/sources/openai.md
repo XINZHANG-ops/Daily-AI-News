@@ -89,6 +89,9 @@ OpenAI is navigating the transition from research organization to commercial ent
 - **SoftBank**: Major investor ($30B commitment). Vision Fund backing OpenAI's infrastructure buildout.
 - **Amazon**: Largest investor in latest round ($50B). AWS integration for enterprise customers.
 
+
+| 2026-05-28 | Pentagon tests to replace Claude | DoD began testing OpenAI and Google models to replace Claude after designating Anthropic supply-chain risk; Claude was deeply integrated into Maven Smart System for classified operations |
+
 ## Connections
 - [[entities/gpt-5.4]] — Model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026
 - [[entities/gpt-5.5]] — Latest model (codename "Spud") with "super app" integration vision; 49-day release cycle for enterprise procurement lock-in; deployed on Pentagon classified networks; GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" feature shifts liability to users

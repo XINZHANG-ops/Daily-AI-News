@@ -2,7 +2,7 @@
 title: "Gemini 3.5 Flash"
 slug: gemini-3-5-flash
 type: model
-last_updated: 2026-05-26
+last_updated: 2026-05-28
 ---
 
 # Gemini 3.5 Flash
@@ -28,6 +28,8 @@ Google's frontier-level model at half the price, approximately 4× faster than o
 Gemini 3.5 Flash represents Google's pivot from consumer search to API-centric revenue. The "half price" positioning signals a price war in the mid-tier model market. With "AI Mode" as the distribution channel, every Google Search user (billions of queries/day) becomes a potential Flash user — creating massive scale effects: more queries = more RL signal = faster iteration. This could make Flash the most deployed model in history by Q3 2026.
 
 The GA release on May 22, 2026 adds concrete pricing ($1.50/M input, $9.00/M output) and Terminal-Bench 2.1 score of 76.2%. This is significant because Flash beat Gemini 3.1 Pro — the first time a Flash model outperformed its Pro sibling. At 76.2%, Flash undercuts Claude Haiku ($1.25/M input, $5/M output) while delivering 5-8x context window and superior coding performance. This challenges Anthropic's model hierarchy: if Flash beats Pro, what's Sonnet's moat? Google's aggressive positioning suggests they're optimizing for developer adoption over margin.
+
+On May 28, 2026, CEO Sundar Pichai acknowledged Google is behind in AI coding agents, releasing Gemini 3.5 Flash prioritizing speed over raw capability. Internal coding token usage is doubling weekly, showing explosive demand. The "Flash" naming strategy tells you everything: Google is essentially admitting they are shipping the fast/cheap model first because it is what developers need now, not because it is what they wanted to ship. This is a tactical retreat to hold the flank while the main force (likely Gemini 4 Ultra) prepares.
 
 ## Connections
 - [[sources/google]] — Gemini 3.5 Flash is Google's answer to API market commoditization; the half-price strategy leverages Google's infrastructure advantage; GA release on May 22, 2026 with specific pricing confirms the commitment to API revenue

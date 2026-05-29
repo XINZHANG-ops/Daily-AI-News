@@ -20,6 +20,9 @@ Coinbase is the largest US cryptocurrency exchange. On May 5, 2026, CEO Brian Ar
 - **OpenAI / Anthropic**: Coinbase's engineers use AI coding tools that compete in the Claude Code / Codex ecosystem; the layoffs validate the productivity claims those tools make
 - **Block, Gemini, Pinterest, CrowdStrike, Chegg**: All announced AI-driven layoffs in recent weeks; Coinbase's explicit articulation of "one-person teams" and "AI wrangler" roles makes it the template
 
+
+| 2026-05-28 | Base MCP for crypto-AI agents | Base MCP (Model Context Protocol) enables AI models like Claude and ChatGPT to transfer funds, swap tokens, check balances, and interact with crypto protocols; extends Anthropics MCP to DeFi; standardized way for AI agents to move money; autonomous AI agents can now execute real financial transactions |
+
 ## Connections
 - [[ideas/ai-layoff-template]] — Coinbase's restructuring is the first explicit articulation of the playbook every tech company is quietly drafting: flattening hierarchies because AI removes the coordination tax that justified middle management
 - [[topics/ai_companies]] — 14% cut is not about cost savings ($50-60M restructuring cost nearly offsets salary savings); it's about organizational velocity — AI eliminates the organizational overhead around engineering, not the engineering itself

@@ -27,5 +27,5 @@ AMD (Advanced Micro Devices) is the second-largest AI chip designer after Nvidia
 - [[ideas/nvidia-competitive-moat-eroding]] — AMD's MI300 was the first real challenger; Alibaba and FuriosaAI represent the next wave
 - [[sources/nvidia]] — Direct competitor; AMD positions as cost-effective alternative
 - [[entities/alibaba-m890]] — Represents China's push for AI hardware self-sufficiency, adding pressure on all US chipmakers
-- [[entities/furiosa-ai]] — New Korean entrant specifically targeting inference workloads
+- [[sources/furiosa-ai]] — New Korean entrant specifically targeting inference workloads
 - [[topics/ai_companies]] — Competitive landscape shifting as specialized challengers emerge

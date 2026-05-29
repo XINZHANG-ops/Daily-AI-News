@@ -1,7 +1,7 @@
 ---
 title: "Two-Track AI Future"
 slug: two-track-ai-future
-last_updated: 2026-05-26
+last_updated: 2026-05-28
 ---
 
 # Two-Track AI Future
@@ -11,6 +11,7 @@ The Pentagon's May 2026 exclusion of Anthropic from classified AI contracts — 
 
 ## Evidence
 - [[sources/anthropic]] — Anthropic was permanently excluded from IL6/IL7 classified networks after refusing to accept "any lawful use" language and insisting on guardrails against autonomous weapons and mass surveillance. Defense Secretary Hegseth labeled the company a "supply chain risk" — a designation normally reserved for foreign adversaries. The company lost access to federal contracts worth $4B+ annually.
+- Pentagon dropping Claude — On May 28, 2026, the DoD began testing OpenAI and Google models to replace Claude after designating Anthropic a supply-chain risk. Claude was deeply integrated into the Maven Smart System for classified operations — replacement is not a flip-of-a-switch decision. The signal is clear: AI companies making ethical choices about military use will face enterprise opportunity costs.
 
 - [[sources/openai]] — OpenAI secured Pentagon contracts alongside Google, Microsoft, AWS, Nvidia, SpaceX, Oracle, and Reflection AI for "lawful operational use" covering 1M+ defense personnel. This followed OpenAI's reversal on model restrictions — after mocking Anthropic's Mythos restrictions, OpenAI quietly restricted GPT-5.5 Cyber to verified "critical cyber defenders."
 

@@ -2,7 +2,7 @@
 title: "AI Infrastructure"
 slug: ai_infrastructure
 type: topic
-last_updated: 2026-05-27
+last_updated: 2026-05-28
 ---
 
 # AI Infrastructure

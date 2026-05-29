@@ -1,5 +1,22 @@
 # Wiki Log
 
+## [2026-05-29] wiki lint | broken links + structural fixes
+
+**Pass 1 — Pre-scanned broken link fixes:**
+- Fixed entities/mai-image-2.5.md: replaced broken [[entities/dall-e]] and [[entities/imagen]] with descriptive text (these models don't have wiki pages)
+
+**Pass 2 — Structural integrity:**
+- Moved company-type entities to sources/: tomoro.md, furiosa-ai.md, openai-deployment-company.md
+- Created new source pages: sources/tomoro.md, sources/furiosa-ai.md
+- Updated all references from entities/tomoro and entities/furiosa-ai to sources/
+- Rebuilt index.md: added Ideas section (64 pages), fixed slug generation from frontmatter, removed duplicates
+
+**Verification:**
+- All topics have Evolution and Patterns & Insights sections
+- No bare "Related:" or "See also:" links found (only in WIKI.md schema)
+- Index updated: Topics (8), Sources (40), Timelines (3), Entities (177), Ideas (64)
+
+
 ## [2026-05-23] wiki lint | broken link fixes
 
 **Pass 1 — Broken link fixes:**
@@ -1189,3 +1206,12 @@ Timelines updated: 2026-05 (Week 4)
 - 12 broken links resolved
 - Topics now include ai_security and ai_infrastructure
 - Entity files increased by 2
+
+## [2026-05-28] ingest | 1 date
+
+Dates processed: 2026-05-28
+Topics updated: llm_models, ai_companies, ai_funding, ai_infrastructure
+Sources updated: anthropic, openai, spacex, microsoft, google, coinbase
+Entities created: mai-image-2.5, base-mcp
+Entities updated: mirage (stars/forks), natural-language-autoencoders (updated), gemini-3-5-flash (new May 28 data), claude-code (security plugin)
+Ideas updated: two-track-ai-future (Pentagon dropping Claude evidence)

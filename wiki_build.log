@@ -1086,3 +1086,25 @@ The 2026-05-27 data has been processed into the wiki. Here's what was done:
 3. Guardrail stripping is commodity (13M downloads)
 4. Google closed-sources Antigravity (second open-source retreat)
 5. OpenAI launches $4B Deployment Company to own deployment layer
+Wiki ingest for 2026-05-28 is complete. Here's a summary of what was processed:
+
+**Data processed:**
+- 3 GitHub repos: mirage (2.7k stars), forge (1.9k stars), natural-language-autoencoders (711 stars)
+- 7 AI news items covering: Anthropic $45B ARR, SpaceX 220k GPU cluster, Microsoft MAI-Image-2.5, Pentagon replacing Claude, Base MCP, Gemini 3.5 Flash speed strategy, Claude Code security plugin
+
+**Updates made:**
+
+| Category | Files Updated |
+|----------|---------------|
+| Timeline | 2026-05.md added May 28 entry |
+| Sources | anthropic, openai, spacex, microsoft, google, coinbase - added new events |
+| Topics | llm_models, ai_companies, ai_funding, ai_infrastructure - updated |
+| Entities | Created mai-image-2.5, base-mcp; updated mirage, gemini-3-5-flash, claude-code, natural-language-autoencoders |
+| Ideas | two-track-ai-future - added Pentagon dropping Claude evidence |
+| Index | Added 2 new entities, updated last_updated |
+| Log | Added ingest entry for 2026-05-28 |
+
+**Key themes captured:**
+- Enterprise AI maturation (Anthropic $45B ARR vs OpenAI $33B)
+- Infrastructure as moat (SpaceX 220k GPUs, Base MCP for financial agents)
+- Explicit bifurcation (Pentagon testing OpenAI/Google to replace Claude)

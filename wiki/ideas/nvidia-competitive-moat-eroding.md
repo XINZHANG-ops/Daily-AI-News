@@ -11,7 +11,7 @@ Nvidia's 80%+ AI chip market share — the company's primary competitive advanta
 
 ## Evidence
 - [[entities/alibaba-m890]] — Alibaba's new M890 chip specifically targets data center inference, the largest and most scalable AI compute segment
-- [[entities/furiosa-ai]] — South Korea's FuriosaAI represents the first credible Korean challenge to Nvidia's AI accelerator dominance
+- [[sources/furiosa-ai]] — South Korea's FuriosaAI represents the first credible Korean challenge to Nvidia's AI accelerator dominance
 - [[sources/singapore]] — Singapore partnership for embodied AI research hub is Nvidia's hedge against the next compute platform (robots/drones) where new players could compete
 - [[sources/nvidia]] — The Singapore deal shows Nvidia recognizes it cannot rely on GPU dominance alone as the industry shifts toward agentic and embodied AI
 
