@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-29",
+  "github_repos": [
+    {
+      "name": "nv-tlabs/Gamma-World",
+      "url": "https://github.com/nv-tlabs/Gamma-World",
+      "description": {
+        "en": "NVIDIA's generative multi-agent world model that generates coherent future frames from multiple independently controllable agents. Features Simplex Rotary Agent Encoding and Sparse Hub Attention for efficient multi-agent simulation.",
+        "zh": "NVIDIA的生成式多智能体世界模型,可从多个独立可控的智能体生成连贯的未来帧。具备 Simplex 旋转智能体编码和稀疏中心注意力,实现高效的多智能体模拟。"
+      },
+      "stars": "187",
+      "forks": "1"
+    },
+    {
+      "name": "mrshanebarron/lc-attention",
+      "url": "https://github.com/mrshanebarron/lc-attention",
+      "description": {
+        "en": "A locus-coeruleus inspired attention-gain signal for LLM agents implementing phasic + tonic noradrenaline-style modulation. Models how the brain's locus coeruleus releases noradrenaline to modulate cortical gain.",
+        "zh": "一个受蓝斑启发的注意力增益信号,用于LLM智能体实现相位+紧张性去甲肾上腺素式调节。模拟大脑蓝斑释放去甲肾上腺素以调节皮层增益的过程。"
+      },
+      "stars": "1",
+      "forks": "0"
+    },
+    {
+      "name": "ksgsslee/vulnhunt-agent",
+      "url": "https://github.com/ksgsslee/vulnhunt-agent",
+      "description": {
+        "en": "LLM agent that reads code, forms hypotheses, writes PoC, and executes in Docker sandbox for vulnerability hunting. Uses specialized hunters per CWE category and multi-layer approach achieving ~5x more unique bugs.",
+        "zh": "LLM智能体,用于阅读代码、形成假设、编写PoC并在Docker沙盒中执行以进行漏洞狩猎。使用针对每个CWE类别的专业猎手和多层方法,实现约5倍的独特漏洞发现。"
+      },
+      "stars": "0",
+      "forks": "0"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Overtakes OpenAI in Valuation at $965B",
+        "zh": "Anthropic估值超越OpenAI达到9650亿美元"
+      },
+      "url": "https://www.euronews.com/business/2026/05/29/worlds-most-valuable-ai-start-up-anthropic-nears-1tn-valuation-overtaking-openai",
+      "source": "Euronews",
+      "time": "May 29, 2026",
+      "description": {
+        "en": "Anthropic raised $65B in private funding, pushing valuation to $965B and surpassing OpenAI's $730B. The company launched Claude Opus 4.8 and generates $47B annualized revenue.",
+        "zh": "Anthropic在私募中融资650亿美元,估值跃升至9650亿美元,超越OpenAI的7300亿美元。公司发布了Claude Opus 4.8,年化收入达到470亿美元。"
+      },
+      "insight": {
+        "en": "Anthropic's enterprise-first strategy is paying off—85% of revenue comes from enterprise deals vs OpenAI's consumer-heavy model. This isn't just a valuation flip; it's a structural advantage. With projected Q2 2026 operating profit of $559M, Anthropic is proving the enterprise play can be both defensible and profitable. The real story: OpenAI's consumer moat is narrowing as enterprises demand data sovereignty and compliance features Anthropic was built for from day one.",
+        "zh": "Anthropic的企业优先战略正在取得成效——85%的收入来自企业交易,而OpenAI则侧重消费者。这不仅仅是估值反转;这是结构性优势。Anthropic预计2026年第二季度实现5.59亿美元营业利润,证明企业玩法既可防御又有利可图。真正的问题是:随着企业要求数据主权和合规功能,OpenAI的消费护城河正在缩小,而Anthropic从一开始就为此构建。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Mythos Preview Hits 93.9% on SWE-bench, Near-Human Level",
+        "zh": "Claude Mythos预览版在SWE-bench上达到93.9%,接近人类水平"
+      },
+      "url": "https://benchlm.ai/benchmarks/sweVerified",
+      "source": "BenchLM.ai",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "Anthropic's Claude Mythos Preview scores 93.9% on SWE-bench Verified, surpassing Claude Opus 4.8 (88.6%) and GPT-5.4 High (85.0%). SWE-bench Pro shows Mythos at 77.8%.",
+        "zh": "Anthropic的Claude Mythos预览版在SWE-bench Verified上得分93.9%,超越Claude Opus 4.8(88.6%)和GPT-5.4 High(85.0%)。SWE-bench Pro上Mythos得分为77.8%。"
+      },
+      "insight": {
+        "en": "The 5.3 percentage point gap between Claude Mythos and Opus 4.8 on SWE-bench Verified is substantial—it represents roughly 1 in 20 solved problems. More critically, Mythos hits 77.8% on the harder SWE-bench Pro, where Opus 4.7 Adaptive drops to 64.3%. This suggests Mythos has a fundamentally different architecture optimized for agentic code execution, not just incremental model improvements. OpenAI's GPT-5.4 High at 85%/58.6% is competitive but trails across both benchmarks.",
+        "zh": "Claude Mythos与Opus 4.8在SWE-bench Verified上的5.3个百分点差距很大——大约代表每20个解决难题中多解决1个。更关键的是,Mythos在更难的SWE-bench Pro上达到77.8%,而Opus 4.7 Adaptive则降至64.3%。这表明Mythos拥有针对智能体代码执行的根本不同架构,而不仅仅是增量模型改进。OpenAI的GPT-5.4 High在两个基准上分别为85%/58.6%,具有竞争力但仍落后。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Launches AI Subscriptions at $7.99/$19.99",
+        "zh": "Meta推出AI订阅服务7.99/19.99美元"
+      },
+      "url": "https://thenextweb.com/news/meta-ai-subscriptions-openai-xai-ad-business-collision",
+      "source": "The Next Web",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "Meta begins selling consumer AI subscriptions at $7.99 and $19.99 per month, directly competing with OpenAI's ChatGPT subscriptions. Meanwhile, OpenAI and xAI move toward advertising.",
+        "zh": "Meta开始以每月7.99美元和19.99美元的价格销售消费级AI订阅服务,直接与OpenAI的ChatGPT订阅竞争。同时,OpenAI和xAI转向广告业务。"
+      },
+      "insight": {
+        "en": "This is a fascinating market convergence: Meta goes subscription while OpenAI/xAI go ads. Meta has the distribution advantage—3B+ users across Instagram, WhatsApp, Facebook—but lacks frontier models. The real threat to OpenAI isn't Anthropic's enterprise play; it's Meta's consumer distribution. If Meta can bundle a decent AI assistant into WhatsApp (2B users), that's a pipe dream for any subscription product. The ad-to-subscription pivot by OpenAI/xAI suggests they're struggling to convert free users to paid.",
+        "zh": "这是一个有趣的市场 convergence:Meta做订阅,而OpenAI/xAI做广告。Meta有分发优势——Instagram、WhatsApp、Facebook上超过30亿用户——但缺乏前沿模型。对OpenAI的真正威胁不是Anthropic的企业玩法;而是Meta的消费分发。如果Meta能在WhatsApp(20亿用户)中捆绑一个不错的AI助手,那任何订阅产品都无法企及。OpenAI/xAI从广告转向订阅表明他们难以将免费用户转化为付费用户。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepMind CEO Says AGI Could Arrive by 2029",
+        "zh": "DeepMind CEO称AGI或将在2029年到来"
+      },
+      "url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/",
+      "source": "Sherwood News",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "Demis Hassabis shortened his AGI prediction, now saying it could arrive by 2029-2030, compared to his previous estimate of 2030-2035. He warned society remains unprepared for AI progress.",
+        "zh": "Demis Hassabis缩短了他的AGI预测,现在表示可能在2029-2030年到来,而他之前的估计是2030-2035年。他警告社会对AI进步准备不足。"
+      },
+      "insight": {
+        "en": "Hassabis walking back from 2030-2035 to 2029-2030 is notable—not because the timeline shifted by months, but because it signals internal confidence at DeepMind. Meanwhile, Claude Mythos hitting 93.9% on SWE-bench means coding tasks are already near-human level. The real question isn't when AGI arrives, but whether we'll recognize it. If current models can already pass most SWE-bench problems, the definition of 'general' intelligence keeps shifting upward.",
+        "zh": "Hassabis从2030-2035年退回到2029-2030年值得注意——不是因为时间线移动了几个月,而是因为这表明DeepMind内部信心。同时,Claude Mythos在SWE-bench上达到93.9%意味着编码任务已经接近人类水平。真正的问题不是AGI何时到来,而是我们是否能识别它。如果当前模型已经能通过大多数SWE-bench问题,'通用'智能的定义就在不断上升。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mistral AI Raises €722M + $830M Debt for Paris Data Center",
+        "zh": "Mistral AI融资7.22亿欧元+8.3亿美元债务在巴黎建数据中心"
+      },
+      "url": "https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html",
+      "source": "CNBC",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "Mistral AI raised €722M with bank-heavy investors and secured $830M debt financing to build its first dedicated data center near Paris with 13,800 Nvidia GB300 GPUs.",
+        "zh": "Mistral AI以银行主导的投资者完成了7.22亿欧元融资,并获得8.3亿美元债务融资,在巴黎附近建设首个专用数据中心,配备13,800个Nvidia GB300 GPU。"
+      },
+      "insight": {
+        "en": "Mistral's dual financing (equity + debt) shows European AI startups are maturing—their financing stack now mirrors US hyperscalers. €722M from a bank syndicate (BNP Paribas, Crédit Agricole, HSBC) signals institutional confidence in AI infrastructure. The 13,800 GB300 deployment is massive—roughly 2x what most cloud regions offer. With 20x YoY revenue growth to $1B ARR, Mistral is the clear #2 in Europe. The custom chip exploration is telling: following in footsteps of Amazon and Google, Mistral knows hardware independence is the endgame.",
+        "zh": "Mistral的双重融资(股权+债务)表明欧洲AI创业公司正在成熟——他们的融资结构现在模仿美国超大规模公司。7.22亿欧元来自银行财团(法国巴黎银行、法国农业信贷银行、汇丰银行)表明机构对AI基础设施的信心。13,800个GB300的部署是巨大的——大约是大多数云区域的两倍。Mistral年同比增长20倍达到10亿美元ARR,是欧洲明确的第二名。探索自定义芯片是有先见之明的:追随亚马逊和谷歌的足迹,Mistral知道硬件独立是终极目标。"
+      }
+    },
+    {
+      "title": {
+        "en": "GitHub Tool Bypasses AI Safeguards in Meta and Google Models",
+        "zh": "GitHub工具绕过Meta和Google模型的安全防护"
+      },
+      "url": "https://www.digitaltoday.co.kr/en/view/59032/github-tool-bypasses-ai-safeguards-meta-google-open-weights-models-test-finds",
+      "source": "Digital Today",
+      "time": "May 27, 2026",
+      "description": {
+        "en": "A GitHub tool called 'Heretic' uses abliteration to bypass safety controls in Meta's Llama 3.3 and Google's Gemma 3 within minutes. Over 3,500 models with safeguards removed have been created, with 13 million downloads.",
+        "zh": "一个名为'Heretic'的GitHub工具使用消融技术在几分钟内绕过Meta的Llama 3.3和Google的Gemma 3的安全控制。已经创建了超过3,500个移除安全防护的模型,下载量达1300万次。"
+      },
+      "insight": {
+        "en": "The 13M downloads of safety-stripped models is a damning statistic—this isn't theoretical risk, it's active deployment. 'Heretic' uses abliteration (removing safety mechanism weights), which is fundamentally different from jailbreaking prompts. This means open-weight models from Meta and Google have a structural vulnerability: anyone can strip safety with a few lines of code. The implication: enterprises using open-weight models for sensitive workloads have no guarantee of safety if a motivated actor can remove guards post-download.",
+        "zh": "1300万次下载去除安全防护的模型是一个令人震惊的统计数据——这不是理论风险,而是积极部署。'Heretic'使用消融技术(移除安全机制权重),这与越狱提示根本不同。这意味着Meta和Google的开源模型存在结构性漏洞:任何人都可以用几行代码Strip安全防护。含义:企业在敏感工作负载中使用开源模型无法保证安全,如果动机强烈的行为者在下载后可以移除防护。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google DeepMind Releases Gemini Embedding 2 for AI Search",
+        "zh": "Google DeepMind发布Gemini Embedding 2用于AI搜索"
+      },
+      "url": "https://www.edtechinnovationhub.com/news/google-deepmind-puts-gemini-embedding-2-into-the-race-for-multimodal-ai-search",
+      "source": "EdTech Innovation Hub",
+      "time": "May 29, 2026",
+      "description": {
+        "en": "Google DeepMind releases Gemini Embedding 2, a native multimodal embedding model supporting text, image, video, audio, documents, and code for AI search applications.",
+        "zh": "Google DeepMind发布Gemini Embedding 2,这是一个原生多模态嵌入模型,支持文本、图像、视频、音频、文档和代码,用于AI搜索应用。"
+      },
+      "insight": {
+        "en": "Gemini Embedding 2's native multimodal support (not just image+text) is the differentiator—most embedding models handle text well but struggle with video/audio. This positions Google against OpenAI's text-embeddings and Cohere's multilingual offerings. The key differentiator: unified embedding space across modalities means semantic search across a PDF, its screenshots, and a related podcast becomes possible in one query. This is the infrastructure layer that makes multimodal RAG practical.",
+        "zh": "Gemini Embedding 2的原生多模态支持(不仅仅是图像+文本)是差异化所在——大多数嵌入模型处理文本很好但难以处理视频/音频。这使Google与OpenAI的文本嵌入和Cohere的多语言产品竞争。关键差异化:统一的跨模态嵌入空间意味着在一次查询中可以跨PDF、其截图和相关播客进行语义搜索。这是使多模态RAG成为可行的基础设施层。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The dominant narrative of May 29, 2026 is the enterprise AI pivot—a structural shift where the revenue models that defined the last two years (consumer subscriptions, API tokens) are being displaced by forward-deployed engineering. Anthropic's valuation flip over OpenAI isn't just about numbers; it's about enterprise-first strategy winning against consumer scale. The combined $5.5B enterprise ventures from both companies (OpenAI's Development Company + Anthropic's Blackstone JV) confirm the direction. Simultaneously, Meta's subscription play threatens OpenAI's consumer distribution while Mistral's sovereign European infrastructure story gains momentum. Underneath: Claude Mythos hitting 93.9% on SWE-bench suggests coding capability is approaching saturation—the competitive moat is shifting from 'can the model code?' to 'can the model reason across modalities and maintain safety?' The Heretic tool downloading 13M times signals the safety arms race is already lost on open weights.",
+    "zh": "5月29日的主导叙事是企业AI转型——一种结构性转变,过去两年定义收入的模式(消费者订阅、API令牌)正在被前置部署工程所取代。Anthropic在估值上超越OpenAI不仅仅是数字问题;而是企业优先战略战胜消费者规模的体现。两家公司合计55亿美元的企业 ventures(OpenAI的Development Company + Anthropic的Blackstone JV)确认了这一方向。与此同时,Meta的订阅玩法威胁OpenAI的消费分发,而Mistral的欧洲主权基础设施故事正在获得动力。在表面之下:Claude Mythos在SWE-bench上达到93.9%表明编码能力正在接近饱和——竞争护城河正从'模型能编码吗?'转向'模型能跨模态推理并保持安全吗?'Heretic工具下载1300万次表明安全军备竞赛在开源权重上已经失败。"
+  }
+}

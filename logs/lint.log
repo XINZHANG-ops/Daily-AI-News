@@ -829,3 +829,12 @@ Lint 完成。总结修复内容：
 
 • **验证通过**：所有 topic 页面包含 Evolution 和 Patterns & Insights 章节；无弱连接描述（"相关:"/"参见:"）；已添加 2026-05-29 lint 日志条目
 [2026-05-29 01:05:26] Wiki lint 完成（退出码 0）。
+[main c845d6d] wiki: lint 2026-05-29
+ 32 files changed, 726 insertions(+), 355 deletions(-)
+ create mode 100644 wiki/entities/base-mcp.md
+ delete mode 100644 wiki/entities/furiosa-ai.md
+ create mode 100644 wiki/entities/mai-image-2.5.md
+ delete mode 100644 wiki/entities/openai-deployment-company.md
+ delete mode 100644 wiki/entities/tomoro.md
+ create mode 100644 wiki/sources/furiosa-ai.md
+ create mode 100644 wiki/sources/tomoro.md
