@@ -1,7 +1,7 @@
 ---
 title: "Meta"
 slug: meta
-last_updated: 2026-05-21
+last_updated: 2026-05-29
 ---
 
 # Meta
@@ -37,6 +37,7 @@ Meta is executing the most aggressive workforce transformation in Big Tech, cutt
 | 2026-05-11 | Capex guidance contextualized | $125-145B capex is spending to catch up in agentic AI, not building from strength; chasing OpenAI and Anthropic who have agent products in market |
 | 2026-05-21 | Hatch AI assistant for Instagram | OpenClaw-inspired AI assistant for agentic shopping; users tap once, Hatch handles entire purchase flow; challenges Shopify and Amazon |
 | 2026-05-24 | Llama 4 405B released as open-weight | 85.9% on MMLU-Pro; positions Meta as "open source champion" against Google's proprietary Gemini 3 and OpenAI's delayed GPT-5; fills gap left by Mag 7 closing off open strategies |
+| 2026-05-28 | AI Subscriptions launch at $7.99/$19.99/month | Consumer AI subscriptions directly compete with OpenAI's ChatGPT; Meta has distribution advantage (3B+ users across Instagram, WhatsApp, Facebook) but lacks frontier models; real threat to OpenAI is consumer distribution, not enterprise |
 
 ## Key Relationships
 - **OpenAI**: Competition in AI assistant market and coding agents.

@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-23
+last_updated: 2026-05-29
 ---
 
 # OpenAI
@@ -91,6 +91,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 
 
 | 2026-05-28 | Pentagon tests to replace Claude | DoD began testing OpenAI and Google models to replace Claude after designating Anthropic supply-chain risk; Claude was deeply integrated into Maven Smart System for classified operations |
+| 2026-05-29 | $730B valuation, trails Anthropic | Anthropic raises $65B, reaches $965B valuation surpassing OpenAI's $730B; OpenAI's consumer-heavy model (85% consumer vs Anthropic's 85% enterprise) faces structural challenge as enterprises demand data sovereignty and compliance |
 
 ## Connections
 - [[entities/gpt-5.4]] — Model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026

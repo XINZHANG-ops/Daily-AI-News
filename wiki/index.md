@@ -59,7 +59,7 @@ Last updated: 2026-05-29
 - [[timelines/2026-04]] — April opened with the most ironic headline of 2026: Anthropic accidentally leaked Claude Code's 512,000-line TypeScript source via npm .map misconfigu
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 
-## Entities (177)
+## Entities (180)
 - [[entities/a2a-protocol]] — type: protocol — The Agent-to-Agent (A2A) Protocol is Google's protocol for inter-agent communication, launched April 2025 and celebrating its one-year anniversary in 
 - [[entities/agent-365]] — type: product — Microsoft's standalone AI agent product, launched GA on May 1, 2026 at $15/user/month. Part of the first new enterprise Microsoft license architecture
 - [[entities/agent-squad]] — type: framework — A flexible multi-agent orchestration framework featuring intelligent intent classification and a SupervisorAgent that coordinates teams of specialized
@@ -91,6 +91,7 @@ Last updated: 2026-05-29
 - [[entities/claude-mythos]] — type: model — Claude Mythos is Anthropic's most advanced AI model, specifically designed for cybersecurity applications. Internal documents describe it as "the most
 - [[entities/claude-opus-4-6]] — type: model — Claude Opus 4.6 is Anthropic's flagship model released in early April 2026, achieving 80.8% on SWE-bench — a near-tie with Google Gemini 3.1 Pro at 80
 - [[entities/claude-opus-4-7]] — type: model — Claude Opus 4.7 is Anthropic's flagship model released April 16-17, 2026. It represents a significant leap in coding capability with 87.6% on SWE-benc
+- [[entities/claude-opus-4-8]] — type: model — Claude Opus 4.8 is Anthropic's latest flagship model released May 29, 2026, achieving 88.6% on SWE-bench Verified
 - [[entities/claude-security]] — type: product — An AI-powered security scanner launched by Anthropic in public beta on May 1, 2026. It reasons through codebases like a human security researcher, tra
 - [[entities/claw-code]] — type: repo — claw-code is a clean-room Python (later Rust) implementation of Claude Code's agent harness architecture, built from scratch without copying proprieta
 - [[entities/cocoindex]] — type: repo — cocoindex is an open-source incremental engine for long-horizon AI agents. It provides a framework for building persistent, stateful agents that maint
@@ -127,9 +128,11 @@ Last updated: 2026-05-29
 - [[entities/gemini-magic-pointer]] — type: product — Gemini Magic Pointer is Google DeepMind's reimagining of the computer mouse cursor as an AI-powered, context-aware tool. Announced on May 12, 2026, it
 - [[entities/gemini-omni]] — type: model — Google's world model for physical simulation. Released at Google I/O 2026, Gemini Omni generates video outputs for real-world interaction — competing 
 - [[entities/gemini-robotics-er-1-6]] — type: model — Google DeepMind's embodied reasoning model for robots, released as a major upgrade with the ability to read complex industrial gauges and pressure met
-- [[entities/gemini-spark]] — type: product — Google's consumer AI agent for daily tasks. Released at Google I/O 2026 to compete directly with Anthropic's Claude Code and OpenAI's Operator in the 
+- [[entities/gemini-spark]] — type: product — Google's consumer AI agent for daily tasks. Released at Google I/O 2026 to compete directly with Anthropic's Claude Code and OpenAI's Operator in the
+- [[entities/gemini-embedding-2]] — type: model — Gemini Embedding 2 is Google's native multimodal embedding model supporting text, image, video, audio, documents, and code for AI search 
 - [[entities/gemma-4]] — type: model — Gemma 4 is Google's most capable open model family, released April 2, 2026 under Apache 2.0 license — the first fully permissive Gemma release.
-- [[entities/gemtts]] — type: product — GemTTS is an agent-friendly Gemini text-to-speech CLI written in Rust. It supports expressive tags like [whispers], [laughs], [warmly], multi-speaker 
+- [[entities/gemtts]] — type: product — GemTTS is an agent-friendly Gemini text-to-speech CLI written in Rust. It supports expressive tags like [whispers], [laughs], [warmly], multi-speaker
+- [[entities/gamma-world]] — type: repo — Gamma-World is NVIDIA's generative multi-agent world model generating coherent future frames from multiple independently controllable agents 
 - [[entities/github-mcp-server]] — type: product — The GitHub MCP Server's secret scanning capability reached general availability on May 13, 2026, after a public preview since March. It allows AI codi
 - [[entities/gitnexus]] — type: product — GitNexus is a zero-server code intelligence engine that indexes any codebase into a knowledge graph — mapping dependencies, call chains, and execution
 - [[entities/glm-ocr]] — type: repo — GLM-OCR is an accurate, fast, and comprehensive multimodal OCR built on the GLM-V encoder-decoder architecture. At only 0.9B parameters, it achieves 9
@@ -216,6 +219,8 @@ Last updated: 2026-05-29
 - [[entities/spec-kit]] — type: repo — Spec-Kit is an open-source JSON-based agent specification and testing framework. It provides deterministic validation for agent behavior, cost trackin
 - [[entities/spud]] — type: model — Spud is the internal codename for OpenAI's GPT-5.5 model family, referencing the model during its pretraining phase and subsequent enterprise pivot. T
 - [[entities/stainless-sdk]] — type: product — The most popular TypeScript SDK for building Claude-powered applications. Acquired by Anthropic for $300M on May 23, 2026, the SDK is used by thousand
+- [[entities/swe-bench]] — type: benchmark — SWE-bench evaluates AI models on real-world GitHub issues. The Verified version addresses data contamination. Mythos Preview achieved 93.9%, the highest score.
+- [[entities/swe-bench-verified]] — type: benchmark — SWE-bench Verified is the contamination-free version used for evaluating AI coding agents. Mythos Preview achieved 93.9% vs Opus 4.8 at 88.6%.
 - [[entities/stripe-agentic-commerce]] — type: product — Stripe's comprehensive agentic commerce platform announced at Stripe Sessions 2026, comprising 288 new products centered on enabling AI agents to tran
 - [[entities/substrate]] — type: framework — Substrate is a Kubernetes-based system for managing agent-like workloads. It multiplexes actors onto workers to achieve high scale with lower latency,
 - [[entities/symjack]] — type: vulnerability — SymJack is a critical security vulnerability discovered in May 2026 that exploits the display-to-filesystem gap in AI coding agents. The attack techni

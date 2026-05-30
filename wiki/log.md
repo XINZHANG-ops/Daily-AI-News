@@ -1,5 +1,22 @@
 # Wiki Log
 
+## [2026-05-30] wiki lint | broken links + new benchmarks
+
+**Fixed:**
+- Created `entities/swe-bench-verified.md` (benchmark, referenced from claude-mythos.md)
+- Created `entities/swe-bench.md` (benchmark, related to Verified version)
+- Fixed link in `entities/maia-ai-chips.md`: `entities/nvidia` → `sources/nvidia`
+- Added both new benchmark entries to `index.md`
+
+**Verified:**
+- No "Related:" / "See also:" unannotated links in content
+- No duplicate pages across wiki directories
+- No people in entities/ (false positives dr-venus/eliezer are software projects)
+- Remaining "broken links" are template artifacts in log.md, no actual content refs
+
+**Status:**
+- Topics: 8, Sources: 40, Entities: 184, Ideas: 64, Timelines: 3
+
 ## [2026-05-29] wiki lint | broken links + structural fixes
 
 **Pass 1 — Pre-scanned broken link fixes:**
@@ -1215,3 +1232,13 @@ Sources updated: anthropic, openai, spacex, microsoft, google, coinbase
 Entities created: mai-image-2.5, base-mcp
 Entities updated: mirage (stars/forks), natural-language-autoencoders (updated), gemini-3-5-flash (new May 28 data), claude-code (security plugin)
 Ideas updated: two-track-ai-future (Pentagon dropping Claude evidence)
+
+## [2026-05-29] ingest | 1 date
+
+Dates processed: 2026-05-29
+Topics updated: llm_models, ai_companies
+Sources updated: anthropic, openai, meta, google, nvidia, mistral
+Entities created: claude-opus-4-8, gamma-world, gemini-embedding-2
+Entities updated: claude-mythos (93.9% SWE-bench), heretic (updated with new stats)
+Ideas created: 
+Ideas updated: 

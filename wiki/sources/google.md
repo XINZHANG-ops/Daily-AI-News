@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-28
+last_updated: 2026-05-29
 ---
 
 # Google
@@ -74,6 +74,7 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 
 | 2026-05-28 | Gemini 3.5 Flash prioritizes speed | CEO Sundar Pichai acknowledged Google is behind in AI coding agents; releasing Gemini 3.5 Flash prioritizing speed over raw capability; internal coding token usage doubling weekly; tactical retreat to hold flank while main force (Gemini 4 Ultra) prepares |
 | 2026-05-28 | Pentagon tests to replace Claude | DoD began testing Google models to replace Claude after designating Anthropic supply-chain risk |
+| 2026-05-29 | Gemini Embedding 2 released | Native multimodal embedding model supporting text, image, video, audio, documents, and code for AI search; enables unified semantic search across modalities in single query; positions Google against OpenAI text-embeddings and Cohere |
 
 ## Connections
 - [[entities/gemma-4]] — Google's first fully permissive open model under Apache 2.0

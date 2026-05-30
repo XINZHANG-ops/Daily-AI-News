@@ -25,5 +25,5 @@ The Maia chips represent Microsoft's $1B+ investment in custom silicon that has 
 ## Connections
 - [[sources/microsoft]] — Developed Maia as alternative to NVIDIA; struggling to gain adoption until Anthropic talks
 - [[sources/anthropic]] — In early talks to rent Maia chips; already has $30B Azure compute commitment
-- [[entities/nvidia]] — Maia exists to compete with; NVIDIA controls 80%+ AI chip market
+- [[sources/nvidia]] — Maia exists to compete with; NVIDIA controls 80%+ AI chip market
 - [[ideas/compute-shortage-forces-cooperation]] — Even well-funded AI labs cannot build enough compute; partnerships become competitive moat

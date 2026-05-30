@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-21
+last_updated: 2026-05-29
 ---
 
 # AI Companies
@@ -166,6 +166,11 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 | 2026-05-21 | Singapore lands OpenAI, Google, Nvidia | OpenAI $230M "OpenAI for Singapore" (200 jobs, first outside US), Google DeepMind expansion, Nvidia embodied AI research hub |
 | 2026-05-21 | Nvidia faces competition from M890, FuriosaAI | Alibaba M890 and Korean FuriosaAI challenge Nvidia's 80%+ AI chip market share in inference |
 | 2026-05-21 | Meta builds Hatch for Instagram | OpenClaw-inspired AI assistant for agentic shopping; challenges Shopify and Amazon |
+| 2026-05-29 | Anthropic valuation surpasses OpenAI | Anthropic raises $65B, reaches $965B valuation vs OpenAI's $730B; 85% enterprise revenue vs OpenAI's consumer-heavy model; $47B annualized revenue |
+| 2026-05-29 | Meta launches AI subscriptions | $7.99/$19.99/month consumer subscriptions directly compete with ChatGPT; distribution advantage (3B+ users) but lacks frontier models |
+| 2026-05-29 | Mistral raises €722M + $830M for Paris data center | First dedicated data center near Paris with 13,800 GB300 GPUs; dual equity/debt financing mirrors US hyperscalers; 20x YoY revenue growth to $1B ARR |
+| 2026-05-28 | DeepMind CEO says AGI by 2029-2030 | Demis Hassabis shortened prediction from 2030-2035; signals internal confidence at DeepMind |
+| 2026-05-27 | Heretic tool downloads hit 13M | GitHub tool bypasses safety controls in Meta Llama 3.3 and Google Gemma 3 in minutes; open-weight models have structural vulnerability |
 
 ## Patterns & Insights
 

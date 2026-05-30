@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-28
+last_updated: 2026-05-29
 ---
 
 # LLM Models
@@ -201,6 +201,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 
 **May 15: AlphaEvolve and the Self-Improving Hardware Loop**: AlphaEvolve's integration into next-generation TPU silicon is the most significant hardware-AI convergence since Google began using AI to design chips. AI-designed circuits running AI creates a potential self-improvement loop that could accelerate compute efficiency gains beyond traditional Moore's Law trajectories. Unlike research demos, these are production deployments with measurable outcomes — 30% better genomics, 10x lower quantum errors. The labs that can deliver verifiable results (not just papers) will capture the high-value science and infrastructure contracts.
 
+**May 29: Claude Mythos Preview Hits 93.9% on SWE-bench**: Claude Mythos Preview achieves 93.9% on SWE-bench Verified, surpassing Claude Opus 4.8 (88.6%) and GPT-5.4 High (85.0%). The 5.3 percentage point gap between Mythos and Opus 4.8 suggests Mythos has a fundamentally different architecture optimized for agentic code execution. On SWE-bench Pro, Mythos scores 77.8% vs Opus 4.7 Adaptive at 64.3% — an even larger gap. Meanwhile, Anthropic's $965B valuation surpasses OpenAI's $730B as enterprise-first strategy (85% enterprise revenue) wins over consumer-heavy model.
+
 ## Connections
 - [[entities/arc-agi-3]] — The benchmark that exposed the LLM reasoning ceiling: GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human performance
 - [[entities/mistral-medium-3-5]] — 128B dense model with reasoning-effort toggle; one-model-for-all design pattern challenges the multi-model approach; Work Mode (on-device agentic) and Remote Agents in Vibe (async cloud execution) expand the agentic surface; EU AI Act €11.2M fine same week makes privacy-first positioning more urgent
@@ -209,7 +211,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[sources/anthropic]] — Claude Mythos developed and leaked by Anthropic; Opus 4.7 release; Project Glasswing
 - [[sources/openai]] — GPT-5.4 family, GPT-5.5 release, Spud completion, GPT-5.4-Cyber, GPT-Rosalind; GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" shifts liability to users
 - [[sources/google]] — Gemma 4 Apache 2.0 release, Gemini 3.1 Pro near-tie with Claude Opus 4.6, TPU 8th gen; DeepMind's EVE Online partnership uses interactive game simulation for multi-agent economic training; potentially a response to the ARC-AGI-3 reasoning ceiling by learning through environment interaction rather than static data
-- [[entities/claude-mythos]] — Central to this period; too dangerous to release publicly
+- [[entities/claude-mythos]] — Central to this period; too dangerous to release publicly; May 28: 93.9% on SWE-bench Verified (vs Opus 4.8 at 88.6%)
+- [[entities/claude-opus-4-8]] — Released May 29 at 88.6% SWE-bench; modest 1-point improvement over 4.7; trails Mythos by 5.3 points
 - [[entities/claude-opus-4-7]] — Anthropic's latest flagship with 87.6% SWE-bench; powers Claude Security
 - [[entities/claude-design]] — Anthropic's direct challenge to Figma's design workflow
 - [[entities/gpt-5.4]] — OpenAI's model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026

@@ -838,3 +838,15 @@ Lint 完成。总结修复内容：
  delete mode 100644 wiki/entities/tomoro.md
  create mode 100644 wiki/sources/furiosa-ai.md
  create mode 100644 wiki/sources/tomoro.md
+[2026-05-30 01:00:01] 开始 wiki lint，模型: minimax-m2.5:cloud
+Already up to date.
+Wiki lint 完成。修复摘要：
+
+• **断链修复**：创建 `entities/swe-bench-verified.md` 和 `entities/swe-bench.md` 两个新 benchmark 实体页，解决 claude-mythos.md 中的断链；修复 maia-ai-chips.md 中 `entities/nvidia` → `sources/nvidia`
+
+• **结构更新**：将新实体加入 index.md，wiki 现包含 Topics:8, Sources:40, Entities:182, Ideas:64, Timelines:3
+
+• **验证通过**：无 "相关：" / "参见：" 未标注链接；无重复页；无人物页（dr-venus/eliezer 为软件项目名）
+
+• **剩余 "断链"**：均为日志中的历史模板残留或未引用页（如 andrej-karpathy、alphafold），不在实际内容中
+[2026-05-30 01:06:25] Wiki lint 完成（退出码 0）。

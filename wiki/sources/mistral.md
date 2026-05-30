@@ -1,7 +1,7 @@
 ---
 title: "Mistral"
 slug: mistral
-last_updated: 2026-05-15
+last_updated: 2026-05-29
 ---
 
 # Mistral
@@ -18,6 +18,7 @@ Mistral AI is a French AI lab positioning itself as the geopolitically neutral, 
 | 2026-05-05 | EU AI Act Phase 2 fine | €11.2M provisional penalty for training-data transparency failures; privacy-first positioning calculated to reduce regulatory exposure |
 | 2026-05-13 | Cybersecurity AI model for banks announced | Developing a new cybersecurity-focused AI model specifically for banks lacking Anthropic Mythos access; positioned as off-the-shelf sovereign AI product for European financial institutions
 | 2026-05-05 | Work Mode and Remote Agents in Vibe | On-device agentic "Work Mode" for complex multi-step tasks in Le Chat; "Remote Agents in Vibe" for async cloud execution; API pricing $1.5/$7.5 per million tokens |
+| 2026-05-28 | €722M equity + $830M debt for Paris data center | Raised €722M from bank syndicate (BNP Paribas, Crédit Agricole, HSBC) and secured $830M debt financing; building first dedicated data center near Paris with 13,800 Nvidia GB300 GPUs; dual financing shows European AI startups maturing — financing stack mirrors US hyperscalers |
 
 ## Key Relationships
 - **Azure AI Foundry**: Mistral Ultra 2 available on Azure, giving Microsoft a European-aligned model to counter Google-Anthropic and OpenAI dominance

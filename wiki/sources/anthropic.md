@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-05-28
+last_updated: 2026-05-29
 ---
 
 # Anthropic
@@ -91,6 +91,8 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-05-24 | Claude Mythos finds 10K critical vulnerabilities | One month: 10,000 critical vulnerabilities found, only 97 patched; 100:1 ratio reveals AI discovers vulnerabilities faster than humans can fix them; creates "patch debt" that compounds daily |
 | 2026-05-25 | Enterprise lead: Claude 34.4% vs ChatGPT 32.3% | Ramp AI Index shows Anthropic enterprise adoption quadrupled in one year; $30B ARR vs OpenAI $24-25B; first profitable quarter projected at $10.9B Q2 |
 | 2026-05-25 | Maia AI chip talks with Microsoft | Early talks to rent Microsoft custom Maia AI accelerator chips to expand computing capacity; builds on existing $30B Azure compute commitment |
+| 2026-05-29 | $965B valuation, surpasses OpenAI | Raised $65B in private funding; valuation reaches $965B surpassing OpenAI's $730B; $47B annualized revenue |
+| 2026-05-29 | Claude Opus 4.8 released | Achieves 88.6% on SWE-bench Verified; modest 1-point improvement over Opus 4.7 while Mythos Preview reaches 93.9% |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -106,6 +108,7 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 - [[entities/claude-code]] — Primary driver of $9B to $30B ARR growth
 - [[entities/claude-opus-4-6]] — SWE-bench leader at 80.8%
 - [[entities/claude-opus-4-7]] — Latest flagship with 87.6% SWE-bench; powers Claude Security
+- [[entities/claude-opus-4-8]] — Released May 29 at 88.6% SWE-bench; modest improvement over 4.7; $965B valuation positions Anthropic ahead of OpenAI's $730B
 - [[entities/claude-security]] — Defensive security scanner built on Opus 4.7; native to Claude Code workflow; launched same day as Pentagon exclusion
 - [[entities/project-glasswing]] — Restricted consortium for Mythos access
 - [[entities/mcp-protocol]] — Anthropic's protocol now with critical supply chain vulnerability

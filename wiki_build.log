@@ -1108,3 +1108,35 @@ Wiki ingest for 2026-05-28 is complete. Here's a summary of what was processed:
 - Enterprise AI maturation (Anthropic $45B ARR vs OpenAI $33B)
 - Infrastructure as moat (SpaceX 220k GPUs, Base MCP for financial agents)
 - Explicit bifurcation (Pentagon testing OpenAI/Google to replace Claude)
+I've completed the wiki ingest for **2026-05-29**. Here's a summary:
+
+## Summary of Changes
+
+### New Entities Created
+1. **Claude Opus 4.8** — Anthropic's latest flagship model (88.6% SWE-bench)
+2. **Gamma-World** — NVIDIA's multi-agent world model
+3. **Gemini Embedding 2** — Google's native multimodal embedding model
+
+### Entities Updated
+1. **Claude Mythos** — Added new SWE-bench scores (93.9% Verified, 77.8% Pro)
+2. **Heretic** — Updated with new 13M download statistics
+
+### Sources Updated
+- **Anthropic** — Added $965B valuation, $65B funding, Claude Opus 4.8 launch
+- **OpenAI** — Added valuation comparison ($730B vs Anthropic's $965B)
+- **Meta** — Added AI subscriptions ($7.99/$19.99)
+- **Google** — Added Gemini Embedding 2 release
+- **NVIDIA** — Added Gamma-World release
+- **Mistral** — Added €722M + $830M Paris data center financing
+
+### Topics Updated
+- **llm_models** — Added May 29 entry about Mythos hitting 93.9%
+- **ai_companies** — Added entries for valuation flip, Meta subscriptions, Mistral funding
+
+### Timeline Updated
+- Added complete May 29 section to `2026-05.md`
+
+### Wiki Infrastructure
+- Updated `processed.json` with 2026-05-29
+- Updated `log.md` with ingest entry
+- Updated `index.md` with 3 new entities (count: 177→180)
