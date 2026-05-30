@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-30",
+  "github_repos": [
+    {
+      "name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "description": {
+        "en": "A Unified Virtual Filesystem for AI Agents - mounts services like S3, Google Drive, Slack, Gmail, and Redis as a single filesystem tree, allowing AI agents to interact with multiple backends using familiar bash commands.",
+        "zh": "AI智能体的统一虚拟文件系统 - 将S3、Google Drive、Slack、Gmail和Redis等服务挂载为单一文件系统树，让AI智能体能够使用熟悉的bash命令与多个后端进行交互。"
+      },
+      "stars": "2.8k",
+      "forks": "189"
+    },
+    {
+      "name": "linny006/skills-tracker",
+      "url": "https://github.com/linny006/skills-tracker",
+      "description": {
+        "en": "Real-time tracking of every new GitHub 'skills' repo to capture AI agent skill ecosystem trends. Auto-updates every 15 minutes via GitHub Actions.",
+        "zh": "实时跟踪GitHub上每一个新的'skills'仓库，以捕捉AI智能体技能生态系统趋势。每15分钟通过GitHub Actions自动更新。"
+      },
+      "stars": "1",
+      "forks": "2"
+    },
+    {
+      "name": "fokrulanthro16-eng/eidolon-os",
+      "url": "https://github.com/fokrulanthro16-eng/eidolon-os",
+      "description": {
+        "en": "Local-first AI cognitive operating system with memory, vision, voice, PDF intelligence, CCTV analysis, and temporal replay. Zero cloud, zero API keys, privacy-focused.",
+        "zh": "本地优先的AI认知操作系统，具备记忆、视觉、语音、PDF智能分析、CCTV时间回放等功能。零云端、零API密钥、注重隐私。"
+      },
+      "stars": "1",
+      "forks": "0"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Raises $65 Billion, Surpasses OpenAI to Become World's Most Valuable AI Startup",
+        "zh": "Anthropic融资650亿美元，超越OpenAI成为全球最有价值AI初创公司"
+      },
+      "url": "https://www.euronews.com/business/2026/05/29/worlds-most-valuable-ai-start-up-anthropic-nears-1tn-valuation-overtaking-openai",
+      "source": "Euronews",
+      "time": "May 29, 2026",
+      "description": {
+        "en": "Anthropic announced a $65 billion private funding round, pushing its valuation to $965 billion - overtaking OpenAI's $852 billion. The company now makes $47 billion annualized revenue.",
+        "zh": "Anthropic宣布650亿美元的私人融资轮，估值达到965亿美元 - 超越OpenAI的852亿美元。该公司目前年化收入达470亿美元。"
+      },
+      "insight": {
+        "en": "The funding magnitude is unprecedented - $65B is more than most tech IPOs in history. What makes this remarkable is the strategic backing from Samsung, SK Hynix, and Micron - three major memory chip suppliers. This signals Anthropic is betting big on vertical integration of AI compute infrastructure. Meanwhile, OpenAI's $852B valuation now looks like a discount. The real story: the AI race is increasingly about who can secure compute at scale, not just model capability.",
+        "zh": "融资规模前所未有 - 650亿美元超过历史上大多数科技公司IPO。真正值得注意的是三星、SK海力士和Micron三大内存芯片供应商的战略投资。这表明Anthropic正在押注AI计算基础设施的垂直整合。与此同时，OpenAI 8520亿美元的估值现在看起来像是打折价。真正的主题是：AI竞赛 increasingly取决于谁能获得大规模计算资源，而不仅仅是模型能力。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Opus 4.8 Launches with 88.6% SWE-bench, Improved Honesty",
+        "zh": "Claude Opus 4.8发布，SWE-bench达88.6%，诚实度提升"
+      },
+      "url": "https://llm-stats.com/blog/research/claude-opus-4-8-launch",
+      "source": "LLM Stats",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "Anthropic released Claude Opus 4.8 with 88.6% on SWE-bench Verified and 74.6% on Terminal-Bench 2.1. New features include parallel-subagent workflows and optional 2.5x fast mode.",
+        "zh": "Anthropic发布Claude Opus 4.8，SWE-bench验证集达88.6%，Terminal-Bench 2.1达74.6%。新功能包括并行子智能体工作流和可选的2.5倍快速模式。"
+      },
+      "insight": {
+        "en": "The 4.8 upgrade is incremental but strategically important - 88.6% on SWE-bench is only +0.9pts over 4.7's 87.7%. But the honesty improvement (4x fewer unflagged flaws in self-written code) addresses the biggest criticism of frontier models. Meanwhile, Qwen 3.7 Max just launched at $2.50/M tokens - half Opus's price. Anthropic's challenge isn't capability anymore; it's maintaining premium pricing against increasingly capable open-weight alternatives.",
+        "zh": "4.8升级是增量但战略上很重要 - SWE-bench 88.6%仅比4.7的87.7%提升0.9个百分点。但诚实度改进(自写代码中未标记缺陷减少4倍)解决了前沿模型最大的批评。与此同时，Qwen 3.7 Max刚刚以每百万token 2.5美元的价格推出 - 是Opus价格的一半。Anthropic的挑战不再是能力；而是应对日益强大的开源替代品时保持溢价。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Launches Gemini 3.5 with 'Gemini Spark' Personal AI Agent",
+        "zh": "谷歌发布Gemini 3.5，推出'Gemini Spark'个人AI智能体"
+      },
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "source": "Google Blog",
+      "time": "May 19, 2026",
+      "description": {
+        "en": "Google released Gemini 3.5 family combining frontier intelligence with action. Flash is available now; Pro coming soon. Introduces Gemini Spark - a 24/7 personal AI agent.",
+        "zh": "谷歌发布Gemini 3.5系列，将前沿智能与行动结合。Flash版本现已推出；Pro版本即将推出。引入Gemini Spark - 全天候个人AI智能体。"
+      },
+      "insight": {
+        "en": "The 'Gemini Spark' personal agent is Google's answer to the consumer AI assistant battle - positioning against Apple Intelligence and ChatGPT subscriptions. But CEO Sundar Pichai just admitted Google is 'lagging behind Anthropic in AI coding agents' - a remarkable public acknowledgment. The combination of internal 'Antigravity 2.0' tools and Gemini 3.5 Flash suggests Google is trying to close the gap from behind. The question: can Google's distribution advantage (Android, Search) overcome its capability gap?",
+        "zh": "'Gemini Spark'个人智能体是谷歌应对消费级AI助手大战的回答 - 对标苹果智能和ChatGPT订阅。但CEO Sundar Pichai刚刚承认谷歌在AI编码智能体方面'落后于Anthropic' - 这是一次非凡的公开承认。'Antigravity 2.0'内部工具与Gemini 3.5 Flash的结合表明谷歌正在试图追赶。问题是：谷歌的发行优势(Android、搜索)能否弥补其能力差距？"
+      }
+    },
+    {
+      "title": {
+        "en": "Mistral AI Releases Medium 3.5 with Open Weights Under Modified MIT License",
+        "zh": "Mistral AI发布Medium 3.5，采用修改版MIT许可证开源"
+      },
+      "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/",
+      "source": "Mistral AI",
+      "time": "May 22, 2026",
+      "description": {
+        "en": "Mistral released Medium 3.5, a 128B dense model merging instruction-following, reasoning, and coding. Available as open weights under modified MIT license, can run on 4 GPUs.",
+        "zh": "Mistral发布Medium 3.5，1280亿参数的密集模型，融合指令遵循、推理和编码能力。修改版MIT许可证开源，可在4块GPU上运行。"
+      },
+      "insight": {
+        "en": "The open-weight strategy is getting aggressive. Medium 3.5 at 128B parameters running on 4 GPUs is a practical self-hosting option that directly competes with Qwen 3.7 Max. Unlike Qwen (closed weights), Mistral's open approach targets the enterprise self-deployment market - where Anthropic and OpenAI can't compete. Mistral Vibe (cloud coding agents powered by Medium 3.5) is also a direct shot at Cognition AI's Devin. The multi-agent coding space just got more crowded.",
+        "zh": "开源权重策略变得更加激进。1280亿参数的Medium 3.5可在4块GPU上运行，是实用的自托管选项，直接与Qwen 3.7 Max竞争。与Qwen(闭源权重)不同，Mistral的开源方法针对企业自部署市场 - 这是Anthropic和OpenAI无法竞争的领域。Mistral Vibe(由Medium 3.5驱动的云端编码智能体)也直接瞄准Cognition AI的Devin。多智能体编码空间变得更加拥挤。"
+      }
+    },
+    {
+      "title": {
+        "en": "Cognition AI Raises $1 Billion at $26 Billion Valuation for AI Coding Agent Devin",
+        "zh": "Cognition AI为AI编码智能体Devin融资10亿美元，估值260亿美元"
+      },
+      "url": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value",
+      "source": "Bloomberg",
+      "time": "May 27, 2026",
+      "description": {
+        "en": "AI coding startup Cognition raised over $1 billion in funding at a $26 billion valuation, more than doubling from September 2025. Led by Lux Capital, General Catalyst, and 8VC.",
+        "zh": "AI编码初创公司Cognition融资超过10亿美元，估值260亿美元，较2025年9月翻倍多。领投方为Lux Capital、General Catalyst和8VC。"
+      },
+      "insight": {
+        "en": "Devin's valuation doubled in 8 months - even as the AI coding agent market gets crowded with OpenAI's Operator, Anthropic's computer use, and now Mistral Vibe. The key differentiator: Cognition's 'program synthesis' approach vs. generalist LLMs. But at $26B, the market is pricing in 'winning the coding agent wars.' That's a high bar - history shows platform shifts often produce multiple winners, not monopolies. The real test: can Cognition maintain lead as every major AI provider adds coding agent features?",
+        "zh": "Devin在8个月内估值翻倍 - 即使AI编码智能体市场因OpenAI的Operator、Anthropic的计算机使用功能以及现在的Mistral Vibe而变得更加拥挤。关键差异化：Cognition的'程序合成'方法 vs. 通用LLM。但在2600亿美元的估值下，市场是在定价'赢得编码智能体战争'。这是一个很高的门槛 - 历史表明平台转换通常产生多个赢家，而非垄断。真正考验：Cognition能否在每个主要AI提供商添加编码智能体功能时保持领先？"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Mythos AI Demonstrates Unprecedented Vulnerability Discovery Capabilities",
+        "zh": "Claude Mythos AI展示前所未有的漏洞发现能力"
+      },
+      "url": "https://maketecheasier.com/anthropics-new-claude-mythos-ai-is-so-good-at-finding-software-vulnerabilities-that-the-company-has-restricted-its-release-and-treasury-officials-central-banks-and-the-global-financial-stability/",
+      "source": "Make Tech Easier",
+      "time": "May 29, 2026",
+      "description": {
+        "en": "Anthropic's unreleased Claude Mythos model found a flaw in OpenBSD that had gone undetected for 27 years. Global central banks held emergency briefings over concerns about banking system security.",
+        "zh": "Anthropic未发布的Claude Mythos模型发现了OpenBSD中27年未检测到的漏洞。全球央行就银行系统安全问题举行了紧急简报会。"
+      },
+      "insight": {
+        "en": "This is the most significant AI security story of the year - not because Mythos found a bug, but because a model was so capable that Anthropic had to restrict its release. The 27-year OpenBSD flaw is a stark reminder: legacy code everywhere contains vulnerabilities we don't know about. 'Project Glasswing' (Anthropic's controlled access program) is essentially a bet that defensive AI use cases will be more valuable than offensive ones. The central bank briefings suggest governments are taking this seriously. The dual-use dilemma just got real.",
+        "zh": "这是今年最重要的AI安全故事 - 不是因为Mythos发现了一个漏洞，而是因为模型能力太强以至于Anthropic不得不限制其发布。27年的OpenBSD漏洞提醒我们：各地的遗留代码包含我们不知道的漏洞。'Project Glasswing'(Anthropic的受控访问计划)本质上是在押注防御性AI用例将比攻击性更有价值。央行简报会表明政府正在认真对待这一问题。双重用途困境变得真实了。"
+      }
+    },
+    {
+      "title": {
+        "en": "Alibaba's Qwen 3.7 Max Ranks #5 on AI Index at Half Opus's Price",
+        "zh": "阿里Qwen 3.7 Max在AI指数排名第5，价格仅为Opus一半"
+      },
+      "url": "https://www.digitalapplied.com/blog/qwen-3-7-max-alibaba-flagship-ai-model-2026",
+      "source": "Digital Applied",
+      "time": "May 20, 2026",
+      "description": {
+        "en": "Alibaba's Qwen 3.7 Max ranked #5 on Artificial Analysis Intelligence Index (56.6) - highest Chinese model at launch. Pricing at $2.50/$7.50 per 1M tokens, roughly half of Opus 4.7.",
+        "zh": "阿里Qwen 3.7 Max在Artificial Analysis智能指数(56.6)排名第5 - 推出时最高的中国模型。定价为每百万token 2.50/7.5美元，约为Opus 4.7的一半。"
+      },
+      "insight": {
+        "en": "Qwen 3.7 Max's pricing strategy is aggressive: $2.50/M (input) vs. Opus's $5.00/M - that's 50% cheaper for equivalent capability (56.6 vs. ~55 on the same index). The 1M token context window is also competitive. What Chinese models lack in 'frontier' capability they make up in price-performance. This matters for the broader market: as Qwen improves, the floor for 'good enough' AI keeps dropping. The pricing war is real, and it's hurting premium providers more than budget ones.",
+        "zh": "Qwen 3.7 Max的定价策略激进：2.50美元/百万(输入) vs. Opus的5.00美元/百万 - 同等能力下便宜50%(56.6 vs. 相同指数约55)。100万token上下文窗口也很有竞争力。中国模型在'前沿'能力上的不足通过性价比来弥补。这对更广泛的市场很重要：随着Qwen的改进，'足够好'AI的门槛不断下降。价格战是真实的，对高端提供商的影响大于低端提供商。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The narrative of May 30th isn't just about funding records - it's about the maturing of AI into infrastructure. Anthropic's $65B raise with Samsung/SK Hynix/Micron as strategic partners signals a vertical integration play: compute suppliers now own a stake in the AI companies they'll supply. Meanwhile, the Claude Mythos security incident reveals the dual-use dilemma is no longer theoretical - governments are holding emergency briefings. The competitive picture is also shifting: Mistral's open-weight approach (Medium 3.5) targets self-hosting enterprises that Anthropic can't reach, while Qwen's pricing undercuts premium providers. The coding agent battle is heating up with Cognition at $26B, but Google just admitted lag and is rushing to close the gap. What emerges is a landscape where capability gaps matter less than distribution, pricing, and compute access - the boring infrastructure questions that will determine who actually wins.",
+    "zh": "5月30日的主题不仅仅是融资纪录 - 而是AI成熟为基础设施的过程。Anthropic获得三星/SK海力士/Micron作为战略合作伙伴的650亿美元融资，发出了一个垂直整合的信号：计算供应商现在拥有他们将供应的AI公司的股份。与此同时，Claude Mythos安全事件揭示双重用途困境不再是理论性的 - 政府正在举行紧急简报会。竞争格局也在变化：Mistral的开源权重方法(Midium 3.5)针对Anthropic无法触及的自托管企业，而Qwen的定价则削弱了高端提供商。编码智能体大战正在升温，Cognition估值260亿美元，但谷歌刚刚承认落后并正在急于追赶。出现的是一个能力差距不如发行、定价和计算访问那么重要的格局 - 这些无聊的基础设施问题将决定谁真正获胜。"
+  }
+}
