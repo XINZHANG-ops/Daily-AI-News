@@ -867,3 +867,12 @@ Already up to date.
 
 • 记录到log.md：2026-05-31 lint条目
 [2026-05-31 01:03:17] Wiki lint 完成（退出码 0）。
+[main dc4efc2] wiki: lint 2026-05-31
+ 26 files changed, 563 insertions(+), 1238 deletions(-)
+ create mode 100644 wiki/entities/eidolon-os.md
+ create mode 100644 wiki/entities/qwen-3-7-max.md
+ create mode 100644 wiki/ideas/pricing-war.md
+ create mode 100644 wiki/ideas/vertical-integration.md
+ create mode 100644 wiki/sources/micron.md
+ create mode 100644 wiki/sources/samsung.md
+ create mode 100644 wiki/sources/sk-hynix.md

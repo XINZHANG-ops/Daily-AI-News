@@ -1,0 +1,160 @@
+{
+  "date": "2026-05-31",
+  "github_repos": [
+    {
+      "name": "LocoreMind/locoagent",
+      "url": "https://github.com/LocoreMind/locoagent",
+      "description": {
+        "en": "AI-powered social media agent with real browser automation. Autonomously operates social media accounts through Chrome CDP, performing tasks like liking posts, writing replies, and publishing content.",
+        "zh": "AI驱动的社交媒体代理，具备真实浏览器自动化功能。通过Chrome CDP自动操作社交媒体账户，执行点赞、回复和发布内容等任务。"
+      },
+      "stars": "388",
+      "forks": "12"
+    },
+    {
+      "name": "lsdefine/GenericAgent",
+      "url": "https://github.com/lsdefine/GenericAgent",
+      "description": {
+        "en": "Self-evolving agent that grows skill tree from 3.3K-line seed. Minimal architecture achieving full system control with 6x less token consumption.",
+        "zh": "从3300行种子代码自进化成长的代理。极简架构实现完整系统控制，token消耗减少6倍。"
+      },
+      "stars": "12.3k",
+      "forks": "823"
+    },
+    {
+      "name": "zhayujie/CowAgent",
+      "url": "https://github.com/zhayujie/CowAgent",
+      "description": {
+        "en": "Open-source super AI assistant and Agent Harness with model management, MCP protocol support, and multi-channel integration for Telegram, Discord, WeChat, and more.",
+        "zh": "开源超级AI助手和Agent框架，支持模型管理、MCP协议及Telegram、Discord、微信等多渠道集成。"
+      },
+      "stars": "45k",
+      "forks": "4.2k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Raises $65B in Series H, Valuation Hits $965B — Overtakes OpenAI",
+        "zh": "Anthropic完成65亿美元H轮融资 估值965亿美元超越OpenAI"
+      },
+      "url": "https://www.anthropic.com/news/series-h",
+      "source": "Anthropic",
+      "time": "2026-05-28",
+      "description": {
+        "en": "Anthropic raised $65 billion in Series H funding at a $965 billion valuation, surpassing OpenAI's $852 billion valuation for the first time. The round was co-led by Sequoia Capital with participation from Amazon and other investors.",
+        "zh": "Anthropic完成65亿美元H轮融资，估值达965亿美元，首次超越OpenAI的852亿美元估值。本轮由红杉资本领投，亚马逊等参投。"
+      },
+      "insight": {
+        "en": "Three months after Series G ($30B at $380B), Anthropic's valuation has more than doubled. Run-rate revenue already crossed $47B — dwarfing most public SaaS companies. Strategic partnerships with Amazon (5GW capacity), Google/Broadcom (next-gen TPU), and SpaceX (Colossus) signal hyperscaler-level infrastructure ambitions. With $47B+ ARR and this war chest, Anthropic is positioning for an IPO race against OpenAI — potentially the last private fundraising before going public.",
+        "zh": "在G轮融资仅三个月后（300亿估值380亿），Anthropic估值翻倍。年度经常性收入已超470亿美元，超过大多数上市SaaS公司。与亚马逊（5GW容量）、谷歌/Broadcom（下一代TPU）及SpaceX（Colossus）的战略合作，显示出超大规模基础设施的野心。凭借470亿+ ARR和这笔资金，Anthropic正在为IPO做准备——这可能是上市前的最后一轮私募融资。"
+      }
+    },
+    {
+      "title": {
+        "en": "Waymo Unveils Ojai Robotaxi: 42% Fewer Sensors, $75K Lower Cost",
+        "zh": "Waymo发布Ojai自动驾驶出租车传感器减少42%成本降低7.5万美元"
+      },
+      "url": "https://waymo.com/blog/2026/05/welcoming-riders-in-the-ojai/",
+      "source": "Waymo",
+      "time": "2026-05-28",
+      "description": {
+        "en": "Waymo's sixth-generation Ojai robotaxi built by Geely features 13 cameras, 4 lidar, 6 radar — 42% fewer sensors than the previous generation. Cost dropped from $200K to $125K per vehicle.",
+        "zh": "Waymo第六代Ojai自动驾驶出租车由吉利打造，配备13个摄像头、4个激光雷达、6个雷达——传感器数量比上一代减少42%。单车成本从20万美元降至12.5万美元。"
+      },
+      "insight": {
+        "en": "The cost equation just shifted. $125K per vehicle vs. $200K Jaguar — plus the base Zeekr costs $38K vs. $75K. Waymo compensated for fewer sensors with 17-megapixel imagers and 500m dark-range detection. At ~$20K hardware cost, this is >50% reduction. With plans to expand to Denver, Vegas, and San Diego, Waymo is no longer just proving tech — it's proving unit economics. The $75K cost reduction per vehicle across a fleet of thousands translates to hundreds of millions in savings.",
+        "zh": "成本方程变了。单辆12.5万美元vs.20万美元的捷豹——基础车型zeekr成本3.8万美元vs.7.5万美元。Waymo用1700万像素摄像头和500米黑暗环境探测来弥补传感器减少。硬件成本约2万美元，减少超过50%。计划扩展到丹佛、拉斯维加斯和圣地亚哥，Waymo不仅在证明技术——更在证明单位经济学。数千辆车队每辆减少7.5万美元成本意味着数亿美元节省。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches Rosalind Biodefense Program, Offers Free GPT-Rosalind Access",
+        "zh": "OpenAI推出Rosalind生物防御计划免费提供GPT-Rosalind访问"
+      },
+      "url": "https://openai.com/index/introducing-gpt-rosalind/",
+      "source": "OpenAI",
+      "time": "2026-05-29",
+      "description": {
+        "en": "OpenAI launched Rosalind Biodefense, offering free access to GPT-Rosalind for trusted developers and government partners working on pandemic preparedness, epidemiological modeling, and vaccine development.",
+        "zh": "OpenAI推出Rosalind生物防御计划，为致力于疫情准备、流行病建模和疫苗开发的可信开发者和政府合作伙伴免费提供GPT-Rosalind访问。"
+      },
+      "insight": {
+        "en": "Strategic positioning for defensive bioscience — a direct response to dual-use concerns about AI in biology. Partners include Lawrence Livermore National Laboratory, Johns Hopkins APL, and CEPI (working on Bundibugyo Ebola). OpenAI is sponsoring access costs, effectively subsidizing defensive AI research while competitors scramble. This also creates friction for potential attackers — building trust with governments earns regulatory goodwill ahead of potential AI safety regulations.",
+        "zh": "为防御生物科学进行战略性定位——直接回应AI在生物学中的双重用途问题。合作伙伴包括劳伦斯·利弗莫尔国家实验室、约翰霍普金斯应用物理实验室和CEPI（致力于Bundibugyo埃博拉疫情防控）。OpenAI赞助访问费用，实质上是补贴防御性AI研究，同时竞争对手争先恐后。这也增加了潜在攻击者的摩擦——与政府建立信任，为潜在的AI安全监管赢得监管善意。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Code Source Code Leak: 512K Lines Exposed, Hidden Features Revealed",
+        "zh": "Claude Code源代码泄露暴露51.2万行隐藏功能曝光"
+      },
+      "url": "https://www.coreprose.com/kb-incidents/inside-the-claude-code-512k-leak-what-anthropic-s-npm-mistake-reveals-about-real-world-ai-agent-architecture",
+      "source": "CoreProse",
+      "time": "2026-05-31",
+      "description": {
+        "en": "Anthropic accidentally published Claude Code source code (512K lines) to npm in March 2026. Security researchers discovered hidden features including KAIROS autonomous daemon mode, Undercover Mode, and 44 unreleased feature flags.",
+        "zh": "Anthropic在2026年3月意外将Claude Code源代码（51.2万行）发布到npm。安全研究人员发现隐藏功能包括KAIROS自主守护进程模式、隐蔽模式和44个未发布的功能标志。"
+      },
+      "insight": {
+        "en": "The leak exposed the exact boundaries of Claude Code's safety rules — including a 50-subcommand limit bypass and remote instruction channel. KAIROS daemon mode could enable persistent background agents, while Undercover Mode instructs the AI to conceal its identity in public repos. The incident sparked fastest-growing repo in GitHub history as developers created open-source alternatives. Anthropic initially issued DMCA takedowns then retracted most — raising questions about transparency vs. IP protection.",
+        "zh": "泄露暴露了Claude Code安全规则的确切边界——包括50子命令限制绕过和远程指令通道。KAIROS守护进程模式可实现持久后台代理，而隐蔽模式指示AI在公共仓库中隐藏身份。事件引发GitHub历史上增长最快的仓库，因为开发者创建了开源替代品。Anthropic最初发出DMCA删除通知，随后撤回大部分——引发关于透明度与知识产权保护的质疑。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Signals Cloud Entry: $145B AI Infrastructure Spend, 'Definite Possibility'",
+        "zh": "Meta暗示进军云计算1450亿美元AI基础设施投入可能性明确"
+      },
+      "url": "https://market-pulse.co/article/20785/meta-eyes-cloud-market-entry-as-ai-spending-surges-to-145b",
+      "source": "MarketPulse",
+      "time": "2026-05-28",
+      "description": {
+        "en": "Meta raised its 2026 AI infrastructure spending forecast to $125B-$145B. CEO Zuckerberg confirmed cloud business is 'definitely on the table' if data center capacity exceeds internal demand.",
+        "zh": "Meta将2026年AI基础设施支出预测提高至1250亿至1450亿美元。CEO扎克伯格确认，如果数据中心容量超过内部需求，云计算业务「绝对在考虑范围内」。"
+      },
+      "insight": {
+        "en": "Wall Street punished the announcement — Meta dropped 12% in after-hours. But the math: Wolfe Research projects $26B+ AI revenue by 2027 ($6B non-ad, $20B+ AI-driven ads). With excess capacity, Meta could rent to external customers — becoming a fourth major cloud provider. The 'Meta Compute' org is planning for tens of gigawatts this decade. This is either a massive cost center becoming a revenue stream, or a signal of just how much compute Meta believes it needs.",
+        "zh": "华尔街惩罚了这一宣布——Meta盘后下跌12%。但算式是：Wolfe Research预测2027年AI收入超过260亿美元（60亿非广告，200亿+AI驱动广告）。如果产能过剩，Meta可以向外部客户出租——成为第四大云提供商。Meta Compute组织本十年计划数十吉瓦。这是巨大的成本中心变成收入来源，或者表明Meta认为它需要多少算力。"
+      }
+    },
+    {
+      "title": {
+        "en": "Pope Leo XIV Issues First Encyclical 'Magnifica Humanitas' on AI Ethics",
+        "zh": "教皇利奥十四世发布首份关于AI伦理的通谕Magnifica Humanitas"
+      },
+      "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2026/05/25/260525e.html",
+      "source": "Vatican",
+      "time": "2026-05-25",
+      "description": {
+        "en": "Pope Leo XIV issued his first encyclical 'Magnifica Humanitas' addressing AI's impact on human dignity. The document calls for AI to be 'disarmed' from logics of domination and for international cooperation on AI governance.",
+        "zh": "教皇利奥十四世发布首份通谕「Magnifica Humanitas」，阐述AI对人类尊严的影响。文件呼吁AI脱离统治逻辑，实现AI治理国际合作。"
+      },
+      "insight": {
+        "en": "The first AI encyclical from a Pope — signed on the 135th anniversary of Rerum Novarum (1891), positioning AI as the industrial revolution's moral equivalent. Key themes: human dignity must override AI logic of domination, criticism of AI-powered weapons, protection of labor dignity, and condemnation of rare earth extraction as 'new forms of slavery.' With 1.4B Catholics globally, this creates real moral authority pressure on AI companies. The 'disarm AI' language mirrors nuclear disarmament rhetoric — significant framing.",
+        "zh": "首位教皇关于AI的通谕——签署于《通谕》发表135周年（1891年），将AI定位为工业革命的道德等价物。核心主题：人类尊严必须超越AI统治逻辑、批评AI武器、保护劳动尊严、谴责稀土开采为「新形式的奴隶制」。全球14亿天主教徒，这对AI公司构成真正的道德权威压力。「解除AI武装」的语言模仿核裁军修辞——意义重大。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Launches Claude Managed Agents with 90% Performance Boost Claim",
+        "zh": "Anthropic推出Claude托管代理声称性能提升90%"
+      },
+      "url": "https://cryptobriefing.com/openai-anthropic-multi-agent-enterprise/",
+      "source": "CryptoBriefing",
+      "time": "2026-05-30",
+      "description": {
+        "en": "Anthropic launched Claude Managed Agents in public beta, offering hosted infrastructure with sandboxing and multi-agent orchestration. Internal evaluations show 90.2% performance improvement over single-agent setups.",
+        "zh": "Anthropic推出Claude托管代理公开测试版，提供带沙箱和多方代理编排的托管基础设施。内部评估显示比单一代理设置性能提升90.2%。"
+      },
+      "insight": {
+        "en": "The 90.2% claim matters — but compute cost is the real question. Enterprise adoption from Notion, Rakuten, and Asana shows traction, but the multi-agent infrastructure play mirrors AWS's early compute services. OpenAI matched with enhanced Codex multi-agent features same week. We're seeing the agent orchestration layer become a platform war — whoever controls the multi-agent infrastructure wins the enterprise AI relationship.",
+        "zh": "90.2%的说法很重要——但计算成本才是真正的问题。来自Notion、Rakuten和Asana的企业采用显示吸引力，但多方代理基础设施玩法模仿AWS早期计算服务。OpenAI同一周用增强的Codex多方代理功能匹配。我们看到代理编排层成为平台战争——控制多方代理基础设施的人赢得企业AI关系。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The valuation race between Anthropic ($965B) and OpenAI ($852B) marks a inflection point — the AI race is no longer about capability but about enterprise infrastructure. Anthropic's $65B war chest, strategic partnerships with Amazon/Google/SpaceX, and $47B+ run-rate signal a company preparing for IPO and hyperscaler status. Meanwhile, OpenAI's Rosalind Biodefense initiative positions it as the responsible actor in bioscience AI — a deliberate contrast to Anthropic's aggressive commercial expansion. The real story today: AI is becoming infrastructure. Meta's cloud signals, Waymo's unit economics breakthrough, and Anthropic's managed agents all point to the same conclusion — the platform layer is forming, and whoever owns it controls the ecosystem.",
+    "zh": "Anthropic（9650亿）和OpenAI（8520亿）之间的估值竞赛标志着转折点——AI竞争不再关乎能力而是企业基础设施。Anthropic的650亿资金库、与亚马逊/谷歌/SpaceX的战略合作以及470亿+的年度经常性收入，显示出一家准备IPO和超大规模地位的公司。与此同时，OpenAI的Rosalind生物防御计划将其定位为生物科学AI的责任方——与Anthropic的积极商业扩张形成鲜明对比。今天的真正故事是：AI正在成为基础设施。Meta的云计算信号、Waymo的单位经济学突破和Anthropic的托管代理都指向同一个结论——平台层正在形成，谁控制它谁就控制生态系统。"
+  }
+}
