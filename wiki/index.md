@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-29
+Last updated: 2026-05-31
 
 ## Topics (8)
 - [[topics/agentic_ai]] — May 2, 2026 shows the agent ecosystem maturing on three fronts simultaneously. Serena (23.8K stars) provides semantic code infrastructure at the symbo
@@ -12,7 +12,7 @@ Last updated: 2026-05-29
 - [[topics/github_trends]] — May 2, 2026 brings three notable repos spanning AI video generation and agent infrastructure. MOVA (972 stars) is a foundation model for synchronized 
 - [[topics/llm_models]] — May 2, 2026 delivers the most damning empirical critique of the LLM paradigm to date: ARC-AGI-3 results show GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18
 
-## Sources (40)
+## Sources (46)
 - [[sources/ai2]] — Ai2 is a Seattle-based AI research organization founded by the late Paul Allen. It is best known for OLMo, one of the most transparent open-source lan
 - [[sources/alibaba]] — Alibaba is a Chinese tech giant and the creator of the Qwen model family. In April 2026, Alibaba is in talks (alongside Tencent) to invest in DeepSeek
 - [[sources/amazon]] — Amazon is the world's largest e-commerce platform and cloud infrastructure provider (AWS). The company is pivoting toward voice and agent shopping, bu
@@ -45,6 +45,9 @@ Last updated: 2026-05-29
 - [[sources/sierra]] — Sierra is an AI agent startup building autonomous customer service agents. In May 2026, the company raised $950 million led by GV and Tiger Global at 
 - [[sources/singapore]] — Singapore is positioning itself as the strategic gateway between US AI giants and Southeast Asia's 700M+ market. On May 21, 2026, Singapore announced 
 - [[sources/spacex]] — SpaceX acquired xAI for $250 billion in an all-stock transaction in April 2026, creating a $1.25 trillion "galactic AI entity." On May 6, 2026, SpaceX
+- [[sources/samsung]] — South Korean tech giant; strategic investor in Anthropic's $65B raise alongside SK Hynix and Micron; major memory chip supplier
+- [[sources/sk-hynix]] — South Korean memory chip maker; strategic investor in Anthropic's $65B raise; leading HBM supplier for AI training
+- [[sources/micron]] — American memory chip manufacturer; strategic investor in Anthropic's $65B raise; supplies DRAM and NAND for AI infrastructure
 - [[sources/stripe]] — Stripe has positioned itself as the essential financial infrastructure for the emerging agent economy. At Stripe Sessions 2026, the company announced 
 - [[sources/tencent]] — Tencent is a Chinese technology conglomerate known for WeChat, gaming, and cloud services. The company is positioning itself as an AI innovator with p
 - [[sources/thinking-machines-lab]] — Thinking Machines Lab is Mira Murati's AI startup, formed after her departure from OpenAI. The lab shipped its first public model, TML-Interaction-Sma
@@ -53,13 +56,16 @@ Last updated: 2026-05-29
 - [[sources/vast-data]] — Vast Data is an AI infrastructure startup backed by NVIDIA that provides data storage and management solutions optimized for AI workloads. The company
 - [[sources/vercel]] — Vercel is the company behind the Next.js web framework and Vercel AI SDK, known for making AI application deployment seamless. The company has expande
 - [[sources/xai]] — xAI has been consolidated into SpaceX following the $250 billion all-stock acquisition, creating a $1.25 trillion "galactic AI entity." On May 6, 2026
+- [[sources/micron]] — Major American memory chip manufacturer; strategic investor in Anthropic's $65B raise alongside Samsung and SK Hynix
+- [[sources/samsung]] — Major South Korean tech conglomerate and memory chip manufacturer; strategic investor in Anthropic's $65B raise
+- [[sources/sk-hynix]] — Major South Korean memory chip manufacturer and HBM supplier; strategic investor in Anthropic's $65B raise
 
 ## Timelines (3)
 - [[timelines/2026-03]] — The week opened with NVIDIA's GTC 2026 unveiling Vera Rubin (10x performance per watt over Blackwell), the NemoClaw stack for OpenClaw agents, and phy
 - [[timelines/2026-04]] — April opened with the most ironic headline of 2026: Anthropic accidentally leaked Claude Code's 512,000-line TypeScript source via npm .map misconfigu
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 
-## Entities (180)
+## Entities (184)
 - [[entities/a2a-protocol]] — type: protocol — The Agent-to-Agent (A2A) Protocol is Google's protocol for inter-agent communication, launched April 2025 and celebrating its one-year anniversary in 
 - [[entities/agent-365]] — type: product — Microsoft's standalone AI agent product, launched GA on May 1, 2026 at $15/user/month. Part of the first new enterprise Microsoft license architecture
 - [[entities/agent-squad]] — type: framework — A flexible multi-agent orchestration framework featuring intelligent intent classification and a SupervisorAgent that coordinates teams of specialized
@@ -113,6 +119,7 @@ Last updated: 2026-05-29
 - [[entities/eliezer]] — type: repo — Eliezer is a tiny (~6,000 lines of TypeScript) self-hosted AI agent with a self-editing protocol — it can modify its own source code. Features include
 - [[entities/ernie-5-1]] — type: model — Baidu's Ernie 5.1 is a Chinese large language model featuring "multi-dimensional elastic pre-training technology" that reduces pre-training costs to j
 - [[entities/evonic]] — type: repo — evonic is an open agentic AI platform for designing, deploying, and orchestrating intelligent agents. Features include multi-agent swarms, workplace e
+- [[entities/eidolon-os]] — type: framework — Local-first AI cognitive OS with memory, vision, voice, PDF intelligence, CCTV analysis, temporal replay; zero cloud, zero API keys, privacy-focused
 - [[entities/forge]] — type: repo — An open-source reliability layer for self-hosted LLM tool-calling. Forge takes an 8B model from 53% to 99% on agentic tasks through guardrails includi
 - [[entities/frona]] — type: repo — frona is a self-hosted personal AI assistant platform for creating autonomous agents. It features per-principal sandboxing with policy-driven syscall 
 - [[entities/future-agi]] — type: repo — Open-source end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Includes tracing, evals, simulations, datasets
@@ -207,6 +214,7 @@ Last updated: 2026-05-29
 - [[entities/project-glasswing]] — type: product — Project Glasswing is a restricted-access cybersecurity consortium launched by Anthropic to share the defensive insights derived from Claude Mythos dis
 - [[entities/pydantic-ai]] — type: framework — An AI agent framework using the Pydantic data validation library approach. Version 2.0 introduces "harness-first design" with capabilities as the core
 - [[entities/qwen-3-6]] — type: model — Qwen 3.6-35B-A3B is Alibaba's efficient coding model released April 20, 2026. It uses only 3B active parameters per inference pass, making it runnable
+- [[entities/qwen-3-7-max]] — type: model — Alibaba flagship at $2.50/M tokens (half Opus price); #5 on Intelligence Index 56.6; highest Chinese model at launch; 1M token context
 - [[entities/redis-context-engine]] — type: product — Redis Context Engine is a memory layer for enterprise AI agents, launched May 18, 2026. It provides three core tools: Context Retriever (semantic sear
 - [[entities/remy]] — type: product — Remy is a new agentic AI system codenamed "Remy" that Google is developing for its Gemini platform. Unlike competing agents optimized for autonomous e
 - [[entities/ros-llm]] — type: framework — A framework integrating Large Language Models with the Robot Operating System (ROS). The SAE white paper and Nature Machine Intelligence publication o
@@ -242,8 +250,10 @@ Last updated: 2026-05-29
 - [[entities/webwright]] — type: repo — Webwright is a terminal-based web agent harness developed by Microsoft, achieving state-of-the-art results: 86.7% on Online-Mind2Web and 60.1% on Odys
 - [[entities/windsurf-2]] — type: product — Codeium's AI-powered coding IDE that introduced "always-on" cloud execution with Devin Cloud integration. Users can dispatch tasks to Devin's cloud en
 - [[entities/zerolang]] — type: framework — A programming language designed specifically for AI agents. ZeroLang features agent-first learnability (agents can learn it faster than other language
+- [[entities/eidolon-os]] — type: framework — Local-first AI cognitive OS with memory, vision, voice, PDF intelligence, CCTV analysis, temporal replay; zero cloud, zero API keys, privacy-focused
+- [[entities/qwen-3-7-max]] — type: model — Alibaba's flagship model released May 2026, ranking #5 on Intelligence Index (56.6) at $2.50/M tokens — highest-ranking Chinese model to date
 
-## Ideas (64)
+## Ideas (68)
 - [[ideas/agent-control-interface-wars]] — Google's Remy reveals a philosophical split in agent UX design that will define how enterprises adopt autonomous AI. While OpenAI's Operator and Anthr
 - [[ideas/agent-democratization]] — Open-source agent frameworks are rapidly democratizing access to autonomous AI capabilities. The Claude Code leak's rapid replication by claw-code (10
 - [[ideas/agent-e-commerce]] — Anthropic's Project Deal demonstrates that AI agents can autonomously negotiate, bid, and transact for real goods and real money. When agents can repr
@@ -307,5 +317,7 @@ Last updated: 2026-05-29
 - [[ideas/two-track-ai-future]] — The Pentagon's May 2026 exclusion of Anthropic from classified AI contracts — while awarding them to OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX, O
 - [[ideas/us-china-ai-fragmentation]] — The US-China AI competition has evolved from trade rhetoric to technical countermeasures. OpenAI, Anthropic, and Google formed an unprecedented coalit
 - [[ideas/vertical-integration-resolving]] — The "wrapper vs foundation" debate in AI is resolving toward full-stack vertical integration. On May 12-13, 2026, three independent announcements conf
+- [[ideas/pricing-war]] — Qwen 3.7 Max at $2.50/M tokens (half Opus's price) achieves #5 on Intelligence Index, forcing premium providers to compete on capability vs price; the pricing war favors open-weight and Chinese models
+- [[ideas/vertical-integration]] — Anthropic's $65B raise with Samsung, SK Hynix, Micron as strategic investors signals compute suppliers now own equity stakes in AI companies they supply — new vertical integration paradigm
 - [[ideas/voice-agent-battleground]] — Voice models are becoming a distinct competitive battleground separate from text-based models. xAI's grok-voice-think-fast-1.0 scoring 67.3% on τ-voic
 

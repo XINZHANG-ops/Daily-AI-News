@@ -14,8 +14,8 @@ strukto-ai/mirage is a unified virtual filesystem for AI agents. It mounts servi
 
 | Attribute | Value |
 |-----------|-------|
-| Stars | 2,000+ |
-| Forks | 129 |
+| Stars | 2,800+ |
+| Forks | 189 |
 | Creator | strukto-ai |
 | Primary Use | Unified storage abstraction for agents |
 

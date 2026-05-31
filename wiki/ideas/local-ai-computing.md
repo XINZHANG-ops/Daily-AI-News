@@ -25,4 +25,5 @@ This trend could challenge the cloud AI business model if enough computation can
 - [[entities/perplexity-computer]] — Pioneering always-on local AI
 - [[entities/thunderbolt]] — Enterprise self-hosted alternative
 - [[entities/qwen-3-6]] — Enables local deployment with 3B active params
+- [[entities/eidolon-os]] — Zero-cloud local AI OS with full privacy; represents the privacy-first edge of the agent spectrum
 - [[ideas/efficiency-frontier]] — Efficiency improvements enabling local AI

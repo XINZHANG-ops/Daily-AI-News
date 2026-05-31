@@ -35,10 +35,21 @@ The compute shortage forces cooperation even between ideological rivals. Partner
 - Anthropic signs $45B deal for SpaceX Colossus 1 access
 - Compute revenue reaches material levels for SpaceX
 - Rate limits immediately doubled for Claude Code paid tiers
+- Anthropic $65B raise with Samsung, SK Hynix, Micron as strategic investors — compute suppliers become equity partners
 
 ### 2025
 - Major infrastructure investments by Google, Microsoft, Amazon
 - Compute emerges as competitive differentiator
+
+## Patterns & Insights
+
+The AI infrastructure market is undergoing a structural transformation from commodity hardware supply to strategic partnership. Three patterns emerge:
+
+1. **Vertical Integration**: Compute suppliers (Samsung, SK Hynix, Micron) now own equity stakes in AI companies they supply. This creates mutual dependency where suppliers guarantee demand while gaining upside in customer success.
+
+2. **Compute as Revenue Line**: SpaceX's $45B Anthropic deal (80% of SpaceX's 2025 revenue) signals compute becoming a material business line, not just cost center. Data centers are now revenue drivers.
+
+3. **Geographic Distribution**: The compute shortage forces geographic diversification — Memphis (SpaceX), Phoenix (Microsoft), Santa Clara (NVIDIA), Asian hubs (Samsung, SK Hynix) — each with different power, regulatory, and connectivity advantages.
 
 ## Connections
 - [[entities/colossus-1]] — SpaceX's 300MW+ data center powering Anthropic

@@ -37,9 +37,20 @@ The security of AI coding agents cannot be assumed to improve through incrementa
 - Heretic tool downloads 13M+ times, making guardrail stripping commodity infrastructure
 - Three coordinated vulnerability disclosures (SymJack, TrustFall, Mini Shai-Hulud)
 - MCP protocol RCE flaw (April 2026) confirmed as pattern, not anomaly
+- Claude Mythos finds 27-year OpenBSD vulnerability — first model so capable it was restricted; global central banks held emergency briefings on banking system security
 
 ### April 2026
 - MCP protocol's "expected behavior" RCE vulnerability disclosed
+
+## Patterns & Insights
+
+Three patterns define the AI security landscape in 2026:
+
+1. **Offensive Capability Parity**: Claude Mythos finding a 27-year OpenBSD vulnerability marks the first time an AI model was restricted not because humans might misuse it, but because the model's own capabilities posed unprecedented risk. This establishes a new category: capability-restricted releases.
+
+2. **Guardrail Commoditization**: Heretic's 13M+ downloads prove guardrail stripping is now commodity infrastructure. Security by obscurity is dead — if your model has capabilities, someone will find a way to extract them.
+
+3. **Trust Architecture Collapse**: Coordinated vulnerabilities (SymJack, TrustFall, Mini Shai-Hulud) in a single month reveal a systemic flaw in how AI systems handle user trust. The fundamental assumption — that users mean what they say — is being exploited at scale.
 
 ## Connections
 - [[entities/heretic]] — Guardrail stripping tool with 13M+ downloads

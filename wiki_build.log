@@ -1140,3 +1140,42 @@ I've completed the wiki ingest for **2026-05-29**. Here's a summary:
 - Updated `processed.json` with 2026-05-29
 - Updated `log.md` with ingest entry
 - Updated `index.md` with 3 new entities (count: 177→180)
+I've completed the wiki update for **2026-05-30**. Here's a summary of the changes:
+
+## Entities Created
+- **qwen-3-7-max** — Alibaba's flagship model at $2.50/M tokens, #5 on Intelligence Index
+- **eidolon-os** — Local-first AI cognitive OS with privacy focus
+
+## Entities Updated
+- **mirage** — Stars updated to 2.8k
+
+## Sources Created
+- **samsung** — Strategic investor in Anthropic's $65B raise
+- **sk-hynix** — Strategic investor, HBM supplier
+- **micron** — Strategic investor, memory chip supplier
+
+## Sources Updated
+- **anthropic** — $65B raise at $965B valuation, $47B revenue
+- **google** — Gemini 3.5 and Gemini Spark launched
+- **mistral** — Medium 3.5 released with open weights
+- **cognition** — $1B raise at $26B valuation for Devin
+
+## Ideas Created
+- **pricing-war** — Qwen 3.7 Max undercuts premium providers at half price
+- **vertical-integration** — Compute suppliers become equity partners
+
+## Topics Updated
+- llm_models, ai_funding, ai_infrastructure, ai_security, agentic_ai
+
+## Timeline Updated
+- Added May 30 narrative covering Anthropic's vertical integration, Claude Mythos OpenBSD flaw, Qwen pricing pressure, and coding agent competition
+
+## Index Updated
+- Last updated: 2026-05-30
+- Entities: 182 (+2)
+- Sources: 43 (+3)  
+- Ideas: 66 (+2)
+
+## Processed
+- Added 2026-05-30 to processed.json
+- Added log entry for May 30 ingest

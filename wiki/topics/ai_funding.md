@@ -81,7 +81,9 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 | 2026-05-11 | Anthropic $30B ARR with 80x annualized growth | Revenue run rate reached in Q1 2026; $200B Google Cloud commitment (40% of Google's cloud backlog); xAI/SpaceX merger reveals brutal compute economics
 | 2026-05-11 | Alphabet 160% stock rally | Briefly surpasses Nvidia by market cap; $190B capex guidance — more than double 2025 levels; spending to maintain position
 | 2026-05-11 | Meta $125-145B capex and Google $190B capex | Both companies spending to catch up in agentic AI, not building from strength; late entrants buying compute to compete
-| 2026-05-12 | ElevenLabs $11B Series D at $500M ARR | BlackRock, Nvidia NVentures, Salesforce Ventures, celebrities; validates voice AI as standalone investment category, not just a feature of text models
+| 2026-05-12 | ElevenLabs $11B Series D at $500M ARR | BlackRock, Nvidia NVentures, Salesforce Ventures, celebrities; validates voice AI as standalone investment category, not just a feature of text models |
+| 2026-05-27 | Cognition AI raises $1B at $26B valuation | AI coding startup Devin doubles valuation in 8 months; led by Lux Capital, General Catalyst, 8VC |
+| 2026-05-29 | Anthropic $65B raise at $965B valuation | Surpasses OpenAI's $852B; $47B annualized revenue; strategic investors Samsung, SK Hynix, Micron |
 
 ## Patterns & Insights
 

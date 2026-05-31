@@ -116,6 +116,9 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 | 2026-05-21 | Google Search AI overhaul | Conversational AI queries, "information agents" that track listings and make phone calls, custom software interface generation — embedding autonomous agents directly into search |
 | 2026-05-21 | Meta Hatch for Instagram | OpenClaw-inspired AI assistant for agentic shopping; users tap once, Hatch handles entire purchase flow |
 | 2026-05-21 | Singapore as offshore AI hub | OpenAI Applied AI Lab (200 jobs, first outside US), Google DeepMind expansion, Nvidia embodied AI research hub |
+| 2026-05-22 | Mistral Medium 3.5 released | 128B dense model runs on 4 GPUs; Mistral Vibe cloud coding agents powered by Medium 3.5; direct competitor to Cognition's Devin |
+| 2026-05-27 | Cognition AI Devin raises $1B | AI coding agent at $26B valuation; doubled from September 2025; "program synthesis" approach vs generalist LLMs |
+| 2026-05-28 | Claude Opus 4.8 with parallel subagents | 88.6% SWE-bench, parallel subagent workflows, optional 2.5x fast mode; honesty improved 4x |
 
 ## Patterns & Insights
 
