@@ -12,7 +12,7 @@ Last updated: 2026-05-31
 - [[topics/github_trends]] — May 2, 2026 brings three notable repos spanning AI video generation and agent infrastructure. MOVA (972 stars) is a foundation model for synchronized 
 - [[topics/llm_models]] — May 2, 2026 delivers the most damning empirical critique of the LLM paradigm to date: ARC-AGI-3 results show GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18
 
-## Sources (46)
+## Sources (45)
 - [[sources/ai2]] — Ai2 is a Seattle-based AI research organization founded by the late Paul Allen. It is best known for OLMo, one of the most transparent open-source lan
 - [[sources/alibaba]] — Alibaba is a Chinese tech giant and the creator of the Qwen model family. In April 2026, Alibaba is in talks (alongside Tencent) to invest in DeepSeek
 - [[sources/amazon]] — Amazon is the world's largest e-commerce platform and cloud infrastructure provider (AWS). The company is pivoting toward voice and agent shopping, bu
@@ -26,6 +26,7 @@ Last updated: 2026-05-31
 - [[sources/deepseek]] — DeepSeek has emerged as a significant AI laboratory known for competitive open-weight models and aggressive hiring. The company faced its biggest outa
 - [[sources/elevenlabs]] — ElevenLabs is the leading voice AI company, announcing $500M ARR (up from $350M at start of 2026) and a Series D at an $11 billion valuation. New inve
 - [[sources/furiosa-ai]] — FuriosaAI is a South Korean AI chip startup developing accelerators to challenge Nvidia's dominance in the AI hardware market. The company's new chip 
+- [[sources/geely]] — Geely is a Chinese automotive group that owns Volvo, Polestar, Zeekr. Partner with Waymo to build the Zeekr platform for the Ojai robotaxi.
 - [[sources/github]] — GitHub is the dominant platform for AI-assisted coding, having crossed 275 million commits per week and 17 million AI agent PRs in March 2026. On Apri
 - [[sources/google]] — Google has deepened its role as an AI infrastructure provider and model competitor simultaneously. The company is investing up to $40 billion in Anthr
 - [[sources/ibm]] — IBM entered the AI development platform race with Bob, an AI-first development partner that automates the full software development lifecycle beyond c
@@ -54,18 +55,16 @@ Last updated: 2026-05-31
 - [[sources/tomoro]] — Tomoro is an AI deployment company that OpenAI acquired in May 2026 as part of its launch of the Deployment Company. The acquisition brought 150 exper
 - [[sources/tsmc]] — Taiwan Semiconductor Manufacturing Company (TSMC) is the world's critical AI chip foundry, manufacturing AI accelerators for NVIDIA, AMD, Google (TPU)
 - [[sources/vast-data]] — Vast Data is an AI infrastructure startup backed by NVIDIA that provides data storage and management solutions optimized for AI workloads. The company
+- [[sources/waymo]] — Waymo is Google's autonomous vehicle subsidiary, operating robotaxi services in multiple US cities. Achieved major milestone with Ojai sixth-generation vehicle.
 - [[sources/vercel]] — Vercel is the company behind the Next.js web framework and Vercel AI SDK, known for making AI application deployment seamless. The company has expande
 - [[sources/xai]] — xAI has been consolidated into SpaceX following the $250 billion all-stock acquisition, creating a $1.25 trillion "galactic AI entity." On May 6, 2026
-- [[sources/micron]] — Major American memory chip manufacturer; strategic investor in Anthropic's $65B raise alongside Samsung and SK Hynix
-- [[sources/samsung]] — Major South Korean tech conglomerate and memory chip manufacturer; strategic investor in Anthropic's $65B raise
-- [[sources/sk-hynix]] — Major South Korean memory chip manufacturer and HBM supplier; strategic investor in Anthropic's $65B raise
 
 ## Timelines (3)
 - [[timelines/2026-03]] — The week opened with NVIDIA's GTC 2026 unveiling Vera Rubin (10x performance per watt over Blackwell), the NemoClaw stack for OpenClaw agents, and phy
 - [[timelines/2026-04]] — April opened with the most ironic headline of 2026: Anthropic accidentally leaked Claude Code's 512,000-line TypeScript source via npm .map misconfigu
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 
-## Entities (184)
+## Entities (187)
 - [[entities/a2a-protocol]] — type: protocol — The Agent-to-Agent (A2A) Protocol is Google's protocol for inter-agent communication, launched April 2025 and celebrating its one-year anniversary in 
 - [[entities/agent-365]] — type: product — Microsoft's standalone AI agent product, launched GA on May 1, 2026 at $15/user/month. Part of the first new enterprise Microsoft license architecture
 - [[entities/agent-squad]] — type: framework — A flexible multi-agent orchestration framework featuring intelligent intent classification and a SupervisorAgent that coordinates teams of specialized
@@ -91,13 +90,15 @@ Last updated: 2026-05-31
 - [[entities/cc-sdd]] — type: repo — cc-sdd (Claude Code Spec-Driven Development) is an open-source tool that enforces spec-first coding inside Claude Code. It rejects code that doesn't m
 - [[entities/chatgpt-powerpoint-addin]] — type: product — A beta Microsoft PowerPoint add-in released by OpenAI that embeds ChatGPT directly into the Microsoft Office productivity suite. Available for both fr
 - [[entities/claude-code]] — type: product — Claude Code is Anthropic's CLI coding assistant that enables developers to build software faster by running agents that can browse, edit, and write co
+- [[entities/claude-managed-agents]] — type: product — Anthropic's hosted multi-agent orchestration product, launched in public beta May 30, 2026. Provides enterprises with sandboxed infrastructure for running multiple AI agents.
 - [[entities/claude-cowork]] — type: product — Claude Cowork is Anthropic's enterprise agentic AI product for non-coding professional workflows, deployed alongside Claude Code as part of the compan
 - [[entities/claude-design]] — type: product — Claude Design is an AI-powered design tool launched by Anthropic on April 17, 2026. It turns conversational prompts into polished prototypes, slide de
 - [[entities/claude-haiku-4-5]] — type: model — Claude Haiku 4.5 is Anthropic's fast and cost-efficient model, added to GitHub Copilot Cloud Agent on May 18, 2026. It's positioned for simple coding 
 - [[entities/claude-mythos]] — type: model — Claude Mythos is Anthropic's most advanced AI model, specifically designed for cybersecurity applications. Internal documents describe it as "the most
 - [[entities/claude-opus-4-6]] — type: model — Claude Opus 4.6 is Anthropic's flagship model released in early April 2026, achieving 80.8% on SWE-bench — a near-tie with Google Gemini 3.1 Pro at 80
+- [[entities/claude-opus-4-8]] — type: model — Anthropic's latest flagship model released May 29, 2026. Achieves 88.6% on SWE-bench Verified, with Claude Mythos Preview reaching 93.9%.
 - [[entities/claude-opus-4-7]] — type: model — Claude Opus 4.7 is Anthropic's flagship model released April 16-17, 2026. It represents a significant leap in coding capability with 87.6% on SWE-benc
-- [[entities/claude-opus-4-8]] — type: model — Claude Opus 4.8 is Anthropic's latest flagship model released May 29, 2026, achieving 88.6% on SWE-bench Verified
+& — type: model — Claude Opus 4.8 is Anthropic's latest flagship model released May 29, 2026, achieving 88.6% on SWE-bench Verified
 - [[entities/claude-security]] — type: product — An AI-powered security scanner launched by Anthropic in public beta on May 1, 2026. It reasons through codebases like a human security researcher, tra
 - [[entities/claw-code]] — type: repo — claw-code is a clean-room Python (later Rust) implementation of Claude Code's agent harness architecture, built from scratch without copying proprieta
 - [[entities/cocoindex]] — type: repo — cocoindex is an open-source incremental engine for long-horizon AI agents. It provides a framework for building persistent, stateful agents that maint
@@ -111,7 +112,8 @@ Last updated: 2026-05-31
 - [[entities/cursor]] — type: product — AI-powered coding IDE that pivoted to agent orchestration with Cursor 3. Competes directly with Claude Code and OpenAI Codex in the rapidly consolidat
 - [[entities/deepgemm]] — type: framework — DeepGEMM is DeepSeek's clean and efficient FP8 (8-bit floating point) General Matrix Multiply (GEMM) kernels library with fine-grained scaling for mod
 - [[entities/deepseek-v4]] — type: model — DeepSeek-V4 is DeepSeek's flagship model family released April 24, 2026. Available in three variants:
-- [[entities/dexter]] — type: repo — Dexter is an autonomous AI agent for deep financial research, described as "Claude Code, but for finance." It features a self-validating research work
+- [[entities/dexter]] — type: repo — Dexter is an autonomous AI agent for deep financial research, described as "Claude Code, but for finance." It features a self-validating research workflow.
+- [[entities/devin]] — type: product — Devin is an autonomous AI software engineer created by Cognition AI. Can write code, debug, and ship software autonomously. — type: repo — Dexter is an autonomous AI agent for deep financial research, described as "Claude Code, but for finance." It features a self-validating research work
 - [[entities/dr-venus]] — type: model — DR-Venus is a 4-billion-parameter deep research agent trained entirely on open data (10,000 samples). It establishes a new small-model frontier on dee
 - [[entities/dulus]] — type: repo — Dulus is a lightweight autonomous AI agent inspired by Claude Code. It supports multiple LLM providers (Claude, GPT, Gemini, DeepSeek, Qwen), includes
 - [[entities/elephant-agent]] — type: repo — Elephant Agent is a "Personal-Model First Self Evolving AI Agent" — a self-improving agent that evolves based on user interactions and learns from its
@@ -250,10 +252,11 @@ Last updated: 2026-05-31
 - [[entities/webwright]] — type: repo — Webwright is a terminal-based web agent harness developed by Microsoft, achieving state-of-the-art results: 86.7% on Online-Mind2Web and 60.1% on Odys
 - [[entities/windsurf-2]] — type: product — Codeium's AI-powered coding IDE that introduced "always-on" cloud execution with Devin Cloud integration. Users can dispatch tasks to Devin's cloud en
 - [[entities/zerolang]] — type: framework — A programming language designed specifically for AI agents. ZeroLang features agent-first learnability (agents can learn it faster than other language
-- [[entities/eidolon-os]] — type: framework — Local-first AI cognitive OS with memory, vision, voice, PDF intelligence, CCTV analysis, temporal replay; zero cloud, zero API keys, privacy-focused
 - [[entities/qwen-3-7-max]] — type: model — Alibaba's flagship model released May 2026, ranking #5 on Intelligence Index (56.6) at $2.50/M tokens — highest-ranking Chinese model to date
 
-## Ideas (68)
+- [[entities/waymo-ojai]] — type: product — Waymo's sixth-generation robotaxi built on Geely Zeekr platform. Features 42% fewer sensors while maintaining safety.
+
+## Ideas (66)
 - [[ideas/agent-control-interface-wars]] — Google's Remy reveals a philosophical split in agent UX design that will define how enterprises adopt autonomous AI. While OpenAI's Operator and Anthr
 - [[ideas/agent-democratization]] — Open-source agent frameworks are rapidly democratizing access to autonomous AI capabilities. The Claude Code leak's rapid replication by claw-code (10
 - [[ideas/agent-e-commerce]] — Anthropic's Project Deal demonstrates that AI agents can autonomously negotiate, bid, and transact for real goods and real money. When agents can repr

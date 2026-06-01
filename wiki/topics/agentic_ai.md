@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-22
+last_updated: 2026-05-31
 ---
 
 # Agentic AI
@@ -254,4 +254,4 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/pydantic-ai]] — Pydantic AI v2's capability composition mirrors ADK v2; both represent industry consolidation around modular agent design similar to React components for UI
 - [[entities/zerolang]] — Vercel Labs' radical experiment in agent-native programming; zero dependencies simplifies the agent's world model; deterministic tooling enables reliable debugging by agents
 - [[entities/claude-opus-4-7]] — 87.6% SWE-bench is the economic threshold where autonomous coding agents become viable at enterprise scale; below 80% requires human oversight, above it the cost-benefit flips
-- [[entities/gemini-3-5-flash]] — Powers Google Search AI Mode; aggressive pricing-to-performance ratio with distribution channel leverage — every Google Search user becomes a potential Flash user
+- [[entities/gemini-3-5-flash]] — Powers Google Search AI Mode; aggressive pricing-to-performance ratio with distribution channel leverage — every Google Search user becomes a potential Flash user| 2026-05-30 | Anthropic launches Claude Managed Agents public beta | Hosted infrastructure with sandboxing and multi-agent orchestration; 90.2% performance improvement over single-agent; enterprise adoption from Notion, Rakuten, Asana |

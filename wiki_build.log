@@ -1179,3 +1179,29 @@ I've completed the wiki update for **2026-05-30**. Here's a summary of the chang
 ## Processed
 - Added 2026-05-30 to processed.json
 - Added log entry for May 30 ingest
+Wiki ingest completed for 2026-05-31. Here's a summary of the work done:
+
+**Timeline Updated:**
+- Added May 31 entry covering 7 major stories: Anthropic $65B Series H ($965B valuation), Waymo Ojai robotaxi unit economics, OpenAI Rosalind Biodefense, Claude Code source leak (512K lines), Meta cloud entry signals, Pope Leo XIV's first AI encyclical, Claude Managed Agents launch
+
+**Topics Updated:**
+- `ai_funding.md` — Added Anthropic $65B raise entry
+- `ai_infrastructure.md` — Added Meta cloud entry
+- `llm_models.md` — Added valuation race conclusion entry
+- `agentic_ai.md` — Added Claude Managed Agents entry
+
+**New Entities Created (6):**
+- `waymo-ojai` — Sixth-gen robotaxi with 42% sensor reduction, $75K cost savings
+- `claude-managed-agents` — Managed multi-agent infrastructure with 90.2% boost
+- `cognition` — Company entity (for Devin)
+- `devin` — AI software engineer product
+- Updated `gpt-rosalind` — Added biodefense program details
+
+**New Sources Created (8):**
+- `waymo`, `geely`, `asana`, `rakuten`, `notion`, `cepi`, `johns-hopkins-apl`, `lawrence-livermore-national-laboratory`
+
+**Wiki Maintenance:**
+- Updated `processed.json` — Added 2026-05-31
+- Updated `log.md` — Added ingest entry
+- Ran wiki lint — Clean (no broken links)
+- Updated topic counts in `index.md`

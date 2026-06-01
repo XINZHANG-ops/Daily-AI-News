@@ -2,7 +2,7 @@
 title: "AI Infrastructure"
 slug: ai_infrastructure
 type: topic
-last_updated: 2026-05-28
+last_updated: 2026-05-31
 ---
 
 # AI Infrastructure
@@ -56,3 +56,8 @@ The AI infrastructure market is undergoing a structural transformation from comm
 - [[sources/spacex]] — Compute business emerging as major revenue line
 - [[sources/anthropic]] — $45B compute deal secures capacity
 - [[ideas/compute-shortage-forces-cooperation]] — Scarcity overrides rivalries
+### May 31: Meta Signals Cloud Entry
+- Meta raises AI infrastructure spend to $125-145B
+- Zuckerberg: cloud business "definitely on the table" if capacity exceeds internal demand
+- Could become fourth major cloud provider (AWS, Azure, Google Cloud, Meta)
+- Wolfe Research projects $26B+ AI revenue by 2027

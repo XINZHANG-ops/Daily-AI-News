@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-05-21
+last_updated: 2026-05-31
 ---
 
 # AI Funding
@@ -152,3 +152,4 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[sources/xai]] — May 19: $12B round at $250B valuation led by state funds (Saudi PIF, UAE MGX, Temasek); Memphis 500K GPU buildout
 - [[entities/redis-context-engine]] — May 18: new funding wave into agent memory/infrastructure layer; Redis positioning as agent economy infrastructure
 - [[sources/google]] — May 19: $180-190B capex for 2026 (6x 2022 spending); Google's infrastructure bet signals that compute capacity is the defining competitive advantage
+| 2026-05-31 | Anthropic $65B Series H at $965B valuation | Surpasses OpenAI ($852B); $47B ARR; strategic investors Amazon, Google/Broadcom, SpaceX; IPO preparation |

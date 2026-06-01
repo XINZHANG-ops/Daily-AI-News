@@ -876,3 +876,15 @@ Already up to date.
  create mode 100644 wiki/sources/micron.md
  create mode 100644 wiki/sources/samsung.md
  create mode 100644 wiki/sources/sk-hynix.md
+[2026-06-01 01:00:01] 开始 wiki lint，模型: minimax-m2.5:cloud
+Already up to date.
+完成 Wiki Lint 修复。总结：
+
+• **删除6个空源页面**（正文<10行）：cepi、lawrence-livermore-national-laboratory、notion、rakuten、asana、johns-hopkins-apl — 存根页面无实质内容，直接删除
+
+• **修复结构问题**：entities/cognition 类型为 company，应在 sources/ 而非 entities/，已删除重复文件并修正链接
+
+• **修复断链**：更新 timelines/2026-05.md、entities/devin.md、entities/claude-managed-agents.md、entities/gpt-rosalind.md 中的链接，目标指向 sources/cognition 或移除已删除页面的链接
+
+• **重建 index.md**：修正头部计数（Sources 54→45，Ideas 68→66）；补全缺失条目（geely、waymo、claude-managed-agents、claude-opus-4-8、devin、waymo-ojai）；移除重复条目（eidolon-os、micron、samsung、sk-hynix）；验证全部分类计数匹配：Topics 8、Sources 45、Timelines 3、Entities 187、Ideas 66
+[2026-06-01 01:21:48] Wiki lint 完成（退出码 0）。

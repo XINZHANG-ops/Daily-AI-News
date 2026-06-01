@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-05-29
+last_updated: 2026-05-31
 ---
 
 # LLM Models
@@ -278,3 +278,4 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[entities/llama-4-405b]] — Meta's May 24 open-weight release at 85.9% MMLU-Pro fills the gap as Google goes proprietary and OpenAI delays GPT-5; positions Meta as the "open source champion" against closed alternatives
 - [[sources/anthropic]] — Andrej Karpathy joined May 19 to work on using Claude to build better Claude models; the irony of "AI improving AI" validates Karpathy's teacher-building philosophy
 - [[ideas/ai-utility-layer]] — The May 24 convergence of MCP protocol victory, Gemini 3's price war, and platform dependency unraveling signals AI is becoming a utility layer where differentiation moves from model performance to infrastructure, governance, and pricing
+| 2026-05-31 | Anthropic $965B valuation surpasses OpenAI $852B | Valuation race concludes: Anthropic overtakes OpenAI for first time; $65B Series H, $47B ARR; strategic partnerships with Amazon, Google/Broadcom, SpaceX |
