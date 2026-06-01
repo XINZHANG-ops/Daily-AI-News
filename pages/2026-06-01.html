@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 01, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 01, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/synapseorch-ai/synapse-ai" class="card-title" target="_blank">synapseorch-ai/synapse-ai</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 162 stars</div>
+                                <div class="meta-item"><span>🍴</span> 28 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open-source platform for creating, connecting, and orchestrating AI agents powered by any LLM — local, cloud or CLIs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">开源平台，用于创建、连接和编排由任何LLM驱动的AI代理——本地、云或CLI。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/yejy53/GenClaw" class="card-title" target="_blank">yejy53/GenClaw</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 106 stars</div>
+                                <div class="meta-item"><span>🍴</span> 1 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Code-Driven Agentic Image Generation — explores using code as a controllable visual canvas before calling image generation models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">代码驱动的代理式图像生成——在调用图像生成模型之前，探索使用代码作为可控的视觉画布。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/nano-step/nano-brain" class="card-title" target="_blank">nano-step/nano-brain</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4 stars</div>
+                                <div class="meta-item"><span>🍴</span> 1 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A tiny brain for your AI agent. Local MCP server with persistent memory — hybrid search (BM25 + vector + LLM reranking) across sessions, codebase, and notes.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI代理的小型大脑。本地MCP服务器，具有持久内存——跨会话、代码库和笔记的混合搜索（BM25 + 向量 + LLM重排）。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Agentic AI Hype</span>
+                    <div class="news-time">May 31, 2026</div>
+                    <a href="https://agenticaihype.substack.com/p/anthropic-hits-900b-cognition-bags" class="card-title" target="_blank" data-lang="en">Anthropic valuation hits $900B, shortest model cadence ever</a>
+                    <a href="https://agenticaihype.substack.com/p/anthropic-hits-900b-cognition-bags" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic估值突破9000亿美元，模型发布间隔创历史最短</a>
+                    <p class="card-description" data-lang="en">Anthropic became the world's most valuable private AI company after crossing $900B valuation, with Opus 4.8 released just 42 days after 4.7 — the shortest gap in the company's history.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic在估值突破9000亿美元后成为全球最有价值的私营AI公司，Opus 4.8在4.7发布仅42天后推出——公司历史上最短的间隔。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Talk Android</span>
+                    <div class="news-time">May 31, 2026</div>
+                    <a href="https://www.talkandroid.com/526207-openai-and-claude-updates/" class="card-title" target="_blank" data-lang="en">OpenAI retires GPT-4.5 and o3, announces robotics hiring</a>
+                    <a href="https://www.talkandroid.com/526207-openai-and-claude-updates/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI退役GPT-4.5和o3，宣布机器人招聘计划</a>
+                    <p class="card-description" data-lang="en">OpenAI announced GPT-4.5 will retire on June 27 and o3 on August 26, while revealing plans to hire for robotics division led by Sam Altman's vision for humanoid robots.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI宣布GPT-4.5将于6月27日退役，o3将于8月26日退役，同时透露了由Sam Altman关于类人机器人愿景领导的机器人部门招聘计划。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">KAD</span>
+                    <div class="news-time">May 29, 2026</div>
+                    <a href="https://www.kad8.com/ai/google-io-2026-gemini-spark-signals-googles-ai-agent-ambitions/" class="card-title" target="_blank" data-lang="en">Google launches Gemini Spark as always-on personal agent</a>
+                    <a href="https://www.kad8.com/ai/google-io-2026-gemini-spark-signals-googles-ai-agent-ambitions/" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌推出Gemini Spark作为常驻个人助理</a>
+                    <p class="card-description" data-lang="en">Google launched Gemini Spark as an always-on personal agent for Ultra subscribers, alongside Antigravity platform for agent-focused runtime and developer tools.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌为Ultra订阅用户推出了常驻个人助理Gemini Spark，同时发布了面向代理的Antigravity平台和开发者工具。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">NVIDIA Newsroom</span>
+                    <div class="news-time">May 31, 2026</div>
+                    <a href="https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai" class="card-title" target="_blank" data-lang="en">NVIDIA releases Cosmos 3, opens physical AI frontier</a>
+                    <a href="https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">NVIDIA发布Cosmos 3，开启物理AI前沿</a>
+                    <p class="card-description" data-lang="en">NVIDIA launched Cosmos 3, the first fully open omnimodel with native vision reasoning and multimodal generation for physical AI, available in Super (32B) and Nano (8B) sizes.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">NVIDIA推出了Cosmos 3，这是首个完全开放的 omni模型，具有原生视觉推理和物理AI多模态生成能力，提供Super（32B）和Nano（8B）两种尺寸。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Perplexity Blog</span>
+                    <div class="news-time">May 28, 2026</div>
+                    <a href="https://www.perplexity.ai/hub/blog/computer-comes-to-word-excel-powerpoint-and-outlook" class="card-title" target="_blank" data-lang="en">Perplexity expands Computer agent to Microsoft 365 apps</a>
+                    <a href="https://www.perplexity.ai/hub/blog/computer-comes-to-word-excel-powerpoint-and-outlook" class="card-title" target="_blank" data-lang="zh" style="display: none;">Perplexity将Computer代理扩展到Microsoft 365应用</a>
+                    <p class="card-description" data-lang="en">Perplexity integrated its AI Computer agent into Word, Excel, PowerPoint, and Outlook, enabling cross-app workflow automation with 20+ AI models coordinating different tasks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Perplexity将其AI Computer代理集成到Word、Excel、PowerPoint和Outlook中，实现跨应用工作流自动化，协调20多个AI模型执行不同任务。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Agentic AI Hype</span>
+                    <div class="news-time">May 31, 2026</div>
+                    <a href="https://agenticaihype.substack.com/p/anthropic-hits-900b-cognition-bags" class="card-title" target="_blank" data-lang="en">Cognition raises $1B for autonomous coding agents</a>
+                    <a href="https://agenticaihype.substack.com/p/anthropic-hits-900b-cognition-bags" class="card-title" target="_blank" data-lang="zh" style="display: none;">Cognition为自主编码代理融资10亿美元</a>
+                    <p class="card-description" data-lang="en">Cognition raised $1 billion to accelerate development of autonomous coding agents, marking one of the largest funding rounds in AI agent space.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Cognition融资10亿美元用于加速自主编码代理的开发，这是AI代理领域最大的融资轮次之一。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">This week's pattern is convergence on agent infrastructure — every major player is building the plumbing for AI to act, not just think. NVIDIA's Cosmos 3 targets physical agents (robots), Google's Antigravity targets enterprise agents, and Perplexity's Microsoft integration targets knowledge workers. Meanwhile, OpenAI is exiting models (o3, GPT-4.5) to clear runway for whatever comes next, while Anthropic accelerates cadence to maintain relevance. The $1B Cognition bet confirms coding agents are the proving ground — they're building systems that don't just assist developers but replace them. For developers, the signal is clear: the next 6 months will determine whether you're using AI agents or being used by them.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">本周的模式是代理基础设施的融合——每个主要参与者都在构建AI行动的管道，而不仅仅是思考。NVIDIA的Cosmos 3针对物理代理（机器人），谷歌的Antigravity针对企业代理，Perplexity的Microsoft集成针对知识工作者。同时，OpenAI正在退役模型（o3、GPT-4.5）为下一代产品清空跑道，而Anthropic加快发布节奏以保持相关性。10亿美元的Cognition融资确认了编码代理是试验场——他们构建的系统不仅仅是协助开发者，而是取代他们。对于开发者来说，信号很明确：未来6个月将决定你是在使用AI代理还是被它们使用。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

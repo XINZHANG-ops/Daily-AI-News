@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-01",
+  "github_repos": [
+    {
+      "name": "synapseorch-ai/synapse-ai",
+      "url": "https://github.com/synapseorch-ai/synapse-ai",
+      "description": {
+        "en": "Open-source platform for creating, connecting, and orchestrating AI agents powered by any LLM — local, cloud or CLIs.",
+        "zh": "开源平台，用于创建、连接和编排由任何LLM驱动的AI代理——本地、云或CLI。"
+      },
+      "stars": "162",
+      "forks": "28"
+    },
+    {
+      "name": "yejy53/GenClaw",
+      "url": "https://github.com/yejy53/GenClaw",
+      "description": {
+        "en": "Code-Driven Agentic Image Generation — explores using code as a controllable visual canvas before calling image generation models.",
+        "zh": "代码驱动的代理式图像生成——在调用图像生成模型之前，探索使用代码作为可控的视觉画布。"
+      },
+      "stars": "106",
+      "forks": "1"
+    },
+    {
+      "name": "nano-step/nano-brain",
+      "url": "https://github.com/nano-step/nano-brain",
+      "description": {
+        "en": "A tiny brain for your AI agent. Local MCP server with persistent memory — hybrid search (BM25 + vector + LLM reranking) across sessions, codebase, and notes.",
+        "zh": "AI代理的小型大脑。本地MCP服务器，具有持久内存——跨会话、代码库和笔记的混合搜索（BM25 + 向量 + LLM重排）。"
+      },
+      "stars": "4",
+      "forks": "1"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic valuation hits $900B, shortest model cadence ever",
+        "zh": "Anthropic估值突破9000亿美元，模型发布间隔创历史最短"
+      },
+      "url": "https://agenticaihype.substack.com/p/anthropic-hits-900b-cognition-bags",
+      "source": "Agentic AI Hype",
+      "time": "May 31, 2026",
+      "description": {
+        "en": "Anthropic became the world's most valuable private AI company after crossing $900B valuation, with Opus 4.8 released just 42 days after 4.7 — the shortest gap in the company's history.",
+        "zh": "Anthropic在估值突破9000亿美元后成为全球最有价值的私营AI公司，Opus 4.8在4.7发布仅42天后推出——公司历史上最短的间隔。"
+      },
+      "insight": {
+        "en": "The 42-day cadence between Opus 4.7 and 4.8 signals Anthropic has entered an aggressive release cycle, possibly responding to OpenAI's o3 retirement and Google's Gemini Spark launch. The new effort controls (Low/Medium/High/Max) and Dynamic Workflows feature suggest they're competing not just on benchmarks but on UX differentiation — trying to capture the professional developer market that values controllable output over raw capability.",
+        "zh": "Opus 4.7到4.8之间42天的发布间隔表明Anthropic已进入激进的发布周期，可能是在回应OpenAI的o3退役和谷歌的Gemini Spark发布。新的努力控制（低/中/高/最大）和动态工作流功能表明他们不仅在基准测试上竞争，还在用户体验上寻求差异化——试图吸引重视可控输出而非原始能力的专业开发者市场。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI retires GPT-4.5 and o3, announces robotics hiring",
+        "zh": "OpenAI退役GPT-4.5和o3，宣布机器人招聘计划"
+      },
+      "url": "https://www.talkandroid.com/526207-openai-and-claude-updates/",
+      "source": "Talk Android",
+      "time": "May 31, 2026",
+      "description": {
+        "en": "OpenAI announced GPT-4.5 will retire on June 27 and o3 on August 26, while revealing plans to hire for robotics division led by Sam Altman's vision for humanoid robots.",
+        "zh": "OpenAI宣布GPT-4.5将于6月27日退役，o3将于8月26日退役，同时透露了由Sam Altman关于类人机器人愿景领导的机器人部门招聘计划。"
+      },
+      "insight": {
+        "en": "Retiring o3 just 8 months after its January release is striking — typically AI labs extend lifecycle of flagship models. This suggests OpenAI is clearing deck for their next-generation reasoning model, possibly what comes after o3-pro. Meanwhile, the robotics hiring signals Altman sees physical AI as the next frontier, echoing his 2023 prediction about AI's impact on physical world. The timing with NVIDIA's Cosmos 3 launch (physical AI foundation model) isn't coincidental.",
+        "zh": "o3仅发布8个月后就退役，这一点很不寻常——AI实验室通常会延长旗舰模型的生命周期。这表明OpenAI正在为下一代推理模型清空道路，可能是在o3-pro之后的产品。与此同时，机器人招聘表明Altman将物理AI视为下一个前沿，这与他在2023年关于AI影响物理世界的预测相呼应。与NVIDIA Cosmos 3（物理AI基础模型）发布的时机并非巧合。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google launches Gemini Spark as always-on personal agent",
+        "zh": "谷歌推出Gemini Spark作为常驻个人助理"
+      },
+      "url": "https://www.kad8.com/ai/google-io-2026-gemini-spark-signals-googles-ai-agent-ambitions/",
+      "source": "KAD",
+      "time": "May 29, 2026",
+      "description": {
+        "en": "Google launched Gemini Spark as an always-on personal agent for Ultra subscribers, alongside Antigravity platform for agent-focused runtime and developer tools.",
+        "zh": "谷歌为Ultra订阅用户推出了常驻个人助理Gemini Spark，同时发布了面向代理的Antigravity平台和开发者工具。"
+      },
+      "insight": {
+        "en": "Gemini Spark represents Google's answer to Claude's always-on memory and Anthropic's computer use — but positioned as a proactive personal agent rather than reactive assistant. The Antigravity platform is the real story: it's a complete agent runtime with privacy controls, suggesting Google is targeting enterprise adoption more than consumers. This positions them differently from OpenAI's consumer-focused ChatGPT strategy and Anthropic's professional developer focus.",
+        "zh": "Gemini Spark代表了谷歌对Claude常驻记忆和Anthropic计算机使用的回应——但定位为主动式个人助理而非响应式助手。Antigravity平台才是真正的重点：这是一个具有隐私控制的完整代理运行时，表明谷歌的目标是企业采用而非消费者。这与OpenAI以消费者为中心的ChatGPT策略和Anthropic专业开发者的定位不同。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA releases Cosmos 3, opens physical AI frontier",
+        "zh": "NVIDIA发布Cosmos 3，开启物理AI前沿"
+      },
+      "url": "https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai",
+      "source": "NVIDIA Newsroom",
+      "time": "May 31, 2026",
+      "description": {
+        "en": "NVIDIA launched Cosmos 3, the first fully open omnimodel with native vision reasoning and multimodal generation for physical AI, available in Super (32B) and Nano (8B) sizes.",
+        "zh": "NVIDIA推出了Cosmos 3，这是首个完全开放的 omni模型，具有原生视觉推理和物理AI多模态生成能力，提供Super（32B）和Nano（8B）两种尺寸。"
+      },
+      "insight": {
+        "en": "Cosmos 3 isn't just another LLM — it's explicitly designed for robotics and physical world interaction, with the 8B Nano variant specifically optimized for edge deployment on robots. Combined with the new Agent Toolkit (NemoClaw blueprints, OpenShell runtime), NVIDIA is positioning itself as the infrastructure layer for the coming wave of physical AI agents. The open model strategy contrasts with Google's closed approach and directly challenges OpenAI's software-centric worldview.",
+        "zh": "Cosmos 3不仅仅是另一个LLM——它专门为机器人和物理世界交互设计，8B Nano变体针对机器人边缘部署进行了优化。结合新的Agent Toolkit（NemoClaw蓝图、OpenShell运行时），NVIDIA正在将自己定位为即将到来的物理AI代理浪潮的基础设施层。开放模型策略与谷歌的封闭方式形成对比，直接挑战了OpenAI以软件为中心的世界观。"
+      }
+    },
+    {
+      "title": {
+        "en": "Perplexity expands Computer agent to Microsoft 365 apps",
+        "zh": "Perplexity将Computer代理扩展到Microsoft 365应用"
+      },
+      "url": "https://www.perplexity.ai/hub/blog/computer-comes-to-word-excel-powerpoint-and-outlook",
+      "source": "Perplexity Blog",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "Perplexity integrated its AI Computer agent into Word, Excel, PowerPoint, and Outlook, enabling cross-app workflow automation with 20+ AI models coordinating different tasks.",
+        "zh": "Perplexity将其AI Computer代理集成到Word、Excel、PowerPoint和Outlook中，实现跨应用工作流自动化，协调20多个AI模型执行不同任务。"
+      },
+      "insight": {
+        "en": "This is Perplexity's pivot from search to AI assistant platform — the Microsoft 365 integration turns their Computer from a novelty into a productivity tool for knowledge workers. The cross-app orchestration (read emails → analyze in Excel → present in PowerPoint) directly competes with Microsoft's Copilot. With EBSCO partnership for scholarly research and Premium Health Sources, Perplexity is building a vertically integrated answer engine rather than just a search replacement.",
+        "zh": "这是Perplexity从搜索向AI助手平台的转型——Microsoft 365集成将他们的Computer从新奇功能转变为知识工作者的生产力工具。跨应用编排（读取邮件→在Excel中分析→在PowerPoint中演示）直接与微软的Copilot竞争。通过EBSCO学术研究合作和Premium Health Sources，Perplexity正在构建垂直整合的答案引擎，而不仅仅是搜索替代品。"
+      }
+    },
+    {
+      "title": {
+        "en": "Cognition raises $1B for autonomous coding agents",
+        "zh": "Cognition为自主编码代理融资10亿美元"
+      },
+      "url": "https://agenticaihype.substack.com/p/anthropic-hits-900b-cognition-bags",
+      "source": "Agentic AI Hype",
+      "time": "May 31, 2026",
+      "description": {
+        "en": "Cognition raised $1 billion to accelerate development of autonomous coding agents, marking one of the largest funding rounds in AI agent space.",
+        "zh": "Cognition融资10亿美元用于加速自主编码代理的开发，这是AI代理领域最大的融资轮次之一。"
+      },
+      "insight": {
+        "en": "The $1B raise puts Cognition in the same league as Inflection AI and Anthropic's early rounds — signaling investors believe autonomous coding is the killer app for AI agents. Unlike GitHub Copilot (which assists human developers), Cognition's agents aim to operate autonomously — writing code, running tests, and creating PRs without human intervention. This is the clearest bet yet that AI agents will replace rather than augment developers.",
+        "zh": "10亿美元的融资使Cognition与Inflection AI和Anthropic早期融资处于同一梯队——表明投资者相信自主编码是AI代理的杀手级应用。与GitHub Copilot（协助人类开发者）不同，Cognition的代理旨在自主运营——编写代码、运行测试、创建PR无需人工干预。这是迄今为止最明确的赌注，表明AI代理将取代而非增强开发者。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "This week's pattern is convergence on agent infrastructure — every major player is building the plumbing for AI to act, not just think. NVIDIA's Cosmos 3 targets physical agents (robots), Google's Antigravity targets enterprise agents, and Perplexity's Microsoft integration targets knowledge workers. Meanwhile, OpenAI is exiting models (o3, GPT-4.5) to clear runway for whatever comes next, while Anthropic accelerates cadence to maintain relevance. The $1B Cognition bet confirms coding agents are the proving ground — they're building systems that don't just assist developers but replace them. For developers, the signal is clear: the next 6 months will determine whether you're using AI agents or being used by them.",
+    "zh": "本周的模式是代理基础设施的融合——每个主要参与者都在构建AI行动的管道，而不仅仅是思考。NVIDIA的Cosmos 3针对物理代理（机器人），谷歌的Antigravity针对企业代理，Perplexity的Microsoft集成针对知识工作者。同时，OpenAI正在退役模型（o3、GPT-4.5）为下一代产品清空跑道，而Anthropic加快发布节奏以保持相关性。10亿美元的Cognition融资确认了编码代理是试验场——他们构建的系统不仅仅是协助开发者，而是取代他们。对于开发者来说，信号很明确：未来6个月将决定你是在使用AI代理还是被它们使用。"
+  }
+}

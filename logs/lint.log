@@ -888,3 +888,20 @@ Already up to date.
 
 • **重建 index.md**：修正头部计数（Sources 54→45，Ideas 68→66）；补全缺失条目（geely、waymo、claude-managed-agents、claude-opus-4-8、devin、waymo-ojai）；移除重复条目（eidolon-os、micron、samsung、sk-hynix）；验证全部分类计数匹配：Topics 8、Sources 45、Timelines 3、Entities 187、Ideas 66
 [2026-06-01 01:21:48] Wiki lint 完成（退出码 0）。
+[main 5def540] wiki: lint 2026-06-01
+ 29 files changed, 1084 insertions(+), 24 deletions(-)
+ create mode 100644 .claude/entities_actual.txt
+ create mode 100644 .claude/entities_index.txt
+ create mode 100644 .claude/ideas_actual.txt
+ create mode 100644 .claude/ideas_index.txt
+ create mode 100644 .claude/sources_actual.txt
+ create mode 100644 .claude/sources_index.txt
+ create mode 100644 .claude/timelines_actual.txt
+ create mode 100644 .claude/timelines_index.txt
+ create mode 100644 .claude/topics_actual.txt
+ create mode 100644 .claude/topics_index.txt
+ create mode 100644 wiki/entities/claude-managed-agents.md
+ create mode 100644 wiki/entities/devin.md
+ create mode 100644 wiki/entities/waymo-ojai.md
+ create mode 100644 wiki/sources/geely.md
+ create mode 100644 wiki/sources/waymo.md
