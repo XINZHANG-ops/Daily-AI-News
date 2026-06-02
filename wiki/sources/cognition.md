@@ -17,6 +17,8 @@ Cognition is an AI company creating Devin — an autonomous AI software engineer
 | 2026-04-25 | AI coding competition | Devin competing directly with Claude Code and Codex |
 | 2026-05-27 | $1B raise at $26B valuation | Led by Lux Capital, General Catalyst, 8VC; valuation doubled in 8 months |
 
+
+| 2026-05-31 | Raises $1B for autonomous coding agents | One of largest funding rounds in AI agent space; signals investors believe autonomous coding is the killer app for AI agents |
 ## Key Relationships
 Cognition competes with Anthropic (Claude Code) and OpenAI (Codex) in the AI software engineering space. Its $25B valuation reflects the strategic importance of coding agents as a commercial application.
 

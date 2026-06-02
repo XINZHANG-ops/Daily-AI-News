@@ -1,3 +1,8 @@
+## [2026-06-02] lint | wiki health check
+
+Fixed broken links: [[entities/mcp]] → [[entities/mcp-protocol]] in synapse-ai.md, nano-brain.md; [[entities/nemoclaw]] → [[entities/nemo-claw]] in cosmos-3.md, physical_ai.md
+Updated nemo-claw.md: Added May 2026 Agent Toolkit content (physical AI) while preserving March 2026 OpenClaw reference stack info
+Verified all wikilinks: No broken links found
 ## [2026-06-01] lint | wiki health check
 
 Fixed empty source pages (deleted stubs <10 lines): cepi, lawrence-livermore-national-laboratory, notion, rakuten, asana, johns-hopkins-apl
@@ -51,3 +56,14 @@ Entities created: waymo-ojai, claude-managed-agents, geely
 Entities updated: gpt-rosalind (added biodefense program), claude-code (added May 2026 leak details)
 Ideas created: 
 Ideas updated: platform-consolidation (updated with May 31 events)
+
+## [2026-06-01] ingest | 1 date
+
+Dates processed: 2026-06-01
+Topics updated: llm_models, agentic_ai, ai_funding
+Topics created: physical_ai
+Sources updated: anthropic, openai, google, nvidia, perplexity, cognition
+Entities created: cosmos-3, antigravity-platform, gemini-spark (updated), synapse-ai, genclaw, nano-brain
+Entities updated: claude-opus-4-8 (42-day cadence, Effort Controls)
+Timelines created: 2026-06
+Ideas updated: agent-infrastructure-layer (reinforced by convergence)

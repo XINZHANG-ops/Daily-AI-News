@@ -47,7 +47,12 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 
 **May 24: Price War Ignition and Open-Source Resurgence**: Google Gemini 3 drops with 2.8x inference speed and 47% price cut to $0.53/M input tokens — directly undercutting both OpenAI and Anthropic's Claude 4 Opus ($15/M). This aggressive pricing signals the start of a frontier model price war. Meta responds with Llama 4 405B open-weight at 85.9% MMLU-Pro, positioning as the open alternative as Google goes proprietary and OpenAI's GPT-5 remains delayed. The net effect: differentiation shifts from raw model performance to infrastructure, governance, and pricing.
 
-## Key Developments
+
+| 2026-05-31 | Anthropic Opus 4.8: 42-day cadence | Shortest model release in Anthropic history; 88.6% SWE-bench; Effort Controls (Low/Medium/High/Max) compete on UX differentiation |
+| 2026-05-31 | OpenAI retires GPT-4.5 and o3 | GPT-4.5 retires June 27, o3 retires August 26; just 8 months after January release; clearing deck for next-generation reasoning model |
+| 2026-05-31 | OpenAI announces robotics hiring | Sam Altman's vision for physical AI; hiring for humanoid robotics division |
+| 2026-05-29 | Google Gemini Spark launches | Always-on personal agent for Ultra subscribers; proactive assistance vs reactive |
+| 2026-05-31 | NVIDIA Cosmos 3 released | First fully open omnimodel for physical AI; Super (32B) and Nano (8B) variants |
 
 | Date | Event | Significance |
 |------|-------|-------------|

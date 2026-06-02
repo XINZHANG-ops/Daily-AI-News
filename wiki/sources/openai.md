@@ -82,6 +82,9 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-24 | Considering legal action against Apple | Claims Apple failed to make "honest effort" in Siri integration; Apple moving to multi-model support in iOS 27, bringing in Google Gemini and Anthropic Claude; legal threat may be negotiating leverage |
 | 2026-05-25 | ChatGPT PowerPoint add-in beta | Beta add-in for Microsoft PowerPoint allows creating/editing presentations from prompts, files, or connected Gmail, Outlook, SharePoint; embeds ChatGPT directly into Microsoft productivity suite competing with Copilot |
 
+
+| 2026-05-31 | GPT-4.5 retires June 27, o3 retires August 26 | OpenAI announces retirement of legacy non-reasoning model GPT-4.5 and o3 just 8 months after January release; clearing deck for next-generation reasoning model |
+| 2026-05-31 | Announces robotics hiring for humanoid robots | Sam Altman's vision for physical AI; hiring for robotics division signals next frontier beyond software agents |
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
 - **Microsoft**: Deep partnership despite competition. Azure integration, Microsoft 365 Copilot, but Microsoft also investing in Anthropic.

@@ -65,6 +65,9 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 | 2026-05-21 | Google Search AI overhaul | Redesigned search with conversational AI queries, "information agents" that track listings and make phone calls, custom software interface generation — biggest overhaul in 25 years |
 | 2026-05-24 | Gemini 3 released | 2.8x speed, 47% lower price vs Gemini 2.5; $0.53/M input tokens undercuts OpenAI and Anthropic; occupies the price-performance sweet spot that GPT-5 was meant to claim |
 
+
+| 2026-05-29 | Gemini Spark launches as always-on personal agent | For Google Ultra subscribers; proactive personal agent vs reactive assistant; represents Google's answer to Claude's always-on memory |
+| 2026-05-29 | Antigravity platform released | Complete agent runtime with privacy controls; targets enterprise adoption rather than consumers; positions Google differently from OpenAI and Anthropic |
 ## Key Relationships
 - **Anthropic**: Deepening infrastructure partnership despite competitive AI products. Google invested in Anthropic and is building a $5B Texas data center. Joint TPU deal worth multiple gigawatts.
 - **Apple**: Deeper AI partnership than previously known. Apple has "complete access" to Gemini in Google's data centers for on-device AI.

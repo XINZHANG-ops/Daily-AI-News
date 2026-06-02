@@ -1205,3 +1205,43 @@ Wiki ingest completed for 2026-05-31. Here's a summary of the work done:
 - Updated `log.md` — Added ingest entry
 - Ran wiki lint — Clean (no broken links)
 - Updated topic counts in `index.md`
+The wiki has been successfully updated with the 2026-06-01 data. Here's a summary of what was done:
+
+**Entities Created:**
+- `cosmos-3` — NVIDIA's physical AI foundation model (Super 32B, Nano 8B)
+- `antigravity-platform` — Google's enterprise agent runtime
+- `synapse-ai` — Agent orchestration platform (162 stars)
+- `genclaw` — Code-driven agentic image generation (106 stars)
+- `nano-brain` — Local MCP server with persistent memory (4 stars)
+
+**Entities Updated:**
+- `claude-opus-4-8` — Added 42-day cadence (shortest in Anthropic history), Effort Controls
+- `gemini-spark` — Updated to "always-on personal agent for Ultra subscribers"
+
+**Topics Updated:**
+- `llm_models` — Added Opus 4.8, o3/GPT-4.5 retirements, Cosmos 3
+- `agentic_ai` — Added Antigravity, Perplexity Microsoft integration, Cognition $1B, infrastructure convergence
+- `ai_funding` — Added Cognition $1B
+
+**Topics Created:**
+- `physical_ai` — New topic covering NVIDIA Cosmos 3, Google Gemini Robotics, OpenAI robotics hiring
+
+**Sources Updated:**
+- `anthropic` — $900B valuation, 42-day Opus 4.8 cadence
+- `openai` — GPT-4.5 and o3 retirements, robotics hiring
+- `google` — Gemini Spark, Antigravity platform
+- `nvidia` — Cosmos 3, Agent Toolkit
+- `perplexity` — Microsoft 365 integration
+- `cognition` — $1B raise
+
+**Timeline Created:**
+- `2026-06.md` — Week 1 with all major events
+
+**Index Updated:**
+- Topics: 8 → 9 (added physical_ai)
+- Entities: 187 → 192 (added 5 new entities)
+- Last updated: 2026-06-01
+
+**Processed & Logged:**
+- Added 2026-06-01 to `processed.json`
+- Added entry to `log.md`

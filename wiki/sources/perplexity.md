@@ -21,6 +21,9 @@ Perplexity has grown from an AI search engine to a full-stack AI platform. April
 | 2026-05-09 | Pro tier pricing clarified | $17-20/month for full automation vs $200/month for Max (Model Council); undercuts enterprise alternatives while capturing power users
 | 2026-05-09 | Remote control feature (Mac mini + iPhone) | First viable "cloud personal assistant" without constant phone tethering; sleeper hit of the launch
 
+
+| 2026-05-28 | Computer agent expands to Microsoft 365 | Integrated into Word, Excel, PowerPoint, Outlook; cross-app workflow automation with 20+ AI models coordinating tasks; directly competes with Microsoft Copilot |
+| 2026-05-28 | EBSCO partnership for scholarly research | Premium Health Sources added; building vertically integrated answer engine rather than just search replacement |
 ## Key Relationships
 - **OpenAI**: Competitor in AI search and agentic AI
 - **Anthropic**: Competitor in enterprise AI products

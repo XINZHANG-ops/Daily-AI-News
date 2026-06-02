@@ -27,7 +27,11 @@ The modular SDK pattern (OpenHands) and specialized skills repositories (scienti
 
 **Agent Memory Systems**: SupermemoryAI reached #1 on LongMemEval, LoCoMo, and ConvoMem benchmarks. TrustGraph provides graph-native context infrastructure. The skills ecosystem (obra/superpowers at 155K+ stars) enables structured agent development workflows.
 
-## Key Developments
+
+| 2026-05-29 | Google Antigravity platform launches | Complete agent runtime with privacy controls; targets enterprise adoption |
+| 2026-05-28 | Perplexity Computer expands to Microsoft 365 | Word, Excel, PowerPoint, Outlook integration; cross-app workflow automation with 20+ AI models |
+| 2026-05-31 | Cognition raises $1B for autonomous coding | One of largest AI agent funding rounds; autonomous coding is the killer app |
+| 2026-05-31 | Agent infrastructure convergence | NVIDIA Cosmos 3 (physical), Google Antigravity (enterprise), Perplexity Microsoft (knowledge workers) — every major player building the plumbing for AI to act |
 
 | Date | Event | Significance |
 |------|-------|-------------|

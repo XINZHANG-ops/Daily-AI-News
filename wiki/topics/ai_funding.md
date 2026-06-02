@@ -29,7 +29,8 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 
 **May 19: Valuation Escalation and State-Backed Compute**: Anthropic is in discussions to raise at least $30B at a $900B valuation — potentially surpassing OpenAI's $852B — also exploring IPO as early as October 2026. At $900B, Anthropic would be worth more than Goldman Sachs and Morgan Stanley combined. The dual-track strategy (massive private round + potential IPO) reflects frontier AI's capital intensity. Meanwhile xAI closes $12B round at $250B valuation (led by Saudi PIF, UAE's MGX, Singapore's Temasek) to fund Memphis data center buildout to 500K GPUs by year-end. The $250B valuation makes xAI worth more than Toyota, Disney, and Intel combined. The consortium structure (PIF + MGX + Temasek) signals geopolitics — the AI race is increasingly a state-backed affair.
 
-## Key Developments
+
+| 2026-05-31 | Cognition raises $1B | Autonomous coding agents; one of largest AI agent funding rounds; signals coding is the killer app |
 
 | Date | Event | Significance |
 |------|-------|-------------|

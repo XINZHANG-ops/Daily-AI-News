@@ -35,6 +35,9 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 | 2026-05-21 | Nvidia faces competition from Alibaba M890, FuriosaAI | Alibaba's new M890 AI chip and Korean FuriosaAI challenge Nvidia's 80%+ AI chip market share; Singapore partnership for embodied AI research hub is Nvidia's hedge |
 | 2026-05-29 | Gamma-World released | NVIDIA's generative multi-agent world model generating coherent future frames from multiple agents; features Simplex Rotary Agent Encoding and Sparse Hub Attention for efficient simulation; 187 GitHub stars |
 
+
+| 2026-05-31 | Cosmos 3 released | First fully open omnimodel for physical AI; native vision reasoning and multimodal generation; Super (32B) and Nano (8B) variants; Nano optimized for edge robot deployment |
+| 2026-05-31 | Agent Toolkit launched | NemoClaw blueprints and OpenShell runtime; positions NVIDIA as infrastructure layer for physical AI agents |
 ## Key Relationships
 - **OpenAI**: Strategic investor and primary GPU customer.
 - **Anthropic**: GPU supplier and Project Glasswing coalition member.

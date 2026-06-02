@@ -1,14 +1,15 @@
 # Daily AI News Wiki
 
-Last updated: 2026-05-31
+Last updated: 2026-06-01
 
-## Topics (8)
+## Topics (9)
 - [[topics/agentic_ai]] — May 2, 2026 shows the agent ecosystem maturing on three fronts simultaneously. Serena (23.8K stars) provides semantic code infrastructure at the symbo
 - [[topics/ai_companies]] — May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. The Pentagon expands its "AI-first" military contracts with 8 companie
 - [[topics/ai_funding]] — May 2026 reveals AI funding has shifted from model training to operational infrastructure. Anthropic's valuation surged past OpenAI's on secondary mar
 - [[topics/ai_infrastructure]] — AI Infrastructure tracks the physical and computational resources that power AI systems — data centers, GPU clusters, networking, and the business rel
 - [[topics/ai_safety]] — May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Pentagon's expanded "AI-first" contracts with an explicit "any lawful opera
 - [[topics/ai_security]] — AI Security encompasses the vulnerabilities, attack surfaces, and defensive measures specific to AI systems, particularly AI coding agents and model g
+- [[topics/physical_ai]] — Physical AI refers to AI models for robotics and physical world interaction — NVIDIA Cosmos 3, Google Gemini Robotics, and the emerging physical agent stack
 - [[topics/github_trends]] — May 2, 2026 brings three notable repos spanning AI video generation and agent infrastructure. MOVA (972 stars) is a foundation model for synchronized 
 - [[topics/llm_models]] — May 2, 2026 delivers the most damning empirical critique of the LLM paradigm to date: ARC-AGI-3 results show GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18
 
@@ -64,7 +65,7 @@ Last updated: 2026-05-31
 - [[timelines/2026-04]] — April opened with the most ironic headline of 2026: Anthropic accidentally leaked Claude Code's 512,000-line TypeScript source via npm .map misconfigu
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 
-## Entities (187)
+## Entities (192)
 - [[entities/a2a-protocol]] — type: protocol — The Agent-to-Agent (A2A) Protocol is Google's protocol for inter-agent communication, launched April 2025 and celebrating its one-year anniversary in 
 - [[entities/agent-365]] — type: product — Microsoft's standalone AI agent product, launched GA on May 1, 2026 at $15/user/month. Part of the first new enterprise Microsoft license architecture
 - [[entities/agent-squad]] — type: framework — A flexible multi-agent orchestration framework featuring intelligent intent classification and a SupervisorAgent that coordinates teams of specialized
@@ -97,6 +98,12 @@ Last updated: 2026-05-31
 - [[entities/claude-mythos]] — type: model — Claude Mythos is Anthropic's most advanced AI model, specifically designed for cybersecurity applications. Internal documents describe it as "the most
 - [[entities/claude-opus-4-6]] — type: model — Claude Opus 4.6 is Anthropic's flagship model released in early April 2026, achieving 80.8% on SWE-bench — a near-tie with Google Gemini 3.1 Pro at 80
 - [[entities/claude-opus-4-8]] — type: model — Anthropic's latest flagship model released May 29, 2026. Achieves 88.6% on SWE-bench Verified, with Claude Mythos Preview reaching 93.9%.
+- [[entities/cosmos-3]] — type: model — NVIDIA's physical AI foundation model released May 31, 2026. First fully open omnimodel with native vision reasoning for robotics.
+- [[entities/antigravity-platform]] — type: platform — Google's enterprise agent runtime platform launched May 2026. Complete agent runtime with privacy controls.
+- [[entities/gemini-spark]] — type: product — Google's always-on personal AI agent for Ultra subscribers launched May 2026. Proactive assistance vs reactive.
+- [[entities/synapse-ai]] — type: repo — Open-source platform for creating, connecting, and orchestrating AI agents powered by any LLM. 162 stars.
+- [[entities/genclaw]] — type: repo — Code-driven agentic image generation framework using code as controllable visual canvas. 106 stars.
+- [[entities/nano-brain]] — type: repo — Local MCP server with persistent memory and hybrid search. 4 stars.
 - [[entities/claude-opus-4-7]] — type: model — Claude Opus 4.7 is Anthropic's flagship model released April 16-17, 2026. It represents a significant leap in coding capability with 87.6% on SWE-benc
 & — type: model — Claude Opus 4.8 is Anthropic's latest flagship model released May 29, 2026, achieving 88.6% on SWE-bench Verified
 - [[entities/claude-security]] — type: product — An AI-powered security scanner launched by Anthropic in public beta on May 1, 2026. It reasons through codebases like a human security researcher, tra
