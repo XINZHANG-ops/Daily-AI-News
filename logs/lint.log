@@ -919,3 +919,12 @@ Already up to date.
 
 • **日志记录**：向 `wiki/log.md` 追加 2026-06-02 lint 条目
 [2026-06-02 01:03:52] Wiki lint 完成（退出码 0）。
+[main 6954e3c] wiki: lint 2026-06-02
+ 27 files changed, 626 insertions(+), 100 deletions(-)
+ create mode 100644 wiki/entities/antigravity-platform.md
+ create mode 100644 wiki/entities/cosmos-3.md
+ create mode 100644 wiki/entities/genclaw.md
+ create mode 100644 wiki/entities/nano-brain.md
+ create mode 100644 wiki/entities/synapse-ai.md
+ create mode 100644 wiki/timelines/2026-06.md
+ create mode 100644 wiki/topics/physical_ai.md

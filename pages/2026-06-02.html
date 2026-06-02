@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 02, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 02, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/nv-tlabs/Gamma-World" class="card-title" target="_blank">nv-tlabs/Gamma-World</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 523 stars</div>
+                                <div class="meta-item"><span>🍴</span> 45 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Implementation of Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players from NVIDIA. Supports permutation-symmetric agent conditioning with Simplex Rotary Agent Encoding and efficient cross-agent communication with Sparse Hub Attention.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">NVIDIA开源的Gamma-World实现：超越两人的生成式多智能体世界建模。支持Simplex旋转智能体编码的置换对称智能体条件化和稀疏集线器注意力机制的高效跨智能体通信。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/yejy53/GenClaw" class="card-title" target="_blank">yejy53/GenClaw</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 106 stars</div>
+                                <div class="meta-item"><span>🍴</span> 12 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Code-Driven Agentic Image Generation - uses code as a controllable visual canvas before calling image generation models. Agents create by writing executable visual sketches (SVG, HTML/CSS, Python, lightweight 3D code).</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">代码驱动的智能体图像生成 - 在调用图像生成模型之前，将代码作为可控的视觉画布。智能体通过编写可执行的视觉草图（SVG、HTML/CSS、Python、轻量级3D代码）来创作。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/garyqlin/gbase" class="card-title" target="_blank">garyqlin/gbase</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 23 stars</div>
+                                <div class="meta-item"><span>🍴</span> 3 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Recursive Self-Improvement Agent Framework with memory, evolution, quality gates, identity system, and 40+ auto-registered tools.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">递归自我改进智能体框架，具有记忆、进化、质量门、身份系统和40多个自动注册工具。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Ars Technica</span>
+                    <div class="news-time">June 2, 2026</div>
+                    <a href="https://arstechnica.com/tech-policy/2026/06/florida-sues-openai-sam-altman-after-multiple-chatgpt-linked-murders/" class="card-title" target="_blank" data-lang="en">Florida Sues OpenAI and Sam Altman Over ChatGPT-Linked Murders</a>
+                    <a href="https://arstechnica.com/tech-policy/2026/06/florida-sues-openai-sam-altman-after-multiple-chatgpt-linked-murders/" class="card-title" target="_blank" data-lang="zh" style="display: none;">佛罗里达州起诉OpenAI和Sam Altman 指ChatGPT与多起谋杀案有关</a>
+                    <p class="card-description" data-lang="en">Florida became the first state to sue OpenAI over ChatGPT's allegedly dangerous design, following multiple ChatGPT-linked violent incidents including murders at Florida State University and University of South Florida.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">佛罗里达州成为第一个起诉OpenAI的州，指控ChatGPT存在危险设计。此前已发生多起与ChatGPT相关的暴力事件，包括佛罗里达州立大学和南佛罗里达大学的谋杀案。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Tech Funding News</span>
+                    <div class="news-time">June 2, 2026</div>
+                    <a href="https://techfundingnews.com/anthropic-files-for-ipo-beating-openai-to-the-punch/" class="card-title" target="_blank" data-lang="en">Anthropic Files for IPO, Beating OpenAI to the Punch</a>
+                    <a href="https://techfundingnews.com/anthropic-files-for-ipo-beating-openai-to-the-punch/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic提交IPO申请 抢先OpenAI一步</a>
+                    <p class="card-description" data-lang="en">Anthropic has confidentially filed a draft S-1 with the SEC for a potential IPO, beating OpenAI to the punch. The company raised $65 billion at a $965 billion valuation on May 29, with annualized revenue crossing $47 billion.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic已向SEC秘密提交了潜在的IPO草案S-1文件，抢在OpenAI之前。该公司于5月29日以9650亿美元估值融资650亿美元，年化收入已超过470亿美元。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CNBC</span>
+                    <div class="news-time">June 1, 2026</div>
+                    <a href="https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html" class="card-title" target="_blank" data-lang="en">Microsoft and Google Take on Anthropic and OpenAI in AI Coding Models</a>
+                    <a href="https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软和谷歌挑战Anthropic与OpenAI的AI编程模型</a>
+                    <p class="card-description" data-lang="en">Google and Microsoft are making major pushes into AI coding tools to compete with Anthropic's Claude Code and OpenAI's Codex. Google announced Antigravity 2.0 and Gemini 3.5 Flash, while Microsoft plans new coding model announcements at Build 2026.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌和微软正在大力推进AI编程工具，以与Anthropic的Claude Code和OpenAI的Codex竞争。谷歌宣布了Antigravity 2.0和Gemini 3.5 Flash，而微软计划在Build 2026上公布新的编程模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Crypto Briefing</span>
+                    <div class="news-time">June 1, 2026</div>
+                    <a href="https://cryptobriefing.com/anthropic-eu-enisa-mythos-cybersecurity-access/" class="card-title" target="_blank" data-lang="en">Anthropic Grants ENISA Access to Claude Mythos After 10,000+ Vulnerabilities Found</a>
+                    <a href="https://cryptobriefing.com/anthropic-eu-enisa-mythos-cybersecurity-access/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic在发现10000+漏洞后向ENISA开放Claude Mythos访问权限</a>
+                    <p class="card-description" data-lang="en">Anthropic agreed to give the EU's cybersecurity agency ENISA access to Claude Mythos, the AI model that autonomously discovered over 10,000 zero-day vulnerabilities across major operating systems and web browsers.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic同意向欧盟网络安全机构ENISA开放Claude Mythos的访问权限，该AI模型已在主流操作系统和浏览器中自主发现了超过10000个零日漏洞。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Cisco Blogs</span>
+                    <div class="news-time">May 28, 2026</div>
+                    <a href="https://blogs.cisco.com/ai/proprietary-problems" class="card-title" target="_blank" data-lang="en">Cisco Study: All Major AI Models Fail Multi-Turn Attacks</a>
+                    <a href="https://blogs.cisco.com/ai/proprietary-problems" class="card-title" target="_blank" data-lang="zh" style="display: none;">Cisco研究：所有主要AI模型在多轮攻击下均失败</a>
+                    <p class="card-description" data-lang="en">Cisco research tested 15 flagship AI models from OpenAI, Anthropic, Google, Amazon, and xAI and found all fail significantly more often in multi-turn attacks compared to single-turn evaluations, with success rates ranging from 7.89% to 88.30%.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Cisco研究测试了来自OpenAI、Anthropic、谷歌、亚马逊和xAI的15个旗舰AI模型，发现与单轮评估相比，所有模型在多轮攻击下的失败率都显著更高，成功率从7.89%到88.30%不等。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI Chat Daily</span>
+                    <div class="news-time">June 2, 2026</div>
+                    <a href="https://www.aichatdaily.com/ai-models/microsoft-unveil-mai-thinking-1-reasoning-model-copilot-super-app" class="card-title" target="_blank" data-lang="en">Microsoft Build 2026: In-House Coding Model, Windows Agent Runtime</a>
+                    <a href="https://www.aichatdaily.com/ai-models/microsoft-unveil-mai-thinking-1-reasoning-model-copilot-super-app" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软Build 2026：自研编程模型、Windows智能体运行时</a>
+                    <p class="card-description" data-lang="en">Microsoft Build 2026 announces in-house coding model to power GitHub Copilot, MAI family including reasoning model MAI-Thinking-1, and Windows Agent Runtime making Windows a first-class runtime for autonomous AI agents.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软Build 2026宣布自研编程模型为GitHub Copilot提供动力，MAI系列包括推理模型MAI-Thinking-1，以及Windows智能体运行时使Windows成为自主AI智能体的一级运行时。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Today's AI landscape reveals a fundamental tension: the technology is advancing faster than institutions can regulate or secure. Florida's lawsuit against OpenAI and Anthropic's IPO filing represent two sides of the same coin—the industry is simultaneously facing existential regulatory risk and achieving unprecedented commercial scale ($965B valuation, $47B revenue). The Cisco study exposes a deeper problem: even as AI labs pour resources into safety, the multi-turn vulnerability appears structural, not fixable. Meanwhile, the battle for developer mindshare has shifted the competitive axis: Microsoft and Google are both building in-house models, breaking the OpenAI-Anthropic duopoly. Claude Mythos's 10,000+ vulnerability discovery hints at another reality—decades of undetected security debt in critical infrastructure, with AI as the only scalable auditor. The week ahead: Microsoft's Build and SpaceX's potential $1.8T IPO will test whether capital markets believe the AI narrative can sustain even higher valuations.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">今天的AI格局揭示了一个根本性的紧张关系：技术进步的速度超过了机构监管或保护的能力。佛罗里达州对OpenAI的诉讼和Anthropic的IPO提交代表了同一枚硬币的两面——该行业同时面临存在性监管风险并实现前所未有的商业规模（9650亿美元估值，470亿美元收入）。Cisco研究暴露了一个更深层的问题：即使AI实验室投入资源进行安全防护，多轮脆弱性似乎是结构性的，而非可修复的。与此同时，开发者心智份额的争夺改变了竞争轴心：微软和谷歌都在自研模型，打破了OpenAI-Anthropic的双头垄断。Claude Mythos的10000+漏洞发现暗示了另一个现实——关键基础设施中数十年来未被检测到的安全债务，而AI是唯一可扩展的审计器。未来一周：微软Build和SpaceX潜在的1.8万亿美元IPO将测试资本市场是否相信AI叙事能够维持更高的估值。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

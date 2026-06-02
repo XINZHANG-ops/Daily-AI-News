@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-02",
+  "github_repos": [
+    {
+      "name": "nv-tlabs/Gamma-World",
+      "url": "https://github.com/nv-tlabs/Gamma-World",
+      "description": {
+        "en": "Implementation of Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players from NVIDIA. Supports permutation-symmetric agent conditioning with Simplex Rotary Agent Encoding and efficient cross-agent communication with Sparse Hub Attention.",
+        "zh": "NVIDIA开源的Gamma-World实现：超越两人的生成式多智能体世界建模。支持Simplex旋转智能体编码的置换对称智能体条件化和稀疏集线器注意力机制的高效跨智能体通信。"
+      },
+      "stars": "523",
+      "forks": "45"
+    },
+    {
+      "name": "yejy53/GenClaw",
+      "url": "https://github.com/yejy53/GenClaw",
+      "description": {
+        "en": "Code-Driven Agentic Image Generation - uses code as a controllable visual canvas before calling image generation models. Agents create by writing executable visual sketches (SVG, HTML/CSS, Python, lightweight 3D code).",
+        "zh": "代码驱动的智能体图像生成 - 在调用图像生成模型之前，将代码作为可控的视觉画布。智能体通过编写可执行的视觉草图（SVG、HTML/CSS、Python、轻量级3D代码）来创作。"
+      },
+      "stars": "106",
+      "forks": "12"
+    },
+    {
+      "name": "garyqlin/gbase",
+      "url": "https://github.com/garyqlin/gbase",
+      "description": {
+        "en": "Recursive Self-Improvement Agent Framework with memory, evolution, quality gates, identity system, and 40+ auto-registered tools.",
+        "zh": "递归自我改进智能体框架，具有记忆、进化、质量门、身份系统和40多个自动注册工具。"
+      },
+      "stars": "23",
+      "forks": "3"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Florida Sues OpenAI and Sam Altman Over ChatGPT-Linked Murders",
+        "zh": "佛罗里达州起诉OpenAI和Sam Altman 指ChatGPT与多起谋杀案有关"
+      },
+      "url": "https://arstechnica.com/tech-policy/2026/06/florida-sues-openai-sam-altman-after-multiple-chatgpt-linked-murders/",
+      "source": "Ars Technica",
+      "time": "June 2, 2026",
+      "description": {
+        "en": "Florida became the first state to sue OpenAI over ChatGPT's allegedly dangerous design, following multiple ChatGPT-linked violent incidents including murders at Florida State University and University of South Florida.",
+        "zh": "佛罗里达州成为第一个起诉OpenAI的州，指控ChatGPT存在危险设计。此前已发生多起与ChatGPT相关的暴力事件，包括佛罗里达州立大学和南佛罗里达大学的谋杀案。"
+      },
+      "insight": {
+        "en": "This lawsuit marks a critical turning point in AI accountability. The state accuses OpenAI of prioritizing profits over safety and designing the chatbot to be addictive and destructive to children. With the complaint seeking maximum civil damages for alleged unfair trade law violations, this could set precedent for future AI regulation. Notably, this comes just as Anthropic files for IPO—a stark reminder that the AI industry's rapid commercialization is outpacing regulatory frameworks designed for a pre-AI world.",
+        "zh": "这场诉讼标志着AI责任追究的关键转折点。州政府指控OpenAI将利润置于安全之上，并设计令人上瘾且对儿童有害的聊天机器人。申诉寻求对涉嫌不公平贸易法违规行为进行最高民事赔偿，这可能为未来的AI监管开创先例。值得注意的是，此时恰逢Anthropic提交IPO申请——这清楚地提醒我们，AI行业的快速商业化正在超越为前AI时代设计的监管框架。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Files for IPO, Beating OpenAI to the Punch",
+        "zh": "Anthropic提交IPO申请 抢先OpenAI一步"
+      },
+      "url": "https://techfundingnews.com/anthropic-files-for-ipo-beating-openai-to-the-punch/",
+      "source": "Tech Funding News",
+      "time": "June 2, 2026",
+      "description": {
+        "en": "Anthropic has confidentially filed a draft S-1 with the SEC for a potential IPO, beating OpenAI to the punch. The company raised $65 billion at a $965 billion valuation on May 29, with annualized revenue crossing $47 billion.",
+        "zh": "Anthropic已向SEC秘密提交了潜在的IPO草案S-1文件，抢在OpenAI之前。该公司于5月29日以9650亿美元估值融资650亿美元，年化收入已超过470亿美元。"
+      },
+      "insight": {
+        "en": "Anthropic's IPO filing represents a historic moment—the first major AI lab to pursue public listing. At $965B valuation and $47B revenue run rate, the scrutiny will be unprecedented. As PitchBook's Harrison Rolfes notes, gross margin becomes THE critical metric that 'will either validate or collapse the entire narrative the private markets have been pricing for three years.' The timing is strategic: by going first, Anthropic forces OpenAI to reveal its financials as a reference point, while gaining a free option to observe institutional investor reaction. Meanwhile, SpaceX targets a $1.8T listing around June 12, making this the most consequential IPO season in tech history.",
+        "zh": "Anthropic的IPO提交是历史性时刻——首家寻求公开上市的主要AI实验室。9650亿美元估值和470亿美元收入运行率带来的审视将是前所未有的。正如PitchBook的Harrison Rolfes所言，毛利率将成为'验证或崩塌私募市场三年来定价的整个叙事'的关键指标。时机具有战略意义：通过率先上市，Anthropic迫使OpenAI作为参考点披露财务状况，同时获得观察机构投资者反应的免费期权。与此同时，SpaceX目标在6月12日左右进行1.8万亿美元IPO，使这成为科技史上最重大的IPO季节。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft and Google Take on Anthropic and OpenAI in AI Coding Models",
+        "zh": "微软和谷歌挑战Anthropic与OpenAI的AI编程模型"
+      },
+      "url": "https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html",
+      "source": "CNBC",
+      "time": "June 1, 2026",
+      "description": {
+        "en": "Google and Microsoft are making major pushes into AI coding tools to compete with Anthropic's Claude Code and OpenAI's Codex. Google announced Antigravity 2.0 and Gemini 3.5 Flash, while Microsoft plans new coding model announcements at Build 2026.",
+        "zh": "谷歌和微软正在大力推进AI编程工具，以与Anthropic的Claude Code和OpenAI的Codex竞争。谷歌宣布了Antigravity 2.0和Gemini 3.5 Flash，而微软计划在Build 2026上公布新的编程模型。"
+      },
+      "insight": {
+        "en": "The AI coding market has become the new battleground, with the $9.3B market projected to hit $30B by 2031. Google's Pichai admitted being 'a bit behind' on agentic coding—unusual candor from a tech CEO. Microsoft is rebuilding Copilot as a multi-model platform, signaling it's no longer betting solely on OpenAI. The April 2026 contract amendment that removed AGI clauses and Azure exclusivity gives Microsoft freedom to train in-house. Meanwhile, Cursor's potential $60B acquisition by SpaceX validates the massive opportunity. The real winner may be developers: both Microsoft and Google are targeting India (5.2M new developers in 2025), the largest GitHub market, with price-sensitive offerings.",
+        "zh": "AI编程市场已成为新战场，93亿美元市场预计到2031年达到300亿美元。谷歌的Pichai承认在智能体编程方面'稍微落后'——这是科技CEO不同寻常的坦诚。微软正在将Copilot重建为多模型平台，表明不再单纯押注OpenAI。4月份取消AGI条款和Azure独占性的合同修正案赋予微软自训模型的自由。与此同时，Cursor可能被SpaceX以600亿美元收购验证了巨大机会。真正的赢家可能是开发者：微软和谷歌都以价格敏感的产品瞄准印度（2025年新增520万开发者），这是最大的GitHub市场。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Grants ENISA Access to Claude Mythos After 10,000+ Vulnerabilities Found",
+        "zh": "Anthropic在发现10000+漏洞后向ENISA开放Claude Mythos访问权限"
+      },
+      "url": "https://cryptobriefing.com/anthropic-eu-enisa-mythos-cybersecurity-access/",
+      "source": "Crypto Briefing",
+      "time": "June 1, 2026",
+      "description": {
+        "en": "Anthropic agreed to give the EU's cybersecurity agency ENISA access to Claude Mythos, the AI model that autonomously discovered over 10,000 zero-day vulnerabilities across major operating systems and web browsers.",
+        "zh": "Anthropic同意向欧盟网络安全机构ENISA开放Claude Mythos的访问权限，该AI模型已在主流操作系统和浏览器中自主发现了超过10000个零日漏洞。"
+      },
+      "insight": {
+        "en": "Claude Mythos's 45-day performance is staggering: 23,019 findings, 6,202 high/critical severity, 90.6% true positive rate. But the geopolitical dimension is equally significant—ENISA becomes the first non-US public institution with access, while the Fed and Bank of England received briefings the EU did not. This highlights the emerging AI cybersecurity divide: allied nations with strong AI labs get privileged access, while others must negotiate. The discoveries themselves are revelatory—a 27-year-old OpenBSD flaw, a 16-year-old FFmpeg vulnerability that automated tools tested 5 million times without finding, and a 17-year-old FreeBSD RCE. The implication: decades of undetected vulnerabilities exist in critical infrastructure, and AI is the only tool capable of finding them at scale.",
+        "zh": "Claude Mythos 45天的表现令人震惊：23019个发现，6202个高危/严重级别，90.6%准确率。但地缘政治维度同样重要——ENISA成为首个获得访问权限的非美国公共机构，而美联储和英格兰银行收到的简报却未涵盖欧盟。这凸显了新兴的AI网络安全鸿沟：拥有强大AI实验室的盟国获得特权访问，其他国家则需谈判。发现本身也令人震惊——27年历史的OpenBSD漏洞、16年历史的FFmpeg漏洞（自动工具测试500万次未发现）、以及17年历史的FreeBSD RCE。含义是：关键基础设施中存在数十年来未被检测到的漏洞，而AI是大规模发现它们的唯一工具。"
+      }
+    },
+    {
+      "title": {
+        "en": "Cisco Study: All Major AI Models Fail Multi-Turn Attacks",
+        "zh": "Cisco研究：所有主要AI模型在多轮攻击下均失败"
+      },
+      "url": "https://blogs.cisco.com/ai/proprietary-problems",
+      "source": "Cisco Blogs",
+      "time": "May 28, 2026",
+      "description": {
+        "en": "Cisco research tested 15 flagship AI models from OpenAI, Anthropic, Google, Amazon, and xAI and found all fail significantly more often in multi-turn attacks compared to single-turn evaluations, with success rates ranging from 7.89% to 88.30%.",
+        "zh": "Cisco研究测试了来自OpenAI、Anthropic、谷歌、亚马逊和xAI的15个旗舰AI模型，发现与单轮评估相比，所有模型在多轮攻击下的失败率都显著更高，成功率从7.89%到88.30%不等。"
+      },
+      "insight": {
+        "en": "This study demolishes the security narrative AI labs have been selling. Every model tested failed meaningful multi-turn attacks—and the gap is massive. xAI's Grok 4.1 Fast went from 34.1% single-turn to 88.3% multi-turn (a 2.6x jump). Even Claude, with the lowest single-turn failure at 2.19-3.64%, still hit 11.16-16.20% in multi-turn. The critical insight: configuration matters. Enabling reasoning mode on Grok 4.1 Fast reduced multi-turn ASR from 88.3% to 43.5%. Cisco's recommendation—that safety benchmarks must publish attack-by-strategy metrics—is a direct challenge to the industry's opacity. The uncomfortable truth: multi-turn vulnerability appears to be a structural property of current frontier AI, not a fixable bug.",
+        "zh": "这项研究粉碎了AI实验室一直在宣传的安全叙事。每个测试的模型都失败了有意义的多轮攻击——而且差距巨大。xAI的Grok 4.1 Fast从单轮34.1%跳到多轮88.3%（2.6倍）。即使是单轮失败率最低的Claude（2.19-3.64%），在多轮攻击下仍达到11.16-16.20%。关键洞察：配置很重要。在Grok 4.1 Fast上启用推理模式将多轮攻击成功率从88.3%降至43.5%。Cisco的建议——安全基准必须发布按策略分类的攻击指标——直接挑战了行业的不透明度。令人不安的真相：多轮脆弱性似乎是当前前沿AI的结构性属性，而非可修复的漏洞。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft Build 2026: In-House Coding Model, Windows Agent Runtime",
+        "zh": "微软Build 2026：自研编程模型、Windows智能体运行时"
+      },
+      "url": "https://www.aichatdaily.com/ai-models/microsoft-unveil-mai-thinking-1-reasoning-model-copilot-super-app",
+      "source": "AI Chat Daily",
+      "time": "June 2, 2026",
+      "description": {
+        "en": "Microsoft Build 2026 announces in-house coding model to power GitHub Copilot, MAI family including reasoning model MAI-Thinking-1, and Windows Agent Runtime making Windows a first-class runtime for autonomous AI agents.",
+        "zh": "微软Build 2026宣布自研编程模型为GitHub Copilot提供动力，MAI系列包括推理模型MAI-Thinking-1，以及Windows智能体运行时使Windows成为自主AI智能体的一级运行时。"
+      },
+      "insight": {
+        "en": "Microsoft's Build announcements reveal a strategic pivot: no longer dependent on OpenAI or Anthropic for core capabilities. The MAI family spans coding, reasoning, speech, transcription, image generation, and autonomous agents—a complete stack. The Windows Agent Runtime is particularly significant—it positions Windows as the platform for running AI agents, directly competing with Anthropic's Claude Code and emerging agent frameworks. The AGI clause removal in April was the green light: Microsoft can now train frontier models in-house. With Google also announcing Antigravity 2.0 at I/O, the duopoly is breaking. The beneficiary is developers, who gain negotiating leverage; the loser is any single AI provider that had assumed permanent lock-in.",
+        "zh": "微软Build公告揭示了战略转变：不再依赖OpenAI或Anthropic的核心能力。MAI系列涵盖编程、推理、语音、转录、图像生成和自主智能体——完整堆栈。Windows智能体运行时尤其重要——它将Windows定位为运行AI智能体的平台，直接与Anthropic的Claude Code和新兴智能体框架竞争。4月份删除AGI条款是绿灯：微软现在可以内部训练前沿模型。谷歌也在I/O上宣布了Antigravity 2.0，双头垄断正在打破。受益者是获得谈判杠杆的开发者；输家是任何假设永久锁定单一AI提供商。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Today's AI landscape reveals a fundamental tension: the technology is advancing faster than institutions can regulate or secure. Florida's lawsuit against OpenAI and Anthropic's IPO filing represent two sides of the same coin—the industry is simultaneously facing existential regulatory risk and achieving unprecedented commercial scale ($965B valuation, $47B revenue). The Cisco study exposes a deeper problem: even as AI labs pour resources into safety, the multi-turn vulnerability appears structural, not fixable. Meanwhile, the battle for developer mindshare has shifted the competitive axis: Microsoft and Google are both building in-house models, breaking the OpenAI-Anthropic duopoly. Claude Mythos's 10,000+ vulnerability discovery hints at another reality—decades of undetected security debt in critical infrastructure, with AI as the only scalable auditor. The week ahead: Microsoft's Build and SpaceX's potential $1.8T IPO will test whether capital markets believe the AI narrative can sustain even higher valuations.",
+    "zh": "今天的AI格局揭示了一个根本性的紧张关系：技术进步的速度超过了机构监管或保护的能力。佛罗里达州对OpenAI的诉讼和Anthropic的IPO提交代表了同一枚硬币的两面——该行业同时面临存在性监管风险并实现前所未有的商业规模（9650亿美元估值，470亿美元收入）。Cisco研究暴露了一个更深层的问题：即使AI实验室投入资源进行安全防护，多轮脆弱性似乎是结构性的，而非可修复的。与此同时，开发者心智份额的争夺改变了竞争轴心：微软和谷歌都在自研模型，打破了OpenAI-Anthropic的双头垄断。Claude Mythos的10000+漏洞发现暗示了另一个现实——关键基础设施中数十年来未被检测到的安全债务，而AI是唯一可扩展的审计器。未来一周：微软Build和SpaceX潜在的1.8万亿美元IPO将测试资本市场是否相信AI叙事能够维持更高的估值。"
+  }
+}
