@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-01
+Last updated: 2026-06-02
 
 ## Topics (9)
 - [[topics/agentic_ai]] — May 2, 2026 shows the agent ecosystem maturing on three fronts simultaneously. Serena (23.8K stars) provides semantic code infrastructure at the symbo
@@ -60,12 +60,13 @@ Last updated: 2026-06-01
 - [[sources/vercel]] — Vercel is the company behind the Next.js web framework and Vercel AI SDK, known for making AI application deployment seamless. The company has expande
 - [[sources/xai]] — xAI has been consolidated into SpaceX following the $250 billion all-stock acquisition, creating a $1.25 trillion "galactic AI entity." On May 6, 2026
 
-## Timelines (3)
+## Timelines (4)
 - [[timelines/2026-03]] — The week opened with NVIDIA's GTC 2026 unveiling Vera Rubin (10x performance per watt over Blackwell), the NemoClaw stack for OpenClaw agents, and phy
 - [[timelines/2026-04]] — April opened with the most ironic headline of 2026: Anthropic accidentally leaked Claude Code's 512,000-line TypeScript source via npm .map misconfigu
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
+- [[timelines/2026-06]] — June opens with regulatory escalation (Florida sues OpenAI, Anthropic IPO), Claude Mythos ENISA access, and multi-turn vulnerability study
 
-## Entities (192)
+## Entities (195)
 - [[entities/a2a-protocol]] — type: protocol — The Agent-to-Agent (A2A) Protocol is Google's protocol for inter-agent communication, launched April 2025 and celebrating its one-year anniversary in 
 - [[entities/agent-365]] — type: product — Microsoft's standalone AI agent product, launched GA on May 1, 2026 at $15/user/month. Part of the first new enterprise Microsoft license architecture
 - [[entities/agent-squad]] — type: framework — A flexible multi-agent orchestration framework featuring intelligent intent classification and a SupervisorAgent that coordinates teams of specialized
@@ -148,6 +149,7 @@ Last updated: 2026-06-01
 - [[entities/gemini-embedding-2]] — type: model — Gemini Embedding 2 is Google's native multimodal embedding model supporting text, image, video, audio, documents, and code for AI search 
 - [[entities/gemma-4]] — type: model — Gemma 4 is Google's most capable open model family, released April 2, 2026 under Apache 2.0 license — the first fully permissive Gemma release.
 - [[entities/gemtts]] — type: product — GemTTS is an agent-friendly Gemini text-to-speech CLI written in Rust. It supports expressive tags like [whispers], [laughs], [warmly], multi-speaker
+- [[entities/enisa]] — type: organization — EU cybersecurity agency; first non-US public institution to get Claude Mythos access
 - [[entities/gamma-world]] — type: repo — Gamma-World is NVIDIA's generative multi-agent world model generating coherent future frames from multiple independently controllable agents 
 - [[entities/github-mcp-server]] — type: product — The GitHub MCP Server's secret scanning capability reached general availability on May 13, 2026, after a public preview since March. It allows AI codi
 - [[entities/gitnexus]] — type: product — GitNexus is a zero-server code intelligence engine that indexes any codebase into a knowledge graph — mapping dependencies, call chains, and execution
@@ -163,6 +165,7 @@ Last updated: 2026-06-01
 - [[entities/grok-4-3]] — type: model — Grok 4.3 is xAI's successor to Grok 3, launched May 6, 2026 with an 83% price cut. The model adds video input (up to 5 minutes), document output (PDF/
 - [[entities/grok-build]] — type: tool — Grok Build is xAI's AI coding agent, positioned as a competitor to Claude Code, Cursor, and GitHub Copilot. It allows developers to delegate complex c
 - [[entities/grok-voice-think-fast-1-0]] — type: model — xAI's flagship voice model released April 25, scoring 67.3% on τ-voice Bench — outperforming Gemini, GPT Realtime, and its own predecessor across reta
+- [[entities/gbase]] — type: repo — 23 stars, recursive self-improvement agent framework with memory, evolution, quality gates
 - [[entities/guard-act]] — type: legislation — The GUARD (Growing Up Safe with Responsible Development) Act, passed the Senate Judiciary Committee unanimously on April 30, 2026. It requires AI comp
 - [[entities/harmonist]] — type: repo — A portable AI agent orchestration framework with mechanical protocol enforcement, developed by GammaLabTechnologies. It features 186 curated specialis
 - [[entities/hatch]] — type: product — Hatch is Meta's OpenClaw-inspired AI assistant being built for Instagram to enable agentic shopping — allowing users to purchase items seen in Reels m
@@ -263,7 +266,7 @@ Last updated: 2026-06-01
 
 - [[entities/waymo-ojai]] — type: product — Waymo's sixth-generation robotaxi built on Geely Zeekr platform. Features 42% fewer sensors while maintaining safety.
 
-## Ideas (66)
+## Ideas (67)
 - [[ideas/agent-control-interface-wars]] — Google's Remy reveals a philosophical split in agent UX design that will define how enterprises adopt autonomous AI. While OpenAI's Operator and Anthr
 - [[ideas/agent-democratization]] — Open-source agent frameworks are rapidly democratizing access to autonomous AI capabilities. The Claude Code leak's rapid replication by claw-code (10
 - [[ideas/agent-e-commerce]] — Anthropic's Project Deal demonstrates that AI agents can autonomously negotiate, bid, and transact for real goods and real money. When agents can repr
@@ -275,6 +278,7 @@ Last updated: 2026-06-01
 - [[ideas/agentic-catch-up-game]] — Google and Meta are both playing catch-up in the agentic interface layer, racing to ship competitive products against Anthropic's Claude Code and Open
 - [[ideas/agentic-is-default]] — May 16, 2026 marks the moment when "agentic" stopped being a product category and became the default interface paradigm. Claude Code's Agent View tran
 - [[ideas/agentic-shift]] — May 21, 2026 crystallizes a fundamental transition in AI: from "tool that answers questions" to "agent that does things on your behalf." This isn't in
+- [[ideas/ai-accountability-precedent]] — Florida lawsuit vs OpenAI establishes first state-level AI liability precedent
 - [[ideas/ai-creative-regulation]] — A global regulatory consensus is crystallizing around a bifurcated approach to AI in creative industries: regulate the "creative core" (acting, writin
 - [[ideas/ai-governance-urgency]] — AI capability is outpacing governance at an accelerating rate. Nobel laureate Geoffrey Hinton's UN warning on April 24 — "if you ever went out with a 
 - [[ideas/ai-job-displacement]] — The AI boom is creating a structural contradiction: companies collectively spending $650B on AI infrastructure while simultaneously eliminating the wo

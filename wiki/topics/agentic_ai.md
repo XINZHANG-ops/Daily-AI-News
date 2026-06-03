@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-05-31
+last_updated: 2026-06-02
 ---
 
 # Agentic AI

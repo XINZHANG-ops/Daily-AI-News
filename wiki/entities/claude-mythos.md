@@ -2,7 +2,7 @@
 title: "Claude Mythos"
 slug: claude-mythos
 type: model
-last_updated: 2026-05-29
+last_updated: 2026-06-02
 ---
 
 # Claude Mythos
@@ -42,6 +42,8 @@ By May 12, 2026, Anthropic's EU access restrictions became a public geopolitical
 By May 23, Claude Mythos helped partner companies discover over 10,000 cybersecurity vulnerabilities in a single month, including nearly 400 high/critical risks found by Cloudflare alone. This is the first AI model to complete both of the UK AI Security Institute's full cyberattack simulation environments — yet Anthropic has no plans to release it publicly because safeguards aren't strong enough. The irony: the most capable security AI ever built is too dangerous to release. The security implications of withholding vs. releasing frontier AI models just got concrete data points.
 
 **May 28: Claude Mythos Preview Hits 93.9% on SWE-bench**: Claude Mythos Preview achieves 93.9% on SWE-bench Verified, surpassing Claude Opus 4.8 (88.6%) and GPT-5.4 High (85.0%). On the harder SWE-bench Pro benchmark, Mythos scores 77.8% while Opus 4.7 Adaptive drops to 64.3%. This 5.3 percentage point gap between Mythos and Opus 4.8 on SWE-bench Verified represents roughly 1 in 20 solved problems — a substantial lead suggesting Mythos has a fundamentally different architecture optimized for agentic code execution rather than incremental model improvements.
+
+**June 2: ENISA Gets Access**: Anthropic grants the EU cybersecurity agency ENISA access to Claude Mythos after the model autonomously discovered over 10,000 zero-day vulnerabilities across major operating systems and web browsers. In 45 days: 23,019 findings, 6,202 high/critical severity, 90.6% true positive rate. Notable discoveries include a 27-year-old OpenBSD flaw, 16-year-old FFmpeg vulnerability (automated tools tested 5 million times without finding), and 17-year-old FreeBSD RCE. ENISA becomes the first non-US public institution with access, while the Fed and Bank of England received briefings the EU did not.
 
 ## Connections
 - [[sources/anthropic]] — Anthropic developed Mythos as a cybersecurity-specialized model so capable it triggered emergency government meetings; the decision to withhold rather than release reflects a judgment that frontier defensive capability carries offensive risk if broadly available

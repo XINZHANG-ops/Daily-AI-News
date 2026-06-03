@@ -1245,3 +1245,44 @@ The wiki has been successfully updated with the 2026-06-01 data. Here's a summar
 **Processed & Logged:**
 - Added 2026-06-01 to `processed.json`
 - Added entry to `log.md`
+Done! I've processed the 2026-06-02 data into the wiki. Here's a summary of the updates:
+
+## Summary
+
+**1 new date processed:** 2026-06-02
+
+**Sources updated:**
+- `sources/anthropic.md` — Added Anthropic IPO filing and ENISA access
+- `sources/openai.md` — Added Florida lawsuit
+- `sources/microsoft.md` — Added MAI family and Windows Agent Runtime
+- `sources/google.md` — Added Antigravity 2.0 and Gemini 3.5 Flash
+
+**Topics updated:**
+- `topics/ai_funding.md` — Added Anthropic IPO filing
+- `topics/ai_safety.md` — Added Florida lawsuit and Cisco multi-turn vulnerability
+- `topics/llm_models.md` — Added Cisco multi-turn vulnerability study
+- `topics/agentic_ai.md` — Added Windows Agent Runtime and MAI family
+
+**Entities created (4):**
+- `entities/enisa.md` — EU cybersecurity agency
+- `entities/mai-family.md` — Microsoft in-house models
+- `entities/windows-agent-runtime.md` — Windows agent runtime
+- `entities/gbase.md` — Recursive self-improvement agent framework
+
+**Entities updated (2):**
+- `entities/gamma-world.md` — Updated stars to 523
+- `entities/claude-mythos.md` — Added ENISA access
+
+**Ideas created (2):**
+- `ideas/ai-accountability-precedent.md` — Florida lawsuit precedent
+- `ideas/multi-turn-structural.md` — Structural multi-turn vulnerability
+
+**Timelines updated:**
+- `timelines/2026-06.md` — Added June 2 events
+
+**Index updated:**
+- `wiki/index.md` — Updated to June 2, added all new pages
+
+**Processed/log:**
+- `wiki/processed.json` — Added 2026-06-02
+- `wiki/log.md` — Added ingest entry

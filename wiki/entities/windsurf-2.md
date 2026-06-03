@@ -27,5 +27,6 @@ Windsurf 2.0 competes directly with Cursor 3.0's multi-agent workspace approach.
 ## Connections
 - [[entities/cursor]] — Direct competitor; Cursor 3.0's parallel multi-agent workspaces vs. Windsurf 2.0's always-on cloud execution represent competing visions for the future of AI coding IDEs
 - [[sources/codeium]] — Codeium's flagship product; the Devin Cloud integration leverages Cognition AI's Devin infrastructure
+- [[entities/devin]] — Cognition's autonomous coding agent; Windsurf 2.0 integrates with Devin Cloud for persistent cloud execution
 - [[topics/agentic_ai]] — Windsurf 2.0's persistent execution model advances the "autonomous team" vision beyond Cursor's parallel workspace approach
 - [[ideas/agentic-shift]] — The "always-on" capability removes the last barrier to truly asynchronous AI development workflows

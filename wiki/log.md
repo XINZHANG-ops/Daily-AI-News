@@ -1,3 +1,19 @@
+## [2026-06-03] lint | wiki health check
+
+Fixed broken links: entities/gbase.md: [[entities/openhands]] → [[entities/openhands-sdk]]; ideas/multi-turn-structural.md: removed invalid [[sources/cisco]] link
+Fixed orphan pages: Added [[ideas/ai-accountability-precedent]] link from topics/ai_safety.md; Added [[entities/enisa]] link from topics/ai_security.md; Added [[ideas/multi-turn-structural]] link from topics/ai_security.md; Added [[entities/devin]] link from entities/windsurf-2.md
+Updated index.md: Added missing pages - timelines/2026-06, ideas/multi-turn-structural, entities (gbase, mai-family, windows-agent-runtime); Counts: Timelines 3→4, Ideas 66→67, Entities 192→195
+
+## [2026-06-02] ingest | 1 date
+
+Dates processed: 2026-06-02
+Topics updated: llm_models, ai_funding, ai_safety, agentic_ai
+Sources updated: anthropic, openai, microsoft, google
+Entities created: enisa, mai-family, windows-agent-runtime, gbase
+Entities updated: gamma-world (stars), claude-mythos (ENISA access)
+Ideas created: ai-accountability-precedent, multi-turn-structural
+Timelines updated: 2026-06 (June 2 events)
+
 ## [2026-06-02] lint | wiki health check
 
 Fixed broken links: [[entities/mcp]] → [[entities/mcp-protocol]] in synapse-ai.md, nano-brain.md; [[entities/nemoclaw]] → [[entities/nemo-claw]] in cosmos-3.md, physical_ai.md

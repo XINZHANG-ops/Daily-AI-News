@@ -83,6 +83,8 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-05-29 | Claude Opus 4.8 released | Achieves 88.6% on SWE-bench Verified; modest 1-point improvement over Opus 4.7 while Mythos Preview reaches 93.9% |
 | 2026-06-01 | $900B valuation, becomes most valuable private AI company | Crosses $900B valuation on secondary markets; shortest model cadence ever: Opus 4.8 released just 42 days after Opus 4.7 |
 | 2026-06-01 | Opus 4.8: 42-day cadence, Effort Controls | New effort controls (Low/Medium/High/Max) and Dynamic Workflows; competes on UX differentiation rather than raw capability |
+| 2026-06-02 | Files for IPO | Confidentially files draft S-1 with SEC, beating OpenAI to the punch; raised $65B at $965B valuation on May 29; annualized revenue crosses $47B; first major AI lab to pursue public listing |
+| 2026-06-02 | ENISA gets Claude Mythos access | Grants EU cybersecurity agency access after Mythos discovered 10,000+ zero-day vulnerabilities; 23,019 findings, 6,202 high/critical, 90.6% true positive rate; first non-US public institution with access |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested up to $40B in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.

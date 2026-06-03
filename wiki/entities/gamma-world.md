@@ -2,7 +2,7 @@
 title: "Gamma-World"
 slug: gamma-world
 type: repo
-last_updated: 2026-05-29
+last_updated: 2026-06-02
 ---
 
 # Gamma-World
@@ -16,7 +16,7 @@ Gamma-World is NVIDIA's generative multi-agent world model that generates cohere
 |-----------|-------|
 | Creator | NVIDIA |
 | Release Date | 2026-05-29 |
-| GitHub Stars | 187 |
+| GitHub Stars | 523 |
 | Forks | 1 |
 | Key Features | Simplex Rotary Agent Encoding, Sparse Hub Attention |
 

@@ -85,6 +85,7 @@ OpenAI is navigating the transition from research organization to commercial ent
 
 | 2026-05-31 | GPT-4.5 retires June 27, o3 retires August 26 | OpenAI announces retirement of legacy non-reasoning model GPT-4.5 and o3 just 8 months after January release; clearing deck for next-generation reasoning model |
 | 2026-05-31 | Announces robotics hiring for humanoid robots | Sam Altman's vision for physical AI; hiring for robotics division signals next frontier beyond software agents |
+| 2026-06-02 | Florida sues OpenAI over ChatGPT-linked murders | First state to sue OpenAI over ChatGPT's allegedly dangerous design; multiple ChatGPT-linked violent incidents including murders at Florida State University and University of South Florida; state accuses OpenAI of prioritizing profits over safety |
 ## Key Relationships
 - **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
 - **Microsoft**: Deep partnership despite competition. Azure integration, Microsoft 365 Copilot, but Microsoft also investing in Anthropic.
