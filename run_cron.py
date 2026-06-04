@@ -6,7 +6,16 @@ from zoneinfo import ZoneInfo
 
 BASE_DIR = "/Users/xinzhang/Daily-AI-News"
 os.environ["PATH"] = "/usr/local/bin:/Users/xinzhang/.local/bin:/opt/homebrew/bin:" + os.environ.get("PATH", "")
-CLAUDE_CMD = ["/usr/local/bin/ollama", "launch", "claude", "--model", "minimax-m2.5:cloud", "--"]
+def _get_model(project):
+    import json as _json
+    try:
+        with open(os.path.expanduser("~/Desktop/model-config.json")) as f:
+            cfg = _json.load(f)
+        return cfg.get("projects", {}).get(project) or cfg["default_model"]
+    except Exception:
+        return "minimax-m3:cloud"
+
+CLAUDE_CMD = ["/usr/local/bin/ollama", "launch", "claude", "--model", _get_model("daily-ai-news"), "--"]
 
 toronto = ZoneInfo("America/Toronto")
 now_toronto = datetime.now(toronto)

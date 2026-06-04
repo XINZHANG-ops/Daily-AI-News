@@ -12,7 +12,14 @@ set -Eeuo pipefail
 
 REPO="$(cd "$(dirname "$0")" && pwd)"
 WIKI_DIR="$REPO/wiki"
-MODEL="${1:-minimax-m2.5:cloud}"
+_read_model() {
+    python3 -c "
+import json, os
+c = json.load(open(os.path.expanduser('~/Desktop/model-config.json')))
+print(c.get('projects', {}).get('$1') or c['default_model'])
+" 2>/dev/null || echo "minimax-m3:cloud"
+}
+MODEL="${1:-$(_read_model daily-ai-news)}"
 TODAY="$(date '+%Y-%m-%d')"
 LINT_MARKER="$REPO/logs/lint_done_${TODAY}.json"
 
