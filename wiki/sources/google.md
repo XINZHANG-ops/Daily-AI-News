@@ -81,8 +81,10 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 | 2026-05-29 | Gemini Embedding 2 released | Native multimodal embedding model supporting text, image, video, audio, documents, and code for AI search; enables unified semantic search across modalities in single query; positions Google against OpenAI text-embeddings and Cohere |
 | 2026-06-01 | Antigravity 2.0 announced | Major update to Google's AI coding platform; challenges Anthropic Claude Code and OpenAI Codex |
 | 2026-06-01 | Gemini 3.5 Flash released | AI coding model prioritizing speed and price; CEO Pichai admitted being "a bit behind" on agentic coding |
+| 2026-06-03 | AI Overviews opt-out toggle | New Search Console toggle allowing website owners to exclude domains from AI-generated search results (AI Overviews and AI Mode) without affecting regular search; concession to publishers concerned about traffic siphon
 
 ## Connections
+- [[entities/ai-overviews]] — AI Overviews opt-out is a political compromise with publishers; signals confidence that AI summaries are good enough publishers won't want to opt out; reveals tension between AI search and open web that will widen as AI-generated answers improve
 - [[entities/gemma-4]] — Google's first fully permissive open model under Apache 2.0
 - [[entities/gemini-3-1-pro]] — Leading on multiple benchmarks
 - [[entities/gemini-3-1-flash-tts]] — Granular voice control for podcast, audiobook, accessibility

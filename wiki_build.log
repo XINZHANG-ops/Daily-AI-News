@@ -1286,3 +1286,29 @@ Done! I've processed the 2026-06-02 data into the wiki. Here's a summary of the 
 **Processed/log:**
 - `wiki/processed.json` — Added 2026-06-02
 - `wiki/log.md` — Added ingest entry
+Done processing 2026-06-03 data into the wiki. Here's a summary of changes:
+
+## Entities Created
+- **project-solara.md** — Microsoft's "chip-to-cloud" platform for AI agent-first devices with wearable badge and desk hub concepts
+- **ai-overviews.md** — Google's AI-generated search results with the new opt-out toggle for publishers
+
+## Entities Updated
+- **codex.md** — Updated to reflect 5M weekly users, Sites and role-specific plugins (62 apps, 110 skills), ~20% non-developer adoption
+
+## Sources Updated
+- **microsoft.md** — Added Project Solara announcement
+- **openai.md** — Added Codex enterprise expansion (June 2)
+- **google.md** — Added AI Overviews opt-out toggle (June 3)
+- **anthropic.md** — Added frontier convergence context for Opus 4.8
+
+## Timelines Updated
+- **2026-06.md** — Added June 3 entry covering Trump AI executive order, Project Solara, Codex enterprise expansion, Google AI Overviews opt-out, and Claude Opus 4.8
+
+## Index Updated
+- Added 3 new entity references (project-solara, ai-overviews, codex)
+- Updated entity count from 195 to 199
+- Updated last_updated to 2026-06-03
+
+## Processed.json & Log
+- Added 2026-06-03 to processed dates
+- Added log entry for the ingest

@@ -83,3 +83,22 @@ Entities created: cosmos-3, antigravity-platform, gemini-spark (updated), synaps
 Entities updated: claude-opus-4-8 (42-day cadence, Effort Controls)
 Timelines created: 2026-06
 Ideas updated: agent-infrastructure-layer (reinforced by convergence)
+
+## [2026-06-03] ingest | 1 date
+
+Dates processed: 2026-06-03
+Topics updated: agentic_ai, ai_safety, github_trends, ai_companies
+Sources updated: microsoft, openai, google, anthropic
+Entities created: project-solara, ai-overviews
+Entities updated: codex (5M users, Sites, role-specific plugins)
+Timelines updated: 2026-06 (June 3: Trump AI order, Solara, Codex enterprise, Google opt-out)
+Ideas created: 
+Ideas updated: 
+
+## [2026-06-04] lint | wiki health check
+
+Fixed broken links: created entities/100cc, entities/minta, entities/showhn (June 3 GitHub trending repos); created topics/ai_search, sources/qualcomm, sources/salesforce (entities referenced without pages); created sources/cisco (replaced bare "Cisco security research" reference in ideas/multi-turn-structural)
+Fixed wikilinks: entities/perplexity → entities/perplexity-computer + sources/perplexity in topics/ai_search and entities/ai-overviews; ideas/regulatory-fragmentation bare link annotated in topics/ai_safety
+Fixed orphan pages: Added [[entities/enisa]] + [[ideas/multi-turn-structural]] from topics/ai_security (with new June 2026 Evolution entries); Added [[timelines/2026-06]] from topics/agentic_ai
+Updated index.md: Added new pages - topics/ai_search, sources/qualcomm, sources/salesforce, sources/cisco, entities/100cc, entities/mai-family, entities/minta, entities/showhn, entities/windows-agent-runtime, ideas/multi-turn-structural; Counts: Topics 9→10, Sources 45→48, Entities 199→201, Ideas 67→68
+Verified all wikilinks: No broken links

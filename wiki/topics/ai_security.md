@@ -33,6 +33,10 @@ The security of AI coding agents cannot be assumed to improve through incrementa
 
 ## Evolution
 
+### June 2026
+- ENISA (EU cybersecurity agency) becomes first non-US public institution granted access to Claude Mythos after Mythos discovered 10,000+ zero-day vulnerabilities in 45 days; establishes AI cyber capability as a sovereign-access issue
+- Cisco's multi-turn study proves 15 frontier models all fail dramatically more under multi-turn attacks; multi-turn vulnerability is structural, not fixable
+
 ### May 2026
 - Heretic tool downloads 13M+ times, making guardrail stripping commodity infrastructure
 - Three coordinated vulnerability disclosures (SymJack, TrustFall, Mini Shai-Hulud)
@@ -59,3 +63,5 @@ Three patterns define the AI security landscape in 2026:
 - [[entities/mini-shai-hulud]] — Settings injection for persistence
 - [[ideas/trust-architecture-broken]] — Analysis of fundamental trust flaws
 - [[ideas/ai-security-auditing-mainstream]] — Security auditing becomes enterprise requirement
+- [[entities/enisa]] — ENISA became the first non-US public institution with Claude Mythos access; established the precedent that allied nation-states get privileged AI cyber capabilities
+- [[ideas/multi-turn-structural]] — Cisco's June 2026 study proved multi-turn vulnerability is structural across all 15 frontier models; forces a rethink of single-turn benchmark validity

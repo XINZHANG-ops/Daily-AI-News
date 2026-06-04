@@ -30,5 +30,5 @@ Cisco's recommendation — that safety benchmarks must publish attack-by-strateg
 - [[topics/ai_security]] — Multi-turn vulnerability is a security issue affecting all frontier models; requires fundamental architectural solutions
 - [[topics/ai_safety]] — The finding undermines confidence in AI safety claims; even well-guarded models fail significantly under sustained attack
 - [[sources/anthropic]] — Claude had lowest failure rates but still showed significant multi-turn vulnerability
-- Cisco security research — Published the research exposing multi-turn vulnerability across all major AI providers
+- [[sources/cisco]] — Cisco's security research arm published the cross-vendor study that first exposed multi-turn vulnerability as a structural property of frontier AI; this is the canonical reference for the field
 - [[ideas/ai-security-auditing-mainstream]] — Multi-turn testing must become standard in AI security audits

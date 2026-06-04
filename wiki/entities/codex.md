@@ -2,29 +2,35 @@
 title: "Codex"
 slug: codex
 type: product
-last_updated: 2026-05-15
+last_updated: 2026-06-03
 ---
 
 # Codex
 
 ## What It Is
-Codex is OpenAI's coding agent, the primary product in their enterprise AI strategy. It reached 3 million weekly active users by April 2026.
+Codex is OpenAI's coding agent, the primary product in their enterprise AI strategy. It reached 5 million weekly active users by June 2026, with non-developers comprising ~20% — growing 3x faster than developer adoption.
 
 ## Key Facts
 
 | Attribute | Value |
 |-----------|-------|
 | Creator | OpenAI |
-| Weekly Active Users | 3M (April 2026) |
-| Growth | 70% month-over-month |
+| Weekly Active Users | 5M (June 2026) |
+| Non-Developer Share | ~20% |
+| Growth Rate | 3x faster than developer adoption |
 | Mobile Control | Launched May 14, 2026 in ChatGPT mobile app |
 | Platforms | iPhone, iPad, Android (Windows coming soon) |
+| Enterprise Apps | 62 business applications connected |
+| Automated Skills | 110 skills |
 
 ## Significance
-Codex's growth to 3M weekly active users (from 2M weeks earlier) made it a critical component of OpenAI's IPO positioning. The company launched a $100 ChatGPT Pro tier with 5x Codex access to compete with Claude Max.
+Codex's growth to 5M weekly active users (up from 3M in April 2026) made it a critical component of OpenAI's IPO positioning. The addition of Sites (for creating interactive web apps), Annotations (for targeted edits), and six role-specific plugin bundles transforms Codex from a coding assistant into an enterprise orchestration layer, directly competing with Microsoft Copilot and Salesforce Agentforce.
 
-On May 14, 2026, OpenAI brought Codex control to ChatGPT mobile, allowing users to remotely monitor, approve tasks, and start new prompts from their phones while Codex works on their machines. This removes the "tethered to desk" constraint that limited adoption — developers can now kick off complex coding tasks during a commute and review results before sitting down, reducing the feedback loop from hours to minutes. The timing (same week as Daybreak and GPT-5.5 Instant) shows OpenAI's strategy: make agents accessible everywhere, then compete on ecosystem lock-in.
+The strategic shift targets knowledge workers rather than just engineers, capturing the larger productivity software market. With 62 business applications connected and 110 automated skills, Codex now positions itself as the connective tissue between enterprise workflows.
 
 ## Connections
-- [[sources/openai]] — Codex is central to OpenAI's enterprise strategy and "AI super app" vision; 3M weekly users make it the most deployed coding agent
-- [[topics/agentic_ai]] — Central to coding agent competition
+- [[sources/openai]] — Codex is central to OpenAI's enterprise strategy and "AI super app" vision; 5M weekly users make it the most deployed coding agent; Sites and role-specific plugins transform it into enterprise orchestration layer
+- [[topics/agentic_ai]] — Central to coding agent competition; now competing with Microsoft Copilot and Salesforce Agentforce at enterprise scale
+- [[sources/microsoft]] — Copilot competes with Codex at the enterprise layer; Microsoft has 20M Copilot seats but Codex's non-developer growth (20%) challenges Microsoft's productivity dominance
+- [[entities/project-solara]] — Both represent bets on agent-driven computing: Codex through software orchestration, Solara through hardware form factors
+- [[sources/salesforce]] — Agentforce competes with Codex for enterprise agent orchestration; the 62-app connected ecosystem is a direct challenge to Salesforce's CRM dominance

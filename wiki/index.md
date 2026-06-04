@@ -1,9 +1,10 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-02
+Last updated: 2026-06-04
 
-## Topics (9)
+## Topics (10)
 - [[topics/agentic_ai]] — May 2, 2026 shows the agent ecosystem maturing on three fronts simultaneously. Serena (23.8K stars) provides semantic code infrastructure at the symbo
+- [[topics/ai_search]] — AI Search tracks the integration of generative AI into search engines, producing direct answers rather than link lists. The category war pits Google's AI Overviews against Perplexity and ChatGPT, with the June 2026 publisher opt-out exposing the open-web fracture line.
 - [[topics/ai_companies]] — May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. The Pentagon expands its "AI-first" military contracts with 8 companie
 - [[topics/ai_funding]] — May 2026 reveals AI funding has shifted from model training to operational infrastructure. Anthropic's valuation surged past OpenAI's on secondary mar
 - [[topics/ai_infrastructure]] — AI Infrastructure tracks the physical and computational resources that power AI systems — data centers, GPU clusters, networking, and the business rel
@@ -13,7 +14,7 @@ Last updated: 2026-06-02
 - [[topics/github_trends]] — May 2, 2026 brings three notable repos spanning AI video generation and agent infrastructure. MOVA (972 stars) is a foundation model for synchronized 
 - [[topics/llm_models]] — May 2, 2026 delivers the most damning empirical critique of the LLM paradigm to date: ARC-AGI-3 results show GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18
 
-## Sources (45)
+## Sources (48)
 - [[sources/ai2]] — Ai2 is a Seattle-based AI research organization founded by the late Paul Allen. It is best known for OLMo, one of the most transparent open-source lan
 - [[sources/alibaba]] — Alibaba is a Chinese tech giant and the creator of the Qwen model family. In April 2026, Alibaba is in talks (alongside Tencent) to invest in DeepSeek
 - [[sources/amazon]] — Amazon is the world's largest e-commerce platform and cloud infrastructure provider (AWS). The company is pivoting toward voice and agent shopping, bu
@@ -21,6 +22,7 @@ Last updated: 2026-06-02
 - [[sources/anthropic]] — Anthropic has emerged as the defining AI company of this period, driven by the unprecedented success of Claude Code which propelled annualized revenue
 - [[sources/apple]] — Apple's multi-model strategy for iOS 27 marks a significant shift from exclusive partnerships to a diversified AI approach. By bringing in Google Gemi
 - [[sources/baidu]] — Baidu launched Ernie 5.1 on May 9, 2026, claiming pre-training costs at just 6% of industry peers at similar scale. The model compresses parameters to
+- [[sources/cisco]] — Cisco Systems; published the canonical June 2026 multi-turn vulnerability study exposing structural weakness in 15 frontier AI models, reframing how enterprises evaluate AI security.
 - [[sources/codeium]] — Codeium is the company behind Windsurf, an AI-powered coding IDE that competes with Cursor, Claude Code, and OpenAI Codex. Codeium's key differentiato
 - [[sources/cognition]] — Cognition is an AI company creating Devin — an autonomous AI software engineer agent. In April 2026, Cognition is in talks to raise new funding at a $
 - [[sources/coinbase]] — Coinbase is the largest US cryptocurrency exchange. On May 5, 2026, CEO Brian Armstrong announced a 14% workforce reduction — approximately 660 to 700
@@ -42,12 +44,14 @@ Last updated: 2026-06-02
 - [[sources/nvidia]] — NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell generating $11 billion in Q4 FY2026 revenue and Vera Rubin announcing 
 - [[sources/openai]] — OpenAI is navigating the transition from research organization to commercial enterprise ahead of a potential IPO by end of 2026. The company completed
 - [[sources/perplexity]] — Perplexity has grown from an AI search engine to a full-stack AI platform. April 2026 saw the company achieve 5x revenue growth to $500M while only in
+- [[sources/qualcomm]] — Qualcomm is a US semiconductor leader in mobile AI silicon; selected to power Microsoft's Project Solara agent-first devices at Build 2026, positioning Qualcomm as the mobile AI chip platform.
 - [[sources/recursive-superintelligence]] — Recursive Superintelligence is an AI software company focused on self-improving AI systems. The company raised $650 million in May 2026 at a $4.65 bil
 - [[sources/shopify]] — Shopify is the leading e-commerce platform powering millions of merchants worldwide. The company is positioning itself for "agentic commerce" — where 
 - [[sources/sierra]] — Sierra is an AI agent startup building autonomous customer service agents. In May 2026, the company raised $950 million led by GV and Tiger Global at 
 - [[sources/singapore]] — Singapore is positioning itself as the strategic gateway between US AI giants and Southeast Asia's 700M+ market. On May 21, 2026, Singapore announced 
 - [[sources/spacex]] — SpaceX acquired xAI for $250 billion in an all-stock transaction in April 2026, creating a $1.25 trillion "galactic AI entity." On May 6, 2026, SpaceX
 - [[sources/samsung]] — South Korean tech giant; strategic investor in Anthropic's $65B raise alongside SK Hynix and Micron; major memory chip supplier
+- [[sources/salesforce]] — Salesforce is the world's leading CRM platform and through Agentforce competes with OpenAI Codex and Microsoft Copilot in the enterprise AI agent orchestration market.
 - [[sources/sk-hynix]] — South Korean memory chip maker; strategic investor in Anthropic's $65B raise; leading HBM supplier for AI training
 - [[sources/micron]] — American memory chip manufacturer; strategic investor in Anthropic's $65B raise; supplies DRAM and NAND for AI infrastructure
 - [[sources/stripe]] — Stripe has positioned itself as the essential financial infrastructure for the emerging agent economy. At Stripe Sessions 2026, the company announced 
@@ -66,7 +70,10 @@ Last updated: 2026-06-02
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 - [[timelines/2026-06]] — June opens with regulatory escalation (Florida sues OpenAI, Anthropic IPO), Claude Mythos ENISA access, and multi-turn vulnerability study
 
-## Entities (195)
+## Entities (201)
+- [[entities/project-solara]] — type: product — Project Solara is Microsoft's "chip-to-cloud" platform for AI agent-first devices announced at Build 2026. Features wearable badge and desk hub concepts with Qualcomm silicon, top-facing cameras, and 5G connectivity.
+- [[entities/ai-overviews]] — type: product — AI Overviews are Google's AI-generated search results. On June 3, 2026, Google announced an opt-out toggle in Search Console allowing website owners to exclude domains from AI-generated results without affecting regular search.
+- [[entities/codex]] — type: product — Codex is OpenAI's coding agent reaching 5M weekly users (June 2026). The enterprise expansion with Sites, Annotations, and role-specific plugins transforms it from coding assistant to enterprise orchestration layer.
 - [[entities/a2a-protocol]] — type: protocol — The Agent-to-Agent (A2A) Protocol is Google's protocol for inter-agent communication, launched April 2025 and celebrating its one-year anniversary in 
 - [[entities/agent-365]] — type: product — Microsoft's standalone AI agent product, launched GA on May 1, 2026 at $15/user/month. Part of the first new enterprise Microsoft license architecture
 - [[entities/agent-squad]] — type: framework — A flexible multi-agent orchestration framework featuring intelligent intent classification and a SupervisorAgent that coordinates teams of specialized
@@ -265,8 +272,13 @@ Last updated: 2026-06-02
 - [[entities/qwen-3-7-max]] — type: model — Alibaba's flagship model released May 2026, ranking #5 on Intelligence Index (56.6) at $2.50/M tokens — highest-ranking Chinese model to date
 
 - [[entities/waymo-ojai]] — type: product — Waymo's sixth-generation robotaxi built on Geely Zeekr platform. Features 42% fewer sensors while maintaining safety.
+- [[entities/100cc]] — type: repo — Minimal coding agent harness that reimplements Claude Code's core loop in ~100 lines via Vercel AI SDK; gained 23 stars on June 3, 2026 by proving the agentic pattern is portable
+- [[entities/mai-family]] — type: model — Microsoft's in-house coding model family (MAI-Thinking-1 etc.) announced at Build 2026 to power GitHub Copilot independently of OpenAI/Anthropic
+- [[entities/minta]] — type: repo — Self-correcting AI memory engine with quality governance, hybrid retrieval, and multimodal support (text, images, email); 5 stars on June 3, 2026
+- [[entities/showhn]] — type: repo — AI-powered visual gallery for Show HN projects with auto-screenshots, AI analysis, and full-text search; 28 stars on June 3, 2026
+- [[entities/windows-agent-runtime]] — type: product — Microsoft's runtime announced at Build 2026 making Windows a first-class platform for autonomous AI agents; competes with Anthropic Claude Code and emerging agent frameworks
 
-## Ideas (67)
+## Ideas (68)
 - [[ideas/agent-control-interface-wars]] — Google's Remy reveals a philosophical split in agent UX design that will define how enterprises adopt autonomous AI. While OpenAI's Operator and Anthr
 - [[ideas/agent-democratization]] — Open-source agent frameworks are rapidly democratizing access to autonomous AI capabilities. The Claude Code leak's rapid replication by claw-code (10
 - [[ideas/agent-e-commerce]] — Anthropic's Project Deal demonstrates that AI agents can autonomously negotiate, bid, and transact for real goods and real money. When agents can repr
@@ -305,6 +317,7 @@ Last updated: 2026-06-02
 - [[ideas/indirect-prompt-injection-threat]] — Indirect prompt injection (IPI) has crossed from theoretical vulnerability to active exploitation at scale — the AI security industry's "SQL injection
 - [[ideas/institutional-gap]] — AI capability growth is outpacing the institutional frameworks (legal, economic, governance) meant to contain it at an accelerating rate. May 1, 2026 
 - [[ideas/interpretability-economics]] — Anthropic's Natural Language Autoencoders represent a strategic bet that interpretability will become a competitive moat, not just a research curiosit
+- [[ideas/multi-turn-structural]] — Cisco's June 2026 study proved multi-turn vulnerability is structural across all 15 frontier AI models (Grok 4.1 Fast jumped from 34.1% single-turn to 88.3% multi-turn); undermines single-turn benchmark validity
 - [[ideas/local-ai-computing]] — The week of April 15-20, 2026 sees the emergence of device-resident, always-on AI assistants as a distinct category. Perplexity's "Computer" runs loca
 - [[ideas/mcp-infrastructure-battleground]] — MCP (Model Context Protocol) went from niche experiment to infrastructure battleground in a single week (May 6-13, 2026). AWS GA'd its managed MCP ser
 - [[ideas/military-ai-divide]] — May 1, 2026 marks the formal split of commercial AI into two irreconcilable trajectories. On one track: the Pentagon's eight-company AI coalition (Ope

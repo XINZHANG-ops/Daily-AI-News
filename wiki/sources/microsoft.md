@@ -48,8 +48,10 @@ On May 16, 2026, Microsoft hired at least 10 core OLMo researchers from the Alle
 | 2026-05-28 | MAI-Image-2.5 ranks third on Arena | Text-to-image model ranking third on Arena leaderboard with major improvements in text rendering, cartoon generation, and commercial imagery; available on Arena, MAI Playground, and Microsoft Foundry; directly attacks Midjourneys last strong differentiator |
 | 2026-06-02 | Build 2026 announces MAI in-house coding model | MAI family including reasoning model MAI-Thinking-1; powers GitHub Copilot; no longer dependent on OpenAI or Anthropic |
 | 2026-06-02 | Windows Agent Runtime announced | Makes Windows a first-class runtime for autonomous AI agents; directly competes with Anthropic's Claude Code and agent frameworks |
+| 2026-06-03 | Project Solara announced | "Chip-to-cloud" platform for AI agent-first devices; wearable badge and desk hub concepts with Qualcomm silicon, top-facing cameras, 5G; open reference design for hardware partners; enterprise pilots in healthcare, retail, hospitality
 
 ## Connections
+- [[entities/project-solara]] — Project Solara is Microsoft's hardware play for the post-app era; represents "chip-to-cloud" platform for AI agent-first devices; open reference design positions Microsoft as the Android of AI agents
 - [[sources/anthropic]] — Claude Sonnet integration despite competition; Copilot Cowork research preview built with Anthropic/Claude
 - [[sources/openai]] — Azure partnership; Copilot integration
 - [[entities/copilot-agent-tier]] — GitHub's $49/agent/month pricing for autonomous coding agents
