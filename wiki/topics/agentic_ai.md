@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-06-02
+last_updated: 2026-06-07
 ---
 
 # Agentic AI
@@ -260,3 +260,18 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/zerolang]] — Vercel Labs' radical experiment in agent-native programming; zero dependencies simplifies the agent's world model; deterministic tooling enables reliable debugging by agents
 - [[entities/claude-opus-4-7]] — 87.6% SWE-bench is the economic threshold where autonomous coding agents become viable at enterprise scale; below 80% requires human oversight, above it the cost-benefit flips
 - [[entities/gemini-3-5-flash]] — Powers Google Search AI Mode; aggressive pricing-to-performance ratio with distribution channel leverage — every Google Search user becomes a potential Flash user| 2026-05-30 | Anthropic launches Claude Managed Agents public beta | Hosted infrastructure with sandboxing and multi-agent orchestration; 90.2% performance improvement over single-agent; enterprise adoption from Notion, Rakuten, Asana |
+| 2026-06-04 | NVIDIA Nemotron 3 Ultra released | 550B MoE (55B active) hybrid Mamba-Transformer; NVFP4 quantization; the architecture bet for long-context agent workloads (reduced KV cache) directly targets agent use cases |
+| 2026-06-05 | xAI Grok Build 0.1 launches | First dedicated agentic coding model; $1/$2 per million tokens; day-one IDE integrations (Cursor, Hermes Agent, OpenClaw, Kilo Code, OpenCode) — agentic IDE is the new distribution channel |
+| 2026-06-05 | Google Colab CLI | Command-line interface with prepackaged skill file; "primitive over UI" philosophy converging across Claude Code Skills, Hermes Agent, OpenCode; Gemma 3-1B fine-tuning on-ramp; Google's free compute as agent-friendly distribution |
+| 2026-06-06 | Microsoft MAI-Code-1-Flash | 5B coding model for Copilot/VS Code; co-designed with Maia 200 silicon; part of seven-model MAI drop; the hyperscaler-coder race reaches a new price-performance tier |
+| 2026-06-06 | Microsoft Windows Agent Runtime + Agent 365 expanded | MAI family powers Windows as first-class agent platform; Agent 365 reaches general availability for enterprise control plane managing Claude Code, OpenClaw, GitHub Copilot CLI, AWS Bedrock agents |
+| 2026-06-07 | Nex-N2, HyperAgents, GoA trend | Nex-N2 (Qwen3.5-based agentic model family, 80.8% SWE-Bench Verified); HyperAgents (Meta FAIR's self-referential self-improving agents, 2.6k stars); GoA (ICLR 2026 Graph-of-Agents) — three new agent-first model/framework releases in one day |
+- [[entities/nex-n2]] — June 7: open-source Qwen3.5-based agentic model (80.8% SWE-Bench Verified); "Agentic Thinking" framework represents agent-first model design pattern
+- [[entities/hyperagents]] — June 7: Meta FAIR's meta-agent + task-agent architecture; self-referential self-improvement; 2.6k stars in academic release
+- [[entities/goa]] — June 7: ICLR 2026 Graph-of-Agents formalizes the test-time inference as a collaborative graph of specialized LMs
+- [[entities/nemotron-3-ultra]] — June 4: hybrid Mamba-Transformer architecture specifically targets long-context agent workloads (reduced KV cache cost) — the architecture bet for the agentic era
+- [[entities/grok-build]] — June 5: xAI's $1/$2 per million tokens is the new commodity tier for agentic coding; forces Claude Code and GPT-5.4-Codex to compete on quality-per-dollar
+- [[entities/maia-200]] — June 6: custom AI silicon co-designed with MAI family; the vertical-integration pair that makes Microsoft's seven-MAI portfolio economically viable
+- [[ideas/foundation-model-portfolio-war]] — June 6: the agentic AI layer is the primary beneficiary of the foundation model portfolio war
+- [[ideas/agentic-developer-as-primary-end-user]] — June 6-7: the agentic developer is the new primary end-user persona for foundation model companies
+- [[entities/openai-lockdown-mode]] — June 6: defensive posture (disable features to prevent prompt injection) signals the agentic security crisis is the new battleground

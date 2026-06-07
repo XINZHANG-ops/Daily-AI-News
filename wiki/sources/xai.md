@@ -1,7 +1,7 @@
 ---
 title: "xAI"
 slug: xai
-last_updated: 2026-05-12
+last_updated: 2026-06-07
 ---
 
 # xAI
@@ -26,6 +26,7 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 | 2026-05-10 | Signs binding NIST safety agreement | Mandatory pre-deployment testing for frontier models; gains government legitimacy as SpaceXAI despite Musk's distillation admission; Anthropic, Meta, OpenAI notably absent from initial agreement |
 | 2026-05-12 | Grok 4.3 launched | 83% price cut ($1.25/1M input vs Grok 3's $3); video input up to 5 min; document output (PDF/XLSX/PPTX); always-on reasoning; voice cloning from 120-second samples; undercuts GPT-4.5 by ~60% |
 | 2026-05-19 | $12B round at $250B valuation | Led by Saudi PIF, UAE MGX, Singapore Temasek; funds Memphis data center buildout to 500K GPUs by year-end |
+| 2026-06-05 | Grok Build 0.1 launched | First dedicated agentic coding model; 100+ tokens/sec, 256K context, $1/$2 per million tokens; 40-60% below Claude Code Opus 4.8, 80% below GPT-5.4-Codex; day-one Cursor/Hermes Agent/OpenClaw/Kilo Code/OpenCode integration — the IDE is xAI's last consumer surface where usage converts to revenue |
 
 ## Key Relationships
 - **SpaceX**: Parent company following acquisition.
@@ -43,3 +44,4 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 - [[ideas/commodity-inference-fragmentation]] — Grok 4.3 at $1.25/M input tokens is the latest data point in the API price collapse; xAI's 83% price cut signals a race-to-bottom where only compute-rich providers survive
 - [[ideas/voice-agent-battleground]] — Voice cloning from 120-second samples extends xAI's voice capabilities alongside grok-voice-think-fast-1.0; competes with ElevenLabs' enterprise voice strategy and OpenAI's GPT-Realtime-2
 - [[entities/grok-4-3]] — Grok 4.3 undercuts GPT-4.5 by ~60% with comparable 1M context and video understanding; classic Musk market-entry strategy of undercutting incumbents to gain share
+- [[entities/grok-build]] — June 5: Grok Build 0.1 at $1/$2 per million tokens is the most aggressive pricing in agentic coding; 40-60% below Claude Code Opus 4.8; the "Build" naming is xAI's bid to be the build-tool, not the chatbot

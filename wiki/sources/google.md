@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-05-29
+last_updated: 2026-06-07
 ---
 
 # Google
@@ -82,6 +82,7 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 | 2026-06-01 | Antigravity 2.0 announced | Major update to Google's AI coding platform; challenges Anthropic Claude Code and OpenAI Codex |
 | 2026-06-01 | Gemini 3.5 Flash released | AI coding model prioritizing speed and price; CEO Pichai admitted being "a bit behind" on agentic coding |
 | 2026-06-03 | AI Overviews opt-out toggle | New Search Console toggle allowing website owners to exclude domains from AI-generated search results (AI Overviews and AI Mode) without affecting regular search; concession to publishers concerned about traffic siphon
+| 2026-06-05 | Colab CLI | Command-line interface for Colab with prepackaged skill file letting agents and developers manage remote Colab runtimes, fine-tune Gemma 3-1B, run training jobs from terminal; "primitive over UI" philosophy converging across Claude Code Skills, Hermes Agent, OpenCode; free compute as agent-friendly distribution |
 
 ## Connections
 - [[entities/ai-overviews]] — AI Overviews opt-out is a political compromise with publishers; signals confidence that AI summaries are good enough publishers won't want to opt out; reveals tension between AI search and open web that will widen as AI-generated answers improve
@@ -92,6 +93,7 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 - [[entities/gemini-3-5-flash]] — Frontier-level at half price; direct competitor to Claude Sonnet and GPT-5.4 in API pricing war
 - [[entities/gemini-spark]] — Consumer AI agent; positions Google against Anthropic's Claude Code and OpenAI's Operator in agent market
 - [[entities/gemini-omni]] — World model for physical simulation; generating video outputs for real-world interaction; competes with World Labs
+- [[entities/mai-image-2.5]] — June 6: Microsoft's MAI-Image-2.5 surpassed Nano Banana Pro on Arena; first major breach of Google's image generation lead; signals image generation is no longer a Google moat
 - [[entities/mcp-protocol]] — Gemini CLI includes MCP support
 - [[ideas/safety-restricted-releases]] — Not directly restricting models but participating in coalition discussions
 - [[entities/gemini-robotics-er-1-6]] — embodied reasoning model with industrial instrument reading; Boston Dynamics partnership signals "Android of robotics" software licensing strategy

@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA"
 slug: nvidia
-last_updated: 2026-05-29
+last_updated: 2026-06-07
 ---
 
 # NVIDIA
@@ -38,6 +38,7 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 
 | 2026-05-31 | Cosmos 3 released | First fully open omnimodel for physical AI; native vision reasoning and multimodal generation; Super (32B) and Nano (8B) variants; Nano optimized for edge robot deployment |
 | 2026-05-31 | Agent Toolkit launched | NemoClaw blueprints and OpenShell runtime; positions NVIDIA as infrastructure layer for physical AI agents |
+| 2026-06-04 | Nemotron 3 Ultra unveiled | 550B MoE (55B active) hybrid Mamba-Transformer with NVFP4 4-bit quantization; 5x throughput on Blackwell tensor cores; license shifts from restrictive to OpenMDW-1.1 — weaponizing openness as CUDA moat; companion Content Safety (4B) and ASR (40+ langs) |
 ## Key Relationships
 - **OpenAI**: Strategic investor and primary GPU customer.
 - **Anthropic**: GPU supplier and Project Glasswing coalition member.
@@ -49,6 +50,7 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 - [[entities/vera-rubin]] — Next-gen platform, 10x perf/watt
 - [[entities/ising]] — World's first open quantum AI model family
 - [[entities/gb300]] — GB300 Blackwell Ultra, mass production May 2026; 35x lower cost/token for agentic AI
+- [[entities/nemotron-3-ultra]] — June 4: 550B MoE with NVFP4 4-bit quantization; the model-as-CUDA-distribution play; OpenMDW-1.1 license weaponizes openness as chip moat
 - [[entities/blackwell-architecture]] — Current-generation architecture with 3.5 GHz clocks, 1.8 TB/s bandwidth; thermal challenges but massive demand; China exclusion creates bifurcated market
 - [[sources/vast-data]] — NVIDIA-backed storage startup, $1B raise
 - [[sources/openai]] — $30B investment commitment

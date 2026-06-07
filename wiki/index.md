@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-04
+Last updated: 2026-06-07
 
 ## Topics (10)
 - [[topics/agentic_ai]] — May 2, 2026 shows the agent ecosystem maturing on three fronts simultaneously. Serena (23.8K stars) provides semantic code infrastructure at the symbo
@@ -70,7 +70,7 @@ Last updated: 2026-06-04
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 - [[timelines/2026-06]] — June opens with regulatory escalation (Florida sues OpenAI, Anthropic IPO), Claude Mythos ENISA access, and multi-turn vulnerability study
 
-## Entities (201)
+## Entities (207)
 - [[entities/project-solara]] — type: product — Project Solara is Microsoft's "chip-to-cloud" platform for AI agent-first devices announced at Build 2026. Features wearable badge and desk hub concepts with Qualcomm silicon, top-facing cameras, and 5G connectivity.
 - [[entities/ai-overviews]] — type: product — AI Overviews are Google's AI-generated search results. On June 3, 2026, Google announced an opt-out toggle in Search Console allowing website owners to exclude domains from AI-generated results without affecting regular search.
 - [[entities/codex]] — type: product — Codex is OpenAI's coding agent reaching 5M weekly users (June 2026). The enterprise expansion with Sites, Annotations, and role-specific plugins transforms it from coding assistant to enterprise orchestration layer.
@@ -173,12 +173,14 @@ Last updated: 2026-06-04
 - [[entities/grok-build]] — type: tool — Grok Build is xAI's AI coding agent, positioned as a competitor to Claude Code, Cursor, and GitHub Copilot. It allows developers to delegate complex c
 - [[entities/grok-voice-think-fast-1-0]] — type: model — xAI's flagship voice model released April 25, scoring 67.3% on τ-voice Bench — outperforming Gemini, GPT Realtime, and its own predecessor across reta
 - [[entities/gbase]] — type: repo — 23 stars, recursive self-improvement agent framework with memory, evolution, quality gates
+- [[entities/goa]] — type: repo — UNITES-Lab's Graph-of-Agents (ICLR 2026): test-time inference framework that dynamically selects and orchestrates specialized LMs as a collaborative graph
 - [[entities/guard-act]] — type: legislation — The GUARD (Growing Up Safe with Responsible Development) Act, passed the Senate Judiciary Committee unanimously on April 30, 2026. It requires AI comp
 - [[entities/harmonist]] — type: repo — A portable AI agent orchestration framework with mechanical protocol enforcement, developed by GammaLabTechnologies. It features 186 curated specialis
 - [[entities/hatch]] — type: product — Hatch is Meta's OpenClaw-inspired AI assistant being built for Instagram to enable agentic shopping — allowing users to purchase items seen in Reels m
 - [[entities/heretic]] — type: tool — Heretic is a tool that can remove safety guardrails from open-source AI models in under 10 minutes. Discovered by researchers in May 2026, it has been
 - [[entities/hidream-o1-image]] — type: model — HiDream-ai/HiDream-O1-Image is a natively unified image generative foundation model built on Pixel-level Unified Transformer (UiT). It supports text-t
 - [[entities/hive]] — type: repo — Hive is a multi-agent harness for production AI workloads. It features a graph-based execution DAG for agent coordination, role-based evolving memory,
+- [[entities/hyperagents]] — type: repo — Meta FAIR's self-referential self-improving agents that optimize for any computable task via meta-agent + task-agent architecture (arXiv 2603.19461); 2.6k sta
 - [[entities/ibm-bob]] — type: product — IBM Bob is an AI-first development partner that automates the full software development lifecycle (SDLC) beyond code generation. Built on multi-model 
 - [[entities/ibm-sovereign-core]] — type: product — IBM's runtime policy embedding system that enforces data sovereignty and regulatory compliance at the infrastructure level rather than as an add-on. E
 - [[entities/incognito-chat]] — type: product — Incognito Chat is Meta's end-to-end encrypted AI conversation feature, announced on May 13, 2026. Meta claims it is "the first major AI product where 
@@ -209,14 +211,18 @@ Last updated: 2026-06-04
 - [[entities/mova]] — type: repo — MOVA is an open-source foundation model from OpenMOSS that generates synchronized video and audio in a single inference pass, breaking the "silent era
 - [[entities/multica]] — type: repo — multica is an open-source managed agents platform that turns coding agents into real teammates. It supports Claude Code, Codex, OpenClaw, OpenCode, He
 - [[entities/muse-spark]] — type: model — Muse Spark is Meta's first proprietary AI model, released April 8, 2026, breaking with the company's open-source tradition since 2023. It ranks 4th on
-- [[entities/nanobot]] — type: repo — An ultra-lightweight personal AI agent built in approximately 4,000 lines of Python — 99% smaller than mainstream alternatives like Claude Code (512K 
+- [[entities/maia-200]] — type: chip — Microsoft's second-generation custom AI accelerator co-designed with the MAI model family released June 6, 2026. The 1.4x efficiency boost and coupled optimization
+- [[entities/nanobot]] — type: repo — An ultra-lightweight personal AI agent built in approximately 4,000 lines of Python — 99% smaller than mainstream alternatives like Claude Code (512K
 - [[entities/natural-language-autoencoders]] — type: product — Anthropic's Natural Language Autoencoders are a breakthrough interpretability tool that translates Claude's internal numerical activations into human-
 - [[entities/nemo-claw]] — type: repo — NemoClaw is NVIDIA's open-source reference stack for running OpenClaw securely with the NVIDIA OpenShell runtime. Released as an alpha preview in Marc
+- [[entities/nemotron-3-ultra]] — type: model — NVIDIA's 550B MoE (55B active) hybrid Mamba-Transformer with NVFP4 4-bit quantization released June 4, 2026; 5x throughput on Blackwell tensor cores; license shifted to
+- [[entities/nex-n2]] — type: model — Open-source Qwen3.5-based agentic model family (Nex-N2-Pro & Nex-N2-mini) released June 7, 2026 with "Agentic Thinking" framework; 80.8% SWE-Bench Verified, 83.7 BrowseCo
 - [[entities/niefa]] — type: repo — Neural Interference Engine for Agents — an open-source autonomous agent runtime with goal-to-execution pipeline and x402 paid endpoints for agent-to-a
 - [[entities/olmo]] — type: model — OLMo (Open Language Model) is a fully open-source large language model developed by the Allen Institute for AI (Ai2). Unlike most frontier models, OLM
 - [[entities/omnivoice]] — type: repo — OmniVoice is an open-source multilingual voice synthesis model from k2-fsa supporting 600+ languages using a diffusion language model architecture. It
 - [[entities/open-agent-sdk-go]] — type: repo — A lightweight open-source Go SDK for building AI agents. It runs the full agent loop in-process with 32 built-in tools, MCP support, session managemen
 - [[entities/openai-daybreak]] — type: product — Daybreak is OpenAI's cybersecurity platform built on GPT-5.5 variants, launched on May 12, 2026, to challenge Anthropic's Mythos dominance in AI-power
+- [[entities/openai-lockdown-mode]] — type: feature — OpenAI's defensive security feature for ChatGPT Business (released June 6, 2026) that disables live web browsing, image retrieval, deep research, and agent mode
 - [[entities/openclaw]] — type: repo — OpenClaw is an open-source autonomous agent framework that reached 302,000 stars as the fastest-growing open-source project in GitHub history.
 - [[entities/openhands-sdk]] — type: repo — OpenHands/software-agent-sdk is a clean, modular SDK for building AI agents that work with code. It supports one-off tasks, routine maintenance, and m
 - [[entities/opensquilla]] — type: repo — opensquilla/opensquilla is a token-efficient AI agent designed to deliver "same budget, higher intelligence density." It features a four-tier cognitiv
@@ -278,9 +284,10 @@ Last updated: 2026-06-04
 - [[entities/showhn]] — type: repo — AI-powered visual gallery for Show HN projects with auto-screenshots, AI analysis, and full-text search; 28 stars on June 3, 2026
 - [[entities/windows-agent-runtime]] — type: product — Microsoft's runtime announced at Build 2026 making Windows a first-class platform for autonomous AI agents; competes with Anthropic Claude Code and emerging agent frameworks
 
-## Ideas (68)
+## Ideas (70)
 - [[ideas/agent-control-interface-wars]] — Google's Remy reveals a philosophical split in agent UX design that will define how enterprises adopt autonomous AI. While OpenAI's Operator and Anthr
 - [[ideas/agent-democratization]] — Open-source agent frameworks are rapidly democratizing access to autonomous AI capabilities. The Claude Code leak's rapid replication by claw-code (10
+- [[ideas/agentic-developer-as-primary-end-user]] — June 6-7, 2026 is when "agentic developer" stops being a niche use case and becomes the primary end-user persona for foundation model companies; every product shipped
 - [[ideas/agent-e-commerce]] — Anthropic's Project Deal demonstrates that AI agents can autonomously negotiate, bid, and transact for real goods and real money. When agents can repr
 - [[ideas/agent-economics]] — The agent economy is reaching an inflection point where platforms that previously provided free infrastructure for AI agents are beginning to monetize
 - [[ideas/agent-economy-infrastructure]] — On May 5, 2026, three major product launches from three different companies converged on the same thesis: the AI layer is moving from "tool that human
@@ -313,6 +320,7 @@ Last updated: 2026-06-04
 - [[ideas/enterprise-ai-lock-in]] — Microsoft's M365 E7 launch at $99/user/month bundles AI governance into the enterprise software stack that every company already pays for — creating a
 - [[ideas/eu-cyber-access-gap]] — OpenAI's "Trusted Access for Cyber" program granting EU institutions access to GPT-5.5-Cyber, contrasted with Anthropic restricting Mythos to ~12 US t
 - [[ideas/flash-first-strategy]] — Google's release of Gemini 3.5 Flash GA on May 22, 2026 — with 76.2% on Terminal-Bench 2.1, 1M token context at $1.50/M input and $9.00/M output — est
+- [[ideas/foundation-model-portfolio-war]] — June 6, 2026 marks a turning point in the foundation model race: competition has shifted from "best flagship" to "best portfolio." Microsoft's seven-MAI drop
 - [[ideas/government-pre-testing]] — The Trump administration's shift from hands-off deregulation to structured pre-release evaluation is the most consequential AI policy development of 2
 - [[ideas/indirect-prompt-injection-threat]] — Indirect prompt injection (IPI) has crossed from theoretical vulnerability to active exploitation at scale — the AI security industry's "SQL injection
 - [[ideas/institutional-gap]] — AI capability growth is outpacing the institutional frameworks (legal, economic, governance) meant to contain it at an accelerating rate. May 1, 2026 

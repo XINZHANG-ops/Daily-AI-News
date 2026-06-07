@@ -1,3 +1,24 @@
+## [2026-06-07] ingest | 1 date
+
+Dates processed: 2026-06-07
+Topics updated: llm_models, agentic_ai, ai_companies, ai_safety, github_trends
+Sources updated: anthropic, microsoft, nvidia, xai, openai, google
+Entities created: nemotron-3-ultra, maia-200, openai-lockdown-mode, nex-n2, hyperagents, goa
+Entities updated: mai-family, grok-build, claude-mythos, project-glasswing
+Ideas created: foundation-model-portfolio-war, agentic-developer-as-primary-end-user
+Timelines updated: 2026-06 (June 4-7 portfolio war + agentic developer shift)
+
+Key insights extracted:
+- Microsoft dropped seven MAI models in a single day (June 6) co-designed with Maia 200 silicon — clearest signal yet that OpenAI partnership is hedge, not moat
+- xAI's Grok Build 0.1 at $1/$2 per million tokens is 40-60% below Claude Code Opus 4.8, 80% below GPT-5.4-Codex
+- NVIDIA Nemotron 3 Ultra (550B MoE, NVFP4 quantization) shifts to OpenMDW-1.1 license, weaponizing openness as CUDA moat
+- Anthropic Glasswing expands to 150 orgs (NATO + Samsung), Mythos-class models promised "in the coming weeks"
+- OpenAI Lockdown Mode is defensive posture after Meta Instagram breach; vs Anthropic's offensive Glasswing expansion
+- Three GitHub repos same day (Nex-N2, HyperAgents, GoA) confirm agentic developer is primary end-user
+- Idea created: "Foundation Model Portfolio War" — competition shifted from "best flagship" to "best portfolio"
+- Idea created: "Agentic Developer as Primary End-User" — every product designed for an agent or a developer building agents
+- MAI-Image-2.5 surpassing Nano Banana Pro on Arena is first major breach of Google's image generation lead
+
 ## [2026-06-03] lint | wiki health check
 
 Fixed broken links: entities/gbase.md: [[entities/openhands]] → [[entities/openhands-sdk]]; ideas/multi-turn-structural.md: removed invalid [[sources/cisco]] link

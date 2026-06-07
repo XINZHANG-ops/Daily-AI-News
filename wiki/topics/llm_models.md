@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-06-02
+last_updated: 2026-06-07
 ---
 
 # LLM Models
@@ -152,6 +152,12 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-05-27 | Cognition AI Devin raises $1B | AI coding agent at $26B valuation; doubled from September 2025; "program synthesis" approach |
 | 2026-05-28 | Claude Opus 4.8 released | 88.6% SWE-bench, 74.6% Terminal-Bench 2.1; parallel subagent workflows, 2.5x fast mode; honesty improved 4x |
 | 2026-05-29 | Claude Mythos finds 27-year OpenBSD flaw | Model discovered vulnerability undetected for 27 years; global central banks held emergency briefings |
+| 2026-06-04 | NVIDIA Nemotron 3 Ultra | 550B MoE (55B active) hybrid Mamba-Transformer with NVFP4 quantization; 5x throughput on Blackwell; OpenMDW-1.1 license; companion Content Safety (4B) and ASR (40+ langs) — the 4-bit inference war goes prime time |
+| 2026-06-05 | xAI Grok Build 0.1 | First dedicated agentic coding model; 100+ tokens/sec, 256K context, $1/$2 per million tokens; 40-60% below Claude Code Opus 4.8, 80% below GPT-5.4-Codex; day-one Cursor/OpenClaw/Hermes/Kilo Code/OpenCode integration |
+| 2026-06-05 | Google Colab CLI | Command-line interface with prepackaged skill file; Gemma 3-1B fine-tuning on-ramp; "primitive over UI" philosophy for agentic IDE race |
+| 2026-06-06 | Microsoft seven-MAI drop | MAI-Thinking-1, MAI-Code-1-Flash (5B coding), MAI-Image-2.5 (surpasses Nano Banana Pro on Arena), MAI-Transcribe-1.5 (5x faster, 43 langs), MAI-Voice-2 (15 langs), co-designed with new Maia 200 silicon (1.4x efficiency) — portfolio war made literal |
+| 2026-06-06 | OpenAI Lockdown Mode | Defensive posture for ChatGPT Business: disables live browsing, image retrieval, deep research, agent mode; triggered by Meta Instagram breach (prompt injection via customer-support agent) |
+| 2026-06-06 | Anthropic Glasswing expands to 150 orgs | Includes NATO (military-grade deployment) and Samsung (on-device Mythos-distilled 3-7B for Galaxy AI); Mythos-class models promised to all customers "in the coming weeks" |
 
 ## Patterns & Insights
 
@@ -212,6 +218,16 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 **May 15: AlphaEvolve and the Self-Improving Hardware Loop**: AlphaEvolve's integration into next-generation TPU silicon is the most significant hardware-AI convergence since Google began using AI to design chips. AI-designed circuits running AI creates a potential self-improvement loop that could accelerate compute efficiency gains beyond traditional Moore's Law trajectories. Unlike research demos, these are production deployments with measurable outcomes — 30% better genomics, 10x lower quantum errors. The labs that can deliver verifiable results (not just papers) will capture the high-value science and infrastructure contracts.
 
 **May 29: Claude Mythos Preview Hits 93.9% on SWE-bench**: Claude Mythos Preview achieves 93.9% on SWE-bench Verified, surpassing Claude Opus 4.8 (88.6%) and GPT-5.4 High (85.0%). The 5.3 percentage point gap between Mythos and Opus 4.8 suggests Mythos has a fundamentally different architecture optimized for agentic code execution. On SWE-bench Pro, Mythos scores 77.8% vs Opus 4.7 Adaptive at 64.3% — an even larger gap. Meanwhile, Anthropic's $965B valuation surpasses OpenAI's $730B as enterprise-first strategy (85% enterprise revenue) wins over consumer-heavy model.
+
+**June 4-7: The Foundation Model Portfolio War**: The May-June 2026 model release surge marks the shift from "best flagship" to "best portfolio." NVIDIA's Nemotron 3 Ultra + Content Safety + ASR + OpenMDW-1.1 license is the chip-vendor-as-model-company play. Microsoft's seven-MAI drop in a single day is the enterprise-portfolio approach (thinking + coding + image + voice + transcription, co-designed with Maia 200). xAI's Grok Build 0.1 at $1/$2 per million tokens is the price-war play. Anthropic's Glasswing expansion to 150 orgs is the breadth-of-distribution play. The hidden message: when frontier model performance converges (all major labs within a few points on coding/reasoning), ecosystem coverage beats benchmark leadership.
+
+**June 6: The Hybrid Mamba-Transformer Architecture Goes Mainstream**: NVIDIA's Nemotron 3 Ultra's hybrid Mamba-Transformer design is the architectural bet the rest of the field is hedging on. By reducing KV cache cost on long-context agent workloads, Mamba-Transformer hybrids target the exact use case MAI-Thinking-1 and Claude Opus 4.8 (Effort Control) are also chasing. Combined with NVFP4 quantization (4-bit on Blackwell tensor cores), the model achieves 5x throughput — but only on NVIDIA's own silicon. This is the architecture-lock-in pattern: better models require specific hardware, which requires specific infrastructure investments.
+
+**June 6: The Open-Weights Counter-Strategy**: NVIDIA's OpenMDW-1.1 license shift is the most underrated development of the week. NVIDIA is acknowledging that closed-source frontier models are a losing game against open Chinese releases like Qwen3.5 and DeepSeek V4, so it's weaponizing openness as a CUDA moat. By giving the model weights away for free on Hugging Face while binding performance to Blackwell tensor cores, NVIDIA creates a self-reinforcing loop: more developers using Nemotron 3 Ultra → more demand for Blackwell silicon → more revenue for NVIDIA → more R&D for next-gen chips. The same pattern is visible in Nex-N2 (Qwen3.5-based, 80.8% SWE-Bench Verified) — open weights as the foundation model standard.
+
+**June 6: Image Generation Joins the Frontier Race**: MAI-Image-2.5 surpassing Nano Banana Pro on Arena is the first major breach of Google's image generation lead. Google's Nano Banana (and Nano Banana Pro) was the breakout image model of 2025, and Microsoft's MAI-Image-2.5 besting it on Arena — running on Maia 200 silicon — means the image generation frontier is now competitive. The signal: image generation is no longer a Google moat; it's a foundation-model-table-stakes capability. The fact that Microsoft shipped this in the seven-model MAI drop (not as a separate announcement) reinforces the portfolio-war thesis: image generation is one of many battlegrounds, not THE battleground.
+
+**June 6: The Defense vs Offense Security Bifurcation**: OpenAI's Lockdown Mode (defensive posture — disable features to prevent prompt injection) vs Anthropic's Glasswing expansion to NATO (offensive posture — share Mythos capabilities with military and enterprise) is the canonical split in 2026 AI security philosophy. Both companies are trying to solve the same trust problem from opposite directions, which suggests neither has cracked it and the security layer is moving up the stack toward OS-level sandboxes. The Meta Instagram breach — where attackers exfiltrated customer data via a customer-support agent — is the proximate trigger for Lockdown Mode and the canonical "agentic security" case study the way SolarWinds was for supply-chain attacks.
 
 ## Connections
 - [[entities/arc-agi-3]] — The benchmark that exposed the LLM reasoning ceiling: GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human performance
@@ -284,3 +300,12 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[sources/anthropic]] — Andrej Karpathy joined May 19 to work on using Claude to build better Claude models; the irony of "AI improving AI" validates Karpathy's teacher-building philosophy
 - [[ideas/ai-utility-layer]] — The May 24 convergence of MCP protocol victory, Gemini 3's price war, and platform dependency unraveling signals AI is becoming a utility layer where differentiation moves from model performance to infrastructure, governance, and pricing
 | 2026-05-31 | Anthropic $965B valuation surpasses OpenAI $852B | Valuation race concludes: Anthropic overtakes OpenAI for first time; $65B Series H, $47B ARR; strategic partnerships with Amazon, Google/Broadcom, SpaceX |
+- [[entities/nemotron-3-ultra]] — June 4: hybrid Mamba-Transformer with NVFP4 4-bit quantization; the 4-bit inference war goes prime time; OpenMDW-1.1 license shift weaponizes openness as CUDA moat
+- [[entities/grok-build]] — June 5: xAI's $1/$2 per million tokens pricing is 40-60% below Claude Code Opus 4.8 and 80% below GPT-5.4-Codex; the most aggressive pricing in agentic coding
+- [[entities/maia-200]] — June 6: Microsoft's custom AI silicon co-designed with MAI family; the vertical-integration pair that makes the seven-model drop possible
+- [[entities/mai-family]] — June 6: seven-MAI drop (MAI-Thinking-1, MAI-Code-1-Flash, MAI-Image-2.5, MAI-Transcribe-1.5, MAI-Voice-2); portfolio war made literal; MAI-Image-2.5 surpassing Nano Banana Pro on Arena is the first major breach of Google's image generation lead
+- [[entities/nex-n2]] — June 7: Qwen3.5-based open-source agentic model (80.8% SWE-Bench Verified); community-built agentic stack at zero cost; deepest pressure on premium agentic coding
+- [[entities/openai-lockdown-mode]] — June 6: defensive posture (disable features to prevent prompt injection) vs Anthropic's offensive posture (Glasswing expansion to NATO); canonical split in 2026 AI security philosophy
+- [[ideas/foundation-model-portfolio-war]] — June 6-7: competition has shifted from "best flagship" to "best portfolio"; MAI's seven-model drop, NVIDIA's model+guardrail+ASR+license, Anthropic's 150-org Glasswing all signal ecosystem coverage beats benchmark leadership
+- [[ideas/agentic-developer-as-primary-end-user]] — June 6-7: the agentic developer is the new primary end-user persona; every product shipped is designed for an agent or a developer building agents
+- [[timelines/2026-06]] — June 4-7 timeline captures the foundation model portfolio war in detail

@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-06-01
+last_updated: 2026-06-07
 ---
 
 # Anthropic
@@ -86,6 +86,8 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-06-02 | Files for IPO | Confidentially files draft S-1 with SEC, beating OpenAI to the punch; raised $65B at $965B valuation on May 29; annualized revenue crosses $47B; first major AI lab to pursue public listing |
 | 2026-06-02 | ENISA gets Claude Mythos access | Grants EU cybersecurity agency access after Mythos discovered 10,000+ zero-day vulnerabilities; 23,019 findings, 6,202 high/critical, 90.6% true positive rate; first non-US public institution with access |
 | 2026-06-03 | Claude Opus 4.8 mentioned in front of frontier convergence | Opus 4.8 release keeps Anthropic in frontier model race heading into "June 2026 Frontier Convergence" — potentially 4-6 significant model releases from OpenAI (GPT-5.6), Google (Gemini 3.5 Pro), and Anthropic (Sonnet 4.8, Mythos) within weeks; timing suggests Anthropic wanted positioning before expected GPT-5.6 drop (Polymarket 80-89% probability for June 30) |
+| 2026-06-02 | Project Glasswing expands to 150 orgs | 30 → 150 organizations across 15+ countries; new partners include NATO (military-grade deployment cleared export-control review at Opus 4.8 level) and Samsung (on-device Mythos-distilled 3-7B for Galaxy AI); Mythos-class models promised to all customers "in the coming weeks" — racing to be public before federal testing window becomes mandatory |
+| 2026-06-05 | Cowork product guide drop | Enterprise features need to be Mythos-ready to justify the 10x-30x price tier; aligns with Glasswing 150-org expansion
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested up to $40B in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -99,6 +101,7 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 - [[entities/claude-opus-4-8]] — Released May 29, 2026 with 88.6% SWE-bench; 42-day cadence after Opus 4.7 is the shortest in Anthropic history; Effort Controls target professional developers
 - [[entities/claude-mythos]] — Restricted model at 93.9% SWE-bench; 5.3 points ahead of Opus 4.8; drives the capability gap narrative
 - [[entities/claude-opus-4-7]] — Predecessor with 87.6% SWE-bench; released April 16-17, 2026; 42 days to Opus 4.8 sets new record
+- [[entities/project-glasswing]] — June 2: Glasswing expanded to 150 orgs including NATO and Samsung; Mythos-class models promised to all customers "in the coming weeks"
 - [[entities/claude-code]] — Powers Claude Code used by enterprises; the Effort Controls directly target users wanting controllable output
 - [[topics/llm_models]] — Anthropic's aggressive release cadence responds to OpenAI o3 retirement and Google Gemini Spark launch
 - [[ideas/safety-restricted-releases]] — The Opus 4.8 vs Mythos gap validates the strategy of releasing "good enough" while reserving "best" for enterprise

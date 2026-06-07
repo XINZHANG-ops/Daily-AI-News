@@ -49,9 +49,13 @@ On May 16, 2026, Microsoft hired at least 10 core OLMo researchers from the Alle
 | 2026-06-02 | Build 2026 announces MAI in-house coding model | MAI family including reasoning model MAI-Thinking-1; powers GitHub Copilot; no longer dependent on OpenAI or Anthropic |
 | 2026-06-02 | Windows Agent Runtime announced | Makes Windows a first-class runtime for autonomous AI agents; directly competes with Anthropic's Claude Code and agent frameworks |
 | 2026-06-03 | Project Solara announced | "Chip-to-cloud" platform for AI agent-first devices; wearable badge and desk hub concepts with Qualcomm silicon, top-facing cameras, 5G; open reference design for hardware partners; enterprise pilots in healthcare, retail, hospitality
+| 2026-06-06 | Seven-MAI drop | MAI-Thinking-1 (flagship reasoning), MAI-Code-1-Flash (5B coding for Copilot/VS Code), MAI-Image-2.5 (surpasses Nano Banana Pro on Arena), MAI-Transcribe-1.5 (5x faster, 43 langs), MAI-Voice-2 (15 langs) co-designed with new Maia 200 silicon (1.4x efficiency) — the clearest signal that the OpenAI partnership is no longer a moat but a hedge |
 
 ## Connections
 - [[entities/project-solara]] — Project Solara is Microsoft's hardware play for the post-app era; represents "chip-to-cloud" platform for AI agent-first devices; open reference design positions Microsoft as the Android of AI agents
+- [[entities/maia-200]] — June 6: custom AI silicon co-designed with MAI family; the vertical-integration pair that makes Microsoft's three-layer position (models + chips + M365 distribution) durable against OpenAI dependency
+- [[entities/mai-image-2.5]] — June 6: MAI-Image-2.5 surpasses Nano Banana Pro on Arena; first major breach of Google's image generation lead
+- [[entities/mai-family]] — June 6: seven-model MAI drop is the portfolio war made literal; co-designed with Maia 200 silicon for coupled optimization
 - [[sources/anthropic]] — Claude Sonnet integration despite competition; Copilot Cowork research preview built with Anthropic/Claude
 - [[sources/openai]] — Azure partnership; Copilot integration
 - [[entities/copilot-agent-tier]] — GitHub's $49/agent/month pricing for autonomous coding agents

@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-06-03
+last_updated: 2026-06-07
 ---
 
 # AI Safety
@@ -183,6 +183,10 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[entities/claude-mythos]] — Anthropic's refusal to grant EU access despite 4-5 meetings and Bundesbank demands suggests the restriction is about liability control, not just safety; creates structural disadvantage for allies
 - [[entities/openai-daybreak]] — The three-tier model approach (standard, verified, red-team) is becoming the industry safety playbook; Anthropic pioneered it with Mythos's ~12 partners, and OpenAI is copying the structure while expanding to 8+ vendors simultaneously
 - [[entities/perceptron-mk1]] — Perceptron's embodied agents add a third competitor to the AI cybersecurity race alongside OpenAI Daybreak and Anthropic Mythos; the battle for AI-powered security is now a three-way contest
+- [[entities/openai-lockdown-mode]] — June 6: OpenAI's defensive posture (disable features to prevent prompt injection) following Meta Instagram breach; canonical "agentic security" case study
+- [[entities/project-glasswing]] — June 2: Glasswing expansion to 150 orgs including NATO and Samsung; Mythos-class models promised to all customers "in the coming weeks" — Anthropic racing to get Mythos public before federal testing window becomes mandatory (per Trump's June 3 EO)
+- [[entities/maia-200]] — June 6: Microsoft's custom AI silicon co-designed with MAI family; vertical integration raises new safety questions about chip+model+agent+distribution in one company
+- [[entities/mai-family]] — June 6: seven-model MAI drop is the largest single-day model release in history; safety review at this scale is unprecedented
 - [[ideas/three-tier-safety-playbook]] — The standard/verified/red-team tier structure pioneered by Mythos and adopted by Daybreak represents a new safety architecture for capability-restricted models; it may become the template for all future frontier cybersecurity releases
 - [[entities/colorado-sb-26-189]] — Colorado's disclosure requirement for consequential decisions adds a US state-level compliance layer to the fragmented regulatory landscape; the bipartisan support signals AI oversight is transcending partisanship
 - [[entities/uk-govuk-chatbot]] — 90% accuracy for government services means ~10,000 potential daily failures at scale; the 2.5-year development timeline suggests extreme caution in deploying AI for high-stakes citizen interactions

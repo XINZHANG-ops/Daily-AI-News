@@ -2,7 +2,7 @@
 title: "Claude Mythos"
 slug: claude-mythos
 type: model
-last_updated: 2026-06-02
+last_updated: 2026-06-07
 ---
 
 # Claude Mythos
@@ -44,6 +44,8 @@ By May 23, Claude Mythos helped partner companies discover over 10,000 cybersecu
 **May 28: Claude Mythos Preview Hits 93.9% on SWE-bench**: Claude Mythos Preview achieves 93.9% on SWE-bench Verified, surpassing Claude Opus 4.8 (88.6%) and GPT-5.4 High (85.0%). On the harder SWE-bench Pro benchmark, Mythos scores 77.8% while Opus 4.7 Adaptive drops to 64.3%. This 5.3 percentage point gap between Mythos and Opus 4.8 on SWE-bench Verified represents roughly 1 in 20 solved problems — a substantial lead suggesting Mythos has a fundamentally different architecture optimized for agentic code execution rather than incremental model improvements.
 
 **June 2: ENISA Gets Access**: Anthropic grants the EU cybersecurity agency ENISA access to Claude Mythos after the model autonomously discovered over 10,000 zero-day vulnerabilities across major operating systems and web browsers. In 45 days: 23,019 findings, 6,202 high/critical severity, 90.6% true positive rate. Notable discoveries include a 27-year-old OpenBSD flaw, 16-year-old FFmpeg vulnerability (automated tools tested 5 million times without finding), and 17-year-old FreeBSD RCE. ENISA becomes the first non-US public institution with access, while the Fed and Bank of England received briefings the EU did not.
+
+**June 2: Glasswing Expansion to 150 Orgs**: Project Glasswing expands from 30 to 150 organizations across 15+ countries, with new partners including NATO (military-grade deployment cleared export-control review at a level Opus 4.8 hasn't) and Samsung (on-device licensing for a Mythos-distilled 3-7B for Galaxy AI). Mythos-class models promised to all customers "in the coming weeks" — Anthropic racing to make Mythos public BEFORE the federal testing window becomes mandatory (per Trump's June 3 EO on voluntary model review). The Cowork product guide (June 5-6) drop aligns: enterprise features need to be Mythos-ready to justify the 10x-30x price tier.
 
 ## Connections
 - [[sources/anthropic]] — Anthropic developed Mythos as a cybersecurity-specialized model so capable it triggered emergency government meetings; the decision to withhold rather than release reflects a judgment that frontier defensive capability carries offensive risk if broadly available

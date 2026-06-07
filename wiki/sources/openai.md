@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-05-29
+last_updated: 2026-06-07
 ---
 
 # OpenAI
@@ -97,10 +97,12 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-28 | Pentagon tests to replace Claude | DoD began testing OpenAI and Google models to replace Claude after designating Anthropic supply-chain risk; Claude was deeply integrated into Maven Smart System for classified operations |
 | 2026-05-29 | $730B valuation, trails Anthropic | Anthropic raises $65B, reaches $965B valuation surpassing OpenAI's $730B; OpenAI's consumer-heavy model (85% consumer vs Anthropic's 85% enterprise) faces structural challenge as enterprises demand data sovereignty and compliance |
 | 2026-06-02 | Codex expands to enterprise with Sites | Major Codex expansion: Sites for creating interactive web apps, Annotations for targeted edits, six role-specific plugin bundles connecting 62 business applications with 110 automated skills; 5M weekly users with ~20% non-developers — 3x faster growth than developer adoption |
+| 2026-06-06 | Lockdown Mode launched | ChatGPT Business feature disabling live web browsing, image retrieval, deep research, and agent mode to defend against prompt-injection attacks; triggered by Meta Instagram breach (attackers exploited customer-support agent for data exfiltration) — canonical "agentic security" case study |
 
 ## Connections
 - [[entities/gpt-5.4]] — Model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026
 - [[entities/gpt-5.5]] — Latest model (codename "Spud") with "super app" integration vision; 49-day release cycle for enterprise procurement lock-in; deployed on Pentagon classified networks; GPT-5.5 Instant (52.5% fewer hallucinations) is a defensive response to Perplexity and Anthropic's factual reliability gains; "memory sources" feature shifts liability to users
+- [[entities/openai-lockdown-mode]] — June 6: defensive posture (disable features to prevent prompt injection); Anthropic's Glasswing expansion to NATO is the offensive counter-position
 - [[entities/codex]] — 5M weekly users (June 2026); Sites and role-specific plugins transform from coding assistant to enterprise orchestration layer; ~20% non-developers shows strategic shift toward knowledge workers; 62 apps, 110 skills directly compete with Microsoft Copilot and Salesforce Agentforce
 - [[entities/symphony]] — Open-source orchestration spec for Codex at fleet scale; 15K+ stars
 - [[entities/gpt-rosalind]] — Life sciences domain model

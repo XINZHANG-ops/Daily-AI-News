@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-05-23
+last_updated: 2026-06-07
 ---
 
 # GitHub Trends
@@ -244,3 +244,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/ai-agent-starter]] — Multi-provider agent framework supporting OpenAI, Anthropic, Ollama; function calling, streaming, conversation memory; 1 star signals early-stage
 - [[entities/niefa]] — Neural Interference Engine for Agents; goal-to-execution pipeline, x402 paid endpoints for autonomous agent commerce; 1 star signals early-stage
 - [[ideas/agent-economy-infrastructure]] — niefa's x402 paid endpoints preview the agent-to-agent commerce layer; autonomous agents paying each other for services is the next infrastructure frontier
+- [[entities/nex-n2]] — June 7: open-source Qwen3.5-based agentic model family (Nex-N2-Pro & Nex-N2-mini); 80.8% SWE-Bench Verified, 83.7 BrowseComp; "Agentic Thinking" framework; custom sglang fork for serving
+- [[entities/hyperagents]] — June 7: Meta FAIR's self-referential self-improving agents via meta-agent + task-agent architecture (arXiv 2603.19461); 2.6k stars for an academic release
+- [[entities/goa]] — June 7: ICLR 2026 Graph-of-Agents for test-time inference dynamically selecting and orchestrating specialized LMs as a collaborative graph
+- [[ideas/agentic-developer-as-primary-end-user]] — June 7: three agent-first model/framework releases in one day (Nex-N2, HyperAgents, GoA) confirm the agentic developer is the primary end-user persona

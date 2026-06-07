@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-05-29
+last_updated: 2026-06-07
 ---
 
 # AI Companies
@@ -283,3 +283,9 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[entities/evonic]] — Multi-agent swarm platform with cross-platform channel integration
 - [[entities/agentclaw]] — Declarative workflow framework turning one-sentence ideas into reusable capabilities
 - [[timelines/2026-05]] — May 16 crystallizes the end of the partnership era, the agentic default, and regulatory fragmentation as defining themes
+- [[entities/maia-200]] — June 6: Microsoft's custom AI silicon co-designed with MAI family; the vertical-integration pair that makes Microsoft's three-layer position (models + chips + M365 distribution) durable
+- [[entities/mai-family]] — June 6: seven-model MAI drop (MAI-Thinking-1, MAI-Code-1-Flash, MAI-Image-2.5, MAI-Transcribe-1.5, MAI-Voice-2) is the clearest signal that the OpenAI partnership is no longer a moat but a hedge
+- [[entities/grok-build]] — June 5: xAI's $1/$2 per million tokens agentic coding model; the most aggressive pricing in agentic coding; SpaceX capital funds 18-24 months of subscale margins
+- [[entities/nemotron-3-ultra]] — June 4: NVIDIA's 550B MoE with NVFP4 quantization; the chip vendor is now competing directly with model companies; OpenMDW-1.1 license weaponizes openness as CUDA moat
+- [[entities/openai-lockdown-mode]] — June 6: OpenAI's defensive posture (disable features to prevent prompt injection) following Meta Instagram breach; canonical "agentic security" case study
+- [[entities/project-glasswing]] — June 2: Anthropic expands Glasswing to 150 orgs including NATO and Samsung; Mythos-class models promised "in the coming weeks"
