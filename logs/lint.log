@@ -958,3 +958,17 @@ All 6 tasks complete. Wiki is clean: 0 broken links, 0 orphans, all 10 new pages
 • 重建 wiki/index.md：更新 Last updated 2026-06-04，加入 10 个新页面，分类计数 Topics 9→10、Sources 45→48、Entities 199→201、Ideas 67→68。
 • 追加 wiki/log.md lint 条目；全量校验确认 0 断链、0 裸链接、frontmatter slug/日期全部一致。
 [2026-06-04 01:09:55] Wiki lint 完成（退出码 0）。
+[main a7c313e] wiki: lint 2026-06-04
+ 27 files changed, 640 insertions(+), 20 deletions(-)
+ create mode 100644 wiki/entities/100cc.md
+ create mode 100644 wiki/entities/ai-overviews.md
+ create mode 100644 wiki/entities/minta.md
+ create mode 100644 wiki/entities/project-solara.md
+ create mode 100644 wiki/entities/showhn.md
+ create mode 100644 wiki/sources/cisco.md
+ create mode 100644 wiki/sources/qualcomm.md
+ create mode 100644 wiki/sources/salesforce.md
+ create mode 100644 wiki/topics/ai_search.md
+[2026-06-07 01:00:02] 开始 wiki lint，模型: minimax-m3:cloud
+Already up to date.
+[2026-06-07 01:00:03] 预扫描通过，无断链/孤儿页/空页，跳过 LLM。

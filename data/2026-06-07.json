@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-07",
+  "github_repos": [
+    {
+      "name": "nex-agi/Nex-N2",
+      "url": "https://github.com/nex-agi/Nex-N2",
+      "description": {
+        "en": "Open-source agentic model family (Nex-N2-Pro & Nex-N2-mini) built on Qwen3.5 with 'Agentic Thinking' framework — 80.8 SWE-Bench Verified, 83.7 BrowseComp, custom sglang fork for serving.",
+        "zh": "基于Qwen3.5构建的开源Agentic模型家族(Nex-N2-Pro与Nex-N2-mini)，采用\"Agentic Thinking\"框架 — SWE-Bench Verified 80.8分、BrowseComp 83.7分，提供定制化sglang推理分支。"
+      },
+      "stars": "33",
+      "forks": "4"
+    },
+    {
+      "name": "facebookresearch/HyperAgents",
+      "url": "https://github.com/facebookresearch/HyperAgents",
+      "description": {
+        "en": "Self-referential self-improving agents that optimize for any computable task via meta-agent + task-agent architecture (arXiv 2603.19461).",
+        "zh": "自指式自我改进Agent，通过meta-agent + task-agent架构针对任意可计算任务进行优化(arXiv 2603.19461)。"
+      },
+      "stars": "2.6k",
+      "forks": "187"
+    },
+    {
+      "name": "UNITES-Lab/GoA",
+      "url": "https://github.com/UNITES-Lab/GoA",
+      "description": {
+        "en": "Graph-of-Agents: test-time inference framework that dynamically selects and orchestrates specialized LMs as a collaborative graph (ICLR 2026).",
+        "zh": "Graph-of-Agents：测试时推理框架，将专业化语言模型动态选择并编排为协作图谱(ICLR 2026)。"
+      },
+      "stars": "25",
+      "forks": "2"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Microsoft Launches Seven MAI Models to Reduce OpenAI Dependence",
+        "zh": "微软发布七款MAI模型，降低对OpenAI依赖"
+      },
+      "url": "https://epium.com/news/microsoft-artificial-intelligence-launches-seven-new-mai-models/",
+      "source": "Epium",
+      "time": "June 6, 2026",
+      "description": {
+        "en": "Microsoft AI shipped seven in-house MAI models on June 6: MAI-Thinking-1 (flagship reasoning), MAI-Code-1-Flash (5B coding for Copilot/VS Code), MAI-Image-2.5 (surpasses Nano Banana Pro on Arena), MAI Transcribe-1.5 (5x faster, 43 languages), MAI-Voice-2 (15 languages), co-designed with the new Maia 200 silicon delivering 1.4x efficiency boost.",
+        "zh": "微软AI于6月6日发布七款自研MAI模型：MAI-Thinking-1(旗舰推理)、MAI-Code-1-Flash(用于Copilot/VS Code的5B编码模型)、MAI-Image-2.5(Arena超越Nano Banana Pro)、MAI Transcribe-1.5(速度快5倍、支持43种语言)、MAI-Voice-2(15种语言)，与新发布的Maia 200芯片协同设计，效率提升1.4倍。"
+      },
+      "insight": {
+        "en": "01 *Microsoft dropped seven MAI models in one day, the clearest sign yet that the OpenAI partnership is no longer a moat but a hedge.* MAI-Image-2.5 beating Nano Banana Pro on Arena is the most market-moving claim — Google/Nano Banana's image model was the breakout hit of 2025, and Microsoft just declared it can out-image the image leader on its own silicon. The Maia 200 co-design story is the real tell: Microsoft is the only hyperscaler with paired foundation models + in-house training chips + distribution through M365 Copilot, a three-layer position that lets it price below AWS Bedrock and Google Vertex while gradually weaning the product off GPT-class models. The 'seven models, one day' tactic is also a direct shot at the MAI-1/MAI-2 leak from earlier this week — by pre-announcing breadth instead of one flagship, Microsoft forces the conversation to be about portfolio, not benchmark duels.",
+        "zh": "01 *微软一日发布七款MAI模型，迄今最清晰的信号：与OpenAI的合作伙伴关系已从护城河变成了对冲。* MAI-Image-2.5在Arena上击败Nano Banana Pro是最具市场冲击力的声明——Google的Nano Banana图像模型是2025年最大爆款，而微软刚宣告在自家芯片上能跑出超越图像霸主的能力。Maia 200协同设计才是真正的故事：微软是唯一同时拥有基础模型+自研训练芯片+通过M365 Copilot分发的超大规模厂商，三层叠加让定价可低于AWS Bedrock和Google Vertex，同时逐步让产品摆脱对GPT级模型的依赖。\"一日七模\"的策略也是对本周早些时候MAI-1/MAI-2泄露消息的精准反击——以广度而非旗舰单品抢占话语权，把竞争叙事从基准对飙拉回产品组合维度。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA Releases Nemotron 3 Ultra: 550B MoE with NVFP4 Quantization",
+        "zh": "NVIDIA发布Nemotron 3 Ultra：550B MoE搭配NVFP4量化"
+      },
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/",
+      "source": "NVIDIA Developer Blog",
+      "time": "June 4, 2026",
+      "description": {
+        "en": "NVIDIA unveiled Nemotron 3 Ultra, a 550B-parameter Mixture-of-Experts model (55B active) using a hybrid Mamba-Transformer architecture and the new NVFP4 quantization format, claiming 5x throughput gains. Companion releases include Nemotron 3.5 Content Safety (4B guardrail model) and Nemotron 3.5 ASR (40+ languages). The model is moving from a restrictive license to OpenMDW-1.1.",
+        "zh": "NVIDIA推出Nemotron 3 Ultra，550B参数的混合专家模型(激活55B)，采用Mamba-Transformer混合架构与全新NVFP4量化格式，吞吐量提升5倍。配套发布Nemotron 3.5 Content Safety(40亿参数护栏模型)与Nemotron 3.5 ASR(支持40余种语言)。模型授权从限制性许可转向OpenMDW-1.1。"
+      },
+      "insight": {
+        "en": "02 *Nemotron 3 Ultra is NVIDIA's quietest but most consequential release of the year — the 4-bit inference wars just went prime time.* NVFP4 isn't just a quantization scheme; it's a hardware-software lock-in play. By tying the model to Blackwell-generation tensor cores, NVIDIA ensures that running Nemotron at 5x throughput requires its own silicon, while simultaneously giving away the model weights for free on Hugging Face. The hybrid Mamba-Transformer design is the architectural bet the rest of the field is hedging on — it cuts KV cache cost on long-context agent workloads, which is the exact use case the MAI-Thinking-1 and Claude Opus 4.8 (Effort Control) are also chasing. The OpenMDW-1.1 license shift is the most underrated part: NVIDIA is acknowledging that closed-source frontier models are a losing game against open Chinese releases like Qwen3.5 and DeepSeek V4, so it's weaponizing openness as a CUDA moat.",
+        "zh": "02 *Nemotron 3 Ultra是NVIDIA今年最安静却最关键的发布——4位推理之战正式进入主舞台。* NVFP4不只是一种量化方案，而是一场软硬协同的锁局：把模型与Blackwell代张量核绑定，意味着要享受5倍吞吐量就必须使用NVIDIA自家芯片，同时又把权重免费挂在Hugging Face上。Mamba-Transformer混合架构是整个行业正在下注的架构方向——它在长上下文Agent工作负载上削减KV缓存成本，而这恰好是MAI-Thinking-1和Claude Opus 4.8(Effort Control)所竞逐的场景。授权转向OpenMDW-1.1最被低估：NVIDIA在承认前沿闭源模型在面对Qwen3.5和DeepSeek V4等中国开源模型时已无胜算，因此把开放本身当作CUDA护城河的武器。"
+      }
+    },
+    {
+      "title": {
+        "en": "xAI Grok Build 0.1 Debuts as Agentic Coding Model at $1/$2 per Million Tokens",
+        "zh": "xAI发布Grok Build 0.1：Agentic编程模型，输入$1/输出$2每百万token"
+      },
+      "url": "https://www.vktr.com/ai-news/xai-launches-grok-build-01-coding-model/",
+      "source": "VKTR",
+      "time": "June 5, 2026",
+      "description": {
+        "en": "SpaceX/xAI released Grok Build 0.1, its first dedicated agentic coding model, generating at 100+ tokens/second with a 256K context window. Pricing: $1/M input, $2/M output. Integrations span Cursor, Hermes Agent, OpenClaw, Kilo Code, and OpenCode on day one.",
+        "zh": "SpaceX/xAI发布Grok Build 0.1，这是其首款专用Agentic编程模型，生成速度100+ token/秒，上下文窗口256K。定价：输入$1、输出$2/百万token。首发即接入Cursor、Hermes Agent、OpenClaw、Kilo Code与OpenCode。"
+      },
+      "insight": {
+        "en": "03 *Grok Build 0.1 is the most aggressive pricing in the agentic-coding category — and it comes from the company with the most to lose by NOT being in the IDE.* At $1/$2 per million tokens, xAI is roughly 40-60% below Claude Code (Opus 4.8: $5/$25) and 80% below GPT-5.4-Codex, while offering comparable or better agentic-coding throughput via the Hermes Agent and OpenClaw ecosystem. The strategic logic: xAI's consumer brand is fractured after the safety controversies, but the developer-tools distribution (Cursor, OpenCode, Kilo Code) is a different funnel with different rules — and IDE seats are the only consumer surface where the company can convert usage into revenue without a subscription app. The 'Build' naming is the giveaway: this is xAI's bid to be the build-tool, not the chatbot. SpaceX capital buys them time to take subscale margins for 18-24 months.",
+        "zh": "03 *Grok Build 0.1是Agentic编程领域最激进的定价——而且来自最承受不起缺席IDE的厂商。* $1/$2每百万token的定价，比Claude Code(Opus 4.8：$5/$25)低约40-60%，比GPT-5.4-Codex低80%，同时通过Hermes Agent和OpenClaw生态提供相当或更优的Agentic编程吞吐。战略逻辑：xAI的消费者品牌因安全争议而四分五裂，但开发者工具分发渠道(Cursor、OpenCode、Kilo Code)是一套不同的漏斗和规则——IDE席位是公司无需订阅应用就能将使用量转化为收入的唯一消费者触点。\"Build\"的命名就是明牌：xAI要做的是构建工具，而不是聊天机器人。SpaceX的资本可以支撑它在18-24个月内接受次规模化利润率。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Introduces 'Lockdown Mode' for ChatGPT to Defend Against Prompt Injection",
+        "zh": "OpenAI为ChatGPT推出\"Lockdown Mode\"防御提示注入"
+      },
+      "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-2026-attacks/",
+      "source": "TechCrunch",
+      "time": "June 6, 2026",
+      "description": {
+        "en": "OpenAI rolled out a 'Lockdown Mode' for ChatGPT Business and select personal accounts, disabling live web browsing, image retrieval, deep research, and agent mode to protect against prompt-injection attacks. The launch follows the Meta Instagram breach where attackers exploited Meta's AI customer support agent.",
+        "zh": "OpenAI为ChatGPT商业版及部分个人账户推出\"Lockdown Mode\"，禁用实时浏览、图像检索、深度研究与Agent模式以防御提示注入攻击。该功能上线前，攻击者刚刚利用Meta的AI客服Agent导致Instagram数据泄露事件。"
+      },
+      "insight": {
+        "en": "04 *Lockdown Mode is OpenAI admitting the agentic era has a security crisis that model alignment alone cannot solve.* Stripping browsing, retrieval, research, and agent mode is functionally equivalent to rolling ChatGPT back to a 2023 chat-only product — and OpenAI is willing to take that UX hit to keep the enterprise market. The Meta Instagram breach is the proximate trigger: attackers used prompt injection to exfiltrate customer data through a customer-support agent, and that incident is now the canonical 'agentic security' case study the way SolarWinds was for supply-chain attacks. The interesting move is the parallel: Anthropic has been pushing Effort Control (the inverse — give users MORE agency) while OpenAI is offering MORE restriction. Both companies are trying to solve the same trust problem from opposite directions, which suggests neither has cracked it and the security layer is moving up the stack toward OS-level sandboxes.",
+        "zh": "04 *Lockdown Mode是OpenAI承认Agentic时代存在模型对齐无法独立解决的安全危机。* 砍掉浏览、检索、研究和Agent模式，本质上相当于把ChatGPT退回到2023年的纯聊天产品——而OpenAI愿意承受这种体验损失以守住企业市场。Meta Instagram数据泄露事件是直接导火索：攻击者通过客服Agent利用提示注入窃取用户数据，该事件正成为\"Agentic安全\"的标志性案例，如同SolarWinds之于供应链攻击。耐人寻味的是平行对比：Anthropic在推Effort Control(反向操作——给用户更多自主权)，OpenAI在提供更多限制。两家公司正从相反方向解决同一个信任问题，这表明双方都未真正破解难题，安全层正沿堆栈向上移动到操作系统级沙箱。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Expands Project Glasswing to 150 Orgs, Eyes Public Mythos-Class Release",
+        "zh": "Anthropic扩大Project Glasswing至150家机构，瞄准公测Mythos级模型"
+      },
+      "url": "https://9to5mac.com/2026/06/02/anthropic-expands-glasswing-as-it-promises-public-claude-mythos-class-model-releases/",
+      "source": "9to5Mac",
+      "time": "June 2, 2026",
+      "description": {
+        "en": "Anthropic expanded Project Glasswing to roughly 150 new organizations across 15+ countries, with partners reportedly including Samsung and NATO. Mythos-class models are promised to all customers 'in the coming weeks.'",
+        "zh": "Anthropic将Project Glasswing扩展至15个以上国家约150家新机构，据报合作伙伴包括三星与北约。Mythos级模型承诺\"未来数周内\"向所有客户开放。"
+      },
+      "insight": {
+        "en": "05 *Glasswing going from 30 to 150 organizations in one quarter is the closest thing the AI industry has to an enterprise FOMO signal — and the inclusion of Samsung and NATO tells you what 'safety' actually means in 2026.* NATO as a launch partner is the headline: military-grade deployment implies the Mythos class has cleared export-control and dual-use review at a level Claude Opus 4.8 hasn't, which means capability is now sufficiently far ahead of the public tier to warrant classification. Samsung signals on-device licensing — likely a Mythos-distilled 3-7B for Galaxy AI. The 'coming weeks' language combined with the recent Trump EO on voluntary model review (June 3) suggests Anthropic is racing to get Mythos public BEFORE the federal testing window becomes mandatory, so the launch can frame the narrative rather than respond to it. This is also why the Cowork product guide dropped on June 5-6: enterprise features need to be Mythos-ready to justify the 10x-30x price tier.",
+        "zh": "05 *Glasswing一个季度内从30家扩至150家，这是AI产业最接近企业FOMO的信号——三星和北约的入局揭示了2026年\"安全\"一词的真实含义。* NATO作为发布伙伴是最大新闻：军事级部署意味着Mythos级模型已通过Opus 4.8尚未达到的出口管制与双重用途审查，也就是说其能力已远超公开层级，值得分类处理。三星意味着端侧授权——很可能是为Galaxy AI定制的Mythos蒸馏3-7B模型。\"未来数周\"的措辞叠加6月3日的特朗普AI自愿审查行政令，表明Anthropic正竞速在联邦审查窗口变成强制要求之前把Mythos推向公开市场，让发布来定义叙事而非被动应对。这也是Cowork产品指南在6月5-6日上线的原因：企业功能必须为Mythos做好准备，才能撑起10-30倍的价差。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Launches Colab CLI: Agent-Friendly Remote Runtime Control",
+        "zh": "Google推出Colab CLI：面向Agent的远程运行时控制"
+      },
+      "url": "https://developers.googleblog.com/introducing-the-google-colab-cli/",
+      "source": "Google Developers Blog",
+      "time": "June 5, 2026",
+      "description": {
+        "en": "Google introduced a command-line interface for Colab with a prepackaged skill file, letting agents and developers manage remote Colab runtimes, fine-tune models like Gemma 3-1B, and run training jobs from a terminal.",
+        "zh": "Google为Colab推出命令行接口，并附带预打包的skill文件，让Agent与开发者可从终端管理远程Colab运行时、微调Gemma 3-1B等模型、运行训练任务。"
+      },
+      "insight": {
+        "en": "06 *Colab CLI is the most Google-shaped AI release of the month: a quiet infrastructure move that turns free GPU cycles into the on-ramp for Gemini distribution.* The prepackaged skill file is the actual product — it is the same 'give the agent a primitive, not a UI' philosophy that Claude Code's Skills (Matt Pocock), Hermes Agent, and OpenCode are converging on. Google is racing the agentic IDE trend by making its free compute fungible with terminal workflows, which sidesteps the notebook UI (where Colab is winning) and the IDE UI (where Cursor, Windsurf, and VS Code are winning). The Gemma 3-1B fine-tuning example is a deliberate on-ramp: it lets a developer go from 'open terminal' to 'fine-tuned model in 10 minutes' without ever touching Google's cloud console, which is the actual product gap between Vertex AI and Hugging Face that Colab never quite closed.",
+        "zh": "06 *Colab CLI是本月最\"谷歌气质\"的AI发布：一次静悄悄的基础设施动作，把免费GPU算力变成Gemini分发的入口。* 预打包的skill文件才是真正产品——它延续了Claude Code Skills(Matt Pocock)、Hermes Agent和OpenCode正在趋同的\"给Agent一个原语而非一个UI\"理念。Google正通过让免费算力与终端工作流可互换，来与Agent化IDE赛跑，绕过Colab占优的Notebook UI和Cursor、Windsurf、VS Code占优的IDE UI。Gemma 3-1B微调示例是一个精心设计的入口：让开发者从\"打开终端\"到\"10分钟内完成微调\"，全程无需接触Google Cloud控制台——而这正是Vertex AI与Hugging Face之间Colab从未真正弥合的产品鸿沟。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "June 6, 2026 marks the day the AI industry reorganized around three simultaneous distribution battles. First, foundation-model companies are now competing on FULL PORTFOLIO, not flagship: Microsoft dropped seven MAI models in a single day, NVIDIA shipped a model (Nemotron 3 Ultra) plus guardrail (Content Safety) plus multilingual model (ASR) plus a new license (OpenMDW-1.1) — the message is that benchmark leadership is no longer the moat, ecosystem coverage is. Second, agentic coding has become the new category-defining battleground, with xAI's Grok Build 0.1 pricing ($1/$2) putting direct margin pressure on Claude Code and GPT-5.4-Codex at a moment when both incumbents are still absorbing the cost of Mythos-class training and the EU's Tech Sovereignty Package is creating new compliance overhead. Third, the security story is bifurcating: OpenAI's Lockdown Mode is a defensive posture acknowledging the agentic attack surface (Meta Instagram breach as the canonical incident), while Anthropic's Glasswing expansion to Samsung and NATO signals an offensive posture that ties safety framing to enterprise and military distribution. The hidden thread tying all six items together is the rise of the AGENTIC DEVELOPER as the primary end-user: every product shipped this week (MAI-Code-1-Flash, Grok Build 0.1, Colab CLI, Codex Sites, HyperAgents) is being designed for an agent or a developer building agents — not for a human chatting with a chatbot. The chatbot era is over; the IDE-agent era is the new default, and the foundation-model companies that figure this out first will own the next five-year platform cycle.",
+    "zh": "2026年6月6日，AI产业围绕三场同步上演的分发之战重新排列组合的日子。第一，基础模型公司正以\"完整组合\"而非\"旗舰单品\"竞争：微软一日发布七款MAI模型，NVIDIA则一次性发布模型(Nemotron 3 Ultra)+护栏(Content Safety)+多语言模型(ASR)+新许可(OpenMDW-1.1)——核心信号是基准跑分已不再是护城河，生态覆盖才是。第二，Agentic编程成为新的品类定义战场：xAI的Grok Build 0.1($1/$2)定价直接挤压Claude Code与GPT-5.4-Codex的利润空间，而此时两家在位者还在消化Mythos级训练成本与欧盟科技主权方案带来的新合规开销。第三，安全叙事正在分化：OpenAI的Lockdown Mode是一种防御姿态，承认Agentic攻击面(Meta Instagram泄露事件已成为标志案例)；Anthropic将Glasswing扩展到三星和北约则是一种进攻姿态，把安全叙事与企业及军方分发绑定。将这六条新闻贯穿起来的暗线是Agentic开发者的崛起：本周发布的所有产品(MAI-Code-1-Flash、Grok Build 0.1、Colab CLI、Codex Sites、HyperAgents)都面向Agent或为Agent开发者的开发者设计——而非与聊天机器人对话的人类。聊天机器人时代已经结束，IDE-Agent时代成为新默认；率先想清楚这件事的基础模型公司将主导下一个为期五年的平台周期。"
+  }
+}
