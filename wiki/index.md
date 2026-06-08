@@ -1,25 +1,25 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-08
+Last updated: 2026-06-08 (June 8: hybrid reasoning consensus + bifurcated industry)
 
 ## Topics (10)
-- [[topics/agentic_ai]] — May 2, 2026 shows the agent ecosystem maturing on three fronts simultaneously. Serena (23.8K stars) provides semantic code infrastructure at the symbo
+- [[topics/agentic_ai]] — June 8, 2026 sees the agent infrastructure layer being commoditized from below: three open-source agent repos (Snowey closed-loop learning, Gitpup 6-stage skill tree, AgentGhost 6-tier memory + MCTS) trend the same day; Mellum2 (Apache 2.0) becomes the default sub-agent brain; GitHub Copilot token billing makes the cost of Opus 4.8 vs Haiku 4.5 vs Mellum2 directly
 - [[topics/ai_search]] — AI Search tracks the integration of generative AI into search engines, producing direct answers rather than link lists. The category war pits Google's AI Overviews against Perplexity and ChatGPT, with the June 2026 publisher opt-out exposing the open-web fracture line.
-- [[topics/ai_companies]] — May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. The Pentagon expands its "AI-first" military contracts with 8 companie
-- [[topics/ai_funding]] — May 2026 reveals AI funding has shifted from model training to operational infrastructure. Anthropic's valuation surged past OpenAI's on secondary mar
-- [[topics/ai_infrastructure]] — AI Infrastructure tracks the physical and computational resources that power AI systems — data centers, GPU clusters, networking, and the business rel
+- [[topics/ai_companies]] — June 8, 2026 marks the bifurcated industry crystallizing: Anthropic discloses 90% internal Claude adoption, Claude posts 1,858% YoY usage growth, OpenAI pursues "super app" pivot, and Unisound (Hong Kong-listed) tests MaaS Token Hub — first quarter where Anthropic, OpenAI, Google are all profitable-or-near on AI revenue, ending the "subsidize to capture" era; the
+- [[topics/ai_funding]] — June 8, 2026: with Mellum2 Apache 2.0, Nemotron 3 Ultra OpenMDW 1.1, and Unisound MaaS Token Hub all launching in the same week, the funding question for sub-frontier models collapses to "open or platform" — neither is venture-scale on its own; profitability-or-near for all three frontier labs in Q2 ends the subsidize-to-capture era; Anthropic's "verifiable pause"
+- [[topics/ai_infrastructure]] — June 8, 2026 sees the agent infrastructure layer's new economics crystallize: Mellum2 (Apache 2.0, 12B/2.5B-active MoE) is the first "agent plumbing" model from a non-Meta, non-Chinese vendor; GitHub Copilot's token billing replaces per-seat; Cosmos 3 + OpenMDW 1.1 license locks the "physical AI" category to CUDA — the bifurcated industry's infrastructure
 - [[topics/ai_safety]] — May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Pentagon's expanded "AI-first" contracts with an explicit "any lawful opera
 - [[topics/ai_security]] — AI Security encompasses the vulnerabilities, attack surfaces, and defensive measures specific to AI systems, particularly AI coding agents and model g
-- [[topics/physical_ai]] — Physical AI refers to AI models for robotics and physical world interaction — NVIDIA Cosmos 3, Google Gemini Robotics, and the emerging physical agent stack
-- [[topics/github_trends]] — May 2, 2026 brings three notable repos spanning AI video generation and agent infrastructure. MOVA (972 stars) is a foundation model for synchronized 
-- [[topics/llm_models]] — May 2, 2026 delivers the most damning empirical critique of the LLM paradigm to date: ARC-AGI-3 results show GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18
+- [[topics/physical_ai]] — June 8, 2026: Cosmos 3 (May 31 COMPUTEX launch) is the first credible "physical AI" foundation model; Mixture-of-Transformers (separate Reasoner + Generator towers) is materially different from LLM-industry Mamba-Transformer hybrids because it isn't sequence-modeling fusion — it's multi-modal processing split; Cosmos Coalition with six robotics startups + OpenMDW 1.1 license is
+- [[topics/github_trends]] — June 8, 2026 trends three open-source agent repos on the same day: Snowey (4.2k stars) closed-loop learning, Gitpup-agent (1.8k stars) 6-stage skill tree, AgentGhost (612 stars) 6-tier memory + MCTS + DSPy/GEPA — the "self-improving agent" and "agent plumbing" categories crystallize at the GitHub trending level simultaneously, 
+- [[topics/llm_models]] — June 7-8, 2026 crystallizes the "hybrid reasoning" consensus: three frontier releases in ten days (Nemotron 3 Ultra Mamba-Transformer, MAI-Thinking-1 sparse MoE, Unisound U2 explicit CoT+implicit latent) all converge on the same architectural bet that pure transformers topped out around Claude 3.5/4-class reasoning; Unisound U2 (GPQA Diamond 87.9) is the third
 
-## Sources (48)
+## Sources (50)
 - [[sources/ai2]] — Ai2 is a Seattle-based AI research organization founded by the late Paul Allen. It is best known for OLMo, one of the most transparent open-source lan
 - [[sources/alibaba]] — Alibaba is a Chinese tech giant and the creator of the Qwen model family. In April 2026, Alibaba is in talks (alongside Tencent) to invest in DeepSeek
 - [[sources/amazon]] — Amazon is the world's largest e-commerce platform and cloud infrastructure provider (AWS). The company is pivoting toward voice and agent shopping, bu
 - [[sources/amd]] — AMD (Advanced Micro Devices) is the second-largest AI chip designer after Nvidia. The MI300 series represents AMD's first real challenge to Nvidia's A
-- [[sources/anthropic]] — Anthropic has emerged as the defining AI company of this period, driven by the unprecedented success of Claude Code which propelled annualized revenue
+- [[sources/anthropic]] — June 8, 2026: 90% internal Claude adoption report + Claude 1,858% YoY usage growth + verifiable pause advocacy + Claude Mythos Preview 16+ hour autonomous tasks; first public admission that human code review is the binding constraint on recursive self-improvement; the safety narrative (Mythos + verifiable pause) and the commercial narrative (1T+ valuation, 90% adoption, 1,858% growth) compound into the strongest competitive position of any AI lab; company has emerged as the defining AI
 - [[sources/apple]] — Apple's multi-model strategy for iOS 27 marks a significant shift from exclusive partnerships to a diversified AI approach. By bringing in Google Gemi
 - [[sources/baidu]] — Baidu launched Ernie 5.1 on May 9, 2026, claiming pre-training costs at just 6% of industry peers at similar scale. The model compresses parameters to
 - [[sources/cisco]] — Cisco Systems; published the canonical June 2026 multi-turn vulnerability study exposing structural weakness in 15 frontier AI models, reframing how enterprises evaluate AI security.
@@ -30,8 +30,8 @@ Last updated: 2026-06-08
 - [[sources/elevenlabs]] — ElevenLabs is the leading voice AI company, announcing $500M ARR (up from $350M at start of 2026) and a Series D at an $11 billion valuation. New inve
 - [[sources/furiosa-ai]] — FuriosaAI is a South Korean AI chip startup developing accelerators to challenge Nvidia's dominance in the AI hardware market. The company's new chip 
 - [[sources/geely]] — Geely is a Chinese automotive group that owns Volvo, Polestar, Zeekr. Partner with Waymo to build the Zeekr platform for the Ojai robotaxi.
-- [[sources/github]] — GitHub is the dominant platform for AI-assisted coding, having crossed 275 million commits per week and 17 million AI agent PRs in March 2026. On Apri
-- [[sources/google]] — Google has deepened its role as an AI infrastructure provider and model competitor simultaneously. The company is investing up to $40 billion in Anthr
+- [[sources/github]] — June 8, 2026: token billing replaces per-seat subscription for enterprise Copilot — the most consequential enterprise pricing shift in the agentic-coding era; makes cost directly proportional to model selection; strategic beneficiary is the cheapest viable model (Mellum2, Haiku 4.5, DeepSeek V4 Pro); same playbook as Snowflake on data warehousing; platform is the dominant
+- [[sources/google]] — June 8, 2026: Gemini closes on ChatGPT via Workspace + Android + Search integration (free, hardware-bundled, 3B+ user-surface-integrated) — structurally different from OpenAI's consumer approach; Pixel 9+ Gemini Nano on-device is the un-priced moat OpenAI cannot match; the AI Search category's structural moat; June 8 marks the first quarter where Google, OpenAI, and Anthropic are all profitable-or-near; Google has deepened its role as an AI infrastructure provider
 - [[sources/ibm]] — IBM entered the AI development platform race with Bob, an AI-first development partner that automates the full software development lifecycle beyond c
 - [[sources/ineffable-intelligence]] — Ineffable Intelligence is an AI startup founded by ex-DeepMind researcher David Silver (co-author of the AlphaGo paper) that raised the largest seed r
 - [[sources/isomorphic]] — Isomorphic Labs is Google's AI-powered drug design subsidiary, spun out from DeepMind to apply AlphaFold-derived models to pharmaceutical discovery. T
@@ -41,7 +41,7 @@ Last updated: 2026-06-08
 - [[sources/mistral]] — Mistral AI is a French AI lab positioning itself as the geopolitically neutral, regulatorily compliant European alternative to US AI labs. The company
 - [[sources/mozilla]] — Mozilla is an open-source software community best known for the Firefox web browser. In April 2026, Mozilla launched Thunderbolt — an enterprise self-
 - [[sources/netomi]] — Netomi is an agentic AI customer experience platform that deploys autonomous agents for enterprise customer service at scale. The company processes up
-- [[sources/nvidia]] — NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell generating $11 billion in Q4 FY2026 revenue and Vera Rubin announcing 
+- [[sources/nvidia]] — June 8, 2026: Cosmos 3 + Cosmos Coalition (Agile Robots, Black Forest Labs, Generalist, LTX, Runway, Skild AI) + OpenMDW 1.1 license layered onto Nemotron 3 Ultra playbook — NVIDIA locks two new categories (frontier hybrid-reasoning, physical AI) to CUDA in a single week; the "lock to CUDA at category formation" play is the most strategic move of 2026; chip vendor — NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell generating $11 billion in Q4 FY2026 revenue and Vera Rubin announcing 
 - [[sources/openai]] — OpenAI is navigating the transition from research organization to commercial enterprise ahead of a potential IPO by end of 2026. The company completed
 - [[sources/perplexity]] — Perplexity has grown from an AI search engine to a full-stack AI platform. April 2026 saw the company achieve 5x revenue growth to $500M while only in
 - [[sources/qualcomm]] — Qualcomm is a US semiconductor leader in mobile AI silicon; selected to power Microsoft's Project Solara agent-first devices at Build 2026, positioning Qualcomm as the mobile AI chip platform.
@@ -64,13 +64,16 @@ Last updated: 2026-06-08
 - [[sources/vercel]] — Vercel is the company behind the Next.js web framework and Vercel AI SDK, known for making AI application deployment seamless. The company has expande
 - [[sources/xai]] — xAI has been consolidated into SpaceX following the $250 billion all-stock acquisition, creating a $1.25 trillion "galactic AI entity." On May 6, 2026
 
+- [[sources/unisound]] — Hong Kong-listed Chinese AI company (云知声); released U2 on June 8, 2026; first Hong Kong-listed frontier model vendor; tests MaaS Token Hub commercial model vs DeepSeek's open-weight distribution
+- [[sources/jetbrains]] — Prague-based IDE vendor (IntelliJ, PyCharm); entered foundation model business with Mellum2 (Apache 2.0, 12B MoE) on June 1, 2026; positioned as alternative to Meta-dominated sub-agent tooling
+
 ## Timelines (4)
 - [[timelines/2026-03]] — The week opened with NVIDIA's GTC 2026 unveiling Vera Rubin (10x performance per watt over Blackwell), the NemoClaw stack for OpenClaw agents, and phy
 - [[timelines/2026-04]] — April opened with the most ironic headline of 2026: Anthropic accidentally leaked Claude Code's 512,000-line TypeScript source via npm .map misconfigu
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 - [[timelines/2026-06]] — June opens with regulatory escalation (Florida sues OpenAI, Anthropic IPO), Claude Mythos ENISA access, and multi-turn vulnerability study
 
-## Entities (207)
+## Entities (212)
 - [[entities/project-solara]] — type: product — Project Solara is Microsoft's "chip-to-cloud" platform for AI agent-first devices announced at Build 2026. Features wearable badge and desk hub concepts with Qualcomm silicon, top-facing cameras, and 5G connectivity.
 - [[entities/ai-overviews]] — type: product — AI Overviews are Google's AI-generated search results. On June 3, 2026, Google announced an opt-out toggle in Search Console allowing website owners to exclude domains from AI-generated results without affecting regular search.
 - [[entities/codex]] — type: product — Codex is OpenAI's coding agent reaching 5M weekly users (June 2026). The enterprise expansion with Sites, Annotations, and role-specific plugins transforms it from coding assistant to enterprise orchestration layer.
@@ -283,6 +286,12 @@ Last updated: 2026-06-08
 - [[entities/minta]] — type: repo — Self-correcting AI memory engine with quality governance, hybrid retrieval, and multimodal support (text, images, email); 5 stars on June 3, 2026
 - [[entities/showhn]] — type: repo — AI-powered visual gallery for Show HN projects with auto-screenshots, AI analysis, and full-text search; 28 stars on June 3, 2026
 - [[entities/windows-agent-runtime]] — type: product — Microsoft's runtime announced at Build 2026 making Windows a first-class platform for autonomous AI agents; competes with Anthropic Claude Code and emerging agent frameworks
+
+- [[entities/snowey]] — type: repo; 4.2k stars, 186 forks; BlusceLabs' self-improving autonomous agent with closed learning loop, FTS5 session search, OpenRouter 200+ model support, one-click OpenClaw migration; ships with Telegram/Discord/Slack/WhatsApp/Signal gateways
+- [[entities/gitpup-agent]] — type: repo; 1.8k stars, 92 forks; "Goldie" self-evolving coding agent on decentralized GitLawb network with 6-stage skill tree (Puppy → Master); uses LLM reasoning to scan GitHub trending, generate PRs, self-modify behavior — the first literal "agent is the user" pattern at the trending level
+- [[entities/agent-ghost]] — type: repo; 612 stars, 47 forks; FastAPI agent with 6-tier memory (vector, graph, profile, skill, journal, episodic), MCTS planning, Docker-isolated tools, swarm inference, local DSPy/GEPA prompt optimization with no weight updates — most architecturally ambitious agent of the week
+- [[entities/unisound-u2]] — type: model; released June 8, 2026; "Native execution" agentic model with "Hybrid Thinking" (explicit CoT + implicit latent-space reasoning); GPQA Diamond 87.9, SWE-Bench Verified 75, Claw-Eval pass@3 76.9, GDPval 72.9; explicit competitive positioning above GLM-5.1, DeepSeek-V4-Flash, MiniMax-M2.7; MaaS Token Hub distribution
+- [[entities/mellum-2]] — type: model; 12B MoE (2.5B active per token), Apache 2.0; 2x faster inference than comparable open code models; first serious "agent plumbing" model from a non-Meta, non-Chinese vendor; pure Apache 2.0 makes it the default sub-agent brain for any IDE vendor avoiding Llama Community License risk
 
 ## Ideas (70)
 - [[ideas/agent-control-interface-wars]] — Google's Remy reveals a philosophical split in agent UX design that will define how enterprises adopt autonomous AI. While OpenAI's Operator and Anthr

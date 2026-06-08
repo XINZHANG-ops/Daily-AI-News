@@ -130,3 +130,15 @@ Fixed broken links: entities/hyperagents.md — [[entities/ineffable-intelligenc
 Updated last_updated: entities/hyperagents.md 2026-06-07→2026-06-08, index.md 2026-06-07→2026-06-08
 Verified all wikilinks: No broken links
 Verified counts: Topics 10, Sources 48, Timelines 4, Entities 207, Ideas 70 (all match index claims)
+
+## [2026-06-08] ingest | 1 date
+
+Dates processed: 2026-06-08
+Topics updated: llm_models, ai_companies, agentic_ai, ai_infrastructure, physical_ai, github_trends, ai_funding
+Sources updated: anthropic, openai, google, nvidia, github
+Sources created: unisound, jetbrains
+Entities created: unisound-u2, mellum-2, snowey, gitpup-agent, agent-ghost
+Timelines updated: 2026-06 (June 8: hybrid reasoning consensus + bifurcated industry)
+Ideas updated: agent-infrastructure-layer (reinforced), foundation-model-portfolio-war (profitability-or-near), agent-verticalization (6-stage skill tree literalization), efficiency-frontier (Hybrid Thinking), safety-restricted-releases (verifiable pause advocacy)
+
+Chat session learning: Reviewed 3 Q&A sessions (Apr 23-26). Confirmed recurring themes: agent infrastructure layer consolidation, frontier model portfolio war, Claude 1,858% growth context, Google $40B Anthropic investment, Claude Mythos Bank of England escalation, multi-turn vulnerability as structural. No new corrections needed; existing topic/source/entity pages already cover these patterns.

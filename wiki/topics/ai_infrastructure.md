@@ -61,3 +61,10 @@ The AI infrastructure market is undergoing a structural transformation from comm
 - Zuckerberg: cloud business "definitely on the table" if capacity exceeds internal demand
 - Could become fourth major cloud provider (AWS, Azure, Google Cloud, Meta)
 - Wolfe Research projects $26B+ AI revenue by 2027
+- [[entities/copilot-agent-tier]] — June 8: GitHub Copilot's token billing rollout is the most consequential enterprise pricing shift in the agentic-coding era; redistributes the IDE market within 12 months toward cheapest viable model (Mellum2, DeepSeek V4 Pro, Haiku 4.5)
+- [[entities/mellum-2]] — June 8: JetBrains Mellum2 at 12B/2.5B-active MoE Apache 2.0 is the first "agent plumbing" model from a non-Meta, non-Chinese vendor; pure Apache 2.0 (no MAU clause) makes it the default sub-agent brain for any IDE vendor avoiding Llama Community License risk
+- [[sources/nvidia]] — June 8: Cosmos 3 + OpenMDW 1.1 license + Cosmos Coalition layered onto the existing Nemotron 3 Ultra playbook — NVIDIA is locking two new categories (physical AI, hybrid-reasoning frontier) to CUDA in one week
+- [[entities/cosmos-3]] — June 8: Mixture-of-Transformers architecture (Reasoner + Generator towers) is the second credible "physical AI" foundation model after Cosmos 1/2 — the "lock to CUDA at category formation" play is the most strategic release of 2026
+- [[sources/github]] — June 8: token billing captures upside when frontier models trend to $5-25/M output and protects margin when users migrate to cheaper models — same playbook as Snowflake on data warehousing
+- [[ideas/agent-infrastructure-layer]] — June 8: Mellum2 + Copilot token billing + Cosmos 3 OpenMDW license all confirm the bifurcated industry: frontier labs raise capability ceiling, infrastructure players lower cost floor
+- [[timelines/2026-06]] — June 8: the "agent plumbing" and physical AI categories form in the same week; infrastructure-layer lock-in moves faster than the categories they serve can commoditize
