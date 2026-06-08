@@ -2,7 +2,7 @@
 title: "HyperAgents"
 slug: hyperagents
 type: repo
-last_updated: 2026-06-07
+last_updated: 2026-06-08
 ---
 
 # HyperAgents
@@ -26,8 +26,8 @@ HyperAgents represents a research-grade bet that the path to better agents is no
 
 ## Connections
 - [[sources/meta]] — Meta FAIR-developed; represents Meta's continued bet on self-improving systems
-- [[entities/ineffable-intelligence]] — David Silver's RL-native approach shares the meta-reasoning thesis
-- [[entities/karpathy-autoresearch]] — Karpathy's autonomous research agent (79.2K stars) shares the "self-improving" ethos
+- [[sources/ineffable-intelligence]] — David Silver's RL-native approach shares the meta-reasoning thesis (Ineffable is the company, not an entity)
+- [[entities/autoresearch]] — Karpathy's autonomous research agent (79.2K stars) shares the "self-improving" ethos
 - [[topics/agentic_ai]] — Part of the agent architecture research wave; complements production agent frameworks
 - [[topics/llm_models]] — Represents the alternative path to better agents: better architecture vs bigger models
 - [[entities/grok-build]] — Same week release; Grok Build is the production-coded-agent path, HyperAgents is the research path

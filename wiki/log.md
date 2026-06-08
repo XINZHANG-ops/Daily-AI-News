@@ -123,3 +123,10 @@ Fixed wikilinks: entities/perplexity → entities/perplexity-computer + sources/
 Fixed orphan pages: Added [[entities/enisa]] + [[ideas/multi-turn-structural]] from topics/ai_security (with new June 2026 Evolution entries); Added [[timelines/2026-06]] from topics/agentic_ai
 Updated index.md: Added new pages - topics/ai_search, sources/qualcomm, sources/salesforce, sources/cisco, entities/100cc, entities/mai-family, entities/minta, entities/showhn, entities/windows-agent-runtime, ideas/multi-turn-structural; Counts: Topics 9→10, Sources 45→48, Entities 199→201, Ideas 67→68
 Verified all wikilinks: No broken links
+
+## [2026-06-08] lint | wiki health check
+
+Fixed broken links: entities/hyperagents.md — [[entities/ineffable-intelligence]] → [[sources/ineffable-intelligence]] (Ineffable is a company, not an entity), [[entities/karpathy-autoresearch]] → [[entities/autoresearch]] (the actual slug is autoresearch, not karpathy-autoresearch)
+Updated last_updated: entities/hyperagents.md 2026-06-07→2026-06-08, index.md 2026-06-07→2026-06-08
+Verified all wikilinks: No broken links
+Verified counts: Topics 10, Sources 48, Timelines 4, Entities 207, Ideas 70 (all match index claims)

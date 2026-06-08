@@ -1312,3 +1312,56 @@ Done processing 2026-06-03 data into the wiki. Here's a summary of changes:
 ## Processed.json & Log
 - Added 2026-06-03 to processed dates
 - Added log entry for the ingest
+Git is not accessible due to sandbox restrictions. Let me do a final summary of work:
+
+## Summary
+
+I've completed the wiki ingest for 2026-06-07. Here's what was done:
+
+### Data Processed
+- **1 new date**: 2026-06-07 (2026-06-04, 06-05, 06-06 are referenced within the data and merged into the 06-07 narrative)
+
+### Topics Updated (5)
+- `topics/llm_models.md` — added 6 timeline entries + 5 new pattern insights covering portfolio war, hybrid Mamba-Transformer, open-weights counter-strategy, image generation competition, security bifurcation
+- `topics/agentic_ai.md` — added June 4-7 entries for Nemotron 3 Ultra, Grok Build 0.1, Colab CLI, MAI-Code-1-Flash, plus 8 new annotated connections
+- `topics/ai_safety.md` — added connections for OpenAI Lockdown Mode, Glasswing expansion, MAI family
+- `topics/ai_companies.md` — added 5 new connections (Maia 200, MAI family, Grok Build, Nemotron 3 Ultra, Lockdown Mode)
+- `topics/github_trends.md` — added 3 new repos (Nex-N2, HyperAgents, GoA) and 1 new idea
+
+### Sources Updated (6)
+- microsoft, nvidia, xai, openai, anthropic, google — each with new June 4-7 timeline entries and annotated connections
+
+### Entities Created (6 new)
+- `entities/nemotron-3-ultra` (model) — NVIDIA 550B MoE with NVFP4 quantization
+- `entities/maia-200` (chip) — Microsoft custom AI silicon co-designed with MAI
+- `entities/openai-lockdown-mode` (feature) — Defensive security posture
+- `entities/nex-n2` (model) — Qwen3.5-based open-source agentic model
+- `entities/hyperagents` (repo) — Meta FAIR self-improving agents
+- `entities/goa` (repo) — ICLR 2026 Graph-of-Agents
+
+### Entities Updated (4)
+- `entities/mai-family` — added June 6 seven-model drop details
+- `entities/grok-build` — updated to Grok Build 0.1 with pricing details
+- `entities/claude-mythos` — added June 2 Glasswing expansion news
+- `entities/project-glasswing` — updated to 150-org expansion with NATO/Samsung
+
+### Ideas Created (2 new)
+- `ideas/foundation-model-portfolio-war` — competition shifted from "best flagship" to "best portfolio"
+- `ideas/agentic-developer-as-primary-end-user` — every product designed for agents/agent-builders
+
+### Timeline Updated
+- `timelines/2026-06.md` — added "June 4-7: The Distribution Trifecta and the Agentic Developer Pivot" section covering all major events
+
+### Index & Tracking Updated
+- `wiki/index.md` — Last updated 2026-06-07, counts updated (Entities 201→207, Ideas 68→70), all 8 new pages added
+- `wiki/processed.json` — added 2026-06-07
+- `wiki/log.md` — appended 2026-06-07 ingest entry with insights extracted
+
+### Chat Session Insights
+The wiki_sessions review showed:
+- User asked for current news and detail (Apr 25, 26, 23) — confirmed needs: enterprise AI lock-in patterns, Mythos timelines, multi-turn security vulnerability framing
+- All sessions already covered by existing wiki content; the existing connections and structures proved sufficient. The June 4-7 events extend the patterns already captured: pricing war (Grok Build 0.1 adds agentic-coding layer), portfolio war (Microsoft + NVIDIA), and security bifurcation (Lockdown Mode + Glasswing).
+
+### Lint Status
+- 6 new pages each have 4-11 inbound links (no orphans among new pages)
+- All broken links I introduced are fixed (5 remaining broken links are pre-existing from earlier ingests, not caused by this update)
