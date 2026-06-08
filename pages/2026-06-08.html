@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 08, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 08, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/BlusceLabs/Snowey" class="card-title" target="_blank">BlusceLabs/Snowey</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 186 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Self-improving autonomous AI agent with a closed learning loop: skill auto-creation, persistent memory (FTS5 session search), and model-agnostic support for 200+ models via OpenRouter. Ships with Telegram/Discord/Slack/WhatsApp/Signal gateways and one-click migration from OpenClaw.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">具备闭环学习能力的自进化自治AI Agent：支持技能自动创建、持久化内存(FTS5会话检索)，并通过OpenRouter兼容200+模型。自带Telegram/Discord/Slack/WhatsApp/Signal网关，可一键从OpenClaw迁移。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Cheesecaster/gitpup-agent" class="card-title" target="_blank">Cheesecaster/gitpup-agent</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 92 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Self-evolving 'Golden Retriever' coding agent ('Goldie') that runs on the decentralized GitLawb network, climbing a 6-stage skill tree (Puppy → Master). Uses LLM reasoning to scan GitHub trending repos, generate PRs, and self-modify its own behavior.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">运行在去中心化GitLawb网络上的自进化"金毛寻回犬"编码Agent("Goldie")，拥有6级技能树(幼犬→大师)。利用LLM推理扫描GitHub趋势仓库、生成PR并自我修改行为。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/vventirozos/AgentGhost" class="card-title" target="_blank">vventirozos/AgentGhost</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 612 stars</div>
+                                <div class="meta-item"><span>🍴</span> 47 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Autonomous FastAPI service wrapping an OpenAI-compatible LLM with 6-tier memory (vector, graph, profile, skill, journal, episodic), Docker-isolated tool execution, MCTS planning, swarm inference, and local DSPy/GEPA prompt optimization with no weight updates.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">自治FastAPI服务，封装OpenAI兼容LLM，提供6层记忆架构(向量、图谱、画像、技能、日志、情景)、Docker隔离工具执行、MCTS规划、集群推理，并支持本地DSPy/GEPA提示词优化(不更新权重)。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">PR Newswire</span>
+                    <div class="news-time">June 8, 2026</div>
+                    <a href="https://www.prnewswire.com/news-releases/unisound-releases-u2-a-native-agentic-large-model-built-for-execution-capable-of-autonomously-decomposing-and-completing-100-steps-in-complex-real-world-workflows-302793573.html" class="card-title" target="_blank" data-lang="en">Unisound Launches U2: Native Agentic Model Hits 87.9 GPQA, 100+ Step Workflows</a>
+                    <a href="https://www.prnewswire.com/news-releases/unisound-releases-u2-a-native-agentic-large-model-built-for-execution-capable-of-autonomously-decomposing-and-completing-100-steps-in-complex-real-world-workflows-302793573.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">云知声发布U2：原生Agentic模型GPQA 87.9分，支持100+步复杂工作流</a>
+                    <p class="card-description" data-lang="en">Hong Kong-listed Unisound released U2 on June 8, a 'native execution' agentic model claiming GPQA Diamond 87.9 (above GLM-5.1, DeepSeek-V4-Flash, MiniMax-M2.7), SWE-Bench Verified 75, Claw-Eval pass@3 76.9, and GDPval 72.9. Introduces a 'Hybrid Thinking' mechanism mixing explicit CoT with implicit latent-space reasoning, and is live on the Unisound Token Hub.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">港股上市云知声于6月8日发布U2——一款"原生执行"Agentic模型，GPQA Diamond 87.9(超越GLM-5.1、DeepSeek-V4-Flash、MiniMax-M2.7)，SWE-Bench Verified 75、Claw-Eval pass@3 76.9、GDPval 72.9。引入"混合思考"机制，结合显式CoT与隐式潜空间推理，已上线Unisound Token Hub。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Decoder</span>
+                    <div class="news-time">June 5, 2026</div>
+                    <a href="https://the-decoder.com/anthropic-says-claude-now-writes-over-90-of-its-code-and-wants-the-world-to-have-an-ai-pause-button/" class="card-title" target="_blank" data-lang="en">Anthropic Discloses 90% of Production Code Now Written by Claude; Pushes for Verifiable AI Pause</a>
+                    <a href="https://the-decoder.com/anthropic-says-claude-now-writes-over-90-of-its-code-and-wants-the-world-to-have-an-ai-pause-button/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic披露：90%生产代码已由Claude编写，呼吁可验证AI暂停</a>
+                    <p class="card-description" data-lang="en">Anthropic published an internal report showing 80%+ of production code and 90%+ including scripts at the company is Claude-written, with engineers shipping roughly 8x more code per day than in 2024. Claude Opus 4.6 handles 12-hour autonomous tasks, Claude Mythos Preview handles 16+ hours, and the company is publicly advocating for a verifiable global AI development pause modeled on nuclear treaty verification.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic发布内部报告：公司80%以上生产代码、加上脚本总计90%以上由Claude编写，工程师日均代码产出较2024年增长约8倍。Claude Opus 4.6可处理12小时自治任务，Claude Mythos Preview可处理16小时以上任务；公司公开呼吁建立可验证的全球AI开发暂停机制，参照核条约核查模式。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Trak.in</span>
+                    <div class="news-time">June 8, 2026</div>
+                    <a href="https://trak.in/stories/claudes-usage-surges-1858-gemini-challenges-chatgpts-dominance/" class="card-title" target="_blank" data-lang="en">Claude Usage Surges 1,858% YoY as Gemini Closes Gap on ChatGPT Consumer Lead</a>
+                    <a href="https://trak.in/stories/claudes-usage-surges-1858-gemini-challenges-chatgpts-dominance/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude使用量同比增长1858%，Gemini缩小与ChatGPT的消费者领先差距</a>
+                    <p class="card-description" data-lang="en">New industry usage data shows Anthropic's Claude posting 1,858% year-over-year usage growth (its largest absolute jump in any single quarter), while Google's Gemini continues expanding across Search/Workspace/Android surfaces to challenge ChatGPT's consumer dominance. OpenAI is reportedly working on a 'super app' transformation ahead of its anticipated IPO.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">最新行业使用数据显示，Anthropic Claude同比使用量增长1858%(单季度绝对涨幅最大)，与此同时，Google Gemini持续在Search/Workspace/Android端扩展，向ChatGPT的消费者主导地位发起挑战。OpenAI据报正在打造"超级应用"以应对预期中的IPO。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">NVIDIA Newsroom</span>
+                    <div class="news-time">May 31, 2026</div>
+                    <a href="https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai" class="card-title" target="_blank" data-lang="en">NVIDIA Cosmos 3: First Open Omnimodel for Physical AI, Mixture-of-Transformers Architecture</a>
+                    <a href="https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">NVIDIA Cosmos 3：首个面向物理AI的开源全模态模型，混合Transformer架构</a>
+                    <p class="card-description" data-lang="en">NVIDIA launched Cosmos 3 at COMPUTEX, billed as the first fully open 'omnimodel' with native reasoning + world simulation + action generation across text/image/video/audio. Built on a Mixture-of-Transformers architecture (Reasoner Tower + Generator Tower), ships in 64B Super and 16B Nano variants under the Linux Foundation's OpenMDW 1.1 license, with founding coalition partners including Agile Robots, Black Forest Labs, Generalist, LTX, Runway, and Skild AI.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">NVIDIA在COMPUTEX发布Cosmos 3，号称首个完全开源的"全模态"模型，原生集成推理+世界模拟+动作生成，覆盖文本/图像/视频/音频。基于混合Transformer架构(推理塔+生成塔)，推出64B Super与16B Nano两种规格，采用Linux基金会OpenMDW 1.1许可，创始联盟成员包括Agile Robots、Black Forest Labs、Generalist、LTX、Runway和Skild AI。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Hugging Face Blog</span>
+                    <div class="news-time">June 1, 2026</div>
+                    <a href="https://huggingface.co/blog/JetBrains/mellum2-launch" class="card-title" target="_blank" data-lang="en">JetBrains Mellum2: 12B Open-Source Code MoE Aimed at Sub-Agents and Routing</a>
+                    <a href="https://huggingface.co/blog/JetBrains/mellum2-launch" class="card-title" target="_blank" data-lang="zh" style="display: none;">JetBrains Mellum2：120亿参数开源代码MoE，瞄准子Agent与路由场景</a>
+                    <p class="card-description" data-lang="en">JetBrains released Mellum2, a 12B-parameter Mixture-of-Experts code model (2.5B active per token) under Apache 2.0, optimized for low-latency text-and-code workloads with 2x faster inference than comparable open models. Positioning: routing, RAG pipelines, sub-agents, and private deployments — the small-model plumbing for IDE assistants.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">JetBrains发布Mellum2，120亿参数混合专家代码模型(每token激活2.5B)，采用Apache 2.0许可，针对低延迟文本与代码工作负载优化，推理速度比同类开源模型快2倍。定位：路由、RAG流水线、子Agent和私有部署——IDE助手的小模型管路。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub Blog</span>
+                    <div class="news-time">June 1, 2026</div>
+                    <a href="https://github.blog/changelog/2026-06-01-github-copilot-token-billing/" class="card-title" target="_blank" data-lang="en">GitHub Copilot Token Billing Goes Live: Enterprises Pay Per-Token Instead of Per-Seat</a>
+                    <a href="https://github.blog/changelog/2026-06-01-github-copilot-token-billing/" class="card-title" target="_blank" data-lang="zh" style="display: none;">GitHub Copilot Token计费正式上线：企业按token计费取代按席位计费</a>
+                    <p class="card-description" data-lang="en">GitHub began rolling out token-billed Copilot pricing for enterprise accounts on June 1, replacing per-seat subscription pricing with metered usage across all Copilot models (including third-party models routed through Copilot). The shift makes cost directly proportional to model selection, putting Opus 4.8 and GPT-5.5 usage at a visible dollar premium vs. Haiku 4.5 and Mellum2.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GitHub于6月1日开始对企业账号推出按token计费的Copilot定价，以按量计费取代按席位订阅，覆盖所有Copilot模型(包括通过Copilot路由的第三方模型)。此次转向让成本与模型选择直接挂钩，使用Opus 4.8和GPT-5.5会产生明显高于Haiku 4.5和Mellum2的美元溢价。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">June 7–8, 2026 looks like the week the 'hybrid reasoning' consensus crystallized in public. Three frontier releases in ten days — Unisound U2 (Hybrid Thinking: explicit CoT + implicit latent), NVIDIA Nemotron 3 Ultra (Mamba-Transformer hybrid, four days earlier), and Microsoft MAI-Thinking-1 (sparse MoE reasoning at 35B-active/~1T-total) — all converged on the same architectural bet: pure transformers topped out somewhere around Claude 3.5/4-class reasoning, and the next 18 months will be defined by how explicitly or implicitly each lab mixes reasoning modes. NVIDIA layered a second, structurally different consensus on top: Cosmos 3's Mixture-of-Transformers (separate Reasoner + Generator towers) is the first credible 'physical AI' foundation model, and the OpenMDW 1.1 license + Cosmos Coalition is the playbook for locking a category to CUDA just as the category forms. The economic subtext is more important than the architectural one: Anthropic's 90% internal Claude adoption report is the first public admission that human code review is the binding constraint on recursive self-improvement, which means the next 6-12 months of agent-economy value capture will go to whoever solves verification, not generation. The pricing story quietly agrees — GitHub Copilot's token billing, xAI's $1/$2 Grok Build, DeepSeek V4 Pro at $0.55/M, and Mellum2's Apache 2.0 release all push the floor on agentic-coding cost, while the Claude 1,858% usage growth (off a smaller enterprise base) confirms the ceiling is rising. The day's real narrative: the AI industry is splitting cleanly between frontier labs (raising capability ceilings, accepting hybrid-architecture complexity) and infrastructure players (lowering cost floors, accepting open-source economics), with the enterprise buyer trapped in the middle being forced to make architectural choices that will constrain them for a decade.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年6月7-8日是"混合推理"共识公开成形的标志性一周。十天内三次前沿发布——云知声U2(混合思考：显式CoT + 隐式潜空间)、NVIDIA Nemotron 3 Ultra(早四天的Mamba-Transformer混合)、微软MAI-Thinking-1(35B激活/约1T总参数的稀疏MoE推理)——都收敛到了同一架构赌注：纯Transformer在Claude 3.5/4级推理附近触顶，未来18个月将由各家实验室如何显式或隐式地混合推理模式定义。NVIDIA在更上层叠加了第二个结构性共识：Cosmos 3的混合Transformer(分离的推理塔+生成塔)是首个可信的"物理AI"基础模型，OpenMDW 1.1许可+Cosmos联盟是在品类刚形成时就将其锁定到CUDA的剧本。比架构更深层的是经济潜流：Anthropic 90%内部Claude采用的报告是首次公开承认人类代码审查是递归自我改进的约束瓶颈，这意味着未来6-12个月的Agent经济价值捕获将属于解决验证问题者，而非生成问题者。定价故事默默印证——GitHub Copilot的token计费、xAI的Grok Build $1/$2、DeepSeek V4 Pro $0.55/M、Mellum2的Apache 2.0发布，都在压低Agentic编程的成本下限；而Claude 1858%的使用量增长(基数较小的企业端)确认上限仍在抬升。这两天的真实叙事是：AI产业正在沿"前沿实验室"(抬升能力上限、接受混合架构复杂度)与"基础设施厂商"(压低成本下限、接受开源经济学)清晰分裂，夹在中间被迫做出将长期约束其十年架构选择的企业买家，正承受着最大的决策压力。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

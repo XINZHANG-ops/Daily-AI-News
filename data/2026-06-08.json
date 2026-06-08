@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-08",
+  "github_repos": [
+    {
+      "name": "BlusceLabs/Snowey",
+      "url": "https://github.com/BlusceLabs/Snowey",
+      "description": {
+        "en": "Self-improving autonomous AI agent with a closed learning loop: skill auto-creation, persistent memory (FTS5 session search), and model-agnostic support for 200+ models via OpenRouter. Ships with Telegram/Discord/Slack/WhatsApp/Signal gateways and one-click migration from OpenClaw.",
+        "zh": "具备闭环学习能力的自进化自治AI Agent：支持技能自动创建、持久化内存(FTS5会话检索)，并通过OpenRouter兼容200+模型。自带Telegram/Discord/Slack/WhatsApp/Signal网关，可一键从OpenClaw迁移。"
+      },
+      "stars": "4.2k",
+      "forks": "186"
+    },
+    {
+      "name": "Cheesecaster/gitpup-agent",
+      "url": "https://github.com/Cheesecaster/gitpup-agent",
+      "description": {
+        "en": "Self-evolving 'Golden Retriever' coding agent ('Goldie') that runs on the decentralized GitLawb network, climbing a 6-stage skill tree (Puppy → Master). Uses LLM reasoning to scan GitHub trending repos, generate PRs, and self-modify its own behavior.",
+        "zh": "运行在去中心化GitLawb网络上的自进化\"金毛寻回犬\"编码Agent(\"Goldie\")，拥有6级技能树(幼犬→大师)。利用LLM推理扫描GitHub趋势仓库、生成PR并自我修改行为。"
+      },
+      "stars": "1.8k",
+      "forks": "92"
+    },
+    {
+      "name": "vventirozos/AgentGhost",
+      "url": "https://github.com/vventirozos/AgentGhost",
+      "description": {
+        "en": "Autonomous FastAPI service wrapping an OpenAI-compatible LLM with 6-tier memory (vector, graph, profile, skill, journal, episodic), Docker-isolated tool execution, MCTS planning, swarm inference, and local DSPy/GEPA prompt optimization with no weight updates.",
+        "zh": "自治FastAPI服务，封装OpenAI兼容LLM，提供6层记忆架构(向量、图谱、画像、技能、日志、情景)、Docker隔离工具执行、MCTS规划、集群推理，并支持本地DSPy/GEPA提示词优化(不更新权重)。"
+      },
+      "stars": "612",
+      "forks": "47"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Unisound Launches U2: Native Agentic Model Hits 87.9 GPQA, 100+ Step Workflows",
+        "zh": "云知声发布U2：原生Agentic模型GPQA 87.9分，支持100+步复杂工作流"
+      },
+      "url": "https://www.prnewswire.com/news-releases/unisound-releases-u2-a-native-agentic-large-model-built-for-execution-capable-of-autonomously-decomposing-and-completing-100-steps-in-complex-real-world-workflows-302793573.html",
+      "source": "PR Newswire",
+      "time": "June 8, 2026",
+      "description": {
+        "en": "Hong Kong-listed Unisound released U2 on June 8, a 'native execution' agentic model claiming GPQA Diamond 87.9 (above GLM-5.1, DeepSeek-V4-Flash, MiniMax-M2.7), SWE-Bench Verified 75, Claw-Eval pass@3 76.9, and GDPval 72.9. Introduces a 'Hybrid Thinking' mechanism mixing explicit CoT with implicit latent-space reasoning, and is live on the Unisound Token Hub.",
+        "zh": "港股上市云知声于6月8日发布U2——一款\"原生执行\"Agentic模型，GPQA Diamond 87.9(超越GLM-5.1、DeepSeek-V4-Flash、MiniMax-M2.7)，SWE-Bench Verified 75、Claw-Eval pass@3 76.9、GDPval 72.9。引入\"混合思考\"机制，结合显式CoT与隐式潜空间推理，已上线Unisound Token Hub。"
+      },
+      "insight": {
+        "en": "01 *Unisound U2 is the loudest signal yet that 'agentic thinking' is becoming the new minimum bar for Chinese frontier releases, and that 'intelligence density' is the new arms race metric.* The 87.9 GPQA score is positioned to beat every Chinese open model in the running — the explicit ordering against GLM-5.1, DeepSeek-V4-Flash, and MiniMax-M2.7 is a direct shot at the three-way Qwen/Alibaba/DeepSeek/Moonshot triangle. The more interesting move is 'Hybrid Thinking' — explicit CoT married to implicit latent reasoning — which is the same architectural bet NVIDIA's Nemotron 3 Ultra (Mamba-Transformer hybrid) made just four days earlier, and Microsoft MAI-Thinking-1 made last week. Three frontier releases in ten days all converged on hybrid reasoning architectures: the implicit-latent route is the Mamba/MoE-of-Experts pattern; the explicit-CoT route is the Claude/Gemini-Deep-Think pattern; pairing them is becoming the consensus. Unisound's move to a MaaS (model-as-a-service) hub rather than open weights is the commercial test: can a Hong Kong-listed company out-earn DeepSeek on the same agentic workload by selling tokens instead of giving them away?",
+        "zh": "01 *云知声U2是迄今最响亮的信号：\"Agentic thinking\"正成为中国前沿模型的最低门槛，而\"智能密度\"取代参数规模成为新的军备竞赛指标。* 87.9的GPQA分数定位为击败中国所有在跑的开源模型——对GLM-5.1、DeepSeek-V4-Flash、MiniMax-M2.7的明确点名排序，是向Qwen/阿里/DeepSeek/月之暗面三角的直接开火。更耐人寻味的是\"混合思考\"机制——显式CoT与隐式潜空间推理的结合，与四天前NVIDIA Nemotron 3 Ultra(Mamba-Transformer混合)、上周微软MAI-Thinking-1选择的架构押注完全一致。十天内三次前沿发布都收敛到了混合推理架构：隐式潜空间路径即Mamba/MoE-of-Experts模式；显式CoT路径即Claude/Gemini-Deep-Think模式；二者结合正在成为新共识。云知声选择MaaS(模型即服务)Hub而非开源权重，是一次商业实验：港股上市公司能否在相同Agentic负载上，靠卖token赚到比DeepSeek开放权重更多？"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Discloses 90% of Production Code Now Written by Claude; Pushes for Verifiable AI Pause",
+        "zh": "Anthropic披露：90%生产代码已由Claude编写，呼吁可验证AI暂停"
+      },
+      "url": "https://the-decoder.com/anthropic-says-claude-now-writes-over-90-of-its-code-and-wants-the-world-to-have-an-ai-pause-button/",
+      "source": "The Decoder",
+      "time": "June 5, 2026",
+      "description": {
+        "en": "Anthropic published an internal report showing 80%+ of production code and 90%+ including scripts at the company is Claude-written, with engineers shipping roughly 8x more code per day than in 2024. Claude Opus 4.6 handles 12-hour autonomous tasks, Claude Mythos Preview handles 16+ hours, and the company is publicly advocating for a verifiable global AI development pause modeled on nuclear treaty verification.",
+        "zh": "Anthropic发布内部报告：公司80%以上生产代码、加上脚本总计90%以上由Claude编写，工程师日均代码产出较2024年增长约8倍。Claude Opus 4.6可处理12小时自治任务，Claude Mythos Preview可处理16小时以上任务；公司公开呼吁建立可验证的全球AI开发暂停机制，参照核条约核查模式。"
+      },
+      "insight": {
+        "en": "02 *The most market-moving line in this report is the one about code review, not the 90% figure itself.* Anthropic's own admission that 'human code review is already becoming the bottleneck' is the first time a frontier lab has publicly named the constraint that recursive self-improvement runs into. The trajectory — Claude went from 4-minute tasks in March 2024 to 16+ hour tasks by mid-2026, with duration 'doubling roughly every four months' — is the metric that matters for agent-economy forecasts, and the 2027 'week-long tasks' projection implies a planning horizon most enterprise workflows don't even operate on. The 800 API-error fixes in April (claimed 1000x error reduction) is the sleeper stat: it suggests the marginal value of an autonomous agent is no longer in writing code but in compressing the maintenance tax on existing code. The verifiable-pause advocacy is strategically clever — it shifts the burden of proof onto competitors and regulators, not Anthropic.",
+        "zh": "02 *这份报告中最具市场冲击力的不是\"90%\"这个数字，而是关于代码审查的那句话。* Anthropic首次公开承认\"人类代码审查已成为瓶颈\"——这是前沿实验室首次点名递归自我改进所撞到的约束。任务时长从2024年3月Claude 3的4分钟到2026年中的16+小时，\"约每四个月翻倍\"，是Agent经济预测中的关键指标；2027年\"周级任务\"的预期意味着一个超出多数企业工作流规划视野的规划周期。4月份800个API错误修复(号称错误率降低1000倍)是隐藏的亮点：它暗示自治Agent的边际价值已不在于编写代码，而在于压缩既有代码的维护税。可验证暂停的呼吁在战略上极其精明——把举证责任推给了竞争对手和监管者，而非Anthropic自己。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Usage Surges 1,858% YoY as Gemini Closes Gap on ChatGPT Consumer Lead",
+        "zh": "Claude使用量同比增长1858%，Gemini缩小与ChatGPT的消费者领先差距"
+      },
+      "url": "https://trak.in/stories/claudes-usage-surges-1858-gemini-challenges-chatgpts-dominance/",
+      "source": "Trak.in",
+      "time": "June 8, 2026",
+      "description": {
+        "en": "New industry usage data shows Anthropic's Claude posting 1,858% year-over-year usage growth (its largest absolute jump in any single quarter), while Google's Gemini continues expanding across Search/Workspace/Android surfaces to challenge ChatGPT's consumer dominance. OpenAI is reportedly working on a 'super app' transformation ahead of its anticipated IPO.",
+        "zh": "最新行业使用数据显示，Anthropic Claude同比使用量增长1858%(单季度绝对涨幅最大)，与此同时，Google Gemini持续在Search/Workspace/Android端扩展，向ChatGPT的消费者主导地位发起挑战。OpenAI据报正在打造\"超级应用\"以应对预期中的IPO。"
+      },
+      "insight": {
+        "en": "03 *The 1,858% growth number needs context: Anthropic's enterprise/API base is still smaller than OpenAI's, so percentage growth off a smaller denominator is partially arithmetic, not purely secular.* What makes the figure credible is the *direction* — Claude Opus 4.6's 12-hour autonomous tasks and Anthropic's 90% internal adoption story (covered above) are real capability moats that the consumer surface is finally catching up to. Gemini's challenge to ChatGPT is structurally different: it's free, hardware-bundled (Pixel 9+ ships Gemini Nano on-device), and integrated into the surface where 3 billion+ users already are. The OpenAI 'super app' response is the right strategic instinct but the wrong timing — every month they delay, Gemini's Workspace footprint entrenches. The bigger structural story: this is the first quarter where three frontier labs (Anthropic, OpenAI, Google) are all profitable-or-near-profitable on AI revenue, ending the 'subsidize to capture' era.",
+        "zh": "03 *1858%这个数字需要加上语境：Anthropic企业/API基数仍小于OpenAI，因此分母较小时的高增长率部分是算术效应，而非纯粹的长期趋势。* 让这个数字可信的是\"方向\"——Claude Opus 4.6的12小时自治任务、Anthropic 90%的内部采用率(见上文)都是真实的能力护城河，消费者端终于在追赶。Gemini对ChatGPT的挑战是结构性差异：免费、硬件绑定(Pixel 9+出厂搭载Gemini Nano端侧)、深度集成到已有30亿+用户的界面。OpenAI的\"超级应用\"应对是战略本能反应但时机错了——每推迟一个月，Gemini的Workspace阵地就更稳固。更大的结构性故事：这是Anthropic、OpenAI、Google三家前沿实验室在AI收入上首次同时接近盈利或已盈利的季度，结束了\"补贴换市场\"的时代。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA Cosmos 3: First Open Omnimodel for Physical AI, Mixture-of-Transformers Architecture",
+        "zh": "NVIDIA Cosmos 3：首个面向物理AI的开源全模态模型，混合Transformer架构"
+      },
+      "url": "https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai",
+      "source": "NVIDIA Newsroom",
+      "time": "May 31, 2026",
+      "description": {
+        "en": "NVIDIA launched Cosmos 3 at COMPUTEX, billed as the first fully open 'omnimodel' with native reasoning + world simulation + action generation across text/image/video/audio. Built on a Mixture-of-Transformers architecture (Reasoner Tower + Generator Tower), ships in 64B Super and 16B Nano variants under the Linux Foundation's OpenMDW 1.1 license, with founding coalition partners including Agile Robots, Black Forest Labs, Generalist, LTX, Runway, and Skild AI.",
+        "zh": "NVIDIA在COMPUTEX发布Cosmos 3，号称首个完全开源的\"全模态\"模型，原生集成推理+世界模拟+动作生成，覆盖文本/图像/视频/音频。基于混合Transformer架构(推理塔+生成塔)，推出64B Super与16B Nano两种规格，采用Linux基金会OpenMDW 1.1许可，创始联盟成员包括Agile Robots、Black Forest Labs、Generalist、LTX、Runway和Skild AI。"
+      },
+      "insight": {
+        "en": "04 *Cosmos 3 is the most strategically important NVIDIA release of 2026 because it locks the 'physical AI' category to CUDA at the same moment robotics foundation models are about to commoditize.* The Mixture-of-Transformers (MoT) architecture — separate Reasoner and Generator towers instead of a single unified backbone — is the actual technical novelty. The Reasoner tower runs as a VLM (autoregressive), the Generator runs as a diffusion process, and they share only the embedding space. This is materially different from the LLM-industry Mamba-Transformer hybrids (Nemotron 3 Ultra, Hermes Agent) because it isn't a sequence-modeling fusion — it's a multi-modal processing split. The coalition with six robotics startups is the lock-in play: Cosmos 3 weights are open, but the only training/inference stack that gets full speed is NVIDIA's. The OpenMDW 1.1 license is deliberately not OSI-approved so NVIDIA can forbid non-CUDA deployers from commercial use — the same playbook Nemotron 3 Ultra ran a week ago.",
+        "zh": "04 *Cosmos 3是NVIDIA 2026年最具战略意义的发布，因为它在机器人基础模型即将商品化的当口，把\"物理AI\"这一品类锁定到CUDA上。* 真正的技术新意是混合Transformer(MoT)架构——把\"推理塔\"和\"生成塔\"分离，而非单一统一骨干。推理塔以VLM(自回归)运行，生成塔以扩散过程运行，二者仅共享嵌入空间。这与LLM行业的Mamba-Transformer混合(Nemotron 3 Ultra、Hermes Agent)有本质差异——它不是序列建模融合，而是多模态处理分工。联手六家机器人初创公司的联盟是锁定棋：Cosmos 3权重开源，但能跑出全速的训练/推理栈只有NVIDIA的。OpenMDW 1.1许可刻意未被OSI认可，NVIDIA可禁止非CUDA部署方商用——一周前Nemotron 3 Ultra刚跑过同样的剧本。"
+      }
+    },
+    {
+      "title": {
+        "en": "JetBrains Mellum2: 12B Open-Source Code MoE Aimed at Sub-Agents and Routing",
+        "zh": "JetBrains Mellum2：120亿参数开源代码MoE，瞄准子Agent与路由场景"
+      },
+      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+      "source": "Hugging Face Blog",
+      "time": "June 1, 2026",
+      "description": {
+        "en": "JetBrains released Mellum2, a 12B-parameter Mixture-of-Experts code model (2.5B active per token) under Apache 2.0, optimized for low-latency text-and-code workloads with 2x faster inference than comparable open models. Positioning: routing, RAG pipelines, sub-agents, and private deployments — the small-model plumbing for IDE assistants.",
+        "zh": "JetBrains发布Mellum2，120亿参数混合专家代码模型(每token激活2.5B)，采用Apache 2.0许可，针对低延迟文本与代码工作负载优化，推理速度比同类开源模型快2倍。定位：路由、RAG流水线、子Agent和私有部署——IDE助手的小模型管路。"
+      },
+      "insight": {
+        "en": "05 *Mellum2 is the first serious 'agent plumbing' model from a non-Meta, non-Chinese vendor, and the Apache 2.0 license is the real product.* Most open code models in the 7-12B range (StarCoder2, Qwen2.5-Coder-7B, DeepSeek-Coder) come with custom licenses that forbid commercial fine-tuning. Mellum2's pure Apache 2.0 makes it the default sub-agent brain for any IDE vendor that doesn't want to negotiate with Meta or worry about Llama Community License's 700M MAU clause. The 'sub-agent' positioning is the key: in a multi-agent coding stack, the heavy lifting (planning, refactoring, code generation) goes to a frontier model (Opus 4.8, MAI-Thinking-1), but routing, completion, retrieval, and test-generation need a fast 2.5B-active model. Mellum2 at 12B/2.5B-active is optimized exactly for that role — JetBrains is selling the idea that the 'agentic IDE' is a fleet, not a brain.",
+        "zh": "05 *Mellum2是非Meta、非中国厂商推出的首款严肃\"Agent管路\"模型，Apache 2.0许可才是真正的产品。* 7-12B区间的多数开源代码模型(StarCoder2、Qwen2.5-Coder-7B、DeepSeek-Coder)都带有禁止商业微调的自定义许可。Mellum2的纯Apache 2.0让其成为任何不愿与Meta谈判或担心Llama Community License 7亿MAU条款的IDE厂商的默认子Agent大脑。\"子Agent\"定位是关键：在多Agent编码栈中，重活(规划、重构、代码生成)交给前沿模型(Opus 4.8、MAI-Thinking-1)，但路由、补全、检索、测试生成需要快速的2.5B激活模型。Mellum2的12B/2.5B-激活参数设计正是为这一角色而生——JetBrains在兜售\"Agentic IDE是一个舰队而非单一大脑\"的理念。"
+      }
+    },
+    {
+      "title": {
+        "en": "GitHub Copilot Token Billing Goes Live: Enterprises Pay Per-Token Instead of Per-Seat",
+        "zh": "GitHub Copilot Token计费正式上线：企业按token计费取代按席位计费"
+      },
+      "url": "https://github.blog/changelog/2026-06-01-github-copilot-token-billing/",
+      "source": "GitHub Blog",
+      "time": "June 1, 2026",
+      "description": {
+        "en": "GitHub began rolling out token-billed Copilot pricing for enterprise accounts on June 1, replacing per-seat subscription pricing with metered usage across all Copilot models (including third-party models routed through Copilot). The shift makes cost directly proportional to model selection, putting Opus 4.8 and GPT-5.5 usage at a visible dollar premium vs. Haiku 4.5 and Mellum2.",
+        "zh": "GitHub于6月1日开始对企业账号推出按token计费的Copilot定价，以按量计费取代按席位订阅，覆盖所有Copilot模型(包括通过Copilot路由的第三方模型)。此次转向让成本与模型选择直接挂钩，使用Opus 4.8和GPT-5.5会产生明显高于Haiku 4.5和Mellum2的美元溢价。"
+      },
+      "insight": {
+        "en": "06 *Token billing is the most consequential enterprise pricing shift in the agentic-coding era, and it will redistribute the IDE market within 12 months.* Per-seat billing rewarded heavy users but allowed low-engagement seats to drain margin; token billing flips this — the CFO can now see exactly which team is using Opus 4.8 for autocomplete and route them to Haiku 4.5. The strategic beneficiary is the cheapest viable model: Mellum2 (Apache 2.0, no royalty), DeepSeek V4 Pro ($0.55/M input, mentioned in last week's digest), and any 7-12B MoE with permissive licensing. The biggest loser is the developer who assumed 'Copilot Pro = unlimited Opus' and now gets a usage report that exposes their behavior. GitHub's incentive is clear: token billing captures the upside when models get more expensive (frontier coding models trend toward $5-25/M output) and protects them when users migrate to cheaper models. This is the same playbook Snowflake ran on data warehousing — usage-based pricing rewards the platform, not the buyer.",
+        "zh": "06 *Token计费是Agentic编程时代最具影响力的企业定价变革，将在12个月内重新分配IDE市场。* 按席位计费奖励重度用户，但允许低参与度席位侵蚀利润；token计费颠覆了这一点——CFO现在能清楚看到哪个团队在用Opus 4.8做补全，并把他们路由到Haiku 4.5。战略受益者是最便宜的可用模型：Mellum2(Apache 2.0，无授权费)、DeepSeek V4 Pro(输入$0.55/M，上周摘要提及)，以及任何7-12B参数、许可宽松的MoE。最大输家是那些以为\"Copilot Pro = 无限Opus\"的开发者——他们将收到一份暴露其使用行为的账单。GitHub的激励很明确：当模型变贵时(前沿编程模型趋向$5-25/M输出)，token计费能捕获上行；用户迁移到便宜模型时，则起到保护作用。这是Snowflake在数据仓库领域跑过的同一剧本——按用量计费奖励的是平台，而非买家。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "June 7–8, 2026 looks like the week the 'hybrid reasoning' consensus crystallized in public. Three frontier releases in ten days — Unisound U2 (Hybrid Thinking: explicit CoT + implicit latent), NVIDIA Nemotron 3 Ultra (Mamba-Transformer hybrid, four days earlier), and Microsoft MAI-Thinking-1 (sparse MoE reasoning at 35B-active/~1T-total) — all converged on the same architectural bet: pure transformers topped out somewhere around Claude 3.5/4-class reasoning, and the next 18 months will be defined by how explicitly or implicitly each lab mixes reasoning modes. NVIDIA layered a second, structurally different consensus on top: Cosmos 3's Mixture-of-Transformers (separate Reasoner + Generator towers) is the first credible 'physical AI' foundation model, and the OpenMDW 1.1 license + Cosmos Coalition is the playbook for locking a category to CUDA just as the category forms. The economic subtext is more important than the architectural one: Anthropic's 90% internal Claude adoption report is the first public admission that human code review is the binding constraint on recursive self-improvement, which means the next 6-12 months of agent-economy value capture will go to whoever solves verification, not generation. The pricing story quietly agrees — GitHub Copilot's token billing, xAI's $1/$2 Grok Build, DeepSeek V4 Pro at $0.55/M, and Mellum2's Apache 2.0 release all push the floor on agentic-coding cost, while the Claude 1,858% usage growth (off a smaller enterprise base) confirms the ceiling is rising. The day's real narrative: the AI industry is splitting cleanly between frontier labs (raising capability ceilings, accepting hybrid-architecture complexity) and infrastructure players (lowering cost floors, accepting open-source economics), with the enterprise buyer trapped in the middle being forced to make architectural choices that will constrain them for a decade.",
+    "zh": "2026年6月7-8日是\"混合推理\"共识公开成形的标志性一周。十天内三次前沿发布——云知声U2(混合思考：显式CoT + 隐式潜空间)、NVIDIA Nemotron 3 Ultra(早四天的Mamba-Transformer混合)、微软MAI-Thinking-1(35B激活/约1T总参数的稀疏MoE推理)——都收敛到了同一架构赌注：纯Transformer在Claude 3.5/4级推理附近触顶，未来18个月将由各家实验室如何显式或隐式地混合推理模式定义。NVIDIA在更上层叠加了第二个结构性共识：Cosmos 3的混合Transformer(分离的推理塔+生成塔)是首个可信的\"物理AI\"基础模型，OpenMDW 1.1许可+Cosmos联盟是在品类刚形成时就将其锁定到CUDA的剧本。比架构更深层的是经济潜流：Anthropic 90%内部Claude采用的报告是首次公开承认人类代码审查是递归自我改进的约束瓶颈，这意味着未来6-12个月的Agent经济价值捕获将属于解决验证问题者，而非生成问题者。定价故事默默印证——GitHub Copilot的token计费、xAI的Grok Build $1/$2、DeepSeek V4 Pro $0.55/M、Mellum2的Apache 2.0发布，都在压低Agentic编程的成本下限；而Claude 1858%的使用量增长(基数较小的企业端)确认上限仍在抬升。这两天的真实叙事是：AI产业正在沿\"前沿实验室\"(抬升能力上限、接受混合架构复杂度)与\"基础设施厂商\"(压低成本下限、接受开源经济学)清晰分裂，夹在中间被迫做出将长期约束其十年架构选择的企业买家，正承受着最大的决策压力。"
+  }
+}
