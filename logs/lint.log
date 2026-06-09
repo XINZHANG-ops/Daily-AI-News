@@ -984,3 +984,6 @@ All fixes applied. Final summary:
 [2026-06-08 01:05:21] Wiki lint 完成（退出码 0）。
 [main 6caba93] wiki: lint 2026-06-08
  8 files changed, 312 insertions(+), 4 deletions(-)
+[2026-06-09 01:00:02] 开始 wiki lint，模型: minimax-m3:cloud
+Already up to date.
+[2026-06-09 01:00:03] 预扫描通过，无断链/孤儿页/空页，跳过 LLM。

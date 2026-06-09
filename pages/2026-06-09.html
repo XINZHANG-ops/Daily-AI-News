@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 09, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 09, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/mvanhorn/last30days-skill" class="card-title" target="_blank">mvanhorn/last30days-skill</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 35.9k stars</div>
+                                <div class="meta-item"><span>🍴</span> 2.9k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">AI agent skill that researches any topic across Reddit, X, YouTube, Hacker News, Polymarket, and the web, then synthesizes a grounded summary with citations.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">AI 智能体技能：跨 Reddit、X、YouTube、Hacker News、Polymarket 和整个网络研究任何主题，然后合成带引用的有据可查的摘要。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/RyanCodrai/turbovec" class="card-title" target="_blank">RyanCodrai/turbovec</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 9.6k stars</div>
+                                <div class="meta-item"><span>🍴</span> 835 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Vector index built on Google's TurboQuant algorithm in Rust with Python bindings. SIMD kernels (NEON/AVX-512BW) beat FAISS IndexPQFastScan; fits 10M docs in ~4 GB vs 31 GB as float32. Drop-in for LangChain, LlamaIndex, Haystack, Agno.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">基于 Google TurboQuant 算法的向量索引，Rust 实现并提供 Python 绑定。SIMD 内核（NEON/AVX-512BW）超越 FAISS IndexPQFastScan；1000 万文档仅需约 4 GB，而 float32 需要 31 GB。可直接用于 LangChain、LlamaIndex、Haystack、Agno。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/google/skills" class="card-title" target="_blank">google/skills</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 12.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 986 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Official Google repository of Agent Skills for Google products and technologies — modular, reusable capability packs agents can load on demand across Gemini, Cloud, Workspace, and developer APIs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google 官方仓库，为 Google 产品和技术提供 Agent Skills —— 模块化、可复用的能力包，智能体可按需在 Gemini、Cloud、Workspace 和开发者 API 中加载。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">9to5Mac</span>
+                    <div class="news-time">2026-06-08</div>
+                    <a href="https://9to5mac.com/2026/06/08/ios-27-announcement/" class="card-title" target="_blank" data-lang="en">Apple unveils AFM 3 at WWDC 2026: 5-model family, on-device sparse 20B, NVIDIA-backed cloud Pro</a>
+                    <a href="https://9to5mac.com/2026/06/08/ios-27-announcement/" class="card-title" target="_blank" data-lang="zh" style="display: none;">苹果 WWDC 2026 发布 AFM 3：5 模型家族，设备端稀疏 20B，云端 Pro 跑在 NVIDIA 上</a>
+                    <p class="card-description" data-lang="en">Apple announced its third-generation Apple Foundation Models — AFM 3 Core (3B dense), AFM 3 Core Advanced (20B sparse, multimodal), AFM 3 Cloud, ADM 3 Cloud for image, and AFM 3 Cloud Pro — shipping in iOS 27 developer beta today. Instruction-Following Pruning (IFP) stores the 20B model in NAND and routes per-prompt to 1-4B active params. AFM 3 Cloud Pro runs on NVIDIA GPUs. Apple called benchmarks 'a snapshot during beta' with a fuller technical report promised later.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">苹果发布第三代 Apple Foundation Models —— AFM 3 Core（3B 稠密）、AFM 3 Core Advanced（20B 稀疏，多模态）、AFM 3 Cloud、ADM 3 Cloud（图像）和 AFM 3 Cloud Pro，iOS 27 开发者测试版今日上线。Instruction-Following Pruning（IFP）把 20B 模型存在 NAND 中，每次按提示路由到 1-4B 激活参数。AFM 3 Cloud Pro 跑在 NVIDIA GPU 上。苹果称基准成绩是"测试阶段的快照"，完整技术报告稍后发布。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Euronews</span>
+                    <div class="news-time">2026-06-09</div>
+                    <a href="https://www.euronews.com/business/2026/06/09/chatgpt-maker-openai-files-for-ipo-joining-anthropic-and-spacex-in-race-to-go-public" class="card-title" target="_blank" data-lang="en">OpenAI files for IPO at $852B valuation, joining Anthropic and SpaceX in race to go public</a>
+                    <a href="https://www.euronews.com/business/2026/06/09/chatgpt-maker-openai-files-for-ipo-joining-anthropic-and-spacex-in-race-to-go-public" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 提交 IPO 申请，估值 8520 亿美元，加入 Anthropic 和 SpaceX 的上市竞赛</a>
+                    <p class="card-description" data-lang="en">OpenAI confirmed confidential SEC filing for an IPO at an $852B (€730B) valuation, announced by Sam Altman: 'We expect it to leak so we're just announcing it... it may be a while because there are things we want to do that are likely easier as a private company.' Filing comes weeks after OpenAI's federal-jury win against Elon Musk and a week after Lockdown Mode launched.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 确认已向 SEC 秘密提交 IPO 文件，估值 8520 亿美元（7300 亿欧元），由 Sam Altman 亲自宣布："我们预料消息会泄露，所以干脆自己公布……上市可能还要一阵子，因为我们想做的事情有些作为私营公司做起来更容易。"提交时间在 OpenAI 对 Elon Musk 联邦诉讼胜诉后数周，也在 Lockdown Mode 上线一周后。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Xiaomi MiMo Blog</span>
+                    <div class="news-time">2026-06-08</div>
+                    <a href="https://mimo.xiaomi.com/blog/mimo-tilert-1000tps" class="card-title" target="_blank" data-lang="en">Xiaomi MiMo + TileRT break 1000 TPS on 1T MoE: first to do it on commodity 8-GPU nodes</a>
+                    <a href="https://mimo.xiaomi.com/blog/mimo-tilert-1000tps" class="card-title" target="_blank" data-lang="zh" style="display: none;">小米 MiMo 联合 TileRT 突破 1T MoE 模型 1000 TPS：首次在通用 8 卡节点上达成</a>
+                    <p class="card-description" data-lang="en">Xiaomi and TileRT released MiMo-V2.5-Pro-UltraSpeed, claiming the first 1T-parameter model to break 1000 tokens/second decode speed (peak ~1200 TPS) on a single standard 8-GPU node — no Cerebras, no Groq LPU. Three-layer codesign: MXFP4 quantization on MoE experts only, DFlash block-level speculative decoding (acceptance length 6.30 on coding), and TileRT's persistent engine kernel. Open-sourced on Hugging Face under MIT; API trial June 9-23 at 3x standard MiMo pricing.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">小米与 TileRT 发布 MiMo-V2.5-Pro-UltraSpeed，声称是首个 1T 参数模型在标准 8 卡节点上突破 1000 tokens/秒解码速度（峰值约 1200 TPS）—— 无需 Cerebras、无需 Groq LPU。三层协同设计：仅对 MoE 专家做 MXFP4 量化、DFlash 块级投机解码（编码任务接受长度 6.30），以及 TileRT 的持久化引擎内核。已在 Hugging Face 以 MIT 协议开源；API 试用 6 月 9-23 日，定价为标准 MiMo 的 3 倍。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Engadget</span>
+                    <div class="news-time">2026-06-05</div>
+                    <a href="https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/" class="card-title" target="_blank" data-lang="en">Google to pay SpaceX $920M/month for 110K NVIDIA GPUs through June 2029, disclosed in SpaceX S-1</a>
+                    <a href="https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google 将向 SpaceX 支付 9.2 亿美元/月，使用 11 万张 NVIDIA GPU 至 2029 年 6 月，在 SpaceX S-1 中披露</a>
+                    <p class="card-description" data-lang="en">SpaceX's amended Form S-1 revealed Google will pay $920M/month from October 2026 through June 2029 (~$30-32B total) for access to ~110,000 NVIDIA GPUs at former xAI Memphis data centers. Deal includes one-month termination grace if capacity not delivered by Sept 30, 2026, and 90-day exit clause after Dec 31, 2026. IP stays with Google. SpaceX has a separate $1.25B/month Anthropic deal through May 2029.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">SpaceX 修订版 Form S-1 显示，Google 将从 2026 年 10 月到 2029 年 6 月每月支付 9.2 亿美元（总计约 300-320 亿美元），使用原 xAI 孟菲斯数据中心的约 11 万张 NVIDIA GPU。如果到 2026 年 9 月 30 日未交付容量，Google 有一个月宽限期后可终止；2026 年 12 月 31 日后任何一方可提前 90 天书面退出。知识产权归 Google 拥有。SpaceX 与 Anthropic 还有一份单独的每月 12.5 亿美元、为期到 2029 年 5 月的协议。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">BBC News</span>
+                    <div class="news-time">2026-06-07</div>
+                    <a href="https://www.bbc.com/news/articles/cx2124z7g45o" class="card-title" target="_blank" data-lang="en">Anthropic co-founder Jack Clark calls for coordinated 'brake pedal' on frontier AI, citing Claude-authored 80%+ of internal code</a>
+                    <a href="https://www.bbc.com/news/articles/cx2124z7g45o" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 联合创始人 Jack Clark 呼吁对前沿 AI 设置协同"刹车"，援引 Claude 撰写内部代码占比超 80%</a>
+                    <p class="card-description" data-lang="en">Anthropic co-founder Jack Clark and Marina Favaro published 'When AI builds itself,' warning that recursive self-improvement is approaching and that AI progress is now constrained by chips, power, and bandwidth — not intelligence. Data point: Claude authors 80%+ of code merged at Anthropic (May 2026), shipped 8x more code per quarter than pre-2025, METR task-length doubled every 4 months (4 min in Mar 2024 → 12 hr by Apr 2026). Clark to BBC: 'The AI industry has a gas pedal, but it doesn't have a brake pedal.'</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic 联合创始人 Jack Clark 与 Marina Favaro 联合发布《当 AI 自己构建自己》，警告递归自我改进（RSI）正在逼近，并指出 AI 进步如今受限于芯片、电力和带宽 —— 而非智能本身。数据点：Claude 撰写了 Anthropic 合并代码的 80% 以上（2026 年 5 月），季度发版代码量较 2025 年前增长 8 倍，METR 任务完成时长每 4 个月翻一倍（2024 年 3 月 4 分钟 → 2026 年 4 月 12 小时）。Clark 接受 BBC 采访时表示："AI 行业有油门，但没有刹车。"</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Google Blog</span>
+                    <div class="news-time">2026-06-08</div>
+                    <a href="https://blog.google/innovation-and-ai/products/notebooklm/better-research-notebooklm/" class="card-title" target="_blank" data-lang="en">Google NotebookLM upgrades to Gemini 3.5 + Antigravity, ships secure cloud computer with 100+ skills</a>
+                    <a href="https://blog.google/innovation-and-ai/products/notebooklm/better-research-notebooklm/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google NotebookLM 升级至 Gemini 3.5 + Antigravity，配备 100+ 技能的云端安全计算机</a>
+                    <p class="card-description" data-lang="en">NotebookLM now defaults to Gemini 3.5 with Antigravity integration (Google's agentic platform). Each notebook gets its own secure cloud computer that can write and run code across 100+ curated skills. New output formats: PDF/DOCX, charts, Excel/PPTX, Nano Banana images, CSV/JSON. Google reports 65% average win rate over prior system (78.2% on web research, 69.9% on large-doc analysis). New 'loose ideas' mode uses Google Search to find sources. Rolling out to AI Ultra subscribers and Workspace business customers.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">NotebookLM 现默认采用 Gemini 3.5 并集成 Antigravity（Google 的智能体平台）。每个 notebook 拥有独立的安全云计算机，可在 100 多项精选技能中编写并运行代码。新的输出格式包括：PDF/DOCX、图表、Excel/PPTX、Nano Banana 图像、CSV/JSON。Google 报告新系统相对旧系统平均胜率 65%（网页研究 78.2%、大文档分析 69.9%）。新增"模糊想法"模式借助 Google 搜索寻找资料。正在向 AI Ultra 订阅者和 Workspace 企业客户推出。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Indian Express</span>
+                    <div class="news-time">2026-06-08</div>
+                    <a href="https://indianexpress.com/article/technology/tech-news-technology/meta-testing-hatch-ai-assistant-as-ai-race-with-openai-anthropic-heats-up-report-10729225/" class="card-title" target="_blank" data-lang="en">Meta 'Hatch' AI agent testing: $200/mo Hatch Plus tier, currently powered by Claude Sonnet, transitioning to in-house Muse Spark</a>
+                    <a href="https://indianexpress.com/article/technology/tech-news-technology/meta-testing-hatch-ai-assistant-as-ai-race-with-openai-anthropic-heats-up-report-10729225/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta "Hatch" AI 智能体进入测试：Hatch Plus 200 美元/月，当前由 Claude Sonnet 驱动，未来切换到自研 Muse Spark</a>
+                    <p class="card-description" data-lang="en">Meta is internally testing 'Hatch,' a consumer AI agent for task automation (code, presentations, scheduling, email), with a 'Hatch Plus' premium tier reported at $200/month — on par with ChatGPT Pro and Claude Max. Hatch is currently being tested with Anthropic's Claude Sonnet as the underlying model, with plans to transition to Meta's in-house Muse Spark. Modular 'skills' system for third-party service integration, with potential embed into Instagram for billion-user reach.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta 正在内部测试 "Hatch"，一款面向消费者的任务自动化 AI 智能体（代码、演示、日程、邮件），其中 "Hatch Plus" 高级版定价 200 美元/月 —— 与 ChatGPT Pro 和 Claude Max 持平。Hatch 当前以 Anthropic Claude Sonnet 作为底层模型进行测试，未来计划切换到 Meta 自研的 Muse Spark。模块化"技能"系统支持第三方服务集成，并可能嵌入 Instagram 触达数十亿用户。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Three things happened on June 8-9 that, taken together, define the AI market's next phase. First, the compute layer consolidated: Google's $920M/month SpaceX deal, sitting next to Anthropic's $1.25B/month SpaceX deal, makes clear that the 2026 frontier is gated by who has signed the largest capacity contract — not who has the best model. Second, the model layer went public: OpenAI's $852B IPO filing, landing the same week as Anthropic's $965B confidential submission, means that within six months the two most-watched AI labs will report quarterly training spend, RLHF headcount, and revenue concentration. Every claim Anthropic or OpenAI makes about safety, alignment, and self-improvement will be measured against a 10-Q. Third, the application layer bifurcated: Apple's AFM 3 is the on-device bet (sparse 20B with 1-4B active, IFP routing from NAND, built on Gemini-distilled teachers), while Xiaomi's 1000-TPS MiMo is the inference-cost bet (commodity 8-GPU, open-source, no custom silicon). Meta's Hatch, meanwhile, is the consumer-bundling bet — $200/month, Instagram as install base, Claude as the test-time model. Jack Clark's 'brake pedal' call is the only one of these stories that is not, at its core, a commercial move. That timing is not a coincidence. As Anthropic moves toward IPO, the only way to call for a pause without binding your own company is to call for it before the S-1 locks in your obligations. The Anthropic pause is rhetoric, but it's also a filing deadline. The day after OpenAI's IPO leaks, the gas pedal and the brake pedal became the same pedal.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">6 月 8-9 日发生的三件事，综合起来定义了 AI 市场的下一阶段。首先，算力层加速整合：Google 与 SpaceX 每月 9.2 亿美元的交易，叠加 Anthropic 每月 12.5 亿美元的交易，明确了 2026 年的前沿门槛是谁签下了最大的容量合同 —— 而非谁的模型最好。其次，模型层走向公开：OpenAI 8520 亿美元的 IPO 申请与 Anthropic 9650 亿美元的秘密提交在同一周落地，意味着六个月内最受关注的两家 AI 实验室将按季度披露训练支出、RLHF 团队规模与收入集中度。Anthropic 与 OpenAI 关于安全、对齐和自我改进的每一项声明，都将被 10-Q 财报逐条丈量。第三，应用层出现分化：苹果的 AFM 3 押注端侧（20B 稀疏模型，激活 1-4B，IFP 从 NAND 路由，由 Gemini 蒸馏教师训练）；小米的 1000 TPS MiMo 押注推理成本（通用 8 卡节点、开源、无需定制芯片）；Meta 的 Hatch 押注消费捆绑（200 美元/月，Instagram 作为安装基础，Claude 作为测试期模型）。Jack Clark 的"刹车"呼吁是这些故事中唯一本质上不是商业动作的一条。这并非巧合。Anthropic 走向 IPO 的过程中，在不约束自己公司的情况下呼吁暂停，唯一时机就是在 S-1 锁定义务之前。Anthropic 的暂停是修辞，但也是一份文件截止日。OpenAI 的 IPO 消息泄露的第二天，油门和刹车就变成了同一块踏板。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

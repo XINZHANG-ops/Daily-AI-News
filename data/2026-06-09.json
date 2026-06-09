@@ -1,0 +1,160 @@
+{
+  "date": "2026-06-09",
+  "github_repos": [
+    {
+      "name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": {
+        "en": "AI agent skill that researches any topic across Reddit, X, YouTube, Hacker News, Polymarket, and the web, then synthesizes a grounded summary with citations.",
+        "zh": "AI 智能体技能：跨 Reddit、X、YouTube、Hacker News、Polymarket 和整个网络研究任何主题，然后合成带引用的有据可查的摘要。"
+      },
+      "stars": "35.9k",
+      "forks": "2.9k"
+    },
+    {
+      "name": "RyanCodrai/turbovec",
+      "url": "https://github.com/RyanCodrai/turbovec",
+      "description": {
+        "en": "Vector index built on Google's TurboQuant algorithm in Rust with Python bindings. SIMD kernels (NEON/AVX-512BW) beat FAISS IndexPQFastScan; fits 10M docs in ~4 GB vs 31 GB as float32. Drop-in for LangChain, LlamaIndex, Haystack, Agno.",
+        "zh": "基于 Google TurboQuant 算法的向量索引，Rust 实现并提供 Python 绑定。SIMD 内核（NEON/AVX-512BW）超越 FAISS IndexPQFastScan；1000 万文档仅需约 4 GB，而 float32 需要 31 GB。可直接用于 LangChain、LlamaIndex、Haystack、Agno。"
+      },
+      "stars": "9.6k",
+      "forks": "835"
+    },
+    {
+      "name": "google/skills",
+      "url": "https://github.com/google/skills",
+      "description": {
+        "en": "Official Google repository of Agent Skills for Google products and technologies — modular, reusable capability packs agents can load on demand across Gemini, Cloud, Workspace, and developer APIs.",
+        "zh": "Google 官方仓库，为 Google 产品和技术提供 Agent Skills —— 模块化、可复用的能力包，智能体可按需在 Gemini、Cloud、Workspace 和开发者 API 中加载。"
+      },
+      "stars": "12.8k",
+      "forks": "986"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Apple unveils AFM 3 at WWDC 2026: 5-model family, on-device sparse 20B, NVIDIA-backed cloud Pro",
+        "zh": "苹果 WWDC 2026 发布 AFM 3：5 模型家族，设备端稀疏 20B，云端 Pro 跑在 NVIDIA 上"
+      },
+      "url": "https://9to5mac.com/2026/06/08/ios-27-announcement/",
+      "source": "9to5Mac",
+      "time": "2026-06-08",
+      "description": {
+        "en": "Apple announced its third-generation Apple Foundation Models — AFM 3 Core (3B dense), AFM 3 Core Advanced (20B sparse, multimodal), AFM 3 Cloud, ADM 3 Cloud for image, and AFM 3 Cloud Pro — shipping in iOS 27 developer beta today. Instruction-Following Pruning (IFP) stores the 20B model in NAND and routes per-prompt to 1-4B active params. AFM 3 Cloud Pro runs on NVIDIA GPUs. Apple called benchmarks 'a snapshot during beta' with a fuller technical report promised later.",
+        "zh": "苹果发布第三代 Apple Foundation Models —— AFM 3 Core（3B 稠密）、AFM 3 Core Advanced（20B 稀疏，多模态）、AFM 3 Cloud、ADM 3 Cloud（图像）和 AFM 3 Cloud Pro，iOS 27 开发者测试版今日上线。Instruction-Following Pruning（IFP）把 20B 模型存在 NAND 中，每次按提示路由到 1-4B 激活参数。AFM 3 Cloud Pro 跑在 NVIDIA GPU 上。苹果称基准成绩是\"测试阶段的快照\"，完整技术报告稍后发布。"
+      },
+      "insight": {
+        "en": "01 *Apple's on-device bet pays off, but it's also a $1B/yr Google admission.* AFM 3 is a five-model stack that finally gives iOS 27 a real agentic framework, with the 20B Core Advanced using sparsity to keep active compute at 1-4B — a different path from Anthropic's everything-in-the-cloud approach. The reveal that AFM 3 was 'distilled from Google Gemini' (per Trending Topics) reframes the $1B/yr Apple-Google deal signed in January: Apple is paying Google to train the teacher model that trains Apple's on-device student. Meanwhile, AFM 3 Cloud Pro running on NVIDIA hardware — not Apple's own silicon — is a quiet admission that for frontier reasoning, even Apple needs Jensen's chips. The benchmarks are Apple-self-reported, no Arena.ai number yet, and the September launch gives OpenAI/Anthropic four months to respond before iPhones ship.",
+        "zh": "01 *苹果的端侧押注开始见效，但这也是承认每年向 Google 支付 10 亿美元。* AFM 3 是一个五模型家族，终于给 iOS 27 装上了真正的智能体框架，其中 20B 的 Core Advanced 通过稀疏性把激活计算量压到 1-4B —— 走的是与 Anthropic \"全在云端\" 完全不同的路线。Trending Topics 揭露 AFM 3 \"由 Google Gemini 蒸馏而来\"，重新定义了 1 月签署的苹果-Google 10 亿美元/年协议：苹果付钱给 Google 训练教师模型，再用它训练自己的端侧学生模型。与此同时，AFM 3 Cloud Pro 跑在 NVIDIA 硬件上 —— 而非苹果自研芯片 —— 是一次安静的承认：即便是苹果，做前沿推理也得依赖黄仁勋的芯片。所有基准都是苹果自报，尚未出现 Arena.ai 独立数据，9 月的发售让 OpenAI 和 Anthropic 还有四个月时间在 iPhone 出货前做出反应。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI files for IPO at $852B valuation, joining Anthropic and SpaceX in race to go public",
+        "zh": "OpenAI 提交 IPO 申请，估值 8520 亿美元，加入 Anthropic 和 SpaceX 的上市竞赛"
+      },
+      "url": "https://www.euronews.com/business/2026/06/09/chatgpt-maker-openai-files-for-ipo-joining-anthropic-and-spacex-in-race-to-go-public",
+      "source": "Euronews",
+      "time": "2026-06-09",
+      "description": {
+        "en": "OpenAI confirmed confidential SEC filing for an IPO at an $852B (€730B) valuation, announced by Sam Altman: 'We expect it to leak so we're just announcing it... it may be a while because there are things we want to do that are likely easier as a private company.' Filing comes weeks after OpenAI's federal-jury win against Elon Musk and a week after Lockdown Mode launched.",
+        "zh": "OpenAI 确认已向 SEC 秘密提交 IPO 文件，估值 8520 亿美元（7300 亿欧元），由 Sam Altman 亲自宣布：\"我们预料消息会泄露，所以干脆自己公布……上市可能还要一阵子，因为我们想做的事情有些作为私营公司做起来更容易。\"提交时间在 OpenAI 对 Elon Musk 联邦诉讼胜诉后数周，也在 Lockdown Mode 上线一周后。"
+      },
+      "insight": {
+        "en": "02 *Two of the top three AI labs will be public within months — and that changes the safety math.* OpenAI's filing lands the same week as Anthropic's $965B confidential submission (June 2), and SpaceX's Nasdaq debut is slated for June 12 with a rumored $1.7-1.8T valuation. Three of the most consequential AI companies in history becoming public within a 10-day window is unprecedented. The 10-Q disclosures that follow will finally put hard numbers on training compute spend, RLHF headcount, and revenue concentration — the kind of detail frontier labs have fought to keep private. Watch for: the dilution math that locks in Microsoft's preferred returns, the lockup expiry calendar (Anthropic founders can't sell for 180 days), and whether either filing's S-1 contains the 'self-improvement pause' language Anthropic's Jack Clark asked for on June 7. The IPO window is also why Anthropic's RSI warning reads as rhetoric to critics like Gary Marcus: 'You want the government to save us from... you.' Public-market pressure and a coordinated pause are nearly impossible to reconcile.",
+        "zh": "02 *三大 AI 实验室中的两家将在几个月内上市 —— 这将改变安全博弈的数学题。* OpenAI 的申请与 Anthropic 6 月 2 日 9650 亿美元的秘密提交发生在同一周，SpaceX 也定于 6 月 12 日在纳斯达克上市，传闻估值 1.7-1.8 万亿美元。历史上最具影响力的三家 AI 公司在 10 天窗口内同时走向公开市场，前所未有。后续的 10-Q 文件将首次披露训练算力支出、RLHF 团队规模和收入集中度等硬数字 —— 正是前沿实验室一直拼命保密的内容。值得关注：决定微软优先回报的稀释数学、锁定期到期日历（Anthropic 创始人 180 天内不能卖）、以及任何一份 S-1 中是否包含 Anthropic 联合创始人 Jack Clark 在 6 月 7 日所要求的\"自我改进暂停\"条款。IPO 窗口也是为什么 Anthropic 的 RSI 警告在 Gary Marcus 等批评者看来只是修辞：\"你们想靠政府来保护我们……免于你们的伤害。\" 公开市场的压力和协同暂停几乎不可能调和。"
+      }
+    },
+    {
+      "title": {
+        "en": "Xiaomi MiMo + TileRT break 1000 TPS on 1T MoE: first to do it on commodity 8-GPU nodes",
+        "zh": "小米 MiMo 联合 TileRT 突破 1T MoE 模型 1000 TPS：首次在通用 8 卡节点上达成"
+      },
+      "url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+      "source": "Xiaomi MiMo Blog",
+      "time": "2026-06-08",
+      "description": {
+        "en": "Xiaomi and TileRT released MiMo-V2.5-Pro-UltraSpeed, claiming the first 1T-parameter model to break 1000 tokens/second decode speed (peak ~1200 TPS) on a single standard 8-GPU node — no Cerebras, no Groq LPU. Three-layer codesign: MXFP4 quantization on MoE experts only, DFlash block-level speculative decoding (acceptance length 6.30 on coding), and TileRT's persistent engine kernel. Open-sourced on Hugging Face under MIT; API trial June 9-23 at 3x standard MiMo pricing.",
+        "zh": "小米与 TileRT 发布 MiMo-V2.5-Pro-UltraSpeed，声称是首个 1T 参数模型在标准 8 卡节点上突破 1000 tokens/秒解码速度（峰值约 1200 TPS）—— 无需 Cerebras、无需 Groq LPU。三层协同设计：仅对 MoE 专家做 MXFP4 量化、DFlash 块级投机解码（编码任务接受长度 6.30），以及 TileRT 的持久化引擎内核。已在 Hugging Face 以 MIT 协议开源；API 试用 6 月 9-23 日，定价为标准 MiMo 的 3 倍。"
+      },
+      "insight": {
+        "en": "03 *Chinese labs are now leading on inference, not just training.* The 1000 TPS number matters more than the spec sheet suggests: GPT-5.5 runs at ~68 TPS, Claude Opus 4.6 at ~71, Gemini Flash at ~192, Groq LPU peaks at 750, Cerebras hits 969 — Xiaomi just cleared them all on commodity hardware. The speed came from three places that aren't secrets: aggressive MXFP4 on experts only, DFlash block-parallel speculative decoding, and a runtime that kills per-op launch gaps at microsecond scale. The catch: the benchmark numbers are Xiaomi's own (independent verification pending), and the actual quality cost of MXFP4 is visible in the cards — HLE dropped from 48.0 to 47.0, SWE-Bench Verified from 78.9 to 77.4. But here's the strategic read: this drops the cost of a 1T model query by an order of magnitude relative to OpenAI/Anthropic pricing, and the open-source release means anyone can replicate. The fact that this comes from a phone-maker, not a frontier-lab, is the part Silicon Valley isn't ready for.",
+        "zh": "03 *中国实验室正在推理速度上领先，而不仅仅是训练。* 1000 TPS 这个数字比规格表上能看到的更有意义：GPT-5.5 约 68 TPS、Claude Opus 4.6 约 71 TPS、Gemini Flash 约 192 TPS、Groq LPU 峰值 750 TPS、Cerebras 达到 969 TPS —— 小米用通用硬件跑赢了所有对手。速度来自三个并不神秘的层面：仅对专家做激进 MXFP4 量化、DFlash 块并行投机解码、以及在微秒级消除每个算子启动间隙的运行时。问题是：基准数字来自小米自家（独立验证尚未完成），MXFP4 的实际质量代价在模型卡里清晰可见 —— HLE 从 48.0 跌到 47.0，SWE-Bench Verified 从 78.9 跌到 77.4。但战略层面看：它把 1T 模型的单次查询成本相对 OpenAI/Anthropic 定价压低了一个数量级，而且开源发布意味着任何人都可以复刻。更关键的是：做这件事的不是前沿实验室，而是一家手机厂商 —— 这一点硅谷还没有准备好。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google to pay SpaceX $920M/month for 110K NVIDIA GPUs through June 2029, disclosed in SpaceX S-1",
+        "zh": "Google 将向 SpaceX 支付 9.2 亿美元/月，使用 11 万张 NVIDIA GPU 至 2029 年 6 月，在 SpaceX S-1 中披露"
+      },
+      "url": "https://www.engadget.com/2188862/google-spacex-xai-data-center-deal-gemini/",
+      "source": "Engadget",
+      "time": "2026-06-05",
+      "description": {
+        "en": "SpaceX's amended Form S-1 revealed Google will pay $920M/month from October 2026 through June 2029 (~$30-32B total) for access to ~110,000 NVIDIA GPUs at former xAI Memphis data centers. Deal includes one-month termination grace if capacity not delivered by Sept 30, 2026, and 90-day exit clause after Dec 31, 2026. IP stays with Google. SpaceX has a separate $1.25B/month Anthropic deal through May 2029.",
+        "zh": "SpaceX 修订版 Form S-1 显示，Google 将从 2026 年 10 月到 2029 年 6 月每月支付 9.2 亿美元（总计约 300-320 亿美元），使用原 xAI 孟菲斯数据中心的约 11 万张 NVIDIA GPU。如果到 2026 年 9 月 30 日未交付容量，Google 有一个月宽限期后可终止；2026 年 12 月 31 日后任何一方可提前 90 天书面退出。知识产权归 Google 拥有。SpaceX 与 Anthropic 还有一份单独的每月 12.5 亿美元、为期到 2029 年 5 月的协议。"
+      },
+      "insight": {
+        "en": "04 *The AI compute stack is now an oligopoly of three contracts.* Add it up: Google pays SpaceX $920M/month, Anthropic pays SpaceX $1.25B/month, and Microsoft's multi-year NVIDIA deal is rumored north of $20B annually. Three contracts fund the bulk of US frontier inference. The SpaceX disclosure is also the first time anyone can price what xAI's Colossus actually cost to build — the $920M/month works out to ~$80K/GPU-year fully loaded, roughly 1.6x the on-demand H100 rate. That's the implied capital cost of being an AI lab in 2026. For Google, this is a 'bridge capacity' stopgap — they say internal forecasts for Gemini Enterprise were blown past — but $11B/year on a 33-month bridge is not a bridge, it's a permanent anchor. Watch for the September 30 deadline: if SpaceX misses delivery, the contract voids, and Google's Gemini Enterprise roadmap suddenly has a capacity cliff. The downstream effect: any AI lab that doesn't have a SpaceX-scale capacity contract by Q4 2026 is structurally capped at where it is today.",
+        "zh": "04 *AI 算力栈现在只是三份合同的寡头格局。* 加总一下：Google 付给 SpaceX 每月 9.2 亿美元，Anthropic 付 12.5 亿美元/月，传闻微软多年 NVIDIA 协议每年超 200 亿美元。三份合同支撑了美国前沿推理的绝大部分。SpaceX 的披露也首次让外界能给 xAI Colossus 的真实建设成本定价 —— 9.2 亿美元/月折合每张 GPU 每年约 8 万美元全包，是按需 H100 价格的约 1.6 倍。这就是 2026 年做 AI 实验室的隐含资本成本。对 Google 来说，这是\"过渡算力\"的临时方案 —— 他们说 Gemini Enterprise 内部预测被远超 —— 但 33 个月 110 亿美元不是过渡，是永久锚点。关注 9 月 30 日的死线：如果 SpaceX 未能交付，合同失效，Google Gemini Enterprise 路线图会突然面临算力断崖。连锁效应：任何 AI 实验室如果在 2026 年 Q4 之前没有拿到 SpaceX 规模的容量合同，其结构上限就锁死在今天的位置。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic co-founder Jack Clark calls for coordinated 'brake pedal' on frontier AI, citing Claude-authored 80%+ of internal code",
+        "zh": "Anthropic 联合创始人 Jack Clark 呼吁对前沿 AI 设置协同\"刹车\"，援引 Claude 撰写内部代码占比超 80%"
+      },
+      "url": "https://www.bbc.com/news/articles/cx2124z7g45o",
+      "source": "BBC News",
+      "time": "2026-06-07",
+      "description": {
+        "en": "Anthropic co-founder Jack Clark and Marina Favaro published 'When AI builds itself,' warning that recursive self-improvement is approaching and that AI progress is now constrained by chips, power, and bandwidth — not intelligence. Data point: Claude authors 80%+ of code merged at Anthropic (May 2026), shipped 8x more code per quarter than pre-2025, METR task-length doubled every 4 months (4 min in Mar 2024 → 12 hr by Apr 2026). Clark to BBC: 'The AI industry has a gas pedal, but it doesn't have a brake pedal.'",
+        "zh": "Anthropic 联合创始人 Jack Clark 与 Marina Favaro 联合发布《当 AI 自己构建自己》，警告递归自我改进（RSI）正在逼近，并指出 AI 进步如今受限于芯片、电力和带宽 —— 而非智能本身。数据点：Claude 撰写了 Anthropic 合并代码的 80% 以上（2026 年 5 月），季度发版代码量较 2025 年前增长 8 倍，METR 任务完成时长每 4 个月翻一倍（2024 年 3 月 4 分钟 → 2026 年 4 月 12 小时）。Clark 接受 BBC 采访时表示：\"AI 行业有油门，但没有刹车。\""
+      },
+      "insight": {
+        "en": "05 *Anthropic's pause proposal is mathematically impossible to honor — and the IPO is why.* Clark's call for a 'verifiable, coordinated pause' among frontier labs lands three weeks before Anthropic's confidential S-1 hits the SEC. As Gary Marcus put it, the call is 'the most incredible, cost-free piece of rhetoric' — once you're a public company reporting quarterly, you can't throttle training runs without inviting a shareholder suit. The METR data is the load-bearing part: if task-length really does double every 4 months, and Claude writes 80% of Anthropic's code, then Anthropic is essentially funding its own R&D replacement. The hypocrisy read is easy. The harder read: the only frontier lab that has internal RSI data (because Claude writes their code) is the one publishing the warning. OpenAI's June 9 IPO filing is conspicuously silent on RSI. Google's response is to buy more compute. Meta's response is to ship Hatch. Anthropic is the only lab that has stopped to count what 'self-improvement' actually looks like inside its own walls, and the answer scared them.",
+        "zh": "05 *Anthropic 的暂停提议在数学上无法兑现 —— 而这恰恰是 IPO 的原因。* Clark 呼吁前沿实验室之间建立\"可验证的协同暂停\"，但时间点恰在 Anthropic 秘密 S-1 文件递交给 SEC 的三周前。正如 Gary Marcus 所言，这一呼吁是\"最难以置信的、零成本的修辞\" —— 一旦成为上市公司按季报账，就无法在不招致股东诉讼的情况下削减训练规模。METR 数据是承重墙：如果任务完成时长真的每 4 个月翻一番，而 Claude 写出了 Anthropic 80% 的代码，那么 Anthropic 实际上在资助自己 R&D 的替代者。指责虚伪很容易。更难读懂的是：唯一拥有内部 RSI 数据的（因为 Claude 在写他们的代码）前沿实验室，正在发布警告。OpenAI 6 月 9 日的 IPO 申请对 RSI 讳莫如深。Google 的回应是买更多算力。Meta 的回应是推出 Hatch。Anthropic 是唯一停下来计算\"自我改进\"在其内部究竟是什么样子的实验室，而答案吓到了他们自己。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google NotebookLM upgrades to Gemini 3.5 + Antigravity, ships secure cloud computer with 100+ skills",
+        "zh": "Google NotebookLM 升级至 Gemini 3.5 + Antigravity，配备 100+ 技能的云端安全计算机"
+      },
+      "url": "https://blog.google/innovation-and-ai/products/notebooklm/better-research-notebooklm/",
+      "source": "Google Blog",
+      "time": "2026-06-08",
+      "description": {
+        "en": "NotebookLM now defaults to Gemini 3.5 with Antigravity integration (Google's agentic platform). Each notebook gets its own secure cloud computer that can write and run code across 100+ curated skills. New output formats: PDF/DOCX, charts, Excel/PPTX, Nano Banana images, CSV/JSON. Google reports 65% average win rate over prior system (78.2% on web research, 69.9% on large-doc analysis). New 'loose ideas' mode uses Google Search to find sources. Rolling out to AI Ultra subscribers and Workspace business customers.",
+        "zh": "NotebookLM 现默认采用 Gemini 3.5 并集成 Antigravity（Google 的智能体平台）。每个 notebook 拥有独立的安全云计算机，可在 100 多项精选技能中编写并运行代码。新的输出格式包括：PDF/DOCX、图表、Excel/PPTX、Nano Banana 图像、CSV/JSON。Google 报告新系统相对旧系统平均胜率 65%（网页研究 78.2%、大文档分析 69.9%）。新增\"模糊想法\"模式借助 Google 搜索寻找资料。正在向 AI Ultra 订阅者和 Workspace 企业客户推出。"
+      },
+      "insight": {
+        "en": "06 *NotebookLM is now the only consumer app with a verifiable, sandboxed agent runtime.* The 'secure cloud computer' inside each notebook is a stateful Linux sandbox — the same pattern Google's new Interactions API uses for Gemini Managed Agents. Two products, one infrastructure: Google's betting the agent runtime is the platform, not the model. The 65% win rate number is internal but the framing matters: 78% on web research is the right number to call out because that's the task every other AI research tool (Perplexity, ChatGPT Deep Research, Claude with web) is also trying to win. NotebookLM's differentiator isn't the model — it's the persistent environment. The 100+ curated skills are interesting because they're first-party curated (no skill-store, no third-party install risk), which puts Google in direct contrast to Anthropic's Project Glasswing and OpenAI's plugin ecosystem. Note also: NotebookLM was the only Google product to ship a model upgrade today while Gemini 3.5 was simultaneously being announced as the default for Workspace. The agent runtime rollout is faster than the model rollout — the company now treats agent plumbing as the bigger release.",
+        "zh": "06 *NotebookLM 现在是唯一拥有可验证、沙箱化智能体运行时的消费级应用。* 每个 notebook 内部的\"安全云计算机\"是一个有状态的 Linux 沙箱 —— 与 Google 新发布的 Interactions API 用于 Gemini Managed Agents 的模式完全相同。两个产品，一套基础设施：Google 把赌注压在\"智能体运行时就是平台\"而非\"模型就是平台\"。65% 胜率是内部数据，但值得拿出来说的是 78% 的网页研究胜率 —— 因为这正是 Perplexity、ChatGPT Deep Research、Claude with web 都在争夺的任务。NotebookLM 的差异化不是模型，而是持久化环境。100+ 精选技能值得关注，因为它们是 Google 一方亲自策展的（无技能商店、无第三方安装风险），这让 Google 与 Anthropic 的 Project Glasswing 和 OpenAI 的插件生态形成鲜明对比。还有一个细节：NotebookLM 是今天唯一在 Gemini 3.5 同时被宣布为 Workspace 默认模型时也发布模型升级的 Google 产品。智能体运行时的发布节奏比模型更快 —— Google 已经把智能体管线视为更大的发布。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta 'Hatch' AI agent testing: $200/mo Hatch Plus tier, currently powered by Claude Sonnet, transitioning to in-house Muse Spark",
+        "zh": "Meta \"Hatch\" AI 智能体进入测试：Hatch Plus 200 美元/月，当前由 Claude Sonnet 驱动，未来切换到自研 Muse Spark"
+      },
+      "url": "https://indianexpress.com/article/technology/tech-news-technology/meta-testing-hatch-ai-assistant-as-ai-race-with-openai-anthropic-heats-up-report-10729225/",
+      "source": "Indian Express",
+      "time": "2026-06-08",
+      "description": {
+        "en": "Meta is internally testing 'Hatch,' a consumer AI agent for task automation (code, presentations, scheduling, email), with a 'Hatch Plus' premium tier reported at $200/month — on par with ChatGPT Pro and Claude Max. Hatch is currently being tested with Anthropic's Claude Sonnet as the underlying model, with plans to transition to Meta's in-house Muse Spark. Modular 'skills' system for third-party service integration, with potential embed into Instagram for billion-user reach.",
+        "zh": "Meta 正在内部测试 \"Hatch\"，一款面向消费者的任务自动化 AI 智能体（代码、演示、日程、邮件），其中 \"Hatch Plus\" 高级版定价 200 美元/月 —— 与 ChatGPT Pro 和 Claude Max 持平。Hatch 当前以 Anthropic Claude Sonnet 作为底层模型进行测试，未来计划切换到 Meta 自研的 Muse Spark。模块化\"技能\"系统支持第三方服务集成，并可能嵌入 Instagram 触达数十亿用户。"
+      },
+      "insight": {
+        "en": "07 *Meta is the first frontier lab to publicly route through a competitor's model while building its own.* The Hatch detail nobody's talking about: the test version of Meta's flagship consumer agent is running on Claude Sonnet, not Llama. The plan is to swap to Muse Spark once it ships, but the architecture choice — Anthropic for the consumer-facing test bed, in-house for the production version — tells you what Zuckerberg thinks of Meta's current model quality. It also means Anthropic just got a second distribution channel with billion-user potential, on top of the AWS deal OpenAI just announced. The $200/month price point matches ChatGPT Pro and Claude Max exactly — Meta is signaling 'we're tier-1, not undercutting.' That's a change from Meta's historical playbook of free or ad-supported. The skills-system design is the most consequential piece: if Hatch ships with a third-party skills marketplace, Meta gets the Apple App Store moment for AI agents, with Instagram as the install base. The strategic question is whether the 2.5B+ Instagram users actually want a $200/month agent, or whether Meta plans to bundle Hatch with ad-free subscriptions. Either way, Meta just declared the consumer agent market is now a three-horse race (ChatGPT, Claude, Hatch), not a two-horse one.",
+        "zh": "07 *Meta 是第一家在构建自家模型的同时公开走竞品模型的前沿实验室。* 没人注意到的 Hatch 细节是：Meta 这款旗舰消费智能体的测试版跑的是 Claude Sonnet，而非 Llama。计划是 Muse Spark 出炉后切换，但这种架构选择 —— 消费者测试用 Anthropic、生产版本用自研 —— 透露了 Zuckerberg 对 Meta 当前模型质量的真实判断。这也意味着 Anthropic 刚刚获得了一个拥有十亿用户潜力的第二条分发渠道，外加 OpenAI 刚刚宣布的 AWS 协议。200 美元/月的价格与 ChatGPT Pro 和 Claude Max 完全对齐 —— Meta 在发出信号\"我们是一线阵营，不打价格战\"。这与 Meta 历史上免费或广告支持的打法完全不同。技能系统设计是最有分量的部分：如果 Hatch 推出时带第三方技能市场，Meta 将迎来 AI 智能体的\"苹果应用商店时刻\"，而安装基础是 Instagram。战略问题是：25 亿以上 Instagram 用户真的想要 200 美元/月的智能体吗？还是 Meta 计划把 Hatch 与免广告订阅捆绑？无论如何，Meta 刚刚宣告：消费级智能体市场现在是三马赛跑（ChatGPT、Claude、Hatch），不再是双雄争霸。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Three things happened on June 8-9 that, taken together, define the AI market's next phase. First, the compute layer consolidated: Google's $920M/month SpaceX deal, sitting next to Anthropic's $1.25B/month SpaceX deal, makes clear that the 2026 frontier is gated by who has signed the largest capacity contract — not who has the best model. Second, the model layer went public: OpenAI's $852B IPO filing, landing the same week as Anthropic's $965B confidential submission, means that within six months the two most-watched AI labs will report quarterly training spend, RLHF headcount, and revenue concentration. Every claim Anthropic or OpenAI makes about safety, alignment, and self-improvement will be measured against a 10-Q. Third, the application layer bifurcated: Apple's AFM 3 is the on-device bet (sparse 20B with 1-4B active, IFP routing from NAND, built on Gemini-distilled teachers), while Xiaomi's 1000-TPS MiMo is the inference-cost bet (commodity 8-GPU, open-source, no custom silicon). Meta's Hatch, meanwhile, is the consumer-bundling bet — $200/month, Instagram as install base, Claude as the test-time model. Jack Clark's 'brake pedal' call is the only one of these stories that is not, at its core, a commercial move. That timing is not a coincidence. As Anthropic moves toward IPO, the only way to call for a pause without binding your own company is to call for it before the S-1 locks in your obligations. The Anthropic pause is rhetoric, but it's also a filing deadline. The day after OpenAI's IPO leaks, the gas pedal and the brake pedal became the same pedal.",
+    "zh": "6 月 8-9 日发生的三件事，综合起来定义了 AI 市场的下一阶段。首先，算力层加速整合：Google 与 SpaceX 每月 9.2 亿美元的交易，叠加 Anthropic 每月 12.5 亿美元的交易，明确了 2026 年的前沿门槛是谁签下了最大的容量合同 —— 而非谁的模型最好。其次，模型层走向公开：OpenAI 8520 亿美元的 IPO 申请与 Anthropic 9650 亿美元的秘密提交在同一周落地，意味着六个月内最受关注的两家 AI 实验室将按季度披露训练支出、RLHF 团队规模与收入集中度。Anthropic 与 OpenAI 关于安全、对齐和自我改进的每一项声明，都将被 10-Q 财报逐条丈量。第三，应用层出现分化：苹果的 AFM 3 押注端侧（20B 稀疏模型，激活 1-4B，IFP 从 NAND 路由，由 Gemini 蒸馏教师训练）；小米的 1000 TPS MiMo 押注推理成本（通用 8 卡节点、开源、无需定制芯片）；Meta 的 Hatch 押注消费捆绑（200 美元/月，Instagram 作为安装基础，Claude 作为测试期模型）。Jack Clark 的\"刹车\"呼吁是这些故事中唯一本质上不是商业动作的一条。这并非巧合。Anthropic 走向 IPO 的过程中，在不约束自己公司的情况下呼吁暂停，唯一时机就是在 S-1 锁定义务之前。Anthropic 的暂停是修辞，但也是一份文件截止日。OpenAI 的 IPO 消息泄露的第二天，油门和刹车就变成了同一块踏板。"
+  }
+}

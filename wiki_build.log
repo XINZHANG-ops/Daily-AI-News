@@ -1365,3 +1365,30 @@ The wiki_sessions review showed:
 ### Lint Status
 - 6 new pages each have 4-11 inbound links (no orphans among new pages)
 - All broken links I introduced are fixed (5 remaining broken links are pre-existing from earlier ingests, not caused by this update)
+All updates are in place. Here's a summary of what was processed:
+
+## Wiki Ingest Summary — 2026-06-08
+
+**Processed 1 new date:** `data/2026-06-08.json` (3 GitHub repos, 6 AI news items, daily insight)
+
+### Key Themes Captured
+1. **Hybrid Reasoning Consensus** — Three frontier releases in 10 days (Nemotron 3 Ultra, MAI-Thinking-1, Unisound U2) all converged on hybrid explicit-CoT + implicit-latent reasoning
+2. **Bifurcated Industry** — Frontier labs raise capability ceilings, infrastructure players lower cost floors
+3. **Anthropic 90% Internal Claude Adoption** — First public admission that human code review is the binding constraint on recursive self-improvement
+4. **Claude 1,858% YoY Growth** — Largest single-quarter absolute jump; profitability-or-near for all three frontier labs
+5. **Agent Plumbing Era** — Mellum2 (Apache 2.0) + Copilot token billing + Cosmos 3 OpenMDW 1.1 license
+
+### Pages Created
+- **Sources**: `unisound` (Hong Kong-listed Chinese AI), `jetbrains` (Mellum2 release)
+- **Entities**: `unisound-u2` (Hybrid Thinking + MaaS), `mellum-2` (12B MoE Apache 2.0), `snowey` (closed-loop agent), `gitpup-agent` (6-stage skill tree), `agent-ghost` (6-tier memory + MCTS)
+
+### Pages Updated
+- **Topics (7)**: llm_models, ai_companies, agentic_ai, ai_infrastructure, physical_ai, github_trends, ai_funding
+- **Sources (5)**: anthropic, openai, google, nvidia, github
+- **Timelines**: 2026-06 (June 8: hybrid reasoning consensus + bifurcated industry)
+- **index.md**: Updated all 5 sections, added 7 new entries, updated Last updated line
+- **processed.json**: Appended `2026-06-08`
+- **log.md**: New ingest entry with chat-session learning notes
+
+### Chat Session Learning (3 Q&A sessions from Apr 23-26)
+Confirmed recurring themes: agent infrastructure layer consolidation, frontier model portfolio war, Mythos Bank of England escalation, multi-turn vulnerability as structural. No corrections needed — existing pages already cover these patterns.
