@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-06-07
+last_updated: 2026-06-09
 ---
 
 # AI Safety
@@ -196,3 +196,11 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[entities/ibm-bob]] — IBM's Project Glasswing membership extends Bob's multi-model orchestration to include security-specific routing; governance infrastructure now includes cybersecurity coalition participation
 - [[timelines/2026-05]] — May 14-16 adds Colorado AI Act, UK chatbot, and YouTube deepfake expansion to the month's safety narrative alongside alignment reality checks and regulatory fragmentation
 - [[ideas/two-track-ai-future]] — The two-track AI future institutionalizes safety vs deployment tension; companies must choose their foundational track
+- [[sources/anthropic]] — June 7-9: Jack Clark + Marina Favaro publish "When AI builds itself" calling for coordinated "brake pedal" on frontier AI; cites that Claude now authors 80%+ of internal code; comes the same week as OpenAI's $852B IPO filing — pause advocacy is structurally a filing-deadline play
+- [[sources/openai]] — June 9: $852B confidential IPO filing makes every claim about safety, alignment, and self-improvement measurable against a 10-Q; safety positioning becomes an obligation rather than strategy
+- [[entities/claude-mythos]] — June 9: "When AI builds itself" cites Mythos Preview's 16+ hour autonomous tasks as the canonical case study for recursive self-improvement; the safety story becomes the safety filing
+- [[ideas/safety-restricted-releases]] — June 9: Jack Clark's "brake pedal" is the formalization of the Mythos-style capability-based restriction as a treaty-level concept; the EU access gap is the geopolitical cost
+- [[ideas/three-tier-safety-playbook]] — June 9: Anthropic now has all three tiers (capability-restricted Mythos, verifiable-pause advocacy, public Mythos access via ENISA), positioning itself as the safety-narrative leader heading into dual IPO filings
+- [[ideas/ai-governance-urgency]] — June 9: the "brake pedal" call is the first time a frontier lab CEO has made capability-restriction advocacy a commercial deadline; the gap between AI capability and governance is now a financial event
+- [[topics/ai_funding]] — June 9: pause advocacy is structurally a filing-deadline play; safety positioning is now tied to IPO timing, not principle-driven
+- [[timelines/2026-06]] — June 7-9: "When AI builds itself" + OpenAI $852B IPO filing = the day the gas pedal and the brake pedal became the same pedal

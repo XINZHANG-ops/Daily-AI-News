@@ -1,7 +1,7 @@
 ---
 title: "Safety-Restricted Releases"
 slug: safety-restricted-releases
-last_updated: 2026-05-15
+last_updated: 2026-06-09
 ---
 
 # Safety-Restricted Releases
@@ -32,3 +32,10 @@ By May 12, 2026, the safety-restricted release model had acquired a geopolitical
 - [[entities/claude-mythos]] — Mythos restricted to ~12 US tech firms; EU regulators denied preview access despite 4-5 meetings and Bundesbank demands; the restriction appears driven by liability control as much as safety
 - [[entities/gpt-5.5-cyber]] — OpenAI's EU cyber access expansion builds geopolitical relationships through model access, contrasting with Anthropic's restriction that alienates a major economic bloc
 - [[sources/google]] — Google's confirmation of AI-developed zero-days in the wild makes the EU access gap an immediate security concern; attackers already have AI-powered offensive capabilities while EU defenders lack equivalent tools
+- [[sources/anthropic]] — June 7-9: Jack Clark + Marina Favaro publish "When AI builds itself" calling for coordinated "brake pedal" on frontier AI; cites that Claude now authors 80%+ of internal code; comes the same week as OpenAI's $852B IPO filing
+- [[sources/openai]] — June 9: $852B confidential IPO filing makes every claim about safety, alignment, and self-improvement measurable against a 10-Q; safety positioning becomes an obligation rather than strategy
+- [[entities/claude-mythos]] — June 9: "When AI builds itself" cites Mythos Preview's 16+ hour autonomous tasks as the canonical case study for recursive self-improvement
+- [[ideas/three-tier-safety-playbook]] — June 9: Jack Clark's "brake pedal" is the formalization of the Mythos-style capability-based restriction as a treaty-level concept
+- [[ideas/ai-governance-urgency]] — June 9: the brake pedal call is the first time a frontier lab CEO has made capability-restriction advocacy a commercial deadline
+- [[topics/ai_safety]] — June 9: pause advocacy is structurally a filing-deadline play; safety positioning is now tied to IPO timing, not principle-driven
+- [[timelines/2026-06]] — June 7-9: "When AI builds itself" + OpenAI $852B IPO filing = the day the gas pedal and the brake pedal became the same pedal

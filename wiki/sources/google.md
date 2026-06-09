@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-06-07
+last_updated: 2026-06-09
 ---
 
 # Google
@@ -83,6 +83,9 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 | 2026-06-01 | Gemini 3.5 Flash released | AI coding model prioritizing speed and price; CEO Pichai admitted being "a bit behind" on agentic coding |
 | 2026-06-03 | AI Overviews opt-out toggle | New Search Console toggle allowing website owners to exclude domains from AI-generated search results (AI Overviews and AI Mode) without affecting regular search; concession to publishers concerned about traffic siphon
 | 2026-06-05 | Colab CLI | Command-line interface for Colab with prepackaged skill file letting agents and developers manage remote Colab runtimes, fine-tune Gemma 3-1B, run training jobs from terminal; "primitive over UI" philosophy converging across Claude Code Skills, Hermes Agent, OpenCode; free compute as agent-friendly distribution |
+| 2026-06-05 | $920M/month SpaceX deal disclosed in SpaceX S-1 | Google pays SpaceX $920M/month Oct 2026-Jun 2029 (~$30-32B total) for ~110K NVIDIA GPUs at former xAI Memphis; sits next to Anthropic's $1.25B/month deal; makes clear frontier is gated by capacity contracts, not model quality |
+| 2026-06-08 | NotebookLM upgrades to Gemini 3.5 + Antigravity | NotebookLM now defaults to Gemini 3.5 with Antigravity integration (Google's agentic platform); each notebook gets its own secure cloud computer that can write and run code across 100+ curated skills; deepens Antigravity consumer reach |
+| 2026-06-09 | google/skills trending on GitHub | Official Google repository of Agent Skills for Google products (12.8k stars, 986 forks) trends top 3 on GitHub; ships 100+ curated skills; positions Google as agent capability standard alongside MCP (Anthropic) and tools API (OpenAI) |
 
 ## Connections
 - [[entities/ai-overviews]] — AI Overviews opt-out is a political compromise with publishers; signals confidence that AI summaries are good enough publishers won't want to opt out; reveals tension between AI search and open web that will widen as AI-generated answers improve
@@ -116,3 +119,15 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 - [[ideas/foundation-model-portfolio-war]] — June 8: Gemini's Workspace footprint is the most defensible enterprise moat in the industry because every month of delay by OpenAI's "super app" entrenches it further
 - [[topics/ai_search]] — June 8: Gemini Workspace + Android + Search integration is the AI Search category's structural moat; the "AI Overviews opt-out" was a tactical concession that doesn't change the integration lead
 - [[timelines/2026-06]] — June 8: the consumer side of the Frontier Convergence shows Gemini closing on ChatGPT; the question is whether OpenAI's "super app" transformation can stop the bleeding
+- [[sources/spacex]] — June 5: $920M/month SpaceX deal (disclosed in S-1) makes Google the second mega-customer at Colossus 1 after Anthropic; $30-32B total over 33 months signals the new compute procurement pattern for frontier AI labs
+- [[entities/notebooklm]] — June 8: NotebookLM upgrades to Gemini 3.5 + Antigravity with secure cloud computer per notebook; the Antigravity ecosystem gets its first major consumer distribution via NotebookLM's existing user base
+- [[entities/antigravity-platform]] — June 8: NotebookLM integration is the first major Antigravity consumer distribution; the 100+ curated skills become loadable capabilities in everyday research workflows
+- [[entities/google-skills]] — June 9: Google formalizes the Skills abstraction as a competitor to Anthropic's MCP; the "skill vs tool" standards battle enters open competition
+- [[topics/agentic_ai]] — June 8: NotebookLM + Antigravity is Google's response to the agent infrastructure layer consolidation; a secure cloud computer per notebook is the canonical "personal agent computer" pattern
+- [[topics/github_trends]] — June 9: google/skills trends top 3 on GitHub alongside last30days-skill and turbovec — three agent infrastructure repos trending simultaneously
+- [[sources/anthropic]] — June 8: NotebookLM's Antigravity integration deepens the Google-Anthropic infrastructure partnership even as the two compete on consumer AI agents
+- [[topics/ai_funding]] — June 5: Google's $920M/month SpaceX deal is the third mega-compute contract in 2026 (after Anthropic-SpaceX and Stargate), making it the new norm for frontier lab compute procurement
+- [[sources/nvidia]] — June 5: 110K NVIDIA GPUs is the largest single GPU allocation in a non-OpenAI/non-Anthropic deal; reinforces NVIDIA's structural dominance as the GPU supplier for all major compute contracts
+- [[ideas/agent-infrastructure-layer]] — June 9: google/skills, last30days-skill, and turbovec trending simultaneously demonstrates that the agent infrastructure layer is commoditizing from below in real time
+- [[ideas/protocol-standardization]] — June 9: google/skills is Google's bet on the Skills standard; will compete with Anthropic's MCP for agent capability distribution dominance
+- [[entities/afm-3]] — June 8: Apple AFM 3 ships with Gemini-distilled teachers; Google is both training partner and consumer-competitor in mobile AI — the most entangled AI partnership in the industry

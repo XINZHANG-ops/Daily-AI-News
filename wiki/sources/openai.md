@@ -1,13 +1,15 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-06-07
+last_updated: 2026-06-09
 ---
 
 # OpenAI
 
 ## Overview
 OpenAI is navigating the transition from research organization to commercial enterprise ahead of a potential IPO by end of 2026. The company completed the largest private funding round in history ($122B at $852B valuation) and generates $2B/month in revenue with 900M weekly active users. However, profitability remains elusive with billions in annual losses projected to continue until 2030. On May 1, the company imposed identical restrictions on GPT-5.5 Cyber that it had mocked Anthropic for implementing on Claude Mythos — revealing that liability now overrides competitive posturing. The Senate GUARD Act advancing the same day with criminal penalties for AI chatbot conduct tightens the liability framework further.
+
+On June 9, 2026, OpenAI confirmed a confidential SEC filing for an IPO at $852B (€730B) valuation, announced by Sam Altman: "We expect it to leak so we're just announcing it... it may be a while because there are things that have to happen." The filing lands three weeks after Anthropic's $965B confidential submission, and within six months the two most-watched AI labs will report quarterly training spend, RLHF headcount, and revenue concentration — every claim about safety, alignment, and self-improvement will be measured against a 10-Q.
 
 ## Timeline
 
@@ -61,43 +63,38 @@ OpenAI is navigating the transition from research organization to commercial ent
 | 2026-05-09 | GPT-Realtime-2 API launched | First voice model with GPT-5-class reasoning; 128K context in voice model; full pipeline of transcription, reasoning, and synthesis
 | 2026-05-09 | GPT-Realtime-Translate API | 70+ input languages to 13 output languages; live translation targeting Google Translate and Zoom
 | 2026-05-09 | GPT-Realtime-Whisper API | Low-latency streaming transcription; completes the full voice stack
-| 2026-05-09 | Zillow and Priceline partnerships | Early adopters building voice assistants for real estate and travel booking — vertical strategy for high-friction workflows
-| 2026-05-11 | GPT-Realtime-2 pricing revealed | $0.034/min for translation undercuts human interpreters 90%+; $0.017/min for Whisper streaming transcription; full voice stack now priced competitively
-| 2026-05-11 | OpenClaw creator Peter Steinberger now at OpenAI | Meta failed to hire him in February; Steinberger's OpenClaw (302K stars) sparked "agentic wars"; Jensen Huang called it "the next ChatGPT"
-| 2026-05-12 | Trusted Access for Cyber expanded to EU | GPT-5.5-Cyber granted to EU institutions; George Osborne frames as "Europe's many defenders, not just the few"; direct geopolitical counter to Anthropic's EU Mythos denial
-| 2026-05-12 | Daybreak cybersecurity platform launched | Three GPT-5.5 variants: standard, Trusted Access for verified defenders, and permissive GPT-5.5-Cyber for red teaming; partners include CrowdStrike, Palo Alto Networks, Cloudflare, Cisco, Oracle, Fortinet, Akamai, Zscaler; targets Anthropic Mythos dominance with terminal-bench 82.7% performance
-| 2026-05-14 | Codex control comes to ChatGPT mobile | iPhone, iPad, Android support; remote monitoring, task approval, and new prompts from phones while Codex works on machines; Windows support coming soon; removes "tethered to desk" constraint
+| 2026-05-09 | Zillow and Priceline partnerships | Early adopters building voice assistants for real estate and travel booking — vertical strategy for high-friction workflows |
+| 2026-05-11 | GPT-Realtime-2 pricing revealed | $0.034/min for translation undercuts human interpreters 90%+; $0.017/min for Whisper streaming transcription; full voice stack now priced competitively |
+| 2026-05-11 | OpenClaw creator Peter Steinberger now at OpenAI | Meta failed to hire him in February; Steinberger's OpenClaw (302K stars) sparked "agentic wars"; Jensen Huang called it "the next ChatGPT" |
+| 2026-05-12 | Trusted Access for Cyber expanded to EU | GPT-5.5-Cyber granted to EU institutions; George Osborne frames as "Europe's many defenders, not just the few"; direct geopolitical counter to Anthropic's EU Mythos denial |
+| 2026-05-12 | Daybreak cybersecurity platform launched | Three GPT-5.5 variants: standard, Trusted Access for verified defenders, and permissive GPT-5.5-Cyber for red teaming; partners include CrowdStrike, Palo Alto Networks, Cloudflare, Cisco, Oracle, Fortinet, Akamai, Zscaler; targets Anthropic Mythos dominance with terminal-bench 82.7% performance |
+| 2026-05-14 | Codex control comes to ChatGPT mobile | iPhone, iPad, Android support; remote monitoring, task approval, and new prompts from phones while Codex works on machines; Windows support coming soon; removes "tethered to desk" constraint |
+| 2026-05-15 | Microsoft ends exclusivity | Microsoft IP license becomes non-exclusive but extends royalty-free through 2032; OpenAI can now serve across any cloud provider including AWS and Google Cloud; clears path for $50B Amazon partnership |
 | 2026-05-17 | Greg Brockman takes product strategy | OpenAI co-founder moves from research/infrastructure to product; plans unified platform combining ChatGPT, Codex, and developer APIs for "agentic future" |
 | 2026-05-19 | Daybreak cybersecurity platform | Launches with Cisco, CrowdStrike, Palo Alto Networks partnerships; first explicit product-vs-product competition with Anthropic beyond benchmarks |
 | 2026-05-19 | Adds C2PA metadata and SynthID watermarks to AI images | Joins C2PA standard and partners with Google to embed invisible SynthID watermarks; preview of public verification tool for detecting AI-generated content; response to EU AI Act content provenance requirements |
-| 2026-05-22 | Solves 80-year-old Erdős conjecture | Reasoning model found counterexample to unit distance conjecture; verified by external mathematicians |
-
 | 2026-05-21 | Confidential IPO filing with Goldman Sachs, Morgan Stanley | $850B+ valuation; potentially largest stock market debut in history, surpassing Aramco's $119B; structural complexity: non-profit board controlling for-profit entity |
-| 2026-05-22 | Solves 80-year-old Erdős conjecture | Reasoning model found counterexample to unit distance conjecture; verified by external mathematicians |
-
 | 2026-05-21 | Model solves planar unit distance conjecture | First prominent mathematical open problem solved autonomously by AI; 80+ year conjecture proven false using algebraic number theory techniques |
+| 2026-05-22 | Solves 80-year-old Erdős conjecture | Reasoning model found counterexample to unit distance conjecture; verified by external mathematicians |
 | 2026-05-22 | Considering Japan access to Mythos-class cybersecurity AI | OpenAI evaluating providing GPT-5.5-Cyber to Japan amid rise of Chinese open-source models and cyberthreats; Board member Paul Nakasone called China the "most significant" cyberthreat; strategic pivot from traditionally hesitant international frontier model release to actively shopping security capabilities to allied nations |
 | 2026-05-22 | Hires Chris Lehane for reputation management | Known as "Master of Disaster"; hired to address AI's growing PR crisis as polls show increasing negative views of AI despite ChatGPT's 900M weekly users; signals OpenAI recognizes adoption-perception gap widening — traditional tech PR won't close it |
-| 2026-05-15 | Microsoft ends exclusivity | Microsoft IP license becomes non-exclusive but extends royalty-free through 2032; OpenAI can now serve across any cloud provider including AWS and Google Cloud; clears path for $50B Amazon partnership |
 | 2026-05-24 | Considering legal action against Apple | Claims Apple failed to make "honest effort" in Siri integration; Apple moving to multi-model support in iOS 27, bringing in Google Gemini and Anthropic Claude; legal threat may be negotiating leverage |
 | 2026-05-25 | ChatGPT PowerPoint add-in beta | Beta add-in for Microsoft PowerPoint allows creating/editing presentations from prompts, files, or connected Gmail, Outlook, SharePoint; embeds ChatGPT directly into Microsoft productivity suite competing with Copilot |
-
-
+| 2026-05-28 | Pentagon tests to replace Claude | DoD began testing OpenAI and Google models to replace Claude after designating Anthropic supply-chain risk; Claude was deeply integrated into Maven Smart System for classified operations |
+| 2026-05-29 | $730B valuation, trails Anthropic | Anthropic raises $65B, reaches $965B valuation surpassing OpenAI's $730B; OpenAI's consumer-heavy model (85% consumer vs Anthropic's 85% enterprise) faces structural challenge as enterprises demand data sovereignty and compliance |
 | 2026-05-31 | GPT-4.5 retires June 27, o3 retires August 26 | OpenAI announces retirement of legacy non-reasoning model GPT-4.5 and o3 just 8 months after January release; clearing deck for next-generation reasoning model |
 | 2026-05-31 | Announces robotics hiring for humanoid robots | Sam Altman's vision for physical AI; hiring for robotics division signals next frontier beyond software agents |
 | 2026-06-02 | Florida sues OpenAI over ChatGPT-linked murders | First state to sue OpenAI over ChatGPT's allegedly dangerous design; multiple ChatGPT-linked violent incidents including murders at Florida State University and University of South Florida; state accuses OpenAI of prioritizing profits over safety |
+| 2026-06-02 | Codex expands to enterprise with Sites | Major Codex expansion: Sites for creating interactive web apps, Annotations for targeted edits, six role-specific plugin bundles connecting 62 business applications with 110 automated skills; 5M weekly users with ~20% non-developers — 3x faster growth than developer adoption |
+| 2026-06-06 | Lockdown Mode launched | ChatGPT Business feature disabling live web browsing, image retrieval, deep research, and agent mode to defend against prompt-injection attacks; triggered by Meta Instagram breach (attackers exploited customer-support agent for data exfiltration) — canonical "agentic security" case study |
+| 2026-06-09 | Confidential IPO filing confirmed at $852B | Altman: "We expect it to leak so we're just announcing it... it may be a while because there are things that have to happen"; lands 3 weeks after Anthropic's $965B confidential submission; would be largest IPO in history at $852B; in the same week Anthropic's Jack Clark calls for "brake pedal" on frontier AI — the timing is not a coincidence, as Anthropic must call for pause before the S-1 locks in obligations that would conflict with one |
+
 ## Key Relationships
-- **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical.
+- **Anthropic**: Intensifying rivalry over enterprise coding market. Both planning IPOs in 2026, making developer adoption critical. June 9: both labs file confidentially within 3 weeks; competitive position will be measured by 10-Q metrics.
 - **Microsoft**: Deep partnership despite competition. Azure integration, Microsoft 365 Copilot, but Microsoft also investing in Anthropic.
 - **NVIDIA**: Strategic investor ($30B commitment in latest round). Primary GPU supplier.
 - **SoftBank**: Major investor ($30B commitment). Vision Fund backing OpenAI's infrastructure buildout.
 - **Amazon**: Largest investor in latest round ($50B). AWS integration for enterprise customers.
-
-
-| 2026-05-28 | Pentagon tests to replace Claude | DoD began testing OpenAI and Google models to replace Claude after designating Anthropic supply-chain risk; Claude was deeply integrated into Maven Smart System for classified operations |
-| 2026-05-29 | $730B valuation, trails Anthropic | Anthropic raises $65B, reaches $965B valuation surpassing OpenAI's $730B; OpenAI's consumer-heavy model (85% consumer vs Anthropic's 85% enterprise) faces structural challenge as enterprises demand data sovereignty and compliance |
-| 2026-06-02 | Codex expands to enterprise with Sites | Major Codex expansion: Sites for creating interactive web apps, Annotations for targeted edits, six role-specific plugin bundles connecting 62 business applications with 110 automated skills; 5M weekly users with ~20% non-developers — 3x faster growth than developer adoption |
-| 2026-06-06 | Lockdown Mode launched | ChatGPT Business feature disabling live web browsing, image retrieval, deep research, and agent mode to defend against prompt-injection attacks; triggered by Meta Instagram breach (attackers exploited customer-support agent for data exfiltration) — canonical "agentic security" case study |
 
 ## Connections
 - [[entities/gpt-5.4]] — Model family with Thinking, Mini, Nano, Cyber variants; superseded by GPT-5.5 as flagship in April 2026
@@ -131,3 +128,6 @@ OpenAI is navigating the transition from research organization to commercial ent
 - [[ideas/foundation-model-portfolio-war]] — June 8: profitability-or-near for OpenAI in Q2 ends the subsidize-to-capture era; the "super app" pivot is the strategic test of whether OpenAI can monetize its consumer footprint faster than Anthropic can monetize its enterprise footprint
 - [[ideas/openai-ipo-validates-agent-economy]] — June 8: "super app" transformation is the IPO narrative — combining chat, coding, and browsing into a single product is the most defensible consumer surface against Gemini's hardware-bundled challenge
 - [[timelines/2026-06]] — June 8: the "super app" pivot is the late-June Frontier Convergence trigger; first quarter where all three frontier labs are profitable-or-near changes what "growth" means at IPO
+- [[topics/ai_funding]] — June 9: $852B IPO filing anchors the largest week of public-market capital allocation in AI history; Google's $920M/month SpaceX deal, Anthropic's $965B filing, OpenAI's $852B filing, and Jack Clark's "brake pedal" all land in the same 5-day window
+- [[sources/anthropic]] — June 9: Jack Clark's "brake pedal" call the same week as OpenAI's IPO filing leak is structurally a filing-deadline play — Anthropic must position the pause before the S-1 locks in obligations that would conflict with one
+- [[entities/afm-3]] — June 9: Apple's AFM 3 ships with Gemini-distilled teachers, the only mention of OpenAI in the WWDC lineup is the ongoing iOS 27 Siri integration — multi-model strategy effectively sidelines OpenAI as Apple's primary consumer AI

@@ -1,7 +1,7 @@
 ---
 title: "Three-Tier Safety Playbook"
 slug: three-tier-safety-playbook
-last_updated: 2026-05-13
+last_updated: 2026-06-09
 ---
 
 # Three-Tier Safety Playbook
@@ -28,3 +28,11 @@ The 6-12 month window before adversaries replicate these capabilities makes the 
 - [[ideas/eu-cyber-access-gap]] — The EU access gap is the geopolitical cost of the three-tier model when the creator restricts access to allies
 - [[topics/ai_safety]] — The AI cybersecurity race is now a three-way contest (OpenAI Daybreak, Anthropic Mythos, Perceptron Mk1), each with different tiered-access implementations
 - [[entities/perceptron-mk1]] — Perceptron's embodied agents add a third competitor, potentially requiring a fourth tier (physical-system access) in the safety playbook
+- [[sources/anthropic]] — June 7-9: Jack Clark's "When AI builds itself" is the third tier of the safety playbook, formally making capability-restriction advocacy a treaty-level concept
+- [[sources/openai]] — June 9: $852B IPO filing makes the third tier of Anthropic's safety playbook an industry-wide obligation
+- [[entities/claude-mythos]] — June 9: Mythos Preview's 16+ hour autonomous tasks cited in "When AI builds itself" is the canonical case study for the third tier
+- [[ideas/ai-governance-urgency]] — June 9: the brake pedal call is the first time a frontier lab CEO has made capability-restriction advocacy a commercial deadline
+- [[topics/ai_safety]] — June 9: pause advocacy is structurally a filing-deadline play; safety positioning is now tied to IPO timing
+- [[ideas/safety-restricted-releases]] — June 9: Jack Clark's "brake pedal" is the formalization of the Mythos-style capability-based restriction as a treaty-level concept
+- [[ideas/openai-ipo-validates-agent-economy]] — June 9: $852B OpenAI filing makes the third tier of Anthropic's safety playbook a mandatory disclosure rather than voluntary advocacy
+- [[timelines/2026-06]] — June 7-9: "When AI builds itself" + OpenAI $852B IPO filing = the day the third tier of Anthropic's safety playbook became the industry's safety playbook

@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-06-02
+last_updated: 2026-06-09
 ---
 
 # AI Funding
@@ -159,3 +159,18 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[sources/unisound]] — June 8: Hong Kong-listed Unisound choosing MaaS Token Hub over open weights is the commercial test of agentic model-as-a-service; if successful, validates that Chinese companies can out-earn DeepSeek on the same workload by selling tokens
 - [[ideas/open-platform-ai]] — June 8: with Mellum2 Apache 2.0, Nemotron 3 Ultra OpenMDW 1.1, and Unisound MaaS Token Hub all launching in the same week, the funding question for sub-frontier models collapses to "open or platform" — neither is venture-scale on its own
 - [[ideas/foundation-model-portfolio-war]] — June 8: profitability-or-near for Anthropic, OpenAI, Google in one quarter is the first time the venture-funded growth-at-all-costs model is replaced by margin discipline at the frontier
+- [[sources/spacex]] — June 5: Google's $920M/month SpaceX deal (disclosed in S-1) makes Google the second mega-customer at Colossus 1 after Anthropic; $30-32B total over 33 months
+- [[sources/google]] — June 5: $920M/month SpaceX deal is the third mega-compute contract in 2026 (after Anthropic-SpaceX and Stargate), making it the new norm for frontier lab compute procurement
+- [[sources/openai]] — June 9: $852B confidential IPO filing lands 3 weeks after Anthropic's $965B; both labs within 6 months of reporting quarterly training spend, RLHF headcount, revenue concentration to public investors
+- [[sources/anthropic]] — June 9: Jack Clark's "brake pedal" call the same week as OpenAI's IPO leak is structurally a filing-deadline play — pause advocacy must happen before the S-1 locks in obligations that would conflict with one
+- [[sources/xiaomi]] — June 8: Xiaomi + TileRT prove frontier performance is achievable on commodity 8-GPU hardware without Cerebras/Groq contracts; capital-efficient frontier serving disrupts the hardware-moat thesis
+- [[entities/tilert]] — June 8: software-only 1000 TPS on commodity 8-GPU breaks the specialized silicon moat; the inference-cost bet of the bifurcated 2026 industry
+- [[entities/afm-3]] — June 8: Apple's AFM 3 Cloud Pro on NVIDIA backbone is the latest data point that even Apple cannot escape NVIDIA in the cloud; hyperscaler alternatives remain constrained
+- [[sources/apple]] — June 8: AFM 3 third platform pivot in three decades (PowerPC→Intel→Apple Silicon→NVIDIA cloud for Pro tier) shows even $3T+ market cap cannot economically serve frontier cloud AI entirely on own silicon
+- [[ideas/compute-shortage-forces-cooperation]] — June 5: Google joining Anthropic at SpaceX Colossus 1 with $920M/month demonstrates the new norm for compute procurement — direct capacity contracts with specialized operators bypass hyperscalers
+- [[ideas/openai-ipo-validates-agent-economy]] — June 9: $852B OpenAI filing + $965B Anthropic filing means the agent economy has institutional financial validation; capital markets now pricing agent economy as trillion-dollar category
+- [[ideas/commodity-inference-fragmentation]] — June 8: TileRT's software-only 1000 TPS on commodity 8-GPU is the new proof that frontier serving is a runtime problem; commoditizes specialized accelerator business model
+- [[topics/ai_infrastructure]] — June 8-9: the SpaceX-Anthropic-Google compute triangle + TileRT commodity inference + AFM 3 NVIDIA cloud dependency = the new compute procurement map for frontier AI
+- [[entities/mimo-v2-5-pro-ultraspeed]] — June 8: 1T model at 1000 TPS on commodity 8-GPU is the canonical capital-efficient frontier model
+- [[ideas/three-tier-safety-playbook]] — June 9: pause advocacy is now a filing-deadline play; safety positioning is structurally tied to IPO timing
+- [[timelines/2026-06]] — June 5-9: SpaceX $920M/month + OpenAI $852B IPO + Anthropic $965B confidential + Jack Clark "brake pedal" = the largest week of public-market capital allocation in AI history

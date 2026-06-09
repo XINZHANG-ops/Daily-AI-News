@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-06-07
+last_updated: 2026-06-09
 ---
 
 # LLM Models
@@ -324,3 +324,16 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[ideas/foundation-model-portfolio-war]] — June 8: profitability-or-near for all three frontier labs in one quarter is the first time "subsidize to capture" era ends; revenue/profit is now the metric that matters
 - [[ideas/safety-restricted-releases]] — June 8: Anthropic's "verifiable pause" advocacy is strategically clever — by pushing for a treaty-style verification regime, Anthropic implicitly endorses the Mythos-style capability-based restriction that competitors must then match
 - [[timelines/2026-06]] — June 8: hybrid reasoning consensus crystallizes publicly (Unisound U2 + Nemotron 3 Ultra + MAI-Thinking-1 in ten days); the "intelligence density" era replaces parameter-counting
+- [[entities/afm-3]] — June 9: Apple's third-generation Apple Foundation Models family; 5-model lineup including on-device sparse 20B Core Advanced (1-4B active via IFP routing from NAND) and Cloud Pro on NVIDIA; Gemini-distilled teachers; the on-device bet of the bifurcated 2026 industry
+- [[entities/mimo-v2-5-pro-ultraspeed]] — June 9: Xiaomi + TileRT claim first 1T model to break 1000 TPS on commodity 8-GPU node; pairs with AFM 3 as the two architectural extremes (on-device sparse vs commodity 1000 TPS)
+- [[entities/tilert]] — June 9: runtime that delivers 1000+ TPS on 1T model via SIMD-aware execution; proves frontier-tier serving is a runtime problem, not a hardware problem
+- [[topics/ai_companies]] — June 9: AFM 3 is Apple's third platform pivot in three decades (PowerPC→Intel→Apple Silicon→NVIDIA cloud for Pro tier); Apple cannot escape NVIDIA for frontier cloud AI even with $3T+ market cap
+- [[ideas/two-track-ai-future]] — June 9: AFM 3 (on-device private), Xiaomi MiMo (commodity-cost), Meta Hatch (consumer-bundling), and OpenAI superapp (cloud-superapp) are the four mutually exclusive application-layer bets crystallizing
+- [[topics/ai_funding]] — June 9: OpenAI's $852B confidential IPO filing 3 weeks after Anthropic's $965B submission means both labs report quarterly training spend, RLHF headcount, and revenue concentration to public investors within 6 months
+- [[ideas/three-tier-safety-playbook]] — June 9: Jack Clark's "brake pedal" call the same week as OpenAI's IPO leak is structurally a filing-deadline play — pause advocacy must happen before the S-1 locks in obligations that would conflict with one
+- [[sources/openai]] — June 9: OpenAI's IPO filing makes every claim about safety, alignment, and self-improvement measurable against a 10-Q; "super app" transformation becomes an obligation rather than a strategy
+- [[sources/anthropic]] — June 9: Jack Clark's "When AI builds itself" with 80%+ Claude-authored code is the first public admission by a frontier lab that recursive self-improvement is gated by human code review
+- [[sources/xiaomi]] — June 9: MiMo-V2.5-Pro-UltraSpeed + TileRT is the canonical China-efficiency-advantage thesis; frontier performance from commodity hardware via runtime innovation
+- [[ideas/efficiency-frontier]] — June 9: AFM 3 IFP routing from NAND (1-4B active per layer) and TileRT 1000 TPS on commodity 8-GPU are the two new efficiency levers — both are software/run-time innovations, not chip innovations
+- [[entities/gemini-3-1-pro]] — June 9: Gemini-distilled teachers in AFM 3 reveal Google's continued training partnership with Apple even as Apple hedges across multiple providers; the most entangled AI partnership in the industry
+- [[timelines/2026-06]] — June 9: the compute-IPO-pause convergence (Google-SpaceX $920M/month, OpenAI $852B IPO, Jack Clark "brake pedal", AFM 3, Xiaomi 1000 TPS) defines the industry's next phase

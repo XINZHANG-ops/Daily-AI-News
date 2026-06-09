@@ -1,7 +1,7 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-06-07
+last_updated: 2026-06-09
 ---
 
 # AI Companies
@@ -298,3 +298,15 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[ideas/foundation-model-portfolio-war]] — June 8: profitability-or-near for Anthropic, OpenAI, Google in one quarter is the definitive end of the "subsidize to capture" era; revenue/profit replaces ARR growth as the metric that matters
 - [[ideas/agentic-developer-as-primary-end-user]] — June 8: Mellum2's "sub-agent" positioning (routing, RAG pipelines, test generation) sells the idea that the "agentic IDE" is a fleet of models, not a single brain — confirms the developer-as-orchestrator persona
 - [[entities/copilot-agent-tier]] — June 8: GitHub Copilot's token billing makes the cost of Opus 4.8 vs Haiku 4.5 vs Mellum2 directly visible per-team; the cheapest viable model becomes the strategic beneficiary
+- [[entities/afm-3]] — June 8: Apple's third platform pivot in three decades (PowerPC→Intel→Apple Silicon→NVIDIA cloud for Pro tier); on-device sparse MoE with 1-4B active per token via IFP routing from NAND
+- [[entities/afm-3-cloud-pro]] — June 8: AFM 3 Cloud Pro on NVIDIA backbone is Apple's first explicit cloud-NVIDIA dependency since the 1990s; vertical integration philosophy doesn't extend to frontier cloud AI
+- [[sources/apple]] — June 8: AFM 3 5-model family + iOS 27 Siri overhaul + Gemini-distilled teachers + Google training partnership reveals Apple is the most entangled AI partnership in the industry
+- [[entities/hatch]] — June 8: Meta's Hatch at $200/month is the consumer-bundling bet of the bifurcated 2026 industry; currently Claude Sonnet-powered, transitioning to Muse Spark
+- [[sources/meta]] — June 8: Hatch with Claude Sonnet as test-time model demonstrates Meta's continued reliance on Anthropic for agentic capability even with proprietary Muse Spark
+- [[sources/xiaomi]] — June 8: MiMo-V2.5-Pro-UltraSpeed + TileRT is the canonical Chinese frontier model vendor; 1000 TPS on commodity 8-GPU hardware
+- [[sources/openai]] — June 9: $852B confidential IPO filing makes every claim about safety, alignment, and self-improvement measurable against a 10-Q
+- [[sources/anthropic]] — June 9: $965B valuation + $852B OpenAI filing within 3 weeks = the bifurcated industry's financial mirror; the same week, Jack Clark calls for "brake pedal" — pause advocacy is structurally tied to filing deadlines
+- [[ideas/two-track-ai-future]] — June 9: AFM 3 (Apple on-device), Xiaomi MiMo (commodity-cost), Meta Hatch (consumer-bundling), and OpenAI superapp (cloud-superapp) are the four mutually exclusive application-layer bets crystallizing
+- [[entities/gemini-3-1-pro]] — June 8: Gemini-distilled teachers in AFM 3 reveal Google's continued training partnership with Apple; the most entangled AI partnership in the industry
+- [[ideas/three-tier-safety-playbook]] — June 9: Jack Clark's "brake pedal" call is the third tier of Anthropic's safety playbook (capability-restricted Mythos, verifiable-pause advocacy, public Mythos access via ENISA)
+- [[timelines/2026-06]] — June 8-9: the five-story convergence (AFM 3, OpenAI $852B IPO, Xiaomi 1000 TPS, Google-SpaceX $920M/month, Jack Clark "brake pedal") defines the industry's next phase

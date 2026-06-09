@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-06-07
+last_updated: 2026-06-09
 ---
 
 # Agentic AI
@@ -286,3 +286,15 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[ideas/agent-verticalization]] — June 8: Gitpup-agent's "Golden Retriever" 6-stage skill tree is the literal packaging of agent verticalization as a gamified learning path; the next 12 months will see every vertical packaged as a skill progression, not a static model
 - [[entities/gemini-enterprise-agent-platform]] — June 8: token billing validates Google Antigravity's "agent as fleet" thesis — enterprise buyers can now see exactly which team uses which model and route accordingly
 - [[timelines/2026-06]] — June 8: the "agent plumbing" era begins in earnest with three open-source releases (Snowey, Gitpup, AgentGhost) all targeting the multi-agent infrastructure layer
+- [[entities/last30days-skill]] — June 9: 35.9k stars; AI agent skill for grounded research synthesis across Reddit, X, YouTube, HN, Polymarket, web
+- [[entities/turbovec]] — June 9: vector index beating FAISS IndexPQFastScan; 7-8x memory reduction via Google TurboQuant algorithm; drop-in for LangChain, LlamaIndex, Haystack, Agno
+- [[entities/google-skills]] — June 9: official Google Agent Skills repo; 100+ curated capability packs; positions Google as agent capability standard alongside MCP
+- [[entities/afm-3]] — June 8: Apple's AFM 3 ships with IFP routing from NAND that lets 20B sparse on-device MoE handle 1-4B active per layer; on-device agent capabilities for iOS 27
+- [[entities/notebooklm]] — June 8: NotebookLM now defaults to Gemini 3.5 + Antigravity with secure cloud computer per notebook; first major Antigravity consumer distribution
+- [[entities/hatch]] — June 8: Meta's Hatch at $200/month with Claude Sonnet as test-time model is the consumer-bundling agent bet
+- [[sources/google]] — June 8: NotebookLM + Antigravity is the canonical "personal agent computer" pattern; secure cloud computer per notebook with 100+ skills
+- [[sources/xiaomi]] — June 8: TileRT runtime is the agent infrastructure pattern for frontier-tier serving via software innovation on commodity hardware
+- [[ideas/agent-infrastructure-layer]] — June 9: last30days-skill, turbovec, google-skills trending simultaneously demonstrates that the agent infrastructure layer is commoditizing from below in real time
+- [[ideas/two-track-ai-future]] — June 8: AFM 3 on-device (Apple) vs Hatch consumer-bundling (Meta) vs NotebookLM cloud-computer (Google) are the three agent deployment patterns crystallizing
+- [[topics/github_trends]] — June 9: 3 agent infrastructure repos trending simultaneously (last30days, turbovec, google-skills); the agent stack is open-sourcing layer by layer
+- [[timelines/2026-06]] — June 8-9: Hatch + AFM 3 + NotebookLM + 3 agent infrastructure repos = the agent ecosystem is fragmenting into four deployment patterns (on-device, consumer-bundling, cloud-computer, open-source stack)

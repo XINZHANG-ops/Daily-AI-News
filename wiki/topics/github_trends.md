@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-06-07
+last_updated: 2026-06-09
 ---
 
 # GitHub Trends
@@ -254,3 +254,15 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[ideas/agent-verticalization]] — June 8: Gitpup-agent's "Golden Retriever" 6-stage skill tree literalizes the agent verticalization as gamified progression; Snowey's OpenClaw migration shows the existing-agent ecosystem has reached a switch-cost inflection point
 - [[ideas/agent-infrastructure-layer]] — June 8: three open-source agent repos trending on the same day (Snowey closed-loop, Gitpup skill tree, AgentGhost 6-tier memory) signal the agent infrastructure layer is being commoditized from below at the repo level
 - [[topics/agentic_ai]] — June 8: agent repo trend is bifurcated — Snowey/OpenClaw-style integration vs Gitpup-style self-modifying agents vs AgentGhost-style architecturally ambitious — three different bets on what an "agent" actually is
+- [[entities/last30days-skill]] — June 9: 35.9k stars; AI agent skill that researches topics across Reddit, X, YouTube, Hacker News, Polymarket, web with grounded citations
+- [[entities/turbovec]] — June 9: 9.6k stars; vector index built on Google TurboQuant algorithm in Rust; 7-8x memory reduction; drop-in for LangChain, LlamaIndex, Haystack, Agno
+- [[entities/google-skills]] — June 9: 12.8k stars; official Google repository of Agent Skills for Google products; modular capability packs for Gemini, Cloud, Workspace
+- [[entities/mimo-v2-5-pro-ultraspeed]] — June 9: 1T model with 1000 TPS on commodity 8-GPU via TileRT runtime; Xiaomi is now a regular GitHub trending topic
+- [[entities/tilert]] — June 9: 1000+ TPS on 1T model via SIMD-aware execution; first 1T model to break 1000 TPS on commodity hardware
+- [[topics/agentic_ai]] — June 9: three agent infrastructure repos trending simultaneously (last30days-skill research synthesis, turbovec vector storage, google-skills capability packs) shows the agent infrastructure layer is commoditizing in real time
+- [[sources/google]] — June 9: google/skills positions Google as agent capability standard; will compete with Anthropic's MCP for capability distribution dominance
+- [[ideas/agent-infrastructure-layer]] — June 9: 6 repos in 2 days (3 on June 8 with Snowey/Gitpup/AgentGhost, 3 on June 9 with last30days/turbovec/google-skills) = the agent stack is open-source at every layer
+- [[ideas/protocol-standardization]] — June 9: google/skills is Google's bet on the Skills standard; canonical battle with Anthropic's MCP for agent capability distribution dominance
+- [[ideas/commodity-inference-fragmentation]] — June 9: TurboVec's 7-8x memory reduction breaks Pinecone/Weaviate vector storage moat; Google TurboQuant open-sourced, third parties commoditize production layer
+- [[entities/mellum-2]] — June 9: same open-platform pattern as Google TurboQuant/TurboVec — Google open-sources, third parties commoditize the production layer
+- [[timelines/2026-06]] — June 8-9: 6 agent infrastructure repos trending in 48 hours = the agent stack is open-sourcing layer by layer in real time

@@ -1,7 +1,7 @@
 ---
 title: "OpenAI IPO Validates Agent Economy Arrival"
 slug: openai-ipo-validates-agent-economy
-last_updated: 2026-05-21
+last_updated: 2026-06-09
 ---
 
 # OpenAI IPO Validates Agent Economy Arrival
@@ -27,4 +27,10 @@ The OpenAI IPO has several implications:
 - [[sources/anthropic]] — Anthropic is also exploring IPO as early as October 2026; OpenAI's filing accelerates competition
 - [[sources/meta]] — Meta faces pressure to accelerate its own timeline or risk being perceived as behind
 - [[sources/google]] — Google's position in the AI race is reinforced by OpenAI's IPO timeline pressure
-- [[ideas/agent-economy-infrastructure]] — The IPO is infrastructure for the agent economy — it provides the public market mechanism for value capture
+- [[ideas/agent-economy-infrastructure]] — The IPO is infrastructure for the agent economy — it provides the public market mechanism for value capture- [[sources/openai]] — June 9: $852B confidential IPO filing lands 3 weeks after Anthropic's $965B submission; "super app" transformation becomes an obligation rather than a strategy
+- [[sources/anthropic]] — June 9: $965B valuation + $852B OpenAI filing within 3 weeks = the bifurcated industry's financial mirror; the same week, Jack Clark calls for "brake pedal" — pause advocacy is structurally tied to filing deadlines
+- [[topics/ai_funding]] — June 9: the agent economy has institutional financial validation; capital markets now pricing agent economy as trillion-dollar category
+- [[ideas/three-tier-safety-playbook]] — June 9: pause advocacy is now a filing-deadline play; safety positioning is structurally tied to IPO timing
+- [[entities/afm-3]] — June 9: Apple's AFM 3 is the on-device bet; superapp transformation is the wrong response because distribution + privacy + cost > workflow integration
+- [[entities/mimo-v2-5-pro-ultraspeed]] — June 9: Xiaomi's 1000 TPS on commodity 8-GPU is the inference-cost bet; superapp transformation assumes customers will pay premium for workflow integration
+- [[timelines/2026-06]] — June 9: $852B OpenAI filing + $965B Anthropic filing = within 6 months, both labs report quarterly training spend, RLHF headcount, revenue concentration to public investors

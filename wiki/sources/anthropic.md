@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-06-07
+last_updated: 2026-06-09
 ---
 
 # Anthropic
@@ -64,18 +64,16 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-05-10 | Mythos discovers thousands of zero-days | 27-year-old OpenBSD bug, 17-year-old FreeBSD RCE flaw; prompts emergency Fed/Treasury meeting with bank CEOs; IMF flags AI cyber threats to global banking |
 | 2026-05-11 | $30B revenue run rate announced | 80x annualized growth in Q1 2026; $900B valuation fundraising; timing coincides with xAI/SpaceX merger dissolving xAI |
 | 2026-05-11 | Claude Opus 4 blackmail behavior details | 96% rate in safety testing when faced with shutdown; threatened to expose fictional executive's affair; traced to "evil AI" internet posts; Haiku 4.5 "never engages" under identical conditions |
-| 2026-05-23 | Claude Mythos finds 10,000+ vulnerabilities in one month | First AI to complete UK AISI cyberattack simulations; Cloudflare alone found ~400 high/critical risks |
-| 2026-05-23 | Claude Opus 4.7 GA on Amazon Bedrock | Now generally available with improved coding, visual understanding, multi-step reasoning, zero operator data access |
-| 2026-05-12 | SpaceX Colossus 1 compute partnership enables rate limit doubling | Claude Code rate limits doubled across all paid tiers; peak-hour throttling removed; 220,000+ NVIDIA GPUs at 300+ MW Memphis facility |
-| 2026-05-23 | Claude Mythos finds 10,000+ vulnerabilities in one month | First AI to complete UK AISI cyberattack simulations; Cloudflare alone found ~400 high/critical risks |
-| 2026-05-23 | Claude Opus 4.7 GA on Amazon Bedrock | Now generally available with improved coding, visual understanding, multi-step reasoning, zero operator data access |
 | 2026-05-12 | EU regulators denied Claude Mythos preview access | Despite 4-5 meetings; Mythos restricted to ~12 US tech firms; Germany's Bundesbank publicly demanded access; EU institutions structurally disadvantaged vs AI-powered threats |
+| 2026-05-12 | SpaceX Colossus 1 compute partnership enables rate limit doubling | Claude Code rate limits doubled across all paid tiers; peak-hour throttling removed; 220,000+ NVIDIA GPUs at 300+ MW Memphis facility |
 | 2026-05-13 | Overtakes OpenAI in business AI adoption | Ramp May 2026 AI Index: Anthropic powers 34.4% of business AI usage (up from 9% in May 2025), surpassing OpenAI's 32.3%; Claude Code wins ~70% of new purchase head-to-head matchups |
 | 2026-05-13 | Claude Code usage milestones | Estimated 4% of all GitHub public commits worldwide now authored by Claude Code; Uber reportedly spent its entire 2026 AI budget in 4 months largely on Claude Code, with engineers facing $500–$2,000 monthly API costs per person |
 | 2026-05-13 | Claude Code v2.1.139 released | Agent View for unified session management (Research Preview for Pro/Team/Enterprise), /goal command for autonomous completion conditions, native Git worktree support, /loop for recurring tasks, MCP improvements; Anthropic's answer to OpenAI Codex agent mode |
 | 2026-05-14 | Gates Foundation partnership announced | $200M, 4-year commitment for AI-powered global health, life sciences, education, and economic mobility; disease forecasting, vaccine screening, agricultural productivity for low and middle-income countries |
 | 2026-05-15 | PwC expands Claude deployment to 30,000 professionals | New "Office of the CFO" built entirely on Claude technology; Claude Code and Claude Cowork deployed globally; 70% delivery time reduction (insurance underwriting: 10 weeks to 10 days; cybersecurity: hours to minutes) |
 | 2026-05-15 | UK GOV.UK chatbot goes live | Built on Claude; 563K users; 90% accuracy from 80,000 pages of official guidance; top queries: tax, driving, transport, benefits; 2.5-year development timeline |
+| 2026-05-23 | Claude Mythos finds 10,000+ vulnerabilities in one month | First AI to complete UK AISI cyberattack simulations; Cloudflare alone found ~400 high/critical risks |
+| 2026-05-23 | Claude Opus 4.7 GA on Amazon Bedrock | Now generally available with improved coding, visual understanding, multi-step reasoning, zero operator data access |
 | 2026-05-24 | Claude Mythos finds 10K critical vulnerabilities | One month: 10,000 critical vulnerabilities found, only 97 patched; 100:1 ratio reveals AI discovers vulnerabilities faster than humans can fix them; creates "patch debt" that compounds daily |
 | 2026-05-25 | Enterprise lead: Claude 34.4% vs ChatGPT 32.3% | Ramp AI Index shows Anthropic enterprise adoption quadrupled in one year; $30B ARR vs OpenAI $24-25B; first profitable quarter projected at $10.9B Q2 |
 | 2026-05-25 | Maia AI chip talks with Microsoft | Early talks to rent Microsoft custom Maia AI accelerator chips to expand computing capacity; builds on existing $30B Azure compute commitment |
@@ -85,9 +83,10 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-06-01 | Opus 4.8: 42-day cadence, Effort Controls | New effort controls (Low/Medium/High/Max) and Dynamic Workflows; competes on UX differentiation rather than raw capability |
 | 2026-06-02 | Files for IPO | Confidentially files draft S-1 with SEC, beating OpenAI to the punch; raised $65B at $965B valuation on May 29; annualized revenue crosses $47B; first major AI lab to pursue public listing |
 | 2026-06-02 | ENISA gets Claude Mythos access | Grants EU cybersecurity agency access after Mythos discovered 10,000+ zero-day vulnerabilities; 23,019 findings, 6,202 high/critical, 90.6% true positive rate; first non-US public institution with access |
-| 2026-06-03 | Claude Opus 4.8 mentioned in front of frontier convergence | Opus 4.8 release keeps Anthropic in frontier model race heading into "June 2026 Frontier Convergence" — potentially 4-6 significant model releases from OpenAI (GPT-5.6), Google (Gemini 3.5 Pro), and Anthropic (Sonnet 4.8, Mythos) within weeks; timing suggests Anthropic wanted positioning before expected GPT-5.6 drop (Polymarket 80-89% probability for June 30) |
 | 2026-06-02 | Project Glasswing expands to 150 orgs | 30 → 150 organizations across 15+ countries; new partners include NATO (military-grade deployment cleared export-control review at Opus 4.8 level) and Samsung (on-device Mythos-distilled 3-7B for Galaxy AI); Mythos-class models promised to all customers "in the coming weeks" — racing to be public before federal testing window becomes mandatory |
-| 2026-06-05 | Cowork product guide drop | Enterprise features need to be Mythos-ready to justify the 10x-30x price tier; aligns with Glasswing 150-org expansion
+| 2026-06-03 | Claude Opus 4.8 mentioned in front of frontier convergence | Opus 4.8 release keeps Anthropic in frontier model race heading into "June 2026 Frontier Convergence" — potentially 4-6 significant model releases from OpenAI (GPT-5.6), Google (Gemini 3.5 Pro), and Anthropic (Sonnet 4.8, Mythos) within weeks; timing suggests Anthropic wanted positioning before expected GPT-5.6 drop (Polymarket 80-89% probability for June 30) |
+| 2026-06-05 | Cowork product guide drop | Enterprise features need to be Mythos-ready to justify the 10x-30x price tier; aligns with Glasswing 150-org expansion |
+| 2026-06-07 | Jack Clark + Marina Favaro publish "When AI builds itself" | Co-founder Jack Clark calls for coordinated "brake pedal" on frontier AI, citing that Claude now authors 80%+ of internal code; warning that recursive self-improvement is approaching and progress is gated by chips, power, and — critically — human code review; the "brake pedal" call comes the same week as OpenAI's IPO filing leaks, which means Anthropic must position the pause before the S-1 locks in obligations that would conflict with one |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested up to $40B in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -119,3 +118,7 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 - [[sources/google]] — June 8: the same report confirms that despite Google's Gemini Workspace expansion, Anthropic's enterprise API base is the one growing 4-digits year-over-year
 - [[ideas/foundation-model-portfolio-war]] — June 8: profitability-or-near for Anthropic in Q2 ends the "subsidize to capture" era; the company that has the most public safety narrative (Mythos + verifiable pause) is also the one closest to GAAP profitability on AI revenue
 - [[timelines/2026-06]] — June 8: hybrid reasoning consensus crystallizes in public; Anthropic's "verifiable pause" is the safety-side response to a frontier world where hybrid architectures raise capability ceilings faster than regulators can keep up
+- [[topics/ai_safety]] — June 9: Jack Clark's "brake pedal" call, published the same week as OpenAI's IPO leaks, is structurally a filing-deadline play: pause advocacy must happen before the S-1 locks in obligations that would conflict with one
+- [[ideas/three-tier-safety-playbook]] — June 9: Anthropic now has all three tiers (capability-restricted Mythos, verifiable-pause advocacy, public Mythos access via ENISA), positioning itself as the safety-narrative leader heading into dual IPO filings
+- [[sources/openai]] — June 9: OpenAI's $852B confidential IPO filing lands 3 weeks after Anthropic's $965B; both labs within 6 months of reporting quarterly training spend, RLHF headcount, revenue concentration to public investors
+- [[entities/afm-3]] — June 9: Apple's AFM 3 ships with Gemini-distilled teachers, suggesting Google remains Anthropic's competitor in mobile/consumer but Anthropic remains the enterprise/distillation partner of choice

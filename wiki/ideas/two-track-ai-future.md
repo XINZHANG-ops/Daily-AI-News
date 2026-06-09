@@ -1,7 +1,7 @@
 ---
 title: "Two-Track AI Future"
 slug: two-track-ai-future
-last_updated: 2026-05-28
+last_updated: 2026-06-09
 ---
 
 # Two-Track AI Future
@@ -40,4 +40,12 @@ The two-track future has profound implications:
 - [[topics/ai_safety]] — The two-track future institutionalizes the safety vs. deployment tension; companies must choose their track at the foundational level
 - [[sources/google]] — Google's $40B Anthropic investment shows the tracks can overlap; Google hosts both defense contracts AND safety-first Anthropic
 - [[entities/gpt-5.5]] — OpenAI's shift from mocking restrictions to implementing them shows the defense track is about liability management, not principle
-- [[ideas/military-ai-divide]] — The two-track future is the structural expression of the military-AI divide; it's no longer about what AI can do, but who it's allowed to do it for
+- [[ideas/military-ai-divide]] — The two-track future is the structural expression of the military-AI divide; it's no longer about what AI can do, but who it's allowed to do it for- [[entities/afm-3]] — June 9: Apple's third-generation Apple Foundation Models; 5-model family with on-device sparse 20B Core Advanced (1-4B active via IFP routing from NAND) and Cloud Pro on NVIDIA backbone; the on-device bet of the bifurcated 2026 industry
+- [[entities/mimo-v2-5-pro-ultraspeed]] — June 9: 1T model with 1000+ TPS on commodity 8-GPU node via TileRT runtime; the commodity-cost bet
+- [[entities/tilert]] — June 9: runtime that delivers 1000 TPS on 1T model via software innovation; the canonical example of the commodity-cost bet
+- [[entities/hatch]] — June 9: Meta's Hatch at $200/month with Claude Sonnet as test-time model; the consumer-bundling bet
+- [[sources/openai]] — June 9: $852B confidential IPO filing; "super app" transformation becomes an obligation rather than a strategy
+- [[sources/anthropic]] — June 9: 90% internal Claude adoption + 1,858% YoY growth; the brake pedal call is structurally a filing-deadline play
+- [[sources/xiaomi]] — June 9: MiMo + TileRT is the canonical China-efficiency-advantage thesis; frontier performance from commodity hardware
+- [[topics/llm_models]] — June 9: AFM 3 IFP routing from NAND (1-4B active per layer) and TileRT 1000 TPS on commodity 8-GPU are the two new efficiency levers
+- [[entities/gemini-3-1-pro]] — June 8: Gemini-distilled teachers in AFM 3 reveal Google's continued training partnership with Apple

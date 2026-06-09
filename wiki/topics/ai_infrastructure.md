@@ -2,7 +2,7 @@
 title: "AI Infrastructure"
 slug: ai_infrastructure
 type: topic
-last_updated: 2026-05-31
+last_updated: 2026-06-09
 ---
 
 # AI Infrastructure
@@ -68,3 +68,15 @@ The AI infrastructure market is undergoing a structural transformation from comm
 - [[sources/github]] — June 8: token billing captures upside when frontier models trend to $5-25/M output and protects margin when users migrate to cheaper models — same playbook as Snowflake on data warehousing
 - [[ideas/agent-infrastructure-layer]] — June 8: Mellum2 + Copilot token billing + Cosmos 3 OpenMDW license all confirm the bifurcated industry: frontier labs raise capability ceiling, infrastructure players lower cost floor
 - [[timelines/2026-06]] — June 8: the "agent plumbing" and physical AI categories form in the same week; infrastructure-layer lock-in moves faster than the categories they serve can commoditize
+- [[sources/spacex]] — June 5: Google's $920M/month SpaceX deal makes Google the second mega-customer at Colossus 1 after Anthropic; $30-32B total over 33 months
+- [[entities/tilert]] — June 8: 1000+ TPS on 1T model via SIMD-aware execution on commodity 8-GPU node; proves inference is a runtime problem, not a hardware problem
+- [[entities/mimo-v2-5-pro-ultraspeed]] — June 8: Xiaomi + TileRT achieve 1000 TPS on 1T model on commodity 8-GPU; first time a 1T model breaks 1000 TPS on commodity hardware
+- [[entities/afm-3-cloud-pro]] — June 8: AFM 3 Cloud Pro on NVIDIA backbone is Apple's first cloud-NVIDIA dependency since the 1990s; the third Apple platform pivot in three decades
+- [[sources/apple]] — June 8: AFM 3 Cloud Pro on NVIDIA backbone; Apple joins Anthropic (Google Cloud) and others in depending on NVIDIA/Google for frontier cloud AI
+- [[sources/google]] — June 5: $920M/month SpaceX deal makes Google one of the largest direct compute customers in the industry; bypasses hyperscalers for frontier AI capacity
+- [[entities/cerebras]] — Cerebras and Groq's specialized accelerator business model is directly threatened by TileRT's software-only 1000 TPS on commodity hardware
+- [[entities/groq]] — Groq's LPU hardware advantage is undercut by TileRT's runtime innovation on commodity 8-GPU nodes
+- [[ideas/compute-shortage-forces-cooperation]] — June 5: Google-SpaceX $920M/month + Anthropic-SpaceX $1.25B/month = $2.17B/month in compute contracts, making SpaceX the largest "compute-as-a-service" provider
+- [[ideas/commodity-inference-fragmentation]] — June 8: TileRT 1000 TPS on commodity 8-GPU breaks the specialized silicon moat; the inference cost floor collapses through software innovation
+- [[topics/ai_funding]] — June 5-9: SpaceX $920M/month + OpenAI $852B IPO + Anthropic $965B confidential = the largest week of public-market capital allocation in AI history
+- [[timelines/2026-06]] — June 5-9: the compute-IPO-pause convergence (SpaceX $920M/month, AFM 3 Cloud Pro on NVIDIA, TileRT 1000 TPS, OpenAI $852B IPO) defines the new compute procurement map for frontier AI

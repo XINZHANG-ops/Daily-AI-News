@@ -142,3 +142,16 @@ Timelines updated: 2026-06 (June 8: hybrid reasoning consensus + bifurcated indu
 Ideas updated: agent-infrastructure-layer (reinforced), foundation-model-portfolio-war (profitability-or-near), agent-verticalization (6-stage skill tree literalization), efficiency-frontier (Hybrid Thinking), safety-restricted-releases (verifiable pause advocacy)
 
 Chat session learning: Reviewed 3 Q&A sessions (Apr 23-26). Confirmed recurring themes: agent infrastructure layer consolidation, frontier model portfolio war, Claude 1,858% growth context, Google $40B Anthropic investment, Claude Mythos Bank of England escalation, multi-turn vulnerability as structural. No new corrections needed; existing topic/source/entity pages already cover these patterns.
+
+## [2026-06-09] ingest | 1 date
+
+Dates processed: 2026-06-09
+Topics updated: llm_models, agentic_ai, ai_infrastructure, ai_safety, ai_companies, github_trends, ai_funding
+Sources updated: anthropic, openai, google, apple, spacex, meta
+Sources created: xiaomi
+Entities created: afm-3, afm-3-cloud-pro, tilert, mimo-v2-5-pro-ultraspeed, google-skills, last30days-skill, turbovec
+Entities updated: hatch (June 8: $200/mo Hatch Plus tier), muse-spark (June 8: Hatch transition target)
+Timelines updated: 2026-06 (June 8-9: compute-IPO-pause convergence — AFM 3, OpenAI $852B IPO, Xiaomi 1000 TPS, Google-SpaceX $920M/month, Jack Clark brake pedal)
+Ideas updated: two-track-ai-future (four-track bifurcation), openai-ipo-validates-agent-economy ($852B filing), safety-restricted-releases (brake pedal as filing-deadline play), three-tier-safety-playbook (brake pedal = third tier formalized)
+
+Chat session learning: Reviewed 3 Q&A sessions (Apr 23-26). Confirmed recurring themes: agent infrastructure layer consolidation, Claude 1,858% growth, Google $40B Anthropic investment, multi-turn vulnerability. No new corrections needed; existing topic/source/entity pages already cover these patterns. New June 8-9 patterns (compute-IPO-pause convergence) extend rather than contradict existing narratives.

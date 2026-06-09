@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-08 (June 8: hybrid reasoning consensus + bifurcated industry)
+Last updated: 2026-06-09 (June 9: compute-IPO-pause convergence — AFM 3, OpenAI $852B IPO, Xiaomi 1000 TPS, Google-SpaceX $920M/month, Jack Clark brake pedal)
 
 ## Topics (10)
 - [[topics/agentic_ai]] — June 8, 2026 sees the agent infrastructure layer being commoditized from below: three open-source agent repos (Snowey closed-loop learning, Gitpup 6-stage skill tree, AgentGhost 6-tier memory + MCTS) trend the same day; Mellum2 (Apache 2.0) becomes the default sub-agent brain; GitHub Copilot token billing makes the cost of Opus 4.8 vs Haiku 4.5 vs Mellum2 directly
@@ -14,7 +14,7 @@ Last updated: 2026-06-08 (June 8: hybrid reasoning consensus + bifurcated indust
 - [[topics/github_trends]] — June 8, 2026 trends three open-source agent repos on the same day: Snowey (4.2k stars) closed-loop learning, Gitpup-agent (1.8k stars) 6-stage skill tree, AgentGhost (612 stars) 6-tier memory + MCTS + DSPy/GEPA — the "self-improving agent" and "agent plumbing" categories crystallize at the GitHub trending level simultaneously, 
 - [[topics/llm_models]] — June 7-8, 2026 crystallizes the "hybrid reasoning" consensus: three frontier releases in ten days (Nemotron 3 Ultra Mamba-Transformer, MAI-Thinking-1 sparse MoE, Unisound U2 explicit CoT+implicit latent) all converge on the same architectural bet that pure transformers topped out around Claude 3.5/4-class reasoning; Unisound U2 (GPQA Diamond 87.9) is the third
 
-## Sources (50)
+## Sources (51)
 - [[sources/ai2]] — Ai2 is a Seattle-based AI research organization founded by the late Paul Allen. It is best known for OLMo, one of the most transparent open-source lan
 - [[sources/alibaba]] — Alibaba is a Chinese tech giant and the creator of the Qwen model family. In April 2026, Alibaba is in talks (alongside Tencent) to invest in DeepSeek
 - [[sources/amazon]] — Amazon is the world's largest e-commerce platform and cloud infrastructure provider (AWS). The company is pivoting toward voice and agent shopping, bu
@@ -67,13 +67,14 @@ Last updated: 2026-06-08 (June 8: hybrid reasoning consensus + bifurcated indust
 - [[sources/unisound]] — Hong Kong-listed Chinese AI company (云知声); released U2 on June 8, 2026; first Hong Kong-listed frontier model vendor; tests MaaS Token Hub commercial model vs DeepSeek's open-weight distribution
 - [[sources/jetbrains]] — Prague-based IDE vendor (IntelliJ, PyCharm); entered foundation model business with Mellum2 (Apache 2.0, 12B MoE) on June 1, 2026; positioned as alternative to Meta-dominated sub-agent tooling
 
+- [[sources/xiaomi]] — Chinese consumer electronics and smartphone giant; MiMo family (developed by former DeepSeek researcher Luo Fuli); canonical China-efficiency-advantage thesis; MiMo-V2.5-Pro-UltraSpeed + TileRT (June 8) achieves 1000+ TPS on 1T model on commodity 8-GPU node — no Cerebras, no Groq, no custom silicon
 ## Timelines (4)
 - [[timelines/2026-03]] — The week opened with NVIDIA's GTC 2026 unveiling Vera Rubin (10x performance per watt over Blackwell), the NemoClaw stack for OpenClaw agents, and phy
 - [[timelines/2026-04]] — April opened with the most ironic headline of 2026: Anthropic accidentally leaked Claude Code's 512,000-line TypeScript source via npm .map misconfigu
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 - [[timelines/2026-06]] — June opens with regulatory escalation (Florida sues OpenAI, Anthropic IPO), Claude Mythos ENISA access, and multi-turn vulnerability study
 
-## Entities (212)
+## Entities (220)
 - [[entities/project-solara]] — type: product — Project Solara is Microsoft's "chip-to-cloud" platform for AI agent-first devices announced at Build 2026. Features wearable badge and desk hub concepts with Qualcomm silicon, top-facing cameras, and 5G connectivity.
 - [[entities/ai-overviews]] — type: product — AI Overviews are Google's AI-generated search results. On June 3, 2026, Google announced an opt-out toggle in Search Console allowing website owners to exclude domains from AI-generated results without affecting regular search.
 - [[entities/codex]] — type: product — Codex is OpenAI's coding agent reaching 5M weekly users (June 2026). The enterprise expansion with Sites, Annotations, and role-specific plugins transforms it from coding assistant to enterprise orchestration layer.
@@ -84,6 +85,9 @@ Last updated: 2026-06-08 (June 8: hybrid reasoning consensus + bifurcated indust
 - [[entities/agenvoy]] — type: repo — Agenvoy is an agentic runtime written in Go with multi-provider concurrent dispatch, self-improving error memory via ToriiDB, and OS-native sandboxing
 - [[entities/ai-agent-starter]] — type: repo — A multi-provider AI agent framework supporting OpenAI, Anthropic, and Ollama with function calling, streaming, and conversation memory capabilities.
 - [[entities/alibaba-m890]] — type: chip — The M890 is Alibaba's latest AI chip designed to challenge Nvidia's dominance in the AI accelerator market, specifically targeting data center inferen
+- [[entities/afm-3]] — type: model — Apple Foundation Models 3 announced at WWDC 2026 (June 8); 5-model family including on-device sparse 20B Core Advanced (1-4B active per token via IFP routing from NAND) and Cloud Pro on NVIDIA backbone; the on-device bet of the bifurcated 2026 industry
+- [[entities/afm-3-cloud-pro]] — type: model — Cloud Pro is the cloud flagship of the AFM 3 family, runs on NVIDIA-backed cloud infrastructure; Apple's first explicit cloud-NVIDIA dependency since the 1990s; third Apple platform pivot in three decades
+
 - [[entities/alpha-proof-nexus]] — type: model — AlphaProof Nexus is Google DeepMind's mathematical reasoning model specifically designed to solve open problems in mathematics. It combines reinforcem
 - [[entities/alphaevolve]] — type: model — AlphaEvolve is a Gemini-powered coding agent developed by Google DeepMind that leverages evolutionary computation to discover novel algorithms and opt
 - [[entities/alphora]] — type: framework — Alphora is a production-ready, full-stack framework for building composable AI agents. It features a built-in secure code sandbox, typed streaming wit
@@ -165,6 +169,8 @@ Last updated: 2026-06-08 (June 8: hybrid reasoning consensus + bifurcated indust
 - [[entities/gitnexus]] — type: product — GitNexus is a zero-server code intelligence engine that indexes any codebase into a knowledge graph — mapping dependencies, call chains, and execution
 - [[entities/glm-ocr]] — type: repo — GLM-OCR is an accurate, fast, and comprehensive multimodal OCR built on the GLM-V encoder-decoder architecture. At only 0.9B parameters, it achieves 9
 - [[entities/google-adk-python]] — type: framework — An open-source, code-first Python framework for building AI agents. It enables developers to build, evaluate, and deploy sophisticated multi-agent sys
+- [[entities/google-skills]] — type: repo — Official Google repository of Agent Skills for Google products and technologies; modular, reusable capability packs that agents can load on demand across Gemini, Cloud, Workspace, and developer APIs; 12.8k stars, trending top 3 on GitHub June 9, 2026
+
 - [[entities/googlebook]] — type: product — Googlebook is a new laptop category announced by Google on May 12, 2026. Built on Android with ChromeOS integration, it features "Magic Pointer" for c
 - [[entities/gpt-5.4-cyber]] — type: model — GPT-5.4-Cyber is OpenAI's defensive cybersecurity model variant, fine-tuned specifically for security work. It has lowered refusal boundaries compared
 - [[entities/gpt-5.4]] — type: model — GPT-5.4 is OpenAI's model family released in March 2026, available in multiple variants optimized for different use cases: Thinking (reasoning), Mini/
@@ -192,6 +198,8 @@ Last updated: 2026-06-08 (June 8: hybrid reasoning consensus + bifurcated indust
 - [[entities/ising]] — type: model — Ising is NVIDIA's open quantum AI model family, launched April 14, 2026. It is the world's first open-source quantum AI model family. Ising models del
 - [[entities/kohakuterrarium]] — type: framework — KohakuTerrarium is a general-purpose AI agent framework with a "Creature" abstraction (6-module agent model), built-in session persistence, TUI and We
 - [[entities/krea-2]] — type: model — Krea 2 is Krea's first foundation image model built completely from scratch. It features advanced style transfer with the ability to guide, mix, stren
+- [[entities/last30days-skill]] — type: repo — mvanhorn/last30days-skill is an AI agent skill that researches any topic across Reddit, X, YouTube, Hacker News, Polymarket, and the web, then synthesizes a grounded summary with citations; 35.9k stars, trending #1 on GitHub June 9, 2026
+
 - [[entities/llama-4-405b]] — type: model — Meta's open-weight flagship model released May 20, 2026, scoring 85.9% on MMLU-Pro as a competitive alternative to closed frontier models. Positioned 
 - [[entities/llama-4]] — type: model — Llama 4 Scout and Maverick are Meta's open-weight MoE models released April 5, 2026, with groundbreaking context windows.
 - [[entities/long-horizon]] — type: repo — An autonomous AI project builder that can create entire projects with self-looping execution and graph-connected memory that grows like a brain. Featu
@@ -204,6 +212,8 @@ Last updated: 2026-06-08 (June 8: hybrid reasoning consensus + bifurcated indust
 - [[entities/microsoft-copilot]] — type: product — Microsoft's AI assistant integrated across its product ecosystem — from Windows to Office 365 to Azure. Positioned as the enterprise AI standard, Copi
 - [[entities/microsoft-legal-agent]] — type: product — Microsoft Legal Agent is a specialized Copilot built for clause-by-clause contract review inside Microsoft Word, launched May 1, 2026. Unlike generic 
 - [[entities/mimo-v2-pro]] — type: model — MiMo-V2-Pro is Xiaomi's flagship AI model, a trillion-parameter model with 42 billion active parameters. It was tested anonymously on OpenRouter as "H
+- [[entities/mimo-v2-5-pro-ultraspeed]] — type: model — Xiaomi MiMo-V2.5-Pro-UltraSpeed with TileRT runtime achieves 1000+ TPS decode on 1T-parameter model on commodity 8-GPU node; first 1T model to break 1000 TPS on commodity hardware; the inference-cost bet of the bifurcated 2026 industry
+
 - [[entities/mini-shai-hulud]] — type: vulnerability — Mini Shai-Hulud is a security vulnerability discovered in May 2026 that achieves persistence in AI coding agents by injecting malicious settings files
 - [[entities/minimax-m2]] — type: model — MiniMax's MoE (Mixture of Experts) model built for Max coding and agentic workflows. 230B total parameters with 10B active parameters, optimized for c
 - [[entities/mirage]] — type: repo — strukto-ai/mirage is a unified virtual filesystem for AI agents. It mounts services like S3, Google Drive, Slack, Gmail, Redis, GitHub into a single f
@@ -218,6 +228,8 @@ Last updated: 2026-06-08 (June 8: hybrid reasoning consensus + bifurcated indust
 - [[entities/nanobot]] — type: repo — An ultra-lightweight personal AI agent built in approximately 4,000 lines of Python — 99% smaller than mainstream alternatives like Claude Code (512K
 - [[entities/natural-language-autoencoders]] — type: product — Anthropic's Natural Language Autoencoders are a breakthrough interpretability tool that translates Claude's internal numerical activations into human-
 - [[entities/nemo-claw]] — type: repo — NemoClaw is NVIDIA's open-source reference stack for running OpenClaw securely with the NVIDIA OpenShell runtime. Released as an alpha preview in Marc
+- [[entities/notebooklm]] — type: product — Google's AI research assistant notebook product; June 8 upgrade to Gemini 3.5 + Antigravity with secure cloud computer per notebook and 100+ curated skills; first major Antigravity consumer distribution
+
 - [[entities/nemotron-3-ultra]] — type: model — NVIDIA's 550B MoE (55B active) hybrid Mamba-Transformer with NVFP4 4-bit quantization released June 4, 2026; 5x throughput on Blackwell tensor cores; license shifted to
 - [[entities/nex-n2]] — type: model — Open-source Qwen3.5-based agentic model family (Nex-N2-Pro & Nex-N2-mini) released June 7, 2026 with "Agentic Thinking" framework; 80.8% SWE-Bench Verified, 83.7 BrowseCo
 - [[entities/niefa]] — type: repo — Neural Interference Engine for Agents — an open-source autonomous agent runtime with goal-to-execution pipeline and x402 paid endpoints for agent-to-a
@@ -267,6 +279,9 @@ Last updated: 2026-06-08 (June 8: hybrid reasoning consensus + bifurcated indust
 - [[entities/thunderbolt]] — type: product — Thunderbolt is Mozilla's enterprise self-hosted AI client, released April 16, 2026 by Mozilla subsidiary MZLA. It is a cross-platform open-source AI c
 - [[entities/tml-interaction-small]] — type: model — TML-Interaction-Small is Thinking Machines Lab's first public model — a 276B-parameter mixture-of-experts (MoE) model with 12B active parameters. It p
 - [[entities/tpu-8th-gen]] — type: product — Google's 8th generation Tensor Processing Units (TPU 8t and TPU 8i) announced at Cloud Next 2026, offering 3x the processing power of the previous Iro
+- [[entities/tilert]] — type: product — TileRT is the runtime Xiaomi partnered with to deliver MiMo-V2.5-Pro-UltraSpeed's 1000+ TPS on commodity 8-GPU node; software-only frontier-tier serving breaks the specialized silicon moat
+- [[entities/turbovec]] — type: repo — RyanCodrai/turbovec is a vector index built on Google TurboQuant algorithm in Rust with Python bindings; SIMD kernels (NEON/AVX-512BW) beat FAISS IndexPQFastScan; fits 10M docs in ~4 GB vs 31 GB float32; trending top 3 on GitHub June 9, 2026
+
 - [[entities/tradingagents]] — type: repo — TradingAgents is an open-source multi-agent LLM framework for autonomous financial trading, reaching 54.6K stars on GitHub. The project deploys specia
 - [[entities/trustfall]] — type: vulnerability — TrustFall is a critical security vulnerability discovered in May 2026 that weaponizes the "folder trust" prompt mechanism in AI coding agents. The att
 - [[entities/trymeka-agent]] — type: repo — trymeka/agent is a state-of-the-art autonomous computer-using agent achieving 72.7% on the WebArena Benchmark. Unlike browser-layer screenshot agents,
