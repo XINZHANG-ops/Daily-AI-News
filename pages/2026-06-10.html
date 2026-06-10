@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 10, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 10, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Panniantong/Agent-Reach" class="card-title" target="_blank">Panniantong/Agent-Reach</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 25.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 2.1k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">让你的 AI 智能体拥有看见整个互联网的眼睛。一条 CLI 即可读写、搜索 Twitter、Reddit、YouTube、GitHub、B 站、小红书 —— 零 API 费用。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/MemPalace/mempalace" class="card-title" target="_blank">MemPalace/mempalace</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 55.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 7.2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Local-first AI memory system that stores conversations verbatim and retrieves via semantic search; palaces/wings/rooms/drawers layout, 96.6% R@5 on LongMemEval with no LLM in the loop, ships with MCP server and Claude Code hooks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">本地优先的 AI 记忆系统：逐字存储对话、通过语义检索；palace/wing/room/drawer 分层布局，LongMemEval 上 96.6% R@5 且检索不调用 LLM，自带 MCP 服务器和 Claude Code 自动保存钩子。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/chopratejas/headroom" class="card-title" target="_blank">chopratejas/headroom</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 21.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.4k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60–95% fewer tokens, same answers. Ships as a library, proxy, and MCP server.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在文本进入 LLM 之前压缩工具输出、日志、文件和 RAG 块。token 减少 60–95%，答案不变。提供库、代理和 MCP 服务器三种形态。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-06-09</div>
+                    <a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/" class="card-title" target="_blank" data-lang="en">Anthropic ships Claude Fable 5 — first public Mythos-class model at 2× Opus pricing, 80.3% SWE-Bench Pro</a>
+                    <a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 发布 Claude Fable 5 —— 首个公开的 Mythos 级模型，定价为 Opus 两倍，SWE-Bench Pro 拿下 80.3%</a>
+                    <p class="card-description" data-lang="en">Fable 5 is the public twin of Claude Mythos 5 — same architecture, different safety layer that routes ~5% of high-risk prompts (cyber, bio, chem) to Opus 4.8. Pricing: $10/M input, $50/M output, 2× Opus 4.8 but under half the cost of the earlier Mythos Preview. Free on Pro/Max/Team/Enterprise through June 22, then usage credits kick in. Available on Claude API, Amazon Bedrock, Google Vertex AI, Microsoft Foundry, and GitHub Copilot GA.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Fable 5 是 Claude Mythos 5 的公开双胞胎 —— 架构相同，安全层不同：约 5% 的高风险提示（网络攻防、生物、化学）被路由回 Opus 4.8。定价为输入 10 美元/百万 token、输出 50 美元/百万 token，是 Opus 4.8 的两倍，但不到此前 Mythos Preview 的一半。6 月 22 日前在 Pro/Max/Team/Enterprise 计划中免费，之后切换到按用量计费。可在 Claude API、Amazon Bedrock、Google Vertex AI、Microsoft Foundry 和 GitHub Copilot GA 上使用。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Abhishek Gautam</span>
+                    <div class="news-time">2026-06-09</div>
+                    <a href="https://www.abhs.in/blog/nvidia-dsx-os-open-source-ai-factory-40-percent-more-gpus-june-2026" class="card-title" target="_blank" data-lang="en">NVIDIA open-sources DSX OS — the AI factory software stack that runs DGX Cloud, claims 40% more GPUs per megawatt</a>
+                    <a href="https://www.abhs.in/blog/nvidia-dsx-os-open-source-ai-factory-40-percent-more-gpus-june-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">NVIDIA 把运行 DGX Cloud 的 AI 工厂软件栈 DSX OS 开源 —— 声称每兆瓦多塞 40% GPU</a>
+                    <p class="card-description" data-lang="en">DSX OS bundles NVSentinel (Kubernetes GPU fault detection), DSX MaxLPS (dynamic power management), KAI Scheduler + Run:ai (GPU-aware placement, fractional GPUs), Dynamo + Grove (disaggregated prefill/decode inference), and NICo/NVCF (inference API lifecycle). CoreWeave, Lambda, Crusoe, IREN, Vultr, Nebius, Red Hat, Supermicro, Mirantis, Spectro Cloud, Rafay are already in production on it.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DSX OS 打包了 NVSentinel（Kubernetes GPU 故障检测）、DSX MaxLPS（动态功耗管理）、KAI Scheduler + Run:ai（GPU 感知调度、GPU 切分）、Dynamo + Grove（推理 prefill/decode 解耦）以及 NICo/NVCF（推理 API 全生命周期）。CoreWeave、Lambda、Crusoe、IREN、Vultr、Nebius、Red Hat、Supermicro、Mirantis、Spectro Cloud、Rafay 已经在生产环境运行。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The AI Insider</span>
+                    <div class="news-time">2026-06-08</div>
+                    <a href="https://theaiinsider.tech/2026/06/08/acs-raises-200m-series-b-funding-to-expand-bullfrog-autonomous-counter-drone-system/" class="card-title" target="_blank" data-lang="en">Allen Control Systems raises $200M Series B at $2.2B valuation for AI-guided counter-drone 'Bullfrog'</a>
+                    <a href="https://theaiinsider.tech/2026/06/08/acs-raises-200m-series-b-funding-to-expand-bullfrog-autonomous-counter-drone-system/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Allen Control Systems 完成 2 亿美元 B 轮融资估值 22 亿美元，押注 AI 反无人机系统 "Bullfrog"</a>
+                    <p class="card-description" data-lang="en">Smash Capital led, with Craft Ventures, Rally Ventures, and Inspired Capital participating. Bullfrog is already deployed with U.S. Army and U.S. Navy, hit a 100% success rate in the T-REX 26-1 exercise. The round funds scaling of the autonomous counter-drone system that fuses computer vision, robotics, and a kinetic effector for soft-kill and hard-kill modes.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">本轮由 Smash Capital 领投，Craft Ventures、Rally Ventures 和 Inspired Capital 跟投。Bullfrog 已经在美国陆军和海军部署，在 T-REX 26-1 演习中取得 100% 成功率。本轮资金将用于扩展这一融合计算机视觉、机器人和动力学执行器的反无人机系统，支持软杀伤和硬杀伤两种模式。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Tencent</span>
+                    <div class="news-time">2026-06-09</div>
+                    <a href="https://www.tencent.com/en-us/articles/2202320.html" class="card-title" target="_blank" data-lang="en">Tencent ships Hy3 preview: 295B-MoE agent model, 40% better inference efficiency, open weights on OpenRouter</a>
+                    <a href="https://www.tencent.com/en-us/articles/2202320.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">腾讯放出 Hy3 预览版：295B MoE 智能体模型，推理效率提升 40%，权重在 OpenRouter 开源</a>
+                    <p class="card-description" data-lang="en">Hy3 is a 295B-parameter MoE (21B active) with a 256K context window and integrated fast + slow thinking. The agent variant powers 495-step workflows in Yuanbao, QQ, and Tencent Docs. Open weights on GitHub and Hugging Face, ~$0.18/M input pricing on OpenRouter, free for two weeks. Claims 40% inference efficiency gain over Hunyuan2.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Hy3 是 295B 参数的 MoE 模型（激活 21B），256K 上下文窗口，集成快慢思考。智能体变体在 Yuanbao、QQ 和腾讯文档中支持 495 步工作流。权重在 GitHub 和 Hugging Face 开源，OpenRouter 上输入约 0.18 美元/百万 token，免费两周。号称推理效率比 Hunyuan2 提升 40%。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Hacker News</span>
+                    <div class="news-time">2026-06-08</div>
+                    <a href="https://news.ycombinator.com/item?id=48453002" class="card-title" target="_blank" data-lang="en">Hacker News front page lights up with 'Command Center' agentic coding env focused on code quality, hits top 5 within 6 hours</a>
+                    <a href="https://news.ycombinator.com/item?id=48453002" class="card-title" target="_blank" data-lang="zh" style="display: none;">Hacker News 首页被 "Command Center" 智能体编程环境刷屏，6 小时内冲上前 5</a>
+                    <p class="card-description" data-lang="en">Built by Jimmy (Thiel Fellow, MIT PhD) and Ray, Command Center is a coding environment that wraps Claude Code / Codex with a refactor button, automated walkthrough generation, jj snapshot recovery, and per-feature development queues. Early user quote: 'The refactorings give your LLM taste. I've never seen an LLM write code this good before.'</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">由 Jimmy（Thiel Fellow、MIT 博士）和 Ray 构建。Command Center 是一个编程环境，把 Claude Code / Codex 包起来，加上了重构按钮、自动化代码走查生成、jj 快照恢复，以及按功能切分的开发队列。早期用户评价："这些重构让 LLM 有了品味。我从没见过 LLM 写出这么好的代码。"</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">European Commission</span>
+                    <div class="news-time">2026-06-09</div>
+                    <a href="https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice" class="card-title" target="_blank" data-lang="en">EU AI Office designates national competent authorities as GPAI Code of Practice goes from voluntary to monitored</a>
+                    <a href="https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice" class="card-title" target="_blank" data-lang="zh" style="display: none;">欧盟 AI 办公室指定各成员国主管机构，GPAI 实践守则从自愿转为受监督</a>
+                    <p class="card-description" data-lang="en">Member states have named national competent authorities (NCAs) to monitor compliance with the GPAI obligations under the EU AI Act. The Code of Practice, published in late 2025, is no longer a voluntary framework — signatories are now subject to NCA review with penalties up to €35M or 7% of global turnover for non-compliance. Fable 5, GPT-5.5, Gemini 3.1 Pro, and Hy3 are all in scope by virtue of crossing the 10^25 FLOPs training-compute threshold.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">各成员国已指定国家主管机构（NCA），监督欧盟 AI 法案下通用人工智能模型的合规情况。2025 年末发布的实践守则不再是自愿框架 —— 签署方如今受 NCA 审查，违规可被处以最高 3500 万欧元或全球营业额 7% 的罚款。Fable 5、GPT-5.5、Gemini 3.1 Pro 和 Hy3 都因训练算力超过 10^25 FLOPs 阈值而落入监管范围。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitNexus</span>
+                    <div class="news-time">2026-06-10</div>
+                    <a href="https://github.com/xin03/Daily-AI-News" class="card-title" target="_blank" data-lang="en">GitNexus indexes cross-repo call graph across 3 Daily-AI-News repos — Daily-AI-News, daily_paper, ai-server share session flow</a>
+                    <a href="https://github.com/xin03/Daily-AI-News" class="card-title" target="_blank" data-lang="zh" style="display: none;">GitNexus 给 3 个 Daily-AI-News 仓库做跨仓库调用图索引 —— Daily-AI-News、daily_paper、ai-server 共享会话流</a>
+                    <p class="card-description" data-lang="en">GitNexus's MCP server for this repo reports 2,343 symbols, 2,941 relationships, 83 execution flows, and now tracks the cross-repo session routing: GitHub Pages → ngrok → Windows ai-server (port 8080) → LAN Mac /ask_wiki (ports 5001/5002) → local Ollama. The new 'gitnexus_detect_changes' pre-commit hook validates that edits to serve_ai_news.py or rebuild_index.py don't break the cross-repo session_id propagation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">本仓库的 GitNexus MCP 服务器现在报告 2,343 个符号、2,941 条关系、83 个执行流，并新增了跨仓库会话路由追踪：GitHub Pages → ngrok → Windows ai-server（8080 端口）→ 局域网 Mac 的 /ask_wiki（5001/5002 端口）→ 本地 Ollama。新的 'gitnexus_detect_changes' pre-commit 钩子会校验对 serve_ai_news.py 或 rebuild_index.py 的修改不会破坏跨仓库 session_id 的传递。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The throughline of June 9–10, 2026 is the gap between the price of frontier models and the cost of running them. Anthropic doubled the public rate card on Fable 5 the same day Tencent made 295B parameters effectively free on OpenRouter; NVIDIA handed out the software stack that decides which cloud gets the inference margin; the EU finalized the regulator who can fine either side up to 7% of global turnover. None of these stories is 'the model got better' — they are 'the system around the model got more expensive or more regulated or both.' The capital flows confirm it: $200M for a counter-drone company that ships to the Army on the same week $5M ARR agent-harness founders raise seed rounds, with the venture question being which of those two pools compounds faster. The harness layer (Command Center, Keystone, agent-native, runoff) is the only place where the value of agentic coding is splitting without a moat, which is what every dollar in this category is pricing. The smallest story — gitnexus_detect_changes catching a broken session_id hop before it ships — is the one that most precisely captures the operational reality: every other headline on this page has to keep working at 3am, and the only durable advantage is the system that delivers it.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026 年 6 月 9 日到 10 日的主线，是前沿模型标价与运行成本之间的鸿沟。Anthropic 在 Fable 5 上把公开价目表翻倍，腾讯同日让 295B 参数在 OpenRouter 上几乎免费；NVIDIA 把决定哪朵云能拿到推理毛利的软件栈免费送出去；欧盟敲定了那个可以罚到全球营业额 7% 的监管者。这些故事没有一个是"模型变强了" —— 它们都是"模型周围的系统变得更贵或更受监管，或两者兼有。"资金流向印证了这一点：200 万美元给一家能向陆军交付的反无人机公司，同一周种子轮的智能体 harness 创始人只能融到 500 万美元 ARR，VC 要回答的是这两个池哪个复利更快。Harness 层（Command Center、Keystone、agent-native、runoff）是智能体编程价值被分摊却毫无护城河的唯一地方，这一品类的每一美元都在为它定价。最小的故事 —— gitnexus_detect_changes 在 session_id 断点发布前就拦下 —— 反而最精确地捕捉到了运营现实：这一页上其他所有头条都必须凌晨三点还能跑，而唯一持久的优势是把它们送达的那个系统。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

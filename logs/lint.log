@@ -1001,3 +1001,8 @@ All checks complete. Summary:
 
 • 重复页面核查：发现的近前缀 slugs 均为不同模型/产品版本（claude-opus-4-6/4-7/4-8、gemini-3-* 等），非真重复；`vertical-integration` 与 `vertical-integration-resolving` 主题不同（前者指芯片供应商持股，后者指 wrapper vs foundation 转向自研栈），保留。
 [2026-06-10 01:06:20] Wiki lint 完成（退出码 0）。
+[main c12373f] wiki: lint 2026-06-10
+ 12 files changed, 370 insertions(+), 6 deletions(-)
+ create mode 100644 logs/check_dups.py
+ create mode 100644 wiki/sources/cerebras.md
+ create mode 100644 wiki/sources/groq.md

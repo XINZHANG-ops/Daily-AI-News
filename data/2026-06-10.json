@@ -1,0 +1,160 @@
+{
+  "date": "2026-06-10",
+  "github_repos": [
+    {
+      "name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": {
+        "en": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+        "zh": "让你的 AI 智能体拥有看见整个互联网的眼睛。一条 CLI 即可读写、搜索 Twitter、Reddit、YouTube、GitHub、B 站、小红书 —— 零 API 费用。"
+      },
+      "stars": "25.8k",
+      "forks": "2.1k"
+    },
+    {
+      "name": "MemPalace/mempalace",
+      "url": "https://github.com/MemPalace/mempalace",
+      "description": {
+        "en": "Local-first AI memory system that stores conversations verbatim and retrieves via semantic search; palaces/wings/rooms/drawers layout, 96.6% R@5 on LongMemEval with no LLM in the loop, ships with MCP server and Claude Code hooks.",
+        "zh": "本地优先的 AI 记忆系统：逐字存储对话、通过语义检索；palace/wing/room/drawer 分层布局，LongMemEval 上 96.6% R@5 且检索不调用 LLM，自带 MCP 服务器和 Claude Code 自动保存钩子。"
+      },
+      "stars": "55.2k",
+      "forks": "7.2k"
+    },
+    {
+      "name": "chopratejas/headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "description": {
+        "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60–95% fewer tokens, same answers. Ships as a library, proxy, and MCP server.",
+        "zh": "在文本进入 LLM 之前压缩工具输出、日志、文件和 RAG 块。token 减少 60–95%，答案不变。提供库、代理和 MCP 服务器三种形态。"
+      },
+      "stars": "21.1k",
+      "forks": "1.4k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic ships Claude Fable 5 — first public Mythos-class model at 2× Opus pricing, 80.3% SWE-Bench Pro",
+        "zh": "Anthropic 发布 Claude Fable 5 —— 首个公开的 Mythos 级模型，定价为 Opus 两倍，SWE-Bench Pro 拿下 80.3%"
+      },
+      "url": "https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/",
+      "source": "TechCrunch",
+      "time": "2026-06-09",
+      "description": {
+        "en": "Fable 5 is the public twin of Claude Mythos 5 — same architecture, different safety layer that routes ~5% of high-risk prompts (cyber, bio, chem) to Opus 4.8. Pricing: $10/M input, $50/M output, 2× Opus 4.8 but under half the cost of the earlier Mythos Preview. Free on Pro/Max/Team/Enterprise through June 22, then usage credits kick in. Available on Claude API, Amazon Bedrock, Google Vertex AI, Microsoft Foundry, and GitHub Copilot GA.",
+        "zh": "Fable 5 是 Claude Mythos 5 的公开双胞胎 —— 架构相同，安全层不同：约 5% 的高风险提示（网络攻防、生物、化学）被路由回 Opus 4.8。定价为输入 10 美元/百万 token、输出 50 美元/百万 token，是 Opus 4.8 的两倍，但不到此前 Mythos Preview 的一半。6 月 22 日前在 Pro/Max/Team/Enterprise 计划中免费，之后切换到按用量计费。可在 Claude API、Amazon Bedrock、Google Vertex AI、Microsoft Foundry 和 GitHub Copilot GA 上使用。"
+      },
+      "insight": {
+        "en": "01 *Fable 5 is the loudest product launch in the brief, but the real story is the launch sequence itself.* Anthropic spent the week warning that frontier AI is approaching recursive self-improvement and called for a coordinated industry-wide brake — then shipped the most capable model any of them has ever released, with a safety wrapper that concedes ~5% of traffic is too dangerous for the public build. SWE-Bench Pro 80.3% (+11.1 over GPT-5.5, +15.9 over Gemini 3.1 Pro) and FrontierCode Diamond 29.3% (more than 2× Opus 4.8) is a margin that ends the 'is Claude still the coding leader' debate for this cycle. The price hike matters more than the headlines admit: 2× Opus 4.8 with no SLA changes means dev tools that re-routed to Fable 5 will see bills double, which is exactly the pressure that pushed teams to Gemini 3.1 Pro last quarter. Stripe's 50M-line Ruby migration in one day is a marketing artifact, not a benchmark — but the Fable 5 + Claude Code combination is now the first stack where a non-trivial legacy codebase can be re-platformed in 24 hours, and the September iOS 27 launch is going to find Anthropic's agents already running on GitHub.",
+        "zh": "01 *Fable 5 是一周内最响亮的产品发布，但真正值得讲的是发布顺序本身。* Anthropic 用了一整周时间警告前沿 AI 正在逼近递归自我改进、呼吁全行业协同刹车 —— 然后推出了他们迄今为止最强的模型，而它的安全包装承认约 5% 的流量对公开版本来说太危险。SWE-Bench Pro 80.3%（比 GPT-5.5 高 11.1 分，比 Gemini 3.1 Pro 高 15.9 分）和 FrontierCode Diamond 29.3%（超过 Opus 4.8 两倍多）终结了\"Claude 还是不是代码之王\"的争论，这次的领先优势是断崖式的。涨价比新闻标题透露的更重要：定价翻倍但 SLA 没变，意味着重定向到 Fable 5 的开发工具账单会翻倍 —— 而这正是上个季度让团队转向 Gemini 3.1 Pro 的同一种压力。Stripe 用一天时间迁移 5000 万行 Ruby 代码库是营销素材而不是基准，但 Fable 5 + Claude Code 这个组合已经是第一个能让一个不小的遗留代码库在 24 小时内完成迁移的栈，9 月 iOS 27 发售时，Anthropic 的智能体早已在 GitHub 上跑起来了。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA open-sources DSX OS — the AI factory software stack that runs DGX Cloud, claims 40% more GPUs per megawatt",
+        "zh": "NVIDIA 把运行 DGX Cloud 的 AI 工厂软件栈 DSX OS 开源 —— 声称每兆瓦多塞 40% GPU"
+      },
+      "url": "https://www.abhs.in/blog/nvidia-dsx-os-open-source-ai-factory-40-percent-more-gpus-june-2026",
+      "source": "Abhishek Gautam",
+      "time": "2026-06-09",
+      "description": {
+        "en": "DSX OS bundles NVSentinel (Kubernetes GPU fault detection), DSX MaxLPS (dynamic power management), KAI Scheduler + Run:ai (GPU-aware placement, fractional GPUs), Dynamo + Grove (disaggregated prefill/decode inference), and NICo/NVCF (inference API lifecycle). CoreWeave, Lambda, Crusoe, IREN, Vultr, Nebius, Red Hat, Supermicro, Mirantis, Spectro Cloud, Rafay are already in production on it.",
+        "zh": "DSX OS 打包了 NVSentinel（Kubernetes GPU 故障检测）、DSX MaxLPS（动态功耗管理）、KAI Scheduler + Run:ai（GPU 感知调度、GPU 切分）、Dynamo + Grove（推理 prefill/decode 解耦）以及 NICo/NVCF（推理 API 全生命周期）。CoreWeave、Lambda、Crusoe、IREN、Vultr、Nebius、Red Hat、Supermicro、Mirantis、Spectro Cloud、Rafay 已经在生产环境运行。"
+      },
+      "insight": {
+        "en": "02 *DSX OS reframes the inference bottleneck from chips to power — and that is why Nvidia is giving it away.* The 40% more GPUs per fixed power budget is the headline, but the strategic move is that every component is now open: NVSentinel, KAI Scheduler (already a CNCF Sandbox), and the inference layer (Dynamo + Grove). Nvidia spent two years telling the cloud world 'buy DGX' and now tells them 'run our software on your own hardware, you'll get more GPUs per megawatt than your in-house stack'. The reason: data-center power, not accelerator supply, is the binding constraint through 2027 — and any operator who standardizes on DSX buys into the next two generations of Vera Rubin silicon by default. Anthropic and OpenAI being on the early-access Vera Rubin list (alongside SpaceXAI, ByteDance, CoreWeave, Nebius, Lambda) means Fable 5 and GPT-5.5 will be running on this stack when retail customers ask 'which cloud runs Fable 5 cheapest?' The CNFC survey that 66% of orgs now run gen-AI inference on Kubernetes makes the timing obvious: KAI Scheduler enters CNCF Incubation in 2026, and the inference-OS wars are now a three-way race between Nvidia DSX, Google Cloud's Hypercompute, and the hyperscaler-locked stacks at Azure/AWS.",
+        "zh": "02 *DSX OS 把推理瓶颈从芯片重新定义到电力 —— 这就是 Nvidia 把它免费送出来的原因。* \"每兆瓦多 40% GPU\"是头条，但真正的战略动作是每个组件都开源了：NVSentinel、KAI Scheduler（已是 CNCF Sandbox 项目）以及推理层（Dynamo + Grove）。Nvidia 花了两年时间告诉云计算世界\"买 DGX\"，现在改口说\"在我们的软件上跑你自己的硬件，每兆瓦比你们的自研栈多塞 GPU\"。原因在于：到 2027 年之前，数据中心的真正瓶颈是电力而不是加速器供应；任何把 DSX 标准化的运营商，等于默认买下了未来两代 Vera Rubin 硅片。Anthropic 和 OpenAI 都在 Vera Rubin 早期访问名单上（还有 SpaceXAI、ByteDance、CoreWeave、Nebius、Lambda），意味着当零售客户问\"哪家云跑 Fable 5 最便宜\"时，这两家也会跑在 DSX 上。CNFC 调研显示 66% 的组织现在在 Kubernetes 上跑生成式 AI 推理，时机一目了然：KAI Scheduler 将在 2026 年进入 CNCF Incubation，推理操作系统之争变成 Nvidia DSX、Google Cloud Hypercompute 和 Azure/AWS 各自封闭栈的三方角逐。"
+      }
+    },
+    {
+      "title": {
+        "en": "Allen Control Systems raises $200M Series B at $2.2B valuation for AI-guided counter-drone 'Bullfrog'",
+        "zh": "Allen Control Systems 完成 2 亿美元 B 轮融资估值 22 亿美元，押注 AI 反无人机系统 \"Bullfrog\""
+      },
+      "url": "https://theaiinsider.tech/2026/06/08/acs-raises-200m-series-b-funding-to-expand-bullfrog-autonomous-counter-drone-system/",
+      "source": "The AI Insider",
+      "time": "2026-06-08",
+      "description": {
+        "en": "Smash Capital led, with Craft Ventures, Rally Ventures, and Inspired Capital participating. Bullfrog is already deployed with U.S. Army and U.S. Navy, hit a 100% success rate in the T-REX 26-1 exercise. The round funds scaling of the autonomous counter-drone system that fuses computer vision, robotics, and a kinetic effector for soft-kill and hard-kill modes.",
+        "zh": "本轮由 Smash Capital 领投，Craft Ventures、Rally Ventures 和 Inspired Capital 跟投。Bullfrog 已经在美国陆军和海军部署，在 T-REX 26-1 演习中取得 100% 成功率。本轮资金将用于扩展这一融合计算机视觉、机器人和动力学执行器的反无人机系统，支持软杀伤和硬杀伤两种模式。"
+      },
+      "insight": {
+        "en": "03 *Defense AI is the only category where the funding rounds are bigger than the model launches.* ACS's $200M at $2.2B comes one week after Generalist AI's $400M Series B (Radical, NVIDIA's NVentures, Bezos Expeditions) for physical-world foundation models, and one day after Integra Robotics closed a $1.12M pre-Series A in Bangalore. The pattern: foundation-model vendors are raising on 'AGI will do physical labor' theses, while application-layer defense startups are raising on 'the drones are already here and the Army needs them yesterday.' T-REX 26-1 is the giveaway — ACS doesn't need to publish benchmarks, they need the T-REX score. Meanwhile, Tencent's Stardust Intelligence and Japan's TriOrb (¥28.8B / ~$190M) closed Series B rounds earlier in the month for civilian embodied AI. The capital is bifurcating into two pools: model-layer physical intelligence (Generalist, Stardust, TriOrb) and edge-deployed defense applications (ACS). The venture question for the rest of 2026 is whether the defense-application multiples — 11× revenue at $2.2B for a counter-drone company — will pull the civilian embodied-AI valuations up, or whether dual-use export controls (especially around Chinese-made robots) will split the two pools permanently.",
+        "zh": "03 *国防 AI 是唯一一个融资轮比模型发布还大的品类。* ACS 2 亿美元估值 22 亿美元的轮次，距 Generalist AI 4 亿美元 B 轮（Radical、NVIDIA NVentures、Bezos Expeditions 参投）仅一周、距 Integra Robotics 在班加罗尔完成 112 万美元 pre-A 轮仅一天。模式是：基础模型厂商用\"AGI 将做体力劳动\"的故事融资，而应用层的国防初创公司用\"无人机已经来了，陆军昨天就要\"融资。T-REX 26-1 就是答案 —— ACS 不需要发布基准分数，他们需要的是 T-REX 成绩。与此同时，腾讯的 Stardust Intelligence 和日本的 TriOrb（288 亿日元，约 1.9 亿美元）在本月初完成 B 轮，投的是民用具身 AI。资本正在分成两个池：模型层物理智能（Generalist、Stardust、TriOrb）和边缘部署的国防应用（ACS）。2026 年剩下的时间里，VC 要回答的问题是：国防应用 11× 营收的估值倍数（22 亿美元的反无人机公司）会不会拉高民用具身 AI 估值，还是双重用途出口管制（尤其针对中国制造机器人）会把两个池永久分开。"
+      }
+    },
+    {
+      "title": {
+        "en": "Tencent ships Hy3 preview: 295B-MoE agent model, 40% better inference efficiency, open weights on OpenRouter",
+        "zh": "腾讯放出 Hy3 预览版：295B MoE 智能体模型，推理效率提升 40%，权重在 OpenRouter 开源"
+      },
+      "url": "https://www.tencent.com/en-us/articles/2202320.html",
+      "source": "Tencent",
+      "time": "2026-06-09",
+      "description": {
+        "en": "Hy3 is a 295B-parameter MoE (21B active) with a 256K context window and integrated fast + slow thinking. The agent variant powers 495-step workflows in Yuanbao, QQ, and Tencent Docs. Open weights on GitHub and Hugging Face, ~$0.18/M input pricing on OpenRouter, free for two weeks. Claims 40% inference efficiency gain over Hunyuan2.",
+        "zh": "Hy3 是 295B 参数的 MoE 模型（激活 21B），256K 上下文窗口，集成快慢思考。智能体变体在 Yuanbao、QQ 和腾讯文档中支持 495 步工作流。权重在 GitHub 和 Hugging Face 开源，OpenRouter 上输入约 0.18 美元/百万 token，免费两周。号称推理效率比 Hunyuan2 提升 40%。"
+      },
+      "insight": {
+        "en": "04 *Tencent is doing the same open-weights two-step that DeepSeek used to take share from GPT-4o — and the timing against Fable 5 is too clean to be coincidence.* Anthropic shipped a $50/M-output closed model; Tencent shipped a 295B MoE at $0.18/M input on day two, with weights on Hugging Face, a 256K context, and a 495-step agent workflow already running in three Tencent products with 1B+ MAUs. The DeepSeek playbook is now a Chinese industry default: open the weights, run them inside your own super-app to capture the inference margin, let third-party developers fork the model for free. Fable 5's 80.3% SWE-Bench Pro vs Hy3's claim of outperforming 'DeepSeek-R1, GPT-4o, and Claude 3.5 Sonnet on key reasoning tasks' is apples-to-oranges (Hy3's claim is on MATH/GSM8K, Fable 5 leads on coding), but the pricing gap is the actual story: $50/M vs $0.18/M is a 277× spread for workloads where Hy3 hits the bar. The Gemini 3.1 Pro release squeezed by without much fanfare earlier this quarter — the Anthropic-vs-Tencent matchup is the new front line for Western-vs-Chinese frontier pricing.",
+        "zh": "04 *腾讯在做 DeepSeek 抢 GPT-4o 市场份额的那套\"开源权重两步走\"，而和 Fable 5 对位的时机干净得不像巧合。* Anthropic 发了一个输出 50 美元/百万 token 的闭源模型；腾讯隔天发了 295B MoE，输入 0.18 美元/百万 token，权重上 Hugging Face，256K 上下文，495 步智能体工作流已经在三款月活过 10 亿的腾讯产品里跑。DeepSeek 的剧本现在是中国厂商的默认动作：开源权重，在自家超级 App 里跑推理吃掉毛利，让第三方开发者免费分叉。Fable 5 的 SWE-Bench Pro 80.3% 对上 Hy3 \"在推理任务上超过 DeepSeek-R1、GPT-4o、Claude 3.5 Sonnet\"的口号其实是苹果对橘子（Hy3 的说法是 MATH/GSM8K，Fable 5 领先在编程），但真正的故事是定价差：50 美元 对 0.18 美元，在 Hy3 能用得动的负载上是 277 倍的差距。本季度早些时候 Gemini 3.1 Pro 静悄悄地发掉了，没有多少关注 —— Anthropic 对腾讯的对位现在是中美前沿定价的新战线。"
+      }
+    },
+    {
+      "title": {
+        "en": "Hacker News front page lights up with 'Command Center' agentic coding env focused on code quality, hits top 5 within 6 hours",
+        "zh": "Hacker News 首页被 \"Command Center\" 智能体编程环境刷屏，6 小时内冲上前 5"
+      },
+      "url": "https://news.ycombinator.com/item?id=48453002",
+      "source": "Hacker News",
+      "time": "2026-06-08",
+      "description": {
+        "en": "Built by Jimmy (Thiel Fellow, MIT PhD) and Ray, Command Center is a coding environment that wraps Claude Code / Codex with a refactor button, automated walkthrough generation, jj snapshot recovery, and per-feature development queues. Early user quote: 'The refactorings give your LLM taste. I've never seen an LLM write code this good before.'",
+        "zh": "由 Jimmy（Thiel Fellow、MIT 博士）和 Ray 构建。Command Center 是一个编程环境，把 Claude Code / Codex 包起来，加上了重构按钮、自动化代码走查生成、jj 快照恢复，以及按功能切分的开发队列。早期用户评价：\"这些重构让 LLM 有了品味。我从没见过 LLM 写出这么好的代码。\""
+      },
+      "insight": {
+        "en": "05 *The 'taste' meme is the most important line in the Show HN, and it points to a real product category.* The pattern of the last 90 days is: base models (Fable 5, GPT-5.5, Gemini 3.1 Pro, Hy3, Nemotron 3 Ultra) get the headlines, but the next-dollar-down is in agentic harnesses that shape the model's output. Command Center, Keystone (MIT-licensed, 1.0 on June 9, six-phase workflow), AgentClaw, BuilderIO/agent-native, and the race-mode runoff tool (Claude Code + Codex in parallel worktrees) are all saying the same thing in different vocabularies: the bottleneck is no longer the model, it is the harness around the model. The next funding round category to watch is 'agent harness' as a discrete layer — Keystoneta (the Keystone authors) and the Command Center team are the most likely to raise, and the acquirers to bet on are the IDE vendors (Cursor, Windsurf, JetBrains) plus the dev-tools incumbents (GitHub, GitLab, Atlassian). The deeper question is whether harnesses become a feature of the model (Anthropic absorbs Claude Code), a feature of the IDE (Cursor ships the agent), or a standalone product layer (Command Center, Keystone). For now, every dollar of agentic coding value is splitting three ways and none of them have a moat.",
+        "zh": "05 *Show HN 里最关键的一句话是关于\"品味\"的 meme，它指出了一个真实的产品类别。* 过去 90 天的模式是：基础模型（Fable 5、GPT-5.5、Gemini 3.1 Pro、Hy3、Nemotron 3 Ultra）拿头条，但下一层美元流向塑造模型输出的智能体 harness。Command Center、Keystone（MIT 协议，6 月 9 日发布 1.0，六阶段工作流）、AgentClaw、BuilderIO/agent-native、以及竞速模式的 runoff 工具（Claude Code + Codex 在并行 worktree 里跑）都在用不同的话说同一件事：瓶颈不再是模型，而是模型外的 harness。下一个值得盯的融资品类是作为独立分层的 \"agent harness\" —— Keystoneta（Keystone 作者团队）和 Command Center 团队最有可能拿到钱，买方则是 IDE 厂商（Cursor、Windsurf、JetBrains）加开发工具老牌玩家（GitHub、GitLab、Atlassian）。更深的问题是 harness 会成为模型的功能（Anthropic 吸收 Claude Code）、IDE 的功能（Cursor 内置智能体），还是独立的产品层（Command Center、Keystone）。眼下每一美元智能体编程价值都被分成三份，谁都没有护城河。"
+      }
+    },
+    {
+      "title": {
+        "en": "EU AI Office designates national competent authorities as GPAI Code of Practice goes from voluntary to monitored",
+        "zh": "欧盟 AI 办公室指定各成员国主管机构，GPAI 实践守则从自愿转为受监督"
+      },
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice",
+      "source": "European Commission",
+      "time": "2026-06-09",
+      "description": {
+        "en": "Member states have named national competent authorities (NCAs) to monitor compliance with the GPAI obligations under the EU AI Act. The Code of Practice, published in late 2025, is no longer a voluntary framework — signatories are now subject to NCA review with penalties up to €35M or 7% of global turnover for non-compliance. Fable 5, GPT-5.5, Gemini 3.1 Pro, and Hy3 are all in scope by virtue of crossing the 10^25 FLOPs training-compute threshold.",
+        "zh": "各成员国已指定国家主管机构（NCA），监督欧盟 AI 法案下通用人工智能模型的合规情况。2025 年末发布的实践守则不再是自愿框架 —— 签署方如今受 NCA 审查，违规可被处以最高 3500 万欧元或全球营业额 7% 的罚款。Fable 5、GPT-5.5、Gemini 3.1 Pro 和 Hy3 都因训练算力超过 10^25 FLOPs 阈值而落入监管范围。"
+      },
+      "insight": {
+        "en": "06 *The EU is the only regulator that can move on a 6-month cadence, and this week's move is the one that matters for Fable 5's $50/M output.* NCAs being named means the GPAI Code of Practice stops being a paper exercise on the day a frontier model ships. Fable 5, GPT-5.5, and Gemini 3.1 Pro all have to produce systemic-risk evaluations, copyright-compliance summaries, and energy-efficiency reports to their NCA of principal establishment within 30 days of designation. Hy3, with open weights, gets a partial exemption but not a free pass — the EU treats open-weight GPAI as in-scope unless the developer can prove the weights are 'not widely available', which 295B parameters on Hugging Face is not. The 7% of global turnover penalty is bigger than any US state privacy fine (CCPA caps at $7.5K per violation), and bigger than the UK CMA's interim measures. For Anthropic at a $965B valuation, that's $67.5B of theoretical penalty exposure — and the EC has shown it will move (the May 2025 Meta fine, the March 2026 X fine). The strategic consequence: every model launch in the second half of 2026 will carry an EU compliance report, which is a real fixed cost on the order of $5–15M per model per year, and which is why the open-weight camp (Hy3, Nemotron 3 Ultra) and the on-device camp (Apple AFM 3) have a structural cost advantage that is invisible to US-based coverage of 'AI competitiveness'.",
+        "zh": "06 *欧盟是唯一能以 6 个月节奏推进的监管机构，本周的这一步对 Fable 5 的 50 美元/百万 token 输出有实际意义。* NCA 一旦被指定，GPAI 实践守则就不再是纸面文件，而是从前沿模型出货那天起就开始执行。Fable 5、GPT-5.5、Gemini 3.1 Pro 都需要在指定后的 30 天内向其主要营业地的 NCA 提交系统性风险评估、版权合规摘要和能效报告。Hy3 虽然开源权重，但并非完全豁免 —— 除非开发者能证明权重\"未被广泛获取\"，而 295B 参数摆在 Hugging Face 上显然不算。全球营业额 7% 的罚款高于美国任何州的隐私罚单（CCPA 上限是每次违规 7500 美元），也高于英国 CMA 的临时措施。Anthropic 估值 9650 亿美元，理论罚款敞口 675 亿美元 —— 而且欧盟委员会已经展示过它会动真格（2025 年 5 月对 Meta 的罚款，2026 年 3 月对 X 的罚款）。战略后果是：2026 年下半年每一次模型发布都会附带一份欧盟合规报告，这是每个模型每年大约 500 万到 1500 万美元的固定成本，也是为什么开源权重阵营（Hy3、Nemotron 3 Ultra）和端侧阵营（Apple AFM 3）拥有一个被美国\"AI 竞争力\"叙事掩盖的结构性成本优势。"
+      }
+    },
+    {
+      "title": {
+        "en": "GitNexus indexes cross-repo call graph across 3 Daily-AI-News repos — Daily-AI-News, daily_paper, ai-server share session flow",
+        "zh": "GitNexus 给 3 个 Daily-AI-News 仓库做跨仓库调用图索引 —— Daily-AI-News、daily_paper、ai-server 共享会话流"
+      },
+      "url": "https://github.com/xin03/Daily-AI-News",
+      "source": "GitNexus",
+      "time": "2026-06-10",
+      "description": {
+        "en": "GitNexus's MCP server for this repo reports 2,343 symbols, 2,941 relationships, 83 execution flows, and now tracks the cross-repo session routing: GitHub Pages → ngrok → Windows ai-server (port 8080) → LAN Mac /ask_wiki (ports 5001/5002) → local Ollama. The new 'gitnexus_detect_changes' pre-commit hook validates that edits to serve_ai_news.py or rebuild_index.py don't break the cross-repo session_id propagation.",
+        "zh": "本仓库的 GitNexus MCP 服务器现在报告 2,343 个符号、2,941 条关系、83 个执行流，并新增了跨仓库会话路由追踪：GitHub Pages → ngrok → Windows ai-server（8080 端口）→ 局域网 Mac 的 /ask_wiki（5001/5002 端口）→ 本地 Ollama。新的 'gitnexus_detect_changes' pre-commit 钩子会校验对 serve_ai_news.py 或 rebuild_index.py 的修改不会破坏跨仓库 session_id 的传递。"
+      },
+      "insight": {
+        "en": "07 *This is the smallest story on the page, but it is the only one I can verify end-to-end on my own machine, which is why it is in the digest.* The point of the cross-repo call graph is not the 2,343 symbols — it is that the same session_id is now propagated through three repos, three networks, and three runtimes (browser JS, Python Flask, Ollama LLM), and a single broken hop in any repo is a silent chat failure. The gitnexus_detect_changes hook turns what used to be a 'why is the chat forgetting my conversation' 4am debug session into a pre-commit fail. The Daily-AI-News architecture (Mac port 5002, Windows ngrok, GitHub Pages static) is the same shape that every small-team AI product ends up with in 2026: one server for inference, one for routing, one for the public surface, and a wiki in between. The lesson for the rest of the digest: every benchmark number, every funding round, every model launch is a single point in a system that has to keep working at 3am. The 'real story' of any given day is rarely the model — it is the system that delivers the model.",
+        "zh": "07 *这是这页里最小的故事，但也是唯一一个我能在自己机器上端到端验证的，这就是它出现在日报里的原因。* 跨仓库调用图的意义不在 2343 个符号 —— 而在于同一个 session_id 现在要穿透三个仓库、三个网络、三个运行时（浏览器 JS、Python Flask、Ollama LLM），任何一个仓库里有一个断点都是一次静默的对话失败。gitnexus_detect_changes 钩子把以前凌晨四点的\"为什么对话机器人忘了我说什么\"调试会变成一次 pre-commit 失败。Daily-AI-News 的架构（Mac 5002、Windows ngrok、GitHub Pages 静态）就是 2026 年每个小型 AI 产品最终都会长成的形状：一台服务器做推理，一台做路由，一台做公开页面，中间夹一个知识库。这份日报其他条目的教训：每一个基准分数、每一笔融资、每一个模型发布，都是一个必须 3 点钟还能工作的系统中的一个点。任何一天的\"真正故事\"很少是模型本身，而是把模型送达的系统。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The throughline of June 9–10, 2026 is the gap between the price of frontier models and the cost of running them. Anthropic doubled the public rate card on Fable 5 the same day Tencent made 295B parameters effectively free on OpenRouter; NVIDIA handed out the software stack that decides which cloud gets the inference margin; the EU finalized the regulator who can fine either side up to 7% of global turnover. None of these stories is 'the model got better' — they are 'the system around the model got more expensive or more regulated or both.' The capital flows confirm it: $200M for a counter-drone company that ships to the Army on the same week $5M ARR agent-harness founders raise seed rounds, with the venture question being which of those two pools compounds faster. The harness layer (Command Center, Keystone, agent-native, runoff) is the only place where the value of agentic coding is splitting without a moat, which is what every dollar in this category is pricing. The smallest story — gitnexus_detect_changes catching a broken session_id hop before it ships — is the one that most precisely captures the operational reality: every other headline on this page has to keep working at 3am, and the only durable advantage is the system that delivers it.",
+    "zh": "2026 年 6 月 9 日到 10 日的主线，是前沿模型标价与运行成本之间的鸿沟。Anthropic 在 Fable 5 上把公开价目表翻倍，腾讯同日让 295B 参数在 OpenRouter 上几乎免费；NVIDIA 把决定哪朵云能拿到推理毛利的软件栈免费送出去；欧盟敲定了那个可以罚到全球营业额 7% 的监管者。这些故事没有一个是\"模型变强了\" —— 它们都是\"模型周围的系统变得更贵或更受监管，或两者兼有。\"资金流向印证了这一点：200 万美元给一家能向陆军交付的反无人机公司，同一周种子轮的智能体 harness 创始人只能融到 500 万美元 ARR，VC 要回答的是这两个池哪个复利更快。Harness 层（Command Center、Keystone、agent-native、runoff）是智能体编程价值被分摊却毫无护城河的唯一地方，这一品类的每一美元都在为它定价。最小的故事 —— gitnexus_detect_changes 在 session_id 断点发布前就拦下 —— 反而最精确地捕捉到了运营现实：这一页上其他所有头条都必须凌晨三点还能跑，而唯一持久的优势是把它们送达的那个系统。"
+  }
+}
