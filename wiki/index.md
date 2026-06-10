@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-09 (June 9: compute-IPO-pause convergence — AFM 3, OpenAI $852B IPO, Xiaomi 1000 TPS, Google-SpaceX $920M/month, Jack Clark brake pedal)
+Last updated: 2026-06-10 (lint: 4 broken links fixed, 2 new sources created: cerebras, groq; index Sources count 51→53)
 
 ## Topics (10)
 - [[topics/agentic_ai]] — June 8, 2026 sees the agent infrastructure layer being commoditized from below: three open-source agent repos (Snowey closed-loop learning, Gitpup 6-stage skill tree, AgentGhost 6-tier memory + MCTS) trend the same day; Mellum2 (Apache 2.0) becomes the default sub-agent brain; GitHub Copilot token billing makes the cost of Opus 4.8 vs Haiku 4.5 vs Mellum2 directly
@@ -14,7 +14,7 @@ Last updated: 2026-06-09 (June 9: compute-IPO-pause convergence — AFM 3, OpenA
 - [[topics/github_trends]] — June 8, 2026 trends three open-source agent repos on the same day: Snowey (4.2k stars) closed-loop learning, Gitpup-agent (1.8k stars) 6-stage skill tree, AgentGhost (612 stars) 6-tier memory + MCTS + DSPy/GEPA — the "self-improving agent" and "agent plumbing" categories crystallize at the GitHub trending level simultaneously, 
 - [[topics/llm_models]] — June 7-8, 2026 crystallizes the "hybrid reasoning" consensus: three frontier releases in ten days (Nemotron 3 Ultra Mamba-Transformer, MAI-Thinking-1 sparse MoE, Unisound U2 explicit CoT+implicit latent) all converge on the same architectural bet that pure transformers topped out around Claude 3.5/4-class reasoning; Unisound U2 (GPQA Diamond 87.9) is the third
 
-## Sources (51)
+## Sources (53)
 - [[sources/ai2]] — Ai2 is a Seattle-based AI research organization founded by the late Paul Allen. It is best known for OLMo, one of the most transparent open-source lan
 - [[sources/alibaba]] — Alibaba is a Chinese tech giant and the creator of the Qwen model family. In April 2026, Alibaba is in talks (alongside Tencent) to invest in DeepSeek
 - [[sources/amazon]] — Amazon is the world's largest e-commerce platform and cloud infrastructure provider (AWS). The company is pivoting toward voice and agent shopping, bu
@@ -22,6 +22,7 @@ Last updated: 2026-06-09 (June 9: compute-IPO-pause convergence — AFM 3, OpenA
 - [[sources/anthropic]] — June 8, 2026: 90% internal Claude adoption report + Claude 1,858% YoY usage growth + verifiable pause advocacy + Claude Mythos Preview 16+ hour autonomous tasks; first public admission that human code review is the binding constraint on recursive self-improvement; the safety narrative (Mythos + verifiable pause) and the commercial narrative (1T+ valuation, 90% adoption, 1,858% growth) compound into the strongest competitive position of any AI lab; company has emerged as the defining AI
 - [[sources/apple]] — Apple's multi-model strategy for iOS 27 marks a significant shift from exclusive partnerships to a diversified AI approach. By bringing in Google Gemi
 - [[sources/baidu]] — Baidu launched Ernie 5.1 on May 9, 2026, claiming pre-training costs at just 6% of industry peers at similar scale. The model compresses parameters to
+- [[sources/cerebras]] — AI hardware company behind the Wafer-Scale Engine (WSE-3); Cerebras Inference peaked at ~969 TPS — the bar Xiaomi + TileRT cleared on commodity 8-GPU hardware on June 8, 2026; specialized-silicon moat directly undercut by software/runtime innovation
 - [[sources/cisco]] — Cisco Systems; published the canonical June 2026 multi-turn vulnerability study exposing structural weakness in 15 frontier AI models, reframing how enterprises evaluate AI security.
 - [[sources/codeium]] — Codeium is the company behind Windsurf, an AI-powered coding IDE that competes with Cursor, Claude Code, and OpenAI Codex. Codeium's key differentiato
 - [[sources/cognition]] — Cognition is an AI company creating Devin — an autonomous AI software engineer agent. In April 2026, Cognition is in talks to raise new funding at a $
@@ -32,6 +33,7 @@ Last updated: 2026-06-09 (June 9: compute-IPO-pause convergence — AFM 3, OpenA
 - [[sources/geely]] — Geely is a Chinese automotive group that owns Volvo, Polestar, Zeekr. Partner with Waymo to build the Zeekr platform for the Ojai robotaxi.
 - [[sources/github]] — June 8, 2026: token billing replaces per-seat subscription for enterprise Copilot — the most consequential enterprise pricing shift in the agentic-coding era; makes cost directly proportional to model selection; strategic beneficiary is the cheapest viable model (Mellum2, Haiku 4.5, DeepSeek V4 Pro); same playbook as Snowflake on data warehousing; platform is the dominant
 - [[sources/google]] — June 8, 2026: Gemini closes on ChatGPT via Workspace + Android + Search integration (free, hardware-bundled, 3B+ user-surface-integrated) — structurally different from OpenAI's consumer approach; Pixel 9+ Gemini Nano on-device is the un-priced moat OpenAI cannot match; the AI Search category's structural moat; June 8 marks the first quarter where Google, OpenAI, and Anthropic are all profitable-or-near; Google has deepened its role as an AI infrastructure provider
+- [[sources/groq]] — AI hardware company founded by Jonathan Ross (former Google TPU architect); Groq LPU peaked at ~750 TPS — second-fastest cloud inference option historically; value proposition undercut on June 8, 2026 by Xiaomi + TileRT achieving ~1200 TPS on commodity 8-GPU node
 - [[sources/ibm]] — IBM entered the AI development platform race with Bob, an AI-first development partner that automates the full software development lifecycle beyond c
 - [[sources/ineffable-intelligence]] — Ineffable Intelligence is an AI startup founded by ex-DeepMind researcher David Silver (co-author of the AlphaGo paper) that raised the largest seed r
 - [[sources/isomorphic]] — Isomorphic Labs is Google's AI-powered drug design subsidiary, spun out from DeepMind to apply AlphaFold-derived models to pharmaceutical discovery. T

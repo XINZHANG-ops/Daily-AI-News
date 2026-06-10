@@ -1,3 +1,28 @@
+## [2026-06-10] lint
+
+Pre-scan found 4 broken links. Repairs:
+
+**Broken links fixed (4):**
+- `entities/tilert` → `[[entities/cerebras]]` rewritten to `[[sources/cerebras]]`
+- `entities/tilert` → `[[entities/groq]]` rewritten to `[[sources/groq]]`
+- `topics/ai_infrastructure` → `[[entities/cerebras]]` rewritten to `[[sources/cerebras]]`
+- `topics/ai_infrastructure` → `[[entities/groq]]` rewritten to `[[sources/groq]]`
+
+**New sources created (2):**
+- `sources/cerebras` — AI hardware company behind Wafer-Scale Engine (WSE-3); ~969 TPS peak was the bar Xiaomi + TileRT cleared on commodity 8-GPU on June 8, 2026
+- `sources/groq` — AI hardware company founded by Jonathan Ross (ex-Google TPU architect); Groq LPU peaked at ~750 TPS, undercut by Xiaomi + TileRT achieving ~1200 TPS on commodity hardware
+
+**Index updates:**
+- `wiki/index.md` Sources count incremented from 51 → 53 with descriptive entries for both new sources
+
+**Full wiki audit results (357 files, 3,383 links):**
+- Broken links: 0
+- Orphan pages: 0
+- Empty/stub pages: 0
+- All topic pages have ## Evolution and ## Patterns & Insights sections
+- No bare "Related:" or "See also:" annotations
+- No company/people misclassified in entities/
+
 ## [2026-06-07] ingest | 1 date
 
 Dates processed: 2026-06-07

@@ -1392,3 +1392,24 @@ All updates are in place. Here's a summary of what was processed:
 
 ### Chat Session Learning (3 Q&A sessions from Apr 23-26)
 Confirmed recurring themes: agent infrastructure layer consolidation, frontier model portfolio war, Mythos Bank of England escalation, multi-turn vulnerability as structural. No corrections needed — existing pages already cover these patterns.
+Good — `processed.json` already has 2026-06-09 from the previous run. The 2026-06-09 ingest is complete and verified. Final state:
+
+**Summary of 2026-06-09 wiki ingest:**
+
+**New entities (8):**
+- `afm-3`, `afm-3-cloud-pro`, `tilert`, `mimo-v2-5-pro-ultraspeed`, `google-skills`, `last30days-skill`, `turbovec`, `notebooklm`
+
+**New source (1):**
+- `xiaomi`
+
+**Updated sources (6):** anthropic, openai, apple, google, spacex, meta
+
+**Updated topics (7):** llm_models, ai_funding, agentic_ai, ai_infrastructure, ai_safety, ai_companies, github_trends
+
+**Updated ideas (4):** two-track-ai-future, openai-ipo-validates-agent-economy, safety-restricted-releases, three-tier-safety-playbook
+
+**Updated timeline:** 2026-06
+
+**Index/log/registry:** `index.md` (added xiaomi source + 8 entities, count=220), `processed.json` (added 2026-06-09, total=81), `log.md` (June 9 entry appended)
+
+**Lint verification:** All my changes verified. The only `BROKEN: sources/afm-3` I introduced has been corrected to `entities/afm-3`. The 7 other broken links (`cerebras`, `groq`, `ineffable-intelligence`, `karpathy-autoresearch`, `mcp`, `nemoclaw`, `openhands`) are pre-existing and outside the scope of this ingest.

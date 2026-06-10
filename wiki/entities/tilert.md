@@ -29,8 +29,8 @@ The strategic significance: every lab currently paying for Cerebras/Groq contrac
 ## Connections
 - [[sources/xiaomi]] — Co-developed with Xiaomi for the MiMo-V2.5-Pro-UltraSpeed release
 - [[entities/mimo-v2-pro]] — Successor model in Xiaomi's MiMo family; TileRT is the runtime that makes V2.5-Pro-UltraSpeed viable on commodity hardware
-- [[entities/cerebras]] — Cerebras and Groq's business model is directly threatened by TileRT's software-only 1000 TPS on commodity hardware
-- [[entities/groq]] — Groq's LPU hardware advantage is undercut by TileRT's runtime innovation on commodity 8-GPU nodes
+- [[sources/cerebras]] — Cerebras and Groq's business model is directly threatened by TileRT's software-only 1000 TPS on commodity hardware
+- [[sources/groq]] — Groq's LPU hardware advantage is undercut by TileRT's runtime innovation on commodity 8-GPU nodes
 - [[topics/ai_infrastructure]] — TileRT is the proof point that inference cost is now a runtime problem, not a hardware problem
 - [[ideas/efficiency-frontier]] — 1000+ TPS on 1T params from commodity hardware is the new efficiency frontier; runtime innovation replaces chip specialization
 - [[ideas/china-efficiency-advantage]] — Xiaomi + TileRT demonstrates China's structural advantage in extracting frontier performance from commodity hardware

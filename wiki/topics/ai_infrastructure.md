@@ -74,8 +74,8 @@ The AI infrastructure market is undergoing a structural transformation from comm
 - [[entities/afm-3-cloud-pro]] — June 8: AFM 3 Cloud Pro on NVIDIA backbone is Apple's first cloud-NVIDIA dependency since the 1990s; the third Apple platform pivot in three decades
 - [[sources/apple]] — June 8: AFM 3 Cloud Pro on NVIDIA backbone; Apple joins Anthropic (Google Cloud) and others in depending on NVIDIA/Google for frontier cloud AI
 - [[sources/google]] — June 5: $920M/month SpaceX deal makes Google one of the largest direct compute customers in the industry; bypasses hyperscalers for frontier AI capacity
-- [[entities/cerebras]] — Cerebras and Groq's specialized accelerator business model is directly threatened by TileRT's software-only 1000 TPS on commodity hardware
-- [[entities/groq]] — Groq's LPU hardware advantage is undercut by TileRT's runtime innovation on commodity 8-GPU nodes
+- [[sources/cerebras]] — Cerebras and Groq's specialized accelerator business model is directly threatened by TileRT's software-only 1000 TPS on commodity hardware
+- [[sources/groq]] — Groq's LPU hardware advantage is undercut by TileRT's runtime innovation on commodity 8-GPU nodes
 - [[ideas/compute-shortage-forces-cooperation]] — June 5: Google-SpaceX $920M/month + Anthropic-SpaceX $1.25B/month = $2.17B/month in compute contracts, making SpaceX the largest "compute-as-a-service" provider
 - [[ideas/commodity-inference-fragmentation]] — June 8: TileRT 1000 TPS on commodity 8-GPU breaks the specialized silicon moat; the inference cost floor collapses through software innovation
 - [[topics/ai_funding]] — June 5-9: SpaceX $920M/month + OpenAI $852B IPO + Anthropic $965B confidential = the largest week of public-market capital allocation in AI history
