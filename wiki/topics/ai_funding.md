@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-06-09
+last_updated: 2026-06-10
 ---
 
 # AI Funding
@@ -31,6 +31,7 @@ Microsoft committed $10 billion to Japan AI infrastructure — the largest singl
 
 
 | 2026-05-31 | Cognition raises $1B | Autonomous coding agents; one of largest AI agent funding rounds; signals coding is the killer app |
+| 2026-06-08 | Allen Control Systems raises $200M Series B at $2.2B | AI-guided Bullfrog counter-drone system; Smash Capital led; deployed with US Army + US Navy; 100% T-REX 26-1 success rate; largest pure-physical-AI defense round of June 2026 outside Pentagon classified contracts |
 
 | Date | Event | Significance |
 |------|-------|-------------|
@@ -174,3 +175,7 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[entities/mimo-v2-5-pro-ultraspeed]] — June 8: 1T model at 1000 TPS on commodity 8-GPU is the canonical capital-efficient frontier model
 - [[ideas/three-tier-safety-playbook]] — June 9: pause advocacy is now a filing-deadline play; safety positioning is structurally tied to IPO timing
 - [[timelines/2026-06]] — June 5-9: SpaceX $920M/month + OpenAI $852B IPO + Anthropic $965B confidential + Jack Clark "brake pedal" = the largest week of public-market capital allocation in AI history
+- [[sources/allen-control-systems]] — June 8: $200M Series B at $2.2B for AI-guided Bullfrog counter-drone; the largest pure-physical-AI defense funding round of June 2026 outside Pentagon classified contracts; the 100% T-REX 26-1 success rate is the empirical procurement-grade signal
+- [[entities/bullfrog]] — June 8: deployment-grade AI-guided counter-drone (US Army + US Navy); represents the venture-scale validation of physical AI at the defense layer
+- [[ideas/military-ai-divide]] — June 8: $200M for Allen Control Systems on the same week that agent-harness founders raise seed rounds at $5M ARR is the cleanest single-week expression of where venture returns are expected to compound — physical AI for defense has deployment-grade moat, virtual AI for SaaS has no moat
+- [[entities/command-center]] — June 8: HN top 5 in 6 hours; the canonical June 2026 example of the harness-layer value capture thesis; same week as Allen Control Systems' $200M round, the venture capital is pricing exactly the no-moat dynamic of the agent-harness category

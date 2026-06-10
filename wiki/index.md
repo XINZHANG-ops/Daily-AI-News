@@ -1,9 +1,9 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-10 (lint: 4 broken links fixed, 2 new sources created: cerebras, groq; index Sources count 51→53)
+Last updated: 2026-06-10 (ingest 2026-06-10: 1 date processed; new entities: claude-fable-5, tencent-hy3, nvidia-dsx-os, allen-control-systems, command-center, mempalace, agent-reach, headroom, bullfrog, eu-gpai-code-of-practice, longmemeval, swe-bench-pro; new sources: allen-control-systems, eu-ai-office; new ideas: harness-layer-no-moat, ai-factory-software-stack, agent-cost-stack-fragmentation; Sources 53→55, Entities 220→232, Ideas 70→73)
 
 ## Topics (10)
-- [[topics/agentic_ai]] — June 8, 2026 sees the agent infrastructure layer being commoditized from below: three open-source agent repos (Snowey closed-loop learning, Gitpup 6-stage skill tree, AgentGhost 6-tier memory + MCTS) trend the same day; Mellum2 (Apache 2.0) becomes the default sub-agent brain; GitHub Copilot token billing makes the cost of Opus 4.8 vs Haiku 4.5 vs Mellum2 directly
+- [[topics/agentic_ai]] — June 9, 2026 sees the agent cost stack fragmenting in a single day: Mempalace (55.2k stars, 96.6% R@5 on LongMemEval), Agent-Reach (25.8k stars, free internet access), and Headroom (21.1k stars, 60-95% token reduction) all open-source within 24 hours; Command Center hits HN top 5 in 6 hours; Tencent Hy3 ships 495-step production workflows — the agent cost stack is being open-sourced layer by layer
 - [[topics/ai_search]] — AI Search tracks the integration of generative AI into search engines, producing direct answers rather than link lists. The category war pits Google's AI Overviews against Perplexity and ChatGPT, with the June 2026 publisher opt-out exposing the open-web fracture line.
 - [[topics/ai_companies]] — June 8, 2026 marks the bifurcated industry crystallizing: Anthropic discloses 90% internal Claude adoption, Claude posts 1,858% YoY usage growth, OpenAI pursues "super app" pivot, and Unisound (Hong Kong-listed) tests MaaS Token Hub — first quarter where Anthropic, OpenAI, Google are all profitable-or-near on AI revenue, ending the "subsidize to capture" era; the
 - [[topics/ai_funding]] — June 8, 2026: with Mellum2 Apache 2.0, Nemotron 3 Ultra OpenMDW 1.1, and Unisound MaaS Token Hub all launching in the same week, the funding question for sub-frontier models collapses to "open or platform" — neither is venture-scale on its own; profitability-or-near for all three frontier labs in Q2 ends the subsidize-to-capture era; Anthropic's "verifiable pause"
@@ -14,7 +14,9 @@ Last updated: 2026-06-10 (lint: 4 broken links fixed, 2 new sources created: cer
 - [[topics/github_trends]] — June 8, 2026 trends three open-source agent repos on the same day: Snowey (4.2k stars) closed-loop learning, Gitpup-agent (1.8k stars) 6-stage skill tree, AgentGhost (612 stars) 6-tier memory + MCTS + DSPy/GEPA — the "self-improving agent" and "agent plumbing" categories crystallize at the GitHub trending level simultaneously, 
 - [[topics/llm_models]] — June 7-8, 2026 crystallizes the "hybrid reasoning" consensus: three frontier releases in ten days (Nemotron 3 Ultra Mamba-Transformer, MAI-Thinking-1 sparse MoE, Unisound U2 explicit CoT+implicit latent) all converge on the same architectural bet that pure transformers topped out around Claude 3.5/4-class reasoning; Unisound U2 (GPQA Diamond 87.9) is the third
 
-## Sources (53)
+## Sources (55)
+- [[sources/allen-control-systems]] — June 8, 2026: AI-guided Bullfrog counter-drone company raises $200M Series B at $2.2B; deployed with US Army + US Navy; 100% T-REX 26-1 success; largest pure-physical-AI defense round of June 2026 outside Pentagon classified contracts
+- [[sources/eu-ai-office]] — June 9, 2026: the EU AI Office designates National Competent Authorities for GPAI Code of Practice monitoring; Code of Practice shifts from voluntary to monitored with penalties up to €35M or 7% of global turnover; Fable 5 is the first frontier model to launch under active monitoring
 - [[sources/ai2]] — Ai2 is a Seattle-based AI research organization founded by the late Paul Allen. It is best known for OLMo, one of the most transparent open-source lan
 - [[sources/alibaba]] — Alibaba is a Chinese tech giant and the creator of the Qwen model family. In April 2026, Alibaba is in talks (alongside Tencent) to invest in DeepSeek
 - [[sources/amazon]] — Amazon is the world's largest e-commerce platform and cloud infrastructure provider (AWS). The company is pivoting toward voice and agent shopping, bu
@@ -76,7 +78,7 @@ Last updated: 2026-06-10 (lint: 4 broken links fixed, 2 new sources created: cer
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 - [[timelines/2026-06]] — June opens with regulatory escalation (Florida sues OpenAI, Anthropic IPO), Claude Mythos ENISA access, and multi-turn vulnerability study
 
-## Entities (220)
+## Entities (232)
 - [[entities/project-solara]] — type: product — Project Solara is Microsoft's "chip-to-cloud" platform for AI agent-first devices announced at Build 2026. Features wearable badge and desk hub concepts with Qualcomm silicon, top-facing cameras, and 5G connectivity.
 - [[entities/ai-overviews]] — type: product — AI Overviews are Google's AI-generated search results. On June 3, 2026, Google announced an opt-out toggle in Search Console allowing website owners to exclude domains from AI-generated results without affecting regular search.
 - [[entities/codex]] — type: product — Codex is OpenAI's coding agent reaching 5M weekly users (June 2026). The enterprise expansion with Sites, Annotations, and role-specific plugins transforms it from coding assistant to enterprise orchestration layer.
@@ -310,7 +312,22 @@ Last updated: 2026-06-10 (lint: 4 broken links fixed, 2 new sources created: cer
 - [[entities/unisound-u2]] — type: model; released June 8, 2026; "Native execution" agentic model with "Hybrid Thinking" (explicit CoT + implicit latent-space reasoning); GPQA Diamond 87.9, SWE-Bench Verified 75, Claw-Eval pass@3 76.9, GDPval 72.9; explicit competitive positioning above GLM-5.1, DeepSeek-V4-Flash, MiniMax-M2.7; MaaS Token Hub distribution
 - [[entities/mellum-2]] — type: model; 12B MoE (2.5B active per token), Apache 2.0; 2x faster inference than comparable open code models; first serious "agent plumbing" model from a non-Meta, non-Chinese vendor; pure Apache 2.0 makes it the default sub-agent brain for any IDE vendor avoiding Llama Community License risk
 
-## Ideas (70)
+- [[entities/claude-fable-5]] — type: model; June 9, 2026; first public Mythos-class model; 80.3% SWE-bench Pro (first public score above 80%); $10/$50 per M tokens (2× Opus 4.8); 5% of cyber/bio/chem prompts routed to Opus 4.8; productizes the safety-routing layer as a feature
+- [[entities/tencent-hy3]] — type: model; June 9, 2026; 295B MoE (21B active) agent model with 256K context; 495-step production workflows in Yuanbao, QQ, Tencent Docs (highest production step count of 2026); $0.18/M on OpenRouter (free 2 weeks); the smallest-active-parameter frontier-tier model
+- [[entities/nvidia-dsx-os]] — type: product; June 9, 2026; NVIDIA's open-source AI factory software stack; 40% more GPUs per megawatt at rack level; bundles NVSentinel, DSX MaxLPS, KAI Scheduler + Run:ai, Dynamo + Grove, NICo/NVCF
+- [[entities/allen-control-systems]] — type: company; June 8, 2026; $200M Series B at $2.2B; AI-guided Bullfrog counter-drone; deployed with US Army + US Navy; 100% T-REX 26-1 success rate
+- [[entities/bullfrog]] — type: product; AI-guided autonomous counter-drone by Allen Control Systems; fuses computer vision, robotics, AI decision-making; 100% success in T-REX 26-1
+- [[entities/command-center]] — type: product; June 8, 2026; agentic coding environment by Jimmy (Thiel Fellow, MIT PhD) and Ray; wraps Claude Code + Codex with refactor button, walkthrough generation, jj snapshot recovery, per-feature development queues; HN top 5 in 6 hours
+- [[entities/mempalace]] — type: repo; June 9, 2026; 55.2k stars; local-first AI memory system; palace/wing/room/drawer layout; 96.6% R@5 on LongMemEval without LLM in loop; ships with MCP server + Claude Code hooks
+- [[entities/agent-reach]] — type: repo; June 9, 2026; 25.8k stars; gives AI agents free internet access to Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu via single CLI; zero API fees
+- [[entities/headroom]] — type: repo; June 9, 2026; 21.1k stars; compresses tool outputs, logs, files, RAG chunks by 60-95% before they reach the LLM; ships as library, proxy, and MCP server
+- [[entities/eu-gpai-code-of-practice]] — type: framework; June 9, 2026; GPAI Code of Practice shifts from voluntary to monitored; NCAs designated by EU member states; penalties up to €35M or 7% of global turnover; Fable 5 is the first frontier model to face active monitoring
+- [[entities/longmemeval]] — type: benchmark; agent memory evaluation; Mempalace achieves 96.6% R@5 (June 9) without LLM in loop; the highest score in 2026
+- [[entities/swe-bench-pro]] — type: benchmark; harder variant of SWE-bench Verified; Fable 5 scores 80.3% (June 9), the first public score above 80% on this benchmark
+## Ideas (73)
+- [[ideas/agent-cost-stack-fragmentation]] — June 9, 2026: Mempalace (memory), Agent-Reach (internet access), and Headroom (token compression) all open-source in a single day; combined with Fable 5's 2× Opus 4.8 pricing and Hy3 at $0.18/M, the agent inference cost stack is being attacked from five directions simultaneously
+- [[ideas/ai-factory-software-stack]] — June 9, 2026: NVIDIA open-sources DSX OS with 40% more GPUs per megawatt; data center power, not GPU count, is the new binding constraint; the integrated production software stack is itself a moat even with open-sourced components
+- [[ideas/harness-layer-no-moat]] — June 8, 2026: Command Center hits HN top 5 in 6 hours; the value of agentic coding is splitting at the harness layer without a moat; capital flowing into the category is pricing exactly this dynamic
 - [[ideas/agent-control-interface-wars]] — Google's Remy reveals a philosophical split in agent UX design that will define how enterprises adopt autonomous AI. While OpenAI's Operator and Anthr
 - [[ideas/agent-democratization]] — Open-source agent frameworks are rapidly democratizing access to autonomous AI capabilities. The Claude Code leak's rapid replication by claw-code (10
 - [[ideas/agentic-developer-as-primary-end-user]] — June 6-7, 2026 is when "agentic developer" stops being a niche use case and becomes the primary end-user persona for foundation model companies; every product shipped

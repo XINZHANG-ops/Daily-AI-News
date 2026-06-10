@@ -37,6 +37,13 @@ The compute shortage forces cooperation even between ideological rivals. Partner
 - Rate limits immediately doubled for Claude Code paid tiers
 - Anthropic $65B raise with Samsung, SK Hynix, Micron as strategic investors — compute suppliers become equity partners
 
+### June 9: NVIDIA DSX OS — The Software-Stack Moat
+- NVIDIA open-sources DSX OS, the production stack that previously ran DGX Cloud as a closed managed offering
+- 40% more GPUs per megawatt at rack level — data center power, not GPU count, is the new binding constraint
+- Launch partners: CoreWeave, Lambda, Crusoe, IREN, Vultr (every specialized AI cloud that competes with hyperscalers)
+- Strategic concession: NVIDIA concedes the chip is becoming commoditized and competes on the integrated production software
+- The "GPUs per megawatt" framing creates a new funding thesis: tools and infrastructure that improve rack-level power efficiency
+
 ### 2025
 - Major infrastructure investments by Google, Microsoft, Amazon
 - Compute emerges as competitive differentiator
@@ -56,6 +63,10 @@ The AI infrastructure market is undergoing a structural transformation from comm
 - [[sources/spacex]] — Compute business emerging as major revenue line
 - [[sources/anthropic]] — $45B compute deal secures capacity
 - [[ideas/compute-shortage-forces-cooperation]] — Scarcity overrides rivalries
+- [[entities/nvidia-dsx-os]] — June 9: open-sourcing the DGX Cloud production stack reframes "AI infrastructure" from GPU count to GPUs per megawatt; the integrated production stack is itself a moat even with open-sourced components
+- [[ideas/ai-factory-software-stack]] — June 9: the AI factory software stack as the new venture thesis; data center power is the binding constraint
+- [[ideas/nvidia-competitive-moat-eroding]] — DSX OS is NVIDIA's direct response to chip-moat erosion: concede the chip is becoming commoditized, compete on the integrated production software
+- [[entities/nvidia-dsx-os]] — DSX OS launch partner; access to the underlying stack of NVIDIA's highest-margin managed offering removes CoreWeave's dependency on hyperscalers
 ### May 31: Meta Signals Cloud Entry
 - Meta raises AI infrastructure spend to $125-145B
 - Zuckerberg: cloud business "definitely on the table" if capacity exceeds internal demand

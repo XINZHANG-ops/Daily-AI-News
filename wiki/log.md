@@ -168,6 +168,18 @@ Ideas updated: agent-infrastructure-layer (reinforced), foundation-model-portfol
 
 Chat session learning: Reviewed 3 Q&A sessions (Apr 23-26). Confirmed recurring themes: agent infrastructure layer consolidation, frontier model portfolio war, Claude 1,858% growth context, Google $40B Anthropic investment, Claude Mythos Bank of England escalation, multi-turn vulnerability as structural. No new corrections needed; existing topic/source/entity pages already cover these patterns.
 
+## [2026-06-10] ingest | 1 date
+
+Dates processed: 2026-06-10
+Topics updated: llm_models, ai_funding, ai_safety, ai_infrastructure, agentic_ai, github_trends, ai_companies, physical_ai
+Sources updated: anthropic, tencent, nvidia
+Sources created: allen-control-systems, eu-ai-office
+Entities created: claude-fable-5, tencent-hy3, nvidia-dsx-os, allen-control-systems, command-center, mempalace, agent-reach, headroom, bullfrog, eu-gpai-code-of-practice, longmemeval, swe-bench-pro
+Timelines updated: 2026-06 (June 9-10: 55× single-day pricing split, safety-productized frontier, DSX OS, Bullfrog $200M, EU NCA designation, Command Center, agent cost stack)
+Ideas created: harness-layer-no-moat, ai-factory-software-stack, agent-cost-stack-fragmentation
+
+Chat session learning: Reviewed 3 Q&A sessions (Apr 23-26). The patterns confirmed (Mythos geopolitical escalation, Google $40B Anthropic investment, multi-turn vulnerability as structural, frontier profitability-or-near) all extend the existing wiki narrative. The new June 9-10 patterns (Fable 5 productizes the safety-routing layer, 55× Hy3 vs Fable 5 same-day pricing split, Bullfrog $200M physical-AI defense validation, EU NCA active monitoring, agent cost stack open-sourcing in a single day) are net-new themes that create new ideas pages and several new entity pages.
+
 ## [2026-06-09] ingest | 1 date
 
 Dates processed: 2026-06-09

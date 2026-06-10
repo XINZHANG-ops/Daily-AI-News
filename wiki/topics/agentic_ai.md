@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI"
 slug: agentic_ai
-last_updated: 2026-06-09
+last_updated: 2026-06-10
 ---
 
 # Agentic AI
@@ -266,6 +266,9 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 | 2026-06-06 | Microsoft MAI-Code-1-Flash | 5B coding model for Copilot/VS Code; co-designed with Maia 200 silicon; part of seven-model MAI drop; the hyperscaler-coder race reaches a new price-performance tier |
 | 2026-06-06 | Microsoft Windows Agent Runtime + Agent 365 expanded | MAI family powers Windows as first-class agent platform; Agent 365 reaches general availability for enterprise control plane managing Claude Code, OpenClaw, GitHub Copilot CLI, AWS Bedrock agents |
 | 2026-06-07 | Nex-N2, HyperAgents, GoA trend | Nex-N2 (Qwen3.5-based agentic model family, 80.8% SWE-Bench Verified); HyperAgents (Meta FAIR's self-referential self-improving agents, 2.6k stars); GoA (ICLR 2026 Graph-of-Agents) — three new agent-first model/framework releases in one day |
+| 2026-06-08 | Command Center hits HN top 5 in 6 hours | Agentic coding environment by Jimmy (Thiel Fellow) and Ray; wraps Claude Code + Codex with refactor button, walkthrough generation, jj snapshot recovery, per-feature development queues; the canonical June 2026 example of the harness-layer value capture thesis
+| 2026-06-09 | Mempalace, Agent-Reach, Headroom trend | Three open-source releases attack the three cost/latency bottlenecks of agentic systems in a single day — memory (Mempalace 55.2k stars, 96.6% R@5 on LongMemEval), internet access (Agent-Reach 25.8k stars, free Twitter/Reddit/YouTube/Bilibili/XiaoHongShu), token compression (Headroom 21.1k stars, 60-95% reduction)
+| 2026-06-09 | Tencent Hy3 ships with 495-step production workflows | 295B MoE (21B active) agent model; highest production step count of 2026 in Yuanbao, QQ, Tencent Docs; $0.18/M on OpenRouter (free 2 weeks); first billion-user agent infrastructure at frontier tier |
 - [[entities/nex-n2]] — June 7: open-source Qwen3.5-based agentic model (80.8% SWE-Bench Verified); "Agentic Thinking" framework represents agent-first model design pattern
 - [[entities/hyperagents]] — June 7: Meta FAIR's meta-agent + task-agent architecture; self-referential self-improvement; 2.6k stars in academic release
 - [[entities/goa]] — June 7: ICLR 2026 Graph-of-Agents formalizes the test-time inference as a collaborative graph of specialized LMs
@@ -298,3 +301,12 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[ideas/two-track-ai-future]] — June 8: AFM 3 on-device (Apple) vs Hatch consumer-bundling (Meta) vs NotebookLM cloud-computer (Google) are the three agent deployment patterns crystallizing
 - [[topics/github_trends]] — June 9: 3 agent infrastructure repos trending simultaneously (last30days, turbovec, google-skills); the agent stack is open-sourcing layer by layer
 - [[timelines/2026-06]] — June 8-9: Hatch + AFM 3 + NotebookLM + 3 agent infrastructure repos = the agent ecosystem is fragmenting into four deployment patterns (on-device, consumer-bundling, cloud-computer, open-source stack)
+- [[entities/command-center]] — June 8: HN top 5 in 6 hours; the canonical June 2026 example of the harness-layer value capture thesis; wraps Claude Code + Codex with refactor button, walkthrough generation, jj snapshot recovery
+- [[entities/mempalace]] — June 9: 96.6% R@5 on LongMemEval without LLM in loop; the memory layer of the cost stack is not LLM-bound
+- [[entities/agent-reach]] — June 9: free internet access to Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu; the internet-access layer of the cost stack is not paywall-bound
+- [[entities/headroom]] — June 9: 60-95% token reduction for tool outputs; the tool-output layer of the cost stack is the largest token sink
+- [[entities/tencent-hy3]] — June 9: 495-step production workflows in Yuanbao, QQ, Tencent Docs is the first billion-user agent infrastructure at frontier tier
+- [[ideas/harness-layer-no-moat]] — June 8: Command Center's viral HN reception is the canonical data point for the "harness layer has no moat" thesis; the value of agentic coding is splitting without structural advantage
+- [[ideas/agent-cost-stack-fragmentation]] — June 9: Mempalace, Agent-Reach, and Headroom all open-sourcing the same day is the cleanest single-day expression of the cost-stack fragmentation
+- [[topics/github_trends]] — June 9: 3 agent infrastructure repos trending simultaneously (Mempalace, Agent-Reach, Headroom); the agent stack is open-sourcing layer by layer
+- [[timelines/2026-06]] — June 9: the agent cost stack fragmentation is operationalized — memory, internet access, and token compression all shipping open-source within 24 hours

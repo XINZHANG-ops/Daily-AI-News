@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA"
 slug: nvidia
-last_updated: 2026-06-07
+last_updated: 2026-06-10
 ---
 
 # NVIDIA
@@ -39,6 +39,7 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 | 2026-05-31 | Cosmos 3 released | First fully open omnimodel for physical AI; native vision reasoning and multimodal generation; Super (32B) and Nano (8B) variants; Nano optimized for edge robot deployment |
 | 2026-05-31 | Agent Toolkit launched | NemoClaw blueprints and OpenShell runtime; positions NVIDIA as infrastructure layer for physical AI agents |
 | 2026-06-04 | Nemotron 3 Ultra unveiled | 550B MoE (55B active) hybrid Mamba-Transformer with NVFP4 4-bit quantization; 5x throughput on Blackwell tensor cores; license shifts from restrictive to OpenMDW-1.1 — weaponizing openness as CUDA moat; companion Content Safety (4B) and ASR (40+ langs) |
+| 2026-06-09 | DSX OS open-sourced | Bundles NVSentinel, DSX MaxLPS, KAI Scheduler + Run:ai, Dynamo + Grove, NICo/NVCF; 40% more GPUs per megawatt at rack level; launch partners CoreWeave, Lambda, Crusoe, IREN, Vultr; open-sources the production stack that previously ran DGX Cloud as a closed managed offering |
 ## Key Relationships
 - **OpenAI**: Strategic investor and primary GPU customer.
 - **Anthropic**: GPU supplier and Project Glasswing coalition member.
@@ -58,6 +59,12 @@ NVIDIA remains the indispensable infrastructure provider for AI, with Blackwell 
 - [[ideas/us-china-ai-fragmentation]] — NVIDIA's China dilemma accelerates hardware decoupling; Huawei's $12B target and DeepSeek V4 Huawei variant prove domestic silicon can train frontier models
 - [[ideas/institutional-gap]] — TSMC 3nm yield crisis (52%) and China decoupling simultaneously pressure NVIDIA's cost structure from supply and demand sides
 - [[entities/cosmos-3]] — June 8: Cosmos 3 (launched May 31) is the most strategically important NVIDIA release of 2026 — locks the "physical AI" category to CUDA at the same moment robotics foundation models are about to commoditize; OpenMDW 1.1 license is deliberately not OSI-approved so NVIDIA can forbid non-CUDA deployers from commercial use
+- [[entities/nvidia-dsx-os]] — June 9: open-sourcing the DGX Cloud production stack is NVIDIA's strategic response to chip-moat erosion; 40% more GPUs per megawatt is the new headline (data center power, not GPU count, is the binding constraint); the launch partner list (CoreWeave, Lambda, Crusoe, IREN, Vultr) arms specialized AI clouds against the hyperscalers
+- [[entities/nvidia-dsx-os]] — Part of DSX OS; disaggregated prefill/decode inference is the architectural bet that long-context agent workloads need split inference stages
+- [[entities/nvidia-dsx-os]] — Acquired by NVIDIA; now part of DSX OS as KAI Scheduler; GPU-aware fractional placement is the runtime primitive that makes the 40% more-GPUs-per-megawatt claim achievable
+- [[ideas/nvidia-competitive-moat-eroding]] — DSX OS is NVIDIA's direct response: concede the chip is becoming commoditized, compete on the integrated production stack
+- [[ideas/open-platform-ai]] — DSX OS is the chip-vendor version of the open-platform thesis: by open-sourcing the production stack, NVIDIA converts a competitive threat (commodity inference runtimes like TileRT) into a defensive moat (every cloud depends on the same stack)
+- [[entities/nvidia-dsx-os]] — Launch cloud partner; access to DGX Cloud's underlying stack removes CoreWeave's dependency on hyperscalers for the highest-margin NVIDIA offering
 - [[entities/nemotron-3-ultra]] — June 8: layered with Cosmos 3, NVIDIA has now locked two new categories (frontier hybrid-reasoning, physical AI) to CUDA in a single week; the playbook (open weights + non-OSI license + coalition) is the same for both
 - [[topics/physical_ai]] — June 8: Cosmos Coalition with six robotics startups (Agile Robots, Black Forest Labs, Generalist, LTX, Runway, Skild AI) is the lock-in play — Cosmos 3 weights are open, but the only training/inference stack that gets full speed is NVIDIA's
 - [[ideas/agent-infrastructure-layer]] — June 8: NVIDIA's two-category CUDA lock-in (Nemotron 3 Ultra + Cosmos 3) is the strategic capstone to the May 2026 "infrastructure layer" pattern; physical AI was the missing piece

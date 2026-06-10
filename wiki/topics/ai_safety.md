@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-06-09
+last_updated: 2026-06-10
 ---
 
 # AI Safety
@@ -48,6 +48,8 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-04-26 | Claude Mythos 5 goes military-grade | 10T params forces global cybersecurity rethink; both labs release cyber-positioned models |
 | 2026-04-26 | xAI grok-voice-think-fast-1.0 launches | τ-voice Bench 67.3%; AI-powered voice agent capabilities expanding |
 | 2026-04-28 | David Silver's Ineffable Intelligence raises $1.1B seed | Largest AI seed round in AI history; 50 senior researchers from DeepMind, OpenAI, Anthropic hired in 72 hours |
+| 2026-06-09 | Claude Fable 5 ships with 5% safety-routing layer | First public Mythos-class model; productizes the safety-routing layer as a feature; 80.3% SWE-bench Pro is the first public score above 80% on the harder benchmark; 72 hours after Jack Clark's "brake pedal" essay
+| 2026-06-09 | EU AI Office designates NCAs for GPAI Code of Practice | Code of Practice shifts from voluntary to monitored; penalties up to €35M or 7% of global turnover; Fable 5 is the first frontier model to face an active GPAI monitoring regime |
 | 2026-04-29 | EU's first AI Act fine: €800M on Meta | Unauthorized EU user data training; MCI employee keystroke tracking cited as evidence of systemic data overreach |
 | 2026-04-30 | Musk admits xAI distilled from OpenAI models | Under oath in court; undermines "OpenAI is closed and evil" legal narrative; IP chain of title questionable |
 | 2026-05-01 | Anthropic launches Claude Security (public beta) | Native security scanner in Claude Code; CrowdStrike, Palo Alto, SentinelOne, Wiz, Microsoft Security partnerships |
@@ -204,3 +206,10 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 - [[ideas/ai-governance-urgency]] — June 9: the "brake pedal" call is the first time a frontier lab CEO has made capability-restriction advocacy a commercial deadline; the gap between AI capability and governance is now a financial event
 - [[topics/ai_funding]] — June 9: pause advocacy is structurally a filing-deadline play; safety positioning is now tied to IPO timing, not principle-driven
 - [[timelines/2026-06]] — June 7-9: "When AI builds itself" + OpenAI $852B IPO filing = the day the gas pedal and the brake pedal became the same pedal
+- [[entities/claude-fable-5]] — June 9: 5% safety-routing layer to Opus 4.8 is the new safety primitive — same weights, different safety layer, public distribution; future frontier models may be evaluated on how cleanly their safety layer can be separated from capability
+- [[entities/eu-gpai-code-of-practice]] — June 9: the shift from voluntary to monitored is the first concrete enforcement of frontier-AI safety obligations; the 7% of global turnover penalty is the first credible financial consequence attached to frontier-AI safety obligations
+- [[sources/eu-ai-office]] — June 9: the operational body that implemented the NCA designation; the first jurisdiction with a multi-domain, multi-provider, active-monitoring framework backed by a credible penalty structure
+- [[entities/bullfrog]] — June 8: deployment-grade AI counter-drone (T-REX 26-1 100% success); the physical-security complement to the cyber-security layer of AI defense (Mythos, Daybreak)
+- [[sources/allen-control-systems]] — June 8: $200M Series B at $2.2B for the company behind Bullfrog; the venture capital is pricing the AI-defense market at the physical layer with the same conviction as the cyber layer
+- [[ideas/safety-restricted-releases]] — June 9: Fable 5 productizes the safety-routing layer; the Mythos restriction narrative shifts from "withheld" to "5% safety overhead" with documented pricing — a precedent for future frontier model releases
+- [[ideas/three-tier-safety-playbook]] — June 9: the three-tier structure (Mythos restricted, Fable 5 public-routed, Opus 4.8 public-lower) now faces EU compliance review; the NCA framework will determine which tier maps to which GPAI obligation

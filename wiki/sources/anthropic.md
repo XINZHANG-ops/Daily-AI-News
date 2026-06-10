@@ -1,7 +1,7 @@
 ---
 title: "Anthropic"
 slug: anthropic
-last_updated: 2026-06-09
+last_updated: 2026-06-10
 ---
 
 # Anthropic
@@ -87,6 +87,8 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 | 2026-06-03 | Claude Opus 4.8 mentioned in front of frontier convergence | Opus 4.8 release keeps Anthropic in frontier model race heading into "June 2026 Frontier Convergence" — potentially 4-6 significant model releases from OpenAI (GPT-5.6), Google (Gemini 3.5 Pro), and Anthropic (Sonnet 4.8, Mythos) within weeks; timing suggests Anthropic wanted positioning before expected GPT-5.6 drop (Polymarket 80-89% probability for June 30) |
 | 2026-06-05 | Cowork product guide drop | Enterprise features need to be Mythos-ready to justify the 10x-30x price tier; aligns with Glasswing 150-org expansion |
 | 2026-06-07 | Jack Clark + Marina Favaro publish "When AI builds itself" | Co-founder Jack Clark calls for coordinated "brake pedal" on frontier AI, citing that Claude now authors 80%+ of internal code; warning that recursive self-improvement is approaching and progress is gated by chips, power, and — critically — human code review; the "brake pedal" call comes the same week as OpenAI's IPO filing leaks, which means Anthropic must position the pause before the S-1 locks in obligations that would conflict with one |
+| 2026-06-09 | Claude Fable 5 ships — first public Mythos-class model | 80.3% SWE-bench Pro (first public model above 80%), 2× Opus 4.8 pricing at $10/$50 per M tokens, 5% of cyber/bio/chem prompts routed to Opus 4.8; free on Pro/Max/Team/Enterprise; ships 72 hours after "brake pedal" essay, 3 weeks after Mythos ENISA access; resolves the Mythos restriction by productizing the 5% safety routing layer as a feature |
+| 2026-06-10 | EU AI Office designates NCAs for GPAI Code of Practice monitoring | Same day as Fable 5 release, EU member states name National Competent Authorities to monitor GPAI obligations under EU AI Act; Code of Practice shifts from voluntary to monitored with penalties up to €35M or 7% global turnover — Fable 5 is the first frontier model to face an active GPAI monitoring regime |
 
 ## Key Relationships
 - **Google**: Deepening infrastructure partnership despite competitive AI products. Google invested up to $40B in Anthropic and is building a $5B Texas data center for Anthropic. Joint TPU deal worth multiple gigawatts.
@@ -120,5 +122,11 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 - [[timelines/2026-06]] — June 8: hybrid reasoning consensus crystallizes in public; Anthropic's "verifiable pause" is the safety-side response to a frontier world where hybrid architectures raise capability ceilings faster than regulators can keep up
 - [[topics/ai_safety]] — June 9: Jack Clark's "brake pedal" call, published the same week as OpenAI's IPO leaks, is structurally a filing-deadline play: pause advocacy must happen before the S-1 locks in obligations that would conflict with one
 - [[ideas/three-tier-safety-playbook]] — June 9: Anthropic now has all three tiers (capability-restricted Mythos, verifiable-pause advocacy, public Mythos access via ENISA), positioning itself as the safety-narrative leader heading into dual IPO filings
+- [[entities/claude-fable-5]] — June 9: Fable 5 is the strategic resolution of the Mythos restriction problem; 5% high-risk routing to Opus 4.8 turns a marketing liability into a product feature; 80.3% SWE-bench Pro is the first public score above 80% and re-establishes Anthropic as the capability leader 3 weeks before OpenAI's IPO filing
+- [[entities/eu-gpai-code-of-practice]] — June 10: EU AI Office designates NCAs the same day Fable 5 ships; Anthropic's first public Mythos-class model is also the first frontier model to face an active GPAI monitoring regime — the Fable 5 launch is now a regulatory test case for the Code of Practice
+- [[ideas/safety-restricted-releases]] — June 9: Fable 5 productizes the safety-routing layer; the Mythos restriction narrative shifts from "withheld" to "5% safety overhead" with documented pricing — a precedent for future frontier model releases
+- [[sources/openai]] — June 9: Fable 5's 80.3% SWE-bench Pro lands in the same week as OpenAI's $852B IPO filing; OpenAI's S-1 "competitive position" disclosure will need to address that Anthropic's flagship public model outscores every OpenAI public model on the harder SWE-bench Pro variant
+- [[sources/tencent]] — June 9: Tencent ships Hy3 at $0.18/M on OpenRouter the same day as Fable 5 at $10/M — a 55× input-token price gap is the cleanest single-day expression of the bifurcated AI market between premium safety and commodity scale
+- [[topics/llm_models]] — June 9: Fable 5 is the first model release to ship 72 hours after a "pause" essay from the same lab's co-founder; the timing reads as: pause advocacy is the cover for Fable 5's release, not the substitute for it
 - [[sources/openai]] — June 9: OpenAI's $852B confidential IPO filing lands 3 weeks after Anthropic's $965B; both labs within 6 months of reporting quarterly training spend, RLHF headcount, revenue concentration to public investors
 - [[entities/afm-3]] — June 9: Apple's AFM 3 ships with Gemini-distilled teachers, suggesting Google remains Anthropic's competitor in mobile/consumer but Anthropic remains the enterprise/distillation partner of choice
