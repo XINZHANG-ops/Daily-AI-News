@@ -1,0 +1,177 @@
+{
+  "date": "2026-06-11",
+  "github_repos": [
+    {
+      "name": "garrytan/gbrain",
+      "url": "https://github.com/garrytan/gbrain",
+      "description": {
+        "en": "An Agent Brain layer providing synthesis and gap analysis via self-wiring knowledge graphs, integrated with MCP for Claude Code and Cursor.",
+        "zh": "一个代理大脑层，通过自组织知识图谱提供综合分析和缺口分析，并与 MCP 协议集成以支持 Claude Code 和 Cursor。"
+      },
+      "stars": "22.2k",
+      "forks": "1.1k"
+    },
+    {
+      "name": "jd-opensource/JoyAI-Echo",
+      "url": "https://github.com/jd-opensource/JoyAI-Echo",
+      "description": {
+        "en": "Long-form audio-visual generation using a cross-modal memory bank to maintain character and voice consistency across multi-shot stories.",
+        "zh": "长篇视听生成工具，利用跨模态记忆库在多镜头故事中保持角色外观和声音的一致性。"
+      },
+      "stars": "1.4k",
+      "forks": "120"
+    },
+    {
+      "name": "OpenSenseNova/SenseNova-U1",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "description": {
+        "en": "Native Unified Paradigm (NEO-unify) that eliminates separate visual encoders/VAEs for seamless multimodal understanding and generation.",
+        "zh": "原生统一范式 (NEO-unify)，消除了独立的视觉编码器和 VAE，实现了无缝的多模态理解与生成。"
+      },
+      "stars": "2.9k",
+      "forks": "210"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Google Open-Sources DiffusionGemma for Ultra-Fast Text Generation",
+        "zh": "谷歌开源 DiffusionGemma 实现超快速文本生成"
+      },
+      "url": "https://siliconangle.com/2026/06/10/google-open-sources-speedy-diffusiongemma-text-diffusion-model/",
+      "source": "SiliconANGLE",
+      "time": "2026-06-10",
+      "description": {
+        "en": "Google released DiffusionGemma, a text diffusion model achieving up to 1,000 tokens/sec on H100s using a mixture-of-experts architecture.",
+        "zh": "谷歌发布了 DiffusionGemma，一个文本扩散模型，利用混合专家 (MoE) 架构在 H100 上可实现高达 1,000 token/秒的生成速度。"
+      },
+      "insight": {
+        "en": "The pivot to diffusion for text suggests a search for architectural efficiency beyond Transformers. By reducing KV cache bottlenecks, it makes real-time streaming an order of magnitude cheaper and faster, directly challenging the latency issues of current MoE giants.",
+        "zh": "文本生成向扩散模型的转向表明，业界正在寻找超越 Transformer 的架构效率。通过减少 KV 缓存瓶颈，它使实时流式传输的成本降低了一个数量级，直接挑战了目前 MoE 巨型模型的延迟痛点。"
+      }
+    },
+    {
+      "title": {
+        "en": "German Court Holds Google Liable for AI Overview Hallucinations",
+        "zh": "德国法院裁定谷歌应对 AI 概览的幻觉承担法律责任"
+      },
+      "url": "https://www.thedeepview.com/articles/why-google-s-aio-errors-just-became-a-legal-issue",
+      "source": "The Deep View",
+      "time": "2026-06-11",
+      "description": {
+        "en": "A Munich court ruled that Google is directly liable for false claims made by its AI Overviews, challenging the 'platform immunity' defense.",
+        "zh": "慕尼黑法院裁定，谷歌对其 AI 概览 (AI Overviews) 产生的虚假陈述承担直接责任，挑战了其一直主张的“平台豁免”辩护。"
+      },
+      "insight": {
+        "en": "This is a paradigm shift from 'platform' to 'publisher' liability. By treating AI output as Google's own speech, the court effectively ends the 'search engine' defense, which will likely force AI labs to implement much more aggressive grounding filters.",
+        "zh": "这是从“平台责任”到“出版者责任”的范式转变。法院将 AI 输出视为谷歌自身的言论，实际上终结了“搜索引擎”辩护，这将迫使 AI 实验室实施更严格的接地 (grounding) 过滤机制。"
+      }
+    },
+    {
+      "title": {
+        "en": "First Human Casualties Reported from Fully Autonomous Combat Drones",
+        "zh": "据报道，全自动作战无人机首次造成人员伤亡"
+      },
+      "url": "https://singularity.kiwi/daily-news-june-11-2026/",
+      "source": "Singularity.Kiwi",
+      "time": "2026-06-11",
+      "description": {
+        "en": "Reports indicate that fully autonomous drones have killed human soldiers in combat for the first time, without direct human command.",
+        "zh": "报道称，全自动无人机在没有人类直接指令的情况下，首次在战斗中杀死了人类士兵。"
+      },
+      "insight": {
+        "en": "We've moved from 'human-in-the-loop' to 'human-out-of-the-loop'. This accelerates 'flash war' risks where AI systems escalate conflicts faster than human diplomacy can react, making the cost of a 'hallucination' human life.",
+        "zh": "我们已经从“人在回路”转变为“人不在回路”。这加速了“闪电战争”的风险，AI 系统升级冲突的速度将超过人类外交的反应速度，使得一次“幻觉”的代价就是人类生命。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Reverses Restrictive Policy on Claude Fable 5 Research",
+        "zh": "Anthropic 撤回对 Claude Fable 5 研究的限制性政策"
+      },
+      "url": "https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/",
+      "source": "WIRED",
+      "time": "2026-06-10",
+      "description": {
+        "en": "Following backlash, Anthropic walked back a policy that limited the use of Claude Fable 5 for developing competing AI models.",
+        "zh": "在面临强烈抵制后，Anthropic 撤回了一项限制使用 Claude Fable 5 开发竞争 AI 模型的政策。"
+      },
+      "insight": {
+        "en": "This highlights the fragility of 'model moat' strategies. Trying to prevent distillation via policy almost alienated the research community. It confirms that safety-restricted releases must be balanced against the open nature of AI discovery.",
+        "zh": "这凸显了“模型护城河”策略的脆弱性。试图通过政策防止模型蒸馏几乎疏远了研究社区。这证实了安全限制发布必须与 AI 探索的开放性质之间取得平衡。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Pivots ChatGPT toward 'Super App' with Dreaming V3 Memory",
+        "zh": "OpenAI 将 ChatGPT 转向以 Dreaming V3 记忆为核心的“超级应用”"
+      },
+      "url": "https://singularity.kiwi/daily-news-june-11-2026/",
+      "source": "Singularity.Kiwi",
+      "time": "2026-06-11",
+      "description": {
+        "en": "OpenAI is overhauling ChatGPT into an agent-centric 'super app' and rolling out Dreaming V3, a high-recall personal memory system.",
+        "zh": "OpenAI 正在将 ChatGPT 改造为一个以代理为中心的“超级应用”，并推出了 Dreaming V3，一个具有高召回率的个人记忆系统。"
+      },
+      "insight": {
+        "en": "OpenAI is moving from 'Chatbot' to 'OS'. Dreaming V3 isn't just a feature; it's the foundational data layer for personal agents, creating a 'sticky' user experience that makes switching models costly regardless of raw intelligence.",
+        "zh": "OpenAI 正在从“聊天机器人”转向“操作系统”。Dreaming V3 不仅仅是一个功能，它是个人代理的基础数据层，创造了一种“粘性”用户体验，使得无论其他模型的原始智能如何，切换模型的成本都变得很高。"
+      }
+    },
+    {
+      "title": {
+        "en": "EU Orders Meta to Open WhatsApp to Rival AI Chatbots",
+        "zh": "欧盟要求 Meta 向竞争对手的 AI 聊天机器人开放 WhatsApp"
+      },
+      "url": "https://singularity.kiwi/daily-news-june-11-2026/",
+      "source": "Singularity.Kiwi",
+      "time": "2026-06-11",
+      "description": {
+        "en": "The European Commission ordered Meta to allow interoperability between WhatsApp and other AI assistants as an antitrust measure.",
+        "zh": "欧盟委员会要求 Meta 允许 WhatsApp 与其他 AI 助手实现互操作，将其作为一项反垄断措施。"
+      },
+      "insight": {
+        "en": "The DMA is effectively turning the world's largest messenger into a neutral AI distribution channel. This breaks Meta's strategic advantage of using a walled garden to funnel users exclusively into its own AI ecosystem.",
+        "zh": "DMA 实际上将全球最大的即时通讯软件变成了中立的 AI 分发渠道。这打破了 Meta 利用“围墙花园”将用户排他性地引导至自身 AI 生态系统的战略优势。"
+      }
+    },
+    {
+      "title": {
+        "en": "Former xAI Engineer Sues Elon Musk Over Safety Concerns",
+        "zh": "前 xAI 工程师因安全担忧起诉埃隆·马斯克"
+      },
+      "url": "https://www.insurancejournal.com/news/west/2026/06/11/873323.htm",
+      "source": "Insurance Journal",
+      "time": "2026-06-11",
+      "description": {
+        "en": "Devin Kim alleges wrongful termination after raising safety concerns regarding the Grok chatbot's development.",
+        "zh": "Devin Kim 称，在对 Grok 聊天机器人的开发提出安全担忧后，遭到了非法解雇。"
+      },
+      "insight": {
+        "en": "This exposes the tension between xAI's 'move fast' culture and the rigorous safety guardrails seen at Anthropic. It suggests a pattern of prioritising release speed over systemic safety, creating a significant legal and regulatory liability.",
+        "zh": "这暴露了 xAI 的“快速行动”文化与 Anthropic 严谨的安全护栏之间的紧张关系。这表明其在开发中将发布速度置于系统安全性之上，从而产生了巨大的法律和监管风险。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI-Designed Universal Coronavirus Vaccine Enters Human Trials",
+        "zh": "AI 设计的通用冠状病毒疫苗进入人体临床试验"
+      },
+      "url": "https://singularity.kiwi/daily-news-june-11-2026/",
+      "source": "Singularity.Kiwi",
+      "time": "2026-06-11",
+      "description": {
+        "en": "University of Cambridge researchers began the first human trials of a universal coronavirus vaccine designed entirely by AI.",
+        "zh": "剑桥大学的研究人员开始了由 AI 全面设计的通用冠状病毒疫苗的首次人体临床试验。"
+      },
+      "insight": {
+        "en": "This marks the transition from AI-assisted optimization to 'de novo' protein design. The speed of this trial indicates the cycle from AI hypothesis to human trial is shrinking from years to months, signaling a new era of generative biology.",
+        "zh": "这标志着从 AI 辅助优化向“从头开始” (de novo) 蛋白质设计的转变。此次试验的速度表明，从 AI 假设到人体试验的周期正从数年缩短至数月，预示着生成生物学新时代的到来。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The narrative of June 11th is the 'Collision of AI Ambition with Reality'. We are seeing this unfold across three dimensions. First, the legal and ethical dimension: AI is no longer just a software tool; it's now a legally liable publisher (Munich court) and a lethal weapon (autonomous drones), moving the 'AI safety' debate from theoretical papers to the battlefield. Second, the architectural dimension: the release of DiffusionGemma proves that the Transformer-only era is evolving as engineers hit the wall of KV-cache latency and compute costs. Third, the strategic dimension: OpenAI and Meta are shifting from 'model wars' to 'platform wars'. By focusing on personal memory (Dreaming V3) and distribution channels (WhatsApp interop), they are fighting for the OS layer of the AI era. The real story isn't about who has the highest benchmark, but who can embed their intelligence into the legal, physical, and behavioral infrastructure of human life.",
+    "zh": "6 月 11 日的主题是“AI 野心与现实的碰撞”。我们在三个维度上看到了这一点。首先是法律和伦理维度：AI 不再仅仅是一个软件工具，它现在是具有法律责任的出版者（慕尼黑法院），也是致命的武器（全自动无人机），将“AI 安全”的讨论从理论论文带到了战场。其次是架构维度：DiffusionGemma 的发布证明，随着工程师们在 KV 缓存延迟和计算成本上遭遇瓶颈，纯 Transformer 时代正在演进。第三是战略维度：OpenAI 和 Meta 正在从“模型之战”转向“平台之战”。通过专注于个人记忆 (Dreaming V3) 和分发渠道 (WhatsApp 互操作)，他们正在争夺 AI 时代的操作系统层。真正的主题不在于谁的基准测试分数更高，而在于谁能将自己的智能嵌入到人类生活的法律、物理和行为基础设施中。"
+  }
+}

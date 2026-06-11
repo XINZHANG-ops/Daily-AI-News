@@ -1015,3 +1015,16 @@ Already up to date.
 • 扫描全文链接质量，确认无未标注的 "Related:" 或 "See also:" 链接。
 • 更新 `wiki/index.md` 的实体统计数量，并在 `wiki/log.md` 中记录自检结果。
 [2026-06-11 01:04:12] Wiki lint 完成（退出码 0）。
+[main 15a9967] wiki: lint 2026-06-11
+ 19 files changed, 2953 insertions(+), 41 deletions(-)
+ create mode 100644 all_pages.txt
+ create mode 100644 all_pages_no_md.txt
+ create mode 100644 existing_entities.txt
+ create mode 100644 extra_in_index.txt
+ create mode 100644 extra_in_index_no_md.txt
+ create mode 100644 index_pages.txt
+ create mode 100644 index_pages_no_md.txt
+ create mode 100644 missing_in_index.txt
+ create mode 100644 missing_in_index_no_md.txt
+ create mode 100644 referenced_entities.txt
+ delete mode 100644 wiki/entities/allen-control-systems.md

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 11, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 11, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/garrytan/gbrain" class="card-title" target="_blank">garrytan/gbrain</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 22.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.1k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An Agent Brain layer providing synthesis and gap analysis via self-wiring knowledge graphs, integrated with MCP for Claude Code and Cursor.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个代理大脑层，通过自组织知识图谱提供综合分析和缺口分析，并与 MCP 协议集成以支持 Claude Code 和 Cursor。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/jd-opensource/JoyAI-Echo" class="card-title" target="_blank">jd-opensource/JoyAI-Echo</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.4k stars</div>
+                                <div class="meta-item"><span>🍴</span> 120 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Long-form audio-visual generation using a cross-modal memory bank to maintain character and voice consistency across multi-shot stories.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">长篇视听生成工具，利用跨模态记忆库在多镜头故事中保持角色外观和声音的一致性。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/OpenSenseNova/SenseNova-U1" class="card-title" target="_blank">OpenSenseNova/SenseNova-U1</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.9k stars</div>
+                                <div class="meta-item"><span>🍴</span> 210 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Native Unified Paradigm (NEO-unify) that eliminates separate visual encoders/VAEs for seamless multimodal understanding and generation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">原生统一范式 (NEO-unify)，消除了独立的视觉编码器和 VAE，实现了无缝的多模态理解与生成。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">SiliconANGLE</span>
+                    <div class="news-time">2026-06-10</div>
+                    <a href="https://siliconangle.com/2026/06/10/google-open-sources-speedy-diffusiongemma-text-diffusion-model/" class="card-title" target="_blank" data-lang="en">Google Open-Sources DiffusionGemma for Ultra-Fast Text Generation</a>
+                    <a href="https://siliconangle.com/2026/06/10/google-open-sources-speedy-diffusiongemma-text-diffusion-model/" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌开源 DiffusionGemma 实现超快速文本生成</a>
+                    <p class="card-description" data-lang="en">Google released DiffusionGemma, a text diffusion model achieving up to 1,000 tokens/sec on H100s using a mixture-of-experts architecture.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌发布了 DiffusionGemma，一个文本扩散模型，利用混合专家 (MoE) 架构在 H100 上可实现高达 1,000 token/秒的生成速度。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Deep View</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://www.thedeepview.com/articles/why-google-s-aio-errors-just-became-a-legal-issue" class="card-title" target="_blank" data-lang="en">German Court Holds Google Liable for AI Overview Hallucinations</a>
+                    <a href="https://www.thedeepview.com/articles/why-google-s-aio-errors-just-became-a-legal-issue" class="card-title" target="_blank" data-lang="zh" style="display: none;">德国法院裁定谷歌应对 AI 概览的幻觉承担法律责任</a>
+                    <p class="card-description" data-lang="en">A Munich court ruled that Google is directly liable for false claims made by its AI Overviews, challenging the 'platform immunity' defense.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">慕尼黑法院裁定，谷歌对其 AI 概览 (AI Overviews) 产生的虚假陈述承担直接责任，挑战了其一直主张的“平台豁免”辩护。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Singularity.Kiwi</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://singularity.kiwi/daily-news-june-11-2026/" class="card-title" target="_blank" data-lang="en">First Human Casualties Reported from Fully Autonomous Combat Drones</a>
+                    <a href="https://singularity.kiwi/daily-news-june-11-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">据报道，全自动作战无人机首次造成人员伤亡</a>
+                    <p class="card-description" data-lang="en">Reports indicate that fully autonomous drones have killed human soldiers in combat for the first time, without direct human command.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">报道称，全自动无人机在没有人类直接指令的情况下，首次在战斗中杀死了人类士兵。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">WIRED</span>
+                    <div class="news-time">2026-06-10</div>
+                    <a href="https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/" class="card-title" target="_blank" data-lang="en">Anthropic Reverses Restrictive Policy on Claude Fable 5 Research</a>
+                    <a href="https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 撤回对 Claude Fable 5 研究的限制性政策</a>
+                    <p class="card-description" data-lang="en">Following backlash, Anthropic walked back a policy that limited the use of Claude Fable 5 for developing competing AI models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在面临强烈抵制后，Anthropic 撤回了一项限制使用 Claude Fable 5 开发竞争 AI 模型的政策。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Singularity.Kiwi</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://singularity.kiwi/daily-news-june-11-2026/" class="card-title" target="_blank" data-lang="en">OpenAI Pivots ChatGPT toward 'Super App' with Dreaming V3 Memory</a>
+                    <a href="https://singularity.kiwi/daily-news-june-11-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 将 ChatGPT 转向以 Dreaming V3 记忆为核心的“超级应用”</a>
+                    <p class="card-description" data-lang="en">OpenAI is overhauling ChatGPT into an agent-centric 'super app' and rolling out Dreaming V3, a high-recall personal memory system.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 正在将 ChatGPT 改造为一个以代理为中心的“超级应用”，并推出了 Dreaming V3，一个具有高召回率的个人记忆系统。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Singularity.Kiwi</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://singularity.kiwi/daily-news-june-11-2026/" class="card-title" target="_blank" data-lang="en">EU Orders Meta to Open WhatsApp to Rival AI Chatbots</a>
+                    <a href="https://singularity.kiwi/daily-news-june-11-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">欧盟要求 Meta 向竞争对手的 AI 聊天机器人开放 WhatsApp</a>
+                    <p class="card-description" data-lang="en">The European Commission ordered Meta to allow interoperability between WhatsApp and other AI assistants as an antitrust measure.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">欧盟委员会要求 Meta 允许 WhatsApp 与其他 AI 助手实现互操作，将其作为一项反垄断措施。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Insurance Journal</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://www.insurancejournal.com/news/west/2026/06/11/873323.htm" class="card-title" target="_blank" data-lang="en">Former xAI Engineer Sues Elon Musk Over Safety Concerns</a>
+                    <a href="https://www.insurancejournal.com/news/west/2026/06/11/873323.htm" class="card-title" target="_blank" data-lang="zh" style="display: none;">前 xAI 工程师因安全担忧起诉埃隆·马斯克</a>
+                    <p class="card-description" data-lang="en">Devin Kim alleges wrongful termination after raising safety concerns regarding the Grok chatbot's development.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Devin Kim 称，在对 Grok 聊天机器人的开发提出安全担忧后，遭到了非法解雇。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Singularity.Kiwi</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://singularity.kiwi/daily-news-june-11-2026/" class="card-title" target="_blank" data-lang="en">AI-Designed Universal Coronavirus Vaccine Enters Human Trials</a>
+                    <a href="https://singularity.kiwi/daily-news-june-11-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI 设计的通用冠状病毒疫苗进入人体临床试验</a>
+                    <p class="card-description" data-lang="en">University of Cambridge researchers began the first human trials of a universal coronavirus vaccine designed entirely by AI.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">剑桥大学的研究人员开始了由 AI 全面设计的通用冠状病毒疫苗的首次人体临床试验。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The narrative of June 11th is the 'Collision of AI Ambition with Reality'. We are seeing this unfold across three dimensions. First, the legal and ethical dimension: AI is no longer just a software tool; it's now a legally liable publisher (Munich court) and a lethal weapon (autonomous drones), moving the 'AI safety' debate from theoretical papers to the battlefield. Second, the architectural dimension: the release of DiffusionGemma proves that the Transformer-only era is evolving as engineers hit the wall of KV-cache latency and compute costs. Third, the strategic dimension: OpenAI and Meta are shifting from 'model wars' to 'platform wars'. By focusing on personal memory (Dreaming V3) and distribution channels (WhatsApp interop), they are fighting for the OS layer of the AI era. The real story isn't about who has the highest benchmark, but who can embed their intelligence into the legal, physical, and behavioral infrastructure of human life.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">6 月 11 日的主题是“AI 野心与现实的碰撞”。我们在三个维度上看到了这一点。首先是法律和伦理维度：AI 不再仅仅是一个软件工具，它现在是具有法律责任的出版者（慕尼黑法院），也是致命的武器（全自动无人机），将“AI 安全”的讨论从理论论文带到了战场。其次是架构维度：DiffusionGemma 的发布证明，随着工程师们在 KV 缓存延迟和计算成本上遭遇瓶颈，纯 Transformer 时代正在演进。第三是战略维度：OpenAI 和 Meta 正在从“模型之战”转向“平台之战”。通过专注于个人记忆 (Dreaming V3) 和分发渠道 (WhatsApp 互操作)，他们正在争夺 AI 时代的操作系统层。真正的主题不在于谁的基准测试分数更高，而在于谁能将自己的智能嵌入到人类生活的法律、物理和行为基础设施中。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
