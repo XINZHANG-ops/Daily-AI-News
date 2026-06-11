@@ -192,3 +192,5 @@ Timelines updated: 2026-06 (June 8-9: compute-IPO-pause convergence — AFM 3, O
 Ideas updated: two-track-ai-future (four-track bifurcation), openai-ipo-validates-agent-economy ($852B filing), safety-restricted-releases (brake pedal as filing-deadline play), three-tier-safety-playbook (brake pedal = third tier formalized)
 
 Chat session learning: Reviewed 3 Q&A sessions (Apr 23-26). Confirmed recurring themes: agent infrastructure layer consolidation, Claude 1,858% growth, Google $40B Anthropic investment, multi-turn vulnerability. No new corrections needed; existing topic/source/entity pages already cover these patterns. New June 8-9 patterns (compute-IPO-pause convergence) extend rather than contradict existing narratives.
+- 2026-06-11: Wiki Lint performed. Fixed orphan/duplicate company page (allen-control-systems), verified index integrity (0 missing/extra), checked topic sections and connection quality.
+- 2026-06-11: Wiki Lint performed. Fixed orphan/duplicate company page (allen-control-systems), verified index integrity (0 missing/extra), checked topic sections and connection quality.

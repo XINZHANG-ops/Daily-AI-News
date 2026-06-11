@@ -1413,3 +1413,40 @@ Good — `processed.json` already has 2026-06-09 from the previous run. The 2026
 **Index/log/registry:** `index.md` (added xiaomi source + 8 entities, count=220), `processed.json` (added 2026-06-09, total=81), `log.md` (June 9 entry appended)
 
 **Lint verification:** All my changes verified. The only `BROKEN: sources/afm-3` I introduced has been corrected to `entities/afm-3`. The 7 other broken links (`cerebras`, `groq`, `ineffable-intelligence`, `karpathy-autoresearch`, `mcp`, `nemoclaw`, `openhands`) are pre-existing and outside the scope of this ingest.
+The 2026-06-10 ingest is complete. Here's a summary of what I did:
+
+## Ingest Summary — 2026-06-10
+
+**17 new wiki pages created** with full annotated connections:
+
+**12 new entities** (the specific named things from June 9-10):
+- `claude-fable-5` — Anthropic's first public Mythos-class model (80.3% SWE-bench Pro)
+- `tencent-hy3` — 295B/21B MoE with 495-step production workflows
+- `nvidia-dsx-os` — Open-source AI factory software stack
+- `allen-control-systems` — $200M Series B company behind Bullfrog
+- `command-center` — HN top 5 in 6 hours agentic coding env
+- `mempalace` — 55.2k stars, 96.6% R@5 on LongMemEval
+- `agent-reach` — 25.8k stars, free internet access to 6 platforms
+- `headroom` — 21.1k stars, 60-95% token compression
+- `bullfrog` — AI-guided counter-drone, 100% T-REX 26-1
+- `eu-gpai-code-of-practice` — EU shifts to monitored regime
+- `longmemeval` — Agent memory benchmark
+- `swe-bench-pro` — Harder agentic-coding benchmark
+
+**2 new sources**: `allen-control-systems`, `eu-ai-office`
+
+**3 new ideas** (cross-cutting insights):
+- `harness-layer-no-moat` — Value capture at the harness layer with no structural moat
+- `ai-factory-software-stack` — Data center power, not GPU count, is the new binding constraint
+- `agent-cost-stack-fragmentation` — Five-layer cost stack being attacked simultaneously
+
+**Updated 8 topics** (llm_models, ai_funding, ai_safety, ai_infrastructure, agentic_ai, github_trends, ai_companies, physical_ai), **3 sources** (anthropic, tencent, nvidia), and the **2026-06 timeline** with the June 9-10 narrative (55× single-day pricing split, safety-productized frontier, EU NCA active monitoring).
+
+**Key thematic insights extracted**:
+1. The 55× input-token price gap between Fable 5 ($10/M) and Hy3 ($0.18/M) on the same day is the cleanest single-day expression of the bifurcated AI market
+2. Fable 5's 5% safety-routing layer productizes the Mythos restriction as a feature
+3. Fable 5 is the first frontier model to launch into an active EU GPAI monitoring regime
+4. The agent cost stack is being open-sourced layer by layer (Mempalace + Agent-Reach + Headroom in a single day)
+5. Venture capital is pricing the AI-defense market at the physical layer with deployment-grade empirical results ($200M Allen Control Systems)
+
+All `## Connections` sections use fully annotated wikilinks — no "Related:" or "See also:" patterns. processed.json and log.md are updated.

@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-10 (ingest 2026-06-10: 1 date processed; new entities: claude-fable-5, tencent-hy3, nvidia-dsx-os, allen-control-systems, command-center, mempalace, agent-reach, headroom, bullfrog, eu-gpai-code-of-practice, longmemeval, swe-bench-pro; new sources: allen-control-systems, eu-ai-office; new ideas: harness-layer-no-moat, ai-factory-software-stack, agent-cost-stack-fragmentation; Sources 53→55, Entities 220→232, Ideas 70→73)
+Last updated: 2026-06-10 (ingest 2026-06-10: 1 date processed; new entities: claude-fable-5, tencent-hy3, nvidia-dsx-os, allen-control-systems, command-center, mempalace, agent-reach, headroom, bullfrog, eu-gpai-code-of-practice, longmemeval, swe-bench-pro; new sources: allen-control-systems, eu-ai-office; new ideas: harness-layer-no-moat, ai-factory-software-stack, agent-cost-stack-fragmentation; Sources 53→55, Entities 220→231, Ideas 70→73)
 
 ## Topics (10)
 - [[topics/agentic_ai]] — June 9, 2026 sees the agent cost stack fragmenting in a single day: Mempalace (55.2k stars, 96.6% R@5 on LongMemEval), Agent-Reach (25.8k stars, free internet access), and Headroom (21.1k stars, 60-95% token reduction) all open-source within 24 hours; Command Center hits HN top 5 in 6 hours; Tencent Hy3 ships 495-step production workflows — the agent cost stack is being open-sourced layer by layer
