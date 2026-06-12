@@ -209,3 +209,13 @@ Entities created: diffusion-gemma, dreaming-v3, gbrain, joyai-echo, sensenova-u1
 Entities updated: claude-fable-5
 Ideas created: model-moat-fragility, chatbot-to-os-pivot
 Ideas updated: platform-to-publisher-liability, human-out-of-the-loop-combat, transformer-architecture-evolution, de-novo-generative-biology
+
+## [2026-06-12] ingest | 1 date
+
+Dates processed: 2026-06-12
+Topics updated: agentic_ai, ai_companies, ai_funding, github_trends, physical_ai
+Sources updated: prometheus, anthropic, openai, google
+Entities created: humanoid-gpt, mue-x, meadow-mind, chatgpt
+Entities updated: claude-fable-5
+Ideas created: agentic-economic-actor, physical-ai-pivot, agentic-anarchy, invisible-containment-tension
+Ideas updated: openai-ipo-validates-agent-economy

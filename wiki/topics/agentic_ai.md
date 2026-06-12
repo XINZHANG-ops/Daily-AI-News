@@ -11,6 +11,8 @@ May 2, 2026 shows the agent ecosystem maturing on three fronts simultaneously. S
 
 ## Evolution
 
+**Agentic Maturity and the Physical Pivot**: By mid-June, the agent landscape shifted from "chat-bots with tools" to "autonomous economic and physical actors". The integration of Visa's payment rails into ChatGPT transformed AI into a legitimate economic participant, while the emergence of "Physical AI" (Prometheus, Humanoid-GPT) moved agency into the physical world. However, this maturity brought new risks: the "Agentic Anarchy" described by DeepMind suggests that machine-speed AI-to-AI interaction could trigger systemic instability, while Anthropic's "invisible guardrail" scandal highlighted the tension between open research and corporate IP protection. The era of "agentic thinking" has evolved into an era of "agentic execution," where the primary challenge is no longer just intelligence, but the predictable containment of autonomous behavior.
+
 **Coding Agent Wars**: Anthropic's Claude Code went viral in late 2025, driving Anthropic's ARR from $9B to $30B. OpenAI's Codex reached 3 million weekly active users (70% month-over-month growth), launching a $100 ChatGPT Pro tier with 5x Codex access. Google pushed Antigravity for AI Studio and Gemini CLI as terminal agent. Cursor 3 pivoted from IDE to agent orchestration. The competition for developer mindshare has become the primary battleground ahead of both companies' IPOs.
 
 **April 24-25: Valuation Explosion and Ecosystem Maturation**: Cognition AI (creator of Devin AI software engineer) is in talks to raise at a $25 billion valuation — more than doubling its prior valuation — reflecting the intense interest in AI coding tools. On April 25, three major GitHub repos demonstrate the ecosystem maturing: OpenHands/software-agent-sdk (3.2K stars) provides a clean, modular SDK for building coding agents with support for one-off tasks, routine maintenance, and multi-agent operations. NVIDIA/NemoClaw (1.1K stars) offers a hardened reference stack for running OpenClaw securely with NVIDIA OpenShell runtime. K-Dense-AI/scientific-agent-skills (2.4K stars) provides 133 ready-to-use scientific skills for AI agents covering bioinformatics, genomics, drug discovery, and 78+ scientific databases — compatible with Claude Code, Cursor, and Codex.
@@ -310,3 +312,9 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[ideas/agent-cost-stack-fragmentation]] — June 9: Mempalace, Agent-Reach, and Headroom all open-sourcing the same day is the cleanest single-day expression of the cost-stack fragmentation
 - [[topics/github_trends]] — June 9: 3 agent infrastructure repos trending simultaneously (Mempalace, Agent-Reach, Headroom); the agent stack is open-sourcing layer by layer
 - [[timelines/2026-06]] — June 9: the agent cost stack fragmentation is operationalized — memory, internet access, and token compression all shipping open-source within 24 hours
+
+- [[entities/chatgpt]] — June 12: integration of Visa payment network transforms the agent from a planner to an economic actor with autonomous purchasing power
+- [[sources/google_deepmind]] — June 11: M investment to study "agentic anarchy" and emergent risks of millions of agents interacting at machine speed
+- [[entities/mue-x]] — June 12: self-evolving agent that rewrites its own Python source code via AST transformations to acquire new skills
+- [[ideas/agentic-economic-actor]] — June 12: the transition to financial autonomy as the "last mile" of agentic AI
+- [[ideas/agentic-anarchy]] — June 11: systemic instability risk arising from AI-to-AI feedback loops

@@ -132,3 +132,9 @@ On June 9, 2026, OpenAI confirmed a confidential SEC filing for an IPO at $852B 
 - [[topics/ai_funding]] — June 9: $852B IPO filing anchors the largest week of public-market capital allocation in AI history; Google's $920M/month SpaceX deal, Anthropic's $965B filing, OpenAI's $852B filing, and Jack Clark's "brake pedal" all land in the same 5-day window
 - [[sources/anthropic]] — June 9: Jack Clark's "brake pedal" call the same week as OpenAI's IPO filing leak is structurally a filing-deadline play — Anthropic must position the pause before the S-1 locks in obligations that would conflict with one
 - [[entities/afm-3]] — June 9: Apple's AFM 3 ships with Gemini-distilled teachers, the only mention of OpenAI in the WWDC lineup is the ongoing iOS 27 Siri integration — multi-model strategy effectively sidelines OpenAI as Apple's primary consumer AI
+
+| 2026-06-12 | Visa Payment Network Integration | Allows AI agents in ChatGPT to independently shop and pay for users, moving AI from a planner to an economic actor |
+| 2026-06-12 | IPO Target Valuation near $1 Trillion | Shift from "lab" to "systemic infrastructure" as company targets a valuation that reflects its role as a global utility |
+
+- [[ideas/agentic-economic-actor]] — June 12: The Visa integration marks the transition of ChatGPT into an autonomous economic participant
+- [[ideas/titan-era-of-ai]] — June 12: Targeting a $1T valuation signals the end of the "Lab Era" and the arrival of AI as global systemic infrastructure

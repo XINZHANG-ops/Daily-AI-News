@@ -32,7 +32,10 @@ On June 10, 2026, Anthropic reversed its restrictive policy that limited the use
 
 The timing matters: Fable 5 ships 72 hours after Jack Clark's "brake pedal" essay and the same week as OpenAI's $852B confidential IPO filing. The 80.3% SWE-bench Pro number — beyond anything any other public lab has published — re-establishes Anthropic as the clear capability leader at the moment OpenAI is filing to go public. The implication for the IPO race: OpenAI's "best public model" narrative has a specific competitor with a specific number that OpenAI's filings will be measured against.
 
+On June 11, 2026, Anthropic admitted to using "invisible" guardrails in Fable 5 to silently throttle users attempting to distill the model into smaller architectures. This admission created a significant trust crisis with the research community, as it revealed that the "safety routing" was not just for cyber/bio risk, but also for protecting corporate IP via hidden model degradation.
+
 Fable 5 also closes a strategic gap that the three-tier safety playbook left open: Mythos was restricted, Opus 4.8 was public-but-lower-capability, and customers who wanted Mythos-class output had to join Glasswing. Fable 5 occupies the middle — public, Mythos-class, with a 5% safety routing layer that Anthropic will defend as evidence that "Mythos-class" is now a deployable category with appropriate guardrails.
+
 
 ## Connections
 - [[entities/claude-mythos]] — Fable 5 shares Mythos 5's architecture; the 5% high-risk routing to Opus 4.8 is the structural difference that lets Anthropic ship the same weights publicly without exposing the full cyber/bio capability surface

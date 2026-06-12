@@ -55,3 +55,14 @@ The physical AI wave represents a shift from "AI that thinks" to "AI that acts" 
 - [[topics/ai_infrastructure]] — June 8: the physical AI category formation is the second NVIDIA-on-CUDA lock-in of the month; the rate of category formation (LLMs → agents → physical AI) is accelerating
 
 - [[ideas/de-novo-generative-biology]] — AI's move from protein optimization to de novo design of entirely new biological structures, significantly accelerating vaccine and drug development
+
+**The Industrial and Robotics Pivot**: By mid-June, Physical AI shifted from "research demoes" to industrial-scale bets. The B raise for Prometheus to automate complex physical engineering (e.g., jet engines) signals that AI is moving from simple robotic manipulation to the design and manufacturing of atoms. Simultaneously, Humanoid-GPT and Meadow Mind represent a dual breakthrough in motion tracking and low-latency decision making, solving the critical "sim-to-real" and latency gaps that had previously limited physical AI's utility in real-world environments.
+
+| 2026-06-12 | Prometheus raises $12B | Automate design and manufacturing of complex physical systems; "Claude for Hardware"
+| 2026-06-12 | Humanoid-GPT released | Zero-shot motion tracking using 2B frames of motion data
+| 2026-06-12 | Meadow Mind released | Diffusion LLM for 400ms human-reaction speed in physical decision systems
+
+- [[sources/prometheus]] — June 12: $12B raise at $41B valuation for "Artificial General Engineer" for physical systems
+- [[entities/humanoid-gpt]] — June 12: breakthrough in zero-shot humanoid motion tracking
+- [[entities/meadow-mind]] — June 12: breakthrough in low-latency physical AI decision making
+- [[ideas/physical-ai-pivot]] — The overarching shift from digital tokens to physical atoms

@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-11 (ingest 2026-06-11: 1 date processed; new entities: diffusion-gemma, dreaming-v3, gbrain, joyai-echo, sensenova-u1; new ideas: model-moat-fragility, chatbot-to-os-pivot; new topic: biotech; Sources 55→55, Entities 231→236, Ideas 73→75)
+Last updated: 2026-06-12 (ingest 2026-06-12: 1 date processed; new entities: humanoid-gpt, mue-x, meadow-mind, chatgpt; new ideas: agentic-economic-actor, physical-ai-pivot, agentic-anarchy, invisible-containment-tension; new source: prometheus; Sources 55→56, Entities 236→240, Ideas 75→79)
 
 ## Topics (10)
 - [[topics/biotech]] — Generative biology and AI-designed proteins

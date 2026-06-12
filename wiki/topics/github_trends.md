@@ -290,3 +290,10 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[ideas/commodity-inference-fragmentation]] — June 9: TurboVec's 7-8x memory reduction breaks Pinecone/Weaviate vector storage moat; Google TurboQuant open-sourced, third parties commoditize production layer
 - [[entities/mellum-2]] — June 9: same open-platform pattern as Google TurboQuant/TurboVec — Google open-sources, third parties commoditize the production layer
 - [[timelines/2026-06]] — June 8-9: 6 agent infrastructure repos trending in 48 hours = the agent stack is open-sourcing layer by layer in real time
+
+**The Physical and Self-Evolving Trend**: June 12 marks a pivot toward physical-world capability and extreme agent autonomy. The trending repositories reflect this: Humanoid-GPT targets zero-shot motion tracking for humanoids, while Meadow Mind addresses the critical latency gap for physical AI. Simultaneously, mue-x introduces the concept of a self-evolving agent that rewrites its own source code in real-time via AST transformations, signaling a shift from agents that use tools to agents that modify their own internal architecture.
+
+- [[entities/humanoid-gpt]] — June 12: 1.2k stars; zero-shot motion tracking for humanoids using 2B frames of motion data
+- [[entities/meadow-mind]] — June 12: 640 stars; Diffusion LLM for 400ms response time in physical AI
+- [[entities/mue-x]] — June 12: 890 stars; self-evolving AI agent that rewrites its own source code via AST transforms
+- [[ideas/physical-ai-pivot]] — June 12: the convergence of Humanoid-GPT and Meadow Mind signal the industry's shift toward physical-world agency

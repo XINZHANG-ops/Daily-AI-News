@@ -133,3 +133,8 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 - [[ideas/agent-infrastructure-layer]] — June 9: google/skills, last30days-skill, and turbovec trending simultaneously demonstrates that the agent infrastructure layer is commoditizing from below in real time
 - [[ideas/protocol-standardization]] — June 9: google/skills is Google's bet on the Skills standard; will compete with Anthropic's MCP for agent capability distribution dominance
 - [[entities/afm-3]] — June 8: Apple AFM 3 ships with Gemini-distilled teachers; Google is both training partner and consumer-competitor in mobile AI — the most entangled AI partnership in the industry
+
+| 2026-06-11 | Funds Multi-Agent 'Anarchy' Research | Investing $10M to study the emergent risks of millions of autonomous agents interacting online; fearing systemic instability |
+
+- [[ideas/agentic-anarchy]] — June 11: DeepMind's research into "agentic anarchy" signals a shift from individual model alignment to systemic stability research
+- [[topics/ai_safety]] — June 11: investing $10M into agent interaction risks expands the definition of AI safety to include machine-speed AI-to-AI feedback loops

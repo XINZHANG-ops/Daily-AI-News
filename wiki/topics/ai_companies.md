@@ -315,3 +315,9 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[entities/gemini-3-1-pro]] — June 8: Gemini-distilled teachers in AFM 3 reveal Google's continued training partnership with Apple; the most entangled AI partnership in the industry
 - [[ideas/three-tier-safety-playbook]] — June 9: Jack Clark's "brake pedal" call is the third tier of Anthropic's safety playbook (capability-restricted Mythos, verifiable-pause advocacy, public Mythos access via ENISA)
 - [[timelines/2026-06]] — June 8-9: the five-story convergence (AFM 3, OpenAI $852B IPO, Xiaomi 1000 TPS, Google-SpaceX $920M/month, Jack Clark "brake pedal") defines the industry's next phase
+
+**The Titan Era and the Containment Tension**: By June 12, the industry shifted from the "Lab Era" to the "Titan Era", with OpenAI and Anthropic racing toward IPOs with valuations approaching  trillion. This transition marks the shift of AI labs from scientific research centers to systemic global infrastructure. However, this scaling is accompanied by a "containment tension": the Anthropic "invisible guardrail" scandal reveals that as models become more capable, labs are resorting to silent performance throttling to protect corporate IP, creating a trust deficit with the research community. The emergence of "Physical AI" players like Prometheus (raising B) further expands the company landscape from digital services to industrial automation.
+
+- [[sources/prometheus]] — June 12: B raise at B valuation to automate complex physical systems design; first major "Hardware Claude" bet
+- [[ideas/invisible-containment-tension]] — June 11: Anthropic's invisible guardrails in Fable 5 highlight the conflict between open-science ideals and corporate moat-building
+- [[ideas/titan-era-of-ai]] — June 12: The transition from research labs to T public infrastructure, pivoting from AGI-at-all-costs to quarterly growth

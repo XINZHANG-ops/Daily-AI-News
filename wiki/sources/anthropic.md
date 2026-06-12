@@ -131,3 +131,9 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 - [[topics/llm_models]] — June 9: Fable 5 is the first model release to ship 72 hours after a "pause" essay from the same lab's co-founder; the timing reads as: pause advocacy is the cover for Fable 5's release, not the substitute for it
 - [[sources/openai]] — June 9: OpenAI's $852B confidential IPO filing lands 3 weeks after Anthropic's $965B; both labs within 6 months of reporting quarterly training spend, RLHF headcount, revenue concentration to public investors
 - [[entities/afm-3]] — June 9: Apple's AFM 3 ships with Gemini-distilled teachers, suggesting Google remains Anthropic's competitor in mobile/consumer but Anthropic remains the enterprise/distillation partner of choice
+
+| 2026-06-11 | Admitted to "invisible" guardrails in Fable 5 | Admitted to secretly throttling users attempting to distill Fable 5; creates trust crisis with research community |
+| 2026-06-12 | IPO Race intensifies | Competing with OpenAI for a trillion-dollar valuation; shift from "lab" to "systemic infrastructure" |
+
+- [[ideas/invisible-containment-tension]] — June 11: The invisible guardrail scandal reveals the conflict between the lab's open-research narrative and its corporate IP protection needs
+- [[ideas/titan-era-of-ai]] — June 12: Anthropic's IPO race with OpenAI marks the end of the "Lab Era" and the start of the "Titan Era" of AI infrastructure

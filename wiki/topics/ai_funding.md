@@ -179,3 +179,9 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[entities/bullfrog]] — June 8: deployment-grade AI-guided counter-drone (US Army + US Navy); represents the venture-scale validation of physical AI at the defense layer
 - [[ideas/military-ai-divide]] — June 8: $200M for Allen Control Systems on the same week that agent-harness founders raise seed rounds at $5M ARR is the cleanest single-week expression of where venture returns are expected to compound — physical AI for defense has deployment-grade moat, virtual AI for SaaS has no moat
 - [[entities/command-center]] — June 8: HN top 5 in 6 hours; the canonical June 2026 example of the harness-layer value capture thesis; same week as Allen Control Systems' $200M round, the venture capital is pricing exactly the no-moat dynamic of the agent-harness category
+
+**The Trillion-Dollar Infrastructure Play**: By mid-June, the narrative shifted from "funding rounds" to "infrastructure valuations". OpenAI's target valuation for its IPO approaching  trillion signals that AI is being priced not as a software company, but as a systemic piece of global infrastructure. This is echoed by Prometheus's massive B raise at a B valuation to automate physical engineering, demonstrating that the venture appetite for "Physical AI" is now comparable to that of LLM labs. The IPO race between OpenAI and Anthropic effectively marks the transition of the industry into its "Titan Era," where capital markets now price the agent economy as a trillion-dollar category.
+
+- [[sources/prometheus]] — June 12: B raise at B valuation for "Artificial General Engineer" for physical systems
+- [[ideas/titan-era-of-ai]] — June 12: OpenAI's T IPO target validates AI as a systemic piece of global infrastructure
+- [[sources/openai]] — June 12: IPO target valuation near  trillion
