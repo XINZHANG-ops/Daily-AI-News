@@ -1,8 +1,9 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-10 (ingest 2026-06-10: 1 date processed; new entities: claude-fable-5, tencent-hy3, nvidia-dsx-os, allen-control-systems, command-center, mempalace, agent-reach, headroom, bullfrog, eu-gpai-code-of-practice, longmemeval, swe-bench-pro; new sources: allen-control-systems, eu-ai-office; new ideas: harness-layer-no-moat, ai-factory-software-stack, agent-cost-stack-fragmentation; Sources 53→55, Entities 220→231, Ideas 70→73)
+Last updated: 2026-06-11 (ingest 2026-06-11: 1 date processed; new entities: diffusion-gemma, dreaming-v3, gbrain, joyai-echo, sensenova-u1; new ideas: model-moat-fragility, chatbot-to-os-pivot; new topic: biotech; Sources 55→55, Entities 231→236, Ideas 73→75)
 
 ## Topics (10)
+- [[topics/biotech]] — Generative biology and AI-designed proteins
 - [[topics/agentic_ai]] — June 9, 2026 sees the agent cost stack fragmenting in a single day: Mempalace (55.2k stars, 96.6% R@5 on LongMemEval), Agent-Reach (25.8k stars, free internet access), and Headroom (21.1k stars, 60-95% token reduction) all open-source within 24 hours; Command Center hits HN top 5 in 6 hours; Tencent Hy3 ships 495-step production workflows — the agent cost stack is being open-sourced layer by layer
 - [[topics/ai_search]] — AI Search tracks the integration of generative AI into search engines, producing direct answers rather than link lists. The category war pits Google's AI Overviews against Perplexity and ChatGPT, with the June 2026 publisher opt-out exposing the open-web fracture line.
 - [[topics/ai_companies]] — June 8, 2026 marks the bifurcated industry crystallizing: Anthropic discloses 90% internal Claude adoption, Claude posts 1,858% YoY usage growth, OpenAI pursues "super app" pivot, and Unisound (Hong Kong-listed) tests MaaS Token Hub — first quarter where Anthropic, OpenAI, Google are all profitable-or-near on AI revenue, ending the "subsidize to capture" era; the
@@ -90,6 +91,11 @@ Last updated: 2026-06-10 (ingest 2026-06-10: 1 date processed; new entities: cla
 - [[entities/neo-unify]] — type: framework; title: "NEO-unify"
 - [[entities/sensenova-u1]] — type: model; title: "SenseNova-U1"
 ## Entities (237)
+- [[entities/sensenova-u1]] — model: Native Unified Paradigm (NEO-unify) multimodal model
+- [[entities/joyai-echo]] — repo: Long-form audio-visual consistency tool
+- [[entities/gbrain]] — repo: Agent Brain layer for synthesis and gap analysis
+- [[entities/dreaming-v3]] — product: OpenAI's high-recall personal memory system
+- [[entities/diffusion-gemma]] — model: Google's ultra-fast text diffusion model
 - [[entities/project-solara]] — type: product — Project Solara is Microsoft's "chip-to-cloud" platform for AI agent-first devices announced at Build 2026. Features wearable badge and desk hub concepts with Qualcomm silicon, top-facing cameras, and 5G connectivity.
 - [[entities/ai-overviews]] — type: product — AI Overviews are Google's AI-generated search results. On June 3, 2026, Google announced an opt-out toggle in Search Console allowing website owners to exclude domains from AI-generated results without affecting regular search.
 - [[entities/codex]] — type: product — Codex is OpenAI's coding agent reaching 5M weekly users (June 2026). The enterprise expansion with Sites, Annotations, and role-specific plugins transforms it from coding assistant to enterprise orchestration layer.
@@ -341,6 +347,8 @@ Last updated: 2026-06-10 (ingest 2026-06-10: 1 date processed; new entities: cla
 - [[ideas/platform-to-publisher-liability]] — title: "Platform to Publisher Liability Shift"
 - [[ideas/transformer-architecture-evolution]] — title: "Transformer Architecture Evolution"
 ## Ideas (78)
+- [[ideas/chatbot-to-os-pivot]] — Shift from chatbots to personal agent OS
+- [[ideas/model-moat-fragility]] — Policy-based restrictions as unstable strategic moats
 - [[ideas/agent-cost-stack-fragmentation]] — June 9, 2026: Mempalace (memory), Agent-Reach (internet access), and Headroom (token compression) all open-source in a single day; combined with Fable 5's 2× Opus 4.8 pricing and Hy3 at $0.18/M, the agent inference cost stack is being attacked from five directions simultaneously
 - [[ideas/ai-factory-software-stack]] — June 9, 2026: NVIDIA open-sources DSX OS with 40% more GPUs per megawatt; data center power, not GPU count, is the new binding constraint; the integrated production software stack is itself a moat even with open-sourced components
 - [[ideas/harness-layer-no-moat]] — June 8, 2026: Command Center hits HN top 5 in 6 hours; the value of agentic coding is splitting at the harness layer without a moat; capital flowing into the category is pricing exactly this dynamic

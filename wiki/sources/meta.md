@@ -14,6 +14,7 @@ On June 8, 2026, Meta is internally testing "Hatch" as a consumer AI agent for t
 ## Timeline
 
 | Date | Event | Details |
+| 2026-06-11 | EU WhatsApp Order | EU ordered Meta to open WhatsApp to rival AI chatbots as an antitrust measure. |
 |------|-------|---------|
 | 2026-03-20 | Meta AI Agent data leak | Incorrect guidance exposed sensitive data to unauthorized employees |
 | 2026-03-25 | Executive stock options offered | First stock options since 2012 IPO to retain AI talent |

@@ -14,6 +14,7 @@ On June 9, 2026, OpenAI confirmed a confidential SEC filing for an IPO at $852B 
 ## Timeline
 
 | Date | Event | Details |
+| 2026-06-11 | Dreaming V3 and Super App Pivot | Overhauled ChatGPT into an agent-centric 'super app' with a high-recall personal memory system. |
 |------|-------|---------|
 | 2026-03-17 | GPT-5.4 Mini/Nano released | Near-top-tier performance at accessible price points |
 | 2026-03-19 | OpenAI acquires Python toolmaker | Push to compete with Anthropic's Claude Code |

@@ -200,3 +200,12 @@ Chat session learning: Reviewed 3 Q&A sessions (Apr 23-26). Confirmed recurring 
 - Resolved 9 orphan pages by fixing links and adding link from topics/physical_ai to ideas/de-novo-generative-biology
 - Synced wiki/index.md with filesystem: removed entities/allen-control-systems (moved to sources), added 16 missing pages (diffusion-gemma, dreaming-v3, gbrain, etc.)
 - Updated index counts and verified all topic pages have Evolution/Patterns sections
+## [2026-06-11] ingest | 1 date
+
+Dates processed: 2026-06-11
+Topics updated: llm_models, ai_safety, ai_companies, github_trends, biotech
+Sources updated: google, openai, anthropic, meta, xai
+Entities created: diffusion-gemma, dreaming-v3, gbrain, joyai-echo, sensenova-u1
+Entities updated: claude-fable-5
+Ideas created: model-moat-fragility, chatbot-to-os-pivot
+Ideas updated: platform-to-publisher-liability, human-out-of-the-loop-combat, transformer-architecture-evolution, de-novo-generative-biology

@@ -31,6 +31,11 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 
 **April 28: OpenAI's Revenue Miss and the Claude inflection point**: OpenAI missed multiple Q1 monthly revenue targets after losing ground to Anthropic in coding and enterprise markets — the first concrete sign that Claude is winning deterministic developer workflows. The WSJ reporting that Google's $40B and Amazon's $25B Anthropic investments were partly accelerated by Claude's demonstrated capabilities validates the market's view: enterprise-driven growth through Claude Code is proving more durable than OpenAI's consumer-plus-enterprise mix. Meanwhile, ex-DeepMind researcher David Silver raised $1.1B for Ineffable Intelligence — the largest seed round in AI history with an investor syndicate that includes Sequoia, Lightspeed, Nvidia, Google, and DST Global. The caliber of investors willing to write $1.1B without a product suggests the market now assigns credible probability to near-AGI timelines. The bar for what's considered a credible AGI-adjacent startup has shifted dramatically upward.
 
+
+**June 2026: The Platform War Begins**
+
+The competition between frontier labs shifted from a 'model war' to a 'platform war'. OpenAI's pivot toward a 'Super App' and Dreaming V3 memory layer reflects a strategy to build a persistent AI OS. Meta's struggle with the EU's DMA (WhatsApp interoperability) demonstrates the fragility of 'walled garden' strategies. Meanwhile, the legal battles at xAI and the regulatory scrutiny of Google's infrastructure deals show that the growth of AI giants is now colliding with national legal and antitrust frameworks.
+
 ## Key Developments
 
 | Date | Event | Significance |

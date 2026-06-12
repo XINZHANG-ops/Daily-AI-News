@@ -29,6 +29,11 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 
 **AI Governance and Hardware Efficiency (April 23-24)**: Geoffrey Hinton warned at a UN conference that rapid AI advances must be guided more carefully. His "car with no brake" metaphor highlights the urgency of AI governance. The global AI market is projected to grow from $189B in 2023 to $4.8 trillion by 2033, making governance increasingly critical. Meanwhile, Cambridge scientists developed a neuromorphic computing chip — [[entities/cambridge-neuromorphic-chip]] — using hafnium-based memristors that could cut AI energy consumption by up to 70%, a potential breakthrough for sustainable AI that addresses the energy scalability concern underlying many safety debates.
 
+
+**June 2026: From Theoretical to Lethal**
+
+AI safety transitioned from a debate about alignment and theoretical risks to a matter of legal liability and physical lethality. The Munich court's ruling that Google is directly liable for AI hallucinations ended the 'platform immunity' era. Simultaneously, the reported first human casualties from fully autonomous combat drones moved the conversation to 'human-out-of-the-loop' warfare, where the cost of an AI error is now measured in human lives. This shift is further underscored by the lawsuit against xAI, highlighting the internal tension between 'move fast' cultures and systemic safety guardrails.
+
 ## Key Developments
 
 | Date | Event | Significance |

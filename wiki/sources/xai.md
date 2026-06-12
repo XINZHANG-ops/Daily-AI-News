@@ -12,6 +12,7 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 ## Timeline
 
 | Date | Event | Details |
+| 2026-06-11 | Safety Lawsuit | Former engineer Devin Kim sued Elon Musk over safety concerns regarding Grok. |
 |------|-------|---------|
 | 2026-03-24 | Grok outages | Multiple service disruptions |
 | 2026-03-24 | Grok 5 Q1 2026 target missed | No launch despite Musk confirmation |

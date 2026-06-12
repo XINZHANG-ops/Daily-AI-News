@@ -14,6 +14,8 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 ## Timeline
 
 | Date | Event | Details |
+| 2026-06-10 | DiffusionGemma Release | Released an ultra-fast text diffusion model achieving 1,000 tok/s using MoE. |
+| 2026-06-11 | Munich Court Ruling | Court ruled Google directly liable for AI Overview hallucinations, challenging platform immunity. |
 |------|-------|---------|
 | 2026-03-17 | NVIDIA GTC partnership announcements | AWS 1M+ NVIDIA GPUs deployment |
 | 2026-03-23 | Gemini AI agents monitor dark web | 10M posts daily for threat identification |

@@ -14,6 +14,7 @@ On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.
 ## Timeline
 
 | Date | Event | Details |
+| 2026-06-10 | Fable 5 Policy Reversal | Walked back restrictions on using Claude Fable 5 for competing AI model research after backlash. |
 |------|-------|---------|
 | 2026-03-17 | Pentagon designates Anthropic "unacceptable risk" | Supply chain risk designation after DoD negotiations failed |
 | 2026-03-22 | Claude Code Channels launched | MCP-based Telegram/Discord integration for Claude Code |
