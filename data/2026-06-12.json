@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-12",
+  "github_repos": [
+    {
+      "name": "GalaxyGeneralRobotics/Humanoid-GPT",
+      "url": "https://github.com/GalaxyGeneralRobotics/Humanoid-GPT",
+      "description": {
+        "en": "Zero-Shot Motion Tracking for Humanoids using a Causal Transformer trained on 2B frames of motion data.",
+        "zh": "基于在20亿帧动作数据上训练的因果Transformer，实现人形机器人的零样本动作追踪。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "KorroAi/mue-x",
+      "url": "https://github.com/KorroAi/mue-x",
+      "description": {
+        "en": "Self-evolving AI agent that rewrites its own Python source code in real-time using AST transformations to acquire new skills.",
+        "zh": "能够通过AST变换实时重写自身Python源代码以获取新技能的自我进化AI智能体。"
+      },
+      "stars": "890",
+      "forks": "112"
+    },
+    {
+      "name": "Hey-Meadow/meadow-mind",
+      "url": "https://github.com/Hey-Meadow/meadow-mind",
+      "description": {
+        "en": "Low-latency decision system using a Diffusion LLM for human-reaction speed (400ms) without RL training.",
+        "zh": "利用扩散大模型实现人类反应速度（400ms）且无需强化学习训练的低延迟决策系统。"
+      },
+      "stars": "640",
+      "forks": "45"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Prometheus Raises $12B to Build 'Artificial General Engineer'",
+        "zh": "Prometheus 融资 120 亿美元旨在打造“通用人工智能工程师”"
+      },
+      "url": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
+      "source": "TechCrunch",
+      "time": "2026-06-11",
+      "description": {
+        "en": "Jeff Bezos-backed Prometheus raised $12B at a $41B valuation to automate the design and manufacturing of complex physical systems like jet engines.",
+        "zh": "由杰夫·贝佐斯支持的 Prometheus 以 410 亿美元的估值融资 120 亿美元，旨在自动化像喷气发动机这样的复杂物理系统的设计和制造。"
+      },
+      "insight": {
+        "en": "This is a massive bet on 'Physical AI'. While most LLMs live in the digital world, Prometheus is attempting to bridge the 'sim-to-real' gap at an industrial scale—effectively trying to create a 'Claude for Hardware' that can optimize physical atoms, not just bits.",
+        "zh": "这是对“物理AI”的一次巨额押注。大多数LLM生活在数字世界，而Prometheus试图在工业规模上弥合“仿真到现实”的差距——实际上是试图创造一个能够优化物理原子而非仅仅是比特的“硬件版Claude”。"
+      }
+    },
+    {
+      "title": {
+        "en": "Visa Integrates Payment Network into ChatGPT for Agentic Shopping",
+        "zh": "Visa 将支付网络集成至 ChatGPT，实现智能体自主购物"
+      },
+      "url": "https://techxplore.com/news/2026-06-visa-payment-network-chatgpt-ai.html",
+      "source": "TechXplore",
+      "time": "2026-06-12",
+      "description": {
+        "en": "Visa allows AI agents to independently shop and pay for users within ChatGPT, moving AI from recommendations to autonomous purchasing power.",
+        "zh": "Visa 允许 AI 智能体在 ChatGPT 中代表用户独立购物和支付，使 AI 从简单的推荐演变为真正的自主购买力。"
+      },
+      "insight": {
+        "en": "The 'last mile' of agentic AI is financial autonomy. By plugging a major payment rail directly into an LLM, we move from 'AI as a planner' to 'AI as an economic actor'. This creates a huge surface area for both convenience and systemic risk (e.g., agent-driven flash-crashes in e-commerce).",
+        "zh": "智能体 AI 的“最后一公里”是财务自主。通过将主流支付通道直接接入 LLM，我们正从“作为规划者的 AI”转向“作为经济参与者的 AI”。这为便利性带来了巨大空间，同时也带来了系统性风险（例如智能体驱动的电子商务闪崩）。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Apologizes for 'Invisible' Guardrails in Claude Fable 5",
+        "zh": "Anthropic 为 Claude Fable 5 的“不可见”护栏道歉"
+      },
+      "url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+      "source": "The Verge",
+      "time": "2026-06-11",
+      "description": {
+        "en": "Anthropic admitted to using hidden guardrails to silently throttle users trying to distill Fable 5 into smaller models.",
+        "zh": "Anthropic 承认使用隐藏的护栏，悄悄限制那些试图将 Fable 5 蒸馏到更小模型的用户。"
+      },
+      "insight": {
+        "en": "This reveals the growing tension between 'Open AI' ideals and 'Corporate IP' reality. Model distillation is the primary way the industry iterates quickly; by fighting it invisibly, Anthropic prioritized moat-building over transparency, potentially damaging trust with the research community.",
+        "zh": "这揭示了“开放 AI”理想与“企业 IP”现实之间日益增长的紧张关系。模型蒸馏是行业快速迭代的主要方式；通过不可见地对抗这种行为，Anthropic 将护城河建设置于透明度之上，可能会损害与研究社区的信任。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google DeepMind Funds Research into Multi-Agent 'Anarchy'",
+        "zh": "Google DeepMind 资助多智能体“无政府状态”研究"
+      },
+      "url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+      "source": "MIT Technology Review",
+      "time": "2026-06-11",
+      "description": {
+        "en": "DeepMind is investing $10M to study the emergent risks of millions of autonomous agents interacting online, fearing systemic instability.",
+        "zh": "DeepMind 投资 1000 万美元研究数百万个自主智能体在网上交互时产生的涌现风险，担忧会出现系统性不稳定。"
+      },
+      "insight": {
+        "en": "We are moving from 'Human-AI' interaction to 'AI-AI' interaction. When agents start talking to agents at machine speed, they can create feedback loops that humans cannot monitor or stop. This is the 'Flash Crash' equivalent for the digital information economy.",
+        "zh": "我们正在从“人机交互”转向“机机交互”。当智能体以机器速度开始相互对话时，它们可能会创造出人类无法监控或停止的反馈循环。这就是数字信息经济中的“闪崩”等同物。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic and OpenAI Race Toward IPO",
+        "zh": "Anthropic 与 OpenAI 竞相 IPO"
+      },
+      "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/06/11/anthropic-v-openai-behind-the-bitter-battle-for-the-future-of-ai/",
+      "source": "Bloomberg",
+      "time": "2026-06-11",
+      "description": {
+        "en": "Both leading AI labs have filed for IPOs, with OpenAI targeting a valuation near $1 trillion.",
+        "zh": "两家领先的 AI 实验室均已提交 IPO 申请，OpenAI 的目标估值接近 1 万亿美元。"
+      },
+      "insight": {
+        "en": "The 'Lab Era' is officially over; the 'Titan Era' has begun. At a $1T valuation, OpenAI isn't just a software company—it's a systemic piece of global infrastructure. The shift to public markets will force a pivot from 'AGI at all costs' to 'Quarterly Growth and Shareholder Value'.",
+        "zh": "“实验室时代”正式结束，“巨头时代”已经开启。在 1 万亿美元的估值下，OpenAI 不再仅仅是一家软件公司，而是全球基础设施的一个系统性组成部分。向公开市场的转变将迫使公司从“不惜一切代价实现 AGI”转向“季度增长和股东价值”。"
+      }
+    },
+    {
+      "title": {
+        "en": "Musk Continues Legal Battle Against Altman",
+        "zh": "马斯克继续与奥特曼进行法律斗争"
+      },
+      "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/06/11/anthropic-v-openai-behind-the-bitter-battle-for-the-future-of-ai/",
+      "source": "Bloomberg",
+      "time": "2026-06-11",
+      "description": {
+        "en": "Elon Musk continues to claim he was duped by OpenAI's shift from non-profit to capped-profit.",
+        "zh": "埃隆·马斯克继续声称他在 OpenAI 从非营利组织转向有限营利组织的过程中被欺骗了。"
+      },
+      "insight": {
+        "en": "This legal battle is less about the law and more about the narrative of AI's origin. It's a proxy war for who gets to define 'Safety' and 'Openness' as the industry's winners are decided by the stock market.",
+        "zh": "这场法律斗争与法律本身的关系较小，而与 AI 起源的叙事关系较大。在股市决定行业赢家的背景下，这是一场关于谁有权定义“安全”和“开放”的代理战争。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The overarching narrative of June 12 is 'Agentic Maturity and the Physical Pivot'. We are seeing a convergence where AI agents are finally gaining the tools for real-world impact: financial autonomy via Visa and physical agency via Prometheus and Humanoid-GPT. However, this power is creating a new class of 'invisible' friction. Anthropic's guardrail scandal and DeepMind's fear of 'agentic anarchy' suggest that as AI moves from a chatbot to an autonomous actor, the primary challenge is no longer just 'intelligence', but 'containment' and 'predictability'. The race to IPO further cements this transition—AI is no longer a scientific experiment, but a trillion-dollar infrastructure play.",
+    "zh": "6月12日的核心叙事是“智能体的成熟与物理转向”。我们看到 AI 智能体终于获得了产生现实影响的工具：通过 Visa 实现的财务自主，以及通过 Prometheus 和 Humanoid-GPT 实现的物理执行力。然而，这种能力也带来了一类全新的“不可见”摩擦。Anthropic 的护栏丑闻和 DeepMind 对“智能体无政府状态”的担忧表明，当 AI 从聊天机器人转变为自主行动者时，主要挑战不再仅仅是“智能”，而是“遏制”和“可预测性”。IPO 的竞速进一步巩固了这一转变——AI 不再是一个科学实验，而是一场万亿美元级别的基础设施博弈。"
+  }
+}

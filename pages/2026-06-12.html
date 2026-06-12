@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 12, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 12, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/GalaxyGeneralRobotics/Humanoid-GPT" class="card-title" target="_blank">GalaxyGeneralRobotics/Humanoid-GPT</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 84 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Zero-Shot Motion Tracking for Humanoids using a Causal Transformer trained on 2B frames of motion data.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">基于在20亿帧动作数据上训练的因果Transformer，实现人形机器人的零样本动作追踪。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/KorroAi/mue-x" class="card-title" target="_blank">KorroAi/mue-x</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 890 stars</div>
+                                <div class="meta-item"><span>🍴</span> 112 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Self-evolving AI agent that rewrites its own Python source code in real-time using AST transformations to acquire new skills.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">能够通过AST变换实时重写自身Python源代码以获取新技能的自我进化AI智能体。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Hey-Meadow/meadow-mind" class="card-title" target="_blank">Hey-Meadow/meadow-mind</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 640 stars</div>
+                                <div class="meta-item"><span>🍴</span> 45 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Low-latency decision system using a Diffusion LLM for human-reaction speed (400ms) without RL training.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">利用扩散大模型实现人类反应速度（400ms）且无需强化学习训练的低延迟决策系统。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/" class="card-title" target="_blank" data-lang="en">Prometheus Raises $12B to Build 'Artificial General Engineer'</a>
+                    <a href="https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Prometheus 融资 120 亿美元旨在打造“通用人工智能工程师”</a>
+                    <p class="card-description" data-lang="en">Jeff Bezos-backed Prometheus raised $12B at a $41B valuation to automate the design and manufacturing of complex physical systems like jet engines.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">由杰夫·贝佐斯支持的 Prometheus 以 410 亿美元的估值融资 120 亿美元，旨在自动化像喷气发动机这样的复杂物理系统的设计和制造。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechXplore</span>
+                    <div class="news-time">2026-06-12</div>
+                    <a href="https://techxplore.com/news/2026-06-visa-payment-network-chatgpt-ai.html" class="card-title" target="_blank" data-lang="en">Visa Integrates Payment Network into ChatGPT for Agentic Shopping</a>
+                    <a href="https://techxplore.com/news/2026-06-visa-payment-network-chatgpt-ai.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Visa 将支付网络集成至 ChatGPT，实现智能体自主购物</a>
+                    <p class="card-description" data-lang="en">Visa allows AI agents to independently shop and pay for users within ChatGPT, moving AI from recommendations to autonomous purchasing power.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Visa 允许 AI 智能体在 ChatGPT 中代表用户独立购物和支付，使 AI 从简单的推荐演变为真正的自主购买力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail" class="card-title" target="_blank" data-lang="en">Anthropic Apologizes for 'Invisible' Guardrails in Claude Fable 5</a>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 为 Claude Fable 5 的“不可见”护栏道歉</a>
+                    <p class="card-description" data-lang="en">Anthropic admitted to using hidden guardrails to silently throttle users trying to distill Fable 5 into smaller models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic 承认使用隐藏的护栏，悄悄限制那些试图将 Fable 5 蒸馏到更小模型的用户。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MIT Technology Review</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/" class="card-title" target="_blank" data-lang="en">Google DeepMind Funds Research into Multi-Agent 'Anarchy'</a>
+                    <a href="https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google DeepMind 资助多智能体“无政府状态”研究</a>
+                    <p class="card-description" data-lang="en">DeepMind is investing $10M to study the emergent risks of millions of autonomous agents interacting online, fearing systemic instability.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepMind 投资 1000 万美元研究数百万个自主智能体在网上交互时产生的涌现风险，担忧会出现系统性不稳定。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Bloomberg</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/06/11/anthropic-v-openai-behind-the-bitter-battle-for-the-future-of-ai/" class="card-title" target="_blank" data-lang="en">Anthropic and OpenAI Race Toward IPO</a>
+                    <a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/06/11/anthropic-v-openai-behind-the-bitter-battle-for-the-future-of-ai/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 与 OpenAI 竞相 IPO</a>
+                    <p class="card-description" data-lang="en">Both leading AI labs have filed for IPOs, with OpenAI targeting a valuation near $1 trillion.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">两家领先的 AI 实验室均已提交 IPO 申请，OpenAI 的目标估值接近 1 万亿美元。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Bloomberg</span>
+                    <div class="news-time">2026-06-11</div>
+                    <a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/06/11/anthropic-v-openai-behind-the-bitter-battle-for-the-future-of-ai/" class="card-title" target="_blank" data-lang="en">Musk Continues Legal Battle Against Altman</a>
+                    <a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/06/11/anthropic-v-openai-behind-the-bitter-battle-for-the-future-of-ai/" class="card-title" target="_blank" data-lang="zh" style="display: none;">马斯克继续与奥特曼进行法律斗争</a>
+                    <p class="card-description" data-lang="en">Elon Musk continues to claim he was duped by OpenAI's shift from non-profit to capped-profit.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">埃隆·马斯克继续声称他在 OpenAI 从非营利组织转向有限营利组织的过程中被欺骗了。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The overarching narrative of June 12 is 'Agentic Maturity and the Physical Pivot'. We are seeing a convergence where AI agents are finally gaining the tools for real-world impact: financial autonomy via Visa and physical agency via Prometheus and Humanoid-GPT. However, this power is creating a new class of 'invisible' friction. Anthropic's guardrail scandal and DeepMind's fear of 'agentic anarchy' suggest that as AI moves from a chatbot to an autonomous actor, the primary challenge is no longer just 'intelligence', but 'containment' and 'predictability'. The race to IPO further cements this transition—AI is no longer a scientific experiment, but a trillion-dollar infrastructure play.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">6月12日的核心叙事是“智能体的成熟与物理转向”。我们看到 AI 智能体终于获得了产生现实影响的工具：通过 Visa 实现的财务自主，以及通过 Prometheus 和 Humanoid-GPT 实现的物理执行力。然而，这种能力也带来了一类全新的“不可见”摩擦。Anthropic 的护栏丑闻和 DeepMind 对“智能体无政府状态”的担忧表明，当 AI 从聊天机器人转变为自主行动者时，主要挑战不再仅仅是“智能”，而是“遏制”和“可预测性”。IPO 的竞速进一步巩固了这一转变——AI 不再是一个科学实验，而是一场万亿美元级别的基础设施博弈。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

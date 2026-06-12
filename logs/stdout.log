@@ -12156,3 +12156,133 @@ Error: exit status 1
 [2026-06-12 00:44:14] Checking remote updates...
 [2026-06-12 00:54:16] Checking remote updates...
 [2026-06-12 01:04:17] Checking remote updates...
+[2026-06-12 01:14:18] Checking remote updates...
+[2026-06-12 01:14:19] Remote update detected: c1813d033489698b0c25233f472c97b88195a584 -> 62a193b4bdaf2fbcd97f854d64d2368a9a73d24d
+[2026-06-12 01:14:19] ===== Restart begin =====
+[2026-06-12 01:14:19] Stopping server PID=66147
+[2026-06-12 01:14:21] Server stopped.
+[2026-06-12 01:14:21] git pull --ff-only
+Already up to date.
+[2026-06-12 01:14:22] Step 1/2: build_sqlite (rebuild database from JSON)
+============================================================
+Daily AI News - Build SQLite Database
+============================================================
+
+✓ Created tables with indexes
+✓ Inserted 251 GitHub repos
+✓ Inserted 587 AI news items
+✓ Inserted 82 daily insights
+
+============================================================
+✓ Database created successfully: /Users/xinzhang/Daily-AI-News/ai_news.sqlite
+============================================================
+[2026-06-12 01:14:22] Step 2/2: wiki_build (agent builds wiki)
+[2026-06-12 01:14:22] Building wiki for 1 new date(s) using model: gemma4:31b-cloud
+[2026-06-12 01:14:22] Found 3 chat sessions in wiki_sessions/
+[2026-06-12 01:14:22] Launching ollama claude agent...
+I have completed the wiki ingest for **2026-06-11**.
+
+### Summary of Changes
+
+**1. New Entities & Ideas**
+- **Entities**: Created/Updated `diffusion-gemma`, `dreaming-v3`, `gbrain`, `joyai-echo`, `sensenova-u1`.
+- **Ideas**: Created `model-moat-fragility` and `chatbot-to-os-pivot`. Updated `platform-to-publisher-liability`, `human-out-of-the-loop-combat`, `transformer-architecture-evolution`, and `de-novo-generative-biology`.
+- **Topic**: Created `wiki/topics/biotech.md` to track generative biology.
+
+**2. Knowledge Integration**
+- **Architectural Shift**: Documented the move from autoregressive Transformers to text diffusion (`DiffusionGemma`) to solve the KV-cache latency wall.
+- **Strategic Pivot**: Captured OpenAI's transition from a chatbot to an "AI OS" via the `Dreaming V3` personal memory system.
+- **Safety & Law**: Integrated the paradigm shift from "platform" to "publisher" liability (Munich court) and the transition to "human-out-of-the-loop" combat.
+- **Model Moats**: Updated `Claude Fable 5` and created a new idea page regarding the fragility of policy-based research restrictions after Anthropic's policy reversal on June 10.
+
+**3. Wiki Maintenance**
+- **Topics**: Updated `llm_models`, `ai_safety`, `ai_companies`, and `github_trends` with June 2026 narratives.
+- **Sources**: Added June 11 events to `google`, `openai`, `anthropic`, `meta`, and `xai`.
+- **Timeline**: Added Week 2 (June 8-14) events to `wiki/timelines/2026-06.md`.
+- **Finalization**: Updated `wiki/index.md`, appended to `wiki/log.md`, and marked the date as processed in `wiki/processed.json`.
+
+All `## Connections` sections follow the annotated wikilink requirement, explaining exactly why and how the linked entities and ideas relate to the current page.
+[2026-06-12 01:25:06] Wiki build complete.
+[main 4b021c8] wiki: build 2026-06-12
+ 17 files changed, 134 insertions(+), 3 deletions(-)
+ create mode 100644 wiki/ideas/chatbot-to-os-pivot.md
+ create mode 100644 wiki/ideas/model-moat-fragility.md
+ create mode 100644 wiki/topics/biotech.md
+[2026-06-12 01:25:08] Pushed wiki changes. ( 17 files changed, 134 insertions(+), 3 deletions(-))
+[2026-06-12 01:25:08] Starting server in background...
+[2026-06-12 01:25:10] Server started. PID=96748
+[2026-06-12 01:25:10] Server log: /tmp/ai_news_server.log
+[2026-06-12 01:25:10] ===== Restart done =====
+[2026-06-12 01:35:10] Checking remote updates...
+[2026-06-12 01:35:11] Remote update detected: 62a193b4bdaf2fbcd97f854d64d2368a9a73d24d -> 4b021c883f3119082f304f9b7f0ae439bf46bfec
+[2026-06-12 01:35:11] ===== Restart begin =====
+[2026-06-12 01:35:11] Stopping server PID=96748
+[2026-06-12 01:35:12] Server stopped.
+[2026-06-12 01:35:12] git pull --ff-only
+Already up to date.
+[2026-06-12 01:35:13] Step 1/2: build_sqlite (rebuild database from JSON)
+============================================================
+Daily AI News - Build SQLite Database
+============================================================
+
+✓ Created tables with indexes
+✓ Inserted 251 GitHub repos
+✓ Inserted 587 AI news items
+✓ Inserted 82 daily insights
+
+============================================================
+✓ Database created successfully: /Users/xinzhang/Daily-AI-News/ai_news.sqlite
+============================================================
+[2026-06-12 01:35:13] Step 2/2: wiki_build (agent builds wiki)
+[2026-06-12 01:35:13] All data in data/ already processed — skipping build.
+[2026-06-12 01:35:13] Starting server in background...
+[2026-06-12 01:35:16] Server started. PID=97113
+[2026-06-12 01:35:16] Server log: /tmp/ai_news_server.log
+[2026-06-12 01:35:16] ===== Restart done =====
+[2026-06-12 01:45:16] Checking remote updates...
+[2026-06-12 01:55:17] Checking remote updates...
+[2026-06-12 02:05:18] Checking remote updates...
+[2026-06-12 02:15:19] Checking remote updates...
+[2026-06-12 02:25:20] Checking remote updates...
+[2026-06-12 02:35:21] Checking remote updates...
+[2026-06-12 02:45:22] Checking remote updates...
+[2026-06-12 02:55:23] Checking remote updates...
+[2026-06-12 03:05:24] Checking remote updates...
+[2026-06-12 03:15:25] Checking remote updates...
+[2026-06-12 03:25:26] Checking remote updates...
+[2026-06-12 03:35:27] Checking remote updates...
+[2026-06-12 03:45:28] Checking remote updates...
+[2026-06-12 03:55:29] Checking remote updates...
+[2026-06-12 04:05:31] Checking remote updates...
+[2026-06-12 04:15:32] Checking remote updates...
+[2026-06-12 04:25:33] Checking remote updates...
+[2026-06-12 04:35:34] Checking remote updates...
+[2026-06-12 04:45:35] Checking remote updates...
+[2026-06-12 04:55:36] Checking remote updates...
+[2026-06-12 05:05:37] Checking remote updates...
+[2026-06-12 05:15:38] Checking remote updates...
+[2026-06-12 05:25:39] Checking remote updates...
+[2026-06-12 05:35:40] Checking remote updates...
+[2026-06-12 05:45:41] Checking remote updates...
+[2026-06-12 05:55:42] Checking remote updates...
+[2026-06-12T06:00:01.399461] Starting Daily AI News Digest
+Already up to date.
+[2026-06-12 06:05:43] Checking remote updates...
+I have completed the daily AI news digest for 2026-06-12.
+
+### Summary of Actions:
+1.  **Deduplication**: Scanned the last 30 days of data to build a blacklist of 200+ repositories to ensure no duplicates.
+2.  **Data Collection**:
+    *   **GitHub Repos**: Identified and validated 3 high-impact repos: `Humanoid-GPT` (Zero-shot humanoid motion), `mue-x` (Self-evolving source code), and `meadow-mind` (Diffusion-based low-latency decisions). All were verified with `curl` for 200 OK responses.
+    *   **AI News**: Curated 6 major stories focusing on the "Physical AI" pivot (Prometheus), "Financial Agency" (Visa), and the shift toward public markets (OpenAI/Anthropic IPO race).
+3.  **JSON Generation**: Created a bilingual (EN/ZH) JSON file at `data/2026-06-12.json` with deep analyst-style insights connecting the day's events.
+4.  **HTML Build**: Ran `build_from_json.py` to generate `pages/2026-06-12.html`.
+5.  **Index Update**: Ran `rebuild_index.py`. Although the git commit/push failed (due to the environment's git state), the `index.html` file was successfully updated and verified to contain the link to the new page.
+
+### Data Snapshot (2026-06-12):
+- **Top Repo**: `GalaxyGeneralRobotics/Humanoid-GPT` (Zero-Shot Motion Tracking).
+- **Key Story**: Jeff Bezos's Prometheus raising $12B for "Artificial General Engineering."
+- **The "Real Story"**: A pivot from digital-only LLMs to **Agentic Maturity**, combining financial autonomy and physical agency, shifting the focus from "intelligence" to "containment and predictability."
+
+The system is now updated with the latest AI news and insights.
+[2026-06-12T06:07:09.074834] Done (exit code 0)

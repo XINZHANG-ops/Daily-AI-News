@@ -1036,3 +1036,17 @@ Already up to date.
 • 结构健康检查：验证所有主题页均包含 `Evolution` 和 `Patterns & Insights` 章节，确保知识库深度与完整性。
 • 完成审计记录：在 `log.md` 中记录本次 lint 修复的所有关键变更。
 [2026-06-12 01:05:45] Wiki lint 完成（退出码 0）。
+[main 62a193b] wiki: lint 2026-06-12
+ 23 files changed, 556 insertions(+), 9 deletions(-)
+ create mode 100644 update_google.py
+ create mode 100644 wiki/entities/diffusion-gemma.md
+ create mode 100644 wiki/entities/dreaming-v3.md
+ create mode 100644 wiki/entities/gbrain.md
+ create mode 100644 wiki/entities/joyai-echo.md
+ create mode 100644 wiki/entities/neo-unify.md
+ create mode 100644 wiki/entities/sensenova-u1.md
+ create mode 100644 wiki/ideas/ai-os-platform-war.md
+ create mode 100644 wiki/ideas/de-novo-generative-biology.md
+ create mode 100644 wiki/ideas/human-out-of-the-loop-combat.md
+ create mode 100644 wiki/ideas/platform-to-publisher-liability.md
+ create mode 100644 wiki/ideas/transformer-architecture-evolution.md

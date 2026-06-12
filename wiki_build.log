@@ -1452,3 +1452,25 @@ The 2026-06-10 ingest is complete. Here's a summary of what I did:
 All `## Connections` sections use fully annotated wikilinks — no "Related:" or "See also:" patterns. processed.json and log.md are updated.
 API Error: Content block not found
 Error: exit status 1
+I have completed the wiki ingest for **2026-06-11**.
+
+### Summary of Changes
+
+**1. New Entities & Ideas**
+- **Entities**: Created/Updated `diffusion-gemma`, `dreaming-v3`, `gbrain`, `joyai-echo`, `sensenova-u1`.
+- **Ideas**: Created `model-moat-fragility` and `chatbot-to-os-pivot`. Updated `platform-to-publisher-liability`, `human-out-of-the-loop-combat`, `transformer-architecture-evolution`, and `de-novo-generative-biology`.
+- **Topic**: Created `wiki/topics/biotech.md` to track generative biology.
+
+**2. Knowledge Integration**
+- **Architectural Shift**: Documented the move from autoregressive Transformers to text diffusion (`DiffusionGemma`) to solve the KV-cache latency wall.
+- **Strategic Pivot**: Captured OpenAI's transition from a chatbot to an "AI OS" via the `Dreaming V3` personal memory system.
+- **Safety & Law**: Integrated the paradigm shift from "platform" to "publisher" liability (Munich court) and the transition to "human-out-of-the-loop" combat.
+- **Model Moats**: Updated `Claude Fable 5` and created a new idea page regarding the fragility of policy-based research restrictions after Anthropic's policy reversal on June 10.
+
+**3. Wiki Maintenance**
+- **Topics**: Updated `llm_models`, `ai_safety`, `ai_companies`, and `github_trends` with June 2026 narratives.
+- **Sources**: Added June 11 events to `google`, `openai`, `anthropic`, `meta`, and `xai`.
+- **Timeline**: Added Week 2 (June 8-14) events to `wiki/timelines/2026-06.md`.
+- **Finalization**: Updated `wiki/index.md`, appended to `wiki/log.md`, and marked the date as processed in `wiki/processed.json`.
+
+All `## Connections` sections follow the annotated wikilink requirement, explaining exactly why and how the linked entities and ideas relate to the current page.
