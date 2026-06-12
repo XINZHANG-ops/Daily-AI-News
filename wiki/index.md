@@ -78,7 +78,18 @@ Last updated: 2026-06-10 (ingest 2026-06-10: 1 date processed; new entities: cla
 - [[timelines/2026-05]] — **May 1: The Industry's Contradictions Become Operational**
 - [[timelines/2026-06]] — June opens with regulatory escalation (Florida sues OpenAI, Anthropic IPO), Claude Mythos ENISA access, and multi-turn vulnerability study
 
-## Entities (232)
+- [[entities/diffusion-gemma]] — type: model; title: "DiffusionGemma"
+- [[entities/dreaming-v3]] — type: product; title: "Dreaming V3"
+- [[entities/gbrain]] — type: repo; title: "gbrain"
+- [[entities/gpt-5.4]] — type: model; title: "GPT-5.4"
+- [[entities/gpt-5.4-cyber]] — type: model; title: "GPT-5.4-Cyber"
+- [[entities/gpt-5.5]] — type: model; title: "GPT-5.5"
+- [[entities/gpt-5.5-cyber]] — type: model; title: "GPT-5.5-Cyber"
+- [[entities/joyai-echo]] — type: repo; title: "JoyAI-Echo"
+- [[entities/mai-image-2.5]] — type: model; title: "MAI-Image-2.5"
+- [[entities/neo-unify]] — type: framework; title: "NEO-unify"
+- [[entities/sensenova-u1]] — type: model; title: "SenseNova-U1"
+## Entities (237)
 - [[entities/project-solara]] — type: product — Project Solara is Microsoft's "chip-to-cloud" platform for AI agent-first devices announced at Build 2026. Features wearable badge and desk hub concepts with Qualcomm silicon, top-facing cameras, and 5G connectivity.
 - [[entities/ai-overviews]] — type: product — AI Overviews are Google's AI-generated search results. On June 3, 2026, Google announced an opt-out toggle in Search Console allowing website owners to exclude domains from AI-generated results without affecting regular search.
 - [[entities/codex]] — type: product — Codex is OpenAI's coding agent reaching 5M weekly users (June 2026). The enterprise expansion with Sites, Annotations, and role-specific plugins transforms it from coding assistant to enterprise orchestration layer.
@@ -315,7 +326,7 @@ Last updated: 2026-06-10 (ingest 2026-06-10: 1 date processed; new entities: cla
 - [[entities/claude-fable-5]] — type: model; June 9, 2026; first public Mythos-class model; 80.3% SWE-bench Pro (first public score above 80%); $10/$50 per M tokens (2× Opus 4.8); 5% of cyber/bio/chem prompts routed to Opus 4.8; productizes the safety-routing layer as a feature
 - [[entities/tencent-hy3]] — type: model; June 9, 2026; 295B MoE (21B active) agent model with 256K context; 495-step production workflows in Yuanbao, QQ, Tencent Docs (highest production step count of 2026); $0.18/M on OpenRouter (free 2 weeks); the smallest-active-parameter frontier-tier model
 - [[entities/nvidia-dsx-os]] — type: product; June 9, 2026; NVIDIA's open-source AI factory software stack; 40% more GPUs per megawatt at rack level; bundles NVSentinel, DSX MaxLPS, KAI Scheduler + Run:ai, Dynamo + Grove, NICo/NVCF
-- [[entities/allen-control-systems]] — type: company; June 8, 2026; $200M Series B at $2.2B; AI-guided Bullfrog counter-drone; deployed with US Army + US Navy; 100% T-REX 26-1 success rate
+- [[sources/allen-control-systems]] — type: company; June 8, 2026; $200M Series B at $2.2B; AI-guided Bullfrog counter-drone; deployed with US Army + US Navy; 100% T-REX 26-1 success rate
 - [[entities/bullfrog]] — type: product; AI-guided autonomous counter-drone by Allen Control Systems; fuses computer vision, robotics, AI decision-making; 100% success in T-REX 26-1
 - [[entities/command-center]] — type: product; June 8, 2026; agentic coding environment by Jimmy (Thiel Fellow, MIT PhD) and Ray; wraps Claude Code + Codex with refactor button, walkthrough generation, jj snapshot recovery, per-feature development queues; HN top 5 in 6 hours
 - [[entities/mempalace]] — type: repo; June 9, 2026; 55.2k stars; local-first AI memory system; palace/wing/room/drawer layout; 96.6% R@5 on LongMemEval without LLM in loop; ships with MCP server + Claude Code hooks
@@ -324,7 +335,12 @@ Last updated: 2026-06-10 (ingest 2026-06-10: 1 date processed; new entities: cla
 - [[entities/eu-gpai-code-of-practice]] — type: framework; June 9, 2026; GPAI Code of Practice shifts from voluntary to monitored; NCAs designated by EU member states; penalties up to €35M or 7% of global turnover; Fable 5 is the first frontier model to face active monitoring
 - [[entities/longmemeval]] — type: benchmark; agent memory evaluation; Mempalace achieves 96.6% R@5 (June 9) without LLM in loop; the highest score in 2026
 - [[entities/swe-bench-pro]] — type: benchmark; harder variant of SWE-bench Verified; Fable 5 scores 80.3% (June 9), the first public score above 80% on this benchmark
-## Ideas (73)
+- [[ideas/ai-os-platform-war]] — title: "AI OS Platform War"
+- [[ideas/de-novo-generative-biology]] — title: "De Novo Generative Biology"
+- [[ideas/human-out-of-the-loop-combat]] — title: "Human-Out-of-the-Loop Combat"
+- [[ideas/platform-to-publisher-liability]] — title: "Platform to Publisher Liability Shift"
+- [[ideas/transformer-architecture-evolution]] — title: "Transformer Architecture Evolution"
+## Ideas (78)
 - [[ideas/agent-cost-stack-fragmentation]] — June 9, 2026: Mempalace (memory), Agent-Reach (internet access), and Headroom (token compression) all open-source in a single day; combined with Fable 5's 2× Opus 4.8 pricing and Hy3 at $0.18/M, the agent inference cost stack is being attacked from five directions simultaneously
 - [[ideas/ai-factory-software-stack]] — June 9, 2026: NVIDIA open-sources DSX OS with 40% more GPUs per megawatt; data center power, not GPU count, is the new binding constraint; the integrated production software stack is itself a moat even with open-sourced components
 - [[ideas/harness-layer-no-moat]] — June 8, 2026: Command Center hits HN top 5 in 6 hours; the value of agentic coding is splitting at the harness layer without a moat; capital flowing into the category is pricing exactly this dynamic

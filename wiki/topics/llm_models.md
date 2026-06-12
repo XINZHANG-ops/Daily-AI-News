@@ -1,7 +1,7 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-06-09
+last_updated: 2026-06-11
 ---
 
 # LLM Models
@@ -166,6 +166,20 @@ Two flagship models shipping within one week of each other (Claude Opus 4.7 on A
 | 2026-06-08 | Anthropic discloses 90% internal Claude adoption | 80%+ production code and 90%+ including scripts authored by Claude; engineers ship 8x more code/day than 2024; Claude Opus 4.6 handles 12-hour autonomous tasks, Claude Mythos Preview handles 16+ hours; first public admission that "human code review is the bottleneck" for recursive self-improvement
 | 2026-06-08 | Claude 1,858% YoY usage growth; Gemini closes on ChatGPT | Largest single-quarter absolute jump for Anthropic; Gemini expands across Search/Workspace/Android; OpenAI pursuing "super app" ahead of IPO; first quarter where Anthropic, OpenAI, Google all profitable-or-near-profitable on AI revenue
 
+
+
+**June 2026: The Efficiency and Memory Pivot**
+
+By mid-June, the focus shifted from raw reasoning benchmarks to architectural efficiency and personal integration. Google's DiffusionGemma challenged the autoregressive status quo, proving that diffusion-based text generation could slash latency. Simultaneously, OpenAI's Dreaming V3 shifted the battleground toward 'memory as a moat,' transforming the AI from a tool into a persistent digital layer of the user's life. Anthropic's reversal on Fable 5 research restrictions highlighted the tension between model moats and the open nature of AI discovery.
+
+
+## Key Developments
+
+| Date | Event | Significance |
+|------|-------|-------------|
+| 2026-06-10 | Google releases DiffusionGemma | Proves diffusion for text can achieve 1,000 tok/s, challenging Transformer latency. |
+| 2026-06-11 | OpenAI launches Dreaming V3 | Shifts focus to a high-recall memory layer to create a 'sticky' AI OS. |
+| 2026-06-10 | Anthropic reverses Fable 5 restrictions | Confirms that safety-restricted releases must balance against research community open nature. |
 ## Patterns & Insights
 
 **The reasoning-revelation gap**: ARC-AGI-3 results expose a fundamental truth: models that score 80%+ on SWE-bench score <1% on puzzles children can solve. The finding that models hallucinate Tetris/Breakout from unfamiliar grids reveals the architecture limitation — these systems pattern-match to known templates rather than constructing situation-specific models. Every new benchmark designed to test genuine reasoning (not memorization) exposes the same ceiling.
@@ -236,8 +250,12 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 
 **June 6: The Defense vs Offense Security Bifurcation**: OpenAI's Lockdown Mode (defensive posture — disable features to prevent prompt injection) vs Anthropic's Glasswing expansion to NATO (offensive posture — share Mythos capabilities with military and enterprise) is the canonical split in 2026 AI security philosophy. Both companies are trying to solve the same trust problem from opposite directions, which suggests neither has cracked it and the security layer is moving up the stack toward OS-level sandboxes. The Meta Instagram breach — where attackers exfiltrated customer data via a customer-support agent — is the proximate trigger for Lockdown Mode and the canonical "agentic security" case study the way SolarWinds was for supply-chain attacks.
 
+
+- **Memory-Driven Stickiness**: The shift from model superiority to personal memory as the primary moat (OpenAI Dreaming V3).
 ## Connections
-- [[entities/arc-agi-3]] — The benchmark that exposed the LLM reasoning ceiling: GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human performance
+-
+- [[entities/diffusion-gemma]] — Demonstrates the shift toward non-autoregressive architectures for efficiency.
+- [[entities/dreaming-v3]] — Key component of the shift toward a personal AI OS. [[entities/arc-agi-3]] — The benchmark that exposed the LLM reasoning ceiling: GPT-5.5 0.43%, Opus 4.7 0.18% vs near-100% human performance
 - [[entities/mistral-medium-3-5]] — 128B dense model with reasoning-effort toggle; one-model-for-all design pattern challenges the multi-model approach; Work Mode (on-device agentic) and Remote Agents in Vibe (async cloud execution) expand the agentic surface; EU AI Act €11.2M fine same week makes privacy-first positioning more urgent
 - [[entities/symphony]] — OpenAI's Codex orchestration spec formalizes "agent-as-employee" model; 15K+ stars signals industry convergence
 - [[entities/context-mode]] — 98% context reduction MCP server; solves the noise problem that continuous agent execution creates

@@ -1,7 +1,7 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-06-10
+last_updated: 2026-06-11
 ---
 
 # AI Safety
@@ -105,6 +105,20 @@ May 2, 2026 deepens the AI safety crisis on two fronts simultaneously. The Penta
 | 2026-05-22 | IBM joins Project Glasswing | Announced alongside Anthropic; IBM reveals AI reduced vulnerability exploitation time from 23 days to just 9 hours — 60x acceleration fundamentally breaking old patch cadence assumptions; signals existential threat model has made competitor collaboration necessary |
 | 2026-05-22 | OpenAI considers Japan Mythos-class AI access | OpenAI evaluating providing GPT-5.5-Cyber to Japan amid Chinese open-source model rise; Board member Paul Nakasone calls China "most significant" cyberthreat; strategic pivot from international hesitation to actively building US-aligned AI security coalition |
 
+
+
+**June 2026: From Theory to Physical Consequences**
+
+In June 2026, AI safety moved from theoretical and cyber-risk concerns to real-world legal and physical consequences. The Munich court ruling shifted the safety conversation toward accountability, holding providers liable for hallucinations. Simultaneously, the first reports of fully autonomous combat drones causing human casualties marked the transition to 'human-out-of-the-loop' combat, moving the risk from data leaks to loss of life. xAI's internal culture clash, exemplified by lawsuits over safety guardrails, further highlights the divide between 'move fast' and 'safety-first' development cycles.
+
+
+## Key Developments
+
+| Date | Event | Significance |
+|------|-------|-------------|
+| 2026-06-11 | Munich court holds Google liable for hallucinations | Shift from 'platform' to 'publisher' liability, ending search engine defense. |
+| 2026-06-11 | First autonomous drone human casualties | Transition to 'human-out-of-the-loop' combat; risk of 'flash wars'. |
+| 2026-06-11 | Former xAI engineer sues over safety | Exposes tension between rapid release cycles and systemic safety guardrails. |
 ## Patterns & Insights
 
 The capability-safety tension has reached operational reality. For the first time, a major lab has a model that is commercially successful AND too dangerous to release — creating an unprecedented narrative contradiction.
@@ -149,8 +163,12 @@ The government's rapid escalation (emergency CEO calls within days of the Mythos
 
 **May 16: Regulatory Fragmentation Accelerates Across Multiple Fronts**: Colorado's SB-26-189 (replacing its 2024 law just two years later) and YouTube's deepfake detection expansion arrive the same week, revealing two complementary trends. States are writing actual AI rules while the federal government debates which agency should oversee the technology — Colorado's disclosure-over-prohibition approach gives businesses flexibility while protecting consumers. Platforms are pre-empting compliance by expanding synthetic media detection before laws multiply. The UK government's Claude-powered chatbot adds a third dimension: sovereign AI deployment with vendor dependency. The deeper pattern is that AI safety governance is fragmenting not just internationally (US/EU/China) but domestically — creating a compliance landscape where companies need legal teams larger than their safety research departments.
 
+
+- **Liability as a Grounding Force**: The transition to publisher liability is likely to force a move from probabilistic summaries to verifiable, cited grounding.
 ## Connections
-- [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior," Pentagon exclusion for refusing to drop safety guardrails; US government's "rethink" of Anthropic partnerships reflects the tension between commercial ambitions and governance commitments; Anthropic's safety-first branding attracted government interest but scaling to defense-grade reliability while maintaining constitutional AI principles is proving complex
+-
+- [[ideas/platform-to-publisher-liability]] — Explains the judicial shift that makes AI providers legally responsible for truth.
+- [[ideas/human-out-of-the-loop-combat]] — Documents the first lethal use of fully autonomous AI weapons. [[sources/anthropic]] — Claude Mythos, Project Glasswing, emotion vectors research, MCP vulnerability as "expected behavior," Pentagon exclusion for refusing to drop safety guardrails; US government's "rethink" of Anthropic partnerships reflects the tension between commercial ambitions and governance commitments; Anthropic's safety-first branding attracted government interest but scaling to defense-grade reliability while maintaining constitutional AI principles is proving complex
 - [[sources/openai]] — Musk vs Altman trial threatens to invalidate commercial structure; GPT-5.4-Cyber positioned for cyber defense; joined Pentagon coalition while restricting GPT-5.5 Cyber; Trusted Contact safeguard frames safety as competitive moat; both OpenAI and Anthropic are racing to own the "responsible AI" positioning as regulators draft rules for AI-teen interactions
 - [[sources/meta]] — MCI employee keystroke tracking; €800M EU AI Act fine for unauthorized data training
 - [[sources/tsmc]] — TSMC's 3nm yield collapse to 52% is a physics-based reality check; Q3 compute supply cliff for AI labs

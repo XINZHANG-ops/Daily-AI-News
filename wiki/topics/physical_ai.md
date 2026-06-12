@@ -53,3 +53,5 @@ The physical AI wave represents a shift from "AI that thinks" to "AI that acts" 
 - [[entities/agent-ghost]] — June 8: AgentGhost's 6-tier memory + MCTS planning is the kind of agentic infrastructure NVIDIA's Cosmos 3 will need to control physical robots; the open-source agent pattern converges on physical AI as agents mature
 - [[ideas/agent-infrastructure-layer]] — June 8: NVIDIA's lock-in playbook with Cosmos 3 (open weights, non-OSI license forbidding non-CUDA commercial use) is the same playbook Nemotron 3 Ultra ran a week earlier — physical AI is becoming the second category NVIDIA is locking to CUDA
 - [[topics/ai_infrastructure]] — June 8: the physical AI category formation is the second NVIDIA-on-CUDA lock-in of the month; the rate of category formation (LLMs → agents → physical AI) is accelerating
+
+- [[ideas/de-novo-generative-biology]] — AI's move from protein optimization to de novo design of entirely new biological structures, significantly accelerating vaccine and drug development

@@ -1,7 +1,7 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-06-10
+last_updated: 2026-06-11
 ---
 
 # GitHub Trends
@@ -102,6 +102,20 @@ OpenAI's openai-agents-python (10.1K stars in initial release) enters the multi-
 | anvie/evonic | 97 | Open agentic AI platform; multi-agent swarms, workplace execution, agent-to-agent communication, heuristic safety detection, cross-platform channels
 | Negai-ai/AgentClaw | 92 | Declarative agent workflow framework; one-sentence ideas to reusable capabilities; computer/browser control, MCP, knowledge bases, memory, tracing, scheduling
 
+
+
+**June 2026: Cognitive Infrastructure and Unified Multimodality**
+
+In June 2026, the trend shifted toward specialized agent cognitive layers and unified multimodal architectures. `gbrain` emerged as a synthesis layer using knowledge graphs to provide gap analysis for coding agents. Simultaneously, projects like `JoyAI-Echo` solved the consistency problem in long-form AI video, while `SenseNova-U1` introduced the NEO-unify paradigm, removing the modularity between visual encoders and the LLM core.
+
+
+## Key Developments
+
+| Date | Event | Significance |
+|------|-------|-------------|
+| 2026-06-11 | `gbrain` launched | Introduces 'Agent Brain' layer with self-wiring knowledge graphs for synthesis. |
+| 2026-06-11 | `JoyAI-Echo` released | Solves consistency in long-form AI video via a cross-modal memory bank. |
+| 2026-06-11 | `SenseNova-U1` released | Implements NEO-unify for seamless multimodal understanding and generation. |
 ## Patterns & Insights
 
 The "harness layer" has emerged as a critical battleground. claw-code's explosive growth demonstrates that closed-source agent architectures can be rapidly replicated — the competitive moat is narrower than assumed. This has implications for business models built on agent frameworks.
@@ -160,8 +174,13 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 
 **May 16: The Agentic Framework Trio**: Three repos trending — Dulus (215 stars, multi-provider "Claude Code for any model"), evonic (97 stars, multi-agent swarms with cross-platform channels), and AgentClaw (92 stars, declarative workflow specification) — all converge on the same thesis: agentic execution is the new default. Unlike earlier trending repos that replicated Claude Code's design, these frameworks treat multi-provider support, persistent state, and declarative specification as baseline assumptions. The pattern signals the open-source ecosystem has absorbed the agentic shift and is now building the infrastructure layer above it.
 
+
+- **Cognitive Infrastructure vs. Raw Intelligence**: A shift from simply increasing model size to providing agents with a dedicated 'brain layer' (e.g., knowledge graphs) to manage complex synthesis.
 ## Connections
-- [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
+-
+- [[entities/gbrain]] — Example of the new 'Agent Brain' infrastructure trend.
+- [[entities/joyai-echo]] — Advanced application of memory banks for media consistency.
+- [[entities/sensenova-u1]] — Implementation of the NEO-unify paradigm. [[entities/claude-code]] — Leaked source code spawned claw-code phenomenon; free alternatives emerging; Karpathy principles directly address Claude Code quality issues
 - [[entities/claw-code]] — Clean-room rewrite, 181K+ stars
 - [[entities/mcp-protocol]] — 150M+ installs, becoming foundational infrastructure; context-mode is an MCP tool optimizing MCP-based workflows
 - [[entities/serena]] — MCP toolkit providing semantic code operations at symbol level; 23.8K stars; "IDE for your coding agent"

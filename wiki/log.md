@@ -194,3 +194,9 @@ Ideas updated: two-track-ai-future (four-track bifurcation), openai-ipo-validate
 Chat session learning: Reviewed 3 Q&A sessions (Apr 23-26). Confirmed recurring themes: agent infrastructure layer consolidation, Claude 1,858% growth, Google $40B Anthropic investment, multi-turn vulnerability. No new corrections needed; existing topic/source/entity pages already cover these patterns. New June 8-9 patterns (compute-IPO-pause convergence) extend rather than contradict existing narratives.
 - 2026-06-11: Wiki Lint performed. Fixed orphan/duplicate company page (allen-control-systems), verified index integrity (0 missing/extra), checked topic sections and connection quality.
 - 2026-06-11: Wiki Lint performed. Fixed orphan/duplicate company page (allen-control-systems), verified index integrity (0 missing/extra), checked topic sections and connection quality.
+
+## [2026-06-12] wiki lint
+- Fixed 23 dead links (removed .md extension from wikilinks)
+- Resolved 9 orphan pages by fixing links and adding link from topics/physical_ai to ideas/de-novo-generative-biology
+- Synced wiki/index.md with filesystem: removed entities/allen-control-systems (moved to sources), added 16 missing pages (diffusion-gemma, dreaming-v3, gbrain, etc.)
+- Updated index counts and verified all topic pages have Evolution/Patterns sections
