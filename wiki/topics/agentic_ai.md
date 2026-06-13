@@ -314,7 +314,8 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[timelines/2026-06]] — June 9: the agent cost stack fragmentation is operationalized — memory, internet access, and token compression all shipping open-source within 24 hours
 
 - [[entities/chatgpt]] — June 12: integration of Visa payment network transforms the agent from a planner to an economic actor with autonomous purchasing power
-- [[sources/google_deepmind]] — June 11: M investment to study "agentic anarchy" and emergent risks of millions of agents interacting at machine speed
+- [[sources/google]] — June 11: M investment to study "agentic anarchy" and emergent risks of millions of agents interacting at machine speed
 - [[entities/mue-x]] — June 12: self-evolving agent that rewrites its own Python source code via AST transformations to acquire new skills
 - [[ideas/agentic-economic-actor]] — June 12: the transition to financial autonomy as the "last mile" of agentic AI
 - [[ideas/agentic-anarchy]] — June 11: systemic instability risk arising from AI-to-AI feedback loops
+- [[ideas/chatbot-to-os-pivot]] — a related pivot in how agents are conceptualized as OS-level entities

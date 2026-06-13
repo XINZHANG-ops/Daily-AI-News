@@ -1474,3 +1474,32 @@ I have completed the wiki ingest for **2026-06-11**.
 - **Finalization**: Updated `wiki/index.md`, appended to `wiki/log.md`, and marked the date as processed in `wiki/processed.json`.
 
 All `## Connections` sections follow the annotated wikilink requirement, explaining exactly why and how the linked entities and ideas relate to the current page.
+I have completed the wiki ingest for June 12, 2026.
+
+### Ingest Summary: `2026-06-12.json`
+
+**1. New Entities Created**
+- `entities/humanoid-gpt.md`: Zero-shot motion tracking for humanoids (2B frames of data).
+- `entities/mue-x.md`: Self-evolving agent using AST transformations to rewrite its own code.
+- `entities/meadow-mind.md`: Diffusion LLM achieving 400ms human-reaction speed for physical AI.
+- `entities/chatgpt.md`: Integration with Visa enables autonomous economic agency (purchasing power).
+
+**2. New Ideas Synthesized**
+- `ideas/agentic-economic-actor.md`: The shift from AI as a planner to an economic participant via financial rails.
+- `ideas/physical-ai-pivot.md`: The industry-wide move from digital tokens to optimizing physical atoms.
+- `ideas/agentic-anarchy.md`: Emergent systemic instability risks from machine-speed AI-to-AI interactions (DeepMind research).
+- `ideas/invisible-containment-tension.md`: The trust crisis arising from "invisible" guardrails used to protect corporate IP (Anthropic scandal).
+
+**3. Key Updates**
+- **`entities/claude-fable-5.md`**: Updated to include the "invisible guardrail" distillation scandal.
+- **`ideas/openai-ipo-validates-agent-economy.md`**: Reframed as "**The Titan Era: From Labs to Infrastructure**," capturing the shift to trillion-dollar systemic utilities.
+- **Topics**: Updated `agentic_ai`, `ai_companies`, `ai_funding`, `github_trends`, and `physical_ai` with narratives on agentic maturity and the physical pivot.
+- **Sources**: Created `sources/prometheus.md` ($12B raise for "Artificial General Engineer") and updated `sources/anthropic`, `sources/openai`, and `sources/google` with June 12 events.
+- **Timeline**: Updated `wiki/timelines/2026-06.md` for the second week of June.
+
+**4. Finalization**
+- Updated `wiki/index.md` with all new pages and updated metadata.
+- Updated `wiki/processed.json` to include `2026-06-12`.
+- Appended the ingest record to `wiki/log.md`.
+
+**Connection Quality**: All new and updated pages adhere to the strict annotated wikilink rule, explaining the specific "WHY" and "HOW" of every relationship.

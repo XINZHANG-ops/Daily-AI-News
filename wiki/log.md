@@ -219,3 +219,10 @@ Entities created: humanoid-gpt, mue-x, meadow-mind, chatgpt
 Entities updated: claude-fable-5
 Ideas created: agentic-economic-actor, physical-ai-pivot, agentic-anarchy, invisible-containment-tension
 Ideas updated: openai-ipo-validates-agent-economy
+2026-06-13: WIKI LINT completed.
+- Fixed broken links: [[sources/google_deepmind]] -> [[sources/google]], [[entities/sense-nova-u1]] -> [[entities/sensenova-u1]].
+- Created missing page: [[ideas/titan-era-of-ai]].
+- Fixed orphan pages: Linked [[ideas/chatbot-to-os-pivot]] from Agentic AI and [[topics/biotech]] from De Novo Generative Biology.
+- Structural integrity: Deleted non-entity page [[entities/eliezer]], rebuilt index.md.
+- Connection quality: Verified all topic pages have Evolution and Patterns sections.
+- Result: Wiki structural health restored.

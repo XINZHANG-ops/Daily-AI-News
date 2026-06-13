@@ -24,4 +24,4 @@ In June 2026, the field reached a milestone with the University of Cambridge lau
 ## Connections
 - [[ideas/de-novo-generative-biology]] — The core theoretical shift enabling this progress.
 - [[topics/physical_ai]] — An application of AI's ability to model and manipulate physical laws at the molecular scale.
-- [[entities/sense-nova-u1]] — While not directly biotech, the move toward native unified paradigms in multimodal AI mirrors the desire for unified "biological" understanding in AI-driven drug design.
+- [[entities/sensenova-u1]] — While not directly biotech, the move toward native unified paradigms in multimodal AI mirrors the desire for unified "biological" understanding in AI-driven drug design.
