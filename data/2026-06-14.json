@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-14",
+  "github_repos": [
+    {
+      "name": "hhhfs9s7y9-code/neuralbridge-sdk",
+      "url": "https://github.com/hhhfs9s7y9-code/neuralbridge-sdk",
+      "description": {
+        "en": "A self-healing SDK for LLM-powered AI agents that diagnoses and recovers from API faults (timeouts, rate limits) in ~19μs using a four-layer escalation process.",
+        "zh": "一个用于 LLM 驱动的 AI 代理的自修复 SDK，通过四层升级流程在 ~19μs 内诊断并修复 API 故障（如超时、频率限制）。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "hanxiao/dataroom",
+      "url": "https://github.com/hanxiao/dataroom",
+      "description": {
+        "en": "A research harness using local models (e.g., Qwen3.6) to autonomously build cited .zip archives (datarooms) of comprehensive knowledge on a topic.",
+        "zh": "一个研究框架，利用本地模型（如 Qwen3.6）自主构建关于特定主题的带引用的 .zip 归档资料库 (datarooms)。"
+      },
+      "stars": "850",
+      "forks": "120"
+    },
+    {
+      "name": "showlab/showui-pi",
+      "url": "https://github.com/showlab/showui-pi",
+      "description": {
+        "en": "A vision-language-action (VLA) model for GUI control that generates continuous cursor trajectories for dexterous actions like dragging and rotating.",
+        "zh": "一个用于 GUI 控制的视觉语言动作 (VLA) 模型，能够生成连续的光标轨迹，以实现拖拽和旋转等精准操作。"
+      },
+      "stars": "2.1k",
+      "forks": "310"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "US Government Forces Anthropic to Disable Fable 5 and Mythos 5 Worldwide",
+        "zh": "美国政府强制 Anthropic 在全球范围内禁用 Fable 5 和 Mythos 5 模型"
+      },
+      "url": "https://www.businesstimes.com.sg/startups-tech/anthropic-pulls-its-most-advanced-ai-models-including-mythos-after-us-bars-foreign-access",
+      "source": "Business Times",
+      "time": "2026-06-12",
+      "description": {
+        "en": "The US Department of Commerce ordered Anthropic to suspend access to its most advanced models for all foreign nationals due to national security concerns and jailbreak risks.",
+        "zh": "美国商务部以国家安全担忧和越狱风险为由，要求 Anthropic 停止所有外国国民访问其最先进的模型。"
+      },
+      "insight": {
+        "en": "This is a 'digital kill switch' moment. Unlike previous voluntary safety pauses, this is a government-mandated pruning of the global AI map. It signals that 'frontier' status is now a geopolitical liability, and Anthropic's friction with the Pentagon over surveillance has likely accelerated this 'national security' designation.",
+        "zh": "这是一个“数字开关”时刻。与之前的自愿安全暂停不同，这是政府强制删除全球 AI 地图。这标志着“前沿”地位现在成了地缘政治的负债，而 Anthropic 与五角大楼在监控问题上的摩擦可能加速了这次“国家安全”定级。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Supports EU Transparency Code while Altman Threatens EU Exit",
+        "zh": "OpenAI 支持欧盟透明度准则，但 Altman 威胁将退出欧盟市场"
+      },
+      "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem/",
+      "source": "OpenAI / SLTechnology",
+      "time": "2026-06-14",
+      "description": {
+        "en": "OpenAI integrated C2PA and SynthID watermarks for EU compliance, but CEO Sam Altman warned he might withdraw from the EU if over-regulation continues.",
+        "zh": "OpenAI 为符合欧盟法规而集成了 C2PA 和 SynthID 水印，但 CEO Sam Altman 警告说，如果过度监管持续，他可能会从欧盟市场撤出。"
+      },
+      "insight": {
+        "en": "Altman is playing a strategic double game: using technical compliance (C2PA) to signal 'good citizenship' while simultaneously using the 'market exit' threat as a high-stakes bargaining chip against the EU AI Act's governance requirements.",
+        "zh": "Altman 在玩一场战略双面游戏：利用技术合规（C2PA）来信号化“良好公民”身份，同时将“退出市场”作为与欧盟 AI 法案治理要求博弈的高级筹码。"
+      }
+    },
+    {
+      "title": {
+        "en": "AI Titans OpenAI, Google DeepMind, and Anthropic to Join G7 Summit",
+        "zh": "OpenAI、Google DeepMind 和 Anthropic 等 AI 巨头将参加 G7 峰会"
+      },
+      "url": "https://dataconomy.com/2026/06/12/ai-leaders-openai-google-deepmind-anthropic-g7-summit/",
+      "source": "Dataconomy",
+      "time": "2026-06-12",
+      "description": {
+        "en": "CEOs and leaders from the top three AI labs will attend the G7 summit in France to discuss global AI governance and safety.",
+        "zh": "三大 AI 实验室的 CEO 和领导人将参加在法国举行的 G7 峰会，讨论全球 AI 治理与安全。"
+      },
+      "insight": {
+        "en": "The 'Frontier Club' is consolidating its influence. By coordinating their presence at the G7, the big three are shifting from purely commercial rivals to an unofficial global regulatory body, ensuring that the rules for 'AI safety' are written by those who already hold the most compute.",
+        "zh": "“前沿俱乐部”正在巩固其影响力。通过在 G7 峰会上协调出现，这三巨头正从纯粹的商业竞争对手转变为一个非官方的全球监管机构，确保“AI 安全”的规则是由那些已经掌握最多算力的公司制定的。"
+      }
+    },
+    {
+      "title": {
+        "en": "Major Labs Sign Joint Letter to Congress on Synthetic DNA and Bio-threats",
+        "zh": "三大实验室签署联名信，向国会警告合成 DNA 和生物威胁"
+      },
+      "url": "https://dataconomy.com/2026/06/12/ai-leaders-openai-google-deepmind-anthropic-g7-summit/",
+      "source": "Dataconomy",
+      "time": "2026-06-12",
+      "description": {
+        "en": "OpenAI, Google, and Anthropic jointly advocated for stricter regulations on synthetic DNA to prevent AI-accelerated biological weapon creation.",
+        "zh": "OpenAI、Google 和 Anthropic 共同主张对合成 DNA 实施更严格的监管，以防止 AI 加速生物武器的制造。"
+      },
+      "insight": {
+        "en": "This alignment on bio-threats is as much about regulatory capture as it is about safety. By identifying synthetic DNA as the primary danger, they redirect regulatory scrutiny away from the 'black box' of their model weights and toward the physical 'wet-lab' layer, which is easier for governments to monitor.",
+        "zh": "这种在生物威胁上的统一，既关乎安全，也关乎监管俘获。通过将合成 DNA 定义为主要危险，他们将监管审查从模型的“黑盒”权重转移到了更容易被政府监控的物理“湿实验室”层。"
+      }
+    },
+    {
+      "title": {
+        "en": "Global Struggle for 'Technological Sovereignty' Intensifies",
+        "zh": "全球“技术主权”之争进一步升级"
+      },
+      "url": "https://xpert.digital/en/the-digital-kill-switch-2/",
+      "source": "Xpert Digital",
+      "time": "2026-06-14",
+      "description": {
+        "en": "The US government's restriction on Anthropic has sparked a crisis in Europe, highlighting the continent's perilous dependence on US-controlled AI infrastructure.",
+        "zh": "美国政府对 Anthropic 的限制在欧洲引发了危机，突显了该大陆对美国控制的 AI 基础设施的危险依赖。"
+      },
+      "insight": {
+        "en": "We are seeing the emergence of an 'AI Iron Curtain.' The US is moving from exporting chips to actively pruning the availability of specific cognitive capabilities based on geopolitical alignment. This makes 'local-first' AI agents and open-weight models not just a preference, but a strategic necessity for non-US entities.",
+        "zh": "我们正见证“AI 铁幕”的出现。美国正从出口芯片转向根据地缘政治结盟，主动修剪特定认知能力的可用性。这使得“本地优先”的 AI 代理和开源权重模型不再仅仅是一种偏好，而变成了非美国实体的一种战略必然。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The overarching narrative of June 14, 2026, is the 'Weaponization of National Security.' The US government's move to disable Anthropic's top models worldwide is a watershed moment—it's the first time a state actor has exercised a global 'digital kill switch' over a private lab's weights. This reveals a fundamental instability in the current AI ecosystem: the most capable models are hosted by companies that can be dismantled by a single government decree. The strategic response is clearly visible in today's trending repos: NeuralBridge's focus on 'self-healing' from API failures and Dataroom's use of local models for grounded research are symptoms of a world where the 'frontier' is no longer a reliable utility, but a volatile political asset. We are transitioning from the era of 'Scaling Laws' to the era of 'Sovereign AI,' where the ability to run capable models independently is the only true form of security.",
+    "zh": "2026年6月14日的主旋律是“国家安全的武器化”。美国政府禁用 Anthropic 全球顶级模型的举动是一个分水岭——这是国家行为体首次对私有实验室的权重行使全球“数字开关”。这揭示了当前 AI 生态的一个根本不稳定性：最强大的模型由一个可以通过政府一项法令就将其拆解的公司托管。这种战略响应在今天的趋势仓库中清晰可见：NeuralBridge 专注于从 API 故障中“自修复”，而 Dataroom 使用本地模型进行有根基的研究，这些都是一个世界的症状——在这个世界里，“前沿”不再是可靠的公共事业，而是一个不稳定的政治资产。我们正在从“规模法则”时代过渡到“主权 AI”时代，能够独立运行高性能模型成了唯一真正的安全保障。"
+  }
+}
