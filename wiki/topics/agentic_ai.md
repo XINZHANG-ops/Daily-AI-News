@@ -221,7 +221,7 @@ Physical AI is emerging as the next frontier. Autonomous vehicles, robots, and A
 - [[entities/remy]] — Google's approval-gate agent model introduces a new UX philosophy: human-in-the-loop by default rather than autonomy by default; challenges the "agent-as-employee" model
 - [[entities/alphaevolve]] — DeepMind's evolutionary computation agent discovers algorithms humans couldn't; extends agentic AI from code generation to fundamental research automation
 - [[entities/dexter]] — 25.4K stars for "Claude Code for finance" validates that vertical agents can attract significant open-source attention; self-validating research with SEC integration shows the workflow-depth moat
-- [[entities/eliezer]] — Self-editing protocol in 6K lines of TypeScript represents a genuine self-modification loop; auditable codebase makes it safe where Claude Code's 512K lines are not
+-  — Self-editing protocol in 6K lines of TypeScript represents a genuine self-modification loop; auditable codebase makes it safe where Claude Code's 512K lines are not
 - [[entities/dr-venus]] — 4B-parameter research specialist proves narrow tasks don't need frontier scale; the open-source layer of the research-agent vertical is maturing
 - [[ideas/agent-control-interface-wars]] — Remy's controllable agents vs Symphony's continuous execution vs Claude Code's native IDE integration — three competing philosophies for how humans interact with autonomous systems
 - [[ideas/ai-security-auditing-mainstream]] — Mozilla using Mythos for Firefox security auditing extends the agent paradigm into code security; agents are becoming the auditors of the infrastructure they run on

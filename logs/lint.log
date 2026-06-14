@@ -1057,3 +1057,19 @@ Already up to date.
 • 质量与连接审计：验证所有 Topic 页面均包含 Evolution 和 Patterns 章节，确认无 bare-link（如“相关：”）现象，确保所有连接均有明确的 WHY 标注。
 • 更新健康日志：在 `log.md` 中记录本次 Lint 修复详情，确保 Wiki 知识库的结构一致性与导航可靠性。
 [2026-06-13 01:04:29] Wiki lint 完成（退出码 0）。
+[main 58e10f9] wiki: lint 2026-06-13
+ 17 files changed, 1491 insertions(+), 617 deletions(-)
+ create mode 100644 all_files.txt
+ create mode 100644 index_links.txt
+ delete mode 100755 rebuild_index.py
+ create mode 100644 test.txt
+ delete mode 100644 wiki/entities/eliezer.md
+ create mode 100644 wiki/ideas/titan-era-of-ai.md
+[2026-06-14 01:00:01] 开始 wiki lint，模型: gemma4:31b-cloud
+Already up to date.
+• 修复了 3 处指向不存在页面 `[[entities/eliezer]]` 的断链（人物页面不应存在于 entities）。
+• 重新构建了 `wiki/index.md`，确保索引与文件系统完全同步，修正了数量统计及失效条目。
+• 审计了 `wiki/entities/` 目录，确认无公司或人物页面，所有 entity 均符合技术实体定义。
+• 验证了所有 topic 页面均包含 `## Evolution` 和 `## Patterns & Insights` 核心章节，连接质量达标。
+• 在 `wiki/log.md` 中记录了本次 lint 修复操作。
+[2026-06-14 01:03:28] Wiki lint 完成（退出码 0）。

@@ -226,7 +226,7 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/kohakuterrarium]] — 320 stars; Creature abstraction (6-module agent model) with built-in session persistence and TUI/Web UI out of the box; agents as persistent entities rather than stateless functions
 - [[entities/ppt-master]] — ppt-master's 13.2K stars validate that AI output compatibility with existing corporate tools (native .pptx) is as important as generation quality; the "invisible infrastructure" of format compatibility drives adoption
 - [[entities/dexter]] — 25.4K stars for "Claude Code for finance" proves vertical agents can attract massive open-source attention; the WhatsApp gateway meets professionals where they already communicate
-- [[entities/eliezer]] — Self-editing protocol in 6K lines makes self-modification auditable; PWA with push notifications treats agents as asynchronous assistants rather than synchronous chatbots
+-  — Self-editing protocol in 6K lines makes self-modification auditable; PWA with push notifications treats agents as asynchronous assistants rather than synchronous chatbots
 - [[entities/dr-venus]] — 4B-parameter research specialist joins GLM-OCR and Qwen 3.6 in proving narrow tasks don't need frontier-scale models
 - [[ideas/agent-control-interface-wars]] — ouroboros's specification-driven model and cocoindex's persistent-state model together represent a shift toward structured, predictable agent behavior — the engineering discipline enterprises need before wide deployment
 - [[timelines/2026-05]] — May 9 trending repos confirm verticalization: Dexter (finance), OpenSwarm (non-coding work), Eliezer (self-editing personal agent), DR-Venus (research) — all narrow, all purposeful

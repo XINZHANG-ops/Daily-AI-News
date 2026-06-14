@@ -226,3 +226,4 @@ Ideas updated: openai-ipo-validates-agent-economy
 - Structural integrity: Deleted non-entity page [[entities/eliezer]], rebuilt index.md.
 - Connection quality: Verified all topic pages have Evolution and Patterns sections.
 - Result: Wiki structural health restored.
+2026-06-14: Fixed broken links to [[entities/eliezer]] in timelines and topics; removed non-existent entity from index; rebuilt index.md.

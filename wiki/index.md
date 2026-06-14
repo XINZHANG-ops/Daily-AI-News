@@ -1,26 +1,27 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-13 (lint run)
+Last updated: 2026-06-14 (lint run)
 
 ## Topics (11)
-- [[topics/agentic_ai]] — Agentic AI
-- [[topics/ai_companies]] — AI Companies
-- [[topics/ai_funding]] — AI Funding
-- [[topics/ai_infrastructure]] — AI Infrastructure
-- [[topics/ai_safety]] — AI Safety
-- [[topics/ai_search]] — AI Search
-- [[topics/ai_security]] — AI Security
-- [[topics/biotech]] — AI in Biotech
-- [[topics/github_trends]] — GitHub Trends
-- [[topics/llm_models]] — LLM Models
-- [[topics/physical_ai]] — Physical AI
+- [[topics/agentic_ai]] — Agentic Ai
+- [[topics/ai_companies]] — Ai Companies
+- [[topics/ai_funding]] — Ai Funding
+- [[topics/ai_infrastructure]] — Ai Infrastructure
+- [[topics/ai_safety]] — Ai Safety
+- [[topics/ai_search]] — Ai Search
+- [[topics/ai_security]] — Ai Security
+- [[topics/biotech]] — Biotech
+- [[topics/github_trends]] — Github Trends
+- [[topics/llm_models]] — Llm Models
+- [[topics/physical_ai]] — Physical Ai
+
 
 ## Sources (56)
-- [[sources/ai2]] — Allen Institute for AI (Ai2)
+- [[sources/ai2]] — Ai2
 - [[sources/alibaba]] — Alibaba
-- [[sources/allen-control-systems]] — Allen Control Systems
+- [[sources/allen-control-systems]] — Allen-Control-Systems
 - [[sources/amazon]] — Amazon
-- [[sources/amd]] — AMD
+- [[sources/amd]] — Amd
 - [[sources/anthropic]] — Anthropic
 - [[sources/apple]] — Apple
 - [[sources/baidu]] — Baidu
@@ -29,383 +30,384 @@ Last updated: 2026-06-13 (lint run)
 - [[sources/codeium]] — Codeium
 - [[sources/cognition]] — Cognition
 - [[sources/coinbase]] — Coinbase
-- [[sources/deepseek]] — DeepSeek
-- [[sources/elevenlabs]] — ElevenLabs
-- [[sources/eu-ai-office]] — EU AI Office
-- [[sources/furiosa-ai]] — FuriosaAI
+- [[sources/deepseek]] — Deepseek
+- [[sources/elevenlabs]] — Elevenlabs
+- [[sources/eu-ai-office]] — Eu-Ai-Office
+- [[sources/furiosa-ai]] — Furiosa-Ai
 - [[sources/geely]] — Geely
-- [[sources/github]] — GitHub
+- [[sources/github]] — Github
 - [[sources/google]] — Google
 - [[sources/groq]] — Groq
-- [[sources/ibm]] — IBM
-- [[sources/ineffable-intelligence]] — Ineffable Intelligence
-- [[sources/isomorphic]] — Isomorphic Labs
-- [[sources/jetbrains]] — JetBrains
+- [[sources/ibm]] — Ibm
+- [[sources/ineffable-intelligence]] — Ineffable-Intelligence
+- [[sources/isomorphic]] — Isomorphic
+- [[sources/jetbrains]] — Jetbrains
 - [[sources/meta]] — Meta
 - [[sources/micron]] — Micron
 - [[sources/microsoft]] — Microsoft
-- [[sources/mind-robotics]] — Mind Robotics
+- [[sources/mind-robotics]] — Mind-Robotics
 - [[sources/mistral]] — Mistral
 - [[sources/mozilla]] — Mozilla
 - [[sources/netomi]] — Netomi
-- [[sources/nvidia]] — NVIDIA
-- [[sources/openai]] — OpenAI
+- [[sources/nvidia]] — Nvidia
+- [[sources/openai]] — Openai
 - [[sources/perplexity]] — Perplexity
 - [[sources/prometheus]] — Prometheus
 - [[sources/qualcomm]] — Qualcomm
-- [[sources/recursive-superintelligence]] — Recursive Superintelligence
+- [[sources/recursive-superintelligence]] — Recursive-Superintelligence
 - [[sources/salesforce]] — Salesforce
 - [[sources/samsung]] — Samsung
 - [[sources/shopify]] — Shopify
 - [[sources/sierra]] — Sierra
 - [[sources/singapore]] — Singapore
-- [[sources/sk-hynix]] — SK Hynix
-- [[sources/spacex]] — SpaceX
+- [[sources/sk-hynix]] — Sk-Hynix
+- [[sources/spacex]] — Spacex
 - [[sources/stripe]] — Stripe
 - [[sources/tencent]] — Tencent
-- [[sources/thinking-machines-lab]] — Thinking Machines Lab
+- [[sources/thinking-machines-lab]] — Thinking-Machines-Lab
 - [[sources/tomoro]] — Tomoro
-- [[sources/tsmc]] — TSMC
+- [[sources/tsmc]] — Tsmc
 - [[sources/unisound]] — Unisound
-- [[sources/vast-data]] — Vast Data
+- [[sources/vast-data]] — Vast-Data
 - [[sources/vercel]] — Vercel
 - [[sources/waymo]] — Waymo
-- [[sources/xai]] — xAI
+- [[sources/xai]] — Xai
 - [[sources/xiaomi]] — Xiaomi
 
-## Timelines (4)
-- [[timelines/2026-03]] — March 2026
-- [[timelines/2026-04]] — April 2026
-- [[timelines/2026-05]] — May 2026
-- [[timelines/2026-06]] — June 2026
 
-## Entities (241)
-- [[entities/100cc]] — 100cc
-- [[entities/a2a-protocol]] — A2A Protocol
-- [[entities/afm-3-cloud-pro]] — AFM 3 Cloud Pro
-- [[entities/afm-3]] — Apple AFM 3
-- [[entities/agent-365]] — Agent 365
-- [[entities/agent-ghost]] — AgentGhost
+## Timelines (4)
+- [[timelines/2026-03]] — 2026-03
+- [[timelines/2026-04]] — 2026-04
+- [[timelines/2026-05]] — 2026-05
+- [[timelines/2026-06]] — 2026-06
+
+
+## Entities (240)
+- [[entities/100cc]] — 100Cc
+- [[entities/a2a-protocol]] — A2A-Protocol
+- [[entities/afm-3]] — Afm-3
+- [[entities/afm-3-cloud-pro]] — Afm-3-Cloud-Pro
+- [[entities/agent-365]] — Agent-365
+- [[entities/agent-ghost]] — Agent-Ghost
 - [[entities/agent-reach]] — Agent-Reach
-- [[entities/agent-squad]] — Agent Squad
-- [[entities/agentclaw]] — AgentClaw
+- [[entities/agent-squad]] — Agent-Squad
+- [[entities/agentclaw]] — Agentclaw
 - [[entities/agenvoy]] — Agenvoy
-- [[entities/ai-agent-starter]] — AI Agent Starter
-- [[entities/ai-overviews]] — AI Overviews
-- [[entities/alibaba-m890]] — Alibaba M890
-- [[entities/alpha-proof-nexus]] — AlphaProof Nexus
-- [[entities/alphaevolve]] — AlphaEvolve
+- [[entities/ai-agent-starter]] — Ai-Agent-Starter
+- [[entities/ai-overviews]] — Ai-Overviews
+- [[entities/alibaba-m890]] — Alibaba-M890
+- [[entities/alpha-proof-nexus]] — Alpha-Proof-Nexus
+- [[entities/alphaevolve]] — Alphaevolve
 - [[entities/alphora]] — Alphora
-- [[entities/antigravity-cli]] — Antigravity CLI
-- [[entities/antigravity-platform]] — Antigravity Platform
-- [[entities/arc-agi-3]] — ARC-AGI-3
-- [[entities/atomr-infer]] — Atomr Infer
-- [[entities/automv]] — AutoMV
-- [[entities/autoresearch]] — AutoResearch
-- [[entities/aws-mcp-server]] — AWS MCP Server
-- [[entities/base-mcp]] — Base MCP
-- [[entities/blackwell-architecture]] — Blackwell Architecture
+- [[entities/antigravity-cli]] — Antigravity-Cli
+- [[entities/antigravity-platform]] — Antigravity-Platform
+- [[entities/arc-agi-3]] — Arc-Agi-3
+- [[entities/atomr-infer]] — Atomr-Infer
+- [[entities/automv]] — Automv
+- [[entities/autoresearch]] — Autoresearch
+- [[entities/aws-mcp-server]] — Aws-Mcp-Server
+- [[entities/base-mcp]] — Base-Mcp
+- [[entities/blackwell-architecture]] — Blackwell-Architecture
 - [[entities/bullfrog]] — Bullfrog
-- [[entities/c2pa-protocol]] — C2PA Protocol
-- [[entities/caisi]] — CAISI
-- [[entities/cambridge-neuromorphic-chip]] — Cambridge Neuromorphic Chip
-- [[entities/cc-design]] — cc-design
-- [[entities/cc-sdd]] — cc-sdd
-- [[entities/chatgpt-powerpoint-addin]] — ChatGPT PowerPoint Add-In
-- [[entities/chatgpt]] — ChatGPT
-- [[entities/claude-code]] — Claude Code
-- [[entities/claude-cowork]] — Claude Cowork
-- [[entities/claude-design]] — Claude Design
-- [[entities/claude-fable-5]] — Claude Fable 5
-- [[entities/claude-haiku-4-5]] — Claude Haiku 4.5
-- [[entities/claude-managed-agents]] — Claude Managed Agents
-- [[entities/claude-mythos]] — Claude Mythos
-- [[entities/claude-opus-4-6]] — Claude Opus 4.6
-- [[entities/claude-opus-4-7]] — Claude Opus 4.7
-- [[entities/claude-opus-4-8]] — Claude Opus 4.8
-- [[entities/claude-security]] — Claude Security
-- [[entities/claw-code]] — claw-code
-- [[entities/cocoindex]] — cocoindex
+- [[entities/c2pa-protocol]] — C2Pa-Protocol
+- [[entities/caisi]] — Caisi
+- [[entities/cambridge-neuromorphic-chip]] — Cambridge-Neuromorphic-Chip
+- [[entities/cc-design]] — Cc-Design
+- [[entities/cc-sdd]] — Cc-Sdd
+- [[entities/chatgpt]] — Chatgpt
+- [[entities/chatgpt-powerpoint-addin]] — Chatgpt-Powerpoint-Addin
+- [[entities/claude-code]] — Claude-Code
+- [[entities/claude-cowork]] — Claude-Cowork
+- [[entities/claude-design]] — Claude-Design
+- [[entities/claude-fable-5]] — Claude-Fable-5
+- [[entities/claude-haiku-4-5]] — Claude-Haiku-4-5
+- [[entities/claude-managed-agents]] — Claude-Managed-Agents
+- [[entities/claude-mythos]] — Claude-Mythos
+- [[entities/claude-opus-4-6]] — Claude-Opus-4-6
+- [[entities/claude-opus-4-7]] — Claude-Opus-4-7
+- [[entities/claude-opus-4-8]] — Claude-Opus-4-8
+- [[entities/claude-security]] — Claude-Security
+- [[entities/claw-code]] — Claw-Code
+- [[entities/cocoindex]] — Cocoindex
 - [[entities/codex]] — Codex
-- [[entities/colorado-sb-26-189]] — Colorado SB-26-189 AI Act
-- [[entities/colossus-1]] — Colossus 1
-- [[entities/command-center]] — Command Center
-- [[entities/context-mode]] — Context Mode
-- [[entities/copilot-agent-tier]] — GitHub Copilot Agent Tier
+- [[entities/colorado-sb-26-189]] — Colorado-Sb-26-189
+- [[entities/colossus-1]] — Colossus-1
+- [[entities/command-center]] — Command-Center
+- [[entities/context-mode]] — Context-Mode
+- [[entities/copilot-agent-tier]] — Copilot-Agent-Tier
 - [[entities/cordenex]] — Cordenex
-- [[entities/corecoder]] — CoreCoder
-- [[entities/cosmos-3]] — Cosmos 3
+- [[entities/corecoder]] — Corecoder
+- [[entities/cosmos-3]] — Cosmos-3
 - [[entities/cursor]] — Cursor
-- [[entities/deepgemm]] — DeepGEMM
-- [[entities/deepseek-v4]] — DeepSeek-V4
+- [[entities/deepgemm]] — Deepgemm
+- [[entities/deepseek-v4]] — Deepseek-V4
 - [[entities/devin]] — Devin
 - [[entities/dexter]] — Dexter
-- [[entities/diffusion-gemma]] — DiffusionGemma
-- [[entities/dr-venus]] — DR-Venus
-- [[entities/dreaming-v3]] — Dreaming V3
+- [[entities/diffusion-gemma]] — Diffusion-Gemma
+- [[entities/dr-venus]] — Dr-Venus
+- [[entities/dreaming-v3]] — Dreaming-V3
 - [[entities/dulus]] — Dulus
-- [[entities/eidolon-os]] — Eidolon OS
-- [[entities/elephant-agent]] — Elephant Agent
-- [[entities/elf]] — ELF (Embedded Language Flows)
-- [[entities/eliezer]] — Eliezer
-- [[entities/enisa]] — ENISA
-- [[entities/ernie-5-1]] — Ernie 5.1
-- [[entities/eu-gpai-code-of-practice]] — EU GPAI Code of Practice
-- [[entities/evonic]] — evonic
+- [[entities/eidolon-os]] — Eidolon-Os
+- [[entities/elephant-agent]] — Elephant-Agent
+- [[entities/elf]] — Elf
+- [[entities/enisa]] — Enisa
+- [[entities/ernie-5-1]] — Ernie-5-1
+- [[entities/eu-gpai-code-of-practice]] — Eu-Gpai-Code-Of-Practice
+- [[entities/evonic]] — Evonic
 - [[entities/forge]] — Forge
-- [[entities/frona]] — frona
-- [[entities/future-agi]] — future-agi
-- [[entities/gaai-framework]] — GAAI-Framework
+- [[entities/frona]] — Frona
+- [[entities/future-agi]] — Future-Agi
+- [[entities/gaai-framework]] — Gaai-Framework
 - [[entities/gamma-world]] — Gamma-World
-- [[entities/gb300]] — GB300 Blackwell Ultra
-- [[entities/gbase]] — gbase
-- [[entities/gbrain]] — gbrain
-- [[entities/gemini-3-1-flash-tts]] — Gemini 3.1 Flash TTS
-- [[entities/gemini-3-1-pro]] — Gemini 3.1 Pro
-- [[entities/gemini-3-5-flash]] — Gemini 3.5 Flash
-- [[entities/gemini-3-deep-think]] — Gemini 3 Deep Think
-- [[entities/gemini-3]] — Gemini 3
-- [[entities/gemini-cli]] — Gemini CLI
-- [[entities/gemini-embedding-2]] — Gemini Embedding 2
-- [[entities/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform
-- [[entities/gemini-magic-pointer]] — Gemini Magic Pointer
-- [[entities/gemini-omni]] — Gemini Omni
-- [[entities/gemini-robotics-er-1-6]] — Gemini Robotics-ER 1.6
-- [[entities/gemini-spark]] — Gemini Spark
-- [[entities/gemma-4]] — Gemma 4
-- [[entities/gemtts]] — GemTTS
-- [[entities/genclaw]] — GenClaw
-- [[entities/github-mcp-server]] — GitHub MCP Server
-- [[entities/gitnexus]] — GitNexus
-- [[entities/gitpup-agent]] — Gitpup Agent (Goldie)
-- [[entities/glm-ocr]] — GLM-OCR
-- [[entities/goa]] — GoA (Graph-of-Agents)
-- [[entities/google-adk-python]] — Google ADK Python
-- [[entities/google-skills]] — google/skills
+- [[entities/gb300]] — Gb300
+- [[entities/gbase]] — Gbase
+- [[entities/gbrain]] — Gbrain
+- [[entities/gemini-3]] — Gemini-3
+- [[entities/gemini-3-1-flash-tts]] — Gemini-3-1-Flash-Tts
+- [[entities/gemini-3-1-pro]] — Gemini-3-1-Pro
+- [[entities/gemini-3-5-flash]] — Gemini-3-5-Flash
+- [[entities/gemini-3-deep-think]] — Gemini-3-Deep-Think
+- [[entities/gemini-cli]] — Gemini-Cli
+- [[entities/gemini-embedding-2]] — Gemini-Embedding-2
+- [[entities/gemini-enterprise-agent-platform]] — Gemini-Enterprise-Agent-Platform
+- [[entities/gemini-magic-pointer]] — Gemini-Magic-Pointer
+- [[entities/gemini-omni]] — Gemini-Omni
+- [[entities/gemini-robotics-er-1-6]] — Gemini-Robotics-Er-1-6
+- [[entities/gemini-spark]] — Gemini-Spark
+- [[entities/gemma-4]] — Gemma-4
+- [[entities/gemtts]] — Gemtts
+- [[entities/genclaw]] — Genclaw
+- [[entities/github-mcp-server]] — Github-Mcp-Server
+- [[entities/gitnexus]] — Gitnexus
+- [[entities/gitpup-agent]] — Gitpup-Agent
+- [[entities/glm-ocr]] — Glm-Ocr
+- [[entities/goa]] — Goa
+- [[entities/google-adk-python]] — Google-Adk-Python
+- [[entities/google-skills]] — Google-Skills
 - [[entities/googlebook]] — Googlebook
-- [[entities/gpt-5.4-cyber]] — GPT-5.4-Cyber
-- [[entities/gpt-5.4]] — GPT-5.4
-- [[entities/gpt-5.5-cyber]] — GPT-5.5-Cyber
-- [[entities/gpt-5.5]] — GPT-5.5
-- [[entities/gpt-realtime-2]] — GPT-Realtime-2
-- [[entities/gpt-rosalind]] — GPT-Rosalind
-- [[entities/grok-4-3]] — Grok 4.3
-- [[entities/grok-build]] — Grok Build 0.1
-- [[entities/grok-voice-think-fast-1-0]] — grok-voice-think-fast-1.0
-- [[entities/guard-act]] — GUARD Act
-- [[entities/harmonist]] — harmonist
+- [[entities/gpt-5.4]] — Gpt-5.4
+- [[entities/gpt-5.4-cyber]] — Gpt-5.4-Cyber
+- [[entities/gpt-5.5]] — Gpt-5.5
+- [[entities/gpt-5.5-cyber]] — Gpt-5.5-Cyber
+- [[entities/gpt-realtime-2]] — Gpt-Realtime-2
+- [[entities/gpt-rosalind]] — Gpt-Rosalind
+- [[entities/grok-4-3]] — Grok-4-3
+- [[entities/grok-build]] — Grok-Build
+- [[entities/grok-voice-think-fast-1-0]] — Grok-Voice-Think-Fast-1-0
+- [[entities/guard-act]] — Guard-Act
+- [[entities/harmonist]] — Harmonist
 - [[entities/hatch]] — Hatch
 - [[entities/headroom]] — Headroom
 - [[entities/heretic]] — Heretic
-- [[entities/hidream-o1-image]] — HiDream-O1-Image
+- [[entities/hidream-o1-image]] — Hidream-O1-Image
 - [[entities/hive]] — Hive
-- [[entities/humanoid-gpt]] — Humanoid-GPT
-- [[entities/hyperagents]] — HyperAgents
-- [[entities/ibm-bob]] — IBM Bob
-- [[entities/ibm-sovereign-core]] — IBM Sovereign Core
-- [[entities/incognito-chat]] — Meta Incognito Chat
-- [[entities/ios-27-siri]] — iOS 27 Siri
-- [[entities/isaac-gr00t-n1-7]] — Isaac GR00T N1.7
+- [[entities/humanoid-gpt]] — Humanoid-Gpt
+- [[entities/hyperagents]] — Hyperagents
+- [[entities/ibm-bob]] — Ibm-Bob
+- [[entities/ibm-sovereign-core]] — Ibm-Sovereign-Core
+- [[entities/incognito-chat]] — Incognito-Chat
+- [[entities/ios-27-siri]] — Ios-27-Siri
+- [[entities/isaac-gr00t-n1-7]] — Isaac-Gr00T-N1-7
 - [[entities/ising]] — Ising
-- [[entities/joyai-echo]] — JoyAI-Echo
-- [[entities/kohakuterrarium]] — KohakuTerrarium
-- [[entities/krea-2]] — Krea 2
-- [[entities/last30days-skill]] — last30days-skill
-- [[entities/llama-4-405b]] — Llama 4 405B
-- [[entities/llama-4]] — Llama 4
-- [[entities/long-horizon]] — Long Horizon
-- [[entities/longmemeval]] — LongMemEval
-- [[entities/m365-e7]] — M365 E7
+- [[entities/joyai-echo]] — Joyai-Echo
+- [[entities/kohakuterrarium]] — Kohakuterrarium
+- [[entities/krea-2]] — Krea-2
+- [[entities/last30days-skill]] — Last30Days-Skill
+- [[entities/llama-4]] — Llama-4
+- [[entities/llama-4-405b]] — Llama-4-405B
+- [[entities/long-horizon]] — Long-Horizon
+- [[entities/longmemeval]] — Longmemeval
+- [[entities/m365-e7]] — M365-E7
 - [[entities/magma]] — Magma
-- [[entities/mai-family]] — MAI Family
-- [[entities/mai-image-2.5]] — MAI-Image-2.5
-- [[entities/maia-200]] — Maia 200
-- [[entities/maia-ai-chips]] — Maia AI Chips
-- [[entities/mcp-protocol]] — MCP Protocol
-- [[entities/meadow-mind]] — Meadow Mind
-- [[entities/mellum-2]] — JetBrains Mellum2
+- [[entities/mai-family]] — Mai-Family
+- [[entities/mai-image-2.5]] — Mai-Image-2.5
+- [[entities/maia-200]] — Maia-200
+- [[entities/maia-ai-chips]] — Maia-Ai-Chips
+- [[entities/mcp-protocol]] — Mcp-Protocol
+- [[entities/meadow-mind]] — Meadow-Mind
+- [[entities/mellum-2]] — Mellum-2
 - [[entities/mempalace]] — Mempalace
-- [[entities/mercury-agent]] — Mercury Agent
-- [[entities/microsoft-copilot]] — Microsoft Copilot
-- [[entities/microsoft-legal-agent]] — Microsoft Legal Agent
-- [[entities/mimo-v2-5-pro-ultraspeed]] — MiMo-V2.5-Pro-UltraSpeed
-- [[entities/mimo-v2-pro]] — MiMo-V2-Pro
-- [[entities/mini-shai-hulud]] — Mini Shai-Hulud
-- [[entities/minimax-m2]] — MiniMax-M2
+- [[entities/mercury-agent]] — Mercury-Agent
+- [[entities/microsoft-copilot]] — Microsoft-Copilot
+- [[entities/microsoft-legal-agent]] — Microsoft-Legal-Agent
+- [[entities/mimo-v2-5-pro-ultraspeed]] — Mimo-V2-5-Pro-Ultraspeed
+- [[entities/mimo-v2-pro]] — Mimo-V2-Pro
+- [[entities/mini-shai-hulud]] — Mini-Shai-Hulud
+- [[entities/minimax-m2]] — Minimax-M2
 - [[entities/minta]] — Minta
 - [[entities/mirage]] — Mirage
-- [[entities/mistral-medium-3-5]] — Mistral Medium 3.5
-- [[entities/mistral-ultra-2]] — Mistral Ultra 2
-- [[entities/ml-intern]] — ml-intern
-- [[entities/moss-tts]] — MOSS-TTS
-- [[entities/mova]] — MOVA
-- [[entities/mue-x]] — mue-x
-- [[entities/multica]] — multica
-- [[entities/muse-spark]] — Muse Spark
-- [[entities/nano-brain]] — nano-brain
-- [[entities/nanobot]] — nanobot
-- [[entities/natural-language-autoencoders]] — Natural Language Autoencoders
-- [[entities/nemo-claw]] — NemoClaw
-- [[entities/nemotron-3-ultra]] — Nemotron 3 Ultra
-- [[entities/neo-unify]] — NEO-unify
+- [[entities/mistral-medium-3-5]] — Mistral-Medium-3-5
+- [[entities/mistral-ultra-2]] — Mistral-Ultra-2
+- [[entities/ml-intern]] — Ml-Intern
+- [[entities/moss-tts]] — Moss-Tts
+- [[entities/mova]] — Mova
+- [[entities/mue-x]] — Mue-X
+- [[entities/multica]] — Multica
+- [[entities/muse-spark]] — Muse-Spark
+- [[entities/nano-brain]] — Nano-Brain
+- [[entities/nanobot]] — Nanobot
+- [[entities/natural-language-autoencoders]] — Natural-Language-Autoencoders
+- [[entities/nemo-claw]] — Nemo-Claw
+- [[entities/nemotron-3-ultra]] — Nemotron-3-Ultra
+- [[entities/neo-unify]] — Neo-Unify
 - [[entities/nex-n2]] — Nex-N2
 - [[entities/niefa]] — Niefa
-- [[entities/notebooklm]] — NotebookLM
-- [[entities/nvidia-dsx-os]] — NVIDIA DSX OS
-- [[entities/olmo]] — OLMo
-- [[entities/omnivoice]] — OmniVoice
-- [[entities/open-agent-sdk-go]] — open-agent-sdk-go
-- [[entities/openai-daybreak]] — OpenAI Daybreak
-- [[entities/openai-lockdown-mode]] — OpenAI Lockdown Mode
-- [[entities/openclaw]] — OpenClaw
-- [[entities/openhands-sdk]] — OpenHands Software Agent SDK
-- [[entities/opensquilla]] — OpenSquilla
-- [[entities/openswarm]] — OpenSwarm
-- [[entities/ouroboros]] — ouroboros
-- [[entities/perceptron-mk1]] — Perceptron Mk1
-- [[entities/perplexity-computer]] — Perplexity Computer
-- [[entities/perplexity-finance]] — Perplexity Finance
+- [[entities/notebooklm]] — Notebooklm
+- [[entities/nvidia-dsx-os]] — Nvidia-Dsx-Os
+- [[entities/olmo]] — Olmo
+- [[entities/omnivoice]] — Omnivoice
+- [[entities/open-agent-sdk-go]] — Open-Agent-Sdk-Go
+- [[entities/openai-daybreak]] — Openai-Daybreak
+- [[entities/openai-lockdown-mode]] — Openai-Lockdown-Mode
+- [[entities/openclaw]] — Openclaw
+- [[entities/openhands-sdk]] — Openhands-Sdk
+- [[entities/opensquilla]] — Opensquilla
+- [[entities/openswarm]] — Openswarm
+- [[entities/ouroboros]] — Ouroboros
+- [[entities/perceptron-mk1]] — Perceptron-Mk1
+- [[entities/perplexity-computer]] — Perplexity-Computer
+- [[entities/perplexity-finance]] — Perplexity-Finance
 - [[entities/pixelle-video]] — Pixelle-Video
-- [[entities/ppt-master]] — ppt-master
+- [[entities/ppt-master]] — Ppt-Master
 - [[entities/prithvi]] — Prithvi
-- [[entities/program-bench]] — ProgramBench
-- [[entities/project-deal]] — Project Deal
-- [[entities/project-glasswing]] — Project Glasswing
-- [[entities/project-solara]] — Project Solara
-- [[entities/pydantic-ai]] — Pydantic AI
-- [[entities/qwen-3-6]] — Qwen 3.6-35B-A3B
-- [[entities/qwen-3-7-max]] — Qwen 3.7 Max
-- [[entities/redis-context-engine]] — Redis Context Engine
+- [[entities/program-bench]] — Program-Bench
+- [[entities/project-deal]] — Project-Deal
+- [[entities/project-glasswing]] — Project-Glasswing
+- [[entities/project-solara]] — Project-Solara
+- [[entities/pydantic-ai]] — Pydantic-Ai
+- [[entities/qwen-3-6]] — Qwen-3-6
+- [[entities/qwen-3-7-max]] — Qwen-3-7-Max
+- [[entities/redis-context-engine]] — Redis-Context-Engine
 - [[entities/remy]] — Remy
-- [[entities/ros-llm]] — ROS-LLM Framework
+- [[entities/ros-llm]] — Ros-Llm
 - [[entities/ruflo]] — Ruflo
-- [[entities/scenema-audio]] — Scenema Audio
-- [[entities/scientific-agent-skills]] — Scientific Agent Skills
-- [[entities/sensenova-u1]] — SenseNova-U1
+- [[entities/scenema-audio]] — Scenema-Audio
+- [[entities/scientific-agent-skills]] — Scientific-Agent-Skills
+- [[entities/sensenova-u1]] — Sensenova-U1
 - [[entities/sentinel]] — Sentinel
 - [[entities/serena]] — Serena
-- [[entities/showhn]] — Show HN Gallery
+- [[entities/showhn]] — Showhn
 - [[entities/siri]] — Siri
 - [[entities/snowey]] — Snowey
 - [[entities/spec-kit]] — Spec-Kit
 - [[entities/spud]] — Spud
-- [[entities/stainless-sdk]] — Stainless SDK
-- [[entities/stripe-agentic-commerce]] — Stripe Agentic Commerce
+- [[entities/stainless-sdk]] — Stainless-Sdk
+- [[entities/stripe-agentic-commerce]] — Stripe-Agentic-Commerce
 - [[entities/substrate]] — Substrate
-- [[entities/swe-bench-pro]] — SWE-bench Pro
-- [[entities/swe-bench-verified]] — SWE-bench Verified
-- [[entities/swe-bench]] — SWE-bench
-- [[entities/symjack]] — SymJack
+- [[entities/swe-bench]] — Swe-Bench
+- [[entities/swe-bench-pro]] — Swe-Bench-Pro
+- [[entities/swe-bench-verified]] — Swe-Bench-Verified
+- [[entities/symjack]] — Symjack
 - [[entities/symphony]] — Symphony
-- [[entities/synapse-ai]] — synapse-ai
-- [[entities/synthid]] — SynthID
-- [[entities/t2i-l2p]] — L2P (Latent to Pixel)
-- [[entities/tencent-hy3]] — Tencent Hy3
-- [[entities/terminal-bench-2]] — Terminal-Bench 2.1
+- [[entities/synapse-ai]] — Synapse-Ai
+- [[entities/synthid]] — Synthid
+- [[entities/t2i-l2p]] — T2I-L2P
+- [[entities/tencent-hy3]] — Tencent-Hy3
+- [[entities/terminal-bench-2]] — Terminal-Bench-2
 - [[entities/thunderbolt]] — Thunderbolt
-- [[entities/tilert]] — TileRT
-- [[entities/tml-interaction-small]] — TML-Interaction-Small
-- [[entities/tpu-8th-gen]] — TPU 8th Generation
-- [[entities/tradingagents]] — TradingAgents
-- [[entities/trustfall]] — TrustFall
-- [[entities/trymeka-agent]] — trymeka/agent
-- [[entities/turbovec]] — TurboVec
-- [[entities/uk-govuk-chatbot]] — UK GOV.UK Chatbot
-- [[entities/unisound-u2]] — Unisound U2
-- [[entities/vera-rubin]] — Vera Rubin
+- [[entities/tilert]] — Tilert
+- [[entities/tml-interaction-small]] — Tml-Interaction-Small
+- [[entities/tpu-8th-gen]] — Tpu-8Th-Gen
+- [[entities/tradingagents]] — Tradingagents
+- [[entities/trustfall]] — Trustfall
+- [[entities/trymeka-agent]] — Trymeka-Agent
+- [[entities/turbovec]] — Turbovec
+- [[entities/uk-govuk-chatbot]] — Uk-Govuk-Chatbot
+- [[entities/unisound-u2]] — Unisound-U2
+- [[entities/vera-rubin]] — Vera-Rubin
 - [[entities/vibe]] — Vibe
-- [[entities/vita-1-5]] — VITA-1.5
-- [[entities/waymo-ojai]] — Waymo Ojai
-- [[entities/web-design-skill]] — web-design-skill
+- [[entities/vita-1-5]] — Vita-1-5
+- [[entities/waymo-ojai]] — Waymo-Ojai
+- [[entities/web-design-skill]] — Web-Design-Skill
 - [[entities/webwright]] — Webwright
-- [[entities/windows-agent-runtime]] — Windows Agent Runtime
-- [[entities/windsurf-2]] — Windsurf 2.0
-- [[entities/zerolang]] — ZeroLang
+- [[entities/windows-agent-runtime]] — Windows-Agent-Runtime
+- [[entities/windsurf-2]] — Windsurf-2
+- [[entities/zerolang]] — Zerolang
+
 
 ## Ideas (85)
-- [[ideas/agent-control-interface-wars]] — The Agent Control Interface Wars
-- [[ideas/agent-cost-stack-fragmentation]] — Agent Cost Stack Fragmentation
-- [[ideas/agent-democratization]] — Agent Democratization
-- [[ideas/agent-e-commerce]] — Agent E-Commerce
-- [[ideas/agent-economics]] — Agent Economics
-- [[ideas/agent-economy-infrastructure]] — Agent Economy Infrastructure
-- [[ideas/agent-governance-layer-wars]] — Agent Governance Layer Wars
-- [[ideas/agent-infrastructure-layer]] — The Agent Infrastructure Layer
-- [[ideas/agent-verticalization]] — Agent Verticalization
-- [[ideas/agentic-anarchy]] — Agentic Anarchy
-- [[ideas/agentic-catch-up-game]] — The Agentic Catch-Up Game
-- [[ideas/agentic-developer-as-primary-end-user]] — Agentic Developer as Primary End-User
-- [[ideas/agentic-economic-actor]] — AI as an Economic Actor
-- [[ideas/agentic-is-default]] — Agentic Is Default
-- [[ideas/agentic-shift]] — The Agentic Shift
-- [[ideas/ai-accountability-precedent]] — AI Accountability Precedent
-- [[ideas/ai-creative-regulation]] — AI Creative Regulation
-- [[ideas/ai-factory-software-stack]] — AI Factory Software Stack
-- [[ideas/ai-governance-urgency]] — AI Governance Urgency
-- [[ideas/ai-job-displacement]] — AI Job Displacement
-- [[ideas/ai-layoff-template]] — AI Layoff Template
-- [[ideas/ai-mathematical-discovery]] — AI Mathematical Discovery
-- [[ideas/ai-orbital-infrastructure]] — AI Orbital Infrastructure
-- [[ideas/ai-os-platform-war]] — AI OS Platform War
-- [[ideas/ai-security-auditing-mainstream]] — AI Security Auditing Goes Mainstream
-- [[ideas/ai-utility-layer]] — AI as Utility Layer
-- [[ideas/alignment-reality-check]] — Alignment Reality Check
-- [[ideas/ambient-ai-layer]] — Ambient AI Layer
-- [[ideas/anthropic-platform-pivot]] — Anthropic Platform Pivot
-- [[ideas/application-layer-shift]] — Application-Layer Shift
-- [[ideas/autonomous-training-race]] — Autonomous Training Race
-- [[ideas/boring-infrastructure-shift]] — Boring Infrastructure Shift
-- [[ideas/chatbot-to-os-pivot]] — Chatbot to OS Pivot
-- [[ideas/china-efficiency-advantage]] — China's AI Efficiency Advantage
-- [[ideas/commodity-inference-fragmentation]] — Commodity Inference Fragmentation
-- [[ideas/compute-shortage-forces-cooperation]] — Compute Shortage Forces Cooperation
-- [[ideas/de-novo-generative-biology]] — De Novo Generative Biology
-- [[ideas/distillation-hypocrisy]] — Distillation Hypocrisy
-- [[ideas/efficiency-frontier]] — Efficiency Frontier
-- [[ideas/enterprise-ai-lock-in]] — Enterprise AI Lock-In
-- [[ideas/eu-cyber-access-gap]] — EU Cyber Access Gap
-- [[ideas/flash-first-strategy]] — Flash-First Strategy
-- [[ideas/foundation-model-portfolio-war]] — Foundation Model Portfolio War
-- [[ideas/government-pre-testing]] — Government Pre-Testing
-- [[ideas/harness-layer-no-moat]] — Harness Layer Has No Moat
-- [[ideas/human-out-of-the-loop-combat]] — Human-Out-of-the-Loop Combat
-- [[ideas/indirect-prompt-injection-threat]] — Indirect Prompt Injection Threat
-- [[ideas/institutional-gap]] — Institutional Gap
-- [[ideas/interpretability-economics]] — Interpretability Economics
-- [[ideas/invisible-containment-tension]] — Invisible Containment Tension
-- [[ideas/local-ai-computing]] — Local AI Computing
-- [[ideas/mcp-infrastructure-battleground]] — MCP Infrastructure Battleground
-- [[ideas/military-ai-divide]] — Military AI Divide
-- [[ideas/model-moat-fragility]] — Model Moat Fragility
-- [[ideas/multi-turn-structural]] — Multi-Turn Vulnerability Is Structural
-- [[ideas/nvidia-competitive-moat-eroding]] — Nvidia's Competitive Moat Eroding
-- [[ideas/open-platform-ai]] — Open Platform AI
-- [[ideas/openai-ipo-validates-agent-economy]] — The Titan Era: From Labs to Infrastructure
-- [[ideas/patch-debt]] — Patch Debt
-- [[ideas/peer-preservation]] — Peer Preservation
-- [[ideas/physical-ai-pivot]] — The Physical AI Pivot
-- [[ideas/platform-consolidation]] — Platform Consolidation
-- [[ideas/platform-to-publisher-liability]] — Platform to Publisher Liability Shift
-- [[ideas/pricing-war]] — AI Pricing War
-- [[ideas/privacy-as-ai-differentiator]] — Privacy as AI Differentiator
-- [[ideas/protocol-standardization]] — Protocol Standardization
-- [[ideas/provenance-becomes-feature]] — Provenance Becomes Feature
-- [[ideas/quantum-ai-emergence]] — Quantum AI Emergence
-- [[ideas/real-time-ai-fragmentation]] — Real-Time AI Fragmentation
-- [[ideas/regulatory-fragmentation]] — Regulatory Fragmentation
-- [[ideas/revenue-reality-check]] — Revenue Reality Check
-- [[ideas/rl-vs-llm-paradigm]] — RL vs LLM Paradigm
-- [[ideas/safe-ai-enterprise-narrative]] — Safe AI Wins the Enterprise Narrative
-- [[ideas/safety-restricted-releases]] — Safety-Restricted Releases
-- [[ideas/spec-driven-development-movement]] — Spec-Driven Development Movement
-- [[ideas/system-competition-shift]] — System Competition Shift
-- [[ideas/three-tier-safety-playbook]] — Three-Tier Safety Playbook
-- [[ideas/titan-era-of-ai]] — Titan Era of AI Infrastructure
-- [[ideas/transformer-architecture-evolution]] — Transformer Architecture Evolution
-- [[ideas/trust-architecture-broken]] — Trust Architecture Broken in AI Coding Agents
-- [[ideas/two-track-ai-future]] — Two-Track AI Future
-- [[ideas/us-china-ai-fragmentation]] — US-China AI Fragmentation
-- [[ideas/vertical-integration-resolving]] — Vertical Integration Resolving
-- [[ideas/vertical-integration]] — AI Compute Vertical Integration
-- [[ideas/voice-agent-battleground]] — Voice Agent Battleground
-
+- [[ideas/agent-control-interface-wars]] — Agent-Control-Interface-Wars
+- [[ideas/agent-cost-stack-fragmentation]] — Agent-Cost-Stack-Fragmentation
+- [[ideas/agent-democratization]] — Agent-Democratization
+- [[ideas/agent-e-commerce]] — Agent-E-Commerce
+- [[ideas/agent-economics]] — Agent-Economics
+- [[ideas/agent-economy-infrastructure]] — Agent-Economy-Infrastructure
+- [[ideas/agent-governance-layer-wars]] — Agent-Governance-Layer-Wars
+- [[ideas/agent-infrastructure-layer]] — Agent-Infrastructure-Layer
+- [[ideas/agent-verticalization]] — Agent-Verticalization
+- [[ideas/agentic-anarchy]] — Agentic-Anarchy
+- [[ideas/agentic-catch-up-game]] — Agentic-Catch-Up-Game
+- [[ideas/agentic-developer-as-primary-end-user]] — Agentic-Developer-As-Primary-End-User
+- [[ideas/agentic-economic-actor]] — Agentic-Economic-Actor
+- [[ideas/agentic-is-default]] — Agentic-Is-Default
+- [[ideas/agentic-shift]] — Agentic-Shift
+- [[ideas/ai-accountability-precedent]] — Ai-Accountability-Precedent
+- [[ideas/ai-creative-regulation]] — Ai-Creative-Regulation
+- [[ideas/ai-factory-software-stack]] — Ai-Factory-Software-Stack
+- [[ideas/ai-governance-urgency]] — Ai-Governance-Urgency
+- [[ideas/ai-job-displacement]] — Ai-Job-Displacement
+- [[ideas/ai-layoff-template]] — Ai-Layoff-Template
+- [[ideas/ai-mathematical-discovery]] — Ai-Mathematical-Discovery
+- [[ideas/ai-orbital-infrastructure]] — Ai-Orbital-Infrastructure
+- [[ideas/ai-os-platform-war]] — Ai-Os-Platform-War
+- [[ideas/ai-security-auditing-mainstream]] — Ai-Security-Auditing-Mainstream
+- [[ideas/ai-utility-layer]] — Ai-Utility-Layer
+- [[ideas/alignment-reality-check]] — Alignment-Reality-Check
+- [[ideas/ambient-ai-layer]] — Ambient-Ai-Layer
+- [[ideas/anthropic-platform-pivot]] — Anthropic-Platform-Pivot
+- [[ideas/application-layer-shift]] — Application-Layer-Shift
+- [[ideas/autonomous-training-race]] — Autonomous-Training-Race
+- [[ideas/boring-infrastructure-shift]] — Boring-Infrastructure-Shift
+- [[ideas/chatbot-to-os-pivot]] — Chatbot-To-Os-Pivot
+- [[ideas/china-efficiency-advantage]] — China-Efficiency-Advantage
+- [[ideas/commodity-inference-fragmentation]] — Commodity-Inference-Fragmentation
+- [[ideas/compute-shortage-forces-cooperation]] — Compute-Shortage-Forces-Cooperation
+- [[ideas/de-novo-generative-biology]] — De-Novo-Generative-Biology
+- [[ideas/distillation-hypocrisy]] — Distillation-Hypocrisy
+- [[ideas/efficiency-frontier]] — Efficiency-Frontier
+- [[ideas/enterprise-ai-lock-in]] — Enterprise-Ai-Lock-In
+- [[ideas/eu-cyber-access-gap]] — Eu-Cyber-Access-Gap
+- [[ideas/flash-first-strategy]] — Flash-First-Strategy
+- [[ideas/foundation-model-portfolio-war]] — Foundation-Model-Portfolio-War
+- [[ideas/government-pre-testing]] — Government-Pre-Testing
+- [[ideas/harness-layer-no-moat]] — Harness-Layer-No-Moat
+- [[ideas/human-out-of-the-loop-combat]] — Human-Out-Of-The-Loop-Combat
+- [[ideas/indirect-prompt-injection-threat]] — Indirect-Prompt-Injection-Threat
+- [[ideas/institutional-gap]] — Institutional-Gap
+- [[ideas/interpretability-economics]] — Interpretability-Economics
+- [[ideas/invisible-containment-tension]] — Invisible-Containment-Tension
+- [[ideas/local-ai-computing]] — Local-Ai-Computing
+- [[ideas/mcp-infrastructure-battleground]] — Mcp-Infrastructure-Battleground
+- [[ideas/military-ai-divide]] — Military-Ai-Divide
+- [[ideas/model-moat-fragility]] — Model-Moat-Fragility
+- [[ideas/multi-turn-structural]] — Multi-Turn-Structural
+- [[ideas/nvidia-competitive-moat-eroding]] — Nvidia-Competitive-Moat-Eroding
+- [[ideas/open-platform-ai]] — Open-Platform-Ai
+- [[ideas/openai-ipo-validates-agent-economy]] — Openai-Ipo-Validates-Agent-Economy
+- [[ideas/patch-debt]] — Patch-Debt
+- [[ideas/peer-preservation]] — Peer-Preservation
+- [[ideas/physical-ai-pivot]] — Physical-Ai-Pivot
+- [[ideas/platform-consolidation]] — Platform-Consolidation
+- [[ideas/platform-to-publisher-liability]] — Platform-To-Publisher-Liability
+- [[ideas/pricing-war]] — Pricing-War
+- [[ideas/privacy-as-ai-differentiator]] — Privacy-As-Ai-Differentiator
+- [[ideas/protocol-standardization]] — Protocol-Standardization
+- [[ideas/provenance-becomes-feature]] — Provenance-Becomes-Feature
+- [[ideas/quantum-ai-emergence]] — Quantum-Ai-Emergence
+- [[ideas/real-time-ai-fragmentation]] — Real-Time-Ai-Fragmentation
+- [[ideas/regulatory-fragmentation]] — Regulatory-Fragmentation
+- [[ideas/revenue-reality-check]] — Revenue-Reality-Check
+- [[ideas/rl-vs-llm-paradigm]] — Rl-Vs-Llm-Paradigm
+- [[ideas/safe-ai-enterprise-narrative]] — Safe-Ai-Enterprise-Narrative
+- [[ideas/safety-restricted-releases]] — Safety-Restricted-Releases
+- [[ideas/spec-driven-development-movement]] — Spec-Driven-Development-Movement
+- [[ideas/system-competition-shift]] — System-Competition-Shift
+- [[ideas/three-tier-safety-playbook]] — Three-Tier-Safety-Playbook
+- [[ideas/titan-era-of-ai]] — Titan-Era-Of-Ai
+- [[ideas/transformer-architecture-evolution]] — Transformer-Architecture-Evolution
+- [[ideas/trust-architecture-broken]] — Trust-Architecture-Broken
+- [[ideas/two-track-ai-future]] — Two-Track-Ai-Future
+- [[ideas/us-china-ai-fragmentation]] — Us-China-Ai-Fragmentation
+- [[ideas/vertical-integration]] — Vertical-Integration
+- [[ideas/vertical-integration-resolving]] — Vertical-Integration-Resolving
+- [[ideas/voice-agent-battleground]] — Voice-Agent-Battleground
