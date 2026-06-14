@@ -1,7 +1,7 @@
 ---
 title: "Google"
 slug: google
-last_updated: 2026-06-09
+last_updated: 2026-06-14
 ---
 
 # Google
@@ -9,7 +9,7 @@ last_updated: 2026-06-09
 ## Overview
 Google has deepened its role as an AI infrastructure provider and model competitor simultaneously. The company is investing up to $40 billion in Anthropic ($10B minimum, $30B contingent on performance targets) and has signed a multi-gigawatt TPU agreement with Anthropic and Broadcom. On April 22, Google released a new suite of AI agents to challenge OpenAI and Anthropic in the burgeoning agentic AI market. At Cloud Next 2026, Google revealed that 75% of its new code is now AI-generated and approved by engineers, and announced the Gemini Enterprise Agent Platform for managing thousands of AI agents alongside 8th generation TPUs (TPU 8t and 8i) offering 3x the processing power of Ironwood. On May 1, Google rolls out Gemini to ~4M GM vehicles, replacing Google Assistant with a vehicle-specific AI concierge — the largest automotive AI deployment to date. On May 6, Google DeepMind announced a minority stake in CCP Games, developer of EVE Online, using the game's complex player-driven economy as a training ground for multi-agent economic and strategic AI.
 
-On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18+, reflecting regulatory pressure from Colorado's new AI Act and tightening UK regulations. The expansion signals platforms are pre-empting compliance requirements before fragmented state and national laws multiply.
+By June 14, 2026, Google's strategy shifted toward global governance leadership. As a key member of the "Frontier Club," Google coordinated with OpenAI and Anthropic at the G7 summit in France to establish global AI safety standards. The company also co-authored a joint letter to Congress advocating for strict regulations on synthetic DNA to prevent AI-accelerated biological threats, a move that both addresses real risks and strategically redirects regulatory scrutiny toward the physical "wet-lab" layer rather than the model's internal weights.
 
 ## Timeline
 
@@ -135,6 +135,8 @@ On May 16, 2026, YouTube expanded its AI deepfake detection tool to all users 18
 - [[entities/afm-3]] — June 8: Apple AFM 3 ships with Gemini-distilled teachers; Google is both training partner and consumer-competitor in mobile AI — the most entangled AI partnership in the industry
 
 | 2026-06-11 | Funds Multi-Agent 'Anarchy' Research | Investing $10M to study the emergent risks of millions of autonomous agents interacting online; fearing systemic instability |
+| 2026-06-14 | Joins G7 Summit | Coordinated with OpenAI and Anthropic to discuss global AI governance and safety in France |
+| 2026-06-14 | Signs Joint Letter on Bio-threats | Advocates for stricter regulations on synthetic DNA to prevent AI-accelerated bio-weapon creation |
 
 - [[ideas/agentic-anarchy]] — June 11: DeepMind's research into "agentic anarchy" signals a shift from individual model alignment to systemic stability research
 - [[topics/ai_safety]] — June 11: investing $10M into agent interaction risks expands the definition of AI safety to include machine-speed AI-to-AI feedback loops

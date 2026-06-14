@@ -1,13 +1,13 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-06-11
+last_updated: 2026-06-14
 ---
 
 # LLM Models
 
 ## Overview
-May 2, 2026 delivers the most damning empirical critique of the LLM paradigm to date: ARC-AGI-3 results show GPT-5.5 (0.43%) and Claude Opus 4.7 (0.18%) performing below 1% on interactive reasoning puzzles humans solve effortlessly — while these same models ace [[entities/swe-bench]] at 80%+. The finding that models "hallucinate" mapping unfamiliar 2D grids to Tetris/Breakout reveals they're not reasoning about novel situations at all — they're routing to the nearest memorized template. Mistral Medium 3.5 enters the fray with a reasoning-effort toggle (one model switching modes per-request instead of separate chat/reasoning variants), and the Pentagon's "AI-first" declaration scales military AI deployment to 1M+ defense personnel. The industry is simultaneously discovering the ceiling of current architectures and building the infrastructure for what comes next. Claude Mythos established the precedent of capability-based restrictions, and by May 2026 both Anthropic (Claude Security) and OpenAI (GPT-5.5 Cyber) are racing to build defensive moats around their most dangerous capabilities. NVIDIA's GB300 Blackwell Ultra entering mass production addresses the economics problem that GitHub's 275M weekly commits revealed — 35x lower cost-per-token for agentic AI. Meanwhile, the Senate GUARD Act advancing unanimously signals Washington has found its bipartisan AI issue: child safety with criminal penalties for model conduct.
+June 14, 2026 transforms the LLM landscape from a commercial race into a geopolitical battlefield. The US government's forced disablement of Anthropic's Fable 5 and Mythos 5 models worldwide (excluding US nationals) establishes a "digital kill switch" for frontier weights, effectively partitioning the world's cognitive capabilities by geopolitical alignment. This "AI Iron Curtain" signals that extreme capability is now a national security liability. Simultaneously, the emergence of VLA models like ShowUI-Pi marks a shift toward "operating AI," where models generate continuous cursor trajectories for precise GUI control rather than just text or coordinates. The industry is now split between the volatile, state-controlled "frontier" and a growing "Sovereign AI" movement focused on high-performance local models (e.g., Qwen3.6) that are immune to external political pruning.
 
 June 7-8, 2026 crystallizes the "hybrid reasoning" consensus: three frontier releases in ten days — NVIDIA Nemotron 3 Ultra (Mamba-Transformer, June 4), Microsoft MAI-Thinking-1 (sparse MoE reasoning, June 6), and Unisound U2 (explicit CoT + implicit latent "Hybrid Thinking", June 8) — all converged on the same architectural bet that pure transformers topped out around Claude 3.5/4-class reasoning. Layered on top, NVIDIA's Cosmos 3 introduces Mixture-of-Transformers (separate Reasoner + Generator towers) as the first credible "physical AI" foundation model, and Anthropic's 90% internal Claude adoption report is the first public admission that human code review is the binding constraint on recursive self-improvement. The economic subtext is sharper: with Claude up 1,858% YoY and all three frontier labs profitable-or-near, "subsidize to capture" era ends; the agentic-coding cost floor collapses via Mellum2 (Apache 2.0) and token billing, while the capability ceiling rises via hybrid architectures.
 
@@ -174,11 +174,11 @@ By mid-June, the focus shifted from raw reasoning benchmarks to architectural ef
 
 
 
-**June 2026: The Collision of Ambition and Reality**
+**June 2026: The Geopolitical Partitioning of AI**: The month began with a fundamental architectural pivot: Google's release of [[entities/diffusion-gemma]] on June 10 proved that text diffusion could overcome the KV-cache latency wall, achieving 1,000 tokens/sec and signaling the end of the "Transformer-only" era. Simultaneously, OpenAI pivoted ChatGPT into an agent-centric "super app" on June 11, anchored by [[entities/dreaming-v3]], a high-recall personal memory system that transforms the AI from a chatbot into a persistent personal OS.
 
-The month began with a fundamental architectural pivot: Google's release of [[entities/diffusion-gemma]] on June 10 proved that text diffusion could overcome the KV-cache latency wall, achieving 1,000 tokens/sec and signaling the end of the "Transformer-only" era. Simultaneously, OpenAI pivoted ChatGPT into an agent-centric "super app" on June 11, anchored by [[entities/dreaming-v3]], a high-recall personal memory system that transforms the AI from a chatbot into a persistent personal OS.
+This commercial acceleration collided with state-level control on June 14, when the US government forced Anthropic to disable **Fable 5** and **Mythos 5** globally for foreign nationals. This established a "digital kill switch" precedent, revealing that frontier cognitive capabilities are now viewed as geopolitical assets subject to state-level pruning. This "AI Iron Curtain" has fundamentally changed the model landscape, creating a sharp divide between US-controlled frontier models and the "Sovereign AI" movement. Meanwhile, the emergence of VLA models like [[entities/showui-pi]] marks a shift toward an "operating AI" paradigm, moving beyond text to continuous cursor trajectories for precise GUI control.
 
-The strategic "model moat" approach faced a critical failure on June 10, when Anthropic was forced to reverse its restrictive research policies for [[entities/claude-fable-5]] following community backlash, confirming that policy-based restrictions are fragile against the open nature of AI discovery. This period also saw the "AI safety" debate shift from theoretical alignment to physical and legal reality: the report of the first human casualties from fully autonomous combat drones (June 11) and a Munich court ruling that Google is directly liable for AI Overview hallucinations both mark the end of "platform immunity" and "human-in-the-loop" safety paradigms.
+The period also saw the "AI safety" debate shift from theoretical alignment to physical and legal reality: the report of the first human casualties from fully autonomous combat drones (June 11) and a Munich court ruling that Google is directly liable for AI Overview hallucinations both mark the end of "platform immunity" and "human-in-the-loop" safety paradigms.
 
 ## Key Developments
 
@@ -187,6 +187,8 @@ The strategic "model moat" approach faced a critical failure on June 10, when An
 | 2026-06-10 | Google releases DiffusionGemma | Proves diffusion for text can achieve 1,000 tok/s, challenging Transformer latency. |
 | 2026-06-11 | OpenAI launches Dreaming V3 | Shifts focus to a high-recall memory layer to create a 'sticky' AI OS. |
 | 2026-06-10 | Anthropic reverses Fable 5 restrictions | Confirms that safety-restricted releases must balance against research community open nature. |
+| 2026-06-14 | US Govt disables Fable 5 & Mythos 5 globally | First "digital kill switch" event; partitions cognitive capabilities by geopolitical alignment. |
+| 2026-06-14 | ShowUI-Pi released | VLA model introducing continuous cursor trajectories for dexterous GUI control. |
 ## Patterns & Insights
 
 **The reasoning-revelation gap**: ARC-AGI-3 results expose a fundamental truth: models that score 80%+ on SWE-bench score <1% on puzzles children can solve. The finding that models hallucinate Tetris/Breakout from unfamiliar grids reveals the architecture limitation — these systems pattern-match to known templates rather than constructing situation-specific models. Every new benchmark designed to test genuine reasoning (not memorization) exposes the same ceiling.
@@ -364,3 +366,8 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[ideas/efficiency-frontier]] — June 9: AFM 3 IFP routing from NAND (1-4B active per layer) and TileRT 1000 TPS on commodity 8-GPU are the two new efficiency levers — both are software/run-time innovations, not chip innovations
 - [[entities/gemini-3-1-pro]] — June 9: Gemini-distilled teachers in AFM 3 reveal Google's continued training partnership with Apple even as Apple hedges across multiple providers; the most entangled AI partnership in the industry
 - [[timelines/2026-06]] — June 9: the compute-IPO-pause convergence (Google-SpaceX $920M/month, OpenAI $852B IPO, Jack Clark "brake pedal", AFM 3, Xiaomi 1000 TPS) defines the industry's next phase
+- [[ideas/digital-kill-switch]] — June 14: The disablement of Fable 5 and Mythos 5 by the US government is the first an instance of a state-mandated "kill switch" for weights
+- [[ideas/ai-iron-curtain]] — June 14: The partition of cognitive capabilities by geopolitical alignment marks the end of the globalized frontier model era
+- [[ideas/sovereign-ai]] — June 14: The volatility of cloud-based frontier models drives the need for high-performance local models like Qwen3.6 to ensure institutional security
+- [[entities/showui-pi]] — June 14: Shift from coordinate-based GUI control to continuous trajectories, enabling "Operating AI" to function as a human would in a GUI
+

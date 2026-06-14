@@ -1,13 +1,13 @@
 ---
 title: "AI Companies"
 slug: ai_companies
-last_updated: 2026-06-10
+last_updated: 2026-06-14
 ---
 
 # AI Companies
 
 ## Overview
-May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. The Pentagon expands its "AI-first" military contracts with 8 companies (Google, OpenAI, Amazon, Microsoft, SpaceX, Oracle, Nvidia, Reflection) — with Anthropic conspicuously absent as it sues the government over "any lawful use" language. Sam Altman articulates OpenAI's three-pillar strategy (science, productivity, "personal AGI") as a defensive vision while competitors ship on overlapping territory. Meta officially joins the humanoid robotics race with the ARI acquisition — all three major consumer AI labs now have humanoid programs. Mistral pivots from API provider to integrated platform with Vibe coding agents bundled with Medium 3.5. The Oscars ban AI-generated actors and scripts, codifying the "regulate the creative core, leave the tool layer alone" framework. There is no middle ground anymore: every AI company must now pick a side on defense, on platform strategy, and on creative regulation.
+June 14, 2026 marks the end of the "independent lab" era for the top tier of AI. The US government's global disablement of Anthropic's Fable 5 and Mythos 5 models reveals that frontier AI is now a state-controlled asset, not just a commercial product. Simultaneously, the "Frontier Club" (OpenAI, Google, Anthropic) is consolidating its influence, shifting from purely commercial rivals to a coordinated, unofficial global regulatory body, as evidenced by their joint presence at the G7 summit and their aligned advocacy for biological safety regulations. The industry's strategic focus has pivoted from pure scaling to "Sovereign AI" and operational resilience, as companies realize that the most capable models are subject to instantaneous government "kill switches."
 
 ## Evolution
 
@@ -32,9 +32,7 @@ May 2, 2026 reveals the AI industry's institutional fault lines in sharp focus. 
 **April 28: OpenAI's Revenue Miss and the Claude inflection point**: OpenAI missed multiple Q1 monthly revenue targets after losing ground to Anthropic in coding and enterprise markets — the first concrete sign that Claude is winning deterministic developer workflows. The WSJ reporting that Google's $40B and Amazon's $25B Anthropic investments were partly accelerated by Claude's demonstrated capabilities validates the market's view: enterprise-driven growth through Claude Code is proving more durable than OpenAI's consumer-plus-enterprise mix. Meanwhile, ex-DeepMind researcher David Silver raised $1.1B for Ineffable Intelligence — the largest seed round in AI history with an investor syndicate that includes Sequoia, Lightspeed, Nvidia, Google, and DST Global. The caliber of investors willing to write $1.1B without a product suggests the market now assigns credible probability to near-AGI timelines. The bar for what's considered a credible AGI-adjacent startup has shifted dramatically upward.
 
 
-**June 2026: The Platform War Begins**
-
-The competition between frontier labs shifted from a 'model war' to a 'platform war'. OpenAI's pivot toward a 'Super App' and Dreaming V3 memory layer reflects a strategy to build a persistent AI OS. Meta's struggle with the EU's DMA (WhatsApp interoperability) demonstrates the fragility of 'walled garden' strategies. Meanwhile, the legal battles at xAI and the regulatory scrutiny of Google's infrastructure deals show that the growth of AI giants is now colliding with national legal and antitrust frameworks.
+**June 2026: The Sovereign Pivot and the Frontier Club**: The competition between frontier labs shifted from a 'model war' to a 'platform war' and finally to a 'geopolitical war'. The G7 summit in France marked the consolidation of the "Frontier Club" (OpenAI, Google, Anthropic), who shifted from purely commercial rivals to an unofficial global regulatory body, coordinating on AI safety and biological threats. However, the US government's June 14 order to disable Anthropic's Fable 5 and Mythos 5 models globally for foreign nationals reveals that the state still holds the "digital kill switch," treating frontier AI weights as strategic assets rather than commercial products. This move has forced a pivot toward "Sovereign AI," where the ability to run capable models independently is now a critical security requirement. OpenAI's pivot toward a 'Super App' and Dreaming V3 memory layer reflects a strategy to build a persistent AI OS, but this is now overshadowed by the reality that any such OS is subject to state-level pruning.
 
 ## Key Developments
 
@@ -60,6 +58,9 @@ The competition between frontier labs shifted from a 'model war' to a 'platform 
 | 2026-04-21 | India AIGEG panel established | Cabinet-level AI governance with labor mandate |
 | 2026-04-21 | Wall Street banks cut 15,000 jobs | $47B profits while AI automates back/mid-office |
 | 2026-04-22 | Anthropic ~$1T valuation on secondary markets | Surpasses OpenAI's $880B valuation |
+| 2026-06-14 | US Govt disables Fable 5/Mythos 5 globally | First state-mandated "digital kill switch" over private AI weights |
+| 2026-06-14 | AI Leaders attend G7 Summit | OpenAI, Google, Anthropic coordinate as unofficial global regulatory body |
+| 2026-06-14 | OpenAI supports EU Transparency Code | Strategic use of C2PA/SynthID to maintain market access amid Altman's exit threats |
 | 2026-04-22 | SpaceX invests $60B in Cursor | Direct competition with Claude Code and Codex |
 | 2026-04-23 | Meta MCI: employee tracking for AI training | Mouse movements, keystrokes captured for model training |
 | 2026-04-23 | OpenAI releases GPT-5.5 | "Smartest and most intuitive" model; super app vision |
@@ -315,6 +316,10 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[entities/gemini-3-1-pro]] — June 8: Gemini-distilled teachers in AFM 3 reveal Google's continued training partnership with Apple; the most entangled AI partnership in the industry
 - [[ideas/three-tier-safety-playbook]] — June 9: Jack Clark's "brake pedal" call is the third tier of Anthropic's safety playbook (capability-restricted Mythos, verifiable-pause advocacy, public Mythos access via ENISA)
 - [[timelines/2026-06]] — June 8-9: the five-story convergence (AFM 3, OpenAI $852B IPO, Xiaomi 1000 TPS, Google-SpaceX $920M/month, Jack Clark "brake pedal") defines the industry's next phase
+- [[ideas/frontier-club-consolidation]] — June 14: The coordination between OpenAI, Google, and Anthropic at the G7 summit signals the shift from commercial rivalry to an unofficial global regulatory body
+- [[ideas/digital-kill-switch]] — June 14: The US government's disablement of Anthropic's models proves that "frontier" status is now a geopolitical liability, and labs are subject to state-level pruning
+- [[ideas/sovereign-ai]] — June 14: The volatility of cloud-based models leads companies to pivot toward local-first agent infrastructure to ensure technological sovereignty
+
 
 **The Titan Era and the Containment Tension**: By June 12, the industry shifted from the "Lab Era" to the "Titan Era", with OpenAI and Anthropic racing toward IPOs with valuations approaching  trillion. This transition marks the shift of AI labs from scientific research centers to systemic global infrastructure. However, this scaling is accompanied by a "containment tension": the Anthropic "invisible guardrail" scandal reveals that as models become more capable, labs are resorting to silent performance throttling to protect corporate IP, creating a trust deficit with the research community. The emergence of "Physical AI" players like Prometheus (raising B) further expands the company landscape from digital services to industrial automation.
 

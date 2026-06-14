@@ -1,7 +1,7 @@
 ---
 title: "OpenAI"
 slug: openai
-last_updated: 2026-06-09
+last_updated: 2026-06-14
 ---
 
 # OpenAI
@@ -9,7 +9,7 @@ last_updated: 2026-06-09
 ## Overview
 OpenAI is navigating the transition from research organization to commercial enterprise ahead of a potential IPO by end of 2026. The company completed the largest private funding round in history ($122B at $852B valuation) and generates $2B/month in revenue with 900M weekly active users. However, profitability remains elusive with billions in annual losses projected to continue until 2030. On May 1, the company imposed identical restrictions on GPT-5.5 Cyber that it had mocked Anthropic for implementing on Claude Mythos — revealing that liability now overrides competitive posturing. The Senate GUARD Act advancing the same day with criminal penalties for AI chatbot conduct tightens the liability framework further.
 
-On June 9, 2026, OpenAI confirmed a confidential SEC filing for an IPO at $852B (€730B) valuation, announced by Sam Altman: "We expect it to leak so we're just announcing it... it may be a while because there are things that have to happen." The filing lands three weeks after Anthropic's $965B confidential submission, and within six months the two most-watched AI labs will report quarterly training spend, RLHF headcount, and revenue concentration — every claim about safety, alignment, and self-improvement will be measured against a 10-Q.
+On June 9, 2026, OpenAI confirmed a confidential SEC filing for an IPO at $852B (€730B) valuation. By mid-June, the company shifted its strategic focus toward global governance, participating in the G7 summit in France and integrating the C2PA and SynthID watermarking standards to comply with EU transparency codes. While Sam Altman maintains a a posture of "good citizenship" through technical compliance, his simultaneous threats to exit the EU market demonstrate a high-stakes bargaining strategy against the EU AI Act's governance requirements.
 
 ## Timeline
 
@@ -129,12 +129,19 @@ On June 9, 2026, OpenAI confirmed a confidential SEC filing for an IPO at $852B 
 - [[ideas/foundation-model-portfolio-war]] — June 8: profitability-or-near for OpenAI in Q2 ends the subsidize-to-capture era; the "super app" pivot is the strategic test of whether OpenAI can monetize its consumer footprint faster than Anthropic can monetize its enterprise footprint
 - [[ideas/openai-ipo-validates-agent-economy]] — June 8: "super app" transformation is the IPO narrative — combining chat, coding, and browsing into a single product is the most defensible consumer surface against Gemini's hardware-bundled challenge
 - [[timelines/2026-06]] — June 8: the "super app" pivot is the late-June Frontier Convergence trigger; first quarter where all three frontier labs are profitable-or-near changes what "growth" means at IPO
+- [[ideas/frontier-club-consolidation]] — June 14: Coordination at G7 summit signals a strategic alliance between top labs to control the global AI regulatory narrative
+- [[ideas/regulatory-capture-bio-threats]] — June 14: Joint advocacy for bio-threat regulation as a method to redirect scrutiny from model weights to physical labs
+- [[ideas/digital-kill-switch]] — June 14: The US govt disablement of Anthropic's models creates a precarious precedent for OpenAI's own global model access
+
 - [[topics/ai_funding]] — June 9: $852B IPO filing anchors the largest week of public-market capital allocation in AI history; Google's $920M/month SpaceX deal, Anthropic's $965B filing, OpenAI's $852B filing, and Jack Clark's "brake pedal" all land in the same 5-day window
 - [[sources/anthropic]] — June 9: Jack Clark's "brake pedal" call the same week as OpenAI's IPO filing leak is structurally a filing-deadline play — Anthropic must position the pause before the S-1 locks in obligations that would conflict with one
 - [[entities/afm-3]] — June 9: Apple's AFM 3 ships with Gemini-distilled teachers, the only mention of OpenAI in the WWDC lineup is the ongoing iOS 27 Siri integration — multi-model strategy effectively sidelines OpenAI as Apple's primary consumer AI
 
 | 2026-06-12 | Visa Payment Network Integration | Allows AI agents in ChatGPT to independently shop and pay for users, moving AI from a planner to an economic actor |
 | 2026-06-12 | IPO Target Valuation near $1 Trillion | Shift from "lab" to "systemic infrastructure" as company targets a valuation that reflects its role as a global utility |
+| 2026-06-14 | Supports EU Transparency Code | Integrated C2PA and SynthID watermarks for EU compliance; Altman warns of EU market exit if over-regulation continues |
+| 2026-06-14 | Joins G7 Summit | CEOs coordinate in France to discuss global AI governance and safety; shifting from rivals to unofficial global regulators |
+| 2026-06-14 | Signs Joint Letter on Bio-threats | Advocates for stricter synthetic DNA regulations to prevent AI-accelerated bio-weapon creation |
 
 - [[ideas/agentic-economic-actor]] — June 12: The Visa integration marks the transition of ChatGPT into an autonomous economic participant
 - [[ideas/titan-era-of-ai]] — June 12: Targeting a $1T valuation signals the end of the "Lab Era" and the arrival of AI as global systemic infrastructure

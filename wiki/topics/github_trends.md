@@ -1,13 +1,13 @@
 ---
 title: "GitHub Trends"
 slug: github_trends
-last_updated: 2026-06-11
+last_updated: 2026-06-14
 ---
 
 # GitHub Trends
 
 ## Overview
-May 2, 2026 brings three notable repos spanning AI video generation and agent infrastructure. MOVA (972 stars) is a foundation model for synchronized video-audio generation in a single pass, breaking the "silent era" of open-source video models. Serena (23.8K stars) is a powerful MCP toolkit providing semantic code retrieval and editing across 40+ languages, operating at the symbol level via LSP servers — "the IDE for your coding agent." AutoMV (104 stars) is a training-free multi-agent system that auto-generates full music videos from songs at $10-20 per MV using Screenwriter, Director, and Verifier agents.
+June 14, 2026 highlights a strategic shift toward AI resilience and operational sovereignty. NeuralBridge SDK (1.2k stars) introduces a "self-healing" layer for AI agents that recovers from API faults in ~19μs, reflecting the industry's response to the volatility of cloud-based frontier models. Dataroom (850 stars) demonstrates the power of local models (e.g., Qwen3.6) to autonomously build cited knowledge archives, reducing dependence on centralized infrastructure. ShowUI-Pi (2.1k stars) pushes the boundaries of VLA models by generating continuous cursor trajectories for precise GUI control, moving AI from "suggesting" to "operating" software with human-like dexterity.
 
 ## Evolution
 
@@ -110,9 +110,7 @@ In June 2026, the trend shifted toward specialized agent cognitive layers and un
 
 
 
-**June 2026: The Rise of Agentic Infrastructure**
-
-GitHub trends shifted toward 'Agent Brain' layers and cross-modal memory banks. Projects like `gbrain` highlight the need for synthesis and gap analysis beyond simple prompting, while `JoyAI-Echo` addresses the challenge of temporal consistency in long-form generative media. The emergence of the NEO-unify paradigm in `SenseNova-U1` shows a trend toward native multimodality, moving away from separate visual and text encoders.
+**June 2026: The Resilience and Sovereignty Shift**: Following the US government's "digital kill switch" over frontier models, GitHub trends shifted from pure capability to operational resilience. The emergence of NeuralBridge SDK (self-healing API recovery) and Dataroom (autonomous local-model research) represents a strategic move toward "Sovereign AI," where developers build infrastructure that is immune to centralized API volatility. Simultaneously, the VLA landscape advanced with ShowUI-Pi, shifting the focus from discrete coordinate-based control to continuous cursor trajectories, enabling true human-like software operation.
 
 ## Key Developments
 
@@ -121,6 +119,9 @@ GitHub trends shifted toward 'Agent Brain' layers and cross-modal memory banks. 
 | 2026-06-11 | `gbrain` launched | Introduces 'Agent Brain' layer with self-wiring knowledge graphs for synthesis. |
 | 2026-06-11 | `JoyAI-Echo` released | Solves consistency in long-form AI video via a cross-modal memory bank. |
 | 2026-06-11 | `SenseNova-U1` released | Implements NEO-unify for seamless multimodal understanding and generation. |
+| 2026-06-14 | `neuralbridge-sdk` trending | Introduces self-healing API recovery in 19μs, reacting to frontier model volatility. |
+| 2026-06-14 | `dataroom` trending | Demonstrates local-model research synthesis, providing a hedge against "digital kill switches". |
+| 2026-06-14 | `showui-pi` trending | VLA model enabling continuous cursor trajectories for precise GUI control. |
 ## Patterns & Insights
 
 The "harness layer" has emerged as a critical battleground. claw-code's explosive growth demonstrates that closed-source agent architectures can be rapidly replicated — the competitive moat is narrower than assumed. This has implications for business models built on agent frameworks.
