@@ -227,3 +227,12 @@ Ideas updated: openai-ipo-validates-agent-economy
 - Connection quality: Verified all topic pages have Evolution and Patterns sections.
 - Result: Wiki structural health restored.
 2026-06-14: Fixed broken links to [[entities/eliezer]] in timelines and topics; removed non-existent entity from index; rebuilt index.md.
+
+## [2026-06-14] ingest | 1 date
+
+Dates processed: 2026-06-14
+Topics updated: llm_models, ai_companies, github_trends, ai_safety, ai_governance
+Sources updated: anthropic, openai, google
+Entities updated: fable-5, mythos-5, c2pa-protocol, synthid, neuralbridge-sdk, dataroom, showui-pi
+Ideas updated: digital-kill-switch, ai-iron-curtain, regulatory-capture-bio-threats, frontier-club-consolidation, sovereign-ai
+Timelines updated: 2026-06

@@ -3,6 +3,7 @@
 Last updated: 2026-06-14 (lint run)
 
 ## Topics (11)
+- [[topics/ai_governance]] — Ai Governance
 - [[topics/agentic_ai]] — Agentic Ai
 - [[topics/ai_companies]] — Ai Companies
 - [[topics/ai_funding]] — Ai Funding
