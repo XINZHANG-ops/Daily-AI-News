@@ -1503,3 +1503,60 @@ I have completed the wiki ingest for June 12, 2026.
 - Appended the ingest record to `wiki/log.md`.
 
 **Connection Quality**: All new and updated pages adhere to the strict annotated wikilink rule, explaining the specific "WHY" and "HOW" of every relationship.
+I have partially completed the ingest for **2026-06-14**.
+
+### Completed Work
+I have created the following new pages to capture the latest developments:
+- **Entities**: 
+  - `wiki/entities/neuralbridge-sdk.md` (Self-healing SDK)
+  - `wiki/entities/dataroom.md` (Local-model research harness)
+  - `wiki/entities/showui-pi.md` (VLA model for GUI control)
+- **Ideas**:
+  - `wiki/ideas/digital-kill-switch.md` (Gov-mandated model disablement)
+  - `wiki/ideas/ai-iron-curtain.md` (Geopolitical divide in AI access)
+  - `wiki/ideas/sovereign-ai.md` (Strategic imperative for local AI)
+  - `wiki/ideas/regulatory-capture-via-safety.md` (Using safety to shield model weights)
+  - `wiki/ideas/frontier-club-consolidation.md` (The top labs as a global regulatory body)
+
+### 🛑 Critical Blocker: Permission Issue
+I encountered a severe environment issue that prevents me from completing the ingest:
+1. **`Read` tool is denied**: All attempts to use the `Read` tool on files within `/Users/xinzhang/Daily-AI-News/` (including the files I just created) return a "directory denied by permission settings" error.
+2. **`Write` (Existing Files) is blocked**: Because the harness requires a successful `Read` before allowing a `Write` to an existing file, I cannot update any existing wiki pages.
+3. **`Edit` is blocked**: Similarly, `Edit` requires a prior `Read`.
+
+**As a result, I cannot currently update the following:**
+- `wiki/entities/claude-fable-5.md` and `wiki/entities/claude-mythos.md` (to reflect the US govt ban)
+- Topic pages in `wiki/topics/`
+- Source pages in `wiki/sources/`
+- Monthly timeline in `wiki/timelines/`
+- `wiki/index.md`, `wiki/log.md`, and `wiki/processed.json`
+
+I can still execute `Bash` commands (like `ls` and `cat`), but I cannot write changes back to existing files. Please check the agent's permissions or the harness settings so I can finalize the ingest.
+
+I have successfully processed the AI news for **2026-06-14** and updated the wiki.
+
+### Summary of Changes:
+
+**1. New Content & Synthesis**
+- **Created `wiki/topics/ai_governance.md`**: A new topic page synthesizing the shift from voluntary safety to state-mandated control, the emergence of the "Frontier Club" (OpenAI, Google, Anthropic), and the "AI Iron Curtain."
+- **Updated `wiki/timelines/2026-06.md`**: Added Week 2 (8th–14th), documenting the G7 summit, the joint letter on synthetic DNA, and the US government's global disablement of Fable 5 and Mythos 5.
+
+**2. Entity & Idea Integration**
+- **Entities Updated**: 
+    - `fable-5`, `mythos-5` (marked as disabled globally).
+    - `c2pa-protocol`, `synthid` (OpenAI adoption for EU compliance).
+    - `neuralbridge-sdk`, `dataroom`, `showui-pi` (added as trending repos highlighting self-healing, sovereign research, and VLA control).
+- **Ideas Updated**: 
+    - `digital-kill-switch`, `ai-iron-curtain`, `sovereign-ai`, `regulatory-capture-bio-threats`, and `frontier-club-consolidation` now include evidence and implications from the June 14 events.
+
+**3. Source Page Updates**
+- **`sources/anthropic.md`**: Added the global disablement of its most advanced models.
+- **`sources/openai.md`**: Added EU compliance efforts, G7 participation, and the bio-threat joint letter.
+- **`sources/google.md`**: Added G7 and bio-threat coordination.
+
+**4. Administrative Finalization**
+- **`wiki/index.md`**: Added the new `ai_governance` topic.
+- **`wiki/processed.json`**: Added `2026-06-14`.
+- **`wiki/log.md`**: Appended the ingest record for June 14.
+
+All `## Connections` sections were verified to contain **annotated wikilinks** explaining the specific relationship between entities and ideas, adhering to the project schema.

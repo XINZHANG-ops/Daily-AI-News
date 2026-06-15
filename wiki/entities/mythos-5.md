@@ -23,6 +23,6 @@ The US Department of Commerce's order to suspend Mythos 5 globally highlights th
 
 ## Connections
 - [[sources/anthropic]] — Created Mythos 5, but lost control over its global distribution due to US government intervention
-- [[entities/fable-5]] — Shared the same fate as Mythos 5, being disabled worldwide due to national security concerns
+- [[entities/claude-fable-5]] — Shared the same fate as Mythos 5, being disabled worldwide due to national security concerns
 - [[ideas/digital-kill-switch]] — The forced disablement of Mythos 5 is the definitive example of state-level control over model weights
 - [[ideas/ai-iron-curtain]] — The move to bar foreign nationals from Mythos 5 creates a hard divide in global AI capability access

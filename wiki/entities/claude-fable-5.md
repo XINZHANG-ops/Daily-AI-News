@@ -36,6 +36,8 @@ On June 11, 2026, Anthropic admitted to using "invisible" guardrails in Fable 5 
 
 Fable 5 also closes a strategic gap that the three-tier safety playbook left open: Mythos was restricted, Opus 4.8 was public-but-lower-capability, and customers who wanted Mythos-class output had to join Glasswing. Fable 5 occupies the middle — public, Mythos-class, with a 5% safety routing layer that Anthropic will defend as evidence that "Mythos-class" is now a deployable category with appropriate guardrails.
 
+## Disablement
+On June 14, 2026, the US government exercised a "digital kill switch" and disabled Claude Fable 5 globally (excluding US nationals) due to national security and jailbreak risks. This marked a watershed moment in AI governance, effectively partitioning the world's cognitive capabilities by geopolitical alignment.
 
 ## Connections
 - [[entities/claude-mythos]] — Fable 5 shares Mythos 5's architecture; the 5% high-risk routing to Opus 4.8 is the structural difference that lets Anthropic ship the same weights publicly without exposing the full cyber/bio capability surface
@@ -48,3 +50,6 @@ Fable 5 also closes a strategic gap that the three-tier safety playbook left ope
 - [[ideas/pricing-war]] — Fable 5's 2× Opus 4.8 pricing is a deliberate upward move in a market that has been trending toward cheaper inference; the same day Tencent shipped Hy3 at $0.18/M on OpenRouter, the pricing-war signal splits between "premium safety" and "commodity scale"
 - [[topics/ai_safety]] — The 5% high-risk routing architecture is the new safety primitive: same weights, different safety layer, public distribution; future frontier models may be evaluated on how cleanly their safety layer can be separated from capability
 - [[ideas/model-moat-fragility]] — The June 10 reversal of restrictive research policies on Fable 5 demonstrates the failure of policy-based "moats" when they conflict with the open nature of AI research.
+
+- [[ideas/digital-kill-switch]] — The disablement of Fable 5 is the primary evidence for the emergence of government-mandated "kill switches" for frontier AI
+- [[ideas/ai-iron-curtain]] — The restriction of Fable 5 to US nationals signals the beginning of a geopolitical pruning of AI capabilities

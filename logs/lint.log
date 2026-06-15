@@ -1082,3 +1082,10 @@ Already up to date.
  create mode 100644 index_entities.txt
  create mode 100644 index_sources.txt
  create mode 100644 logs/lint_done_2026-06-13.json
+[2026-06-15 01:00:01] 开始 wiki lint，模型: gemma4:31b-cloud
+Already up to date.
+• 修复孤儿页 `entities/swe-bench`，在 `topics/llm_models.md` 和 `timelines/2026-06.md` 中添加了相关链接。
+• 合并重复页面，将 `entities/fable-5.md` 的禁用事件记录整合至 `entities/claude-fable-5.md` 并删除原冗余文件。
+• 修正结构与链接，修复了 2 处断链（含一个空链接），并同步 `wiki/index.md` 以包含 11 个缺失的页面条目。
+• 完成全量自检，验证所有 Topic 页面均包含 Evolution 和 Insights 章节，且无未标注的“相关”链接。
+[2026-06-15 01:07:29] Wiki lint 完成（退出码 0）。

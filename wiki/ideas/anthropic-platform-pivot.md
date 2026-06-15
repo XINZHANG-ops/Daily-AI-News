@@ -34,6 +34,6 @@ Anthropic's May 2026 moves — acquiring Stainless SDK for $300M and hiring Andr
 - [[sources/anthropic]] — The platform pivot is the strategic response to the Pentagon exclusion; without defense contracts, Anthropic must own the developer relationship end-to-end
 - [[topics/ai_companies]] — The pivot from model-only to platform changes Anthropic's competitive positioning; they now compete with OpenAI, Google, AND developer tooling companies
 - [[entities/claude-code]] — Claude Code was the first platform play; now complemented by Stainless SDK for broader developer adoption
-- [[]] — Karpathy brings OpenAI's institutional knowledge to accelerate Claude's pretraining; his hiring represents Anthropic winning the talent war
+- Karpathy brings OpenAI's institutional knowledge to accelerate Claude's pretraining; his hiring represents Anthropic winning the talent war
 - [[entities/gpt-5.5]] — OpenAI's platform strategy (Symphony, Codex, acquisition of Rockset/Evalian) is the benchmark Anthropic is now racing to match
 - [[topics/ai_safety]] — The safety-first positioning that led to Pentagon exclusion is now being compensated for through platform strategy; Anthropic turns a weakness (refusing defense contracts) into a differentiator (developer trust)
