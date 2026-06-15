@@ -7,13 +7,14 @@ last_updated: 2026-06-10
 # EU AI Office
 
 ## Overview
-The EU AI Office is the European Commission body responsible for implementing the EU AI Act, including monitoring compliance with the General Purpose AI (GPAI) Code of Practice. On June 9, 2026, the AI Office formally designated National Competent Authorities (NCAs) in EU member states to monitor GPAI obligations — converting the GPAI Code of Practice from a voluntary framework (published late 2025) into a monitored regime with penalties up to €35M or 7% of global turnover. The designation lands the same day as Anthropic's Claude Fable 5 release, making Fable 5 the first frontier model to launch into an active GPAI monitoring regime.
+The EU AI Office is the European Commission body responsible for implementing the EU AI Act, including monitoring compliance with the General Purpose AI (GPAI) Code of Practice. On June 9, 2026, the AI Office formally designated National Competent Authorities (NCAs) in EU member states to monitor GPAI obligations — converting the GPAI Code of Practice from a voluntary framework into a monitored regime. By June 15, 2026, the EU shifted its strategy toward a "double game": implementing aggressive morality-based bans (such as on "AI nudifier" apps) to satisfy public demand, while simultaneously delaying some "high-risk" AI system requirements to December 2027. This strategic delay is designed to maintain the competitiveness of the few remaining European AI players in the face of overwhelming US dominance.
 
 ## Timeline
 
 | Date | Event | Details |
 |------|-------|---------|
 | 2025 (late) | GPAI Code of Practice published | Voluntary framework for GPAI providers to demonstrate compliance with EU AI Act |
+| 2026-06-15 | Nudifier Ban & Regulatory Delay | Implements ban on non-consensual intimate imagery tools; delays "high-risk" requirements to Dec 2027 to preserve EU competitiveness |
 | 2026-06-09 | NCAs designated for GPAI monitoring | EU member states name National Competent Authorities; Code of Practice shifts from voluntary to monitored; penalties up to €35M or 7% of global turnover for non-compliance |
 | 2026-06-09 | First frontier model launches under active monitoring | Anthropic ships Claude Fable 5 the same day; Fable 5 is the first frontier model to face a real GPAI compliance regime rather than a voluntary one |
 

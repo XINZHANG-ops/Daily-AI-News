@@ -237,3 +237,11 @@ Entities updated: fable-5, mythos-5, c2pa-protocol, synthid, neuralbridge-sdk, d
 Ideas updated: digital-kill-switch, ai-iron-curtain, regulatory-capture-bio-threats, frontier-club-consolidation, sovereign-ai
 Timelines updated: 2026-06
 2026-06-15: WIKI LINT - Fixed orphan page swe-bench; merged fable-5 into claude-fable-5; fixed 2 broken links; updated index.md
+
+## [2026-06-15] ingest | 1 date
+
+Dates processed: 2026-06-15
+Topics updated: llm_models, ai_companies, ai_funding, ai_governance, ai_safety, github_trends
+Sources updated: anthropic, eu-ai-office
+Entities updated: claude-fable-5, mythos-5, spatial-claw, open-notebook, copilot-kit
+Ideas updated: sovereign-ai-surge, nationalized-ai, generative-ui-shift, digital-kill-switch

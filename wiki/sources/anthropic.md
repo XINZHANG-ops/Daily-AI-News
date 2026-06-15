@@ -11,7 +11,7 @@ Anthropic has emerged as the defining AI company of this period, driven by the u
 
 On May 15, 2026, the UK government launched a Claude-powered chatbot on the GOV.UK App (563K users), providing instant answers from 80,000 pages of official guidance with 90% accuracy. Built on Claude rather than open-source alternatives, the deployment signals confidence in Anthropic's safety guardrails for high-stakes citizen interactions and gives the UK a narrative win on "AI-powered governance."
 
-By June 14, 2026, Anthropic's position shifted from commercial leader to a geopolitical flashpoint. The US government's mandate to disable Fable 5 and Mythos 5 globally for foreign nationals revealed that the company's most advanced capabilities are now state-controlled assets, fundamentally limiting its autonomy and sparking a global movement toward "Sovereign AI."
+By June 15, 2026, Anthropic's position shifted from commercial leader to a geopolitical flashpoint. The US Commerce Department's emergency export control directive forcing the global disablement of Fable 5 and Mythos 5 (triggered by a critical jailbreak exploit) revealed that frontier model weights are now treated as strategic weapons. This "kill-switch" dependency has transformed Anthropic from a tech company into a quasi-state actor, where technical deployments are subject to direct government negotiation and the lab's autonomy is subservient to national security directives. This event served as the definitive catalyst for the global "Sovereign AI" movement, as nations seek to avoid similar dependencies on US-controlled cognitive infrastructure.
 
 ## Timeline
 
