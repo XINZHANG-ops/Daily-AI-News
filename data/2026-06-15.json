@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-15",
+  "github_repos": [
+    {
+      "name": "NVlabs/SpatialClaw",
+      "url": "https://github.com/NVlabs/SpatialClaw",
+      "description": {
+        "en": "A training-free framework that uses code as the action interface for spatial reasoning, outperforming previous spatial agents by over 11 points.",
+        "zh": "一个无需训练的框架，将代码作为空间推理的动作接口，在空间智能体表现上比之前的方案提升了 11 个百分点以上。"
+      },
+      "stars": "1.2k",
+      "forks": "85"
+    },
+    {
+      "name": "lfnovo/open-notebook",
+      "url": "https://github.com/lfnovo/open-notebook",
+      "description": {
+        "en": "An open-source, self-hosted alternative to Google Notebook LM, supporting 18+ AI providers and multi-speaker podcast generation.",
+        "zh": "Google Notebook LM 的开源自托管替代方案，支持 18 种以上的 AI 提供商及多发言人播客生成。"
+      },
+      "stars": "2.4k",
+      "forks": "190"
+    },
+    {
+      "name": "CopilotKit/CopilotKit",
+      "url": "https://github.com/CopilotKit/CopilotKit",
+      "description": {
+        "en": "A framework for 'Generative UI', allowing agents to dynamically create and update UI components (buttons, charts, forms) in real-time.",
+        "zh": "一个“生成式 UI”框架，允许 AI 智能体实时动态创建和更新 UI 组件（如按钮、图表、表单）。"
+      },
+      "stars": "3.1k",
+      "forks": "240"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "U.S. Government Forces Global Shutdown of Anthropic's Fable 5 and Mythos 5",
+        "zh": "美国政府强制 Anthropic 全球下线 Fable 5 和 Mythos 5 模型"
+      },
+      "url": "https://www.wsws.org/en/articles/2026/06/15/vjpg-j15.html",
+      "source": "WSWS / Republic World",
+      "time": "2026-06-15",
+      "description": {
+        "en": "The U.S. Commerce Department issued an emergency export control directive forcing Anthropic to take its most advanced models offline globally due to a critical jailbreak exploit that posed national security risks.",
+        "zh": "美国商务部发布紧急出口管制指令，强制 Anthropic 将其最先进的模型在全球范围内下线，原因是一个严重的越狱漏洞被认为构成了国家安全风险。"
+      },
+      "insight": {
+        "en": "This is a 'black swan' event for AI safety and sovereignty. It's the first time a frontier model was globally deactivated by a government. It confirms that weights are now treated as strategic weapons. This will likely trigger a massive surge in 'Sovereign AI' investments in the EU and China to avoid such 'kill-switch' dependency on US policy.",
+        "zh": "这是 AI 安全与主权领域的一次“黑天鹅”事件。这是历史上首次由政府强制全球停用前沿模型。这证实了模型权重现已被视为战略武器。此举可能会引发欧盟和中国在“主权 AI”投资上的剧增，以避免在政策上依赖美国的“总开关”。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Tech Team Dispatched to Washington to Negotiate Model Restoration",
+        "zh": "Anthropic 技术团队前往华盛顿协商恢复模型访问"
+      },
+      "url": "http://www.republicworld.com/tech/anthropic-sends-tech-team-to-washington-to-repair-damage-after-secret-service-and-cyber-clash-takes-ai-models-dark-2026-06-15-128284",
+      "source": "Republic World",
+      "time": "2026-06-15",
+      "description": {
+        "en": "Senior technical staff from Anthropic are meeting with White House officials to resolve the 'overreaction' and implement a patch that satisfies national security requirements.",
+        "zh": "Anthropic 的高级技术人员正与白宫官员会面，旨在解决此次“过度反应”并实施一个能满足国家安全要求的补丁。"
+      },
+      "insight": {
+        "en": "The transition from 'API access' to 'Government negotiation' shows that frontier labs are no longer just tech companies—they are effectively quasi-state actors. The speed of restoration will signal the actual 'red line' for the current administration's AI policy.",
+        "zh": "从“API 访问”转向“政府谈判”，表明前沿实验室不再仅仅是科技公司，而实际上已成为准国家行为者。恢复访问的速度将揭示当前政府 AI 政策的真实“红线”。"
+      }
+    },
+    {
+      "title": {
+        "en": "EU Parliament Moves to Ban 'AI Nudifier' Apps and Simplify AI Act",
+        "zh": "欧洲议会拟禁止“AI 脱衣”应用并简化 AI 法案"
+      },
+      "url": "https://www.europarl.europa.eu/news/en/agenda/plenary-news/2026-06-15/9/ai-act-simplification-measures-ban-on-nudifier-apps",
+      "source": "European Parliament",
+      "time": "2026-06-15",
+      "description": {
+        "en": "The EU is implementing a ban on non-consensual intimate imagery tools and delaying some 'high-risk' AI system requirements to December 2027 to maintain competitiveness.",
+        "zh": "欧盟正实施禁止非共识私密图像工具的禁令，并将部分“高风险” AI 系统的要求推迟到 2027 年 12 月，以维持竞争力。"
+      },
+      "insight": {
+        "en": "The EU is playing a double game: aggressive morality-based bans (nudifiers) to satisfy the public, and strategic delays in regulation to avoid stifling the few European AI players left in the face of US dominance.",
+        "zh": "欧盟在玩一场双面游戏：通过激进的基于道德的禁令（脱衣软件）来满足公众，同时在监管上采取战略性延迟，以避免在面对美国主导时扼杀仅存的欧洲 AI 参与者。"
+      }
+    },
+    {
+      "title": {
+        "en": "Trump and Sanders Converge on Government Equity Stakes in AI",
+        "zh": "特朗普与桑德斯在政府持有 AI 公司股权上达成共识"
+      },
+      "url": "https://www.krasa.ai/news/trump-sanders-government-equity-stake-ai-companies-june-2026",
+      "source": "Krasa.ai",
+      "time": "2026-06-15",
+      "description": {
+        "en": "Both political opposites have floated the idea of US government equity in AI firms—Trump for public-private dividends, Sanders for a public fund to redistribute training data wealth.",
+        "zh": "两位政见完全相反的政治人物都提出了美国政府持有 AI 公司股权的构想——特朗普旨在获取公私合营红利，而桑德斯则主张建立公共基金以重新分配基于公共训练数据的财富。"
+      },
+      "insight": {
+        "en": "When the far-right and far-left align, a systemic shift is imminent. This suggests a move toward 'Nationalized AI', where the state views AI not as a market product, but as a critical national utility like electricity or water.",
+        "zh": "当极右翼和极左翼达成一致时，系统性转变即将到来。这表明 AI 正在向“国家化 AI”演变，政府不再将 AI 视为市场产品，而将其视为像电力或水一样的关键国家公共设施。"
+      }
+    },
+    {
+      "title": {
+        "en": "Global Surge in 'Sovereign AI' Debate Following Anthropic Shutdown",
+        "zh": "Anthropic 停服引发全球“主权 AI”讨论热潮"
+      },
+      "url": "https://www.archynewsy.com/anthropic-halts-access-to-top-ai-models-amid-us-national-security-concerns/",
+      "source": "Archynewsy",
+      "time": "2026-06-15",
+      "description": {
+        "en": "The sudden loss of Claude Fable 5 has prompted international leaders to call for an end to reliance on US-controlled AI infrastructure.",
+        "zh": "Claude Fable 5 的突然消失促使国际领导人呼吁结束对美国控制的 AI 基础设施的依赖。"
+      },
+      "insight": {
+        "en": "This connects the dots between the US shutdown and the rise of local LLMs. The 'cloud' is becoming a series of 'digital borders'. The value of open-source models like Llama or the push for local-first AI (like Open Notebook) is no longer just about privacy, but about survival in a fragmented geopolitical landscape.",
+        "zh": "这打通了美国停服与本地 LLM 兴起之间的逻辑。 “云”正在变成一系列的“数字边界”。像 Llama 这样的开源模型或本地优先 AI（如 Open Notebook）的价值不再仅仅关于隐私，而是在碎片化的地缘政治格局中生存的问题。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "June 15, 2026, marks the definitive end of the 'Wild West' era of frontier AI. The U.S. government's decision to globally deactivate Anthropic's top models is a paradigm shift: AI weights are now strategic assets, subject to the same export controls as nuclear technology or high-end semiconductors. This event reveals a growing friction between the global, open nature of AI development and the territorial, secretive nature of national security. Simultaneously, the political convergence in the U.S. and the regulatory shifts in the EU suggest that we are entering an era of 'State-Sponsored AI'. The real story isn't just a model shutdown, but the rapid 'nationalization' of the AI stack—from the weights to the infrastructure—where the ability to control the 'kill-switch' is the ultimate form of power.",
+    "zh": "2026 年 6 月 15 日标志着前沿 AI “西部开拓”时代的彻底结束。美国政府决定全球停用 Anthropic 的顶级模型是一次范式转移：AI 权重现在被视为战略资产，受与核技术或高端半导体相同的出口管制。这一事件揭示了 AI 开发的全球、开放性质与国家安全地域性、秘密性之间的日益紧张关系。与此同时，美国政治上的趋同和欧盟监管的转变表明，我们正在进入一个“国家赞助 AI”的时代。真正的故事不仅仅是一个模型的下线，而是 AI 栈（从权重到基础设施）的迅速“国家化”——掌控“总开关”的能力成为了最终的权力形式。"
+  }
+}

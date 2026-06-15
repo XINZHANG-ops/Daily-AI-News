@@ -1089,3 +1089,7 @@ Already up to date.
 • 修正结构与链接，修复了 2 处断链（含一个空链接），并同步 `wiki/index.md` 以包含 11 个缺失的页面条目。
 • 完成全量自检，验证所有 Topic 页面均包含 Evolution 和 Insights 章节，且无未标注的“相关”链接。
 [2026-06-15 01:07:29] Wiki lint 完成（退出码 0）。
+[main 80b382f] wiki: lint 2026-06-15
+ 14 files changed, 675 insertions(+), 395 deletions(-)
+ delete mode 100644 rebuild_index.py
+ delete mode 100644 wiki/entities/fable-5.md
