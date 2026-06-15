@@ -1,13 +1,13 @@
 ---
 title: "LLM Models"
 slug: llm_models
-last_updated: 2026-06-14
+last_updated: 2026-06-15
 ---
 
 # LLM Models
 
 ## Overview
-June 14, 2026 transforms the LLM landscape from a commercial race into a geopolitical battlefield. The US government's forced disablement of Anthropic's Fable 5 and Mythos 5 models worldwide (excluding US nationals) establishes a "digital kill switch" for frontier weights, effectively partitioning the world's cognitive capabilities by geopolitical alignment. This "AI Iron Curtain" signals that extreme capability is now a national security liability. Simultaneously, the emergence of VLA models like ShowUI-Pi marks a shift toward "operating AI," where models generate continuous cursor trajectories for precise GUI control rather than just text or coordinates. The industry is now split between the volatile, state-controlled "frontier" and a growing "Sovereign AI" movement focused on high-performance local models (e.g., Qwen3.6) that are immune to external political pruning.
+June 14-15, 2026 transforms the LLM landscape from a commercial race into a geopolitical battlefield. The US government's forced disablement of Anthropic's Fable 5 and Mythos 5 models worldwide (excluding US nationals) via an emergency export control directive—triggered by a critical jailbreak exploit—establishes a "digital kill switch" for frontier weights, effectively partitioning the world's cognitive capabilities by geopolitical alignment. This "AI Iron Curtain" signals that extreme capability is now a national security liability. Simultaneously, the emergence of VLA models like ShowUI-Pi marks a shift toward "operating AI," where models generate continuous cursor trajectories for precise GUI control. The industry is now split between the volatile, state-controlled "frontier" and a growing "Sovereign AI" movement, exemplified by the rise of open-source, self-hosted alternatives like Open Notebook, ensuring cognitive survival in a fragmented geopolitical landscape.
 
 June 7-8, 2026 crystallizes the "hybrid reasoning" consensus: three frontier releases in ten days — NVIDIA Nemotron 3 Ultra (Mamba-Transformer, June 4), Microsoft MAI-Thinking-1 (sparse MoE reasoning, June 6), and Unisound U2 (explicit CoT + implicit latent "Hybrid Thinking", June 8) — all converged on the same architectural bet that pure transformers topped out around Claude 3.5/4-class reasoning. Layered on top, NVIDIA's Cosmos 3 introduces Mixture-of-Transformers (separate Reasoner + Generator towers) as the first credible "physical AI" foundation model, and Anthropic's 90% internal Claude adoption report is the first public admission that human code review is the binding constraint on recursive self-improvement. The economic subtext is sharper: with Claude up 1,858% YoY and all three frontier labs profitable-or-near, "subsidize to capture" era ends; the agentic-coding cost floor collapses via Mellum2 (Apache 2.0) and token billing, while the capability ceiling rises via hybrid architectures.
 
@@ -334,6 +334,7 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[sources/anthropic]] — Andrej Karpathy joined May 19 to work on using Claude to build better Claude models; the irony of "AI improving AI" validates Karpathy's teacher-building philosophy
 - [[ideas/ai-utility-layer]] — The May 24 convergence of MCP protocol victory, Gemini 3's price war, and platform dependency unraveling signals AI is becoming a utility layer where differentiation moves from model performance to infrastructure, governance, and pricing
 | 2026-05-31 | Anthropic $965B valuation surpasses OpenAI $852B | Valuation race concludes: Anthropic overtakes OpenAI for first time; $65B Series H, $47B ARR; strategic partnerships with Amazon, Google/Broadcom, SpaceX |
+| 2026-06-15 | US Govt forces shutdown of Fable 5 and Mythos 5 | First global deactivation due to critical jailbreak exploit; confirms weights as strategic weapons |
 - [[entities/nemotron-3-ultra]] — June 4: hybrid Mamba-Transformer with NVFP4 4-bit quantization; the 4-bit inference war goes prime time; OpenMDW-1.1 license shift weaponizes openness as CUDA moat
 - [[entities/grok-build]] — June 5: xAI's $1/$2 per million tokens pricing is 40-60% below Claude Code Opus 4.8 and 80% below GPT-5.4-Codex; the most aggressive pricing in agentic coding
 - [[entities/maia-200]] — June 6: Microsoft's custom AI silicon co-designed with MAI family; the vertical-integration pair that makes the seven-model drop possible

@@ -1,14 +1,13 @@
 ---
 title: "AI Safety"
 slug: ai_safety
-last_updated: 2026-06-14
+last_updated: 2026-06-15
 ---
 
 # AI Safety
 
 ## Overview
-June 14, 2026 represents a paradigm shift in AI safety from "lab-managed risk" to "state-mandated pruning." The US government's decision to globally disable Anthropic's most advanced models (Fable 5, Mythos 5) establishes the "digital kill switch" as a tool of national security, effectively creating an "AI Iron Curtain" where cognitive capabilities are partitioned by geopolitical alignment. This is juxtaposed with a strategic pivot by the "Frontier Club" (OpenAI, Google, Anthropic), who are now coordinating at the G7 level and jointly advocating for physical-layer regulations (synthetic DNA) to divert scrutiny from their model weights. The safety landscape is now a tension between the absolute control of the state, the regulatory capture of the top labs, and a growing movement toward "Sovereign AI" and local-first resilience.
-
+June 14-15, 2026 represents a paradigm shift in AI safety from "lab-managed risk" to "state-mandated pruning." The US government's decision to globally disable Anthropic's most advanced models (Fable 5, Mythos 5) via an emergency export control directive—triggered by a critical jailbreak exploit posing national security risks—establishes the "digital kill switch" as a tool of national security. This creates an "AI Iron Curtain" where cognitive capabilities are partitioned by geopolitical alignment, forcing a surge in "Sovereign AI" investment. This is juxtaposed with a strategic pivot by the "Frontier Club" (OpenAI, Google, Anthropic), who are now coordinating at the G7 level and jointly advocating for physical-layer regulations (synthetic DNA) to divert scrutiny from their model weights. The safety landscape is now a tension between the absolute control of the state, the regulatory capture of the top labs, and a growing movement toward local-first resilience.
 ## Evolution
 
 **Claude Mythos and Project Glasswing**: The defining safety event of the period. Anthropic's Claude Mythos was found capable of discovering thousands of previously unknown zero-day vulnerabilities across major systems, including a 27-year-old bug in OpenBSD. The model was classified as too dangerous for public release. Instead, Anthropic launched Project Glasswing — a consortium with 40+ partners (Microsoft, Apple, Amazon, Google, NVIDIA, CrowdStrike) sharing defensive insights, with $100 million in credits to fix discovered vulnerabilities. Discussions are ongoing with CISA about the model's cyber capabilities.
@@ -34,7 +33,7 @@ June 14, 2026 represents a paradigm shift in AI safety from "lab-managed risk" t
 
 AI safety transitioned from a debate about alignment and theoretical risks to a matter of legal liability and physical lethality. The Munich court's ruling that Google is directly liable for AI hallucinations ended the 'platform immunity' era. Simultaneously, the reported first human casualties from fully autonomous combat drones moved the conversation to 'human-out-of-the-loop' warfare, where the cost of an AI error is now measured in human lives. This shift is further underscored by the lawsuit against xAI, highlighting the internal tension between 'move fast' cultures and systemic safety guardrails.
 
-**The Digital Kill Switch (June 2026)**: The transition from voluntary caution to state mandate reached its peak on June 14, when the US government forced Anthropic to disable Fable 5 and Mythos 5 worldwide for foreign nationals. This established that frontier capability is a geopolitical liability, sparking a crisis of "technological sovereignty" in Europe and fueling the push for local-first AI.
+**The Digital Kill Switch (June 2026)**: The transition from voluntary caution to state mandate reached its peak on June 14, when the US government forced Anthropic to disable Fable 5 and Mythos 5 worldwide for foreign nationals. By June 15, the US Commerce Department issued an emergency export control directive, citing a critical jailbreak exploit as a national security risk. This marked the first time a frontier model was globally deactivated by a government. Anthropic's technical team was dispatched to Washington to negotiate model restoration and implement a patch to satisfy security requirements. This established that frontier capability is a geopolitical liability, sparking a crisis of "technological sovereignty" in Europe and fueling the push for local-first AI.
 
 **The Bio-Threat Diversion**: Simultaneously, the industry's top labs (OpenAI, Google, Anthropic) began coordinating through the G7, jointly pushing for regulations on synthetic DNA. This effort effectively shifts the regulatory gaze from the "black box" of model weights to the more manageable physical "wet-lab" layer, illustrating a sophisticated form of regulatory capture.
 
@@ -131,6 +130,7 @@ In June 2026, AI safety moved from theoretical and cyber-risk concerns to real-w
 | 2026-06-14 | US govt disables Fable 5/Mythos 5 globally | Establishes "digital kill switch" as a tool of national security; partitions cognitive capabilities by geopolitical alignment. |
 | 2026-06-14 | OpenAI, Google, Anthropic joint letter on synthetic DNA | Regulatory capture attempt; redirects scrutiny from model weights to physical "wet-labs". |
 | 2026-06-14 | AI leaders attend G7 summit | Shift from commercial rivals to unofficial global regulatory body ("Frontier Club"). |
+| 2026-06-15 | US Govt forces shutdown of Fable 5 and Mythos 5 | First global deactivation due to critical jailbreak exploit; confirms weights as strategic weapons |
 ## Patterns & Insights
 
 The capability-safety tension has reached operational reality. For the first time, a major lab has a model that is commercially successful AND too dangerous to release — creating an unprecedented narrative contradiction.

@@ -1,7 +1,7 @@
 ---
 title: "AI Funding"
 slug: ai_funding
-last_updated: 2026-06-10
+last_updated: 2026-06-15
 ---
 
 # AI Funding
@@ -155,6 +155,7 @@ The investment pattern has shifted from model racing to infrastructure and appli
 - [[entities/redis-context-engine]] — May 18: new funding wave into agent memory/infrastructure layer; Redis positioning as agent economy infrastructure
 - [[sources/google]] — May 19: $180-190B capex for 2026 (6x 2022 spending); Google's infrastructure bet signals that compute capacity is the defining competitive advantage
 | 2026-05-31 | Anthropic $65B Series H at $965B valuation | Surpasses OpenAI ($852B); $47B ARR; strategic investors Amazon, Google/Broadcom, SpaceX; IPO preparation |
+| 2026-06-15 | Trump/Sanders propose government equity in AI | Shift toward 'Nationalized AI' utility model; state as equity holder |
 - [[sources/anthropic]] — June 8: 90% internal Claude adoption + "verifiable pause" advocacy is strategic — by pushing for a treaty-style verification regime, Anthropic positions itself as the responsible actor; competitors face higher compliance costs in a regime Anthropic helped design
 - [[entities/mellum-2]] — June 8: Apache 2.0 release from JetBrains shifts the funding question for sub-agent models from "can we license it?" to "can we beat it on quality?" — the open-source baseline for code MoE is now free of Meta-license restrictions
 - [[sources/unisound]] — June 8: Hong Kong-listed Unisound choosing MaaS Token Hub over open weights is the commercial test of agentic model-as-a-service; if successful, validates that Chinese companies can out-earn DeepSeek on the same workload by selling tokens
