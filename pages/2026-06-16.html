@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 16, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 16, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/devenjarvis/lathe" class="card-title" target="_blank">devenjarvis/lathe</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 145 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An experiment in using LLMs to facilitate active learning by generating hands-on tutorials that require users to type code, preventing 'intellectual laziness' in AI coding.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个利用 LLM 促进主动学习的实验，通过生成要求用户手动输入代码的实操教程，防止 AI 编程中的“智力懒惰”。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/hhhfs9s7y9-code/neuralbridge-sdk" class="card-title" target="_blank">hhhfs9s7y9-code/neuralbridge-sdk</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 840 stars</div>
+                                <div class="meta-item"><span>🍴</span> 92 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A self-healing SDK for LLM agents that diagnoses API failures (timeouts, rate limits) and executes a 4-layer recovery cascade to ensure resilience.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个为 LLM 智能体设计的自愈 SDK，能够诊断 API 故障（超时、限流）并执行四层恢复级联以 ensure 鲁棒性。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/getpeek/peek" class="card-title" target="_blank">getpeek/peek</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 210 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An open-source database GUI with an infinite canvas similar to Figma, featuring P2P collaboration and MCP support for agentic interaction.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个开源的数据库 GUI，采用类似 Figma 的无限画布，支持 P2P 协作以及通过 MCP 协议与智能体交互。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">2026-06-15</div>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls" class="card-title" target="_blank" data-lang="en">U.S. Government Orders Shutdown of Anthropic's Frontier Models</a>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国政府要求 Anthropic 关闭其前沿模型</a>
+                    <p class="card-description" data-lang="en">The U.S. Commerce Department issued an export control directive forcing Anthropic to suspend access to Mythos 5 and Fable 5 for foreign nationals, leading to a global shutdown.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">美国商务部发布出口管制指令，强制 Anthropic 暂停外国国民访问 Mythos 5 和 Fable 5，导致这些模型在全球范围内下线。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-06-15</div>
+                    <a href="https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/" class="card-title" target="_blank" data-lang="en">Jailbreak of Fable 5 Triggers National Security Panic</a>
+                    <a href="https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Fable 5 被攻破引发国家安全恐慌</a>
+                    <p class="card-description" data-lang="en">The shutdown was triggered after researchers (likely at Amazon) demonstrated a jailbreak of Fable 5's guardrails, raising fears of its use in foreign military intelligence.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">此次下线是由研究人员（据信来自亚马逊）演示了 Fable 5 护栏的绕过（jailbreak）所触发的，这引发了政府对其被外国军事情报部门利用的担忧。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Lawfare</span>
+                    <div class="news-time">2026-06-15</div>
+                    <a href="https://www.lawfaremedia.org/article/a-kill-switch-for-frontier-ai" class="card-title" target="_blank" data-lang="en">Cybersecurity Executives Protest Anthropic Model Ban</a>
+                    <a href="https://www.lawfaremedia.org/article/a-kill-switch-for-frontier-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">网络安全高管抗议 Anthropic 模型禁令</a>
+                    <p class="card-description" data-lang="en">Over 80 industry leaders, including execs from Nvidia and Adobe, signed a letter arguing that disabling these tools hinders U.S. network defenders.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">包括英伟达和 Adobe 在内的 80 多位行业领袖签署联名信，认为禁用这些工具会削弱美国网络防御者的能力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Decoder</span>
+                    <div class="news-time">2026-06-16</div>
+                    <a href="https://the-decoder.com/anthropic-shutdown-sparks-sovereignty-debate-across-europe/" class="card-title" target="_blank" data-lang="en">EU Sparks Sovereignty Debate Following U.S. AI Restrictions</a>
+                    <a href="https://the-decoder.com/anthropic-shutdown-sparks-sovereignty-debate-across-europe/" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国 AI 限制引发欧洲主权讨论</a>
+                    <p class="card-description" data-lang="en">European researchers are calling for an 'Airbus moment' for 'Airbus moment' for AI to reduce dependence on U.S. models after the sudden global shutdown of Fable 5.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在 Fable 5 突然全球下线后，欧洲研究人员呼吁 AI 领域迎来“空客时刻”，以减少对美国模型的依赖。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Straits Times</span>
+                    <div class="news-time">2026-06-15</div>
+                    <a href="https://www.straitstimes.com/world/united-states/us-saw-risk-of-anthropic-models-being-diverted-to-foreign-military-intelligence" class="card-title" target="_blank" data-lang="en">Jeff Bezos's Prometheus Raises $12B for Physical AGI</a>
+                    <a href="https://www.straitstimes.com/world/united-states/us-saw-risk-of-anthropic-models-being-diverted-to-foreign-military-intelligence" class="card-title" target="_blank" data-lang="zh" style="display: none;">贝佐斯的 Prometheus 筹集 120 亿美元打造物理 AGI</a>
+                    <p class="card-description" data-lang="en">Prometheus has secured massive funding to build an 'artificial general engineer' capable of operating in the physical world.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Prometheus 已获得巨额资金，旨在打造一个能够在物理世界中操作的“通用人工智能工程师”。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Lawfare</span>
+                    <div class="news-time">2026-06-15</div>
+                    <a href="https://www.lawfaremedia.org/article/a-kill-switch-for-frontier-ai" class="card-title" target="_blank" data-lang="en">Legion Intelligence Deployed for National Security</a>
+                    <a href="https://www.lawfaremedia.org/article/a-kill-switch-for-frontier-ai" class="card-title" target="_blank" data-lang="zh" style="display: none;">Legion Intelligence 被部署用于国家安全</a>
+                    <p class="card-description" data-lang="en">A system of specialized AI agents, Legion Intelligence, is being integrated into U.S. national security workflows.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Legion Intelligence 正在被整合进美国国家安全工作流中。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">June 16, 2026, marks a turning point where the 'AI Summer' of open access officially collided with the 'Cold War' of national security. The global shutdown of Anthropic's Mythos 5 and Fable 5 is not a safety failure, but a political assertion. For the first time, the U.S. government has treated a running API as a strategic asset subject to export controls, effectively treating 'intelligence' as a controlled substance. This creates a stark dichotomy: a restrictive, 'denial-based' regime for the global public and a highly agentic, specialized regime (like Legion Intelligence) for the state. The real story is the end of the 'Global Brain' illusion; the intelligence layer is being fragmented into national silos, and this will inevitably trigger a race for sovereign AI in Europe and Asia to avoid being subject to the whims of a foreign administration.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年6月16日标志着一个转折点：开放访问的“AI之夏”正式与国家安全的“冷战”相撞。Anthropic 的 Mythos 5 和 Fable 5 的全球下线并非 tornou-se 事实上是一次政治主张。美国政府首次将运行中的 API 视为受出口管制战略资产，实际上将“智能”视为一种受控物质。这创造了一个鲜明的对比：一个针对全球公众的基于“拒绝”的限制性体制，以及一个针对国家自身的、高度智能体化的专业体制（如 Legion Intelligence）。真正的故事是“全球大脑”幻象的破灭；智能层正被碎片化为国家孤岛，这将不可避免地触发欧洲和亚洲追求 AI 主权的竞赛，以避免受制于单一外国政府的意愿。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

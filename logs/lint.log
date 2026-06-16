@@ -1100,3 +1100,27 @@ Already up to date.
 • 结构审计：全面核查 `entities/` 目录，确认无公司或人物误入，并验证所有 Topic 页面均包含 Evolution 与 Patterns 章节。
 • 质量检查：扫描全站链接，确认无无标注的“相关/参见”链接，所有核心路径链接完整且 frontmatter 格式一致。
 [2026-06-16 01:07:17] Wiki lint 完成（退出码 0）。
+[main ef44a6e] wiki: lint 2026-06-16
+ 30 files changed, 3203 insertions(+), 3 deletions(-)
+ create mode 100644 clean_links.txt
+ create mode 100644 e_files.txt
+ create mode 100644 e_index.txt
+ create mode 100644 entities_files.txt
+ create mode 100644 entities_files_sorted.txt
+ create mode 100644 entities_index.txt
+ create mode 100644 entities_index_sorted.txt
+ create mode 100644 entities_missing.txt
+ create mode 100644 i_files.txt
+ create mode 100644 i_index.txt
+ create mode 100644 ideas_files.txt
+ create mode 100644 ideas_files_sorted.txt
+ create mode 100644 ideas_index.txt
+ create mode 100644 ideas_index_sorted.txt
+ create mode 100644 ideas_missing.txt
+ create mode 100644 o_files.txt
+ create mode 100644 o_index.txt
+ create mode 100644 s_files.txt
+ create mode 100644 s_index.txt
+ create mode 100644 t_files.txt
+ create mode 100644 t_index.txt
+ create mode 100644 wiki/sources/us_government.md

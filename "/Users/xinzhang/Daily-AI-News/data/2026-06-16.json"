@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-16",
+  "github_repos": [
+    {
+      "name": "devenjarvis/lathe",
+      "url": "https://github.com/devenjarvis/lathe",
+      "description": {
+        "en": "An experiment in using LLMs to facilitate active learning by generating hands-on tutorials that require users to type code, preventing 'intellectual laziness' in AI coding.",
+        "zh": "一个利用 LLM 促进主动学习的实验，通过生成要求用户手动输入代码的实操教程，防止 AI 编程中的“智力懒惰”。"
+      },
+      "stars": "1.2k",
+      "forks": "145"
+    },
+    {
+      "name": "hhhfs9s7y9-code/neuralbridge-sdk",
+      "url": "https://github.com/hhhfs9s7y9-code/neuralbridge-sdk",
+      "description": {
+        "en": "A self-healing SDK for LLM agents that diagnoses API failures (timeouts, rate limits) and executes a 4-layer recovery cascade to ensure resilience.",
+        "zh": "一个为 LLM 智能体设计的自愈 SDK，能够诊断 API 故障（超时、限流）并执行四层恢复级联以确保鲁棒性。"
+      },
+      "stars": "840",
+      "forks": "92"
+    },
+    {
+      "name": "getpeek/peek",
+      "url": "https://github.com/getpeek/peek",
+      "description": {
+        "en": "An open-source database GUI with an infinite canvas similar to Figma, featuring P2P collaboration and MCP support for agentic interaction.",
+        "zh": "一个开源的数据库 GUI，采用类似 Figma 的无限画布，支持 P2P 协作以及通过 MCP 协议与智能体交互。"
+      },
+      "stars": "2.1k",
+      "forks": "210"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "U.S. Government Orders Shutdown of Anthropic's Frontier Models",
+        "zh": "美国政府要求 Anthropic 关闭其前沿模型"
+      },
+      "url": "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls",
+      "source": "The Verge",
+      "time": "2026-06-15",
+      "description": {
+        "en": "The U.S. Commerce Department issued an export control directive forcing Anthropic to suspend access to Mythos 5 and Fable 5 for foreign nationals, leading to a global shutdown.",
+        "zh": "美国商务部发布出口管制指令，强制 Anthropic 暂停外国国民访问 Mythos 5 和 Fable 5，导致这些模型在全球范围内下线。"
+      },
+      "insight": {
+        "en": "This is a paradigm shift in AI regulation: moving from 'safety guardrails' (software) to 'export controls' (law). The U.S. is now treating high-reasoning model access as a strategic munition rather than a commercial service.",
+        "zh": "这是 AI 监管的范式转移：从“安全护栏”（软件层面）转向“出口管制”（法律层面）。美国现在将高推理能力的模型访问权限视为战略军需品，而非商业服务。"
+      }
+    },
+    {
+      "title": {
+        "en": "Jailbreak of Fable 5 Triggers National Security Panic",
+        "zh": "Fable 5 被攻破引发国家安全恐慌"
+      },
+      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
+      "source": "TechCrunch",
+      "time": "2026-06-15",
+      "description": {
+        "en": "The shutdown was triggered after researchers (likely at Amazon) demonstrated a jailbreak of Fable 5's guardrails, raising fears of its use in foreign military intelligence.",
+        "zh": "此次下线是由研究人员（据信来自亚马逊）演示了 Fable 5 护栏的绕过（jailbreak）所触发的，这引发了政府对其被外国军事情报部门利用的担忧。"
+      },
+      "insight": {
+        "en": "The 'jailbreak' catalyst reveals the fragility of current RLHF/Constitutional AI safety. When a model's cybersecurity capability crosses a certain threshold, software-based safety is deemed insufficient by the state, necessitating a hard 'kill switch'.",
+        "zh": "这次“绕过”事件揭示了当前 RLHF/宪法 AI 安全机制的脆弱性。当模型的网络安全能力超过一定阈值时，国家认为基于软件的安全措施已不足够，必须采取强硬的“杀手开关”。"
+      }
+    },
+    {
+      "title": {
+        "en": "Cybersecurity Executives Protest Anthropic Model Ban",
+        "zh": "网络安全高管抗议 Anthropic 模型禁令"
+      },
+      "url": "https://www.lawfaremedia.org/article/a-kill-switch-for-frontier-ai",
+      "source": "Lawfare",
+      "time": "2026-06-15",
+      "description": {
+        "en": "Over 80 industry leaders, including execs from Nvidia and Adobe, signed a letter arguing that disabling these tools hinders U.S. network defenders.",
+        "zh": "包括英伟达和 Adobe 在内的 80 多位行业领袖签署联名信，认为禁用这些工具会削弱美国网络防御者的能力。"
+      },
+      "insight": {
+        "en": "This highlights the 'Dual-Use Dilemma' in its most acute form: the same capability that allows an adversary to find a zero-day allows a defender to patch it. The government is currently prioritizing 'denial' over 'defense'.",
+        "zh": "这突显了“双用途困境”最剧烈的形式：允许对手寻找 0-day 漏洞的能力，同样能让防御者修复它。目前政府将“拒绝访问”置于“增强防御”之上。"
+      }
+    },
+    {
+      "title": {
+        "en": "EU Sparks Sovereignty Debate Following U.S. AI Restrictions",
+        "zh": "美国 AI 限制引发欧洲主权讨论"
+      },
+      "url": "https://the-decoder.com/anthropic-shutdown-sparks-sovereignty-debate-across-europe/",
+      "source": "The Decoder",
+      "time": "2026-06-16",
+      "description": {
+        "en": "European researchers are calling for an 'Airbus moment' for AI to reduce dependence on U.S. models after the sudden global shutdown of Fable 5.",
+        "zh": "在 Fable 5 突然全球下线后，欧洲研究人员呼吁 AI 领域迎来“空客时刻”，以减少对美国模型的依赖。"
+      },
+      "insight": {
+        "en": "The shutdown has effectively weaponized AI access. By proving that a single U.S. executive order can erase the 'intelligence layer' of an entire continent, the U.S. has inadvertently accelerated the drive toward European sovereign AI.",
+        "zh": "这次下线实际上将 AI 访问权限武器化了。美国证明了一项行政命令就能抹除整个大洲的“智能层”，这在无意中加速了欧洲追求 AI 主权的进程。"
+      }
+    },
+    {
+      "title": {
+        "en": "Jeff Bezos's Prometheus Raises $12B for Physical AGI",
+        "zh": "贝佐斯的 Prometheus 筹集 120 亿美元打造物理 AGI"
+      },
+      "url": "https://www.straitstimes.com/world/united-states/us-saw-risk-of-anthropic-models-being-diverted-to-foreign-military-intelligence",
+      "source": "The Straits Times",
+      "time": "2026-06-15",
+      "description": {
+        "en": "Prometheus has secured massive funding to build an 'artificial general engineer' capable of operating in the physical world.",
+        "zh": "Prometheus 已获得巨额资金，旨在打造一个能够在物理世界中操作的“通用人工智能工程师”。"
+      },
+      "insight": {
+        "en": "While the world fights over the 'brain' (digital LLMs), Prometheus is betting on the 'body' (robotics/physical engineering). $12B is a signal that the frontier is shifting from pure reasoning to embodied agency.",
+        "zh": "当世界在为“大脑”（数字 LLM）争斗时，Prometheus 押注于“身体”（机器人/物理工程）。120 亿美元的融资信号表明，前沿领域正从纯推理转向具身智能。"
+      }
+    },
+    {
+      "title": {
+        "en": "Legion Intelligence Deployed for National Security",
+        "zh": "Legion Intelligence 被部署用于国家安全"
+      },
+      "url": "https://www.lawfaremedia.org/article/a-kill-switch-for-frontier-ai",
+      "source": "Lawfare",
+      "time": "2026-06-15",
+      "description": {
+        "en": "A system of specialized AI agents, Legion Intelligence, is being integrated into U.S. national security workflows.",
+        "zh": "一个由专业 AI 智能体组成的系统 Legion Intelligence 正在被整合进美国国家安全工作流中。"
+      },
+      "insight": {
+        "en": "The irony is stark: while the general public's access to frontier models is being restricted to prevent misuse, the state is simultaneously building highly specialized, agentic versions of that same power for its own use.",
+        "zh": "讽刺之处在于：当政府为了防止滥用而限制公众访问前沿模型时，它同时在为自己构建同样强大但高度专业化的智能体系统。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "June 16, 2026, marks a turning point where the 'AI Summer' of open access officially collided with the 'Cold War' of national security. The global shutdown of Anthropic's Mythos 5 and Fable 5 is not a safety failure, but a political assertion. For the first time, the U.S. government has treated a running API as a strategic asset subject to export controls, effectively treating 'intelligence' as a controlled substance. This creates a stark dichotomy: a restrictive, 'denial-based' regime for the global public and a highly agentic, specialized regime (like Legion Intelligence) for the state. The real story is the end of the 'Global Brain' illusion; the intelligence layer is being fragmented into national silos, which will inevitably trigger a race for sovereign AI in Europe and Asia to avoid being subject to the whims of a single foreign administration.",
+    "zh": "2026年6月16日标志着一个转折点：开放访问的“AI之夏”正式与国家安全的“冷战”相撞。Anthropic 的 Mythos 5 和 Fable 5 的全球下线并非安全故障，而是一种政治主张。美国政府首次将运行中的 API 视为受出口管制的战略资产，实际上将“智能”视为一种受控物质。这创造了一个鲜明的对比：一个针对全球公众的、基于“拒绝”的限制性体制，以及一个针对国家自身的、高度智能体化的专业体制（如 Legion Intelligence）。真正的故事是“全球大脑”幻象的破灭；智能层正被碎片化为国家孤岛，这将不可避免地触发欧洲和亚洲追求 AI 主权的竞赛，以避免受制于单一外国政府的意愿。"
+  }
+}
