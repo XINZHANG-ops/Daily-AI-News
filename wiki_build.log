@@ -1560,3 +1560,55 @@ I have successfully processed the AI news for **2026-06-14** and updated the wik
 - **`wiki/log.md`**: Appended the ingest record for June 14.
 
 All `## Connections` sections were verified to contain **annotated wikilinks** explaining the specific relationship between entities and ideas, adhering to the project schema.
+---
+**Status Update: AI News Wiki Ingest for 2026-06-15**
+
+I have successfully processed the data for June 15, 2026, and integrated the resulting insights and entities into the wiki.
+
+### 1. New Entities Created
+- **`[[entities/spatial-claw]]`**: Training-free framework for spatial reasoning via code.
+- **`[[entities/open-notebook]]`**: Open-source, self-hosted alternative to Notebook LM.
+- **`[[entities/copilot-kit]]`**: Generative UI framework for dynamic agent interfaces.
+
+### 2. New Ideas Synthesized
+- **`[[ideas/nationalized-ai]]`**: The paradigm shift where AI weights are treated as strategic national assets with government-mandated "kill-switches."
+- **`[[ideas/sovereign-ai-surge]]`**: The global movement toward local, provider-agnostic AI infrastructure to avoid geopolitical dependency.
+- **`[[ideas/generative-ui-shift]]`**: The transition from chat-based interfaces to agents that dynamically generate UI components.
+
+### 3. Wiki Updates
+- **`wiki/topics/ai_safety.md`**: Expanded the "Digital Kill Switch" narrative to include the June 15 "critical jailbreak exploit" and the dispatch of Anthropic's tech team to Washington.
+- **`wiki/topics/llm_models.md`**: Updated the overview to reflect the "Sovereign AI" surge and the nature of the recent model shutdowns.
+- **`wiki/topics/ai_companies.md`**: Integrated the concept of frontier labs as "quasi-state actors" and added the June 15 negotiations.
+- **`wiki/topics/ai_funding.md`**: Added the convergence of political opposites (Trump/Sanders) on government equity stakes in AI firms.
+- **`wiki/topics/github_trends.md`**: Integrated SpatialClaw, Open Notebook, and CopilotKit into the evolution of agentic tools.
+- **`wiki/sources/anthropic.md`**: Added the global shutdown and subsequent negotiations with the White House to the timeline.
+
+### 4. Finalization
+- **`wiki/timelines/2026-06.md`**: Updated Week 3 with June 15 events.
+- **`wiki/index.md`**: All new pages added to the catalog.
+- **`wiki/processed.json`**: Marked `2026-06-15` as processed.
+- **`wiki/log.md`**: Appended the ingest record for June 15.
+
+All connections have been annotated according to the `WIKI.md` guidelines, explaining the *why* and *how* of each relationship.
+I have completed the wiki ingest for June 15, 2026.
+
+### Summary of Changes
+
+**1. Data Ingest (2026-06-15)**
+- **Anthropic**: Updated `wiki/sources/anthropic.md` to reflect the global shutdown of Fable 5 and Mythos 5 by the US Commerce Department due to a critical jailbreak exploit. Added entries for the global disablement and the subsequent dispatch of the technical team to Washington for negotiations. Updated the overview to describe Anthropic's shift into a "quasi-state actor."
+- **EU AI Office**: Updated `wiki/sources/eu-ai-office.md` to include the ban on "AI nudifier" apps and the strategic delay of high-risk AI Act requirements to December 2027.
+- **Timelines**: Added **Week 3 (June 15–21)** to `wiki/timelines/2026-06.md`, synthesizing the "Nationalization of AI" and the "Sovereign AI Surge" as the defining themes of the day.
+- **Entities & Ideas**: Verified that `wiki/entities/` (SpatialClaw, Open Notebook, CopilotKit) and `wiki/ideas/` (Sovereign AI Surge, Nationalized AI, Generative UI Shift) were already updated with the latest June 15 data.
+
+**2. Cross-Reference & Synthesis**
+- Linked the US-mandated "kill-switch" in `anthropic.md` and `timelines/2026-06.md` to `[[ideas/digital-kill-switch]]` and `[[ideas/sovereign-ai-surge]]`.
+- Connected the a-priori a la "code-as-action" trend (SpatialClaw, CopilotKit) to `[[topics/github_trends]]`.
+- Integrated the political convergence of Trump and Sanders on government equity stakes into `[[ideas/nationalized-ai]]`.
+
+**3. Maintenance**
+- **Processed Dates**: Updated `wiki/processed.json` to include `2026-06-15`.
+- **Ingest Log**: Appended the June 15 ingest event to `wiki/log.md`.
+- **Index**: Verified `wiki/index.md` is current and contains all newly updated pages.
+- **Chat History**: Reviewed `wiki_sessions/`; no new knowledge gaps or corrections relevant to June 15 were found.
+
+The wiki now fully reflects the paradigm shift toward Nationalized AI and the resulting surge in Sovereign AI tools.

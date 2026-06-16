@@ -1,0 +1,8 @@
+copilot-kit
+gpt-5.4
+gpt-5.4-cyber
+gpt-5.5
+gpt-5.5-cyber
+mai-image-2.5
+open-notebook
+spatial-claw

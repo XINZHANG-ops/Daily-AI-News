@@ -245,3 +245,11 @@ Topics updated: llm_models, ai_companies, ai_funding, ai_governance, ai_safety, 
 Sources updated: anthropic, eu-ai-office
 Entities updated: claude-fable-5, mythos-5, spatial-claw, open-notebook, copilot-kit
 Ideas updated: sovereign-ai-surge, nationalized-ai, generative-ui-shift, digital-kill-switch
+
+## [2026-06-16] lint | wiki health check
+
+- Fixed broken link: [[sources/us_government]] created to resolve link from ideas/nationalized-ai
+- Structural integrity: Added 8 missing entities (copilot-kit, open-notebook, spatial-claw, etc.) and 3 missing ideas (generative-ui-shift, nationalized-ai, sovereign-ai-surge) to index.md
+- Sync: Updated wiki/index.md counts (Sources 56→57, Entities 244→247, Ideas 91→94)
+- Connection quality: Verified all topic pages contain ## Evolution and ## Patterns & Insights sections
+- Audit: No company/people misclassifications in entities/ found; no unannotated links detected

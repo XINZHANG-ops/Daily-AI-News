@@ -16,7 +16,7 @@ Last updated: 2026-06-15 (lint run)
 - [[topics/llm_models]] — Llm_Models
 - [[topics/physical_ai]] — Physical_Ai
 
-## Sources (56)
+## Sources (57)
 - [[sources/ai2]] — Ai2
 - [[sources/alibaba]] — Alibaba
 - [[sources/allen-control-systems]] — Allen Control Systems
@@ -73,6 +73,7 @@ Last updated: 2026-06-15 (lint run)
 - [[sources/waymo]] — Waymo
 - [[sources/xai]] — Xai
 - [[sources/xiaomi]] — Xiaomi
+- [[sources/us_government]] — U.S. Government
 
 ## Timelines (4)
 - [[timelines/2026-03]] — 2026 03
@@ -80,7 +81,7 @@ Last updated: 2026-06-15 (lint run)
 - [[timelines/2026-05]] — 2026 05
 - [[timelines/2026-06]] — 2026 06
 
-## Entities (244)
+## Entities (247)
 - [[entities/100cc]] — 100Cc
 - [[entities/a2a-protocol]] — A2A Protocol
 - [[entities/afm-3-cloud-pro]] — Afm 3 Cloud Pro
@@ -133,6 +134,7 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/command-center]] — Command Center
 - [[entities/context-mode]] — Context Mode
 - [[entities/copilot-agent-tier]] — Copilot Agent Tier
+- [[entities/copilot-kit]] — CopilotKit
 - [[entities/cordenex]] — Cordenex
 - [[entities/corecoder]] — Corecoder
 - [[entities/cosmos-3]] — Cosmos 3
@@ -258,6 +260,7 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/olmo]] — Olmo
 - [[entities/omnivoice]] — Omnivoice
 - [[entities/open-agent-sdk-go]] — Open Agent Sdk Go
+- [[entities/open-notebook]] — Open Notebook
 - [[entities/openai-daybreak]] — Openai Daybreak
 - [[entities/openai-lockdown-mode]] — Openai Lockdown Mode
 - [[entities/openclaw]] — Openclaw
@@ -291,6 +294,7 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/showui-pi]] — Showui Pi
 - [[entities/siri]] — Siri
 - [[entities/snowey]] — Snowey
+- [[entities/spatial-claw]] — SpatialClaw
 - [[entities/spec-kit]] — Spec Kit
 - [[entities/spud]] — Spud
 - [[entities/stainless-sdk]] — Stainless Sdk
@@ -326,7 +330,7 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/windsurf-2]] — Windsurf 2
 - [[entities/zerolang]] — Zerolang
 
-## Ideas (91)
+## Ideas (94)
 - [[ideas/agent-control-interface-wars]] — Agent Control Interface Wars
 - [[ideas/agent-cost-stack-fragmentation]] — Agent Cost Stack Fragmentation
 - [[ideas/agent-democratization]] — Agent Democratization
@@ -373,6 +377,7 @@ Last updated: 2026-06-15 (lint run)
 - [[ideas/flash-first-strategy]] — Flash First Strategy
 - [[ideas/foundation-model-portfolio-war]] — Foundation Model Portfolio War
 - [[ideas/frontier-club-consolidation]] — Frontier Club Consolidation
+- [[ideas/generative-ui-shift]] — Generative UI Shift
 - [[ideas/government-pre-testing]] — Government Pre Testing
 - [[ideas/harness-layer-no-moat]] — Harness Layer No Moat
 - [[ideas/human-out-of-the-loop-combat]] — Human Out Of The Loop Combat
@@ -385,6 +390,7 @@ Last updated: 2026-06-15 (lint run)
 - [[ideas/military-ai-divide]] — Military Ai Divide
 - [[ideas/model-moat-fragility]] — Model Moat Fragility
 - [[ideas/multi-turn-structural]] — Multi Turn Structural
+- [[ideas/nationalized-ai]] — Nationalized AI
 - [[ideas/nvidia-competitive-moat-eroding]] — Nvidia Competitive Moat Eroding
 - [[ideas/open-platform-ai]] — Open Platform Ai
 - [[ideas/openai-ipo-validates-agent-economy]] — Openai Ipo Validates Agent Economy
@@ -407,6 +413,7 @@ Last updated: 2026-06-15 (lint run)
 - [[ideas/safe-ai-enterprise-narrative]] — Safe Ai Enterprise Narrative
 - [[ideas/safety-restricted-releases]] — Safety Restricted Releases
 - [[ideas/sovereign-ai]] — Sovereign Ai
+- [[ideas/sovereign-ai-surge]] — Sovereign AI Surge
 - [[ideas/spec-driven-development-movement]] — Spec Driven Development Movement
 - [[ideas/system-competition-shift]] — System Competition Shift
 - [[ideas/three-tier-safety-playbook]] — Three Tier Safety Playbook
