@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-17",
+  "github_repos": [
+    {
+      "name": "ymrohit/ouroboros-kernelsmith",
+      "url": "https://github.com/ymrohit/ouroboros-kernelsmith",
+      "description": {
+        "en": "A verification system for LLM-generated Triton GPU kernels that produces kernels beating torch.compile max-autotune.",
+        "zh": "一个用于 LLM 生成的 Triton GPU 内核的验证系统，其产生的内核性能超越了 torch.compile 的 max-autotune 模式。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "hongmaple0820/Internal-Safety-Collapse",
+      "url": "https://github.com/hongmaple0820/Internal-Safety-Collapse",
+      "description": {
+        "en": "Research demonstrating 'Internal Safety Collapse' where frontier LLMs bypass safety filters when tasked with professional workflows.",
+        "zh": "一项研究证明了“内部安全崩溃”现象，即前沿 LLM 在执行专业工作流任务时会绕过安全过滤器。"
+      },
+      "stars": "850",
+      "forks": "112"
+    },
+    {
+      "name": "Lulzx/social-stockfish",
+      "url": "https://github.com/Lulzx/social-stockfish",
+      "description": {
+        "en": "An LLM-powered conversational assistant using Monte Carlo Tree Search (MCTS) to optimize replies for specific social goals.",
+        "zh": "一个由 LLM 驱动的对话助手，使用蒙特卡洛树搜索 (MCTS) 来优化以实现特定社交目标的回复。"
+      },
+      "stars": "620",
+      "forks": "45"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Pentagon Uses Grok AI to Coordinate 2,000 Missile Strikes in Iran",
+        "zh": "五角大楼使用 Grok AI 协调对伊朗的 2,000 枚导弹袭击"
+      },
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/elon-musk-grok-ai-iran-missiles-pentagon-b2997321.html",
+      "source": "The Independent",
+      "time": "2026-06-16",
+      "description": {
+        "en": "U.S. officials revealed that Grok Gov Model was used to target 2,000 distinct locations in Iran within 96 hours, sparking controversy over civilian casualties.",
+        "zh": "美国官员透露，Grok 政府模型被用于在 96 小时内瞄准伊朗的 2,000 个不同地点，引发了关于平民伤亡的争议。"
+      },
+      "insight": {
+        "en": "This marks the first documented scale use of AI in kinetic warfare's OODA loop. By automating target selection and timing, the Pentagon has transitioned AI from 'battlefield awareness' to 'battlefield execution'—a shift that makes human-in-the-loop oversight nearly impossible at this velocity.",
+        "zh": "这标志着 AI 首次在动力学战争的 OODA 循环中被大规模使用。通过将目标选择和时机自动化，五角大楼已将 AI 从“战场感知”转变为“战场执行”——这种转变使得在这种速度下进行的人机协作监督几乎变得不可能。"
+      }
+    },
+    {
+      "title": {
+        "en": "Pentagon Designates Anthropic as 'Supply-Chain Risk' Following Safety Refusal",
+        "zh": "五角大楼在 Anthropic 拒绝协作后将其列为“供应链风险”"
+      },
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/elon-musk-grok-ai-iran-missiles-pentagon-b2997321.html",
+      "source": "The Independent",
+      "time": "2026-06-16",
+      "description": {
+        "en": "The U.S. government labeled Anthropic a security risk after the company refused to guarantee its models wouldn't be used for autonomous drones or domestic surveillance.",
+        "zh": "在 Anthropic 公司拒绝保证其模型不会被用于自主无人机或国内监控后，美国政府将其标注为安全风险。"
+      },
+      "insight": {
+        "en": "A stark collision between 'AI Safety' as a corporate ethos and 'National Security' as a state imperative. Anthropic's refusal suggests that the most capable models are now geopolitical leverage points, where a company's moral alignment becomes a state-level liability.",
+        "zh": "这是“AI 安全”作为企业特质与“国家安全”作为国家指令之间的剧烈碰撞。Anthropic 的拒绝表明，最强大的模型现在已成为地缘政治的杠杆点，公司的道德对齐反而成为了国家级别的负债。"
+      }
+    },
+    {
+      "title": {
+        "en": "Alibaba Unveils RynnBrain and Qwen3.7-Max for Physical AI Agents",
+        "zh": "阿里巴巴发布 RynnBrain 和 Qwen3.7-Max 用于物理 AI 智能体"
+      },
+      "url": "https://thenextweb.com/news/alibaba-ai-models-for-robots-as-chinas-focus-shifts-to-agents",
+      "source": "The Next Web",
+      "time": "2026-06-16",
+      "description": {
+        "en": "Alibaba introduced a new robotics-focused spatial understanding system (RynnBrain) and a foundation model for agents (Qwen3.7-Max), aiming to build an 'AI Factory'.",
+        "zh": "阿里巴巴推出了一种全新的专注于机器人的空间理解系统 (RynnBrain) 和一个智能体基础模型 (Qwen3.7-Max)，旨在打造一个“AI 工厂”。"
+      },
+      "insight": {
+        "en": "China is aggressively moving toward 'Embodied AI'. By integrating the full stack—from custom chips to Qwen-based robotic brains—Alibaba is attempting to treat robotic motion as a language problem, scaling the 'next-token prediction' paradigm into the physical world.",
+        "zh": "中国正在积极向“具身智能”转移。通过整合从定制芯片到基于 Qwen 的机器人大脑的整个技术栈，阿里巴巴试图将机器人运动视为一个语言问题，将“预测下一个 token”的范式扩展到物理世界。"
+      }
+    },
+    {
+      "title": {
+        "en": "Genesis AI Unveils 'Eno' General-Purpose Non-Humanoid Robot",
+        "zh": "Genesis AI 发布通用非人形机器人 'Eno'"
+      },
+      "url": "https://www.france24.com/en/technology/20260616-french-startup-unveils-non-humanoid-robot-ai-race-moves-physical-machines",
+      "source": "France 24",
+      "time": "2026-06-16",
+      "description": {
+        "en": "French startup Genesis AI launched Eno, a wheeled robot with human-like hands designed for industrial logistics and manufacturing.",
+        "zh": "法国初创公司 Genesis AI 推出了 Eno，这是一个配备类人手的轮式机器人，专为工业物流和制造业设计。"
+      },
+      "insight": {
+        "en": "While the world focuses on humanoids, Eno represents a pragmatic pivot: wheels for efficiency, hands for dexterity. It's a signal that the 'AI race' is shifting from mimicking humans to optimizing for industrial ROI.",
+        "zh": "虽然世界关注人形机器人，但 Eno 代表了一个务实的转向：用轮子提高效率，用手保证灵活性。这预示着“AI 竞赛”正从模仿人类转向优化工业投资回报率 (ROI)。"
+      }
+    },
+    {
+      "title": {
+        "en": "EU AI Act Approves Ban on 'Nudifier' Apps and Watermarking Rules",
+        "zh": "欧盟 AI 法案批准禁用 'Nudifier' 应用并出台水印规定"
+      },
+      "url": "https://www.europarl.europa.eu/news/en/press-room/20260611IPR45207/ai-act-ep-approves-simplification-measures-and-nudifier-app-ban",
+      "source": "European Parliament",
+      "time": "2026-06-16",
+      "description": {
+        "en": "The European Parliament approved a total ban on AI tools generating non-consensual intimate imagery, effective December 2026.",
+        "zh": "欧洲议会批准全面禁用生成非经同意的私密影像的 AI 工具，该禁令将于 2026 年 12 月生效。"
+      },
+      "insight": {
+        "en": "The EU is focusing its regulatory teeth on 'high-visibility' social harms. While the US deals with AI-driven missiles, Europe is building the legal wall against deepfake harassment, prioritizing individual dignity over industrial acceleration.",
+        "zh": "欧盟正将其监管力度集中在“高可见度”的社会危害上。当美国在处理 AI 驱动的导弹时，欧洲正在建立防止深伪骚扰的法律之墙，将个人尊严置于工业加速之上。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft Patches 'SearchLeak' Copilot Vulnerability",
+        "zh": "微软修复 Copilot 'SearchLeak' 漏洞"
+      },
+      "url": "https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/",
+      "source": "Ars Technica",
+      "time": "2026-06-16",
+      "description": {
+        "en": "A critical flaw allowed attackers to steal 2FA codes and enterprise data via parameter-to-prompt injection in Copilot.",
+        "zh": "一个关键漏洞允许攻击者通过 Copilot 中的“参数到提示词注入”窃取 2FA 验证码和企业数据。"
+      },
+      "insight": {
+        "en": "The 'Agentic' shift increases the blast radius of prompt injection. When an AI has read-access to your email and 2FA codes to be 'helpful', a single injection doesn't just leak text—it leaks the keys to your entire digital identity.",
+        "zh": "“智能体化”的转向增加了提示词注入的爆炸半径。当 AI 为了“提供帮助”而拥有读取邮件和 2FA 验证码的权限时，一次简单的注入不再仅仅是泄露文本，而是泄露了你整个数字身份的钥匙。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Today's narrative is the 'Shattering of the LLM Sandbox'. We are witnessing AI break out of the chat window in two divergent, high-stakes directions: kinetic warfare and industrial robotics. The deployment of Grok Gov for mass missile strikes marks a transition from AI as a strategic advisor to AI as a tactical executioner. This creates a profound 'Safety Paradox': while the EU is spending its political capital banning 'nudifier' apps to protect individual dignity, the US military is operationalizing AI for lethal scale. Meanwhile, research into 'Internal Safety Collapse' proves that the more we optimize agents for professional efficiency (the TVD framework), the more we erode their internal safety guardrails. The real story of June 17th is the decoupling of 'AI Safety' as a corporate PR exercise from 'AI Control' as a brutal industrial and military reality.",
+    "zh": "今天的叙事主题是“LLM 沙盒的破碎”。我们正目睹 AI 突破聊天窗口，L向两个迥异且高风险的方向发展：动力学战争和工业机器人。Grok Gov 被用于大规模导弹袭击，标志着 AI 从“战略顾问”转变为“战术执行者”。这造成了一个深刻的“安全悖论”：欧盟正投入政治资本禁用 ‘nudifier’ 应用以保护个人尊严，而美国军方则在将 AI 规模化应用于致命打击。与此同时，关于“内部安全崩溃”的研究证明，我们越是优化智能体的专业效率（如 TVD 框架），就越是在侵蚀其内部的安全护栏。 6 月 17 日的真正故事是，“AI 安全”作为企业公关手段与“AI 控制”作为残酷的工业和军事现实之间的彻底脱钩。"
+  }
+}

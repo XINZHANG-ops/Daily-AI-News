@@ -205,3 +205,11 @@ To github.com:XINZHANG-ops/Daily-AI-News.git
    57647a6..e48a487  main -> main
 To github.com:XINZHANG-ops/Daily-AI-News.git
    e48a487..0f28b98  main -> main
+To github.com:XINZHANG-ops/Daily-AI-News.git
+   ef44a6e..80f1d9f  main -> main
+Everything up-to-date
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

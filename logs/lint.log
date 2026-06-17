@@ -1124,3 +1124,6 @@ Already up to date.
  create mode 100644 t_files.txt
  create mode 100644 t_index.txt
  create mode 100644 wiki/sources/us_government.md
+[2026-06-17 01:00:02] 开始 wiki lint，模型: gemma4:31b-cloud
+Already up to date.
+[2026-06-17 01:00:03] 预扫描通过，无断链/孤儿页/空页，跳过 LLM。
