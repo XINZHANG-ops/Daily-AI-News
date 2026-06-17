@@ -253,3 +253,11 @@ Ideas updated: sovereign-ai-surge, nationalized-ai, generative-ui-shift, digital
 - Sync: Updated wiki/index.md counts (Sources 56→57, Entities 244→247, Ideas 91→94)
 - Connection quality: Verified all topic pages contain ## Evolution and ## Patterns & Insights sections
 - Audit: No company/people misclassifications in entities/ found; no unannotated links detected
+
+## [2026-06-17] ingest | 2 dates
+
+Dates processed: 2026-06-16, 2026-06-17
+Topics updated: llm_models, ai_companies, ai_safety, github_trends, physical_ai
+Sources updated: anthropic, xai, alibaba, genesis-ai
+Entities created/updated: eno, grok-gov, legion-intelligence, prometheus, lathe, neuralbridge-sdk, peek, rynnbrain, qwen-3-7-max, ouroboros-kernelsmith, internal-safety-collapse, social-stockfish
+Ideas created/updated: ai-as-strategic-munition, ai-as-tactical-executioner, sovereign-ai-acceleration, embodied-agency-shift, internal-safety-collapse

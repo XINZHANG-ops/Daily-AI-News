@@ -1,25 +1,25 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-15 (lint run)
+Last updated: 2026-06-17 (ingest run)
 
 ## Topics (12)
-- [[topics/agentic_ai]] — Agentic_Ai
-- [[topics/ai_companies]] — Ai_Companies
-- [[topics/ai_funding]] — Ai_Funding
-- [[topics/ai_governance]] — Ai_Governance
-- [[topics/ai_infrastructure]] — Ai_Infrastructure
-- [[topics/ai_safety]] — Ai_Safety
-- [[topics/ai_search]] — Ai_Search
-- [[topics/ai_security]] — Ai_Security
+- [[topics/agentic_ai]] — Agentic Ai
+- [[topics/ai_companies]] — Ai Companies
+- [[topics/ai_funding]] — Ai Funding
+- [[topics/ai_governance]] — Ai Governance
+- [[topics/ai_infrastructure]] — Ai Infrastructure
+- [[topics/ai_safety]] — Ai Safety
+- [[topics/ai_search]] — Ai Search
+- [[topics/ai_security]] — Ai Security
 - [[topics/biotech]] — Biotech
-- [[topics/github_trends]] — Github_Trends
-- [[topics/llm_models]] — Llm_Models
-- [[topics/physical_ai]] — Physical_Ai
+- [[topics/github_trends]] — Github Trends
+- [[topics/llm_models]] — Llm Models
+- [[topics/physical_ai]] — Physical Ai
 
-## Sources (57)
+## Sources (58)
 - [[sources/ai2]] — Ai2
 - [[sources/alibaba]] — Alibaba
-- [[sources/allen-control-systems]] — Allen Control Systems
+- [[sources/allen-control-systems]] — Allen-Control-Systems
 - [[sources/amazon]] — Amazon
 - [[sources/amd]] — Amd
 - [[sources/anthropic]] — Anthropic
@@ -32,20 +32,21 @@ Last updated: 2026-06-15 (lint run)
 - [[sources/coinbase]] — Coinbase
 - [[sources/deepseek]] — Deepseek
 - [[sources/elevenlabs]] — Elevenlabs
-- [[sources/eu-ai-office]] — Eu Ai Office
-- [[sources/furiosa-ai]] — Furiosa Ai
+- [[sources/eu-ai-office]] — Eu-Ai-Office
+- [[sources/furiosa-ai]] — Furiosa-Ai
 - [[sources/geely]] — Geely
+- [[sources/genesis-ai]] — Genesis-Ai
 - [[sources/github]] — Github
 - [[sources/google]] — Google
 - [[sources/groq]] — Groq
 - [[sources/ibm]] — Ibm
-- [[sources/ineffable-intelligence]] — Ineffable Intelligence
+- [[sources/ineffable-intelligence]] — Ineffable-Intelligence
 - [[sources/isomorphic]] — Isomorphic
 - [[sources/jetbrains]] — Jetbrains
 - [[sources/meta]] — Meta
 - [[sources/micron]] — Micron
 - [[sources/microsoft]] — Microsoft
-- [[sources/mind-robotics]] — Mind Robotics
+- [[sources/mind-robotics]] — Mind-Robotics
 - [[sources/mistral]] — Mistral
 - [[sources/mozilla]] — Mozilla
 - [[sources/netomi]] — Netomi
@@ -54,38 +55,38 @@ Last updated: 2026-06-15 (lint run)
 - [[sources/perplexity]] — Perplexity
 - [[sources/prometheus]] — Prometheus
 - [[sources/qualcomm]] — Qualcomm
-- [[sources/recursive-superintelligence]] — Recursive Superintelligence
+- [[sources/recursive-superintelligence]] — Recursive-Superintelligence
 - [[sources/salesforce]] — Salesforce
 - [[sources/samsung]] — Samsung
 - [[sources/shopify]] — Shopify
 - [[sources/sierra]] — Sierra
 - [[sources/singapore]] — Singapore
-- [[sources/sk-hynix]] — Sk Hynix
+- [[sources/sk-hynix]] — Sk-Hynix
 - [[sources/spacex]] — Spacex
 - [[sources/stripe]] — Stripe
 - [[sources/tencent]] — Tencent
-- [[sources/thinking-machines-lab]] — Thinking Machines Lab
+- [[sources/thinking-machines-lab]] — Thinking-Machines-Lab
 - [[sources/tomoro]] — Tomoro
 - [[sources/tsmc]] — Tsmc
 - [[sources/unisound]] — Unisound
-- [[sources/vast-data]] — Vast Data
+- [[sources/us_government]] — Us Government
+- [[sources/vast-data]] — Vast-Data
 - [[sources/vercel]] — Vercel
 - [[sources/waymo]] — Waymo
 - [[sources/xai]] — Xai
 - [[sources/xiaomi]] — Xiaomi
-- [[sources/us_government]] — U.S. Government
 
 ## Timelines (4)
-- [[timelines/2026-03]] — 2026 03
-- [[timelines/2026-04]] — 2026 04
-- [[timelines/2026-05]] — 2026 05
-- [[timelines/2026-06]] — 2026 06
+- [[timelines/2026-03]] — 2026-03
+- [[timelines/2026-04]] — 2026-04
+- [[timelines/2026-05]] — 2026-05
+- [[timelines/2026-06]] — 2026-06
 
-## Entities (247)
+## Entities (258)
 - [[entities/100cc]] — 100Cc
 - [[entities/a2a-protocol]] — A2A Protocol
-- [[entities/afm-3-cloud-pro]] — Afm 3 Cloud Pro
 - [[entities/afm-3]] — Afm 3
+- [[entities/afm-3-cloud-pro]] — Afm 3 Cloud Pro
 - [[entities/agent-365]] — Agent 365
 - [[entities/agent-ghost]] — Agent Ghost
 - [[entities/agent-reach]] — Agent Reach
@@ -113,8 +114,8 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/cambridge-neuromorphic-chip]] — Cambridge Neuromorphic Chip
 - [[entities/cc-design]] — Cc Design
 - [[entities/cc-sdd]] — Cc Sdd
-- [[entities/chatgpt-powerpoint-addin]] — Chatgpt Powerpoint Addin
 - [[entities/chatgpt]] — Chatgpt
+- [[entities/chatgpt-powerpoint-addin]] — Chatgpt Powerpoint Addin
 - [[entities/claude-code]] — Claude Code
 - [[entities/claude-cowork]] — Claude Cowork
 - [[entities/claude-design]] — Claude Design
@@ -134,7 +135,7 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/command-center]] — Command Center
 - [[entities/context-mode]] — Context Mode
 - [[entities/copilot-agent-tier]] — Copilot Agent Tier
-- [[entities/copilot-kit]] — CopilotKit
+- [[entities/copilot-kit]] — Copilot Kit
 - [[entities/cordenex]] — Cordenex
 - [[entities/corecoder]] — Corecoder
 - [[entities/cosmos-3]] — Cosmos 3
@@ -152,6 +153,7 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/elephant-agent]] — Elephant Agent
 - [[entities/elf]] — Elf
 - [[entities/enisa]] — Enisa
+- [[entities/eno]] — Eno
 - [[entities/ernie-5-1]] — Ernie 5 1
 - [[entities/eu-gpai-code-of-practice]] — Eu Gpai Code Of Practice
 - [[entities/evonic]] — Evonic
@@ -163,11 +165,11 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/gb300]] — Gb300
 - [[entities/gbase]] — Gbase
 - [[entities/gbrain]] — Gbrain
+- [[entities/gemini-3]] — Gemini 3
 - [[entities/gemini-3-1-flash-tts]] — Gemini 3 1 Flash Tts
 - [[entities/gemini-3-1-pro]] — Gemini 3 1 Pro
 - [[entities/gemini-3-5-flash]] — Gemini 3 5 Flash
 - [[entities/gemini-3-deep-think]] — Gemini 3 Deep Think
-- [[entities/gemini-3]] — Gemini 3
 - [[entities/gemini-cli]] — Gemini Cli
 - [[entities/gemini-embedding-2]] — Gemini Embedding 2
 - [[entities/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform
@@ -186,14 +188,15 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/google-adk-python]] — Google Adk Python
 - [[entities/google-skills]] — Google Skills
 - [[entities/googlebook]] — Googlebook
-- [[entities/gpt-5.4-cyber]] — Gpt 5.4 Cyber
 - [[entities/gpt-5.4]] — Gpt 5.4
-- [[entities/gpt-5.5-cyber]] — Gpt 5.5 Cyber
+- [[entities/gpt-5.4-cyber]] — Gpt 5.4 Cyber
 - [[entities/gpt-5.5]] — Gpt 5.5
+- [[entities/gpt-5.5-cyber]] — Gpt 5.5 Cyber
 - [[entities/gpt-realtime-2]] — Gpt Realtime 2
 - [[entities/gpt-rosalind]] — Gpt Rosalind
 - [[entities/grok-4-3]] — Grok 4 3
 - [[entities/grok-build]] — Grok Build
+- [[entities/grok-gov]] — Grok Gov
 - [[entities/grok-voice-think-fast-1-0]] — Grok Voice Think Fast 1 0
 - [[entities/guard-act]] — Guard Act
 - [[entities/harmonist]] — Harmonist
@@ -207,6 +210,7 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/ibm-bob]] — Ibm Bob
 - [[entities/ibm-sovereign-core]] — Ibm Sovereign Core
 - [[entities/incognito-chat]] — Incognito Chat
+- [[entities/internal-safety-collapse]] — Internal Safety Collapse
 - [[entities/ios-27-siri]] — Ios 27 Siri
 - [[entities/isaac-gr00t-n1-7]] — Isaac Gr00T N1 7
 - [[entities/ising]] — Ising
@@ -214,8 +218,10 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/kohakuterrarium]] — Kohakuterrarium
 - [[entities/krea-2]] — Krea 2
 - [[entities/last30days-skill]] — Last30Days Skill
-- [[entities/llama-4-405b]] — Llama 4 405B
+- [[entities/lathe]] — Lathe
+- [[entities/legion-intelligence]] — Legion Intelligence
 - [[entities/llama-4]] — Llama 4
+- [[entities/llama-4-405b]] — Llama 4 405B
 - [[entities/long-horizon]] — Long Horizon
 - [[entities/longmemeval]] — Longmemeval
 - [[entities/m365-e7]] — M365 E7
@@ -268,6 +274,8 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/opensquilla]] — Opensquilla
 - [[entities/openswarm]] — Openswarm
 - [[entities/ouroboros]] — Ouroboros
+- [[entities/ouroboros-kernelsmith]] — Ouroboros Kernelsmith
+- [[entities/peek]] — Peek
 - [[entities/perceptron-mk1]] — Perceptron Mk1
 - [[entities/perplexity-computer]] — Perplexity Computer
 - [[entities/perplexity-finance]] — Perplexity Finance
@@ -278,6 +286,7 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/project-deal]] — Project Deal
 - [[entities/project-glasswing]] — Project Glasswing
 - [[entities/project-solara]] — Project Solara
+- [[entities/prometheus]] — Prometheus
 - [[entities/pydantic-ai]] — Pydantic Ai
 - [[entities/qwen-3-6]] — Qwen 3 6
 - [[entities/qwen-3-7-max]] — Qwen 3 7 Max
@@ -285,8 +294,10 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/remy]] — Remy
 - [[entities/ros-llm]] — Ros Llm
 - [[entities/ruflo]] — Ruflo
+- [[entities/rynnbrain]] — Rynnbrain
 - [[entities/scenema-audio]] — Scenema Audio
 - [[entities/scientific-agent-skills]] — Scientific Agent Skills
+- [[entities/searchleak]] — Searchleak
 - [[entities/sensenova-u1]] — Sensenova U1
 - [[entities/sentinel]] — Sentinel
 - [[entities/serena]] — Serena
@@ -294,15 +305,16 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/showui-pi]] — Showui Pi
 - [[entities/siri]] — Siri
 - [[entities/snowey]] — Snowey
-- [[entities/spatial-claw]] — SpatialClaw
+- [[entities/social-stockfish]] — Social Stockfish
+- [[entities/spatial-claw]] — Spatial Claw
 - [[entities/spec-kit]] — Spec Kit
 - [[entities/spud]] — Spud
 - [[entities/stainless-sdk]] — Stainless Sdk
 - [[entities/stripe-agentic-commerce]] — Stripe Agentic Commerce
 - [[entities/substrate]] — Substrate
+- [[entities/swe-bench]] — Swe Bench
 - [[entities/swe-bench-pro]] — Swe Bench Pro
 - [[entities/swe-bench-verified]] — Swe Bench Verified
-- [[entities/swe-bench]] — Swe Bench
 - [[entities/symjack]] — Symjack
 - [[entities/symphony]] — Symphony
 - [[entities/synapse-ai]] — Synapse Ai
@@ -330,7 +342,7 @@ Last updated: 2026-06-15 (lint run)
 - [[entities/windsurf-2]] — Windsurf 2
 - [[entities/zerolang]] — Zerolang
 
-## Ideas (94)
+## Ideas (105)
 - [[ideas/agent-control-interface-wars]] — Agent Control Interface Wars
 - [[ideas/agent-cost-stack-fragmentation]] — Agent Cost Stack Fragmentation
 - [[ideas/agent-democratization]] — Agent Democratization
@@ -341,12 +353,15 @@ Last updated: 2026-06-15 (lint run)
 - [[ideas/agent-infrastructure-layer]] — Agent Infrastructure Layer
 - [[ideas/agent-verticalization]] — Agent Verticalization
 - [[ideas/agentic-anarchy]] — Agentic Anarchy
+- [[ideas/agentic-blast-radius]] — Agentic Blast Radius
 - [[ideas/agentic-catch-up-game]] — Agentic Catch Up Game
 - [[ideas/agentic-developer-as-primary-end-user]] — Agentic Developer As Primary End User
 - [[ideas/agentic-economic-actor]] — Agentic Economic Actor
 - [[ideas/agentic-is-default]] — Agentic Is Default
 - [[ideas/agentic-shift]] — Agentic Shift
 - [[ideas/ai-accountability-precedent]] — Ai Accountability Precedent
+- [[ideas/ai-as-strategic-munition]] — Ai As Strategic Munition
+- [[ideas/ai-as-tactical-executioner]] — Ai As Tactical Executioner
 - [[ideas/ai-creative-regulation]] — Ai Creative Regulation
 - [[ideas/ai-factory-software-stack]] — Ai Factory Software Stack
 - [[ideas/ai-governance-urgency]] — Ai Governance Urgency
@@ -356,6 +371,7 @@ Last updated: 2026-06-15 (lint run)
 - [[ideas/ai-mathematical-discovery]] — Ai Mathematical Discovery
 - [[ideas/ai-orbital-infrastructure]] — Ai Orbital Infrastructure
 - [[ideas/ai-os-platform-war]] — Ai Os Platform War
+- [[ideas/ai-safety-vs-ai-control]] — Ai Safety Vs Ai Control
 - [[ideas/ai-security-auditing-mainstream]] — Ai Security Auditing Mainstream
 - [[ideas/ai-utility-layer]] — Ai Utility Layer
 - [[ideas/alignment-reality-check]] — Alignment Reality Check
@@ -371,18 +387,24 @@ Last updated: 2026-06-15 (lint run)
 - [[ideas/de-novo-generative-biology]] — De Novo Generative Biology
 - [[ideas/digital-kill-switch]] — Digital Kill Switch
 - [[ideas/distillation-hypocrisy]] — Distillation Hypocrisy
+- [[ideas/dual-use-dilemma]] — Dual Use Dilemma
+- [[ideas/dual-use-dilemma-acute]] — Dual Use Dilemma Acute
 - [[ideas/efficiency-frontier]] — Efficiency Frontier
+- [[ideas/embodied-agency-shift]] — Embodied Agency Shift
 - [[ideas/enterprise-ai-lock-in]] — Enterprise Ai Lock In
 - [[ideas/eu-cyber-access-gap]] — Eu Cyber Access Gap
 - [[ideas/flash-first-strategy]] — Flash First Strategy
 - [[ideas/foundation-model-portfolio-war]] — Foundation Model Portfolio War
 - [[ideas/frontier-club-consolidation]] — Frontier Club Consolidation
-- [[ideas/generative-ui-shift]] — Generative UI Shift
+- [[ideas/generative-ui-shift]] — Generative Ui Shift
+- [[ideas/global-brain-fragmentation]] — Global Brain Fragmentation
 - [[ideas/government-pre-testing]] — Government Pre Testing
 - [[ideas/harness-layer-no-moat]] — Harness Layer No Moat
 - [[ideas/human-out-of-the-loop-combat]] — Human Out Of The Loop Combat
 - [[ideas/indirect-prompt-injection-threat]] — Indirect Prompt Injection Threat
 - [[ideas/institutional-gap]] — Institutional Gap
+- [[ideas/intelligence-as-controlled-substance]] — Intelligence As Controlled Substance
+- [[ideas/internal-safety-collapse]] — Internal Safety Collapse
 - [[ideas/interpretability-economics]] — Interpretability Economics
 - [[ideas/invisible-containment-tension]] — Invisible Containment Tension
 - [[ideas/local-ai-computing]] — Local Ai Computing
@@ -390,7 +412,7 @@ Last updated: 2026-06-15 (lint run)
 - [[ideas/military-ai-divide]] — Military Ai Divide
 - [[ideas/model-moat-fragility]] — Model Moat Fragility
 - [[ideas/multi-turn-structural]] — Multi Turn Structural
-- [[ideas/nationalized-ai]] — Nationalized AI
+- [[ideas/nationalized-ai]] — Nationalized Ai
 - [[ideas/nvidia-competitive-moat-eroding]] — Nvidia Competitive Moat Eroding
 - [[ideas/open-platform-ai]] — Open Platform Ai
 - [[ideas/openai-ipo-validates-agent-economy]] — Openai Ipo Validates Agent Economy
@@ -413,7 +435,8 @@ Last updated: 2026-06-15 (lint run)
 - [[ideas/safe-ai-enterprise-narrative]] — Safe Ai Enterprise Narrative
 - [[ideas/safety-restricted-releases]] — Safety Restricted Releases
 - [[ideas/sovereign-ai]] — Sovereign Ai
-- [[ideas/sovereign-ai-surge]] — Sovereign AI Surge
+- [[ideas/sovereign-ai-acceleration]] — Sovereign Ai Acceleration
+- [[ideas/sovereign-ai-surge]] — Sovereign Ai Surge
 - [[ideas/spec-driven-development-movement]] — Spec Driven Development Movement
 - [[ideas/system-competition-shift]] — System Competition Shift
 - [[ideas/three-tier-safety-playbook]] — Three Tier Safety Playbook
@@ -422,7 +445,6 @@ Last updated: 2026-06-15 (lint run)
 - [[ideas/trust-architecture-broken]] — Trust Architecture Broken
 - [[ideas/two-track-ai-future]] — Two Track Ai Future
 - [[ideas/us-china-ai-fragmentation]] — Us China Ai Fragmentation
-- [[ideas/vertical-integration-resolving]] — Vertical Integration Resolving
 - [[ideas/vertical-integration]] — Vertical Integration
+- [[ideas/vertical-integration-resolving]] — Vertical Integration Resolving
 - [[ideas/voice-agent-battleground]] — Voice Agent Battleground
-
