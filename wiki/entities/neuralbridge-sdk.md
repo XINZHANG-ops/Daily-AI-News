@@ -2,7 +2,7 @@
 title: "NeuralBridge SDK"
 slug: neuralbridge-sdk
 type: repo
-last_updated: 2026-06-14
+last_updated: 2026-06-16
 ---
 
 # NeuralBridge SDK

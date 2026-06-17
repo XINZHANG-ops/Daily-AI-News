@@ -47,17 +47,22 @@ By May 23, Claude Mythos helped partner companies discover over 10,000 cybersecu
 
 **June 2: Glasswing Expansion to 150 Orgs**: Project Glasswing expands from 30 to 150 organizations across 15+ countries, with new partners including NATO (military-grade deployment cleared export-control review at a level Opus 4.8 hasn't) and Samsung (on-device licensing for a Mythos-distilled 3-7B for Galaxy AI). Mythos-class models promised to all customers "in the coming weeks" — Anthropic racing to make Mythos public BEFORE the federal testing window becomes mandatory (per Trump's June 3 EO on voluntary model review). The Cowork product guide (June 5-6) drop aligns: enterprise features need to be Mythos-ready to justify the 10x-30x price tier.
 
+**June 16: Global Shutdown Ordered**: The U.S. Commerce Department issued an export control directive forcing Anthropic to suspend all access to Mythos 5 for foreign nationals. This represents a paradigm shift from "safety guardrails" to "export controls," treating high-reasoning AI as a strategic munition. The move was triggered by a perceived risk that the model's cybersecurity capabilities could be diverted to foreign military intelligence.
+
 ## Connections
-- [[sources/anthropic]] — Anthropic developed Mythos as a cybersecurity-specialized model so capable it triggered emergency government meetings; the decision to withhold rather than release reflects a judgment that frontier defensive capability carries offensive risk if broadly available
-- [[topics/ai_safety]] — Central to the safety-restricted release debate
+- [[sources/anthropic]] — Anthropic developed Mythos as a cybersecurity-specialized model so capable it triggered emergency government meetings; the decision to withhold rather than release reflects a judgment that frontier defensive capability carries offensive risk if broadly available; however, the June 16 shutdown proves that even a "controlled" release is too risky for the US state
+- [[topics/ai_safety]] — Central to the safety-restricted release debate, now evolving into a debate about state-mandated export controls and the "digital kill switch"
 - [[ideas/safety-restricted-releases]] — Mythos established the precedent that raw capability alone can justify restriction, creating a new category of "too capable to release" models that governments now reference when drafting AI governance frameworks
-- [[entities/project-glasswing]] — The consortium enabling restricted Mythos access
+- [[entities/project-glasswing]] — The consortium enabling restricted Mythos access; the June 16 shutdown effectively limits Glasswing's a-priori "global" aspirations to a strictly US-aligned bloc
 - [[entities/claude-opus-4-7]] — Cyber safeguards from Mythos work embedded in Opus 4.7
 - [[sources/mozilla]] — Mozilla's Firefox security audit using Mythos Preview is the first major non-Glasswing production deployment, proving the model's defensive value outside the restricted consortium
 - [[ideas/ai-security-auditing-mainstream]] — Mozilla's deployment marks the moment AI security auditing becomes mainstream; not using AI for security audits is becoming negligent
 - [[sources/openai]] — OpenAI's GPT-5.4-Cyber lacks a comparable production deployment at a major software vendor; Mozilla's Mythos use gives Anthropic a concrete advantage in the security market, but OpenAI's EU cyber access expansion creates a geopolitical counterweight
 - [[ideas/ai-mathematical-discovery]] — Both OpenAI and DeepMind achieved mathematical breakthroughs on the same day as Mythos's 10,000 vulnerability finding, showing AI capability is advancing across domains
-- [[ideas/eu-cyber-access-gap]] — Anthropic's refusal to grant EU access despite Bundesbank demands and 4-5 meetings is the core structural vulnerability driving the EU gap
+- [[ideas/eu-cyber-access-gap]] — Anthropic's refusal to grant EU access despite Bundesbank demands and 4-5 meetings is the core structural vulnerability driving the EU gap; the June 16 shutdown exacerbates this by treating EU research as a potential leak risk
 - [[entities/claude-opus-4-8]] — Mythos Preview scores 93.9% on SWE-bench Verified vs Opus 4.8's 88.6%, a 5.3 point gap suggesting Mythos has a fundamentally different architecture optimized for agentic code execution
 - [[entities/swe-bench-verified]] — The benchmark that now shows Mythos at 93.9% near human-level performance; the same benchmark shows GPT-5.4 High at 85.0%
+- [[ideas/ai-as-strategic-munition]] — Mythos 5 is the primary case study for the transition of AI from a commercial service to a strategic munition subject to export control
+- [[entities/legion-intelligence]] — The "restricted" nature of Mythos for the public is mirrored by the creation of specialized systems like Legion Intelligence for the state
+
 

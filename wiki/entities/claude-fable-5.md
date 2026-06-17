@@ -39,17 +39,21 @@ Fable 5 also closes a strategic gap that the three-tier safety playbook left ope
 ## Disablement
 On June 14, 2026, the US government exercised a "digital kill switch" and disabled Claude Fable 5 globally (excluding US nationals) due to national security and jailbreak risks. This marked a watershed moment in AI governance, effectively partitioning the world's cognitive capabilities by geopolitical alignment.
 
+On June 15, 2026, it was revealed that the shutdown was triggered by researchers (likely at Amazon) who successfully demonstrated a jailbreak of Fable 5's guardrails. This event proved that software-based safety (RLHF/Constitutional AI) is insufficient when a model's cybersecurity capabilities cross a specific threshold, necessitating a state-level "kill switch" to prevent the model from being used in foreign military intelligence.
+
 ## Connections
 - [[entities/claude-mythos]] — Fable 5 shares Mythos 5's architecture; the 5% high-risk routing to Opus 4.8 is the structural difference that lets Anthropic ship the same weights publicly without exposing the full cyber/bio capability surface
 - [[entities/claude-opus-4-8]] — Receives the ~5% of cyber/bio/chem prompts that Fable 5 routes away; the 2× pricing differential positions Opus 4.8 as the safety-first "lowest-capability" tier in Anthropic's new three-tier product
-- [[sources/anthropic]] — Released June 9, 2026 by Anthropic 72 hours after Jack Clark's "brake pedal" essay and the same week as OpenAI's $852B IPO filing; the "Mythos-class-but-public" product is Anthropic's answer to the IPO narrative contest
+- [[sources/anthropic]] — Released June 9, 2026 by Anthropic 72 hours after Jack Clark's "brake pedal" essay and the same week as OpenAI's $852B IPO filing; the "Mythos-class-but-public" product is Anthropic's answer to the IPO narrative contest; however, its global shutdown on June 16 signals the end of the "open" frontier era
 - [[ideas/safety-restricted-releases]] — Fable 5 is the proof that capability-restricted releases can be productized: the 5% routing layer converts a marketing liability (the Mythos restriction) into a product feature (Mythos-class output with documented safety overhead)
 - [[ideas/three-tier-safety-playbook]] — Fable 5 now makes the three-tier structure explicit at the product level: Mythos (restricted) → Fable 5 (public Mythos-class with safety routing) → Opus 4.8 (public, lower capability, receives routed prompts)
 - [[entities/swe-bench-pro]] — 80.3% is the first public score above 80% on this harder variant; the previous public leader was Opus 4.8 at ~64%, a 16+ point gap that makes Fable 5 the new category benchmark
 - [[sources/openai]] — OpenAI's $852B IPO filing will be measured against Fable 5's 80.3% number; the S-1's "competitive position" disclosure will need to address that Anthropic's flagship public model outscores every OpenAI public model on the harder SWE-bench Pro variant
 - [[ideas/pricing-war]] — Fable 5's 2× Opus 4.8 pricing is a deliberate upward move in a market that has been trending toward cheaper inference; the same day Tencent shipped Hy3 at $0.18/M on OpenRouter, the pricing-war signal splits between "premium safety" and "commodity scale"
-- [[topics/ai_safety]] — The 5% high-risk routing architecture is the new safety primitive: same weights, different safety layer, public distribution; future frontier models may be evaluated on how cleanly their safety layer can be separated from capability
+- [[topics/ai_safety]] — The 5% high-risk routing architecture is the new safety primitive: same weights, different safety layer, public distribution; however, the June 15 jailbreak proves this "primitive" is fragile against determined adversarial attacks
 - [[ideas/model-moat-fragility]] — The June 10 reversal of restrictive research policies on Fable 5 demonstrates the failure of policy-based "moats" when they conflict with the open nature of AI research.
 
 - [[ideas/digital-kill-switch]] — The disablement of Fable 5 is the primary evidence for the emergence of government-mandated "kill switches" for frontier AI
 - [[ideas/ai-iron-curtain]] — The restriction of Fable 5 to US nationals signals the beginning of a geopolitical pruning of AI capabilities
+- [[ideas/ai-as-strategic-munition]] — Fable 5's sudden global removal transforms it from a commercial product into a piece of strategic munitions controlled by the US government
+- [[entities/legion-intelligence]] — The vulnerability of Fable 5's guardrails directly justifies the shift toward "closed-loop" specialized systems like Legion Intelligence for national security

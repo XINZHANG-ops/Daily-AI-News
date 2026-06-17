@@ -331,3 +331,12 @@ The US-China AI competition has shifted from trade rhetoric to technical counter
 - [[sources/prometheus]] — June 12: B raise at B valuation to automate complex physical systems design; first major "Hardware Claude" bet
 - [[ideas/invisible-containment-tension]] — June 11: Anthropic's invisible guardrails in Fable 5 highlight the conflict between open-science ideals and corporate moat-building
 - [[ideas/titan-era-of-ai]] — June 12: The transition from research labs to T public infrastructure, pivoting from AGI-at-all-costs to quarterly growth
+
+**The Nationalization of Intelligence**: June 16 marks the most severe intervention in the history of AI labs. The U.S. Commerce Department's order to globally shut down Anthropic's Fable 5 and Mythos 5 transforms the relationship between the state and the labs: the labs no longer just "consult" with government on safety; they are now subject to export control directives that can erase their product line overnight. This effectively nationalizes the "intelligence layer" of the most capable models, turning labs into quasi-state contractors for the U.S. intelligence community.
+
+- [[sources/anthropic]] — June 16: global shutdown of flagship models via US government order; confirms the transition from commercial product to strategic munition
+- [[sources/us_government]] — June 16: use of export controls to partition AI capabilities, effectively treating high-reasoning models as controlled substances
+- [[ideas/ai-as-strategic-munition]] — June 16: the definitive shift where AI capability is treated as a military asset, not a commercial service
+- [[ideas/sovereign-ai-acceleration]] — June 16: the US-led "AI Iron Curtain" triggers an immediate acceleration of "Sovereign AI" programs in Europe (the "Airbus moment") and Asia to avoid total dependency on a volatile foreign state
+- [[entities/legion-intelligence]] — June 16: the state's response to the public ban; building specialized, agentic versions of frontier power for national security use
+

@@ -303,3 +303,13 @@ The efficiency frontier is democratizing access. 1-bit quantization, MLX optimiz
 - [[entities/meadow-mind]] — June 12: 640 stars; Diffusion LLM for 400ms response time in physical AI
 - [[entities/mue-x]] — June 12: 890 stars; self-evolving AI agent that rewrites its own source code via AST transforms
 - [[ideas/physical-ai-pivot]] — June 12: the convergence of Humanoid-GPT and Meadow Mind signal the industry's shift toward physical-world agency
+
+**The Resilient and Spatial Agent Wave**: June 16 marks a shift toward "active learning" and "resilient infrastructure" in the agent ecosystem. The emergence of Lathe and NeuralBridge-SDK shows that as AI agents move into production, the focus is shifting from raw capability to skill preservation and system robustness. Simultaneously, Peek's infinite canvas and MCP support signal a move toward spatial, non-linear agent interaction.
+
+- [[entities/lathe]] — June 16: 1.2k stars; combatting "intellectual laziness" in AI coding by requiring manual typing in tutorials; the first a-priori pedagogical response to the agentic coding shift
+- [[entities/neuralbridge-sdk]] — June 16: 840 stars; self-healing agent SDK with 4-layer recovery cascade; the "resilience layer" for agents in an era of unstable API access and government "kill switches"
+- [[entities/peek]] — June 1 la 16: 2.1k stars; infinite canvas database GUI with MCP support; the first major move toward "spatial agenting" where AI interacts with a canvas rather than a chat box
+- [[topics/agentic_ai]] — June 16: three repos (Lathe for learning, NeuralBridge for resilience, Peek for spatial UI) show the agent stack is now solving for the "human side" (learning) and "system side" (resilience, UI) of the AI transition
+- [[ideas/agent-infrastructure-layer]] — June 16: the trend shifts from "how do I build an agent?" to "how do I make the agent resilient, learnable, and spatially interactive?"
+- [[timelines/2026-06]] — June 16: the "Resilience and Spatiality" wave (Lathe, NeuralBridge-SDK, Peek) marks the completion of the agent infrastructure's first major evolutionary cycle
+

@@ -335,6 +335,7 @@ Benchmark saturation is becoming evident. ARC-AGI-3 saw every frontier model sco
 - [[ideas/ai-utility-layer]] — The May 24 convergence of MCP protocol victory, Gemini 3's price war, and platform dependency unraveling signals AI is becoming a utility layer where differentiation moves from model performance to infrastructure, governance, and pricing
 | 2026-05-31 | Anthropic $965B valuation surpasses OpenAI $852B | Valuation race concludes: Anthropic overtakes OpenAI for first time; $65B Series H, $47B ARR; strategic partnerships with Amazon, Google/Broadcom, SpaceX |
 | 2026-06-15 | US Govt forces shutdown of Fable 5 and Mythos 5 | First global deactivation due to critical jailbreak exploit; confirms weights as strategic weapons |
+| 2026-06-16 | US export controls treat AI as strategic munition | Transition from software safety to state-mandated export controls; triggers European "Airbus moment" for sovereign AI |
 - [[entities/nemotron-3-ultra]] — June 4: hybrid Mamba-Transformer with NVFP4 4-bit quantization; the 4-bit inference war goes prime time; OpenMDW-1.1 license shift weaponizes openness as CUDA moat
 - [[entities/grok-build]] — June 5: xAI's $1/$2 per million tokens pricing is 40-60% below Claude Code Opus 4.8 and 80% below GPT-5.4-Codex; the most aggressive pricing in agentic coding
 - [[entities/maia-200]] — June 6: Microsoft's custom AI silicon co-designed with MAI family; the vertical-integration pair that makes the seven-model drop possible
