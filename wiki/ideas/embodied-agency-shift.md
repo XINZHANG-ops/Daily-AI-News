@@ -11,6 +11,8 @@ While the primary "frontier" of AI for the past several years has been pure reas
 
 ## Evidence
 - [[entities/prometheus]] — Jeff Bezos's $12B investment in an "artificial general engineer" capable of operating in the physical world.
+- [[entities/eno]] — Genesis AI's pivot toward a pragmatic, wheeled, high-dexterity robot optimized for industrial ROI rather than human mimicry.
+- [[sources/alibaba]] — The introduction of RynnBrain and Qwen 3.7 Max, treating robotic motion as a language problem and scaling "next-token prediction" into the physical world.
 - [[entities/humanoid-gpt]] — The parallel development of advanced robotic motion and physical interaction.
 - [[topics/ai_funding]] — The massive capital injection into Prometheus ($12B) signals that "Physical AI" now requires a level of funding comparable to the largest digital LLM labs.
 

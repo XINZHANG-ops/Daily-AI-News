@@ -137,6 +137,9 @@ By June 15, 2026, Anthropic's position shifted from commercial leader to a geopo
 | 2026-06-11 | Admitted to "invisible" guardrails in Fable 5 | Admitted to secretly throttling users attempting to distill Fable 5; creates trust crisis with research community |
 | 2026-06-12 | IPO Race intensifies | Competing with OpenAI for a trillion-dollar valuation; shift from "lab" to "systemic infrastructure" |
 | 2026-06-14 | US Govt forces global disablement of Fable 5/Mythos 5 | State-mandated "digital kill switch" disables models for foreign nationals due to national security risks |
+| 2026-06-15 | Fable 5 jailbreak revealed | Researchers (likely at Amazon) demonstate a bypass of safety filters, triggering the US government's "kill switch" |
+| 2026-06-16 | Global shutdown of Mythos 5/Fable 5 | US Commerce Dept export control directive forces total suspension of access for foreign nationals; intelligence is now a "controlled substance" |
+| 2026-06-17 | Designated "Supply-Chain Risk" by Pentagon | Pentagon labels Anthropic a security risk after company refuses to guarantee models won't be used for autonomous drones or domestic surveillance |
 
 - [[ideas/invisible-containment-tension]] — June 11: The invisible guardrail scandal reveals the conflict between the lab's open-research narrative and its corporate IP protection needs
 - [[ideas/titan-era-of-ai]] — June 12: Anthropic's IPO race with OpenAI marks the end of the "Lab Era" and the start of the "Titan Era" of AI infrastructure

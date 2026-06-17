@@ -1,7 +1,7 @@
 ---
 title: "xAI"
 slug: xai
-last_updated: 2026-06-07
+last_updated: 2026-06-17
 ---
 
 # xAI
@@ -28,14 +28,18 @@ xAI has been consolidated into SpaceX following the $250 billion all-stock acqui
 | 2026-05-12 | Grok 4.3 launched | 83% price cut ($1.25/1M input vs Grok 3's $3); video input up to 5 min; document output (PDF/XLSX/PPTX); always-on reasoning; voice cloning from 120-second samples; undercuts GPT-4.5 by ~60% |
 | 2026-05-19 | $12B round at $250B valuation | Led by Saudi PIF, UAE MGX, Singapore Temasek; funds Memphis data center buildout to 500K GPUs by year-end |
 | 2026-06-05 | Grok Build 0.1 launched | First dedicated agentic coding model; 100+ tokens/sec, 256K context, $1/$2 per million tokens; 40-60% below Claude Code Opus 4.8, 80% below GPT-5.4-Codex; day-one Cursor/Hermes Agent/OpenClaw/Kilo Code/OpenCode integration — the IDE is xAI's last consumer surface where usage converts to revenue |
+| 2026-06-16 | Grok Gov deployed for missile strikes | US Pentagon uses Grok Gov for kinetic warfare coordinate; 2,000 strikes in Iran within 96 hours; marks transition from strategic advisor to tactical executioner |
 
 ## Key Relationships
 - **SpaceX**: Parent company following acquisition.
 - **Tesla**: Interests converted to stakes in combined entity.
 
 ## Connections
-- [[ideas/distillation-hypocrisy]] — Musk's simultaneous suing of OpenAI, distilling from OpenAI, and joining Pentagon contracts with OpenAI collapses the ethical architecture of all positions
+- [[entities/grok-gov]] — Specialized government version of Grok deployed for kinetic warfare; definitive example of the shift to tactical AI execution
+- [[ideas/ai-as-tactical-executioner]] — Grok Gov's deployment in Iran marks the end of AI as a purely advisor-based tool and the start of automated OODA loop execution
+- [[ideas/intelligence-as-controlled-substance]] — xAI's role in providing Grok Gov to the state while public models are restricted reflects the new a-priori division of AI capabilities
 - [[ideas/military-ai-divide]] — xAI's inclusion exemplifies the "no principles" track: join the coalition, distill from competitors, sue the industry
+- [[ideas/distillation-hypocrisy]] — Musk's simultaneous suing of OpenAI, distilling from OpenAI, and joining Pentagon contracts with OpenAI collapses the ethical architecture of all positions
 - [[sources/spacex]] — Acquired by SpaceX for $250B in April 2026, creating a $1.25T combined entity; Grok now operates under SpaceX ownership; xAI dissolved and rebranded as SpaceXAI in May 2026; Musk's standalone AI lab ambition ends as he pivots to owning infrastructure that model companies need
 - [[entities/grok-voice-think-fast-1-0]] — xAI's voice model scoring 67.3% on τ-voice Bench; outperforming in retail/airline/telecom verticals
 - [[sources/openai]] — Musk admitted under oath to distilling from OpenAI models while simultaneously suing the company; IP chain of title now questionable for SpaceX-xAI merger

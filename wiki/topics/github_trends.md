@@ -7,7 +7,7 @@ last_updated: 2026-06-15
 # GitHub Trends
 
 ## Overview
-June 14-15, 2026 highlights a strategic shift toward AI resilience, operational sovereignty, and a new generation of agent-native interfaces. Following the global shutdown of Anthropic's flagship models, tools like Open Notebook (2.4k stars) have surged as self-hosted, provider-agnostic alternatives to proprietary ecosystems. Simultaneously, the industry is moving toward "Generative UI" via frameworks like CopilotKit (3.1k stars), allowing agents to dynamically build interfaces. The focus on spatial reasoning also accelerates with SpatialClaw (1.2k stars), which uses code as an action interface for spatial tasks, signaling a move toward structured, non-textual agent capabilities.
+June 14-17, 2026 highlights a strategic shift toward AI resilience, operational sovereignty, and a new generation of agent-native interfaces. Following the global shutdown of Anthropic's flagship models, tools like Open Notebook (2.4k stars) have surged as self-hosted, provider-agnostic alternatives to proprietary ecosystems. Simultaneously, the industry is moving toward "Generative UI" via frameworks like CopilotKit (3.1k stars), allowing agents to dynamically build interfaces. By June 17, a new wave of "extreme-performance" and "behavioral" repos has emerged, including Ouroboros Kernelsmith for GPU optimization and Social Stockfish for conversational game-theory, signaling a move from general-purpose tools to highly specialized, goal-oriented agency.
 
 ## Evolution
 
@@ -127,6 +127,11 @@ In June 2026, the trend shifted toward specialized agent cognitive layers and un
 | 2026-06-14 | `dataroom` trending | Demonstrates local-model research synthesis, providing a hedge against "digital kill switches". |
 | 2026-06-14 | `showui-pi` trending | VLA model enabling continuous cursor trajectories for precise GUI control. |
 | 2026-06-15 | SpatialClaw, Open Notebook, CopilotKit trend | Shift toward Sovereign AI tools and Generative UI paradigms |
+| 2026-06-16 | `lathe` trending | Experiments in active learning to prevent 'intellectual laziness' in AI coding. |
+| 2026-06-16 | `peek` trending | Open-source DB GUI with infinite canvas and MCP support for agentic interaction. |
+| 2026-06-17 | `ouroboros-kernelsmith` trending | AI-generated Triton GPU kernels beating torch.compile max-autune. |
+| 2026-06-17 | `internal-safety-collapse` trending | Research proving professional workflows override safety alignment in frontier LLMs. |
+| 2026-06-17 | `social-stockfish` trending | Applying MCTS to optimize conversational social goals. |
 ## Patterns & Insights
 
 The "harness layer" has emerged as a critical battleground. claw-code's explosive growth demonstrates that closed-source agent architectures can be rapidly replicated — the competitive moat is narrower than assumed. This has implications for business models built on agent frameworks.
