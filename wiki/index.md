@@ -1,6 +1,6 @@
 # Daily AI News Wiki
 
-Last updated: 2026-06-17 (ingest run)
+Last updated: 2026-06-18 (ingest run)
 
 ## Topics (12)
 - [[topics/agentic_ai]] — Agentic Ai

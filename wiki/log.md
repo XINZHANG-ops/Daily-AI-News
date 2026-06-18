@@ -261,3 +261,11 @@ Topics updated: llm_models, ai_companies, ai_safety, github_trends, physical_ai
 Sources updated: anthropic, xai, alibaba, genesis-ai
 Entities created/updated: eno, grok-gov, legion-intelligence, prometheus, lathe, neuralbridge-sdk, peek, rynnbrain, qwen-3-7-max, ouroboros-kernelsmith, internal-safety-collapse, social-stockfish
 Ideas created/updated: ai-as-strategic-munition, ai-as-tactical-executioner, sovereign-ai-acceleration, embodied-agency-shift, internal-safety-collapse
+
+## [2026-06-18] ingest | 1 date
+
+Dates processed: 2026-06-18
+Topics updated: llm_models, ai_companies, ai_funding, github_trends
+Sources updated: openai, anthropic, midjourney, spacex, pinterest, prometheus
+Entities updated: gpt-5.4, maria-agent, midjourney-medical, mythos-5, claude-fable-5, cursor, prometheus-ai, ghost-layer, joyai-vl-interaction, scrapling
+Ideas updated: agentic-science, conceptual-leaps, reconstructing-reality, ai-iron-curtain, software-defined-engineering, agentic-commerce
