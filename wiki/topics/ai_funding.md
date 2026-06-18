@@ -19,6 +19,8 @@ Anthropic's $30 billion Series G (April 7) at $380B valuation followed rapidly. 
 
 SpaceX's $250 billion acquisition of xAI created a $1.25 trillion combined entity, representing the largest AI consolidation. Yann LeCun's AMI Labs raised $1.03 billion (Europe's largest seed round) for world models research.
 
+On June 17, 2026, funding patterns shifted toward the "General Engineering" layer. SpaceX acquired Cursor in a $60 billion stock deal to integrate agentic coding into its aerospace pipelines. Simultaneously, Jeff Bezos's Prometheus raised $12 billion to build an "Artificial General Engineer," reflecting a new wave of capital aimed at automating the physical engineering of complex systems.
+
 Microsoft committed $10 billion to Japan AI infrastructure — the largest single AI infrastructure commitment by a Western tech company in Asia. Nebius announced $10B+ for a 310-megawatt Finland data center. Bitdeer is building a 180-megawatt Norway facility with NVIDIA Vera Rubin.
 
 **Late April: Valuation Shifts and New Investment**: Anthropic's valuation surged to ~$1 trillion on secondary markets, surpassing OpenAI's $880 billion — reflecting the enterprise success of Claude Code and the restricted Mythos model's strategic value. Vast Data raised $1 billion at $30 billion valuation backed by NVIDIA, continuing the infrastructure boom. SpaceX invested $60 billion in Cursor, signaling massive investment in AI coding tools as a competitive battleground.

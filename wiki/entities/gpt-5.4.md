@@ -2,7 +2,7 @@
 title: "GPT-5.4"
 slug: gpt-5.4
 type: model
-last_updated: 2026-05-14
+last_updated: 2026-06-18
 ---
 
 # GPT-5.4
@@ -32,8 +32,15 @@ GPT-5.4 Cyber represents OpenAI's response to Anthropic's Claude Mythos in the c
 
 On May 18, 2026, GPT-5.4-mini was added to GitHub Copilot Cloud Agent alongside Claude Haiku 4.5 — both positioned for faster, more cost-efficient models for simple coding tasks. This signals OpenAI's continued push into the "good enough" tier for high-volume, low-cost coding assistance. The model tiering reflects the emerging reality: complex reasoning goes to premium models (Opus/Sonnet), simple tasks go to Haiku/GPT-mini — agents increasingly route based on task complexity.
 
+**On June 17, 2026, GPT-5.4 demonstrated a major shift from "pattern matching" to "conceptual breakthroughs":**
+- **Medicinal Chemistry**: Integrated with the [[entities/maria-agent]], it successfully optimized the Chan-Lam coupling reaction by identifying TEMPO as a key additive through 10,000+ automated experiments.
+- **Mathematics**: Solved the 80-year-old Planar Unit Distance Conjecture (Paul Erdős, 1946), proving a logical breakthrough in a-priori mathematical structure understanding.
+
 ## Connections
-- [[sources/openai]] — GPT-5.4 was OpenAI's fastest family release cycle, establishing the multi-variant strategy (Thinking, Mini, Nano, Cyber) before GPT-5.5 replaced it as flagship
-- [[entities/claude-mythos]] — GPT-5.4 Cyber and Claude Mythos created the defensive-cybersecurity frontier-model category: both are too capable for general release, both require vetting, and both signal that cybersecurity is becoming a specialized model domain distinct from general chatbot competition
-- [[entities/gpt-5.4-cyber]] — The cybersecurity variant
-- [[entities/copilot-agent-tier]] — GPT-5.4-mini added to Copilot Cloud Agent on May 18 alongside Claude Haiku 4.5 for fast/cost-efficient simple coding tasks
+- [[sources/openai]] — GPT-5.4 was OpenAI's fastest family release cycle, establishing the multi-variant strategy (Thinking, Mini, Nano, Cyber) before GPT-5.5 replaced it as flagship.
+- [[entities/claude-mythos]] — GPT-5.4 Cyber and Claude Mythos created the defensive-cybersecurity frontier-model category: both are too capable for general release, both require vetting, and both signal that cybersecurity is becoming a specialized model domain distinct from general chatbot competition.
+- [[entities/gpt-5.4-cyber]] — The cybersecurity variant.
+- [[entities/copilot-agent-tier]] — GPT-5.4-mini added to Copilot Cloud Agent on May 18 alongside Claude Haiku 4.5 for fast/cost-efficient simple coding tasks.
+- [[entities/maria-agent]] — Powers the reasoning and hypothesis generation for Maria's medicinal chemistry loop.
+- [[ideas/conceptual-leaps]] — GPT-5.4's solution to the Planar Unit Distance Conjecture is the primary evidence for AI's move toward genuine conceptual breakthroughs.
+- [[ideas/agentic-science]] — The integration of GPT-5.4 and Maria realizes the "Agentic Science" paradigm.
