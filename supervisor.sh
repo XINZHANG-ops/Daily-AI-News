@@ -121,13 +121,8 @@ run_build_steps() {
   log "git pull --ff-only"
   git pull --ff-only
 
-  log "Step 1/2: build_sqlite (rebuild database from JSON)"
+  log "Step 1/1: build_sqlite (rebuild database from JSON)"
   python3 -u build_sqlite.py
-
-  log "Step 2/2: wiki_build (agent builds wiki)"
-  if ! bash wiki_build.sh; then
-    log "WARNING: wiki_build.sh failed (non-fatal), continuing..."
-  fi
 }
 
 restart_all() {
