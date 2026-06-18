@@ -1135,3 +1135,10 @@ Already up to date.
 • 统一了 `sources/prometheus` 的知识内容，将原 `entities` 页面中的详细指标与重要性分析合并至公司页，确保信息不冗余且维度完整。
 • 完成了全量索引同步，确保 `wiki/index.md` 与实际文件完全一致，并更新了 `wiki/log.md` 记录此次健康检查的所有修复操作。
 [2026-06-18 01:09:34] Wiki lint 完成（退出码 0）。
+[main fdd4d87] wiki: lint 2026-06-18
+ 21 files changed, 1255 insertions(+), 476 deletions(-)
+ create mode 100644 index_files.txt
+ delete mode 100644 wiki/entities/gpt-5.4-cyber.md
+ delete mode 100644 wiki/entities/gpt-5.5-cyber.md
+ delete mode 100644 wiki/entities/prometheus.md
+ rename wiki/{entities => sources}/enisa.md (100%)

@@ -1,0 +1,160 @@
+{
+  "date": "2026-06-18",
+  "github_repos": [
+    {
+      "name": "timwal78/ghost-layer",
+      "url": "https://github.com/timwal78/ghost-layer",
+      "description": {
+        "en": "An ephemeral execution layer for AI agents that provides short-lived, cryptographically signed signing keys to remove the need for persistent, high-risk credentials.",
+        "zh": "一个为 AI Agent 提供的瞬时执行层，通过提供短寿命、加密签名的签名密钥，消除了对持久化、高风险凭证的依赖。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "jd-opensource/JoyAI-VL-Interaction",
+      "url": "https://github.com/jd-opensource/JoyAI-VL-Interaction",
+      "description": {
+        "en": "An 8B-scale vision-first interaction model for real-time video-language interaction, enabling AI to be 'present' in a scene and decide when to speak based on visual triggers.",
+        "zh": "一个 8B 规模的视觉优先交互模型，用于实时视频-语言交互，使 AI 能够“存在”于场景中并根据视觉触发器决定何时发言。"
+      },
+      "stars": "2.1k",
+      "forks": "156"
+    },
+    {
+      "name": "D4Vinci/Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": {
+        "en": "An adaptive web scraping library that uses AI to automatically re-locate elements and adapt to website structure shifts in real-time.",
+        "zh": "一个自适应网页抓取库，利用 AI 自动重新定位元素，并实时适应网站结构的变更。"
+      },
+      "stars": "940",
+      "forks": "62"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI's GPT-5.4 and Molecule.one's Maria Agent Advance Medicinal Chemistry",
+        "zh": "OpenAI 的 GPT-5.4 与 Molecule.one 的 Maria Agent 推动药物化学进步"
+      },
+      "url": "https://openai.com/index/ai-chemist-improves-reaction/",
+      "source": "OpenAI",
+      "time": "2026-06-17",
+      "description": {
+        "en": "OpenAI's GPT-5.4, integrated with the Maria agentic AI and a high-throughput lab, successfully improved a challenging Chan-Lam coupling reaction in medicinal chemistry, finding a key additive (TEMPO) through 10,000+ experiments.",
+        "zh": "OpenAI 的 GPT-5.4 结合 Maria 代理 AI 和高通量实验室，成功改善了药物化学中具有挑战性的 Chan-Lam 偶联反应，通过 10,000 多次实验发现了一个关键添加剂 (TEMPO)。"
+      },
+      "insight": {
+        "en": "This marks a shift from 'AI for research' to 'Agentic Science.' By closing the loop between hypothesis generation and physical lab execution, AI is now acting as a lead chemist, not just a calculator. This accelerates the drug discovery cycle from months to days.",
+        "zh": "这标志着从“研究用 AI”向“代理科学 (Agentic Science)”的转变。通过将假设生成与物理实验室执行闭环，AI 现在扮演的是首席化学家而非简单的计算器，将药物研发周期从月级缩短至天级。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Model Solves 80-Year-Old Planar Unit Distance Conjecture",
+        "zh": "OpenAI 模型破解 80 年前的平面单位距离猜想"
+      },
+      "url": "https://www.zmescience.com/science/news-science/openai-model-cracked-an-80-year-old-math-problem-and-mathematicians-are-stunned/",
+      "source": "zmescience",
+      "time": "2026-06-17",
+      "description": {
+        "en": "An internal OpenAI model has provided a proof for the planar unit distance conjecture posed by Paul Erdős in 1946, a problem that had remained unsolved for eight decades.",
+        "zh": "OpenAI 的一个内部模型为 Paul Erdős 在 1946 年提出的平面单位距离猜想提供了证明，该问题在过去 80 年中一直未被解决。"
+      },
+      "insight": {
+        "en": "Solving a classic conjecture like this indicates AI is moving beyond pattern matching toward genuine conceptual leaps. Unlike the 'chemistry' news which is an iterative search, this is a logical breakthrough, suggesting models are developing a deeper, a-priori understanding of mathematical structures.",
+        "zh": "解决这类经典猜想表明 AI 正在从“模式匹配”转向真正的“概念跃迁”。与化学领域的迭代搜索不同，这是一个逻辑突破，暗示模型正在对数学结构产生更深层的先验理解。"
+      }
+    },
+    {
+      "title": {
+        "en": "Midjourney Pivots to Hardware with Full-Body Ultrasonic Scanner",
+        "zh": "Midjourney 转型硬件，推出全身超声波扫描仪"
+      },
+      "url": "https://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/",
+      "source": "Engadget",
+      "time": "2026-06-17",
+      "description": {
+        "en": "Midjourney announced 'Midjourney Medical,' debuting a full-body ultrasonic scanner capable of producing 3D body maps in under 60 seconds, drastically faster than traditional MRIs.",
+        "zh": "Midjourney 宣布成立 \"Midjourney Medical\"，推出其首款硬件产品：全身超声波扫描仪，可在 60 秒内生成 3D 身体地图，速度远超传统 MRI。"
+      },
+      "insight": {
+        "en": "Shocking pivot from 2D art to 3D medical imaging. Midjourney is betting that its mastery of latent space and generative reconstruction can be applied to physical biological structures, moving from 'generating images' to 'reconstructing reality' with extreme efficiency.",
+        "zh": "从 2D 艺术到 3D 医学成像的惊人转型。Midjourney 押注其在潜空间和生成式重建方面的专长可应用于物理生物结构，将“生成图像”升华为极其高效的“现实重建”。"
+      }
+    },
+    {
+      "title": {
+        "en": "G7 Summit: Tensions Rise Over U.S. AI Sovereignty and Export Blocks",
+        "zh": "G7 峰会：美国 AI 主权与出口禁令引发紧张局势"
+      },
+      "url": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/",
+      "source": "TechCrunch",
+      "time": "2026-06-17",
+      "description": {
+        "en": "G7 leaders expressed concern over U.S. control of AI after the U.S. blocked exports of Anthropic's Mythos 5 and Fable 5 models on national security grounds, leading to calls for a 'trusted partners' scheme.",
+        "zh": "在美国以国家安全为由禁止出口 Anthropic 的 Mythos 5 和 Fable 5 模型后，G7 领导人对美国控制 AI 表示担忧，呼吁建立“信任伙伴”方案以确保数字主权。"
+      },
+      "insight": {
+        "en": "The 'AI Cold War' has shifted from chips to weights. Blocking the latest frontier models (Mythos/Fable) creates a strategic dependency that non-U.S. nations now view as a critical vulnerability. AI is now officially a primary instrument of geopolitical leverage.",
+        "zh": "“AI 冷战”已从芯片转向权重。禁止最新前沿模型 (Mythos/Fable) 的出口创造了一种战略依赖，非美国国家现将其视为关键漏洞。AI 正式成为地缘政治杠杆的主要手段。"
+      }
+    },
+    {
+      "title": {
+        "en": "SpaceX Set to Acquire AI Coding Tool Cursor for $60 Billion",
+        "zh": "SpaceX 将以 600 亿美元收购 AI 编程工具 Cursor"
+      },
+      "url": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/",
+      "source": "Industry Reports",
+      "time": "2026-06-17",
+      "description": {
+        "en": "Reports indicate SpaceX is acquiring Cursor in a $60 billion stock deal to integrate advanced agentic coding into its engineering and aerospace workflows.",
+        "zh": "报道称 SpaceX 将以 600 亿美元的股票交易收购 Cursor，旨在将先进的代理编程集成到其工程和航天工作流中。"
+      },
+      "insight": {
+        "en": "This is a massive bet on 'Software-Defined Engineering.' SpaceX doesn't just want a better IDE; they want an AI-native engineering pipeline where agentic code can design, simulate, and optimize rockets in a tight loop, potentially bypassing human bottlenecks in aerospace design.",
+        "zh": "这是对“软件定义工程”的巨额押注。SpaceX 想要的不仅仅是一个更好的 IDE，而是一个 AI 原生的工程流水线，让代理代码能够闭环地设计、模拟和优化火箭，从而在航天设计中绕过人类瓶颈。"
+      }
+    },
+    {
+      "title": {
+        "en": "Pinterest Launches 'Ask Pinterest' Conversational Shopping App",
+        "zh": "Pinterest 推出 'Ask Pinterest' 对话式购物应用"
+      },
+      "url": "https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest/",
+      "source": "TechCrunch",
+      "time": "2026-06-17",
+      "description": {
+        "en": "Pinterest is experimenting with a chatbot-like interface for product discovery, moving from a visual grid to a conversational agent for personalized shopping recommendations.",
+        "zh": "Pinterest 正在尝试用聊天机器人界面替代传统的视觉网格，通过对话代理实现个性化的产品发现和购物推荐。"
+      },
+      "insight": {
+        "en": "The death of the 'grid' UI. Pinterest is moving from 'searching for images' to 'discussing needs.' This mirrors the broader trend of 'Agentic Commerce' where the AI handles the filtering and curation, and the user only makes the final decision.",
+        "zh": "“网格” UI 的终结。Pinterest 正在从“搜索图像”转向“讨论需求”。这反映了更广泛的“代理商业 (Agentic Commerce)”趋势：由 AI 完成过滤和筛选，用户仅做最终决策。"
+      }
+    },
+    {
+      "title": {
+        "en": "Jeff Bezos's Prometheus Raises $12 Billion for 'Artificial General Engineer'",
+        "zh": "杰夫-贝佐斯的 Prometheus 融资 120 亿美元打造“通用人工智能工程师”"
+      },
+      "url": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/",
+      "source": "Industry Reports",
+      "time": "2026-06-17",
+      "description": {
+        "en": "Prometheus has raised $12 billion to build an AI capable of general engineering tasks in the physical world, bridging the gap between digital reasoning and robotic execution.",
+        "zh": "Prometheus 融资 120 亿美元，旨在构建一个能够在物理世界中执行通用工程任务的 AI，弥合数字推理与机器人执行之间的差距。"
+      },
+      "insight": {
+        "en": "While Cursor optimizes the 'digital' engineer, Prometheus targets the 'physical' engineer. Combined with SpaceX's move, we are seeing a focused race to automate the highest-value human skill: complex systems engineering.",
+        "zh": "如果说 Cursor 优化的是“数字”工程师，那么 Prometheus 瞄准的是“物理”工程师。结合 SpaceX 的动向，我们看到一场旨在自动化最高价值人类技能（复杂系统工程）的集中竞赛。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "June 18, 2026, reveals a critical inflection point where AI is decisively breaking out of the 'chat box' and into the 'physical and conceptual world.' The day's narrative is defined by an aggressive expansion into three distinct dimensions: the abstract (solving 80-year-old math), the material (autonomous drug discovery), and the physical (ultrasonic hardware and general engineering). The acquisition of Cursor by SpaceX and the rise of Prometheus signify that the 'coding agent' era is evolving into the 'engineering agent' era, where AI doesn't just write scripts but designs physical infrastructure. Simultaneously, the G7 tensions confirm that frontier models have become the new nuclear weapons of the digital age—strategic assets that nations will fight to possess and protect. The common thread is 'closing the loop': whether it's the loop from hypothesis to lab, from conceptual logic to mathematical proof, or from digital design to physical rocket.",
+    "zh": "2026年6月18日揭示了一个关键的拐点：AI 正在果断地走出“聊天框”，进入“物理与概念世界”。今天的叙事由向三个不同维度的激进扩张定义：抽象维度（破解80年数学难题）、物质维度（自主药物研发）以及物理维度（超声波硬件与通用工程）。SpaceX 对 Cursor 的收购以及 Prometheus 的崛起标志着“编程代理”时代正在演变为“工程代理”时代——AI 不再仅仅是编写脚本，而是在设计物理基础设施。与此同时，G7 峰会的紧张局势证实，前沿模型已成为数字时代的“新核武”，是各国争夺并保护的战略资产。今天的所有线索都指向一个词：“闭环”：无论是从假设到实验室、从概念逻辑到数学证明，还是从数字设计到物理火箭的闭环。"
+  }
+}
