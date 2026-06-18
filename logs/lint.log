@@ -1127,3 +1127,11 @@ Already up to date.
 [2026-06-17 01:00:02] 开始 wiki lint，模型: gemma4:31b-cloud
 Already up to date.
 [2026-06-17 01:00:03] 预扫描通过，无断链/孤儿页/空页，跳过 LLM。
+[2026-06-18 01:00:05] 开始 wiki lint，模型: gemma4:31b-cloud
+Already up to date.
+---
+• 修复了 5 处断链（如 `entities/prometheus` $\to$ `sources/amazon`）并为 4 个孤儿页（如 `ideas/dual-use-dilemma`）建立了由 `topics/ai_safety` 等主页引导的逻辑连接。
+• 优化了结构完整性：删除了不存在的 `entities/cocoindex` 索引，将组织机构 `entities/enisa` 迁移至 `sources/`，并合并了重复的 `gpt-5.4-cyber` 与 `gpt-5.5-cyber` 页面至主模型页。
+• 统一了 `sources/prometheus` 的知识内容，将原 `entities` 页面中的详细指标与重要性分析合并至公司页，确保信息不冗余且维度完整。
+• 完成了全量索引同步，确保 `wiki/index.md` 与实际文件完全一致，并更新了 `wiki/log.md` 记录此次健康检查的所有修复操作。
+[2026-06-18 01:09:34] Wiki lint 完成（退出码 0）。

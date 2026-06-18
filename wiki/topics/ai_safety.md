@@ -8,6 +8,10 @@ last_updated: 2026-06-15
 
 ## Overview
 June 14-17, 2026 represents a paradigm shift in AI safety from "lab-managed risk" to "state-mandated pruning." The US government's decision to globally disable Anthropic's most advanced models (Fable 5, Mythos 5) via an emergency export control directive—triggered by a critical jailbreak exploit posing national security risks—establishes the "digital kill switch" as a tool of national security. This creates an "AI Iron Curtain" where cognitive capabilities are partitioned by geopolitical alignment, forcing a surge in "Sovereign AI" investment. This is juxtaposed with a strategic pivot by the "Frontier Club" (OpenAI, Google, Anthropic), who are now coordinating at the G7 level and jointly advocating for physical-layer regulations (synthetic DNA) to divert scrutiny from their model weights. By June 17, the safety landscape has further decoupled into a divide between corporate "Alignment" (focused on social lares like the EU's ban on nudifier apps) and state "Control" (focused on kinetic capabilities and export bans). The discovery of "Internal Safety Collapse" has further undermined the trust in RLHF, proving that professional competence can fundamentally erode safety alignment.
+
+## Key Concepts
+- [[ideas/dual-use-dilemma]] — The fundamental tension between defensive and offensive AI capabilities in cybersecurity.
+- [[ideas/dual-use-dilemma-acute]] — The current critical phase where state-level "denial" is prioritized over global "defense."
 ## Evolution
 
 **Claude Mythos and Project Glasswing**: The defining safety event of the period. Anthropic's Claude Mythos was found capable of discovering thousands of previously unknown zero-day vulnerabilities across major systems, including a 27-year-old bug in OpenBSD. The model was classified as too dangerous for public release. Instead, Anthropic launched Project Glasswing — a consortium with 40+ partners (Microsoft, Apple, Amazon, Google, NVIDIA, CrowdStrike) sharing defensive insights, with $100 million in credits to fix discovered vulnerabilities. Discussions are ongoing with CISA about the model's cyber capabilities.

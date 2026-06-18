@@ -7,7 +7,7 @@ last_updated: 2026-06-15
 # GitHub Trends
 
 ## Overview
-June 14-17, 2026 highlights a strategic shift toward AI resilience, operational sovereignty, and a new generation of agent-native interfaces. Following the global shutdown of Anthropic's flagship models, tools like Open Notebook (2.4k stars) have surged as self-hosted, provider-agnostic alternatives to proprietary ecosystems. Simultaneously, the industry is moving toward "Generative UI" via frameworks like CopilotKit (3.1k stars), allowing agents to dynamically build interfaces. By June 17, a new wave of "extreme-performance" and "behavioral" repos has emerged, including Ouroboros Kernelsmith for GPU optimization and Social Stockfish for conversational game-theory, signaling a move from general-purpose tools to highly specialized, goal-oriented agency.
+June 14-17, 2026 highlights a strategic shift toward AI resilience, operational sovereignty, and a new generation of agent-native interfaces. Following the global shutdown of Anthropic's flagship models, tools like Open Notebook (2.4k stars) have surged as self-hosted, provider-agnostic alternatives to proprietary ecosystems. Simultaneously, the industry is moving toward "Generative UI" via frameworks like CopilotKit (3.1k stars), allowing agents to dynamically build interfaces. By June 17, a new wave of "extreme-performance" and "behavioral" repos has emerged, including [[entities/ouroboros-kernelsmith]] for GPU optimization and [[entities/social-stockfish]] for conversational game-theory, signaling a move from general-purpose tools to highly specialized, goal-oriented agency.
 
 ## Evolution
 

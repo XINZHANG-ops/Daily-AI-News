@@ -26,4 +26,3 @@ By applying a game-theory approach (MCTS) to human social interaction, Social St
 ## Connections
 - [[topics/github_trends]] — Trending June 17 as an interesting application of MCTS in social contexts
 - [[topics/agentic_ai]] — An example of an agent using advanced search algorithms to optimize for a high-level social objective
-- [[ideas/ai-social-engineering]] — Represents the technical realization of AI-driven social optimization/manipulation

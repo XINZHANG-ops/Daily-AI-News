@@ -24,4 +24,3 @@ Lathe addresses a critical psychological and educational side effect of the "AI 
 ## Connections
 - [[topics/github_trends]] — Reflects a growing counter-movement focused on "human-in-the-loop" skill preservation as AI agents become more autonomous
 - [[entities/claude-code]] — A pedagogical companion to tools like Claude Code; where Claude Code provides the solution, Lathe provides the path to understanding that solution
-- [[ideas/ai-induced-skill-atrophy]] — Directly combats the pattern where developers lose the ability to write complex code without AI assistance

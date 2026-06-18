@@ -43,6 +43,7 @@ entities/claude-opus-4-7
 entities/claude-opus-4-8
 entities/claude-security
 entities/claw-code
+entities/cocoindex
 entities/codex
 entities/colorado-sb-26-189
 entities/colossus-1

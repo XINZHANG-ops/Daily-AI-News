@@ -25,7 +25,7 @@ GPT-5.4 is OpenAI's model family released in March 2026, available in multiple v
 
 **GPT-5.4 Mini/Nano**: Near-top-tier performance at costs most developers can afford — OpenAI's strategy of delivering advanced reasoning in efficient package sizes.
 
-**GPT-5.4 Cyber**: Released April 14 as a defensive cybersecurity variant with lowered refusal boundaries and binary reverse engineering capabilities. Expanded Trusted Access for Cyber (TAC) program to thousands of vetted defenders.
+**GPT-5.4 Cyber**: Released April 14 as a defensive cybersecurity variant with lowered refusal boundaries and binary reverse engineering capabilities. By April 20, the Trusted Access for Cyber (TAC) program expanded to hundreds of organizations and thousands of vetted defenders globally. Codex Security has already contributed to fixing over 3,000 critical vulnerabilities. This model represents OpenAI's first restricted-release model, establishing a safety architecture that Anthropic later replicated with Claude Mythos and Project Glasswing.
 
 ## Significance
 GPT-5.4 Cyber represents OpenAI's response to Anthropic's Claude Mythos in the cybersecurity model space. Both models signal a new category — frontier models optimized for defensive security work.

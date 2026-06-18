@@ -26,5 +26,4 @@ This project demonstrates the move toward "closed-loop" AI coding, where the LLM
 ## Connections
 - [[topics/github_trends]] — Trending June 17 as a prime example of high-performance AI-generated code
 - [[topics/agentic_ai]] — An example of a "verifier" agent system that ensures the output of a generative model meets extreme performance requirements
-- [[ideas/ai-coding-as-growth-driver]] — Pushing the boundaries of GPU performance through AI-generated kernels directly drives the efficiency of the entire AI stack
 - [[entities/claude-code]] — While Claude Code writes the logic, systems like Kernelsmith provide the rigorous verification needed for performance-critical GPU code

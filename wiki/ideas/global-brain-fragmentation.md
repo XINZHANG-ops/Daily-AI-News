@@ -11,7 +11,7 @@ The "Global Brain" illusion—the idea that the most advanced AI capabilities wo
 
 ## Evidence
 - [[sources/anthropic]] — The global shutdown of Myth la-5 and Fable 5 on June 16, 2026, effectively erased the intelligence layer for an entire continent of non-US users overnight.
-- [[sources/eu-regulators]] — European researchers' call for an "Airbus moment" for AI in response to the U.S. shutdown, emphasizing the need for sovereign AI to avoid geopolitical dependence.
+- [[sources/eu-ai-office]] — European researchers' call for an "Airbus moment" for AI in response to the U.S. shutdown, emphasizing the need for sovereign AI to avoid geopolitical dependence.
 - [[ideas/intelligence-as-controlled-substance]] — The legal mechanism (export controls) used to trigger this fragmentation.
 
 ## Implications
