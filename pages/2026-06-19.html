@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 19, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 19, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/karpathy/build-nanogpt" class="card-title" target="_blank">karpathy/build-nanogpt</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 12.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.1k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A step-by-step reproduction of the nanoGPT architecture, designed as a guide to understanding GPT-style models from scratch.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">nanoGPT 架构的逐步复现，旨在引导用户从零开始理解 GPT 类模型的内部机制。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/FoundationVision/LlamaGen" class="card-title" target="_blank">FoundationVision/LlamaGen</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 410 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A family of scalable image generation models that use the LLM next-token prediction paradigm to challenge diffusion models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个可扩展的图像生成模型系列，采用 LLM 的次标记预测（next-token prediction）范式，挑战目前主流的扩散模型。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/sgl-project/sglang" class="card-title" target="_blank">sgl-project/sglang</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 8.7k stars</div>
+                                <div class="meta-item"><span>🍴</span> 920 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A high-performance serving framework for LLMs and multimodal models, focusing on maximizing throughput and efficiency.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个高性能的 LLM 及多模态模型推理框架，专注于最大化吞吐量和效率。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">2026-06-19</div>
+                    <a href="https://www.theverge.com/2024/6/19/24181870/openai-former-chief-scientist-ilya-sutskever-ssi-safe-superintelligence" class="card-title" target="_blank" data-lang="en">Ilya Sutskever Launches Safe Superintelligence Inc. (SSI)</a>
+                    <a href="https://www.theverge.com/2024/6/19/24181870/openai-former-chief-scientist-ilya-sutskever-ssi-safe-superintelligence" class="card-title" target="_blank" data-lang="zh" style="display: none;">Ilya Sutskever 成立 Safe Superintelligence Inc. (SSI)</a>
+                    <p class="card-description" data-lang="en">OpenAI co-founder Ilya Sutskever announces SSI, a for-profit lab dedicated to creating a safe superintelligent AI, insulated from short-term commercial pressures.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 联合创始人 Ilya Sutskever 宣布成立 SSI，一家致力于创建安全超智能 AI 的营利性实验室，旨在摆脱短期商业压力的干扰。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-06-18</div>
+                    <a href="https://techcrunch.com/2024/06/17/deepminds-new-ai-generates-soundtracks-and-dialog-for-videos/" class="card-title" target="_blank" data-lang="en">Google DeepMind Unveils V2A (Video-to-Audio) Technology</a>
+                    <a href="https://techcrunch.com/2024/06/17/deepminds-new-ai-generates-soundtracks-and-dialog-for-videos/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google DeepMind 发布 V2A (视频转音频) 技术</a>
+                    <p class="card-description" data-lang="en">DeepMind's new tool uses video pixels and text prompts to generate synchronized soundtracks, sound effects, and dialogue for videos.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepMind 的新工具利用视频像素和文本提示，为视频生成同步的配乐、音效和对话。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AppleInsider</span>
+                    <div class="news-time">2026-06-19</div>
+                    <a href="https://appleinsider.com/articles/24/06/19/apple-intelligence-impresses-now-and-its-still-very-early" class="card-title" target="_blank" data-lang="en">Apple Intelligence First Impressions: Privacy-First Integration</a>
+                    <a href="https://appleinsider.com/articles/24/06/19/apple-intelligence-impresses-now-and-its-still-very-early" class="card-title" target="_blank" data-lang="zh" style="display: none;">Apple Intelligence 首评：隐私优先的集成</a>
+                    <p class="card-description" data-lang="en">Early reviews of Apple Intelligence highlight its seamless integration of on-device personal context and an optional partnership with ChatGPT.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Apple Intelligence 的早期评论强调了其在设备端个人上下文与 ChatGPT 可选合作伙伴关系之间的无缝集成。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-06-18</div>
+                    <a href="https://techcrunch.com/2024/06/18/genspark-is-the-latest-attempt-at-an-ai-powered-search-engine/" class="card-title" target="_blank" data-lang="en">Genspark Launches AI-Native Search Engine with 'Sparkpages'</a>
+                    <a href="https://techcrunch.com/2024/06/18/genspark-is-the-latest-attempt-at-an-ai-powered-search-engine/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Genspark 发布 AI 原生搜索引擎及 'Sparkpages'</a>
+                    <p class="card-description" data-lang="en">Genspark uses specialized AI models to generate 'Sparkpages'—distilled, single-page summaries of web content in response to queries.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Genspark 使用专业 AI 模型生成 'Sparkpages'——针对查询结果生成的精炼、单页网页内容摘要。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-06-17</div>
+                    <a href="https://techcrunch.com/2024/06/17/perplexity-now-displays-results-for-temperature-currency-conversion-and-simple-math-so-you-dont-have-to-use-google/" class="card-title" target="_blank" data-lang="en">Perplexity Introduces Utility Cards for Direct Answers</a>
+                    <a href="https://techcrunch.com/2024/06/17/perplexity-now-displays-results-for-temperature-currency-conversion-and-simple-math-so-you-dont-have-to-use-google/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Perplexity 推出实用信息卡片实现直接回答</a>
+                    <p class="card-description" data-lang="en">Perplexity now displays high-density factual cards for weather, currency, and math, reducing the need for traditional Google Search for utility queries.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Perplexity 现在为天气、货币转换和简单数学运算显示高密度事实卡片，减少了在处理实用查询时对传统 Google 搜索的需求。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-06-18</div>
+                    <a href="https://techcrunch.com/2024/06/18/snap-previews-its-real-time-image-model-that-can-generate-ar-experiences/" class="card-title" target="_blank" data-lang="en">Snap Previews Real-Time On-Device Image Diffusion for AR</a>
+                    <a href="https://techcrunch.com/2024/06/18/snap-previews-its-real-time-image-model-that-can-generate-ar-experiences/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Snap 预览实时端侧图像扩散技术用于 AR</a>
+                    <p class="card-description" data-lang="en">Snap demonstrated a real-time on-device image model that can generate AR experiences and launched Lens Studio 5.0 for generative AI asset creation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Snap 展示了一种实时端侧图像模型，可生成 AR 体验，并推出了用于生成 AI 资产创建的 Lens Studio 5.0。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-06-18</div>
+                    <a href="https://techcrunch.com/2024/06/18/waabis-genai-promises-to-do-so-much-more-than-power-self-driving-trucks/" class="card-title" target="_blank" data-lang="en">Waabi Announces Reasoning-Based GenAI for Autonomous Trucking</a>
+                    <a href="https://techcrunch.com/2024/06/18/waabis-genai-promises-to-do-so-much-more-than-power-self-driving-trucks/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Waabi 发布基于推理的生成式 AI 用于自动驾驶卡车</a>
+                    <p class="card-description" data-lang="en">Autonomous trucking startup Waabi uses a reasoning-based approach via its 'Waabi World' simulator, moving beyond traditional imitation learning to better handle edge cases.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">自动驾驶卡车初创公司 Waabi 通过其 'Waabi World' 模拟器采用基于推理的方法，超越传统的模仿学习，以更好地处理边缘情况。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Today's AI landscape is defined by 'The Great Divergence'. We are witnessing a split between Commercial Velocity and Fundamental Rigor. On one side, companies like Apple, Snap, and Perplexity are racing to integrate AI into every UX pixel—whether through 'Ambient AI' in AR or 'Synthesized Destinations' in search. On the other side, a counter-current led by Ilya Sutskever (SSI) and Waabi is emerging, prioritizing reasoning-based world models and long-term safety over immediate productization. This tension suggests that as the 'low-hanging fruit' of generative UI is plucked, the industry is returning to a deeper conflict over whether the path to AGI is a series of iterative product improvements or a fundamental scientific breakthrough isolated from commercial noise.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">今天的 AI 格局被“大分叉”所定义。我们正目睹“商业速度”与“基础严谨性”之间的分裂。一方面，Apple, Snap 和 Perplexity 等公司正竞相将 AI 集成到每一个 UX 像素中——无论是通过 AR 中的“环境 AI”还是搜索中的“合成目的地”。另一方面，由 Ilya Sutskever (SSI) 和 Waabi 领导的反向潮流正在兴起，他们将基于推理的世界模型和长期安全性置于即时产品化之上。这种紧张关系表明，随着生成式 UI 的“低垂果实”被采摘殆尽，行业正在回归到一个深层冲突：通往 AGI 的道路究竟是一系列迭代的产品改进，还是一个与商业噪音隔离的基础科学突破。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
