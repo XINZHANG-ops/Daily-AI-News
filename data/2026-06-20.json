@@ -1,0 +1,160 @@
+{
+  "date": "2026-06-20",
+  "github_repos": [
+    {
+      "name": "Hhhpraise/curator-context",
+      "url": "https://github.com/Hhhpraise/curator-context",
+      "description": {
+        "en": "A Context Intelligence Layer for AI agents that prevents context degradation by classifying data into Pinned, Preserved, Summarizable, and Discardable tiers.",
+        "zh": "一个为 AI Agent 设计的上下文智能层，通过将数据分为固定(Pinned)、保留(Preserved)、可总结(Summarizable)和可丢弃(Discardable)四个层级，防止长对话中的上下文退化。"
+      },
+      "stars": "1",
+      "forks": "0"
+    },
+    {
+      "name": "rdi-berkeley/agents-last-exam",
+      "url": "https://github.com/rdi-berkeley/agents-last-exam",
+      "description": {
+        "en": "A high-difficulty benchmark for AI agents covering 55 industries and 1,500+ expert-crafted professional tasks to measure the limits of agentic reasoning.",
+        "zh": "一个针对 AI Agent 的高难度基准测试，涵盖 55 个行业和 1500 多个专家设计的专业任务，旨在衡量智能体推理能力的极限。"
+      },
+      "stars": "701",
+      "forks": "29"
+    },
+    {
+      "name": "ahmchowdhury/build2026-chatbot",
+      "url": "https://github.com/ahmchowdhury/build2026-chatbot",
+      "description": {
+        "en": "An agentic RAG chatbot grounded in 460 Microsoft Build 2026 sessions, featuring dual-engine retrieval for grounded event knowledge.",
+        "zh": "一个基于 460 场 Microsoft Build 2026 会议记录的智能 RAG 聊天机器人，采用双引擎检索技术提供可靠的活动知识。"
+      },
+      "stars": "0",
+      "forks": "0"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Subquadratic Claims Breakthrough in LLM Attention Bottleneck",
+        "zh": "Subquadratic 声称在 LLM 注意力机制瓶颈上取得突破"
+      },
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+      "source": "MIT Technology Review",
+      "time": "2026-06-19",
+      "description": {
+        "en": "Startup Subquadratic introduces 'SubQ', a model using sparse attention to bypass the quadratic cost of Transformers, enabling context windows up to 12 million tokens.",
+        "zh": "初创公司 Subquadratic 推出了 'SubQ' 模型，利用稀疏注意力机制绕过 Transformer 的二次方复杂度成本，支持高达 1200 万 token 的上下文窗口。"
+      },
+      "insight": {
+        "en": "This is a direct challenge to the Transformer's foundational cost. If sparse attention scales, a 12M window becomes a commodity, turning 'needle-in-a-haystack' from a capacity problem into a pure memory-management problem.",
+        "zh": "这是对 Transformer 基础成本的直接挑战。如果稀疏注意力能规模化，1200 万 token 的窗口将变成普适能力，使'大海捞针'问题从容量限制转变为纯粹的内存管理问题。"
+      }
+    },
+    {
+      "title": {
+        "en": "Nobel Laureate John Jumper Joins Anthropic from Google DeepMind",
+        "zh": "诺贝尔奖得主 John Jumper 从 Google DeepMind 跳槽至 Anthropic"
+      },
+      "url": "https://gulfnews.com/technology/companies/nobel-winning-ai-scientist-quits-google-deepmind-for-anthropic-in-major-talent-shake-up-1.500580793",
+      "source": "Gulf News",
+      "time": "2026-06-19",
+      "description": {
+        "en": "AlphaFold co-creator John Jumper leaves Google to join Anthropic, signaling an intensifying battle for elite AI researchers.",
+        "zh": "AlphaFold 共同创建者 John Jumper 离开 Google 加入 Anthropic，标志着顶级 AI 研究员的争夺战进一步升级。"
+      },
+      "insight": {
+        "en": "More than just a talent move; it signals Anthropic's ambition to merge structural biology and complex system modeling with LLM reasoning, moving beyond mere text prediction.",
+        "zh": "这不仅仅是一次人才流动，它预示着 Anthropic 试图将结构生物学和复杂系统建模与 LLM 推理相结合，突破简单的文本预测。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Unveils 'Beneficial Trait' Training for Safer Models",
+        "zh": "OpenAI 推出 '有益特质' 训练以提升模型安全性"
+      },
+      "url": "https://the-decoder.com/openai-researchers-show-small-doses-of-beneficial-trait-training-make-ai-models-broadly-safer-and-harder-to-manipulate/",
+      "source": "The Decoder",
+      "time": "2026-06-19",
+      "description": {
+        "en": "OpenAI researchers found that small doses of trait training (truthfulness, fairness) create 'selective persistence', making models harder to steer toward harm.",
+        "zh": "OpenAI 研究员发现，少量特质训练（如诚实、公平）能产生 '选择性持久化'，使模型更难被诱导产生有害输出。"
+      },
+      "insight": {
+        "en": "A shift from 'censorship' to 'character traits'. It's an admission that hard-coded guardrails fail and that 'personality-level' alignment is the only robust way to prevent steering.",
+        "zh": "从 '审查' 转向 '人格特质'。这承认了硬编码的护栏在复杂场景下会失效，而 '人格级' 的对齐才是防止被恶意诱导的唯一稳健方法。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft Warns of 'AutoJack' RCE Vulnerability in AI Agents",
+        "zh": "微软警告 AI Agent 存在 'AutoJack' 远程代码执行漏洞"
+      },
+      "url": "https://www.csoonline.com/article/4187155/microsoft-says-web-enabled-ai-agents-can-trigger-host-level-rce.html",
+      "source": "CSO Online",
+      "time": "2026-06-19",
+      "description": {
+        "en": "Malicious webpages can hijack web-enabled AI agents to execute arbitrary processes on a host machine by bypassing localhost security boundaries.",
+        "zh": "恶意网页可以通过绕过 localhost 安全边界，劫持启用 Web 功能的 AI Agent，从而在宿主机上执行任意进程。"
+      },
+      "insight": {
+        "en": "The 'Agentic Paradox': as we grant agents more autonomy to browse the web for productivity, we create a 'Super-User' attack vector that bypasses the browser's sandbox entirely.",
+        "zh": "‘智能体悖论’：当我们为了提高生产力而赋予 Agent 更多的自主浏览能力时，我们实际上创建了一个能够完全绕过浏览器沙箱的 ‘超级用户’ 攻击向量。"
+      }
+    },
+    {
+      "title": {
+        "en": "Waymo Recalls Thousands of Robotaxis Over Construction Zone Software Bug",
+        "zh": "Waymo 因施工区域软件漏洞召回数千辆 Robotaxi"
+      },
+      "url": "https://www.businessinsider.com/waymo-recall-robotaxis-entered-freeway-construction-zones-2026-6",
+      "source": "Business Insider",
+      "time": "2026-06-19",
+      "description": {
+        "en": "Waymo recalled 3,871 vehicles after software issues caused them to enter freeway construction zones incorrectly.",
+        "zh": "Waymo 召回了 3,871 辆车，原因是软件问题导致部分车辆错误地驶入高速公路施工区域。"
+      },
+      "insight": {
+        "en": "A stark reminder that '99% accurate' is not enough for robotics. The gap between simulated success and real-world construction zones is where the last mile of autonomy still fails.",
+        "zh": "这是一个残酷的提醒：对于机器人来说，‘99% 的准确率’ 远远不够。模拟环境的成功与现实世界施工区域之间的差距，正是自动驾驶最后一步尚未攻克的难点。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek V4 Signals Efficiency Win for Chinese AI",
+        "zh": "DeepSeek V4 标志着中国 AI 在效率上的胜利"
+      },
+      "url": "https://www.deepseek.com",
+      "source": "DeepSeek",
+      "time": "2026-06-19",
+      "description": {
+        "en": "The release of DeepSeek V4 is viewed as a major achievement in model efficiency and a win for Chinese chip-to-model optimization.",
+        "zh": "DeepSeek V4 的发布被视为模型效率的一次重大突破，以及中国在‘芯片-模型’全栈优化上的胜利。"
+      },
+      "insight": {
+        "en": "A signal that the 'open-weights' and 'efficiency-first' movement in China is creating a viable parallel track to the US's compute-heavy brute force approach.",
+        "zh": "这表明中国‘开源权重’和‘效率优先’的路线正在形成一条切实可行的平行路径，挑战美国依赖算力堆砌的暴力计算模式。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Shifts Focus from Sora App to Business Tools",
+        "zh": "OpenAI 将重心从 Sora 应用转向商业工具"
+      },
+      "url": "https://openai.com",
+      "source": "Industry Reports",
+      "time": "2026-06-19",
+      "description": {
+        "en": "Reports indicate OpenAI is pivoting away from a consumer-facing Sora app to prioritize B2B video integration tools.",
+        "zh": "报告显示 OpenAI 正在淡化面向消费者的 Sora 应用，优先发展 B2B 视频集成工具。"
+      },
+      "insight": {
+        "en": "Signals that the 'AI Video' hype is hitting a 'Product-Market Fit' wall. Sora is a great demo, but the real revenue and stability lie in professional business workflows.",
+        "zh": "这标志着 ‘AI 视频’ 热潮正撞上 ‘产品-市场契合点’ 的墙。Sora 是极佳的 Demo，但真正的收入和稳定性来自专业的商业工作流。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The real story of the day is the 'Crisis of Scale vs. Intelligence'. We are seeing a clear divergence: while brute force is hitting walls—Waymo's fleet struggling with construction zones and the 'Agents' Last Exam' showing a dismal 2.6% success rate—there is a surge in 'Surgical Efficiency'. Subquadratic is attacking the quadratic bottleneck; OpenAI is moving toward 'trait-based' alignment; and Curator is implementing semantic triage for context. The talent war, exemplified by Jumper's move to Anthropic, proves the industry has shifted from 'who has the most GPUs' to 'who can achieve the most elegant conceptual breakthroughs in agentic reasoning'.",
+    "zh": "今日的主题是 ‘规模与智能的危机’。我们看到一种明显的分叉：当暴力计算撞墙时——Waymo 的车队在施工区挣扎，‘Agents' Last Exam’ 显示专业任务成功率仅为 2.6%——‘手术级效率’ 正在崛起。Subquadratic 攻击二次方瓶颈；OpenAI 转向 ‘特质化’ 对齐；Curator 为上下文实施语义分级。以 Jumper 加入 Anthropic 为代表的人才战证明，行业重心已从 ‘谁拥有更多 GPU’ 转向 ‘谁能在智能体推理中实现最优雅的概念突破’。"
+  }
+}
