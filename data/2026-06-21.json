@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-21",
+  "github_repos": [
+    {
+      "name": "sid77ai/arbor",
+      "url": "https://github.com/sid77ai/arbor",
+      "description": {
+        "en": "Autonomous research framework that uses a hypothesis-tree to prune failures and harvest successes during long-horizon objectives.",
+        "zh": "一个自主研究框架，通过假设树来修剪失败并收集长期目标的成功经验。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "HarryHsing/OmniAgent",
+      "url": "https://github.com/harryhsing/OmniAgent",
+      "description": {
+        "en": "Omni-modal perception agent that treats video perception as a reasoning task, outperforming larger models with significantly fewer frames.",
+        "zh": "一种全模态感知智能体，将视频感知视为推理任务，以显著减少的帧数超越了更大规模的模型。"
+      },
+      "stars": "950",
+      "forks": "62"
+    },
+    {
+      "name": "AMAP-ML/roleagent",
+      "url": "https://github.com/AMAP-ML/roleagent",
+      "description": {
+        "en": "Bootstraps agents using Dual-Role Evolution: training as both a world model (WIA) and an actor (AIW) to learn from past failures.",
+        "zh": "通过双角色演化引导智能体：同时作为世界模型 (WIA) 和执行者 (AIW) 进行训练，从而从过去的失败中学习。"
+      },
+      "stars": "820",
+      "forks": "45"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "US Government Maintains Ban on Claude Fable 5/Mythos 5",
+        "zh": "美国政府维持对 Claude Fable 5/Mythos 5 的禁令"
+      },
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026",
+      "source": "BuildFastWithAI",
+      "time": "2026-06-21",
+      "description": {
+        "en": "Anthropic's most powerful models remain offline globally after a US export control directive demands 'zero jailbreaks' before relaunch.",
+        "zh": "在美国出口管制指令要求重新发布前必须实现“零越狱”后，Anthropic 最强大的模型在全球范围内仍处于离线状态。"
+      },
+      "insight": {
+        "en": "This isn't just a safety check; it's a geopolitical lever. Demanding 'zero jailbreaks'—a theoretical impossibility—effectively gives the White House an indefinite kill-switch over frontier models, signaling a shift from 'guidelines' to 'hard control' that could stifle the next generation of US labs.",
+        "zh": "这不仅仅是安全检查，而是一个地缘政治杠杆。要求实现“零越狱”（这在理论上是不可能的），实际上赋予了白宫对前沿模型的无限期关闭开关，标志着从“指导方针”向“强力控制”的转变，可能会扼杀美国实验室的下一代发展。"
+      }
+    },
+    {
+      "title": {
+        "en": "SpaceX Locks in $60 Billion Acquisition of Cursor",
+        "zh": "SpaceX 达成 600 亿美元收购 Cursor 的协议"
+      },
+      "url": "https://cyprus-mail.com/2026/06/21/spacex-locks-in-60-billion-cursor-deal-to-close-gap-with-rivals-in-ai-coding-race",
+      "source": "Cyprus Mail",
+      "time": "2026-06-21",
+      "description": {
+        "en": "SpaceX acquires the AI code editor Cursor to integrate its cutting-edge UX with xAI's Grok, aiming to dominate the AI software engineering race.",
+        "zh": "SpaceX 收购 AI 代码编辑器 Cursor，旨在将其前沿的 UX 与 xAI 的 Grok 结合，力求在 AI 软件工程竞赛中占据主导地位。"
+      },
+      "insight": {
+        "en": "Musk is verticalizing the entire AI stack: from compute (xAI) to interface (Cursor) to deployment (SpaceX). By absorbing Cursor, SpaceX moves beyond just 'using' AI to owning the primary IDE for the next generation of engineers, effectively turning the coding environment into a data-flywheel for Grok's reasoning capabilities.",
+        "zh": "马斯克正在实现 AI 栈的全面垂直整合：从算力 (xAI) 到界面 (Cursor) 再到部署 (SpaceX)。通过吸收 Cursor，SpaceX 不再仅仅是“使用”AI，而是拥有了下一代工程师的主要 IDE，有效地将编码环境变成了 Grok 推理能力的数据飞轮。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek-V4-Pro Preview: 1.6T Parameters on Huawei Ascend 950",
+        "zh": "DeepSeek-V4-Pro 预览版：基于华为昇腾 950 芯片的 1.6 万亿参数模型"
+      },
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026",
+      "source": "BuildFastWithAI",
+      "time": "2026-06-20",
+      "description": {
+        "en": "China's DeepSeek reveals a massive 1.6 trillion parameter model trained exclusively on domestic Huawei hardware, bypassing NVIDIA dependencies.",
+        "zh": "中国的 DeepSeek 发布了一款规模巨大的 1.6 万亿参数模型，完全基于国产华为硬件训练，绕过了对 NVIDIA 的依赖。"
+      },
+      "insight": {
+        "en": "The 'NVIDIA wall' is officially cracked. While the US tries to choke AI via hardware bans (H100/B200), DeepSeek proves that scaling laws can still be ridden using domestic alternatives. This puts immense pressure on US regulators to realize that export controls are becoming a catalyst for Chinese architectural innovation rather than a deterrent.",
+        "zh": "“NVIDIA 之墙”正式被突破。当美国试图通过硬件禁令（H100/B200）扼杀 AI 时，DeepSeek 证明了即使使用国产替代方案，依然可以遵循规模法则。这给美国监管机构带来了巨大压力，让他们意识到出口管制正成为中国架构创新的催化剂，而非威慑手段。"
+      }
+    },
+    {
+      "title": {
+        "en": "Amazon Reports Failure in Human-in-the-Loop AI Oversight",
+        "zh": "亚马逊报告称 AI 人机协作监督机制失效"
+      },
+      "url": "https://thenextweb.com/news/amazon-human-in-the-loop-ai-governance-normalization-deviance",
+      "source": "The Next Web",
+      "time": "2026-06-21",
+      "description": {
+        "en": "Analysis shows that human overseers stop paying attention to AI outputs over time, leading to 'normalization of deviance' where errors are ignored.",
+        "zh": "分析表明，人类监督员随着时间推移会对 AI 输出失去关注，导致出现“偏差正常化”现象，即错误被视而不见。"
+      },
+      "insight": {
+        "en": "This confirms the 'Automation Bias' trap: the more reliable an AI becomes, the less the human checks it, making the system *more* fragile precisely when it seems most stable. It's a warning for all agentic deployments—reliance on 'human-in-the-loop' is often a psychological illusion rather than a safety guarantee.",
+        "zh": "这证实了“自动化偏见”陷阱：AI 越可靠，人类检查就越少，使得系统在看似最稳定的时候反而最脆弱。这为所有智能体部署敲响了警钟——依赖“人机协作”往往是一种心理幻觉，而非真正的安全保障。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meredith Whittaker Warns Copilot Agents as 'Data Backdoors'",
+        "zh": "Meredith Whittaker 警告 Copilot 智能体是“数据后门”"
+      },
+      "url": "https://thenextweb.com/news/signal-whittaker-ai-chatbots-not-friends-copilot-backdoor-privacy",
+      "source": "The Next Web",
+      "time": "2026-06-21",
+      "description": {
+        "en": "Signal's President argues that agentic AI integrated into OS and apps creates unacceptable privacy risks by bypassing traditional encryption.",
+        "zh": "Signal 总裁认为，集成在操作系统和应用中的智能体 AI 通过绕过传统加密，制造了不可接受的隐私风险。"
+      },
+      "insight": {
+        "en": "We are seeing the collision of two paradigms: 'Privacy-First' (Signal) vs 'Utility-First' (Microsoft/Google). As agents need more 'context' to be useful, they naturally move toward 'read-everything' permissions, which fundamentally breaks the promise of end-to-end encryption. The battle for the OS is now a battle for the data-access layer.",
+        "zh": "我们正看到两种范式的碰撞：“隐私优先”（Signal）与“效用优先”（微软/谷歌）。随着智能体需要更多“上下文”来提高可用性，它们必然趋向于“读取所有内容”的权限，这从根本上破坏了端到端加密的承诺。操作系统的争夺战现在变成了数据访问层的争夺战。"
+      }
+    },
+    {
+      "title": {
+        "en": "Grok 4.3 Launches on Amazon Bedrock with 1M Token Context",
+        "zh": "Grok 4.3 在 Amazon Bedrock 上线，支持 100 万 token 上下文"
+      },
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026",
+      "source": "BuildFastWithAI",
+      "time": "2026-06-21",
+      "description": {
+        "en": "xAI's latest model is now available to enterprise customers via AWS, pushing the boundaries of long-context reasoning.",
+        "zh": "xAI 的最新模型现已通过 AWS 面向企业客户开放，推高了长上下文推理的边界。"
+      },
+      "insight": {
+        "en": "Strategic irony: Grok, the 'anti-establishment' model, is using the world's largest cloud provider (AWS) to scale. This proves that despite the loud rivalry, the infrastructure layer (compute/distribution) remains a consolidated oligopoly that no one can realistically bypass.",
+        "zh": "战略上的讽刺：作为“反建制”模型的 Grok 正在利用全球最大的云服务商 (AWS) 来扩张。这证明尽管竞争激烈，基础设施层（算力/分发）依然是一个没人能真正绕过的集中寡头市场。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Today's AI landscape is defined by a stark dichotomy: the relentless, almost violent acceleration of corporate and national scaling versus a tightening, reactive web of government regulation. On one side, SpaceX and xAI are aggressively verticalizing, absorbing tools like Cursor and leveraging AWS to create an inescapable AI ecosystem. On the other, the US government is exercising a 'nuclear option' by banning Fable 5, attempting to enforce a standard of safety ('zero jailbreaks') that the industry considers impossible. Simultaneously, the emergence of DeepSeek-V4-Pro on Huawei chips proves that the hardware blockade is leaking, accelerating a shift toward diverse, non-NVIDIA architectures. The underlying theme of the day is 'The Friction of Scale'—where the only things capable of slowing down the AI race are not technical limits, but the political and psychological boundaries of the humans trying to control it.",
+    "zh": "今天的 AI 格局被一种鲜明的二分法所定义：企业和国家规模化扩张的无情、近乎激进的加速，与政府监管日益收紧、被动应对的网络之间的对抗。一方面，SpaceX 和 xAI 正在强力推进垂直整合，通过收购 Cursor 并利用 AWS 构建一个不可逃避的 AI 生态系统。另一方面，美国政府通过禁掉 Fable 5 动用了“核选项”，试图强制执行一个行业认为不可能实现的安全标准（“零越狱”）。与此同时，DeepSeek-V4-Pro 在华为芯片上的出现证明，硬件封锁正在失效，加速了向多样化、非 NVIDIA 架构的转变。今天的潜在主题是“规模的摩擦”——能够减缓 AI 竞赛的不再是技术限制，而是试图控制它的政治和心理边界。"
+  }
+}
