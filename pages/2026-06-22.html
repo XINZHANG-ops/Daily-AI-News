@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 22, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 22, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/WhyNot22222/TAO-RL" class="card-title" target="_blank">WhyNot22222/TAO-RL</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 84 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Tool-Aware Optimization (TAO) framework for stabilizing RL training when LLMs interact with external tools, preventing entropy collapse in reasoning paths.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">工具感知优化 (TAO) 框架，用于在LLM与外部工具交互时稳定强化学习训练，防止推理路径中的熵崩溃。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/sangbumchoi/localagent" class="card-title" target="_blank">sangbumchoi/localagent</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 850 stars</div>
+                                <div class="meta-item"><span>🍴</span> 120 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A framework for ultra-tiny LLMs (<100M parameters) designed to run as reliable local agents on edge devices with generative tool dispatch.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个为超小型LLM（<100M参数）设计的框架，旨在边缘设备上运行可靠的本地智能体，支持生成式工具分发。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/SantanderAI/genetic-algorithm" class="card-title" target="_blank">SantanderAI/genetic-algorithm</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 620 stars</div>
+                                <div class="meta-item"><span>🍴</span> 45 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Dependency-free Python GA engine serving as a search core for AI autoresearchers to evolve prompts and configurations via LLM-as-a-judge.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个无依赖的Python遗传算法引擎，作为AI自动研究员的搜索核心，通过“LLM-as-a-judge”进化提示词和配置。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Credence Wire</span>
+                    <div class="news-time">2026-06-22</div>
+                    <a href="https://credencewire.com/article/senate-passes-ai-accountability-act-june-2026" class="card-title" target="_blank" data-lang="en">U.S. Senate Passes AI Accountability Act in 68–29 Vote</a>
+                    <a href="https://credencewire.com/article/senate-passes-ai-accountability-act-june-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国参议院以68-29票通过《AI问责法案》</a>
+                    <p class="card-description" data-lang="en">Legislation requiring federal contractors to document high-risk AI and report incidents within 72 hours, including civil causes of action for discriminatory automated decisions.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">该法案要求联邦承包商记录高风险AI并并在72小时内报告事故，并为歧视性自动化决策提供民事诉讼依据。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">News Medical / Nature</span>
+                    <div class="news-time">2026-06-21</div>
+                    <a href="https://www.news-medical.net/news/20260621/Googlee28099s-AMIE-beats-doctors-on-key-simulated-disease-management-tasks.aspx" class="card-title" target="_blank" data-lang="en">Google’s AMIE Outperforms Doctors in Simulated Disease-Management Tasks</a>
+                    <a href="https://www.news-medical.net/news/20260621/Googlee28099s-AMIE-beats-doctors-on-key-simulated-disease-management-tasks.aspx" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌AMIE在模拟疾病管理任务中超越医生</a>
+                    <p class="card-description" data-lang="en">Google's Articulate Medical Intelligence Explorer (AMIE) showed higher precision in recommending investigations and treatment plans than human primary care physicians in Nature study.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在《自然》杂志的一项研究中，谷歌的AMIE在建议检查和治疗方案方面的精准度高于人类全科医生。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Korea Times</span>
+                    <div class="news-time">2026-06-22</div>
+                    <a href="https://www.koreatimes.co.kr/business/tech-science/20260622/openai-lands-samsung-as-major-chatgpt-enterprise-customer" class="card-title" target="_blank" data-lang="en">OpenAI Lands Samsung as Major ChatGPT Enterprise Customer</a>
+                    <a href="https://www.koreatimes.co.kr/business/tech-science/20260622/openai-lands-samsung-as-major-chatgpt-enterprise-customer" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI成功将三星打造为ChatGPT Enterprise重大客户</a>
+                    <p class="card-description" data-lang="en">Samsung Electronics will deploy ChatGPT Enterprise and Codex worldwide to accelerate AI transformation across software development and manufacturing.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">三星电子将在全球范围内部署ChatGPT Enterprise和Codex，以加速软件开发和制造等领域的AI转型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">ChinaTechNews</span>
+                    <div class="news-time">2026-06-22</div>
+                    <a href="https://www.chinatechnews.com/2026/06/22/124133-alibaba-open-sources-unified-scientific-ai-model-challenging-western-tech-giants-in-biotech-race" class="card-title" target="_blank" data-lang="en">Alibaba Open-Sources LOGOS Unified Scientific AI Model</a>
+                    <a href="https://www.chinatechnews.com/2026/06/22/124133-alibaba-open-sources-unified-scientific-ai-model-challenging-western-tech-giants-in-biotech-race" class="card-title" target="_blank" data-lang="zh" style="display: none;">阿里巴巴开源LOGOS统一科学AI模型</a>
+                    <p class="card-description" data-lang="en">LOGOS uses a "unified scientific grammar" to bridge biotech and chemistry, treating macromolecules and compounds as sequences to enable cross-domain discovery.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">LOGOS使用“统一科学语法”桥接生物技术和化学，将大分子和化合物视为序列，以实现跨领域发现。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Cyber Security News</span>
+                    <div class="news-time">2026-06-22</div>
+                    <a href="https://cybersecuritynews.com/anthropic-claude-ai-outage/" class="card-title" target="_blank" data-lang="en">Claude AI Suffers 90-Minute Global Outage</a>
+                    <a href="https://cybersecuritynews.com/anthropic-claude-ai-outage/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude AI遭遇90分钟全球范围服务中断</a>
+                    <p class="card-description" data-lang="en">Anthropic's platform experienced a total outage affecting Opus 4.8, 4.7, 4.6, Sonnet 4.6, and Haiku 4.5 models across API and web interfaces.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic的平台经历了全面中断，影响了API和Web界面上的Opus 4.8, 4.7, 4.6, Sonnet 4.6及Haiku 4.5模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Creati AI</span>
+                    <div class="news-time">2026-06-22</div>
+                    <a href="https://creati.ai/ai-news/2026-06-22/white-house-anthropic-block-all-jailbreaks-not-possible/" class="card-title" target="_blank" data-lang="en">White House Demands Anthropic Block All AI Jailbreaks</a>
+                    <a href="https://creati.ai/ai-news/2026-06-22/white-house-anthropic-block-all-jailbreaks-not-possible/" class="card-title" target="_blank" data-lang="zh" style="display: none;">白宫要求Anthropic屏蔽所有AI越狱</a>
+                    <p class="card-description" data-lang="en">The US government is pressuring Anthropic to implement a "prevention-first" architecture to completely eliminate jailbreaking, despite expert warnings on technical impossibility.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">美国政府正向Anthropic施压，要求其实现“预防优先”架构以完全消除越狱行为，尽管专家警告这在技术上是不可能的。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">June 22, 2026, represents a "collision point" between peak AI utility and peak regulatory anxiety. On one side, we see AI effectively managing diseases (AMIE) and unifying scientific domains (LOGOS), proving a trajectory toward AGI-like expertise. On the other side, the US government's rapid transition from "guidelines" to "legislation" (AI Accountability Act) and aggressive demands for technical impossibility (blocking all jailbreaks) show a desperate attempt to maintain control. The concurrent instability of top-tier platforms (Claude's outages) only fuels this anxiety, signaling that while the "brains" are getting smarter, the "nervous system" (infrastructure) and "social contract" (law) are still struggling to keep up.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026年6月22日代表了AI极致效能与监管极致焦虑的“碰撞点”。一方面，我们看到AI能够有效地管理疾病（AMIE）并统一科学领域（LOGOS），证明了其向AGI级专业能力的演进。另一方面，美国政府从“指南”迅速转向“立法”（AI问责法案）并对技术上不可能实现的目标（屏蔽所有越狱）提出激进要求，显示出一种试图维持控制的紧迫感。顶级平台并发的稳定性问题（Claude停机）进一步加剧了这种焦虑，表明虽然“大脑”在变得更聪明，但“神经系统”（基础设施）和“社会契约”（法律）仍在苦苦追赶。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

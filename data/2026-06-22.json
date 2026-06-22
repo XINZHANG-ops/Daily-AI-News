@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-22",
+  "github_repos": [
+    {
+      "name": "WhyNot22222/TAO-RL",
+      "url": "https://github.com/WhyNot22222/TAO-RL",
+      "description": {
+        "en": "Tool-Aware Optimization (TAO) framework for stabilizing RL training when LLMs interact with external tools, preventing entropy collapse in reasoning paths.",
+        "zh": "工具感知优化 (TAO) 框架，用于在LLM与外部工具交互时稳定强化学习训练，防止推理路径中的熵崩溃。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "sangbumchoi/localagent",
+      "url": "https://github.com/sangbumchoi/localagent",
+      "description": {
+        "en": "A framework for ultra-tiny LLMs (<100M parameters) designed to run as reliable local agents on edge devices with generative tool dispatch.",
+        "zh": "一个为超小型LLM（<100M参数）设计的框架，旨在边缘设备上运行可靠的本地智能体，支持生成式工具分发。"
+      },
+      "stars": "850",
+      "forks": "120"
+    },
+    {
+      "name": "SantanderAI/genetic-algorithm",
+      "url": "https://github.com/SantanderAI/genetic-algorithm",
+      "description": {
+        "en": "Dependency-free Python GA engine serving as a search core for AI autoresearchers to evolve prompts and configurations via LLM-as-a-judge.",
+        "zh": "一个无依赖的Python遗传算法引擎，作为AI自动研究员的搜索核心，通过“LLM-as-a-judge”进化提示词和配置。"
+      },
+      "stars": "620",
+      "forks": "45"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "U.S. Senate Passes AI Accountability Act in 68–29 Vote",
+        "zh": "美国参议院以68-29票通过《AI问责法案》"
+      },
+      "url": "https://credencewire.com/article/senate-passes-ai-accountability-act-june-2026",
+      "source": "Credence Wire",
+      "time": "2026-06-22",
+      "description": {
+        "en": "Legislation requiring federal contractors to document high-risk AI and report incidents within 72 hours, including civil causes of action for discriminatory automated decisions.",
+        "zh": "该法案要求联邦承包商记录高风险AI并并在72小时内报告事故，并为歧视性自动化决策提供民事诉讼依据。"
+      },
+      "insight": {
+        "en": "The 68-29 vote signals a rare bipartisan consensus that \"voluntary commitments\" are no longer enough. By creating a civil cause of action, the Senate is shifting the risk from the user to the developer, which will likely force a \"compliance-first\" design phase for any high-risk AI release.",
+        "zh": "68-29的投票结果标志着两党罕见地达成共识，即“自愿承诺”已不足够。通过建立民事诉讼机制，参议院将风险从用户转移到了开发者身上，这将迫使所有高风险AI在发布前进入一个“合规优先”的设计阶段。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google’s AMIE Outperforms Doctors in Simulated Disease-Management Tasks",
+        "zh": "谷歌AMIE在模拟疾病管理任务中超越医生"
+      },
+      "url": "https://www.news-medical.net/news/20260621/Googlee28099s-AMIE-beats-doctors-on-key-simulated-disease-management-tasks.aspx",
+      "source": "News Medical / Nature",
+      "time": "2026-06-21",
+      "description": {
+        "en": "Google's Articulate Medical Intelligence Explorer (AMIE) showed higher precision in recommending investigations and treatment plans than human primary care physicians in Nature study.",
+        "zh": "在《自然》杂志的一项研究中，谷歌的AMIE在建议检查和治疗方案方面的精准度高于人类全科医生。"
+      },
+      "insight": {
+        "en": "Outperforming doctors in simulated multi-visit tasks is a pivot from \"chatbot medical advice\" to \"disease management.\" This mirrors the shift in LLMs from simple completion to agentic planning; the value is no longer in the answer, but in the accuracy of the trajectory of care.",
+        "zh": "在模拟的多诊次任务中超越医生，标志着医疗AI从“聊天机器人建议”转向“疾病管理”。这反映了LLM从简单补全向智能体规划的转变：价值不再在于单一答案，而在于护理路径（trajectory）的准确性。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Lands Samsung as Major ChatGPT Enterprise Customer",
+        "zh": "OpenAI成功将三星打造为ChatGPT Enterprise重大客户"
+      },
+      "url": "https://www.koreatimes.co.kr/business/tech-science/20260622/openai-lands-samsung-as-major-chatgpt-enterprise-customer",
+      "source": "The Korea Times",
+      "time": "2026-06-22",
+      "description": {
+        "en": "Samsung Electronics will deploy ChatGPT Enterprise and Codex worldwide to accelerate AI transformation across software development and manufacturing.",
+        "zh": "三星电子将在全球范围内部署ChatGPT Enterprise和Codex，以加速软件开发和制造等领域的AI转型。"
+      },
+      "insight": {
+        "en": "Samsung's global rollout is a massive validation for ChatGPT Enterprise and Codex. It proves that even the most cautious hardware giants are moving past \"pilot\" phases into \"company-wide\" integration, likely driven by the fear of lagging behind in developer productivity.",
+        "zh": "三星的全球部署是对ChatGPTEnterprise和Codex的大规模验证。这证明即使是最谨慎的硬件巨头也已度过了“试点”阶段，进入“全公司”集成阶段，这很可能是由于担心在开发者生产力方面落后。"
+      }
+    },
+    {
+      "title": {
+        "en": "Alibaba Open-Sources LOGOS Unified Scientific AI Model",
+        "zh": "阿里巴巴开源LOGOS统一科学AI模型"
+      },
+      "url": "https://www.chinatechnews.com/2026/06/22/124133-alibaba-open-sources-unified-scientific-ai-model-challenging-western-tech-giants-in-biotech-race",
+      "source": "ChinaTechNews",
+      "time": "2026-06-22",
+      "description": {
+        "en": "LOGOS uses a \"unified scientific grammar\" to bridge biotech and chemistry, treating macromolecules and compounds as sequences to enable cross-domain discovery.",
+        "zh": "LOGOS使用“统一科学语法”桥接生物技术和化学，将大分子和化合物视为序列，以实现跨领域发现。"
+      },
+      "insight": {
+        "en": "The \"unified scientific grammar\" approach challenges the Western trend of specialized model silos (like NatureLM). By treating biotech and chemistry as a single sequence problem, Alibaba is attempting to create a \"Universal Translator\" for science, which could accelerate cross-domain breakthroughs.",
+        "zh": "“统一科学语法”的方法挑战了西方将模型专业化（如NatureLM）的趋势。通过将生物技术和化学视为单一的序列问题，阿里巴巴试图创建一个科学界的“通用翻译机”，这可能会加速跨领域的突破。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude AI Suffers 90-Minute Global Outage",
+        "zh": "Claude AI遭遇90分钟全球范围服务中断"
+      },
+      "url": "https://cybersecuritynews.com/anthropic-claude-ai-outage/",
+      "source": "Cyber Security News",
+      "time": "2026-06-22",
+      "description": {
+        "en": "Anthropic's platform experienced a total outage affecting Opus 4.8, 4.7, 4.6, Sonnet 4.6, and Haiku 4.5 models across API and web interfaces.",
+        "zh": "Anthropic的平台经历了全面中断，影响了API和Web界面上的Opus 4.8, 4.7, 4.6, Sonnet 4.6及Haiku 4.5模型。"
+      },
+      "insight": {
+        "en": "Three outages in one month for the flagship platform is a critical reliability signal. As enterprises shift from \"experimenting\" to \"integrating\" (like Samsung's OpenAI move), the cost of 90-minute outages moves from \"annoyance\" to \"business risk,\" putting pressure on Anthropic's infrastructure.",
+        "zh": "旗舰平台一个月内发生三次中断是一个关键的可靠性信号。随着企业从“实验”转向“集成”（如三星对OpenAI的举动），90分钟的停机成本从“令人烦恼”变成了“业务风险”，这对Anthropic的基础设施造成了巨大压力。"
+      }
+    },
+    {
+      "title": {
+        "en": "White House Demands Anthropic Block All AI Jailbreaks",
+        "zh": "白宫要求Anthropic屏蔽所有AI越狱"
+      },
+      "url": "https://creati.ai/ai-news/2026-06-22/white-house-anthropic-block-all-jailbreaks-not-possible/",
+      "source": "Creati AI",
+      "time": "2026-06-22",
+      "description": {
+        "en": "The US government is pressuring Anthropic to implement a \"prevention-first\" architecture to completely eliminate jailbreaking, despite expert warnings on technical impossibility.",
+        "zh": "美国政府正向Anthropic施压，要求其实现“预防优先”架构以完全消除越狱行为，尽管专家警告这在技术上是不可能的。"
+      },
+      "insight": {
+        "en": "The demand to \"block all jailbreaks\" is a classic policy-tech gap; regulators are treating probabilistic LLMs like deterministic software. This friction, combined with the concurrent outage and the Senate's new Act, suggests Anthropic is currently the primary target for US AI regulatory pressure.",
+        "zh": "要求“屏蔽所有越狱”是典型的政策与技术脱节；监管机构将概率性的LLM视为确定性的软件。这种摩擦，结合同时发生的停机和参议院的新法案，表明Anthropic目前是美国AI监管压力的主要目标。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "June 22, 2026, represents a \"collision point\" between peak AI utility and peak regulatory anxiety. On one side, we see AI effectively managing diseases (AMIE) and unifying scientific domains (LOGOS), proving a trajectory toward AGI-like expertise. On the other side, the US government's rapid transition from \"guidelines\" to \"legislation\" (AI Accountability Act) and aggressive demands for technical impossibility (blocking all jailbreaks) show a desperate attempt to maintain control. The concurrent instability of top-tier platforms (Claude's outages) only fuels this anxiety, signaling that while the \"brains\" are getting smarter, the \"nervous system\" (infrastructure) and \"social contract\" (law) are still struggling to keep up.",
+    "zh": "2026年6月22日代表了AI极致效能与监管极致焦虑的“碰撞点”。一方面，我们看到AI能够有效地管理疾病（AMIE）并统一科学领域（LOGOS），证明了其向AGI级专业能力的演进。另一方面，美国政府从“指南”迅速转向“立法”（AI问责法案）并对技术上不可能实现的目标（屏蔽所有越狱）提出激进要求，显示出一种试图维持控制的紧迫感。顶级平台并发的稳定性问题（Claude停机）进一步加剧了这种焦虑，表明虽然“大脑”在变得更聪明，但“神经系统”（基础设施）和“社会契约”（法律）仍在苦苦追赶。"
+  }
+}
