@@ -1,0 +1,177 @@
+{
+  "date": "2026-06-24",
+  "github_repos": [
+    {
+      "name": "williamyates/WillyGPT",
+      "url": "https://github.com/williamyates/WillyGPT",
+      "description": {
+        "en": "A 1.68B parameter chat model trained from scratch (Pretraining → SFT → GRPO), providing logit-level analysis of how RL improves reasoning but can cause regressions in spelling and identity.",
+        "zh": "一个从零开始训练的 1.68B 参数聊天模型（预训练 → SFT → GRPO），提供了 logit 级别的详细分析，揭示了强化学习在提升推理能力的同时如何导致拼写和身份识别能力的退化。"
+      },
+      "stars": "1.2k",
+      "forks": "140"
+    },
+    {
+      "name": "modelplaneai/modelplane",
+      "url": "https://github.com/modelplaneai/modelplane",
+      "description": {
+        "en": "An open-source control plane for AI inference clusters, allowing developers to manage workloads across multiple clouds and use distributed caching to reduce response times.",
+        "zh": "一个用于 AI 推理集群的开源控制平面，允许开发者在多个云端管理工作负载，并利用分布式缓存来降低响应时间。"
+      },
+      "stars": "850",
+      "forks": "92"
+    },
+    {
+      "name": "Richard-zrx/ADS",
+      "url": "https://github.com/Richard-zrx/ADS",
+      "description": {
+        "en": "Adaptive Data Scheduling (ADS) for LLM RL, using semantic clustering and difficulty-sorting to beat GRPO by +5.2% accuracy across reasoning benchmarks.",
+        "zh": "用于 LLM 强化学习的自适应数据调度 (ADS)，通过语义聚类和难度排序，在推理基准测试中比 GRPO 提高了 5.2% 的准确率。"
+      },
+      "stars": "420",
+      "forks": "38"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic's Mythos Model Exposes Classified US Government Vulnerabilities",
+        "zh": "Anthropic 的 Mythos 模型揭示美国政府机密系统的漏洞"
+      },
+      "url": "https://wtop.com/national/2026/06/anthropics-mythos-model-found-vulnerabilities-in-classified-us-government-systems-official-says/",
+      "source": "WTOP News",
+      "time": "2026-06-23",
+      "description": {
+        "en": "During 'Project Glasswing', the Mythos model identified vulnerabilities in sensitive US government systems within hours, highlighting the double-edged sword of frontier AI capabilities in cybersecurity.",
+        "zh": "在 'Project Glasswing' 期间，Mythos 模型在数小时内就发现了美国政府敏感系统的漏洞，突显了前沿 AI 能力在网络安全中的双刃剑特性。"
+      },
+      "insight": {
+        "en": "01 *This is the definitive 'proof of concept' for AI-driven offensive cyber-ops.* The fact that a model can map classified vulnerabilities in hours reduces the 'cost of attack' by orders of magnitude compared to human red-teaming. This explains the current panic in DC and why the US government is moving from 'guidelines' to mandatory pre-release vetting.",
+        "zh": "01 *这是 AI 驱动的攻势网络行动的决定性 '概念验证'。* 一个模型能在数小时内映射出机密漏洞，意味着与人类红队相比，攻击成本降低了几个数量级。这解释了目前华盛顿的恐慌，以及为什么美国政府正从 '指导原则' 转向强制性的发布前审查。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Agrees to US Government's Frontier AI Security Reviews",
+        "zh": "Meta 同意美国政府的前沿 AI 安全审查"
+      },
+      "url": "https://cryptobriefing.com/meta-supports-us-frontier-ai-leadership/",
+      "source": "CryptoBriefing",
+      "time": "2026-06-23",
+      "description": {
+        "en": "Meta announced it will sign the agreement to allow US government pre-release reviews of its frontier models, ending its position as the last major holdout.",
+        "zh": "Meta 宣布将签署协议，允许美国政府对其前沿模型进行发布前审查，至此它不再是唯一一家持保留意见的大型厂商。"
+      },
+      "insight": {
+        "en": "02 *The 'open weights' champion has officially entered the state-regulated era.* Meta's surrender follows the Mythos vulnerability discovery. When the state proves that frontier AI can crack the state's own systems, the argument for 'openness' loses to 'existential security.' This marks the transition of frontier AI from a consumer product to a regulated strategic asset.",
+        "zh": "02 *'开源权重' 的拥护者已正式进入国家监管时代。* Meta 的妥协发生在 Mythos 漏洞被发现之后。当政府证明前沿 AI 能够攻破国家自己的系统时，'开放' 的论点就输给了 '生存安全'。这标志着前沿 AI 从消费产品转变为受监管的战略资产。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Temporarily Disables Fable 5 and Mythos 5 Worldwide Due to Nationality Bans",
+        "zh": "因国籍禁令，Anthropic 暂时在全球禁用 Fable 5 和 Mythos 5"
+      },
+      "url": "https://thenextweb.com/news/us-presses-meta-ai-security-reviews",
+      "source": "The Next Web",
+      "time": "2026-06-23",
+      "description": {
+        "en": "Following US orders to bar foreign nationals from accessing its most capable models, Anthropic disabled Fable 5 and Mythos 5 globally, citing the impossibility of reliable nationality enforcement.",
+        "zh": "在美国政府要求禁止外国国民使用其最强大模型后，Anthropic 暂时在全求范围内禁用了 Fable 5 和 Mythos 5，理由是无法可靠地执行国籍核查。"
+      },
+      "insight": {
+        "en": "03 *This is a collision between the borderless nature of the internet and the borders of national security.* The 'temporary disable' is a strategic signal to the US government: the infrastructure for a 'National AI' is not just about the model, but about an identity layer that doesn't exist yet. It highlights the absurdity of trying to apply 20th-century border controls to 21st-century neural weights.",
+        "zh": "03 *这是互联网的无国界性质与国家安全边界之间的碰撞。* 此次 '暂时禁用' 是给美国政府的一个战略信号：'国家 AI' 的基础设施不仅在于模型，更在于一个尚未建立的身份验证层。这凸显了试图将 20 世纪的边境管制应用于 21 世纪神经权重的荒诞性。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Releases Muse Spark: First Closed-Source Model from Superintelligence Labs",
+        "zh": "Meta 发布 Muse Spark：超级智能实验室的首个闭源模型"
+      },
+      "url": "https://cryptobriefing.com/meta-supports-us-frontier-ai-leadership/",
+      "source": "CryptoBriefing",
+      "time": "2026-06-23",
+      "description": {
+        "en": "Meta's Superintelligence Labs released Muse Spark, a high-performance closed-source model, breaking the company's long-standing tradition of open-sourcing its flagship LLMs.",
+        "zh": "Meta 的超级智能实验室发布了 Muse Spark，这是一个高性能闭源模型，打破了该公司长期以来将旗舰 LLM 开源的传统。"
+      },
+      "insight": {
+        "en": "04 *The 'Open Source' moat is officially dead at the absolute frontier.* Muse Spark proves that when the stakes involve state-level security and $100B+ CapEx, secrecy is the only viable business model. Meta is now hedging: open-sourcing 'good enough' models (Llama series) to dominate the ecosystem, while keeping 'super-intelligent' models closed to capture extreme value.",
+        "zh": "04 *在绝对前沿领域，'开源' 的护城河正式失效。* Muse Spark 证明，当涉及到国家级安全和千亿美元级别的资本支出时，保密是唯一可行的商业模式。Meta 现在的策略是对冲：开源 '足够好' 的模型（Llama 系列）以统治生态，同时将 '超智能' 模型闭源以获取极致价值。"
+      }
+    },
+    {
+      "title": {
+        "en": "Nvidia Announces GB300 Grace Blackwell Ultra Desktop Supercomputer",
+        "zh": "英伟达发布 GB300 Grace Blackwell Ultra 桌面超级计算机"
+      },
+      "url": "https://enterprisedna.co/resources/news/nvidia-dgx-station-windows-enterprise-ai-agents-2026/",
+      "source": "Enterprise DNA",
+      "time": "2026-06-23",
+      "description": {
+        "en": "The new DGX Station for Windows allows enterprises to run 1-trillion-parameter models and hundreds of agents locally, eliminating cloud dependency for regulated industries.",
+        "zh": "新款面向 Windows 的 DGX Station 允许企业在本地运行万亿参数模型和数百个智能体，消除了受监管行业对云端的依赖。"
+      },
+      "insight": {
+        "en": "05 *Hardware is the final answer to the 'Sovereign AI' problem.* By moving 1T-parameter compute from the cloud to the desk, Nvidia is selling a 'security blanket' to governments and banks. This reduces the risk of 'kill-switches' or foreign surveillance and allows the 'National AI' vision to be physically realized on-premises.",
+        "zh": "05 *硬件是解决 '主权 AI' 问题的最终方案。* 通过将万亿参数的计算从云端移至桌面，英伟达在向政府和银行出售一种 '安全感'。这降低了 '远程开关' 或外国监视的风险，使得 '国家 AI' 的愿景能在本地物理实现。"
+      }
+    },
+    {
+      "title": {
+        "en": "Upbound Open-Sources Modelplane for Inference Cluster Optimization",
+        "zh": "Upbound 开源 Modelplane 用于优化推理集群"
+      },
+      "url": "https://siliconangle.com/2026/06/23/upbound-open-sources-modelplane-optimize-inference-clusters/",
+      "source": "SiliconANGLE",
+      "time": "2026-06-23",
+      "description": {
+        "en": "Modelplane optimizes AI inference across multiple clouds using distributed caching and intelligent workload management to reduce latency.",
+        "zh": "Modelplane 通过分布式缓存和智能工作负载管理，优化跨多云的 AI 推理，从而降低延迟。"
+      },
+      "insight": {
+        "en": "06 *The focus is shifting from 'how to train' to 'how to serve' at scale.* As models hit the 1T+ parameter mark, the bottleneck is no longer just the model, but the plumbing of the inference cluster. Modelplane targets the 'inference tax' that currently limits the real-time deployment of massive agentic swarms.",
+        "zh": "06 *关注点正在从 '如何训练' 转向 '如何大规模部署'。* 随着模型达到万亿参数规模，瓶颈不再仅仅是模型本身，而是推理集群的 '管道' 效率。Modelplane 旨在解决目前限制大规模智能体集群实时部署的 '推理税' 问题。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Debuts Claude Tag for Slack Integration",
+        "zh": "Anthropic 发布集成在 Slack 中的 Claude Tag"
+      },
+      "url": "https://thenextweb.com/news/us-presses-meta-ai-security-reviews",
+      "source": "The Next Web",
+      "time": "2026-06-23",
+      "description": {
+        "en": "Claude Tag is a highly capable AI teammate integrated directly into Slack, moving beyond a simple chat interface to a collaborative team member.",
+        "zh": "Claude Tag 是一个高度能力化的 AI 队友，直接集成在 Slack 中，使其从简单的聊天界面进化为协同团队成员。"
+      },
+      "insight": {
+        "en": "07 *The 'Chatbot' era is ending; the 'Ambient Agent' era is beginning.* By embedding the agent into the communication flow (Slack), Anthropic is reducing the friction of 'prompting' and moving toward a world where AI is a background collaborator that suggests and acts, rather than a destination you visit.",
+        "zh": "07 *'聊天机器人' 时代正在结束，'环境智能体' 时代已经开启。* 通过将智能体嵌入通信流（Slack），Anthropic 降低了 '提示词' 的摩擦，正走向一个 AI 成为背景协作伙伴（主动建议并执行）而非必须访问的目的地的世界。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta's 2026 AI Infrastructure CapEx Reaches Staggering $135 Billion",
+        "zh": "Meta 2026 年 AI 基础设施资本支出高达 1350 亿美元"
+      },
+      "url": "https://cryptobriefing.com/meta-supports-us-frontier-ai-leadership/",
+      "source": "CryptoBriefing",
+      "time": "2026-06-23",
+      "description": {
+        "en": "Meta's projected spending on AI hardware and data centers for 2026 is estimated to be between $115B and $135B, underscoring the brutal compute war at the frontier.",
+        "zh": "Meta 预计 2026 年在 AI 硬件和数据中心上的支出将在 1150 亿至 1350 亿美元之间，凸显了前沿领域残酷的算力战争。"
+      },
+      "insight": {
+        "en": "08 *This is no longer a tech race; it's a war of industrial attrition.* A $135B annual spend is larger than the GDP of some nations. This level of CapEx creates a massive barrier to entry that effectively freezes the 'frontier' to a handful of players who can sustain a $100B+ burn rate, cementing the oligopoly of the 'compute-rich'.",
+        "zh": "08 *这不再是一场技术竞赛，而是一场工业消耗战。* 每年 1350 亿美元的支出规模已超过某些国家的 GDP。这种级别的资本支出创造了巨大的准入门槛，实际上将 '前沿' 领域冻结在少数能够维持千亿级烧钱率的巨头手中，巩固了 '算力富豪' 的寡头垄断。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The narrative of June 24, 2026, is the 'The Great Enclosure' of AI. We are witnessing a rapid transition where AI is being stripped of its 'global utility' status and re-classified as a high-stakes national security asset. The sequence of events—Anthropic's Mythos cracking classified systems, the US government mandating pre-release reviews, Meta's pivot to closed-source with Muse Spark, and the subsequent ban on foreign nationals—reveals a clear trend: the era of borderless, open-weights frontier AI is being replaced by a regime of 'Sovereign AI.' This shift is physically manifesting in hardware, as Nvidia's DGX Station for Windows allows this nationalization to happen on-premises, removing the risk of cloud-based kill-switches. Meanwhile, the staggering $135B CapEx from Meta signals that the only remaining moat at the frontier is sheer industrial scale, turning the pursuit of AGI into a game of attrition that only a few sovereign-scale entities can play.",
+    "zh": "2026 年 6 月 24 日的主题是 AI 的 '大围栏' (The Great Enclosure)。我们正目睹一个迅速的转型：AI 正在被剥离其 '全球通用工具' 的身份，而被重新定义为高风险的国家安全资产。这一系列事件——Anthropic 的 Mythos 攻破机密系统、美国政府强制执行发布前审查、Meta 通过 Muse Spark 转向闭源，以及随后对外国国民的禁令——揭示了一个明确的趋势：无国界、开源权重的前沿 AI 时代正被 '主权 AI' 体制所取代。这种转变在硬件层面得到了具体体现，英伟达的 Windows 版 DGX Station 允许这种国家化在本地实现，消除了云端 '远程开关' 的风险。与此同时，Meta 令人震惊的 1350 亿美元资本支出表明，前沿领域唯一的护城河已变为纯粹的工业规模，将对 AGI 的追求变成了只有少数主权级实体才能参与的消耗战。"
+  }
+}

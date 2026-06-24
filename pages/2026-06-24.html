@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 24, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 24, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/williamyates/WillyGPT" class="card-title" target="_blank">williamyates/WillyGPT</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 140 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A 1.68B parameter chat model trained from scratch (Pretraining → SFT → GRPO), providing logit-level analysis of how RL improves reasoning but can cause regressions in spelling and identity.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个从零开始训练的 1.68B 参数聊天模型（预训练 → SFT → GRPO），提供了 logit 级别的详细分析，揭示了强化学习在提升推理能力的同时如何导致拼写和身份识别能力的退化。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/modelplaneai/modelplane" class="card-title" target="_blank">modelplaneai/modelplane</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 850 stars</div>
+                                <div class="meta-item"><span>🍴</span> 92 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An open-source control plane for AI inference clusters, allowing developers to manage workloads across multiple clouds and use distributed caching to reduce response times.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个用于 AI 推理集群的开源控制平面，允许开发者在多个云端管理工作负载，并利用分布式缓存来降低响应时间。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Richard-zrx/ADS" class="card-title" target="_blank">Richard-zrx/ADS</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 420 stars</div>
+                                <div class="meta-item"><span>🍴</span> 38 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Adaptive Data Scheduling (ADS) for LLM RL, using semantic clustering and difficulty-sorting to beat GRPO by +5.2% accuracy across reasoning benchmarks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">用于 LLM 强化学习的自适应数据调度 (ADS)，通过语义聚类和难度排序，在推理基准测试中比 GRPO 提高了 5.2% 的准确率。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">WTOP News</span>
+                    <div class="news-time">2026-06-23</div>
+                    <a href="https://wtop.com/national/2026/06/anthropics-mythos-model-found-vulnerabilities-in-classified-us-government-systems-official-says/" class="card-title" target="_blank" data-lang="en">Anthropic's Mythos Model Exposes Classified US Government Vulnerabilities</a>
+                    <a href="https://wtop.com/national/2026/06/anthropics-mythos-model-found-vulnerabilities-in-classified-us-government-systems-official-says/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 的 Mythos 模型揭示美国政府机密系统的漏洞</a>
+                    <p class="card-description" data-lang="en">During 'Project Glasswing', the Mythos model identified vulnerabilities in sensitive US government systems within hours, highlighting the double-edged sword of frontier AI capabilities in cybersecurity.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在 'Project Glasswing' 期间，Mythos 模型在数小时内就发现了美国政府敏感系统的漏洞，突显了前沿 AI 能力在网络安全中的双刃剑特性。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CryptoBriefing</span>
+                    <div class="news-time">2026-06-23</div>
+                    <a href="https://cryptobriefing.com/meta-supports-us-frontier-ai-leadership/" class="card-title" target="_blank" data-lang="en">Meta Agrees to US Government's Frontier AI Security Reviews</a>
+                    <a href="https://cryptobriefing.com/meta-supports-us-frontier-ai-leadership/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta 同意美国政府的前沿 AI 安全审查</a>
+                    <p class="card-description" data-lang="en">Meta announced it will sign the agreement to allow US government pre-release reviews of its frontier models, ending its position as the last major holdout.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta 宣布将签署协议，允许美国政府对其前沿模型进行发布前审查，至此它不再是唯一一家持保留意见的大型厂商。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Next Web</span>
+                    <div class="news-time">2026-06-23</div>
+                    <a href="https://thenextweb.com/news/us-presses-meta-ai-security-reviews" class="card-title" target="_blank" data-lang="en">Anthropic Temporarily Disables Fable 5 and Mythos 5 Worldwide Due to Nationality Bans</a>
+                    <a href="https://thenextweb.com/news/us-presses-meta-ai-security-reviews" class="card-title" target="_blank" data-lang="zh" style="display: none;">因国籍禁令，Anthropic 暂时在全球禁用 Fable 5 和 Mythos 5</a>
+                    <p class="card-description" data-lang="en">Following US orders to bar foreign nationals from accessing its most capable models, Anthropic disabled Fable 5 and Mythos 5 globally, citing the impossibility of reliable nationality enforcement.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在美国政府要求禁止外国国民使用其最强大模型后，Anthropic 暂时在全求范围内禁用了 Fable 5 和 Mythos 5，理由是无法可靠地执行国籍核查。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CryptoBriefing</span>
+                    <div class="news-time">2026-06-23</div>
+                    <a href="https://cryptobriefing.com/meta-supports-us-frontier-ai-leadership/" class="card-title" target="_blank" data-lang="en">Meta Releases Muse Spark: First Closed-Source Model from Superintelligence Labs</a>
+                    <a href="https://cryptobriefing.com/meta-supports-us-frontier-ai-leadership/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta 发布 Muse Spark：超级智能实验室的首个闭源模型</a>
+                    <p class="card-description" data-lang="en">Meta's Superintelligence Labs released Muse Spark, a high-performance closed-source model, breaking the company's long-standing tradition of open-sourcing its flagship LLMs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta 的超级智能实验室发布了 Muse Spark，这是一个高性能闭源模型，打破了该公司长期以来将旗舰 LLM 开源的传统。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Enterprise DNA</span>
+                    <div class="news-time">2026-06-23</div>
+                    <a href="https://enterprisedna.co/resources/news/nvidia-dgx-station-windows-enterprise-ai-agents-2026/" class="card-title" target="_blank" data-lang="en">Nvidia Announces GB300 Grace Blackwell Ultra Desktop Supercomputer</a>
+                    <a href="https://enterprisedna.co/resources/news/nvidia-dgx-station-windows-enterprise-ai-agents-2026/" class="card-title" target="_blank" data-lang="zh" style="display: none;">英伟达发布 GB300 Grace Blackwell Ultra 桌面超级计算机</a>
+                    <p class="card-description" data-lang="en">The new DGX Station for Windows allows enterprises to run 1-trillion-parameter models and hundreds of agents locally, eliminating cloud dependency for regulated industries.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">新款面向 Windows 的 DGX Station 允许企业在本地运行万亿参数模型和数百个智能体，消除了受监管行业对云端的依赖。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">SiliconANGLE</span>
+                    <div class="news-time">2026-06-23</div>
+                    <a href="https://siliconangle.com/2026/06/23/upbound-open-sources-modelplane-optimize-inference-clusters/" class="card-title" target="_blank" data-lang="en">Upbound Open-Sources Modelplane for Inference Cluster Optimization</a>
+                    <a href="https://siliconangle.com/2026/06/23/upbound-open-sources-modelplane-optimize-inference-clusters/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Upbound 开源 Modelplane 用于优化推理集群</a>
+                    <p class="card-description" data-lang="en">Modelplane optimizes AI inference across multiple clouds using distributed caching and intelligent workload management to reduce latency.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Modelplane 通过分布式缓存和智能工作负载管理，优化跨多云的 AI 推理，从而降低延迟。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Next Web</span>
+                    <div class="news-time">2026-06-23</div>
+                    <a href="https://thenextweb.com/news/us-presses-meta-ai-security-reviews" class="card-title" target="_blank" data-lang="en">Anthropic Debuts Claude Tag for Slack Integration</a>
+                    <a href="https://thenextweb.com/news/us-presses-meta-ai-security-reviews" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 发布集成在 Slack 中的 Claude Tag</a>
+                    <p class="card-description" data-lang="en">Claude Tag is a highly capable AI teammate integrated directly into Slack, moving beyond a simple chat interface to a collaborative team member.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Tag 是一个高度能力化的 AI 队友，直接集成在 Slack 中，使其从简单的聊天界面进化为协同团队成员。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CryptoBriefing</span>
+                    <div class="news-time">2026-06-23</div>
+                    <a href="https://cryptobriefing.com/meta-supports-us-frontier-ai-leadership/" class="card-title" target="_blank" data-lang="en">Meta's 2026 AI Infrastructure CapEx Reaches Staggering $135 Billion</a>
+                    <a href="https://cryptobriefing.com/meta-supports-us-frontier-ai-leadership/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta 2026 年 AI 基础设施资本支出高达 1350 亿美元</a>
+                    <p class="card-description" data-lang="en">Meta's projected spending on AI hardware and data centers for 2026 is estimated to be between $115B and $135B, underscoring the brutal compute war at the frontier.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta 预计 2026 年在 AI 硬件和数据中心上的支出将在 1150 亿至 1350 亿美元之间，凸显了前沿领域残酷的算力战争。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The narrative of June 24, 2026, is the 'The Great Enclosure' of AI. We are witnessing a rapid transition where AI is being stripped of its 'global utility' status and re-classified as a high-stakes national security asset. The sequence of events—Anthropic's Mythos cracking classified systems, the US government mandating pre-release reviews, Meta's pivot to closed-source with Muse Spark, and the subsequent ban on foreign nationals—reveals a clear trend: the era of borderless, open-weights frontier AI is being replaced by a regime of 'Sovereign AI.' This shift is physically manifesting in hardware, as Nvidia's DGX Station for Windows allows this nationalization to happen on-premises, removing the risk of cloud-based kill-switches. Meanwhile, the staggering $135B CapEx from Meta signals that the only remaining moat at the frontier is sheer industrial scale, turning the pursuit of AGI into a game of attrition that only a few sovereign-scale entities can play.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026 年 6 月 24 日的主题是 AI 的 '大围栏' (The Great Enclosure)。我们正目睹一个迅速的转型：AI 正在被剥离其 '全球通用工具' 的身份，而被重新定义为高风险的国家安全资产。这一系列事件——Anthropic 的 Mythos 攻破机密系统、美国政府强制执行发布前审查、Meta 通过 Muse Spark 转向闭源，以及随后对外国国民的禁令——揭示了一个明确的趋势：无国界、开源权重的前沿 AI 时代正被 '主权 AI' 体制所取代。这种转变在硬件层面得到了具体体现，英伟达的 Windows 版 DGX Station 允许这种国家化在本地实现，消除了云端 '远程开关' 的风险。与此同时，Meta 令人震惊的 1350 亿美元资本支出表明，前沿领域唯一的护城河已变为纯粹的工业规模，将对 AGI 的追求变成了只有少数主权级实体才能参与的消耗战。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
