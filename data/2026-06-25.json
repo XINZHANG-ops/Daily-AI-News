@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-25",
+  "github_repos": [
+    {
+      "name": "huggingface/ml-intern",
+      "url": "https://github.com/huggingface/ml-intern",
+      "description": {
+        "en": "An open-source agent designed to automate the ML research loop, from arXiv research to GPU implementation and dataset curation.",
+        "zh": "一个旨在自动化机器学习研究循环的开源智能体，涵盖从 arXiv 研究到 GPU 实现以及数据集整理的全流程。"
+      },
+      "stars": "10.5k",
+      "forks": "1.1k"
+    },
+    {
+      "name": "OpenMOSS/MOSS-TTS",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "description": {
+        "en": "A high-fidelity, open-source speech and sound generation model family supporting long-form speech and real-time streaming.",
+        "zh": "一个高保真开源语音和声音生成模型系列，支持长篇语音和实时流式传输。"
+      },
+      "stars": "3.6k",
+      "forks": "315"
+    },
+    {
+      "name": "Ar9av/gemini-nano-chrome",
+      "url": "https://github.com/Ar9av/gemini-nano-chrome",
+      "description": {
+        "en": "A tool for utilizing Google's Gemini Nano directly through Chrome's built-in Prompt API with automation scripts.",
+        "zh": "一个通过 Chrome 内置 Prompt API 直接调用 Google Gemini Nano 的工具，包含自动化配置脚本。"
+      },
+      "stars": "164",
+      "forks": "14"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI and Broadcom Unveil 'Jalapeño' LLM-Optimized Inference Chip",
+        "zh": "OpenAI 与 Broadcom 联合发布 'Jalapeño' LLM 优化推理芯片"
+      },
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "source": "OpenAI",
+      "time": "2026-06-24",
+      "description": {
+        "en": "OpenAI and Broadcom introduced a custom inference chip designed to reduce LLM operational costs by ~50% and improve performance-per-watt, developed in just nine months using AI-accelerated design.",
+        "zh": "OpenAI 与 Broadcom 推出了一款定制推理芯片，旨在将 LLM 运行成本降低约 50% 并提升每瓦性能。该芯片在 AI 加速设计的帮助下仅用九个月就完成了从设计到量产的流程。"
+      },
+      "insight": {
+        "en": "This is OpenAI's declaration of independence from the 'Nvidia tax.' By cutting design time from years to months using AI, they've created a recursive feedback loop where AI builds the hardware that makes AI cheaper. This puts immense pressure on other labs to either find a hardware partner or risk being priced out of the scaling war.",
+        "zh": "这是 OpenAI 试图摆脱 'Nvidia 税' 的独立宣言。通过利用 AI 将设计周期从数年缩短至数月，他们创建了一个递归反馈循环：用 AI 构建让 AI 更便宜的硬件。这将迫使其他实验室要么寻找硬件合作伙伴，要么在规模化战争中面临成本劣势。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic's Mythos Model Identified Vulnerabilities in Classified US Systems",
+        "zh": "Anthropic 的 Mythos 模型发现美国政府机密系统的漏洞"
+      },
+      "url": "https://www.clickondetroit.com/news/politics/2026/06/24/anthropics-mythos-model-found-vulnerabilities-in-classified-us-government-systems-official-says/",
+      "source": "ClickOnDetroit",
+      "time": "2026-06-24",
+      "description": {
+        "en": "A U.S. official revealed that the Mythos model found vulnerabilities in sensitive government computer systems within hours, leading to restrictions on foreign nationals using Fable 5 and Mythos 5.",
+        "zh": "一名美国官员透露，Mythos 模型在数小时内就发现了敏感政府计算机系统的漏洞，导致美国政府限制外国国民使用 Fable 5 和 Mythos 5。"
+      },
+      "insight": {
+        "en": "The 'Mythos' reveal marks a tipping point where LLMs are no longer just productivity tools but potent offensive cyber-weapons. The government's reaction confirms that high-end intelligence is now a strategic military asset, likely triggering a wave of 'sovereign AI' fragmentation and stricter export controls on model weights.",
+        "zh": "'Mythos' 的披露标志着一个转折点：LLM 不再仅仅是生产力工具，而是强大的进攻性网络武器。政府的反应证实，顶尖智能现在已被视为战略军事资产，这可能会引发一波 '主权 AI' 的碎片化以及对模型权重更严格的出口管制。"
+      }
+    },
+    {
+      "title": {
+        "en": "Taktile Raises $110 Million to Automate High-Stakes Financial Decisions",
+        "zh": "Taktile 融资 1.1 亿美元，旨在自动化高风险金融决策"
+      },
+      "url": "https://fortune.com/2026/06/24/exclusive-taktile-goldman-sachs-ai-bank-insurance-funding/",
+      "source": "Fortune",
+      "time": "2026-06-24",
+      "description": {
+        "en": "Taktile secured $110M from Goldman Sachs and Tiger Global to scale its platform for automating complex financial decisions in banking and insurance.",
+        "zh": "Taktile 从高盛和 Tiger Global 获得了 1.1 亿美元融资，以扩展其用于银行和保险业复杂金融决策自动化的平台。"
+      },
+      "insight": {
+        "en": "We are seeing a shift from 'creative AI' (images/text) to 'deterministic AI' (high-stakes decisions). The backing from Goldman Sachs indicates that the industry is moving past the generative hype and into a phase of high-reliability automation where accuracy and auditability are more valuable than creativity.",
+        "zh": "我们正看到 AI 从 '创意 AI'（图像/文本）向 '确定性 AI'（高风险决策）转移。高盛的背书表明，行业正走出生成式热潮，进入一个追求高可靠自动化的阶段，在这里，准确性和可审计性比创造力更重要。"
+      }
+    },
+    {
+      "title": {
+        "en": "Sentient Foundation Launches $42M Program for Open-Source AGI",
+        "zh": "Sentient 基金会推出 4200 万美元计划支持开源 AGI"
+      },
+      "url": "https://thenextweb.com/news/sentient-foundation-launches-42m-program-to-back-open-source-agi-builders",
+      "source": "The Next Web",
+      "time": "2026-06-24",
+      "description": {
+        "en": "The Sentient Foundation established a $42M grant and investment program to support developers building open-source Artificial General Intelligence to counter corporate AI monopolies.",
+        "zh": "Sentient 基金会设立了 4200 万美元的资助和投资计划，旨在支持构建开源通用人工智能 (AGI) 的开发者，以对抗企业 AI 垄断。"
+      },
+      "insight": {
+        "en": "This is a strategic financial counter-offensive to the 'Closed AI' trend. While $42M is small compared to Big Tech's budgets, it provides a critical 'survival kit' for the open-source community to ensure the digital commons remain accessible, preventing AGI from becoming a purely proprietary corporate asset.",
+        "zh": "这是针对 '闭源 AI' 趋势的一次战略性财务反击。虽然 4200 万美元与大厂的预算相比微不足道，但它为开源社区提供了关键的 '生存包'，以确保数字公地依然可及，防止 AGI 成为纯粹的私人企业资产。"
+      }
+    },
+    {
+      "title": {
+        "en": "Seltz Raises $12.5M Seed to Reinvent Web Search for AI Agents",
+        "zh": "Seltz 获得 1250 万美元种子轮融资，旨在为 AI 智能体重塑网络搜索"
+      },
+      "url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+      "source": "Fortune",
+      "time": "2026-06-24",
+      "description": {
+        "en": "Seltz is building a search infrastructure optimized for AI agents and chatbots rather than human users, raising $12.5M to develop this new layer of the web.",
+        "zh": "Seltz 正在构建一个为 AI 智能体和聊天机器人而非人类用户优化的搜索基础设施，并筹集了 1250 万美元以开发这一网络新层。"
+      },
+      "insight": {
+        "en": "The web was built for human eyes; Seltz recognizes that the next billion users are agents. This marks the beginning of the 'Agent-Native Web' era, where traditional SEO is replaced by 'Agent Optimization.' Companies that don't make their data agent-readable will become invisible to the AI-driven economy.",
+        "zh": "网络是为人类眼睛构建的；Seltz 意识到接下来的十亿用户将是智能体。这标志着 '智能体原生网络' 时代的开始，传统的 SEO 将被 '智能体优化' 所取代。那些无法让数据被智能体高效读取的公司，将在 AI 驱动的经济中变得透明。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The overarching theme of June 25 is 'The Great Decoupling.' We see OpenAI decoupling from Nvidia via the Jalapeño chip, the US government decoupling high-end models from the global public for national security, and the open-source movement decoupling from corporate control via Sentient. Meanwhile, the 'Agentic' shift is moving from the model (the 'brain') to the infrastructure (the 'web' via Seltz), signaling that the era of 'AI as a tool' is ending, and the era of 'AI as an autonomous actor in the world' is beginning.",
+    "zh": "6月25日的主题是“大脱钩”。我们看到 OpenAI 通过 Jalapeño 芯片与 Nvidia 脱钩，美国政府出于国家安全考虑让顶尖模型与全球公众脱钩，而开源运动通过 Sentient 与企业控制脱钩。与此同时，“智能体化”的趋势正从模型（“大脑”）转移到基础设施（通过 Seltz 打造的“网络”），这标志着“AI 作为工具”的时代即将结束，“AI 作为世界中自主行动者”的时代正式开启。"
+  }
+}
