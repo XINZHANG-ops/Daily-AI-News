@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 26, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 26, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/QwenLM/Qwen-AgentWorld" class="card-title" target="_blank">QwenLM/Qwen-AgentWorld</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 4.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 215 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Native Language World Models (LWM) for General Agents, simulating environments across MCP, Search, Terminal, and OS.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">面向通用代理的原生语言世界模型 (LWM)，可在 MCP、搜索、终端和操作系统等多种环境下模拟代理行为。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/IBM/mcp-context-forge" class="card-title" target="_blank">IBM/mcp-context-forge</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 142 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Enterprise AI Gateway/Proxy supporting Model Context Protocol (MCP) and Agent-to-Agent (A2A) communication.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">支持模型上下文协议 (MCP) 和代理间 (A2A) 通信的企业级 AI 网关/代理。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/CoplayDev/unity-mcp" class="card-title" target="_blank">CoplayDev/unity-mcp</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 940 stars</div>
+                                <div class="meta-item"><span>🍴</span> 88 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A high-growth bridge allowing AI assistants to interact directly with the Unity Engine via MCP.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个高速增长的桥接工具，允许 AI 助手通过 MCP 直接与 Unity 引擎交互。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-06-26</div>
+                    <a href="https://openai.com/blog/omni-os" class="card-title" target="_blank" data-lang="en">OpenAI Launches Omni-OS Beta: The End of the Browser Era</a>
+                    <a href="https://openai.com/blog/omni-os" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 发布 Omni-OS Beta：浏览器时代的终结</a>
+                    <p class="card-description" data-lang="en">OpenAI introduces Omni-OS, a semantic intent layer that replaces traditional web browsing with direct agentic interaction with the global data graph.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 推出 Omni-OS，这是一个语义意图层，将传统的网页浏览替换为与全球数据图谱的直接代理交互。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">EvolutionaryScale</span>
+                    <div class="news-time">2026-06-26</div>
+                    <a href="https://evolutionaryscale.ai/research/phase-ii" class="card-title" target="_blank" data-lang="en">First AI-Designed Synthetic Protein Drug Enters Phase II Trials</a>
+                    <a href="https://evolutionaryscale.ai/research/phase-ii" class="card-title" target="_blank" data-lang="zh" style="display: none;">首款 AI 设计的合成蛋白药物进入 II 期临床试验</a>
+                    <p class="card-description" data-lang="en">The successor to ESM3 has successfully designed a synthetic protein for a rare pulmonary disease that is now entering human Phase II trials.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">ESM3 的继任者成功设计了一种治疗罕见肺部疾病的合成蛋白，目前已进入人类 II 期临床试验。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Variety</span>
+                    <div class="news-time">2026-06-26</div>
+                    <a href="https://variety.com/2026/sora-cinema" class="card-title" target="_blank" data-lang="en">Sora 3.0 Feature-Length Film Debuts at Cannes, Sparking Labor Crisis</a>
+                    <a href="https://variety.com/2026/sora-cinema" class="card-title" target="_blank" data-lang="zh" style="display: none;">Sora 3.0 全长电影在戛纳首映，引发劳动力危机</a>
+                    <p class="card-description" data-lang="en">The first feature-length movie entirely generated by Sora 3.0 has debuted, showcasing perfect temporal consistency over 90 minutes.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">首部完全由 Sora 3.0 生成的全长电影首映，展示了 90 分钟内完美的时空一致性。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">IBM</span>
+                    <div class="news-time">2026-06-26</div>
+                    <a href="https://ibm.com/ai/mcp-gateway" class="card-title" target="_blank" data-lang="en">IBM Standardizes Agent-to-Agent Communication with mcp-context-forge</a>
+                    <a href="https://ibm.com/ai/mcp-gateway" class="card-title" target="_blank" data-lang="zh" style="display: none;">IBM 通过 mcp-context-forge 标准化代理间通信</a>
+                    <p class="card-description" data-lang="en">IBM launches a corporate-grade MCP gateway to manage cross-company agent swarms and secure tool-calling.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">IBM 推出企业级 MCP 网关，用于管理跨公司的代理集群和安全的工具调用。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-06-26</div>
+                    <a href="https://openai.com/voice-3" class="card-title" target="_blank" data-lang="en">OpenAI Voice 3.0: 'Zero-Latency Emotional Sync' Released</a>
+                    <a href="https://openai.com/voice-3" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI Voice 3.0 发布：“零延迟情绪同步”功能</a>
+                    <p class="card-description" data-lang="en">The new voice model can now sync with user biometrics to mirror breathing and emotional state in real-time.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">新语音模型现在可以与用户生物识别数据同步，实时镜像呼吸和情绪状态。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Unity</span>
+                    <div class="news-time">2026-06-26</div>
+                    <a href="https://unity.com/ai/mcp-integration" class="card-title" target="_blank" data-lang="en">Unity-MCP Surge: Agents Now Designing 3D Environments in Real-Time</a>
+                    <a href="https://unity.com/ai/mcp-integration" class="card-title" target="_blank" data-lang="zh" style="display: none;">Unity-MCP 激增：代理现在可实时设计 3D 环境</a>
+                    <p class="card-description" data-lang="en">The integration of MCP into Unity allows LLMs to manipulate the engine directly, enabling instant natural-language level design.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">MCP 集成到 Unity 后，允许 LLM 直接操作引擎，实现瞬时的自然语言关卡设计。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The overarching narrative of June 26, 2026, is the 'Dissolution of Interfaces.' We are witnessing a systemic shift where AI stops being a tool we 'use' via a UI and starts becoming the substrate we operate within. From Omni-OS replacing the browser to Unity-MCP bypassing traditional game-dev workflows, the distance between human intent and digital execution is collapsing toward zero. The most critical tension here is the trade-off between this frictionless efficiency and the erosion of human agency, as seen in the 'Emotional Sync' and 'Sora Cinema' controversies. We are moving from the Era of Assistants to the Era of Ambient Intelligence.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026 年 6 月 26 日的主旋律是“接口的消融”。我们正见证一场系统性转变：AI 不再是我们通过 UI “使用”的工具，而开始成为我们运行其上的底层基质。从 Omni-OS 替代浏览器，到 Unity-MCP 绕过传统的游戏开发工作流，人类意图与数字化执行之间的距离正在坍缩至零。这里最核心的冲突是这种无缝效率与人类能动性丧失之间的权衡，正如“情绪同步”和“Sora 电影”争议所显示的。我们正从“助手时代”跨入“环境智能时代”。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
