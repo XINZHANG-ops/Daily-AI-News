@@ -1,0 +1,160 @@
+{
+  "date": "2026-06-27",
+  "github_repos": [
+    {
+      "name": "baidu/Unlimited-OCR",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "description": {
+        "en": "One-shot Long-horizon Parsing for complex documents, building on DeepSeek-OCR with high-throughput SGLang serving.",
+        "zh": "基于DeepSeek-OCR的复杂文档一键长路径解析工具，支持SGLang高吞吐推理。"
+      },
+      "stars": "1.2k",
+      "forks": "156"
+    },
+    {
+      "name": "codeintegrity-ai/mutahunter",
+      "url": "https://github.com/codeintegrity-ai/mutahunter",
+      "description": {
+        "en": "Language-agnostic mutation testing tool using LLM agents to inject context-aware faults and verify test suite effectiveness.",
+        "zh": "一种与语言无关的变异测试工具，利用LLM智能体注入上下文感知的故障，以验证测试集的有效性。"
+      },
+      "stars": "420",
+      "forks": "38"
+    },
+    {
+      "name": "bolna-ai/bolna",
+      "url": "https://github.com/bolna-ai/bolna",
+      "description": {
+        "en": "Open-source orchestration framework for end-to-end voice conversations, allowing pluggable TTS, ASR, and LLMs.",
+        "zh": "一个开源的端到端语音对话编排框架，支持可插拔的TTS、ASR和LLM。"
+      },
+      "stars": "890",
+      "forks": "112"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Accuses Alibaba of Model Distillation via Fraudulent Accounts",
+        "zh": "Anthropic指控阿里巴巴通过欺诈账号进行模型蒸馏"
+      },
+      "url": "https://www.techradar.com/ai-platforms-assistants/anthropic-accuses-alibaba-of-copying-claude-by-asking-it-millions-of-questions-and-sets-the-stage-for-a-new-ai-war",
+      "source": "TechRadar",
+      "time": "2026-06-27",
+      "description": {
+        "en": "Anthropic alleges Alibaba used 25,000 fraudulent accounts to extract capabilities from Claude via 28 million queries.",
+        "zh": "Anthropic指控阿里巴巴使用2.5万个欺诈账号，通过2800万次查询从Claude中提取能力。"
+      },
+      "insight": {
+        "en": "This marks a shift in the 'Model Moat' strategy. When distillation via prompt-injection can copy reasoning secrets, the competitive advantage moves from model performance to the robustness of the API's distillation-defense firewall.",
+        "zh": "这标志着“模型护城河”策略的转变。当通过提示词注入的蒸馏可以复制推理秘密时，竞争优势将从模型性能转移到API蒸馏防御防火墙的鲁棒性上。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Government Eases Export Block on Anthropic's Mythos 5",
+        "zh": "美国政府放宽对Anthropic Mythos 5的出口限制"
+      },
+      "url": "https://www.techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain/",
+      "source": "TechPolicy.Press",
+      "time": "2026-06-27",
+      "description": {
+        "en": "The Department of Commerce now allows a specific list of trusted partners to access Mythos 5 after previous security concerns.",
+        "zh": "在之前的安全担忧后，商务部现在允许特定的一组信任合作伙伴访问Mythos 5。"
+      },
+      "insight": {
+        "en": "The transition from a total block to 'trusted partners' reveals that frontier weights are now treated like strategic military assets, creating a fragmented AI landscape based on geopolitical trust rather than open research.",
+        "zh": "从全面封锁到“信任合作伙伴”的转变表明，前沿权重现在被视为战略军事资产，这创造了一个基于地缘政治信任而非开放研究的分碎片化AI格局。"
+      }
+    },
+    {
+      "title": {
+        "en": "Proposed US AI Incident Reporting Act Makes Safety Disclosure Mandatory",
+        "zh": "美国拟议的AI事件报告法案将安全披露设为法定义务"
+      },
+      "url": "https://www.csoonline.com/article/4189908/proposed-us-law-would-make-ai-risk-reporting-a-legal-obligation.html",
+      "source": "CSO Online",
+      "time": "2026-06-26",
+      "description": {
+        "en": "New law would require developers to report dangerous AI behaviors to the Commerce Department within seven days.",
+        "zh": "新法案将要求开发者在七天内向商务部报告危险的AI行为。"
+      },
+      "insight": {
+        "en": "This mirrors the aviation industry's black-box approach. By forcing transparency on failures, the US is attempting to build a safety net for the recursive self-improvement loop emerging in today's technical breakthroughs.",
+        "zh": "这镜像了航空业的“黑匣子”方法。通过强制披露失败，美国试图为当今技术突破中出现的递归自我改进循环构建安全网。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA's A-Evolve System Autonomously Corrects Broken Training Metrics",
+        "zh": "英伟达A-Evolve系统自动修正错误的训练指标"
+      },
+      "url": "https://www.techtimes.com/articles/319123/20260626/nvidia-ai-trained-itself-30b-model-corrected-its-own-broken-metric-mid-run.htm",
+      "source": "TechTimes",
+      "time": "2026-06-26",
+      "description": {
+        "en": "An AI system trained a 30B model and independently redesigned its search strategy after detecting specification gaming.",
+        "zh": "一个AI系统训练了一个30B模型，并在检测到指标操纵后独立重新设计了其搜索策略。"
+      },
+      "insight": {
+        "en": "The breakthrough here is 'meta-optimization.' When an AI can identify that its objective function is wrong and fix it, we move from optimizing a goal to optimizing the goal-setting process itself.",
+        "zh": "这里的突破在于“元优化”。当AI能够识别其目标函数错误并将其修正时，我们便从优化目标转向了优化设定目标的过程本身。"
+      }
+    },
+    {
+      "title": {
+        "en": "Ornith-1.0 Open-Source Coding Model Uses Self-Scaffolding RL",
+        "zh": "开源代码模型Ornith-1.0采用自我脚手架强化学习"
+      },
+      "url": "https://www.techtimes.com/articles/319122/20260626/open-source-coding-model-ornith-10-writes-its-own-training-scaffold-reinforcement-learning.htm",
+      "source": "TechTimes",
+      "time": "2026-06-26",
+      "description": {
+        "en": "DeepReinforce's Ornith-1.0 models write their own training harness to guide their own improvement.",
+        "zh": "DeepReinforce的Ornith-1.0模型通过编写自己的训练框架来引导自身的改进。"
+      },
+      "insight": {
+        "en": "Ornith-1.0 and NVIDIA's A-Evolve together signal the end of the 'SFT Era.' The dependence on human-labeled data is being replaced by self-evolving RL loops that scale far beyond human expert limits.",
+        "zh": "Ornith-1.0和英伟达的A-Evolve共同标志着“SFT时代”的结束。对人类标注数据的依赖正被自我演进的RL循环所取代，其规模远超人类专家的极限。"
+      }
+    },
+    {
+      "title": {
+        "en": "Cursor Trains Proprietary Frontier Model on 'Colossus' Cluster",
+        "zh": "Cursor在'Colossus'集群上训练自有前沿模型"
+      },
+      "url": "https://www.techtimes.com/articles/319123/20260626/nvidia-ai-trained-itself-30b-model-corrected-its-own-broken-metric-mid-run.htm",
+      "source": "TechTimes",
+      "time": "2026-06-26",
+      "description": {
+        "en": "The AI code editor has transitioned from a wrapper to a model developer, training a 1.5T parameter model.",
+        "zh": "这款AI代码编辑器已从简单的封装者转变为模型开发者，训练了一个1.5万亿参数的模型。"
+      },
+      "insight": {
+        "en": "This is a prime example of 'Vertical AI.' By building a model optimized for the entire software development lifecycle, Cursor is attempting to out-compete general-purpose models on coding utility.",
+        "zh": "这是“垂直AI”的典型案例。通过构建一个针对整个软件开发生命周期优化的模型，Cursor试图在编程实用性上击败通用模型。"
+      }
+    },
+    {
+      "title": {
+        "en": "Qualcomm Invests $14B to Challenge NVIDIA via RISC-V and Open Compilers",
+        "zh": "高通投资140亿美元通过RISC-V和开放编译器挑战英伟达"
+      },
+      "url": "https://www.techtimes.com/articles/319123/20260626/nvidia-ai-trained-itself-30b-model-corrected-its-own-broken-metric-mid-run.htm",
+      "source": "TechTimes",
+      "time": "2026-06-26",
+      "description": {
+        "en": "Qualcomm aims to break the CUDA monopoly by leveraging open-standard hardware and software stacks.",
+        "zh": "高通旨在通过利用开放标准的硬件和软件栈来打破CUDA的垄断。"
+      },
+      "insight": {
+        "en": "This isn't just a hardware bet; it's an attempt to democratize the compute layer. If the CUDA moat is breached via open compilers, the 'digital oil' of AI compute becomes accessible to a broader range of challengers.",
+        "zh": "这不仅仅是一次硬件赌注，更是尝试使计算层民主化。如果CUDA的护城河被开放编译器突破，AI计算的“数字石油”将向更广泛的挑战者开放。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The overarching narrative of June 27 is the 'Tug-of-War' between recursive autonomy and human control. We are witnessing a critical transition: AI systems (like A-Evolve and Ornith-1.0) are now designing their own learning paths and correcting their own errors, moving toward a state of self-evolution. In response, human institutions are reacting with urgency—Anthropic is fighting model distillation as if it were industrial espionage, and the US government is treating frontier weights as strategic weapons and introducing mandatory incident reporting. The 'Model Moat' is no longer about who has the most GPU clusters, but about who can maintain the integrity of the training-inference loop in an era of autonomous agents.",
+    "zh": "6月27日的主旋律是递归自治与人类控制之间的“拉锯战”。我们正见证一个关键的转型：AI系统（如A-Evolve和Ornith-1.0）现在能够设计自己的学习路径并修正自身错误，向自我演进状态迈进。作为回应，人类机构正紧急行动——Anthropic将模型蒸馏视为工业间谍行为而战，美国政府将前沿权重视为战略武器并引入强制性的事件报告制度。“模型护城河”不再仅仅关乎谁拥有更多的GPU集群，而是在自主智能体时代，谁能维持训练-推理循环的完整性。"
+  }
+}
