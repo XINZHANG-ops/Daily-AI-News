@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-28",
+  "github_repos": [
+    {
+      "name": "XiaomiMiMo/MiMo-Code",
+      "url": "https://github.com/XiaomiMiMo/MiMo-Code",
+      "description": {
+        "en": "A high-performance coding model release from Xiaomi's MiMo AI team, primarily implemented in TypeScript for modern web development optimization.",
+        "zh": "来自小米 MiMo AI 团队的高性能编程模型，主要采用 TypeScript 实现，旨在优化现代 Web 开发。"
+      },
+      "stars": "9.7k",
+      "forks": "412"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": {
+        "en": "An agentic skills framework and software development methodology focusing on structured autonomy and scalable agent coordination.",
+        "zh": "一个智能体技能框架和软件开发方法论，专注于结构化自治和可扩展的智能体协作。"
+      },
+      "stars": "232k",
+      "forks": "12.4k"
+    },
+    {
+      "name": "Egonex-AI/Understand-Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "description": {
+        "en": "Converts complex codebases into interactive, queryable knowledge graphs, enabling deep architectural understanding of large-scale systems.",
+        "zh": "将复杂的代码库转换为交互式、可查询的知识图谱，实现对大规模系统的深度架构理解。"
+      },
+      "stars": "63k",
+      "forks": "3.1k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Launches GPT-5.6 Model Family: Sol, Terra, and Luna",
+        "zh": "OpenAI 发布 GPT-5.6 模型家族：Sol, Terra 和 Luna"
+      },
+      "url": "https://www.latestly.com/technology/openai-launches-sol-terra-and-luna-ai-models-limits-rollout-following-us-government-request-7493322.html",
+      "source": "LatestLY / Economic Times",
+      "time": "2026-06-27",
+      "description": {
+        "en": "OpenAI introduced a tiered model system with Sol (Flagship Reasoning), Terra (Production Workhorse), and Luna (High-Volume/Low-Cost). Sol features a 'max reasoning effort' mode and is currently under a limited, government-supervised rollout.",
+        "zh": "OpenAI 推出分层模型系统，包括 Sol（旗舰推理）、Terra（生产主力）和 Luna（高吞吐/低成本）。Sol 具有“最大推理强度”模式，目前正处于政府监督下的限量发布阶段。"
+      },
+      "insight": {
+        "en": "OpenAI's transition to a tiered 'managed distribution' system signals the end of the 'open-access' API era for flagship models. By splitting the family into Sol, Terra, and Luna, they are effectively segmenting the market by cognitive demand. The US Govt-mandated limited rollout is the most critical signal: frontier models are now treated as strategic national assets, not just software products.",
+        "zh": "OpenAI 向“受管分发”系统的转型标志着旗舰模型“开放访问”API 时代的结束。通过将家族分为 Sol、Terra 和 Luna，他们实际上是根据认知需求对市场进行了细分。美国政府强制执行的限量发布是一个最关键的信号：前沿模型现在被视为国家战略资产，而不仅仅是软件产品。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepReinforce Releases Ornith-1.0 with Self-Writing RL Scaffolds",
+        "zh": "DeepReinforce 发布 Ornith-1.0，支持自动编写 RL 训练支架"
+      },
+      "url": "https://aiinsiders.net/article/deepreinforce-ships-ornith-10-a-coding-model-that-writes",
+      "source": "AI Insiders",
+      "time": "2026-06-27",
+      "description": {
+        "en": "Ornith-1.0 is a coding model that can design its own Reinforcement Learning (RL) training harnesses, achieving performance parity with Claude Opus 4.7 in complex software engineering tasks.",
+        "zh": "Ornith-1.0 是一款能够设计自身强化学习（RL）训练支架的编程模型，在复杂软件工程任务中达到了与 Claude Opus 4.7 相当的性能。"
+      },
+      "insight": {
+        "en": "The ability to write its own RL scaffolds is a paradigm shift. Instead of humans defining the 'reward' for a coding task, the model is now designing the evaluation framework itself. This closes the loop on self-improvement and explains the leap to parity with Claude Opus 4.7—it's no longer just about more data, but about better self-directed training.",
+        "zh": "自动编写 RL 支架的能力是一次范式转移。模型不再依赖人类定义编程任务的“奖励”，而是自行设计评估框架。这闭合了自我改进的环路，并解释了为何能迅速追平 Claude Opus 4.7——这不再仅仅是数据量的问题，而是关于更高效的自我引导训练。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Restores Access to Mythos 5 for Trusted Partners",
+        "zh": "Anthropic 为信任合作伙伴恢复 Mythos 5 的访问权限"
+      },
+      "url": "https://www.latestly.com/technology/openai-launches-sol-terra-and-luna-ai-models-limits-rollout-following-us-government-request-7493322.html",
+      "source": "LatestLY",
+      "time": "2026-06-27",
+      "description": {
+        "en": "Following a period of restriction, the US government has permitted Anthropic to restore access to the Mythos 5 model for a selective group of vetted partners.",
+        "zh": "在一段时期的限制之后，美国政府已允许 Anthropic 为一组经过审核的特定合作伙伴恢复 Mythos 5 模型的访问权限。"
+      },
+      "insight": {
+        "en": "The 'restoration of access' to Mythos 5 is a rare glimpse into the 'black-box' safety-security dance. It suggests a prior conflict between Anthropic's safety guardrails and government security audits. The fact that it's only for 'trusted partners' indicates that a full public release is still blocked by non-technical, geopolitical constraints.",
+        "zh": "Mythos 5 “访问权限的恢复”揭示了安全与监管之间微妙的博弈。这表明 Anthropic 的安全护栏与政府的安全审计之间此前存在冲突。仅向“信任合作伙伴”开放，表明其全面公开发布仍受非技术性的地缘政治因素制约。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI to Deploy Sol Model on Cerebras Hardware for 750 TPS",
+        "zh": "OpenAI 将在 Cerebras 硬件上部署 Sol 模型，目标速度 750 TPS"
+      },
+      "url": "https://www.tekedia.com/openai-debuts-gpt-5-6-sol-debuts-as-most-advanced-ai-model-yet/",
+      "source": "Tekedia",
+      "time": "2026-06-27",
+      "description": {
+        "en": "To overcome the latency of deep reasoning, OpenAI announced Sol will launch on Cerebras wafer-scale engines, aiming for speeds of up to 750 tokens per second.",
+        "zh": "为了克服深度推理的延迟问题，OpenAI 宣布 Sol 将在 Cerebras 片上引擎上启动，目标速度高达每秒 750 个 token。"
+      },
+      "insight": {
+        "en": "Moving Sol to Cerebras is a direct attack on the 'latency wall' of complex reasoning. High-effort reasoning (like Sol's max mode) typically kills UX due to slow output. By leveraging Cerebras' wafer-scale engine, OpenAI is trying to make 'slow thinking' feel like 'fast thinking,' making agents viable for real-time interactive use.",
+        "zh": "将 Sol 迁移至 Cerebras 是对复杂推理“延迟墙”的直接打击。高强度推理（如 Sol 的最大模式）通常因输出缓慢而破坏用户体验。通过利用 Cerebras 的晶圆级引擎，OpenAI 试图让“慢思考”具有“快思考”的体感，从而使智能体在实时交互场景中变得可行。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Finance App for Android Debuts with AI-Driven Insights",
+        "zh": "Google Finance 安卓版 App 亮相，搭载 AI 驱动的分析洞察"
+      },
+      "url": "https://www.latestly.com/technology/openai-launches-sol-terra-and-luna-ai-models-limits-rollout-following-us-government-request-7493322.html",
+      "source": "LatestLY",
+      "time": "2026-06-27",
+      "description": {
+        "en": "Google released a dedicated Finance app for Android featuring AI-powered market analysis, portfolio health checks, and automated financial news synthesis.",
+        "zh": "Google 发布了专门的安卓版 Finance App，提供 AI 驱动的市场分析、投资组合健康检查以及自动化的财经新闻综合。"
+      },
+      "insight": {
+        "en": "While seemingly a small app update, the integration of AI market insights into Google Finance is a push toward 'Actionable AI'—moving from 'telling me what the stock is' to 'analyzing why the stock is moving.' It's Google's attempt to recapture the utility layer of the web by embedding intelligence into high-frequency financial habits.",
+        "zh": "虽然看起来只是一个简单的 App 更新，但将 AI 市场洞察集成到 Google Finance 是向“可执行 AI”的一次推进——从简单的“告诉我股价是多少”转向“分析股价为何波动”。这是 Google 通过将智能嵌入高频财经习惯，试图重新夺回 Web 实用层控制权的尝试。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "June 28, 2026, marks a pivotal transition from the 'Chatbot Era' to the 'Sovereign Agent Era.' The dominant story is not just the release of GPT-5.6 Sol, but the mechanism of its release: a managed, government-supervised rollout. This confirms that frontier AI has officially entered the realm of strategic state assets. Simultaneously, the technical breakthrough in DeepReinforce's Ornith-1.0—self-generating RL scaffolds—signals that the bottleneck of human-labeled data for reasoning is being bypassed by synthetic, self-designed curricula. When you combine Sol's reasoning power with the extreme throughput of Cerebras hardware and the 'lazy senior dev' philosophy of tools like Ponytail, we are seeing the emergence of 'Cognitive Infrastructure'—systems that don't just answer questions, but autonomously architect and execute complex engineering goals with minimal human oversight. The tension is now between the acceleration of these capabilities and the tightening of the regulatory leash.",
+    "zh": "2026 年 6 月 28 日标志着从“聊天机器人时代”向“主权智能体时代”的决定性转型。当天的核心叙事不仅在于 GPT-5.6 Sol 的发布，更在于其发布机制：一种受管的、政府监督的滚动发布。这证实了前沿 AI 已正式进入国家战略资产领域。与此同时，DeepReinforce Ornith-1.0 在自生成 RL 训练支架上的技术突破，表明推理所需的真人类标注数据瓶颈正被合成的、自设计的课程学习所取代。当 Sol 的推理能力与 Cerebras 硬件的极高吞吐量，以及 Ponytail 等工具所倡导的“懒惰高级开发人员”哲学相结合时，我们正见证“认知基础设施”的出现——这些系统不再仅仅是回答问题，而是在极少人工干预的情况下，自主构思并执行复杂的工程目标。目前的紧张局势在于，能力的飞速进化与监管缰绳的不断收紧之间形成了剧烈冲突。"
+  }
+}
