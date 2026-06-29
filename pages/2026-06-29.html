@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - June 29, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 June 29, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/eigent-ai/eigent" class="card-title" target="_blank">eigent-ai/eigent</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 145 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An open-source 'Cowork Desktop' designed as a local and free alternative to high-end AI coworker tools.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个开源的“AI同事桌面”，旨在提供一个本地且免费的高端 AI 同事工具替代方案。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/iart-ai/motion-skills" class="card-title" target="_blank">iart-ai/motion-skills</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 890 stars</div>
+                                <div class="meta-item"><span>🍴</span> 112 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">50 open-source skills for AI coding agents to create motion graphics and animation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">为 AI 编程智能体提供的 50 个开源技能，用于创建动态图形和动画。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/agentxagi/awesome-discoveries" class="card-title" target="_blank">agentxagi/awesome-discoveries</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 340 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A living curation of AI agent security findings, including a massive list of CVEs related to prompt injection and sandbox escapes.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个关于 AI 智能体安全发现的动态策展库，包含大量与提示词注入和沙箱逃逸相关的 CVE 列表。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">AIToolsRecap</span>
+                    <div class="news-time">2026-06-28</div>
+                    <a href="https://aitoolsrecap.com/Blog/ai-news-june-28-2026" class="card-title" target="_blank" data-lang="en">GPT-5.6 Enters Limited Preview Under Government Approval</a>
+                    <a href="https://aitoolsrecap.com/Blog/ai-news-june-28-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">GPT-5.6 在政府审核下进入限量预览阶段</a>
+                    <p class="card-description" data-lang="en">OpenAI's GPT-5.6 (Sol/Terra/Luna) is restricted to government-approved partners due to a lack of a formal AI approval framework.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">由于缺乏正式的 AI 审批框架，OpenAI 的 GPT-5.6（Sol/Terra/Luna）目前被限制在经过政府批准的合作伙伴范围内。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechTimes</span>
+                    <div class="news-time">2026-06-28</div>
+                    <a href="https://www.techtimes.com/articles/319231/20260628/claude-ai-beats-human-robotics-teams-20x-anthropic-marks-physical-ai-turn.htm" class="card-title" target="_blank" data-lang="en">Claude Mythos 5 Reaches General Availability for Enterprise</a>
+                    <a href="https://www.techtimes.com/articles/319231/20260628/claude-ai-beats-human-robotics-teams-20x-anthropic-marks-physical-ai-turn.htm" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude Mythos 5 为企业级用户正式发布</a>
+                    <p class="card-description" data-lang="en">Anthropic's cybersecurity-aligned model Mythos 5 is now GA for enterprise, integrating vulnerability-aware reasoning into procurement workflows.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic 的网络安全对齐模型 Mythos 5 现已面向企业正式发布，将漏洞感知推理集成到采购工作流中。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechTimes</span>
+                    <div class="news-time">2026-06-28</div>
+                    <a href="https://www.techtimes.com/articles/319231/20260628/claude-ai-beats-human-robotics-teams-20x-anthropic-marks-physical-ai-turn.htm" class="card-title" target="_blank" data-lang="en">Claude Opus 4.7 Outperforms Human Robotics Teams by 20x</a>
+                    <a href="https://www.techtimes.com/articles/319231/20260628/claude-ai-beats-human-robotics-teams-20x-anthropic-marks-physical-ai-turn.htm" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude Opus 4.7 在物理 AI 任务中性能超越人类机器人团队 20 倍</a>
+                    <p class="card-description" data-lang="en">In Project Fetch Phase Two, Claude Opus 4.7 completed physical programming tasks in 9 minutes that took humans 3-6 hours.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在 Project Fetch 第二阶段中，Claude Opus 4.7 在 9 分钟内完成了需要人类花费 3-6 小时才能完成的物理编程任务。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechTimes</span>
+                    <div class="news-time">2026-06-30</div>
+                    <a href="https://www.techtimes.com/articles/319231/20260628/claude-ai-beats-human-robotics-teams-20x-anthropic-marks-physical-ai-turn.htm" class="card-title" target="_blank" data-lang="en">Anthropic's 'AI for Science' Event to Feature John Jumper</a>
+                    <a href="https://www.techtimes.com/articles/319231/20260628/claude-ai-beats-human-robotics-teams-20x-anthropic-marks-physical-ai-turn.htm" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 将举办“AI for Science”活动，诺奖得主 John Jumper 将出席</a>
+                    <p class="card-description" data-lang="en">A major event on June 30th focusing on AI for scientific discovery, featuring Nobel laureate John Jumper who recently joined Anthropic.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">6 月 30 日将举行一场专注于 AI 科学发现的重大活动，诺贝尔奖得主、近期加入 Anthropic 的 John Jumper 将出席。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">SwiftAlerts</span>
+                    <div class="news-time">2026-06-28</div>
+                    <a href="https://swiftalerts.trade/the-cadence-trade-hn" class="card-title" target="_blank" data-lang="en">The 'Recursion Theory' Explains Accelerating Release Cadences</a>
+                    <a href="https://swiftalerts.trade/the-cadence-trade-hn" class="card-title" target="_blank" data-lang="zh" style="display: none;">“递归理论”解释了模型发布周期的加速</a>
+                    <p class="card-description" data-lang="en">Analysis suggests labs are using AI agents (like Claude Code) to build the next generation of models, creating a loop of recursive self-improvement.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">分析认为，AI 实验室正在使用 AI 智能体（如 Claude Code）来构建下一代模型，从而创建了一个递归自我改进的循环。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">SwiftAlerts</span>
+                    <div class="news-time">2026-06-28</div>
+                    <a href="https://swiftalerts.trade/the-cadence-trade-hn" class="card-title" target="_blank" data-lang="en">xAI in Turmoil as Co-Founders Depart; SpaceX Acquires Cursor</a>
+                    <a href="https://swiftalerts.trade/the-cadence-trade-hn" class="card-title" target="_blank" data-lang="zh" style="display: none;">xAI 陷入混乱，共同创始人相继离职；SpaceX 收购 Cursor</a>
+                    <p class="card-description" data-lang="en">Reid Hoffman describes xAI as a 'train wreck' after the exit of 11 co-founders, while SpaceX spends $60B to acquire the AI-native IDE Cursor.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Reid Hoffman 在 11 位共同创始人离职后将 xAI 描述为“一场车祸”，而 SpaceX 则花费 600 亿美元收购了 AI 原生 IDE Cursor。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">June 29, 2026, marks a transition from 'model competition' to 'institutional and regulatory dominance.' The barrage of version updates (GPT-5.6, Mythos 5, Llama 4.5) is now secondary to the real story: the institutionalization of AI. The 'OpenAI vs Anthropic' rivalry has been replaced by a shared reality where both are effectively government contractors awaiting federal approval for releases. Simultaneously, the 'Physical AI' breakthrough and the 'Recursion Theory' signal a critical shift. We are moving from LLMs as chatbots to LLMs as the primary driver of their own development cycle and operational agents in the physical world. The trend on GitHub toward 'Agent Skills' further proves this—the industry has shifted focus from 'what the model knows' to 'what the agent can execute,' turning intelligence into a portable, modular utility.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026 年 6 月 29 日标志着 AI 领域从“模型竞争”向“制度与监管主导”的转变。密集地发布版本更新（GPT-5.6, Mythos 5, Llama 4.5）已成为次要矛盾，真正的故事是 AI 的“建制化”。曾经的“OpenAI vs Anthropic”之争已被一个共同的现实所取代：两者实际上都成了等待联邦政府审批才能发布模型的“政府承包商”。与此同时，“物理 AI”的突破和“递归理论”揭示了一个关键转折点：LLM 正在从“聊天机器人”演变为自身开发周期的主要驱动力，并成为物理世界的执行主体。GitHub 上“智能体技能 (Agent Skills)”的流行进一步证明了这一点——行业的关注点已从“模型知道什么”转移到“智能体能执行什么”，将智能转化为一种可移植的、模块化的实用工具。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

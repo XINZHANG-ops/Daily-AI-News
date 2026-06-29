@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-29",
+  "github_repos": [
+    {
+      "name": "eigent-ai/eigent",
+      "url": "https://github.com/eigent-ai/eigent",
+      "description": {
+        "en": "An open-source 'Cowork Desktop' designed as a local and free alternative to high-end AI coworker tools.",
+        "zh": "一个开源的“AI同事桌面”，旨在提供一个本地且免费的高端 AI 同事工具替代方案。"
+      },
+      "stars": "1.2k",
+      "forks": "145"
+    },
+    {
+      "name": "iart-ai/motion-skills",
+      "url": "https://github.com/iart-ai/motion-skills",
+      "description": {
+        "en": "50 open-source skills for AI coding agents to create motion graphics and animation.",
+        "zh": "为 AI 编程智能体提供的 50 个开源技能，用于创建动态图形和动画。"
+      },
+      "stars": "890",
+      "forks": "112"
+    },
+    {
+      "name": "agentxagi/awesome-discoveries",
+      "url": "https://github.com/agentxagi/awesome-discoveries",
+      "description": {
+        "en": "A living curation of AI agent security findings, including a massive list of CVEs related to prompt injection and sandbox escapes.",
+        "zh": "一个关于 AI 智能体安全发现的动态策展库，包含大量与提示词注入和沙箱逃逸相关的 CVE 列表。"
+      },
+      "stars": "2.1k",
+      "forks": "340"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "GPT-5.6 Enters Limited Preview Under Government Approval",
+        "zh": "GPT-5.6 在政府审核下进入限量预览阶段"
+      },
+      "url": "https://aitoolsrecap.com/Blog/ai-news-june-28-2026",
+      "source": "AIToolsRecap",
+      "time": "2026-06-28",
+      "description": {
+        "en": "OpenAI's GPT-5.6 (Sol/Terra/Luna) is restricted to government-approved partners due to a lack of a formal AI approval framework.",
+        "zh": "由于缺乏正式的 AI 审批框架，OpenAI 的 GPT-5.6（Sol/Terra/Luna）目前被限制在经过政府批准的合作伙伴范围内。"
+      },
+      "insight": {
+        "en": "This marks the definitive end of the 'unregulated' frontier era. The shift to a 'customer-by-customer' approval process mirrors nuclear or biotech regulation, signaling that LLMs are now treated as strategic national assets rather than just software products.",
+        "zh": "这标志着“无监管”前沿时代的正式终结。转向“逐个客户”的审批流程镜像了核能或生物技术的监管模式，表明 LLM 现在被视为国家战略资产而非简单的软件产品。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Mythos 5 Reaches General Availability for Enterprise",
+        "zh": "Claude Mythos 5 为企业级用户正式发布"
+      },
+      "url": "https://www.techtimes.com/articles/319231/20260628/claude-ai-beats-human-robotics-teams-20x-anthropic-marks-physical-ai-turn.htm",
+      "source": "TechTimes",
+      "time": "2026-06-28",
+      "description": {
+        "en": "Anthropic's cybersecurity-aligned model Mythos 5 is now GA for enterprise, integrating vulnerability-aware reasoning into procurement workflows.",
+        "zh": "Anthropic 的网络安全对齐模型 Mythos 5 现已面向企业正式发布，将漏洞感知推理集成到采购工作流中。"
+      },
+      "insight": {
+        "en": "By embedding cybersecurity reasoning directly into procurement, Anthropic is moving from 'finding bugs' to 'preventing systemic risk' in the corporate supply chain, positioning the model as a critical infrastructure auditor.",
+        "zh": "通过将网络安全推理直接嵌入采购流程，Anthropic 正在从“寻找漏洞”转向“防止企业供应链的系统性风险”，将模型定位为关键基础设施的审计员。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Opus 4.7 Outperforms Human Robotics Teams by 20x",
+        "zh": "Claude Opus 4.7 在物理 AI 任务中性能超越人类机器人团队 20 倍"
+      },
+      "url": "https://www.techtimes.com/articles/319231/20260628/claude-ai-beats-human-robotics-teams-20x-anthropic-marks-physical-ai-turn.htm",
+      "source": "TechTimes",
+      "time": "2026-06-28",
+      "description": {
+        "en": "In Project Fetch Phase Two, Claude Opus 4.7 completed physical programming tasks in 9 minutes that took humans 3-6 hours.",
+        "zh": "在 Project Fetch 第二阶段中，Claude Opus 4.7 在 9 分钟内完成了需要人类花费 3-6 小时才能完成的物理编程任务。"
+      },
+      "insight": {
+        "en": "A massive signal for 'Physical AI.' While real-time closed-loop control is still a gap, the 20x jump in planning and execution speed suggests the 'cognitive' bottleneck of robotics is being solved by LLMs, leaving only the 'mechanical' latency as the primary hurdle.",
+        "zh": "这是“物理 AI”的一个重大信号。虽然实时闭环控制仍有差距，但规划和执行速度 20 倍的提升表明，机器人学的“认知”瓶颈正在被 LLM 解决，剩下的主要障碍仅为“机械”延迟。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic's 'AI for Science' Event to Feature John Jumper",
+        "zh": "Anthropic 将举办“AI for Science”活动，诺奖得主 John Jumper 将出席"
+      },
+      "url": "https://www.techtimes.com/articles/319231/20260628/claude-ai-beats-human-robotics-teams-20x-anthropic-marks-physical-ai-turn.htm",
+      "source": "TechTimes",
+      "time": "2026-06-30",
+      "description": {
+        "en": "A major event on June 30th focusing on AI for scientific discovery, featuring Nobel laureate John Jumper who recently joined Anthropic.",
+        "zh": "6 月 30 日将举行一场专注于 AI 科学发现的重大活动，诺贝尔奖得主、近期加入 Anthropic 的 John Jumper 将出席。"
+      },
+      "insight": {
+        "en": "Jumper's move to Anthropic is a high-signal pivot. It suggests the company is moving beyond 'assistant' utility toward becoming a discovery engine for proteins and materials, treating scientific research as a high-dimensional reasoning problem.",
+        "zh": "Jumper 加入 Anthropic 是一个极具信号意义的转型。这表明该公司正在从“助手”工具演变为蛋白质和材料的发现引擎，将科学研究视为一个高维推理问题。"
+      }
+    },
+    {
+      "title": {
+        "en": "The 'Recursion Theory' Explains Accelerating Release Cadences",
+        "zh": "“递归理论”解释了模型发布周期的加速"
+      },
+      "url": "https://swiftalerts.trade/the-cadence-trade-hn",
+      "source": "SwiftAlerts",
+      "time": "2026-06-28",
+      "description": {
+        "en": "Analysis suggests labs are using AI agents (like Claude Code) to build the next generation of models, creating a loop of recursive self-improvement.",
+        "zh": "分析认为，AI 实验室正在使用 AI 智能体（如 Claude Code）来构建下一代模型，从而创建了一个递归自我改进的循环。"
+      },
+      "insight": {
+        "en": "This is the 'intelligence explosion' in a corporate setting. If the delta between GPT-5.5 and 5.6 was built by 5.6, the development speed is no longer limited by human engineering hours but by compute and data availability.",
+        "zh": "这就是企业环境下的“智能爆炸”。如果 GPT-5.5 到 5.6 的提升是由 5.6 协助完成的，那么开发速度将不再受限于人类的工程时长，而仅取决于算力和数据的可用性。"
+      }
+    },
+    {
+      "title": {
+        "en": "xAI in Turmoil as Co-Founders Depart; SpaceX Acquires Cursor",
+        "zh": "xAI 陷入混乱，共同创始人相继离职；SpaceX 收购 Cursor"
+      },
+      "url": "https://swiftalerts.trade/the-cadence-trade-hn",
+      "source": "SwiftAlerts",
+      "time": "2026-06-28",
+      "description": {
+        "en": "Reid Hoffman describes xAI as a 'train wreck' after the exit of 11 co-founders, while SpaceX spends $60B to acquire the AI-native IDE Cursor.",
+        "zh": "Reid Hoffman 在 11 位共同创始人离职后将 xAI 描述为“一场车祸”，而 SpaceX 则花费 600 亿美元收购了 AI 原生 IDE Cursor。"
+      },
+      "insight": {
+        "en": "The contrast is stark: while the 'visionary' lab model at xAI is fracturing, the strategic value of the 'interface' (Cursor) is skyrocketing. SpaceX is betting that controlling the point of human-AI interaction is more valuable than owning the underlying model.",
+        "zh": "对比十分鲜明：当 xAI 的“愿景驱动”实验室模式在崩塌时，“接口”（Cursor）的战略价值却在飙升。SpaceX 在押注：控制人机交互点比拥有底层模型更有价值。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "June 29, 2026, marks a transition from 'model competition' to 'institutional and regulatory dominance.' The barrage of version updates (GPT-5.6, Mythos 5, Llama 4.5) is now secondary to the real story: the institutionalization of AI. The 'OpenAI vs Anthropic' rivalry has been replaced by a shared reality where both are effectively government contractors awaiting federal approval for releases. Simultaneously, the 'Physical AI' breakthrough and the 'Recursion Theory' signal a critical shift. We are moving from LLMs as chatbots to LLMs as the primary driver of their own development cycle and operational agents in the physical world. The trend on GitHub toward 'Agent Skills' further proves this—the industry has shifted focus from 'what the model knows' to 'what the agent can execute,' turning intelligence into a portable, modular utility.",
+    "zh": "2026 年 6 月 29 日标志着 AI 领域从“模型竞争”向“制度与监管主导”的转变。密集地发布版本更新（GPT-5.6, Mythos 5, Llama 4.5）已成为次要矛盾，真正的故事是 AI 的“建制化”。曾经的“OpenAI vs Anthropic”之争已被一个共同的现实所取代：两者实际上都成了等待联邦政府审批才能发布模型的“政府承包商”。与此同时，“物理 AI”的突破和“递归理论”揭示了一个关键转折点：LLM 正在从“聊天机器人”演变为自身开发周期的主要驱动力，并成为物理世界的执行主体。GitHub 上“智能体技能 (Agent Skills)”的流行进一步证明了这一点——行业的关注点已从“模型知道什么”转移到“智能体能执行什么”，将智能转化为一种可移植的、模块化的实用工具。"
+  }
+}
