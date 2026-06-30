@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-30",
+  "github_repos": [
+    {
+      "name": "FreedomIntelligence/chain-of-diagnosis",
+      "url": "https://github.com/FreedomIntelligence/chain-of-diagnosis",
+      "description": {
+        "en": "An interpretable medical agent using 'Chain-of-Diagnosis' (CoD) for automated diagnosis of 9,000+ diseases.",
+        "zh": "一个可解释的医疗智能体，使用“诊断链”(CoD) 方法自动诊断 9,000 多种疾病。"
+      },
+      "stars": "1.2k",
+      "forks": "85"
+    },
+    {
+      "name": "DAMO-NLP-SG/WebDesignAgent",
+      "url": "https://github.com/DAMO-NLP-SG/WebDesignAgent",
+      "description": {
+        "en": "An AI agent that integrates LLMs and image generators to build complete websites from text prompts.",
+        "zh": "一个集成 LLM 和图像生成器的 AI 智能体，可根据文本提示构建完整的网站。"
+      },
+      "stars": "840",
+      "forks": "120"
+    },
+    {
+      "name": "liyedanpdx/reddit-ai-trends",
+      "url": "https://github.com/liyedanpdx/reddit-ai-trends",
+      "description": {
+        "en": "Automated tool scanning AI subreddits using DeepSeek R1 to summarize trends and track emerging hot topics.",
+        "zh": "一个自动化工具，使用 DeepSeek R1 扫描 AI 相关 Reddit 社区，总结趋势并追踪新兴热门话题。"
+      },
+      "stars": "420",
+      "forks": "60"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Meituan Open-Sources LongCat-2.0 Agentic Coding Model",
+        "zh": "美团开源 LongCat-2.0 智能体编程模型"
+      },
+      "url": "https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips",
+      "source": "VentureBeat",
+      "time": "2026-06-30",
+      "description": {
+        "en": "Meituan released LongCat-2.0, a 1.6T MoE model trained entirely on Chinese ASICs, scoring 59.5 on SWE-bench Pro.",
+        "zh": "美团发布了 LongCat-2.0，一个完全在国产 ASIC 芯片上训练的 1.6T MoE 模型，在 SWE-bench Pro 上得分 59.5。"
+      },
+      "insight": {
+        "en": "This is a geopolitical signal: by beating GPT-5.5 in agentic tasks using 50k+ domestic chips, Meituan proves that frontier-level MoEs can be built without Nvidia GPUs, effectively bypassing US export bans through sheer domestic scale and architectural efficiency.",
+        "zh": "这是一个地缘政治信号：通过使用 5 万多块国产芯片在智能体任务中击败 GPT-5.5，美团证明了在没有 Nvidia GPU 的情况下也能构建前沿级的 MoE 模型，通过规模化国产算力和架构效率有效绕过了美国的出口禁令。"
+      }
+    },
+    {
+      "title": {
+        "en": "BMW Deploys Figure 03 Humanoids in Logistics",
+        "zh": "宝马在物流环节部署 Figure 03 人形机器人"
+      },
+      "url": "https://www.therobotreport.com/bmw-group-deploys-figure-03-humanoid-after-tests-previous-version/",
+      "source": "The Robot Report",
+      "time": "2026-06-30",
+      "description": {
+        "en": "BMW is implementing Figure 03 robots featuring tactile-sensor hands and speech-to-speech audio for plant sequencing.",
+        "zh": "宝马正在部署 Figure 03 机器人，该机器人配备触觉传感器手和语音到语音音频，用于工厂排序。"
+      },
+      "insight": {
+        "en": "We are shifting from 'robots that walk' to 'robots that feel and talk.' The tactile sensing in Figure 03 enables the dexterous manipulation required for real factory ROI, moving humanoids from PR demos to functional industrial tools.",
+        "zh": "我们正在从“会走路的机器人”转向“能感知、会说话的机器人”。Figure 03 的触觉感知实现了工厂实际投资回报率所需的灵巧操作，使人形机器人从公关演示转变为功能性的工业工具。"
+      }
+    },
+    {
+      "title": {
+        "en": "South Korea Commits $1T to Physical AI and Memory Chips",
+        "zh": "韩国投入 1 万亿美元用于物理 AI 和存储芯片"
+      },
+      "url": "https://arstechnica.com/ai/2026/06/south-korea-to-spend-1t-on-more-memory-chip-production-and-humanoid-robots/",
+      "source": "Ars Technica",
+      "time": "2026-06-30",
+      "description": {
+        "en": "SK government and giants (Samsung, Hyundai) invest in HBM production and mass-producing Boston Dynamics' Atlas.",
+        "zh": "韩国政府及巨头（三星、现代）投资 HBM 生产并计划大规模生产波士顿动力 Atlas 机器人。"
+      },
+      "insight": {
+        "en": "South Korea is pursuing extreme vertical integration: controlling the memory (HBM), the hardware (Atlas), and the software (world models). If they succeed in this 'triple axis' strategy, they will become the 'Nvidia of Robotics.'",
+        "zh": "韩国正在追求极致的垂直整合：控制存储 (HBM)、硬件 (Atlas) 和软件 (世界模型)。如果这一“三轴”战略成功，他们将成为“机器人领域的 Nvidia”。"
+      }
+    },
+    {
+      "title": {
+        "en": "Japan Funds ¥387.3B for Physical AI Foundation Models",
+        "zh": "日本出资 3873 亿日元开发物理 AI 基础模型"
+      },
+      "url": "https://www.japantimes.co.jp/business/2026/06/30/companies/physical-ai-meti-aid-model/",
+      "source": "The Japan Times",
+      "time": "2026-06-30",
+      "description": {
+        "en": "METI announced funding for foundation models that control robots, led by Noetra, to secure domestic robotics leadership.",
+        "zh": "日本经济产业省宣布资助由 Noetra 领导的机器人控制基础模型，以确保国内机器人技术的领先地位。"
+      },
+      "insight": {
+        "en": "Japan's focus on 'robot-control foundation models' suggests a move away from general LLMs toward specialized 'robot-brains,' mirroring the trend of specialized MoEs but applied to the physical realm.",
+        "zh": "日本对“机器人控制基础模型”的关注表明其正从通用 LLM 转向专业的“机器人大脑”，这与专业化 MoE 的趋势相似，但应用于物理领域。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Govt Restricts Access to GPT-5.6 and Claude Fable 5",
+        "zh": "美国政府限制 GPT-5.6 和 Claude Fable 5 的访问"
+      },
+      "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
+      "source": "TechCrunch",
+      "time": "2026-06-29",
+      "description": {
+        "en": "The US government has restricted access to top-tier models like GPT-5.6 and Claude Fable 5 citing national security risks.",
+        "zh": "美国政府以国家安全风险为由，限制了对 GPT-5.6 和 Claude Fable 5 等顶层模型的访问。"
+      },
+      "insight": {
+        "en": "The 'frontier' is becoming a gated community. As models transition from chatbots to autonomous agents, the US is shifting from 'safety guidelines' to 'national security lockdowns,' which ironically accelerates the drive for open-weights alternatives like LongCat-2.0.",
+        "zh": "“前沿”正在变成一个封闭社区。随着模型从聊天机器人转变为自主智能体，美国正从“安全指南”转向“国家安全封锁”，而这反过来又加速了像 LongCat-2.0 这样开源权重替代方案的发展。"
+      }
+    },
+    {
+      "title": {
+        "en": "California State Agencies Secure Half-Price Claude Access",
+        "zh": "加州政府机构获得半价 Claude 访问权限"
+      },
+      "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
+      "source": "TechCrunch",
+      "time": "2026-06-29",
+      "description": {
+        "en": "Governor Newsom forged a deal with Anthropic for state agencies to use Claude at a 50% discount to increase efficiency.",
+        "zh": "州长纽森与 Anthropic 达成协议，允许州政府机构以 5 折价格使用 Claude，以提高政府效率。"
+      },
+      "insight": {
+        "en": "This reveals a pragmatic rift between federal security concerns and state-level operational needs. California is treating AI as a public utility for governance, while DC treats it as a strategic weapon.",
+        "zh": "这揭示了联邦安全考量与州级运营需求之间的务实分歧。加州将 AI 视为治理的公共事业，而华盛顿则将其视为战略武器。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The overarching narrative of June 30 is the 'Great Grounding.' We are witnessing a dual-track divergence: while digital AI becomes more restricted and fragmented in the West (federal lockdowns vs. open-weights in the East), Physical AI is exploding globally through massive state-led investments in the US, Korea, and Japan. The common thread is the shift from 'Generative AI' (text/images) to 'Agentic AI' (execution). Whether it is LongCat-2.0 autonomously refactoring a codebase or Figure 03 autonomously sequencing a factory floor, the value has shifted from the ability to *describe* a task to the ability to *execute* it in a complex environment. The 'LLM era' is officially evolving into the 'Agentic Era.'",
+    "zh": "6 月 30 日的核心叙事是“大落地 (The Great Grounding)”。我们正目睹双轨分化：一方面，西方数字 AI 变得更加受限且碎片化（联邦封锁 vs 东方的开源权重）；另一方面，物理 AI 在美国、韩国和日本的大规模国家级投资下全球爆发。共同的主线是从“生成式 AI”（文本/图像）向“智能体 AI”（执行）的转变。无论是 LongCat-2.0 自主重构代码库，还是 Figure 03 自主完成工厂排序，价值点已从“描述”任务的能力转移到在复杂环境中“执行”任务的能力。“LLM 时代”正正式演变为“智能体时代”。"
+  }
+}
