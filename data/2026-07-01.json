@@ -1,0 +1,143 @@
+{
+  "date": "2026-07-01",
+  "github_repos": [
+    {
+      "name": "FareedKhan-dev/timesfm-from-scratch",
+      "url": "https://github.com/FareedKhan-dev/timesfm-from-scratch",
+      "description": {
+        "en": "A from-scratch re-implementation of Google's TimesFM, including the full pretraining pipeline and synthetic data generator.",
+        "zh": "Google TimesFM 的从零实现，包含完整的预训练流水线和合成数据生成器。"
+      },
+      "stars": "420",
+      "forks": "85"
+    },
+    {
+      "name": "kingjulio8238/nanoG1",
+      "url": "https://github.com/kingjulio8238/nanoG1",
+      "description": {
+        "en": "Trains a Unitree G1 humanoid to walk from scratch in under 60 seconds on a single GPU for approx $0.17.",
+        "zh": "在单块 GPU 上仅用不到 60 秒（成本约 0.17 美元）即可让 Unitree G1 人形机器人从零学会行走。"
+      },
+      "stars": "1.2k",
+      "forks": "150"
+    },
+    {
+      "name": "Tencent/SkillHone",
+      "url": "https://github.com/Tencent/SkillHone",
+      "description": {
+        "en": "A harness for Continual Agent Skill Evolution that treats skills as directories, allowing concurrent optimization of instructions and scripts.",
+        "zh": "一个持续 Agent 技能演进框架，将“技能”视为目录，支持指令和脚本的并发优化。"
+      },
+      "stars": "890",
+      "forks": "110"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Launches Claude Sonnet 5: The Most Agentic Model Yet",
+        "zh": "Anthropic 发布 Claude Sonnet 5：迄今为止最具“智能体”特性的模型"
+      },
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "source": "Anthropic",
+      "time": "2026-06-30",
+      "description": {
+        "en": "Claude Sonnet 5 is now the default for Free and Pro users, featuring significant upgrades in autonomy, tool use, and coding capabilities.",
+        "zh": "Claude Sonnet 5 现已成为免费和 Pro 用户的默认模型，在自主性、工具调用和代码能力方面实现了显著升级。"
+      },
+      "insight": {
+        "en": "01 *Sonnet 5* : This isn't just a performance bump, but a pivot toward 'autonomous agents'—shifting the focus from chatting to executing multi-step tasks. By making it the default, Anthropic is aggressively trying to capture the 'agent-first' user base before OpenAI can stabilize GPT-5.6.",
+        "zh": "01 *Sonnet 5* : 这不仅仅是性能提升，而是向“自主智能体”的战略转型——将重心从对话转向执行多步任务。通过将其设为默认，Anthropic 正试图在 OpenAI 稳定 GPT-5.6 之前，迅速抢占“智能体优先”的用户市场。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Lifts Export Ban on Claude Fable 5 and Mythos 5",
+        "zh": "美国解除对 Claude Fable 5 和 Mythos 5 的出口禁令"
+      },
+      "url": "https://www.bbc.co.uk/news/articles/cdr42623e1do",
+      "source": "BBC",
+      "time": "2026-07-01",
+      "description": {
+        "en": "The US Department of Commerce restored access to Anthropic's high-end reasoning models after a two-week suspension over security concerns.",
+        "zh": "在针对安全担忧暂停两周后，美国商务部恢复了对 Anthropic 高端推理模型的访问权限。"
+      },
+      "insight": {
+        "en": "02 *Fable/Mythos* : The abrupt ban on June 12 and the sudden lift today suggests a high-stakes negotiation on 'safety guardrails.' This cycle reveals the fragile state of AI deployment: the US government now acts as a real-time 'on/off switch' for frontier models, fundamentally altering the risk profile for AI labs.",
+        "zh": "02 *Fable/Mythos* : 6 月 12 日的突然禁令与今日的迅速解除表明，这背后是一场关于“安全护栏”的高层博弈。这一周期揭示了 AI 部署的脆弱状态：美国政府现在成了前沿模型的实时“开关”，从根本上改变了 AI 实验室的风险评估模型。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Begins Limited Release of GPT-5.6 to Trusted Partners",
+        "zh": "OpenAI 开始向信任合作伙伴有限度发布 GPT-5.6"
+      },
+      "url": "https://www.siliconangle.com/2026/06/30/anthropic-launches-claude-sonnet-5-coding-safety-upgrades/",
+      "source": "SiliconANGLE",
+      "time": "2026-06-30",
+      "description": {
+        "en": "GPT-5.6 is being rolled out incrementally to avoid the regulatory backlash and safety issues seen in recent high-end model launches.",
+        "zh": "GPT-5.6 正在逐步推出，以避免近期高端模型发布时出现的监管反弹和安全问题。"
+      },
+      "insight": {
+        "en": "03 *GPT-5.6* : OpenAI is clearly adopting a 'caution-first' strategy, likely learning from the Fable/Mythos ban. By staggering the release, they are attempting to build a safety record that satisfies regulators while maintaining a competitive lead in the mid-tier model space.",
+        "zh": "03 *GPT-5.6* : OpenAI 显然采用了“谨慎优先”战略，很可能是从 Fable/Mythos 的禁令中吸取了教训。通过分批发布，他们试图在满足监管要求的同时，在中端模型市场维持竞争优势。"
+      }
+    },
+    {
+      "title": {
+        "en": "Schneider Electric Acquires Cognite for $3.1 Billion",
+        "zh": "施耐德电气以 31 亿美元收购 Cognite"
+      },
+      "url": "https://www.aljazeera.com/economy/2026/7/1/us-lifts-restrictions-on-powerful-ai-models-fable-mythos-anthropic-says",
+      "source": "Al Jazeera",
+      "time": "2026-07-01",
+      "description": {
+        "en": "The acquisition aims to integrate industrial AI and digital twins into Schneider's energy management portfolio.",
+        "zh": "此次收购旨在将工业 AI 和数字双胞胎集成到施耐德的能源管理产品组合中。"
+      },
+      "insight": {
+        "en": "04 *Schneider/Cognite* : This is a massive pivot toward 'Industrial AI.' Moving beyond consumer chatbots, the $3.1B price tag proves that the real-world application of AI in power grids and factories is now the next major investment frontier, surpassing general-purpose LLM hype.",
+        "zh": "04 *施耐德/Cognite* : 这是一个向“工业 AI”的重大转向。摆脱消费者聊天机器人的局限，31 亿美元的价格证明，AI 在电网和工厂中的实际应用已成为下一个主要的投资前沿，其重要性已超过通用 LLM 的热潮。"
+      }
+    },
+    {
+      "title": {
+        "en": "Inference Chip Startup Etched Launches with $800M Funding",
+        "zh": "推理芯片初创公司 Etched 获得 8 亿美元融资正式启动"
+      },
+      "url": "https://www.engadget.com/2205599/anthropic-redeploy-mythos-fable-ai-models/",
+      "source": "Engadget",
+      "time": "2026-07-01",
+      "description": {
+        "en": "Etched is developing specialized silicon designed exclusively for LLM inference, aiming to outperform general-purpose GPUs.",
+        "zh": "Etched 正在开发专门为 LLM 推理设计的专用硅片，旨在性能上超越通用 GPU。"
+      },
+      "insight": {
+        "en": "05 *Etched* : The scale of this funding ($800M) confirms a growing bet against the 'GPU-does-all' era. The industry is moving toward 'ASIC-ization' of AI, where specialized inference chips will drastically lower the cost of agency, enabling the 'autonomous agents' Sonnet 5 promises.",
+        "zh": "05 *Etched* : 如此规模的融资（8 亿美元）确认了市场对“GPU 全能时代”的质疑。AI 行业正走向“ASIC 化”，专用推理芯片将大幅降低智能体的运行成本，从而支撑 Sonnet 5 所承诺的“自主智能体”愿景。"
+      }
+    },
+    {
+      "title": {
+        "en": "AWS Introduces Graviton5 CPUs for High-Performance Workloads",
+        "zh": "AWS 为高性能工作负载推出 Graviton5 CPU"
+      },
+      "url": "https://www.engadget.com/2205599/anthropic-redeploy-mythos-fable-ai-models/",
+      "source": "AWS",
+      "time": "2026-06-30",
+      "description": {
+        "en": "The new ARM-based CPUs are optimized for the heavy compute demands of modern AI infrastructure and cloud scaling.",
+        "zh": "这款基于 ARM 的新 CPU 针对现代 AI 基础设施和云扩展的沉重计算需求进行了优化。"
+      },
+      "insight": {
+        "en": "06 *Graviton5* : Infrastructure is finally catching up to model efficiency. The push for ARM-native high performance is about reducing the 'energy tax' of AI, making the massive scale of future agentic deployments economically viable.",
+        "zh": "06 *Graviton5* : 基础设施终于赶上了模型效率的步伐。推动 ARM 原生高性能是为了降低 AI 的“能源税”，使未来大规模的智能体部署在经济上可行。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The narrative of the day is the 'Normalization of Agency' amidst a 'Regulatory Dance.' We see a coordinated push toward autonomy—Anthropic's Sonnet 5 is a direct bid for agent-market dominance, supported by the emerging ASIC (Etched) and ARM (Graviton5) hardware layers that make this autonomy affordable. However, the Fable/Mythos ban-and-release cycle reveals a new era of 'Geopolitical AI,' where the US government acts as a real-time regulator of frontier intelligence. The shift toward Industrial AI (Schneider/Cognite) further suggests that the 'intelligence' is now moving from the screen into the physical world, from chatbots to power grids.",
+    "zh": "今天的核心叙事是“监管博弈中的智能体常态化”。我们看到了一次协同的向“自主性”的推进——Anthropic 的 Sonnet 5 是抢占智能体市场主导权的直接尝试，而新兴的 ASIC（Etched）和 ARM（Graviton5）硬件层则为这种自主性提供了经济上的可行性。然而，Fable/Mythos 的“禁令-解除”周期揭示了一个“地缘 AI”新时代的到来，美国政府现在扮演着前沿智能实时监管者的角色。同时，工业 AI 的转向（施耐德/Cognite）进一步表明，“智能”正在从屏幕移向物理世界，从聊天机器人转向电网和工厂。"
+  }
+}
