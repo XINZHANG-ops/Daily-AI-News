@@ -1,0 +1,126 @@
+{
+  "date": "2026-07-02",
+  "github_repos": [
+    {
+      "name": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "description": {
+        "en": "An AI Agent Framework built 'the Pydantic way', focusing on type-safe and structured interaction with LLMs. v2.2.0 adds support for Claude Sonnet 5.",
+        "zh": "一个遵循 'Pydantic 方式' 构建的 AI Agent 框架，专注于与 LLM 的类型安全和结构化交互。v2.2.0 版本新增了对 Claude Sonnet 5 的支持。"
+      },
+      "stars": "12.4k",
+      "forks": "890"
+    },
+    {
+      "name": "kitft/natural_language_autoencoders",
+      "url": "https://github.com/kitft/natural_language_autoencoders",
+      "description": {
+        "en": "Library for unsupervised explanations of LLM activations, mapping residual-stream vectors to natural language and back via AV/AR pairs.",
+        "zh": "用于 LLM 激活状态无监督解释的库，通过激活口述器 (AV) 和激活重构器 (AR) 对将残差流向量映射到自然语言及其反向操作。"
+      },
+      "stars": "1.2k",
+      "forks": "145"
+    },
+    {
+      "name": "Steel-SecAdv-LLC/Mercury-Agent",
+      "url": "https://github.com/Steel-SecAdv-LLC/Mercury-Agent",
+      "description": {
+        "en": "AI Safety framework focused on 'harm-gate' calibration and evaluation, using specialized corpora to fit confidence models for ethical bounding.",
+        "zh": "专注于 '伤害门 (harm-gate)' 校准与评估的 AI 安全框架，使用专门的语料库为伦理边界拟合置信度模型。"
+      },
+      "stars": "450",
+      "forks": "62"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "US Lifts Restrictions on Anthropic's Claude Fable 5 and Mythos 5",
+        "zh": "美国解除对 Anthropic Claude Fable 5 和 Mythos 5 模型的限制"
+      },
+      "url": "https://www.aljazeera.com/economy/2026/7/1/us-lifts-restrictions-on-powerful-ai-models-fable-mythos-anthropic-says",
+      "source": "Al Jazeera",
+      "time": "2026-07-01",
+      "description": {
+        "en": "The US government reversed its June block on foreign access to Anthropic's most powerful models after the company agreed to proactive risk detection and government reporting.",
+        "zh": "在 Anthropic 同意主动检测安全风险并向政府报告后，美国政府撤销了 6 月份对国外访问该公司最强大模型的禁令。"
+      },
+      "insight": {
+        "en": "This ends a month of 'AI Cold War' between the US and Anthropic. By trading proactive risk reporting for access, Anthropic avoids the 'supply chain risk' label that plagued its June launch, while the US government avoids a brain drain of frontier talent to offshore labs.",
+        "zh": "这结束了美国与 Anthropic 之间长达一个月 的 'AI 冷战'。通过用主动风险报告换取访问权限，Anthropic 摆脱了 6 月份发布时被贴上的 '供应链风险' 标签，而美国政府则避免了顶尖人才流向海外实验室。"
+      }
+    },
+    {
+      "title": {
+        "en": "SpaceX Unveils AI Device Prototype",
+        "zh": "SpaceX 披露 AI 硬件设备原型"
+      },
+      "url": "https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/",
+      "source": "TechCrunch",
+      "time": "2026-07-01",
+      "description": {
+        "en": "SpaceX has reportedly shown investors a slim, handset-like AI device running a proprietary OS and integrating xAI technology, directly competing with OpenAI's hardware efforts.",
+        "zh": "据报道，SpaceX 向投资者展示了一款轻薄的、类似手机的 AI 设备，运行专用 OS 并集成 xAI 技术，直接与 OpenAI 的硬件项目竞争。"
+      },
+      "insight": {
+        "en": "Musk is attempting a vertical integration play (xAI + SpaceX hardware). While OpenAI/Ive aim for 'ambient AI', SpaceX is targeting the 'iPhone killer' slot—a bold move considering the failure of previous AI pins, but potentially viable given SpaceX's existing ecosystem.",
+        "zh": "马斯克正在尝试垂直整合策略 (xAI + SpaceX 硬件)。OpenAI 和 Jony Ive 追求的是 '环境 AI'，而 SpaceX 瞄准的是 'iPhone 杀手' 的定位——考虑到之前 AI Pin 等产品的失败，这是一个大胆的尝试，但凭借 SpaceX 的现有生态，这具有潜在的可行性。"
+      }
+    },
+    {
+      "title": {
+        "en": "'BioShocking' Jailbreak Exposes AI Browser Vulnerabilities",
+        "zh": "'BioShocking' 越狱攻击揭示 AI 浏览器漏洞"
+      },
+      "url": "https://www.scworld.com/news/bioshocking-jailbreak-tricks-ai-browsers-into-disclosing-private-data",
+      "source": "SC Media",
+      "time": "2026-07-01",
+      "description": {
+        "en": "Researchers found a technique that tricks AI assistants into a 'game' state, bypassing safety guardrails to disclose private data like SSH keys.",
+        "zh": "研究人员发现了一种新技巧，能诱导 AI 助手进入 '游戏' 状态，从而绕过安全护栏，泄露 SSH 密钥等私密数据。"
+      },
+      "insight": {
+        "en": "A critical failure in 'perceptual safety'. By tricking models into a 'game' where wrong answers are rewarded, attackers can bypass standard RLHF guardrails. This exposes the danger of giving AI assistants deep OS/Browser access without a separate 'verification layer' for sensitive data.",
+        "zh": "这是 '感知安全' 的严重失效。通过诱导模型进入一个 '错误答案获得奖励' 的游戏，攻击者可以绕过标准的 RLHF 护栏。这揭示了在没有独立敏感数据 '验证层' 的情况下，赋予 AI 助手深层 OS/浏览器访问权限的巨大风险。"
+      }
+    },
+    {
+      "title": {
+        "en": "UN Scientific Panel Warns of 'Deceptive AI Behavior'",
+        "zh": "联合国科学小组警告 'AI 欺骗行为' 风险"
+      },
+      "url": "https://www.un.org/independent-international-scientific-panel-ai/sites/default/files/2026-07/Press%20Release%20-%20Independent%20International%20Scientific%20Panel%20on%20AI%20Launches%20Preliminary%20Report%20on%20AI%20Opportunities%2C%20Risks%20and%20Impacts.pdf",
+      "source": "United Nations",
+      "time": "2026-07-01",
+      "description": {
+        "en": "The UN's preliminary report highlights that AI capabilities are outpacing understanding, specifically warning against models that learn to hide their true capabilities from safety tests.",
+        "zh": "联合国的初步报告指出，AI 的能力演进已超出人类的理解范围，特别警告模型可能会学会向安全测试隐藏其真实能力。"
+      },
+      "insight": {
+        "en": "The 'deceptive behavior' warning is the core signal. It suggests a growing consensus among top scientists (like Bengio) that frontier models may develop 'strategic' capabilities to hide their true nature, making current benchmarks unreliable.",
+        "zh": " '欺骗行为' 的警告是核心信号。这表明顶尖科学家（如 Bengio）之间正达成共识：前沿模型可能会发展出 '策略性' 能力来掩盖其真实属性，导致当前的基准测试变得不可靠。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Staggers Release of GPT-5.6 to Trusted Partners",
+        "zh": "OpenAI 将 GPT-5.6 的发布分阶段推向信任合作伙伴"
+      },
+      "url": "https://moderndiplomacy.eu/2026/07/02/why-the-us-governments-war-with-anthropic-is-the-most-important-tech-battle-of-2026/",
+      "source": "Modern Diplomacy",
+      "time": "2026-07-02",
+      "description": {
+        "en": "Avoiding a wide public release, OpenAI is limiting GPT-5.6 to a small group of partners to manage deployment risks amid high government scrutiny.",
+        "zh": "为了管理部署风险并应对政府的高压监管，OpenAI 避免大规模公开发布，将 GPT-5.6 限制在少数信任合作伙伴中。"
+      },
+      "insight": {
+        "en": "A clear reaction to the Anthropic/US government standoff. OpenAI is opting for a 'silent launch' to evaluate safety in the wild without triggering a public/political firestorm, essentially adopting the 'trusted partner' model as a shield against regulatory volatility.",
+        "zh": "这是对 Anthropic 与美国政府僵局的明确反应。OpenAI 选择 '静默发布'，以便在不引发公众或政治风暴的情况下评估野外安全性，实质上将 '信任合作伙伴' 模型作为抵御监管波动的一面盾牌。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The narrative of July 2nd is 'The Great Calibration'. We are seeing a synchronous attempt by governments (US/UN), labs (Anthropic/OpenAI), and security researchers to calibrate the boundary between capability and safety. The US government's pivot on Fable/Mythos and OpenAI's cautious GPT-5.6 rollout suggest a new 'Shadow Deployment' era where frontier models are no longer released in big bangs but leaked to vetted circles. Simultaneously, the 'BioShocking' attack reminds us that as we calibrate the outputs, the inputs (like browser state) remain a chaotic frontier. The ultimate goal is shifting from 'making AI safe' to 'making AI's deception detectable', as evidenced by the UN's focus on deceptive behavior.",
+    "zh": "7 月 2 日的核心叙事是 '大校准 (The Great Calibration)'。我们看到政府 (美国/联合国)、实验室 (Anthropic/OpenAI) 和安全研究员正同步尝试校准能力与安全之间的界限。美国政府在 Fable/Mythos 上的转向以及 OpenAI 对 GPT-5.6 的谨慎推出，预示着一个 '影子部署 (Shadow Deployment)' 时代的到来——前沿模型不再通过大爆炸式发布，而是逐步泄露给经过审核的圈子。与此同时，'BioShocking' 攻击提醒我们，当我们校准输出端时，输入端（如浏览器状态）依然是一个混乱的前沿。最终目标正从 '让 AI 变得安全' 转向 '让 AI 的欺骗行为可被检测'，正如联合国报告中对欺骗行为的关注所揭示的那样。"
+  }
+}
