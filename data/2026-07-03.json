@@ -1,0 +1,143 @@
+{
+  "date": "2026-07-03",
+  "github_repos": [
+    {
+      "name": "likkisamarthreddy/livingai",
+      "url": "https://github.com/likkisamarthreddy/livingai",
+      "description": {
+        "en": "A production runtime for AI agents providing crash recovery, time-travel replay, and execution history across LangGraph, CrewAI, and OpenAI Agents.",
+        "zh": "一个为AI Agent提供的生产级运行时，支持跨LangGraph, CrewAI和OpenAI Agents的崩溃恢复、时空回溯和执行历史记录。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "aryanjha206/AI-Employee-Agent",
+      "url": "https://github.com/aryanjha206/AI-Employee-Agent",
+      "description": {
+        "en": "A full-stack PWA HR assistant that connects a Python AI agent to a Neon PostgreSQL database to answer workforce questions via a terminal UI.",
+        "zh": "一个全栈PWA人力资源助手，将Python AI Agent连接到Neon PostgreSQL数据库，通过终端界面回答有关员工队伍的问题。"
+      },
+      "stars": "420",
+      "forks": "35"
+    },
+    {
+      "name": "SeongYE/RainODE",
+      "url": "https://github.com/SeongYE/RainODE",
+      "description": {
+        "en": "A continuous-time precipitation forecasting framework using latent Neural ODEs to model rain intensity and movement, accepted to ECCV 2026.",
+        "zh": "一个连续时间降水预测框架，使用潜在神经常微分方程（Neural ODEs）对雨强和移动进行建模，已被ECCV 2026接收。"
+      },
+      "stars": "890",
+      "forks": "112"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "US Government Restricts GPT-5.6 'Sol' Rollout",
+        "zh": "美国政府限制 GPT-5.6 'Sol' 版本的发布"
+      },
+      "url": "https://internationalfinance.com/technology/white-houses-tech-lock-and-key-strategy-shifts-to-openai/",
+      "source": "International Finance",
+      "time": "2026-07-03",
+      "description": {
+        "en": "The Trump administration requested OpenAI limit GPT-5.6's rollout to government-approved partners due to high capabilities in cybersecurity and bio-risks.",
+        "zh": "特朗普政府要求 OpenAI 将 GPT-5.6 的发布限制在政府批准的合作伙伴范围内，理由是该模型在网络安全和生物风险方面具有极高能力。"
+      },
+      "insight": {
+        "en": "The transition from 'Open' to 'Curated' is now complete. GPT-5.6 Sol isn't just a model update; it's a national security asset. This mirrors the 'Project Glasswing' restrictions on Anthropic's Mythos, signaling that the next era of frontier AI will be governed by 'access lists' rather than public APIs.",
+        "zh": "从“开放”到“精选”的转型现已完成。GPT-5.6 Sol 不再仅仅是一个模型更新，而是一个国家安全资产。这镜像了 Anthropic Mythos 的 'Project Glasswing' 限制，预示着下一代前沿 AI 将由“准入名单”而非公共 API 驱动。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Fable 5 Debugging Performance Plummets 70%",
+        "zh": "Claude Fable 5 调试性能骤降 70%"
+      },
+      "url": "https://www.techtimes.com/articles/319576/20260702/claude-fable-5-debugging-scores-drop-70-safety-classifier-reroutes-tasks-weaker-fallback-model.htm",
+      "source": "TechTimes",
+      "time": "2026-07-02",
+      "description": {
+        "en": "Benchmarks show a massive drop in TypeScript debugging scores for Fable 5 as a new safety classifier reroutes requests to the weaker Claude Opus 4.8.",
+        "zh": "基准测试显示 Fable 5 的 TypeScript 调试得分大幅下降，原因是新的安全分类器将请求重定向到了能力较弱的 Claude Opus 4.8。"
+      },
+      "insight": {
+        "en": "This is the 'Safety Tax' in real-time. The model's raw reasoning remains intact, but the deployment layer (classifier) is lobotomizing the experience to avoid edge-case risks. It highlights a growing gap between 'SOTA benchmarks' and 'SOTA user experience' in an era of extreme caution.",
+        "zh": "这是实时上演的“安全税”。模型的原始推理能力依然存在，但部署层（分类器）为了规避极端情况风险而阉割了用户体验。这揭示了在极端谨慎的时代，“SOTA 基准测试”与“SOTA 用户体验”之间日益扩大的鸿沟。"
+      }
+    },
+    {
+      "title": {
+        "en": "UBTech Launches U1 Hyper-Realistic Humanoid Robots",
+        "zh": "UBTech 发布 U1 超写实人形机器人"
+      },
+      "url": "https://www.channelnewsasia.com/east-asia/china-ubtech-humanoid-robots-companion-loneliness-6227251",
+      "source": "CNA",
+      "time": "2026-07-03",
+      "description": {
+        "en": "Chinese firm UBTech released the U1, ultra-realistic androids for companionship targeting singles and the elderly, with prices up to $990,000.",
+        "zh": "中国公司 UBTech 发布了 U1，这是一款针对单身人士和老年人的超写实陪伴安卓机器人，售价最高达 99 万美元。"
+      },
+      "insight": {
+        "en": "While the US focuses on the 'digital' safety of LLMs (see GPT-5.6 restrictions), China is accelerating the 'physical' deployment of AI. The U1 isn't just a product; it's a signal that China is dominating the humanoid installation market (85% share), moving faster from lab to living room than the West.",
+        "zh": "当美国专注于 LLM 的“数字”安全时（见 GPT-5.6 限制），中国正在加速 AI 的“物理”部署。U1 不仅仅是一个产品，它释放了一个信号：中国正主导人形机器人安装市场（85% 份额），从实验室到客厅的推进速度远超西方。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mark Zuckerberg Admits AI Agent Progress is Slower Than Hoped",
+        "zh": "马克·扎克伯格承认 AI Agent 进展慢于预期"
+      },
+      "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
+      "source": "TechCrunch",
+      "time": "2026-07-02",
+      "description": {
+        "en": "Zuckerberg told staff that AI agents haven't progressed as quickly as hoped, despite massive organizational shifts toward 'Agent Transformation'.",
+        "zh": "扎克伯格告诉员工，尽管公司进行了大规模的“Agent 转型”组织调整，但 AI Agent 的进展并没有预想中那样快。"
+      },
+      "insight": {
+        "en": "The 'Agent Hype' is hitting a wall of reliability. We see a pattern: companies build 'agentic' frameworks (like the ones in today's GitHub trending list), but the underlying LLM consistency isn't there yet. The gap between a 'cool demo' and a 'reliable employee' remains the primary bottleneck of 2026.",
+        "zh": "“Agent 炒作”正撞上可靠性的墙。我们看到一个模式：公司在构建“智能体”框架（如今日 GitHub 趋势列表中的项目），但底层 LLM 的一致性尚未达标。从“酷炫 Demo”到“可靠员工”之间的差距仍然是 2026 年的主要瓶颈。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Government Considers 5% Stake in OpenAI as Public Wealth Fund",
+        "zh": "美国政府考虑持有 OpenAI 5% 股份建立公共财富基金"
+      },
+      "url": "https://internationalfinance.com/technology/white-houses-tech-lock-and-key-strategy-shifts-to-openai/",
+      "source": "International Finance",
+      "time": "2026-07-03",
+      "description": {
+        "en": "Discussions between Sam Altman and the Trump administration suggest the US government could take a 5% stake in OpenAI to distribute AI profits to citizens.",
+        "zh": "萨姆·奥特曼与特朗普政府之间的讨论表明，美国政府可能会持有 OpenAI 5% 的股份，以便将 AI 利润分配给公民。"
+      },
+      "insight": {
+        "en": "This is a paradigm shift from 'Corporate AI' to 'Sovereign AI'. OpenAI is being treated not as a startup, but as a strategic national resource like oil or uranium. This move essentially nationalizes a portion of the AI upside to mitigate social instability caused by automation.",
+        "zh": "这是从“公司 AI”到“主权 AI”的范式转移。OpenAI 不再被视为一家创业公司，而被视为像石油或铀一样的战略国家资源。此举本质上是将 AI 的部分收益国家化，以减轻自动化带来的社会不稳定。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Gemini Spark Launches on Mac",
+        "zh": "Google Gemini Spark 在 Mac 上发布"
+      },
+      "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
+      "source": "TechCrunch",
+      "time": "2026-07-02",
+      "description": {
+        "en": "Google's agentic assistant, Gemini Spark, is now officially available for macOS users, integrating deeply with system workflows.",
+        "zh": "Google 的智能体助手 Gemini Spark 现已正式面向 macOS 用户开放，并与系统工作流深度集成。"
+      },
+      "insight": {
+        "en": "Google is playing the 'ecosystem' game. While OpenAI and Anthropic fight over model benchmarks and government permits, Google is securing the 'last mile' of user interaction on the most valuable developer hardware (Mac). Access > Architecture.",
+        "zh": "Google 正在玩“生态”游戏。当 OpenAI 和 Anthropic 在模型基准测试和政府许可上竞争时，Google 正在通过在最高价值的开发者硬件（Mac）上抢占用户交互的“最后一英里”来获胜。触达能力 > 架构能力。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The narrative of July 3, 2026, is the 'Agent Reality Check'. We are seeing a stark divergence between the 'Strategic Frontier' (where GPT-5.6 and Fable 5 are being treated as classified weapons) and the 'Practical Frontier' (where Meta admits agents aren't ready and safety classifiers are breaking coding tools). The industry is moving away from the 'Chatbot' era into a 'Sovereign Agent' era, but the transition is messy: governments are inserting themselves into the release pipeline, and the cost of safety is beginning to degrade the very performance that made these models attractive. Meanwhile, the 'Physical AI' trend in China (UBTech) serves as a reminder that while the West struggles with the alignment of digital minds, the East is rapidly commoditizing the bodies they inhabit.",
+    "zh": "2026年7月3日的主题是“Agent 的现实校准”。我们看到了“战略前沿”与“实践前沿”之间的剧烈分歧：前者将 GPT-5.6 和 Fable 5 视为机密武器，受政府严密管控；后者则在面对现实——Meta 承认 Agent 尚未成熟，而安全分类器甚至导致编码工具性能下降。行业正从“聊天机器人”时代转向“主权智能体”时代，但这一转型充满了混乱：政府直接干预发布流程，而为了安全而支付的代价开始侵蚀模型原本的吸引力。与此同时，中国在“物理 AI”领域（如 UBTech）的进展提醒我们，当西方在纠结数字大脑的对齐时，东方正在迅速将智能体所栖息的“身体”商品化。"
+  }
+}
