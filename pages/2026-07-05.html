@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - July 05, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 July 05, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/lablnet/HyperFlow" class="card-title" target="_blank">lablnet/HyperFlow</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 84 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A self-improving agent framework built on LangGraph that allows AI to autonomously rewrite its own code, tools, and prompts based on evaluation logs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个基于 LangGraph 的自进化智能体框架，允许 AI 根据评估日志自主重写自身的代码、工具和提示词。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Kelet-ai/skills" class="card-title" target="_blank">Kelet-ai/skills</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 850 stars</div>
+                                <div class="meta-item"><span>🍴</span> 42 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Plugins for coding agents to integrate Kelet, an AI-powered Root Cause Analysis (RCA) tool that identifies systemic failure patterns in LLM agent traces.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">为代码智能体提供的插件，用于集成 Kelet——一个 AI 驱动的根因分析 (RCA) 工具，旨在识别 LLM 智能体追踪记录中的系统性失效模式。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/microsoft/SkillOpt" class="card-title" target="_blank">microsoft/SkillOpt</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 156 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A text-space optimizer that trains 'skills' (natural-language documents) for frozen LLM agents to improve performance without changing model weights.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个文本空间优化器，通过为冻结的 LLM 智能体训练“技能”（自然语言文档），在不改变模型权重的情况下提升性能。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">BleepingComputer</span>
+                    <div class="news-time">2026-07-04</div>
+                    <a href="https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/" class="card-title" target="_blank" data-lang="en">JadePuffer Ransomware Automates Entire Attack Cycle with AI Agent</a>
+                    <a href="https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/" class="card-title" target="_blank" data-lang="zh" style="display: none;">JadePuffer 勒索软件利用 AI 智能体实现全自动化攻击</a>
+                    <p class="card-description" data-lang="en">The first documented case of a ransomware operation conducted entirely by an autonomous LLM agent, capable of real-time adaptation to bypass security and encrypt data.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">首个记录在案的由自主 LLM 智能体完全主导的勒索软件行动，能够实时适应环境以绕过安全防御并加密数据。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Creati AI</span>
+                    <div class="news-time">2026-07-04</div>
+                    <a href="https://creati.ai/ai-news/2026-07-04/mistral-ai-unveils-leanstral-1-5-an-open-lean-4-theorem-proving-model-aimed-at-formal-math-workf/" class="card-title" target="_blank" data-lang="en">Mistral AI Releases Leanstral 1.5 for Formal Math</a>
+                    <a href="https://creati.ai/ai-news/2026-07-04/mistral-ai-unveils-leanstral-1-5-an-open-lean-4-theorem-proving-model-aimed-at-formal-math-workf/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Mistral AI 发布用于形式化数学的 Leanstral 1.5</a>
+                    <p class="card-description" data-lang="en">An open-weight Lean 4 theorem-proving model designed to solve rigorous mathematical problems with verifiable accuracy.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个开源的 Lean 4 定理证明模型，旨在以可验证的准确度解决严谨的数学问题。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MarkTechPost</span>
+                    <div class="news-time">2026-07-03</div>
+                    <a href="https://www.marktechpost.com/2026/07/03/nvidia-ai-introduces-aspire-a-self-improving-robotics-framework-reaching-31-zero-shot-on-libero-pro-long-tasks/" class="card-title" target="_blank" data-lang="en">NVIDIA ASPIRE Framework Boosts Robotics Zero-Shot Performance</a>
+                    <a href="https://www.marktechpost.com/2026/07/03/nvidia-ai-introduces-aspire-a-self-improving-robotics-framework-reaching-31-zero-shot-on-libero-pro-long-tasks/" class="card-title" target="_blank" data-lang="zh" style="display: none;">NVIDIA ASPIRE 框架大幅提升机器人零样本性能</a>
+                    <p class="card-description" data-lang="en">A self-improving robotics framework achieving 31% zero-shot success on LIBERO-Pro long tasks, compared to ~4% for previous methods.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个自改进的机器人框架，在 LIBERO-Pro 长任务上实现了 31% 的零样本成功率，而此前的方法仅为 4% 左右。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Digital Today</span>
+                    <div class="news-time">2026-07-04</div>
+                    <a href="https://www.digitaltoday.co.kr/en/view/78155/ai-agents-can-use-up-to-1365-times-more-energy-than-conventional-ai-kaist-study" class="card-title" target="_blank" data-lang="en">KAIST Study: AI Agents Consume 136.5x More Energy Than Conventional AI</a>
+                    <a href="https://www.digitaltoday.co.kr/en/view/78155/ai-agents-can-use-up-to-1365-times-more-energy-than-conventional-ai-kaist-study" class="card-title" target="_blank" data-lang="zh" style="display: none;">KAIST 研究：AI 智能体的能耗高达传统 AI 的 136.5 倍</a>
+                    <p class="card-description" data-lang="en">Research finds that iterative agentic workflows (reflection, tool-use) dramatically increase power consumption compared to single-turn Q&A.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">研究发现，与单轮问答相比，迭代式智能体工作流（如反思、工具调用）会剧烈增加电能消耗。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">OpenTheMagazine</span>
+                    <div class="news-time">2026-07-04</div>
+                    <a href="https://openthemagazine.com/technology/uncle-sam-says-no-after-anthropic-the-us-now-limits-access-to-openais-new-ai-models" class="card-title" target="_blank" data-lang="en">US Imposes Restrictions on OpenAI's Sol, Terra, and Luna Models</a>
+                    <a href="https://openthemagazine.com/technology/uncle-sam-says-no-after-anthropic-the-us-now-limits-access-to-openais-new-ai-models" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国限制 OpenAI 的 Sol, Terra 和 Luna 模型</a>
+                    <p class="card-description" data-lang="en">The US government limits access to OpenAI's newest frontier models due to national security concerns and the competitive race with China.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">出于国家安全考虑以及与中国的竞争，美国政府限制了 OpenAI 最新前沿模型的访问权限。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The overarching theme of July 5th is 'The Operationalization of the Loop.' We are seeing a convergence of self-improvement across three disparate domains: software (HyperFlow), robotics (ASPIRE), and model capabilities (SkillOpt). The core pattern is a shift from training to runtime evolution—the model no longer just applies a learned policy but actively optimizes its own execution strategy. However, this evolution comes with a steep 'Agentic Tax' in energy and a terrifying new reality in cybersecurity (JadePuffer). The US government's decision to restrict the 'Sol' family further validates that these emergent agentic capabilities are now viewed as strategic weapons, not just productivity tools.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">7月5日的核心主题是“循环的工程化（Operationalization of the Loop）”。我们看到自进化趋势在三个截然不同的领域汇合：软件（HyperFlow）、机器人（ASPIRE）和模型能力（SkillOpt）。核心模式是从“训练”转向“运行时进化”——模型不再仅仅应用学习到的策略，而是积极优化自身的执行策略。然而，这种进化带来了沉重的“智能体税”（能耗）以及网络安全领域一个可怕的新现实（JadePuffer）。美国政府限制“Sol”系列模型的决定进一步证明，这些新兴的智能体能力现在被视为战略武器，而不仅仅是生产力工具。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

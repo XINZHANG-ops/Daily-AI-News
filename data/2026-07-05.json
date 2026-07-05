@@ -1,0 +1,126 @@
+{
+  "date": "2026-07-05",
+  "github_repos": [
+    {
+      "name": "lablnet/HyperFlow",
+      "url": "https://github.com/lablnet/HyperFlow",
+      "description": {
+        "en": "A self-improving agent framework built on LangGraph that allows AI to autonomously rewrite its own code, tools, and prompts based on evaluation logs.",
+        "zh": "一个基于 LangGraph 的自进化智能体框架，允许 AI 根据评估日志自主重写自身的代码、工具和提示词。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "Kelet-ai/skills",
+      "url": "https://github.com/Kelet-ai/skills",
+      "description": {
+        "en": "Plugins for coding agents to integrate Kelet, an AI-powered Root Cause Analysis (RCA) tool that identifies systemic failure patterns in LLM agent traces.",
+        "zh": "为代码智能体提供的插件，用于集成 Kelet——一个 AI 驱动的根因分析 (RCA) 工具，旨在识别 LLM 智能体追踪记录中的系统性失效模式。"
+      },
+      "stars": "850",
+      "forks": "42"
+    },
+    {
+      "name": "microsoft/SkillOpt",
+      "url": "https://github.com/microsoft/SkillOpt",
+      "description": {
+        "en": "A text-space optimizer that trains 'skills' (natural-language documents) for frozen LLM agents to improve performance without changing model weights.",
+        "zh": "一个文本空间优化器，通过为冻结的 LLM 智能体训练“技能”（自然语言文档），在不改变模型权重的情况下提升性能。"
+      },
+      "stars": "2.1k",
+      "forks": "156"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "JadePuffer Ransomware Automates Entire Attack Cycle with AI Agent",
+        "zh": "JadePuffer 勒索软件利用 AI 智能体实现全自动化攻击"
+      },
+      "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/",
+      "source": "BleepingComputer",
+      "time": "2026-07-04",
+      "description": {
+        "en": "The first documented case of a ransomware operation conducted entirely by an autonomous LLM agent, capable of real-time adaptation to bypass security and encrypt data.",
+        "zh": "首个记录在案的由自主 LLM 智能体完全主导的勒索软件行动，能够实时适应环境以绕过安全防御并加密数据。"
+      },
+      "insight": {
+        "en": "A watershed moment in cybersecurity. This proves that the same 'self-correction' loops used for productivity (like Claude Code) can be weaponized to conduct multi-stage attacks with minimal human oversight.",
+        "zh": "网络安全的分水岭。这证明了用于提高生产力的“自我修正”循环（如 Claude Code）可以被武器化，在极少人工干预的情况下执行多阶段攻击。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mistral AI Releases Leanstral 1.5 for Formal Math",
+        "zh": "Mistral AI 发布用于形式化数学的 Leanstral 1.5"
+      },
+      "url": "https://creati.ai/ai-news/2026-07-04/mistral-ai-unveils-leanstral-1-5-an-open-lean-4-theorem-proving-model-aimed-at-formal-math-workf/",
+      "source": "Creati AI",
+      "time": "2026-07-04",
+      "description": {
+        "en": "An open-weight Lean 4 theorem-proving model designed to solve rigorous mathematical problems with verifiable accuracy.",
+        "zh": "一个开源的 Lean 4 定理证明模型，旨在以可验证的准确度解决严谨的数学问题。"
+      },
+      "insight": {
+        "en": "Mistral is attacking the 'reasoning ceiling.' By focusing on Lean 4, they provide a verifiable ground truth, essential for moving from probabilistic guessing to deterministic scientific discovery.",
+        "zh": "Mistral 正在冲击“推理天花板”。通过专注于 Lean 4，他们提供了可验证的基准真相，这对于从概率性猜测转向确定性的科学发现至关重要。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA ASPIRE Framework Boosts Robotics Zero-Shot Performance",
+        "zh": "NVIDIA ASPIRE 框架大幅提升机器人零样本性能"
+      },
+      "url": "https://www.marktechpost.com/2026/07/03/nvidia-ai-introduces-aspire-a-self-improving-robotics-framework-reaching-31-zero-shot-on-libero-pro-long-tasks/",
+      "source": "MarkTechPost",
+      "time": "2026-07-03",
+      "description": {
+        "en": "A self-improving robotics framework achieving 31% zero-shot success on LIBERO-Pro long tasks, compared to ~4% for previous methods.",
+        "zh": "一个自改进的机器人框架，在 LIBERO-Pro 长任务上实现了 31% 的零样本成功率，而此前的方法仅为 4% 左右。"
+      },
+      "insight": {
+        "en": "Demonstrates the power of 'experience distillation.' By treating successful fixes as reusable skills, NVIDIA is moving robotics from static trajectories to learned, evolvable behaviors.",
+        "zh": "证明了“经验蒸馏”的力量。通过将成功的修复方案视为可复用的技能，NVIDIA 正在将机器人从静态轨迹转向可学习、可进化的行为。"
+      }
+    },
+    {
+      "title": {
+        "en": "KAIST Study: AI Agents Consume 136.5x More Energy Than Conventional AI",
+        "zh": "KAIST 研究：AI 智能体的能耗高达传统 AI 的 136.5 倍"
+      },
+      "url": "https://www.digitaltoday.co.kr/en/view/78155/ai-agents-can-use-up-to-1365-times-more-energy-than-conventional-ai-kaist-study",
+      "source": "Digital Today",
+      "time": "2026-07-04",
+      "description": {
+        "en": "Research finds that iterative agentic workflows (reflection, tool-use) dramatically increase power consumption compared to single-turn Q&A.",
+        "zh": "研究发现，与单轮问答相比，迭代式智能体工作流（如反思、工具调用）会剧烈增加电能消耗。"
+      },
+      "insight": {
+        "en": "The 'Agentic Tax.' As the industry pivots to models that 'think longer' (like o1 or GLM-5.2 Max), energy infrastructure becomes the primary bottleneck for agent deployment.",
+        "zh": "“智能体税”。随着行业转向“思考时间更长”的模型（如 o1 或 GLM-5.2 Max），能源基础设施成为智能体部署的主要瓶颈。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Imposes Restrictions on OpenAI's Sol, Terra, and Luna Models",
+        "zh": "美国限制 OpenAI 的 Sol, Terra 和 Luna 模型"
+      },
+      "url": "https://openthemagazine.com/technology/uncle-sam-says-no-after-anthropic-the-us-now-limits-access-to-openais-new-ai-models",
+      "source": "OpenTheMagazine",
+      "time": "2026-07-04",
+      "description": {
+        "en": "The US government limits access to OpenAI's newest frontier models due to national security concerns and the competitive race with China.",
+        "zh": "出于国家安全考虑以及与中国的竞争，美国政府限制了 OpenAI 最新前沿模型的访问权限。"
+      },
+      "insight": {
+        "en": "The 'AI Cold War' is now explicit. Strategic hoarding of frontier capabilities (similar to Anthropic's Mythos) creates a tiered intelligence economy based on geopolitical alignment.",
+        "zh": "“AI 冷战”现已公开化。对前沿能力的战略囤积（类似于 Anthropic 的 Mythos）创造了一个基于地缘政治结盟的分层智能经济。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The overarching theme of July 5th is 'The Operationalization of the Loop.' We are seeing a convergence of self-improvement across three disparate domains: software (HyperFlow), robotics (ASPIRE), and model capabilities (SkillOpt). The core pattern is a shift from training to runtime evolution—the model no longer just applies a learned policy but actively optimizes its own execution strategy. However, this evolution comes with a steep 'Agentic Tax' in energy and a terrifying new reality in cybersecurity (JadePuffer). The US government's decision to restrict the 'Sol' family further validates that these emergent agentic capabilities are now viewed as strategic weapons, not just productivity tools.",
+    "zh": "7月5日的核心主题是“循环的工程化（Operationalization of the Loop）”。我们看到自进化趋势在三个截然不同的领域汇合：软件（HyperFlow）、机器人（ASPIRE）和模型能力（SkillOpt）。核心模式是从“训练”转向“运行时进化”——模型不再仅仅应用学习到的策略，而是积极优化自身的执行策略。然而，这种进化带来了沉重的“智能体税”（能耗）以及网络安全领域一个可怕的新现实（JadePuffer）。美国政府限制“Sol”系列模型的决定进一步证明，这些新兴的智能体能力现在被视为战略武器，而不仅仅是生产力工具。"
+  }
+}
