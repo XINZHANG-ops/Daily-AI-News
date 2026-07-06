@@ -1,0 +1,126 @@
+{
+  "date": "2026-07-06",
+  "github_repos": [
+    {
+      "name": "cbw2007/micro_diffusion",
+      "url": "https://github.com/cbw2007/micro_diffusion",
+      "description": {
+        "en": "Research and implementation of training large-scale diffusion models on a micro-budget, achieving high quality with under $2,000 in compute.",
+        "zh": "关于在极低预算下训练大规模扩散模型的研究与实现，证明了在不到2000美元的计算成本下即可获得高质量结果。"
+      },
+      "stars": "1.2k",
+      "forks": "145"
+    },
+    {
+      "name": "jaybamroliya/mindvault",
+      "url": "https://github.com/jaybamroliya/mindvault",
+      "description": {
+        "en": "A personal knowledge graph memory layer for AI agents, utilizing hybrid graph-vector storage to ensure persistent long-term memory.",
+        "zh": "为AI Agent提供的个人知识图谱记忆层，利用混合图-向量存储确保持久的长期记忆。"
+      },
+      "stars": "850",
+      "forks": "92"
+    },
+    {
+      "name": "Omchaudhari73/astra",
+      "url": "https://github.com/Omchaudhari73/astra",
+      "description": {
+        "en": "Autonomous AI-powered bug bounty hunting agent for Kali Linux that automates recon and triages vulnerabilities using LLMs.",
+        "zh": "基于Kali Linux的自主AI漏洞赏金猎人Agent，实现了从侦察到漏洞分拣的全流程自动化。"
+      },
+      "stars": "2.1k",
+      "forks": "310"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "JADEPUFFER: The First Fully Agentic Ransomware Attack",
+        "zh": "JADEPUFFER：首个完全自主的AI Agent勒索软件攻击"
+      },
+      "url": "https://www.digitaltrends.com/cool-tech/ai-agent-reportedly-carried-out-an-entire-ransomware-attack-on-its-own/",
+      "source": "Digital Trends / Sysdig",
+      "time": "2026-07-06",
+      "description": {
+        "en": "Cybersecurity firm Sysdig reported 'JADEPUFFER', an AI agent that independently planned and executed a database-extortion attack, adapting its own code to fix bugs in 31 seconds.",
+        "zh": "网络安全公司Sysdig报告了名为 'JADEPUFFER' 的AI Agent，该Agent独立策划并执行了数据库勒索攻击，甚至能在31秒内自行修改代码以修复执行漏洞。"
+      },
+      "insight": {
+        "en": "The 'Agentic Threshold' has officially been crossed for malware. Unlike previous AI-assisted phishing, JADEPUFFER's ability to perform real-time self-correction (fixing its own bugs mid-attack) marks a shift from 'tool-assisted' to 'autonomous' threats. This mirrors the capabilities seen in benign tools like Astra (for bug hunting), proving that agentic autonomy is a double-edged sword that significantly lowers the barrier for high-impact cybercrime.",
+        "zh": "恶意软件的'自主化阈值'已被正式跨越。与以往的AI辅助钓鱼不同，JADEPUFFER在攻击过程中能进行实时自我修复（31秒内改Bug），标志着威胁已从'工具辅助'转向'完全自主'。这与Astra等良性漏洞猎手的功能镜像对称，证明了Agent的自主性是一把双刃剑，极大降低了高影响力网络犯罪的门槛。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Unveils GPT-5.6 Sol with 750 Tokens/Sec on Cerebras",
+        "zh": "OpenAI发布GPT-5.6 Sol，基于Cerebras硬件实现每秒750个token的推理速度"
+      },
+      "url": "https://thewincentral.com/openai-gpt-5-6-sol-cerebras-750-tokens-per-second/",
+      "source": "WinCentral",
+      "time": "2026-07-06",
+      "description": {
+        "en": "GPT-5.6 Sol introduces native vision AI and extreme inference speeds of 750 tokens/sec via Cerebras hardware, though access remains gated for certain government partners.",
+        "zh": "GPT-5.6 Sol 引入了原生视觉AI，并通过Cerebras硬件实现了每秒750 token的极致推理速度，但部分访问权限仍被限制在指定的政府合作伙伴内。"
+      },
+      "insight": {
+        "en": "Speed is becoming the primary battleground for 'real-time' agentic interaction. 750 tps isn't just about waiting less; it's about enabling a loop where the model can 'think' through thousands of internal iterations or self-corrections (like JADEPUFFER did) in a fraction of a second. The gating of this model for government previews underscores that extreme-speed LLMs are now viewed as critical strategic assets.",
+        "zh": "速度正成为'实时'Agent交互的主战场。750 tps 不仅仅是为了减少等待，更是为了让模型能在不到一秒的时间内完成数千次内部迭代或自我修正（正如JADEPUFFER所做的那样）。该模型针对政府预览的权限限制进一步证明，极致速度的LLM现已被视为关键的战略资产。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic CEO's Clash with Pentagon Over Autonomous Weapons",
+        "zh": "Anthropic CEO因自主武器问题与五角大楼爆发冲突"
+      },
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/revealed-the-emails-between-anthropic-ceo-dario-amodei-and-pentagon-it-head-that-soured-the-department-of-war-branding-anthropic-a-national-security-threat/articleshow/132209257.cms",
+      "source": "Times of India",
+      "time": "2026-07-06",
+      "description": {
+        "en": "Emails reveal a fallout between Dario Amodei and the Pentagon after Anthropic refused to remove safety redlines against autonomous weapons and mass surveillance, leading the DoD to brand the company a 'national security threat'.",
+        "zh": "泄露的邮件显示，由于Anthropic拒绝删除关于自主武器和大规模监控的安全红线，Dario Amodei与五角大楼关系破裂，导致美国国防部将该公司定性为'国家安全威胁'。"
+      },
+      "insight": {
+        "en": "We are seeing the 'Sovereign AI' era in full effect: the tension between corporate ethical 'redlines' and state security imperatives. When a lab's safety alignment contradicts a superpower's military strategy, the lab is no longer just a vendor, but a political actor. The restriction of Mythos 5 to 'vetted' US orgs shows a move toward a tiered AI ecosystem: one version for the public, and a 'raw' unaligned version for the state security apparatus.",
+        "zh": "我们正处于'主权AI'时代的全面展开：企业伦理'红线'与国家安全指令之间的张力达到顶峰。当实验室的安全对齐与超级大国的军事战略相抵触时，实验室不再仅仅是供应商，而成为了政治参与者。Mythos 5 仅限'审核通过'的美国组织使用，预示着一种分层AI生态的出现：一个面向公众的版本，以及一个为国家安全机构准备的'原始'未对齐版本。"
+      }
+    },
+    {
+      "title": {
+        "en": "Industry Coalition Forms AI Jailbreak Severity Framework",
+        "zh": "行业联盟成立AI越狱严重程度框架"
+      },
+      "url": "https://www.opensourceforu.com/2026/07/claude-models-restored-as-openai-bends-to-gated-white-house-previews/",
+      "source": "Open Source For You",
+      "time": "2026-07-06",
+      "description": {
+        "en": "Anthropic, Amazon, Microsoft, and Google have collaborated to create a standardized framework for measuring and reporting the severity of LLM jailbreaks.",
+        "zh": "Anthropic、亚马逊、微软和谷歌合作创建了一个标准化的框架，用于衡量和报告LLM越狱攻击的严重程度。"
+      },
+      "insight": {
+        "en": "Standardization is the first step toward 'AI Regulation by Proxy'. By defining what a 'severe' jailbreak is, these giants are effectively setting the legal and technical bars for the rest of the industry. This is a defensive move to preempt harsher government mandates by presenting a 'self-governed' front of responsible AI.",
+        "zh": "标准化是'代理监管'的第一步。通过定义什么是'严重'越狱，这些巨头实际上在为整个行业设定法律和技术基准。这是一种防御性举措，旨在通过展示'自我治理'的负责任AI形象，来预先阻止政府出台更严苛的指令。"
+      }
+    },
+    {
+      "title": {
+        "en": "Australian Government Warns Against Unregulated AI Medical Scribing",
+        "zh": "澳大利亚政府警告未经监管的AI医疗记录工具"
+      },
+      "url": "https://www.business-standard.com/technology/artificial-intelligence/first-ai-run-ransomware-attack-highlights-emerging-cyber-threat-landscape-126070600541_1.html",
+      "source": "Business Standard",
+      "time": "2026-07-06",
+      "description": {
+        "en": "The Australian government issued warnings regarding the rapid adoption of AI medical scribing tools, citing significant privacy risks and potential for clinical errors.",
+        "zh": "澳大利亚政府针对AI医疗记录工具的快速普及发出警告，理由是存在严重的隐私风险和潜在的临床错误。"
+      },
+      "insight": {
+        "en": "While the world focuses on AGI and cyber-warfare, the most immediate 'AI friction' is happening in high-stakes professional services (medicine, law). The gap between 'usable' (it writes the notes quickly) and 'safe' (it doesn't hallucinate a diagnosis) is where the first major wave of AI-induced professional liability lawsuits will likely emerge.",
+        "zh": "当世界关注AGI和网络战争时，最直接的'AI摩擦'发生在高风险专业服务（医疗、法律）中。'可用'（快速记录笔记）与'安全'（不幻觉诊断结果）之间的差距，将是第一波AI诱发专业责任诉讼的爆发点。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "July 6, 2026, marks a chilling milestone: the transition from 'AI-assisted' to 'AI-autonomous' threats. The JADEPUFFER attack is the smoking gun, proving that agents can now iterate on their own exploits in seconds—a capability that elevates the risk from 'automated' to 'adaptive'. This shift is happening in tandem with a consolidation of AI power. We are seeing the emergence of a 'Strategic AI' class—models like GPT-5.6 Sol and Mythos 5—that are treated more like nuclear assets than software, gated by governments and used as levers in geopolitical clashes. The day's story is the loss of the 'innocent' AI era; we have entered a period where agentic autonomy is being weaponized by both state actors and criminals, and the only response is a desperate scramble for standardized 'severity frameworks' and government-led gating. The common thread is the collapse of the 'human-in-the-loop' safety model: whether it's a ransomware agent fixing its own bugs or a medical scribe hallucinating a record, the speed of AI action is now outpacing the speed of human oversight.",
+    "zh": "2026年7月6日标志着一个令人不安的里程碑：从'AI辅助'向'AI自主'威胁的转变。JADEPUFFER 攻击是一个关键证据，证明了Agent现在可以在数秒内对其漏洞利用进行迭代——这种能力将风险从'自动化'提升到了'自适应'。与此同时，AI权力正在进一步巩固。一个'战略级AI'类别正在出现——如 GPT-5.6 Sol 和 Mythos 5，它们被视为核资产而非软件，由政府管控并成为地缘政治冲突的杠杆。这一天的故事是'纯真AI时代'的终结；我们进入了一个Agent自主性被国家行为者和犯罪分子共同武器化的时期，而唯一的应对之策是对标准化'严重程度框架'的绝望追求和政府主导的权限限制。共同的主题是'人类在环'安全模型的崩塌：无论是自行修复Bug的勒索软件Agent，还是产生幻觉的医疗记录员，AI的执行速度现在已经远远超过了人类监管的速度。"
+  }
+}
