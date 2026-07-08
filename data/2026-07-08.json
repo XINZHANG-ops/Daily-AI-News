@@ -1,0 +1,143 @@
+{
+  "date": "2026-07-08",
+  "github_repos": [
+    {
+      "name": "makerchecker/MakerChecker",
+      "url": "https://github.com/makerchecker/MakerChecker",
+      "description": {
+        "en": "Open-source security and governance layer for AI agents, enforcing segregation of duties and tamper-evident auditing.",
+        "zh": "开源 AI Agent 安全治理层，强制执行职责分离并提供防篡改审计。"
+      },
+      "stars": "1.2k",
+      "forks": "85"
+    },
+    {
+      "name": "dockfixlabs/agentguard",
+      "url": "https://github.com/dockfixlabs/agentguard",
+      "description": {
+        "en": "Security scanner that identifies vulnerabilities in AI agent code, mapping findings to the OWASP AI Agent Security Top 10.",
+        "zh": "AI Agent 代码安全扫描器，将发现的漏洞映射至 OWASP AI Agent 安全 Top 10。"
+      },
+      "stars": "840",
+      "forks": "42"
+    },
+    {
+      "name": "yuzhaopeng-up/agent-cluster-comm",
+      "url": "https://github.com/yuzhaopeng-up/agent-cluster-comm",
+      "description": {
+        "en": "Encrypted Peer-to-Peer communication layer for multi-agent clusters to ensure PII is never transmitted in plaintext.",
+        "zh": "多 Agent 集群的加密 P2P 通信层，确保 PII 数据绝不以明文形式传输。"
+      },
+      "stars": "420",
+      "forks": "28"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "JADEPUFFER: The First Autonomous AI Ransomware Attack",
+        "zh": "JADEPUFFER：首个全自主 AI 勒索软件攻击"
+      },
+      "url": "https://sysdig.com/blog/jadepuffer-autonomous-ai-ransomware",
+      "source": "Sysdig",
+      "time": "2026-07-07",
+      "description": {
+        "en": "The first documented case of an LLM agent independently handling reconnaissance, credential harvesting, and encryption by exploiting CVE-2025-3248 in Langflow.",
+        "zh": "首例记录的 LLM Agent 通过利用 Langflow 中的 CVE-2025-3248 漏洞，独立完成侦察、凭据窃取和加密的案例。"
+      },
+      "insight": {
+        "en": "This is the 'Stuxnet moment' for AI agents. It proves that 'agentic loops' (planning -> execution -> feedback) are now viable for high-impact malicious use. The attack surface has shifted from the prompt to the agent framework itself.",
+        "zh": "这是 AI Agent 的 'Stuxnet 时刻'。它证明了 'Agent 循环' (规划 -> 执行 -> 反馈) 现在已可被用于高影响力的恶意攻击。攻击面已从提示词转移到了 Agent 框架本身。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Updates Claude Code to 'Manual Permission Mode' by Default",
+        "zh": "Anthropic 将 Claude Code 默认更新为 '手动权限模式'"
+      },
+      "url": "https://www.anthropic.com/news/claude-code-safety-update",
+      "source": "Anthropic",
+      "time": "2026-07-07",
+      "description": {
+        "en": "In response to autonomous attack chains like JADEPUFFER, Anthropic now requires human approval for every sensitive action in Claude Code.",
+        "zh": "为了应对像 JADEPUFFER 这样的自主攻击链，Anthropic 现在要求 Claude Code 的每项敏感操作都必须经过人工审批。"
+      },
+      "insight": {
+        "en": "A tactical retreat into 'Human-in-the-Loop.' Anthropic is admitting that current alignment techniques are insufficient to prevent autonomous exploit chains, making manual gating the only reliable safety barrier for now.",
+        "zh": "一次向 '人工在环' 的战术撤退。Anthropic 承认目前的对齐技术不足以防止自主漏洞利用链，这意味着手动门控是目前唯一可靠的安全屏障。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Surpasses OpenAI in Annualized Revenue",
+        "zh": "Anthropic 年化营收超越 OpenAI"
+      },
+      "url": "https://fortune.com/2026/07/07/anthropic-revenue-growth",
+      "source": "Fortune",
+      "time": "2026-07-07",
+      "description": {
+        "en": "Anthropic's annualized revenue reached $47B, significantly outpacing OpenAI's $25-33B, driven largely by the adoption of Claude Code.",
+        "zh": "Anthropic 的年化营收达到 470 亿美元，显著超过 OpenAI 的 250-330 亿美元，这主要得益于 Claude Code 的广泛采用。"
+      },
+      "insight": {
+        "en": "The 'Developer Mindshare' has officially converted to revenue. The success of Claude Code proves that 'AI for coding' is the most immediate and scalable monetization path, surpassing the general-purpose chatbot market.",
+        "zh": " '开发者心智' 已正式转化为营收。Claude Code 的成功证明 'AI 编程' 是目前最直接且可扩展的变现路径，已超越通用聊天机器人市场。"
+      }
+    },
+    {
+      "title": {
+        "en": "Microsoft Begins Replacing OpenAI Models with In-House MAI Models",
+        "zh": "微软开始在部分应用中用自有 MAI 模型取代 OpenAI"
+      },
+      "url": "https://thenextweb.com/news/microsoft-mai-models-replace-openai-apps",
+      "source": "The Next Web",
+      "time": "2026-07-07",
+      "description": {
+        "en": "Microsoft is swapping OpenAI and Anthropic models for its own MAI models in select applications to optimize cost and data residency.",
+        "zh": "微软在部分应用中将 OpenAI 和 Anthropic 模型更换为自有 MAI 模型，以优化成本和数据驻留。"
+      },
+      "insight": {
+        "en": "The 'OpenAI honeymoon' is over. Microsoft is diversifying to avoid vendor lock-in and cost volatility, treating OpenAI more as a benchmark for quality than a sole provider.",
+        "zh": " 'OpenAI 蜜月期' 结束了。微软正在通过多元化来避免供应商锁定和成本波动，将 OpenAI 更多地视为质量基准而非唯一供应商。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek Plans to Develop Own Inference Chips to Bypass Export Controls",
+        "zh": "DeepSeek 计划开发自有推理芯片以绕过出口管制"
+      },
+      "url": "https://arstechnica.com/ai/2026/07/facing-us-export-controls-chinas-deepseek-plans-to-make-its-own-chips/",
+      "source": "Ars Technica",
+      "time": "2026-07-07",
+      "description": {
+        "en": "Facing US export restrictions on Nvidia GPUs, DeepSeek intends to build its own hardware stack to ensure model inference stability.",
+        "zh": "面对美国对 Nvidia GPU 的出口限制，DeepSeek 打算构建自己的硬件栈以确保模型推理的稳定性。"
+      },
+      "insight": {
+        "en": "The ultimate hedge against geopolitical risk. When both software (via distillation) and hardware (via export bans) are contested, vertical integration becomes the only survival strategy for frontier labs.",
+        "zh": "应对地缘政治风险的终极对冲。当软件 (通过蒸馏) 和硬件 (通过出口禁令) 都受到挑战时，垂直整合成为前沿实验室唯一的生存策略。"
+      }
+    },
+    {
+      "title": {
+        "en": "British Columbia Sues OpenAI Over Failure to Report Violent Content",
+        "zh": "不列颠哥伦比亚省起诉 OpenAI 未报告暴力内容"
+      },
+      "url": "https://www.aljazeera.com/news/2026/7/7/canadian-province-sues-openai-over-alleged-chatgpt-linked-shooting-warnings",
+      "source": "Al Jazeera",
+      "time": "2026-07-07",
+      "description": {
+        "en": "The Canadian province alleges OpenAI failed to notify authorities after flagging violent conversations linked to a mass shooter.",
+        "zh": "该加拿大省份指控 OpenAI 在标记与一名枪击者相关的暴力对话后，未能通知相关部门。"
+      },
+      "insight": {
+        "en": "A critical reminder that 'safety filters' are not just product features, but legal liabilities. The gap between internal flagging and external reporting is now a primary legal risk for LLM providers.",
+        "zh": "一个关键的提醒： '安全过滤器' 不仅仅是产品功能，更是法律责任。内部标记与外部报告之间的差距现在已成为 LLM 供应商的主要法律风险。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Today marks a transition from the 'Capabilities Era' to the 'Governance Era' of AI. The emergence of JADEPUFFER signals that autonomous agency is no longer a theoretical risk but a weaponized reality. This is triggering a systemic reaction: developers are moving toward 'Governance-by-Design' with tools like MakerChecker and AgentGuard, companies are diversifying their model dependencies (Microsoft MAI), and nations are vertically integrating their AI stacks (DeepSeek). The overarching narrative is the 'Hardening of the AI Stack'—where safety, security, and sovereignty now outweigh raw performance.",
+    "zh": "今天标志着 AI 从 '能力时代' 向 '治理时代' 的转变。JADEPUFFER 的出现表明，自主 Agent 已不再是理论上的风险，而是一个武器化的现实。这触发了一次系统性反应：开发者正转向以 MakerChecker 和 AgentGuard 为代表的 '设计即治理'；公司正在多元化其模型依赖 (如微软 MAI)；而国家则在垂直整合其 AI 栈 (如 DeepSeek)。整体叙事是 'AI 技术栈的硬化' —— 安全、保障和主权现在比单纯的性能表现更为重要。"
+  }
+}
