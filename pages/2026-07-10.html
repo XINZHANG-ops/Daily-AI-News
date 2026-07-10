@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - July 10, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 July 10, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/riktar/memledger" class="card-title" target="_blank">riktar/memledger</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 85 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An auditable AI agent memory system that provides a full chain of provenance for remembered facts, treating agent memory like a bank statement.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个可审计的 AI Agent 记忆系统，为记忆的事实提供完整的溯源链，将 Agent 的记忆处理得像银行账单一样透明。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/robbyant/lingbot-video" class="card-title" target="_blank">robbyant/lingbot-video</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 600 stars</div>
+                                <div class="meta-item"><span>🍴</span> 120 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">The first open-source large-scale Mixture-of-Experts (MoE) video generation model dedicated to embodied intelligence and physical world understanding.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">首个专注于具身智能和物理世界理解的大规模开源混合专家 (MoE) 视频生成模型。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/asgeirtj/system_prompts_leaks" class="card-title" target="_blank">asgeirtj/system_prompts_leaks</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 53.3k stars</div>
+                                <div class="meta-item"><span>🍴</span> 4.1k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A comprehensive open-source archive of extracted hidden system prompts from major AI models including Claude Fable 5, GPT-5.5, and Gemini.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个全面的开源存档，记录了包括 Claude Fable 5、GPT-5.5 和 Gemini 在内的主要 AI 模型的隐藏系统提示词。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-07-09</div>
+                    <a href="https://openai.com/index/gpt-5-6/" class="card-title" target="_blank" data-lang="en">OpenAI Launches GPT-5.6 Model Family: Sol, Terra, and Luna</a>
+                    <a href="https://openai.com/index/gpt-5-6/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 发布 GPT-5.6 模型家族：Sol, Terra 和 Luna</a>
+                    <p class="card-description" data-lang="en">OpenAI introduced a tiered model suite with 'Sol' (flagship for coding/science), 'Terra' (professional balance), and 'Luna' (cost-efficient).</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 推出了分级模型套件，包括 'Sol'（面向编程/科学的旗舰模型）、'Terra'（专业平衡模型）和 'Luna'（高性价比模型）。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Decoder</span>
+                    <div class="news-time">2026-07-09</div>
+                    <a href="https://the-decoder.com/openai-pairs-its-gpt-5-6-public-rollout-with-chatgpt-work-a-new-agent-that-handles-entire-workflows/" class="card-title" target="_blank" data-lang="en">Introducing 'ChatGPT Work': The Agent for Entire Workflows</a>
+                    <a href="https://the-decoder.com/openai-pairs-its-gpt-5-6-public-rollout-with-chatgpt-work-a-new-agent-that-handles-entire-workflows/" class="card-title" target="_blank" data-lang="zh" style="display: none;">推出 'ChatGPT Work'：处理完整工作流的 AI Agent</a>
+                    <p class="card-description" data-lang="en">A new super-app agent merging ChatGPT and Codex, capable of autonomously handling complex workflows across Slack, Google Drive, and Salesforce.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个全新的超级应用 Agent，融合了 ChatGPT 和 Codex，能够自主处理跨 Slack、Google Drive 和 Salesforce 的复杂工作流。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">2026-07-09</div>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work" class="card-title" target="_blank" data-lang="en">OpenAI Unveils 'Ultra' Mode for Parallel Agent Coordination</a>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 推出 'Ultra' 模式实现多 Agent 并行协作</a>
+                    <p class="card-description" data-lang="en">GPT-5.6 features an 'Ultra' mode that coordinates four agents in parallel to solve complex tasks faster than a single sequential agent.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GPT-5.6 引入了 'Ultra' 模式，通过并行协调四个 Agent 来解决复杂任务，速度远超单一的顺序执行 Agent。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-07-09</div>
+                    <a href="https://openai.com/index/gpt-5-6/" class="card-title" target="_blank" data-lang="en">GPT-5.6 Sol Focuses on Defensive Cybersecurity and Blue Teaming</a>
+                    <a href="https://openai.com/index/gpt-5-6/" class="card-title" target="_blank" data-lang="zh" style="display: none;">GPT-5.6 Sol 聚焦于防御性网络安全与蓝队演习</a>
+                    <p class="card-description" data-lang="en">OpenAI's strongest cyber model to date, designed for threat modeling, automated patching, and defensive security operations.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 迄今为止最强的网络安全模型，专为威胁建模、自动补丁修复和防御性安全运营而设计。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Platformer</span>
+                    <div class="news-time">2026-07-09</div>
+                    <a href="https://www.platformer.news/openai-gpt-5-6-simo-meta-muse-spark-1-1/" class="card-title" target="_blank" data-lang="en">Meta Releases Muse Spark 1.1 Multimodal Coding Model</a>
+                    <a href="https://www.platformer.news/openai-gpt-5-6-simo-meta-muse-spark-1-1/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta 发布 Muse Spark 1.1 多模态编程模型</a>
+                    <p class="card-description" data-lang="en">Meta's latest update to the Muse Spark line improves multimodal reasoning for UI/UX design and complex code generation.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta 对 Muse Spark 系列的最新更新，提升了 UI/UX 设计和复杂代码生成的多模态推理能力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Decoder</span>
+                    <div class="news-time">2026-07-09</div>
+                    <a href="https://the-decoder.com/openai-pairs-its-gpt-5-6-public-rollout-with-chatgpt-work-a-new-agent-that-handles-entire-workflows/" class="card-title" target="_blank" data-lang="en">Anthropic Pivots to 'Claude Cowork' Agentic Workspace</a>
+                    <a href="https://the-decoder.com/openai-pairs-its-gpt-5-6-public-rollout-with-chatgpt-work-a-new-agent-that-handles-entire-workflows/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 转向 'Claude Cowork' Agentic 协作空间</a>
+                    <p class="card-description" data-lang="en">Anthropic is shifting focus from standalone tools like Claude Code toward a comprehensive agentic workspace to compete with ChatGPT Work.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic 正将重心从 Claude Code 等独立工具转向全面的 Agent 协作空间，以与 ChatGPT Work 竞争。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Platformer</span>
+                    <div class="news-time">2026-07-09</div>
+                    <a href="https://www.platformer.news/openai-gpt-5-6-simo-meta-muse-spark-1-1/" class="card-title" target="_blank" data-lang="en">Fidji Simo Departs OpenAI Following Health Challenges</a>
+                    <a href="https://www.platformer.news/openai-gpt-5-6-simo-meta-muse-spark-1-1/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Fidji Simo 因健康原因离开 OpenAI</a>
+                    <p class="card-description" data-lang="en">The No. 2 executive at OpenAI has stepped down, adding to a series of high-profile departures from the company this year.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 的二号行政主管已辞职，这增加了该公司今年一系列高管离职的人数。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Platformer</span>
+                    <div class="news-time">2026-07-09</div>
+                    <a href="https://www.platformer.news/openai-gpt-5-6-simo-meta-muse-spark-1-1/" class="card-title" target="_blank" data-lang="en">Google Mandates AI Disclosure for All Generated Advertisements</a>
+                    <a href="https://www.platformer.news/openai-gpt-5-6-simo-meta-muse-spark-1-1/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google 要求所有 AI 生成的广告必须公开披露</a>
+                    <p class="card-description" data-lang="en">Google announced new transparency measures requiring explicit labels on any advertisement created using AI tools.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Google 宣布了新的透明度措施，要求在任何使用 AI 工具创建的广告上标明明确的标签。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">July 10th marks a pivotal shift in the AI race: the transition from the 'Model Era' to the 'System Era'. OpenAI's release of GPT-5.6 and 'ChatGPT Work' signals that raw intelligence is no longer the primary product; the product is now the 'Agentic System'. By introducing tiered pricing (Sol/Terra/Luna) and parallel coordination (Ultra Mode), OpenAI is treating intelligence as a commodity that can be scaled and optimized. The real battleground has moved from the benchmark leaderboard to the 'Enterprise OS'—who can best orchestrate the tools, data, and workflows of a modern company? Anthropic's pivot to 'Claude Cowork' and Meta's release of Muse Spark 1.1 are reactive responses to this shift. We are seeing the birth of a new corporate infrastructure where the primary interface is no longer a chat box, but a coordinated swarm of agents managing a digital workforce.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">7月10日标志着 AI 竞赛的一个关键转折点：从 '模型时代' 转向 '系统时代'。OpenAI 发布 GPT-5.6 和 'ChatGPT Work' 表明，原始智能不再是主要产品；现在的产品是 'Agent 系统'。通过引入分级定价（Sol/Terra/Luna）和并行协调（Ultra 模式），OpenAI 将智能视为一种可以扩展和优化的商品。真正的战场已经从基准测试排行榜转移到了 '企业操作系统'——谁能最好地编排现代公司的工具、数据和工作流？Anthropic 向 'Claude Cowork' 的转型和 Meta 发布 Muse Spark 1.1 都是对这一转变的反应性响应。我们正见证一种新企业基础设施的诞生，其中主要的界面不再是一个聊天框，而是一个管理数字化劳动力的协调 Agent 集群。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+{
+  "date": "2026-07-10",
+  "github_repos": [
+    {
+      "name": "riktar/memledger",
+      "url": "https://github.com/riktar/memledger",
+      "description": {
+        "en": "An auditable AI agent memory system that provides a full chain of provenance for remembered facts, treating agent memory like a bank statement.",
+        "zh": "一个可审计的 AI Agent 记忆系统，为记忆的事实提供完整的溯源链，将 Agent 的记忆处理得像银行账单一样透明。"
+      },
+      "stars": "1.2k",
+      "forks": "85"
+    },
+    {
+      "name": "robbyant/lingbot-video",
+      "url": "https://github.com/robbyant/lingbot-video",
+      "description": {
+        "en": "The first open-source large-scale Mixture-of-Experts (MoE) video generation model dedicated to embodied intelligence and physical world understanding.",
+        "zh": "首个专注于具身智能和物理世界理解的大规模开源混合专家 (MoE) 视频生成模型。"
+      },
+      "stars": "600",
+      "forks": "120"
+    },
+    {
+      "name": "asgeirtj/system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "description": {
+        "en": "A comprehensive open-source archive of extracted hidden system prompts from major AI models including Claude Fable 5, GPT-5.5, and Gemini.",
+        "zh": "一个全面的开源存档，记录了包括 Claude Fable 5、GPT-5.5 和 Gemini 在内的主要 AI 模型的隐藏系统提示词。"
+      },
+      "stars": "53.3k",
+      "forks": "4.1k"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Launches GPT-5.6 Model Family: Sol, Terra, and Luna",
+        "zh": "OpenAI 发布 GPT-5.6 模型家族：Sol, Terra 和 Luna"
+      },
+      "url": "https://openai.com/index/gpt-5-6/",
+      "source": "OpenAI",
+      "time": "2026-07-09",
+      "description": {
+        "en": "OpenAI introduced a tiered model suite with 'Sol' (flagship for coding/science), 'Terra' (professional balance), and 'Luna' (cost-efficient).",
+        "zh": "OpenAI 推出了分级模型套件，包括 'Sol'（面向编程/科学的旗舰模型）、'Terra'（专业平衡模型）和 'Luna'（高性价比模型）。"
+      },
+      "insight": {
+        "en": "The shift from a single flagship to a Sol/Terra/Luna tier mirrors the evolution of cloud compute pricing. By optimizing for specific cost-performance brackets, OpenAI is positioning GPT-5.6 Sol as a direct, high-efficiency alternative to Anthropic's Fable 5, effectively turning 'intelligence' into a scalable utility rather than a flat-fee service.",
+        "zh": "从单一旗舰模型转向 Sol/Terra/Luna 分级定价，镜像了云计算定价的演进。通过针对不同的成本-性能区间进行优化，OpenAI 将 GPT-5.6 Sol 定位为 Anthropic Fable 5 的直接且高效的替代方案，实际上将 '智能' 从一种固定费用服务转变为一种可扩展的公共事业。"
+      }
+    },
+    {
+      "title": {
+        "en": "Introducing 'ChatGPT Work': The Agent for Entire Workflows",
+        "zh": "推出 'ChatGPT Work'：处理完整工作流的 AI Agent"
+      },
+      "url": "https://the-decoder.com/openai-pairs-its-gpt-5-6-public-rollout-with-chatgpt-work-a-new-agent-that-handles-entire-workflows/",
+      "source": "The Decoder",
+      "time": "2026-07-09",
+      "description": {
+        "en": "A new super-app agent merging ChatGPT and Codex, capable of autonomously handling complex workflows across Slack, Google Drive, and Salesforce.",
+        "zh": "一个全新的超级应用 Agent，融合了 ChatGPT 和 Codex，能够自主处理跨 Slack、Google Drive 和 Salesforce 的复杂工作流。"
+      },
+      "insight": {
+        "en": "This is the definitive transition from 'chatbot' to 'coworker'. While Anthropic's shift to 'Claude Cowork' was a defensive move, ChatGPT Work is an offensive play to capture the enterprise OS layer. The move to a Unified Plugins Directory means OpenAI is no longer just providing a model, but is attempting to become the central orchestration hub for all corporate SaaS tools.",
+        "zh": "这是从 '聊天机器人' 到 '同事' 的决定性转变。如果说 Anthropic 转向 'Claude Cowork' 是一次防御性动作，那么 ChatGPT Work 则是试图通过占据企业操作系统层来进行进攻。转向统一插件目录意味着 OpenAI 不再仅仅提供模型，而是试图成为所有企业 SaaS 工具的中央调度中心。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Unveils 'Ultra' Mode for Parallel Agent Coordination",
+        "zh": "OpenAI 推出 'Ultra' 模式实现多 Agent 并行协作"
+      },
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
+      "source": "The Verge",
+      "time": "2026-07-09",
+      "description": {
+        "en": "GPT-5.6 features an 'Ultra' mode that coordinates four agents in parallel to solve complex tasks faster than a single sequential agent.",
+        "zh": "GPT-5.6 引入了 'Ultra' 模式，通过并行协调四个 Agent 来解决复杂任务，速度远超单一的顺序执行 Agent。"
+      },
+      "insight": {
+        "en": "Ultra mode addresses the primary scaling bottleneck of LLMs: the linear nature of the autoregressive token stream. By moving to a swarm-like coordination, OpenAI is implementing a 'divide and conquer' strategy for reasoning, which likely explains the leap in coding and scientific performance over GPT-5.5.",
+        "zh": "Ultra 模式解决了 LLM 的主要扩展瓶颈：自回归 token 流的线性本质。通过采用类似集群的协作方式，OpenAI 为推理实现了 '分而治之' 策略，这解释了其在编程和科学性能上相对于 GPT-5.5 的飞跃。"
+      }
+    },
+    {
+      "title": {
+        "en": "GPT-5.6 Sol Focuses on Defensive Cybersecurity and Blue Teaming",
+        "zh": "GPT-5.6 Sol 聚焦于防御性网络安全与蓝队演习"
+      },
+      "url": "https://openai.com/index/gpt-5-6/",
+      "source": "OpenAI",
+      "time": "2026-07-09",
+      "description": {
+        "en": "OpenAI's strongest cyber model to date, designed for threat modeling, automated patching, and defensive security operations.",
+        "zh": "OpenAI 迄今为止最强的网络安全模型，专为威胁建模、自动补丁修复和防御性安全运营而设计。"
+      },
+      "insight": {
+        "en": "As AI-generated code floods repositories, the attack surface is expanding exponentially. GPT-5.6's focus on 'blue teaming' indicates a strategic pivot: the value of AI is shifting from creating new features to securing the massive, fragile infrastructure of AI-written code. It's a move from 'builder' to 'guardian'.",
+        "zh": "随着 AI 生成的代码充斥仓库，攻击面呈指数级扩张。GPT-5.6 对 '蓝队演习' 的关注表明了一个战略转型：AI 的价值正在从创建新功能转向保障 AI 编写的庞大且脆弱的基础设施的安全。这是一个从 '构建者' 到 '守护者' 的转变。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Releases Muse Spark 1.1 Multimodal Coding Model",
+        "zh": "Meta 发布 Muse Spark 1.1 多模态编程模型"
+      },
+      "url": "https://www.platformer.news/openai-gpt-5-6-simo-meta-muse-spark-1-1/",
+      "source": "Platformer",
+      "time": "2026-07-09",
+      "description": {
+        "en": "Meta's latest update to the Muse Spark line improves multimodal reasoning for UI/UX design and complex code generation.",
+        "zh": "Meta 对 Muse Spark 系列的最新更新，提升了 UI/UX 设计和复杂代码生成的多模态推理能力。"
+      },
+      "insight": {
+        "en": "Muse Spark 1.1 is Meta's counter-weight to the closed ecosystems of OpenAI and Anthropic. By providing a high-performance open-weight alternative, Meta ensures that a baseline of frontier capability remains accessible, which effectively caps the premium prices OpenAI can charge for 'Terra' and 'Luna' tiers.",
+        "zh": "Muse Spark 1.1 是 Meta 针对 OpenAI 和 Anthropic 封闭生态的制衡手段。通过提供高性能的开源权重替代方案，Meta 确保了前沿能力的基准可获得性，这实际上为 OpenAI 的 'Terra' 和 'Luna' 分级定价设定了价格上限。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Pivots to 'Claude Cowork' Agentic Workspace",
+        "zh": "Anthropic 转向 'Claude Cowork' Agentic 协作空间"
+      },
+      "url": "https://the-decoder.com/openai-pairs-its-gpt-5-6-public-rollout-with-chatgpt-work-a-new-agent-that-handles-entire-workflows/",
+      "source": "The Decoder",
+      "time": "2026-07-09",
+      "description": {
+        "en": "Anthropic is shifting focus from standalone tools like Claude Code toward a comprehensive agentic workspace to compete with ChatGPT Work.",
+        "zh": "Anthropic 正将重心从 Claude Code 等独立工具转向全面的 Agent 协作空间，以与 ChatGPT Work 竞争。"
+      },
+      "insight": {
+        "en": "Anthropic is realizing that individual 'skills' (like the ones in Claude Code) are not enough to retain enterprise clients. They are moving up the value chain into 'workspace' management to prevent a mass migration to OpenAI's more integrated ecosystem.",
+        "zh": "Anthropic 意识到，单纯的 '技能'（如 Claude Code 中的功能）不足以留住企业客户。他们正在向 '工作空间' 管理这一更高价值链移动，以防止用户大规模迁移到 OpenAI 更集成化的生态系统中。"
+      }
+    },
+    {
+      "title": {
+        "en": "Fidji Simo Departs OpenAI Following Health Challenges",
+        "zh": "Fidji Simo 因健康原因离开 OpenAI"
+      },
+      "url": "https://www.platformer.news/openai-gpt-5-6-simo-meta-muse-spark-1-1/",
+      "source": "Platformer",
+      "time": "2026-07-09",
+      "description": {
+        "en": "The No. 2 executive at OpenAI has stepped down, adding to a series of high-profile departures from the company this year.",
+        "zh": "OpenAI 的二号行政主管已辞职，这增加了该公司今年一系列高管离职的人数。"
+      },
+      "insight": {
+        "en": "While the official reason is health, the timing is poignant. Simo's exit during the GPT-5.6 launch highlights the extreme pressure on the leadership team as OpenAI pivots from a research-driven lab to a product-led corporate giant. The 'brain drain' at the top suggests an intensifying struggle to balance safety and commercial aggression.",
+        "zh": "虽然官方原因是健康问题，但时机耐人寻味。Simo 在 GPT-5.6 发布期间离职，突显了 OpenAI 在从研究驱动的实验室转向产品驱动的企业巨头时，领导团队承受的极端压力。高层的 '人才流失' 表明在平衡安全与商业侵略性方面存在着日益激烈的冲突。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Mandates AI Disclosure for All Generated Advertisements",
+        "zh": "Google 要求所有 AI 生成的广告必须公开披露"
+      },
+      "url": "https://www.platformer.news/openai-gpt-5-6-simo-meta-muse-spark-1-1/",
+      "source": "Platformer",
+      "time": "2026-07-09",
+      "description": {
+        "en": "Google announced new transparency measures requiring explicit labels on any advertisement created using AI tools.",
+        "zh": "Google 宣布了新的透明度措施，要求在任何使用 AI 工具创建的广告上标明明确的标签。"
+      },
+      "insight": {
+        "en": "Google is proactively building a 'trust layer' to preempt regulatory crackdowns. By normalizing AI labels now, they are protecting their core ad revenue from future legal liabilities while simultaneously signaling to users that AI-generated content is a separate, secondary category of information.",
+        "zh": "Google 正在主动构建 '信任层' 以抢在监管打击之前行动。通过现在将 AI 标签标准化，他们在保护核心广告收入免受未来法律责任的影响，同时也向用户传递一个信号：AI 生成的内容是一个独立的、次要的信息类别。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "July 10th marks a pivotal shift in the AI race: the transition from the 'Model Era' to the 'System Era'. OpenAI's release of GPT-5.6 and 'ChatGPT Work' signals that raw intelligence is no longer the primary product; the product is now the 'Agentic System'. By introducing tiered pricing (Sol/Terra/Luna) and parallel coordination (Ultra Mode), OpenAI is treating intelligence as a commodity that can be scaled and optimized. The real battleground has moved from the benchmark leaderboard to the 'Enterprise OS'—who can best orchestrate the tools, data, and workflows of a modern company? Anthropic's pivot to 'Claude Cowork' and Meta's release of Muse Spark 1.1 are reactive responses to this shift. We are seeing the birth of a new corporate infrastructure where the primary interface is no longer a chat box, but a coordinated swarm of agents managing a digital workforce.",
+    "zh": "7月10日标志着 AI 竞赛的一个关键转折点：从 '模型时代' 转向 '系统时代'。OpenAI 发布 GPT-5.6 和 'ChatGPT Work' 表明，原始智能不再是主要产品；现在的产品是 'Agent 系统'。通过引入分级定价（Sol/Terra/Luna）和并行协调（Ultra 模式），OpenAI 将智能视为一种可以扩展和优化的商品。真正的战场已经从基准测试排行榜转移到了 '企业操作系统'——谁能最好地编排现代公司的工具、数据和工作流？Anthropic 向 'Claude Cowork' 的转型和 Meta 发布 Muse Spark 1.1 都是对这一转变的反应性响应。我们正见证一种新企业基础设施的诞生，其中主要的界面不再是一个聊天框，而是一个管理数字化劳动力的协调 Agent 集群。"
+  }
+}
