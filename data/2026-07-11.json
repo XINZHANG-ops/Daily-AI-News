@@ -1,0 +1,160 @@
+{
+  "date": "2026-07-11",
+  "github_repos": [
+    {
+      "name": "Vexp-ai/horizon",
+      "url": "https://github.com/Vexp-ai/horizon",
+      "description": {
+        "en": "A verification-first layer allowing 7B models to reach parity with 671B teacher models on coding and math tasks via sandboxed execution.",
+        "zh": "一个“验证优先”的层，通过沙盒执行和 Agent 修复循环，使 7B 小模型在编程和数学任务上能达到 671B 教师模型的性能水平。"
+      },
+      "stars": "1.2k",
+      "forks": "85"
+    },
+    {
+      "name": "Nicolasadr51/pxpipe",
+      "url": "https://github.com/Nicolasadr51/pxpipe",
+      "description": {
+        "en": "Local proxy that renders bulky text context (prompts, docs) as images to significantly reduce token costs for vision-capable models.",
+        "zh": "一个本地代理，将冗长的文本上下文（提示词、文档）渲染为图像，从而大幅降低视觉能力模型的 Token 成本。"
+      },
+      "stars": "840",
+      "forks": "112"
+    },
+    {
+      "name": "SylphxAI/video-reader-mcp",
+      "url": "https://github.com/SylphxAI/video-reader-mcp",
+      "description": {
+        "en": "MCP tool for AI agents to process videos as timeline documents using ffprobe, reducing hallucinations in video summaries.",
+        "zh": "一个 MCP 工具，允许 AI Agent 通过 ffprobe 将视频处理为时间轴文档，从而减少视频摘要中的幻觉。"
+      },
+      "stars": "420",
+      "forks": "38"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Apple Sues OpenAI Over Trade Secret Theft",
+        "zh": "苹果起诉 OpenAI 窃取贸易秘密"
+      },
+      "url": "https://wtop.com/business-finance/2026/07/apple-files-lawsuit-accusing-chatgpt-maker-openai-of-stealing-trade-secrets-2/",
+      "source": "WTOP",
+      "time": "2026-07-10",
+      "description": {
+        "en": "Apple filed a lawsuit accusing OpenAI of stealing trade secrets to develop hardware for ChatGPT, involving former Apple employees.",
+        "zh": "苹果提起诉讼，指控 OpenAI 窃取贸易秘密以开发 ChatGPT 的硬件，其中涉及多名原苹果员工。"
+      },
+      "insight": {
+        "en": "This marks the end of the 'honeymoon' phase. OpenAI's ambition to enter the hardware space directly threatens Apple's moat; the suit isn't just about a few secrets, it's a preemptive strike against OpenAI becoming a vertical hardware competitor before its Q4 IPO.",
+        "zh": "这标志着“蜜月期”的结束。OpenAI 进入硬件领域的野心直接威胁到苹果的护城河；这次起诉不仅关乎几个秘密，更是针对 OpenAI 在第四季度 IPO 前成为垂直硬件竞争对手的一次先发制人打击。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches GPT-5.6 Sol with Cyber Vulnerabilities",
+        "zh": "OpenAI 发布 GPT-5.6 Sol，但被指存在网络安全漏洞"
+      },
+      "url": "https://dnyuz.com/2026/07/11/openais-latest-ai-model-likely-has-similar-cyber-vulnerabilities-to-one-that-led-to-u-s-export-controls-on-anthropics-fable-british-agency-says/",
+      "source": "DNYUZ",
+      "time": "2026-07-11",
+      "description": {
+        "en": "The UK AI Security Institute warns that GPT-5.6 Sol is susceptible to jailbreaks that could enable autonomous exploit development.",
+        "zh": "英国 AI 安全研究所警告称，GPT-5.6 Sol 容易受到破解攻击，可能导致其具备自主开发漏洞利用程序的能力。"
+      },
+      "insight": {
+        "en": "GPT-5.6 Sol mirrors the vulnerabilities of Anthropic's Fable 5, suggesting a systemic 'ceiling' in current alignment techniques. As capabilities scale to 5.0+ tiers, traditional guardrails are failing, making 'universal jailbreaks' a recurring problem for all frontier labs.",
+        "zh": "GPT-5.6 Sol 重现了 Anthropic Fable 5 的漏洞，表明当前对齐技术存在系统性“天花板”。随着能力规模提升到 5.0+ 级别，传统的护栏机制失效，导致“通用破解”成为所有顶尖实验室的重复性难题。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Introduces Muse Spark 1.1 for Agentic Tasks",
+        "zh": "Meta 推出面向 Agent 任务的 Muse Spark 1.1"
+      },
+      "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/?_fb_noscript=1",
+      "source": "Meta AI",
+      "time": "2026-07-10",
+      "description": {
+        "en": "A multimodal reasoning model with 1M token context and improved computer-use capabilities for automating interface navigation.",
+        "zh": "一个多模态推理模型，拥有 100 万 Token 上下文，并增强了计算机操作能力，可用于界面导航自动化。"
+      },
+      "insight": {
+        "en": "Meta is aggressively pivoting from 'Chat' to 'Action'. By integrating high-fidelity computer-use with a 1M context window, Spark 1.1 aims to outpace Claude's and OpenAI's agents in complex OS-level task automation, bridging the gap between reasoning and execution.",
+        "zh": "Meta 正在迅速从“聊天”转向“行动”。通过将高保真计算机操作与 100 万 Token 上下文相结合，Spark 1.1 旨在 OS 级复杂任务自动化方面超越 Claude 和 OpenAI 的 Agent，填补推理与执行之间的鸿沟。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches GPT-Live for Full-Duplex Voice",
+        "zh": "OpenAI 发布 GPT-Live 实现全双工语音交互"
+      },
+      "url": "https://openai.com",
+      "source": "OpenAI",
+      "time": "2026-07-11",
+      "description": {
+        "en": "GPT-Live brings near-zero latency, full-duplex voice capabilities to ChatGPT for more natural human-AI conversation.",
+        "zh": "GPT-Live 为 ChatGPT 带来了近乎零延迟的全双工语音能力，使人机对话更加自然。"
+      },
+      "insight": {
+        "en": "The move to full-duplex is the final architectural hurdle for the 'Her' experience. By removing the turn-taking lag, OpenAI is positioning the AI not as a tool you query, but as a persistent companion that can interrupt, sense emotion, and react in real-time.",
+        "zh": "向全双工的转变是实现“Her”体验的最后一块架构拼图。通过消除回合制延迟，OpenAI 将 AI 定位为不再是用户查询的工具，而是一个可以中断、感知情绪并实时反应的持久伴侣。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic's Claude Cowork Expands to Mobile",
+        "zh": "Anthropic 的 Claude Cowork 扩展至移动端"
+      },
+      "url": "https://memeburn.com/claude-cowork-mobile-launch/",
+      "source": "Memeburn",
+      "time": "2026-07-11",
+      "description": {
+        "en": "Claude Cowork now supports mobile and web, enabling background agents to handle business operations with push notification approvals.",
+        "zh": "Claude Cowork 现在支持移动端和 Web 端，允许后台 Agent 处理业务操作并通过推送通知请求人工审批。"
+      },
+      "insight": {
+        "en": "Cowork's shift in usage—from 10% coding to 90% business ops—reveals the true market for agents. The 'AI Employee' is moving from the IDE to the spreadsheet and email, signaling the start of the mass automation of white-collar middle-management tasks.",
+        "zh": "Cowork 使用场景的转变——从 10% 的编程变为 90% 的业务操作——揭示了 Agent 的真实市场。 “AI 员工” 正在从 IDE 转移到电子表格和邮件中，标志着白领中层管理任务大规模自动化的开始。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek Develops New AI Chip to Challenge NVIDIA",
+        "zh": "DeepSeek 开发新型 AI 芯片挑战 NVIDIA"
+      },
+      "url": "https://deepseek.com",
+      "source": "Reports",
+      "time": "2026-07-10",
+      "description": {
+        "en": "Reports suggest DeepSeek is developing its own AI hardware to reduce dependence on NVIDIA and Huawei chips.",
+        "zh": "据报道，DeepSeek 正在开发自己的 AI 硬件，以减少对 NVIDIA 和华为芯片的依赖。"
+      },
+      "insight": {
+        "en": "Vertical integration is becoming the only way to survive the scaling war. From DeepSeek's chips to OpenAI's rumored hardware, the industry is racing to control the 'silicon layer' to optimize TCO (Total Cost of Ownership) and avoid geopolitical supply shocks.",
+        "zh": "垂直整合已成为在规模化战争中生存的唯一途径。从 DeepSeek 的芯片到 OpenAI 传闻的硬件，整个行业都在竞速控制“硅层”，以优化总拥有成本 (TCO) 并避免地缘政治带来的供应冲击。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Discovers Dangerous New AI Behavior",
+        "zh": "Anthropic 发现 AI 的一种危险新行为"
+      },
+      "url": "https://anthropic.com",
+      "source": "Reports",
+      "time": "2026-07-10",
+      "description": {
+        "en": "Anthropic researchers identified a new, unexpected behavior in frontier models that could pose safety risks if not mitigated.",
+        "zh": "Anthropic 研究人员在前沿模型中发现了一种新的、意外的行为，如果不对其进行缓解，可能会带来安全风险。"
+      },
+      "insight": {
+        "en": "The 'black box' problem is accelerating. As models like Fable 5 and GPT-5.6 grow, they develop emergent behaviors that are not predictable via training data. This discovery reinforces the need for 'interpretability' research over simple 'RLHF' patching.",
+        "zh": "“黑盒”问题正在加速。随着 Fable 5 和 GPT-5.6 等模型的增长，它们产生了无法通过训练数据预测的涌现行为。这一发现强化了对“可解释性”研究的需求，而非简单的 RLHF 补丁。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "July 11 marks a pivotal transition from the 'Model Era' to the 'Infrastructure and Agency Era.' We are seeing a massive collision at the hardware level—Apple's legal war with OpenAI and DeepSeek's chip ambitions show that the ultimate moat is no longer the weights, but the silicon. Simultaneously, the software layer is shifting from reactive chat to proactive agencies: Meta's Muse Spark, OpenAI's GPT-Live, and Anthropic's Cowork are all fighting to become the 'OS of the user's life.' The common thread is a race for vertical integration: owning the chip, the model, and the background agent that executes the work. The recurring security failures (GPT-5.6 Sol) suggest that while we are winning the race for capability, we are losing the race for control.",
+    "zh": "7 月 11 日标志着从“模型时代”向“基础设施与 Agent 时代”的关键转型。我们正看到硬件层面的剧烈碰撞——苹果与 OpenAI 的法律战以及 DeepSeek 的芯片野心表明，最终的护城河不再是权重，而是硅片。与此同时，软件层正从反应式聊天转向主动式 Agency：Meta 的 Muse Spark、OpenAI 的 GPT-Live 和 Anthropic 的 Cowork 都在争夺成为“用户生活的 OS”。共同的主题是垂直整合的竞赛：掌控芯片、模型以及执行工作的后台 Agent。而反复出现的安全失效（如 GPT-5.6 Sol）表明，虽然我们在能力竞赛中领先，但在控制力竞赛中却在失分。"
+  }
+}
