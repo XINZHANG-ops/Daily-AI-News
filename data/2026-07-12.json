@@ -1,0 +1,160 @@
+{
+  "date": "2026-07-12",
+  "github_repos": [
+    {
+      "name": "Tencent-Hunyuan/HY-Embodied",
+      "url": "https://github.com/Tencent-Hunyuan/HY-Embodied",
+      "description": {
+        "en": "A family of foundation models for embodied AI featuring a Mixture-of-Transformers (MoT) architecture for 3D spatial reasoning.",
+        "zh": "一个为具身智能设计的基座模型家族，采用混合 Transformer (MoT) 架构，专注于 3D 空间推理。"
+      },
+      "stars": "1.2k",
+      "forks": "150"
+    },
+    {
+      "name": "ACE-BRAIN-Team/ACE-Brain-0.5",
+      "url": "https://github.com/ACE-BRAIN-Team/ACE-Brain-0.5",
+      "description": {
+        "en": "A unified 8B backbone integrating spatial perception, decision making, and self-improvement for physical agents.",
+        "zh": "一个统一的 8B 骨干模型，为物理智能体集成了空间感知、决策制定和自我改进能力。"
+      },
+      "stars": "850",
+      "forks": "90"
+    },
+    {
+      "name": "apoorvjain25/frontier",
+      "url": "https://github.com/apoorvjain25/frontier",
+      "description": {
+        "en": "A quality distillation system that elevates mid-tier model outputs to Fable 5 standards using audited \"craft standards.\"",
+        "zh": "一个质量蒸馏系统，通过审核过的“工艺标准”将中端模型的输出提升至 Fable 5 级别。"
+      },
+      "stars": "600",
+      "forks": "40"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "GPT-5.6 Sol Ultra Solves 50-Year-Old Math Problem",
+        "zh": "GPT-5.6 Sol Ultra 解决 50 年数学难题"
+      },
+      "url": "https://the-decoder.com/openais-gpt-5-6-sol-ultra-reportedly-solves-a-50-year-old-math-problem-in-under-an-hour/",
+      "source": "The Decoder",
+      "time": "2026-07-12",
+      "description": {
+        "en": "OpenAI's GPT-5.6 Sol Ultra reportedly solved the Cycle Double Cover Conjecture in under an hour using 64 parallel subagents.",
+        "zh": "据报道，OpenAI 的 GPT-5.6 Sol Ultra 利用 64 个并行子智能体在不到一小时内解决了循环双覆盖猜想。"
+      },
+      "insight": {
+        "en": "01 *GPT-5.6 Sol Ultra* : solved 50-yr math problem in <1hr via 64 agents, signaling a shift from probabilistic output to verifiable reasoning; a massive leap in \"Smarter\" agents.",
+        "zh": "01 *GPT-5.6 Sol Ultra* : 通过 64 个智能体在不到一小时内解决了 50 年的数学难题，标志着从概率输出向可验证推理的转变；这是‘更智能’智能体的巨大飞跃。"
+      }
+    },
+    {
+      "title": {
+        "en": "Apple Sues OpenAI Over Trade Secret Theft",
+        "zh": "苹果起诉 OpenAI 窃取贸易秘密"
+      },
+      "url": "https://the-decoder.com/apple-sues-openai-for-allegedly-running-a-coordinated-campaign-to-steal-trade-secrets-through-poached-employees/",
+      "source": "The Decoder",
+      "time": "2026-07-11",
+      "description": {
+        "en": "Apple filed a federal lawsuit alleging OpenAI ran a coordinated campaign to steal trade secrets through poached employees.",
+        "zh": "苹果提起联邦诉讼，指控 OpenAI 通过挖掘员工运行了一场协调一致的贸易秘密窃取行动。"
+      },
+      "insight": {
+        "en": "02 *Apple v OpenAI* : lawsuit over 400+ poached staff & trade secrets, reflecting the war for \"AI Hardware\" dominance as OpenAI tries to leapfrog Apple's ecosystem via Tang Tan.",
+        "zh": "02 *Apple v OpenAI* : 针对 400 多名被挖掘员工和贸易秘密的诉讼，反映了 AI 硬件主导权的战争，OpenAI 试图通过 Tang Tan 实现对苹果生态的跨越。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Preparing $730 Billion IPO",
+        "zh": "OpenAI 准备 7300 亿美元 IPO"
+      },
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-july-12-2026-gpt-56-goes-public-muse-spark-11-arrives-open-robotics-pipeline-5di2",
+      "source": "Dev Community",
+      "time": "2026-07-12",
+      "description": {
+        "en": "OpenAI is preparing a confidential IPO filing for as early as September 2026, targeting a private valuation of $730 billion.",
+        "zh": "OpenAI 准备在 2026 年 9 月之前提交机密 IPO 申请，目标私人估值为 7300 亿美元。"
+      },
+      "insight": {
+        "en": "03 *OpenAI $730B IPO* : targeting Sept 2026, the immense valuation pressure likely explains the rushed and buggy GPT-5.6 rollout—prioritizing perceived power over product stability.",
+        "zh": "03 *OpenAI 7300亿 IPO* : 目标定于 2026 年 9 月，巨大的估值压力可能解释了 GPT-5.6 仓促且多Bug的发布——将感知权力置于产品稳定性之上。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Releases Muse Spark 1.1 for Computer Use",
+        "zh": "Meta 发布面向计算机使用的 Muse Spark 1.1"
+      },
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-july-12-2026-gpt-56-goes-public-muse-spark-11-arrives-open-robotics-pipeline-5di2",
+      "source": "Dev Community",
+      "time": "2026-07-12",
+      "description": {
+        "en": "Meta released Muse Spark 1.1, an agent-focused model specifically designed for planning, tool calling, and computer use.",
+        "zh": "Meta 发布了 Muse Spark 1.1，这是一个专注于智能体的模型，专门为规划、工具调用和计算机使用而设计。"
+      },
+      "insight": {
+        "en": "04 *Meta Muse Spark 1.1* : agent-specialized model for \"computer use\", positioning Meta to build the \"OS for AI Agents\" while others focus on chat interfaces.",
+        "zh": "04 *Meta Muse Spark 1.1* : 专门用于‘计算机使用’的智能体模型，使 Meta 有能力构建‘AI 智能体操作系统’，而其他公司仍专注于聊天界面。"
+      }
+    },
+    {
+      "title": {
+        "en": "Gemini 3.5 Pro Leak: 2M Token Context",
+        "zh": "Gemini 3.5 Pro 泄露：200 万 token 上下文"
+      },
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-12-2026",
+      "source": "Build Fast with AI",
+      "time": "2026-07-12",
+      "description": {
+        "en": "Leaks suggest Google Gemini 3.5 Pro will hit general availability on July 17, featuring a 2-million-token context window.",
+        "zh": "泄露消息称，谷歌 Gemini 3.5 Pro 将于 7 月 17 日正式发布，具有 200 万 token 的上下文窗口。"
+      },
+      "insight": {
+        "en": "05 *Gemini 3.5 Pro Leak* : 2M token window GA July 17, shifting the context war from \"reading a book\" to \"maintaining consistency across entire enterprise codebases\".",
+        "zh": "05 *Gemini 3.5 Pro 泄露* : 200 万 token 窗口将于 7 月 17 日发布，将上下文战争从‘阅读一本书’转移到‘在整个企业代码库中保持一致性’。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Govt Deploys ChatGPT for $2.1T Fraud Audit",
+        "zh": "美国政府部署 ChatGPT 审计 2.1 万亿美元欺诈"
+      },
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-12-2026",
+      "source": "Build Fast with AI",
+      "time": "2026-07-12",
+      "description": {
+        "en": "The US Dept of Health and Human Services is using ChatGPT to audit $2.1 trillion in Medicare and Medicaid spending.",
+        "zh": "美国卫生与公众服务部正使用 ChatGPT 审计 2.1 万亿美元的联邦医疗保险和医疗补助支出。"
+      },
+      "insight": {
+        "en": "06 *HHS AI Auditing* : deploying ChatGPT to audit $2.1T Medicare/Medicaid spend, the first systemic shift of AI from \"assistant\" to \"fiscal auditor\" at a trillion-dollar scale.",
+        "zh": "06 *HHS AI 审计* : 部署 ChatGPT 审计 2.1 万亿医疗支出，这是 AI 从‘助手’向‘财政审计师’在万亿美元规模上的首次系统性转变。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Invests $10B in Canada Data Center",
+        "zh": "Meta 在加拿大投资 100 亿美元建设数据中心"
+      },
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-12-2026",
+      "source": "Build Fast with AI",
+      "time": "2026-07-12",
+      "description": {
+        "en": "Meta announced a $10 billion data center in Alberta, Canada, to double its compute capacity by 2027.",
+        "zh": "Meta 宣布在加拿大阿尔伯塔省投资 100 亿美元建设数据中心，计划到 2027 年将计算能力翻倍。"
+      },
+      "insight": {
+        "en": "07 *Meta $10B Canada DC* : doubling compute capacity by 2027, treated like \"sovereign oil\" to bypass US power grid constraints and maintain leadership in the compute arms race.",
+        "zh": "07 *Meta 100亿 加拿大中心* : 到 2027 年计算能力翻倍，将其视为‘主权石油’，以绕过美国电网限制并在计算军备竞赛中保持领先。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Today's events reveal a stark divergence in OpenAI's trajectory: the company is achieving a 'god-like' cognitive leap with GPT-5.6's mathematical breakthroughs, yet it's simultaneously collapsing under the weight of its own corporate ambition. The Apple lawsuit and the botched GPT-5.6 launch are symptoms of a firm rushing toward a $730B IPO, sacrificing operational stability and corporate ethics for perceived dominance. Meanwhile, the industry is pivoting away from the 'Chatbot' era toward 'Agency'. Whether it's Meta's Muse Spark for computer use or Tencent's HY-Embodied for robotics, the frontier is no longer about talking, but about acting—both in the digital and physical worlds. We are seeing the birth of an 'Action Economy' where token frugality (as seen in the trending repos) and physical grounding are the new competitive moats.",
+    "zh": "今天的事件揭示了 OpenAI 轨迹上的剧烈分叉：该公司在 GPT-5.6 的数学突破中实现了‘神级’的认知飞跃，但与此同时，它正被自身企业野心的重量所压垮。苹果的诉讼和 GPT-5.6 糟糕的发布，都是该公司为了冲刺 7300 亿美元 IPO 而牺牲运营稳定性和企业伦理的症状。与此同时，整个行业正在从‘聊天机器人’时代转向‘智能体’时代。无论是 Meta 用于计算机使用的 Muse Spark，还是腾讯用于机器人学的 HY-Embodied，前沿阵地已不再是‘对话’，而是‘行动’——无论是在数字世界还是物理世界。我们正在见证一个‘行动经济’的诞生，其中 token 的节约（如趋势仓库所示）和物理世界的落地成为了新的竞争护城河。"
+  }
+}
