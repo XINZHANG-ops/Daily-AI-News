@@ -1,0 +1,160 @@
+{
+  "date": "2026-07-13",
+  "github_repos": [
+    {
+      "name": "cactus-compute/needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "description": {
+        "en": "A 26M parameter function-calling model distilled from Gemini, removing MLP layers for extreme edge efficiency.",
+        "zh": "一个由 Gemini 蒸馏而来的 26M 参数函数调用模型，通过移除 MLP 层实现极端的边缘设备效率。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "antoinezambelli/forge",
+      "url": "https://github.com/antoinezambelli/forge",
+      "description": {
+        "en": "Open-source reliability layer for LLM tool-calling, using retry nudges and step enforcement to boost 8B model accuracy to 99%.",
+        "zh": "开源 LLM 工具调用可靠性层，通过重试提示和步骤强制执行，将 8B 模型的准确率提升至 99%。"
+      },
+      "stars": "890",
+      "forks": "120"
+    },
+    {
+      "name": "Zyora-Dev/zse",
+      "url": "https://github.com/Zyora-Dev/zse",
+      "description": {
+        "en": "Zero-dependency server engine for LLM inference with 3.9s cold starts and massive VRAM compression via custom CUDA/Metal emission.",
+        "zh": "零依赖的 LLM 推理服务器引擎，支持 3.9s 极速冷启动，并通过自定义 CUDA/Metal 代码生成实现海量 VRAM 压缩。"
+      },
+      "stars": "2.1k",
+      "forks": "245"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Ends Fable 5 Subscription Access, Shifts to Aggressive Metering",
+        "zh": "Anthropic 结束 Claude Fable 5 订阅访问，转向激进的按量计费"
+      },
+      "url": "https://www.anthropic.com/news",
+      "source": "Anthropic",
+      "time": "2026-07-13",
+      "description": {
+        "en": "Starting July 13, subscription access to Claude Fable 5 ends; Pro and Team users must now pay per-token at the highest rates in company history.",
+        "zh": "从 7 月 13 日起，Claude Fable 5 的订阅访问结束；Pro 和 Team 用户现在必须按 Token 付费，且费率达到了公司历史最高水平。"
+      },
+      "insight": {
+        "en": "This marks the end of the 'honeymoon phase' for frontier models. By treating highest-tier reasoning as a premium utility rather than a flat-fee service, Anthropic is betting that the utility of Fable 5 outweighs the friction of cost—effectively pricing 'intelligence' like high-voltage electricity.",
+        "zh": "这标志着前沿模型的“蜜月期”结束。通过将顶级推理能力视为优质公用事业而非固定费用服务，Anthropic 在赌 Fable 5 的效用能够抵消成本带来的摩擦——实际上将“智能”定价为一种像高压电一样的高价值资源。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Deploys GPT-5.6 Sol on Cerebras Hardware for 750 tok/s Inference",
+        "zh": "OpenAI 将 GPT-5.6 Sol 部署在 Cerebras 硬件上，推理速度达 750 tok/s"
+      },
+      "url": "https://openai.com/blog",
+      "source": "OpenAI",
+      "time": "2026-07-09",
+      "description": {
+        "en": "GPT-5.6 Sol, the most powerful of the new family, targets extreme speeds via Cerebras hardware to eliminate latency in complex reasoning.",
+        "zh": "GPT-5.6 Sol 作为新系列中最强大的模型，通过 Cerebras 硬件追求极致速度，旨在消除复杂推理中的延迟。"
+      },
+      "insight": {
+        "en": "The shift to Cerebras hardware is the real story. 750 tok/s isn't just a speed bump; it's the threshold where AI feels like a real-time collaborator rather than a slow text generator, effectively removing the 'latency wall' for agentic workflows.",
+        "zh": "向 Cerebras 硬件的迁移才是真正的核心。750 tok/s 不仅仅是速度提升，它是一个阈值，让 AI 感觉像是一个实时的协作伙伴，而不是一个缓慢的文本生成器，有效地拆除了 Agent 工作流中的“延迟之墙”。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Launches 'ChatGPT Work' for Autonomous Office Execution",
+        "zh": "OpenAI 推出 'ChatGPT Work' 实现办公任务自主执行"
+      },
+      "url": "https://openai.com/blog",
+      "source": "OpenAI",
+      "time": "2026-07-09",
+      "description": {
+        "en": "A new digital employee agent built on GPT-5.6 capable of executing multi-hour office tasks autonomously via Slack, Gmail, and CRM integration.",
+        "zh": "一个基于 GPT-5.6 的数字化员工 Agent，能够通过 Slack、Gmail 和 CRM 集成，自主执行数小时的办公任务。"
+      },
+      "insight": {
+        "en": "Moving from 'Chatbots' to 'Digital Employees' is the logical endpoint of the agentic trend. By owning the workflow (Slack/Gmail) rather than just providing the answer, OpenAI is transitioning from a 'knowledge source' to a 'workflow operator.'",
+        "zh": "从“聊天机器人”转向“数字化员工”是 Agent 趋势的必然终点。通过掌控工作流（Slack/Gmail）而不仅仅是提供答案，OpenAI 正在从一个“知识库”转变为一个“工作流操盘手”。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Delays Gemini 3.5 Pro to July 17 Due to Quality Rebuild",
+        "zh": "Google 因质量重构将 Gemini 3.5 Pro 推迟至 7 月 17 日"
+      },
+      "url": "https://blog.google",
+      "source": "Google",
+      "time": "2026-07-12",
+      "description": {
+        "en": "Originally promised for June, the launch of Gemini 3.5 Pro was pushed back as Google reportedly rebuilt the model from scratch to fix quality concerns.",
+        "zh": "原定于 6 月发布，但由于 Google 据报道为了解决质量问题而从零开始重构模型，Gemini 3.5 Pro 的发布被推迟到 7 月 17 日。"
+      },
+      "insight": {
+        "en": "A mid-cycle rebuild suggests Google is struggling with the 'scaling laws' plateau. While OpenAI and Anthropic iterate rapidly, Google's caution creates a strategic window for competitors to capture the enterprise agent market.",
+        "zh": "周期中途的重构表明 Google 正在与“缩放定律”的平台期作斗争。在 OpenAI 和 Anthropic 快速迭代的同时，Google 的谨慎为竞争对手抢占企业级 Agent 市场创造了战略窗口。"
+      }
+    },
+    {
+      "title": {
+        "en": "SpaceXAI Releases Grok 4.5 Following $60B Acquisition of Cursor",
+        "zh": "SpaceXAI 在 600 亿美元收购 Cursor 后发布 Grok 4.5"
+      },
+      "url": "https://x.ai",
+      "source": "xAI",
+      "time": "2026-07-09",
+      "description": {
+        "en": "The first model trained jointly with Cursor, positioned as a highly efficient and cheaper alternative to Claude Opus for developers.",
+        "zh": "首款与 Cursor 联合训练的模型，定位为开发者端一个比 Claude Opus 更高效且廉价的替代方案。"
+      },
+      "insight": {
+        "en": "The acquisition of Cursor is a masterstroke in vertical integration. By owning both the IDE and the model, SpaceXAI creates a tight feedback loop that could make Grok 4.5 the first truly 'coder-native' model, bypassing the general-purpose overhead of other LLMs.",
+        "zh": "收购 Cursor 是垂直集成的一次神来之笔。通过同时拥有 IDE 和模型，SpaceXAI 建立了一个紧密的反馈闭环，可能使 Grok 4.5 成为首款真正的“编程原生”模型，绕过了其他通用 LLM 的冗余开销。"
+      }
+    },
+    {
+      "title": {
+        "en": "Claude Mythos 5 Discovers 'Squidbleed' 29-Year-Old Memory Leak",
+        "zh": "Claude Mythos 5 发现存在 29 年之久的 'Squidbleed' 内存泄漏漏洞"
+      },
+      "url": "https://www.anthropic.com/news",
+      "source": "Anthropic",
+      "time": "2026-07-12",
+      "description": {
+        "en": "AI-assisted research discovered CVE-2026-47729 in the Squid proxy server, a vulnerability that had remained undetected for nearly three decades.",
+        "zh": "AI 辅助研究在 Squid 代理服务器中发现了 CVE-2026-47729，这是一个近 30 年来一直未被发现的漏洞。"
+      },
+      "insight": {
+        "en": "This proves that AI's primary value in security is shifting from 'writing secure code' to 'exhaustive auditing of legacy code' at a scale humans cannot match. AI is now the only viable way to clean up the technical debt of the early internet.",
+        "zh": "这证明了 AI 在安全领域的价值正在从“编写安全代码”转向“对遗留代码进行人类无法企及的大规模穷举审计”。AI 现在成了清理早期互联网技术债的唯一可行手段。"
+      }
+    },
+    {
+      "title": {
+        "en": "Corporate AI Budget Crises Hit Uber and Microsoft as Agents Consume Tokens Non-linearly",
+        "zh": "Agent 导致 Token 消耗呈非线性增长，Uber 和微软等企业陷入 AI 预算危机"
+      },
+      "url": "https://www.bloomberg.com",
+      "source": "Bloomberg",
+      "time": "2026-07-12",
+      "description": {
+        "en": "Major companies are facing 'budget bonfires' as autonomous agents trigger recursive loops of token consumption, leading to strict new internal spending caps.",
+        "zh": "由于自主 Agent 触发了递归式的 Token 消耗，各大公司正面临“预算大火”，导致公司内部出台了严格的新支出上限。"
+      },
+      "insight": {
+        "en": "We are seeing the first real-world collision between 'Agentic AI' and 'Quarterly Financials.' When AI acts autonomously, it doesn't just use tokens; it consumes them in recursive loops, revealing that the economic model for agency is currently broken.",
+        "zh": "我们正在目睹“Agentic AI”与“季度财务报表”之间第一次真实的碰撞。当 AI 自主行动时，它不再是简单地使用 Token，而是在递归循环中消耗它们，这揭示了目前 Agent 的经济模型已经崩溃。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The AI landscape is currently in a volatile transition from 'generative tools' to 'autonomous agents.' This shift is creating a massive performance-cost divergence. While hardware (Cerebras) and vertical integration (Cursor/Grok) are pushing the boundaries of speed and utility, the economic model is straining. The 'budget crises' and Anthropic's aggressive pricing are the first signals that the era of 'cheap intelligence' is over, replaced by a new regime of 'high-cost, high-autonomy' systems. The real winner won't be the model with the highest benchmark, but the one that can most efficiently manage the token-to-value ratio while maintaining agentic reliability.",
+    "zh": "AI 领域目前正处于从“生成式工具”向“自主 Agent”转变的动荡期。这种转变导致了性能与成本之间巨大的背离。虽然硬件（Cerebras）和垂直集成（Cursor/Grok）在推高速度和效用的边界，但经济模型正承受巨大压力。企业级的“预算危机”和 Anthropic 激进的定价策略释放了一个信号： “廉价智能”时代已经结束，取而代之的是一个“高成本、高自主”的新体制。最终的赢家将不再是跑分最高的模型，而是能够在保持 Agent 可靠性的同时，最有效管理 Token 与价值比率的方案。"
+  }
+}
