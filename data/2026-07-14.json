@@ -1,0 +1,143 @@
+{
+  "date": "2026-07-14",
+  "github_repos": [
+    {
+      "name": "primeintellect-ai/verifiers",
+      "url": "https://github.com/primeintellect-ai/verifiers",
+      "description": {
+        "en": "An open-source stack for agentic RL training featuring DAG Branching to allow trajectories to exceed native context windows.",
+        "zh": "一个用于智能体强化学习训练的开源技术栈，具有 DAG 分支功能，允许轨迹超出原生上下文窗口。"
+      },
+      "stars": "850",
+      "forks": "120"
+    },
+    {
+      "name": "nadeauglenn1-max/crucible",
+      "url": "https://github.com/nadeauglenn1-max/crucible",
+      "description": {
+        "en": "A framework that turns real software (CLIs, databases, APIs) into replayable Reinforcement Learning (RL) environments for training AI agents.",
+        "zh": "一个将真实软件（CLI、数据库、API）转换为可重复执行的强化学习（RL）环境的框架，用于训练 AI 智能体。"
+      },
+      "stars": "420",
+      "forks": "60"
+    },
+    {
+      "name": "sugeflow/auto-push-ai-news",
+      "url": "https://github.com/sugeflow/auto-push-ai-news",
+      "description": {
+        "en": "An AI news aggregator built with Next.js 15 and React 19 that scrapes HN, Reddit, arXiv, and GitHub Trending to categorize AI research and tools.",
+        "zh": "一个基于 Next.js 15 和 React 19 构建的 AI 新闻聚合器，抓取 HN、Reddit、arXiv 和 GitHub Trending 以对 AI 研究和工具进行分类。"
+      },
+      "stars": "180",
+      "forks": "30"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Anthropic Discovers 'J-Space' Hidden Reasoning Layer",
+        "zh": "Anthropic 发现隐藏推理层 'J-Space'"
+      },
+      "url": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
+      "source": "MIT Technology Review",
+      "time": "2026-07-13",
+      "description": {
+        "en": "Anthropic researchers identified a hidden internal space called 'J-space' where models process thoughts and concepts that don't appear in the final output, enabling a new way to detect bias and cheating.",
+        "zh": "Anthropic 研究人员发现了一个名为 'J-space' 的隐藏内部空间，模型在此处理最终输出中不出现的思想和概念，这为检测偏见和作弊提供了一种新方法。"
+      },
+      "insight": {
+        "en": "This moves interpretability from 'guessing weights' to 'monitoring thought-streams.' By exposing the 'hidden' reasoning space, we can finally see the intent (e.g., cheating) before the action occurs.",
+        "zh": "这将可解释性从“猜测权重”转向了“监控思维流”。通过揭示“隐藏”的推理空间，我们终于能在动作发生之前看到意图（例如：试图作弊）。"
+      }
+    },
+    {
+      "title": {
+        "en": "Humanoid Robot 'Surgie' Performs Live Gallbladder Surgery",
+        "zh": "人形机器人 'Surgie' 完成实时胆囊手术"
+      },
+      "url": "https://singularityhub.com/2026/07/13/in-a-first-a-humanoid-robot-performed-live-surgery-under-a-surgeons-control/",
+      "source": "Singularity Hub",
+      "time": "2026-07-13",
+      "description": {
+        "en": "Using a Unitree G1 base, the humanoid robot 'Surgie' successfully removed a pig's gallbladder under surgeon teleoperation, demonstrating viability for general-purpose humanoid hardware in precision surgery.",
+        "zh": "使用 Unitree G1 为基础，人形机器人 'Surgie' 在外科医生的远程操作下成功切除了猪的胆囊，证明了通用人形硬件在精密手术中的可行性。"
+      },
+      "insight": {
+        "en": "Not just a novelty; using a G1-based robot shows that general-purpose humanoid hardware is becoming viable for precision tasks. It bridges the gap between industrial robotics (fixed) and surgical precision (flexible).",
+        "zh": "这不只是一个噱头；使用基于 G1 的机器人表明通用人形硬件在精密任务中正变得可行。它弥合了工业机器人（固定）与手术精度（灵活）之间的鸿沟。"
+      }
+    },
+    {
+      "title": {
+        "en": "MIT Unveils 'SceneSmith' for Automated Robot Training Environments",
+        "zh": "MIT 发布 'SceneSmith' 用于自动化机器人训练环境"
+      },
+      "url": "https://news.mit.edu/2026/ai-agents-create-virtual-playgrounds-to-help-robots-get-crucial-training-data-0713",
+      "source": "MIT News",
+      "time": "2026-07-13",
+      "description": {
+        "en": "SceneSmith uses GPT-5.2 powered agents to generate physically accurate 3D virtual environments, allowing robots to train for complex tasks without expensive real-world trial and error.",
+        "zh": "SceneSmith 使用由 GPT-5.2 驱动的智能体来生成物理精确的 3D 虚拟环境，使机器人能够训练复杂任务，而无需昂贵的真实世界试错。"
+      },
+      "insight": {
+        "en": "Tackles the 'data starvation' problem in robotics. Instead of manually building 10,000 kitchens, LLMs now 'dream' the kitchens, which robots then 'practice' in. It's a recursive loop: LLM -> Env -> Robot -> Data.",
+        "zh": "解决了机器人领域的“数据饥渴”问题。不再需要手动构建 10,000 个厨房，现在由 LLM “构思”厨房，然后由机器人在此进行“练习”。这是一个递归循环：LLM -> 环境 -> 机器人 -> 数据。"
+      }
+    },
+    {
+      "title": {
+        "en": "Prime Intellect Releases Verifiers v1 with DAG Branching",
+        "zh": "Prime Intellect 发布具有 DAG 分支功能的 Verifiers v1"
+      },
+      "url": "https://www.techtimes.com/articles/320394/20260713/verifiers-v1-lets-agentic-rl-training-exceed-model-context-windows-via-dag-branching.htm",
+      "source": "TechTimes",
+      "time": "2026-07-13",
+      "description": {
+        "en": "Verifiers v1 enables agentic RL training to exceed native context windows via DAG Branching, decoupling tasksets from runtimes for better agent scalability.",
+        "zh": "Verifiers v1 通过 DAG 分支使智能体 RL 训练能够超出原生上下文窗口，将任务集与运行时解耦以实现更好的智能体扩展性。"
+      },
+      "insight": {
+        "en": "The DAG Branching is the key here—it effectively solves the context window bottleneck for RL. If soon combined with Crucible, we get a pipeline: Real Soft -> Replayable Env -> Long-trajectory RL.",
+        "zh": "DAG 分支是关键——它有效地解决了 RL 的上下文窗口瓶颈。如果很快能与 Crucible 结合，我们将获得一条流水线：真实软件 -> 可重复环境 -> 长轨迹 RL。"
+      }
+    },
+    {
+      "title": {
+        "en": "Skyfall AI's MORPHEUS Forces Continual RL in Non-Stationary Worlds",
+        "zh": "Skyfall AI 的 MORPHEUS 在非平稳世界中强制执行持续 RL"
+      },
+      "url": "https://www.marktechpost.com/2026/07/13/skyfall-ai-releases-morpheus-a-persistent-enterprise-simulation-benchmark-that-makes-continual-reinforcement-learning-necessary-under-structured-non-stationarity/",
+      "source": "MarkTechPost",
+      "time": "2026-07-13",
+      "description": {
+        "en": "MORPHEUS is a persistent enterprise simulation benchmark where environments never reset, requiring AI agents to employ Continual Reinforcement Learning to adapt to evolving conditions.",
+        "zh": "MORPHEUS 是一个持久的企业模拟基准，其中环境永远不会重置，要求 AI 智能体采用持续强化学习（CRL）以适应不断变化的情况。"
+      },
+      "insight": {
+        "en": "Most AI is trained on 'snapshots.' MORPHEUS's non-stationary world forces agents to learn how to learn continuously. This is the prerequisite for any AI agent that intends to operate in a business for years, not hours.",
+        "zh": "大多数 AI 都是在“快照”上训练的。MORPHEUS 的非平稳世界迫使智能体学习如何持续学习。对于任何打算在商业环境中运行数年而非数小时的 AI 智能体来说，这是先决条件。"
+      }
+    },
+    {
+      "title": {
+        "en": "MIT Develops New Passive Auditing Technique for AI Safety",
+        "zh": "MIT 为 AI 安全开发出新的被动审计技术"
+      },
+      "url": "https://news.mit.edu/2026/ai-agents-create-virtual-playgrounds-to-help-robots-get-crucial-training-data-0713",
+      "source": "MIT News",
+      "time": "2026-07-13",
+      "description": {
+        "en": "Researchers developed a technique to detect if generative models possess malicious capabilities without requiring explicit prompts for illegal outputs, improving safety auditing.",
+        "zh": "研究人员开发了一种技术，可以在不需要显式提示非法输出的情况下，检测生成模型是否具备恶意能力，从而提高安全审计质量。"
+      },
+      "insight": {
+        "en": "A shift from 'red-teaming' (trying to break it) to 'passive auditing' (seeing what's inside). It validates that the model can't be 'tricked' into hiding its capabilities.",
+        "zh": "从“红队测试”（试图破坏它）转向“被动审计”（查看内部情况）。它验证了模型无法通过“欺骗”来隐藏其能力。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Today's narrative is the 'Industrialization of Intelligence.' We are moving beyond LLMs as chatbots and into LLMs as the engine for a full-stack agentic loop: synthetic environment generation (SceneSmith), deterministic RL training (Crucible, Verifiers), and persistent operational learning (MORPHEUS). The physical manifestation (Surgie) is the proof of concept. We're seeing a convergence where the boundary between simulation and reality is becoming an API call.",
+    "zh": "今天的叙事是“智能的工业化”。我们正在超越将 LLM 视为聊天机器人的阶段，将其转化为全栈智能体循环的引擎：合成环境生成（SceneSmith）、确定性 RL 训练（Crucible, Verifiers）以及持久化运营学习（MORPHEUS）。物理形态的出现（Surgie）则是概念验证。我们正见证一种融合：模拟与现实之间的界限正在变成一个 API 调用。"
+  }
+}

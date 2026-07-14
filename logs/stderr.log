@@ -296,3 +296,6 @@ Ignoring 6 permissions.allow entries from .claude/settings.json: this workspace 
 To github.com:XINZHANG-ops/Daily-AI-News.git
    b5dcd06..a71c975  main -> main
 Ignoring 6 permissions.allow entries from .claude/settings.json: this workspace has not been trusted. Run Claude Code interactively here once and accept the trust dialog, or set projects["/Users/xinzhang/Daily-AI-News"].hasTrustDialogAccepted: true in /Users/xinzhang/.claude.json.
+To github.com:XINZHANG-ops/Daily-AI-News.git
+   a71c975..83b74d0  main -> main
+Ignoring 6 permissions.allow entries from .claude/settings.json: this workspace has not been trusted. Run Claude Code interactively here once and accept the trust dialog, or set projects["/Users/xinzhang/Daily-AI-News"].hasTrustDialogAccepted: true in /Users/xinzhang/.claude.json.
