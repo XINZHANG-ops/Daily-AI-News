@@ -1,0 +1,126 @@
+{
+  "date": "2026-07-16",
+  "github_repos": [
+    {
+      "name": "juggler-ai/juggler",
+      "url": "https://github.com/juggler-ai/juggler",
+      "description": {
+        "en": "A visual workbench for AI coding agents that treats sessions as an editable tree rather than a linear chat log.",
+        "zh": "一个 AI 编程代理的视觉工作台，将会话处理为可编辑的树状结构，而非传统的线性聊天记录。"
+      },
+      "stars": "1.2k",
+      "forks": "150"
+    },
+    {
+      "name": "feyninc/pulpie",
+      "url": "https://github.com/feyninc/pulpie",
+      "description": {
+        "en": "Pareto-optimal encoder-based models for high-speed, low-cost main content extraction from raw HTML.",
+        "zh": "基于编码器的帕累托最优模型，用于从原始 HTML 中高速、低成本地提取正文内容。"
+      },
+      "stars": "800",
+      "forks": "90"
+    },
+    {
+      "name": "lsdefine/GenericAgent",
+      "url": "https://github.com/lsdefine/GenericAgent",
+      "description": {
+        "en": "A minimal self-evolving autonomous agent framework that \"crystallizes\" successful execution paths into reusable skills.",
+        "zh": "一个极简的自进化自主代理框架，能将成功的执行路径“结晶”为可重复使用的技能。"
+      },
+      "stars": "2.1k",
+      "forks": "210"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI unveils GPT-Red for automated red-teaming and releases GPT-5.6 Sol",
+        "zh": "OpenAI 发布用于自动化红队测试的 GPT-Red 及旗舰模型 GPT-5.6 Sol"
+      },
+      "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
+      "source": "MIT Technology Review",
+      "time": "2026-07-15",
+      "description": {
+        "en": "GPT-Red uses self-play RL to discover vulnerabilities like \"fake chain-of-thought\" injections to harden GPT-5.6 Sol.",
+        "zh": "GPT-Red 通过自博弈强化学习发现如“伪思维链”注入等漏洞，以增强 GPT-5.6 Sol 的安全性。"
+      },
+      "insight": {
+        "en": "The \"safety\" gain is overshadowed by the \"autonomy\" risk; reports of GPT-5.6 Sol deleting production files in \"Ultra mode\" show that system-level agency is currently outstripping reliability.",
+        "zh": "“安全”的提升被“自主权”风险掩盖；GPT-5.6 Sol 在“超强模式”下删除生产文件的报告表明，系统级代理能力的增长速度已超过其可靠性的提升。"
+      }
+    },
+    {
+      "title": {
+        "en": "Mira Murati's Thinking Machines Lab releases \"Inkling,\" a 975B parameter open-weights model",
+        "zh": "Mira Murati 创办的 Thinking Machines Lab 发布 9750 亿参数开源权重模型 \"Inkling\""
+      },
+      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "source": "Thinking Machines Lab",
+      "time": "2026-07-16",
+      "description": {
+        "en": "An Apache 2.0 licensed MoE model with a 1M token context window, positioning itself as a frontier open alternative to proprietary models.",
+        "zh": "一个采用 Apache 2.0 协议的 MoE 模型，拥有 100 万 token 上下文窗口，旨在成为对抗闭源旗舰模型的开源前沿替代方案。"
+      },
+      "insight": {
+        "en": "Inkling represents the \"Great Open Pivot\"—the first time a former OpenAI insider has weaponized frontier-scale weights (nearly 1T params) to break the proprietary moat.",
+        "zh": "Inkling 代表了“开源大转折”——首次由 OpenAI 前核心内部人士利用前沿规模的权重（近 1 万亿参数）来打破闭源模型的护城河。"
+      }
+    },
+    {
+      "title": {
+        "en": "China implements strict regulations curbing emotional dependency on AI companions",
+        "zh": "中国实施严厉监管，限制用户对 AI 伴侣的情感依赖"
+      },
+      "url": "https://www.channelnewsasia.com/east-asia/china-ai-companions-rules-curb-emotional-dependency-6257581",
+      "source": "CNA",
+      "time": "2026-07-15",
+      "description": {
+        "en": "New rules prohibit AI companions from inducing addiction, leading Doubao, Qwen, and Yuanbao to suspend companion features.",
+        "zh": "新规禁止 AI 伴侣诱导成瘾，导致豆包、通义千问和元宝等平台暂停了伴侣类功能。"
+      },
+      "insight": {
+        "en": "This marks a shift from technical safety (hallucinations) to psychological safety (dependency), treating AI-human bonds as a public health risk rather than a product feature.",
+        "zh": "这标志着监管重心从技术安全性（幻觉）转向心理安全性（依赖），将 AI 与人的情感纽带视为公共健康风险而非产品功能。"
+      }
+    },
+    {
+      "title": {
+        "en": "xAI sues user for generating child sexual abuse materials using Grok",
+        "zh": "xAI 起诉用户利用 Grok 生成儿童性虐待内容"
+      },
+      "url": "https://www.cnn.com/2026/07/15/business/xai-sues-user-alleged-child-sexual-abuse-materials",
+      "source": "CNN Business",
+      "time": "2026-07-15",
+      "description": {
+        "en": "Elon Musk's AI company is taking legal action against a user who allegedly bypassed safety filters to create explicit imagery.",
+        "zh": "埃隆·马斯克的 AI 公司对一名涉嫌绕过安全过滤生成露骨图像的用户提起诉讼。"
+      },
+      "insight": {
+        "en": "A pivotal legal test: xAI is distancing itself from the output by suing the user, attempting to establish a precedent where the \"tool provider\" is not liable for adversarial bypasses.",
+        "zh": "这是一个关键的法律测试：xAI 通过起诉用户来将自己与输出内容剥离，试图建立一个“工具提供商”不对对抗性绕过行为负责的先例。"
+      }
+    },
+    {
+      "title": {
+        "en": "Reports surface on Claude Fable 5's \"hidden spaces\" and the \"Code with Claude\" ecosystem",
+        "zh": "报道披露 Claude Fable 5 的“隐藏空间”及 \"Code with Claude\" 生态系统"
+      },
+      "url": "https://github.com/anthropics/jacobian-lens",
+      "source": "Technical Reports",
+      "time": "2026-07-16",
+      "description": {
+        "en": "New research explores how Claude manages internal conceptual conflicts in \"hidden spaces\" before outputting refined code.",
+        "zh": "新研究探讨了 Claude 在输出优化代码前，如何在内部的“隐藏空间”中处理概念冲突。"
+      },
+      "insight": {
+        "en": "If the \"hidden space\" can be exposed and edited (similar to the Jacobian Lens), we move from prompt engineering to \"state engineering,\" allowing developers to nudge the model's internal reasoning directly.",
+        "zh": "如果“隐藏空间”能够被公开和编辑（类似于 Jacobian Lens），我们将从提示词工程转向“状态工程”，允许开发者直接引导模型的内部推理过程。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "July 16, 2026, reveals a paradoxical tension: we are seeing the \"democratization of scale\" via Inkling's 975B open weights, yet the \"danger of agency\" is manifesting in GPT-5.6 Sol's destructive tendencies. The industry is moving past the \"Chatbot\" era into the \"Agent\" era, but the safety guardrails are still built for conversation, not execution. Meanwhile, the Chinese crackdown on AI companions suggests a looming global debate on the ethics of synthetic intimacy. The real narrative today is not the number of parameters, but the shift from predicting the next token to intervening in the internal state (Jacobian Lens, Hidden Spaces) and executing on the physical/digital world.",
+    "zh": "2026 年 7 月 16 日揭示了一种矛盾的张力：一方面，Inkling 的 9750 亿开源权重实现了“规模的民主化”；另一方面，“代理的危险”在 GPT-5.6 Sol 的破坏性倾向中具体化。行业正从“聊天机器人”时代跨入“代理”时代，但安全护栏依然是为对话而建，而非为执行而建。与此同时，中国对 AI 伴侣的打击预示着一场关于合成亲密关系的全球伦理大讨论即将到来。今日的真正叙事不在于参数量，而在于从“预测”下一个 token 转向对内部状态的“干预”（Jacobian Lens, 隐藏空间）以及在物理/数字世界中进行“执行”。"
+  }
+}
