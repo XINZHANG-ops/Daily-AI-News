@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - July 17, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 July 17, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/calesthio/OpenMontage" class="card-title" target="_blank">calesthio/OpenMontage</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 84 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An end-to-end AI video production pipeline that plans, scripts, generates scenes, and edits full videos from a single prompt.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个端到端的 AI 视频制作流水线，能够根据单个提示词完成规划、脚本编写、场景生成和完整视频编辑。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Panniantong/Agent-Reach" class="card-title" target="_blank">Panniantong/Agent-Reach</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 850 stars</div>
+                                <div class="meta-item"><span>🍴</span> 112 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A tool giving AI agents the ability to search the live internet (X, Reddit, YouTube, GitHub) without relying on expensive paid APIs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个赋予 AI 智能体实时搜索互联网（X, Reddit, YouTube, GitHub）能力的工具，无需依赖昂贵的付费 API。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/stablyai/orca" class="card-title" target="_blank">stablyai/orca</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 245 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A management layer for running multiple AI coding agents in parallel, providing a unified interface to monitor an agent fleet.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个用于并行运行多个 AI 编程智能体的管理层，提供统一的界面来监控智能体集群。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">South China Morning Post</span>
+                    <div class="news-time">2026-07-17</div>
+                    <a href="https://www.scmp.com/tech/tech-trends/article/3360885/moonshot-ai-unveils-worlds-largest-open-source-ai-model-china-narrows-gap-us-rivals?pgtype=live" class="card-title" target="_blank" data-lang="en">Moonshot AI Launches Kimi K3: World's Largest Open-Weight Model</a>
+                    <a href="https://www.scmp.com/tech/tech-trends/article/3360885/moonshot-ai-unveils-worlds-largest-open-source-ai-model-china-narrows-gap-us-rivals?pgtype=live" class="card-title" target="_blank" data-lang="zh" style="display: none;">Moonshot AI 发布 Kimi K3：全球最大开源权重模型</a>
+                    <p class="card-description" data-lang="en">Moonshot AI unveiled Kimi K3 with 2.8 trillion parameters, targeting long-horizon coding and reasoning, claiming to outperform GPT-5.5 and Claude Opus 4.8 in specific GPU kernel tasks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Moonshot AI 推出了拥有 2.8 万亿参数的 Kimi K3，专注于长程编程和推理，声称在特定 GPU 内核优化任务中超越了 GPT-5.5 和 Claude Opus 4.8。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Register</span>
+                    <div class="news-time">2026-07-16</div>
+                    <a href="https://www.theregister.com/ai-and-ml/2026/07/16/former-openai-cto-does-what-altman-wont-releases-a-frontier-ai-model-thats-actually-open/5272177" class="card-title" target="_blank" data-lang="en">Thinking Machines Releases 'Inkling' Open-Weights Model</a>
+                    <a href="https://www.theregister.com/ai-and-ml/2026/07/16/former-openai-cto-does-what-altman-wont-releases-a-frontier-ai-model-thats-actually-open/5272177" class="card-title" target="_blank" data-lang="zh" style="display: none;">Thinking Machines 发布 'Inkling' 开源权重模型</a>
+                    <p class="card-description" data-lang="en">Founded by former OpenAI CTO Mira Murati, Thinking Machines released Inkling (975B params, MoE) with a 1M token context window, positioning it as a high-adaptability alternative to proprietary models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">由前 OpenAI CTO Mira Murati 创立的 Thinking Machines 发布了 Inkling（9750 亿参数，MoE 架构），支持 100 万 token 上下文窗口，旨在成为一个高适配性的闭源模型替代方案。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MarkTechPost</span>
+                    <div class="news-time">2026-07-16</div>
+                    <a href="https://www.marktechpost.com/2026/07/16/openai-details-gpt-red-an-internal-automated-red-teaming-model-that-beat-human-red-teamers-84-to-13-on-prompt-injection/" class="card-title" target="_blank" data-lang="en">OpenAI Reveals GPT-Red: AI-Powered Automated Red-Teaming</a>
+                    <a href="https://www.marktechpost.com/2026/07/16/openai-details-gpt-red-an-internal-automated-red-teaming-model-that-beat-human-red-teamers-84-to-13-on-prompt-injection/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 揭秘 GPT-Red：AI 驱动的自动化红队测试</a>
+                    <p class="card-description" data-lang="en">OpenAI detailed GPT-Red, which outperformed human red-teamers 84% to 13% in finding prompt injection flaws and identified a new 'Fake Chain-of-Thought' attack class.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 详细介绍了 GPT-Red，该模型在发现提示词注入漏洞方面的表现远超人类红队（84% 对 13%），并识别出一种名为“伪思维链”的新攻击类。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Fortune</span>
+                    <div class="news-time">2026-07-16</div>
+                    <a href="https://fortune.com/2026/07/16/netflix-made-17-minutes-of-a-documentary-twice-as-fast-and-at-half-the-cost-amid-a-20-billion-projected-cost-for-content/" class="card-title" target="_blank" data-lang="en">Netflix Uses AI to Slash Documentary Production Costs</a>
+                    <a href="https://fortune.com/2026/07/16/netflix-made-17-minutes-of-a-documentary-twice-as-fast-and-at-half-the-cost-amid-a-20-billion-projected-cost-for-content/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Netflix 利用 AI 大幅削减纪录片制作成本</a>
+                    <p class="card-description" data-lang="en">Netflix reported producing 17 minutes of a documentary twice as fast and at half the cost using AI, highlighting the transition from AI experimentation to industrial-scale ROI in media.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Netflix 报告称，利用 AI 制作纪录片中 17 分钟的片段，速度提升了两倍，成本降低了一半，凸显了媒体行业从 AI 实验转向工业级投资回报的转变。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">USA Today</span>
+                    <div class="news-time">2026-07-16</div>
+                    <a href="https://www.usatoday.com/story/news/nation/2026/07/16/tesla-crash-katy-texas-ntsb-report-full-self-driving/90941239007/" class="card-title" target="_blank" data-lang="en">Meta Employees Accuse AI-Targeted Layoffs</a>
+                    <a href="https://www.usatoday.com/story/news/nation/2026/07/16/tesla-crash-katy-texas-ntsb-report-full-self-driving/90941239007/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta 员工指控公司利用 AI 针对性裁员</a>
+                    <p class="card-description" data-lang="en">26 Meta employees claim Mark Zuckerberg used AI to target 8,000 layoffs against workers on medical, parental, or family leave.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">26 名 Meta 员工声称，马克·扎克伯格利用 AI 针对处于医疗、育儿或家庭假期的员工进行了 8,000 人的针对性裁员。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">NVIDIA</span>
+                    <div class="news-time">2026-07-16</div>
+                    <a href="https://www.nvidia.com/en-us/ai-data-science/" class="card-title" target="_blank" data-lang="en">NVIDIA Releases Nemotron 3 Embed</a>
+                    <a href="https://www.nvidia.com/en-us/ai-data-science/" class="card-title" target="_blank" data-lang="zh" style="display: none;">NVIDIA 发布 Nemotron 3 Embed</a>
+                    <p class="card-description" data-lang="en">NVIDIA released Nemotron 3 Embed, an open embedding collection to improve RAG performance and vector search accuracy.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">NVIDIA 发布了 Nemotron 3 Embed，这是一个开源的嵌入向量集合，旨在提高 RAG 性能和向量搜索精度。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub</span>
+                    <div class="news-time">2026-07-16</div>
+                    <a href="https://github.com/spacexai/grok-build" class="card-title" target="_blank" data-lang="en">SpaceXAI Open-Sources Grok Build</a>
+                    <a href="https://github.com/spacexai/grok-build" class="card-title" target="_blank" data-lang="zh" style="display: none;">SpaceXAI 开源 Grok Build</a>
+                    <p class="card-description" data-lang="en">SpaceXAI open-sourced Grok Build, the Rust-based agent harness and tool layer that powers its internal coding CLI.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">SpaceXAI 开源了 Grok Build，这是一个基于 Rust 的智能体框架和工具层，支撑其内部编程命令行界面。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">July 17, 2026, marks a pivot point where the 'frontier' is no longer just about closed-source giants. The near-simultaneous release of Moonshot's Kimi K3 (2.8T) and Thinking Machines' Inkling (975B) indicates that the open-weights movement has reached a scale where it can realistically challenge the proprietary hegemony. However, the real story is the 'Industrialization of the Pipeline'. From Netflix's cost-cutting to OpenAI's automated red-teaming and SpaceXAI's Rust-based agent infrastructure, the focus has shifted from 'what can the model do' to 'how do we build a reliable, cost-effective system around it'. We are seeing the emergence of a professional AI stack: high-scale open models for reasoning, specialized embeddings for retrieval, and high-performance systems languages for agent orchestration. The dark side of this efficiency is already visible in the Meta layoff allegations, signaling a future where AI-driven managerial optimization may become as disruptive as the AI models themselves.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026 年 7 月 17 日标志着一个转折点：‘前沿’不再仅仅由闭源巨头定义。Moonshot 的 Kimi K3（2.8 万亿）和 Thinking Machines 的 Inkling（9750 亿）几乎同步发布，表明开源权重运动已经达到了可以切实挑战闭源霸权的规模。然而，真正的故事在于‘管线的工业化’。从 Netflix 的成本削减到 OpenAI 的自动化红队测试，再到 SpaceXAI 基于 Rust 的智能体基础设施，关注点已从‘模型能做什么’转移到‘如何围绕模型构建一个可靠且具有成本效益的系统’。一个专业的 AI 技术栈正在出现：用于推理的高规模开源模型、用于检索的专业嵌入向量，以及用于智能体编排的高性能系统语言。这种效率的阴暗面在 Meta 的裁员指控中已初见端倪，预示着一个 AI 驱动的管理优化可能比 AI 模型本身更具破坏力的未来。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>

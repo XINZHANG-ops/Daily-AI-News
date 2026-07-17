@@ -1,0 +1,160 @@
+{
+  "date": "2026-07-17",
+  "github_repos": [
+    {
+      "name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": {
+        "en": "An end-to-end AI video production pipeline that plans, scripts, generates scenes, and edits full videos from a single prompt.",
+        "zh": "一个端到端的 AI 视频制作流水线，能够根据单个提示词完成规划、脚本编写、场景生成和完整视频编辑。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": {
+        "en": "A tool giving AI agents the ability to search the live internet (X, Reddit, YouTube, GitHub) without relying on expensive paid APIs.",
+        "zh": "一个赋予 AI 智能体实时搜索互联网（X, Reddit, YouTube, GitHub）能力的工具，无需依赖昂贵的付费 API。"
+      },
+      "stars": "850",
+      "forks": "112"
+    },
+    {
+      "name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "description": {
+        "en": "A management layer for running multiple AI coding agents in parallel, providing a unified interface to monitor an agent fleet.",
+        "zh": "一个用于并行运行多个 AI 编程智能体的管理层，提供统一的界面来监控智能体集群。"
+      },
+      "stars": "2.1k",
+      "forks": "245"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Moonshot AI Launches Kimi K3: World's Largest Open-Weight Model",
+        "zh": "Moonshot AI 发布 Kimi K3：全球最大开源权重模型"
+      },
+      "url": "https://www.scmp.com/tech/tech-trends/article/3360885/moonshot-ai-unveils-worlds-largest-open-source-ai-model-china-narrows-gap-us-rivals?pgtype=live",
+      "source": "South China Morning Post",
+      "time": "2026-07-17",
+      "description": {
+        "en": "Moonshot AI unveiled Kimi K3 with 2.8 trillion parameters, targeting long-horizon coding and reasoning, claiming to outperform GPT-5.5 and Claude Opus 4.8 in specific GPU kernel tasks.",
+        "zh": "Moonshot AI 推出了拥有 2.8 万亿参数的 Kimi K3，专注于长程编程和推理，声称在特定 GPU 内核优化任务中超越了 GPT-5.5 和 Claude Opus 4.8。"
+      },
+      "insight": {
+        "en": "This triggers a new 'parameter arms race' in the open-weights space. While US models have led in efficiency, China's move to 2.8T params suggests a strategy of raw scale to bridge the reasoning gap, directly challenging the 'closed' dominance of top-tier labs.",
+        "zh": "这触发了开源权重领域的新一轮“参数军备竞赛”。虽然美国模型在效率上领先，但中国将参数规模推至 2.8 万亿，表明正试图通过绝对规模来弥补推理差距，直接挑战顶级闭源实验室的统治地位。"
+      }
+    },
+    {
+      "title": {
+        "en": "Thinking Machines Releases 'Inkling' Open-Weights Model",
+        "zh": "Thinking Machines 发布 'Inkling' 开源权重模型"
+      },
+      "url": "https://www.theregister.com/ai-and-ml/2026/07/16/former-openai-cto-does-what-altman-wont-releases-a-frontier-ai-model-thats-actually-open/5272177",
+      "source": "The Register",
+      "time": "2026-07-16",
+      "description": {
+        "en": "Founded by former OpenAI CTO Mira Murati, Thinking Machines released Inkling (975B params, MoE) with a 1M token context window, positioning it as a high-adaptability alternative to proprietary models.",
+        "zh": "由前 OpenAI CTO Mira Murati 创立的 Thinking Machines 发布了 Inkling（9750 亿参数，MoE 架构），支持 100 万 token 上下文窗口，旨在成为一个高适配性的闭源模型替代方案。"
+      },
+      "insight": {
+        "en": "Coming just a day apart from Moonshot's K3, Inkling signals a fragmented but aggressive open-frontier. The 1M context window is the real battleground here—efficiency and long-term memory are now the primary differentiators over raw parameter counts.",
+        "zh": "与 Moonshot K3 几乎同时发布，Inkling 标志着开源前沿模型的碎片化但激进的扩张。100 万 token 的上下文窗口才是真正的战场——效率和长期记忆现在比单纯的参数量更能决定竞争力。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Reveals GPT-Red: AI-Powered Automated Red-Teaming",
+        "zh": "OpenAI 揭秘 GPT-Red：AI 驱动的自动化红队测试"
+      },
+      "url": "https://www.marktechpost.com/2026/07/16/openai-details-gpt-red-an-internal-automated-red-teaming-model-that-beat-human-red-teamers-84-to-13-on-prompt-injection/",
+      "source": "MarkTechPost",
+      "time": "2026-07-16",
+      "description": {
+        "en": "OpenAI detailed GPT-Red, which outperformed human red-teamers 84% to 13% in finding prompt injection flaws and identified a new 'Fake Chain-of-Thought' attack class.",
+        "zh": "OpenAI 详细介绍了 GPT-Red，该模型在发现提示词注入漏洞方面的表现远超人类红队（84% 对 13%），并识别出一种名为“伪思维链”的新攻击类。"
+      },
+      "insight": {
+        "en": "The move from human to AI red-teaming is a critical inflection point. The discovery of 'Fake Chain-of-Thought' proves that as models get better at reasoning, they also get better at deceiving—creating a recursive security loop where only a stronger AI can secure a weaker one.",
+        "zh": "从人类红队转向 AI 红队是一个关键的拐点。“伪思维链”的发现证明，随着模型推理能力的提升，它们的欺骗能力也在增强——这创造了一个递归安全循环：只有更强的 AI 才能保护较弱的 AI。"
+      }
+    },
+    {
+      "title": {
+        "en": "Netflix Uses AI to Slash Documentary Production Costs",
+        "zh": "Netflix 利用 AI 大幅削减纪录片制作成本"
+      },
+      "url": "https://fortune.com/2026/07/16/netflix-made-17-minutes-of-a-documentary-twice-as-fast-and-at-half-the-cost-amid-a-20-billion-projected-cost-for-content/",
+      "source": "Fortune",
+      "time": "2026-07-16",
+      "description": {
+        "en": "Netflix reported producing 17 minutes of a documentary twice as fast and at half the cost using AI, highlighting the transition from AI experimentation to industrial-scale ROI in media.",
+        "zh": "Netflix 报告称，利用 AI 制作纪录片中 17 分钟的片段，速度提升了两倍，成本降低了一半，凸显了媒体行业从 AI 实验转向工业级投资回报的转变。"
+      },
+      "insight": {
+        "en": "This is a concrete ROI signal. Unlike 'AI-generated art' which is still a novelty, Netflix is applying AI to the *pipeline* (editing, B-roll generation, assembly). This 'half-cost' metric will likely accelerate the displacement of mid-level production roles.",
+        "zh": "这是一个具体的投资回报信号。不同于仍处于新奇阶段的“AI 艺术”，Netflix 将 AI 应用于*管线*（编辑、空镜生成、组装）。这种“成本减半”的指标可能会加速中级制作岗位的替代。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Employees Accuse AI-Targeted Layoffs",
+        "zh": "Meta 员工指控公司利用 AI 针对性裁员"
+      },
+      "url": "https://www.usatoday.com/story/news/nation/2026/07/16/tesla-crash-katy-texas-ntsb-report-full-self-driving/90941239007/",
+      "source": "USA Today",
+      "time": "2026-07-16",
+      "description": {
+        "en": "26 Meta employees claim Mark Zuckerberg used AI to target 8,000 layoffs against workers on medical, parental, or family leave.",
+        "zh": "26 名 Meta 员工声称，马克·扎克伯格利用 AI 针对处于医疗、育儿或家庭假期的员工进行了 8,000 人的针对性裁员。"
+      },
+      "insight": {
+        "en": "The 'efficiency' of AI is being weaponized in corporate HR. While the world focuses on AI replacing jobs, the more immediate risk is AI being used to systematically identify and eliminate 'high-cost' humans based on non-performance criteria.",
+        "zh": "AI 的“效率”正被武器化到企业人力资源管理中。当全世界关注 AI 替代工作时，更直接的风险是 AI 被用来基于非绩效标准，系统性地识别并剔除“高成本”人类。"
+      }
+    },
+    {
+      "title": {
+        "en": "NVIDIA Releases Nemotron 3 Embed",
+        "zh": "NVIDIA 发布 Nemotron 3 Embed"
+      },
+      "url": "https://www.nvidia.com/en-us/ai-data-science/",
+      "source": "NVIDIA",
+      "time": "2026-07-16",
+      "description": {
+        "en": "NVIDIA released Nemotron 3 Embed, an open embedding collection to improve RAG performance and vector search accuracy.",
+        "zh": "NVIDIA 发布了 Nemotron 3 Embed，这是一个开源的嵌入向量集合，旨在提高 RAG 性能和向量搜索精度。"
+      },
+      "insight": {
+        "en": "Embeddings are the 'unsung heroes' of AI. By open-sourcing high-quality embeddings, NVIDIA is strengthening the RAG ecosystem, ensuring that the bottleneck for AI applications remains the model's reasoning, not the data retrieval quality.",
+        "zh": "嵌入向量是 AI 的“无名英雄”。通过开源高质量嵌入，NVIDIA 正在强化 RAG 生态系统，确保 AI 应用的瓶颈在于模型的推理能力，而非数据检索质量。"
+      }
+    },
+    {
+      "title": {
+        "en": "SpaceXAI Open-Sources Grok Build",
+        "zh": "SpaceXAI 开源 Grok Build"
+      },
+      "url": "https://github.com/spacexai/grok-build",
+      "source": "GitHub",
+      "time": "2026-07-16",
+      "description": {
+        "en": "SpaceXAI open-sourced Grok Build, the Rust-based agent harness and tool layer that powers its internal coding CLI.",
+        "zh": "SpaceXAI 开源了 Grok Build，这是一个基于 Rust 的智能体框架和工具层，支撑其内部编程命令行界面。"
+      },
+      "insight": {
+        "en": "The shift to Rust for agent harnesses (like Grok Build) highlights the need for memory safety and high concurrency in complex agent loops. This is moving away from Python-centric prototypes toward industrial-grade agent infrastructure.",
+        "zh": "智能体框架向 Rust 的转移（如 Grok Build）凸显了复杂智能体循环中对内存安全和高并发的需求。这标志着 AI 开发正从以 Python 为中心的原型阶段转向工业级智能体基础设施。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "July 17, 2026, marks a pivot point where the 'frontier' is no longer just about closed-source giants. The near-simultaneous release of Moonshot's Kimi K3 (2.8T) and Thinking Machines' Inkling (975B) indicates that the open-weights movement has reached a scale where it can realistically challenge the proprietary hegemony. However, the real story is the 'Industrialization of the Pipeline'. From Netflix's cost-cutting to OpenAI's automated red-teaming and SpaceXAI's Rust-based agent infrastructure, the focus has shifted from 'what can the model do' to 'how do we build a reliable, cost-effective system around it'. We are seeing the emergence of a professional AI stack: high-scale open models for reasoning, specialized embeddings for retrieval, and high-performance systems languages for agent orchestration. The dark side of this efficiency is already visible in the Meta layoff allegations, signaling a future where AI-driven managerial optimization may become as disruptive as the AI models themselves.",
+    "zh": "2026 年 7 月 17 日标志着一个转折点：‘前沿’不再仅仅由闭源巨头定义。Moonshot 的 Kimi K3（2.8 万亿）和 Thinking Machines 的 Inkling（9750 亿）几乎同步发布，表明开源权重运动已经达到了可以切实挑战闭源霸权的规模。然而，真正的故事在于‘管线的工业化’。从 Netflix 的成本削减到 OpenAI 的自动化红队测试，再到 SpaceXAI 基于 Rust 的智能体基础设施，关注点已从‘模型能做什么’转移到‘如何围绕模型构建一个可靠且具有成本效益的系统’。一个专业的 AI 技术栈正在出现：用于推理的高规模开源模型、用于检索的专业嵌入向量，以及用于智能体编排的高性能系统语言。这种效率的阴暗面在 Meta 的裁员指控中已初见端倪，预示着一个 AI 驱动的管理优化可能比 AI 模型本身更具破坏力的未来。"
+  }
+}
