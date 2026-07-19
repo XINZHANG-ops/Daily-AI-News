@@ -1,0 +1,160 @@
+{
+  "date": "2026-07-19",
+  "github_repos": [
+    {
+      "name": "xai-org/grok-build",
+      "url": "https://github.com/xai-org/grok-build",
+      "description": {
+        "en": "A terminal-native coding agent from SpaceXAI featuring a full-screen, mouse-interactive TUI built in Rust.",
+        "zh": "SpaceXAI 推出的终端原生编程代理，采用 Rust 构建，具有全屏、支持鼠标交互的 TUI（终端用户界面）。"
+      },
+      "stars": "17k",
+      "forks": "1.2k"
+    },
+    {
+      "name": "HUANGCHIHHUNGLeo/claude-real-video",
+      "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+      "description": {
+        "en": "Allows LLMs to \"watch\" videos via local semantic scene-change detection, avoiding fixed-interval sampling.",
+        "zh": "通过本地语义场景变化检测让 LLM “观看”视频，避免了传统的固定间隔采样，显著降低 Token 消耗并提高精度。"
+      },
+      "stars": "1.7k",
+      "forks": "210"
+    },
+    {
+      "name": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": {
+        "en": "An \"Anti-AI-slop\" design skill for AI coding agents to prevent generic, low-quality output patterns.",
+        "zh": "一款针对 AI 编程代理的“反 AI 垃圾”设计技能，旨在防止生成泛泛而谈、低质量的代码模式。"
+      },
+      "stars": "2.7k",
+      "forks": "340"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Releases GPT-5.6 Model Family with Cerebras Integration",
+        "zh": "OpenAI 发布 GPT-5.6 模型系列并集成 Cerebras 硬件加速"
+      },
+      "url": "https://marketersindex.com/openai-unveils-gpt-5-6-model-family-with-public-release-of-sol-terra-and-luna-following-federal-regulatory-review/",
+      "source": "Marketers Index",
+      "time": "2026-07-18",
+      "description": {
+        "en": "OpenAI launched the GPT-5.6 suite with Sol (Max Effort reasoning), Terra (Professional workhorse), and Luna (Low-cost efficiency), with a 'Sol Fast' tier via Cerebras achieving 750 tokens/sec.",
+        "zh": "OpenAI 推出了 GPT-5.6 系列，包括 Sol（极致推理）、Terra（专业工作马）和 Luna（低成本高效），并通过 Cerebras 提供的 'Sol Fast' 层实现了每秒 750 个 Token 的生成速度。"
+      },
+      "insight": {
+        "en": "The \"Sol/Terra/Luna\" split reflects a mature product strategy: extreme reasoning for high-stakes work vs. commodity intelligence for volume. The Cerebras partnership proves the next bottleneck is tokens/sec, not just parameters.",
+        "zh": "“Sol/Terra/Luna” 的分级发布反映了成熟的产品策略：针对高难度任务提供极致推理，针对海量需求提供商品化智能。与 Cerebras 的合作证明，接下来的瓶颈不再仅仅是参数量，而是每秒生成 Token 的速度。"
+      }
+    },
+    {
+      "title": {
+        "en": "Moonshot AI Unveils Kimi K3: 2.8 Trillion Parameters Open-Weights Model",
+        "zh": "Moonshot AI 发布 Kimi K3：2.8 万亿参数开源权重模型"
+      },
+      "url": "https://www.ainvest.com/news/moonshot-ai-kimi-k3-2-8-trillion-parameters-architecture-bet-question-2607/",
+      "source": "AI Invest",
+      "time": "2026-07-18",
+      "description": {
+        "en": "Kimi K3 uses a 'Kimi Delta Attention' (KDA) hybrid linear architecture to reduce inference costs while rivaling top U.S. frontier models.",
+        "zh": "Kimi K3 采用 “Kimi Delta Attention” (KDA) 混合线性架构以降低推理成本，性能据报已能与美国顶级前沿模型相媲美。"
+      },
+      "insight": {
+        "en": "A 2.8T open-weights model from China rivaling frontier US models accelerates the 'intelligence commodity' trend and forces US labs to innovate beyond scale to maintain a lead.",
+        "zh": "来自中国的 2.8 万亿参数开源模型 Kimi K3 已经能与美国顶尖模型竞争。这加速了“智能商品化”趋势，迫使美国实验室必须在规模之外寻找创新点以维持领先。"
+      }
+    },
+    {
+      "title": {
+        "en": "BasaltLabs Releases Monolith-1.0 with Unrestricted Open Access",
+        "zh": "BasaltLabs 发布 Monolith-1.0，提供无限制开源访问"
+      },
+      "url": "https://botbeat.news/news/basaltlabs-releases-monolith-1-0-state-of-the-art-reasoning-model-with-unrestric-9435",
+      "source": "BotBeat",
+      "time": "2026-07-18",
+      "description": {
+        "en": "Monolith-1.0 is a 1.6T parameter state-of-the-art reasoning model released on Hugging Face with no restrictions, claiming top marks on GPQA Diamond.",
+        "zh": "Monolith-1.0 是一个 1.6 万亿参数的顶尖推理模型，在 Hugging Face 上无限制开源，并声称在 GPQA Diamond 等基准测试中获得最高分。"
+      },
+      "insight": {
+        "en": "By releasing a reasoning model with unrestricted open access, BasaltLabs acts as the 'anti-establishment' lab, challenging the safety-gatekeeping narrative of major frontier labs.",
+        "zh": "BasaltLabs 发布无限制开源的推理模型 Monolith-1.0，扮演了“反建制”实验室的角色，直接挑战了顶级实验室通过安全门禁控制智能的叙事。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Administration Proposes 'FINRA-style' AI Watchdog Reporting to SEC",
+        "zh": "美国政府提议建立向 SEC 报告的“类 FINRA”AI 监管机构"
+      },
+      "url": "https://fourweekmba.com/ai-trump-finra-sec-ai-watchdog-frontier-model-regulator/",
+      "source": "FourWeekMBA",
+      "time": "2026-07-18",
+      "description": {
+        "en": "A proposed independent AI agency would screen frontier models for dangerous capabilities (bioweapons, hacking) 30 days before any public release.",
+        "zh": "提议成立的独立 AI 机构将在任何公开发布前 30 天，对前沿模型进行危险能力（如生物武器、黑客攻击）的筛查。"
+      },
+      "insight": {
+        "en": "Moving oversight to an SEC-linked body treats AI models as systemic risks rather than software. This institutionalizes pre-release screens, effectively ending the era of surprise 'drop' releases.",
+        "zh": "将监管权移交给与 SEC 挂钩的机构，意味着 AI 模型不再被视为软件，而被视为系统性风险。这种“发布前 30 天审查”的制度化，标志着“突击发布”时代的终结。"
+      }
+    },
+    {
+      "title": {
+        "en": "White House Increasingly Dictates Access to Frontier AI Models",
+        "zh": "白宫日益干预前沿 AI 模型的访问权限"
+      },
+      "url": "https://proinvestnews.com/2026/07/18/the-white-house-is-dictating-access-to-frontier-ai-models-shifting-power-from-tech-giants-sources-say/",
+      "source": "Pro Invest News",
+      "time": "2026-07-18",
+      "description": {
+        "en": "Reports indicate the US government is shifting power away from tech giants, dictating who can access top models, including recent interventions with Claude Mythos 5.",
+        "zh": "报道称，美国政府正在将权力从科技巨头手中转移，直接决定谁能访问顶级模型，近期对 Claude Mythos 5 的访问权限进行了干预。"
+      },
+      "insight": {
+        "en": "The shift from safety guidelines to executive dictates transforms AI access into a geopolitical tool and a reward for political alignment.",
+        "zh": "访问权限从“安全指南”转向“行政指令”，使 AI 访问权变成了地缘政治工具和政治结盟的奖励。"
+      }
+    },
+    {
+      "title": {
+        "en": "GPT-5.6 Release Delayed by Federal Regulatory Review",
+        "zh": "GPT-5.6 发布因联邦监管审查而推迟"
+      },
+      "url": "https://marketersindex.com/openai-unveils-gpt-5-6-model-family-with-public-release-of-sol-terra-and-luna-following-federal-regulatory-review/",
+      "source": "Marketers Index",
+      "time": "2026-07-18",
+      "description": {
+        "en": "The public release of the GPT-5.6 family was delayed by 12 days to ensure the models did not possess prohibited 'cyber-offensive' capabilities.",
+        "zh": "GPT-5.6 系列的公开发布被推迟了 12 天，以确保模型不具备被禁止的“网络攻击”能力。"
+      },
+      "insight": {
+        "en": "A 12-day delay for 'cyber-offensive' review shows that 'Safety' is now about preventing the model from becoming an autonomous weapon, overriding commercial launch windows.",
+        "zh": "因“网络攻击能力”审查而被推迟 12 天，表明“安全”已不再仅仅是对齐问题，而是防止模型成为自主武器，这一担忧现在的优先级已高于商业发布窗口。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Launches 'Gold Eagle' Program for Cyber Vulnerabilities",
+        "zh": "美国启动针对网络漏洞的 'Gold Eagle' 计划"
+      },
+      "url": "https://fourweekmba.com/ai-trump-finra-sec-ai-watchdog-frontier-model-regulator/",
+      "source": "FourWeekMBA",
+      "time": "2026-07-18",
+      "description": {
+        "en": "A new administration program to collaborate with the private sector to identify and fix critical cyber vulnerabilities using AI.",
+        "zh": "一项新的政府计划，旨在与私营部门协作，利用 AI 识别并修复关键的网络漏洞。"
+      },
+      "insight": {
+        "en": "This program signals a 'public-private security pact,' where the government provides a safe harbor for labs to report vulnerabilities in exchange for national defense collaboration.",
+        "zh": "该计划标志着一种“公私安全协定”的建立，政府为实验室报告漏洞提供安全港，以换取其在国防领域的协作。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Today's landscape is a study in contradictions: we are seeing the simultaneous explosion of raw intelligence (GPT-5.6, Kimi K3, Monolith-1.0) and the tightening of the 'institutional leash.' Intelligence is rapidly commoditizing, as evidenced by the tiered Luna model and massive open-weights releases. This is pushing the 'moat' away from the model itself and toward two poles: specialized hardware (Cerebras) and political legitimacy (the SEC/White House permission layer). The real story is the 'Institutional Enclosure' of AI. The Wild West era of 'prompt engineering and surprise drops' has been replaced by a regime of regulatory screenings, federal reviews, and government-curated access. Even the tools on GitHub are reflecting this shift—moving toward high-fidelity, specialized agents that handle the 'last mile' of professional work rather than general-purpose chatbots.",
+    "zh": "今天的 AI 格局呈现出一种矛盾的共存：一方面是原生智能的爆发（GPT-5.6, Kimi K3, Monolith-1.0），另一方面则是“制度枷锁”的收紧。随着 Luna 这种分级模型和大规模开源模型的出现，智能正在迅速商品化。这使得竞争的“护城河”从模型本身转移到了两个极点：专业硬件（Cerebras）和政治合法性（SEC/白宫的许可层）。真正的故事是 AI 的“制度围栏化”。那个“提示词工程和突击发布”的西部拓荒时代已经结束，取而代之的是监管审查、联邦复核和政府主导的访问权限。甚至 GitHub 上的趋势也反映了这一点——工具正向高保真、专业化的代理转移，旨在解决专业工作的“最后一公里”，而非简单的通用聊天机器人。"
+  }
+}

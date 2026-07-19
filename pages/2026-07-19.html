@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - July 19, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 July 19, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/xai-org/grok-build" class="card-title" target="_blank">xai-org/grok-build</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 17k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A terminal-native coding agent from SpaceXAI featuring a full-screen, mouse-interactive TUI built in Rust.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">SpaceXAI 推出的终端原生编程代理，采用 Rust 构建，具有全屏、支持鼠标交互的 TUI（终端用户界面）。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/HUANGCHIHHUNGLeo/claude-real-video" class="card-title" target="_blank">HUANGCHIHHUNGLeo/claude-real-video</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.7k stars</div>
+                                <div class="meta-item"><span>🍴</span> 210 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Allows LLMs to "watch" videos via local semantic scene-change detection, avoiding fixed-interval sampling.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">通过本地语义场景变化检测让 LLM “观看”视频，避免了传统的固定间隔采样，显著降低 Token 消耗并提高精度。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Nutlope/hallmark" class="card-title" target="_blank">Nutlope/hallmark</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.7k stars</div>
+                                <div class="meta-item"><span>🍴</span> 340 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An "Anti-AI-slop" design skill for AI coding agents to prevent generic, low-quality output patterns.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一款针对 AI 编程代理的“反 AI 垃圾”设计技能，旨在防止生成泛泛而谈、低质量的代码模式。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Marketers Index</span>
+                    <div class="news-time">2026-07-18</div>
+                    <a href="https://marketersindex.com/openai-unveils-gpt-5-6-model-family-with-public-release-of-sol-terra-and-luna-following-federal-regulatory-review/" class="card-title" target="_blank" data-lang="en">OpenAI Releases GPT-5.6 Model Family with Cerebras Integration</a>
+                    <a href="https://marketersindex.com/openai-unveils-gpt-5-6-model-family-with-public-release-of-sol-terra-and-luna-following-federal-regulatory-review/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 发布 GPT-5.6 模型系列并集成 Cerebras 硬件加速</a>
+                    <p class="card-description" data-lang="en">OpenAI launched the GPT-5.6 suite with Sol (Max Effort reasoning), Terra (Professional workhorse), and Luna (Low-cost efficiency), with a 'Sol Fast' tier via Cerebras achieving 750 tokens/sec.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 推出了 GPT-5.6 系列，包括 Sol（极致推理）、Terra（专业工作马）和 Luna（低成本高效），并通过 Cerebras 提供的 'Sol Fast' 层实现了每秒 750 个 Token 的生成速度。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI Invest</span>
+                    <div class="news-time">2026-07-18</div>
+                    <a href="https://www.ainvest.com/news/moonshot-ai-kimi-k3-2-8-trillion-parameters-architecture-bet-question-2607/" class="card-title" target="_blank" data-lang="en">Moonshot AI Unveils Kimi K3: 2.8 Trillion Parameters Open-Weights Model</a>
+                    <a href="https://www.ainvest.com/news/moonshot-ai-kimi-k3-2-8-trillion-parameters-architecture-bet-question-2607/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Moonshot AI 发布 Kimi K3：2.8 万亿参数开源权重模型</a>
+                    <p class="card-description" data-lang="en">Kimi K3 uses a 'Kimi Delta Attention' (KDA) hybrid linear architecture to reduce inference costs while rivaling top U.S. frontier models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Kimi K3 采用 “Kimi Delta Attention” (KDA) 混合线性架构以降低推理成本，性能据报已能与美国顶级前沿模型相媲美。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">BotBeat</span>
+                    <div class="news-time">2026-07-18</div>
+                    <a href="https://botbeat.news/news/basaltlabs-releases-monolith-1-0-state-of-the-art-reasoning-model-with-unrestric-9435" class="card-title" target="_blank" data-lang="en">BasaltLabs Releases Monolith-1.0 with Unrestricted Open Access</a>
+                    <a href="https://botbeat.news/news/basaltlabs-releases-monolith-1-0-state-of-the-art-reasoning-model-with-unrestric-9435" class="card-title" target="_blank" data-lang="zh" style="display: none;">BasaltLabs 发布 Monolith-1.0，提供无限制开源访问</a>
+                    <p class="card-description" data-lang="en">Monolith-1.0 is a 1.6T parameter state-of-the-art reasoning model released on Hugging Face with no restrictions, claiming top marks on GPQA Diamond.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Monolith-1.0 是一个 1.6 万亿参数的顶尖推理模型，在 Hugging Face 上无限制开源，并声称在 GPQA Diamond 等基准测试中获得最高分。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">FourWeekMBA</span>
+                    <div class="news-time">2026-07-18</div>
+                    <a href="https://fourweekmba.com/ai-trump-finra-sec-ai-watchdog-frontier-model-regulator/" class="card-title" target="_blank" data-lang="en">US Administration Proposes 'FINRA-style' AI Watchdog Reporting to SEC</a>
+                    <a href="https://fourweekmba.com/ai-trump-finra-sec-ai-watchdog-frontier-model-regulator/" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国政府提议建立向 SEC 报告的“类 FINRA”AI 监管机构</a>
+                    <p class="card-description" data-lang="en">A proposed independent AI agency would screen frontier models for dangerous capabilities (bioweapons, hacking) 30 days before any public release.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">提议成立的独立 AI 机构将在任何公开发布前 30 天，对前沿模型进行危险能力（如生物武器、黑客攻击）的筛查。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Pro Invest News</span>
+                    <div class="news-time">2026-07-18</div>
+                    <a href="https://proinvestnews.com/2026/07/18/the-white-house-is-dictating-access-to-frontier-ai-models-shifting-power-from-tech-giants-sources-say/" class="card-title" target="_blank" data-lang="en">White House Increasingly Dictates Access to Frontier AI Models</a>
+                    <a href="https://proinvestnews.com/2026/07/18/the-white-house-is-dictating-access-to-frontier-ai-models-shifting-power-from-tech-giants-sources-say/" class="card-title" target="_blank" data-lang="zh" style="display: none;">白宫日益干预前沿 AI 模型的访问权限</a>
+                    <p class="card-description" data-lang="en">Reports indicate the US government is shifting power away from tech giants, dictating who can access top models, including recent interventions with Claude Mythos 5.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">报道称，美国政府正在将权力从科技巨头手中转移，直接决定谁能访问顶级模型，近期对 Claude Mythos 5 的访问权限进行了干预。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Marketers Index</span>
+                    <div class="news-time">2026-07-18</div>
+                    <a href="https://marketersindex.com/openai-unveils-gpt-5-6-model-family-with-public-release-of-sol-terra-and-luna-following-federal-regulatory-review/" class="card-title" target="_blank" data-lang="en">GPT-5.6 Release Delayed by Federal Regulatory Review</a>
+                    <a href="https://marketersindex.com/openai-unveils-gpt-5-6-model-family-with-public-release-of-sol-terra-and-luna-following-federal-regulatory-review/" class="card-title" target="_blank" data-lang="zh" style="display: none;">GPT-5.6 发布因联邦监管审查而推迟</a>
+                    <p class="card-description" data-lang="en">The public release of the GPT-5.6 family was delayed by 12 days to ensure the models did not possess prohibited 'cyber-offensive' capabilities.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GPT-5.6 系列的公开发布被推迟了 12 天，以确保模型不具备被禁止的“网络攻击”能力。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">FourWeekMBA</span>
+                    <div class="news-time">2026-07-18</div>
+                    <a href="https://fourweekmba.com/ai-trump-finra-sec-ai-watchdog-frontier-model-regulator/" class="card-title" target="_blank" data-lang="en">US Launches 'Gold Eagle' Program for Cyber Vulnerabilities</a>
+                    <a href="https://fourweekmba.com/ai-trump-finra-sec-ai-watchdog-frontier-model-regulator/" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国启动针对网络漏洞的 'Gold Eagle' 计划</a>
+                    <p class="card-description" data-lang="en">A new administration program to collaborate with the private sector to identify and fix critical cyber vulnerabilities using AI.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一项新的政府计划，旨在与私营部门协作，利用 AI 识别并修复关键的网络漏洞。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Today's landscape is a study in contradictions: we are seeing the simultaneous explosion of raw intelligence (GPT-5.6, Kimi K3, Monolith-1.0) and the tightening of the 'institutional leash.' Intelligence is rapidly commoditizing, as evidenced by the tiered Luna model and massive open-weights releases. This is pushing the 'moat' away from the model itself and toward two poles: specialized hardware (Cerebras) and political legitimacy (the SEC/White House permission layer). The real story is the 'Institutional Enclosure' of AI. The Wild West era of 'prompt engineering and surprise drops' has been replaced by a regime of regulatory screenings, federal reviews, and government-curated access. Even the tools on GitHub are reflecting this shift—moving toward high-fidelity, specialized agents that handle the 'last mile' of professional work rather than general-purpose chatbots.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">今天的 AI 格局呈现出一种矛盾的共存：一方面是原生智能的爆发（GPT-5.6, Kimi K3, Monolith-1.0），另一方面则是“制度枷锁”的收紧。随着 Luna 这种分级模型和大规模开源模型的出现，智能正在迅速商品化。这使得竞争的“护城河”从模型本身转移到了两个极点：专业硬件（Cerebras）和政治合法性（SEC/白宫的许可层）。真正的故事是 AI 的“制度围栏化”。那个“提示词工程和突击发布”的西部拓荒时代已经结束，取而代之的是监管审查、联邦复核和政府主导的访问权限。甚至 GitHub 上的趋势也反映了这一点——工具正向高保真、专业化的代理转移，旨在解决专业工作的“最后一公里”，而非简单的通用聊天机器人。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
