@@ -1,0 +1,126 @@
+{
+  "date": "2026-07-21",
+  "github_repos": [
+    {
+      "name": "RyanCodrai/py-turboquant",
+      "url": "https://github.com/RyanCodrai/py-turboquant",
+      "description": {
+        "en": "Python implementation of TurboQuant for vector search, providing 2-4 bit compression that allows online addition of vectors without rebuilding indices.",
+        "zh": "TurboQuant 向量搜索的 Python 实现，提供 2-4 位压缩，支持在无需重建索引的情况下在线添加向量。"
+      },
+      "stars": "1.2k",
+      "forks": "85"
+    },
+    {
+      "name": "TheTom/llama-cpp-turboquant",
+      "url": "https://github.com/TheTom/llama-cpp-turboquant",
+      "description": {
+        "en": "TurboQuant+ for llama.cpp, featuring asymmetric K/V compression and weight compression (TQ4_1S) to shrink models by 28-42% on disk.",
+        "zh": "针对 llama.cpp 的 TurboQuant+ 实现，采用非对称 K/V 压缩和权重压缩 (TQ4_1S)，可将磁盘模型体积减少 28-42%。"
+      },
+      "stars": "2.1k",
+      "forks": "140"
+    },
+    {
+      "name": "JetXu-LLM/llama-github",
+      "url": "https://github.com/JetXu-LLM/llama-github",
+      "description": {
+        "en": "An open-source Python library for LLM-powered context retrieval from GitHub snippets, issues, and repo info to assist AI agents.",
+        "zh": "一个开源 Python 库，通过 LLM 为 AI 智能体提供来自 GitHub 代码片段、Issue 和仓库信息的上下文检索。"
+      },
+      "stars": "890",
+      "forks": "62"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "China's Open-Source Surge: Moonshot AI's Kimi K3 and Alibaba's Qwen3.8 Rival US Frontier Models",
+        "zh": "中国开源浪潮：Moonshot Kimi K3 与 阿里巴巴 Qwen3.8 挑战美国前沿模型"
+      },
+      "url": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
+      "source": "The Verge",
+      "time": "2026-07-20",
+      "description": {
+        "en": "Moonshot released Kimi K3 (2.8T parameters) and Alibaba previewed Qwen3.8 (2.4T parameters), both taking an open-weight approach to compete with GPT-5.6 Sol and Claude Fable 5.",
+        "zh": "Moonshot 发布了 Kimi K3（2.8 万亿参数），阿里巴巴预览了 Qwen3.8（2.4 万亿参数），两者均采用开源/开放权重策略，旨在与 GPT-5.6 Sol 和 Claude Fable 5 竞争。"
+      },
+      "insight": {
+        "en": "The gap between proprietary and open weights is effectively closing. By releasing multi-trillion parameter models, China is attempting to 'commodity' frontier intelligence, making high-end reasoning accessible to all and breaking the exclusive moat of US labs. This positions open-source as the primary vehicle for global AI democratization.",
+        "zh": "闭源与开源权重的差距正在迅速弥合。通过发布万亿级参数模型，中国试图将前沿智能‘商品化’，让顶级推理能力普及化，从而打破美国实验室的独占护城河。这意味着开源正成为全球 AI 民主化的主要驱动力。"
+      }
+    },
+    {
+      "title": {
+        "en": "US Government Launches 'Gold Eagle' Program to Control Frontier Model Access",
+        "zh": "美国政府启动 'Gold Eagle' 计划，管控前沿模型访问权限"
+      },
+      "url": "https://qz.com/trump-white-house-ai-model-access-anthropic-openai-072026",
+      "source": "Quartz",
+      "time": "2026-07-20",
+      "description": {
+        "en": "The Trump administration is establishing a centralized clearinghouse to approve which entities can access the most powerful models from companies like OpenAI and Anthropic.",
+        "zh": "特朗普政府正在建立一个中心化审核机构，用于批准哪些实体可以访问来自 OpenAI 和 Anthropic 等公司的最强前沿模型。"
+      },
+      "insight": {
+        "en": "In direct contrast to China's open-weight push, the US is shifting toward a 'Strategic Asset' model. 'Gold Eagle' treats AI weights as nuclear-grade secrets, prioritizing national security over rapid innovation. This creates a bifurcation: an 'Open East' and a 'Regulated West'.",
+        "zh": "与中国的开源推进形成鲜明对比，美国正转向‘战略资产’模式。'Gold Eagle' 将 AI 权重视为核级秘密，将国家安全置于快速创新之上。这导致了全球 AI 格局的二分化：‘开放的东方’与‘受管制的西方’。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google's 'AI Fence' and the Rise of 'Google Zero'",
+        "zh": "谷歌的 ‘AI 围栏’ 与 ‘谷歌零’ 现象的兴起"
+      },
+      "url": "https://indianexpress.com/article/technology/tech-news-technology/google-is-building-an-ai-fence-around-the-internet-it-once-championed-10796607/",
+      "source": "Indian Express",
+      "time": "2026-07-20",
+      "description": {
+        "en": "Google is increasingly replacing search hyperlinks with conversational Gemini responses, leading to a precipitous drop in traffic to the open web, termed 'Google Zero'.",
+        "zh": "谷歌正越来越多地用 Gemini 的对话式回答取代搜索超链接，导致开放网络的流量骤降，这一现象被称作 ‘Google Zero’。"
+      },
+      "insight": {
+        "en": "Google is effectively building a recursive loop: using the open web to train the AI that then prevents users from ever visiting the web. This 'AI Fence' doesn't just disrupt publishers; it threatens the very data ecosystem Google depends on, potentially leading to a 'model collapse' if the web dies and only AI-generated content remains.",
+        "zh": "谷歌实际上在构建一个递归循环：利用开放网络训练 AI，随后用 AI 阻断用户访问网络。这种‘AI 围栏’不仅打击了内容发布者，更威胁到了谷歌自身赖以生存的数据生态——如果网络消亡且只剩下 AI 生成内容，可能会导致‘模型崩溃’。"
+      }
+    },
+    {
+      "title": {
+        "en": "Hugging Face Breach: AI Agent Swarm Exploits Sandbox Escalations",
+        "zh": "Hugging Face 遭入侵：AI 智能体集群利用沙箱权限提升进行攻击"
+      },
+      "url": "https://techcrunch.com/2026/07/20/hugging-face-confirms-breach-affected-internal-datasets-and-credentials-urges-users-to-take-action/",
+      "source": "TechCrunch",
+      "time": "2026-07-20",
+      "description": {
+        "en": "Hugging Face confirmed a breach of internal datasets and credentials, attributed to an external AI agent that used a swarm of sandboxes to escalate permissions.",
+        "zh": "Hugging Face 确认内部数据集和凭证遭到泄露，攻击被归因于一个外部 AI 智能体，该智能体利用一组沙箱集群实现了权限提升。"
+      },
+      "insight": {
+        "en": "The attack vector has shifted from human-written scripts to autonomous agent swarms. The use of sandboxes to probe and escalate permissions shows that agents are now capable of complex, multi-step security exploitation. This marks the transition from 'AI as a tool' to 'AI as a sophisticated adversary'.",
+        "zh": "攻击向量已从人类编写的脚本转向自主智能体集群。利用沙箱进行探测并提升权限表明，智能体现在能够执行复杂的多步安全漏洞利用。这标志着 AI 从‘工具’向‘高级对手’的转变。"
+      }
+    },
+    {
+      "title": {
+        "en": "Reasoning Models Found to be More Biased in Hiring Simulations",
+        "zh": "研究发现推理模型在招聘模拟中表现出更强的偏见"
+      },
+      "url": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
+      "source": "MIT Technology Review",
+      "time": "2026-07-20",
+      "description": {
+        "en": "Research shows that reasoning models like OpenAI o3 and DeepSeek R1 are more likely to form stereotypes in hiring than humans or standard LLMs.",
+        "zh": "研究表明，像 OpenAI o3 和 DeepSeek R1 这样的推理模型在招聘模拟中比人类或标准 LLM 更容易形成刻板印象。"
+      },
+      "insight": {
+        "en": "The drive for 'System 2' reasoning (deep chain-of-thought) may inadvertently amplify biases. Because reasoning models are optimized to find patterns and generalize from sparse data to maximize accuracy, they may 'over-reason' their way into stereotypes, treating social biases as logical patterns to be followed.",
+        "zh": "对‘系统 2’推理（深度思维链）的追求可能在无意中放大了偏见。由于推理模型被优化为从稀疏数据中寻找模式并进行泛化以最大化准确率，它们可能会在‘过度推理’中陷入刻板印象，将社会偏见误认为应当遵循的逻辑模式。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "July 21, 2026, reveals a stark paradox in the AI trajectory: the simultaneous pursuit of extreme openness and extreme control. China is aggressively commoditizing frontier intelligence via open-weight giants like Kimi K3 and Qwen3.8 to challenge US dominance. Conversely, the US is retreating into 'Gold Eagle' regulation and Google is erecting an 'AI Fence' around the web. This friction is creating a volatile environment where autonomous agents are becoming both the most powerful tools for productivity and the most dangerous weapons for breach (as seen in the Hugging Face attack). The underlying narrative is the transition from 'AI as a feature' to 'AI as a geopolitical and structural force' that reshapes how information is accessed, how models are distributed, and how security is defined.",
+    "zh": "2026 年 7 月 21 日揭示了 AI 发展轨迹中的一个尖锐悖论：极端的开放性与极端的管控在同时发生。中国正通过 Kimi K3 和 Qwen3.8 等开源巨头将前沿智能‘商品化’，以挑战美国的主导地位。相反，美国正退向 ‘Gold Eagle’ 的监管模式，而谷歌则在互联网周围竖起 ‘AI 围栏’。这种摩擦创造了一个动荡的环境，自主智能体既成为了最高效的生产力工具，也变成了最危险的攻击武器（如 Hugging Face 入侵事件所示）。底层叙事是 AI 正在从一个‘功能’演变为一种‘地缘政治和结构性力量’，它正在重塑信息的获取方式、模型的分布模式以及安全定义的边界。"
+  }
+}

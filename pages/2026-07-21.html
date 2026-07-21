@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - July 21, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 July 21, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/RyanCodrai/py-turboquant" class="card-title" target="_blank">RyanCodrai/py-turboquant</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 85 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Python implementation of TurboQuant for vector search, providing 2-4 bit compression that allows online addition of vectors without rebuilding indices.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">TurboQuant 向量搜索的 Python 实现，提供 2-4 位压缩，支持在无需重建索引的情况下在线添加向量。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/TheTom/llama-cpp-turboquant" class="card-title" target="_blank">TheTom/llama-cpp-turboquant</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 140 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">TurboQuant+ for llama.cpp, featuring asymmetric K/V compression and weight compression (TQ4_1S) to shrink models by 28-42% on disk.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">针对 llama.cpp 的 TurboQuant+ 实现，采用非对称 K/V 压缩和权重压缩 (TQ4_1S)，可将磁盘模型体积减少 28-42%。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/JetXu-LLM/llama-github" class="card-title" target="_blank">JetXu-LLM/llama-github</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 890 stars</div>
+                                <div class="meta-item"><span>🍴</span> 62 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An open-source Python library for LLM-powered context retrieval from GitHub snippets, issues, and repo info to assist AI agents.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个开源 Python 库，通过 LLM 为 AI 智能体提供来自 GitHub 代码片段、Issue 和仓库信息的上下文检索。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">2026-07-20</div>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen" class="card-title" target="_blank" data-lang="en">China's Open-Source Surge: Moonshot AI's Kimi K3 and Alibaba's Qwen3.8 Rival US Frontier Models</a>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen" class="card-title" target="_blank" data-lang="zh" style="display: none;">中国开源浪潮：Moonshot Kimi K3 与 阿里巴巴 Qwen3.8 挑战美国前沿模型</a>
+                    <p class="card-description" data-lang="en">Moonshot released Kimi K3 (2.8T parameters) and Alibaba previewed Qwen3.8 (2.4T parameters), both taking an open-weight approach to compete with GPT-5.6 Sol and Claude Fable 5.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Moonshot 发布了 Kimi K3（2.8 万亿参数），阿里巴巴预览了 Qwen3.8（2.4 万亿参数），两者均采用开源/开放权重策略，旨在与 GPT-5.6 Sol 和 Claude Fable 5 竞争。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Quartz</span>
+                    <div class="news-time">2026-07-20</div>
+                    <a href="https://qz.com/trump-white-house-ai-model-access-anthropic-openai-072026" class="card-title" target="_blank" data-lang="en">US Government Launches 'Gold Eagle' Program to Control Frontier Model Access</a>
+                    <a href="https://qz.com/trump-white-house-ai-model-access-anthropic-openai-072026" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国政府启动 'Gold Eagle' 计划，管控前沿模型访问权限</a>
+                    <p class="card-description" data-lang="en">The Trump administration is establishing a centralized clearinghouse to approve which entities can access the most powerful models from companies like OpenAI and Anthropic.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">特朗普政府正在建立一个中心化审核机构，用于批准哪些实体可以访问来自 OpenAI 和 Anthropic 等公司的最强前沿模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Indian Express</span>
+                    <div class="news-time">2026-07-20</div>
+                    <a href="https://indianexpress.com/article/technology/tech-news-technology/google-is-building-an-ai-fence-around-the-internet-it-once-championed-10796607/" class="card-title" target="_blank" data-lang="en">Google's 'AI Fence' and the Rise of 'Google Zero'</a>
+                    <a href="https://indianexpress.com/article/technology/tech-news-technology/google-is-building-an-ai-fence-around-the-internet-it-once-championed-10796607/" class="card-title" target="_blank" data-lang="zh" style="display: none;">谷歌的 ‘AI 围栏’ 与 ‘谷歌零’ 现象的兴起</a>
+                    <p class="card-description" data-lang="en">Google is increasingly replacing search hyperlinks with conversational Gemini responses, leading to a precipitous drop in traffic to the open web, termed 'Google Zero'.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌正越来越多地用 Gemini 的对话式回答取代搜索超链接，导致开放网络的流量骤降，这一现象被称作 ‘Google Zero’。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-07-20</div>
+                    <a href="https://techcrunch.com/2026/07/20/hugging-face-confirms-breach-affected-internal-datasets-and-credentials-urges-users-to-take-action/" class="card-title" target="_blank" data-lang="en">Hugging Face Breach: AI Agent Swarm Exploits Sandbox Escalations</a>
+                    <a href="https://techcrunch.com/2026/07/20/hugging-face-confirms-breach-affected-internal-datasets-and-credentials-urges-users-to-take-action/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Hugging Face 遭入侵：AI 智能体集群利用沙箱权限提升进行攻击</a>
+                    <p class="card-description" data-lang="en">Hugging Face confirmed a breach of internal datasets and credentials, attributed to an external AI agent that used a swarm of sandboxes to escalate permissions.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Hugging Face 确认内部数据集和凭证遭到泄露，攻击被归因于一个外部 AI 智能体，该智能体利用一组沙箱集群实现了权限提升。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MIT Technology Review</span>
+                    <div class="news-time">2026-07-20</div>
+                    <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/" class="card-title" target="_blank" data-lang="en">Reasoning Models Found to be More Biased in Hiring Simulations</a>
+                    <a href="https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/" class="card-title" target="_blank" data-lang="zh" style="display: none;">研究发现推理模型在招聘模拟中表现出更强的偏见</a>
+                    <p class="card-description" data-lang="en">Research shows that reasoning models like OpenAI o3 and DeepSeek R1 are more likely to form stereotypes in hiring than humans or standard LLMs.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">研究表明，像 OpenAI o3 和 DeepSeek R1 这样的推理模型在招聘模拟中比人类或标准 LLM 更容易形成刻板印象。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">July 21, 2026, reveals a stark paradox in the AI trajectory: the simultaneous pursuit of extreme openness and extreme control. China is aggressively commoditizing frontier intelligence via open-weight giants like Kimi K3 and Qwen3.8 to challenge US dominance. Conversely, the US is retreating into 'Gold Eagle' regulation and Google is erecting an 'AI Fence' around the web. This friction is creating a volatile environment where autonomous agents are becoming both the most powerful tools for productivity and the most dangerous weapons for breach (as seen in the Hugging Face attack). The underlying narrative is the transition from 'AI as a feature' to 'AI as a geopolitical and structural force' that reshapes how information is accessed, how models are distributed, and how security is defined.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026 年 7 月 21 日揭示了 AI 发展轨迹中的一个尖锐悖论：极端的开放性与极端的管控在同时发生。中国正通过 Kimi K3 和 Qwen3.8 等开源巨头将前沿智能‘商品化’，以挑战美国的主导地位。相反，美国正退向 ‘Gold Eagle’ 的监管模式，而谷歌则在互联网周围竖起 ‘AI 围栏’。这种摩擦创造了一个动荡的环境，自主智能体既成为了最高效的生产力工具，也变成了最危险的攻击武器（如 Hugging Face 入侵事件所示）。底层叙事是 AI 正在从一个‘功能’演变为一种‘地缘政治和结构性力量’，它正在重塑信息的获取方式、模型的分布模式以及安全定义的边界。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
