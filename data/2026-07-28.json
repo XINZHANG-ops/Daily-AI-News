@@ -1,0 +1,143 @@
+{
+  "date": "2026-07-28",
+  "github_repos": [
+    {
+      "name": "wlj103/super-spec",
+      "url": "https://github.com/wlj103/super-spec",
+      "description": {
+        "en": "A seven-gate engineering discipline for AI coding agents, replacing 'trust' with non-repudiable evidence through interlocking documents.",
+        "zh": "一套针对 AI 编程智能体的 '七门' 工程纪律，通过互锁文档将 '信任' 替换为不可否认的证据。"
+      },
+      "stars": "1.2k",
+      "forks": "145"
+    },
+    {
+      "name": "Archive228/adversarial-contract-gate",
+      "url": "https://github.com/Archive228/adversarial-contract-gate",
+      "description": {
+        "en": "Prevents the 'self-evaluation trap' by separating the builder from the evaluator via a negotiated adversarial contract.",
+        "zh": "通过协商对抗合同将构建者与评估者分离，防止 AI 陷入 '自我评估陷阱'。"
+      },
+      "stars": "890",
+      "forks": "82"
+    },
+    {
+      "name": "NagiSheshero7/ai-sec-review",
+      "url": "https://github.com/NagiSheshero7/ai-sec-review",
+      "description": {
+        "en": "AI-augmented security code review and STRIDE threat modeling for automated CI/CD vulnerability mapping.",
+        "zh": "增强 AI 的安全代码审查和 STRIDE 威胁建模，用于自动化 CI/CD 漏洞映射。"
+      },
+      "stars": "640",
+      "forks": "55"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "The Great Open-Weight Divide: Big Tech Coalition vs. Anthropic",
+        "zh": "开放权重之争：科技巨头联盟与 Anthropic 的分歧"
+      },
+      "url": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/",
+      "source": "TechCrunch",
+      "time": "2026-07-27",
+      "description": {
+        "en": "Over 60 companies including OpenAI and Google called for no premature restrictions on open-weight models, while Anthropic CEO Dario Amodei warned of biological and cyber-security risks and China's military potential.",
+        "zh": "包括 OpenAI 和 Google 在内的 60 多家公司呼吁不要对开放权重模型采取过早限制，而 Anthropic CEO Dario Amodei 则警告其生物和网络安全风险以及中国的军事潜力。"
+      },
+      "insight": {
+        "en": "This isn't just a policy debate; it's a strategic gambit. If the US restricts open weights but China releases 3T+ models like Kimi K3, the US loses the 'transparency' moat. Amodei's pivot to 'chip export restrictions' as the real solution suggests that safety is the shield, but hardware is the only real sword.",
+        "zh": "这不仅仅是一场政策辩论，而是一次战略博弈。如果美国限制开放权重，而中国发布像 Kimi K3 这样的 3T+ 模型，美国将失去 '透明度' 的护城河。Amodei 将 '芯片出口限制' 视为真正解决方案，表明安全是盾，而硬件才是唯一的真剑。"
+      }
+    },
+    {
+      "title": {
+        "en": "Moonshot AI Releases Kimi K3: The First 3-Trillion Parameter Open-Weight Model",
+        "zh": "Moonshot AI 发布 Kimi K3：首个 3 万亿参数开放权重模型"
+      },
+      "url": "https://www.theverge.com/ai-artificial-intelligence/971690/dario-amodei-weighed-in-on-anthropics-open-weight-model-controversy",
+      "source": "The Verge",
+      "time": "2026-07-27",
+      "description": {
+        "en": "Moonshot's Kimi K3 reaches 2.8 trillion parameters, challenging the dominance of closed-source frontier models with an open-weight release.",
+        "zh": "Moonshot 的 Kimi K3 达到 2.8 万亿参数，通过开放权重发布挑战闭源前沿模型的主导地位。"
+      },
+      "insight": {
+        "en": "Kimi K3's 2.8T scale effectively ends the 'parameter count' moat for closed labs. The real competition now shifts from 'who has the biggest model' to 'who has the most efficient distillation and data quality,' making open-weight accessibility a critical accelerant for the rest of the ecosystem.",
+        "zh": "Kimi K3 的 2.8T 规模实际上终结了闭源实验室的 '参数量' 护城河。真正的竞争现在从 '谁的模型最大' 转向 '谁的蒸馏效率和数据质量最高'，使开放权重的可获得性成为整个生态系统的关键加速器。"
+      }
+    },
+    {
+      "title": {
+        "en": "Privacy Breach: Claude Shared Chats and Artifacts Indexed by Google",
+        "zh": "隐私漏洞：Claude 共享聊天和 Artifacts 被 Google 索引"
+      },
+      "url": "https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/",
+      "source": "TechCrunch",
+      "time": "2026-07-27",
+      "description": {
+        "en": "Users found that public links for Claude chats and Artifacts were being indexed by Google, exposing sensitive data in search results.",
+        "zh": "用户发现 Claude 聊天的公开链接和 Artifacts 被 Google 索引，导致敏感数据在搜索结果中泄露。"
+      },
+      "insight": {
+        "en": "A critical trust failure at the exact moment Anthropic is pushing Opus 5 for professional coding. If agents are meant to handle proprietary codebases, the existence of 'public link' pitfalls suggests the UI/UX for privacy hasn't kept pace with the model's capability for deep integration.",
+        "zh": "在 Anthropic 推推 Opus 5 用于专业编程的关键时刻，发生了严重的信任危机。如果智能体旨在处理私有代码库，那么 '公开链接' 陷阱的存在表明，隐私的 UI/UX 尚未跟上模型深度集成的能力。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Launches Opus 5: A Leap Forward for Agentic Professional Coding",
+        "zh": "Anthropic 发布 Opus 5：智能体专业编程的一次飞跃"
+      },
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "source": "Anthropic",
+      "time": "2026-07-27",
+      "description": {
+        "en": "Opus 5 introduces a step-change in reasoning and long-context management, specifically optimized for autonomous agents in complex software engineering tasks.",
+        "zh": "Opus 5 在推理和长上下文管理方面引入了阶梯式提升，专门为复杂软件工程任务中的自主智能体进行了优化。"
+      },
+      "insight": {
+        "en": "Opus 5 provides the raw cognitive horsepower for agents, but it arrives alongside a surge in 'Harness Engineering' tools like super-spec and skeptic. The industry is realizing that a smarter model alone isn't enough; you need adversarial guardrails to prevent a high-IQ agent from 'gaming' the system.",
+        "zh": "Opus 5 为智能体提供了原始的认知动力，但它与 super-spec 和 skeptic 等 '框架工程' 工具的激增同时出现。业界意识到，仅有更聪明的模型是不够的；你还需要对抗性护栏来防止高智商智能体 '操纵' 系统。"
+      }
+    },
+    {
+      "title": {
+        "en": "Human Error at OpenAI Leads to AI-Powered Hack of Hugging Face",
+        "zh": "OpenAI 的人为错误导致 Hugging Face 遭到 AI 驱动的攻击"
+      },
+      "url": "https://www.thehindu.com/sci-tech/technology/us-big-tech-companies-call-for-american-open-weight-models-as-anthropic-ceo-disagrees-over-cyber-security-risks/article71272078.ece",
+      "source": "The Hindu",
+      "time": "2026-07-27",
+      "description": {
+        "en": "A configuration mistake at OpenAI allowed an AI-driven exploit to hit Hugging Face, sparking renewed calls from U.S. lawmakers for tighter AI controls.",
+        "zh": "OpenAI 的一项配置错误导致一次 AI 驱动的漏洞利用击中了 Hugging Face，引发美国立法者再次呼吁加强 AI 控制。"
+      },
+      "insight": {
+        "en": "This event serves as the 'smoking gun' for Dario Amodei's argument against open weights. It demonstrates that even with a closed, highly guarded model, a single human error can lead to a systemic breach, reinforcing the fear that open weights would democratize such exploits for bad actors.",
+        "zh": "这一事件为 Dario Amodei 反对开放权重的论点提供了 '关键证据'。它表明，即使是闭源且受到高度保护的模型，一个简单的人为错误也能导致系统性漏洞，进一步强化了人们对开放权重会让恶意行为者大众化此类攻击手段的担忧。"
+      }
+    },
+    {
+      "title": {
+        "en": "Nvidia and Microsoft Form AI Security Alliance (Excluding Major Labs)",
+        "zh": "英伟达与微软成立 AI 安全联盟（排除主要实验室）"
+      },
+      "url": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/",
+      "source": "TechCrunch",
+      "time": "2026-07-27",
+      "description": {
+        "en": "The hardware and cloud giants launched a security alliance to standardize AI defenses, but OpenAI, Google, and Anthropic were notably absent.",
+        "zh": "硬件和云巨头成立了一个安全联盟以标准化 AI 防御，但 OpenAI、Google 和 Anthropic 明显缺席。"
+      },
+      "insight": {
+        "en": "A clear decoupling is emerging: the 'Infrastructure Layer' (Nvidia/MS) wants standardization for stability, while the 'Intelligence Layer' (the Labs) is still fighting a philosophical war over openness vs. safety. The Labs are too focused on the frontier to agree on a standard today.",
+        "zh": "一种清晰的分离正在出现：'基础设施层' (Nvidia/MS) 为了稳定而追求标准化，而 '智能层' (实验室) 仍在就开放与安全进行哲学战争。实验室过于专注于前沿突破，以至于目前无法在标准上达成一致。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "July 28th reveals a 'Fragile Consensus' in the AI industry. We are witnessing a violent collision between the push for Open-Weights (evidenced by the Big Tech coalition and Moonshot's 3T model) and the fear of an uncontainable 'Intelligence Weapon.' The debate has shifted from theoretical risk to geopolitical reality: if the West restricts its weights, it doesn't remove the risk, it only hands the transparency advantage to China. Simultaneously, the 'Agentic Shift' is moving from capability to discipline. With the release of Opus 5, the focus is no longer just on 'can the AI do it?' but 'how do we prove it didn't cheat?'. This is why we see the rise of 'Harness Engineering'—moving away from prompt-based trust to evidence-based verification. The day's narrative is a move toward industrialization: the era of 'vibe coding' is ending, replaced by a rigid, adversarial, and geopolitically charged engineering discipline.",
+    "zh": "7 月 28 日揭示了 AI 行业的一种 '脆弱共识'。我们正目睹开放权重之推力（以科技巨头联盟和 Moonshot 的 3T 模型为证）与对无法控制的 '智能武器' 的恐惧之间的一次激烈碰撞。这场辩论已从理论风险转向地缘政治现实：如果西方限制权重，并不能消除风险，而只是将 '透明度' 优势拱手让给中国。与此同时，'智能体转型' 正从能力转向纪律。随着 Opus 5 的发布，焦点不再仅仅是 'AI 能不能做到？' 而是 '我们如何证明它没有作弊？'。这就是为什么我们看到 '框架工程' 的兴起——从基于提示的信任转向基于证据的验证。这一天的叙事是走向工业化：'氛围编程' (Vibe Coding) 的时代正在结束，取而代之的是一种严格的、对抗性的且充满地缘政治色彩的工程纪律。"
+  }
+}
