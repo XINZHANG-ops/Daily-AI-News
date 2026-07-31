@@ -1,0 +1,177 @@
+{
+  "date": "2026-07-31",
+  "github_repos": [
+    {
+      "name": "facebookresearch/segment-anything-2",
+      "url": "https://github.com/facebookresearch/segment-anything-2",
+      "description": {
+        "en": "A unified model for real-time promptable object segmentation in both images and videos.",
+        "zh": "一个统一的模型，可在图像和视频中实现实时可提示的对象分割。"
+      },
+      "stars": "15k",
+      "forks": "800"
+    },
+    {
+      "name": "pretzelai/pretzelai",
+      "url": "https://github.com/pretzelai/pretzelai",
+      "description": {
+        "en": "An open-source fork of Jupyter Lab with native AI code generation and RAG-based context.",
+        "zh": "Jupyter Lab 的开源分支，具有原生 AI 代码生成和基于 RAG 的上下文支持。"
+      },
+      "stars": "1.2k",
+      "forks": "150"
+    },
+    {
+      "name": "romansky/dom-to-semantic-markdown",
+      "url": "https://github.com/romansky/dom-to-semantic-markdown",
+      "description": {
+        "en": "Converts HTML DOM into semantic markdown optimized for LLM consumption to save tokens.",
+        "zh": "将 HTML DOM 转换为针对 LLM 优化的语义 Markdown，以节省 token 消耗。"
+      },
+      "stars": "800",
+      "forks": "100"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Meta releases Llama 3.1 405B: The First Open-Source Frontier Model",
+        "zh": "Meta 发布 Llama 3.1 405B：首个开源前沿模型"
+      },
+      "url": "https://tldr.tech/ai/2024-07-31",
+      "source": "TLDR AI",
+      "time": "2026-07-30",
+      "description": {
+        "en": "Meta launched Llama 3.1 405B, which rivals GPT-4o and Claude 3.5 Sonnet in key benchmarks, effectively commoditizing frontier-level intelligence.",
+        "zh": "Meta 发布了 Llama 3.1 405B，该模型在关键基准测试中可与 GPT-4o 和 Claude 3.5 Sonnet 竞争，实际上使前沿级别的智能成为了商品。"
+      },
+      "insight": {
+        "en": "This breaks the 'frontier model' monopoly held by closed-source labs. By providing a 405B model, Meta forces competitors to differentiate via ecosystem, UX, or specialized agentic capabilities rather than raw reasoning power.",
+        "zh": "这打破了闭源实验室对“前沿模型”的垄断。通过提供 405B 模型，Meta 迫使竞争对手必须通过生态系统、用户体验或专业的 Agent 能力来寻找差异化，而非仅仅依赖原始推理能力。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Tests SearchGPT Prototype",
+        "zh": "OpenAI 测试 SearchGPT 原型"
+      },
+      "url": "https://tldr.tech/ai/2024-07-31",
+      "source": "TLDR AI",
+      "time": "2026-07-30",
+      "description": {
+        "en": "OpenAI is testing a real-time AI-powered search engine to compete directly with Google and Perplexity.",
+        "zh": "OpenAI 正在测试一个实时 AI 驱动的搜索引擎，以直接与 Google 和 Perplexity 竞争。"
+      },
+      "insight": {
+        "en": "OpenAI is moving from 'answer engine' to 'search engine' with real-time indexing. Compared to Perplexity, which acts as a wrapper, SearchGPT aims for deeper integration with the web, signaling a shift toward an 'AI-first' internet where browsing is replaced by synthesized knowledge retrieval.",
+        "zh": "OpenAI 正在从“答案引擎”向具有实时索引的“搜索引擎”转型。与作为包装器的 Perplexity 相比，SearchGPT 旨在实现更深层的 Web 集成，标志着向“AI 原生”互联网的转变，其中传统的浏览将被合成知识检索所取代。"
+      }
+    },
+    {
+      "title": {
+        "en": "GPT-4o Alpha Supports 64k Output Tokens",
+        "zh": "GPT-4o Alpha 支持 64k 输出 Token"
+      },
+      "url": "https://tldr.tech/ai/2024-07-31",
+      "source": "TLDR AI",
+      "time": "2026-07-30",
+      "description": {
+        "en": "An alpha version of GPT-4o can now generate up to 64k output tokens, allowing for significantly longer coherent responses.",
+        "zh": "GPT-4o 的 alpha 版本现在可以生成高达 64k 的输出 token，从而允许显著更长的连贯响应。"
+      },
+      "insight": {
+        "en": "Surpassing previous output limits, this enables the generation of entire technical manuals or complex codebase refactors in a single pass. This directly reduces 'fragmentation risk' and allows agents to produce more comprehensive, self-consistent architectural designs.",
+        "zh": "突破了之前的输出限制，这使得单次生成整个技术手册或复杂的代码库重构成为可能。这直接降低了“碎片化风险”，并允许 Agent 产出更完整且自洽的架构设计。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Releases SAM 2 for Real-Time Video Segmentation",
+        "zh": "Meta 发布用于实时视频分割的 SAM 2"
+      },
+      "url": "https://tldr.tech/ai/2024-07-30",
+      "source": "TLDR AI",
+      "time": "2026-07-30",
+      "description": {
+        "en": "SAM 2 enables real-time promptable object segmentation across both images and videos with high temporal coherence.",
+        "zh": "SAM 2 实现了在图像和视频中具有高时间相干性的实时可提示对象分割。"
+      },
+      "insight": {
+        "en": "While SAM 1 focused on static images, SAM 2 brings temporal coherence to the process. This is a critical building block for high-fidelity video editing and robotic spatial awareness, mirroring the trend of moving from 'snapshot' AI to 'continuous stream' AI.",
+        "zh": "SAM 1 专注于静态图像，而 SAM 2 为该过程带来了时间相干性。这是高保真视频编辑和机器人空间感知能力的关键基石，反映了 AI 从“快照式”向“连续流式”演进的趋势。"
+      }
+    },
+    {
+      "title": {
+        "en": "Perplexity AI Introduces Publisher Revenue Sharing Ads",
+        "zh": "Perplexity AI 引入发布商收入分成广告"
+      },
+      "url": "https://tldr.tech/ai/2024-07-31",
+      "source": "TLDR AI",
+      "time": "2026-07-31",
+      "description": {
+        "en": "Perplexity will start selling ads in search results and share a portion of the revenue with the publishers of the sourced content.",
+        "zh": "Perplexity 将在搜索结果中销售广告，并与来源内容的发布商分享部分收入。"
+      },
+      "insight": {
+        "en": "This is the first major attempt to solve the 'AI cannibalization' problem. By sharing revenue, Perplexity is trying to build a sustainable symbiotic relationship with the web's data sources, a model that SearchGPT will either have to adopt or fight.",
+        "zh": "这是解决“AI 吞噬流量”问题的首次重大尝试。通过共享收入，Perplexity 试图与 Web 数据源建立可持续的共生关系，这也是 SearchGPT 必须面对的抉择：要么采纳，要么对抗。"
+      }
+    },
+    {
+      "title": {
+        "en": "Apple Intelligence Pre-trained on Google Chips",
+        "zh": "Apple Intelligence 在 Google 芯片上进行预训练"
+      },
+      "url": "https://tldr.tech/ai/2024-07-30",
+      "source": "TLDR AI",
+      "time": "2026-07-30",
+      "description": {
+        "en": "Reports indicate Apple's AI models were pre-trained using Google's custom AI hardware to meet deployment timelines.",
+        "zh": "报告指出，Apple 的 AI 模型使用了 Google 的定制 AI 硬件进行预训练，以满足部署时间表。"
+      },
+      "insight": {
+        "en": "A surprising 'frenemy' relationship: Apple uses Google's hardware to build the AI that aims to displace Google Search on the iPhone. This highlights the extreme shortage of H100s/B200s, where even the world's most valuable company must lean on a competitor's silicon.",
+        "zh": "一段令人惊讶的“亦敌亦友”关系：Apple 使用 Google 的硬件来构建旨在取代 iPhone 上 Google 搜索的 AI。这突显了 H100/B200 的极端短缺，即使是全球市值最高的公司，也不得不依赖竞争对手的芯片。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic Faces Backlash Over Aggressive Scraping",
+        "zh": "Anthropic 因激进抓取而面临反弹"
+      },
+      "url": "https://tldr.tech/ai/2024-07-30",
+      "source": "TLDR AI",
+      "time": "2026-07-30",
+      "description": {
+        "en": "Site owners are reporting unauthorized and aggressive web scraping by Anthropic's ClaudeBot.",
+        "zh": "网站所有者报告称，Anthropic 的 ClaudeBot 正在进行未经授权且激进的网页抓取。"
+      },
+      "insight": {
+        "en": "Contrasts with the 'symbiotic' approach of Perplexity. This tension underscores the growing legal risk as labs hit the 'data wall', potentially leading to a fragmented web where 'AI-free' zones become a premium.",
+        "zh": "与 Perplexity 的“共生”方法形成鲜明对比。这种紧张局势凸显了 AI 实验室在触及“数据墙”时面临的法律风险，可能导致 Web 碎片化，使“AI 禁区”成为一种高端特权。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Releases Gemma 2 2B for Edge Devices",
+        "zh": "Google 为边缘设备发布 Gemma 2 2B"
+      },
+      "url": "https://tldr.tech/ai/2024-07-31",
+      "source": "TLDR AI",
+      "time": "2026-07-31",
+      "description": {
+        "en": "Gemma 2 2B is a lightweight model optimized for on-device execution, requiring only ~1GB of memory.",
+        "zh": "Gemma 2 2B 是一个针对设备端执行优化的轻量级模型，仅需约 1GB 内存。"
+      },
+      "insight": {
+        "en": "A direct move to capture the 'on-device' market, competing with Apple's local models. Google is betting that the next stage of AI is high-speed, privacy-preserving local execution.",
+        "zh": "这是抢占“设备端”市场的直接举措，旨在与 Apple 的本地模型竞争。Google 押注 AI 的下一个阶段是高速、隐私且本地化的执行。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "July 30-31 marks a pivotal shift from 'Model Hegemony' to 'Infrastructure Pragmatism.' The release of Llama 3.1 405B signals that raw reasoning power is becoming a commodity, shifting the battleground toward how that power is applied—whether via SearchGPT's real-time indexing, Perplexity's publisher revenue sharing, or Apple's tactical hardware alliances. We are seeing the 'Open Frontier' emerge, where high-tier intelligence is no longer locked behind a few APIs, but integrated into local hardware (Gemma 2 2B) and complex video streams (SAM 2). The real story of the day is the tension between the 'grab-everything' scraping mentality (Anthropic) and the 'sustainable ecosystem' model (Perplexity), a conflict that will define the legal and economic framework of the agentic web in 2026.",
+    "zh": "7 月 30-31 日标志着从“模型霸权”向“基础设施实用主义”的关键转变。Llama 3.1 405B 的发布表明，原始推理能力正成为一种商品，竞争战场正转向如何应用这种能力——无论是通过 SearchGPT 的实时索引、Perplexity 的发布商收入分成，还是 Apple 的战术性硬件联盟。我们正看到“开放前沿”的出现，高阶智能不再被锁定在少数几个 API 之后，而是被集成到本地硬件（Gemma 2 2B）和复杂的视频流（SAM 2）中。这一天真正的故事在于“抢夺一切”的抓取心态（Anthropic）与“可持续生态”模型（Perplexity）之间的张力，这种冲突将定义 2026 年 Agentic Web 的法律和经济框架。"
+  }
+}
