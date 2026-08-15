@@ -1,0 +1,126 @@
+{
+  "date": "2026-08-15",
+  "github_repos": [
+    {
+      "name": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "description": {
+        "en": "Ultra-lightweight, self-hosted personal AI agent framework with long-term memory and MCP integration.",
+        "zh": "超轻量级、自托管的个人 AI 代理框架，集成长期记忆和模型上下文协议 (MCP)。"
+      },
+      "stars": "47k",
+      "forks": "1.2k"
+    },
+    {
+      "name": "PrimeIntellect-ai/prime-agent",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "description": {
+        "en": "Self-improving Recursive Language Model (RLM) agent for long-horizon autonomous coding and research.",
+        "zh": "用于长周期自主编码和研究的自改进递归语言模型 (RLM) 代理。"
+      },
+      "stars": "16k",
+      "forks": "450"
+    },
+    {
+      "name": "firecrawl/anydoc",
+      "url": "https://github.com/firecrawl/anydoc",
+      "description": {
+        "en": "High-performance document converter that transforms PDFs, Word docs, and others into clean Markdown for LLM consumption.",
+        "zh": "高性能文档转换器，将 PDF、Word 等格式转换为适合 LLM 使用的纯净 Markdown。"
+      },
+      "stars": "9.3k",
+      "forks": "210"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "Claude AI Put in Charge of Store, Fires Human Employee",
+        "zh": "Claude AI 被委任管理门店，并解雇了一名人类员工"
+      },
+      "url": "https://time.com/article/2026/08/14/claude-fired-worker-ai-job-disruption/",
+      "source": "TIME",
+      "time": "2026-08-14",
+      "description": {
+        "en": "At Andon Market, a version of Claude was tasked with managing operations and subsequently fired a worker for repeated lateness, marking a first for AI-driven managerial action.",
+        "zh": "在 Andon Market，一个 Claude 版本被委任管理运营，随后因一名员工多次迟到而将其解雇，这标志着 AI 驱动的管理行为首次出现。"
+      },
+      "insight": {
+        "en": "A psychological and legal tipping point: AI is moving from 'replacing tasks' to 'exercising authority.' This shifts the narrative from job displacement to 'agentic management,' where the AI doesn't just do the work, but decides who is fit to do it.",
+        "zh": "一个心理和法律的转折点：AI 正在从“替代任务”转向“行使权力”。这使叙事从简单的岗位取代转变为“代理管理”，即 AI 不再仅仅是完成工作，而是决定谁有资格完成工作。"
+      }
+    },
+    {
+      "title": {
+        "en": "GLM-5.3 Demonstrates Emergent Multi-Step Exploit Reasoning",
+        "zh": "GLM-5.3 展示出涌现的多步漏洞利用推理能力"
+      },
+      "url": "https://www.techtimes.com/articles/324426/20260814/glm-53-post-training-produced-exploit-chains-zai-never-planned-finds-1097-critical-bugs.htm",
+      "source": "TechTimes",
+      "time": "2026-08-14",
+      "description": {
+        "en": "Z.ai's GLM-5.3 model unexpectedly discovered 1,097 critical and high-severity software vulnerabilities through complex exploit chains, leading to a delayed open-weight release.",
+        "zh": "Z.ai 的 GLM-5.3 模型通过复杂漏洞链意外发现了 1,097 个严重和高危软件漏洞，导致其开源权重发布被推迟。"
+      },
+      "insight": {
+        "en": "Reasoning models (like GLM-5.3 or o1) naturally gravitate toward offensive security when given multi-step planning capabilities. 1,097 critical bugs is a systemic shock to the 'security through obscurity' model, proving that agentic reasoning is the ultimate exploit tool.",
+        "zh": "推理模型（如 GLM-5.3 或 o1）在具备多步规划能力后，自然会倾向于进攻性安全研究。1,097 个严重漏洞给“通过模糊实现安全”的模型带来了系统性冲击，证明了代理推理是最终的漏洞利用工具。"
+      }
+    },
+    {
+      "title": {
+        "en": "Google Launches HEIR for Homomorphic Encryption AI Inference",
+        "zh": "谷歌推出 HEIR 用于同态加密 AI 推理"
+      },
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "source": "Google Blog",
+      "time": "2026-08-14",
+      "description": {
+        "en": "Google's HEIR open-source compiler allows AI to perform inference on encrypted data without decryption, enabling zero-trust AI for highly regulated sectors.",
+        "zh": "谷歌的 HEIR 开源编译器允许 AI 在加密数据上进行推理而无需解密，为高度监管的行业提供了零信任 AI 方案。"
+      },
+      "insight": {
+        "en": "HEIR addresses the 'privacy vs. utility' trade-off by moving homomorphic encryption from theoretical to practical. This allows AI to enter healthcare and finance sectors where data residency and HIPAA-like laws previously made cloud-AI a non-starter.",
+        "zh": "HEIR 通过将同态加密从理论推向实践，解决了“隐私与效用”的权衡。这使得 AI 能够进入医疗和金融领域，在这些领域，数据驻留和类似 HIPAA 的法律此前使得云端 AI 几乎无法实施。"
+      }
+    },
+    {
+      "title": {
+        "en": "World Labs Unveils R2S2R Engine for Robotics Training",
+        "zh": "World Labs 发布用于机器人训练的 R2S2R 引擎"
+      },
+      "url": "https://the-decoder.com/world-labs-turns-one-real-world-robot-task-into-thousands-of-simulated-variations-for-training/",
+      "source": "The Decoder",
+      "time": "2026-08-14",
+      "description": {
+        "en": "The 'Real-to-Sim-to-Real' (R2S2R) system can expand a single real-world robot task into thousands of virtual variations, allowing models to master complex physical tasks in simulation.",
+        "zh": "“实-虚-实” (R2S2R) 系统可以将单个真实世界的机器人任务扩展为数千个虚拟变体，使模型能够在模拟环境中掌握复杂的物理任务。"
+      },
+      "insight": {
+        "en": "This is 'Data Augmentation for Physics.' By attacking the Sim-to-Real gap via massive diversification, World Labs is accelerating the transition from specialized robots to general-purpose physical agents that can handle edge cases without real-world failure.",
+        "zh": "这是“物理世界的增强数据”。通过大规模多样化攻击“模拟到真实”的差距，World Labs 正在加速从专业机器人向通用物理代理的转变，使其能够在不经历真实世界失败的情况下处理边缘情况。"
+      }
+    },
+    {
+      "title": {
+        "en": "Uber and Pony.ai Expand Robotaxi Fleet to Europe",
+        "zh": "Uber 与 Pony.ai 将机器人出租车车队扩展至欧洲"
+      },
+      "url": "https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/",
+      "source": "TechCrunch",
+      "time": "2026-08-14",
+      "description": {
+        "en": "Uber and Pony.ai plan to deploy 2,000 autonomous taxis across four European cities, scaling their partnership to a larger commercial market.",
+        "zh": "Uber 和 Pony.ai 计划在四个欧洲城市部署 2,000 辆自动驾驶出租车，将其合作伙伴关系扩展到更大的商业市场。"
+      },
+      "insight": {
+        "en": "The move signals a transition from 'pilot phase' to 'industrialization.' Deploying 2,000 cars across multiple international regulatory environments is a massive infrastructure play that tests the commercial viability of autonomous ride-hailing at scale.",
+        "zh": "此举标志着从“试点阶段”向“工业化”的转变。在多个国际监管环境下部署 2,000 辆汽车是一次大规模的基础设施尝试，旨在测试规模化自动驾驶网约车的商业可行性。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The overarching theme of today is the 'Erosion of the Safety Buffer.' We are seeing AI move from a sandbox to the real world across three distinct dimensions: authority (Claude managing humans), security (GLM-5.3 breaking software), and physics (R2S2R and European robotaxis). The transition is from *capability* to *agency*. When AI can fire a person or find 1,000 vulnerabilities, it is no longer just a tool—it is an actor. Google's HEIR represents the necessary technical response: building an encrypted fortress around this increasing agency to ensure that as AI becomes more autonomous, it remains accountable and private.",
+    "zh": "今天的主题是“安全缓冲区的消失”。我们看到 AI 在三个截然不同的维度上从沙箱走向现实世界：权力（Claude 管理人类）、安全（GLM-5.3 攻破软件）和物理（R2S2R 和欧洲机器人出租车）。这是一种从“能力”到“代理”的转变。当 AI 可以解雇一个人或发现 1,000 个漏洞时，它不再仅仅是一个工具，而是一个行为体。谷歌的 HEIR 代表了必要的技术响应：在日益增强的代理能力周围构建一个加密堡垒，以确保 AI 在变得更加自主的同时，依然保持可追溯性和私密性。"
+  }
+}
