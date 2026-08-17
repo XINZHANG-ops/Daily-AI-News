@@ -1,0 +1,126 @@
+{
+  "date": "2026-08-17",
+  "github_repos": [
+    {
+      "name": "jerber/arc-code",
+      "url": "https://github.com/jerber/arc-code",
+      "description": {
+        "en": "A general coding harness used to achieve high scores (96.2%+) on the ARC-AGI-3 benchmark using Claude Opus 5 via test-time meta-learning.",
+        "zh": "一个通用编程框架，通过测试时元学习 (test-time meta-learning) 使用 Claude Opus 5 在 ARC-AGI-3 基准测试中实现了 96.2% 以上的高分。"
+      },
+      "stars": "116",
+      "forks": "12"
+    },
+    {
+      "name": "linrongc/kdd26_unidot",
+      "url": "https://github.com/linrongc/kdd26_unidot",
+      "description": {
+        "en": "A unified network for sequence modeling and feature interaction in large-scale recommendation, runner-up for KDD Cup 2026.",
+        "zh": "一个用于大规模推荐中序列建模和特征交互的统一网络，KDD Cup 2026 的亚军方案。"
+      },
+      "stars": "45",
+      "forks": "8"
+    },
+    {
+      "name": "Rlealbarili/governed-rag-mcp",
+      "url": "https://github.com/Rlealbarili/governed-rag-mcp",
+      "description": {
+        "en": "A 'fail-closed' hybrid RAG implementation using the Model Context Protocol (MCP) with built-in ACLs and strict grounding.",
+        "zh": "一个使用模型上下文协议 (MCP) 实现的 '故障关闭' 混合 RAG 实现，内置 ACL 访问控制和严格的接地验证。"
+      },
+      "stars": "28",
+      "forks": "5"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "U.S. to tell partners they must pick sides in AI race with China",
+        "zh": "美国将告知合作伙伴必须在与中国的 AI 竞赛中选边站队"
+      },
+      "url": "https://www.thehindu.com/sci-tech/technology/us-to-tell-partners-they-must-pick-sides-in-ai-race-with-china/article71354765.ece",
+      "source": "The Hindu",
+      "time": "2026-08-17",
+      "description": {
+        "en": "The U.S. State Department is preparing to tell partners they must choose between the U.S.-led Pax Silica initiative and China's rival AI cooperation organization.",
+        "zh": "美国国务院正准备告知合作伙伴，他们必须在由美国领导的 Pax Silica 计划与中国的竞争性 AI 合作组织之间做出选择。"
+      },
+      "insight": {
+        "en": "This isn't just about chips; it's about creating a digital 'Iron Curtain' for AI standards. By forcing partners into 'Pax Silica' or the Chinese equivalent, the US is attempting to lock in a global AI ecosystem that is fundamentally incompatible with China's, treating AI architecture as a sovereign border.",
+        "zh": "这不再仅仅关乎芯片，而是在尝试建立 AI 标准的数字 '铁幕'。通过强迫合作伙伴在 'Pax Silica' 或中国的对等方案中选边站队，美国试图锁定一个与中国根本不兼容的全球 AI 生态系统，将 AI 架构视为一种主权边界。"
+      }
+    },
+    {
+      "title": {
+        "en": "America is losing the open-weight AI race",
+        "zh": "美国正在输掉开源权重 AI 竞赛"
+      },
+      "url": "https://www.wionews.com/world/america-is-losing-the-open-weight-ai-race-and-meta-and-nvidia-just-admitted-it-1786906937330",
+      "source": "WION",
+      "time": "2026-08-17",
+      "description": {
+        "en": "While Meta and Nvidia release 30B models, Chinese labs like Moonshot (Kimi K3, 2.8T) and Alibaba are leading in open-weight scale.",
+        "zh": "虽然 Meta 和 Nvidia 发布了 30B 参数模型，但 Moonshot (Kimi K3, 2.8T) 和阿里巴巴等中国实验室在开源权重规模上处于领先地位。"
+      },
+      "insight": {
+        "en": "Meta and Nvidia's recent moves are tactical 'catch-up' efforts, but Moonshot's Kimi K3 is a strategic play. The massive scale gap suggests that while the US leads in proprietary 'frontier' models, China is weaponizing open-weight accessibility to dominate the global developer base.",
+        "zh": "Meta 和 Nvidia 最近的举措是战术性的 '追赶'，但 Moonshot 的 Kimi K3 是战略性的。巨大的规模差距表明，虽然美国在封闭式 '前沿' 模型中领先，但中国正将开源权重的可访问性武器化，以主导全球开发者群体。"
+      }
+    },
+    {
+      "title": {
+        "en": "ChatGPT’s Computer History tracks your clicks and keystrokes",
+        "zh": "ChatGPT 的 '计算机历史' 功能记录您的点击和击键"
+      },
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
+      "source": "The Verge",
+      "time": "2026-08-16",
+      "description": {
+        "en": "OpenAI launched a macOS feature that tracks user events (clicks/keystrokes) to build an activity timeline for better AI automation.",
+        "zh": "OpenAI 为 macOS 推出了一项新功能，通过记录用户事件（点击/击键）来构建活动时间线，以实现更好的 AI 自动化。"
+      },
+      "insight": {
+        "en": "This is the spiritual successor to Windows Recall but stealthier. By tracking 'events' rather than pixels, OpenAI is moving from a 'generative' tool to an 'observational' OS layer, essentially turning the ChatGPT app into a persistent telemetry agent that lives inside your workflow.",
+        "zh": "这是 Windows Recall 的精神续作，但更加隐蔽。通过记录 '事件' 而非像素，OpenAI 正在从 '生成式' 工具转向 '观测式' 操作系统层，实质上将 ChatGPT 应用变成了一个潜伏在工作流中的持久遥测代理。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic to add invisible AI watermark to Claude text",
+        "zh": "Anthropic 将为 Claude 文本添加不可见 AI 水印"
+      },
+      "url": "https://www.indiatoday.in/technology/news/story/anthropic-says-it-will-add-invisible-ai-watermark-to-show-when-you-use-claude-but-it-is-okay-2972273-2026-08-16",
+      "source": "India Today",
+      "time": "2026-08-16",
+      "description": {
+        "en": "Anthropic will implement invisible watermarks on Claude's output to comply with the EU AI Act and help detect AI-generated content.",
+        "zh": "Anthropic 将在 Claude 的输出中实施不可见水印，以符合欧盟 AI 法案的要求并帮助检测 AI 生成的内容。"
+      },
+      "insight": {
+        "en": "A reactive move to the EU AI Act. The intent is to shift the burden of proof from the regulator to the AI provider. While 'invisible' watermarks can often be stripped, this creates a legal 'provenance' for tokens that is now a prerequisite for operating in European markets.",
+        "zh": "这是对欧盟 AI 法案的反应性举措。其目的是将举证责任从监管机构转移到 AI 提供商身上。虽然 '不可见' 水印通常可以被清除，但这为 token 创建了一种法律上的 '出处'，而这现在是进入欧洲市场的前提条件。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI reportedly disbanded its preparedness team",
+        "zh": "据报道，OpenAI 解散了其准备团队 (Preparedness Team)"
+      },
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
+      "source": "The Verge",
+      "time": "2026-08-16",
+      "description": {
+        "en": "OpenAI has reportedly disbanded its central safety preparedness team as it pivots toward a massive IPO and redistributes safety into area-specific teams.",
+        "zh": "据报道，OpenAI 在转向大规模 IPO 之际解散了其中央安全准备团队，并将安全职能重新分配到具体的领域团队中。"
+      },
+      "insight": {
+        "en": "The disbanding of the preparedness team is a clear signal: the era of 'existential risk' debate is being replaced by 'market risk' management. As OpenAI pivots toward a multi-hundred-billion dollar valuation, safety is being decentralized to avoid the 'bottleneck' of a central safety veto on product shipping.",
+        "zh": "准备团队的解散释放了一个清晰信号：'生存风险' 辩论的时代正在被 '市场风险' 管理所取代。随着 OpenAI 转向数千亿美元的估值，安全职能被去中心化，以避免中央安全否决权成为产品交付的 '瓶颈'。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The overarching narrative of today is the transition from 'AI Exploration' to 'AI Infrastructure.' Geopolitically, the U.S. is moving to formalize AI alliances, treating model weights and hardware supply chains as strategic assets similar to nuclear secrets. Technically, we see a shift toward 'OS-level' AI—where ChatGPT tracks your clicks and MCP governs your data—turning the LLM into a pervasive operating system rather than just a chat interface. Corporately, the 'Safety' phase is being subsumed by the 'IPO' phase, with OpenAI stripping back central safety guardrails to accelerate commercial scaling. In short, AI is becoming an institutionalized power structure, both in government and in the boardroom.",
+    "zh": "今天的核心叙事是 AI 从 '探索期' 向 '基础设施期' 的转型。在地缘政治上，美国正致力于将 AI 联盟正式化，将模型权重和硬件供应链视为类似于核秘密的战略资产。在技术上，我们看到 AI 向 '操作系统级' 演进——ChatGPT 记录点击，MCP 管理数据——LLM 正在从一个简单的聊天界面变成一个无处不在的操作系统。在公司治理上，'安全' 阶段正被 'IPO' 阶段所取代，OpenAI 通过削弱中央安全护栏来加速商业规模化。简而言之， AI 正在成为一种制度化的权力结构，无论是在政府还是在董事会中。"
+  }
+}
