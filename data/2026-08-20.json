@@ -1,0 +1,143 @@
+{
+  "date": "2026-08-20",
+  "github_repos": [
+    {
+      "name": "gusye1234/nano-graphrag",
+      "url": "https://github.com/gusye1234/nano-graphrag",
+      "description": {
+        "en": "A minimalist, portable implementation of GraphRAG that condenses the complex algorithm into under 1,000 lines of Python for better readability and hacking.",
+        "zh": "一个极简且可移植的 GraphRAG 实现，将复杂的算法压缩在 1000 行 Python 代码内，旨在提高可读性和可修改性。"
+      },
+      "stars": "1.2k",
+      "forks": "145"
+    },
+    {
+      "name": "tile-ai/tilelang",
+      "url": "https://github.com/tile-ai/tilelang",
+      "description": {
+        "en": "A domain-specific language (DSL) for developing high-performance GPU/CPU kernels, simplifying the creation of optimized GEMM and FlashAttention implementations.",
+        "zh": "一种用于开发高性能 GPU/CPU 内核的领域特定语言 (DSL)，简化了优化 GEMM 和 FlashAttention 实现的创建过程。"
+      },
+      "stars": "7.1k",
+      "forks": "320"
+    },
+    {
+      "name": "bytedance/Protenix",
+      "url": "https://github.com/bytedance/Protenix",
+      "description": {
+        "en": "An open-source system for high-accuracy biomolecular structure prediction, specifically designed for proteins and complex molecular interactions.",
+        "zh": "一个用于高精度生物分子结构预测的开源系统，专门设计用于蛋白质和复杂分子相互作用。"
+      },
+      "stars": "1.9k",
+      "forks": "210"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "MIT and Tsinghua unveil GeoPT for Physical World Simulation",
+        "zh": "MIT 和清华大学发布 GeoPT 用于物理世界模拟"
+      },
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/mit-researchers-built-an-ai-that-understands-physics-well-enough-to-simulate-how-cars-planes-and-boats-react-to-wind-and-water/articleshow/133367256.cms",
+      "source": "Times of India",
+      "time": "2026-08-19",
+      "description": {
+        "en": "Researchers developed GeoPT, an AI that understands physics and can simulate how 3D objects react to wind and water, using 60% less data than previous models.",
+        "zh": "研究人员开发了 GeoPT，一种能够理解物理学并模拟 3D 物体在风水环境下反应的 AI，且比之前的模型减少了 60% 的数据需求。"
+      },
+      "insight": {
+        "en": "This marks a shift from 'generative' AI to 'simulative' AI. While LLMs predict tokens, GeoPT predicts physical reactions. It connects to the broader trend of 'Physical AI' seen in SimScale and RocketSmith, suggesting AI is finally mastering the laws of the real world.",
+        "zh": "这标志着 AI 从“生成式”向“模拟式”的转变。LLM 预测 Token，而 GeoPT 预测物理反应。它与 SimScale 和 RocketSmith 等物理 AI 趋势相呼应，表明 AI 终于在掌握现实世界的物理规律。"
+      }
+    },
+    {
+      "title": {
+        "en": "SimScale Releases Agentic Simulation Tool for Engineers",
+        "zh": "SimScale 为工程师发布智能体模拟工具"
+      },
+      "url": "https://www.designworldonline.com/simscale-releases-simulation-ai-agent-to-engineering-users/",
+      "source": "Design World",
+      "time": "2026-08-19",
+      "description": {
+        "en": "SimScale launched an AI agent that automates CAD geometry cleanup and simulation setup, reducing iteration times from weekly to daily.",
+        "zh": "SimScale 推出了一款 AI 智能体，可自动执行 CAD 几何清理和模拟设置，将迭代周期从每周一次缩短至每天多次。"
+      },
+      "insight": {
+        "en": "This is the 'Claude Code' moment for mechanical engineering. By automating the 'drudgery' of CAD cleanup, the AI agent allows engineers to focus on design rather than setup, mirroring how AI coding agents shift focus from syntax to architecture.",
+        "zh": "这是机械工程领域的 'Claude Code' 时刻。通过自动执行 CAD 清理等繁琐工作，AI 智能体让工程师能将精力从设置转向设计，就像 AI 编程助手将焦点从语法转移到架构一样。"
+      }
+    },
+    {
+      "title": {
+        "en": "CMU's RocketSmith Slashes Rocket Design Time",
+        "zh": "CMU 的 RocketSmith 大幅缩短火箭设计时间"
+      },
+      "url": "https://engineering.cmu.edu/news-events/news/2026/08/19-rocketsmith.html",
+      "source": "CMU Engineering",
+      "time": "2026-08-19",
+      "description": {
+        "en": "RocketSmith integrates design software and flight simulations into an AI-driven workflow, reducing design cycles from months to days.",
+        "zh": "RocketSmith 将设计软件和飞行模拟整合到 AI 驱动的工作流中，将设计周期从数月缩短至数日。"
+      },
+      "insight": {
+        "en": "Combined with GeoPT, this shows a vertical integration of Physical AI. We're seeing the emergence of 'Expert Systems 2.0' where AI doesn't just provide information but executes a full engineering loop (Design -> Simulate -> Verify).",
+        "zh": "结合 GeoPT，这展示了物理 AI 的垂直整合。我们正在见证 '专家系统 2.0' 的出现，AI 不再仅仅提供信息，而是执行完整的工程闭环（设计 -> 模拟 -> 验证）。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI Pauses Frontier Model Training Over Cyber Risks",
+        "zh": "OpenAI 因网络安全风险暂停前沿模型训练"
+      },
+      "url": "https://www.helpnetsecurity.com/2026/08/19/openai-model-safety-updates/",
+      "source": "Help Net Security",
+      "time": "2026-08-19",
+      "description": {
+        "en": "OpenAI has temporarily paused RL training on its Astra model after concerns that it reached a 'critical cybersecurity capability threshold'.",
+        "zh": "OpenAI 暂时暂停了 Astra 模型的强化学习 (RL) 训练，因为担心该模型已达到 '关键网络安全能力阈值'。"
+      },
+      "insight": {
+        "en": "The paradox of frontier models: higher intelligence equals higher risk. While 'Physical AI' is accelerating (see GeoPT), 'Digital Frontier AI' is hitting a containment wall. The pause suggests that Astra's capabilities in zero-day discovery or autonomous hacking are now a primary concern for regulators.",
+        "zh": "前沿模型的悖论：智能越高，风险越大。当 '物理 AI' 在加速（如 GeoPT）时，'数字前沿 AI' 却撞上了 containment 墙。这次暂停表明 Astra 在 0-day 漏洞发现或自主黑客攻击方面的能力已成为监管机构的首要关注点。"
+      }
+    },
+    {
+      "title": {
+        "en": "Rocket One Launches AI Drone Swarm for C-UAS Testing",
+        "zh": "Rocket One 推出用于 C-UAS 测试的 AI 无人机集群"
+      },
+      "url": "https://thedefensepost.com/2026/08/19/rocket-one-synthetic-drone/",
+      "source": "The Defense Post",
+      "time": "2026-08-19",
+      "description": {
+        "en": "A new synthetic AI drone swarm platform can coordinate thousands of aircraft using 2,500+ flight patterns to test counter-drone systems.",
+        "zh": "一个新的合成 AI 无人机集群平台可以使用 2500 多个飞行模式协调数千架飞机，用于测试反无人机系统。"
+      },
+      "insight": {
+        "en": "This is the adversarial application of Physical AI. Just as GeoPT simulates wind for efficiency, Rocket One simulates swarm behavior for defense. It highlights the dual-use nature of the simulation trend: efficiency for civil engineering vs. lethality for defense.",
+        "zh": "这是物理 AI 的对抗性应用。就像 GeoPT 为了效率模拟风力一样，Rocket One 为了国防模拟集群行为。这突显了模拟趋势的双刃剑性质：民用工程追求效率，国防工业追求杀伤力。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI CFO Discusses 2027 IPO Target",
+        "zh": "OpenAI CFO 讨论 2027 年 IPO 目标"
+      },
+      "url": "https://www.helpnetsecurity.com/2026/08/19/openai-model-safety-updates/",
+      "source": "Help Net Security",
+      "time": "2026-08-19",
+      "description": {
+        "en": "CFO Sarah Friar mentioned a target IPO for 2027 as the company balances massive compute costs with growth.",
+        "zh": "CFO Sarah Friar 提到目标在 2027 年进行 IPO，因为公司需要在巨大的计算成本与增长之间取得平衡。"
+      },
+      "insight": {
+        "en": "The 2027 timeline suggests OpenAI is betting on Astra and subsequent models to reach a 'super-utility' phase that justifies a trillion-dollar valuation, moving beyond the 'hype' phase into a 'revenue-infrastructure' phase.",
+        "zh": "2027 年的时间表表明 OpenAI 正押注于 Astra 及其后续模型能够进入 '超实用' 阶段，从而支撑万亿美元的估值，从 '炒作' 阶段转向 '收入-基础设施' 阶段。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Today's events signal a profound bifurcation in the AI trajectory. On one hand, we are witnessing the 'Grounding' of AI—a transition from generative tokens to physical simulation. GeoPT, SimScale, and RocketSmith collectively demonstrate that AI is finally breaking the 'simulation barrier,' moving from pixels to the laws of physics. This 'Physical AI' wave transforms AI from a consultant into an engineer. Conversely, the 'Digital Frontier' is hitting a safety paradox: as models like Astra approach super-human capabilities, their inherent risks (specifically in cybersecurity) necessitate unprecedented pauses in training. The overarching narrative is a transition from the 'Chatbot Era' to the 'Agentic Era,' where the primary challenge is no longer about the accuracy of the answer, but the safety and precision of the action in the real world.",
+    "zh": "今天的事件预示着 AI 轨迹的一个深刻分叉。一方面，我们正在见证 AI 的 '落地' (Grounding)——从生成 Token 转向物理模拟。GeoPT、SimScale 和 RocketSmith 共同证明了 AI 终于打破了 '模拟壁垒'，从像素转向物理定律。这种 '物理 AI' 浪潮将 AI 从一个咨询师变成了工程师。相反，'数字前沿' 陷入了安全悖论：随着 Astra 等模型接近超人类能力，其固有的风险（特别是网络安全方面）导致了前所未有地暂停训练。整体叙事是 AI 从 '聊天机器人时代' 向 '智能体时代' 的转变，现在的核心挑战不再是答案的准确性，而是现实世界中行为的安全性和精准度。"
+  }
+}
