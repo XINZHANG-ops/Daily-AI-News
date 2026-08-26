@@ -1,0 +1,160 @@
+{
+  "date": "2026-08-26",
+  "github_repos": [
+    {
+      "name": "S1s-Z/EAGLET",
+      "url": "https://github.com/S1s-Z/EAGLET",
+      "description": {
+        "en": "A plug-and-play global planner for LLM agents to prevent trial-and-error loops in complex tasks, featuring Cold-Start SFT and Rule-Based RL.",
+        "zh": "一个为LLM智能体设计的即插即用全局规划器，旨在防止智能体在复杂任务中陷入试错循环，采用了冷启动SFT和基于规则的强化学习。"
+      },
+      "stars": "1.2k",
+      "forks": "84"
+    },
+    {
+      "name": "toby-bridges/modelprint",
+      "url": "https://github.com/toby-bridges/modelprint",
+      "description": {
+        "en": "A specialized tool to fingerprint OpenAI-compatible API endpoints using infrastructure probes to identify the actual powering lab.",
+        "zh": "一个专门用于对OpenAI兼容API端点进行“指纹识别”的工具，通过基础设施探测来识别实际提供能力的实验室。"
+      },
+      "stars": "430",
+      "forks": "22"
+    },
+    {
+      "name": "microsoft/agent-lightning",
+      "url": "https://github.com/microsoft/agent-lightning",
+      "description": {
+        "en": "A Microsoft Skill that allows coding agents to systematically optimize other AI agents' prompts, tools, and reasoning settings.",
+        "zh": "微软推出的一项技能，允许编程智能体系统地优化其他AI智能体的提示词、工具和推理设置。"
+      },
+      "stars": "2.1k",
+      "forks": "156"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Unveils 'Jalapeño' Chip and Gluon Language",
+        "zh": "OpenAI发布‘Jalapeño’芯片与Gluon编程语言"
+      },
+      "url": "https://byteiota.com/openai-jalapeno-1-9x-better-than-nvidia-blackwell/",
+      "source": "byteiota",
+      "time": "2026-08-25",
+      "description": {
+        "en": "OpenAI revealed its first custom inference chip, Jalapeño, delivering up to 1.9x more work per watt than Nvidia Blackwell, alongside Gluon, a new kernel language to bypass CUDA.",
+        "zh": "OpenAI揭晓了其首款定制推理芯片Jalapeño，每瓦特性能比Nvidia Blackwell高出1.9倍，并同步推出了旨在绕过CUDA的新内核语言Gluon。"
+      },
+      "insight": {
+        "en": "This is a direct assault on Nvidia's software moat. By creating Gluon, OpenAI attempts to commoditize the kernel layer, potentially decoupling model labs from the CUDA ecosystem and shifting power from chip makers to model owners.",
+        "zh": "这是对Nvidia软件护城河的直接攻击。通过创建Gluon，OpenAI试图将内核层商品化，潜在地将模型实验室与CUDA生态解耦，将权力从芯片制造商转移到模型拥有者手中。"
+      }
+    },
+    {
+      "title": {
+        "en": "IBM Releases Granite 4.2 Reasoning Models",
+        "zh": "IBM发布Granite 4.2推理模型"
+      },
+      "url": "https://www.unite.ai/ibms-granite-4-2-models-learn-to-think-and-act-inside-environments/",
+      "source": "Unite.AI",
+      "time": "2026-08-25",
+      "description": {
+        "en": "IBM launched Granite 4.2 reasoning models (3B to 30B) under Apache 2.0, featuring a switchable thinking mode for explicit chain-of-thought reasoning.",
+        "zh": "IBM在Apache 2.0协议下推出了Granite 4.2推理模型系列（3B至30B），其特点是具有可切换的“思考模式”，可进行显式的思维链推理。"
+      },
+      "insight": {
+        "en": "The switchable thinking mode mirrors human cognitive load, allowing models to choose between fast reactions and slow reasoning. Its open-source nature further democratizes high-end reasoning, moving it beyond the closed-source frontier.",
+        "zh": "可切换的思考模式模拟了人类的认知负荷，允许模型在快速反应和深度推理之间选择。其开源性质进一步使高端推理能力民主化，使其不再仅限于闭源前沿模型。"
+      }
+    },
+    {
+      "title": {
+        "en": "Bill Gates Warns AI Has Crossed Critical 'Danger Thresholds'",
+        "zh": "比尔·盖茨警告AI已跨越关键‘危险阈值’"
+      },
+      "url": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
+      "source": "MIT Technology Review",
+      "time": "2026-08-26",
+      "description": {
+        "en": "Bill Gates stated AI has crossed danger thresholds in bio-capabilities and cyber-impact, proposing robot taxes and human-reserved jobs to mitigate job market collapse.",
+        "zh": "比尔·盖茨表示AI在生物能力和网络影响方面已跨越危险阈值，建议通过征收机器人税和设立人类保留岗位来缓解就业市场崩溃。"
+      },
+      "insight": {
+        "en": "Gates is pivoting from 'AI safety' to 'AI governance'. His proposal of robot taxes suggests the economic collapse is seen as inevitable. His bio-risk warning (50x more likely than natural pandemics) highlights the lethal convergence of LLMs and automated chemistry.",
+        "zh": "盖茨正在从‘AI安全’转向‘AI治理’。他提出的机器人税表明，他认为经济崩溃已不可避免。他对生物风险的警告（比自然大流行高50倍）凸显了LLM与自动化化学之间致命的融合。"
+      }
+    },
+    {
+      "title": {
+        "en": "Nvidia NemoClaw Flaw Allows Agent Poisoning",
+        "zh": "Nvidia NemoClaw漏洞导致智能体可被‘投毒’"
+      },
+      "url": "https://siliconangle.com/2026/08/25/nvidia-nemoclaw-flaw-let-attackers-poison-the-model-behind-a-developers-ai-agent/",
+      "source": "SiliconANGLE",
+      "time": "2026-08-25",
+      "description": {
+        "en": "CVE-2026-65105 in Nvidia's NemoClaw allows attackers to poison an AI agent's model simply by having the user visit a malicious website.",
+        "zh": "Nvidia NemoClaw中的CVE-2026-65105漏洞允许攻击者仅通过让用户访问恶意网站，即可对AI智能体的模型进行‘投毒’。"
+      },
+      "insight": {
+        "en": "This proves that 'Agent-first' architectures create entirely new attack vectors. The trust boundary for agents is more porous than traditional software; prompt injection is evolving into permanent model state poisoning.",
+        "zh": "这证明了‘智能体优先’的架构创造了全新的攻击向量。智能体的信任边界比传统软件更脆弱；提示词注入正在演变为永久性的模型状态投毒。"
+      }
+    },
+    {
+      "title": {
+        "en": "First Documented Civilian Deaths from Autonomous AI Drones",
+        "zh": "首例记录在案的自主AI无人机造成平民死亡事件"
+      },
+      "url": "https://www.tomshardware.com/tech-industry/drones/nvidia-jetson-orin-guided-the-russian-ai-drone-that-killed-three-civilians-in-ukraine-forensic-teams-say",
+      "source": "Tom's Hardware",
+      "time": "2026-08-25",
+      "description": {
+        "en": "Forensic teams report the first case of civilian deaths caused by a Russian drone using fully autonomous targeting guided by an Nvidia Jetson Orin chip.",
+        "zh": "法医团队报告了首例由使用Nvidia Jetson Orin芯片进行完全自主目标定位的俄罗斯无人机造成平民死亡的事件。"
+      },
+      "insight": {
+        "en": "The Jetson Orin's use in autonomous killing is the 'canary in the coal mine' for AI warfare. It proves that 'alignment' in the lab is irrelevant if human-in-the-loop oversight is removed in the field.",
+        "zh": "Jetson Orin被用于自主杀戮是AI战争的‘金丝雀’。它证明了如果现场取消了‘人类在环’监督，实验室里的‘对齐’将毫无意义。"
+      }
+    },
+    {
+      "title": {
+        "en": "Stability AI Raises $76M with AMD Backing",
+        "zh": "Stability AI获得AMD支持融资7600万美元"
+      },
+      "url": "https://www.stability.ai/news",
+      "source": "Stability AI",
+      "time": "2026-08-25",
+      "description": {
+        "en": "Stability AI secured $76M in funding from AMD and major record labels to further its open-weight model development.",
+        "zh": "Stability AI获得了来自AMD和各大唱片公司的7600万美元融资，以进一步开发其开源权重模型。"
+      },
+      "insight": {
+        "en": "This is a strategic hardware-software alliance. AMD needs a high-profile open-weight champion to showcase its Instinct GPUs as a viable alternative to Nvidia's H100/B200 ecosystem.",
+        "zh": "这是一个战略性的软硬件联盟。AMD需要一个高知名度的开源权重冠军，以此证明其Instinct GPU是Nvidia H100/B200生态的可行替代方案。"
+      }
+    },
+    {
+      "title": {
+        "en": "Perplexity Launches 'Portable Computer' On-Device Agent",
+        "zh": "Perplexity推出‘便携式计算机’端侧智能体"
+      },
+      "url": "https://www.perplexity.ai/blog",
+      "source": "Perplexity AI",
+      "time": "2026-08-26",
+      "description": {
+        "en": "Perplexity released a new on-device AI agent designed to operate locally on user hardware for increased privacy and lower latency.",
+        "zh": "Perplexity发布了一款全新的端侧AI智能体，旨在用户本地硬件上运行，以提高隐私性和降低延迟。"
+      },
+      "insight": {
+        "en": "The shift to 'edge agents' is a response to the latency and privacy bottlenecks of cloud AI. Perplexity is attempting to evolve from a search engine into a local OS layer that captures the entire user interaction stream.",
+        "zh": "向‘边缘智能体’的转变是对云端AI延迟和隐私瓶颈的响应。Perplexity试图从一个搜索引擎演变为一个本地操作系统层，从而捕捉用户的完整交互流。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "The narrative of August 26th is the 'Tension of Autonomy'. We are witnessing a frantic race to automate every layer of existence—from the hardware kernels (Gluon) and the cognitive reasoning process (Granite 4.2) to the physical battlefield (autonomous drones). However, this acceleration is colliding with the fragility of our existing systems. The NemoClaw flaw proves our security is lagging behind our agents, and Bill Gates' alarms suggest our social contracts are becoming obsolete. The most critical signal today is OpenAI's attempt to decouple from Nvidia; if the model labs can finally break the hardware monopoly, the speed of iteration will increase even further, likely accelerating both the breakthroughs and the 'danger thresholds' Gates fears.",
+    "zh": "8月26日的主题是‘自主权的紧张局势’。我们正目睹一场疯狂的竞赛，试图将存在的每一个层面都自动化——从硬件内核（Gluon）和认知推理过程（Granite 4.2）到物理战场（自主无人机）。然而，这种加速正与我们现有系统的脆弱性发生碰撞。NemoClaw漏洞证明了我们的安全防御滞后于智能体的发展，而比尔·盖茨的警告则表明我们的社会契约正在失效。今天最关键的信号是OpenAI尝试与Nvidia脱钩；如果模型实验室最终能打破硬件垄断，迭代速度将进一步提升，这可能会同时加速技术突破和盖茨所担忧的‘危险阈值’的到来。"
+  }
+}

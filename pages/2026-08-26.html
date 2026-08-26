@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - August 26, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 August 26, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/S1s-Z/EAGLET" class="card-title" target="_blank">S1s-Z/EAGLET</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 84 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A plug-and-play global planner for LLM agents to prevent trial-and-error loops in complex tasks, featuring Cold-Start SFT and Rule-Based RL.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个为LLM智能体设计的即插即用全局规划器，旨在防止智能体在复杂任务中陷入试错循环，采用了冷启动SFT和基于规则的强化学习。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/toby-bridges/modelprint" class="card-title" target="_blank">toby-bridges/modelprint</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 430 stars</div>
+                                <div class="meta-item"><span>🍴</span> 22 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A specialized tool to fingerprint OpenAI-compatible API endpoints using infrastructure probes to identify the actual powering lab.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个专门用于对OpenAI兼容API端点进行“指纹识别”的工具，通过基础设施探测来识别实际提供能力的实验室。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/microsoft/agent-lightning" class="card-title" target="_blank">microsoft/agent-lightning</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 156 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A Microsoft Skill that allows coding agents to systematically optimize other AI agents' prompts, tools, and reasoning settings.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软推出的一项技能，允许编程智能体系统地优化其他AI智能体的提示词、工具和推理设置。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">byteiota</span>
+                    <div class="news-time">2026-08-25</div>
+                    <a href="https://byteiota.com/openai-jalapeno-1-9x-better-than-nvidia-blackwell/" class="card-title" target="_blank" data-lang="en">OpenAI Unveils 'Jalapeño' Chip and Gluon Language</a>
+                    <a href="https://byteiota.com/openai-jalapeno-1-9x-better-than-nvidia-blackwell/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI发布‘Jalapeño’芯片与Gluon编程语言</a>
+                    <p class="card-description" data-lang="en">OpenAI revealed its first custom inference chip, Jalapeño, delivering up to 1.9x more work per watt than Nvidia Blackwell, alongside Gluon, a new kernel language to bypass CUDA.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI揭晓了其首款定制推理芯片Jalapeño，每瓦特性能比Nvidia Blackwell高出1.9倍，并同步推出了旨在绕过CUDA的新内核语言Gluon。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Unite.AI</span>
+                    <div class="news-time">2026-08-25</div>
+                    <a href="https://www.unite.ai/ibms-granite-4-2-models-learn-to-think-and-act-inside-environments/" class="card-title" target="_blank" data-lang="en">IBM Releases Granite 4.2 Reasoning Models</a>
+                    <a href="https://www.unite.ai/ibms-granite-4-2-models-learn-to-think-and-act-inside-environments/" class="card-title" target="_blank" data-lang="zh" style="display: none;">IBM发布Granite 4.2推理模型</a>
+                    <p class="card-description" data-lang="en">IBM launched Granite 4.2 reasoning models (3B to 30B) under Apache 2.0, featuring a switchable thinking mode for explicit chain-of-thought reasoning.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">IBM在Apache 2.0协议下推出了Granite 4.2推理模型系列（3B至30B），其特点是具有可切换的“思考模式”，可进行显式的思维链推理。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MIT Technology Review</span>
+                    <div class="news-time">2026-08-26</div>
+                    <a href="https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/" class="card-title" target="_blank" data-lang="en">Bill Gates Warns AI Has Crossed Critical 'Danger Thresholds'</a>
+                    <a href="https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/" class="card-title" target="_blank" data-lang="zh" style="display: none;">比尔·盖茨警告AI已跨越关键‘危险阈值’</a>
+                    <p class="card-description" data-lang="en">Bill Gates stated AI has crossed danger thresholds in bio-capabilities and cyber-impact, proposing robot taxes and human-reserved jobs to mitigate job market collapse.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">比尔·盖茨表示AI在生物能力和网络影响方面已跨越危险阈值，建议通过征收机器人税和设立人类保留岗位来缓解就业市场崩溃。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">SiliconANGLE</span>
+                    <div class="news-time">2026-08-25</div>
+                    <a href="https://siliconangle.com/2026/08/25/nvidia-nemoclaw-flaw-let-attackers-poison-the-model-behind-a-developers-ai-agent/" class="card-title" target="_blank" data-lang="en">Nvidia NemoClaw Flaw Allows Agent Poisoning</a>
+                    <a href="https://siliconangle.com/2026/08/25/nvidia-nemoclaw-flaw-let-attackers-poison-the-model-behind-a-developers-ai-agent/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Nvidia NemoClaw漏洞导致智能体可被‘投毒’</a>
+                    <p class="card-description" data-lang="en">CVE-2026-65105 in Nvidia's NemoClaw allows attackers to poison an AI agent's model simply by having the user visit a malicious website.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Nvidia NemoClaw中的CVE-2026-65105漏洞允许攻击者仅通过让用户访问恶意网站，即可对AI智能体的模型进行‘投毒’。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Tom's Hardware</span>
+                    <div class="news-time">2026-08-25</div>
+                    <a href="https://www.tomshardware.com/tech-industry/drones/nvidia-jetson-orin-guided-the-russian-ai-drone-that-killed-three-civilians-in-ukraine-forensic-teams-say" class="card-title" target="_blank" data-lang="en">First Documented Civilian Deaths from Autonomous AI Drones</a>
+                    <a href="https://www.tomshardware.com/tech-industry/drones/nvidia-jetson-orin-guided-the-russian-ai-drone-that-killed-three-civilians-in-ukraine-forensic-teams-say" class="card-title" target="_blank" data-lang="zh" style="display: none;">首例记录在案的自主AI无人机造成平民死亡事件</a>
+                    <p class="card-description" data-lang="en">Forensic teams report the first case of civilian deaths caused by a Russian drone using fully autonomous targeting guided by an Nvidia Jetson Orin chip.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">法医团队报告了首例由使用Nvidia Jetson Orin芯片进行完全自主目标定位的俄罗斯无人机造成平民死亡的事件。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Stability AI</span>
+                    <div class="news-time">2026-08-25</div>
+                    <a href="https://www.stability.ai/news" class="card-title" target="_blank" data-lang="en">Stability AI Raises $76M with AMD Backing</a>
+                    <a href="https://www.stability.ai/news" class="card-title" target="_blank" data-lang="zh" style="display: none;">Stability AI获得AMD支持融资7600万美元</a>
+                    <p class="card-description" data-lang="en">Stability AI secured $76M in funding from AMD and major record labels to further its open-weight model development.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Stability AI获得了来自AMD和各大唱片公司的7600万美元融资，以进一步开发其开源权重模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Perplexity AI</span>
+                    <div class="news-time">2026-08-26</div>
+                    <a href="https://www.perplexity.ai/blog" class="card-title" target="_blank" data-lang="en">Perplexity Launches 'Portable Computer' On-Device Agent</a>
+                    <a href="https://www.perplexity.ai/blog" class="card-title" target="_blank" data-lang="zh" style="display: none;">Perplexity推出‘便携式计算机’端侧智能体</a>
+                    <p class="card-description" data-lang="en">Perplexity released a new on-device AI agent designed to operate locally on user hardware for increased privacy and lower latency.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Perplexity发布了一款全新的端侧AI智能体，旨在用户本地硬件上运行，以提高隐私性和降低延迟。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The narrative of August 26th is the 'Tension of Autonomy'. We are witnessing a frantic race to automate every layer of existence—from the hardware kernels (Gluon) and the cognitive reasoning process (Granite 4.2) to the physical battlefield (autonomous drones). However, this acceleration is colliding with the fragility of our existing systems. The NemoClaw flaw proves our security is lagging behind our agents, and Bill Gates' alarms suggest our social contracts are becoming obsolete. The most critical signal today is OpenAI's attempt to decouple from Nvidia; if the model labs can finally break the hardware monopoly, the speed of iteration will increase even further, likely accelerating both the breakthroughs and the 'danger thresholds' Gates fears.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">8月26日的主题是‘自主权的紧张局势’。我们正目睹一场疯狂的竞赛，试图将存在的每一个层面都自动化——从硬件内核（Gluon）和认知推理过程（Granite 4.2）到物理战场（自主无人机）。然而，这种加速正与我们现有系统的脆弱性发生碰撞。NemoClaw漏洞证明了我们的安全防御滞后于智能体的发展，而比尔·盖茨的警告则表明我们的社会契约正在失效。今天最关键的信号是OpenAI尝试与Nvidia脱钩；如果模型实验室最终能打破硬件垄断，迭代速度将进一步提升，这可能会同时加速技术突破和盖茨所担忧的‘危险阈值’的到来。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
