@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - September 09, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 September 09, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/lsdefine/GenericAgent" class="card-title" target="_blank">lsdefine/GenericAgent</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 415 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A minimalist framework for self-evolving agents that crystallizes successful execution paths into reusable skills, optimizing for token efficiency and system-level control.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个极简的自进化智能体框架，将成功的执行路径结晶为可复用的“技能”，优化了 token 效率和系统级控制。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/zai-org/GLM-5" class="card-title" target="_blank">zai-org/GLM-5</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 8.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 1.2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">State-of-the-art open-weights agentic models featuring emergent cyber capabilities and a 1M-token context window for long-horizon autonomous tasks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">最先进的开源权重智能体模型，具备涌现的网络安全能力和 100 万 token 上下文窗口，适用于长程自主任务。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/InsipidPoint/showhn" class="card-title" target="_blank">InsipidPoint/showhn</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 89 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An AI-powered visual gallery for "Show HN" projects that automatically screenshots and tiers projects based on AI analysis vs crowd votes.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个为 "Show HN" 项目打造的 AI 驱动视觉画廊，能自动截屏并根据 AI 分析与社区投票对项目进行分级。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">AIToolsRecap</span>
+                    <div class="news-time">2026-09-09</div>
+                    <a href="https://aitoolsrecap.com/Blog/ai-news-september-09-2026" class="card-title" target="_blank" data-lang="en">NVIDIA Acquires Hugging Face for $12.93 Billion</a>
+                    <a href="https://aitoolsrecap.com/Blog/ai-news-september-09-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">英伟达以 129.3 亿美元收购 Hugging Face</a>
+                    <p class="card-description" data-lang="en">NVIDIA agreed to acquire the open-weights ecosystem hub Hugging Face, pledging that the platform will remain open.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">英伟达同意收购开源权重生态中心 Hugging Face，并承诺该平台将保持开放。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">DEV Community</span>
+                    <div class="news-time">2026-09-09</div>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-sept-9-2026-alien-mind-essay-urges-a-slowdown-mistral-raises-eu3b-xpeng-3j52" class="card-title" target="_blank" data-lang="en">Mistral AI Closes €3 Billion Series D Funding</a>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-sept-9-2026-alien-mind-essay-urges-a-slowdown-mistral-raises-eu3b-xpeng-3j52" class="card-title" target="_blank" data-lang="zh" style="display: none;">Mistral AI 完成 30 亿欧元 D 轮融资</a>
+                    <p class="card-description" data-lang="en">Mistral closed a €3B Series D led by Samsung, valuing the company at over €21 billion.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Mistral 完成了由三星领投的 30 亿欧元 D 轮融资，公司估值超过 210 亿欧元。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TheDayAfterAI</span>
+                    <div class="news-time">2026-09-08</div>
+                    <a href="https://www.thedayafterai.com/briefings/daily-ai-briefing-2026-09-08" class="card-title" target="_blank" data-lang="en">OpenAI Unveils 'Astra' (GPT-6); Jensen Huang Declares AGI's Arrival</a>
+                    <a href="https://www.thedayafterai.com/briefings/daily-ai-briefing-2026-09-08" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 发布 'Astra' (GPT-6)；黄仁勋宣布 AGI 已抵达</a>
+                    <p class="card-description" data-lang="en">OpenAI unveiled the Astra model, which Jensen Huang claimed signifies that AGI has arrived, sparking debate among researchers.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 发布了 Astra 模型，黄仁勋称其标志着 AGI 的抵达，这引发了研究人员的激烈辩论。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AIToolsRecap</span>
+                    <div class="news-time">2026-09-08</div>
+                    <a href="https://aitoolsrecap.com/Blog/ai-news-september-08-2026" class="card-title" target="_blank" data-lang="en">Tencent Releases Hy4 770B Model Under Apache 2.0 License</a>
+                    <a href="https://aitoolsrecap.com/Blog/ai-news-september-08-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">腾讯发布 Apache 2.0 协议的 Hy4 770B 模型</a>
+                    <p class="card-description" data-lang="en">Tencent released Hy4, a mixture-of-experts model with 770B total parameters under a permissive Apache 2.0 license.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">腾讯发布了 Hy4，一个拥有 770B 总参数的混合专家模型，采用宽松的 Apache 2.0 协议。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">DEV Community</span>
+                    <div class="news-time">2026-09-09</div>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-sept-9-2026-alien-mind-essay-urges-a-slowdown-mistral-raises-eu3b-xpeng-3j52" class="card-title" target="_blank" data-lang="en">XPeng Launches World's First Humanoid Robot Mass Production Line</a>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-sept-9-2026-alien-mind-essay-urges-a-slowdown-mistral-raises-eu3b-xpeng-3j52" class="card-title" target="_blank" data-lang="zh" style="display: none;">小鹏汽车启动全球首条人形机器人量产线</a>
+                    <p class="card-description" data-lang="en">XPeng debuted the "IRON" robot and launched an automated production line, with mass production expected by the end of 2026.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">小鹏汽车推出了 “IRON” 机器人并启动了自动化生产线，预计在 2026 年底实现大规模量产。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">DEV Community</span>
+                    <div class="news-time">2026-09-09</div>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-sept-9-2026-alien-mind-essay-urges-a-slowdown-mistral-raises-eu3b-xpeng-3j52" class="card-title" target="_blank" data-lang="en">OpenAI's Jakub Pachocki Urges Industry Slowdown in 'An Alien Mind'</a>
+                    <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-sept-9-2026-alien-mind-essay-urges-a-slowdown-mistral-raises-eu3b-xpeng-3j52" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 的 Jakub Pachocki 在 《异形之脑》 中呼吁行业减速</a>
+                    <p class="card-description" data-lang="en">OpenAI's Chief Scientist warned that alignment isn't solved well enough to scale at maximum speed.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 首席科学家警告称，对齐问题尚未得到足够解决，不能以最大速度进行规模扩展。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TheDayAfterAI</span>
+                    <div class="news-time">2026-09-08</div>
+                    <a href="https://www.thedayafterai.com/briefings/daily-ai-briefing-2026-09-08" class="card-title" target="_blank" data-lang="en">AI Lifts Homework Scores but Cuts Exam Results in China Study</a>
+                    <a href="https://www.thedayafterai.com/briefings/daily-ai-briefing-2026-09-08" class="card-title" target="_blank" data-lang="zh" style="display: none;">研究显示 AI 提升了中国学生的作业分数但降低了考试成绩</a>
+                    <p class="card-description" data-lang="en">A study of 26,000+ pupils found generative AI raised homework scores by 18% but lowered exam results by 20%.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一项针对 2.6 万多名学生的研究发现，生成式 AI 将作业分数提高了 18%，但将考试成绩降低了 20%。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AIToolsRecap</span>
+                    <div class="news-time">2026-09-08</div>
+                    <a href="https://aitoolsrecap.com/Blog/ai-news-september-08-2026" class="card-title" target="_blank" data-lang="en">Google Search Quality Drops in Europe Due to DMA Compliance</a>
+                    <a href="https://aitoolsrecap.com/Blog/ai-news-september-08-2026" class="card-title" target="_blank" data-lang="zh" style="display: none;">受 DMA 合规影响，谷歌搜索在欧洲质量下降</a>
+                    <p class="card-description" data-lang="en">Google informed European users that revamped search results represent the largest reduction in quality of service in its history.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">谷歌告知欧洲用户，重新设计的搜索结果代表了其历史上服务质量的最大幅下降。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Today's events reveal a profound tension between the "narrative of arrival" and the "reality of risk." While the financial world celebrates the "arrival of AGI" (Astra) and massive consolidation (Nvidia/HF), the technical vanguard is sounding the alarm. The "Alien Mind" essay and the "Learning Penalty" study both point to a systemic failure: we are scaling the *ability to produce* far faster than our *ability to align* or *ability to learn*. We are building a world of "perfect outputs" that mask "decaying processes"—whether it's the decay of human cognitive ability in students or the decay of safety guardrails in frontier models. The move toward "Agentic Engineering" seen in the trending repos is the logical next step: moving from models that *say* things to systems that *do* things. But as these agents gain more autonomy (e.g., GLM-5's cyber capabilities), the gap between the marketing hype and the safety reality becomes an existential vulnerability.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">今天的事件揭示了 “抵达的叙事” 与 “风险的现实” 之间深刻的紧张关系。当金融界在庆祝 “AGI 的抵达” （Astra） 和大规模整合 （英伟达/HF） 时，技术先锋们正在发出警报。 《异形之脑》 论文和 “学习惩罚” 研究都指向一个系统性失效：我们扩展 “产出能力” 的速度远快于 “对齐能力” 或 “学习能力”。我们正在构建一个由 “完美产出” 掩盖 “过程衰减” 的世界 —— 无论是学生认知能力的衰减，还是前沿模型安全护栏的失效。在趋势仓库中看到的 “智能体工程” 转向是逻辑上的下一步：从 “会说话” 的模型转向 “会做事” 的系统。但随着这些智能体获得更多自主权（如 GLM-5 的网络能力），营销噱头与安全现实之间的差距正变成一种生存层面的脆弱性。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
