@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - September 12, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 September 12, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/simular-ai/Agent-S" class="card-title" target="_blank">simular-ai/Agent-S</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 150 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">An open agentic framework that allows AI to use computers like a human by interacting with screens and cursors.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个开源的智能体框架，允许 AI 通过与屏幕和光标交互，像人类一样使用计算机。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/unclecode/crawl4ai" class="card-title" target="_blank">unclecode/crawl4ai</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 310 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A high-performance web crawler specifically optimized for LLMs to extract clean data for RAG pipelines.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个高性能的网络爬虫，专门为 LLM 优化，用于为 RAG 流水线提取干净的数据。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/HKUDS/LightRAG" class="card-title" target="_blank">HKUDS/LightRAG</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 800 stars</div>
+                                <div class="meta-item"><span>🍴</span> 95 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A lightweight approach to Retrieval-Augmented Generation that significantly improves knowledge retrieval accuracy.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一种轻量级的检索增强生成 (RAG) 方法，显著提高了知识检索的准确性。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">OpenAI</span>
+                    <div class="news-time">2026-09-12</div>
+                    <a href="https://openai.com/index/introducing-openai-o1-preview/" class="card-title" target="_blank" data-lang="en">OpenAI Introduces o1: The Shift to Reasoning-First Models</a>
+                    <a href="https://openai.com/index/introducing-openai-o1-preview/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 发布 o1：转向推理优先的模型</a>
+                    <p class="card-description" data-lang="en">OpenAI released o1-preview and o1-mini, models designed for complex reasoning that spend more time 'thinking' before responding, showing PhD-level performance in STEM.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 发布了 o1-preview 和 o1-mini，这些模型专为复杂推理而设计，在回答之前会花费更多时间进行“思考”，在 STEM 领域表现出博士级别的水平。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">2026-09-12</div>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/openais-technology-chief-mira-murati-leave-2024-09-25/" class="card-title" target="_blank" data-lang="en">Massive Leadership Exodus at OpenAI</a>
+                    <a href="https://www.reuters.com/technology/artificial-intelligence/openais-technology-chief-mira-murati-leave-2024-09-25/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 出现大规模领导层离职</a>
+                    <p class="card-description" data-lang="en">CTO Mira Murati and other top research executives have departed OpenAI in a major leadership shakeup.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">首席技术官 Mira Murati 和其他顶级研究高管在一次重大的领导层变动中离开了 OpenAI。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AP News</span>
+                    <div class="news-time">2026-09-12</div>
+                    <a href="https://apnews.com/article/chatgpt-openai-sam-altman-nonprofit-859bff5c19845f51796244e0072e2dfb" class="card-title" target="_blank" data-lang="en">OpenAI Negotiates Shift to For-Profit Benefit Corporation</a>
+                    <a href="https://apnews.com/article/chatgpt-openai-sam-altman-nonprofit-859bff5c19845f51796244e0072e2dfb" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 协商转向营利性公益公司</a>
+                    <p class="card-description" data-lang="en">OpenAI is reportedly restructuring to move away from its non-profit roots, potentially granting Sam Altman equity in the company.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">据报道，OpenAI 正在进行重组，摆脱其非营利根源，可能会授予 Sam Altman 公司的股权。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">2026-09-12</div>
+                    <a href="https://www.theverge.com/2024/9/29/24232172/california-ai-safety-bill-1047-vetoed-gavin-newsom" class="card-title" target="_blank" data-lang="en">California Governor Vetoes SB 1047 AI Safety Bill</a>
+                    <a href="https://www.theverge.com/2024/9/29/24232172/california-ai-safety-bill-1047-vetoed-gavin-newsom" class="card-title" target="_blank" data-lang="zh" style="display: none;">加州州长否决 SB 1047 AI 安全法案</a>
+                    <p class="card-description" data-lang="en">Governor Gavin Newsom vetoed the bill that would have required 'kill switches' and strict safety audits for frontier models costing over $100M to train.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">州长 Gavin Newsom 否决了该法案，该法案原本要求对训练成本超过 1 亿美元的前沿模型实施“终止开关”和严格的安全审计。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MIT Tech Review</span>
+                    <div class="news-time">2026-09-12</div>
+                    <a href="https://www.technologyreview.com/2024/09/24/1104422/openai-released-its-advanced-voice-mode-to-more-people-heres-how-to-get-it/" class="card-title" target="_blank" data-lang="en">OpenAI Advanced Voice Mode Broadens Reach</a>
+                    <a href="https://www.technologyreview.com/2024/09/24/1104422/openai-released-its-advanced-voice-mode-to-more-people-heres-how-to-get-it/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 高级语音模式扩大覆盖范围</a>
+                    <p class="card-description" data-lang="en">The near-instant, emotionally aware voice interaction is now available to more Plus and Team users.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">近乎即时、具有情感感知能力的语音交互现已向更多 Plus 和 Team 用户开放。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub</span>
+                    <div class="news-time">2026-09-12</div>
+                    <a href="https://github.com/openai/swarm" class="card-title" target="_blank" data-lang="en">OpenAI Swarm: Orchestrating Multi-Agent Workflows</a>
+                    <a href="https://github.com/openai/swarm" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI Swarm：编排多智能体工作流</a>
+                    <p class="card-description" data-lang="en">An experimental framework for coordinating multiple specialized AI agents to handle complex, multi-step tasks.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个实验性框架，用于协调多个专业 AI 智能体以处理复杂的多步骤任务。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Today's events collectively signal the end of the 'Experimental AI' era and the beginning of the 'Industrial AI' era. The convergence of reasoning-first models (o1), human-like interaction (Advanced Voice), and multi-agent orchestration (Swarm) means AI is moving from a tool we query to a workforce we manage. Simultaneously, the corporate shift at OpenAI and the regulatory retreat in California suggest that the industry is now prioritizing operational scale and commercial dominance over research purity and precautionary safety. The real story isn't just a new model release—it's the total professionalization of the AI stack.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">今天的事件共同标志着“实验性 AI”时代的结束和“工业化 AI”时代的开始。推理优先模型 (o1)、类人交互 (高级语音) 和多智能体编排 (Swarm) 的融合意味着 AI 正在从一个我们查询的工具转变为一个我们管理的劳动力。与此同时，OpenAI 的公司转型和加州监管的退缩表明，行业现在将运营规模和商业主导地位置于研究纯度和预防性安全之上。真正的故事不仅仅是一个新模型的发布，而是 AI 整个技术栈的全面专业化。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
