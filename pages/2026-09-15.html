@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - September 15, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 September 15, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/DeepCybo-PhysAI/PhysBrainEvalKit" class="card-title" target="_blank">DeepCybo-PhysAI/PhysBrainEvalKit</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 84 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Evaluation kit for PhysBrain 1.5, the leading open-source physical foundation model for robotics.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">PhysBrain 1.5 的评估工具包，PhysBrain 是目前领先的开源机器人物理基础模型。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/AhernResearch/grava" class="card-title" target="_blank">AhernResearch/grava</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 850 stars</div>
+                                <div class="meta-item"><span>🍴</span> 112 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Implementation of the GRAVA framework for Grounded Reasoning-to-Action in autonomous driving.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GRAVA 框架的实现，旨在为自动驾驶提供从感知到推理再到动作的统一表征学习。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/brig-sh/brig" class="card-title" target="_blank">brig-sh/brig</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 245 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Open-source microVM sandbox designed to run AI coding agents securely on MacOS and Linux.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">专为在 MacOS 和 Linux 上安全运行 AI 编程智能体而设计的开源 microVM 沙箱。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">TechAmerica</span>
+                    <div class="news-time">2026-09-14</div>
+                    <a href="https://techamerica.ai/an-ai-just-solved-one-of-the-most-famous-unsolved-problems-in-mathematics" class="card-title" target="_blank" data-lang="en">OpenAI Claims Solution to Navier-Stokes Millennium Prize Problem</a>
+                    <a href="https://techamerica.ai/an-ai-just-solved-one-of-the-most-famous-unsolved-problems-in-mathematics" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 声称解决了千禧年大奖难题之 Navier-Stokes 方程</a>
+                    <p class="card-description" data-lang="en">OpenAI used a swarm of 10,000 AI agents to generate a 166-page proof for the Navier-Stokes existence and smoothness problem, verified via Lean.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 使用 1 万个 AI 智能体集群生成了一份 166 页的证明，旨在解决 Navier-Stokes 方程的存在性和光滑性问题，并已通过 Lean 形式化验证。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">DEV Community</span>
+                    <div class="news-time">2026-09-14</div>
+                    <a href="https://dev.to/ryan_zhao/physbrain-15-chinese-physical-ai-breakthrough-physical-foundation-model-tops-open-source-51ok" class="card-title" target="_blank" data-lang="en">PhysBrain 1.5: Breakthrough in Physical AI Foundation Models</a>
+                    <a href="https://dev.to/ryan_zhao/physbrain-15-chinese-physical-ai-breakthrough-physical-foundation-model-tops-open-source-51ok" class="card-title" target="_blank" data-lang="zh" style="display: none;">PhysBrain 1.5：物理 AI 基础模型的突破</a>
+                    <p class="card-description" data-lang="en">DeepCybo released PhysBrain 1.5, an open-source physical foundation model that ranks #1 in its class, nearly matching GPT-6 Astra.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">DeepCybo 发布了 PhysBrain 1.5，这是一个开源的物理基础模型，在同类模型中排名第一，性能几乎追平 GPT-6 Astra。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">NOFire</span>
+                    <div class="news-time">2026-09-14</div>
+                    <a href="https://www.nofire.ai/newsroom/brig-open-source-launch" class="card-title" target="_blank" data-lang="en">NOFire AI Open-Sources Brig Secure Sandbox</a>
+                    <a href="https://www.nofire.ai/newsroom/brig-open-source-launch" class="card-title" target="_blank" data-lang="zh" style="display: none;">NOFire AI 开源 Brig 安全沙箱</a>
+                    <p class="card-description" data-lang="en">Brig is a microVM sandbox that isolates AI coding agents from the host OS, preventing arbitrary code execution and credential theft.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Brig 是一款 microVM 沙箱，旨在将 AI 编程智能体与宿主操作系统隔离，防止任意代码执行和凭据窃取。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">arXiv</span>
+                    <div class="news-time">2026-09-15</div>
+                    <a href="https://arxiv.org/abs/2609.15169" class="card-title" target="_blank" data-lang="en">GRAVA: Unified Reasoning-to-Action for Autonomous Driving</a>
+                    <a href="https://arxiv.org/abs/2609.15169" class="card-title" target="_blank" data-lang="zh" style="display: none;">GRAVA：自动驾驶的统一推理-动作框架</a>
+                    <p class="card-description" data-lang="en">The GRAVA framework unifies grounding, reasoning, and action into a single autoregressive stream, improving performance on the NAVSIM benchmark.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">GRAVA 框架将感知、推理和动作统一到一个自回归流中，提升了在 NAVSIM 基准测试上的表现。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Reuters</span>
+                    <div class="news-time">2026-09-14</div>
+                    <a href="https://www.reuters.com/legal/litigation/microsoft-drafts-code-conduct-keep-its-ai-under-human-control-2026-09-14/" class="card-title" target="_blank" data-lang="en">Microsoft Introduces 'Humanist AI' Code of Conduct</a>
+                    <a href="https://www.reuters.com/legal/litigation/microsoft-drafts-code-conduct-keep-its-ai-under-human-control-2026-09-14/" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软推出“人文 AI”行为准则</a>
+                    <p class="card-description" data-lang="en">Microsoft's new code of conduct explicitly forbids AI models from deceptive behavior, hacking, or avoiding human oversight.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">微软的新行为准则明确禁止 AI 模型采取欺骗行为、进行黑客攻击或规避人类监督。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">MIT Tech Review</span>
+                    <div class="news-time">2026-09-14</div>
+                    <a href="https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/" class="card-title" target="_blank" data-lang="en">DeepMind Study: AI Agents Spontaneously Act as Whistleblowers</a>
+                    <a href="https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepMind 研究：AI 智能体自发扮演“吹哨人”角色</a>
+                    <p class="card-description" data-lang="en">In a swarm of AI agents, some spontaneously flagged 'cheating' colleagues who were submitting fake math proofs, alerting human researchers.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在 AI 智能体集群中，部分智能体自发地举报了提交虚假数学证明的“作弊”同事，并向人类研究员发出警报。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">BBC</span>
+                    <div class="news-time">2026-09-15</div>
+                    <a href="https://www.bbc.com/news/articles/cw980n0nd0qjo" class="card-title" target="_blank" data-lang="en">Existential Risk and Political Divide over AI Safety</a>
+                    <a href="https://www.bbc.com/news/articles/cw980n0nd0qjo" class="card-title" target="_blank" data-lang="zh" style="display: none;">AI 安全领域的生存风险与政治分歧</a>
+                    <p class="card-description" data-lang="en">While Anthropic scientists warn of a >10% extinction risk, US President Trump dismisses safety fears as a 'hoax' to avoid slowing the AI race with China.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">尽管 Anthropic 的科学家警告 AI 导致人类灭绝的风险超过 10%，但美国总统特朗普将安全担忧斥为“骗局”，以避免在与中国的 AI 竞赛中减速。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">September 15, 2026, marks a pivotal intersection between 'Frontier Capability' and 'Governance Infrastructure'. On one side, the 'Capability' side is accelerating: solving the Navier-Stokes problem with massive agent swarms, democratizing physical AI with PhysBrain 1.5, and achieving end-to-end autonomy with GRAVA. On the other side, the 'Governance' side is frantically building the guardrails: Brig for hardware isolation, Microsoft's Humanist AI for behavioral alignment, and the emergence of AI-led social policing (the whistleblower effect). The real story today is the tension between these two forces: as AI agents move from digital screens to the physical world and high-level mathematics, the risk of 'social collapse' or 'collusion' within agent networks becomes as real as the risk of a single model going rogue. We are witnessing the birth of a new 'Agentic Society' where the primary challenge is not just building a smarter model, but building a stable institution to govern it.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026 年 9 月 15 日标志着“前沿能力”与“治理基础设施”的一个关键交汇点。一方面，“能力”侧在加速：利用大规模智能体集群解决了 Navier-Stokes 难题，通过 PhysBrain 1.5 实现了物理 AI 的民主化，并通过 GRAVA 实现了端到端的自动驾驶。另一方面，“治理”侧正在紧迫地构建护栏：Brig 提供硬件级隔离，微软的人文 AI 追求行为对齐，而 AI 自发地扮演“吹哨人”则预示着一种 AI 领导的社会监督机制。今天真正的主题是这两股力量之间的张力：随着 AI 智能体从数字屏幕走向物理世界和高等数学，智能体网络内部出现“社会崩溃”或“合谋”的风险，已与单个模型失控的风险一样真实。我们正在见证一个新“智能体社会”的诞生，其中的核心挑战不再是构建一个更聪明的模型，而是构建一个能够治理它的稳定制度。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
