@@ -630,3 +630,7 @@ To github.com:XINZHANG-ops/Daily-AI-News.git
    1886f71..06cae39  main -> main
 Ignoring 6 permissions.allow entries from .claude/settings.json: this workspace has not been trusted. Run Claude Code interactively here once and accept the trust dialog, or set projects["/Users/xinzhang/Daily-AI-News"].hasTrustDialogAccepted: true in /Users/xinzhang/.claude.json.
 Permission deny rule (.claude/settings.json): Glob(~/**) is not matched by file permission checks — only Read(path) rules are. Use Read(~/**) instead (Read rules cover all file-reading tools).
+To github.com:XINZHANG-ops/Daily-AI-News.git
+   06cae39..3161d56  main -> main
+Ignoring 6 permissions.allow entries from .claude/settings.json: this workspace has not been trusted. Run Claude Code interactively here once and accept the trust dialog, or set projects["/Users/xinzhang/Daily-AI-News"].hasTrustDialogAccepted: true in /Users/xinzhang/.claude.json.
+Permission deny rule (.claude/settings.json): Glob(~/**) is not matched by file permission checks — only Read(path) rules are. Use Read(~/**) instead (Read rules cover all file-reading tools).
