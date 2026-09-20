@@ -35,14 +35,13 @@ bilawalsidhu/gods-eye-view
 bingreeky/LOPD
 blader/humanizer
 brig-sh/brig
-bytedance/Protenix
 calesthio/OpenMontage
 danielvaughn/hz
+ddfriday/repo-pulse
 debpalash/VoiceStudio
 dfyuan/OpenETA
 diegosouzapw/OmniRoute
 fellowgeek/mcp-memory
-gusye1234/nano-graphrag
 huangruiteng/loopx
 ideogram-oss/ideogram4
 intutic/turing
@@ -65,6 +64,8 @@ nwinkelman2/agents-radar
 obra/superpowers
 open-gitagent/gitagent
 openai/skills
+pingcap/ossinsight
+primeintellect-ai/prime-agent
 qwen3-8-27b-app/qwen3.8-27b
 raktim-mondol/co-scientist
 rez-99/agentcheck
@@ -73,7 +74,6 @@ spade-rl/spade
 spikonado/sprocket
 starVLA/VLAct
 thuongh2/git-mimir
-tile-ai/tilelang
 toby-bridges/modelprint
 tt-a1i/archify
 unclecode/crawl4ai

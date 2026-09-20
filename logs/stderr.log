@@ -634,3 +634,32 @@ To github.com:XINZHANG-ops/Daily-AI-News.git
    06cae39..3161d56  main -> main
 Ignoring 6 permissions.allow entries from .claude/settings.json: this workspace has not been trusted. Run Claude Code interactively here once and accept the trust dialog, or set projects["/Users/xinzhang/Daily-AI-News"].hasTrustDialogAccepted: true in /Users/xinzhang/.claude.json.
 Permission deny rule (.claude/settings.json): Glob(~/**) is not matched by file permission checks — only Read(path) rules are. Use Read(~/**) instead (Read rules cover all file-reading tools).
+To github.com:XINZHANG-ops/Daily-AI-News.git
+   3161d56..78b8fa3  main -> main
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Ignoring 6 permissions.allow entries from .claude/settings.json: this workspace has not been trusted. Run Claude Code interactively here once and accept the trust dialog, or set projects["/Users/xinzhang/Daily-AI-News"].hasTrustDialogAccepted: true in /Users/xinzhang/.claude.json.
+Permission deny rule (.claude/settings.json): Glob(~/**) is not matched by file permission checks — only Read(path) rules are. Use Read(~/**) instead (Read rules cover all file-reading tools).
