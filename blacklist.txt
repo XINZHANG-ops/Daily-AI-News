@@ -52,6 +52,7 @@ adam-s/lanes
 affaan-m/ECC
 affirmitv/ghosthands
 air-embodied-brain/Zetta-Embodiment
+aitre/prime-agent
 allianceai/endgame
 almakit/alma
 avaxiao/ReToken
@@ -95,6 +96,8 @@ justvugg/colibri
 kaarelkaarelson/lingbot-world-v2-realtime
 karpathy/nanochat
 kijai/ComfyUI-SolAttn_triton
+kokomomo250/benchmark-radar
+kookhh0827/copy-inflation-search-agents
 krillinai/KrillinAI
 kwai/MemGUI-Agent
 kyegomez/OpenMythos

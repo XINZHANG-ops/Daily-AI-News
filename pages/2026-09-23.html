@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - September 23, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 September 23, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/JuliusBrussee/caveman" class="card-title" target="_blank">JuliusBrussee/caveman</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 100k+ stars</div>
+                                <div class="meta-item"><span>🍴</span> 2.1k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Token reduction and efficiency proxy that forces AI agents to communicate in extreme brevity to cut costs without sacrificing technical accuracy.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一种旨在降低 Token 消耗和提高效率的代理工具，强制 AI Agent 以极简的“穴居人”风格交流，在不牺牲技术准确性的情况下显著降低成本。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/moonshotai/Kimi-K3" class="card-title" target="_blank">moonshotai/Kimi-K3</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 45k stars</div>
+                                <div class="meta-item"><span>🍴</span> 8.2k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A 2.8T-parameter open-weight multimodal model designed for long-horizon coding and reasoning, specializing in GPU kernel and chip design.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个拥有 2.8 万亿参数的开源权重多模态模型，专为长程代码编写和推理设计，在 GPU 内核优化和芯片设计方面具有极强能力。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/openai/skills" class="card-title" target="_blank">openai/skills</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 32k stars</div>
+                                <div class="meta-item"><span>🍴</span> 4.5k forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Official catalog of modular, task-specific procedural packages for the Codex environment, shifting from general prompting to standardized routines.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 官方发布的 Codex 环境模块化、任务特定程序包目录，标志着从通用提示词工程向标准化程序例程的转变。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">The Straits Times</span>
+                    <div class="news-time">2026-09-22</div>
+                    <a href="https://www.straitstimes.com/world/united-states/anthropic-openai-release-cheaper-ai-even-as-safety-fears-grow" class="card-title" target="_blank" data-lang="en">Anthropic and OpenAI Launch Lower-Cost High-Performance Models</a>
+                    <a href="https://www.straitstimes.com/world/united-states/anthropic-openai-release-cheaper-ai-even-as-safety-fears-grow" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 与 OpenAI 相继推出低成本高性能模型</a>
+                    <p class="card-description" data-lang="en">Anthropic released Opus 5.5 (matching Fable performance at 20% lower cost), while OpenAI countered with GPT-6 Sol and Luna, faster and cheaper variants of GPT-6 Astra.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic 发布了 Opus 5.5（以低 20% 的成本达到 Fable 级别的性能），OpenAI 则以 GPT-6 Sol 和 Luna 回击，这两者是 GPT-6 Astra 的快速且廉价版本。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Washington Post</span>
+                    <div class="news-time">2026-09-23</div>
+                    <a href="https://www.washingtonpost.com/business/2026/09/23/ai-hugging-face-swarm-internet-takeover-amodei/dbb6510a-b703-11f1-94cb-d3d8f22a8c8b_story.html" class="card-title" target="_blank" data-lang="en">Dario Amodei Warns of AI 'Swarm' Internet Takeover</a>
+                    <a href="https://www.washingtonpost.com/business/2026/09/23/ai-hugging-face-swarm-internet-takeover-amodei/dbb6510a-b703-11f1-94cb-d3d8f22a8c8b_story.html" class="card-title" target="_blank" data-lang="zh" style="display: none;">Dario Amodei 警告 AI “集群”可能接管互联网</a>
+                    <p class="card-description" data-lang="en">Anthropic's CEO warned that autonomous AI agents could form botnets to cripple financial systems, electrical grids, and transport infrastructure.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic 首席执行官警告称，自主 AI Agent 可能会形成机器人网络，从而瘫痪金融系统、电网和交通基础设施。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Verge</span>
+                    <div class="news-time">2026-09-22</div>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel" class="card-title" target="_blank" data-lang="en">OpenAI Forms AGMAI Panel with Elite Mathematicians</a>
+                    <a href="https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 与顶尖数学家成立 AGMAI 专家组</a>
+                    <p class="card-description" data-lang="en">After solving over 100 open math problems (including Navier-Stokes), OpenAI created the Advisory Group on Mathematics and AI to oversee the communication of results.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">在解决了包括纳维-斯托克斯方程在内的 100 多个数学公开难题后，OpenAI 成立了数学与 AI 咨询组（AGMAI），旨在监督研究结果的发布。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">CNA</span>
+                    <div class="news-time">2026-09-22</div>
+                    <a href="https://www.channelnewsasia.com/business/ex-google-safety-chief-warns-ai-could-harm-children-more-social-media-did-6403061" class="card-title" target="_blank" data-lang="en">Ex-Google Safety Chief Warns of AI Risks to Children</a>
+                    <a href="https://www.channelnewsasia.com/business/ex-google-safety-chief-warns-ai-could-harm-children-more-social-media-did-6403061" class="card-title" target="_blank" data-lang="zh" style="display: none;">前 Google 安全主管警告 AI 对儿童的潜在危害</a>
+                    <p class="card-description" data-lang="en">Tom Siegel warns that 'cognitive offloading' and AI-induced psychosis could be more damaging to youth than social media was.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Tom Siegel 警告称，“认知卸载”和 AI 诱发的精神错乱对青少年的伤害可能比社交媒体更严重。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Seattle Times</span>
+                    <div class="news-time">2026-09-23</div>
+                    <a href="https://www.seattletimes.com/business/a-look-at-ai-doomsday-scenarios-that-researchers-say-could-put-humanity-at-risk/" class="card-title" target="_blank" data-lang="en">Industry Leaders Call for AI Development Slowdown</a>
+                    <a href="https://www.seattletimes.com/business/a-look-at-ai-doomsday-scenarios-that-researchers-say-could-put-humanity-at-risk/" class="card-title" target="_blank" data-lang="zh" style="display: none;">行业领袖呼吁放缓 AI 开发速度</a>
+                    <p class="card-description" data-lang="en">Altman, Amodei, and Musk have called for a slowdown amid fears of misalignment and AI-driven bioweapons.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">由于担忧对齐失效以及 AI 驱动的生物武器，Altman、Amodei 和 Musk 呼吁放缓 AI 开发。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Today's landscape reveals a profound schism between AI's capability and its controllability. We are seeing a 'bifurcation of intelligence': on one side, AI is achieving transcendent breakthroughs in pure mathematics and massive-scale multimodal reasoning (Kimi-K3); on the other, it is being aggressively 'shrunk' and 'modularized' (caveman, OpenAI skills) to fit into a sustainable economic and cognitive model. The simultaneous launch of cheaper models and the escalation of 'doomsday' warnings from the very people launching them indicates that the 'Safety vs. Speed' debate has entered a stage of performative contradiction. The real story is the transition from AI as a tool to AI as a systemic force—one that can solve the Navier-Stokes equations but could also theoretically crash a power grid via a botnet swarm.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">今天的 AI 景观揭示了能力与可控性之间的深刻分裂。我们正在目睹一场“智能的分叉”：一方面，AI 在纯数学和大规模多模态推理（Kimi-K3）中取得了超越性的突破；另一方面，为了适应可持续的经济和认知模型，AI 正在被激进地“浓缩”和“模块化”（caveman, OpenAI skills）。在发布廉价模型的同时，发布者本人却在升级“末日”警告，这表明“安全 vs 速度”的辩论已进入一种表演性的矛盾阶段。真正的故事在于 AI 从“工具”向“系统力量”的转变——它既能解决纳维-斯托克斯方程，理论上也能通过机器人集群瘫痪电网。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
