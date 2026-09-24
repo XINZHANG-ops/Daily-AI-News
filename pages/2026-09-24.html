@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - September 24, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 September 24, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/moonshotai/Kimi-K3" class="card-title" target="_blank">moonshotai/Kimi-K3</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 12.4k stars</div>
+                                <div class="meta-item"><span>🍴</span> 842 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A 2.8T-parameter open-weight multimodal agentic model with 1M context window, featuring Kimi Delta Attention (KDA) and Attention Residuals (AttnRes).</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个拥有 2.8 万亿参数的开源权重多模态智能体模型，支持 100 万 token 上下文窗口，采用 Kimi Delta Attention (KDA) 和 Attention Residuals (AttnRes) 架构。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/spuentesp/lain" class="card-title" target="_blank">spuentesp/lain</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 3.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 156 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Structural code intelligence and coordination engine for AI coding agents using in-memory typed property graphs and MCP.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">为 AI 编程智能体设计的结构化代码情报与协调引擎，利用内存类型属性图和 MCP 协议实现。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/cactus-compute/needle" class="card-title" target="_blank">cactus-compute/needle</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.8k stars</div>
+                                <div class="meta-item"><span>🍴</span> 92 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Extremely compact automation models (8-29MB) optimized for on-device tool calling and structured extraction.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">极致紧凑的自动化模型（8-29MB），专门为设备端工具调用和结构化数据提取而优化。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Anthropic</span>
+                    <div class="news-time">2026-09-24</div>
+                    <a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" class="card-title" target="_blank" data-lang="en">Claude Discovers Novel CRISPR-like Enzyme System</a>
+                    <a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude 发现新型类 CRISPR 酶系统</a>
+                    <p class="card-description" data-lang="en">Anthropic's Claude agents autonomously identified a novel array-associated reverse transcriptase (ART) system in bacteriophages that could serve as a programmable DNA tool.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic 的 Claude 智能体在噬菌体中自主发现了一种新型阵列相关逆转录酶 (ART) 系统，该系统可作为可编程的 DNA 工具。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">TechCrunch</span>
+                    <div class="news-time">2026-09-23</div>
+                    <a href="https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/" class="card-title" target="_blank" data-lang="en">Meta Unveils 'Muse' Personal AI Agent Expansion</a>
+                    <a href="https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta 发布 'Muse' 个人 AI 智能体扩展功能</a>
+                    <p class="card-description" data-lang="en">Meta's Muse agent is expanding to Mac for full computer control, adding real-time expressive avatars, and integrating with wearables and shopping platforms.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta 的 Muse 智能体正在扩展到 Mac 以实现完全的计算机控制，增加实时表现力化身，并与可穿戴设备和购物平台集成。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Hacker News</span>
+                    <div class="news-time">2026-09-23</div>
+                    <a href="https://news.ycombinator.com/item?id=49801324" class="card-title" target="_blank" data-lang="en">GPT-6 Astra Solves 21-Year-Old Enigma Mystery</a>
+                    <a href="https://news.ycombinator.com/item?id=49801324" class="card-title" target="_blank" data-lang="zh" style="display: none;">GPT-6 Astra 破解 21 年前的 Enigma 之谜</a>
+                    <p class="card-description" data-lang="en">OpenAI's GPT-6 Astra autonomously wrote simulators in C++ and Python to brute-force and solve an Enigma message that had resisted human solutions since 2005.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 的 GPT-6 Astra 自主编写了 C++ 和 Python 模拟器，通过暴力破解解决了自 2005 年以来一直无法被人类破解的 Enigma 消息。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">GitHub</span>
+                    <div class="news-time">2026-09-23</div>
+                    <a href="https://github.com/moonshotai/Kimi-K3" class="card-title" target="_blank" data-lang="en">Kimi-K3: 2.8 Trillion Parameter Open-Weight Giant</a>
+                    <a href="https://github.com/moonshotai/Kimi-K3" class="card-title" target="_blank" data-lang="zh" style="display: none;">Kimi-K3：2.8 万亿参数开源权重巨头</a>
+                    <p class="card-description" data-lang="en">MoonshotAI released Kimi-K3, a massive multimodal model with a 1M token context window using Kimi Delta Attention for long-horizon reasoning.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">MoonshotAI 发布了 Kimi-K3，这是一个拥有 100 万 token 上下文窗口的大规模多模态模型，采用 Kimi Delta Attention 实现长程推理。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Hacker News</span>
+                    <div class="news-time">2026-09-23</div>
+                    <a href="https://github.com/cactus-compute/needle" class="card-title" target="_blank" data-lang="en">Cactus Needle 3: High-Efficiency Automation in 29MB</a>
+                    <a href="https://github.com/cactus-compute/needle" class="card-title" target="_blank" data-lang="zh" style="display: none;">Cactus Needle 3：29MB 内实现高效自动化</a>
+                    <p class="card-description" data-lang="en">Cactus Needle 3 focuses on extremely small models (8-29MB) that match the tool-calling performance of larger models like DeepSeek V4 Flash.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Cactus Needle 3 专注于极小模型（8-29MB），在工具调用性能上可媲美 DeepSeek V4 Flash 等大模型。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Today's landscape reveals a stark divergence in AI evolution: the 'Hyper-Scale' vs. 'Hyper-Efficient' war. On one end, we have Moonshot's 2.8T Kimi-K3 and OpenAI's agentic Astra, pushing the boundaries of what a single massive model can 'think' through and 'build'. On the other, we have Needle 3 shrinking AI to the size of a JPEG, enabling intelligence at the absolute edge. The common thread is the shift toward 'Agentic Autonomy'—whether it's Claude discovering new biology, Astra writing its own simulators, or Muse managing your email. We are moving past the era of 'AI as a tool we use' and into the era of 'AI as an agent that acts', where the value is no longer in the output text, but in the successful completion of a complex, multi-step real-world goal.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">今天的图景揭示了 AI 演进的一个剧烈分歧：“超大规模”与“超高效”之战。一端是 Moonshot 的 2.8 万亿参数 Kimi-K3 和 OpenAI 的智能体 Astra，它们在挑战单个巨型模型能“思考”和“构建”的极限；另一端则是将 AI 压缩至图片大小的 Needle 3，使智能能够在绝对边缘端运行。共同的线索是向“智能体自主”的转变——无论是 Claude 发现新生物学、Astra 编写自己的模拟器，还是 Muse 管理你的邮件。我们正在走出“AI 作为工具”的时代，进入“AI 作为代理”的时代，其价值不再于输出的文本，而在于能否成功完成一个复杂的、多步骤的现实目标。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
