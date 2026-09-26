@@ -1,0 +1,116 @@
+{
+  "date": "2026-09-26",
+  "github_repos": [
+    {
+      "name": "TheoLeeCJ/SemIf",
+      "url": "https://github.com/TheoLeeCJ/SemIf",
+      "description": {
+        "en": "Semantic Decisions via Open Models. Reads typed option probabilities directly from a model without generating chat responses, significantly reducing latency.",
+        "zh": "通过开源模型实现语义决策。直接从模型中读取类型化选项的概率，无需生成聊天响应，从而显著降低延迟。"
+      },
+      "stars": "1.2k",
+      "forks": "145"
+    },
+    {
+      "name": "TianyuCodings/NanoJev",
+      "url": "https://github.com/TianyuCodings/NanoJev",
+      "description": {
+        "en": "A 0.6B parameter replica of the Jev architecture for nano-scale decision models in gaming and agents, bypassing output-token decoding.",
+        "zh": "Jev 架构的 0.6B 参数副本，用于游戏和智能体的纳米级决策模型，绕过输出 token 解码。"
+      },
+      "stars": "840",
+      "forks": "92"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Shifts to For-Profit Structure, Sam Altman to Receive Equity",
+        "zh": "OpenAI 转型为营利性结构，萨姆·阿尔特曼将获得股权"
+      },
+      "url": "https://www.reuters.com/technology/artificial-intelligence/openai-remove-non-profit-control-give-sam-altman-equity-sources-say-2024-09-25/",
+      "source": "Reuters",
+      "time": "2026-09-25",
+      "description": {
+        "en": "OpenAI plans to transition from a non-profit-controlled structure to a for-profit benefit corporation, removing the non-profit board's control and potentially granting equity to CEO Sam Altman.",
+        "zh": "OpenAI 计划从非营利组织控制的结构转型为营利性企业，取消非营利董事会的控制权，并可能向首席执行官萨姆·阿尔特曼授予股权。"
+      },
+      "insight": {
+        "en": "The final nail in the 'non-profit' coffin. This pivot acknowledges that the compute costs of AGI are incompatible with a charity model, aligning OpenAI's incentives with Silicon Valley's venture capital norms to secure the $150B valuation needed for next-gen clusters.",
+        "zh": "非营利模式的最终终结。这次转型承认 AGI 的计算成本与慈善模式不兼容，将 OpenAI 的激励机制与硅谷的风投规范接轨，以确保获得下一代集群所需的 1500 亿美元估值。"
+      }
+    },
+    {
+      "title": {
+        "en": "OpenAI CTO Mira Murati and Top Research Execs Depart",
+        "zh": "OpenAI CTO Mira Murati 及顶级研究高管离职"
+      },
+      "url": "https://www.reuters.com/technology/artificial-intelligence/openais-technology-chief-mira-murati-leave-2024-09-25/",
+      "source": "Reuters",
+      "time": "2026-09-25",
+      "description": {
+        "en": "Mira Murati (CTO), Barret Zoph (VP of Research), and Bob McGrew (Chief Research Officer) have all resigned from OpenAI.",
+        "zh": "Mira Murati（CTO）、Barret Zoph（研究副总裁）和 Bob McGrew（首席研究官）均已从 OpenAI 辞职。"
+      },
+      "insight": {
+        "en": "A massive brain drain at the exact moment of corporate restructuring. The exodus of the CTO and Chief Research Officer suggests a fundamental misalignment between the remaining leadership's commercial pivot and the research team's vision, potentially slowing the roadmap for GPT-5.",
+        "zh": "在公司结构重组的关键时刻出现大规模人才流失。CTO 和首席研究官的离开表明，剩余领导层的商业转型与研究团队的愿景之间存在根本性的分歧，可能会拖慢 GPT-5 的路线图。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Unveils Llama 3.2 Multimodal Models",
+        "zh": "Meta 发布 Llama 3.2 多模态模型"
+      },
+      "url": "https://www.theverge.com/2024/9/25/24253774/meta-ai-vision-model-llama-3-2-announced",
+      "source": "The Verge",
+      "time": "2026-09-25",
+      "description": {
+        "en": "Meta releases its first open-source multimodal models, including vision-capable models (11B, 90B) and lightweight text models (1B, 3B) for mobile devices.",
+        "zh": "Meta 发布了首款开源多模态模型，包括具备视觉能力的模型（11B, 90B）以及适用于移动设备的轻量级文本模型（1B, 3B）。"
+      },
+      "insight": {
+        "en": "Meta continues its 'Open Weights' strategy to commoditize the underlying model layer. By providing multimodal capabilities at the 11B scale, they are squeezing the value of mid-sized proprietary vision models and enabling on-device AI agents that don't require cloud round-trips.",
+        "zh": "Meta 继续其“开放权重”战略以将底层模型层商品化。通过在 11B 规模提供多模态能力，他们正在挤压中型私有视觉模型的价值，并使无需云端往返的设备端 AI 智能体成为可能。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Reveals 'Orion' True AR Glasses Prototype",
+        "zh": "Meta 展示 'Orion' 真 AR 眼镜原型"
+      },
+      "url": "https://www.meta.com/blog/orion-ar-glasses-augmented-reality/",
+      "source": "Meta",
+      "time": "2026-09-25",
+      "description": {
+        "en": "Mark Zuckerberg unveiled Orion, AR glasses featuring holographic displays and an EMG wristband for control via muscle movements.",
+        "zh": "马克·扎克伯格展示了 Orion，一款具有全息显示屏和可通过肌肉运动控制的 EMG 手环的 AR 眼镜。"
+      },
+      "insight": {
+        "en": "The 'iPhone moment' for AR. By combining high-res holographics with a neural interface (EMG), Meta is moving beyond the 'smart glasses' (camera/audio) phase into a full spatial computing platform, directly challenging Apple's Vision Pro approach with a wearable form factor.",
+        "zh": "AR 领域的 'iPhone 时刻'。通过将高分辨率全息图与神经接口 (EMG) 结合，Meta 正在从'智能眼镜'（摄像头/音频）阶段进入完整的空间计算平台，以可穿戴的形式直接挑战苹果 Vision Pro 的方案。"
+      }
+    },
+    {
+      "title": {
+        "en": "Ai2 Releases Molmo: High-Performance Open Multimodal Model",
+        "zh": "Ai2 发布 Molmo：高性能开源多模态模型"
+      },
+      "url": "https://techcrunch.com/2024/09/25/ai2s-molmo-shows-open-source-can-meet-and-beat-closed-multimodal-models/",
+      "source": "TechCrunch",
+      "time": "2026-09-25",
+      "description": {
+        "en": "The Allen Institute for AI (Ai2) released Molmo, an open-source multimodal model that matches or beats closed models like GPT-4o using a curated set of 600k high-quality descriptions.",
+        "zh": "艾伦人工智能研究所 (Ai2) 发布了 Molmo，一个开源多模态模型，通过使用 60 万个高质量描述的精选数据集，性能可媲美甚至超越 GPT-4o 等闭源模型。"
+      },
+      "insight": {
+        "en": "A masterclass in data efficiency. Molmo proves that curated, high-quality human annotation beats brute-force scaling. This shifts the multimodal arms race from 'who has the most images' to 'who has the best descriptions', lowering the barrier for academic labs to compete with Big Tech.",
+        "zh": "数据效率的典范。Molmo 证明了精选的高质量人类标注优于暴力扩充规模。这将多模态军备竞赛从'谁拥有更多图像'转向'谁拥有更好的描述'，降低了学术机构与科技巨头竞争的门槛。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "Today's events reveal a stark divergence in the AI industry: the 'Closed Giants' are fracturing while the 'Open Ecosystem' is consolidating. OpenAI's corporate turmoil and executive exodus signal a crisis of identity as it pivots to a pure VC-driven commercial entity. Meanwhile, Meta and Ai2 are rapidly closing the gap in multimodal capabilities, moving the battlefield from the cloud to the edge. The emergence of 'decision-native' small models like SemIf and NanoJev further suggests a shift in agent architecture—away from chatting and toward direct, high-speed probability readouts for action. The real story is the decentralization of intelligence: from centralized non-profits to distributed open weights and on-device spatial computing.",
+    "zh": "今天的事件揭示了 AI 行业的显著分叉：'闭源巨头'正在出现裂痕，而'开源生态'正在整合。OpenAI 的公司动荡和高管流失标志着其在转型为纯 VC 驱动的商业实体时陷入了身份危机。与此同时，Meta 和 Ai2 在多模态能力上迅速缩小差距，将战场从云端移至边缘。像 SemIf 和 NanoJev 这样'决策原生'的小模型的出现，进一步表明了智能体架构的转变——从'聊天'转向用于执行的高速直接概率读取。真正的故事是智能的去中心化：从集权化的非营利组织转向分布式的开放权重和设备端空间计算。"
+  }
+}
