@@ -1,5 +1,6 @@
 AhernResearch/grava
 AmElmo/proofshot
+Contrastive-LM/CLM
 Creative-Intelligence-Studio/GeoNeXt
 DeepCybo-PhysAI/PhysBrainEvalKit
 Encephos/micro-agent-router
@@ -13,6 +14,7 @@ K-Dense-AI/scientific-agent-skills
 MadewellRD/RRDA-Rapid-Research-Discovery-Analysis
 Nanako0129/sepia
 PetrefiedThunder/mcp-github-api
+QwenLM/Qwen-Image-2.1
 S1s-Z/EAGLET
 Sakshi3027/signal
 TheoLeeCJ/SemIf
@@ -49,6 +51,7 @@ meta-agentic/meta-science
 microsoft/SkillOpt
 moonshotai/Kimi-K3
 motif-Labs/motif
+ninjahawk/livenerf
 nwinkelman2/agents-radar
 obra/superpowers
 open-gitagent/gitagent
