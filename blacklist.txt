@@ -16,6 +16,7 @@ Nanako0129/sepia
 PetrefiedThunder/mcp-github-api
 QwenLM/Qwen-Image-2.1
 S1s-Z/EAGLET
+SakanaAI/AI-Scientist
 Sakshi3027/signal
 TheoLeeCJ/SemIf
 TianyuCodings/NanoJev
@@ -49,6 +50,7 @@ lsdefine/GenericAgent
 magnitudedev/magnitude
 meta-agentic/meta-science
 microsoft/SkillOpt
+mit-han-lab/hart
 moonshotai/Kimi-K3
 motif-Labs/motif
 ninjahawk/livenerf
@@ -61,6 +63,7 @@ primeintellect-ai/prime-agent
 raktim-mondol/co-scientist
 rondoflow/rondoflow
 simular-ai/Agent-S
+simular-ai/agent-s
 spuentesp/lain
 starVLA/VLAct
 theguysudo/ENZO
