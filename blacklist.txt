@@ -12,7 +12,9 @@ JonusNattapong/MCPSearch
 JuliusBrussee/caveman
 K-Dense-AI/scientific-agent-skills
 MadewellRD/RRDA-Rapid-Research-Discovery-Analysis
+NVIDIA/OpenShell
 Nanako0129/sepia
+Panniantong/Agent-Reach
 PetrefiedThunder/mcp-github-api
 QwenLM/Qwen-Image-2.1
 S1s-Z/EAGLET
@@ -35,6 +37,7 @@ ddfriday/repo-pulse
 devdotfast/whiteboard
 diegosouzapw/OmniRoute
 eminsk/agentjit
+heygen-com/hyperframes
 ideogram-oss/ideogram4
 jihe520/MathModelAgent
 justvugg/colibri
