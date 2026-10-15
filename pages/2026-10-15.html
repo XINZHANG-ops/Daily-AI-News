@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - October 15, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 October 15, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/patrickclery/awesomer" class="card-title" target="_blank">patrickclery/awesomer</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.2k stars</div>
+                                <div class="meta-item"><span>🍴</span> 85 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A tool that sorts existing 'awesome-lists' by trending stars and updates daily to discover high-quality open-source projects.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个能够根据趋势星数对现有 'awesome-list' 进行排序并每日更新的工具，帮助开发者发现高质量的开源项目。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/HarlonWang/TrendingAI" class="card-title" target="_blank">HarlonWang/TrendingAI</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 840 stars</div>
+                                <div class="meta-item"><span>🍴</span> 62 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A cross-platform client using LLMs to summarize GitHub Trending READMEs into concise one-sentence descriptions.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个利用大语言模型将 GitHub Trending 的 README 总结为简练单句描述的跨平台客户端。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/tsubasaogawa/showhn-github-viewer" class="card-title" target="_blank">tsubasaogawa/showhn-github-viewer</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 420 stars</div>
+                                <div class="meta-item"><span>🍴</span> 31 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A Python-based CLI tool with a TUI for browsing 'Show HN' posts featuring GitHub repositories, including README previews.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个基于 Python 的 CLI 工具，提供 TUI 界面用于浏览 'Show HN' 中包含 GitHub 仓库的帖子，并支持 README 预览。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">Aivio</span>
+                    <div class="news-time">2026-10-15</div>
+                    <a href="https://aivio.news/companies/" class="card-title" target="_blank" data-lang="en">OpenAI Rolls Out GPT-6 with 'Intelligent UI'</a>
+                    <a href="https://aivio.news/companies/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 推出带有 '智能 UI' 的 GPT-6</a>
+                    <p class="card-description" data-lang="en">OpenAI is deploying GPT-6 (Sol for paid, Luna for free) to 1.2B weekly users, featuring a new 'Intelligent UI' with integrated charts and buttons.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 正在向 12 亿周活跃用户部署 GPT-6（付费版 Sol，免费版 Luna），其特点是引入了带有集成图表和按钮的 '智能 UI'。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Laojin Global</span>
+                    <div class="news-time">2026-10-15</div>
+                    <a href="https://www.laojinchuhai.com/en/insights/frontier-daily-2026-10-15" class="card-title" target="_blank" data-lang="en">Anthropic Launches Claude Haiku 5.5 with 75% Cost Reduction</a>
+                    <a href="https://www.laojinchuhai.com/en/insights/frontier-daily-2026-10-15" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 发布 Claude Haiku 5.5，运行成本降低 75%</a>
+                    <p class="card-description" data-lang="en">Claude Haiku 5.5 reduces running costs by 75% compared to v4.5, alongside reductions in cache-read costs for Sonnet 5.5.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude Haiku 5.5 相比 v4.5 降低了 75% 的运行成本，同时还降低了 Sonnet 5.5 的缓存读取成本。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Logic of Logic</span>
+                    <div class="news-time">2026-10-13</div>
+                    <a href="https://logicoflogic.com/today" class="card-title" target="_blank" data-lang="en">Google DeepMind Worldwide Rollout of Gemini 4 Argon</a>
+                    <a href="https://logicoflogic.com/today" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google DeepMind 全球推出 Gemini 4 Argon</a>
+                    <p class="card-description" data-lang="en">Gemini 4 Argon, a high-reasoning model for complex creative and analytical tasks, has been released worldwide and ranks #1 on the Vals Index.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Gemini 4 Argon 现已全球发布，这是一个针对复杂创意和分析任务的高推理模型，在 Vals 指数中排名第一。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Sonar Mag</span>
+                    <div class="news-time">2026-10-15</div>
+                    <a href="https://www.sonarmag.com/ai-wars" class="card-title" target="_blank" data-lang="en">Meta AI Releases 'Muse Wonder' Frontier Models</a>
+                    <a href="https://www.sonarmag.com/ai-wars" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta AI 发布 'Muse Wonder' 前沿模型</a>
+                    <p class="card-description" data-lang="en">Meta launched Muse Wonder and Muse Wonder Full, its first true frontier models, with the app hitting #1 on the US App Store Productivity chart.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Meta 推出了 Muse Wonder 和 Muse Wonder Full，这是其首批真正的前沿模型，相关应用已登顶美国 App Store 生产力榜。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Aivio</span>
+                    <div class="news-time">2026-10-15</div>
+                    <a href="https://aivio.news/companies/" class="card-title" target="_blank" data-lang="en">OpenAI Introduces 'Decisions API' in Public Beta</a>
+                    <a href="https://aivio.news/companies/" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 公测推出 'Decisions API'</a>
+                    <p class="card-description" data-lang="en">OpenAI allows models to plan their own execution steps and provide typed verdicts instead of natural language essays.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">OpenAI 允许模型规划自身的执行步骤，并提供类型化的判定结果，而非自然语言形式的论文。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Laojin Global</span>
+                    <div class="news-time">2026-10-15</div>
+                    <a href="https://www.laojinchuhai.com/en/insights/frontier-daily-2026-10-15" class="card-title" target="_blank" data-lang="en">Mistral Previews 1-Trillion Parameter 'Mistral Large 4'</a>
+                    <a href="https://www.laojinchuhai.com/en/insights/frontier-daily-2026-10-15" class="card-title" target="_blank" data-lang="zh" style="display: none;">Mistral 预览万亿参数模型 'Mistral Large 4'</a>
+                    <p class="card-description" data-lang="en">Mistral previewed Mistral Large 4, a 1T parameter model expected to release weights later in October.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Mistral 预览了 Mistral Large 4，这是一个拥有 1 万亿参数的模型，预计将在 10 月晚些时候发布权重。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">The overarching narrative of October 15, 2026, is the 'Convergence of Reasoning and Interface.' We are seeing a simultaneous push from all major labs (OpenAI, Anthropic, Google, and Meta) toward higher-order reasoning models (Argon, Wonder, GPT-6), but the real breakthrough is how this reasoning is delivered. OpenAI's 'Intelligent UI' and 'Decisions API' signal that the era of the 'text-box' is ending. The goal is no longer just to get the right answer, but to integrate that answer into an actionable, structured, and visual workflow. Simultaneously, the cost war is intensifying with Haiku 5.5 and DeepSeek's volume lead, creating a bifurcated market: ultra-capable 'reasoning' models for complex planning, and hyper-efficient 'orchestrator' models for the high-volume glue code of the agentic web.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026 年 10 月 15 日的核心叙事是 '推理与界面的融合'。我们看到所有主要实验室（OpenAI, Anthropic, Google, Meta）都在同步推进高阶推理模型（Argon, Muse Wonder, GPT-6），但真正的突破在于这些推理是如何交付的。OpenAI 的 '智能 UI' 和 'Decisions API' 标志着 '对话框' 时代的终结。目标不再仅仅是获得正确答案，而是将答案集成到可执行、结构化且可视化的工作流中。与此同时，随着 Haiku 5.5 的发布和 DeepSeek 的流量领先，成本战进一步升级，市场正在分化：一方面是用于复杂规划的超强 '推理' 模型，另一方面是用于 Agent 互联网高频 '胶水代码' 的极高效 '编排'模型。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
