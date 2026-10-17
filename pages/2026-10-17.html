@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - October 17, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 October 17, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/onehumanbeing/esp32-iphone-agent" class="card-title" target="_blank">onehumanbeing/esp32-iphone-agent</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.9k stars</div>
+                                <div class="meta-item"><span>🍴</span> 112 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Allows an AI model to control a real iPhone via a  ESP32.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">允许 AI 模型通过一个仅需 7 美元的 ESP32 芯片来控制真实的 iPhone。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/liseami/CCBaga" class="card-title" target="_blank">liseami/CCBaga</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 2.5k stars</div>
+                                <div class="meta-item"><span>🍴</span> 84 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Tools for managing Claude identities for travelers/expats.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">为旅行者和外籍人士提供的 Claude 身份管理工具。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/feder-cr/git-ai" class="card-title" target="_blank">feder-cr/git-ai</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 1.1k stars</div>
+                                <div class="meta-item"><span>🍴</span> 45 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">A specialized version of Git designed specifically for AI agents.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">专为 AI Agent 设计的定制化 Git 版本。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">AIBriefs</span>
+                    <div class="news-time">2026-10-17</div>
+                    <a href="https://aibriefs.news/briefing/2026-10-17" class="card-title" target="_blank" data-lang="en">Google Launches Gemini 4 Argon with 1M Output Tokens</a>
+                    <a href="https://aibriefs.news/briefing/2026-10-17" class="card-title" target="_blank" data-lang="zh" style="display: none;">Google 发布 Gemini 4 Argon，支持 100 万输出 Token</a>
+                    <p class="card-description" data-lang="en">Gemini 4 Argon matches GPT-6 Astra on intelligence benchmarks but costs 40% less, introducing the first 1M output token capacity for proprietary models.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Gemini 4 Argon 在智能基准测试中与 GPT-6 Astra 持平，但成本降低了 40%，且成为首个支持 100 万输出 Token 的闭源模型。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI News Online</span>
+                    <div class="news-time">2026-10-16</div>
+                    <a href="https://ai-news-online.com/briefing/2026-10-16/" class="card-title" target="_blank" data-lang="en">Meta Releases Muse Spark Open 816B for Mac Studios</a>
+                    <a href="https://ai-news-online.com/briefing/2026-10-16/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Meta 发布 Muse Spark Open 816B，支持在 Mac Studio 上运行</a>
+                    <p class="card-description" data-lang="en">An 816B open-weight model optimized to run on two high-spec Mac Studios via a strategic collaboration with Apple.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个 816B 的开源权重模型，通过与 Apple 的战略合作，优化后可在两台高配置 Mac Studio 上运行。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Context</span>
+                    <div class="news-time">2026-10-17</div>
+                    <a href="https://thecontext.dev/en/briefing/2026-10-17/" class="card-title" target="_blank" data-lang="en">Claude Solves 26-Year NIST Elliptic Curve Mystery</a>
+                    <a href="https://thecontext.dev/en/briefing/2026-10-17/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude 破解 26 年 NIST 椭圆曲线种子之谜</a>
+                    <p class="card-description" data-lang="en">Anthropic's Claude traced NIST's elliptic curve seeds back to a 1990s random number generator (lrand48) seeded with UNIX timestamps.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Anthropic 的 Claude 将 NIST 的椭圆曲线种子追溯到了 20 世纪 90 年代一个以 UNIX 时间戳为种子的随机数生成器 (lrand48)。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI Magazine</span>
+                    <div class="news-time">2026-10-17</div>
+                    <a href="https://aimagazine.com/news/this-weeks-top-five-stories-in-ai-week-3-october" class="card-title" target="_blank" data-lang="en">Microsoft Pre-trains MAI-Base-2 with 2.8 Trillion Parameters</a>
+                    <a href="https://aimagazine.com/news/this-weeks-top-five-stories-in-ai-week-3-october" class="card-title" target="_blank" data-lang="zh" style="display: none;">微软完成 2.8 万亿参数 MAI-Base-2 预训练</a>
+                    <p class="card-description" data-lang="en">A massive MoE model claiming higher compute efficiency than DeepSeek models, intended for licensing to trusted partners.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个巨大的 MoE 模型，声称比 DeepSeek 模型具有更高的计算效率，旨在授权给信任的合作伙伴。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">ExplainX</span>
+                    <div class="news-time">2026-10-16</div>
+                    <a href="https://www.explainx.ai/catch-up-on-ai/2026-10-16" class="card-title" target="_blank" data-lang="en">FTC and EU AI Office Issue Subpoenas to AI Labs</a>
+                    <a href="https://www.explainx.ai/catch-up-on-ai/2026-10-16" class="card-title" target="_blank" data-lang="zh" style="display: none;">美国 FTC 和欧盟 AI 办公室向 AI 实验室发出传票</a>
+                    <p class="card-description" data-lang="en">Regulators are intensifying scrutiny of OpenAI and Anthropic over safety incidents and data handling.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">监管机构正针对安全事故和数据处理问题，加大对 OpenAI 和 Anthropic 的审查力度。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">The Context</span>
+                    <div class="news-time">2026-10-17</div>
+                    <a href="https://thecontext.dev/en/briefing/2026-10-17/" class="card-title" target="_blank" data-lang="en">Anthropic Reveals 90% of Claude Code Written by Claude</a>
+                    <a href="https://thecontext.dev/en/briefing/2026-10-17/" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 透露 Claude Code 90% 的代码由 Claude 自身编写</a>
+                    <p class="card-description" data-lang="en">A recursive development cycle where the AI builds its own harness, shifting human roles from 'writers' to 'high-level reviewers.'</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">一个递归开发循环，AI 构建自己的工具链，人类的角色从“编写者”转变为“高层评审员”。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">October 17, 2026, marks a pivot toward 'Agentic Infrastructure' and 'Local Frontier' power. The day's narrative is dominated by the struggle between centralization (Google's 1M output tokens, Microsoft's 2.8T model) and decentralization (Meta's 816B local model on Macs). The most striking pattern is the 'Recursion'—Claude solving a legacy crypto mystery and writing its own code—signaling that AI is no longer just a tool for tasks, but a primary agent of scientific discovery and software engineering. Simultaneously, the regulatory subpoenas act as a 'reality check,' attempting to synchronize legal boundaries with exponential technical leaps.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">2026 年 10 月 17 日标志着向“Agent 基础设施”和“本地前沿”能力的转向。当天的叙事由中心化（Google 的 100 万输出 Token，微软的 2.8 万亿模型）与去中心化（Meta 在 Mac 上运行的 816B 本地模型）之间的博弈主导。最引人注目的模式是“递归”——Claude 破解了遗留的密码学之谜并编写了自己的代码——这标志着 AI 不再仅仅是执行任务的工具，而是科学发现和软件工程的主要代理。与此同时，监管机构的传票起到了“现实校准”的作用，试图将法律边界与指数级的技术飞跃同步。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
