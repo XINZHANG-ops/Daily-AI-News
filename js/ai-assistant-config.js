@@ -10,13 +10,13 @@
 // Configuration options:
 const AI_CONFIG = {
   // For local development (when opening file:// or http://localhost)
-  LOCAL: 'http://localhost:8080/chat',
+  LOCAL: 'https://mac-mini-intel.tail1b23a2.ts.net:8443/news/chat',
 
   // For GitHub Pages with ngrok tunnel (same backend as daily_paper)
-  NGROK: 'https://jule-uncranked-overlavishly.ngrok-free.dev/chat',
+  NGROK: 'https://mac-mini-intel.tail1b23a2.ts.net:8443/news/chat',
 
   // For production with a proper backend
-  PRODUCTION: 'https://your-api-server.com/chat'
+  PRODUCTION: 'https://mac-mini-intel.tail1b23a2.ts.net:8443/news/chat'
 };
 
 // Auto-detect environment and set appropriate URL
