@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - October 19, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+        }
+        
+        .section-title span {
+            font-size: 2rem;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.2s ease;
+        }
+        
+        .card-title:hover {
+            color: #00d4ff;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .meta-item span {
+            color: #ffd700;
+        }
+        
+        .card-description {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .news-card .card-title {
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        
+        .news-source {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .news-time {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        /* Insight Section */
+        .insight-card {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15) 0%, rgba(123, 44, 191, 0.15) 100%);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            grid-column: 1 / -1;
+        }
+        
+        .insight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560 0%, #7b2cbf 100%);
+        }
+        
+        .insight-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #f0f0f0;
+            font-style: italic;
+            position: relative;
+            padding-left: 25px;
+            border-left: 3px solid #e94560;
+        }
+        
+        .insight-content::before {
+            content: '"';
+            position: absolute;
+            left: -8px;
+            top: -15px;
+            font-size: 4rem;
+            color: #e94560;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .lang-switcher {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px auto;
+                justify-content: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            </div>
+            <h1>🤖 Daily AI News Digest</h1>
+            <div class="date-badge">📅 October 19, 2026</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🐙 Trending GitHub Repositories</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🐙 热门 GitHub 仓库</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Leonxlnx/earshot" class="card-title" target="_blank">Leonxlnx/earshot</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 890 stars</div>
+                                <div class="meta-item"><span>🍴</span> 52 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">为编程 Agent 提供听觉：让 AI 能够听到、审核并发出声音。仅支持 CPU，开源。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/LiCinCan/blender-ai-mcp-addon" class="card-title" target="_blank">LiCinCan/blender-ai-mcp-addon</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 788 stars</div>
+                                <div class="meta-item"><span>🍴</span> 377 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Blender 的 AI 助手和 MCP 服务器：支持视觉聊天、场景工具和多 Agent 工作流。兼容 OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode。</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <a href="https://github.com/Zfinix/eleven" class="card-title" target="_blank">Zfinix/eleven</a>
+                            <div class="card-meta">
+                                <div class="meta-item"><span>⭐</span> 762 stars</div>
+                                <div class="meta-item"><span>🍴</span> 119 forks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description" data-lang="en">Agent-first reverse engineering for macOS, Windows and Linux: any ACP agent reads, renames and patches binaries, Android apps and GPU kernels next to you.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">面向 Agent 的 macOS, Windows 和 Linux 逆向工程工具：支持 ACP Agent 读取、重命名和修补二进制文件、Android 应用及 GPU 内核。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">🤖 AI News & Updates</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">🤖 AI 新闻与更新</h2>
+            <div class="cards-grid">
+                <div class="card news-card">
+                    <span class="news-source">AI Pro Playbook</span>
+                    <div class="news-time">2026-10-18</div>
+                    <a href="https://aiproplaybook.com/top-ai-stories/2026-10-18" class="card-title" target="_blank" data-lang="en">Anthropic Reports Junior Hiring Collapse as AI Agents Log 6x More Hours</a>
+                    <a href="https://aiproplaybook.com/top-ai-stories/2026-10-18" class="card-title" target="_blank" data-lang="zh" style="display: none;">Anthropic 报告初级员工招聘崩溃，AI Agent 工作时长达人类 6 倍</a>
+                    <p class="card-description" data-lang="en">Internal data shows junior technical hires dropped from 27% to 9% as interactive AI agents took over entry-level tasks, now logging 6x more hours than human employees.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">内部数据显示，随着交互式 AI Agent 接管入门级任务，初级技术人员的招聘比例从 27% 下降到 9%，且 Agent 的工作时长现已达到人类员工的 6 倍。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AGI Hunt</span>
+                    <div class="news-time">2026-10-19</div>
+                    <a href="https://agihunt.info/en/daily/2026-10-19" class="card-title" target="_blank" data-lang="en">The 'Agent Blockade': Major Institutions Begin Blocking Third-Party AI Agents</a>
+                    <a href="https://agihunt.info/en/daily/2026-10-19" class="card-title" target="_blank" data-lang="zh" style="display: none;">“Agent 封锁”：主流机构开始拦截第三方 AI Agent</a>
+                    <p class="card-description" data-lang="en">Amazon, Delta Air Lines, Yelp, JPMorgan Chase, and Charles Schwab are blocking AI agents to prevent unauthorized account access and protect data licensing.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">亚马逊、达美航空、Yelp、摩根大通和嘉信理财等机构开始封锁 AI Agent，以防止未经授权的账户访问并保护数据授权权益。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI Pro Playbook</span>
+                    <div class="news-time">2026-10-18</div>
+                    <a href="https://aiproplaybook.com/top-ai-stories/2026-10-18" class="card-title" target="_blank" data-lang="en">Claude Solves 25-Year-Old NSA ECDSA Mystery in 30 Minutes</a>
+                    <a href="https://aiproplaybook.com/top-ai-stories/2026-10-18" class="card-title" target="_blank" data-lang="zh" style="display: none;">Claude 在 30 分钟内破解 NSA 25 年之久的 ECDSA 椭圆曲线种子之谜</a>
+                    <p class="card-description" data-lang="en">Claude traced the mystery seeds of the NSA's elliptic-curve cryptography back to a mundane 1990s C library random number generator (RNG).</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">Claude 将 NSA 椭圆曲线加密的神秘种子追溯到了 20 世纪 90 年代一个平凡的 C 语言库随机数生成器 (RNG) 上。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">Stillflood</span>
+                    <div class="news-time">2026-10-19</div>
+                    <a href="https://sflood.com/en/daily/ai-2026-10-19" class="card-title" target="_blank" data-lang="en">DeepSeek V4.1-Flash-1017 Challenges Frontier Models in Browser-Use</a>
+                    <a href="https://sflood.com/en/daily/ai-2026-10-19" class="card-title" target="_blank" data-lang="zh" style="display: none;">DeepSeek V4.1-Flash-1017 在浏览器操作能力上挑战前沿模型</a>
+                    <p class="card-description" data-lang="en">Launched as a Pareto improvement, the open-weight model competes with top-tier models in browser-use and 3D reconstruction at a fraction of the cost.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">作为一次帕累托改进，该开源权重模型在浏览器操作和 3D 重构任务中与顶尖模型竞争，且成本仅为后者的一小部分。</p>
+                </div>
+                <div class="card news-card">
+                    <span class="news-source">AI Weekly</span>
+                    <div class="news-time">2026-10-19</div>
+                    <a href="https://aiweekly.co/ai-news-today" class="card-title" target="_blank" data-lang="en">OpenAI's 'Aurora' Model IDs Leak; Terence Tao Praises Math Breakthrough</a>
+                    <a href="https://aiweekly.co/ai-news-today" class="card-title" target="_blank" data-lang="zh" style="display: none;">OpenAI 'Aurora' 模型 ID 泄露；陶哲轩赞赏其数学突破</a>
+                    <p class="card-description" data-lang="en">Leaked IDs (aurora-red, green, blue) suggest a new capability; simultaneously, Terence Tao called an OpenAI result on the quasi-Riemann Hypothesis the 'biggest advance in 50 years'.</p>
+                    <p class="card-description" data-lang="zh" style="display: none;">泄露的 ID（aurora-red, green, blue）暗示了新能力；与此同时，陶哲轩称 OpenAI 在拟黎曼猜想上的结果是“50 年来最大的进步”。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title" data-lang="en">💡 Daily Insight</h2>
+            <h2 class="section-title" data-lang="zh" style="display: none;">💡 每日洞察</h2>
+            <div class="cards-grid">
+                <div class="insight-card">
+                    <div class="insight-content" data-lang="en">Today's narrative is the 'Collision of the Agentic Era'. We are seeing a peak in capability (Claude solving NSA mysteries, DeepSeek mastering browsers, OpenAI hitting math milestones) hitting a hard wall of institutional resistance (The Agent Blockade). The most striking data point is the 6x work-hour disparity at Anthropic; we are no longer talking about AI 'helping' us, but about a structural replacement of the professional ladder. The transition from 'Chatbot' to 'Agent' is causing a systemic shock: companies are losing their junior talent pipeline, and the internet's open-access model is being dismantled to stop the very agents we are buildding. The real story is that the technology is moving faster than the social and legal infrastructure can adapt, leading to a fragmented 'walled garden' internet for AI.</div>
+                    <div class="insight-content" data-lang="zh" style="display: none;">今天的主题是 “Agent 时代的碰撞”。我们看到能力在攀升（Claude 破解 NSA 之谜、DeepSeek 精通浏览器操作、OpenAI 在数学上数学突破），但与此同时，这些能力撞上了制度抵制的硬墙（Agent 封锁）。最触目惊心的指标是 Anthropic 内部 6 倍的工作时长差距；我们讨论的不再是 AI “帮助”我们，而是职业阶梯的结构性替换。从“聊天机器人”到“Agent”的转变正在引发系统性冲击：公司正在失去初级人才管线，而互联网的开放访问模式正为了阻止我们构建的 Agent 而被拆除。真正的故事是：技术的发展速度远超社会和法律法律基础设施的适应速度，导致互联网正演变为一个为 AI 准备的、碎片化的“围墙花园”。</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-lang="en">Generated automatically • Daily AI News Digest</p>
+            <p data-lang="zh" style="display: none;">自动生成 • 每日 AI 新闻摘要</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Language switcher functionality
+        function switchLang(lang) {
+            // Update active button state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide content based on language (skip buttons)
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.tagName === 'BUTTON') return; // Skip language buttons
+                if (el.getAttribute('data-lang') === lang) {
+                    // For section titles (H2), use flex display
+                    if (el.classList.contains('section-title')) {
+                        el.style.display = 'flex';
+                    } else {
+                        // For other elements, remove inline display to use CSS default
+                        el.style.display = '';
+                    }
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            // Save preference to localStorage
+            localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Load saved preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang && savedLang !== 'en') {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+
+    <!-- AI Assistant Widget -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant-constants.js"></script>
+    <script src="../js/ai-assistant-storage.js"></script>
+    <script src="../js/ai-assistant-positioning.js"></script>
+    <script src="../js/ai-assistant-dom-utils.js"></script>
+    <script src="../js/ai-assistant-templates.js"></script>
+    <script src="../js/ai-assistant-config.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+</body>
+</html>
