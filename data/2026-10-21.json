@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-21",
+  "github_repos": [
+    {
+      "name": "reason-machines/reason-network",
+      "url": "https://github.com/reason-machines/reason-network",
+      "description": {
+        "en": "Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.",
+        "zh": "Reason Network：让你的团队编程 Agent 相互交流。这是 `reason network` 背后的引擎。"
+      },
+      "stars": "815",
+      "forks": "62"
+    },
+    {
+      "name": "dominikmartn/harp",
+      "url": "https://github.com/dominikmartn/harp",
+      "description": {
+        "en": "Run many Claude Code and Codex agents side by side, in one sidebar that tells you which one needs you. An unofficial fork of Warp.",
+        "zh": "并排运行多个 Claude Code 和 Codex Agent，通过一个侧边栏告知你哪个 Agent 需要你的参与。Warp 的非官方分支。"
+      },
+      "stars": "425",
+      "forks": "26"
+    },
+    {
+      "name": "Tongyi-MAI/OpenGCUA",
+      "url": "https://github.com/Tongyi-MAI/OpenGCUA",
+      "description": {
+        "en": "An open-source stack for generalist computer-use agents, combining code execution, GUI interaction, and cross-device control.",
+        "zh": "一个通用计算机使用 Agent 的开源栈，结合了代码执行、GUI 交互和跨设备控制。"
+      },
+      "stars": "373",
+      "forks": "27"
+    }
+  ],
+  "ai_news": [
+    {
+      "title": {
+        "en": "OpenAI Acquires Orchestra Bio & Eyes $30B Funding",
+        "zh": "OpenAI 收购 Orchestra Bio 并寻求 300 亿美元融资"
+      },
+      "url": "https://ai.info/daily/2026-10-21",
+      "source": "AI.info",
+      "time": "2026-10-21",
+      "description": {
+        "en": "OpenAI integrated biotech startup Orchestra Bio into its Rosalind life-sciences suite and is reportedly seeking $30 billion in new funding at a $1.4 trillion valuation.",
+        "zh": "OpenAI 将生物技术初创公司 Orchestra Bio 整合进其 Rosalind 生命科学套件，据报道正在寻求 300 亿美元的新融资，估值可能超过 1.4 万亿美元。"
+      },
+      "insight": {
+        "en": "OpenAI is pivoting from a general-purpose model provider to a vertical-integrated AI conglomerate. By owning the 'operational layer' of drug discovery (trials/scheduling) via Orchestra Bio, they aren't just providing a chatbot for scientists, but the OS for the lab. The $1.4T valuation target reflects this shift from 'Software as a Service' to 'Intelligence as Infrastructure'.",
+        "zh": "OpenAI 正在从通用模型供应商转变为垂直整合的 AI 巨头。通过通过 Orchestra Bio 掌控药物研发的“运营层”（试验/调度），他们提供的不再仅仅是给科学家的聊天机器人，而是实验室的操作系统。1.4 万亿美元的估值目标反映了这种从“软件即服务”向“智能即基础设施”的转变。"
+      }
+    },
+    {
+      "title": {
+        "en": "Anthropic's IPO Filing Reveals Massive Losses and Spend",
+        "zh": "Anthropic IPO 文件披露巨额亏损与支出计划"
+      },
+      "url": "https://ai.info/daily/2026-10-21",
+      "source": "AI.info",
+      "time": "2026-10-21",
+      "description": {
+        "en": "Draft IPO documents show an $80.7 billion net loss for H1 2026, with plans to spend up to $750 billion on computing capacity.",
+        "zh": "IPO 草案显示 2026 年上半年净亏损 807 亿美元，并计划在计算能力上投入高达 7500 亿美元。"
+      },
+      "insight": {
+        "en": "The 'compute war' has reached a scale where financial sustainability is secondary to capacity. An $80B loss in six months is unprecedented, but the $750B planned spend suggests Anthropic believes the returns on scaling are still exponential. This creates a dangerous precedent where the barrier to entry for frontier AI is now measured in hundreds of billions, effectively locking out all but the most heavily subsidized players.",
+        "zh": "“算力战争”已达到财务可持续性让位于规模的程度。半年 800 亿的亏损是前所未有的，但 7500 亿的计划支出表明 Anthropic 认为规模化带来的回报仍是指数级的。这创造了一个危险的先例：前沿 AI 的准入门槛现在是以数千亿美元计算的，实际上将除了获得巨额补贴的玩家之外的所有人都拒之门外。"
+      }
+    },
+    {
+      "title": {
+        "en": "Meta Unveils Prometheus Supercomputer & Muse Spark Open",
+        "zh": "Meta 发布 Prometheus 超级计算机与 Muse Spark Open 模型"
+      },
+      "url": "https://ai.info/daily/2026-10-21",
+      "source": "AI.info",
+      "time": "2026-10-21",
+      "description": {
+        "en": "Meta revealed its gigawatt-scale Prometheus supercomputer (1M GPUs) and released Muse Spark Open, an 816B multimodal model for long-horizon agentic work.",
+        "zh": "Meta 发布了吉瓦级 Prometheus 超级计算机（100 万个 GPU），并推出了 Muse Spark Open，一个用于长周期 Agent 工作的 816B 参数多模态模型。"
+      },
+      "insight": {
+        "en": "Meta is doubling down on the 'Open' strategy at a scale that rivals the closed labs. While OpenAI focuses on vertical biotech, Meta is building the raw multimodal infrastructure for the entire ecosystem. 1 million GPUs is a staggering concentration of power; it signals that Meta intends to be the primary foundation for the next generation of agentic software, ensuring they control the weights that the world's agents run on.",
+        "zh": "Meta 正在以足以与闭源实验室匹敌的规模加倍投入“开源”战略。当 OpenAI 专注于垂直生物技术时，Meta 正在为整个生态系统构建原始的多模态基础设施。100 万个 GPU 是惊人的权力集中；这标志着 Meta 打算成为下一代 Agent 软件的主要基础，确保他们控制着全球 Agent 运行的权重。"
+      }
+    },
+    {
+      "title": {
+        "en": "DeepSeek Open-Sources DeepInfer Framework",
+        "zh": "DeepSeek 开源 DeepInfer 推理框架"
+      },
+      "url": "https://ai.info/daily/2026-10-21",
+      "source": "AI.info",
+      "time": "2026-10-21",
+      "description": {
+        "en": "DeepSeek released DeepInfer (Apache 2.0), a production-grade inference framework supporting Nvidia SM100 and Huawei Ascend 950 NPUs.",
+        "zh": "DeepSeek 发布了 DeepInfer (Apache 2.0)，这是一个支持 Nvidia SM100 和华为昇腾 950 NPU 的生产级推理框架。"
+      },
+      "insight": {
+        "en": "By open-sourcing the plumbing of their efficiency, DeepSeek is attacking the 'inference tax' that keeps models expensive. Supporting both Nvidia and Huawei hardware is a strategic move to ensure resilience against hardware sanctions while simultaneously setting the standard for high-throughput serving. It's a direct challenge to Nvidia's TensorRT-LLM, pushing the industry toward hardware-agnostic, high-performance serving.",
+        "zh": "通过开源其效率底层，DeepSeek 正在攻击让模型保持高成本的“推理税”。同时支持 Nvidia 和华为硬件是一项战略举措，旨在确保在面对硬件制裁时具有韧性，同时为高吞吐量服务设定标准。这是对 Nvidia TensorRT-LLM 的直接挑战，推动行业向硬件无关的高性能服务方向发展。"
+      }
+    },
+    {
+      "title": {
+        "en": "U.S. Bans DeepSeek from Federal Procurement",
+        "zh": "美国禁止联邦政府采购 DeepSeek 相关产品"
+      },
+      "url": "https://ai.info/daily/2026-10-21",
+      "source": "AI.info",
+      "time": "2026-10-21",
+      "description": {
+        "en": "The DHS issued an exclusion order banning DeepSeek and third-party products developed using DeepSeek from federal civilian agency procurement.",
+        "zh": "美国国土安全部发布禁令，禁止联邦民事机构采购 DeepSeek 及其基于 DeepSeek 开发的第三方产品。"
+      },
+      "insight": {
+        "en": "This is a critical escalation: the ban extends beyond the model itself to 'derivative works'. This creates a massive compliance minefield for any U.S. company using open-weights models for fine-tuning or distillation. If you distilled a model from DeepSeek, your product is now legally toxic for the federal market. This forces a hard bifurcation of the AI stack between 'Western-aligned' and 'Other' weights.",
+        "zh": "这是一次关键的升级：禁令不仅限于模型本身，还延伸到了“衍生作品”。这为任何使用开源权重模型进行微调或蒸馏的美国公司制造了巨大的合规雷区。如果你从 DeepSeek 蒸馏了一个模型，你的产品现在在联邦市场中在法律上是“有毒”的。这迫使 AI 技术栈在“西方对齐”和“其他”权重之间进行硬性分叉。"
+      }
+    },
+    {
+      "title": {
+        "en": "Nvidia's Vera CPU Doubles Agent Productivity",
+        "zh": "Nvidia Vera CPU 将 Agent 生产力提升一倍"
+      },
+      "url": "https://ai.info/daily/2026-10-21",
+      "source": "AI.info",
+      "time": "2026-10-21",
+      "description": {
+        "en": "AI cloud startup Modal reported that Nvidia's Vera CPU doubled the work completed by AI agents compared to Intel, AMD, and AWS chips.",
+        "zh": "AI 云初创公司 Modal 报告称，与英特尔、AMD 和 AWS 的芯片相比，Nvidia 的 Vera CPU 将 AI Agent 完成的工作量增加了一倍。"
+      },
+      "insight": {
+        "en": "The bottleneck for agents is shifting from GPU (inference) to CPU (orchestration/environment interaction). Vera's win proves that specialized silicon for agent 'loop' management—handling the rapid cycle of thought-action-observation—is the next frontier. Nvidia is effectively closing the loop, ensuring that not just the 'brain' (GPU) but also the 'nervous system' (CPU) is proprietary to their ecosystem.",
+        "zh": "Agent 的瓶颈正在从 GPU（推理）转向 CPU（编排/环境交互）。Vera 的胜利证明了针对 Agent “循环”管理（处理思考-行动-观察的快速循环）的专用芯片是下一个前沿。Nvidia 实际上正在闭环，确保不仅是“大脑”（GPU）而且是“神经系统”（CPU）都是其生态系统的专有产品。"
+      }
+    }
+  ],
+  "insight_analysis": {
+    "en": "October 21, 2026, reveals a stark divide in the AI industry: an unsustainable financial war for capacity versus a strategic battle for vertical integration. On one side, Anthropic and OpenAI are treating AI as a 'Manhattan Project'—burning hundreds of billions and acquiring biotech firms to build a closed, integrated intelligence monopoly. On the other, Meta and DeepSeek are weaponizing openness, releasing massive models and inference frameworks to commoditize the foundation layer. The most alarming trend is the legal 'poisoning' of weights; by banning derivative works of DeepSeek, the U.S. is not just blocking a company, but attempting to regulate the very lineage of intelligence. The real story of today is that the 'Scaling Laws' have evolved into 'Financial Laws'—where the ability to burn $80B in a semester is the only remaining moat for the frontier.",
+    "zh": "2026 年 10 月 21 日揭示了 AI 行业一个极其明显的断层：一方面是对算力进行不可持续的财务战争，另一方面是对垂直整合的战略争夺。一方面，Anthropic 和 OpenAI 将 AI 视为一个“曼哈顿计划”——烧掉数千亿美元并收购生物技术公司，以建立一个闭源且整合的智能垄断。另一方面，Meta 和 DeepSeek 正在将“开源”武器化，通过发布大规模模型和推理框架使基础层商品化。最令人担忧的趋势是权重的法律“毒化”；通过禁止 DeepSeek 的衍生作品，美国不仅是在封杀一家公司，而是在尝试监管智能的“血统”。今天的真实故事是，“规模定律”已经演变成了“财务定律”——一个学期能烧掉 800 亿美元的能力，成了前沿 AI 唯一剩下的护城河。"
+  }
+}
